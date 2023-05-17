@@ -1279,7 +1279,7 @@ if($_POST["flag"] == "find_password"){
 		$subject = $locale("mail_find_password_subject");
 		$callback_url = D9_DOMAIN."/password_reset.php?e=".$email."&t=".$random_token;
 
-		$message =createMessage($language, "find_password", $name, $email, "[ICOMES]".$subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
+		$message =createMessage($language, "find_password", $name, $email, "[ICOMES 2023]".$subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
 		createDraft($service, "info@icomes.or.kr", $message);
 		sendMessage($service, "info@icomes.or.kr", $message);
 
@@ -1412,7 +1412,7 @@ else if($_POST["flag"] == "abstract"){
 		"nation_map"				=> $nation_map
 	];
 
-	$message =createMessage($language, "abstract", "", $email, "[ICOMES]".$subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
+	$message =createMessage($language, "abstract", "", $email, "[ICOMES 2023]".$subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
 	createDraft($service, "info@icomes.or.kr", $message);
 	sendMessage($service, "info@icomes.or.kr", $message);
 }

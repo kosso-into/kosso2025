@@ -80,8 +80,7 @@
 	<div class="section_bg">
 		<div class="video_wrap">
 			<div class="dim"></div>
-			<video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f"
-                    autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video>
+			<!-- <video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f" autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video> -->
 		</div>
 		<div class="container">
 			<!-- 상단 타이틀 -->
@@ -128,29 +127,25 @@
 		<div class="main_btn_wrap">
 			<button type="button" class="btn_circle_arrow"></button>
 		</div>
-	</div>
-</section>
-<div class="dates_wrap">
-	<div class="container">
 		<div class="dates_area">
 			<ul>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
-						<h2>Jul. 6(Thu)</h2>
+						<h2>July 6(Thu)</h2>
 						<!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
 						<p>Abstract Submission<br/>Deadline</p>
 					</a>
 				</li>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
-						<h2>Aug. 7(Mon)</h2>
+						<h2>August 8(The)</h2>
 						<!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
 						<p>Notification of<br/>Acceptance</p>
 					</a>
 				</li>
 				<li>
 					<a href="/main/registration_guidelines.php">
-						<h2>Jun. 2(Fri)</h2>
+						<h2>June 2(Fri)</h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
 						<p>Early-bird Registration<br/>Deadline</p>
 					</a>
@@ -159,48 +154,49 @@
 					<a href="/main/abstract_submission_award.php">
 						<!-- <h2>2 Jun</h2> -->
 						<h2>Awards &amp;<br/>Grants</h2>
-						<i><img src="/main/img/icons/icon_calendar.svg" alt=""></i>
+						<i><img src="/main/img/img_trophy.svg" alt=""></i>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-</div>
+</section>
+
 <!-- Plenary Speakers -->
 <div class="speakers_wrap">
 	<div class="container">
-		<h1 class="speakers_wrap_title">Plenary &amp; Keynote Speakers</h1>
+		<h3 class="title">Plenary &amp; Keynote Speakers</h3>
 		<div class="speakers_slick">
 			<ul class="main_speaker2 slick-slider">
 				<li class="index_speaker1">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">TDB</h5>
-					<!-- <div class="career">Seoul National University,<br>Republic of Korea</div> -->
+					<h5 class="title">Robert R. Wolfe</h5>
+					<div class="career">University of Arkansas for<br>Medical Sciences, USA</div>
 				</li>
 				<li class="index_speaker2">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">TDB</h5>
-					<!-- <div class="career">Seoul National University,<br>Republic of Korea</div> -->
+					<h5 class="title">Matthias Blüher</h5>
+					<div class="career">Universitätsklinikum<br>Leipzig, Germany</div>
 				</li>
 				<li class="index_speaker3">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">TDB</h5>
-					<!-- <div class="career">Seoul National University,<br>Republic of Korea</div> -->
+					<h5 class="title">Zachary Knight</h5>
+					<div class="career">University of California,<br>San Francisco, USA</div>
 				</li>
 				<li class="index_speaker4">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">TDB</h5>
-					<!-- <div class="career">Seoul National University,<br>Republic of Korea</div> -->
+					<h5 class="title">Jae-Heon Kang</h5>
+					<div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
 				</li>
 				<li class="index_speaker5">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
 					<h5 class="title">TDB</h5>
-					<!-- <div class="career">Seoul National University,<br>Republic of Korea</div> -->
+					<div class="career">Seoul National University,<br>Republic of Korea</div>
 				</li>
 				<li class="index_speaker6">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
 					<h5 class="title">TDB</h5>
-					<!-- <div class="career">Seoul National University,<br>Republic of Korea</div> -->
+					<div class="career">Seoul National University,<br>Republic of Korea</div>
 				</li>
 				<!--
 				<li class="index_speaker1">

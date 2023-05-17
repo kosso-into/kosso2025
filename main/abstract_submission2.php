@@ -165,6 +165,9 @@ $abstract_idx = $_GET["idx"];
 	}
 	echo "</script>";
 ?>
+<style>
+	.submit_application .steps_area {margin-top: 100px;}
+</style>
 <section class="submit_application abstract_submission2 abstract_online_submission container">
     <div class="">
         <h1 class="page_title">Online Submission</h1>
@@ -212,7 +215,7 @@ $abstract_idx = $_GET["idx"];
 									if (!$presentation_type) {
 										echo '<option value="" hidden>Choose</option>';
 									}
-									$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation");
+									$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
 									foreach ($presentation_type_arr as $value) {
 										if ($presentation_type == $i_count) {
 											echo '<option value=' . ($i_count) . ' selected>' . $value . '</option>';

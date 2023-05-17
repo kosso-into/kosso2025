@@ -19,10 +19,8 @@
 ?>
 
 <section class="submit_application container">
+	<h1 class="page_title">Online Registration</h1>
 	<div class="inner">
-		<div class="sub_banner">
-			<h1>Online Registration</h1>
-		</div>
 		<section class="coming">
 			<div class="container">
 				<div class="sub_banner">

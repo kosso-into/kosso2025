@@ -5,7 +5,7 @@
 <section class="abstract_submission_award container">
     <h1 class="page_title">Submission Guidelines</h1>
     <div class="inner">
-        <ul class="tab_green long">
+        <ul class="tab_green long abstract_submission">
             <li><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
             <li><a href="./abstract_submission.php" class="online_submission_alert">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->

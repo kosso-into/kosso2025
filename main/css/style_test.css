@@ -108,8 +108,9 @@ section.container.organizing {padding-bottom: 190px;}
 .photo_list .img_wrap img{width:auto; height:100%; position:absolute; left:50%; transform:translateX(-50%);}
 .more_img_pop .pop_contents{padding:0;background:transparent;}
 .more_img_pop .pop_contents li{margin-bottom:0;}
-.photo .tab_green, .submit_application .tab_green {display:block; justify-content: unset; white-space:nowrap; text-align:center; overflow-x:auto;}
-.photo .tab_green li, .submit_application .tab_green li {display:inline-block;}
+/* ▼ Tab 수정으로 인한 주석 - 230517 HUBDNC AJY */
+/* .photo .tab_green, .submit_application .tab_green {display:block; justify-content: unset; white-space:nowrap; text-align:center; overflow-x:auto;}
+.photo .tab_green li, .submit_application .tab_green li {display:inline-block;} */
 
 /*program*/
 .board .c_table2 td:first-of-type, .board .c_table2 td:last-of-type{text-align:center;}
@@ -188,7 +189,7 @@ section.container.organizing {padding-bottom: 190px;}
 .coauther_wrap select{padding:5px 20px 5px 10px;}
 .input_area .radio_wrap li, .input_area .checkbox_wrap li{margin-right:20px;}
 .input_area .radio_wrap li:last-of-type, .input_area .checkbox_wrap li:last-of-type{margin-right:0;}
-.submit_application .steps_area{margin:90px auto 64px;}
+.submit_application .steps_area{margin:0px auto 64px;}
 .input_area .btn_wrap{text-align:right;padding-top:40px;}
 .submit_application .img_label label{cursor:pointer;margin-right:10px;width:120px;height:140px;background:#F0F0F0;display:block;margin-bottom:18px;}
 .input_table input[type="radio"]{padding:0;}
@@ -438,9 +439,9 @@ section.container.organizing {padding-bottom: 190px;}
 .main_section * {font-family: 'Nanum Gothic', sans-serif;line-height: 1;}
 .main_section .container{max-width:1200px;padding-top:216px;padding-bottom:55px;position:relative;}
 .main_section .txt_wrap{text-align:center; position:relative; z-index:2;}
-.main_section .txt_wrap h5{font-size:29px; font-weight: 400; font-family:'Montserrat', sans-serif; line-height: 1.2; color: #FFEB00; margin-bottom: 15px; letter-spacing: 0.3px;}
+.main_section .txt_wrap h5{font-size:29px; font-weight: 400; font-family:'Montserrat', sans-serif; line-height: 1.2; color: #3399FF; margin-bottom: 15px; letter-spacing: 0.3px;}
 .main_section .txt_wrap h5 strong{font:inherit;font-weight:600;color:inherit;}
-.main_section .txt_wrap h1{font-size:105px;font-weight:600;font-family:'Montserrat', sans-serif;color:#10BF99;}
+.main_section .txt_wrap h1{font-size:105px;font-weight:600;font-family:'Montserrat', sans-serif;color:#000066;}
 .main_section .txt_wrap h1 span{color: #fff; font-size:inherit; font-weight: 400; font-family: 'din-2014', sans-serif; font-style: normal;}
 .main_section .txt_wrap p.e_fullname {font-size: 16px; font-weight: 400; line-height: 1.5; margin-top: 10px; letter-spacing: 0.2px; font-family:'Montserrat', sans-serif;margin-bottom:38px;}
 .main_section .txt_wrap p.e_place {font-size: 24px; font-weight: 600; font-family:'Montserrat', sans-serif; margin-bottom:38px;}
@@ -464,7 +465,7 @@ section.container.organizing {padding-bottom: 190px;}
 .main_section .bg_wrap{position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;height:100vh;z-index:0;}
 .main_section .bg_wrap .dim{background:rgba(0,0,0,0.55);position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
 .main_section video{width:100%;position:absolute;top:0;left:50%;transform:translateX(-50%);}
-.video_wrap{min-height:calc(100vh - 126px);/*100vh;*/position:relative; overflow:hidden;}
+.video_wrap{min-height:calc(100vh - 117px);/*100vh;*/position:relative; overflow:hidden;}
 .main_img_wrap{height:100vh;overflow:hidden;position:relative;}
 .main_img_wrap img{width:100%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
 .main_section .slick-slider{padding: 0;}
@@ -500,7 +501,7 @@ section.container.organizing {padding-bottom: 190px;}
 .main_speaker h6{font-size:14px;padding:14px 20px 20px;}
 .main_speaker h6{border-top:4px dotted ;}
 
-.main_section .board_area .board_btn {font-size: 20px; font-weight: bold; line-height: 40px; width: 100%; background-color: #10BF99; border-radius: 23px;}
+.main_section .board_area .board_btn {font-size: 20px; font-weight: bold; line-height: 40px; width: 100%; background-color: #000066; border-radius: 23px;}
 .board_area .dates_list {margin: 36px 0 40px;}
 .board_area .dates_list li {padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.5); display: flex; justify-content: space-between; align-items: center;}
 .board_area .dates_list li.close_li .yellow_txt {position:relative;}
@@ -563,6 +564,7 @@ section.container.organizing {padding-bottom: 190px;}
 .program_table tbody td p{font-size:12px;font-weight:400;}
 .scroll_table {position:relative;max-width:100%;overflow:hidden; margin-bottom:20px;}
 .program_table_wrap {width:100%; overflow-x: auto; overflow-y: hidden;}
+.light_orange_bg {background-color:#FDEADB !important;}
 .orange_bg {background-color:#ffc000 !important;}
 .yellow_bg {background-color:rgba(255,235,0,0.3) !important;}
 .pink_bg {background-color:rgba(255,160,171,0.3) !important;}
@@ -572,6 +574,7 @@ section.container.organizing {padding-bottom: 190px;}
 .green_bg {background-color:#D8F5BB !important;}
 .purple_bg {background-color:rgba(181,178,255,0.3) !important;}
 .blue_bg {background-color:#00b0f0 !important;}
+.light_orange_bg {background-color:#FFEDD5 !important;}
 
 /*invited speaker*/
 .invited .inner {padding-top: 0; border:1px solid transparent;}
@@ -599,13 +602,11 @@ section.container.organizing {padding-bottom: 190px;}
 .coauthor_wrap p {line-height:41px;}
 
 /* 230511 HUBDNCLHJ ******* 작업 */
-.long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; /*background-color: #0066CC;*/ background-color:#10BF99; width: 100%; max-width: 400px;}
-/*
+.long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; background-color: #0066CC; width: 100%; max-width: 400px;}
 section.container .page_title {background: #f2f2f2; width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 40px 0 48px;}
 .inner {padding-top:50px;}
 h3.title:before {content:'';display: inline-block;  width: 6px;height: 6px; background: transparent; border:4px solid #4267C5; border-radius:50%; margin-bottom: 2px; margin-right: 10px;}
 section.container.login .page_title {color:#fff; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
-*/
 .invited_speaker .speaker_list > li {padding: 0px; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
 .invited_speaker .speaker_list .top_wrap {padding: 22px; background:linear-gradient(-45deg, #F8F8F8 40%, #efefef 40%);margin-bottom: 0; display:flex; align-items:center; justify-content:space-between;}
 .invited_speaker .speaker_list .bottom_wrap {background: #fff;}
@@ -614,7 +615,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .invited_speaker .speaker_list > li h2:before {content:''; display: block; width: 6px;height: 6px; background: transparent; border:4px solid #5699F8; border-radius:50%;}
 .invited_speaker .speaker_list > li h2 > p {font-size:16px; }
 .invited_speaker .speaker_list .desc_wrap  {font-size:16px; display:flex; flex-direction:column; justify-content:space-between; }
-.invited_speaker .speaker_list .desc_wrap > p:before {content:''; display: block; width: 3px; height:100%; background-color:#5699F8; margin-right: 10px; margin-top: 1px;}
+.invited_speaker .speaker_list .desc_wrap > p:before {content:''; display: block; width: 3px; height:100%; background-color:#5699F8; margin-right: 10px; margin-top: 1px; flex-shrink:0;}
 .invited_speaker .speaker_list .desc_wrap > p {display:flex;}
 .invited_speaker .speaker_list > li .flex {margin-top: 0; padding:15px;}
 .invited_speaker .speaker_list .profile_wrap {margin: 0;}
@@ -812,6 +813,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
     .form_section{padding: 250px 0 250px}
 	.mobile_none {display:none;}
 	.program_table{min-width:1200px;}
+	section.container .page_title {padding: 36px 0 48px !important;}
 	
 	/*메인페이지 추가팝업*/
 	.Notification_pop .pop_title {padding:20px 30px; font-size:28px;}
@@ -975,6 +977,10 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.speaker_list > li:nth-child(even), .speaker_list > li:nth-child(n+3) {margin-left:0 !important; margin-top:0;}
 }
 
+@media screen and (max-width: 530px) {
+	section.container .page_title {padding: 42px 0 48px !important;}
+}
+
 @media screen and (max-width: 983px) {
 	.depth01>li:nth-child(-n+4){margin-top:10px;}
 
@@ -1055,10 +1061,10 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 
 @media screen and (max-width: 540px) {
-
+	/* ▼ Tab 수정으로 인한 주석 - 230517 HUBDNC AJY */
 	/* 220323 HUBDNC LJH2 추가*/
-	.tab_green li:not(:last-of-type), .tab_green.long li:not(:last-of-type) {margin-right: 25px;}
-	.tab_green li a, .tab_green.long li a {font-size: 18px;}
+	/* .tab_green li:not(:last-of-type), .tab_green.long li:not(:last-of-type) {margin-right: 25px;}
+	.tab_green li a, .tab_green.long li a {font-size: 18px;} */
 
 	/* venue - 22.03.25 HUBDNC LJH2 추가 */
 	.venue .sub_banner {padding-bottom: 52px;}
@@ -1078,10 +1084,9 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 
 /* HUBDNCLHJ 작업*/
-/*
 @media screen and (max-width: 1199px) {
-	section.container .page_title {height: 105px;}
-} */
+	section.container .page_title {height: 105px;padding: 38px 0 48px;}
+} 
 
 @media screen and (max-width: 486px) {
 	.m_only{display:block;}
@@ -1139,9 +1144,11 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.pop_contents .pop_close{top:15px;right:15px;}
 	.pop_contents .pop_close_w{top:-40px;right:35px;}
 	.input_table .radio_wrap{padding:10px 0;}
+
+	/* ▼ Tab 수정으로 인한 주석 - 230517 HUBDNC AJY */
 	/* 220323 HUBDNC LJH2 추가*/
-	.tab_green li:not(:last-of-type), .tab_green.long li:not(:last-of-type) {margin-right: 15px;}
-	.tab_green li a, .tab_green.long li a {font-size: 15px;}
+	/* .tab_green li:not(:last-of-type), .tab_green.long li:not(:last-of-type) {margin-right: 15px;}
+	.tab_green li a, .tab_green.long li a {font-size: 15px;} */
 
 	/*main*/
 	.main_section .board_area .clearfix2>div{width:100%;margin-right:0;}

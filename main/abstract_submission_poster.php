@@ -24,7 +24,7 @@ $info = sql_fetch($sql_info);
 <section class="abstract_submission_guideline container abstract_presentation_guideline">
     <h1 class="page_title">Presentation Guidelines</h1>
     <div class="inner">
-        <ul class="tab_green long">
+        <ul class="tab_green long presentation">
             <li><a href="./abstract_submission_oral.php">Oral Presentation</a></li>
             <li class="on"><a href="./abstract_submission_poster.php">Guided Poster Presentation</a></li>
             <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li>

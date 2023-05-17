@@ -17,6 +17,12 @@
 		$phone = implode("-",array_splice($_arr_phone, 1));
 	}
 
+	if($user_info["telephone"]) {
+		$_arr_telephone = explode("-",$user_info["telephone"]);
+		$nation_tel = $_arr_telephone[0];
+		//$telephone = implode("-",array_splice($_arr_telephone, 1));
+	}
+
 	// [22.04.25] 미로그인시 처리
 	if(!$user_info) {
 		echo "<script>alert('Need to login'); location.replace(PATH+'login.php');</script>";
@@ -104,7 +110,7 @@
 
 <section class="container form_section mypage">
     <h1 class="page_title">Mypage</h1>
-	<div>
+	<div class="inner">
 		<ul class="tab_green">
 			<li class="on"><a href="./mypage.php">Account</a></li>
 			<li><a href="./mypage_registration.php">Registration</a></li>
@@ -300,8 +306,8 @@
 							<th class="nowrap">Telephone Number</th>
 							<td class="flex">
 								<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" value="<?=$nation_tel?>" readonly>
-								<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
-								<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
+								<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
+								<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
 								<!--
 								<div class="max_normal">
 									<ul class="half_ul">
@@ -524,8 +530,8 @@
 						<p class="label">Telephone Number</p>
 						<div class="phone_form clearfix flex">
 							<input class="tel_number tel_phone" name="mo_tel_nation_tel" type="text" maxlength="60" value="<?=$nation_tel?>">
-							<input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60">
-							<input class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60">
+							<input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
+							<input class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
 						</div>
 						<!--
 						<ul class="half_ul">
@@ -641,23 +647,32 @@ $(document).ready(function() {
 		check = name_check("telephone_num1");
 		if(check == false) return;
 		*/
-		var tele1 = $("input[name=telephone_num1]").val();
+		var tele1 = $("input[name=telephone1]").val();
 		/*
 		check = name_check("telephone_num2");
 		if(check == false) return;
 		*/
-		var tele2 = $("input[name=telephone_num2]").val();
+		var tele2 = $("input[name=telephone2]").val();
 
 		//var resultTel = $("[name=nation_tel] :selected").text().trim();
 		//var resultTel = nation_tel+'-'+tele1+'-'+tele2;
 		// TelePhone
 		var resultTel = "";
+		
+		if (!tele1 && tele2) {
+			check = name_check("telephone1");
+			if(check == false) return;
+		} else if (tele1 && !tele2) {
+			check = name_check("telephone2");
+			if(check == false) return;
+		}
+
 		if (tele1 && tele2) {		
 			resultTel = nation_tel+'-'+tele1+'-'+tele2;
 		} else {
 			resultTel = "";
 		}
-
+		console.log(resultTel);
 		var date_of_birth = $("input[name=date_of_birth]").val();
 		if(date_of_birth == null || date_of_birth == ""){
 			alert("Invalid date of birth");
@@ -731,6 +746,7 @@ $(document).ready(function() {
 		
         if(status) {
 		*/
+		console.log(formData);
             if(confirm(locale(language.value)("account_modify_msg"))) {
                 $.ajax({
                     url : PATH+"ajax/client/ajax_member.php",
@@ -799,15 +815,24 @@ $(document).ready(function() {
 		check = name_check("mo_telephone_num1");
 		if(check == false) return;
 		*/
-		var tele1 = $("input[name=mo_telephone_num1]").val();
+		var tele1 = $("input[name=mo_telephone1]").val();
 		/*
 		check = name_check("mo_telephone_num2");
 		if(check == false) return;
 		*/
-		var tele2 = $("input[name=mo_telephone_num2]").val();
+		var tele2 = $("input[name=mo_telephone2]").val();
 		//var resultMobileTel = $("[name=mo_nation_tel] :selected").text().trim();
 		// TelePhone
 		var resultMobileTel = "";
+		
+		if (!tele1 && tele2) {
+			check = name_check("telephone1");
+			if(check == false) return;
+		} else if (tele1 && !tele2) {
+			check = name_check("telephone2");
+			if(check == false) return;
+		}
+
 		if (tele1 && tele2) {		
 			resultMobileTel = nation_tel+'-'+tele1+'-'+tele2;
 		} else {

@@ -293,8 +293,9 @@
 </script>
 
 <section class="container form_page sign_up">
-		<h1 class="page_title">Sign Up</h1>
-	<div class="sub_background_box">
+	<h1 class="page_title">Sign Up</h1>
+	<div class="inner">
+		<div class="sub_background_box">
 		<div class="sub_inner">
 			<div>
 				<!-- 브래드스크럼
@@ -324,7 +325,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="inner">
 		<h3 class="title">Personal Information <span class="mini_alert"><span class="red_txt">*</span> All requested field (<span class="red_txt">*</span>) should be completed.</span></h3>
 		<form class="table_wrap">
 			<div class="pc_only">
@@ -372,7 +372,7 @@
 							<th style="background-color:transparent"></th>
 							<td>
 								<!-- <button type="button" class="btn green_btn long_btn" onclick="javascript:window.open('https://www.lipid.or.kr/member/member_confirm.php')">한국지질동맥경화학회 회원정보로 간편 가입</button> -->
-								<p class="green_t">대한비만학회 회원 정보로 간편 가입</p>
+								<p>대한비만학회 회원 정보로 간편 가입</p>
 								<ul class="simple_join clearfix">
 									<li>
 										<label for="">KSSO ID<span class="red_txt">*</span></label>

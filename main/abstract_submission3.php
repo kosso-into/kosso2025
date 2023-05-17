@@ -1,6 +1,8 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/header.php');?>
-
+<style>
+	.submit_application .steps_area {margin-top: 100px;}
+</style>
 <section class="submit_application abstract_online_submission container">
     <div class="">
         <!-- <div class="sub_banner">

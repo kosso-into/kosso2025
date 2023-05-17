@@ -3,7 +3,8 @@
 /* 22.03.15 ICoLA 2022 NEW Main - HUBDNC LJH2*/
 .container {max-width: 1200px;}
 .main_section.icola_main .container {position:relative; max-width: 1200px; padding: 90px 0 156px;}
-.section_bg {min-height: 100vh; padding-top: 117px; background: center top 20px / cover no-repeat url("../img/main_bg2.png");}
+.section_bg {height: 100vh; width: 100vw; padding-top: 126px; background-image:url("https://image.webeon.net/icomes/main.png"); background-position: center; background-size: cover; background-repeat: no-repeat;overflow-x: hidden;}
+/* .section_bg {min-height: 100vh; padding-top: 117px; background: center top 20px / cover no-repeat url("../img/main_bg2.png");} */
 /*.section_bg {height: 100vh; width: 100vw;padding-top: 126px; background-image:url("https://velog.velcdn.com/images/crystal025/post/d903e8b2-ff90-4f18-aa11-5003c7b08739/image.png"); background-position: center; background-size: cover; background-repeat: no-repeat;}*/
 /* 220614 메인페이지 sponsor slide 추가작업 - HUBDNCHYJ */
 .index_sponsor_wrap {display:none; padding: 11px 0; border-top: 1px solid rgba(60,60,59,0.5);}
@@ -140,12 +141,12 @@ input[type="file"].file_input + .file_label {display: inline-block; line-height:
 /*abstract_submission_guideline.php*/
 .steps_area.five_steps {max-width:100%;}
 .steps_area.five_steps li {width:20%;}
-.steps_area.five_steps li p:first-of-type {width:100px; height:100px; line-height:100px; font-size:18px; background-color:rgba(255,235,0,0.06); color:#000;}
+.steps_area.five_steps li p:first-of-type {width:100px; height:100px; line-height:100px; font-size:18px; /*background-color:rgba(255,235,0,0.06);*/ background-color:rgba(0,102,204,0.06); color:#000;}
 .steps_area.five_steps li p:first-of-type:after {width:20px; height:20px; top:40px;}
-.steps_area.five_steps li:nth-child(2) p:first-of-type {background-color:rgba(255,235,0,0.15);}
-.steps_area.five_steps li:nth-child(3) p:first-of-type {background-color:rgba(255,235,0,0.35);}
-.steps_area.five_steps li:nth-child(4) p:first-of-type {background-color:rgba(255,235,0,0.45);}
-.steps_area.five_steps li:nth-child(5) p:first-of-type {background-color:rgba(255,235,0,0.6);}
+.steps_area.five_steps li:nth-child(2) p:first-of-type {background-color:rgba(0,102,204,0.15);}
+.steps_area.five_steps li:nth-child(3) p:first-of-type {background-color:rgba(0,102,204,0.35);}
+.steps_area.five_steps li:nth-child(4) p:first-of-type {background-color:rgba(0,102,204,0.45);}
+.steps_area.five_steps li:nth-child(5) p:first-of-type {background-color:rgba(0,102,204,0.6);}
 .steps_area.five_steps li .sm_txt {font-size:16px; padding:0 6px;}
 
 /* 220331 HUBDNC LJH2 */
@@ -327,6 +328,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .speaker_list {margin-top:40px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:30px;}
 .speaker_list:after {content:''; display:block; clear:both;}
 .speaker_list li {padding:22px; border: 1px solid #e9e9e9; background-color: #f8f8f8; width:calc(50% - 16px);}
+.speaker_list_2 {margin-top:40px; display:flex; flex-wrap:wrap; justify-content:space-between;}
 .speaker_list li:nth-child(2n+1) {margin-left:0;}
 .speaker_img {width:108px; height:138px; } /*background:url('../img/img_invited01.jpg') no-repeat center /cover;*/
 .speaker_img.logo_img {background-size:contain !important;}
@@ -943,3 +945,42 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	/* scientific_program */
 	.room_tab li a {font-size: 11px;}
 }
+
+
+/*0516 symposia*/
+.gray_card{
+	padding: 22px;
+    border: 1px solid #e9e9e9;
+    background-color: #f8f8f8;
+    width: calc(50% - 19px);
+    /* margin-left: 28px; */
+    margin-bottom: 20px;
+}
+
+.gray_card .yellow_tag {
+	display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #10BF99;
+    border: 1px solid #FBEB4E;
+    border-radius: 18px;
+    line-height: 22px;
+    padding: 0 16px;
+}
+
+.gray_card .flex1 {
+	padding: 10px !important;
+	background-color: #fff;
+}
+
+.gray_card > p {
+	margin-bottom: 10px;
+ }
+ 
+ .gray_card > h2 {
+	font-weight: 700;
+ }
+ 
+ .gray_card .title {
+	font-size: 24px;
+ }

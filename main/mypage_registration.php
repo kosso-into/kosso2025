@@ -103,10 +103,699 @@
 				//} 
 			?>
 		</ul>
-		<div class="inner">
-            <!-- <img class="coming" src="./img/coming.png" /> -->
-            <!-- <div class="not_ready">Will be updated soon</div> -->
-            <img class="coming" src="./img/coming.png">
+		<!-- 행사끝나고 나서 공개예정 -->
+		<div class="rightT">
+			<button class="btn green_btn long mb20 certificate_brn" type="button">Certificate of Attendance</button>
+		</div>
+		<div class="table_wrap x_scroll">
+			<table class="table_vertical registration_table">
+				<thead>
+					<tr class="centerT">
+						<th>Registration No.</th>
+						<th><?=$locale("registration_category")?></th>
+						<th><?=$locale("registration_fee")?></th>
+						<th>Payment Method</th>
+						<th>Payment Status</th>
+						<th><?=$locale("management")?></th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php
+
+					foreach($registration_list as $list) {
+						$register_no = $list["idx"] ? "ICOMES2023-".$list["idx"] : "-";
+						$payment_url = "./registration2.php?idx={$list['idx']}";
+						$popup_class = "revise_pop_btn";
+						$price = $list["total_price_kr"] != "" ? "￦ ".number_format($list["total_price_kr"]) : ($list["total_price_us"] != "" ? "$ ".number_format($list["total_price_us"]) : "-");
+
+						// if($list["status"] != ""){
+						// }else{
+						//     $status_type = $language == "en" ? "holding" : "결제대기";
+						//     $payment_url = "./registration2.php?idx=".$list["idx"];
+						//     $popup_class = "";
+						//     $disabled = "";
+						// }
+
+						// 2023 Registeration 페이지 추가정보
+						// Type of Participation
+						$attendance_type = $list["attendance_type"] ?? "-";
+						switch($attendance_type) {
+							case 0:
+								$attendance_type = "Committee";
+								break;
+							case 1:
+								$attendance_type = "Invited Speaker";
+								break;
+							case 2:
+								$attendance_type = "Chairperson";
+								break;
+							case 3:
+								$attendance_type = "Panel";
+								break;
+							case 4:
+								$attendance_type = "General Participants";
+								break;
+						}
+
+						// Others
+						$welcome_reception_yn = $list["welcome_reception_yn"] ?? "N";
+						$day2_breakfast_yn = $list["day2_breakfast_yn"] ?? "N";
+						$day2_luncheon_yn = $list["day2_luncheon_yn"] ?? "N";
+						$day3_breakfast_yn = $list["day3_breakfast_yn"] ?? "N";
+						$day3_luncheon_yn = $list["day3_luncheon_yn"] ?? "N";
+
+						$other_html = "";
+
+						if($welcome_reception_yn == "Y"){
+							$other_html .= "
+											<input type='checkbox' class='checkbox' id='other1' disabled>
+											<label for='other1'><i></i>Welcome Reception – September 7(Thu)</label>
+										   ";
+						}
+						if($day2_breakfast_yn == "Y"){
+							$other_html .= $other_html != "" ? "<br/>" : "";
+							$other_html .= "
+											<input type='checkbox' class='checkbox' id='other2' disabled>
+											<label for='other2'><i></i>Day 2 Breakfast Symposium – September 8(Fri)</label>
+										   ";
+						}
+						if($day2_luncheon_yn == "Y"){
+							$other_html .= $other_html != "" ? "<br/>" : "";
+							$other_html .= "
+											<input type='checkbox' class='checkbox' id='other3' disabled>
+											<label for='other3'><i></i>Day 2 Luncheon Symposium – September 8(Fri)</label>
+										   ";
+						}
+						if($day3_breakfast_yn == "Y"){
+							$other_html .= $other_html != "" ? "<br/>" : "";
+							$other_html .= "
+											<input type='checkbox' class='checkbox' id='other4' disabled>
+											<label for='other4'><i></i>Day 3 Breakfast Symposium – September 9(Sat)</label>
+										   ";
+						}
+						if($day3_luncheon_yn == "Y"){
+							$other_html .= $other_html != "" ? "<br/>" : "";
+							$other_html .= "
+											<input type='checkbox' class='checkbox' id='other5' disabled>
+											<label for='other5'><i></i>Day 3 Luncheon Symposium – September 9(Sat)</label>
+										   ";
+						}
+
+						if($other_html == "") $other_html = "-";
+
+						// Conference Info
+						$info_html = "";
+						$info = explode("*", $list["conference_info"] ?? "");
+
+						for($a = 0; $a < count($info); $a++){
+							if($info[$a]){
+								$info_html .= $info_html != "" ? "<br/>" : "";
+								$info_html .= "
+												<input type='checkbox' class='checkbox' id='conference".$a."' disabled>
+												<label for='conference".$a."'><i></i>".$info[$a]."</label>
+											  ";
+							}
+						}
+
+						if($info_html == "") $info_html = "-";
+
+						// 결제정보
+						$payment_methods = $list["payment_methods"];
+						$payment_methods = $payment_methods == 1 ? "bank" : "card";
+
+						if($payment_methods == "card"){
+							if($list["price"] == 0){
+								$payment_methods = "Free";
+							}else{
+								$payment_methods = "Credit card";
+							}
+						}else{
+							$payment_methods = "Bank Transfer";
+						}
+
+				?>
+
+						<tr>
+							<td><?=$register_no ?? "-"?></td>					
+							<td><?=$list["member_type"]?></td>
+							<!--<td><?=$list["attendance_type"]?></td>-->
+							<!--<td><?=$price?></td>-->
+							<td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
+							<td><?=$payment_methods?></td>
+							
+
+							<?php if($list["status"] == 1){?>
+								<td>Payment Needed</td>
+								<td>
+									<?php if($list["payment_methods"] == 1){?>
+										<!--<a href="./online_registration.php" target="_blank" class="btn">Modify</a> 퍼블 ver-->
+										<a href="./registration.php?idx=<?=$list["idx"]?>" target="_blank" class="btn">Modify</a>
+									<?php }else{?>
+										<button type="button" class="btn payment_btn" data-url="<?=$payment_url?>">Payment</button>
+									<?php }?>
+									<button type="button" class="btn cancel_btn" data-idx="<?=$list["idx"]?>">Cancel</button>
+								</td>
+							<?php }else if($list["status"] == 2 || $list["status"] == 3){?>
+								<td>Complete</td>
+								<td>
+									<button type="button" class="btn review_regi_open">Review</button>
+									<button type="button" class="btn registration_receipt_btn" data-idx="<?=$list["idx"]?>">Receipt</button>
+									<!--<button type="button" class="btn payment_receipt_btn" data-tid="'.$list['payment_obj']['tid'].'">Payment Receipt</button>-->
+									<div class="review_data hidden">
+										<table class="detail_table">
+											<tbody>
+												<tr>
+													<th>Registration No.</th>
+													<td><?=$register_no ?? "-"?></td>
+												</tr>
+												<tr>
+													<th>Registration Date</th>
+													<td><?=$list["register_date2"] ?? "-"?></td>
+												</tr>
+												<tr>
+													<th>Name</th>
+													<td><?=$list["first_name"]." ".$list["last_name"]?></td>
+												</tr>
+												<tr>
+													<th>Country</th>
+													<td><?=$list["nation_en"]?></td>
+												</tr>
+												<tr>
+													<th>Affiliation</th>
+													<td><?=$list["affiliation"] ?? "-"?></td>
+												</tr>
+												<tr>
+													<th>Phone Number</th>
+													<td><?=$list["phone"] ?? "-"?></td>
+												</tr>
+												<tr>
+													<th>Member of KSSO</th>
+													<td>Member</td>
+												</tr>
+												<tr>
+													<th>Type of<br/>Participation</th>
+													<td><?=$attendance_type?></td>
+												</tr>
+												<tr>
+													<th>Category</th>
+													<td><?=$list["member_type"] ?? "-"?></td>
+												</tr>
+												<?php if($list["is_korea"] == 1){?>
+													<tr>
+														<th>평점신청</th>
+														<td><?=$list["is_score"] == 1 ? "필요" : "불필요"?></td>
+													</tr>
+													<tr>
+														<th>의사 면허번호</th>
+														<td><?=$list["licence_number"] ?? "Not applicable"?></td>
+													</tr>
+													<tr>
+														<th>전문의 번호</th>
+														<td><?=$list["specialty_number"] ?? "Not applicable"?></td>
+													</tr>
+													<tr>
+														<th>영양사 면허번호</th>
+														<td><?=$list["nutritionist_number"] ?? "Not applicable"?></td>
+													</tr>
+												<?php }?>
+												<tr>
+													<th>Others</th>
+													<td><?=$other_html?></td>
+												</tr>
+												<tr>
+													<th>Where did you get the <br/>information about<br/> the conference?</th>
+													<td><?=$info_html?></td>
+												</tr>
+												<!-- Credit Card 선택 시 -->
+												<tr class="tr_bg">
+													<th>Registration fee</th>
+													<td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Total Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Payment Method</th>
+													<td>
+														<input type="checkbox" disabled class="checkbox">
+														<label for="">
+															<i></i>
+															<?=$payment_methods?>
+														</label>
+													</td>
+												</tr>
+												<!-- 이전 개발 -->
+												<!-- 
+												<tr class="tr_bg">
+													<th>Payment Date</th>
+													<td><?=$list["payment_register_date"] ?? "-"?></td>
+												</tr>
+												-->
+												<!-- Credit Card 선택 시 퍼블ver -->
+												<!--
+												<tr class="tr_bg">
+													<th>Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Total Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Payment Method</th>
+													<td>
+														<input type="checkbox" disabled class="checkbox">
+														<label for="">
+															<i></i>
+															Credit Card 
+														</label>
+													</td>
+												</tr>
+												-->
+												<!-- Bank transfer 선택 시 -->
+												<!--
+												<tr class="tr_bg">
+													<th>Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Total Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Payment Method</th>
+													<td>
+														<input type="checkbox" disabled class="checkbox">
+														<label for="">
+															<i></i>
+															Bank Transfer
+														</label>
+													</td>
+												</tr>
+												<tr>
+													<th>Name of Bank</th>
+													<td>KEB Hana Bank</td>
+												</tr>
+												<tr>
+													<th>Branch</th>
+													<td>HANA BANK, HEAD OFFICE (35, EULJI-RO, JUNG-GU, Seoul, Korea)</td>
+												</tr>
+												<tr>
+													<th>Account Number</th>
+													<td>584-910003-16504</td>
+												</tr>
+												<tr>
+													<th>SWIFT CODE(BIC)</th>
+													<td>KOEXKRSE</td>
+												</tr>
+												<tr>
+													<th>Account Holder</th>
+													<td>대한비만학회 등록비<br>(International Congress on Obesity and Metabolic Syndrome)</td>
+												</tr>
+												-->
+											</tbody>
+										</table>
+									</div>
+								</td>
+							<?php }else{?>
+								<td>-</td>
+								<td>holding</td>
+							<?php }?>
+						</tr>
+				<?php
+					}
+
+					if(count($registration_list) < 1){
+						echo '<tr><td colspan="7">Empty registration</td></tr>';
+					}
+				?>
+				</tbody>
+			</table>
+		</div>
+    </div>
+
+	<div class="popup online_regi_pop">
+        <div class="pop_bg"></div>
+        <div class="pop_contents">
+            <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
+            <input type="hidden" name="registration_idx" value="">
+            <h3 class="pop_title">Online Registration</h3>
+            <div class="table_wrap detail_table_common x_scroll">
+				<table class="c_table detail_table fixed_table">
+					<colgroup>
+						<col width="150px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>ID(email)</th>
+							<td>bancya@naver.com</td>
+						</tr>
+						<tr>
+							<th>Name</th>
+							<td>ban hyeonjeong</td>
+						</tr>
+						<tr>
+							<th>Country</th>
+							<td>Korea</td>
+						</tr>
+						<tr>
+							<th>Member Type</th>
+							<td>Others(기타)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            <div class="table_wrap detail_table_common x_scroll mt10">
+				<table class="c_table detail_table fixed_table">
+					<colgroup>
+						<col width="150px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>Attendance Type</th>
+							<td>General Participants</td>
+						</tr>
+						<tr>
+							<th>Registration Type</th>
+							<td>on-site</td>
+						</tr>
+						<tr>
+							<th>Registration Fee</th>
+							<td>100,000 KRW</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            <div class="btn_wrap">
+                <button type="button" class="btn update_btn pop_save_btn">Save</button>
+            </div>
+        </div>
+    </div>
+
+	<div class="popup review_regi_pop">
+        <div class="pop_bg"></div>
+        <div class="pop_contents">
+            <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
+            <input type="hidden" name="registration_idx" value="">
+            <h3 class="pop_title">Review of Registration</h3>
+			<div class="pop_title_wrap">
+				<p>Registration Information</p>			
+			</div>
+            <div class="table_wrap detail_table_common x_scroll mt10">
+				<table class="c_table detail_table fixed_table" style="min-width:400px;">
+					<colgroup>
+						<col width="190px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>Registration No.</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Registration Date</th>
+							<td>MM-DD-2023 HH:MM:SS</td>
+						</tr>
+						<tr>
+							<th>Name</th>
+							<td>Gil-dong Hong</td>
+						</tr>
+						<tr>
+							<th>Country</th>
+							<td>Republic of Korea</td>
+						</tr>
+						<tr>
+							<th>Affiliation</th>
+							<td>Department of , Institution</td>
+						</tr>
+						<tr>
+							<th>Phone Number</th>
+							<td>82-10-1234-5678</td>
+						</tr>
+						<tr>
+							<th>Member of KSSO</th>
+							<td>Member</td>
+						</tr>
+						<tr>
+							<th>Type of<br/>Participation</th>
+							<td>Speaker</td>
+						</tr>
+						<tr>
+							<th>Category</th>
+							<td>Professor</td>
+						</tr>
+						<tr>
+							<th>평점신청</th>
+							<td>필요</td>
+						</tr>
+						<tr>
+							<th>의사 면허번호</th>
+							<td>123145</td>
+						</tr>
+						<tr>
+							<th>전문의 번호</th>
+							<td>14253</td>
+						</tr>
+						<tr>
+							<th>영양사 면허번호</th>
+							<td>Not applicable</td>
+						</tr>
+						<tr>
+							<th>Others</th>
+							<td>
+								<input type="checkbox" disabled class="checkbox">
+								<label for="">
+									<i></i>
+									Welcome Reception – September 7(Thu)
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th>Where did you get the <br/>information about<br/> the conference?</th>
+							<td>
+								<div>
+									<input type="checkbox" disabled class="checkbox">
+									<label for="">
+										<i></i>
+										Website of the Korea Society of Obesity
+									</label>
+								</div>
+								<div>
+									<input type="checkbox" disabled class="checkbox">
+									<label for="">
+										<i></i>
+										Promotional email from the Korea Society of Obesity
+									</label>
+								</div>
+							</td>
+						</tr>
+						<!-- Credit Card 선택 시 -->
+						<!--
+						<tr class="tr_bg">
+							<th>Registration fee</th>
+							<td>KRW 84,000</td>
+						</tr>
+						<tr class="tr_bg">
+							<th>Total Registration fee</th>
+							<td>KRW 84,000</td>
+						</tr>
+						<tr class="tr_bg">
+							<th>Payment Method</th>
+							<td>
+								<input type="checkbox" disabled class="checkbox">
+								<label for="">
+									<i></i>
+									Credit Card 
+								</label>
+							</td>
+						</tr>
+						-->
+						<!-- Bank transfer 선택 시 -->
+						<!--
+						<tr class="tr_bg">
+							<th>Registration fee</th>
+							<td>KRW 84,000</td>
+						</tr>
+						<tr class="tr_bg">
+							<th>Total Registration fee</th>
+							<td>KRW 84,000</td>
+						</tr>
+						<tr class="tr_bg">
+							<th>Payment Method</th>
+							<td>
+								<input type="checkbox" disabled class="checkbox">
+								<label for="">
+									<i></i>
+									Bank Transfer
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th>Name of Bank</th>
+							<td>KEB Hana Bank</td>
+						</tr>
+						<tr>
+							<th>Branch</th>
+							<td>HANA BANK, HEAD OFFICE (35, EULJI-RO, JUNG-GU, Seoul, Korea)</td>
+						</tr>
+						<tr>
+							<th>Account Number</th>
+							<td>584-910003-16504</td>
+						</tr>
+						<tr>
+							<th>SWIFT CODE(BIC)</th>
+							<td>KOEXKRSE</td>
+						</tr>
+						<tr>
+							<th>Account Holder</th>
+							<td>대한비만학회 등록비<br>(International Congress on Obesity and Metabolic Syndrome)</td>
+						</tr>
+						-->
+					</tbody>
+				</table>
+			</div>
+            <div class="btn_wrap">
+                <button type="button" class="btn pop_close" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup revise_pop">
+        <div class="pop_bg"></div>
+        <div class="pop_contents">
+            <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
+            <input type="hidden" name="registration_idx" value="">
+            <h3 class="pop_title">Participant Information</h3>
+            <div class="table_wrap form_table">
+                <form name="registration_form">
+					<table class="c_table2 detail_table">
+						<tbody>
+							<tr>
+								<th><?=$locale("id")?> *</th>
+								<td><input type="text" name="email" readonly></td>
+							</tr>
+							<tr>
+								<th><?=$locale("country")?> *</th>
+								<td>
+									<select class="update" name="nation_no">
+										<option selected disabled>Choose </option>
+									<?php
+										foreach($nation_list as $list){
+											$nation = $language == "en" ? $list["nation_en"] : $list["nation_ko"];
+											echo "<option value='".$list["idx"]."'>".$nation."</option>";
+										}
+									?>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th><?=$locale("first_name")?> *</th>
+								<td><input type="text" name="first_name" value="Jihye" readonly></td>
+							</tr>
+							<tr>
+								<th><?=$locale("last_name")?> *</th>
+								<td><input type="text" name="last_name" value="Lee" readonly></td>
+							</tr>
+							<tr>
+								<th><?=$locale("phone")?> *</th>
+								<td>
+									<div class="phone_div clearfix2">
+										<select name="nation_tel"> 
+											<option selected disabled></option>
+										</select>
+										<input type="text" name="phone" placeholder="010-1234-1234" readonly></td>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th><?=$locale("affiliation")?></th>
+								<td><input class="update" type="text" name="affiliation"></td>
+							</tr>
+							<tr>
+								<th><?=$locale("department")?></th>
+								<td><input class="update" type="text" name="department"></td>
+							</tr>
+							<tr>
+								<th>평점신청(Korean Only) * <br><span class="is_scroe_txt red_txt">(Overseas participants, please check '미신청').</th>
+								<td class="banquet_style">
+									<input type="radio" class="radio" id="applied" name="rating" value="1"><label class="banquet_label" for="applied">신청</label>
+									<input type="radio" class="radio" id="not_applied" name="rating" value="0"><label for="not_applied">미신청</label>
+								</td>
+							</tr>
+							<tr class="org tab_contents">
+								<th><?php echo $locale("applied_org")?></th>
+								<td>
+									<input type="checkbox" class="checkbox org_01" id="checkbox1" name="org" value="1"><label for="checkbox1"><?php echo $locale("applied_org1")?></label></br>
+									<input type="checkbox" class="checkbox registration_check org_03" id="checkbox3" name="org" value="3"><label for="checkbox3"><?php echo $locale("applied_org3")?></label></br>
+									<input type="checkbox" class="checkbox registration_check org_04" id="checkbox4" name="org" value="4"><label for="checkbox4"><?php echo $locale("applied_org4")?></label></br>
+								</td>
+							</tr>
+							<tr>
+								<th>Licence Number *</th>
+								<td>
+									<div class="text_l mb10">
+										<input type="checkbox" class="checkbox" id="license_checkbox" name="license_checkbox">
+										<label class="tight" for="license_checkbox"><i>Not applicable</i></label>
+									</div>
+									<input class="update" type="text" name="licence_number">
+								</td>
+							</tr>
+							<tr>
+								<th>KSSO Member Status *</th>
+								<td class="banquet_style">
+									<input type="radio" class="radio" id="member" name="member_status" value="1">
+									<label for="member" class="banquet_label"><?=$locale("member_status_select1")?></label>
+									<input type="radio" class="radio" id="non_member" name="member_status" value="0">
+									<label for="non_member"><?=$locale("member_status_select2")?></label>
+								</td>
+							</tr>
+							<!-- <tr> -->
+							<!-- 	<th>KSSO Academy number *</th> -->
+							<!-- 	<td><input class="update" type="text" name="academy_number"></td> -->
+							<!-- </tr> -->
+							<!-- <tr> -->
+							<!-- 	<th>Congress Banquet Ceremony *</th> -->
+							<!-- 	<td class="banquet_style"> -->
+							<!-- 		<input type="radio" class="radio" id="banquet1" name="banquet_yn" value="Y"><label class="banquet_label" for="banquet1">Attend</label> -->
+							<!-- 		<input type="radio" class="radio" id="banquet2" name="banquet_yn" value="N"><label for="banquet2">Absent</label> -->
+							<!-- 	</td> -->
+							<!-- </tr> -->				
+						</tbody>   
+                    </table>
+                </form>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="btn update_btn pop_save_btn"><?=$locale("save_btn")?></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="popup receipt_pop" style="display: block;"> -->
+    <!--     <div class="pop_bg"></div> -->
+    <!--     <div class="pop_contents"> -->
+    <!--         <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button> -->
+    <!--         <input type="hidden" name="registration_idx" value=""> -->
+    <!--         <h3 class="pop_title">Registration Receipt</h3> -->
+    <!--         <img src="./img/img_receipt.png" alt="" class="img_cont"> -->
+    <!--         <div class="btn_wrap"> -->
+    <!--             <button type="button" class="btn update_btn pop_save_btn"><?=$locale("save_btn")?></button> -->
+    <!--         </div> -->
+    <!--     </div> -->
+    <!-- </div> -->
+
+    <div class="popup payment_pop">
+        <div class="pop_bg"></div>
+        <div class="pop_contents">
+            <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
+            <input type="hidden" name="registration_idx" value="">
+            <h3 class="pop_title">Payment</h3>
+            <img src="./img/img_payment.png" alt="">
+            <div class="btn_wrap">
+                <button type="button" class="btn update_btn pop_save_btn"><?=$locale("save_btn")?></button>
+            </div>
         </div>
     </div>
 </section>

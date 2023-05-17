@@ -10,7 +10,8 @@
 		$select_sql = "SELECT
 							ksola_member_check
 						FROM member
-						WHERE ksola_member_check = '".$data['id']."'";
+						WHERE ksola_member_check = '".$data['id']."'
+						AND is_deleted = 'N'";
 
 		$check_id = sql_fetch($select_sql)['ksola_member_check'];
 

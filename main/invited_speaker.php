@@ -7,101 +7,104 @@
         <div class="section section1 invited_speaker">
             <div class="keynote_area">
                 <!-- <img class="coming" src="./img/coming.png" /> -->
-				<!--
+                <!--
 				<ul class="tab_green CenterserT">
 					<li id="tab1" class="on"><a href="javascript:;">Plenary Lecture</a></li>
 					<li id="tab2"><a href="javascript:;">Keynote Lecture</a></li>
 				</ul> -->
-				<div class="tab_wrap">
-					<div class="tab_cont on">
-						<ul class="speaker_list">
-							<li>
-								<div class="top_wrap">
-									<h2>Plenary Lecture 2</h2>
-									<span class="date text_r">15:40-16:20,<br class="br_530_only"> Sep. 8(Fri)</span>
-								</div>
-								<div class="bottom_wrap">
-									<div class="flex">
-										<div class="profile_wrap">
-											<img src="./img/img_prof_Robert_R_Wolfe.jpg">
-										</div>
-										<div class="desc_wrap flex1">
-											<p class="">TBD</p>
-											<div>
-												<h4 class="title">Robert R. Wolfe</h4>
-												<h5>University of Arkansas for Medical Sciences, USA</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="top_wrap">
-									<h2>Keynote Lecture 1</h2>
-									<span class="date text_r">11:10-11:50,<br class="br_530_only"> Sep. 8(Fri)</span>
-								</div>
-								<div class="bottom_wrap">
-									<div class="flex">
-										<div class="profile_wrap">
-											<img src="./img/img_prof_Matthias_Bluher.png">
-										</div>
-										<div class="desc_wrap flex1">
-											<p class="">Adipocyte Biology</p>
-											<div>
-												<h4 class="title">Matthias Blüher</h4>
-												<h5>Universitätsklinikum Leipzig,<br>Germany</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="top_wrap">
-									<h2>Keynote Lecture 3</h2>
-									<span class="date text_r">13:50-14:20,<br class="br_530_only"> Sep. 9(Sat)</span>
-								</div>
-								<div class="bottom_wrap">
-									<div class="flex">
-										<div class="profile_wrap">
-											<img src="./img/img_prof_Zachary A_Knight.png">
-										</div>
-										<div class="desc_wrap flex1">
-											<p class="">Dopamine Subsystems That Track Internal States</p>
-											<div>
-												<h4 class="title">Zachary Knight</h4>
-												<h5>University of California, San Francisco, USA</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="top_wrap">
-									<h2>Keynote Lecture 4</h2>
-									<span class="date text_r">15:20-15:50,<br class="br_530_only"> Sep. 9(Sat)</span>
-								</div>
-								<div class="bottom_wrap">
-									<div class="flex">
-										<div class="profile_wrap">
-											<img src="./img/img_prof_jae_Heon_Kang.jpg">
-										</div>
-										<div class="desc_wrap flex1">
-											<p class="">TBD</p>
-											<div>
-												<h4 class="title">Jae-Heon Kang</h4>
-												<h5>Sungkyunkwan University, Republic of Korea</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							
+                <div class="tab_wrap">
+                    <div class="tab_cont on">
+                        <ul class="speaker_list">
+                            <li>
+                                <div class="top_wrap">
+                                    <h2>Plenary Lecture 2</h2>
+                                    <span class="date text_r">15:40-16:20,<br class="br_530_only"> Sep. 8(Fri)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_prof_Robert_R_Wolfe.jpg">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
+                                            <div>
+                                                <h4 class="title">Robert R. Wolfe</h4>
+                                                <h5>University of Arkansas for Medical Sciences, USA</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top_wrap">
+                                    <h2>Keynote Lecture 1</h2>
+                                    <span class="date text_r">11:10-11:50,<br class="br_530_only"> Sep. 8(Fri)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_prof_Matthias_Bluher.png">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">Adipocyte Biology</p>
+                                            <div>
+                                                <h4 class="title">Matthias Blüher</h4>
+                                                <h5>Universitätsklinikum Leipzig,<br>Germany</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top_wrap">
+                                    <h2>Keynote Lecture 3</h2>
+                                    <span class="date text_r">13:50-14:20,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_prof_Zachary A_Knight.png">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">Dopamine Subsystems That Track Internal States</p>
+                                            <div>
+                                                <h4 class="title">Zachary Knight</h4>
+                                                <h5>University of California, San Francisco, USA</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top_wrap">
+                                    <h2>Keynote Lecture 4</h2>
+                                    <span class="date text_r">15:20-15:50,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex" id="symposia">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_prof_jae_Heon_Kang.jpg">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">TBD</p>
+                                            <div>
+                                                <h4 class="title">Jae-Heon Kang</h4>
+                                                <h5>Sungkyunkwan University, Republic of Korea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
-							<!--230525 invited speaker ====================================================================== 
-                            <li class="green">
+
+                            <!--230516 Symposia ====================================================================== -->
+                        </ul>
+                        <h1 class="area_title">Symposia</h1>
+                        <ul class="speaker_list_2">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 1
-                                    <span class="yellow_tag">09:20-09:40, Sep. 8(Fri)</span>
+                                    <span class="green_tag">09:20-09:40, Sep. 8(Fri)</span>
                                 </h2>
                                 <p>Obesity and the Risk of Cancer</p>
                                 <div class="flex">
@@ -112,10 +115,10 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 1
-                                    <span class="yellow_tag">10:00-10:20, Sep. 8(Fri)</span>
+                                    <span class="green_tag">10:00-10:20, Sep. 8(Fri)</span>
                                 </h2>
                                 <p>Obesity Care in Cancer Survivors
                                 </p>
@@ -129,11 +132,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 6
 
-                                    <span class="yellow_tag">14:00-14:20, Sep. 8(Fri)
+                                    <span class="green_tag">14:00-14:20, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing
@@ -148,14 +151,15 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 6
 
-                                    <span class="yellow_tag">14:20-14:40, Sep. 8(Fri)
+                                    <span class="green_tag">14:20-14:40, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>The Proinflammatory Effects of Chronic Excessive Exercise
+                                    <br /><br />
                                 </p>
                                 <div class="flex">
                                     <div class="desc_wrap flex1" style="padding: 0;">
@@ -167,11 +171,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 6
 
-                                    <span class="yellow_tag">14:40-15:00, Sep. 8(Fri)
+                                    <span class="green_tag">14:40-15:00, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>TBD
@@ -186,11 +190,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 7
 
-                                    <span class="yellow_tag">14:00-14:20, Sep. 8(Fri)
+                                    <span class="green_tag">14:00-14:20, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>Adipose Metabolic Control
@@ -205,11 +209,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 7
 
-                                    <span class="yellow_tag">14:40-15:00, Sep. 8(Fri)
+                                    <span class="green_tag">14:40-15:00, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>Microbiota in Obesity-Related Metabolic Diseases
@@ -224,11 +228,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 11
 
-                                    <span class="yellow_tag">16:30-16:50, Sep. 8(Fri)
+                                    <span class="green_tag">16:30-16:50, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>Food and Nutrition Services in Assisted Living Facilities for Older Adults
@@ -243,11 +247,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 11
 
-                                    <span class="yellow_tag">16:50-17:10, Sep. 8(Fri)
+                                    <span class="green_tag">16:50-17:10, Sep. 8(Fri)
                                     </span>
                                 </h2>
                                 <p>Community-Based Strategies to Decrease Health Disparities and Improve Nutritional
@@ -263,14 +267,15 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 11
 
-                                    <span class="yellow_tag">17:10-17:30, Sep. 8(Fri)
+                                    <span class="green_tag">17:10-17:30, Sep. 8(Fri)
                                     </span>
                                 </h2>
-                                <p>Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare
+                                <p>Nutrition Management Strategies for the Elderly and the Disabled in Social
+                                    Welfare
                                     Facilities
                                 </p>
                                 <div class="flex">
@@ -283,11 +288,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 12
 
-                                    <sp class="yellow_tag">16:50-17:10, Sep. 8(Fri)
+                                    <sp class="green_tag">16:50-17:10, Sep. 8(Fri)
                                     </sp an>
                                 </h2>
                                 <p>Lifestyle Intervention on Biomarkers of Type 2 Diabetes in Obese Youth vs Adult
@@ -302,14 +307,15 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 13
 
-                                    <span class="yellow_tag">09:20-09:40, Sep. 9(Sat)
+                                    <span class="green_tag">09:20-09:40, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>MAFLD and NAFLD in the Prediction of Incident Chronic Kidney Disease
+                                    <br /><br />
                                 </p>
                                 <div class="flex">
                                     <div class="desc_wrap flex1" style="padding: 0;">
@@ -321,11 +327,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 14
 
-                                    <span class="yellow_tag">09:20-09:40, Sep. 9(Sat)
+                                    <span class="green_tag">09:20-09:40, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>TBD
@@ -340,11 +346,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 14
 
-                                    <span class="yellow_tag">09:40-10:00, Sep. 9(Sat)
+                                    <span class="green_tag">09:40-10:00, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>TBD
@@ -359,14 +365,15 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 14
 
-                                    <span class="yellow_tag">10:00-10:20, Sep. 9(Sat)
+                                    <span class="green_tag">10:00-10:20, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>TBD
+                                    <br /><br />
                                 </p>
                                 <div class="flex">
                                     <div class="desc_wrap flex1" style="padding: 0;">
@@ -377,14 +384,15 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 15
 
-                                    <span class="yellow_tag">09:20-09:40, Sep. 9(Sat)
+                                    <span class="green_tag">09:20-09:40, Sep. 9(Sat)
                                     </span>
                                 </h2>
-                                <p>Food and Nutrition Surveillance System for Monitoring Obesity and Health Status in
+                                <p>Food and Nutrition Surveillance System for Monitoring Obesity and Health Status
+                                    in
                                     the US
                                 </p>
                                 <div class="flex">
@@ -397,11 +405,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 15
 
-                                    <span class="yellow_tag">09:40-10:00, Sep. 9(Sat)
+                                    <span class="green_tag">09:40-10:00, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>Influence of Social and Environmental Factors on Obesity
@@ -416,11 +424,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 15
 
-                                    <span class="yellow_tag">10:00-10:20, Sep. 9(Sat)
+                                    <span class="green_tag">10:00-10:20, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>Socioeconomic Inequalities in Obesity
@@ -435,11 +443,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 17
 
-                                    <span class="yellow_tag">16:40-17:00, Sep. 9(Sat)
+                                    <span class="green_tag">16:40-17:00, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>Triple G Agonist
@@ -449,37 +457,39 @@
                                         <h4 class="title">Se Hee Min
                                         </h4>
                                         <h5>Univeristy of Ulsan, Republic of Korea
+                                            <br /><br />
                                         </h5>
                                     </div>
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 18
 
-                                    <span class="yellow_tag">16:00-16:20, Sep. 9(Sat)
+                                    <span class="green_tag">16:00-16:20, Sep. 9(Sat)
                                     </span>
                                 </h2>
-                                <p></p>
+                                <p>TBD</p>
                                 <div class="flex">
                                     <div class="desc_wrap flex1" style="padding: 0;">
                                         <h4 class="title">Michael Krashes
                                         </h4>
-                                        <h5>National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA
+                                        <h5>National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK),
+                                            USA
                                         </h5>
                                     </div>
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 18
 
-                                    <span class="yellow_tag">16:20-16:40, Sep. 9(Sat)
+                                    <span class="green_tag">16:20-16:40, Sep. 9(Sat)
                                     </span>
                                 </h2>
-                                <p></p>
+                                <p>TBD</p>
                                 <div class="flex">
                                     <div class="desc_wrap flex1" style="padding: 0;">
                                         <h4 class="title">Yu Fu
@@ -490,14 +500,14 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 18
 
-                                    <span class="yellow_tag">16:40-17:00, Sep. 9(Sat)
+                                    <span class="green_tag">16:40-17:00, Sep. 9(Sat)
                                     </span>
                                 </h2>
-                                <p></p>
+                                <p>TBD</p>
                                 <div class="flex">
                                     <div class="desc_wrap flex1" style="padding: 0;">
                                         <h4 class="title">Changjoon Lee
@@ -508,11 +518,11 @@
                                 </div>
                             </li>
 
-                            <li class="green">
+                            <li class="gray_card">
                                 <h2>
                                     Symposium 19
 
-                                    <span class="yellow_tag">16:40-17:00, Sep. 9(Sat)
+                                    <span class="green_tag">16:40-17:00, Sep. 9(Sat)
                                     </span>
                                 </h2>
                                 <p>Comorbidities of Childhood Obesity ; Psychiatric Disorder
@@ -526,83 +536,12 @@
                                     </div>
                                 </div>
                             </li>
+                            <!-- ================================================================================================ -->
 
 
-
-						</ul>
-					</div>
-					<div class="tab_cont">
-						<ul class="speaker_list">
-							<li class="green">
-								<h2>
-									Keynote Lecture 1
-									<span class="yellow_tag">Date &Time</span>
-								</h2>
-								<p>Up close & personal with vascular diseases: the role of precision medicine</p>
-								<div class="flex">
-									<div class="profile_wrap">
-										<img src="./img/img_prof_sample.png">
-									</div>
-									<div class="desc_wrap flex1">
-										<h4 class="title">Name</h4>
-										<h5>Affiliation, Country</h5>
-									</div>
-								</div>
-							</li>
-							<li class="green">
-								<h2>
-									Keynote Lecture 2
-									<span class="yellow_tag">Date &Time </span>
-								</h2>
-								<p>Up close & personal with vascular diseases: the role of precision medicine</p>
-								<div class="flex">
-									<div class="profile_wrap">
-										<img src="./img/img_prof_sample.png">
-									</div>
-									<div class="desc_wrap flex1">
-										<h4 class="title">Name</h4>
-										<h5>Affiliation, Country</h5>
-									</div>
-								</div>
-							</li>
-							<li class="green">
-								<h2>
-									Keynote Lecture 3
-									<span class="yellow_tag">Date &Time </span>
-								</h2>
-								<p>Up close & personal with vascular diseases: the role of precision medicine</p>
-								<div class="flex">
-									<div class="profile_wrap">
-										<img src="./img/img_prof_sample.png">
-									</div>
-									<div class="desc_wrap flex1">
-										<h4 class="title">Name</h4>
-										<h5>Affiliation, Country</h5>
-									</div>
-								</div>
-							</li>
-							<li class="green">
-								<h2>
-									Keynote Lecture 4
-									<span class="yellow_tag">Date &Time</span>
-								</h2>
-								<p>Up close & personal with vascular diseases: the role of precision medicine</p>
-								<div class="flex">
-									<div class="profile_wrap">
-										<img src="./img/img_prof_sample.png">
-									</div>
-									<div class="desc_wrap flex1">
-										<h4 class="title">Name</h4>
-										<h5>Affiliation, Country</h5>
-									</div>
-								</div>
-							</li>-->
-
-
-
-						</ul>
-					</div>
-				</div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

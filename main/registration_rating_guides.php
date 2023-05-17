@@ -5,12 +5,10 @@ include_once('./include/header.php');
 
 <section class="container registration">
 	<h1 class="page_title">평점 안내</h1>
+	<!-- <div class="inner"> -->
+	<!-- 	<img class="coming" src="./img/coming.png"> -->
+	<!-- </div> -->
 	<div class="inner">
-		<!-- <img class="coming" src="./img/coming.png" /> -->
-		<!-- <div class="not_ready">Will be updated soon</div> -->
-		<img class="coming" src="./img/coming.png">
-	</div>
-	<div class="inner hidden">
 		<!--1. 연수 평점 안내 start-->
 		<h3 class="title">연수 평점 안내</h3>
 		<div class="details">

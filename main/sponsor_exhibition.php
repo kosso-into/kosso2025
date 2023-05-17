@@ -9,8 +9,8 @@
 			<h1>Exhibition</h1>
 		</div> -->
 		<div class="sponsor_exhibition">
-			<img class="coming" src="./img/coming.png" />
-			<!-- <div>
+			<!-- <img class="coming" src="./img/coming.png" /> -->
+			<div>
 				<h2>3F</h2>
 				<div class="clearfix2">
 					<img src="./img/sponsor/img_exhibition01.jpg" alt="">
@@ -271,7 +271,7 @@
 						</tbody>
 					</table>
 				</div>
-			</div> -->
+			</div> 
 		</div>
 	</div>
 </section>

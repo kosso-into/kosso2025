@@ -110,13 +110,10 @@
 		</div>
 		<div class="section">
 			<h3 class="title">How to apply</h3>
-            <div class="text_box indent">
+			<div class="text_box indent">
                 <ul>
-                    <li class="f_bold"><span class="bold">1) </span>A valid passport</li>
-                    <li class="f_bold"><span class="bold">2) </span>Credit cards (for fee
-                        payment)<br>&nbsp;&nbsp;&nbsp;- 10,000 KRW (approximately $9-10, Additional fee excluded).</li>
-                    <li class="f_bold"><span class="bold">1) </span>Email address</li>
-                    <li class="f_bold"><span class="bold">2) </span>Recent profile photo</li>
+                    <li>• You can apply for your K-ETA at the official K-ETA website <a href="http://www.k-eta.go.kr" class="link">www.k-eta.go.kr</a> PC and mobile app.</li>
+                    <li>• You must apply for K-ETA at least 72 hours before boarding your flight or ship bound for the Republic of Korea. (Due to the increased number of K-ETA applicants, the process is currently taking more than 72 hours)</li>
                 </ul>
             </div>
 		</div>
