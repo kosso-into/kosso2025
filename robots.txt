@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /main/admin/
-Disallow: /main/live/
-Disallow: /main/pdf_library/
-Disallow: /main/pg_demo(local)/
-Disallow: /main/plugin/
-Allow: /
-Allow: /main/
-Sitemap: https://icomes.or.kr/sitemap.xml
