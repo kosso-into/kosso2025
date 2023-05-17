@@ -1,0 +1,59 @@
+<?php
+	include_once('./include/head.php');
+	include_once('./include/header.php');
+
+	$member_idx = $_GET["idx"];
+	if(!$member_idx) {
+		echo"<script>alert('비정상적인 접근 방법입니다.'); window.location.replace('./member_list.php');</script>";
+		exit;
+	}
+?>
+	<section class="detail">
+		<div class="container">
+			<div class="title clearfix2">
+				<h1 class="font_title">일반회원</h1>
+			</div>
+			<div class="contwrap has_fixed_title">
+				<?php include_once("./include/member_nav.php");?>
+				<table class="list_table">
+					<thead>
+						<tr class="tr_center">
+							<th>일자</th>
+							<th>출석일시</th>
+							<th>E-Booth 방문 스탬프</th>
+							<th>E-Poster 댓글 스탬프</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="tr_center">
+							<td>2021-09-02</td>
+							<td>2021-09-02 15:07</td>
+							<td>18</td>
+							<td>9</td>
+						</tr>
+						<tr class="tr_center">
+							<td>2021-09-03</td>
+							<td>2021-09-03 15:07</td>
+							<td>17</td>
+							<td>10</td>
+						</tr>
+						<tr class="tr_center">
+							<td>2021-09-02</td>
+							<td>2021-09-02 15:07</td>
+							<td>18</td>
+							<td>9</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_wrap">
+					<button type="button" class="border_btn" onclick="location.href='./member_list.php'">목록</button>
+				</div>
+			</div>
+		</div>
+	</section>
+<script>
+$(document).ready(function(){
+	$(".tab_wrap").children("li").eq(5).addClass("active");
+});
+</script>
+<?php include_once('./include/footer.php');?>

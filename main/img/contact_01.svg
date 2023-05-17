@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_400" data-name="사각형 400" width="104.006" height="104" fill="#666"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_271" data-name="그룹 271" transform="translate(-360 -1069)">
+    <rect id="사각형_395" data-name="사각형 395" width="180" height="180" rx="20" transform="translate(360 1069)" fill="#f4f4f4" opacity="0.999"/>
+    <g id="그룹_270" data-name="그룹 270" transform="translate(-7 -7)">
+      <g id="그룹_267" data-name="그룹 267" transform="translate(405 1114)">
+        <g id="그룹_266" data-name="그룹 266" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <path id="패스_1847" data-name="패스 1847" d="M52,104a52,52,0,1,1,52-52,52.061,52.061,0,0,1-52,52M52,6.619A45.384,45.384,0,1,0,97.389,52,45.44,45.44,0,0,0,52,6.619" transform="translate(0 0.001)" fill="#666"/>
+        </g>
+      </g>
+      <text id="P" transform="translate(441.143 1186.692)" fill="#10bf99" font-size="63" font-family="NanumGothicBold, NanumGothic"><tspan x="0" y="0">P</tspan></text>
+    </g>
+  </g>
+</svg>

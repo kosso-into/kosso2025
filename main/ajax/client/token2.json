@@ -1,0 +1,18 @@
+{
+    "web":
+    {
+        "client_id":"510589391680-cuvpn6o0692dlll8l75eu2ja24n2m32v.apps.googleusercontent.com",
+        "project_id":"apt-aleph-353908",
+        "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+        "token_uri":"https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret":"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",
+        "redirect_uris":["https://developers.google.com/oauthplayground","https://mail.google.com","https://www.googleapis.com/auth/gmail.readonly","https://icomes.or.kr/main/common/lib/gmail_api.php","https://icomes.or.kr/main/ajax/client/ajax_gmail.php"],
+        "javascript_origins":["https://icomes.or.kr","https://mail.google.com"],
+        "access_token": "ya29.a0ARrdaM9-N46PNTnB0QXovLgR0AGYpW0Du0ug5dFGaskNu_NSaWikFVF7N3q-qyCWCiJrkQVSdIQlvytnKsMV3Q-S9XfFrMgTIR1462MuoDZeQih-2m8_Vql5JX-LPPelTTm0rVZjA50MNDXvtYIhDvkiH9YY", 
+          "scope": "https://mail.google.com/ https://www.googleapis.com/auth/gmail.modify https://www.googleapis.com/auth/gmail.readonly", 
+          "token_type": "Bearer", 
+          "expires_in": 3599, 
+          "refresh_token": "1//045TcOOHTYjQMCgYIARAAGAQSNwF-L9IrbT9N9oyGgp4or95Yc7LXQYheyQn79k2vpKdH4u-MHKIOPjTXMYROBOssg1z3Jno4Qy8"
+    }
+}

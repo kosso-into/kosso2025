@@ -1,0 +1,97 @@
+<?php
+include_once('./include/head.php');
+include_once('./include/header.php');
+
+// key date
+$sql_key_date =	"SELECT
+						idx, `key_date`, contents_" . $language . " AS contents
+					FROM key_date
+					WHERE `type` = 'lecture'
+					AND `key_date` <> '0000-00-00'
+					ORDER BY idx";
+
+$key_date = get_data($sql_key_date);
+
+// info
+$sql_info = "SELECT
+					note_msg_" . $language . " AS note_msg,
+					formatting_guidelines_" . $language . " AS formatting_guidelines,
+					how_to_modify_" . $language . " AS how_to_modify
+				FROM info_lecture";
+$info = sql_fetch($sql_info);
+?>
+<section class="abstract_submission_oral container">
+	<div class="inner">
+		<h1 class="page_title">Oral Presenters</h1>
+		<!-- <ul class="tab_green long">
+            <li><a href="./abstract_submission_guideline.php">Abstract Submission Guideline</a></li>
+            <li><a href="./abstract_submission.php" class="online_submission_alert">Online Submission</a></li>
+            <li class="on"><a href="./abstract_submission_oral.php">Oral Presenters</a></li>
+            <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li>
+            <li><a href="./abstract_submission_award.php">Awards & Grants</a></li>
+        </ul> -->
+		<div class="section section1">
+			<div>
+				<!-- <div class="text_box">
+                    <ul>
+                        <li>Congratulations on the acceptance of you abstract as “Oral Presentation”. Please refer to
+                            the following request for the oral presenters.</li>
+                    </ul>
+                </div> -->
+			</div>
+			<img class="coming" src="./img/coming.png" />
+			<!--keydate start-->
+			<!-- <div>
+				<div class="section_title_wrap2">
+					<h3 class="title">
+				     <?= $locale("keydate") ?>Key Dates</h3> 
+			<!-- </div> -->
+			<!-- <div class="table_wrap detail_table_common">
+					<table class="c_table detail_table">
+						<colgroup>
+							<col class="submission_col">
+							<col>
+						</colgroup>
+						<tr>
+							<th>Notification of Acceptance</th>
+							<td><?= date_format(date_create($key_date[1]['key_date']), "F d(D), Y"); ?></td>
+						</tr>
+					</table>
+				</div>	
+				<div class="text_center btn_box mt25">
+					<a href="./download/Oral Presentation List_0810.pdf" class="btn long_btn guideline_btn" target="_blank" download><img src="./img/icons/icon_download_yellow.svg" alt="">Oral Presenters List</a>
+				</div>
+			</div>
+			<div>
+				<div class="section_title_wrap2">
+					<h3 class="title">Oral Presentation Guideline</h3>
+				</div>
+				<div class="text_center guideline_btn_wrap"><a href="./download/ICOMES_2022_Oral Presentation Form.pptx" class="btn long_btn guideline_btn" download><img src="./img/icons/icon_download_yellow.svg" alt="">Oral Presentation Form </a></div>
+				<div class="text_box">
+					<ul>
+						<li>· Please submit the poster in PDF/PPT file format. (icomes_abstract@into-on.com)</li>
+						<li><br/>· All presenters are required to give an oral presentation (7 minutes or less) by creating presentation slides. Please refer to the instructions.</li>
+						<li><br/>· Upload your final presentation slides in the preview room at least 1 hour before the session begins .</li>
+						<li>
+							· Date & Time(It is possible to select a preferred time, but it may inevitably be changed.)
+							<p class="purple_t bold">- Oral presentation 1&2 Sep 2(Fri) 1:00 pm~2:00 pm</p>
+							<p class="purple_t bold">- Oral presentation 3&4 Sep 3(Sat) 12:50 pm~13:50 pm</p>
+							<p class="purple_t bold">- Awards Ceremony Sep 3(Sat) 5:40 pm~6:00 pm<br/>
+								<span class="red_txt">(If you do not attend the awards ceremony, you will be excluded from the list of winners.)</span>
+							</p>
+						</li>
+						<li>· Language: English</li>
+						<li><br/>· Allocated time: 7 minutes talk & 3 minutes discussion</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+			<!--//section1-->
+
+		</div>
+		<!-- <button type="button" class="fixed_btn" onclick="window.location.href='./abstract_submission.php';"><?= $locale("abstract_submission_btn") ?></button> -->
+</section>
+
+
+
+<?php include_once('./include/footer.php'); ?>

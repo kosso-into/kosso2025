@@ -1,0 +1,142 @@
+<?php
+	include_once('./include/header.php');
+
+	// 팝업 영상 주소
+	$sql_info_live =	"SELECT
+							il.popup_video_url
+						FROM info_live AS il
+						LEFT JOIN `file` AS fi_cb_en
+							ON fi_cb_en.idx = il.conference_book_en_img";
+	$info_live = sql_fetch($sql_info_live);
+?>
+		<section class="container index">
+			<img src="./images/img/img_indexbg.png" alt="" usemap="#mapping" id='index-background'>
+			<!--<map name="mapping" id="mapping">
+				<area shape="rect" coords="790,760,1180,955" href="./registration.php" alt="">
+				<area shape="rect" coords="109,676,445,882" href="./lecture.php" alt="">
+				<area shape="rect" coords="760,670,900,828" href="./eposter_list.php" alt="">
+				<area shape="rect" coords="975,670,1210,828" href="./online_booth.php" alt="">
+				<area shape="rect" coords="1285,670,1430,828" href="./event_intro.php" alt="">
+			</map>-->
+			<ul class="index_location">
+				<li class="registration">
+					<a href="./registration.php"></a>
+				</li>
+				<li class="lecture">
+					<a href="./lecture.php">
+						<img src="./images/img/img_lecture_hn_ic.png" alt="">
+						<img src="./images/img/img_lecture_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<li class="eposter booth1">
+					<a href="./eposter_list.php">
+						<img src="./images/img/img_poster_hn_ic.png" alt="">
+						<img src="./images/img/img_poster_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<li class="online_booth booth2">
+					<a href="./online_booth.php">
+						<img src="./images/img/img_online_hn_ic.png" alt="">
+						<img src="./images/img/img_online_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<li class="event_zone booth3">
+					<a href="./event_intro.php">
+						<img src="./images/img/img_event_hn_ic.png" alt="">
+						<img src="./images/img/img_event_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<li class="program pos1">
+					<a href="./tiva.php">
+						<img src="./images/img/img_program_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<li class="mypage pos2">
+					<a class="table_open" href="javascript:;">
+						<img src="./images/img/img_mypage_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<li class="abstract pos3">
+					<a href="javascript:alert('준비중입니다');">
+						<img src="./images/img/img_abstract_ic.png" alt="" class="hover_img">
+					</a>
+				</li>
+				<!-- https://www.aises.org/sites/default/files/documents/National%20Conference/Abstract%20Guidelines%20and%20Samples.pdf -->
+				<li class="partner_slick" style="border:1px solid;">
+					<ul>
+						<li><img src="./images/icon/card_alvogen.png" alt=""></li>
+						<li><img src="./images/icon/card_msd.png" alt=""></li>
+						<li><img src="./images/icon/card_nordisk.png" alt=""></li>
+						<li><img src="./images/icon/card_daewoong.png" alt=""></li>
+						<li><img src="./images/icon/card_yuhan.png" alt=""></li>
+						<li><img src="./images/icon/card_ckd.png" alt=""></li>
+						<li><img src="./images/icon/card_hanbok.png" alt=""></li>
+						<li><img src="./images/icon/card_dongA.png" alt=""></li>
+						<li><img src="./images/icon/card_hanmi.png" alt=""></li>
+						<li><img src="./images/icon/card_cellTrion.png" alt=""></li>
+						<li><img src="./images/icon/card_astraZeneca.png" alt=""></li>
+						<li><img src="./images/icon/card_lg.png" alt=""></li>
+						<li><img src="./images/icon/card_sanofi.png" alt=""></li>
+						<li><img src="./images/icon/card_kwangdong.png" alt=""></li>
+						<li><img src="./images/icon/card_boehringer.png" alt=""></li>
+						<li><img src="./images/icon/card_boRyung.png" alt=""></li>
+						<li><img src="./images/icon/card_jw.png" alt=""></li>
+						<li><img src="./images/icon/card_innoN.png" alt=""></li>
+						<li><img src="./images/icon/card_daiichi.png" alt=""></li>
+						<li><img src="./images/icon/card_aju.png" alt=""></li>
+						<li><img src="./images/icon/card_dalim.png" alt=""></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="index_location">
+			</ul>
+			<div class="index_video">
+				<div>
+					<video src="./images/img/vdo_test.mp4" autoplay controls></video>
+				</div>
+			</div>
+		</section>
+		<?php include_once("./include/popup.php") ?>
+
+		<?php
+			if ($info_live['popup_video_url']) {
+		?>
+		<div class="index_pop popup">
+			<div class="pop_bg"></div>
+			<div class="pop_contents">
+				<div class="pop_cont">
+					<iframe width="895" height="500" src="<?=$info_live['popup_video_url']?>" allowfullscreen></iframe>
+				</div>
+				<div class="black_bar clearfix">
+					<input type="checkbox" id="today_pop_check">
+					<label for="today_pop_check"><i></i> Stop seeing today</label>
+					<img src="/main/img/icons/pop_close_w.png" alt="" class="pop_close index_pop_close">
+					<!-- ./images/icon/icon_x.png -->
+				</div>
+			</div>
+		</div>
+		<script>
+			//쿠키가 존재하지 않으면 팝업창을 연다.
+			var index_pop_value = document.cookie.match('(^|;) ?live_index_pop=([^;]*)(;|$)');
+			index_pop_value = index_pop_value ? index_pop_value[2] : null;
+			if(index_pop_value == null) {
+				$('.index_pop').addClass("on");
+			}
+			//팝업닫기
+			$(document).on('click', '.index_pop_close', function(){
+				if($("#today_pop_check").is(":checked")){
+					var toDate = new Date();
+					toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
+					toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
+					toDate.setSeconds(0);
+					//console.log(toDate);
+					document.cookie = "live_index_pop=" + escape("done") + "; path=/; expires=" + toDate.toGMTString() + ";";
+				}
+				$('.index_pop').remove();
+			});
+		</script>
+		<?php
+			}
+		?>
+	</body>
+</html>

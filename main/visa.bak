@@ -1,0 +1,113 @@
+<?php
+	include_once('./include/head.php');
+	include_once('./include/header.php');
+
+	$sql_info =	"SELECT
+					CONCAT(fi_img.path, '/', fi_img.save_name) AS fi_img_url,
+					igv.name_".$language." AS `name`,
+					igv.address_".$language." AS address,
+					igv.tel_".$language." AS tel,
+					igv.homepage_en,
+					igv.homepage_ko
+				FROM info_general_venue AS igv
+				LEFT JOIN `file` AS fi_img
+					ON fi_img.idx = igv.".$language."_img";
+	$info = sql_fetch($sql_info);
+?>
+
+<section class="container visa">
+    <div class="sub_banner">
+        <h1>Visa</h1>
+    </div>
+    <div class="inner">
+        <div class="">
+            <h3 class="title">Ministry of Foreign Affairs and Trade</h3>
+            <a class="underline bold" href="https://www.k-eta.go.kr/portal/apply/index.do?locale=EN">K-ETA (Korea
+                Electronic Travel Authorization)
+                https://www.k-eta.go.kr/portal/apply/index.do?locale=EN
+            </a>
+        </div>
+        <!-- <div class="">
+			<h3 class="title">Immigration Bureau</h3>
+			<a  class="underline bold" href="https://www.immigration.go.kr/immigration_eng/index.do">https://www.immigration.go.kr/immigration_eng/index.do</a>
+			<p>All visitors to Korea must have a valid passport and visa before coming. Visitors from countries that have a special agreement with Korea are exempt from the visa requirement and allowed to stay in Korea without a visa for 30 days or up to 90 days, depending on agreements. For more information, please contact the local Korean consulate or embassy, or visit the official website of the Korean Ministry of Foreign Affairs and Trade.</p>
+		</div> -->
+        <div class="normal">
+            <h3 class="title">Countries under visa exemption agreements</h3>
+            <a class="underline bold" href="https://www.0404.go.kr/consulate/visa.jsp
+">https://www.0404.go.kr/consulate/visa.jsp
+
+            </a>
+            <div class="table_wrap">
+                <!-- <table class="table_vertical">
+                    <colgroup>
+                        <col class="visa_col">
+                        <col class="visa_col">
+                        <col class="visa_col2">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="f_bold">Total</th>
+                            <th class="f_bold">Passport Type</th>
+                            <th class="f_bold" colspan="2">Countries</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="12">103 countries<br>(up to 90 Days unless noticed otherwise)</td>
+                            <td>Diplomatic<br />(2 countries)</td>
+                            <td colspan="2">Turkmenistan (30 days), Ukraine (90 days)</td>
+                        </tr>
+                        <tr>
+                            <td class="border_right nowrap">Diplomatic & Official<br />(35 countries)</td>
+                            <td colspan="2">
+                                Algeria, Argentina, Azerbaijan (30 days), Bangladesh, Belarus, Belize, Benin, Cambodia
+                                (60 days), China (30 days), Cyprus, Croatia, Ecuador (Diplomatic: as needed for work
+                                performance, Official: 3 months), Egypt, Gabon, India, Iran (3 months), Japan (3
+                                months), Kuwait, Laos, Mongolia, Pakistan (3 months), Paraguay, the Philippines
+                                (Unlimited), Uzbekistan (60 days), Uruguay, Vietnam, Moldova (90 days within 180 days),
+                                Tajikistan, Georgia, Myanmar, Bolivia, Kyrgyz (30 days), Armenia, Angola (30 days), Oman
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8" class="border_right">Diplomatic<br>& Official<br>& Ordinary<br>(66
+                                countries)</td>
+                            <td>Asia<br />(4 countries)</td>
+                            <td>Malaysia, New Zealand, Singapore, Thailand</td>
+                        </tr>
+                        <tr>
+                            <td class="border_right">America<br />(25 countries)</td>
+                            <td>
+                                Antigua and Barbuda, Bahamas, Barbados, Brazil, Chile, Colombia, Commonwealth of
+                                Dominica, Costa Rica, Dominican Republic, El Salvador, Grenada, Guatemala, Haiti,
+                                Jamaica, Mexico, Nicaragua, Panama, Peru, Saint Kitts and Nevis, Saint Lucia, Saint
+                                Vincent and the Grenadines, Suriname, Trinidad and Tobago, Venezuela
+                                (Diplomatic/Official: 30 days, Ordinary: 90 days), Uruguay
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border_right">Europe<br />(32 countries)</td>
+                            <td>
+                                [Schengen countries (except for Slovenia out of the 26 Schengen countries)], Austria
+                                (Diplomatic/Official: 180 days), Belgium, Czech Republic, France, Germany, Greece,
+                                Hungary, Italy, Liechtenstein, Lithuania, Latvia, Luxemburg, Malta, Netherlands, Poland,
+                                Portugal (60days), Slovakia, Spain, Switzerland ※ Denmark, Estonia, Finland, Iceland,
+                                Norway, Sweden (90 days within 180 days)
+                                <br /><br />
+                                [Non-Schengen countries] Bulgaria, Ireland, Romania, Turkey, UK, Kazakhstan ※ Russia (60
+                                days in a row, not exceeding 90 days within 180 days)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border_right nowrap">Africa & Middle East<br />(5 countries)</td>
+                            <td>Israel, Liberia, Morocco, Tunisia (30 days), Lesotho (60 days)</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php include_once('./include/footer.php');?>

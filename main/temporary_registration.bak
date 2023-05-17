@@ -1,0 +1,106 @@
+<div style='width:670px;background-color:#F8F8F8;border:1px solid #000; padding: 0 40px;'>
+	<img src='http://15.164.50.26/main/img/mail_header.png' style='width:calc(100% + 80px);margin-left:-40px;'>
+	<div style='width:calc(100% + 80px);margin-left:-40px;margin-bottom:60px;background-color:#00666B;text-align:center;font-size: 21px; color: #FFF;padding: 10px 0;border-top:2px solid #707070;'>[ICOEMS 2023] Completed Registration</div>	
+	<div>
+	<div>
+		<div style='margin-bottom:25px; background-color:#F8F8F8; padding:17px 34px; box-sizing:border-box;'>
+			<div>
+				<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear Bada Lee,</p>
+				<p style='font-size:14px;color:#170F00;margin-top:14px;'>We express our gratitude for your registration for the International Congress on Obesity and MEtabolic Syndrome (ICOMES) 2023.	The registration details are presented below.<br/>Should you have any inquiries regarding your registration, kindly reach out to the ICOMES 2023 Secretariat for assistance.(<a href="mailto:icomes@into-on.com">icomes@into-on.com</a>)</p>
+				<table style='border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+					<tbody>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Registration No.</th>
+							<td style='font-size:14px; padding:10px;'></td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1;'>Registration Date</th>
+							<td style='font-size:14px; padding:10px; width:165px;'>MM-DD-2023 HH:MM:SS</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1;'>Name</th>
+							<td style='font-size:14px; padding:10px; width:165px;'>Gil-dong Hong</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Country</th>
+							<td style='font-size:14px; padding:10px;'>Republic of Korea</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Affiliation</th>
+							<td style='font-size:14px; padding:10px;'>Department of , Institution</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Phone Number</th>
+							<td style='font-size:14px; padding:10px;'>82-10-1234-5678</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Member of KSSO</th>
+							<td style='font-size:14px; padding:10px;'>Member</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Type of Participation</th>
+							<td style='font-size:14px; padding:10px;'>Speaker</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Category</th>
+							<td style='font-size:14px; padding:10px;'>Professor</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>평점신청</th>
+							<td style='font-size:14px; padding:10px;'>필요</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>의사 면허번호</th>
+							<td style='font-size:14px; padding:10px;'>123145</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>전문의 번호</th>
+							<td style='font-size:14px; padding:10px;'>14253</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>영양사 면허번호</th>
+							<td style='font-size:14px; padding:10px;'>Not applicable</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Others</th>
+							<td style='font-size:14px; padding:10px;'>
+								<input type="checkbox" class="checkbox" id="other">
+								<label for="other"><i></i>Welcome Reception – September 7(Thu)</label>
+							</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Where did you get the information about the conference?</th>
+							<td style='font-size:14px; padding:10px;'>
+								<input type="checkbox" class="checkbox" id="conference1">
+								<label for="conference1"><i></i>Website of the Korea Society of Obesity</label>
+								<br/>
+								<input type="checkbox" class="checkbox" id="conference2">
+								<label for="conference2"><i></i>Promotional email from the Korea Society of Obesity</label>
+							</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Registration fee</th>
+							<td style='font-size:14px; padding:10px;'>KRW 84,000</td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Payment Method</th>
+							<td style='font-size:14px; padding:10px;'></td>
+						</tr>
+						<tr style='border-bottom:1px solid #000;'>
+							<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Payment Status</th>
+							<td style='font-size:14px; padding:10px;'></td>
+						</tr>
+					</tbody>	
+				</table>
+				<p>We eagerly anticipate your presence in Seoul, Korea this coming September.</p>
+			</div>
+		</div>
+		<!-- 23.04.25 수정된 버튼 마크업 -->
+		<p style="margin: 0 0 10px 34px">Warmest regards,</p>
+		<p style="margin: 0 0 10px 34px">Secretariat of ICOMES 2023</p>
+		<div style='text-align: center;'>
+			<a href='http://43.200.170.254/main_2023/index.php' type='button' style='display:inline-block; padding:5px 20px 10px 20px; border-radius: 25px;border: 2px solid #174A77;outline: 2px solid #DFDFDF;background: linear-gradient(to top, #293380, #8CC5D1);font-size: 18px;font-weight: 500;color: #FFFFFF;cursor: pointer; text-decoration: none;'>Go to ICOMES 2023 Website</a>
+		</div>
+		<img src='./img/mail_footer.png' style='width:100%; margin-left: 34px;'>
+	</div>
+</div>

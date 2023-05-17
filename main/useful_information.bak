@@ -1,0 +1,121 @@
+<?php include_once('./include/head.php');?>
+<?php include_once('./include/header.php');?>
+
+<section class="useful_information container">
+	<div class="sub_banner">
+		<h1>Useful Information</h1>
+	</div>
+	<div class="inner">
+		<div>
+			<div class="title">
+				Useful Information
+			</div>
+			<ul class="useful_list">
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Business Hours</p>
+						<ul>
+							<li>Government office hours are usually from 9:00 am to 6:00 pm on weekdays and closed on weekends.</li>
+							<li>Banks are open from 9:00 am to 4:00 pm on weekdays and closed on Saturdays and Sundays.</li>
+							<li>Major stores are open every day from 10:30 am to 8:00 pm including Sundays.</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Climate</p>
+						<ul>
+							<li>Four distinct seasons in Korea :</li>
+							<li>Spring (March - May)</li>
+							<li>Summer (June - August)</li>
+							<li>Autumn (September - November)</li>
+							<li>Winter (December - February)</li>
+							<li>The temperature in Seoul in Aril is approximately between 10-15 ℃ degrees.</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Currency</p>
+						<ul>
+							<li>The unit of the Korean currency is the Won (₩). Coin denominations are ₩10, ₩50, ₩100 and ₩500.</li>
+							<li>Banknotes are ₩1,000, ₩5,000, ₩10,000 and ₩50,000.</li>
+							<li>The exchange rate is approximately US $1 to KR 1,095 as of December 2020.</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Electricity</p>
+						<ul>
+							<li>In Korea, 220 volt outlets are most common. Some hotels provide 110 volt outlets for shavers.</li>
+							<li>Please check the power supply before use.</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Emergency Dial Number</p>
+						<ul>
+							<li><span class="bold">119 :</span> Emergencies for fire, rescue & hospital services</li>
+							<li><span class="bold">112 :</span> Police</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Passport and Visa</p>
+						<ul>
+							<li>A valid passport and Korean Visa are needed for all visitors to the Republic Korea.</li>
+							<li>Exemption: Visitors with round-trip tickets from countries that have a special agreement with Korea can stay in Korea up to 30 days or 90 days depending on the type of agreement between the two countries.</li>
+							<li>For more information: <a href="http://www.mofat.go.kr" target="_blank">http://www.mofat.go.kr</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Time Difference</p>
+						<ul>
+							<li>Korean Standard Time : UTC/GMT +9 hours (Daylight saving time is not applied in Korea.)</li>
+							<li>Current time in Korea: <a href="http://www.worldtimeserver.com" target="_blank">http://www.worldtimeserver.com</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>VAT</p>
+						<ul>
+							<li>Value-Added Tax (VAT) is levied on most goods and services at a standard rate of 10% and is included in the retail price.</li>
+							<li>In tourist hotels, this 10% tax applies to rooms, meals and other services and is included in the bill.</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="imgs"></div>
+					<div>
+						<p>Useful Website</p>
+						<ul>
+							<li>- Gateway to Korea : <a href="http://www.korea.net" target="_blank">http://www.korea.net</a></li>
+							<li>- Korea Immigration Service : <a href="http://www.immigration.go.kr" target="_blank">http://www.immigration.go.kr</a></li>
+							<li>- Ministry of Foreign Affairs and Trade : <a href="http://www.mofat.go.kr" target="_blank">http://www.mofat.go.kr</a></li>
+							<li>- Korea Tourism Organization : <a href="http://www.visitkorea.or.kr" target="_blank">http://www.visitkorea.or.kr</a></li>
+							<li>- Visit Seoul : <a href="http://english.visitseoul.net" target="_blank">http://english.visitseoul.net/m</a></li>
+							<li>- Incheon International Airport : <a href="http://www.airport.kr" target="_blank">http://www.airport.kr</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<?php include_once('./include/footer.php');?>
