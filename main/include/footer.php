@@ -76,6 +76,7 @@
 								<li>Room 1010, Renaissance tower, <br class="min_br">14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
 							</ul>
 						</div>
+						<!--
 						<div class="footer_r">
 							<p class="footer_r_title">Conference Secretariat</p>
 							<ul>
@@ -85,6 +86,7 @@
 								<li>2F, Wonhyo-ro, #204, Yongsan-gu, Seoul, Korea</li>
 							</ul>
 						</div>
+						-->
 					</div>
 				</div>
 			</div>

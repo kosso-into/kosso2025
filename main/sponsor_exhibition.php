@@ -7,9 +7,11 @@
 		<!--
 		<div class="sub_banner">
 			<h1>Exhibition</h1>
-		</div> -->
+		</div>
+		-->
 		<div class="sponsor_exhibition">
-			<!-- <img class="coming" src="./img/coming.png" /> -->
+			<img class="coming" src="./img/coming.png" />
+			<!--
 			<div>
 				<h2>3F</h2>
 				<div class="clearfix2">
@@ -272,6 +274,7 @@
 					</table>
 				</div>
 			</div> 
+			-->
 		</div>
 	</div>
 </section>

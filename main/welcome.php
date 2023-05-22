@@ -15,11 +15,11 @@ $info = sql_fetch($sql_info);
 <section class="container welcome">
 	<div>
         <h1 class="page_title">Welcome Message</h1>
-        <!-- <div class="inner"> -->
-        <!--     <img class="coming" src="./img/coming.png"> -->
-        <!-- </div> -->
+        <div class="inner">
+			<img class="coming" src="./img/coming.png">
+        </div>
     </div>
-	
+	<!--
     <div>
 		<h1 class="page_title">Welcome Message</h1>
         <div class="inner">
@@ -66,6 +66,7 @@ $info = sql_fetch($sql_info);
 			</div>
         </div>
     </div>
+	-->
 </section>
 
 <?php include_once('./include/footer.php'); ?>
