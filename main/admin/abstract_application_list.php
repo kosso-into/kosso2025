@@ -44,6 +44,8 @@
 										CASE ra.presentation_type
 											WHEN 0 THEN 'Oral Presentation'
 											WHEN 1 THEN 'Poster Exhibition'
+											WHEN 2 THEN 'Guided Poster Presentation'
+											WHEN 3 THEN 'Any of them'
 											ELSE ''
 										END
 									) AS presentation_type_text
@@ -71,6 +73,7 @@
 
 	$abstract_list = get_data($abstract_list_query);
 
+	// 엑셀 다운로드
 	$html = '<table id="datatable" class="list_table">';
 	$html .= '<thead>';
 	$html .= '<tr class="tr_center">';
@@ -165,6 +168,7 @@
 							<!-- <th>oral</th>
 							<th>좋아요수 / 댓글수</th> -->
 							<th>등록일</th>
+							<th>삭제</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -191,6 +195,7 @@
 							<!-- <td><?=$list["oral_presentation"] == 0 ? "No" : "Yes"?></td>
 							<td>13 / 32</td> -->
 							<td><?=$list["register_date"]?></td>
+							<td><a href="javascript:;" onclick="delete_submission('<?=$list["abstract_idx"]?>')">삭제</a></td>
 						</tr>
 					<?php
 							}
@@ -204,6 +209,32 @@
 	</section>
 <script>
 	var html = '<?=$html?>';
+
+	function delete_submission(idx) {
+		if(confirm("초록을 삭제하시겠습니까?")) {
+			$.ajax({
+				url : "/main/ajax/client/ajax_submission.php",
+				type : "POST",
+				data : {
+					flag : "submission_delete",
+					idx : idx
+				},
+				dataType : "JSON",
+				success : function(res){
+					if(res.code == 200) {
+						alert("초록 삭제가 완료되었습니다.");
+						location.reload();
+					} else if(res.code == 400) {
+						alert("초록 삭제에 실패하였습니다.");
+						return false;
+					} else {
+						alert("일시적으로 요청이 거절되었습니다.");
+						return false;
+					}
+				}
+			});
+		}
+	}
 </script>
 <script src="./js/common.js?v=0.1"></script>
 <?php include_once('./include/footer.php');?>

@@ -148,14 +148,26 @@
 			}
 		});
 
-		$(".select_others").change(function(){
-			
-			var this_chk = $(this).val();
-			if (this_chk == "Others"){
-				$(this).next().attr("style", "display:block;");
+		//$(".select_others").change(function(){
+		//	
+		//	var this_chk = $(this).val();
+		//	if (this_chk == "Others"){
+		//		$(this).next().attr("style", "display:block;");
+		//	} else {
+		//		$(this).next().attr("style", "display:none;");
+		//		$(this).next().val("");
+		//	}
+		//});
+		
+		// Title 변경 시 (230518)
+		$("select[name=title], select[name=mo_title]").on("change", function(){
+			var _target_val = parseInt($(this).val());
+			if (_target_val == 4) {
+				$("[name=title_input], [name=mo_title_input]").show();
+				$("[name=title_input], [name=mo_title_input]").parent().addClass("on");
 			} else {
-				$(this).next().attr("style", "display:none;");
-				$(this).next().val("");
+				$("[name=title_input], [name=mo_title_input]").hide();
+				$("[name=title_input], [name=mo_title_input]").parent().removeClass("on");
 			}
 		});
 
@@ -459,7 +471,7 @@
 						</tr>
 						<tr>
 							<th><span class="red_txt">*</span>Title</th>
-							<td class="name_td clearfix">
+							<td class="title_td clearfix">
 								<div class="max_normal">
 									<select name="title" id="title" class="title_select">
 										<option value="0">Professor</option>
@@ -769,14 +781,14 @@
 					</li>
 					<li class="mo_ksola_signup">
 						<!-- <button type="button" class="btn green_btn long_btn" onclick="javascript:window.open('https://www.lipid.or.kr/member/member_confirm.php')">한국지질동맥경화학회 회원정보로 간편 가입</button> -->
-						<p class="green_t">대한비만학회 회원 정보로 간편 가입</p>
-						<ul class="simple_signup">
+						<p class="mb10">대한비만학회 회원 정보로 간편 가입</p>
+						<ul class="simple_signup mb10">
 							<li>
-								<label for="">KSSO ID<span class="red_txt">*</span></label>
+								<label for="" class="bold">KSSO ID<span class="red_txt">*</span></label>
 								<input class="email_id passwords" name="mo_kor_id" type="text" maxlength="60">
 							</li>
 							<li>
-								<label for="">KSSO PW<span class="red_txt">*</span></label>
+								<label for="" class="bold">KSSO PW<span class="red_txt">*</span></label>
 								<input class="passwords" name="mo_kor_pw" type="password" maxlength="60">
 							</li>
 							<li>
@@ -1793,16 +1805,22 @@ $(document).on("click", "#mo_submit", function(){
 
 	var ksola_member_check = $("input[name=ksola_member_check]").val();
 	var ksola_member_type = $("input[name=ksola_member_type]").val();
-	if(ksola_member_type == "평생회원"){
-		ksola_member_type = 2;
+	var ksola_member_status = 0;
+
+	if(ksola_member_type == "인터넷회원"){
+		ksola_member_status = 3;
+	}else if(ksola_member_type == "평생회원"){
+		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
-		ksola_member_type = 1;
+		ksola_member_status = 1;
 	}else {
-		ksola_member_type = 0;
+		ksola_member_status = 0;
 	}
+
 	var data = {
 		"flag"					: "signup",
-		"ksola_member_status"	: ksola_member_type,
+		"ksola_member_status"	: ksola_member_status,
+		"ksola_member_check"	: ksola_member_check,
 		"nation_no"				: nation_no,
 		"email"					: email,
 		"password"				: pw,
@@ -1830,7 +1848,6 @@ $(document).on("click", "#mo_submit", function(){
 		"short_input"			: short_input,
 		"terms1"				: terms1,
 		//"terms2"				: terms2,
-		"ksola_member_check"	: ksola_member_check,
 		"type"					: "INSERT",
 		"title"					: title,
 		"title_input"			: title_input,
@@ -2110,21 +2127,24 @@ $(document).on("click", "#submit", function(){
 	var short_input = $("input[name=short_input]").val();
 	*/
 
-	var ksola_member_check = $("input[name=ksola_member_check]").val();  // 정회원 or 평생회원 : Y     나머지 : N
-
+	var ksola_member_check = $("input[name=ksola_member_check]").val();
 	var ksola_member_type = $("input[name=ksola_member_type]").val();
-	if(ksola_member_type == "평생회원"){
-		ksola_member_type = 2;
+	var ksola_member_status = 0;
+
+	if(ksola_member_type == "인터넷회원"){
+		ksola_member_status = 3;
+	}else if(ksola_member_type == "평생회원"){
+		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
-		ksola_member_type = 1;
+		ksola_member_status = 1;
 	}else {
-		ksola_member_type = 0;
+		ksola_member_status = 0;
 	}
-	//alert(ksola_member_type);
-	//return;
+
 	var data = {
 		"flag"					: "signup",
-		"ksola_member_status"	: ksola_member_type,
+		"ksola_member_status"	: ksola_member_status,
+		"ksola_member_check"	: ksola_member_check,
 		"nation_no"				: nation_no,
 		"email"					: email,
 		"password"				: pw,
@@ -2152,7 +2172,6 @@ $(document).on("click", "#submit", function(){
 		//"short_input"			: short_input,
 		"terms1"				: terms1,
 		//"terms2"				: terms2,
-		"ksola_member_check"	: ksola_member_check,
 		"type"					: "INSERT",
 		"title"					: title,
 		"title_input"			: title_input,
@@ -2557,15 +2576,16 @@ function email_check(email) {
 }
 
 $(document).ready(function(){
-	$(".title_select").change(function(){
-		var this_value = $(this).children("option:selected").attr("value");
-		if (this_value === "Others"){
-			$(".hide_input").addClass("on");
-		}else {
-			$(".hide_input").removeClass("on");
-		}
-		console.log(this_value)
-	});
+	// 230518 HUBDNC AJY - Title 'Others' 선택시 입력창 노출 소스 중복으로 인한 주석 처리
+	//$(".title_select").change(function(){
+	//	var this_value = $(this).children("option:selected").attr("value");
+	//	if (this_value === "Others"){
+	//		$(".hide_input").addClass("on");
+	//	}else {
+	//		$(".hide_input").removeClass("on");
+	//	}
+	//	console.log(this_value)
+	//});
 
 	$(function(){
        $("input[name=first_name_kor]").keyup(function (event) {

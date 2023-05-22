@@ -1387,7 +1387,7 @@ else if($_POST["flag"] == "abstract"){
 	}
 
 	// toffic
-	$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation");
+	$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
 
 	// Position
 	$position_arr = array("Professor", "Physician", "Researcher", "Student", "Other");

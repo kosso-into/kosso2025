@@ -14,7 +14,7 @@
 		$member_detail_query =	"
 									SELECT
 										email, first_name, last_name, nation_no, affiliation, phone, licence_number, department, DATE_FORMAT(register_date, '%y-%m-%d') AS register_date,
-										first_name_kor, last_name_kor, affiliation_kor, department_kor, title, title_option, telephone,
+										first_name_kor, last_name_kor, affiliation_kor, department_kor, title, title_option, telephone, ksola_member_status,
 										(
 											CASE
 												WHEN ksola_member_status = 0 THEN '비회원'
@@ -46,6 +46,7 @@
 	$department_kor = isset($member_info["department_kor"]) ? $member_info["department_kor"] : "";
 	//$licence_number = isset($member_info["licence_number"]) ? $member_info["licence_number"] : "";
 	$ksola_member_type = isset($member_info["ksola_member_type"]) ? $member_info["ksola_member_type"] : "비회원";
+	$ksola_member_status = isset($member_info["ksola_member_status"]) ? $member_info["ksola_member_status"] : "0";
 	$register_date = isset($member_info["register_date"]) ? $member_info["register_date"] : "-";
 	$telephone = isset($member_info["telephone"]) ? $member_info["telephone"] : "";
 	$date_of_birth = isset($member_info["date_of_birth"]) ? $member_info["date_of_birth"] : "";
@@ -68,7 +69,8 @@
 	$is_hide = ($nation_no == 25) ? '' : 'hidden';
 
 ?>
-	<section class="detail">
+
+	<section class="detail member_detail_page">
 		<div class="container">
 			<div class="title">
 				<h1 class="font_title">일반회원</h1>
@@ -195,18 +197,51 @@
 								<td><input type="text" name="department_kor" value="<?=$department_kor?>" placeholder=""></td>
 							</tr>
 							<tr>
-							<!--
-								<th>Licence Number</th>
-								<td>
-									<input <?=$licence_number != "Not applicable" ? "" : "checked"; ?> type="checkbox" class="checkbox input not_checkbox" id="licence_number" name="licence_number2" value="Not applicable"><label for="licence_number">Not applicable</label>
-									<input <?=$licence_number != "Not applicable" ? "" : "disabled"; ?> name="licence_number" type="text" value="<?=$licence_number != "Not applicable" ? $licence_number : ""; ?>" class="kor_check">
-								</td>
-							-->
 								<th>대한비만학회 회원 여부</th>
-								<td><?= $ksola_member_type ?></td>
+								<td>
+									<div id="ksola_member_status" class="<?= $is_hide ?>">
+										<input <?= (!$ksola_member_status ? "" : "checked") ?> type="radio" class="new_radio" name="user" id="user1">
+										<label for="user1"><i></i>회원</label>
+										<input <?= (!$ksola_member_status ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user2">
+										<label for="user2"><i></i>비회원</label>
+									</div>
+									<span class="<?= $is_hide == "" ? "hidden" : "" ?>"><?= $ksola_member_type ?></span>
+								</td>
 								<th>생년월일</th>
 								<td>
 									<input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy" id="datepicker" value="<?= $date_of_birth ?>" onkeyup="birthChk(this)">
+								</td>
+							</tr>
+							<tr class="ksola_signup <?= !$ksola_member_status ? "" : "on" ?>">
+								<th style="background-color:transparent"></th>
+								<td>
+									<ul class="simple_join clearfix">
+										<li>
+											<label for="">KSSO ID<span class="red_txt">*</span></label>
+											<input class="email_id" name="kor_id" type="text" maxlength="60">
+										</li>
+										<li>
+											<label for="">KSSO PW<span class="red_txt">*</span></label>
+											<input class="passwords" name="kor_pw" type="password" maxlength="60">
+										</li>
+										<li>
+											<button onclick="kor_api()" type="button" class="btn">회원인증</button>
+										</li>
+									</ul>
+									<div class="clearfix2">
+										<div>
+											<input type="checkbox" class="checkbox" id="privacy">
+											<label for="privacy">
+												제 3자 개인정보 수집에 동의합니다.
+											</label>
+										</div>
+										<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
+									</div>
+									
+									<input type="hidden" name="ksola_member_check">
+									<input type="hidden" name="ksola_member_type" value="<?= $ksola_member_type ?>">
+								</td>
+								<td colspan="2">
 								</td>
 							</tr>
 							<tr>
@@ -237,6 +272,28 @@
 	<input type="hidden" name="ori_email" value="<?= $email ?>">
 <script>
 $(document).ready(function(){
+	$("#user1").change(function(){
+		if($("#user1").prop('checked') == true) {
+			$(".ksola_signup").addClass("on");
+		}
+	});
+	$("#user2").change(function(){
+		if($("#user2").prop('checked') == true) {
+			$(".ksola_signup").removeClass("on");
+		}
+	});
+
+	$("input[name=kor_id]").on("change", function() {
+		var _this = $(this);
+		_this.val();
+		kor_api_check("kor_id", _this.val());
+	});
+	$("input[name=kor_pw]").on("change", function() {
+		var _this = $(this);
+		_this.val();
+		kor_api_check("kor_password", _this.val());
+	});
+
 	$(".not_checkbox").click(function(){
 		var _this =$(this).is(":checked");
 		if(_this == true) {
@@ -383,22 +440,14 @@ $(document).ready(function(){
 			success : function(res) {
 				if(res.code == 200) {
 					$("[name=nation_tel]").val(res.tel);
+					$("#user2").click();
 					if (nation == 25) {
 						$(".input_kor").removeClass("hidden");
+						$("#ksola_member_status").removeClass("hidden").siblings().addClass("hidden");
 					} else {
 						$(".input_kor").addClass("hidden");
+						$("#ksola_member_status").addClass("hidden").siblings().removeClass("hidden");
 					}
-					/*
-					if($("input[name=phone]").val()) {
-						var _phone = $("input[name=phone]").val().split("-");
-						var _delete_nation_tel = _phone.splice(0,1);
-						var enter_phone = _phone.join("-");
-						
-						$("input[name=phone]").val(res.tel+"-"+enter_phone);
-					} else {
-						$("input[name=phone]").val(res.tel+"-");
-					}
-					*/
 				}
 			}
 		});
@@ -461,10 +510,32 @@ $(document).ready(function(){
 			data['telephone'] = data['nation_tel'] + '-' + data['telephone1'] + '-' + data['telephone2'];
 		}
 
+		var ksola_member_check = $("input[name=ksola_member_check]").val();
+		var ksola_member_type = $("input[name=ksola_member_type]").val();
+
+		if(ksola_member_type == "인터넷회원"){
+			ksola_member_status = 3;
+		}else if(ksola_member_type == "평생회원"){
+			ksola_member_status = 2;
+		}else if(ksola_member_type == "정회원"){
+			ksola_member_status = 1;
+		}else {
+			ksola_member_status = 0;
+		}
+
+		// 비회원으로 저장
+		if($("#user2:checked").length > 0) {
+			ksola_member_status = 0;
+			ksola_member_check = "";
+		}
+
+		data['ksola_member_check'] = ksola_member_check;
+		data['ksola_member_status'] = ksola_member_status;
+
 		if(status) {
 			if(confirm("저장하시겠습니까?")) {
 				$.ajax({
-					url : "../ajax/client/ajax_member.php",
+					url : "/main/ajax/client/ajax_member.php",
 					type : "POST",
 					data : {
 						flag : flag,
@@ -593,6 +664,92 @@ function inputCheck() {
 	return {
 		data : data,
 		status : inputCheck
+	}
+}
+
+
+function kor_api() {
+	var kor_id = $("input[name=kor_id]").val().trim();
+	var kor_pw = $("input[name=kor_pw]").val().trim();
+	//제 3자 개인정보 수집에 동의 여부
+	var privacy = $("#privacy").is(":checked");
+
+	if(!kor_id) {
+		alert("Invalid id");
+		//$(".red_api").eq(0).html("format_id");
+		return;
+	}
+	if(!kor_pw) {
+		alert("Invalid password");
+		//$(".red_api").eq(0).html("format_password");
+		return;
+	}
+	
+	if(privacy == false) {
+		alert("Please agree to the collection of personal information.");
+		$(".red_api").eq(0).html("Please agree to the collection of personal information.");
+		return;
+	}
+
+	var data = {
+		'id' : kor_id,
+		'password' : kor_pw
+	};
+
+	$.ajax({
+		url			: "/main/signup_api.php",
+		type		: "POST",
+		data		: data,
+		dataType	: "JSON",
+		success		: success,
+		fail		: fail,
+		error		: error
+	});
+
+	function success(res) {
+		var kor_sign = JSON.parse(res.value);
+		console.log(kor_sign); 
+		var user_row = kor_sign.user_row;
+
+		if(kor_sign.code == "N1") {
+			alert("아이디를 입력해주세요.");
+		} else if(kor_sign.code == "N2") {
+			alert("비밀번호를 입력해주세요.");
+		} else if(kor_sign.code == "N3") {
+			alert("가입되지 않은 아이디입니다.");
+		} else if(kor_sign.code == "N4") {
+			alert("잘못된 비밀번호 입니다.");
+		} else if(kor_sign.code == "N5") {
+			alert("탈퇴된 아이디 입니다.");
+		} else if(kor_sign.code == "N7") {
+			alert("이미 인증된 계정입니다.");
+			$("[name=kor_id]").val("");
+			$("[name=kor_pw]").val("");
+			$("#privacy").prop("checked", false);
+			$("[name=kor_id]").focus();
+		} else if(kor_sign.code == "N6") {
+			alert("회원님은 대한비만학회 " + user_row.user_type + " 입니다");
+
+			$("input[name=ksola_member_type]").val(user_row.user_type);
+			$("input[name=ksola_member_check]").val(user_row.id);
+		}
+	}
+	function fail(res) {
+		alert("Failed.\nPlease try again later.");
+		return false;
+	}
+	function error(res) {
+		alert("An error has occurred. \nPlease try again later.");
+		return false;
+	}
+}
+function kor_api_check(name, value) {
+	var first_name = value;
+	var first_name_len = first_name.trim().length;
+	first_name = (typeof(first_name) != "undefined") ? first_name : null;
+
+	if(!first_name || first_name_len <= 0) {
+		alert("Invalid_"+name);
 	}
 }
 </script>

@@ -133,7 +133,7 @@ function fnExcelReport(title, html) {
     var tab_text = '<html xmlns:x="urn:schemas-microsoft-com:office:excel">';
     tab_text = tab_text + '<head><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8">';
     tab_text = tab_text + '<xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>'
-    tab_text = tab_text + '<x:Name>Test Sheet</x:Name>';
+    tab_text = tab_text + '<x:Name>'+title+'</x:Name>';
     tab_text = tab_text + '<x:WorksheetOptions><x:Panes></x:Panes></x:WorksheetOptions></x:ExcelWorksheet>';
     tab_text = tab_text + '</x:ExcelWorksheets></x:ExcelWorkbook></xml></head><body>';
     tab_text = tab_text + "<table border='1px'>";
@@ -149,8 +149,6 @@ function fnExcelReport(title, html) {
     tab_text = tab_text.replace(/<img[^>]*>/gi,""); // remove if u want images in your table
     tab_text = tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // remove input params
     tab_text = tab_text.replaceAll("+","&nbsp+");
-
-    console.log(tab_text);
 
     var data_type = 'data:application/vnd.ms-excel';
     var ua = window.navigator.userAgent;

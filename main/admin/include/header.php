@@ -60,7 +60,7 @@
 		<!-- </li> -->
 		<li class="main_nav"><a href="javascript:;"><i class="la la-clipboard"></i>게시판관리<i class="la la-angle-down"></i></a>
 			<ul class="sub_nav">
-				<!-- <li class="news"><a href="./board_list.php?t=0">News</a></li> -->
+				<li class="news"><a href="./board_list.php?t=0">Newsletter</a></li>
 				<li class="notice"><a href="./board_list.php?t=1">Notice</a></li>
 				<li class="faq"><a href="./board_category_list.php">FAQ</a></li>
 			</ul>

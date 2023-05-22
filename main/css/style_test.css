@@ -50,7 +50,7 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 
 /*venue*/ /* 220325 HUBDNC LJH2 수정*/
 .venue .sub_banner {padding-bottom: 92px;}
-.venue .section1 .img_wrap{width:100%;height:514px;}
+.venue .section1 .img_wrap{width:100%;height:640px;}
 .venue .img_wrap img{width: 100%;height: 100%; object-fit:cover;}
 .venue .img_wrap2{width:100%;height:100%;padding: 0 10%;}
 .venue .img_wrap2 img{width: 100%;}
@@ -171,6 +171,7 @@ section.container.organizing {padding-bottom: 190px;}
 .toggle_contents2 .clearfix2:last-of-type{border-bottom:0;}
 .toggle_contents2{display:none;}
 .toggle_contents_wrap2 a.active img{transform:rotate(180deg);}
+.program_detail_ul .detail_table_common tbody {border-bottom: 1px solid #707070;}
 
 /*poster_abstract_submission*/
 .details p, .details li{font-weight:300;line-height:1.8;word-break: keep-all;}
@@ -363,7 +364,7 @@ section.container.organizing {padding-bottom: 190px;}
 .useful_list li:nth-child(7) .imgs {background-image:url("../img/img_useful08.jpg");}
 .useful_list li:nth-child(8) .imgs {background-image:url("../img/img_useful09.jpg");}
 .useful_list li:nth-child(9) .imgs {background-image:url("../img/img_useful09.jpg");} 
-.useful_list p {font-size:18px; font-weight:bold; margin-bottom:12px; color:#00666B;}
+.useful_list p {font-size:18px; font-weight:bold; margin-bottom:12px; /*color:#00666B;*/}
 .useful_list a {font:inherit; text-decoration:underline;}
 
 
@@ -533,8 +534,8 @@ section.container.organizing {padding-bottom: 190px;}
 .m_nav_li:hover > a{background: #2E66C5;}
 .m_nav_li > a.show {background: #2E66C5;}
 .m_nav_li {width: 40%;/*background:#000066;*/}
-.m_sub_nav a{font-size:18px;padding:12px 0; color:#000;}
-.m_sub_nav a:hover, .m_sub_nav a:focus {font-weight: bold; color:#000066;}
+.m_sub_nav a{font-size:18px;padding:12px 0; color:#000; letter-spacing:-0.36px;}
+.m_sub_nav a:hover, .m_sub_nav a:focus {font-weight: 800; color:#000066;}
 .m_sub_nav{width:100%;/*border:1px solid #ADF002;border-radius:20px;*/position: absolute;left:48%;top:103px; text-align:left;}
 .n_nav_close{width:34px;position:absolute;top:20px;right:24px;}
 .n_nav_close img{width:100%;}
@@ -605,7 +606,7 @@ section.container.organizing {padding-bottom: 190px;}
 .long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; background-color: #0066CC; width: 100%; max-width: 400px;}
 section.container .page_title {background: #f2f2f2; width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 40px 0 48px;}
 .inner {padding-top:50px;}
-h3.title:before {content:'';display: inline-block;  width: 6px;height: 6px; background: transparent; border:4px solid #4267C5; border-radius:50%; margin-bottom: 2px; margin-right: 10px;}
+h3.title:before {content:'';display: inline-block;  width: 9px;height: 9px; background: transparent; border:6px solid #4267C5; margin-bottom: 2px; border-radius:50%; margin-right: 10px; vertical-align: middle;}
 section.container.login .page_title {color:#fff; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
 .invited_speaker .speaker_list > li {padding: 0px; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
 .invited_speaker .speaker_list .top_wrap {padding: 22px; background:linear-gradient(-45deg, #F8F8F8 40%, #efefef 40%);margin-bottom: 0; display:flex; align-items:center; justify-content:space-between;}
@@ -1105,6 +1106,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	/* .top_header li:nth-child(even) {margin-left: 12px;}
 	.top_header li:nth-child(even):before {left: -6px;} */
 	.top_header a {font-size: 13px;}
+	.m_nav_ul > li > a {padding:24px 8px;}
 	
 	/*footer*/
 	.pop_contents p, .pop_contents li{font-size:13px;}
@@ -1144,6 +1146,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.pop_contents .pop_close{top:15px;right:15px;}
 	.pop_contents .pop_close_w{top:-40px;right:35px;}
 	.input_table .radio_wrap{padding:10px 0;}
+	h3.title:before {width: 7px;height: 7px; border-width:4px; margin-right: 6px;}
 
 	/* ▼ Tab 수정으로 인한 주석 - 230517 HUBDNC AJY */
 	/* 220323 HUBDNC LJH2 추가*/
@@ -1297,6 +1300,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 
 @media screen and (max-width: 388px) {
+	.m_sub_nav {left:45%;}
 	.btn_wrap.submission_step2 > * {width: 32.5%; padding: 0; text-align:center;}
 
 	/*.steps_area li p:first-of-type:after{width:80px;right:-75px;}*/

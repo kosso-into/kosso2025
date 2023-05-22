@@ -27,39 +27,68 @@
         <button type="button" class="btn_top"><img src="/main/img/icons/icon_top_btn.svg" alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
-	<!--
     <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
-            <li><img src="./img/sponsor/logo01.png" alt=""></li>
-            <li><img src="./img/sponsor/logo02.png" alt=""></li>
-            <li><img src="./img/sponsor/logo03.png" alt=""></li>
-            <li><img src="./img/sponsor/logo04.png" alt=""></li>
-            <li><img src="./img/sponsor/logo05.png" alt=""></li>
-            <li><img src="./img/sponsor/logo06.png" alt=""></li>
-            <li><img src="./img/sponsor/logo07.png" alt=""></li>
-            <li><img src="./img/sponsor/logo08.png" alt=""></li>
-            <li><img src="./img/sponsor/logo09.png" alt=""></li>
-            <li><img src="./img/sponsor/logo10.png" alt=""></li>
-            <li><img src="./img/sponsor/logo11.png" alt=""></li>
-            <li><img src="./img/sponsor/logo12.png" alt=""></li>
-            <li><img src="./img/sponsor/logo13.png" alt=""></li>
-            <li><img src="./img/sponsor/logo14_1.png" style="max-height:20px;" alt=""></li>
-            <li><img src="./img/sponsor/logo15.png" alt=""></li>
-            <li><img src="./img/sponsor/logo16.png" alt=""></li>
-            <li><img src="./img/sponsor/logo17.png" alt=""></li>
-            <li><img src="./img/sponsor/logo18.png" alt=""></li>
-            <li><img src="./img/sponsor/logo19.png" alt=""></li>
-            <li><img src="./img/sponsor/logo20.png" alt=""></li>
-            <li><img src="./img/sponsor/logo21.png" alt=""></li>
-            <li><img src="./img/sponsor/logo22.png" alt=""></li>
-            <li><img src="./img/sponsor/logo23.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo01.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo02.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo03.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo04.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo05.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo06.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo07.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo08.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo09.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo10.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo11.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo12.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo13.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo14_1.png" style="max-height:20px;" alt=""></li>
+            <li><img src="/main/img/sponsor/logo15.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo16.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo17.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo18.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo19.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo20.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo21.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo22.png" alt=""></li>
+            <li><img src="/main/img/sponsor/logo23.png" alt=""></li>
         </ul>
     </div>
-	-->
-    <footer class="footer">
+    <footer class="footer2">
         <div class="container">
             <br>
             <!--<h5>Supported by</h5>-->
+			<div class="f_bottom clearfix">
+				<div class="footer_t">
+					<p class="footer_title">• Supported by</p>
+				</div>
+				<div class="footer_b">
+					<p class="footer_title">• Organized by</p>
+					<div>
+						<div class="footer_l">
+							<img src="/main/img/icons/fl01.png" alt="">
+							<ul>
+								<li><span>T.</span> 82-2-6941-0888, 82-2-364-0886,0887</li>
+								<li><span>F.</span> 82-2-364-0883</li>
+								<li><span>Email.</span> <a href="mailto:webmaster@kosso.or.kr" class="font_inherit">webmaster@kosso.or.kr</a> / <br class="min_br"><a href="mailto:kosso@kosso.or.kr" class="font_inherit">kosso@kosso.or.kr</a></li>
+								<li><span>Business Registration Number. <br class="min_br"></span>121-82-61144</li>
+								<li><span>Chairman.</span> Chang Beom Lee</li>
+								<li>Room 1010, Renaissance tower, <br class="min_br">14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
+							</ul>
+						</div>
+						<div class="footer_r">
+							<p class="footer_r_title">Conference Secretariat</p>
+							<ul>
+								<li><span>T.</span> 82-2-0000-0000</li>
+								<li><span>Fax :</span> 82-2-3275-3099</li>
+								<li><span>Email :</span> <a href="mailto:ICOMES@into-on.com" class="font_inherit">ICOMES@into-on.com</a></li>
+								<li>2F, Wonhyo-ro, #204, Yongsan-gu, Seoul, Korea</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
             <div class="f_bottom clearfix">
                 <div class="footer_l">
                     <div class="clearfix">
@@ -70,7 +99,7 @@
                     </div>
                 </div>
                 <div class="footer_c">
-                    <!-- <p>Organized by</p> -->
+                    <!-- <p>Organized by</p>
 					<p>Korean Society for the Study of Obesity(KSSO)</p>
 					<ul>
 						<li>Room 1010, Renaissance tower, 14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
@@ -89,10 +118,10 @@
                         <li><span class="bold">President.</span> Chang Beom Lee</li>
                         <li>Room 1010, Renaissance tower, 14 Mallijae-ro, Mapo-gu, Seoul, Kore</li>
                     </ul>
-					-->
+					
                 </div>
                 <div class="footer_r">
-                    <!-- <p>Conference Secretariat</p> -->
+                    <!-- <p>Conference Secretariat</p>
 					<p>Secretariat of ICOMES 2023</p>
 					<ul>
 						<li>A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea</li>
@@ -111,9 +140,9 @@
                         </li>
                         <li>Tel : +82-2-2285-2582 ㅣEmail : icomes@into-on.com</li>
                     </ul>
-					-->
+					
                 </div>
-            </div>
+            </div> -->
         </div>
     </footer>
 </div>

@@ -1,0 +1,15 @@
+/*ksola_signup*/
+.member_detail_page .ksola_signup {display: none;}
+.member_detail_page .ksola_signup.on {display: revert;}
+.member_detail_page .ksola_signup p.green_t {font-size:18px; font-weight:bold; margin-bottom:10px; font-family:"Noto Sans", sans-serif;}
+.member_detail_page .ksola_signup ul {margin:16px 0 8px;}
+.member_detail_page .ksola_signup li {width:calc(50% - 103px); max-width:360px; margin-right:10px;}
+.member_detail_page .ksola_signup li:last-child {width:100px; margin-right:0;}
+.member_detail_page .ksola_signup li label {display:block; margin-bottom:8px; font-size:18px; font-weight:bold;}
+.member_detail_page .ksola_signup li input {border:none; background-color:#EDEDED; height:46px;}
+.member_detail_page .ksola_signup li .btn {width:185px; height:46px; font-size: 18px; font-weight: bold; min-width: 100px; margin-top:30px; background-color:#000066; color:#fff;}
+.member_detail_page .ksola_signup .red_txt {display:inline-block; margin-left:8px; font-size:14px;}
+.member_detail_page .id_pw_find {width: 185px; padding: 0 10px; font-size: 16px; font-weight: 600; border: 1px solid #000066; color: #000066; border-radius: 14px;}
+table.dataTable {white-space:nowrap;}
+div.col-sm-12 {overflow-x:auto;}
+table.dataTable td, table.dataTable th {padding-right:30px;}

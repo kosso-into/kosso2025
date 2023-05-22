@@ -66,19 +66,21 @@
 					<tbody>
 						<?php
 							$col_title = "title_".$language;
+							$timenow = date("Y-m-d");
+							$time_yesterday = date("Y-m-d", strtotime($timenow." -1 day"));
+
 							for($i=0;$i<count($list);$i++){
 								$l = $list[$i];
+								$no = $total_count - ($i + $start);
 						?>
 							<tr>
-								<td>1</td>
+								<td><?= $no ?></td>
 								<td class="notice_title">
-									<a href="./board_notice_detail.php?no=<?=$l["idx"]?>&p=<?=$current_page?>">
+									<a href="./board_notice_detail.php?no=<?=$l["idx"]?>&p=<?=$current_page?>&i=<?=$no?>">
 										<?php
 											$boardtime = $l["register_date"];
 											$view = $l["view"];
 
-											$timenow = date("Y-m-d");
-											$time_yesterday = date("Y-m-d", strtotime($day." -1 day"));
 											if($boardtime >= $time_yesterday && $boardtime <= $timenow){
 												echo '<span class="alert_new">NEW</span>';
 											}
@@ -98,10 +100,38 @@
 		<?php
 			} else {
 		?>
-			<div class="inner">
+			<!-- <div class="inner"> -->
 				<!-- <img class="coming" src="./img/coming.png" /> -->
 				<!-- <div class="not_ready">Will be updated soon</div> -->
-				<img class="coming" src="./img/coming.png">
+				<!-- <img class="coming" src="./img/coming.png"> -->
+			<!-- </div> -->
+			<div class="table_wrap x_scroll">
+				<table class="table_vertical notice_table">
+					<colgroup>
+						<col class="col_date" />
+						<col width="*" />
+						<col class="col_date" />
+						<col class="col_date" />
+					</colgroup>
+					<thead>
+						<tr>
+							<?php
+								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["No", "Title", "Date", "Views"];
+								foreach($table_title_arr as $th_text){
+							?>
+							<th><?=$th_text?></th>
+							<?php
+								}
+							?>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="4"> Will be updated </td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		<?php
 			}

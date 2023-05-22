@@ -22,6 +22,12 @@
 			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, 
 			reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, 
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
+			(
+				CASE
+					WHEN reg.ksso_member_status IS NULL OR reg.ksso_member_status = 0 THEN 'Non-member'
+					WHEN reg.ksso_member_status > 0 THEN 'member'
+				END
+			) AS ksso_member_status,
             p.idx AS payment_idx, p.`type` AS payment_type, p.total_price_kr, p.total_price_us,
             p.etc2, DATE_FORMAT(p.register_date, '%Y-%m-%d %H:%i:%s') AS payment_register_date
         FROM request_registration reg
@@ -79,7 +85,7 @@
 </style>
 <section class="mypage container">
     <h1 class="page_title">Mypage</h1>
-    <div>
+    <div class="inner">
 		<ul class="tab_green">
 			<li><a href="./mypage.php">Account</a></li>
 			<li class="on"><a href="./mypage_registration.php">Registration</a></li>
@@ -104,9 +110,11 @@
 			?>
 		</ul>
 		<!-- 행사끝나고 나서 공개예정 -->
+		<!--
 		<div class="rightT">
 			<button class="btn green_btn long mb20 certificate_brn" type="button">Certificate of Attendance</button>
 		</div>
+		-->
 		<div class="table_wrap x_scroll">
 			<table class="table_vertical registration_table">
 				<thead>
@@ -290,7 +298,7 @@
 												</tr>
 												<tr>
 													<th>Member of KSSO</th>
-													<td>Member</td>
+													<td><?=$list["ksso_member_status"] ?? "-"?></td>
 												</tr>
 												<tr>
 													<th>Type of<br/>Participation</th>
@@ -333,7 +341,7 @@
 												</tr>
 												<tr class="tr_bg">
 													<th>Total Registration fee</th>
-													<td>KRW 84,000</td>
+													<td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
 												</tr>
 												<tr class="tr_bg">
 													<th>Payment Method</th>
@@ -420,7 +428,7 @@
 								</td>
 							<?php }else{?>
 								<td>-</td>
-								<td>holding</td>
+								<td>canceled</td>
 							<?php }?>
 						</tr>
 				<?php
@@ -1089,16 +1097,18 @@
 
 	// registration receipt
 	$(".registration_receipt_btn").on("click", function(){
+		console.log(device);
 		//$(".receipt_pop").show();
 		var idx = $(this).data("idx");
-		var url = "./pre_registration_confirm.php?idx="+idx;
-		window.open(url,"Registration Receipt","width=793, height=2000, top=30, left=30");
+		//var url = "./pre_registration_confirm.php?idx="+idx;
+		var url = "./mypage_receipt.php?type="+device+"&idx="+idx;
+		window.open(url,"Registration Receipt","width=793, height=1097, top=30, left=30");
 	});
 
-	$(".korean_only").on("click", function(){
-		var url = "./pre_registration_korean_only.php";
-		window.open(url,"Registration Receipt","width=793, height=2000, top=30, left=30");
-	});
+	//$(".korean_only").on("click", function(){
+	//	var url = "./pre_registration_korean_only.php";
+	//	window.open(url,"Registration Receipt","width=793, height=2000, top=30, left=30");
+	//});
 
 
 	// payment receipt

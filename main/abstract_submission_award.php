@@ -3,7 +3,7 @@
 	include_once('./include/header.php');
 ?>
 <section class="abstract_submission_award container">
-    <h1 class="page_title">Submission Guidelines</h1>
+    <h1 class="page_title">Awards & Grants</h1>
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
@@ -101,7 +101,7 @@
 							<tr>
 								<th class="text_center">Target</th>
 								<th class="text_center">Amount</th>
-								<th class="text_center">Mark</th>
+								<th class="text_center">Remark</th>
 							</tr>
 						</thead>
 						<tbody>

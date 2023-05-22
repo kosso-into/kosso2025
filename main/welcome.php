@@ -65,7 +65,7 @@ $info = sql_fetch($sql_info);
 				</div>
 			</div>
         </div>
-    </div>f
+    </div>
 </section>
 
 <?php include_once('./include/footer.php'); ?>

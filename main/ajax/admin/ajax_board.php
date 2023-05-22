@@ -1,7 +1,6 @@
 <?php include_once("../../common/common.php");?>
 <?php
 	if($_POST["flag"] == "save") {
-
 		$user_idx = $_SESSION["ADMIN"]["idx"];
 
 		// 로그인 유무 체크
@@ -51,18 +50,21 @@
 				}else{
 					return_value(400, "이미지만 등록가능합니다.");
 				}
-			}else{
+			}
+			/* 230522 클라이언트 요청사항으로 해당 부분 주석처리
+			else{
 				if($board_id == "" && $board_type == 0){ // New인 경우에만 썸네일 체크함
 					return_value(400, "썸네일이 등록되지 않았습니다.");
 				}
 			}
+			*/
 		}
 
 		$except_key = ["flag", "b_type", "c_id", "b_id", "file"];
 
 		foreach($_POST as $k => $v){
 			if(in_array($k, $except_key) == false){
-				$v = addslashes(htmlspecialchars($v));
+				$v = htmlspecialchars($v);
 
 				if($board_type != 2 && ($k == "answer_en" || $k == "answer_ko")){
 					continue;

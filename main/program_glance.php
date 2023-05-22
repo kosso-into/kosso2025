@@ -27,7 +27,7 @@
         <div class="program_wrap section">
             <!-- <img src="./img/sample/icomes_program.svg" style="max-width:100%;"> -->
             <div class="scroll_table">
-                <ul class="tab_green long centerT">
+                <ul class="tab_green long centerT program_glance">
 					<li class="on"><a href="javascript:;">All Days<br/>September 7(Thu) ~ 9(Sat)</a></li>
 					<li><a href="javascript:;">Sep.7(Thu)</a></li>
 					<li><a href="javascript:;">Sep.8(Fri)</a></li>
@@ -191,7 +191,10 @@
 								<td class="sky_bg pointer" name="sponsored_session_1">Sponsored<br />Session 1
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg" name="joint_symposium_easo">Joint Symposium EASO</td>
+								<td class="purple_bg pointer" name="joint_symposium_easo">
+									Joint Symposium EASO
+									<input type="hidden" name="e" value="room6">
+								</td>
 								<td></td>
 							</tr>
 							<tr>
@@ -296,7 +299,10 @@
 									Sponsored<br />Session 2
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg" name="joint_symposium_aoaso_1">Joint Symposium<br/>AOASO 1</td>
+								<td class="purple_bg pointer" name="joint_symposium_aoaso_1">
+									Joint Symposium<br/>AOASO 1
+									<input type="hidden" name="e" value="room6">
+									</td>
 								<td></td>
 							</tr>
 							<tr>
@@ -355,7 +361,7 @@
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
-								<td>18:00-21:30(210")</td>
+								<td>18:30-21:30(180")</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -439,7 +445,10 @@
 									Sponsored<br />Session 3
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg" name="joint_symposium_tos">Joint Symposium TOS</td>
+								<td class="purple_bg pointer" name="joint_symposium_tos">
+									Joint Symposium TOS
+									<input type="hidden" name="e" value="room6">
+								</td>
 								<td></td>
 							</tr>
 							<tr>
@@ -504,7 +513,7 @@
 								<td></td>
 								<td class="light_orange_bg pointer" name="guided_poster_presentation_2">
 									Guided Poster<br />Presentation 2
-									<input type="hidden" name="e" value="room6">
+									<input type="hidden" name="e" value="room7">
 								</td>
 							</tr>
 							<tr>
@@ -571,11 +580,11 @@
 								</td>
 								<td class="green_bg pointer" name="symposium_20">
 									Symposium 20
-									<input type="hidden" name="e" value="room3">
-								</td>
-								<td class="green_bg pointer best_jomes" name="jomes_session">
-									Best Article in JOMES
 									<input type="hidden" name="e" value="room4">
+								</td>
+								<td class="sky_bg pointer best_jomes" name="jomes_session">
+									Best Article in JOMES
+									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
 								<td></td>
@@ -586,9 +595,9 @@
 							</tr>
 							<tr>
 								<td>17:40-18:00(20")</td>
-								<td class="yellow_bg pointer" name="closing_award_ceremony" colspan="3">
-									Closing & Award Ceremony
-									<input type="hidden" name="e" value="room5">
+								<td class="yellow_bg pointer" name="closing_ceremony" colspan="3">
+									Closing Ceremony
+									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
 								<td></td>
@@ -608,14 +617,14 @@
 
 <script>
 $(document).ready(function() {
-    $("td.pointer").click(function() {
+	/*$("td.pointer").click(function() {
         var e = $(this).find("input[name=e]").val();
         var day = $(this).parents("tbody[name=day]").attr("class");
         var target = $(this)
         var this_name = $(this).attr("name");
 
         table_location(event, target, e, day, this_name);
-    });
+    });*/
 	$(".tab_green li").click(function(){
 		var this_index = $(this).index();
 		if (!this_index == 1){

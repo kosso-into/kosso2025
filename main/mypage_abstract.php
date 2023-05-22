@@ -100,12 +100,6 @@
 		$poster_category_map[$obj["idx"]] = $obj["title_en"];
 	}
 
-	// toffic
-	$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation");
-
-	// Position
-	$position_arr = array("Professor", "Physician", "Researcher", "Student", "Other");
-
 	// nation
 	$nation_query = "SELECT *
 					FROM nation";
@@ -119,30 +113,30 @@
 
 <section class="container mypage">
     <h1 class="page_title">Mypage</h1>
-	<ul class="tab_green">
-		<li><a href="./mypage.php">Account</a></li>
-		<li><a href="./mypage_registration.php">Registration</a></li>
-		<li class="on"><a href="./mypage_abstract.php">Abstract</a></li>
-		<?php
-			//if($during_yn == 'N') {
-		?>
-			<!-- <li class="text_center"><a href="javascript:;" onclick="javascript:alert('행사 종료 후 9월 12일(월)부터 확인 가능합니다.');">평점 확인 (Korean Only)</a></li> -->
-			<!-- <li class="text_center"><a href="javascript:;" onclick="javascript:alert('행사 종료 후 9월 12일(월)부터 확인 가능합니다.');">Certification of Completion</a></li> -->
-		<?php
-			//}
-			//if(!empty($score_detail)) {
-		?>
-			<!-- <li class="text_center"><a href="./mypage_score.php">평점 확인 (Korean Only)</a></li> -->
-		<?php
-			//}
-			//if(!empty($only_idx)) {
-		?>
-			<!-- <li class="text_center"><a href="./mypage_certification.php">Certification of Completion</a></li> -->
-		<?php
-			//} 
-		?>
-	</ul>
 	<div class="inner">
+		<ul class="tab_green">
+			<li><a href="./mypage.php">Account</a></li>
+			<li><a href="./mypage_registration.php">Registration</a></li>
+			<li class="on"><a href="./mypage_abstract.php">Abstract</a></li>
+			<?php
+				//if($during_yn == 'N') {
+			?>
+				<!-- <li class="text_center"><a href="javascript:;" onclick="javascript:alert('행사 종료 후 9월 12일(월)부터 확인 가능합니다.');">평점 확인 (Korean Only)</a></li> -->
+				<!-- <li class="text_center"><a href="javascript:;" onclick="javascript:alert('행사 종료 후 9월 12일(월)부터 확인 가능합니다.');">Certification of Completion</a></li> -->
+			<?php
+				//}
+				//if(!empty($score_detail)) {
+			?>
+				<!-- <li class="text_center"><a href="./mypage_score.php">평점 확인 (Korean Only)</a></li> -->
+			<?php
+				//}
+				//if(!empty($only_idx)) {
+			?>
+				<!-- <li class="text_center"><a href="./mypage_certification.php">Certification of Completion</a></li> -->
+			<?php
+				//} 
+			?>
+		</ul>
 		<div class="section section1">
 			<div class="table_wrap x_scroll">
 				<table class="table_vertical registration_table">
@@ -159,13 +153,13 @@
 					<tbody>
 					<?php foreach($submission_list as $i => $submission) { ?>
 						<tr>
-                            <td><?= $i+1 ?></td>
+                            <td><?= $total_count - $i ?></td>
 							<td><?= $submission["submission_code"] ?></td>
 							<td>
 								<a href="javascript:;" class="text_center underline"><?= $submission["title"] ?></a>
 							</td>
 							<td><?= $submission["status"] ?></td>
-							<td><?= $regist_date ?></td>
+							<td><?= $submission["regist_date"] ?></td>
 							<td data-idx="<?= $submission["idx"] ?>">
 								<button type="button" class="btn review_regi_open">Review</button>
 								<button type="button" class="btn modify_btn">Modify</button>
@@ -177,15 +171,6 @@
 				</table>
 			</div>
 			<div class="pagination">
-				<!-- <ul class="clearfix"> -->
-				<!-- 	<li><a href=""><img src="./img/icons/arrows_left.png"></a></li> -->
-				<!-- 	<li class="on"><a href="">1</a></li> -->
-				<!-- 	<li><a href="">2</a></li> -->
-				<!-- 	<li><a href="">3</a></li> -->
-				<!-- 	<li><a href="">4</a></li> -->
-				<!-- 	<li><a href=""><img src="./img/icons/arrows_right.png"></a></li> -->
-				<!-- </ul> -->
-				<!-- <?= $paging_html; ?> -->
 			</div>
 			<div class="centerT">
 				<button class="btn green_btn long" onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button>
@@ -471,7 +456,7 @@
             <h3 class="pop_title">Review of Submission</h3>
 			<!-- Presenting Author -->
 			<div class="pop_title_wrap">
-				<h4>Author Information</h4>
+				<h4 id="author_information">Author Information</h4>
 				<p id="presenting_author_title">Presenting Author</p>
 			</div>
             <div class="table_wrap x_scroll" id="presenting_author"></div>
@@ -481,40 +466,6 @@
 				<p id="corresponding_author_title">Corresponding Author</p>
 			</div>
             <div class="table_wrap x_scroll" id="corresponding_author"></div>
-
-			<!-- Author Template -->
-			<template id="author_template">
-				<table class="c_table detail_table fixed_table mt10 detail_table_common" style="min-width:400px;">
-					<colgroup>
-						<col>
-						<col>
-						<col width="100px">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th>Name</th>
-							<td><span id="first_name"></span> <span id="last_name"></span></td>
-							<th>Country</th>
-							<td id="nation"></td>
-						</tr>
-						<tr>
-							<th>Affiliation</th>
-							<td colspan="3" id="affiliation"></td>
-						</tr>
-						<tr>
-							<th>E-mail</th>
-							<td colspan="3">
-								<a href="mailto:icomes@into-on.com" class="link" id="email"></a>
-							</td>
-						</tr>
-						<tr>
-							<th class="initial">Phone Number</th>
-							<td colspan="3"><span id="co_nation_tel"></span><span id="phone"></span></td>
-						</tr>
-					</tbody>
-				</table>
-			</template>
 
 			<!-- Abstract Submission Status -->
 			<div class="pop_title_wrap">
@@ -548,7 +499,7 @@
 						<tr>
 							<th>Abstract File</th>
 							<td colspan="3">
-								<a href="javascript:;" class="link" id="file"></a>
+								<a href="javascript:;" class="link" id="file" download></a>
 							</td>
 						</tr>
 					</tbody>
@@ -670,8 +621,20 @@
         </div>
     </div>
 
+<input type="hidden" id="data" data-nation='<?= json_encode($nation_map) ?>' data-category='<?= json_encode($poster_category_map) ?>' />
+<script defer>
+	// nation
+	const nation_arr = $("#data").data("nation");
 
-<script>
+	// abstract_category
+	const abstract_category_arr = $("#data").data("category");
+
+	// toffic
+	const presentation_type_arr = ["Oral Presentation", "Poster Exhibition", "Guided Poster Presentation"];
+
+	// Position
+	const position_arr = ["Professor", "Physician", "Researcher", "Student", "Other"];
+
 	$(document).ready(function(){
 		$(".delete_btn").on("click", function(){
 			const idx = $(this).parent().data("idx");
@@ -732,18 +695,81 @@
 	});
 
 	function setReviewPop(data) {
-		const submit_data = data.submit_data;
+		const submit_data = data.submit_data ?? [];
 		const presenting_author_data = data.presenting_author_data ?? [];
 		const corresponding_author_data = data.corresponding_author_data ?? [];
 
+		$("#presenting_author").empty();
+		$("#corresponding_author").empty();
+
+		if(presenting_author_data.length < 1 && corresponding_author_data.length < 1) {
+			$("#author_information").hide();
+		} else {
+			$("#author_information").show();
+		}
+
 		if(presenting_author_data.length < 1) {
-			console.log();
-			$("#presenting_author_title").remove();
+			$("#presenting_author_title").hide();
+		} else {
+			$("#presenting_author_title").show();
+			presenting_author_data.forEach(function(data, idx) {
+				$("#presenting_author").append(bindAuthor(data));
+			});
 		}
 
 		if(corresponding_author_data.length < 1) {
-			$("#corresponding_author_title").remove();
+			$("#corresponding_author_title").hide();
+		} else {
+			$("#corresponding_author_title").show();
+			corresponding_author_data.forEach(function(data, idx) {
+				$("#corresponding_author").append(bindAuthor(data));
+			});
 		}
+
+		$("#submission_code").text(submit_data.submission_code);
+		$("#presentation_type").text(submit_data.presentation_type);
+		$("#abstract_category").text(submit_data.abstract_category+".");
+		$("#abstract_category_text").text(abstract_category_arr[submit_data.abstract_category]);
+		$("#abstract_title").text(submit_data.abstract_title);
+		$("#file").text(submit_data.original_name);
+		$("#file").attr("href", submit_data.path+"/"+submit_data.save_name);
+	}
+
+	function bindAuthor(data) {
+		const affiliation_arr = data.affiliation.split("★");
+
+		const phone_arr = data.phone.split("-");
+		var nation_tel = phone_arr ? phone_arr[0] ?? "" : "";
+		var phone = phone_arr ? phone_arr[1] ?? "" : "";
+
+		return `<table class="c_table detail_table fixed_table mt10 detail_table_common" style="min-width:400px;">
+					<colgroup>
+						<col>
+						<col>
+						<col width="100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<td><span id="first_name">${data.first_name}</span> <span id="last_name">${data.last_name}</span></td>
+							<th>Country</th>
+							<td id="nation">${nation_arr[data.nation_no]}</td>
+						</tr>
+						<tr>
+							<th>Affiliation</th>
+							<td colspan="3" id="affiliation">${affiliation_arr.join("<br>")}</td>
+						</tr>
+						<tr>
+							<th>E-mail</th>
+							<td colspan="3"><a href="mailto:${data.email}" class="link" id="email">${data.email}</a></td>
+						</tr>
+						<tr>
+							<th class="initial">Phone Number</th>
+							<td colspan="3"><span id="co_nation_tel">${nation_tel ? '(+'+nation_tel+')' : ''}</span><span id="phone">${phone}</span></td>
+						</tr>
+					</tbody>
+				</table>`;
 	}
 </script>
 

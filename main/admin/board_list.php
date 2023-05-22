@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/header.php');?>
 <?php
-    $board_type_list = ["News", "Notice", "FAQ"];
+    $board_type_list = ["NewsLetter", "Notice", "FAQ"];
 
     $board_type = isset($_GET["t"]) ? preg_replace("/[^0-9]/","",$_GET["t"]) : "";
     $board_type = $board_type ?? 0; 

@@ -143,7 +143,6 @@
 							</td>
 						</tr>
 						<tr>
-							<!-- <th class="nowrap"><?=$locale("re_type_password")?></th> -->
 							<th class="nowrap">Verify password</th>
 							<td>
 								<div class="max_normal">
@@ -221,7 +220,7 @@
 						<?php }?>
 						<tr>
 							<th class="nowrap"><span class="red_txt">*</span>Title</th>
-							<td>
+							<td class="title_td clearfix">
 								<div class="max_normal">
 									<select name="title" class="required" id="title">
 										<option value="0" <?= (($user_info["title_option"] == 0) ? 'selected' : ''); ?>>Professor</option>
@@ -231,8 +230,8 @@
 										<option value="4" <?= (($user_info["title_option"] == 4) ? 'selected' : ''); ?>>Others</option>
 									</select>
 								</div>
-								<div class="max_normal">
-									<input type="text" class="<?= (($user_info["title_option"] == 4) ? "" : 'hide_input'); ?>" id="title_input" name="title_input" value="<?= (($user_info["title_option"] == 4) ? $user_info["title"] : ""); ?>">
+								<div class="max_normal <?= (($user_info["title_option"] == 4) ? 'hide_input on' : 'hide_input'); ?>">
+									<input type="text" id="title_input" name="title_input" value="<?= (($user_info["title_option"] == 4) ? $user_info["title"] : ""); ?>">
 								</div>
 							</td>
 						</tr>
@@ -249,7 +248,6 @@
 								<th><span class="red_txt">*</span>소속</th>
 								<td>
 									<div class="max_normal">
-										<!-- <input type="text" name="affiliation" value="<?=$user_info["affiliation"]?>"> -->
 										<input type="text" name="affiliation_kor" value="<?= $user_info['affiliation_kor']?>">
 									</div>
 								</td>
@@ -268,38 +266,18 @@
 								<th><span class="red_txt">*</span>부서</th>
 								<td>
 									<div class="max_normal">
-										<!-- <input type="text" name="department" value="<?=$user_info["department"]?>"> -->
 										<input type="text" name="department_kor" value="<?=$user_info["department_kor"]?>">
 									</div>
 								</td>
 							</tr>
 						<?php }?>
 						<tr>
-							<!-- <th class="nowrap"><span class="red_txt">*</span><?=$locale("phone")?></th> -->
 							<th class="nowrap"><span class="red_txt">*</span>Mobile Phone Number</th>
 							<td>
 								<div class="max_normal phone">
 									<input class="numbers" name="nation_tel" type="text" maxlength="60" value="<?=$nation_tel?>" readonly>
 									<input name="phone" id="phone" type="text" maxlength="15" value="<?= $phone ?>">
 								</div>
-								<!--
-								<div class="max_normal">
-									<ul class="half_ul">
-										<li style="max-width:80px;">
-											<select name="nation_tel" class="required"> 
-												<option value="" selected hidden>select</option>
-												<?php
-													if($nation_tel) {
-														echo "<option selected>".$nation_tel."</option>";
-													}
-												?>
-											</select>
-										</li>
-										<li>										
-											<input type="text" name="phone" class="required" placeholder="010-0000-0000" value="<?=$phone?>"></td>
-										</li>
-									</ul>
-								</div> -->
 							</td>
 						</tr>
 						<tr>
@@ -308,40 +286,6 @@
 								<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" value="<?=$nation_tel?>" readonly>
 								<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
 								<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
-								<!--
-								<div class="max_normal">
-									<ul class="half_ul">
-										<li style="max-width:80px;">
-											<select name="nation_tel" class="required"> 
-												<option value="" selected hidden>select</option>
-												<?php
-													if($nation_tel) {
-														echo "<option selected>".$nation_tel."</option>";
-													}
-												?>
-											</select>
-										</li>
-										<li>										
-											<ul class="half_ul">
-											<?php 
-												$tel_arr = explode("-",$user_info["telephone"]);
-												/*
-												if($user_info["nation_no"] == "25"){
-													$tel1 = "0".$tel_arr[1];
-													$tel2 = $tel_arr[2];
-												}else{
-												*/
-													$tel1 = $tel_arr[1];
-													$tel2 = $tel_arr[2];
-												//}
-											
-											?>
-												<li><input type="text" name="telephone_num1" class="required" value="<?=$tel1?>"></li>
-												<li><input type="text" name="telephone_num2" class="required" value="<?=$tel2?>"></li>
-											</ul>
-										</li>
-									</ul>
-								</div> -->
 							</td>
 						</tr>
 						<tr>
@@ -373,7 +317,6 @@
 						</div>
 					</li>
 					<li>
-						<!-- <p class="label"><?=$locale("re_type_password")?></p> -->
 						<p class="label">Verify password</p>
 						<div>
 							<input class="passwords" type="password" id="mo_re_password" name="mo_re_password" placeholder="Re-type password">
@@ -446,11 +389,6 @@
 					<li>
 						<p class="label"><span class="red_txt">*</span>Title</p>
 						<div>
-							<!-- <select name="mo_title" class="required"> -->
-								<!-- <option value="">Professor </option> -->
-								<!-- <option value="">Professor </option> -->
-								<!-- <option value="">Professor </option> -->
-							<!-- </select> -->
 							<ul class="half_ul">
 								<li>
 									<select name="mo_title" class="required" id="mo_title">
@@ -461,8 +399,8 @@
 										<option value="4" <?= (($user_info["title_option"] == 4) ? 'selected' : ''); ?>>Others</option>
 									</select>
 								</li>
-								<li>
-									<input type="text" class="<?= (($user_info["title_option"] == 4) ? "" : 'hide_input'); ?>" id="mo_title_input" name="mo_title_input" value="<?= (($user_info["title_option"] == 4) ? $user_info["title"] : ""); ?>">
+								<li class="<?= (($user_info["title_option"] == 4) ? 'hide_input on' : 'hide_input'); ?>">
+									<input type="text" id="mo_title_input" name="mo_title_input" value="<?= (($user_info["title_option"] == 4) ? $user_info["title"] : ""); ?>">
 								</li>
 						</div>
 					</li>
@@ -508,23 +446,6 @@
 							<input class="numbers" name="mo_nation_tel" type="text" value="<?=$nation_tel?>">
 							<input name="mo_phone" type="text" value="<?= $phone ?>">
 						</div>
-						<!--
-						<ul class="half_ul">
-							<li style="max-width:80px;">
-								<select name="mo_nation_phone" class="required"> 
-									<option value="" selected hidden>select</option>
-								<?php
-									if($nation_tel) {
-										echo "<option selected>".$nation_tel."</option>";
-									}
-								?>
-								</select>
-							</li>
-							<li>
-								<input type="text" name="mo_phone" class="required" placeholder="010-0000-0000" value="<?=$phone?>"></td>
-							</li>
-						</ul>
-						-->
 					</li>
 					<li>
 						<p class="label">Telephone Number</p>
@@ -533,26 +454,6 @@
 							<input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
 							<input class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
 						</div>
-						<!--
-						<ul class="half_ul">
-							<li style="max-width:80px;">
-								<select name="mo_nation_tel" class="required"> 
-									<option value="" selected hidden>select</option>
-								<?php
-									if($nation_tel) {
-										echo "<option selected>".$nation_tel."</option>";
-									}
-								?>
-								</select>
-							</li>
-							<li>
-								<ul class="half_ul">
-									<li><input type="text" name="mo_telephone_num1" class="required" value="<?=$tel1?>"></li>
-									<li><input type="text" name="mo_telephone_num2" class="required" value="<?=$tel2?>"></li>
-								</ul>
-							</li>
-						</ul>
-						-->
 					</li>
 					<li>
 						<p class="label"><span class="red_txt">*</span>Date of Birth</p>
@@ -565,9 +466,6 @@
 					<button type="button" class="btn green_btn long_btn submit_btn" id="mo_submit"><?=$locale("edit_btn")?></button>
 				</div>
 			</div>
-			<!-- <div class="btn_wrap">	 -->
-			<!-- 	<button type="button" class="btn green_btn long_btn submit_btn"><?=$locale("edit_btn")?></button> -->
-			<!-- </div> -->
 			<input type="hidden" name="ksola_member_check">
 		</form>
 			<input type="hidden" name="nation_tel" value="<?= $nation_tel ?>">	
@@ -589,10 +487,10 @@ $(document).ready(function() {
 		var _target_val = parseInt($(this).val());
 		if (_target_val == 4) {
 			$("[name=title_input], [name=mo_title_input]").show();
-			$("[name=title_input], [name=mo_title_input]").removeClass("hide_input");
+			$("[name=title_input], [name=mo_title_input]").parent().addClass("on");
 		} else {
 			$("[name=title_input], [name=mo_title_input]").hide();
-			$("[name=title_input], [name=mo_title_input]").addClass("hide_input");
+			$("[name=title_input], [name=mo_title_input]").parent().removeClass("on");
 		}
 	});
 
@@ -601,6 +499,22 @@ $(document).ready(function() {
 		window.open(url,"Registration Receipt","width=793, height=2000, top=30, left=30");
 	});
 
+	$("input[name=first_name_kor], input[name=last_name_kor], input[name=affiliation_kor], input[name=department_kor], input[name=mo_first_name_kor], input[name=mo_last_name_kor], input[name=mo_affiliation_kor], input[name=mo_department_kor]").on("keyup", function() {
+		const regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+		v = $(this).val();
+		if (regexp.test(v)) {
+			alert("한글만 입력가능 합니다.");
+			$(this).val(v.replace(regexp, ''));
+		}
+	});
+
+	$("input[name=phone], input[name=mo_phone]").keyup(function (event) {
+		const regexp = /[^0-9]/g;
+		v = $(this).val();
+		if (regexp.test(v)) {
+			$(this).val(v.replace(regexp, ''));
+		}
+	});
 
 	$(document).on("click", "#pc_submit", function(){
 		//var formData = $("form[name=modify_form]").serializeArray();

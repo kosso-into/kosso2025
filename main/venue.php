@@ -25,7 +25,7 @@ $info = sql_fetch($sql_info);
 						<img src="<?= $info['fi_img_url'] ?>" alt="hotel img">
 					 </div> -->
                 <div class="img_wrap">
-					<img src="./img/conrad_seoul.svg" alt="conrad seoul">
+					<img src="./img/conrad_seoul.jpg" alt="conrad seoul">
                 </div>
                 <div class="info_wrap">
                     <!-- <h6><?= $info['name'] ?></h6> -->

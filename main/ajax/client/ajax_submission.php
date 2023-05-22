@@ -685,8 +685,6 @@
             
             $user_data = sql_fetch($select_user_query);
             $category_data = sql_fetch($select_category_query);
-            
-            $subject = $language == "ko" ? "초록 신청 완료" : "Your abstract has been successfully submitted.";
             //$mail_result = mailer($language, "abstract", "", $email, "[ICOMES]".$subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_data['email'], date("Y-m-d H:i:s"), $category_data['title'], $abstract_title);
             if(!$mail_result) {
                // $res = [
@@ -698,6 +696,8 @@
             }
         }
         
+		$subject = $language == "ko" ? "초록 신청 완료" : "Your abstract has been successfully submitted.";
+
         //세션 초기화
         $_SESSION["abstract"] = "";
 

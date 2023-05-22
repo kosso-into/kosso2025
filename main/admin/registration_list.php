@@ -38,6 +38,8 @@
 	$registration_list_query =  "
 									SELECT
 										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2,
+										rr.member_type, rr.member_other_type,
+										CONCAT(m.first_name_kor,' ',m.last_name_kor) AS kor_name,
 										(
 											CASE rr.registration_type
 												#WHEN '2' THEN 'Online + Offline'
@@ -63,37 +65,60 @@
 												ELSE '-'
 											END
 										) AS is_score_text,
-										(CASE
-											WHEN rr.status = '0'
-											THEN '등록취소'
-											WHEN rr.status = '1'
-											THEN '결제대기'
-											WHEN rr.status = '2'
-											THEN '결제완료'
-											WHEN rr.status = '3'
-											THEN '환불대기'
-											WHEN rr.status = '4'
-											THEN '환불완료'
-											ELSE '-'
-										END) AS payment_status,
-										rr.member_type,
-										n.nation_ko,
+										(
+											CASE
+												WHEN rr.status = '0'
+												THEN '등록취소'
+												WHEN rr.status = '1'
+												THEN '결제대기'
+												WHEN rr.status = '2'
+												THEN '결제완료'
+												WHEN rr.status = '3'
+												THEN '환불대기'
+												WHEN rr.status = '4'
+												THEN '환불완료'
+												ELSE '-'
+											END
+										) AS payment_status,
+										(
+											CASE
+												WHEN rr.payment_methods = '0' THEN 'Credit card'
+												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
+											END
+										) AS payment_methods,
+										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number,
+										rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn,
+										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by, 
+										n.nation_ko, n.nation_en,
 										m.idx AS member_idx,
-										m.affiliation,
-										m.department,
+										m.affiliation, m.department,
+										m.affiliation_kor, m.department_kor,
+										m.nation_no,
+										m.date_of_birth,
 										rr.banquet_yn,
 										total_price_kr,
 										total_price_us,
 										member_status,
-										IFNULL(rr.register_path, '-') AS register_path,
-										rr.etc1,
-										rr.licence_number
+										IFNULL(rr.register_path, '-') AS register_path, 
+										IFNULL(rr.conference_info, '-') AS conference_info,
+										m.ksola_member_status
 									FROM request_registration  rr
 									INNER JOIN (
 										SELECT
 											idx,
-											affiliation,
-											department,is_deleted
+											first_name_kor, last_name_kor,
+											affiliation, department, affiliation_kor, department_kor,
+											nation_no,
+											(
+												CASE
+													WHEN ksola_member_status = 0 THEN '비회원'
+													WHEN ksola_member_status = 1 THEN '정회원'
+													WHEN ksola_member_status = 2 THEN '평생회원'
+													WHEN ksola_member_status = 3 THEN '인터넷회원'
+												END
+											) AS ksola_member_status,
+											date_of_birth,
+											is_deleted
 										FROM member
 										WHERE is_deleted = 'N'
 									) AS m
@@ -118,34 +143,57 @@
 	$html = '<table id="datatable" class="list_table">';
 	$html .= '<thead>';
 	$html .= '<tr class="tr_center">';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">결제상태</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">결제일</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">결제금액</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">ID</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">Name</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">Affiliation</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">Phone Number</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">Country</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">Member Type</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">참석유형</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">평점신청(Korean Only)</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">KSSO Member Status</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">Congress Banquet</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">면허 번호</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">등록일</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" rowspan="2">가입경로</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">Registration</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="15">Participants Inforatmion</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="4">평점신청(Korean Only)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Payment Information</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">Others</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;"></th>';
 	$html .= '</tr>';
 	$html .= '<tr class="tr_center">';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Korean Medical Assocication</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Korean Assocication of Certified Excercise Professionals</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Korean Institute of Dieteticv Education and Evaluation</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">No</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Registration No.</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Date of Registration</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">ID(E-mail)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">국내/국외</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Country</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">KSSO 회원 여부</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Name</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">성함</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Affiliation(Institution)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">소속</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Affiliation(Department)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">부서</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Phone Number</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Type of Participation</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Category</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Category (Others)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Date of Birth</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">의사면허번호</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">전문의번호</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">영양사자격번호</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">운동사 신청(Y/N)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제상태</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록비</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제 방식</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제금액</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Promotion Code</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">추천인</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Welcome Reception</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 2 Breakfast</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Breakfast</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Where did you get the information about the conference?</th>';
 	$html .= '</tr>';
 	$html .= '</thead>';
 	$html .= '<tbody>';
-
-	foreach($registration_list as $rl){
-
+	
+	foreach($registration_list as $rk => $rl){
 		$member_status = ($rl["member_status"] == 0) ? "N" : "Y";
+		$register_no = !empty($rl["registration_idx"]) ? "ICOMES2023-".$rl["registration_idx"] : "-";
+		$nation_type = ($rl["nation_no"] == 25) ? "국내" : "국외";
 
 		if(empty($rl["banquet_yn"])) {
 			$banquet_yn = 'N';
@@ -201,7 +249,7 @@
 		}
 
 		$register_path = "";
-
+		/*
 		if($rl["register_path"] == "ICOMES 2022 promotional mail") {
 			$register_path = "ICOMES 2022 프로모션 메일";
 		} else if ($rl["register_path"] == "ICOMES 2022 website") {
@@ -223,28 +271,51 @@
 		} else {
 			$register_path = "-";
 		}
+		*/
+		$conference_info = ($rl['conference_info'] != '-') ? str_replace('*', ',', $rl['conference_info']) : '-';		
 		
 		$licence_number = $rl['licence_number'] ?? 'Not applicable';
+		$specialty_number = $rl['specialty_number'] ?? 'Not applicable';
+		$nutritionist_number = $rl['nutritionist_number'] ?? 'Not applicable';
+
+		$is_exercise = ($rl['member_type'] == "Exercise Specialist") ? 'Y' : 'N';
 
 		$html .= '<tr class="tr_center">';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["payment_status"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$price.'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;"><a href="mailto:'.$rl["email"].'">'.$rl["email"].'</a></td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["name"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["affiliation"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["phone"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["nation_ko"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["member_type"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["attendance_type_text"].'</td>';
-		$html .= '<td style="text-align:center; background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$etc2[0].'</td>';
-		$html .= '<td style="text-align:center; background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$etc2[1].'</td>';
-		$html .= '<td style="text-align:center; background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$etc2[2].'</td>';
-		$html .= '<td style="text-align:center; background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$member_status.'</td>';
-		$html .= '<td style="text-align:center; background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$banquet_yn.'</td>';
-		$html .= '<td style="text-align:center; background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$licence_number.'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
-		$html .= '<td style="background-color:#EAEFF7; border-style: solid; border-width:thin;">'.$register_path.'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.($rk + 1).'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$register_no.'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["email"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$nation_type.'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["nation_en"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["ksola_member_status"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["name"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["kor_name"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["affiliation"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["affiliation_kor"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["department"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["department_kor"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["phone"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["attendance_type_text"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["member_type"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["member_other_type"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["date_of_birth"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'.strval($licence_number).'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'.strval($specialty_number).'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'.strval($nutritionist_number).'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$is_exercise.'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_status"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_methods"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["promotion_code"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["recommended_by"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["welcome_reception_yn"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_breakfast_yn"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_luncheon_yn"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day3_breakfast_yn"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day3_luncheon_yn"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$conference_info.'</td>';
 		$html .= '</tr>';
 	}
 	$html .= '</tbody>';
@@ -308,13 +379,18 @@
 				<table id="datatable" class="list_table">
 					<thead>
 						<tr class="tr_center">
+							<th>Registration No.</th>
 							<th>결제상태</th>
 							<th>ID(Email)</th>
 							<th>Member Type</th>
 							<th>참석유형</th>
 							<th>Country</th>
+							<th>KSSO 회원여부</th>
 							<th>Name</th>
-							<th>Online/Offline</th>
+							<th>Affiliation(Institution)</th>
+							<th>Phone Number</th>
+							<th>Type of Participation</th>
+							<th>Category</th>
 							<th>평점신청여부</th>
 							<th>등록일</th>
 						</tr>
@@ -325,18 +401,24 @@
 							echo "<tr><td class='no_data' colspan='8'>No Data</td></td>";
 						} else {
 							foreach($registration_list as $list) {
+								$register_no = !empty($list["registration_idx"]) ? "ICOMES2023-".$list["registration_idx"] : "-";
 					?>
-						<tr class="tr_center">
-							<td class="<?=$list["payment_status"] == "결제대기" ? "red_color" : "blue_color"?>"><?=isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td>
-							<td><a href="./member_detail.php?idx=<?=isset($list["member_idx"]) ? $list["member_idx"] : "" ?>"><?=isset($list["email"]) ? $list["email"] : "-" ?></a></td>
-							<td><?=isset($list["member_type"]) ? $list["member_type"] : "-" ?></td>
-							<td><?=isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-"?></td>
-							<td><?=isset($list["nation_ko"]) ? $list["nation_ko"] : "-" ?></td>
-							<td><?=isset($list["name"]) ? $list["name"] : "-" ?></td>
-							<td><a href="./registration_detail.php?idx=<?=isset($list["registration_idx"]) ? $list["registration_idx"] : ""?>"><?=isset($list["registration_type_text"]) ? $list["registration_type_text"] : "-"?></a></td>
-							<td><?=isset($list["is_score_text"]) ? $list["is_score_text"] : "-"?></td>
-							<td><?=isset($list["register_date"]) ? $list["register_date"] : "-"?></td>
-						</tr>
+								<tr class="tr_center">
+									<td><?= $register_no; ?></td>
+									<td class="<?=$list["payment_status"] == "결제대기" ? "red_color" : "blue_color"?>"><?=isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td>
+									<td><a href="./member_detail.php?idx=<?=isset($list["member_idx"]) ? $list["member_idx"] : "" ?>"><?=isset($list["email"]) ? $list["email"] : "-" ?></a></td>
+									<td><?=isset($list["member_type"]) ? $list["member_type"] : "-" ?></td>
+									<td><?=isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-"?></td>
+									<td><?=isset($list["nation_ko"]) ? $list["nation_ko"] : "-" ?></td>
+									<td><?=$list["ksola_member_status"]?></td>
+									<td><a href="./registration_detail.php?idx=<?=isset($list["registration_idx"]) ? $list["registration_idx"] : ""?>"><?=isset($list["name"]) ? $list["name"] : "-" ?></a></td>
+									<td><?=$list["affiliation"]?></td>
+									<td><?=$list["phone"]?></td>
+									<td><?=$list["attendance_type_text"]?></td>
+									<td><?=$list["member_type"]?></td>
+									<td><?=isset($list["is_score_text"]) ? $list["is_score_text"] : "-"?></td>
+									<td><?=isset($list["register_date"]) ? $list["register_date"] : "-"?></td>
+								</tr>
 					<?php 
 							}
 						}

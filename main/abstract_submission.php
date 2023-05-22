@@ -340,7 +340,6 @@ $(document).ready(function() {
                 dataType: "JSON",
                 success: function(res) {
                     if (res.code == 200) {
-
                         $(window).off("beforeunload");
 
                         if (idx != "") {
@@ -394,10 +393,18 @@ $(document).ready(function() {
         } else if (affiliation_cnt > 9) {
 			alert('Affiliation cannot exceed 10');	
         } else {
-            html = '';
+			const value = depart + ', ' + instit;
+			const items = $(this).parent().next('.affiliation_form').find('.affiliation_wrap .affiliation_item');
+			for(var i = 0; i < items.length; i++) {
+				if(items[i].innerHTML == value) {
+					alert("Affiliation cannot be duplicated");
+					return;
+				}
+			}
 
+            html = '';
             html += '<li class="clearfix">';
-            html += '<div><p>' + depart + '<span class="middle">, </span>' + instit + '</p></div>';
+            html += '<div><p class="affiliation_item">' + value + '</p></div>';
             html += '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
             html += '</li>';
 
@@ -411,7 +418,7 @@ $(document).ready(function() {
         var affiliation_value = "";
 
         for (var i = 0; i < affiliation.eq(0).find("p").length; i++) {
-            affiliation_value += affiliation.eq(0).find("p:eq(" + i + ")").text() + "★ ";
+            affiliation_value += affiliation.eq(0).find("p:eq(" + i + ")").text() + "★";
         }
 
         affiliation_input.val(affiliation_value);
@@ -499,13 +506,13 @@ $(document).ready(function() {
 				html += '</label>';
                 html += '</li>';
 				html += '<li>';
-				html += '<input type="checkbox" class="checkbox" id="author_chk1_2_'+i+'" name="add_co_presenting_author'+i+'" value="Y">';
+				html += '<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_'+i+'" name="add_co_presenting_author'+i+'" value="Y" onchange="check_value()">';
 				html += '<label for="author_chk1_2_'+i+'">';
 				html += '<i></i>Presenting Author<span class="red_txt">*</span>';
 				html += '</label>';
                 html += '</li>';
 				html += '<li>';
-				html += '<input type="checkbox" class="checkbox" id="author_chk1_3_'+i+'" name="add_co_corresponding_author'+i+'" value="Y">';
+				html += '<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_'+i+'" name="add_co_corresponding_author'+i+'" value="Y" onchange="check_value()">';
 				html += '<label for="author_chk1_3_'+i+'">';
 				html += '<i></i>Corresponding Author<span class="red_txt">*</span>';
 				html += '</label>';
@@ -803,6 +810,16 @@ function inputCheck(formData) {
         data[ok] = ov;
     });
 
+	if($(".presenting_author:checked").length != 1) {
+		alert("please check only one presenting_author");
+		return false;
+	}
+
+	if($(".corresponding_author:checked").length != 1) {
+		alert("please check only one corresponding_author");
+		return false;
+	}
+
     return {
         data: data,
         status: inputCheck
@@ -1046,7 +1063,38 @@ function setUserInformation(target) {
 			form.find(".affiliation_wrap").empty();
 			form.find(".affiliation_add").click();
 		}
-	} 
+	} else {
+		if(form.hasClass("co_abstract")) {
+			const num = form.data("num");
+
+			form.find("select[name=add_co_nation_no"+num+"]").val("");
+			form.find("input[name=add_co_first_name"+num+"]").val("");
+			form.find("input[name=add_co_last_name"+num+"]").val("");
+			form.find("input[name=add_co_email"+num+"]").val("");
+			form.find("input[name=add_co_phone"+num+"]").val("");
+			form.find("select[name=add_co_nation_tel"+num+"] option")[0].value = "";
+			form.find("select[name=add_co_nation_tel"+num+"] option")[0].textContent = "";
+
+			form.find(".institution").val("");
+			form.find(".department").val("");
+			form.find(".affiliation_wrap").empty();
+			form.find("input[name=add_co_affiliation"+num+"]").val("");
+		} else {
+			form.find("select[name=nation_no]").val("");
+			form.find("input[name=first_name]").val("");
+			form.find("input[name=last_name]").val("");
+			form.find("input[name=email]").val("");
+			form.find("input[name=phone]").val("");
+			form.find("select[name=nation_tel] option")[0].value = "";
+			form.find("select[name=nation_tel] option")[0].textContent = "";
+			form.find("select[name=nation_tel] option").click();
+
+			form.find(".institution").val("");
+			form.find(".department").val("");
+			form.find(".affiliation_wrap").empty();
+			form.find("input[name=affiliation]").val("");
+		}
+	}
 	
 	check_value();
 }
@@ -1111,7 +1159,7 @@ $(document).ready(function() {
 	<input type="hidden" name="user_info_institution" value="<?=$user_info_institution?>" />
 	<input type="hidden" name="user_info_department" value="<?=$user_info_department?>" />
 	<input type="hidden" name="user_email" value="<?=$user_email?>" />
-	<input type="hidden" name="user_nation_tel" value="+<?=$user_nation_tel?>" />
+	<input type="hidden" name="user_nation_tel" value="<?=$user_nation_tel?>" />
 	<input type="hidden" name="user_phone" value="<?=$user_phone?>" />
 
     <h1 class="page_title">Online Submission</h1>
@@ -1149,19 +1197,19 @@ $(document).ready(function() {
 									<ul class="author_chk_wrap">
 										<li>
 											<input type="checkbox" class="checkbox" id="author_chk1_1" onchange="setUserInformation($(this))">
-											<label for="author_chk1_1" class="nowrap">
+											<label for="author_chk1_1">
 												<i></i>Same as sign-up information<span class="red_txt">*</span>
 											</label>
 										</li>
 										<li>
-											<input type="checkbox" class="checkbox" id="author_chk1_2" name="presenting_author" value="Y" <?= $presenting_author == "Y" ? "checked" : "" ?>>
-											<label for="author_chk1_2" class="nowrap">
+											<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2" name="presenting_author" value="Y" <?= $presenting_author == "Y" ? "checked" : "" ?> onchange="check_value()">
+											<label for="author_chk1_2">
 												<i></i>Presenting Author<span class="red_txt">*</span>
 											</label>
 										</li>
 										<li>
-											<input type="checkbox" class="checkbox" id="author_chk1_3" name="corresponding_author" value="Y" <?= $corresponding_author == "Y" ? "checked" : "" ?>>
-											<label for="author_chk1_3" class="nowrap">
+											<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3" name="corresponding_author" value="Y" <?= $corresponding_author == "Y" ? "checked" : "" ?> onchange="check_value()">
+											<label for="author_chk1_3">
 												<i></i>Corresponding Author<span class="red_txt">*</span>
 											</label>
 										</li>
@@ -1213,7 +1261,7 @@ $(document).ready(function() {
 												for ($j = 0; $j < count($affiliation_arr) - 1; $j++) {
 													echo '<li class="clearfix">';
 													echo    '<div class="clearfix">';
-													echo        '<p>' . $affiliation_arr[$j] . '</p>';
+													echo        '<p class="affiliation_item">' . $affiliation_arr[$j] . '</p>';
 													echo    '</div>';
 													echo    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
 													echo '</li>';
@@ -1288,13 +1336,13 @@ $(document).ready(function() {
                             echo							'</label>';
                             echo						'</li>';
 							echo						'<li>';
-                            echo							'<input type="checkbox" class="checkbox" id="author_chk1_2_{$i}" name="add_co_presenting_author'.$i.'" value="Y" '.($coauthor["add_co_presenting_author"] == 'Y' ? "checked" : "").'>';
+                            echo							'<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_{$i}" name="add_co_presenting_author'.$i.'" value="Y" '.($coauthor["add_co_presenting_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
                             echo							'<label for="author_chk1_2_{$i}">';
                             echo								'<i></i>Presenting Author<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
 							echo						'<li>';
-                            echo							'<input type="checkbox" class="checkbox" id="author_chk1_3_{$i}" name="add_co_corresponding_author'.$i.'" value="Y" '.($coauthor["add_co_corresponding_author"] == 'Y' ? "checked" : "").'>';
+                            echo							'<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_{$i}" name="add_co_corresponding_author'.$i.'" value="Y" '.($coauthor["add_co_corresponding_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
                             echo							'<label for="author_chk1_3_{$i}">';
                             echo								'<i></i>Corresponding Author<span class="red_txt">*</span>';
                             echo							'</label>';
@@ -1342,14 +1390,14 @@ $(document).ready(function() {
                                 for ($j = 0; $j < count($coauthor_affiliation_arr)-1; $j++) {
                                     echo '<li class="clearfix">';
                                     echo    '<div class="clearfix">';
-                                    echo        '<p>' . $coauthor_affiliation_arr[$j] . '</p>';
+                                    echo        '<p class="affiliation_item">' . $coauthor_affiliation_arr[$j] . '</p>';
                                     echo    '</div>';
                                     echo    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
                                     echo '</li>';
                                 }
                             }
                             echo                        '</ul>';
-                            echo                        '<input type="hidden" value=' . $coauthor["add_co_affiliation"] . ' name="add_co_affiliation' . $i . '" onchange="check_value()">';
+                            echo                        '<input type="hidden" value="' . $coauthor["add_co_affiliation"] . '" name="add_co_affiliation' . $i . '" onchange="check_value()">';
                             echo                    '</div>';
                             echo                '</div>';
                             echo            '</li>';
@@ -1365,7 +1413,7 @@ $(document).ready(function() {
                             echo                    '<select class="required2" name="add_co_nation_tel' . $i . '">';
 							if(!isset($coauthor["add_co_nation_tel"])) {
 								$co_arr_phone = explode("-", $coauthor["add_co_phone"]);
-								$co_nation_tel = isset($co_arr_phone[0]) ? "+".$co_arr_phone[0] : "" ;
+								$co_nation_tel = isset($co_arr_phone[0]) ? '+'.$co_arr_phone[0] : "" ;
 								$co_phone = implode("-", array_splice($co_arr_phone, 1));
 							} else {
 								$co_nation_tel = $coauthor["add_co_nation_tel"];

@@ -3,7 +3,7 @@
 	include_once('./include/header.php');
 	include_once('../plugin/editor/smarteditor2/editor.lib.php');
 
-	$board_type_list = ["News", "Notice", "FAQ"];
+	$board_type_list = ["NewsLetter", "Notice", "FAQ"];
 
 	$board_type = isset($_GET["t"]) ? preg_replace("/[^0-9]/","",$_GET["t"]) : "";
 	$board_type = ($board_type == 1 || $board_type == 2) ? $board_type : 0; 
@@ -145,7 +145,7 @@
 								}
 						?>
 							<tr>
-								<th>썸네일<?=($board_type == 0) ? " *" : ""?></th>
+								<th>썸네일</th>
 								<td colspan="3">
 									<div class="file_input">
 										<input type="file">

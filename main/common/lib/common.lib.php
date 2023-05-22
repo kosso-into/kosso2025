@@ -2314,7 +2314,6 @@ function upload_image($file_obj, $file_directory_idx, $thumb_yn='N', $wish_width
 		$upload_path = $absolute_path."/".$file_directory."/".$year_dir."/".$month_dir."/".$day_dir;
 		$upload_db_path = "/main/upload/img/".$file_directory."/".$year_dir."/".$month_dir."/".$day_dir;
 	}
-	
 	if(!is_dir($upload_path)){
 		mkdir($upload_path, 0777, true);
 	}

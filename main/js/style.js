@@ -198,6 +198,14 @@ $(document).ready(function(){
 		$("html, body").animate({scrollTop: 0}, 500)
 	})
 
+	// 메인페이지 하단 이동 button 클릭이벤트
+	$(".main_section .btn_circle_arrow").click(function(){
+		var main_section_height = $(".main_section").outerHeight();
+		var header_height = $("header").outerHeight();
+		var move_main_cont = main_section_height - header_height;
+		$("html, body").animate({scrollTop: move_main_cont}, 500);
+	});
+
 	//로그인 백그라운드 높이값
 	$(".login.bg").css("min-height", $(window).height());
 	//$(".login.bg").outerHeight($(window).height());

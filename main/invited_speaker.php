@@ -49,7 +49,7 @@
                                             <p class="">Adipocyte Biology</p>
                                             <div>
                                                 <h4 class="title">Matthias Blüher</h4>
-                                                <h5>Universitätsklinikum Leipzig,<br>Germany</h5>
+                                                <h5>University of Leipzig, Germany</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -99,6 +99,7 @@
 
                             <!--230516 Symposia ====================================================================== -->
                         </ul>
+						<!--
                         <h1 class="area_title">Symposia</h1>
                         <ul class="speaker_list_2">
                             <li class="gray_card">
@@ -536,10 +537,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <!-- ================================================================================================ -->
-
-
                         </ul>
+						-->
                     </div>
                 </div>
             </div>
