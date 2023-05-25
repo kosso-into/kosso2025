@@ -152,6 +152,25 @@ $(document).ready(function(){
 		console.log($(this).parent("ul").next(".tab_wrap").children(".tab_cont"))
 	});
 
+	// 탭 li 텍스트 두줄 이상일 경우
+	tabMax();
+
+	function tabMax(){
+		if ($(".tab_green")) {
+			var tab_max_h = 0; 
+			$(".tab_green > li > a").each(function(){ // 최대 높이 구하기
+				var tab_h = parseInt($(this).css("height"));
+				if (tab_max_h < tab_h) {
+					tab_max_h = tab_h;
+				};
+			});
+			$(".tab_green > li > a").each(function(){ // 최대 높이 설정
+				$(this).css({height: tab_max_h});
+				$(this).parent(".tab_green > li").css({height: tab_max_h});
+			});
+		};
+	};
+
 	// FAQ > arrow toggle
 	$(".faq_quest").click(function(){
 		if($(this).hasClass("on")){
@@ -198,7 +217,7 @@ $(document).ready(function(){
 		$("html, body").animate({scrollTop: 0}, 500)
 	})
 
-	// 메인페이지 하단 이동 button 클릭이벤트
+	// 메인페이지 화살표(하단 이동) button 클릭이벤트
 	$(".main_section .btn_circle_arrow").click(function(){
 		var main_section_height = $(".main_section").outerHeight();
 		var header_height = $("header").outerHeight();
@@ -231,6 +250,20 @@ $(document).ready(function(){
 			$(".btn.online_btn").removeClass("green_btn").addClass("gray_btn");
 		}
 	});
+
+	// 230523 메인페이지 height (1024 아래 해상도)
+	$(window).resize(function(){
+		var win_width = $(window).width();
+		if ($("section").hasClass("main_section")){
+			var win_height = $(window).height();
+			if (win_width <= 1024) {
+				$(".section_bg").css({"padding-top":"0", "height":win_height})
+			} else {
+				$(".section_bg").css({"padding-top":"117px", "height":win_height})
+			}
+		}
+	});
+	$(window).trigger("resize");
 });
 
 

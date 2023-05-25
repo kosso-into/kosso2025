@@ -270,10 +270,10 @@ $abstract_idx = $_GET["idx"];
                     </li>
                 </ul>
 				<div class="btn_wrap submission_step2">
-					<!-- 활성화 시, gray_btn 제거 & green_btn 추가 -->
+					<!-- 활성화 시, gray_btn 제거 & blue_btn 추가 -->
 					<button type="button" class="btn gray_btn"
                         onclick="window.location.href='./abstract_submission.php?session=Y<?= $abstract_idx ? "&idx=" . $abstract_idx : "" ?>';"><!-- <span>&lt;</span> --><?= $locale("prev_btn") ?></button>
-					<button type="button" class="btn submit_button green_btn on"
+					<button type="button" class="btn submit_button blue_btn on"
                         data-idx="<?= $abstract_idx ?>"><?= $locale("submit_btn") ?><!-- <span>&gt;</span> --></button>
 				</div>
             </div>

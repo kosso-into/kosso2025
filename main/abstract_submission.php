@@ -282,11 +282,11 @@ function other_change(value) {
 }
 
 /*function change_select_box() {
-	$("#submit_btn").removeClass("green_btn");
+	$("#submit_btn").removeClass("blue_btn");
 	$("#submit_btn").addClass("gray_btn");
 }*/
 $(document).ready(function() {
-    $(document).on("click", ".green_btn", function() {
+    $(document).on("click", ".blue_btn", function() {
         var idx = $(this).data("idx");
         var data = {};
 
@@ -833,7 +833,7 @@ function check_value() {
     var affiliation_len = $(".affiliation_wrap li").length;;
 
     if (affiliation_len < 0) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
@@ -853,14 +853,14 @@ function check_value() {
 
     // position 체크 안됨
     if (position_count > position_checked_count) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
 
     // position other 체크했지만 값 입력하지 않음
     if (position_other_check_count > position_other_write_count) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
@@ -892,51 +892,51 @@ function check_value() {
     phone = (typeof(phone) != "undefined") ? phone : null;
 
 	if (nation_no == "") {
-		$("#submit_btn").removeClass("green_btn");
+		$("#submit_btn").removeClass("blue_btn");
 		$("#submit_btn").addClass("gray_btn");
 		$("input[name=phone]").attr("placeholder", "");
 		return;
 	}
     if (abstract_category == "") {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
     if (!first_name) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
     if (!last_name) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
     if (!affiliation_len < 0) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
     if (!email) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     } else if(!email_regex.test(email)) {
-		$("#submit_btn").removeClass("green_btn");
+		$("#submit_btn").removeClass("blue_btn");
 		$("#submit_btn").addClass("gray_btn");
 		alert("Please check email adress field.");
 		return;
 	}
 
     if (!phone) {
-        $("#submit_btn").removeClass("green_btn");
+        $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     } else {
 		if($("select[name=nation_no]").val() == 25) { // Republic of Korea
 			var regPhone = /^1([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
 			if (!regPhone.test(phone)) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 			    $("#submit_btn").addClass("gray_btn");
 				alert("Please enter your phone number correctly \nexample) 10-0000-0000");
 				return;
@@ -944,7 +944,7 @@ function check_value() {
 		} else { // 해외 - 숫자만
 			var regPhone = /^[0-9]+$/;
 			if (!regPhone.test(phone)) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 			    $("#submit_btn").addClass("gray_btn");
 				alert("Please enter only digits for phone number field.");
 				return;
@@ -976,7 +976,7 @@ function check_value() {
 			co_phone = (typeof(co_phone) != "undefined") ? co_phone : null;
 
 			if (co_nation_no == "") {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 				$("#submit_btn").addClass("gray_btn");
 				form.find("input[name=add_co_phone"+num+"]").attr("placeholder", "");
 				is_valid = false;
@@ -989,31 +989,31 @@ function check_value() {
 				}
 			}
 			if (!co_first_name) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 				$("#submit_btn").addClass("gray_btn");
 				is_valid = false;
 				return;
 			}
 			if (!co_last_name) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 				$("#submit_btn").addClass("gray_btn");
 				is_valid = false;
 				return;
 			}
 			if (co_affiliation_len < 1) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 				$("#submit_btn").addClass("gray_btn");
 				is_valid = false;
 				return;
 			}
 			if (!co_email) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 				$("#submit_btn").addClass("gray_btn");
 				is_valid = false;
 				return;
 			}
 			if (!co_phone) {
-				$("#submit_btn").removeClass("green_btn");
+				$("#submit_btn").removeClass("blue_btn");
 				$("#submit_btn").addClass("gray_btn");
 				is_valid = false;
 				return;
@@ -1023,7 +1023,7 @@ function check_value() {
 
 	if(is_valid) {
 		$("#submit_btn").removeClass("gray_btn");
-		$("#submit_btn").addClass("green_btn");
+		$("#submit_btn").addClass("blue_btn");
 	}
 }
 
@@ -1435,7 +1435,7 @@ $(document).ready(function() {
             <?php
                 if (!empty($abstract_idx) || !empty($submit_data)) {
             ?>
-            <button type="button" id="submit_btn" class="btn btns green_btn submit_btn" data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?><!-- <span>&gt;</span> --></button>
+            <button type="button" id="submit_btn" class="btn btns blue_btn submit_btn" data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?><!-- <span>&gt;</span> --></button>
             <?php
                 } else {
             ?>

@@ -67,30 +67,22 @@
 					<div>
 						<div class="footer_l">
 							<img src="/main/img/icons/fl01.png" alt="">
-							<div>
-								<p class="footer_l_title">Korean Society for the Study of Obesity(KSSO)</p>
-								<ul>
-									<!-- <li><span>T.</span> 82-2-6941-0888, 82-2-364-0886,0887</li> -->
-									<li><span>T.</span> 82-2-364-0886,0887</li>
-									<li><span>F.</span> 82-2-364-0883</li>
-									<!-- <li><span>Email.</span> <a href="mailto:webmaster@kosso.or.kr" class="font_inherit">webmaster@kosso.or.kr</a> / <br class="min_br"><a href="mailto:kosso@kosso.or.kr" class="font_inherit">kosso@kosso.or.kr</a></li> -->
-									<li><span>E.</span> <a href="mailto:webmaster@kosso.or.kr" class="font_inherit">webmaster@kosso.or.kr</a></li>
-									<li><span>W.</span> <a href="https://www.kosso.or.kr" class="font_inherit">https://www.kosso.or.kr</a></li>
-									<!-- <li><span>Business Registration Number. <br class="min_br"></span>121-82-61144</li> -->
-									<!-- <li><span>President.</span> Chang Beom Lee</li> -->
-									<li>Room 1010, Renaissance tower, <br class="min_br">14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
-								</ul>
-							</div>
-				
+							<ul>
+								<li><span>T.</span> 82-2-6941-0888, 82-2-364-0886,0887</li>
+								<li><span>F.</span> 82-2-364-0883</li>
+								<li><span>Email.</span> <a href="mailto:webmaster@kosso.or.kr" class="font_inherit">webmaster@kosso.or.kr</a> / <br class="min_br"><a href="mailto:kosso@kosso.or.kr" class="font_inherit">kosso@kosso.or.kr</a></li>
+								<li><span>Business Registration Number. <br class="min_br"></span>121-82-61144</li>
+								<li><span>Chairman.</span> Chang Beom Lee</li>
+								<li>Room 1010, Renaissance tower, <br class="min_br">14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
+							</ul>
 						</div>
 						<div class="footer_r">
-							<p class="footer_r_title">Secretariat of ICOMES 2023</p>
+							<p class="footer_r_title">Conference Secretariat</p>
 							<ul>
 								<li><span>T.</span> 82-2-2285-2582</li>
-								<li><span>F.</span> 82-2-2285-2530</li>
-								<li><span>E.</span> <a href="mailto:icomes@into-on.com" class="font_inherit">icomes@into-on.com</a></li>
-								<!-- <li>2F, Wonhyo-ro, #204, Yongsan-gu, Seoul, Korea</li> -->
-								<li>A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea</li>
+								<li><span>Fax :</span> 82-2-3275-3099</li>
+								<li><span>Email :</span> <a href="mailto:ICOMES@into-on.com" class="font_inherit">ICOMES@into-on.com</a></li>
+								<li>2F, Wonhyo-ro, #204, Yongsan-gu, Seoul, Korea</li>
 							</ul>
 						</div>
 					</div>

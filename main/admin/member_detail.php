@@ -200,9 +200,9 @@
 								<th>대한비만학회 회원 여부</th>
 								<td>
 									<div id="ksola_member_status" class="<?= $is_hide ?>">
-										<input <?= (!$ksola_member_status ? "" : "checked") ?> type="radio" class="new_radio" name="user" id="user1">
+										<input <?= (!$ksola_member_status ? "" : "checked") ?> type="radio" class="new_radio" name="user" id="user1" value="1">
 										<label for="user1"><i></i>회원</label>
-										<input <?= (!$ksola_member_status ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user2">
+										<input <?= (!$ksola_member_status ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user2" value="0">
 										<label for="user2"><i></i>비회원</label>
 									</div>
 									<span class="<?= $is_hide == "" ? "hidden" : "" ?>"><?= $ksola_member_type ?></span>
@@ -210,38 +210,6 @@
 								<th>생년월일</th>
 								<td>
 									<input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy" id="datepicker" value="<?= $date_of_birth ?>" onkeyup="birthChk(this)">
-								</td>
-							</tr>
-							<tr class="ksola_signup <?= !$ksola_member_status ? "" : "on" ?>">
-								<th style="background-color:transparent"></th>
-								<td>
-									<ul class="simple_join clearfix">
-										<li>
-											<label for="">KSSO ID<span class="red_txt">*</span></label>
-											<input class="email_id" name="kor_id" type="text" maxlength="60">
-										</li>
-										<li>
-											<label for="">KSSO PW<span class="red_txt">*</span></label>
-											<input class="passwords" name="kor_pw" type="password" maxlength="60">
-										</li>
-										<li>
-											<button onclick="kor_api()" type="button" class="btn">회원인증</button>
-										</li>
-									</ul>
-									<div class="clearfix2">
-										<div>
-											<input type="checkbox" class="checkbox" id="privacy">
-											<label for="privacy">
-												제 3자 개인정보 수집에 동의합니다.
-											</label>
-										</div>
-										<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
-									</div>
-									
-									<input type="hidden" name="ksola_member_check">
-									<input type="hidden" name="ksola_member_type" value="<?= $ksola_member_type ?>">
-								</td>
-								<td colspan="2">
 								</td>
 							</tr>
 							<tr>
@@ -509,10 +477,11 @@ $(document).ready(function(){
 		if (data['telephone1'] != "" && data['telephone2'] != "") {
 			data['telephone'] = data['nation_tel'] + '-' + data['telephone1'] + '-' + data['telephone2'];
 		}
-
+		
+		/*
 		var ksola_member_check = $("input[name=ksola_member_check]").val();
 		var ksola_member_type = $("input[name=ksola_member_type]").val();
-
+		
 		if(ksola_member_type == "인터넷회원"){
 			ksola_member_status = 3;
 		}else if(ksola_member_type == "평생회원"){
@@ -522,15 +491,20 @@ $(document).ready(function(){
 		}else {
 			ksola_member_status = 0;
 		}
+		*/
 
 		// 비회원으로 저장
+		/*
 		if($("#user2:checked").length > 0) {
 			ksola_member_status = 0;
 			ksola_member_check = "";
 		}
 
 		data['ksola_member_check'] = ksola_member_check;
-		data['ksola_member_status'] = ksola_member_status;
+		*/
+		data['ksola_member_status'] = $("[name=user]:checked").val();
+
+		console.log(data);
 
 		if(status) {
 			if(confirm("저장하시겠습니까?")) {

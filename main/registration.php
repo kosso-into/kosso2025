@@ -86,7 +86,7 @@ if ($during_yn !== "Y") {
 	$member_idx = $_SESSION["USER"]['idx'];
 	$sql_info = "
 				SELECT
-					m.email, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.phone, m.ksola_member_status
+					m.email, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.phone, m.ksola_member_status, m.nation_no
 				FROM member m
 				LEFT JOIN nation n
 				ON m.nation_no = n.idx
@@ -624,11 +624,20 @@ if ($during_yn !== "Y") {
 										<tr>
 											<th>Registration Fee</th>
 											<td class="regi_fee">
-												<!-- USD / KRW 
+												<!-- USD / KRW -->
 												<div class="fee_chk">
-													<p class="korea_only">KRW</p>
-													<p class="usd_only on">USD</p>
-												</div>-->
+												<?php
+													if ($member_data['nation_no'] == 25) {
+												?>
+														<p class="korea_only on">KRW</p>
+												<?php
+													} else {
+												?>
+														<p class="usd_only on">USD</p>
+												<?php
+													}
+												?>
+												</div>
 												<input type="text" id="reg_fee" name="reg_fee" placeholder="0" readonly value="<?=$prev["calc_fee"] || $prev["calc_fee"] == 0 ? number_format($prev["calc_fee"]) : ""?>">
 											</td>
 										</tr>
@@ -682,12 +691,12 @@ if ($during_yn !== "Y") {
 				
             </form>
             <div class="btn_wrap gap">
-                <!-- 활성화 시, gray_btn 제거 & green_btn 추가 -->
+                <!-- 활성화 시, gray_btn 제거 & blue_btn 추가 -->
                 <button type="button" class="btn online_btn <?=$registrationNo ? "" : "gray_btn"?> prev_btn pointer">
 					<!-- <?= $locale("prev_btn") ?> -->
 					Previous
 				</button>
-                <button type="button" class="btn online_btn <?=$registrationNo ? "green_btn" : ""?> next_btn pointer">
+                <button type="button" class="btn online_btn <?=$registrationNo ? "blue_btn" : ""?> next_btn pointer">
 					<!-- <?= $locale("next_btn") ?> -->
 					<?=$registrationNo ? "Modify" : "Submit"?>
 				</button>

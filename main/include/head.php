@@ -9,7 +9,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="ICOMES 2023">
-    <meta property="og:image" content="/main/img/og_image.jpg" />
+    <meta property="og:image" content="/main/img/poster2023.jpg" />
     <meta property="og:description" content="2023 ICOMES hosted by KSSO">
     <meta name="description" content="2023 ICOMES hosted by KSSO">
 

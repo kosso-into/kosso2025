@@ -338,7 +338,7 @@
 								</td>
 								<td class="green_bg pointer" name="symposium_11">
 									Symposium 11
-									<p>Community-based Approaches to Improve Nutrition and Obesity for Vulnerable Groups</p>
+									<p>Social and Environmental Determinants: Nutritional View of Obesity</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_12">
@@ -433,7 +433,7 @@
 								</td>
 								<td class="green_bg pointer" name="symposium_15">
 									Symposium 15
-									<p>Social and Environmental Determinants Influencing Obesity</p>
+									<p>Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_16">

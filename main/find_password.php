@@ -1,6 +1,6 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/header.php'); ?>
-<section class="container login_form form_layout find_password login bg">
+<section class="container login_form form_layout find_password login bg style_2023">
 	<!-- <a href="./index.php" class="logo"><img src="./img/logo.png"></a> -->
 	<h1 class="page_title">Find Password
 		<p class="red_txt">Please enter your email.</p>
@@ -12,8 +12,8 @@
 					<input type="text" name="email" placeholder="<?= $locale("id") ?>">
 				</li>
 			</ul>
-			<button type="button" class="btn submit_btn yellow_btn"><?= $locale("get_temporary_password_btn") ?></button>
-			<button type="button" class="btn login_btn green_btn" onclick="javascript:window.location.href='./login.php';"><?= $locale("login") ?></button>
+			<button type="button" class="btn submit_btn gray_line_btn"><?= $locale("get_temporary_password_btn") ?></button>
+			<button type="button" class="btn login_btn main_btn" onclick="javascript:window.location.href='./login.php';"><?= $locale("login") ?></button>
 		</form>
 	</div>
 </section>
