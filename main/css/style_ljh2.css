@@ -1007,3 +1007,13 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.gray_card {width:100%;}
 	.gray_card .green_tag {padding:0 10px;}
 }
+
+/*photo 페이지 모바일 틀어짐 수정 230522*/
+@media screen and (max-width: 620px){
+.photo_tab_wrap{display:flex;overflow-x:auto;margin-bottom:42px;}
+.photo_tab_wrap > ul.tab_green{margin-bottom:0;}
+}
+
+.main_section .section_bg{min-height:830px;}
+.main_section .img_vsl_text{top:90px;}
+.main_section .dates_area{bottom:52px;}

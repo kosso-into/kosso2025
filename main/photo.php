@@ -37,7 +37,7 @@ $years = explode(',', sql_fetch($sql_years)['years']);
         </div> -->
 		<!-- <img class="coming" src="./img/coming.png" /> -->
         <div class="year_slider_wrap section">
-            <div>
+            <div class="photo_tab_wrap">
                 <ul class="tab_green">
                     <?php
 					$is_first = true;

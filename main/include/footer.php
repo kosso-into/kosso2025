@@ -76,17 +76,15 @@
 								<li>Room 1010, Renaissance tower, <br class="min_br">14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
 							</ul>
 						</div>
-						<!--
 						<div class="footer_r">
 							<p class="footer_r_title">Conference Secretariat</p>
 							<ul>
-								<li><span>T.</span> 82-2-0000-0000</li>
+								<li><span>T.</span> 82-2-2285-2582</li>
 								<li><span>Fax :</span> 82-2-3275-3099</li>
 								<li><span>Email :</span> <a href="mailto:ICOMES@into-on.com" class="font_inherit">ICOMES@into-on.com</a></li>
 								<li>2F, Wonhyo-ro, #204, Yongsan-gu, Seoul, Korea</li>
 							</ul>
 						</div>
-						-->
 					</div>
 				</div>
 			</div>
