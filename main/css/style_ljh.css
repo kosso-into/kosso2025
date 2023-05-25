@@ -374,7 +374,7 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 .file_input {padding:0;}
 .file_input > * {vertical-align:middle;}
 .file_input label {display:inline-block; height:60px; line-height:58px; width:calc(100% - 235px); border:1px solid #707070; padding-left:40px; border-radius:30px; overflow:hidden;}
-.file_input .btn {display:inline-block; width:230px; height:60px; line-height:60px; padding:0; text-align:center; background-color:#10BF99; border-color:#10BF99; color:#fff; font-size:20px;}
+.file_input .btn {display:inline-block; width:230px; height:60px; line-height:60px; padding:0; text-align:center; background-color:#0066CC; border-color:#0066CC; color:#fff; font-size:20px;}
 .file_input .btn img {width:30px; margin-right:16px;}
 
 .pl60 {padding-left:60px;}
@@ -795,6 +795,7 @@ br.br_530_only {display: none;}
 @media screen and (max-width: 1024px){
 	/*메인페이지*/
 	.main_section .btn_circle_arrow {width:51px; height:51px;}
+	.speakers_wrap .title, .noti_area .title {font-size:20px;}
 
 	/*메인타이틀*/
 	.page_title {font-size:35px;}
@@ -1113,6 +1114,9 @@ br.br_530_only {display: none;}
 @media screen and (max-width: 530px){
 	br.br_530_only {display: block;}
 	.checkbox:checked + label:after {top:4px;}
+
+	/*메인페이지*/
+	.speakers_wrap .title, .noti_area .title {font-size:18px;}
 
 	/* welcome_new */
 	.headman_l {width: 140px; height: auto;}

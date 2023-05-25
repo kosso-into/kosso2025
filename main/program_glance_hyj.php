@@ -191,7 +191,7 @@
 								<td class="sky_bg pointer" name="sponsored_session_1">Sponsored<br />Session 1
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg pointer" name="joint_symposium_easo">
+								<td class="purple_bg pointer" name="joint_symposium_EASO">
 									Joint Symposium EASO
 									<input type="hidden" name="e" value="room6">
 								</td>

@@ -46,7 +46,7 @@ echo '<script type="text/javascript">
 					  $(".program_detail_ul li").each(function(){
 						if("' . $name . '" === $(this).attr("name")) {
 							var this_top = $(this).offset().top;
-							$("html, body").animate({scrollTop: this_top - 150}, 1000);
+							$("html, body").animate({scrollTop: this_top - 400}, 1000);
 							console.log("scrollTop: ", this_top - 150)
 						}
 					  });
@@ -1364,7 +1364,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="plenary_lecture_1">
+                            <li name="plenary_lecture_1_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -1556,7 +1556,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="opening_address">
+                            <li name="opening_address_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -1580,7 +1580,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="keynote_lecture_1">
+                            <li name="keynote_lecture_1_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2813,7 +2813,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>16:30-18:00(90")</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 11 : Community-Based Approaches to Improve Nutrition and Obesity for Vulnerable Groups</p>
+                                                    <p class="font_20 bold">Symposium 11 : Social and Environmental Determinants: Nutritional View of Obesity</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Kyeong Sook Yim</span> (The
                                                         University of Suwon, Korea) /
@@ -2841,45 +2841,52 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:50(20")</td>
                                                                     <td class="bold">
-                                                                        Food and Nutrition Services in Assisted Living Facilities for Older Adults
+                                                                        Food Insecurity and Health Disparities related to Obesity in the US
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Shirley Y. Chao</p>(Massachusetts Executive Office of Elder Affairs, USA)
+                                                                        <p class="bold">Seung-Yeon Lee</p>(University of Cincinnati, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:50-17:10(20")</td>
                                                                     <td class="bold">
-                                                                        Community-Based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-Income Population
+                                                                        Influence of Social and Environmental Factors on Obesity
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Seung Eun Jung</p>(The University of Alabama, USA)
+                                                                        <p class="bold">Ji-Yun Hwang</p>(Sangmyung University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:10-17:30(20")</td>
                                                                     <td class="bold">
-                                                                        Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities
+                                                                        Socioeconomic Inequalities in Obesity
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Min-sun Jeon</p>(Chungnam National University, Republic of Korea)
+                                                                        <p class="bold">Hyeon-Chang Kim</p>(Yonsei University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-18:00(30")</td>
+                                                                    <td >17:30-18:00(30")</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td></td>
+                                                                    <td>
+                                                                        <!-- <p class="bold">Sung Nim Han</p>(Seoul National
+                                                                        University, Korea) -->
+                                                                    </td>
                                                                 </tr>
-																<!--
-																<tr>
-                                                                    <td>18:00-18:30(30")</td>
+                                                                <!-- <tr>
+                                                                    <td>
+                                                                        <p class="bold">Sang Woon Choi</p>(CHA
+                                                                        University, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>10:50-11:00(10")</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
-                                                                </tr>
-																-->
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -5000,7 +5007,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="plenary_lecture_3">
+                            <li name="plenary_lecture_3_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5199,7 +5206,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="keynote_lecture_2">
+                            <li name="keynote_lecture_2_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5389,7 +5396,7 @@ echo '<script type="text/javascript">
                                 </div>
                             </li> -->
 
-                            <li name="keynote_lecture_3">
+                            <li name="keynote_lecture_3_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5473,7 +5480,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="plenary_lecture_4">
+                            <li name="plenary_lecture_4_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5556,7 +5563,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="keynote_lecture_4">
+                            <li name="keynote_lecture_4_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5760,7 +5767,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-							<li name="closing_ceremony">
+							<li name="closing_ceremony_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5874,7 +5881,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="plenary_lecture_3">
+                            <li name="plenary_lecture_3_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5974,7 +5981,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>09:20-10:50(90")</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 15 : Social and Environmental Determinants Influencing Obesity</p>
+                                                    <p class="font_20 bold">Symposium 15 : Community-Based Approaches to Improve Nutrition and Obesity for Vulnerable Groups</p>
                                                    <!--  <p>
                                                         <span class="bold">Chairperson : Oran Kwon</span> (Ehwa Womans University, Korea) /
                                                         <span class="bold">Young Min Cho</span> (Seoul National
@@ -6001,52 +6008,45 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:40(20")</td>
                                                                     <td class="bold">
-                                                                        Food and Nutrition Surveillance System for Monitoring Obesity and Health Status in the US
+                                                                        Food and Nutrition Services in Assisted Living Facilities for Older Adults
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sohyun Park</p>(Centers for Disease Control and Prevention, USA)
+                                                                        <p class="bold">Shirley Y. Chao</p>(Massachusetts Executive Office of Elder Affairs, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:40-10:00(20")</td>
                                                                     <td class="bold">
-                                                                        Influence of Social and Environmental Factors on Obesity
+                                                                        Community-Based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-Income Population
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ji-Yun Hwang</p>(Sangmyung University, Republic of Korea)
+                                                                        <p class="bold">Seung Eun Jung</p>(The University of Alabama. USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:00-10:20(20")</td>
                                                                     <td class="bold">
-                                                                        Socioeconomic Inequalities in Obesity
+                                                                        Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Hyeon-Chang Kim</p>(Yonsei University, Republic of Korea)
+                                                                        <p class="bold">Min-sun Jeon</p>(Chungnam National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td >10:20-10:50(30")</td>
+                                                                    <td>10:20-10:50(30")</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Sung Nim Han</p>(Seoul National
-                                                                        University, Korea) -->
-                                                                    </td>
+                                                                    <td></td>
                                                                 </tr>
-                                                                <!-- <tr>
-                                                                    <td>
-                                                                        <p class="bold">Sang Woon Choi</p>(CHA
-                                                                        University, Korea)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>10:50-11:00(10")</td>
+																<!--
+																<tr>
+                                                                    <td>18:00-18:30(30")</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
-                                                                </tr> -->
+                                                                </tr>
+																-->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -6074,7 +6074,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="keynote_lecture_2">
+                            <li name="keynote_lecture_2_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -6624,7 +6624,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-							<li name="closing_ceremony">
+							<li name="closing_ceremony_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
