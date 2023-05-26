@@ -18,10 +18,15 @@
 		if(!empty($check_id)) {
 			return_value(200, "ok", ["value" => '{"code":"N7"}']);
 		}
+		/* 23.05.26 HUBDNC 패스워드decode로 다시 치환 */
+		$result_data = array(
+			'id' => $data['id'],
+			'pwd' => urldecode($data['pwd'])
+		);
 
 		$request_data = array(
 			'command'=>'get_member_info',
-			'body' => $data
+			'body' => $result_data
 		);
 		$json = json_encode($request_data);
 		 
