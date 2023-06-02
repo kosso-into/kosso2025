@@ -39,7 +39,7 @@
 									SELECT
 										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2,
 										rr.member_type, rr.member_other_type,
-										CONCAT(m.first_name_kor,' ',m.last_name_kor) AS kor_name,
+										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
 											CASE rr.registration_type
 												#WHEN '2' THEN 'Online + Offline'

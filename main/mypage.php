@@ -342,7 +342,7 @@
 					<?php 
 						if($user_info["nation_no"] == "25"){
 					?>
-							<li>
+							<li id="ksola_li">
 								<p class="label">대한비만학회 회원 여부</p>
 								<div>
 									<input type="checkbox" class="checkbox" id="mo_membership_status1" disabled <?=$mem_chk ?>>
@@ -942,8 +942,11 @@ function country_chk(obj){
 		html += '</td>';
 		html += '</tr>';
 		$("#department_tr").after(html);
-
+		$(".mo_korea_only").show();
+		$("#ksola_li").show();
 	}else{
+		$(".mo_korea_only").hide();
+		$("#ksola_li").hide();
 		$("#name_tr_kor").remove();
 		$("#ksola_tr").remove();
 		$("#affiliation_tr_kor").remove();

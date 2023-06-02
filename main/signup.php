@@ -1358,7 +1358,7 @@ The method of payment for a product or service purchased on the "Society Homepag
 	</div>
 </div>
 
-<script src="./js/script/client/member.js?day=2022-04-25"></script>
+<script src="./js/script/client/member.js?ver=0.2"></script>
 <script>
 
 $(document).ready(function(){

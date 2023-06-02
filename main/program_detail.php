@@ -614,7 +614,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -625,12 +625,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-09:10(40")</td>
                                                                     <td class="bold">
-                                                                        <!-- Neural Estimation of Current and Future
-                                                                        Physiological States -->
+                                                                        Intermittent Metabolic Switching and Brain Health
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Mark L. Andermann</p>(Harvard
-                                                                        Medical School, Canada) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -708,7 +706,7 @@ echo '<script type="text/javascript">
                                                                         Obesity and the Risk of Cancer
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yun-Kyung Cho</p>(Univeristy of Ulsan, Republic of Korea)
+                                                                        <p class="bold">Yun Kyung Cho</p>(Univeristy of Ulsan, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -833,7 +831,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:10-11:50(40")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Adipocyte Biology
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Matthias Blüher</p>
@@ -1019,11 +1017,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:20-14:40(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Treatment of Obesity with Incretin-based
-                                                                        Therapies: Selective GLP-1 Receptor Agonism
-                                                                        (Semaglutide) versus Dual Agonism of GIP and
-                                                                        GLP-1 Receptors (Tirzepatide) -->
-																		TBD
+																		Safety and Abuse of Antiobesity Drugs
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Juan Pablo Frias</p>(Velocity
@@ -1034,8 +1028,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:40-15:00(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- SGLT2 Inhibitor Based Obesity Management -->
-																		TBD
+                                                                        The Effects of Tirzepatide in EastAsian Patients from SURPASS Programmes
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Jun Hwa Hong</p>(Eulji
@@ -1393,7 +1386,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -1404,12 +1397,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-09:10(40")</td>
                                                                     <td class="bold">
-                                                                        <!-- Neural Estimation of Current and Future
-                                                                        Physiological States -->
+                                                                        Intermittent Metabolic Switching and Brain Health
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Mark L. Andermann</p>(Harvard
-                                                                        Medical School, Canada) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1473,7 +1464,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -1484,34 +1475,30 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:40(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Gut Microbiota-Adipokine Axis as Molecular
-                                                                        Transducers of Exercise in Diabetes Prevention -->
+                                                                        Dietary Restriction and Vascular Dementia
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Aimin Xu</p>(The University of
-                                                                        Hong Kong, New Zealand) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Thiruma V. Arumugam(Garrie)</p>(La Trobe University, Centre for Cardiovascular Biology and Disease Research, Australia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:40-10:00(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- An Integrated Understanding of the Holobiome of
-                                                                        Korean Population with Type 2 Diabetes -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Sunjae Lee</p>(Gwangju Institute
-                                                                        of Science and Technology, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Dong Gyu Jo</p>(School of Pharmacy, Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:00-10:20(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Understanding Microbiome for Human Health and
-                                                                        Diseases -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Bong-Soo Kim</p>(Hallym
                                                                         University, Korea) -->
+																		TBD
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1519,7 +1506,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:20-10:50(30")</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Jang Won Son</p>(The Catholic
                                                                         University of Korea, Korea) -->
                                                                     </td>
@@ -1620,7 +1607,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:10-11:50(40")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Adipocyte Biology
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Matthias Blüher</p>(University of Leipzig, Germany)
@@ -2190,7 +2177,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -2201,12 +2188,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-09:10(40")</td>
                                                                     <td class="bold">
-                                                                        <!-- Neural Estimation of Current and Future
-                                                                        Physiological States -->
+                                                                        Intermittent Metabolic Switching and Brain Health
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Mark L. Andermann</p>(Harvard
-                                                                        Medical School, Canada) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -2435,7 +2420,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:10-11:50(40")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Adipocyte Biology
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Matthias Blüher</p>(University of Leipzig, Germany)
@@ -2634,9 +2619,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:20-14:40(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- New Insights into Adipose Tissue Heterogeneity
-                                                                        and Plasticity -->
-																		Mitophagy Deficiency Increases NLRP3 to Induce Brown Fat Dysfunction
+                                                                        The Double-edged Role of the NLRP3 Inflammasome in Adipose Tissue
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Christian Wolfrum</p>(ETH
@@ -2935,7 +2918,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>09:20-10:50(90")</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 4 : Myosteatosis</p>
+                                                    <p class="font_20 bold">Symposium 4 : The Myosteatosis: Novel Aspect of Sarcopenia and Obesity</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Kyoung-Kon Kim</span> (Gachon
                                                         University, Korea) /
@@ -2952,7 +2935,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -2963,35 +2946,28 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:40(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Socioeconomic Inequalities in Obesity in
-                                                                        Malaysia -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Geeta Appannah</p>(University
-                                                                        Putra Malaysia, Malaysia) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Hong-Kyu Kim</p>(University of Ulsan, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:40-10:00(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Treaties and Inequities: Health Inequalities of
-                                                                        Obesity and Co-morbidities in Aotearoa New
-                                                                        Zealand -->
+                                                                        Clinical Implications of Myosteatosis in Cardiometabolic Health
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Geoffrey Kira</p>(Massey
-                                                                        University, New Zealand) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Chang-hee Jung</p>(University of Ulsan, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:00-10:20(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Non-Communicable Disease Risk Factors in Asian
-                                                                        Migrants in Korea -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">BeLong Cho</p>(Seoul National
-                                                                        University, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Hajime Yamazaki</p>(Kyoto University, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2999,7 +2975,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:20-10:50(30")</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Seo Young Kang</p>(University of
                                                                         Ulsan, Korea) -->
                                                                     </td>
@@ -3294,35 +3270,28 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:50(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- How to Write a Peer Review -->
-																		TBD
+                                                                        Why Should Adolescence & Young Adult Obesity Be A Priority?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Seung-Kwon Myung</p>(National
-                                                                        Cancer Center, Korea) -->
-																		TBD
+                                                                        <p class="bold">Dug-Hyun Choi</p>(Soonchunhyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:50-17:10(20")</td>
                                                                     <td class="bold">
-                                                                        Lifestyle Intervention on Biomarkers of Type 2 Diabetes in Obese Youth vs Adult
+																		EmergiTechnology for Adolescence Obesity & T2DM
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Joon Young Kim</p>(Syracuse University, USA)
+                                                                        <p class="bold">Min Sun Kim</p>(Chonbuk National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:10-17:30(20")</td>
                                                                     <td class="bold">
-                                                                        <!-- Common Mistakes to Avoid When Writing a
-                                                                        Scientific Paper -->
-																		TBD
+                                                                        Emerging Biomarkers of Type 2 Diabetes in Obese Youth vs Adult
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Yunhee Whang</p>(Compecs Inc,
-                                                                        Korea) -->
-																		TBD
+                                                                        <p class="bold">Joon Young Kim</p>(Syracuse University, USA)
                                                                     </td>
                                                                 </tr>
 																<tr>
@@ -5134,7 +5103,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:40(20")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        The Role of Muscle in Weight Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Robert R. Wolfe</p>(University of Arkansas for Medical Sciences, USA)
@@ -5609,7 +5578,7 @@ echo '<script type="text/javascript">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Republic of Korea)
+                                                                        <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5700,7 +5669,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:20-16:40(20")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Feeding Regulation by Tuberal Nucleus Somatostatin Neurons
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yu Fu</p>
@@ -5981,7 +5950,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>09:20-10:50(90")</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 15 : Community-Based Approaches to Improve Nutrition and Obesity for Vulnerable Groups</p>
+                                                    <p class="font_20 bold">Symposium 15 : Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
                                                    <!--  <p>
                                                         <span class="bold">Chairperson : Oran Kwon</span> (Ehwa Womans University, Korea) /
                                                         <span class="bold">Young Min Cho</span> (Seoul National
@@ -6008,7 +5977,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:40(20")</td>
                                                                     <td class="bold">
-                                                                        Food and Nutrition Services in Assisted Living Facilities for Older Adults
+                                                                        Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Shirley Y. Chao</p>(Massachusetts Executive Office of Elder Affairs, USA)
@@ -6017,7 +5986,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:40-10:00(20")</td>
                                                                     <td class="bold">
-                                                                        Community-Based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-Income Population
+                                                                        Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung Eun Jung</p>(The University of Alabama. USA)
@@ -6468,7 +6437,7 @@ echo '<script type="text/javascript">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Republic of Korea)
+                                                                        <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -6575,7 +6544,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:40-17:00(20")</td>
                                                                     <td class="bold">
-                                                                        Comorbidities of Childhood Obesity : Psychiatric Disorder
+                                                                        Childhood Obesity and Mental Health
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jee-won Lee</p>(Soonchunhayng University, Republic of Korea)

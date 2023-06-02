@@ -48,7 +48,7 @@ $price = get_data($sql_price);
                     </tr>
                     <tr>
                         <th>Early-bird Registration<br class="br_mb_only"> Deadline</th>
-                        <td class="f_bold">June 2 (Fri)</td>
+                        <td class="f_bold">June 29 (Thu)</td>
                     </tr>
                     <tr>
                         <th>Pre-registration<br class="br_mb_only"> Deadline</th>

@@ -154,7 +154,8 @@
 							<tr>
 								<td>08:30-09:10(40")</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_1">
-									Plenary Lecture 1
+									Plenary Lecture 1 <br/>Intermittent Metabolic Switching and Brain Health
+									<p>Thiruma V. Arumugam <br/>(La Trobe University, Centre for Cardiovascular Biology and Disease Research, Australia)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -169,23 +170,19 @@
 							<tr>
 								<td>09:20-10:50(90")</td>
 								<td class="green_bg pointer" name="symposium_1">
-									Symposium 1
-									<p>Obesity and Cancer</p>
+									Symposium 1 <br/>Obesity and Cancer
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_2">
-									Symposium 2
-									<p>Obesity and Neurodegenerative Diseases</p>
+									Symposium 2 <br/>Obesity and Neurodegenerative Diseases
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_3">
-									Symposium 3
-									<p>Digital Therapeutics in Obesity Management</p>
+									Symposium 3 <br/>Digital Therapeutics in Obesity Management
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_4">
-									Symposium 4
-									<p>Myosteatosis</p>
+									Symposium 4 <br/>The Myosteatosis: Novel Aspect of Sarcopenia and Obesity
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer" name="sponsored_session_1">Sponsored<br />Session 1
@@ -215,7 +212,8 @@
 							<tr>
 								<td>11:10-11:50(40")</td>
 								<td colspan="3" class="pink_bg pointer" name="keynote_lecture_1">
-									Keynote Lecture 1
+									Keynote Lecture 1 <br/>Adipocyte Biology
+									<p>Matthias Blüher Matthias Blüher <br/>(University of Leipzig, Germany)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -276,23 +274,19 @@
 							<tr>
 								<td>14:00-15:30(90")</td>
 								<td class="green_bg pointer" name="symposium_5">
-									Symposium 5
-									<p>Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
+									Symposium 5 <br/>Emerging Anti-obesity Drugs: Expectations and Apprehensions
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_6">
-									Symposium 6
-									<p>TBD</p>
+									Symposium 6 <br/>TBD
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_7">
-									Symposium 7
-									<p>Metabolic Signaling in Obesity-Related Diseases</p>
+									Symposium 7 <br/>Metabolic Signaling in Obesity-Related Diseases
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_8">
-									Symposium 8
-									<p>TBD</p>
+									Symposium 8 <br/>TBD
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer" name="sponsored_session_2">
@@ -312,7 +306,8 @@
 							<tr>
 								<td>15:40-16:20(40")</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_2">
-									Plenary Lecture 2
+									Plenary Lecture 2 <br/>Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
+									<p>Robert R. Wolfe  <br/>(University of Arkansas for Medical Sciences, USA)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -327,23 +322,19 @@
 							<tr>
 								<td>16:30-18:00(90")</td>
 								<td class="green_bg pointer" name="symposium_9">
-									Symposium 9
-									<p>Obesity in Special Conditions</p>
+									Symposium 9 <br/>Obesity in Special Conditions
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_10">
-									Symposium 10
-									<p>TBD</p>
+									Symposium 10 <br/>TBD
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_11">
-									Symposium 11
-									<p>Social and Environmental Determinants: Nutritional View of Obesity</p>
+									Symposium 11 <br/>Social and Environmental Determinants: Nutritional View of Obesity
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_12">
-									Symposium 12
-									<p>Obesity: Transition from Adolescence to Young Adult</p>
+									Symposium 12 <br/>Obesity: Transition from Adolescence to Young Adult
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<!--<td class="purple_bg" name="joint_symposium_aoaso_2">Joint Symposium<br/>AOASO 2</td>-->
@@ -422,23 +413,19 @@
 							<tr>
 								<td>09:20-10:50(90")</td>
 								<td class="green_bg pointer" name="symposium_13">
-									Symposium 13
-									<p>Obesity Co-morbidity</p>
+									Symposium 13 <br/>Obesity Co-morbidity
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_14">
-									Symposium 14
-									<p>Promoting Healthy Muscle and Liver Metabolism</p>
+									Symposium 14 <br/>Promoting Healthy Muscle and Liver Metabolism
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_15">
-									Symposium 15
-									<p>Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
+									Symposium 15 <br/>Community-based Nutrition Interventions and Approaches for Vulnerable Groups
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_16">
-									Symposium 16<br>
-									<p>International Obesity Research Group</p>
+									Symposium 16 <br/>International Obesity Research Group
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer" name="sponsored_session_3">
@@ -520,6 +507,7 @@
 								<td>13:50-14:20(30")</td>
 								<td class="pink_bg pointer" name="keynote_lecture_3" colspan="3">
 									Keynote Lecture 3
+									<p>Dopamine Subsystems that Track Internal States Zachary Knight <br/>(University of California, San Francisco, USA)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -564,18 +552,15 @@
 							<tr>
 								<td>16:00-17:30(90")</td>
 								<td class="green_bg pointer" name="symposium_17">
-									Symposium 17
-									<p>The Power of Synergy: Optimizing Anti-Obesity Treatment with Combination Pharmacotherapy</p>
+									Symposium 17 <br/>The Power of Synergy: Optimizing Anti-Obesity Treatment with Combination Pharmacotherapy
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_18">
-									Symposium 18
-									<p>Neuroscience</p>
+									Symposium 18 <br/>Neuroscience
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_19">
-									Symposium 19
-									<p>Perceptions and Reality in Childhood and Adolescence Obesity</p>
+									Symposium 19 <br/>Perceptions and Reality in Childhood and Adolescence Obesity
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_20">
@@ -625,6 +610,14 @@ $(document).ready(function() {
 
         table_location(event, target, e, day, this_name);
     });*/
+	$("td.pointer").click(function() {
+        var e = $(this).find("input[name=e]").val();
+        var day = $(this).parents("tbody[name=day]").attr("class");
+        var target = $(this)
+        var this_name = $(this).attr("name");
+
+        table_location(event, target, e, day, this_name);
+    });
 	$(".tab_green li").click(function(){
 		var this_index = $(this).index();
 		if (!this_index == 1){

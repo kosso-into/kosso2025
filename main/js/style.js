@@ -257,9 +257,9 @@ $(document).ready(function(){
 		if ($("section").hasClass("main_section")){
 			var win_height = $(window).height();
 			if (win_width <= 1024) {
-				$(".section_bg").css({"padding-top":"0", "height":win_height})
+				$(".section_bg").css({"padding-top":"0", "height":win_height, "min-height":"auto"})
 			} else {
-				$(".section_bg").css({"padding-top":"117px", "height":win_height})
+				$(".section_bg").css({"padding-top":"117px", "height":win_height, "min-height":"850px"})
 			}
 		}
 	});

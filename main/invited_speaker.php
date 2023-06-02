@@ -15,6 +15,26 @@
                 <div class="tab_wrap">
                     <div class="tab_cont on">
                         <ul class="speaker_list">
+							<li>
+                                <div class="top_wrap">
+                                    <h2>Plenary Lecture 1</h2>
+                                    <span class="date text_r">08:30-09:10,<br class="br_530_only"> Sep. 8(Fri)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_prof_Thiruma_V_Arumugam.jpg">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">Intermittent Metabolic Switching and Brain Health</p>
+                                            <div>
+                                                <h4 class="title">Thiruma V. Arumugam</h4>
+                                                <h5>(La Trobe University, Australia)</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li>
                                 <div class="top_wrap">
                                     <h2>Plenary Lecture 2</h2>
@@ -46,7 +66,7 @@
                                             <img src="./img/img_prof_Matthias_Bluher.png">
                                         </div>
                                         <div class="desc_wrap flex1">
-                                            <p class="">Adipocyte Biology</p>
+                                            <p class="">Adipose Tissue – A Treasure Box for Discoveries</p>
                                             <div>
                                                 <h4 class="title">Matthias Blüher</h4>
                                                 <h5>University of Leipzig, Germany</h5>
