@@ -12,6 +12,7 @@
 									SELECT 
 										ra.submission_code, ra.city, ra.state, CONCAT(ra.first_name,' ',ra.last_name) AS `name`, ra.affiliation, ra.email, ra.phone, ra.abstract_title,
 										m.idx AS member_idx, m.member_email, m.member_name, m.member_nation, m.member_register_date,
+										CONCAT(m.affiliation,',',m.department) AS member_affiliation, m.phone AS member_phone,
 										f.original_name AS file_name, CONCAT(f.path,'/',f.save_name) AS path, ra.presenting_author, ra.corresponding_author,
 										c.title_en AS category,
 										n.nation_ko AS nation,
@@ -27,7 +28,9 @@
 									FROM request_abstract ra
 									LEFT JOIN(
 										SELECT
-											m.idx, m.email AS member_email, CONCAT(m.first_name,' ',m.last_name) AS member_name, DATE(m.register_date) AS member_register_date, n.nation_ko AS member_nation
+											m.idx, m.email AS member_email, CONCAT(m.first_name,' ',m.last_name) AS member_name, 
+										    DATE(m.register_date) AS member_register_date, n.nation_ko AS member_nation,
+                                            m.affiliation, m.department, m.phone
 										FROM member m
 										JOIN nation n
 										ON m.nation_no = n.idx
@@ -48,18 +51,19 @@
 
 			//foreach($author_detail as $key => $value) {
 			//	if($key == "affiliation") {
-			//		$author_detail[$key] = isset($author_detail[$key]) ? json_decode($author_detail[$key]) : "-"; 
+			//		$author_detail[$key] = isset($author_detail[$key]) ? json_decode($author_detail[$key]) : "-";
 			//	} else {
 			//		$author_detail[$key] = isset($author_detail[$key]) ? $author_detail[$key] : "-";
 			//	}
-			//	
+			//
 			//}
-		} else {
+		}
+//        else {
 			${"co_author_detail".$i} = $abstract_detail[$i];
 
 			foreach(${"co_author_detail".$i} as $key => $value) {
 				if($key == "affiliation") {
-					if ($i == 1){
+					if ($i == 0){
 						${"co_author_detail".$i}[$key] = isset(${"co_author_detail".$i}[$key]) ? json_decode(${"co_author_detail".$i}[$key]) : "-";
 					}else{
 						${"co_author_detail".$i}[$key] = isset(${"co_author_detail".$i}[$key]) ? ${"co_author_detail".$i}[$key] : "-";
@@ -69,7 +73,7 @@
 				}
 				
 			}
-		}
+//		}
 	}
 
 	
@@ -120,9 +124,9 @@
 					<tbody>
 						<tr>
 							<th>Country</th>
-							<td><?=$author_detail["nation"]?></td>
+							<td><?=$author_detail["member_nation"]?></td>
 							<th>Name</th>
-							<td><?=$author_detail["name"]?></td>
+							<td><?=$author_detail["member_name"]?></td>
 						</tr>
 						<tr>
 							<th>Presenting Author</th>
@@ -133,29 +137,30 @@
 						<tr>
 							<th>Affiliation</th>
 							<td>
-							<?php
-								$aff = explode( '★', $author_detail["affiliation"] );
-
-								for($i=0; $i<count($aff)-1; $i++) {
-									echo $aff[$i]."<br>";
-								}
-								//foreach($author_detail["affiliation"] as $list) {
-								//	echo $list."<br>";
-								//}
+							<?=
+                                $author_detail["member_affiliation"]
+//								$aff = explode( '★', $author_detail["member_affiliation"] );
+//
+//								for($i=0; $i<count($aff)-1; $i++) {
+//									echo $aff[$i]."<br>";
+//								}
+//								//foreach($author_detail["affiliation"] as $list) {
+//								//	echo $list."<br>";
+//								//}
 							?>
 							</td>
 							<th>Email</th>
-							<td><?=$author_detail["email"]?></td>
+							<td><?=$author_detail["member_email"]?></td>
 						</tr>
 						<tr>
 							<th>Phone Number</th>
-							<td colspan="3"><?=$author_detail["phone"]?></td>
+							<td colspan="3"><?=$author_detail["member_phone"]?></td>
 						</tr>
 					</tbody>
 				</table>
 				<h2 class="sub_title">co-author 정보</h2>
 				<?php
-					for($i=1; $i<count($abstract_detail); $i++) {
+					for($i=0; $i<count($abstract_detail); $i++) {
 				?>
 				<table>
 					<colgroup>
@@ -183,7 +188,7 @@
 							<?php
 								//$co_aff = explode( '★', $abstract_detail[1]["affiliation"] );
 								
-								if($i == 1){	
+								if($i == 1){
 									$co_aff = explode( '★', $abstract_detail[1]["affiliation"] );
 									for($k=0; $k<count($co_aff)-1; $k++) {
 										echo $co_aff[$k]."<br>";

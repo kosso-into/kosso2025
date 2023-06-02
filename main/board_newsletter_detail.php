@@ -111,7 +111,13 @@
 		<?php } ?>
 	</div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 
+<script>
+$(document).ready(function () {
+          $('img[usemap]').rwdImageMaps()  
+})
+</script>
 <?php
 	include_once('./include/footer.php');
 ?>

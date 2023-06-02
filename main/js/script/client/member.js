@@ -39,7 +39,7 @@ $(document).ready(function(){
 	});
 
 	//이름 유효성
-	$("input[name=first_name]").on("change keyup", function(key){
+	$("input[name=first_name], input[name=mo_first_name]").on("change keyup", function(key){
 		var pattern_eng = /[^a-zA-Z\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
@@ -48,7 +48,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$("input[name=last_name]").on("change keyup", function(key){
+	$("input[name=last_name], input[name=mo_last_name]").on("change keyup", function(key){
 		var pattern_eng = /[^a-zA-Z\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
@@ -58,7 +58,7 @@ $(document).ready(function(){
 	});
 
 	//소속 유효성
-	$("input[name=affiliation]").on("change keyup", function(key){
+	$("input[name=affiliation], input[name=mo_affiliation]").on("change keyup", function(key){
 		var pattern_eng = /[^a-zA-Z||0-9\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
@@ -67,7 +67,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$("input[name=department]").on("change keyup", function(key){
+	$("input[name=department], input[name=mo_department]").on("change keyup", function(key){
 		var pattern_eng = /[^a-zA-Z||0-9\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {

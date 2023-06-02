@@ -44,10 +44,11 @@
 											) AS registration_type_text,
 											(
 												CASE rr.attendance_type
-													WHEN '3' THEN 'Sponsors'
-													WHEN '2' THEN 'Committee'
-													WHEN '1' THEN 'Speaker / Chairman / Panel'
-													WHEN '0' THEN 'General Participants'
+													WHEN '0' THEN 'Committee'
+													WHEN '1' THEN 'Speaker'
+													WHEN '2' THEN 'Chairperson'
+													WHEN '3' THEN 'Panel'
+													WHEN '4' THEN 'Participants'
 													ELSE '-'
 												END
 											) AS attendance_type_text,

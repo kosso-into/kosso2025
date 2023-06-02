@@ -184,6 +184,11 @@
 		<h3 class="title">Plenary &amp; Keynote Speakers</h3>
 		<div class="speakers_slick">
 			<ul class="main_speaker2 slick-slider">
+				<li class="index_speaker5">
+					<div class="profile_circle"><div class="profile_wrap"></div></div>
+					<h5 class="title">Thiruma V. Arumugam</h5>
+					<div class="career">La Trobe University,<br>Australia</div>
+				</li>
 				<li class="index_speaker1">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
 					<h5 class="title">Robert R. Wolfe</h5>
@@ -203,6 +208,11 @@
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
 					<h5 class="title">Jae-Heon Kang</h5>
 					<div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
+				</li>
+				<li class="index_speaker5">
+					<div class="profile_circle"><div class="profile_wrap"></div></div>
+					<h5 class="title">Thiruma V. Arumugam</h5>
+					<div class="career">La Trobe University,<br>Australia</div>
 				</li>
 				<li class="index_speaker1">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
