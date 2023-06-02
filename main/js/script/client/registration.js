@@ -82,7 +82,6 @@ $(document).ready(function(){
 					},
 					dataType : "JSON",
 					success : function(res){
-						console.log(res); return;
 						if(res.code == 200) {
 
 							if(res.email != null){

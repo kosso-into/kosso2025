@@ -161,7 +161,7 @@
 				</li>
 				<li>
 					<a href="/main/registration_guidelines.php">
-						<h2>June 2<span>(Fri)</span></h2>
+						<h2>June 29<span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
 						<p>Early-bird Registration<br/>Deadline</p>
 					</a>

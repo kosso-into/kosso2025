@@ -705,7 +705,7 @@ if ($during_yn !== "Y") {
     </div>
 </section>
 
-<script src="./js/script/client/registration.js?v=0.2"></script>
+<script src="./js/script/client/registration.js?v=0.3"></script>
 <!-- <script src="./js/script/client/registration.js"></script> -->
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
