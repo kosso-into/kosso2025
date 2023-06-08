@@ -183,12 +183,12 @@ if ($during_yn !== "Y") {
 							<?php
 								$participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants");
 
-								$idx = 0;
+//								$idx = 0;
 								foreach($participation_arr as $a_arr) {
-									$selected = $prev["attendance_type"] == $idx ? "selected" : "";
+									$selected = $prev["attendance_type"] == $a_arr ? "selected" : "";
 
 									echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
-									$idx = $idx + 1;
+//									$idx = $idx + 1;
 								}
 							?>
                         </select>
@@ -375,7 +375,7 @@ if ($during_yn !== "Y") {
 													<th class='border_r_none'>".$others_arr[$i-1]."</th>
 													<th>".$other_date_arr[$i-1]."</th>
 													<td>
-														<div class='radio_wrap'>
+														<div class='radio_wrap' id='focus_others' tabindex='0'>
 															<ul class='flex'>
 																<li>
 																	<input type='radio' id='yes".$i."' class='new_radio' name='others".$i."' value='".$others_arr[$i-1].$other_date_arr[$i-1]."' ".($is_yes ? "checked" : "").">
@@ -783,6 +783,16 @@ if ($during_yn !== "Y") {
 				$("input[name=promotion_confirm_code]").val(1).change();
 			}
 		});
+
+        $(".next_btn").on("click", function (){
+             if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
+                 !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
+                 !$("input[name=others5]").is(":checked")) {
+                 $("#focus_others").focus();
+                 alert("Please confirm the 'others' section");
+                 return
+             }
+        });
 
 		$("select[name=category]").on("change", function(){
 			const val = $(this).val();

@@ -541,7 +541,7 @@ $(document).ready(function() {
                 html += '</li>';
                 html += '<li>';
                 html +=
-                    '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span></p>';
+                    '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
                 html += '<div>';
                 html += '<div class="clearfix affiliation_input">';
                 html += '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
@@ -1249,7 +1249,7 @@ $(document).ready(function() {
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span></p>
+                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span> <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>
                                 <div>
                                     <div class="clearfix affiliation_input">
                                         <input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">
@@ -1379,7 +1379,7 @@ $(document).ready(function() {
                             echo                '</div>';
                             echo            '</li>';
                             echo            '<li>';
-                            echo                '<p class="label">' . $locale("affiliation") . ' <span class="red_txt">*</span></p>';
+                            echo                '<p class="label">' . $locale("affiliation") . ' <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
                             echo                '<div>';
                             echo                    '<div class="clearfix affiliation_input">';
                             echo                        '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
