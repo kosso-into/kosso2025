@@ -155,7 +155,7 @@
 								<td>08:30-09:10(40")</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_1">
 									Plenary Lecture 1 <br/>Intermittent Metabolic Switching and Brain Health
-									<p>Thiruma V. Arumugam <br/>(La Trobe University, Centre for Cardiovascular Biology and Disease Research, Australia)</p>
+									<p>Thiruma V. Arumugam (La Trobe University, Australia)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -178,7 +178,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_3">
-									Symposium 3 <br/>Digital Therapeutics in Obesity Management
+									Symposium 3 <br/>Digital Therapeutics
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_4">
@@ -212,8 +212,8 @@
 							<tr>
 								<td>11:10-11:50(40")</td>
 								<td colspan="3" class="pink_bg pointer" name="keynote_lecture_1">
-									Keynote Lecture 1 <br/>Adipocyte Biology
-									<p>Matthias Blüher Matthias Blüher <br/>(University of Leipzig, Germany)</p>
+									Keynote Lecture 1 <br/>Adipose Tissue – A Treasure Box for Discoveries
+									<p>Matthias Blüher (University of Leipzig, Germany)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -326,7 +326,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_10">
-									Symposium 10 <br/>TBD
+									Symposium 10 <br/>Neuropsychological Aspect of Obesity
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_11">
@@ -413,7 +413,7 @@
 							<tr>
 								<td>09:20-10:50(90")</td>
 								<td class="green_bg pointer" name="symposium_13">
-									Symposium 13 <br/>Obesity Co-morbidity
+									Symposium 13 <br/>Health Consequences of Obesity
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_14">
@@ -425,7 +425,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_16">
-									Symposium 16 <br/>International Obesity Research Group
+									Symposium 16 <br/>International Collaboration
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer" name="sponsored_session_3">
@@ -504,10 +504,12 @@
 								</td>
 							</tr>
 							<tr>
-								<td>13:50-14:20(30")</td>
+								<td>13:50-14:30(30")</td>
 								<td class="pink_bg pointer" name="keynote_lecture_3" colspan="3">
 									Keynote Lecture 3
-									<p>Dopamine Subsystems that Track Internal States Zachary Knight <br/>(University of California, San Francisco, USA)</p>
+									<br>
+									Dopamine Subsystems that Track Internal States
+									<p>Zachary Knight (University of California, San Francisco, USA)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -515,14 +517,30 @@
 								<td></td>
 								<td></td>
 							</tr>
+							<!-- <tr> -->
+							<!-- 	<td>14:20-14:30(10")</td> -->
+							<!-- 	<td colspan="7" class="light_gray_bg">Break</td> -->
+							<!-- </tr> -->
+							<!-- <tr> -->
+							<!-- 	<td>14:30-15:10(40")</td> -->
+							<!-- 	<td class="pink_bg pointer" name="plenary_lecture_4" colspan="3"> -->
+							<!-- 		Plenary Lecture 4 -->
+							<!-- 		<input type="hidden" name="e" value="room1"> -->
+							<!-- 	</td> -->
+							<!-- 	<td></td> -->
+							<!-- 	<td></td> -->
+							<!-- 	<td></td> -->
+							<!-- 	<td></td> -->
+							<!-- </tr> -->
+							<!-- <tr> -->
+							<!-- 	<td>15:10-15:20(10")</td> -->
+							<!-- 	<td colspan="7" class="light_gray_bg">Break</td> -->
+							<!-- </tr> -->
 							<tr>
-								<td>14:20-14:30(10")</td>
-								<td colspan="7" class="light_gray_bg">Break</td>
-							</tr>
-							<tr>
-								<td>14:30-15:10(40")</td>
-								<td class="pink_bg pointer" name="plenary_lecture_4" colspan="3">
-									Plenary Lecture 4
+								<td>14:30-15:10(30")</td>
+								<!-- <td>15:20-15:50(30")</td> -->
+								<td class="pink_bg pointer" name="keynote_lecture_4" colspan="3">
+									Keynote Lecture 4
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -535,22 +553,7 @@
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
-								<td>15:20-15:50(30")</td>
-								<td class="pink_bg pointer" name="keynote_lecture_4" colspan="3">
-									Keynote Lecture 4
-									<input type="hidden" name="e" value="room1">
-								</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>15:50-16:00(10")</td>
-								<td colspan="7" class="light_gray_bg">Break</td>
-							</tr>
-							<tr>
-								<td>16:00-17:30(90")</td>
+								<td>15:20-16:50(90")</td>
 								<td class="green_bg pointer" name="symposium_17">
 									Symposium 17 <br/>The Power of Synergy: Optimizing Anti-Obesity Treatment with Combination Pharmacotherapy
 									<input type="hidden" name="e" value="room1">
@@ -560,7 +563,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_19">
-									Symposium 19 <br/>Perceptions and Reality in Childhood and Adolescence Obesity
+									Symposium 19 <br/>Diversity and Challenges of Pediatric Obesity
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="green_bg pointer" name="symposium_20">
@@ -575,8 +578,19 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td>17:30-17:40(10")</td>
+								<td>16:50-17:00(10")</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
+							</tr>
+							<tr>
+								<td>17:00-17:40(40")</td>
+								<td class="pink_bg pointer" name="plenary_lecture_4" colspan="3">
+									Plenary Lecture 4
+									<input type="hidden" name="e" value="room1">
+								</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>17:40-18:00(20")</td>

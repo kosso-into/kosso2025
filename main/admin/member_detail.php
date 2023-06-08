@@ -333,7 +333,7 @@ $(document).ready(function(){
 
 	//소속 유효성
 	$("input[name=affiliation]").on("change keyup", function(key){
-		var pattern_eng = /[^a-zA-Z||0-9\s]/gi;
+		var pattern_eng = /[^a-zA-Z||*-_@!#^&||0-9\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
 			var first_name = _this.val().replace(pattern_eng, '');
@@ -342,7 +342,7 @@ $(document).ready(function(){
 	});
 
 	$("input[name=department]").on("change keyup", function(key){
-		var pattern_eng = /[^a-zA-Z||0-9\s]/gi;
+		var pattern_eng = /[^a-zA-Z||*-_@!#^&||0-9\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
 			var first_name = _this.val().replace(pattern_eng, '');
@@ -369,7 +369,7 @@ $(document).ready(function(){
 	});
 
 	$("input[name=affiliation_kor]").keyup(function (event) {
-		regexp = /[a-z0-9]|[\[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+		regexp = /[a-z0-9]|[\[\]{}()<>?|`~$%+=,.;:\"'\\]/g;
 		v = $(this).val();
 		if (regexp.test(v)) {
 			//alert("한글만 입력가능 합니다.");
@@ -378,7 +378,7 @@ $(document).ready(function(){
 	});
 
 	$("input[name=department_kor]").keyup(function (event) {
-		regexp = /[a-z0-9]|[\[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+		regexp = /[a-z0-9]|[\[\]{}()<>?|`~$%+=,.;:\"'\\]/g;
 		//regexp = /^[가-힣\s]+$/;
 		v = $(this).val();
 		if (regexp.test(v)) {

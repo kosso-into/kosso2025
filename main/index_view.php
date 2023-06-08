@@ -194,30 +194,10 @@
 					<h5 class="title">Robert R. Wolfe</h5>
 					<div class="career">University of Arkansas for<br>Medical Sciences, USA</div>
 				</li>
-				<li class="index_speaker2">
+				<li class="index_speaker6">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">Matthias Blüher</h5>
-					<div class="career">University of Leipzig,<br>Germany</div>
-				</li>
-				<li class="index_speaker3">
-					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">Zachary Knight</h5>
-					<div class="career">University of California,<br>San Francisco, USA</div>
-				</li>
-				<li class="index_speaker4">
-					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">Jae-Heon Kang</h5>
-					<div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
-				</li>
-				<li class="index_speaker5">
-					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">Thiruma V. Arumugam</h5>
-					<div class="career">La Trobe University,<br>Australia</div>
-				</li>
-				<li class="index_speaker1">
-					<div class="profile_circle"><div class="profile_wrap"></div></div>
-					<h5 class="title">Robert R. Wolfe</h5>
-					<div class="career">University of Arkansas for<br>Medical Sciences, USA</div>
+					<h5 class="title">Tamas Horvath</h5>
+					<div class="career">Yale University,<br>USA</div>
 				</li>
 				<li class="index_speaker2">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>

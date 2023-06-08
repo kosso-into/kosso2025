@@ -541,11 +541,11 @@ $(document).ready(function() {
                 html += '</li>';
                 html += '<li>';
                 html +=
-                    '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span></p>';
+                    '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
                 html += '<div>';
                 html += '<div class="clearfix affiliation_input">';
-                html += '<input maxlength="25" type="text" class="institution en_num_keyup" placeholder="Institution">';
-                html += '<input maxlength="25" type="text" class="department en_num_keyup" placeholder="Department">';
+                html += '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
+                html += '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">';
                 html += '<button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>';
                 html += '</div>';
                 html += '<div class="clearfix affiliation_form">';
@@ -828,7 +828,7 @@ function inputCheck(formData) {
 
 //체크 벨류
 function check_value() {
-	let email_regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+	let email_regex = new RegExp('[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}');
 
     var affiliation_len = $(".affiliation_wrap li").length;;
 
@@ -1133,6 +1133,14 @@ $(document).ready(function() {
             _this.val(first_name);
         }
     });
+	$(document).on("keyup", ".en_affiliation_keyup", function(key) {
+        var pattern_eng = /[^0-9||*-_@!#^&||a-zA-Z\s]/gi;
+        var _this = $(this);
+        if (key.keyCode != 8) {
+            var first_name = _this.val().replace(pattern_eng, '');
+            _this.val(first_name);
+        }
+    });
 
     $(document).on("change", ".email", function() {
         var email = $(this).val().trim();
@@ -1241,11 +1249,11 @@ $(document).ready(function() {
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span></p>
+                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span> <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>
                                 <div>
                                     <div class="clearfix affiliation_input">
-                                        <input maxlength="25" type="text" class="institution en_num_keyup" placeholder="Institution">
-                                        <input maxlength="25" type="text" class="department en_num_keyup" placeholder="Department">
+                                        <input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">
+                                        <input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">
                                         <button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>
                                     </div>
                                     <div class="clearfix affiliation_form">
@@ -1371,11 +1379,11 @@ $(document).ready(function() {
                             echo                '</div>';
                             echo            '</li>';
                             echo            '<li>';
-                            echo                '<p class="label">' . $locale("affiliation") . ' <span class="red_txt">*</span></p>';
+                            echo                '<p class="label">' . $locale("affiliation") . ' <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
                             echo                '<div>';
                             echo                    '<div class="clearfix affiliation_input">';
-                            echo                        '<input maxlength="25" type="text" class="institution en_keyup" placeholder="Institution">';
-                            echo                        '<input maxlength="25" type="text" class="department en_keyup" placeholder="Department">';
+                            echo                        '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
+                            echo                        '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">';
                             echo                        '<button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>';
                             echo                    '</div>';
                             echo                    '<div class="clearfix affiliation_form">';

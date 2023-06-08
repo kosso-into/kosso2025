@@ -55,6 +55,26 @@
                                     </div>
                                 </div>
                             </li>
+							<li>
+                                <div class="top_wrap">
+                                    <h2>Plenary Lecture 3</h2>
+                                    <span class="date text_r">08:30-09:10,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_speakers06.jpg">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">TBD</p>
+                                            <div>
+                                                <h4 class="title">Tamas Horvath</h4>
+                                                <h5>(Yale University, USA)</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li>
                                 <div class="top_wrap">
                                     <h2>Keynote Lecture 1</h2>
@@ -78,7 +98,7 @@
                             <li>
                                 <div class="top_wrap">
                                     <h2>Keynote Lecture 3</h2>
-                                    <span class="date text_r">13:50-14:20,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                    <span class="date text_r">13:50-14:30,<br class="br_530_only"> Sep. 9(Sat)</span>
                                 </div>
                                 <div class="bottom_wrap">
                                     <div class="flex">
@@ -98,7 +118,7 @@
                             <li>
                                 <div class="top_wrap">
                                     <h2>Keynote Lecture 4</h2>
-                                    <span class="date text_r">15:20-15:50,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                    <span class="date text_r">14:30-15:10,<br class="br_530_only"> Sep. 9(Sat)</span>
                                 </div>
                                 <div class="bottom_wrap">
                                     <div class="flex" id="symposia">
