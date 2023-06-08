@@ -324,6 +324,7 @@ if ($during_yn !== "Y") {
 
                     <li>
                         <p class="label type2"><?=$locale("register_online_question5_2023")?> <span class="red_txt">*</span></p>
+						<p class="mb10">Please confirm your attendance for all of the following events. </p>
                         <div class="table_wrap detail_table_common x_scroll">
 							<table class="c_table detail_table" id=" othersList_table" name=" othersList_table">
 								<colgroup>

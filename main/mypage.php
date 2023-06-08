@@ -499,8 +499,17 @@ $(document).ready(function() {
 		window.open(url,"Registration Receipt","width=793, height=2000, top=30, left=30");
 	});
 
-	$("input[name=first_name_kor], input[name=last_name_kor], input[name=affiliation_kor], input[name=department_kor], input[name=mo_first_name_kor], input[name=mo_last_name_kor], input[name=mo_affiliation_kor], input[name=mo_department_kor]").on("keyup", function() {
+	$("input[name=first_name_kor], input[name=last_name_kor], input[name=mo_first_name_kor], input[name=mo_last_name_kor]").on("keyup", function() {
 		const regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+		v = $(this).val();
+		if (regexp.test(v)) {
+			alert("한글만 입력가능 합니다.");
+			$(this).val(v.replace(regexp, ''));
+		}
+	});
+
+	$("input[name=affiliation_kor], input[name=department_kor], input[name=mo_affiliation_kor], input[name=mo_department_kor]").on("keyup", function() {
+		const regexp = /[a-z0-9]|[ \[\]{}()<>?|`~$%+=,.;:\"'\\]/g;
 		v = $(this).val();
 		if (regexp.test(v)) {
 			alert("한글만 입력가능 합니다.");

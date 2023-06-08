@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 	//소속 유효성
 	$("input[name=affiliation], input[name=mo_affiliation]").on("change keyup", function(key){
-		var pattern_eng = /[^a-zA-Z||0-9\s]/gi;
+		var pattern_eng = /[^a-zA-Z||*-_@!#^&||0-9\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
 			var first_name = _this.val().replace(pattern_eng, '');
@@ -68,7 +68,7 @@ $(document).ready(function(){
 	});
 
 	$("input[name=department], input[name=mo_department]").on("change keyup", function(key){
-		var pattern_eng = /[^a-zA-Z||0-9\s]/gi;
+		var pattern_eng = /[^a-zA-Z||*-_@!#^&||0-9\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
 			var first_name = _this.val().replace(pattern_eng, '');
