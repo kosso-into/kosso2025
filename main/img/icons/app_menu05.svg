@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="147" viewBox="0 0 146 147">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1237" data-name="사각형 1237" width="89.972" height="84.243" fill="none" stroke="#fff" stroke-width="3"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_1200" data-name="사각형 1200" width="82.919" height="82.832" fill="none" stroke="#fff" stroke-width="3"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_1184" data-name="그룹 1184" transform="translate(-303 -730)">
+    <rect id="사각형_938" data-name="사각형 938" width="146" height="147" rx="25" transform="translate(303 730)" fill="#06c"/>
+    <g id="그룹_1109" data-name="그룹 1109" transform="translate(331.014 778.953)">
+      <g id="그룹_1085" data-name="그룹 1085" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="패스_3645" data-name="패스 3645" d="M84.774,14.6a3.252,3.252,0,0,1,0,5.66L45.856,45.1a4.542,4.542,0,0,1-4.789,0L2.148,20.261a3.255,3.255,0,0,1,0-5.66" transform="translate(1.525 36.7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="패스_3646" data-name="패스 3646" d="M2.15,11.183a3.252,3.252,0,0,0,0,5.66l3.818,2.442,35.1,22.4a4.542,4.542,0,0,0,4.789,0l35.1-22.4,3.822-2.442a3.255,3.255,0,0,0,0-5.66" transform="translate(1.522 28.108)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="패스_3647" data-name="패스 3647" d="M84.774,26.02,45.855,1.182a4.542,4.542,0,0,0-4.789,0L2.152,26.02a3.257,3.257,0,0,0,0,5.664l3.818,2.438,8.251,5.27L41.07,56.522a4.534,4.534,0,0,0,4.785,0L72.7,39.393l8.251-5.27,3.818-2.438A3.255,3.255,0,0,0,84.774,26.02Z" transform="translate(1.525 1.255)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+    <path id="패스_3672" data-name="패스 3672" d="M-13181.378-12236.244l6.488,9.464,19.72,23.807,7.477.841,20.44-31.963-25.138-18.917Z" transform="translate(13531.289 13024.557)" fill="#06c"/>
+    <g id="그룹_1011" data-name="그룹 1011" transform="translate(338.067 743.805)">
+      <g id="마스크_그룹_1010" data-name="마스크 그룹 1010" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+        <path id="패스_3589" data-name="패스 3589" d="M52.356,24.094c0,17.022-23.594,40.751-23.594,40.751S5.137,41.22,5.172,24.094a23.592,23.592,0,1,1,47.184,0Z" transform="translate(10.879 4.864)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <ellipse id="타원_163" data-name="타원 163" cx="10.724" cy="10.724" rx="10.724" ry="10.724" transform="translate(28.917 17.435)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

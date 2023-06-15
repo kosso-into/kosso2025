@@ -604,13 +604,14 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
-													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.<br>
+													His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.<br>
+													Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
 												</td>
 											</tr>
                                             <tr>
@@ -628,7 +629,7 @@ echo '<script type="text/javascript">
                                                                         Intermittent Metabolic Switching and Brain Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
+                                                                        <p class="bold">Thiruma V. Arumugam</p>La Trobe University, Australia
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -723,7 +724,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">ByungSu Yoo</p>(Yonsei
                                                                         University, Korea) -->
-																		TBD
+																		<p class="bold">Haejin Yoon</p>(UNIST, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -916,11 +917,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00(60")</td>
                                                                     <td class="bold">
-                                                                        <!-- New Insight on GLP-1 RAs in Managing Obesity -->
+                                                                        <!-- New Insight on GLP-1 RAs in Managing Obesity -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Bumjo Oh</p>(Seoul National
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Eun Young Lee</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1016,9 +1016,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25(25")</td>
                                                                     <td class="bold">
-                                                                        <!-- The Efficacy and Safety of Dulaglutide 3.0mg and
-                                                                        4.5mg for Treatment of Type 2 Diabetes -->
-																		Semaglutide on the Horizon :<br>Effects, Expectations, and Side Effects
+																		<!-- Semaglutide on the Horizon :<br>Effects, Expectations, and Side Effects -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Bom-Taeck Kim</p>(Ajou University, Republic of Korea)
@@ -1027,7 +1025,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:25-14:50(25")</td>
                                                                     <td class="bold">
-																		Safety and Abuse of Antiobesity Drugs
+																		<!-- Safety and Abuse of Antiobesity Drugs -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ju Young Shin</p>
@@ -1137,7 +1135,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td>16:10-16:20(10")</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1228,7 +1226,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- The Truth about Menopause and Weight Gain: How
                                                                         to Manage Obesity in Perimenopausal Women -->
-																		Sarcopenic Obesity
+																		Sarcopenia and Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Jee-Hyun Kang</p>(Konyang
@@ -1389,13 +1387,14 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
-													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.<br>
+													His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.<br>
+													Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
 												</td>
 											</tr>
                                             <tr>
@@ -1413,7 +1412,7 @@ echo '<script type="text/javascript">
                                                                         Intermittent Metabolic Switching and Brain Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
+                                                                        <p class="bold">Thiruma V. Arumugam</p>La Trobe University, Australia
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1502,7 +1501,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10(25")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Role of Adiponectin Signaling in Alzheimer's Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Dong Gyu Jo</p>(Sungkyunkwan University, Republic of Korea)
@@ -1511,12 +1510,12 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35(25")</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        The Impact of Adiposity and Cognitive Function: Closer than You Think
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Bong-Soo Kim</p>(Hallym
                                                                         University, Korea) -->
-																		TBD
+																		<p class="bold">Theresia Handayani Mina</p>(Nanyang Technological University, Singapore)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1806,7 +1805,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25(25")</td>
                                                                     <td class="bold">
-                                                                        Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing Cognitive Impairment Associated with Diabetes
+                                                                        <!-- Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing Cognitive Impairment Associated with Diabetes -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hideaki Soya</p>(University of Tsukuba, Japan)
@@ -1815,7 +1814,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:25-14:50(25")</td>
                                                                     <td class="bold">
-                                                                        The Proinflammatory Effects of Chronic Excessive Exercise
+                                                                        <!-- The Proinflammatory Effects of Chronic Excessive Exercise -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Adelino Sanchez Ramos da Silva</p>(University of Sao Paulo, Brazil)
@@ -1928,7 +1927,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td>16:10-16:20(10")</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -2001,7 +2000,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2"  class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -2029,8 +2028,7 @@ echo '<script type="text/javascript">
 																		TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Jin-Sun Jun</p>(Hallym
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Kwang Wei Tham</p>(Singapore)
 																		TBD
                                                                     </td>
                                                                 </tr>
@@ -2038,7 +2036,7 @@ echo '<script type="text/javascript">
                                                                     <td>17:20-17:45(25")</td>
                                                                     <td class="bold">
                                                                         <!-- New Clinical Uses of GLP-1 Agonist -->
-																		Therapeutic Potentials of Anti-diabetic Drugs for Alzheimer's Disease
+																		<!-- Therapeutic Potentials of Anti-diabetic Drugs for Alzheimer's Disease -->TBD
                                                                     </td>
                                                                     <td>
                                                                         <p class="bold">Vasileios Papaliagkas</p>(International Hellenic University, Greece)
@@ -2200,13 +2198,14 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
-													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.<br>
+													His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.<br>
+													Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
 												</td>
 											</tr>
                                             <tr>
@@ -2224,7 +2223,7 @@ echo '<script type="text/javascript">
                                                                         Intermittent Metabolic Switching and Brain Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
+                                                                        <p class="bold">Thiruma V. Arumugam</p>La Trobe University, Australia
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2315,7 +2314,7 @@ echo '<script type="text/javascript">
                                                                         and Interacting -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <p class="bold">Ki-Hyun Jeo</p>(Seoul National University, Republic of Korea)
+                                                                        <p class="bold">Ki-Hyun Jeon</p>(Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2653,7 +2652,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25(25")</td>
                                                                     <td class="bold">
-                                                                        Adipose Metabolic Control
+                                                                        <!-- Adipose Metabolic Control -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Zach Gerhart-Hines</p>(University of Copenhagen, Denmark)
@@ -2673,7 +2672,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:50-15:15(25")</td>
                                                                     <td class="bold">
-                                                                        Microbiota in Obesity-Related Metabolic Diseases
+                                                                        <!-- Microbiota in Obesity-Related Metabolic Diseases -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Je-Kyung Seong</p>(Seoul National University, Republic of Korea)
@@ -2788,7 +2787,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td>16:10-16:20(10")</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -2872,7 +2871,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55(25")</td>
                                                                     <td class="bold">
-                                                                        Nutrition Focused Interventions to Address Social Determinants of Obesity in the US
+                                                                        <!-- Nutrition Focused Interventions to Address Social Determinants of Obesity in the US -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung-Yeon Lee</p>(University of Cincinnati, USA)
@@ -2881,7 +2880,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20(25")</td>
                                                                     <td class="bold">
-                                                                        Influence of Social and Environmental Factors on Obesity
+                                                                        <!-- Influence of Social and Environmental Factors on Obesity -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ji-Yun Hwang</p>(Sangmyung University, Republic of Korea)
@@ -3318,7 +3317,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55(25")</td>
                                                                     <td class="bold">
-                                                                        Why Should Adolescence & Young Adult Obesity Be A Priority?
+                                                                        <!-- Why Should Adolescence & Young Adult Obesity Be A Priority? -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Dug-Hyun Choi</p>(Soonchunhyang University, Republic of Korea)
@@ -3327,7 +3326,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20(25")</td>
                                                                     <td class="bold">
-																		Technology for Adolescence Obesity & T2DM 
+																		<!-- Technology for Adolescence Obesity & T2DM  -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Min Sun Kim</p>(Chonbuk National University, Republic of Korea)
@@ -3460,11 +3459,11 @@ echo '<script type="text/javascript">
                                                                         <!-- The Role of Dapagliflozin in T2D ;
                                                                         DECLARE
                                                                         (Cardiorenal Benefit on T2D; from Prevention to
-                                                                        Treatment)  --></td>
+                                                                        Treatment)  -->TBD</td>
                                                                     <td>
                                                                         <!-- <p class="bold">Eun-Jung Rhee</p>
                                                                         (Sungkyunkwan
-                                                                        University, Korea) -->
+                                                                        University, Korea) -->TBD
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3472,12 +3471,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- The Role of Dapagliflozin in Heart
                                                                         Failure;
-                                                                        DAPA-HF -->
+                                                                        DAPA-HF -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Won Jae Lee</p>
-                                                                        (Seoul National
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Kyoung Min Kim</p>(Yonsei University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3485,12 +3482,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- The Role of Dapagliflozin in Chronic
                                                                         Kidney
-                                                                        Disease; DAPA-CKD -->
+                                                                        Disease; DAPA-CKD -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Jang-Hee Cho</p>
-                                                                        (Kyungpook
-                                                                        National University, Korea) -->
+                                                                        <p class="bold">So Hyun Chun</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -4110,11 +4105,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- Fixed-ratio Combinations of Basal Insulin (BI)
                                                                         and GLP-1RA in Patients with Type 2 Diabetes
-                                                                        Inadequately Controlled on BI Therapy -->
+                                                                        Inadequately Controlled on BI Therapy -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Jang Won Son</p>(The Catholic
-                                                                        University of Korea, Korea) -->
+                                                                        <p class="bold">Hong Jun Hwa</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -4198,7 +4192,7 @@ echo '<script type="text/javascript">
                                                                         Cardiovascular Disease and Obesity -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <p class="bold">Tamas Horvath</p>(Yale University, USA)
+                                                                        <p class="bold">Tamas Horvath</p>Yale University, USA
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4296,12 +4290,12 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35(25")</td>
                                                                     <td class="bold">
-                                                                        SGLT2i and TZD : New Horizon to MAFLD Treatment
+                                                                        TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Erika B. Parente</p>(University
                                                                         of Helsinki, Brazil) -->
-																		<p class="bold">Jun-Hwa Hong</p>(Eulji University, Republic of Korea)
+																		<p class="bold">Bo Kyung Koo</p>(Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4392,14 +4386,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:00-11:40(40")</td>
+                                                                    <td>11:00-11:30(30")</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->
+                                                                        Improve Metabolic Health -->TBD
                                                                     </td>
                                                                     <td>
-                                                                       <!-- <p class="bold">John A. Hawley</p> (Australian
-                                                                        Catholic University, New Zealand) -->
+                                                                       <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:30-11:40(10")</td>
+                                                                    <td class="bold">
+                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
+                                                                        Improve Metabolic Health -->Q&A
+                                                                    </td>
+                                                                    <td>
+                                                                       <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -4480,11 +4483,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- Phentermine/Topiramate Extended Release for the
                                                                         Treatment of Obesity
-                                                                        : A Randomized, Placebo-Controlled Trial -->
+                                                                        : A Randomized, Placebo-Controlled Trial -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Aaron S. Kelly</p>(University of
-                                                                        Minnesota Medical School, USA) -->
+                                                                        <p class="bold">Sung Hoon Yu</p>(Hanyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5004,7 +5006,7 @@ echo '<script type="text/javascript">
                                                                         Cardiovascular Disease and Obesity -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <p class="bold">Tamas Horvath</p>(Yale University, USA)
+                                                                        <p class="bold">Tamas Horvath</p>Yale University, USA
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5204,14 +5206,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:00-11:40(40")</td>
+                                                                    <td>11:00-11:30(30")</td>
                                                                     <td class="bold">
-                                                                        <!-- Chrono-Nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->
+                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
+                                                                        Improve Metabolic Health -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">John A. Hawley</p>(Australian
-                                                                        Catholic University, New Zealand) -->
+                                                                       <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:30-11:40(10")</td>
+                                                                    <td class="bold">
+                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
+                                                                        Improve Metabolic Health -->Q&A
+                                                                    </td>
+                                                                    <td>
+                                                                       <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5752,11 +5763,10 @@ echo '<script type="text/javascript">
                                                                     <td>07:30-08:20(50")</td>
                                                                     <td class="bold">
                                                                         <!-- Early & Lower for Longer ; A to Z about Treating
-                                                                        Dyslipidemia in Diabetes Patients -->
+                                                                        Dyslipidemia in Diabetes Patients -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Su Jin Jeong</p>(Sejong General
-                                                                        Hospital, Korea) -->
+                                                                        <p class="bold">Yeoree Yang</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5838,7 +5848,7 @@ echo '<script type="text/javascript">
                                                                         Cardiovascular Disease and Obesity -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <p class="bold">Tamas Horvath</p>(Yale University, USA)
+                                                                        <p class="bold">Tamas Horvath</p>Yale University, USA
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5935,7 +5945,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10(25")</td>
                                                                     <td class="bold">
-                                                                        Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population
+                                                                        <!-- Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung Eun Jung</p>(The University of Alabama. USA)
@@ -5944,7 +5954,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35(25")</td>
                                                                     <td class="bold">
-                                                                        Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities
+                                                                        <!-- Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Minsun Jeon</p>(Chungnam National University, Republic of Korea)
@@ -6030,14 +6040,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:00-11:40(40")</td>
+                                                                    <td>11:00-11:30(30")</td>
                                                                     <td class="bold">
-                                                                        <!-- Chrono-Nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->
+                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
+                                                                        Improve Metabolic Health -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">John A. Hawley</p>(Australian
-                                                                        Catholic University, New Zealand) -->
+                                                                       <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:30-11:40(10")</td>
+                                                                    <td class="bold">
+                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
+                                                                        Improve Metabolic Health -->Q&A
+                                                                    </td>
+                                                                    <td>
+                                                                       <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -6116,11 +6135,10 @@ echo '<script type="text/javascript">
                                                                     <td>11:50-12:50(60")</td>
                                                                     <td class="bold">
                                                                         <!-- Utilizing CGM to Empower T2 DM Obese Patients
-                                                                        For Better Glycemic Management -->
+                                                                        For Better Glycemic Management -->TBD
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Glen F. Maberly</p> (University
-                                                                        Sydney Public Health School, Australia) -->
+                                                                        <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -6361,7 +6379,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45(25")</td>
                                                                     <td class="bold">
-                                                                        Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023) 
+                                                                        <!-- Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)  -->TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ja Hyang Cho</p>(Kyung Hee University, Republic of Korea)
@@ -6563,19 +6581,16 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45(25")</td>
                                                                     <td class="bold">
-                                                                        <!-- Alterations in Brain and Behavior Contributing
-                                                                        to Obesity -->TBD
+                                                                        Impact of Sleep Disturbance on Obesity and Energy Homeostasis
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Carrie R. Ferrario</p>
-                                                                        (University of Michigan, USA) -->TBD
+                                                                        <p class="bold">Alice PS Kong</p>(The Chinese University of Hong Kong, Hong Kong)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:10(25")</td>
                                                                     <td class="bold">
-                                                                        <!-- How to Recover from Food Addiction as a New
-                                                                        Piece of the Obesity Framework -->TBD
+                                                                        Guidelines for the Management of Obesity as a Disease: Japanese Update
                                                                     </td>
                                                                     <td>
                                                                         <p class="bold">Koutaro Yocote</p>(Chiba University, Japan)
@@ -7185,7 +7200,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>16:00-17:30(90")</td>
+                                                <td>15:20-16:50(90")</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Article in JOMES</p>
                                                     <!-- <p>
@@ -7203,9 +7218,8 @@ echo '<script type="text/javascript">
 													will be updated.
 												</td>
 											</tr>
-											<!--
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -7214,48 +7228,48 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><!-- 16:00-16:15(15")</td>
+                                                                    <td>15:20-15:35(15")</td>
                                                                     <td class="bold">
-                                                                        <!-- Effect of Sodium-Glucose Cotransporter 2
-                                                                        Inhibitors on Weight Reduction in Overweight and
-                                                                        Obese Populations without Diabetes: A Systematic
-                                                                        Review and a Meta-Analysis
+                                                                        Obesity Fact Sheet in Korea, 2021: Trends in Obesity Prevalence and Obesity-Related Comorbidity Incidence Stratified by Age from 2009 to 2019
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Yun Kyung Cho</p>(University of
-                                                                        Ulsan, Korea)
+                                                                        <p class="bold">Ye Seul Yang</p>(Seoul National University, Republic of Korea))
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><!-- 16:15-16:30(15")</td>
+                                                                    <td>15:35-15:50(15")</td>
                                                                     <td class="bold">
-                                                                        <!-- Impact of COVID-19 and Associated Preventive
-                                                                        Measures on Cardiometabolic Risk Factors in
-                                                                        South Korea
+                                                                        Reference Values for Waist Circumference and Waist–Height Ratio in Korean Children and Adolescents
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Soo Lim</p>(Seoul National
-                                                                        University, Korea)
+                                                                        <p class="bold">Jieun Lee</p>(Inje University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><!-- 16:30-16:45(15")</td>
+                                                                    <td>15:50-16:05(15")</td>
                                                                     <td class="bold">
-                                                                       <!--  Factors Associated with Body Weight Gain among
-                                                                        Korean Adults during the COVID-19 Pandemic
+                                                                       Maintaining Physical Activity Is Associated with Reduced Major Adverse Cardiovascular Events in People Newly Diagnosed with Diabetes
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold">Yang Im Hur</p>(CHA University,
-                                                                        Korea)
+                                                                        <p class="bold">Kyoung Hwa Ha</p>(Ajou University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><!-- 16:45-17:00(15")</td>
+                                                                    <td>16:05-16:20(15")</td>
                                                                     <td class="bold">
-                                                                        <!-- Award
+                                                                        Updated Meta-Analysis of Studies from 2011 to 2021 Comparing the Effectiveness of Intermittent Energy Restriction and Continuous Energy Restriction
                                                                     </td>
                                                                     <td>
-                                                                        <!-- <p class="bold"></p>
+                                                                        <p class="bold">Kyoung-Kon Kim</p>(Gachon University, Republic of Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td class="bold">
+                                                                        Award Ceremony
+                                                                    </td>
+                                                                    <td>
+                                                                        <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -7263,7 +7277,6 @@ echo '<script type="text/javascript">
                                                     </div>
                                                 </td>
                                             </tr>
-											-->
                                         </tbody>
                                     </table>
                                 </div>

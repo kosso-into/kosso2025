@@ -2,7 +2,194 @@
 <?php include_once('./include/header.php'); ?>
 
 <section class="container sponsor">
+	<!-- HUBDNCLHJ : app 메뉴 탭 -->
+	<!--
+	<div class="app_title_box">
+		<h2 class="app_title">
+			Sponsorship
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='javascript:;';">
+				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
+			</button>
+		</h2>
+		<ul class="app_menu_tab langth_2">
+			<li><a href="./sponsor.php">Sponsorship</a></li>
+			<li class="on"><a href="./sponsor_exhibition.php">Exhibition</a></li>
+		</ul>
+	</div> -->
+	<!-- HUBDNCLHJ : APP일시 h1.page_title 주석처리 후 app 메뉴 탭 주석해제 -->
 	<h1 class="page_title">Exhibition</h1>
+	<!-- HUBDNCLHJ : APP일시 div.inner 주석 후 container_inner 주석해제 -->
+	<!--
+	<div class="container_inner">
+		<div class="contents_box">
+			<ul class="app_tab min_tab">
+				<li class="on"><a href="javascript:;">3F</a></li>
+				<li><a href="javascript:;">5F</a></li>
+				<li><a href="javascript:;">6F</a></li>
+			</ul>
+			<div class="app_contents_wrap type3">
+				<div class="floor floor_3 on">
+					<div class="floor_map">
+						<img src="/main/img/floor_map_img01.png" alt="">
+					</div>
+					<div class="floor_table_wrap">
+						<table class="floor_table">
+							<colgroup>
+								<col width="12%"/>
+								<col width="18%"/>
+								<col />
+							</colgroup>	
+							<thead>
+								<tr>
+									<th>No.</th>
+									<th>Grade</th>
+									<th>Company Name</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1~3</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>4~6</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>7~10</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>12~13</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>14~16</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="floor floor_5">
+					<div class="floor_map">
+						<img src="/main/img/floor_map_img01.png" alt="">
+					</div>
+					<div class="floor_table_wrap">
+						<table class="floor_table">
+							<colgroup>
+								<col width="12%"/>
+								<col width="18%"/>
+								<col />
+							</colgroup>	
+							<thead>
+								<tr>
+									<th>No.</th>
+									<th>Grade</th>
+									<th>Company Name</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1~3</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>4~6</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>7~10</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>12~13</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>14~16</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="floor floor_6">
+					<div class="floor_map">
+						<img src="/main/img/floor_map_img01.png" alt="">
+					</div>
+					<div class="floor_table_wrap">
+						<table class="floor_table">
+							<colgroup>
+								<col width="12%"/>
+								<col width="18%"/>
+								<col />
+							</colgroup>	
+							<thead>
+								<tr>
+									<th>No.</th>
+									<th>Grade</th>
+									<th>Company Name</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1~3</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>4~6</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>7~10</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>12~13</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+								<tr>
+									<td>14~16</td>
+									<td>Platinum</td>
+									<td>SANOFI</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div> -->
 	<div class="inner">
 		<!--
 		<div class="sub_banner">
@@ -294,6 +481,13 @@
 			}
 		});
 		$(window).trigger("resize");
+	});
+
+	// Tour Map 층별 탭
+	$(".tour_map .app_tab li").click(function(){
+		var i = $(this).index();
+		$(".contents_wrap").children(".floor").removeClass("on");
+		$(".contents_wrap").children(".floor").eq(i).addClass("on");
 	});
 </script>
 

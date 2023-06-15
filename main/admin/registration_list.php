@@ -38,7 +38,7 @@
 	$registration_list_query =  "
 									SELECT
 										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2,
-										rr.member_type, rr.member_other_type,
+										rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
 										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
 											CASE rr.registration_type
@@ -166,6 +166,8 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">부서</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Phone Number</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Type of Participation</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Occupation</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Occupation (Others)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Category</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Category (Others)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Date of Birth</th>';
@@ -296,6 +298,8 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["department_kor"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["phone"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["attendance_type_text"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["occupation_type"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["occupation_other_type"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["member_type"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["member_other_type"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["date_of_birth"].'</td>';
@@ -390,6 +394,7 @@
 							<th>Affiliation(Institution)</th>
 							<th>Phone Number</th>
 							<th>Type of Participation</th>
+							<th>Type of Occupation</th>
 							<th>Category</th>
 							<th>평점신청여부</th>
 							<th>등록일</th>
@@ -415,6 +420,7 @@
 									<td><?=$list["affiliation"]?></td>
 									<td><?=$list["phone"]?></td>
 									<td><?=$list["attendance_type_text"]?></td>
+									<td><?=$list["occupation_type"]?></td>
 									<td><?=$list["member_type"]?></td>
 									<td><?=isset($list["is_score_text"]) ? $list["is_score_text"] : "-"?></td>
 									<td><?=isset($list["register_date"]) ? $list["register_date"] : "-"?></td>

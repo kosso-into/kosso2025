@@ -20,7 +20,9 @@
 											rr.attendance_type,
 											rr.nation_no,
 											rr.banquet_yn,
-											rr.member_type, rr.member_status,
+											rr.member_type,
+											rr.occupation_type,
+											rr.member_status,
 											m.member_idx, m.member_email, m.member_name, m.member_nation,
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.first_name,' ',rr.last_name) AS registration_name, rr.phone,
 											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.academy_number, 
@@ -105,6 +107,7 @@
 
 	$member_idx = isset($registration_detail["member_idx"]) ? $registration_detail["member_idx"] : "";
 	$member_type = isset($registration_detail["member_type"]) ? $registration_detail["member_type"] : "";
+	$occupation_type = isset($registration_detail["occupation_type"]) ? $registration_detail["occupation_type"] : "";
 	$member_status = isset($registration_detail["member_status"]) ? $registration_detail["member_status"] : "";
 	$member_email = isset($registration_detail["member_email"]) ? $registration_detail["member_email"] : "";
 	$member_name = isset($registration_detail["member_name"]) ? $registration_detail["member_name"] : "";
@@ -343,9 +346,13 @@
 							<th>Phone Number</th>
 							<td><?=$phone?></td>
 						</tr>
+                        <tr>
+                            <th>Attendance type</th>
+                            <td colspan="3"><?=$attendance_type_text?></td>
+                        </tr>
 						<tr>
-							<th>Attendance type</th>
-							<td><?=$attendance_type_text?></td>
+							<th>Occupation type</th>
+							<td><?=$occupation_type?></td>
 							<th>Member Type</th>
 							<td><?=$member_type?></td>
 						</tr>

@@ -2,7 +2,45 @@
 <?php include_once('./include/header.php'); ?>
 
 <section class="container sponsor">
+	<!-- HUBDNCLHJ : app 메뉴 탭 -->
+	<!--
+	<div class="app_title_box">
+		<h2 class="app_title">
+			Sponsorship
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='javascript:;';">
+				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
+			</button>
+		</h2>
+		<ul class="app_menu_tab langth_2">
+			<li class="on"><a href="./sponsor.php">Sponsorship</a></li>
+			<li><a href="./sponsor_exhibition.php">Exhibition</a></li>
+		</ul>
+	</div> -->
+	<!-- HUBDNCLHJ : APP일시 h1.page_title 주석처리 후 app 메뉴 탭 주석해제 -->
     <h1 class="page_title">Sponsorship</h1>
+	<!-- HUBDNCLHJ : APP일시 div.inner 주석 후 app_contents_box 주석해제 -->
+	<!--
+	<div class="app_contents_box">
+		<div class="sponsor_grade">
+			<p class="grade_title pink_bg">Platinum</p>
+			<ul class="grade_wrap">
+				<li><a href="javascript:;" class="kyowa_kirin">KYOWA KIRIN</a></li>
+				<li><a href="javascript:;" class="sanofi">sanofi</a></li>
+				<li><a href="javascript:;" class="janssen">Janssen</a></li>
+				<li><a href="javascript:;" class="astellas">astellas</a></li>
+				<li><a href="javascript:;" class="handok">HANDOK</a></li>
+				<li><a href="javascript:;" class="novartis">NOVARTIS</a></li>
+				<li><a href="javascript:;" class="msd">MSD</a></li>
+				<li><a href="javascript:;" class="bristol_myers_squibb">Bristol Myers Squibb</a></li>
+			</ul>
+			<p class="grade_title gold_bg">Gold</p>
+			<ul class="grade_wrap">
+				<li><a href="javascript:;" class="pharmaceutical">Pharmaceutical</a></li>
+				<li><a href="javascript:;" class="gc_biopharma">GC Biopharma</a></li>
+			</ul>
+		</div>
+	</div>
+	-->
     <div class="inner">
 		<!--
 		<div class="sub_banner">

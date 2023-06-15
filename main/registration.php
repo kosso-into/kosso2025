@@ -17,6 +17,7 @@ if($registrationNo){
 	if($registrationNo){
 		$register = $prev["register"] ?? 0;
 		$category = $prev["member_type"] ?? "";
+        $occupation = $prev["occupation_type"] ?? "";
 
 		$calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category) : 0;
 		$prev["calc_fee"] = $calc_fee;
@@ -194,6 +195,30 @@ if ($during_yn !== "Y") {
                         </select>
                     </li>
                     <li>
+                        <p class="label">Type of Occupation <span class="red_txt">*</span></p>
+                        <ul class="half_ul">
+                            <li>
+                                <select id="occupation" name="occupation" >
+                                    <option value="" selected hidden>Choose</option>
+                                    <?php
+                                    $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
+
+                                    foreach($occupation_arr as $a_arr) {
+                                        $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
+
+                                        echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+                                    }
+                                    ?>
+                                </select>
+                            </li>
+                            <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
+                            <li class="hide_input <?=$prev["occupation_type"] === "Others" ? "on" : ""?>">
+                                <input type="hidden" name="occupation_prev_input" value="<?=$prev["occupation_other_type"] ?? ""?>"/>
+                                <input type="text" id="occupation_input" name="occupation_input" value="<?=$prev["occupation_other_type"] ?? ""?>">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <p class="label"><?=$locale("register_online_question3_2023")?> <span class="red_txt">*</span></p>
 						<ul class="half_ul">
 							<li>
@@ -217,6 +242,7 @@ if ($during_yn !== "Y") {
 							</li>
 						</ul>
                     </li>
+
 					<?php if($member_data['nation_en'] == "Republic of Korea"){?>
 						<li id='chk_org'>
 							<p class='label'>평점신청 <span class='red_txt'>*</span></p>
@@ -807,6 +833,20 @@ if ($during_yn !== "Y") {
 				$("input[name=title_input]").val(prevTitle);
 			}
 		});
+
+        $("select[name=occupation]").on("change", function(){
+            const val2 = $(this).val();
+            const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
+
+            if(val2 == 'Others'){
+                if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+                    $(this).parent("li").next('.hide_input').addClass("on");
+                }
+            }else{
+                $(this).parent("li").next('.hide_input').removeClass("on");
+                $("input[name=occupation_input]").val(prevTitle2);
+            }
+        });
 
 		$("input[name=reg_fee], input[name=promotion_confirm_code]").on("change", function(){
 			const status =  $("input[name=promotion_confirm_code]").val() ?? "";

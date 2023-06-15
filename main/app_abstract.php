@@ -1,0 +1,47 @@
+<?php
+	include_once ("./include/head.php");
+	include_once ("./include/app_header.php");
+?>
+
+<section class="container app_version layout_type2">
+	<div class="inner">
+		<div class="app_title_box">
+			<h2 class="app_title">Abstract</h2>
+		</div>
+		<div class="app_contents_box">
+			<div class="app_contents_wrap type2">
+				<ul class="app_sort_form app_half_ul">
+					<li>
+						<select name="" id="">
+							<option value="" hidden>Select Category</option>
+							<option value="">All</option>
+							<option value="">Plenary Lecture</option>
+							<option value="">Keynote Lecture</option>
+							<option value="">Best Article in JOMES</option>
+							<option value="">Symposium</option>
+							<option value="">Pre-congress Symposium</option>
+							<option value="">Breakfast Symposium</option>
+							<option value="">Luncheon Symposium</option>
+							<option value="">Satellite Symposium</option>
+							<option value="">Sponsored Session</option>
+							<option value="">Joint Symposium</option>
+							<option value="">Oral Presentation</option>
+							<option value="">Guided Poster Presentation</option>
+							<option value="">Poster Exhibition</option>
+						</select>
+					</li>
+				</ul>
+				<ul class="pdf_list">
+					<li><a href="./download/dummy.pdf">Plenary Lecture 1</a></li>
+					<li><a href="./download/dummy.pdf">Plenary Lecture 2</a></li>
+					<li><a href="./download/dummy.pdf">Plenary Lecture 3</a></li>
+					<li><a href="./download/dummy.pdf">Plenary Lecture 4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<?php
+	include_once ("./include/app_footer.php");
+?>

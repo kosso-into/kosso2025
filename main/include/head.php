@@ -12,6 +12,8 @@
     <meta property="og:image" content="/main/img/poster2023.jpg" />
     <meta property="og:description" content="2023 ICOMES hosted by KSSO">
     <meta name="description" content="2023 ICOMES hosted by KSSO">
+	<!-- 개발서버일 경우에만 해당 부분 추가 -->
+	<meta name="robots" content="noindex" />
 
     <!-- datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
@@ -20,22 +22,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/uwj4our.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/main/css/common.css?ver=0.19">
-    <!-- <link rel="stylesheet" href="/main/css/style.css?ver=0.2"> -->
-    <link rel="stylesheet" href="/main/css/style_test.css?ver=0.19"> <!-- ←수정된 header css를 위한 파일입니다.-->
-    <link rel="stylesheet" href="/main/css/style_ljh.css?ver=0.19">
-    <link rel="stylesheet" href="/main/css/style_ljh2.css?ver=0.19">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main/css/common.css?ver=<?= time() ?>">
+    <link rel="stylesheet" href="/main/css/style.css?ver=<?= time() ?>">
+    <link rel="stylesheet" href="/main/css/style2.css?ver=<?= time() ?>">
+    <link rel="stylesheet" href="/main/css/style3.css?ver=<?= time() ?>">
+    <link rel="stylesheet" href="/main/css/style4.css?ver=<?= time() ?>">
     <script src="/main/js/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/main/js/style.js?ver<?= time() ?>"></script>
+    <script src="/main/js/style.js?ver=<?= time() ?>"></script>
     <script src="/main/js/config.js"></script>
-    <script src="/main/js/common.js?ver<?= time() ?>"></script>
-    <script src="/main/js/en.js?ver<?= time() ?>"></script>
-    <script src="/main/js/ko.js?ver<?= time() ?>"></script>
+    <script src="/main/js/common.js?ver=<?= time() ?>"></script>
+    <script src="/main/js/en.js?ver=<?= time() ?>"></script>
+    <script src="/main/js/ko.js?ver=<?= time() ?>"></script>
     <script src="/main/js/lang.js"></script>
     <script src="/main/js/locale.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->

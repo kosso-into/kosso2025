@@ -1,31 +1,27 @@
 <?php include_once('./include/head.php'); ?>
+<!-- HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 -->
 <?php include_once('./include/header.php'); ?>
 
-<style>
-/*
-.best_jomes {
-    padding-bottom: 43px !important;
-}
-
-.best_jomes:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 32px;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-*/
-</style>
-
+<!-- HUBDNCHYJ : App 일 경우 padding/margin을 조정하는 app_version 클래스가 container에 들어가야 함 -->
 <section class="container program_glance">
+	<!-- HUBDNCHYJ : App 일 경우 타이틀 영역 입니다. -->
+	<!-- <div class="app_title_box"> -->
+	<!-- 	<h2 class="app_title">Program</h2> -->
+	<!-- 	<ul class="app_menu_tab langth_2"> -->
+	<!-- 		<li class="on"><a href="./program_glance.php">Program at a Glance</a></li> -->
+	<!-- 		<li><a href="./program_detail.php">Scientific Program</a></li> -->
+	<!-- 	</ul> -->
+	<!-- </div> -->
     <h1 class="page_title">Program at a Glance</h1>
+	<!-- HUBDNCHYJ : App 에서는 이 클래스 사용하시면 됩니다. -->
+	<!-- <ul class="app_tab program"> -->
+	<!-- 	<li class="row2 on"><a href="javascript:;">All Days</a></li> -->
+	<!-- 	<li><a href="javascript:;">Sep.7(Thu)</a></li> -->
+	<!-- 	<li><a href="javascript:;">Sep.8(Fri)</a></li> -->
+	<!-- 	<li><a href="javascript:;">Sep.9(Sat)</a></li> -->
+	<!-- </ul> -->
     <div class="inner">
-        <!-- <img class="coming" src="./img/coming.png" /> -->
         <div class="program_wrap section">
-            <!-- <img src="./img/sample/icomes_program.svg" style="max-width:100%;"> -->
             <div class="scroll_table">
                 <ul class="tab_green long centerT program_glance">
 					<li class="on"><a href="javascript:;">All Days<br/>September 7(Thu) ~ 9(Sat)</a></li>
@@ -33,10 +29,8 @@
 					<li><a href="javascript:;">Sep.8(Fri)</a></li>
 					<li><a href="javascript:;">Sep.9(Sat)</a></li>
 				</ul>
+				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
 				<div class="rightT mb20">
-                    <!-- <h3 class="title red_t">* K=Korean Session</h3> -->
-                    <!-- onclick="javascript:window.open('./download/ICOMES2022_Program at a Glance.pdf')" -->
-                    <!-- onclick="javascript:window.open('./download/icomes2022_program_glance_2.pdf')" -->
                     <button onclick="javascript:window.open('./download/ICOMES_2023_Program_at_a_glance.xlsx')"
                         class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
                 </div>
@@ -614,6 +608,15 @@
 
 </section>
 
+<!-- HUBDNCHYJ : App 일때만 노출되는 팝업 입니다. -->
+<div class="popup hold_pop"> <!-- style="display:block;" -->
+	<div class="pop_bg"></div>
+	<div class="pop_contents transparent center_t">
+		<img src="./img/icons/icon_resize.png" alt="">
+		<p class="white_t center_t">Touch on a session to check the details. <br/>Use your fingers to zoom in/out</p>
+	</div>
+</div>
+
 <script>
 $(document).ready(function() {
 	/*$("td.pointer").click(function() {
@@ -632,7 +635,7 @@ $(document).ready(function() {
 
         table_location(event, target, e, day, this_name);
     });
-	$(".tab_green li").click(function(){
+	$(".tab_green li, .app_tab li").click(function(){
 		var this_index = $(this).index();
 		if (!this_index == 1){
 			$(".day_tbody").show();

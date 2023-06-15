@@ -199,10 +199,20 @@
 					<h5 class="title">Tamas Horvath</h5>
 					<div class="career">Yale University,<br>USA</div>
 				</li>
+				<li class="index_speaker7">
+					<div class="profile_circle"><div class="profile_wrap"></div></div>
+					<h5 class="title">John Wilding</h5>
+					<div class="career">University of Liverpool,<br>UK</div>
+				</li>
 				<li class="index_speaker2">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
 					<h5 class="title">Matthias Blüher</h5>
 					<div class="career">University of Leipzig,<br>Germany</div>
+				</li>
+				<li class="index_speaker8">
+					<div class="profile_circle"><div class="profile_wrap"></div></div>
+					<h5 class="title">Jae Myoung Suh</h5>
+					<div class="career">KAIST,<br>Republic of Korea</div>
 				</li>
 				<li class="index_speaker3">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>

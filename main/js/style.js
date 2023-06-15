@@ -314,3 +314,129 @@ function requiredCheck4() {
 	}
 	return true;
 }
+
+
+
+
+
+/*======================== 
+	23.06.13 APP JS
+==========================*/
+$(document).ready(function(){
+	//App Nav show
+	$(".app_header .app_nav_btn").click(function(){
+		$(".app_nav").addClass("on");
+		$(".app_nav_bg").addClass("on");
+		$("html, body").css({"height": "100%", "overflowY": "hidden"});
+	});
+
+	//App Nav hide
+	$(".app_nav .app_nav_close, .app_nav_bg").click(function(){
+		$(".app_nav").removeClass("on");
+		$(".app_nav_bg").removeClass("on");
+		$("html, body").css({"height" : "auto", "overflowY" : "visible"});
+	});
+
+	//App GNB 
+	$(".app_nav_menu > li").click(function(){
+		$(this).addClass("on");
+		$(this).siblings().removeClass("on");
+	});
+
+	//App 탭
+	$(".app_tab li").click(function() {
+		var i = $(this).index();
+		$(this).parent("ul").next(".inner").find(".tab_cont").removeClass("on");
+		$(this).parent("ul").next(".inner").find(".tab_cont").eq(i).addClass("on");
+		$(this).siblings("li").removeClass("on");
+		$(this).addClass("on");
+		console.log($(this).parent("ul").next(".inner").find(".tab_cont"))
+	});
+
+	// APP 메뉴 탭 높이 맞춤
+	appMenuTab();
+
+	function appMenuTab(){
+		if ($(".app_menu_tab")) {
+			var menu_tab_max_h = 0; 
+			$(".app_menu_tab > li > a").each(function(){ // 최대 높이 구하기
+				var menu_tab_h = parseInt($(this).css("height"));
+				if (menu_tab_max_h < menu_tab_h) {
+					menu_tab_max_h = menu_tab_h;
+				};
+			});
+			$(".app_menu_tab > li > a").each(function(){ // 최대 높이 설정
+				$(this).css({height: menu_tab_max_h});
+			});
+		};
+	};
+	
+	//기본 가이드 밖 풀로 빠지는 레이아웃
+	$(window).resize(function(){
+		//var title_left = $(".app_version .page_title").offset().left;
+		//$(".app_version .page_title").css("margin-left", "-"+title_left+"px")
+		//console.log(title_left);
+		//$(".app_version .page_title, .app_title_box, .app_tab, .app_version.app_setting .contents_box, .app_contents_box > div").offset({left : 0})
+	});
+	//$(window).trigger("resize");
+
+	// APP 로그인/로딩페이지 height 설정
+	if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
+		document.querySelector(".app_main .app_main_box").style.height = window.innerHeight + "px";
+	}
+
+	// Scientific Program 내 스케줄 버튼 토글
+	$(".app_scientific .info button").click(function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$(".program_alarm_pop").show();
+		$(this).toggleClass("on");
+	});
+
+	// Scientific Program 상세영역 토글
+	$(".app_scientific .program_detail_ul .main").click(function(){
+		$(this).next(".detail").stop().slideToggle();
+	});
+
+	//팝업
+	$(".pop_dim").click(function() {
+		$(this).parents(".pop_wrap").removeClass("on");
+	});
+
+	// My Stamp 로고 클릭시 장소 정보 노출
+	$(".app_my_stamp .grade_wrap li").click(function(){
+		if ($(this).hasClass("complete_stamp")){
+		} else {
+			$(this).children(".location").toggleClass("on");
+		}
+	});
+
+	//My Stamp - 관리자 접근 화면
+	if($("section").hasClass("app_my_stamp_admin")){
+		//관리자 화면 종료버튼 show
+		$(".app_header .stamp_admin_close").addClass("on");
+		//관리자 화면 종료
+		$(".stamp_admin_close").click(function(){
+			$(this).removeClass("on");
+			window.location.href='./app_my_stamp.php';
+		});
+		//스탬프 완료/취소
+		$(".stamp_control .complete").click(function(){
+			$(this).parents(".grade_wrap li").addClass("complete_stamp");
+		});
+		$(".stamp_control .delete").click(function(){
+			$(this).parents(".grade_wrap li").removeClass("complete_stamp");
+		});
+		//전체 스탬프 완료/취소
+		$(".stamp_count .stamp_control .complete").click(function(){
+			$(".grade_wrap li").addClass("complete_stamp");
+		});
+		$(".stamp_count .stamp_control .reset").click(function(){
+			$(".grade_wrap li").removeClass("complete_stamp");
+		});
+	};
+
+	$(".schedule_area .grade_title").click(function(){
+		$(this).next(".program_detail_ul").slideToggle();
+	});
+});

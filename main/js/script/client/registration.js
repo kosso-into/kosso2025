@@ -307,8 +307,10 @@ function inputCheck(check_type) {
 				alert('Please checked others options.');
 			}else if(requireCheck == -6){
 				alert('Please select one or more ways you are got the information about this conference.');
-			}else if(requireCheck == -7){
+			}else if(requireCheck == -7) {
 				alert('Please select payment method');
+			}else if(requireCheck == -8) {
+				alret('check_occupation_category ')
 			}else{
 				alert('Please checked input data');
 			}
@@ -328,6 +330,11 @@ function requireChecked(){
 	// Type of Participation
 	if(!$("select[name=participation_type] option:selected").val()){
 		return -1;
+	}
+
+	// Type of Occupation
+	if(!$("select[name=occupation] option:selected").val()) {
+		return -8;
 	}
 
 	// Category

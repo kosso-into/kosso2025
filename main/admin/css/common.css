@@ -50,7 +50,11 @@ h1, h2, h3, h4, h5, h6 {font-weight:500;}
 /*기타*/
 input[type="radio"] + label {margin: 0 5px;cursor:pointer;}
 label.readonly {color: #999;}
-.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%;}
+/*말줄임*/
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ellipsis2 {display: -webkit-box; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;} /*2줄*/
+.ellipsis3 {display: -webkit-box; word-wrap: break-word; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;} /*3줄*/
+.ellipsis4 {display: -webkit-box; word-wrap: break-word; -webkit-line-clamp: 4; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;} /*4줄*/
 .file_down {font-size: 16px; margin: 10px 0 20px; color: #6699ff;}
 .datepickers-container {z-index: 600;}
 
@@ -87,7 +91,6 @@ label.readonly {color: #999;}
 .red_color {color: red;}
 .blue_color {color: #0000ff;}
 
-
 /*align*/
 .leftT {text-align:left !important;}
 .centerT {text-align:center;}
@@ -117,7 +120,7 @@ th{background:#f1f1f1; border-right:solid 1px #ccc; font-weight:600;}
 td{border-right:solid 1px #ccc;}
 th,td{padding:10px 6px;border-bottom:solid 1px #ccc;}
 table a{ color:#0080ff;display:block;}
-tr:last-of-type th, tr:last-of-type td{border-bottom:O0;}
+/*tr:last-of-type th, tr:last-of-type td{border-bottom:O0;}*/
 .total td , .total th{background: #e0e1e2;}
 table input[type="text"], table input[type="password"], table select, table textarea{width:100%;}
 .input_wrap input{width: calc(50% - 10px) !important;float:left;}
@@ -229,3 +232,38 @@ div.dataTables_wrapper div.dataTables_paginate{text-align:center;}
 ==========================*/
 /* 공통 .hidden 클래스 추가 */
 .hidden{display: none;}
+
+
+/* APP */
+/*app header*/
+.header.app_header {background: #000066;}
+.nav.app_nav {background: #000066;}
+.nav.app_nav .main_nav.on a {background:#3D6ECA;}
+
+/*app popup*/
+.pop_wrap {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; /*visibility: hidden; opacity: 0; transition: 0.6s;*/ display:none !important;}
+.pop_wrap.on {/*visibility: visible; opacity: 1;*/ display:block !important;}
+.pop_wrap.small .pop_cont {max-width: 350px;}
+.pop_wrap.medium .pop_cont {max-width: 850px;}
+.pop_dim {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(29,29,29,0.5); cursor: pointer;}
+.pop_cont {width: calc(100% - 32px); max-width: 510px; /*max-height: 80%;*/ padding: 20px 24px 24px; border: 1px solid #EBEBEB; border-radius: 8px; background-color: #FFFFFF; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.pop_cont .pop_inner {margin-bottom: 24px;}
+.pop_title {position: relative; font-size: 18px; font-weight: bold; text-align: left; padding-right: 20px; margin-bottom: 30px;}
+.pop_title .pop_close {position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; background: center / auto no-repeat url('../img/pop_close.svg')}
+.pop_wrap .img {margin-bottom:16px;}
+.pop_wrap .btn_wrap {display:flex; gap:12px; margin-top:12px;}
+.pop_wrap .btn_wrap.type2 {display:flex; gap:0; margin-top:0; border-top:2px solid #E7E9EC;}
+.pop_wrap .btn_wrap.type2 > label {width:calc(60%); border-right: 2px solid #E7E9EC; justify-content: center;}
+.pop_wrap .btn_wrap.type2 > * {font-size: 15px;}
+.pop_wrap .btn_wrap.type2 button {width:calc(40%);}
+.pop_wrap .btn_wrap button {height:44px; flex:1;}
+.pop_wrap .col_th {width:140px;}
+.pop_wrap .table_box + .table_box {margin-top:40px;}
+.pop_wrap .table_top.detail h3 {margin-bottom:0; font-size:16px;}
+.pop_wrap .btn_wrap button {min-width:150px;} 
+.pop_wrap .center_t {text-align: center;} 
+.pop_wrap .pop_inner_title {text-align: left; padding: 8px 12px; background: #ccc; font-weight: bold;} 
+.pop_wrap .text_area textarea {width:100%;} 
+.pop_wrap.app_push_pop .app_date_ul li {width:100%; margin-top: -1px;}
+.pop_wrap.app_push_pop .app_date_ul li > span {width:20%; background: #ccc; padding: 4px 8px;}
+.pop_wrap.app_push_pop .app_date_ul li > input {width:80%; padding: 4px 8px;}

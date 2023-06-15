@@ -17,6 +17,17 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
 ?>
 
 <section class="container organizing">
+	<!-- HUBDNCLHJ : app 메뉴 탭 -->
+	<!--
+	<div class="app_title_box">
+		<h2 class="app_title">ICOMES 2023</h2>
+		<ul class="app_menu_tab">
+			<li><a href="./welcome.php">Welcome Message</a></li>
+			<li class="on"><a href="./organizing_committee.php">Organization</a></li>
+			<li><a href="./overview.php">Overview</a></li>
+			<li><a href="./venue.php">Venue</a></li>
+		</ul>
+	</div> -->
     <div>
         <h1 class="page_title">Organization</h1>
         <div class="inner">

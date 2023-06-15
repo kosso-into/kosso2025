@@ -27,10 +27,31 @@ $(document).ready(function(){
 		$(this).parents('li').remove();
 	});
 
+
+	// [공통] popup open
+	$("*[name='pop_btn']").click(function(e){
+		var btn_name = $(this).attr("class");
+		var strArray = btn_name.split(" ");
+		for (i=0 ; strArray.length > i ; i++ )	{
+			var pos1 = strArray[i].indexOf("_open");
+			if (pos1 > -1) {
+				var button = strArray[i].split("_open").join("");
+				$("."+button+"_pop").addClass("on");
+			}
+		}
+		$("body").css({"height": "100%", "overflowY": "hidden"});
+	})
+
+	// [공통] popup close
+	$(".pop_dim, .pop_close").click(function(){
+		$(this).closest(".pop_wrap").removeClass("on");
+		$("body").css({"height": "auto", "overflowY": "visible"});
+	})
+
 	//popup
-	$('.pop_close, .pop_dim').on('click',function(){
-		$(this).parents('.pop_wrap').hide();
-	});
+//	$('.pop_close, .pop_dim').on('click',function(){
+//		$(this).parents('.pop_wrap').hide();
+//	});
 
 	// 썸네일 이미지 업로드 시 파일이름 노출
 	$(document).on('change', 'input[type=file]', function(event){

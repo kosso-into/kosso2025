@@ -56,7 +56,11 @@
 		}
 
 		$category            = isset($data["category"]) ? $data["category"] : "";										// Category
-		$category_other      = isset($data["title_input"]) ? $data["title_input"] : "";	
+		$category_other      = isset($data["title_input"]) ? $data["title_input"] : "";
+
+        $occupation            = isset($data["occupation"]) ? $data["occupation"] : "";									// Type of Participation
+        $occupation_other      = isset($data["occupation_input"]) ? $data["occupation_input"] : "";
+
 		$rating              = isset($data["review"]) ? $data["review"] : "";											// 평점신청
 		$licence_number      = $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
 		$specialty_number    = $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
@@ -247,6 +251,15 @@
 					$add_set .= ", member_other_type = NULL ";
 				}
 			}
+            if($occupation !== "") {
+                $add_set .= ", occupation_type = '{$occupation}' ";
+
+                if($occupation == 'Others'){
+                    $add_set .= $occupation_other != "" ? ", occupation_other_type = '{$occupation_other}' " : ", occupation_other_type = NULL ";
+                }else{
+                    $add_set .= ", occupation_other_type = NULL ";
+                }
+            }
 
 			if($data["promotion_confirm_code"] !== ''){
 				if($promotion_code != "") {

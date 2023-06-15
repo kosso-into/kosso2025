@@ -16,7 +16,20 @@ $info = sql_fetch($sql_info);
 ?>
 
 <section class="container venue">
+	<!-- HUBDNCLHJ : app 메뉴 탭 -->
+	<!--
+	<div class="app_title_box">
+		<h2 class="app_title">ICOMES 2023</h2>
+		<ul class="app_menu_tab">
+			<li><a href="./welcome.php">Welcome Message</a></li>
+			<li><a href="./organizing_committee.php">Organization</a></li>
+			<li><a href="./overview.php">Overview</a></li>
+			<li class="on"><a href="./venue.php">Venue</a></li>
+		</ul>
+	</div> -->
     <h1 class="page_title">Conrad Seoul</h1>
+	<!-- HUBDNCLHJ : app에선 타이틀 Conrad Seoul>Venue로 변경 됨. 메뉴 위치 이동 됨. 노출되는 컨텐츠 [호텔 이름과 주소, 연락처]+[지도]. -->
+    <!-- <h1 class="page_title">Venue</h1> -->
     <div class="inner">
         <!-- 호텔 이름과 주소, 연락처 -->
         <div class="section section1">

@@ -29,7 +29,7 @@
                                             <p class="">Intermittent Metabolic Switching and Brain Health</p>
                                             <div>
                                                 <h4 class="title">Thiruma V. Arumugam</h4>
-                                                <h5>(La Trobe University, Australia)</h5>
+                                                <h5>La Trobe University, Australia</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +69,27 @@
                                             <p class="">TBD</p>
                                             <div>
                                                 <h4 class="title">Tamas Horvath</h4>
-                                                <h5>(Yale University, USA)</h5>
+                                                <h5>Yale University, USA</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+							<li>
+                                <div class="top_wrap">
+                                    <h2>Plenary Lecture 4</h2>
+                                    <span class="date text_r">17:00-17:40,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_speakers07.jpg">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">TBD</p>
+                                            <div>
+                                                <h4 class="title">John Wilding</h4>
+                                                <h5>University of Liverpool, UK</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -90,6 +110,26 @@
                                             <div>
                                                 <h4 class="title">Matthias Blüher</h4>
                                                 <h5>University of Leipzig, Germany</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+							<li>
+                                <div class="top_wrap">
+                                    <h2>Keynote Lecture 2</h2>
+                                    <span class="date text_r">11:00-11:40,<br class="br_530_only"> Sep. 9(Sat)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="./img/img_speakers08.jpg">
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <p class="">TBD</p>
+                                            <div>
+                                                <h4 class="title">Jae Myoung Suh</h4>
+                                                <h5>KAIST, Republic of Korea</h5>
                                             </div>
                                         </div>
                                     </div>

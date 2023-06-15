@@ -4,13 +4,18 @@ include_once('./include/header.php');
 ?>
 
 <section class="container registration">
-	<h1 class="page_title">평점 안내</h1>
-	<div class="inner">
-		<img class="coming" src="./img/coming.png">
-	</div>
+	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 	<!--
+	<div class="app_title_box">
+		<h2 class="app_title">평점 안내</h2>
+	</div> -->
+	<!-- APP에선 h1.page_title 주석처리 후 위 app 메뉴 탭 주석해제 -->
+	<h1 class="page_title">평점 안내</h1>
+	<!-- <div class="inner"> -->
+	<!-- 	<img class="coming" src="./img/coming.png"> -->
+	<!-- </div> -->
 	<div class="inner">
-		/* 1. 연수 평점 안내 start */
+		<!-- 1. 연수 평점 안내 start -->
 		<h3 class="title">연수 평점 안내</h3>
 		<div class="details">
 			<ul class="indent_ul">
@@ -20,9 +25,9 @@ include_once('./include/header.php');
 				<li>• 교육 시간이 중복될 경우 중복되는 시간의 평점은 인정되지 않습니다.</li>
 			</ul>
 		</div>
-	    /* 1. 연수 평점 안내 */
+	    <!-- 1. 연수 평점 안내 end -->
 
-		/* 2. 제공 평점 start */
+		<!-- 2. 제공 평점 start -->
 		<h3 class="title">제공 평점</h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
@@ -70,9 +75,9 @@ include_once('./include/header.php');
 				</table>
 			</div>
 		</div>
-		/* 2. 제공 평점 end */
+		<!-- 2. 제공 평점 end -->
 
-		/* 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 start */
+		<!-- 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 start -->
 		<h3 class="title">이수 시간에 따른 부분 평점 및 주의사항 안내</h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
@@ -122,9 +127,8 @@ include_once('./include/header.php');
 				</ul>
 			</div>
 		</div>
-		/* 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 end */
+		<!-- 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 end -->
    </div>
-   -->
 </section>
 
 

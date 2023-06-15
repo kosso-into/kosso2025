@@ -13,7 +13,18 @@ $info = sql_fetch($sql_info);
 ?>
 
 <section class="container welcome">
-	<div>
+	<!-- HUBDNCLHJ : app 메뉴 탭 -->
+	<!--
+	<div class="app_title_box">
+		<h2 class="app_title">ICOMES 2023</h2>
+		<ul class="app_menu_tab">
+			<li class="on"><a href="./welcome.php">Welcome Message</a></li>
+			<li><a href="./organizing_committee.php">Organization</a></li>
+			<li><a href="./overview.php">Overview</a></li>
+			<li><a href="./venue.php">Venue</a></li>
+		</ul>
+	</div> -->
+	<div class="contents_wrap">
         <h1 class="page_title">Welcome Message</h1>
         <div class="inner">
 			<img class="coming" src="./img/coming.png">
@@ -68,5 +79,6 @@ $info = sql_fetch($sql_info);
     </div>
 	-->
 </section>
+
 
 <?php include_once('./include/footer.php'); ?>
