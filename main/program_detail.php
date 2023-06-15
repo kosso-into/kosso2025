@@ -906,7 +906,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -919,7 +919,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- New Insight on GLP-1 RAs in Managing Obesity -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Eun Young Lee</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -2014,7 +2014,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Obesity, Cognitive Function, and Mortality -->
 																		TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Hannah Oh</p>(University of
                                                                         California, Irvine, USA) -->
 																		TBD
@@ -2027,7 +2027,7 @@ echo '<script type="text/javascript">
                                                                         Neglected Issues -->
 																		TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Kwang Wei Tham</p>(Singapore)
 																		TBD
                                                                     </td>
@@ -2038,7 +2038,7 @@ echo '<script type="text/javascript">
                                                                         <!-- New Clinical Uses of GLP-1 Agonist -->
 																		<!-- Therapeutic Potentials of Anti-diabetic Drugs for Alzheimer's Disease -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Vasileios Papaliagkas</p>(International Hellenic University, Greece)
                                                                     </td>
                                                                 </tr>
@@ -2299,7 +2299,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -2313,7 +2313,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Neural Mechanism of Hunger-gated Food-seeking
                                                                         and Interacting -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Ki-Hyun Jeon</p>(Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -2322,7 +2322,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- Ontogeny of Hunger -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Marcelo Dietrich</p>(Yale
                                                                         University School of Medicine, USA) -->TBD
                                                                     </td>
@@ -2333,7 +2333,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Hypothalamic Glucagon Like Peptide-1 Regulates
                                                                         Food Intake and Glucose Metabolism -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ji Liu</p>(University of Science
                                                                         and Technology of China, China) -->TBD
                                                                     </td>
@@ -3445,7 +3445,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -3460,7 +3460,7 @@ echo '<script type="text/javascript">
                                                                         DECLARE
                                                                         (Cardiorenal Benefit on T2D; from Prevention to
                                                                         Treatment)  -->TBD</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Eun-Jung Rhee</p>
                                                                         (Sungkyunkwan
                                                                         University, Korea) -->TBD
@@ -3473,7 +3473,7 @@ echo '<script type="text/javascript">
                                                                         Failure;
                                                                         DAPA-HF -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Kyoung Min Kim</p>(Yonsei University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -3484,7 +3484,7 @@ echo '<script type="text/javascript">
                                                                         Kidney
                                                                         Disease; DAPA-CKD -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">So Hyun Chun</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -4092,7 +4092,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -4107,7 +4107,7 @@ echo '<script type="text/javascript">
                                                                         and GLP-1RA in Patients with Type 2 Diabetes
                                                                         Inadequately Controlled on BI Therapy -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Hong Jun Hwa</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -4177,7 +4177,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -4191,7 +4191,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Healthful Dietary Patterns to Prevent and Treat
                                                                         Cardiovascular Disease and Obesity -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Tamas Horvath</p>Yale University, USA
                                                                     </td>
                                                                 </tr>
@@ -4377,7 +4377,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -4391,7 +4391,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -4470,7 +4470,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -4485,7 +4485,7 @@ echo '<script type="text/javascript">
                                                                         Treatment of Obesity
                                                                         : A Randomized, Placebo-Controlled Trial -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Sung Hoon Yu</p>(Hanyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -4815,7 +4815,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -4829,7 +4829,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Relationships of SGLT-2 Treatment with Body
                                                                         Weight -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ele Ferrannini</p>(University of
                                                                         Pisa School of Medicine, Italy) -->TBD
                                                                     </td>
@@ -4991,7 +4991,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5005,7 +5005,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Healthful Dietary Patterns to Prevent and Treat
                                                                         Cardiovascular Disease and Obesity -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Tamas Horvath</p>Yale University, USA
                                                                     </td>
                                                                 </tr>
@@ -5197,7 +5197,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5211,7 +5211,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -5658,7 +5658,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5672,7 +5672,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Relationships of SGLT-2 Treatment with Body
                                                                         Weight -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ele Ferrannini</p>(University of
                                                                         Pisa School of Medicine, Italy) -->TBD
                                                                     </td>
@@ -5833,7 +5833,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5847,7 +5847,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Healthful Dietary Patterns to Prevent and Treat
                                                                         Cardiovascular Disease and Obesity -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Tamas Horvath</p>Yale University, USA
                                                                     </td>
                                                                 </tr>
@@ -6031,7 +6031,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -6045,7 +6045,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -6055,7 +6055,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->Q&A
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                        <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
@@ -6123,7 +6123,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -6137,7 +6137,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Utilizing CGM to Empower T2 DM Obese Patients
                                                                         For Better Glycemic Management -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -6476,7 +6476,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -6490,7 +6490,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Relationships of SGLT-2 Treatment with Body
                                                                         Weight -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ele Ferrannini</p>(University of
                                                                         Pisa School of Medicine, Italy) -->TBD
                                                                     </td>
@@ -6570,7 +6570,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -6583,7 +6583,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Impact of Sleep Disturbance on Obesity and Energy Homeostasis
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Alice PS Kong</p>(The Chinese University of Hong Kong, Hong Kong)
                                                                     </td>
                                                                 </tr>
@@ -6592,7 +6592,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Guidelines for the Management of Obesity as a Disease: Japanese Update
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Koutaro Yocote</p>(Chiba University, Japan)
                                                                     </td>
                                                                 </tr>
@@ -6604,7 +6604,7 @@ echo '<script type="text/javascript">
                                                                         Craving and Eating in Individuals with
                                                                         Overweight and Obesity -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Jo-Eun Jeong</p>(The Catholic
                                                                         University of Korea, Korea) -->TBD
                                                                     </td>
@@ -6614,7 +6614,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -7232,7 +7232,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Obesity Fact Sheet in Korea, 2021: Trends in Obesity Prevalence and Obesity-Related Comorbidity Incidence Stratified by Age from 2009 to 2019
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Ye Seul Yang</p>(Seoul National University, Republic of Korea))
                                                                     </td>
                                                                 </tr>
@@ -7241,7 +7241,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Reference Values for Waist Circumference and Waist–Height Ratio in Korean Children and Adolescents
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Jieun Lee</p>(Inje University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -7250,7 +7250,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                        Maintaining Physical Activity Is Associated with Reduced Major Adverse Cardiovascular Events in People Newly Diagnosed with Diabetes
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Kyoung Hwa Ha</p>(Ajou University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -7259,7 +7259,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Updated Meta-Analysis of Studies from 2011 to 2021 Comparing the Effectiveness of Intermittent Energy Restriction and Continuous Energy Restriction
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Kyoung-Kon Kim</p>(Gachon University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -7268,7 +7268,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Award Ceremony
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
