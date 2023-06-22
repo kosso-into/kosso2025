@@ -2675,7 +2675,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Microbiota in Obesity-Related Metabolic Diseases -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Je-Kyung Seong</p>(Seoul National University, Republic of Korea)
+                                                                        <p class="bold">Je Kyung Seong</p>(Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5575,7 +5575,7 @@ echo '<script type="text/javascript">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chang-joon Lee</p>(Institute for Basic Science (IBS), Republic of Korea)
+                                                                        <p class="bold">Changjoon Lee</p>(Institute for Basic Science (IBS), Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
