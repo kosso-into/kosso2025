@@ -4,7 +4,7 @@
 ?>
 
 <style>
-	html {background:url("./img/img_app_vsl2.jpg") no-repeat center top -30px /cover;}
+	html {background:url("./img/img_app_vsl4.jpg") no-repeat left bottom /cover;}
 	html, body {min-height:100%;}
 	.rolling_wrap {display:block;}
 </style>

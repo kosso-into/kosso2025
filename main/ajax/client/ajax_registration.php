@@ -65,6 +65,7 @@
 		$licence_number      = $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
 		$specialty_number    = $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
 		$nutritionist_number = $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
+        $dietitian_number    = $data["dietitian_number"] != "" ? $data["dietitian_number"] : "";                        // 임상영양사자격번호
 
 		// 0509
 		$user_idx	 = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : "";
@@ -300,6 +301,12 @@
 			$add_set .= ", nutritionist_number = NULL ";
 		}
 
+        if($dietitian_number !== "") {
+            $add_set .= ", dietitian_number = '{$dietitian_number}' ";
+        }else{
+            $add_set .= ", dietitian_number = NULL ";
+        }
+
 		if($academy_number !== "") {
 			$add_set .= ", academy_number = '{$academy_number}' ";
 		}else{
@@ -449,7 +456,7 @@
 			$regustration_query = "SELECT
 										idx, attendance_type, is_score, nation_no, phone,
 										member_type, member_status, registration_type, affiliation, department,
-										licence_number, specialty_number, nutritionist_number, academy_number, register_path,
+										licence_number, specialty_number, nutritionist_number, dietitian_number, academy_number, register_path,
 										welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
 										conference_info, price, payment_no,
 										DATE_FORMAT(register_date, '%m-%d-%Y %h:%i:%s') AS register_date

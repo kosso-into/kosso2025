@@ -24,60 +24,46 @@ $info = sql_fetch($sql_info);
 			<li><a href="./venue.php">Venue</a></li>
 		</ul>
 	</div> -->
-	<div class="contents_wrap">
-        <h1 class="page_title">Welcome Message</h1>
-        <div class="inner">
-			<img class="coming" src="./img/coming.png">
-        </div>
-    </div>
-	<!--
+<!-- 	<div class="contents_wrap"> -->
+<!--         <h1 class="page_title">Welcome Message</h1> -->
+<!--         <!-- <div class="inner"> -->
+<!--         			<img class="coming" src="./img/coming.png"> -->
+<!--         </div> -->
+<!--     </div> -->
     <div>
 		<h1 class="page_title">Welcome Message</h1>
         <div class="inner">
             <div>
-				<h3 class="title">Dear Colleagues,</h3>
+				<h3 class="title icon_none">Respected colleagues,</h3>
 				<p class="welcome_txt">
-					We would like to express our respect and gratitude to many people who are doing their best in academic research to prevent and treat obesity, in spite of the difficult conditions of the COVID-19 Pandemic. The World Health Organization(WHO) has defined obesity as a new infectious disease of the 21st century.  We must continue to challenge the fight against obesity, which is a further threat to human health.
-					<br>
-					<br>
-					KSSO (Korean Society for the Study of Obesity) is preparing 2022 ICOMES (International Conference for Obesity and Metabolic Syndrome), which has grown to an international scale for the recent insights and academic advancement of obesity-related research, at the Conrad Hotel in Yeouido, Seoul, for three days from September 1st.  This time, we are confident that it will be more active and advanced academic venue to invite world class scholars including Dr. Mark Andermann and Dr. Frank Sacks of Harvard Medical School in the United States, Dr. Melanie J. Davies of the University of Leicester in the UK, and Dr. Ele Ferrannini of the CNR Institute of Clinical Physiology in Italy, to explore a new approach of obesity treatment, especially under the grand theme of 'The Next Normal - The Future of Obesity Care'. <br>
-					<br>
-					Obesity is the earliest trigger of most diseases, as well as the most threatening presence of human health that is never easily defined with a variety of prisms.  Academic efforts through constant challenges and active debate are required to come up with effective countermeasures against obesity.  This conference will be a valuable opportunity to achieve an academic concept on obesity through your presentations and discussions with all the guest speakers who will share valuable up-to-date information, as well as research results from the oral and poster presentation sessions.  
-					<br>
-					<br>
-					Obesity researchers from all over the world and members of KSSO!
-					Please join us at the 2022 ICOMES academic conference to present your valuable research results.  We respectfully ask you to join us in this valuable opportunity to further advance obesity-related academic research through heated discussions and information exchanges.
-					We look forward to seeing you at the 2022 ICOMES and wish you all the best.
-					<br>
-					<br>
-					Best regards,
+					We extend our warmest greetings and deepest appreciation to all the esteemed individuals dedicated to advancing academic research in the field of obesity and metabolic syndrome. As we emerge from the challenges of the COVID-19 pandemic, which profoundly impacted our lifestyles with reduced physical activity and changes in eating habits, we acknowledge the pressing concern of increased obesity. We gather here to renew our commitment to the fight against obesity. <br/><br/>The Korean Society for the Study of Obesity (KSSO) proudly presents the ‘International Conference for Obesity and MEtabolic Syndrome 2023 (ICOMES 2023)’ under the theme of ‘Now it is time to conquer obesity.’ The conference will take place at the Conrad Seoul Hotel from September 7th to September 9th. Building upon the success of previous conferences, ‘ICOMES’ has evolved into a prominent international platform for exchanging insights and advancing obesity-related research. Our aim is to foster collaboration and knowledge exchange among obesity specialists, driving advancements in the field.  <br/><br/>This year, we are honored to introduce a distinguished group of Plenary Lecture speakers who will enlighten us with their invaluable expertise. Please join us in welcoming Thiruma V. Arumugam from La Trobe University (Australia), Robert R. Wolfe from the University of Arkansas for Medical Sciences (USA), Tamas Horvath from Yale University (USA), and John Wilding from the University of Liverpool (UK). <br/><br/>Additionally, we are privileged to present our esteemed Keynote Lecture speakers who bring a wealth of expertise and fresh perspectives to the forefront of research. Their captivating presentations will undoubtedly enhance our understanding of cutting-edge advancements in the field. Let us extend a warm welcome to Matthias Blüher from the University of Leipzig (Germany), Jae Myoung Suh from KAIST (Korea), Zachary Knight from the University of California (USA), and Jae-Heon Kang from Sungkyunkwan University (Korea). <br/><br/>At the beginning of this year, KSSO reaffirmed its determination to delve deeper into the field and embrace new challenges through cooperation with other international societies. We had the great opportunity to generously host three Joint Symposia at ICOMES 2023 with the world's most prestigious obesity associations: The Asia Oceania Association for the Study of Obesity (AOASO) as well as the European Association for the Study of Obesity (EASO) and The Obesity Society (TOS). <br/><br/>‘ICOMES 2023’ offers a remarkable opportunity to engage with experts, exchange knowledge, and foster collaborations. We encourage you to seize this chance to contribute to the advancement of obesity-related research and patient care. Now is the time to conquer obesity! <br/><br/>We eagerly anticipate your active participation and presence at ‘ICOMES 2023’.<br/><br/><br/>Best regards,
+
 				</p>
 			</div>
             <div class="head_profile">
 				<div class="headman">
 					<div class="headman_l"><img src="./img/headman_img1.png" alt=""></div>
 					<div class="headman_r">
-						<h5>Name</h5>
+						<!-- <h5>Name</h5> -->
 						<h1>Sung Soo Kim</h1>
 						<h5>Chairman</h5>
-						<p>Korea Society for <br/>Study of Obesity</p>
+						<p>Korea Society for Study of Obesity</p>
 						<div class="headman_sign"><img src="./img/headman_sign1.png" alt=""></div>
 					</div>
 				</div>
 				<div class="headman">
 					<div class="headman_l"><img src="./img/headman_img2.png" alt=""></div>
 					<div class="headman_r">
-						<h5>Name</h5>
+						<!-- <h5>Name</h5> -->
 						<h1>Cheol-Young Park</h1>
 						<h5>President</h5>
-						<p>Korea Society for <br/>Study of Obesity</p>
+						<p>Korea Society for Study of Obesity</p>
 						<div class="headman_sign"><img src="./img/headman_sign2.png" alt=""></div>
 					</div>
 				</div>
 			</div>
         </div>
     </div>
-	-->
 </section>
 
 

@@ -10,7 +10,7 @@
 
 	if ($member_idx == "all") {
 		$sql_info = "SELECT
-						mb.idx,
+						req.idx AS registration_idx, mb.idx,
 						md5(mb.idx) AS idx_encrypt,
 						mb.last_name, mb.first_name,
 						mb.affiliation,
@@ -50,7 +50,7 @@
                     WHERE mb.is_deleted = 'N'";
 	} else {
 		$sql_info = "SELECT
-						mb.idx,
+						req.idx AS registration_idx, mb.idx,
 						md5(mb.idx) AS idx_encrypt,
 						mb.last_name, mb.first_name,
 						mb.affiliation,

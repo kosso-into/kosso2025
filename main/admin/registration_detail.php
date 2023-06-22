@@ -25,7 +25,7 @@
 											rr.member_status,
 											m.member_idx, m.member_email, m.member_name, m.member_nation,
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.first_name,' ',rr.last_name) AS registration_name, rr.phone,
-											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.academy_number, 
+											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number, 
 											rr.welcome_reception_yn,
 											rr.day2_breakfast_yn,
 											rr.day2_luncheon_yn,
@@ -69,6 +69,12 @@
 												THEN 'Not applied'
 												ELSE '-'
 											END) AS is_score_text,
+										    (
+											CASE
+												WHEN rr.payment_methods = '0' THEN 'Credit card'
+												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
+											END
+										    ) AS payment_methods,
 											rr.invitation_check_yn, n_visa.nation_ko AS invitation_nation_text, 
 											rr.address, rr.address_detail, 
 											rr.passport_number, 
@@ -124,9 +130,11 @@
 	$licence_number = isset($registration_detail["licence_number"]) ? $registration_detail["licence_number"] : "-";
 	$specialty_number = isset($registration_detail["specialty_number"]) ? $registration_detail["specialty_number"] : "-";
 	$nutritionist_number = isset($registration_detail["nutritionist_number"]) ? $registration_detail["nutritionist_number"] : "-";
+	$dietitian_number = isset($registration_detail["dietitian_number"]) ? $registration_detail["dietitian_number"] : "-";
 	$academy_number = isset($registration_detail["academy_number"]) ? $registration_detail["academy_number"] : "-";
 	$registration_status = isset($registration_detail["registration_status"]) ? $registration_detail["registration_status"] : "";
 	$payment_date = isset($registration_detail["payment_date"]) ? $registration_detail["payment_date"] : "-";
+	$payment_methods = isset($registration_detail["payment_methods"]) ? $registration_detail["payment_methods"] : "-";
 	$payment_price = isset($registration_detail["total_price_us"]) ? "$ ".number_format($registration_detail["total_price_us"]) : (isset($registration_detail["total_price_kr"]) ? "￦ ".number_format($registration_detail["total_price_kr"]) : "-");
 	$refund_reason = isset($registration_detail["refund_reason"]) ? $registration_detail["refund_reason"] : "";
 	$refund_date = isset($registration_detail["refund_date"]) ? $registration_detail["refund_date"] : "-";
@@ -371,9 +379,13 @@
 						<tr>
 							<th>Nutritionist's licence number</th>
 							<td><?=$nutritionist_number?></td>
-							<th>Congress Banquet Ceremony</th>
-							<td><?= $banquet_yn=="Y" ? "Attend" : "Absent"; ?></td>
+							<th>dietitian_number</th>
+							<td><?=$dietitian_number?></td>
 						</tr>
+                        <tr>
+                            <th>Congress Banquet Ceremony</th>
+                            <td colspan="3"><?= $banquet_yn=="Y" ? "Attend" : "Absent"; ?></td>
+                        </tr>
 						<tr>
 							<th>Others</th>
 							<td colspan="3">
@@ -555,30 +567,21 @@
 							<?php
 								} else {
 							?>
-							<th>결제일 / 결제금액</th>
-							<td><?=$payment_date." / ".$payment_price?></td>
-							<?php
-								}
-							?>
+							<th>결제 방법</th>
+                            <td><?=$payment_methods?></td>
 						</tr>
 						<tr>
-							<th>환불사유</th>
-							<td class="input_btn_wrap">
-								<input type="text" class="refund" name="refund_reason" maxlength="100" value="<?=$refund_reason?>" <?=$disabled?>>
-								<?php
-									if ($is_modify) {
-								?>
-								<button type="button" class="btn submit refund" data-type="update_refund_reason" <?=$disabled?>>저장</button>
-								<?php
-									}
-								?>
-							</td>
+                            <th>결제일 / 결제금액</th>
+                            <td><?=$payment_date." / ".$payment_price?></td>
+                            <?php
+                            }
+                            ?>
 							<th>환불일</th>
 							<td><?=$refund_date?></td>
 						</tr>
 						<tr>
 							<th>환불받을 계좌</th>
-							<td colspan="3">
+							<td colspan="1">
 								<div class="clearfix input_wrap2">
 									<input type="text" class="default_width refund" name="refund_bank" placeholder="은행명" value="<?=$refund_bank?>" <?=$disabled?>>
 									<input type="text" class="default_width refund" name="refund_holder" placeholder="예금주" value="<?=$refund_holder?>" <?=$disabled?>>
@@ -592,6 +595,17 @@
 									?>
 								</div>
 							</td>
+                            <th>환불사유</th>
+                            <td class="input_btn_wrap">
+                                <input type="text" class="refund" name="refund_reason" maxlength="100" value="<?=$refund_reason?>" <?=$disabled?>>
+                                <?php
+                                if ($is_modify) {
+                                    ?>
+                                    <button type="button" class="btn submit refund" data-type="update_refund_reason" <?=$disabled?>>저장</button>
+                                    <?php
+                                }
+                                ?>
+                            </td>
 						</tr>
 					</tbody>
 				</table>

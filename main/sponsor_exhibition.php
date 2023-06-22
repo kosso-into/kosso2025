@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/header.php'); ?>
 
-<section class="container sponsor">
+<section class="container sponsor app_tour_map">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 	<!--
 	<div class="app_title_box">
@@ -27,7 +27,7 @@
 				<li><a href="javascript:;">5F</a></li>
 				<li><a href="javascript:;">6F</a></li>
 			</ul>
-			<div class="app_contents_wrap type3">
+			<div class="app_contents_wrap type2">
 				<div class="floor floor_3 on">
 					<div class="floor_map">
 						<img src="/main/img/floor_map_img01.png" alt="">
@@ -83,7 +83,7 @@
 				</div>
 				<div class="floor floor_5">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_img01.png" alt="">
+						<img src="/main/img/floor_map_img02.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -136,7 +136,7 @@
 				</div>
 				<div class="floor floor_6">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_img01.png" alt="">
+						<img src="/main/img/floor_map_img03.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -484,10 +484,10 @@
 	});
 
 	// Tour Map 층별 탭
-	$(".tour_map .app_tab li").click(function(){
+	$(".app_tour_map .app_tab li").click(function(){
 		var i = $(this).index();
-		$(".contents_wrap").children(".floor").removeClass("on");
-		$(".contents_wrap").children(".floor").eq(i).addClass("on");
+		$(".app_contents_wrap").children(".floor").removeClass("on");
+		$(".app_contents_wrap").children(".floor").eq(i).addClass("on");
 	});
 </script>
 

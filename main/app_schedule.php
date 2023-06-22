@@ -15,7 +15,7 @@
 			<ul class="program_detail_ul">
 				<li name="pre_congress_symposium_1">
 					<div class="main">
-						<span class="right_tag">Abstract</span>
+						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
 						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
 						<div class="info">
@@ -37,7 +37,7 @@
 				</li>
 				<li name="pre_congress_symposium_1">
 					<div class="main">
-						<span class="right_tag">Abstract</span>
+						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
 						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
 						<div class="info">
@@ -62,7 +62,7 @@
 			<ul class="program_detail_ul">
 				<li name="pre_congress_symposium_1">
 					<div class="main">
-						<span class="right_tag">Abstract</span>
+						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
 						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
 						<div class="info">
@@ -84,7 +84,7 @@
 				</li>
 				<li name="pre_congress_symposium_1">
 					<div class="main">
-						<span class="right_tag">Abstract</span>
+						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
 						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
 						<div class="info">
@@ -109,7 +109,7 @@
 			<ul class="program_detail_ul">
 				<li name="pre_congress_symposium_1">
 					<div class="main">
-						<span class="right_tag">Abstract</span>
+						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
 						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
 						<div class="info">
@@ -131,7 +131,7 @@
 				</li>
 				<li name="pre_congress_symposium_1">
 					<div class="main">
-						<span class="right_tag">Abstract</span>
+						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
 						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
 						<div class="info">

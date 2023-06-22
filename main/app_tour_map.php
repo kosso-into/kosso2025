@@ -76,7 +76,7 @@
 				<!------ 5F ------>
 				<div class="floor floor_5">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_img01.png" alt="">
+						<img src="/main/img/floor_map_img02.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -130,7 +130,7 @@
 				<!------ 6F ------>
 				<div class="floor floor_6">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_img01.png" alt="">
+						<img src="/main/img/floor_map_img03.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
