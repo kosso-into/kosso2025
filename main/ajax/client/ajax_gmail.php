@@ -455,6 +455,7 @@ if($language == "ko") {
 			$licence_number = $data["licence_number"] ? $data["licence_number"] : "Not applicable";
 			$specialty_number = $data["specialty_number"] ? $data["specialty_number"] : "Not applicable";
 			$nutritionist_number = $data["nutritionist_number"] ? $data["nutritionist_number"] : "Not applicable";
+			$dietitian_number = $data["dietitian_number"] ? $data["dietitian_number"] : "Not applicable";
 
 			$attendance_type = $data["attendance_type"] ?? "-";
 			switch($attendance_type) {
@@ -520,6 +521,10 @@ if($language == "ko") {
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>영양사 면허번호</th>
 									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nutritionist_number}</td>
+								</tr>
+								<tr style='border-bottom:1px solid #000;'>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>임상영양사 번호</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$dietitian_number}</td>
 								</tr>
 							   ";
 			}

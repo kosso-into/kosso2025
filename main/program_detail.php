@@ -101,7 +101,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>17:00-18:30(90”)</td>
+                                                <td>17:00-18:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Young Kil Choi</span> (Kyung Hee University, Korea)</p> -->
@@ -129,7 +129,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:20(20")</td>
+                                                                    <td>17:00-17:20</td>
                                                                     <td class="bold">
                                                                         <!-- Effectiveness of Information and Communications Technology-based Interventions for Obesity and Metabolic Syndrome -->
                                                                     </td>
@@ -139,7 +139,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:40(20")</td>
+                                                                    <td>17:20-17:40</td>
                                                                     <td class="bold">
                                                                         <!-- Female Obesity -->
                                                                     </td>
@@ -149,7 +149,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:40-18:00(20")</td>
+                                                                    <td>17:40-18:00</td>
                                                                     <td class="bold">
                                                                         <!-- Obesity and Healthy Life Expectancy -->
                                                                     </td>
@@ -159,8 +159,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="3">18:00-18:30(30")</td> -->
-                                                                    <td>18:00-18:30(30")</td>
+                                                                    <!-- <td rowspan="3">18:00-18:30</td> -->
+                                                                    <td>18:00-18:30</td>
                                                                     <!-- <td rowspan="3" class="bold"> -->
                                                                     <td class="bold">
                                                                         Panel Discussion
@@ -200,7 +200,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>18:30-19:00(30")</td>
+                                                <td>18:30-19:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -224,9 +224,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>19:00-20:00(60")</td>
+                                                <td>19:00-19:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Satellite Symposium 1, 2</p>
+                                                    <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Seung Joon Oh </span>(Kyung Hee University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -247,19 +247,61 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>19:00-19:30(30")</td>
+                                                                    <td>19:00-19:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Obesity, a Disease that Requires Long-term
-                                                                        Treatment (Efficacy and Safety of COR) -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Jae Hyuk Lee</p>(Hanyang
-                                                                        University, Korea) -->
-                                                                    </td>
+                                                                    <td></td>
                                                                 </tr>
-																<tr>
-                                                                    <td>19:30-20:00(30")</td>
-                                                                    <td class="bold"></td>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="satellite_symposium_2">
+								<!--
+                                <div class="clearfix2 caption">
+                                    <span>Sep.7(Thu)</span>
+                                    <span>Room1(3F)</span>
+                                </div>
+								-->
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>19:30-20:00</td>
+                                                <td>
+                                                    <p class="font_20 bold">Satellite Symposium 2</p>
+                                                    <!-- <p><span class="bold">Chairperson : Seung Joon Oh </span>(Kyung Hee University, Korea)</p> -->
+													<!-- [↓] 확정 시 까지 버튼 숨김 -->
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                </td>
+                                            </tr>
+											<tr>
+												<td colspan="2" class="program_detail_td">
+													will be updated.
+												</td>
+											</tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>19:30-20:00</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td></td>
                                                                 </tr>
                                                             </tbody>
@@ -290,7 +332,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>17:00-18:30(90”)</td>
+                                                <td>17:00-18:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
                                                    <!--  <p>
@@ -318,7 +360,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:20(20")</td>
+                                                                    <td>17:00-17:20</td>
                                                                     <td class="bold">
                                                                         <!-- Effectiveness of Information and Communications
                                                                         Technology-based Interventions for Obesity and
@@ -330,7 +372,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:40(20")</td>
+                                                                    <td>17:20-17:40</td>
                                                                     <td class="bold">
                                                                         <!-- Female Obesity -->
                                                                     </td>
@@ -340,7 +382,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:40-18:00(20")</td>
+                                                                    <td>17:40-18:00</td>
                                                                     <td class="bold">
                                                                         <!-- Obesity and Healthy Life Expectancy -->
                                                                     </td>
@@ -350,8 +392,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="3">18:00-18:30(30")</td> -->
-                                                                    <td>18:00-18:30(30")</td>
+                                                                    <!-- <td rowspan="3">18:00-18:30</td> -->
+                                                                    <td>18:00-18:30</td>
                                                                     <!-- <td rowspan="3" class="bold"> -->
                                                                     <td class="bold">
                                                                         Panel Discussion
@@ -397,7 +439,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>18:30-19:00(30")</td>
+                                                <td>18:30-19:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -406,7 +448,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="satellite_symposium_2">
+                            <li name="satellite_symposium_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.7(Thu)</span>
@@ -421,7 +463,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>19:00-20:00(60")</td>
+                                                <td>19:00-19:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Minsu Park</span> (Seoul ND
@@ -445,15 +487,9 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>19:00-20:00(60")</td>
-                                                                    <td class="bold">
-                                                                        <!-- Update on Evidence-Based Management for High
-                                                                        Risk Patients with Olmesartan -->
-                                                                    </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Youngwoo Jang</p>(Gachon
-                                                                        University, Korea) -->
-                                                                    </td>
+                                                                    <td>19:00-19:30</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -483,7 +519,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>18:30-21:00(150")</td>
+                                                <td>18:30-21:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb_0">Welcome Cocktail Party</p>
                                                 </td>
@@ -524,7 +560,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20(50")</td>
+                                                <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
                                                    <!--  <p><span class="bold">Chairperson : Won Jun Kim</span> (University
@@ -548,7 +584,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>07:30-08:20(50")</td>
+                                                                    <td>07:30-08:20</td>
                                                                     <td class="bold">
                                                                         <!-- Perspective in T2DM Patients with NAFLD:
                                                                         Pioglitazone -->
@@ -576,7 +612,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>08:20-08:30(10")</td>
+                                                <td>08:20-08:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -600,7 +636,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>08:30-09:10(40")</td>
+                                                <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
@@ -624,16 +660,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-09:00(30")</td>
+                                                                    <td>08:30-09:00</td>
                                                                     <td class="bold">
                                                                         Intermittent Metabolic Switching and Brain Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Thiruma V. Arumugam</p>La Trobe University, Australia
+                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10(10")</td>
+                                                                    <td>09:00-09:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -655,7 +691,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>09:10-09:20(10")</td>
+                                                <td>09:10-09:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -679,7 +715,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 1 : Obesity and Cancer</p>
                                                     <!-- <p>
@@ -707,7 +743,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         Obesity and the Risk of Cancer
                                                                     </td>
@@ -716,19 +752,16 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                        <!-- Obesity Paradox in Heart Failure -->
-																		TBD
+                                                                        Dynamic Regulation of Mitochondrial Metabolism in Metabolic Disease
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">ByungSu Yoo</p>(Yonsei
-                                                                        University, Korea) -->
 																		<p class="bold">Haejin Yoon</p>(UNIST, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         Obesity Care in Cancer Survivors
                                                                     </td>
@@ -737,7 +770,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:35-10:50(15')</td>
+                                                                    <td>10:35-10:50</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -764,7 +797,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -788,7 +821,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>11:00-11:10(10")</td>
+                                                <td>11:00-11:10</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Opening Address</p>
                                                 </td>
@@ -812,7 +845,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:10-11:50(40")</td>
+                                                <td>11:10-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p> -->
@@ -835,7 +868,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:10-11:40(30")</td>
+                                                                    <td>11:10-11:40</td>
                                                                     <td class="bold">
                                                                         Adipose Tissue – A Treasure Box for Discoveries
                                                                     </td>
@@ -845,7 +878,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:40-11:50(10")</td>
+                                                                    <td>11:40-11:50</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -867,7 +900,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>11:50-12:00(10")</td>
+                                                <td>11:50-12:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -891,7 +924,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>12:00-13:00(60")</td>
+                                                <td>12:00-13:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Hyung Joon Yoo</span> (CM
@@ -915,7 +948,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00(60")</td>
+                                                                    <td>12:00-13:00</td>
                                                                     <td class="bold">
                                                                         <!-- New Insight on GLP-1 RAs in Managing Obesity -->TBD
                                                                     </td>
@@ -941,7 +974,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -962,7 +995,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -986,7 +1019,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>14:00-15:30(90")</td>
+                                                <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 5 : Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
                                                     <!-- <p>
@@ -1014,16 +1047,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:25(25")</td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">
-																		<!-- Semaglutide on the Horizon :<br>Effects, Expectations, and Side Effects -->TBD
+																		Step Up Your Weight Management with Semaglutide
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Bom-Taeck Kim</p>(Ajou University, Republic of Korea)
+                                                                        <p class="bold">Bom Taeck Kim</p>(Ajou University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:25-14:50(25")</td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">
 																		<!-- Safety and Abuse of Antiobesity Drugs -->TBD
                                                                     </td>
@@ -1033,20 +1066,17 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:50-15:15(25")</td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        <!-- The Effects of Tirzepatide in EastAsian Patients from SURPASS Programmes -->
-																		TBD
+                                                                        The Metabolic Effects of Tirzepatide, especially in East-Asian Patients from the SURPASS Program
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jun Hwa Hong</p>(Eulji
-                                                                        University, Korea) -->
-																		TBD
+                                                                        <p class="bold">Robert J. Heine</p>(Eli Lilly, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">15:00-15:30(30")</td> -->
-                                                                    <td>15:15-15:30(15")</td>
+                                                                    <!-- <td rowspan="2">15:00-15:30</td> -->
+                                                                    <td>15:15-15:30</td>
                                                                     <td class="bold">
 																		Panel Discussion 
                                                                     </td>
@@ -1079,7 +1109,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:30-15:40(10")</td>
+                                                <td>15:30-15:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1103,7 +1133,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>15:40-16:20(40")</td>
+                                                <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Soo Lim</span> (Seoul National University, Korea)</p> -->
@@ -1126,7 +1156,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:40-16:10(30")</td>
+                                                                    <td>15:40-16:10</td>
                                                                     <td class="bold">
                                                                         Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
                                                                     </td>
@@ -1135,7 +1165,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:20(10")</td>
+                                                                    <td>16:10-16:20</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1157,7 +1187,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>16:20-16:30(10")</td>
+                                                <td>16:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1181,7 +1211,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>16:30-18:00(90")</td>
+                                                <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 9 : Obesity in Special Conditions</p>
                                                     <!-- <p>
@@ -1209,7 +1239,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:55(25")</td>
+                                                                    <td>16:30-16:55</td>
                                                                     <td class="bold">
                                                                         <!-- Treatment of Adolescent Obesity: New Therapeutic
                                                                         Options -->
@@ -1222,7 +1252,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20(25")</td>
+                                                                    <td>16:55-17:20</td>
                                                                     <td class="bold">
                                                                         <!-- The Truth about Menopause and Weight Gain: How
                                                                         to Manage Obesity in Perimenopausal Women -->
@@ -1235,7 +1265,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:45(25")</td>
+                                                                    <td>17:20-17:45</td>
                                                                     <td class="bold">
                                                                         <!-- Obesity in Older Adults: Sarcopenia and Low
                                                                         Muscle Mass -->
@@ -1246,8 +1276,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">17:30-18:00(30")</td> -->
-                                                                    <td>17:30-18:00(30")</td>
+                                                                    <!-- <td rowspan="2">17:30-18:00</td> -->
+                                                                    <td>17:45-18:00</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -1270,24 +1300,24 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-							<li name="break" class="border_bottom_70">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>18:00-18:30(30")</td>
-                                                <td>
-                                                    <p class="font_20 bold">Break</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
+							<!-- <li name="break" class="border_bottom_70">
+									<div class="table_wrap detail_table_common x_scroll">
+										<table class="c_table detail_table">
+											<colgroup>
+												<col class="col_date">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr class="light_gray_bg">
+													<td>18:00-18:30</td>
+													<td>
+														<p class="font_20 bold">Break</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li> -->
                         </ul>
                     </div>
                     <div class="tab_cont">
@@ -1307,7 +1337,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20(50")</td>
+                                                <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Hanyang University, Korea)</p> -->
@@ -1330,7 +1360,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>07:30-08:20(50")</td>
+                                                                    <td>07:30-08:20</td>
                                                                     <td class="bold">
                                                                         <!-- The Combination of DPP-4 Inhibitor Plus SGLT2
                                                                         Inhibitor as Attractive Treatment Option: From
@@ -1359,7 +1389,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>08:20-08:30(10")</td>
+                                                <td>08:20-08:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1383,7 +1413,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>08:30-09:10(40")</td>
+                                                <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
@@ -1407,16 +1437,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-09:00(30")</td>
+                                                                    <td>08:30-09:00</td>
                                                                     <td class="bold">
                                                                         Intermittent Metabolic Switching and Brain Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Thiruma V. Arumugam</p>La Trobe University, Australia
+                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10(10")</td>
+                                                                    <td>09:00-09:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1438,7 +1468,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>09:10-09:20(10")</td>
+                                                <td>09:10-09:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1462,7 +1492,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
                                                     <!-- <p>
@@ -1490,7 +1520,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         Dietary Restriction and Vascular Dementia
                                                                     </td>
@@ -1499,7 +1529,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         Role of Adiponectin Signaling in Alzheimer's Disease
                                                                     </td>
@@ -1508,7 +1538,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         The Impact of Adiposity and Cognitive Function: Closer than You Think
                                                                     </td>
@@ -1519,8 +1549,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">10:20-10:50(30")</td> -->
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <!-- <td rowspan="2">10:20-10:50</td> -->
+                                                                    <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
@@ -1551,7 +1581,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1575,7 +1605,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>11:00-11:10(10")</td>
+                                                <td>11:00-11:10</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Opening Address</p>
                                                 </td>
@@ -1599,7 +1629,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:10-11:50(40")</td>
+                                                <td>11:10-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p> -->
@@ -1622,7 +1652,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:10-11:40(30")</td>
+                                                                    <td>11:10-11:40</td>
                                                                     <td class="bold">
                                                                         Adipose Tissue – A Treasure Box for Discoveries
                                                                     </td>
@@ -1632,7 +1662,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:40-11:50(10")</td>
+                                                                    <td>11:40-11:50</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1654,7 +1684,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>11:50-12:00(10")</td>
+                                                <td>11:50-12:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1678,7 +1708,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>12:00-13:00(60")</td>
+                                                <td>12:00-13:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Yongseong Kim</span> (Design Hospital, Korea)</p> -->
@@ -1701,7 +1731,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00(60")</td>
+                                                                    <td>12:00-13:00</td>
                                                                     <td class="bold">
                                                                         <!-- How to Find the Optimal Combination Therapy for
                                                                         Patients with Type 2 Diabetes -->
@@ -1729,7 +1759,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1750,7 +1780,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -1775,7 +1805,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>14:00-15:30(90")</td>
+                                                <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 6</p>
                                                     <!-- <p>
@@ -1803,7 +1833,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:25(25")</td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">
                                                                         <!-- Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing Cognitive Impairment Associated with Diabetes -->TBD
                                                                     </td>
@@ -1812,26 +1842,28 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:25-14:50(25")</td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">
                                                                         <!-- The Proinflammatory Effects of Chronic Excessive Exercise -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Adelino Sanchez Ramos da Silva</p>(University of Sao Paulo, Brazil)
+                                                                        <!-- <p class="bold">Adelino Sanchez Ramos da Silva</p>(University of Sao Paulo, Brazil) -->
+																		TBD
                                                                     </td>
+																	
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:50-15:15(25")</td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jung-Gi Hong</p>(CHA University, Republic of Korea)
+                                                                        <p class="bold">Jung Gi Hong</p>(CHA University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">15:00-15:30(30")</td> -->
-                                                                    <td>15:15-15:30(15")</td>
+                                                                    <!-- <td rowspan="2">15:00-15:30</td> -->
+                                                                    <td>15:15-15:30</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -1846,7 +1878,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr> 
                                                                 <tr>
-                                                                    <td>15:30-15:40(10")</td>
+                                                                    <td>15:30-15:40</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -1869,7 +1901,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:30-15:40(10")</td>
+                                                <td>15:30-15:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1892,7 +1924,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>15:40-16:20(40")</td>
+                                                <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <!-- <p>
@@ -1918,7 +1950,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:40-16:10(30")</td>
+                                                                    <td>15:40-16:10</td>
                                                                     <td class="bold">
                                                                         Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
                                                                     </td>
@@ -1927,13 +1959,13 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:20(10")</td>
+                                                                    <td>16:10-16:20</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td>16:20-16:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -1957,7 +1989,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>16:20-16:30(10")</td>
+                                                <td>16:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -1981,7 +2013,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>16:30-18:00(90")</td>
+                                                <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 10 : Neuropsychological Aspect of Obesity</p>
                                                     <!-- <p>
@@ -2009,31 +2041,25 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:55(25")</td>
+                                                                    <td>16:30-16:55</td>
                                                                     <td class="bold">
-                                                                        <!-- Obesity, Cognitive Function, and Mortality -->
-																		TBD
+                                                                        The Effect of Obesity and HDL Concentration on AD Pathology
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Hannah Oh</p>(University of
-                                                                        California, Irvine, USA) -->
-																		TBD
+                                                                        <p class="bold">Yun Ha Jeong</p>(Korea Brain Research Institute (KBRI), Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20(25")</td>
+                                                                    <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                        <!-- Overweight, Obesity and Parkinson's Disease:
-                                                                        Neglected Issues -->
-																		TBD
+                                                                        Weight Bias and Stigma: The Occult Peril in Obesity Managements
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Kwang Wei Tham</p>(Singapore)
-																		TBD
+                                                                        <p class="bold">Kwang Wei Tham</p>(Woodlands Health, Singapore)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:45(25")</td>
+                                                                    <td>17:20-17:45</td>
                                                                     <td class="bold">
                                                                         <!-- New Clinical Uses of GLP-1 Agonist -->
 																		<!-- Therapeutic Potentials of Anti-diabetic Drugs for Alzheimer's Disease -->TBD
@@ -2043,8 +2069,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">17:30-18:00(30")</td> -->
-                                                                    <td>17:30-18:00(30")</td>
+                                                                    <!-- <td rowspan="2">17:30-18:00</td> -->
+                                                                    <td>17:45-18:00</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -2059,7 +2085,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>18:00-18:30(30")</td>
+                                                                    <td>18:00-18:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2073,24 +2099,24 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-							<li name="break" class="border_bottom_70">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>18:00-18:30(30")</td>
-                                                <td>
-                                                    <p class="font_20 bold">Break</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
+							<!-- <li name="break" class="border_bottom_70">
+									<div class="table_wrap detail_table_common x_scroll">
+										<table class="c_table detail_table">
+											<colgroup>
+												<col class="col_date">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr class="light_gray_bg">
+													<td>18:00-18:30</td>
+													<td>
+														<p class="font_20 bold">Break</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li> -->
                         </ul>
                     </div>
                     <div class="tab_cont">
@@ -2110,7 +2136,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20(50")</td>
+                                                <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Hanyang University, Korea)</p> -->
@@ -2133,7 +2159,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>07:30-08:20(50")</td>
+                                                                    <td>07:30-08:20</td>
                                                                     <td class="bold">
                                                                         <!-- The Combination of DPP-4 Inhibitor Plus SGLT2
                                                                         Inhibitor as Attractive Treatment Option: From
@@ -2146,7 +2172,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>08:20-08:30(10")</td>
+                                                                    <td>08:20-08:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2170,7 +2196,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>08:20-08:30(10")</td>
+                                                <td>08:20-08:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2194,7 +2220,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>08:30-09:10(40")</td>
+                                                <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
@@ -2218,22 +2244,22 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-09:00(30")</td>
+                                                                    <td>08:30-09:00</td>
                                                                     <td class="bold">
                                                                         Intermittent Metabolic Switching and Brain Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Thiruma V. Arumugam</p>La Trobe University, Australia
+                                                                        <p class="bold">Thiruma V. Arumugam</p>(La Trobe University, Australia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10(10")</td>
+                                                                    <td>09:00-09:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>09:10-09:20(10")</td>
+                                                                    <td>09:10-09:20</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2257,7 +2283,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>09:10-09:20(10")</td>
+                                                <td>09:10-09:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2281,7 +2307,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 3 : Digital Therapeutics</p>
                                                     <!-- <p>
@@ -2308,7 +2334,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         <!-- Neural Mechanism of Hunger-gated Food-seeking
                                                                         and Interacting -->TBD
@@ -2318,29 +2344,27 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         <!-- Ontogeny of Hunger -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Marcelo Dietrich</p>(Yale
-                                                                        University School of Medicine, USA) -->TBD
+                                                                        <p class="bold">Laura Falvey</p>(Reset Health, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         <!-- Hypothalamic Glucagon Like Peptide-1 Regulates
                                                                         Food Intake and Glucose Metabolism -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ji Liu</p>(University of Science
-                                                                        and Technology of China, China) -->TBD
+                                                                        <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="3">10:20-10:50(30")</td> -->
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <!-- <td rowspan="3">10:20-10:50</td> -->
+                                                                    <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="3" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -2360,7 +2384,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2383,7 +2407,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2407,7 +2431,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>11:00-11:10(10")</td>
+                                                <td>11:00-11:10</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Opening Address</p>
                                                 </td>
@@ -2431,7 +2455,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:10-11:50(40")</td>
+                                                <td>11:10-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p> -->
@@ -2454,7 +2478,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:10-11:40(30")</td>
+                                                                    <td>11:10-11:40</td>
                                                                     <td class="bold">
                                                                         Adipose Tissue – A Treasure Box for Discoveries
                                                                     </td>
@@ -2464,13 +2488,13 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:40-11:50(10")</td>
+                                                                    <td>11:40-11:50</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>11:50-12:00(10")</td>
+                                                                    <td>11:50-12:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2494,7 +2518,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>11:50-12:00(10")</td>
+                                                <td>11:50-12:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2518,7 +2542,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>12:00-13:00(60")</td>
+                                                <td>12:00-13:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
@@ -2533,7 +2557,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -2542,19 +2566,18 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00(60")</td>
+                                                                    <td>12:00-13:00</td>
                                                                     <td class="bold">
                                                                         <!-- Is There a More Effective Treatment for Obese
-                                                                        Patients Who have Increased Due to COVID-19? -->
+                                                                        Patients Who have Increased Due to COVID-19? -->TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Yang Im Hur</p>(CHA University,
-                                                                        Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Soo Kyoung Kim</p>(Gyeongsang National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
 																<tr>
-                                                                    <td>13:00-14:00(60")</td>
+                                                                    <td>13:00-14:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2577,7 +2600,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2598,7 +2621,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -2622,7 +2645,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>14:00-15:30(90")</td>
+                                                <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 7 : Metabolic Signaling in Obesity-related Diseases</p>
                                                     <!-- <p>
@@ -2650,16 +2673,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:25(25")</td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        <!-- Adipose Metabolic Control -->TBD
+                                                                       Uncovering Novel GPCR Pathways for the Treatment of Obesity and Type 2 Diabetes
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Zach Gerhart-Hines</p>(University of Copenhagen, Denmark)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:25-14:50(25")</td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">
                                                                         The Double-edged Role of the NLRP3 Inflammasome in Adipose Tissue
                                                                     </td>
@@ -2670,16 +2693,16 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:50-15:15(25")</td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        <!-- Microbiota in Obesity-Related Metabolic Diseases -->TBD
+                                                                        Microbiota in Obesity-related Metabolic Diseases in Mouse Models
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Je-Kyung Seong</p>(Seoul National University, Republic of Korea)
+                                                                        <p class="bold">Je Kyung Seong</p>(Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:15-15:30(15")</td>
+                                                                    <td>15:15-15:30</td>
                                                                     <td class="bold">
 																		Panel Discussion
                                                                     </td>
@@ -2697,14 +2720,14 @@ echo '<script type="text/javascript">
                                                                     <!-- 	</td> -->
                                                                     <!-- </tr> -->
                                                                     <!-- <tr> -->
-                                                                    <!-- 	<td>15:30-15:40(10")</td> -->
+                                                                    <!-- 	<td>15:30-15:40</td> -->
                                                                     <!-- 	<td class="bold" colspan="2"> -->
                                                                     <!-- 		Break -->
                                                                     <!-- 	</td> -->
                                                                     <!-- </tr> -->
 																<!--
 																<tr>
-                                                                    <td>15:30-15:40(10")</td>
+                                                                    <td>15:30-15:40</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2728,7 +2751,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:30-15:40(10")</td>
+                                                <td>15:30-15:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2752,7 +2775,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>15:40-16:20(40")</td>
+                                                <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <!-- <p>
@@ -2778,7 +2801,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:40-16:10(30")</td>
+                                                                    <td>15:40-16:10</td>
                                                                     <td class="bold">
                                                                         Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
                                                                     </td>
@@ -2787,13 +2810,13 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:20(10")</td>
+                                                                    <td>16:10-16:20</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td>16:20-16:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2817,7 +2840,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>16:20-16:30(10")</td>
+                                                <td>16:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -2841,7 +2864,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>16:30-18:00(90")</td>
+                                                <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 11 : Social and Environmental Determinants: Nutritional View of Obesity</p>
                                                     <!-- <p>
@@ -2869,7 +2892,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:55(25")</td>
+                                                                    <td>16:30-16:55</td>
                                                                     <td class="bold">
                                                                         <!-- Nutrition Focused Interventions to Address Social Determinants of Obesity in the US -->TBD
                                                                     </td>
@@ -2878,7 +2901,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20(25")</td>
+                                                                    <td>16:55-17:20</td>
                                                                     <td class="bold">
                                                                         <!-- Influence of Social and Environmental Factors on Obesity -->TBD
                                                                     </td>
@@ -2887,7 +2910,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:45(25")</td>
+                                                                    <td>17:20-17:45</td>
                                                                     <td class="bold">
                                                                         Socioeconomic Inequalities in Obesity
                                                                     </td>
@@ -2896,7 +2919,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td >17:45-18:00(15")</td>
+                                                                    <td >17:45-18:00</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -2912,7 +2935,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -2926,24 +2949,24 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-							<li name="break" class="border_bottom_70">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>18:00-18:30(30")</td>
-                                                <td>
-                                                    <p class="font_20 bold">Break</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
+							<!-- <li name="break" class="border_bottom_70">
+									<div class="table_wrap detail_table_common x_scroll">
+										<table class="c_table detail_table">
+											<colgroup>
+												<col class="col_date">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr class="light_gray_bg">
+													<td>18:00-18:30</td>
+													<td>
+														<p class="font_20 bold">Break</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li> -->
                         </ul>
                     </div>
                     <div class="tab_cont">
@@ -2963,7 +2986,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 4 : The Myosteatosis: Novel Aspect of Sarcopenia and Obesity</p>
                                                     <!-- <p>
@@ -2991,7 +3014,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         Age-Related Prevalence of Visceral Fat Obesity, Low Muscle Mass, and Myosteatosis
                                                                     </td>
@@ -3000,7 +3023,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         Clinical Implications of Myosteatosis in Cardiometabolic Health
                                                                     </td>
@@ -3009,7 +3032,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         New Insights into Fat Distribution: An Integrated Analysis of Hepatic, Pancreatic, Muscular, and Visceral Fat
                                                                     </td>
@@ -3018,8 +3041,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">10:20-10:50(30")</td> -->
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <!-- <td rowspan="2">10:20-10:50</td> -->
+                                                                    <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
@@ -3034,7 +3057,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr> -->
                                                                 <!-- <tr>
-                                                                    <td>10:50-13:00(130")</td>
+                                                                    <td>10:50-13:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -3064,9 +3087,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Oral presentation 1</p>
+                                                    <p class="font_20 bold">Oral Presentatoin 1</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Yeongsook Yoon</span> (Inje
                                                         Univeristy, Korea) /
@@ -3091,7 +3114,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:10(10")</td>
+                                                                    <td>13:00-13:10</td>
                                                                     <td class="bold"><!-- Morphological Changes in Skeletal
                                                                         Muscles with Age and the Preventive Effect of
                                                                         Endurance Exercise on Sarcopenic Overweight --></td>
@@ -3101,7 +3124,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:10-13:20(10")</td>
+                                                                    <td>13:10-13:20</td>
                                                                     <td class="bold"><!-- Factors Associated with Healthy
                                                                         Metabolic Transition Among Overweight/Obese
                                                                         Non-Shift Workers --></td>
@@ -3111,7 +3134,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:20-13:30(10")</td>
+                                                                    <td>13:20-13:30</td>
                                                                     <td class="bold"><!-- Title Effect of Walking Steps
                                                                         Measured by a Wearable Activity Tracker on
                                                                         Improving Components of Metabolic Syndrome: A
@@ -3122,7 +3145,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:30-13:40(10")</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold"><!-- Metabolic Syndrome and Dietary
                                                                         Intake are Associated with Health-related
                                                                         Quality of Life in Kidney Transplant Recipients
@@ -3133,7 +3156,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:40-13:50(10")</td>
+                                                                    <td>13:40-13:50</td>
                                                                     <td class="bold"><!-- Mobile Health Intervention on
                                                                         Glycemic Control and Quality of Life in Type 1
                                                                         Diabetes Mellitus --></td>
@@ -3143,7 +3166,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:50-14:00(10")</td>
+                                                                    <td>13:50-14:00</td>
                                                                     <td class="bold"><!-- Mobile Health Intervention on
                                                                         Glycemic Control and Quality of Life in Type 1
                                                                         Diabetes Mellitus --></td>
@@ -3176,7 +3199,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>14:00-15:30(90")</td>
+                                                <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 8</p>
                                                     <!-- <p>
@@ -3204,7 +3227,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:20(20")</td>
+                                                                    <td>14:00-14:20</td>
                                                                     <td class="bold">
                                                                         <!-- Overview of Semaglutide 2.4 mg (STEP) Clinical
                                                                         Trial Program -->
@@ -3215,7 +3238,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:20-14:40(20")</td>
+                                                                    <td>14:20-14:40</td>
                                                                     <td class="bold">
                                                                         <!-- GLP-1 Analogues Versus Bariatric and Metabolic
                                                                         Surgery; Physician’s View -->
@@ -3226,7 +3249,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:40-15:00(20")</td>
+                                                                    <td>14:40-15:00</td>
                                                                     <td class="bold">
                                                                         <!-- GLP-1 Analogues Versus Bariatric and Metabolic
                                                                         Surgery; Surgeon’s View -->
@@ -3237,8 +3260,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">15:00-15:30(30")</td> -->
-                                                                    <td>15:00-15:30(30")</td>
+                                                                    <!-- <td rowspan="2">15:00-15:30</td> -->
+                                                                    <td>15:00-15:30</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -3258,7 +3281,7 @@ echo '<script type="text/javascript">
                                                                 <!--     </td> -->
                                                                 <!-- </tr> -->
                                                                 <!-- <tr>
-                                                                    <td>15:30-16:30(60")</td>
+                                                                    <td>15:30-16:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -3287,7 +3310,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>16:30-18:00(90")</td>
+                                                <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 12 : Obesity : Transition from Adolescence to Young Adult</p>
                                                     <!-- <p>
@@ -3315,16 +3338,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:55(25")</td>
+                                                                    <td>16:30-16:55</td>
                                                                     <td class="bold">
                                                                         <!-- Why Should Adolescence & Young Adult Obesity Be A Priority? -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Dug-Hyun Choi</p>(Soonchunhyang University, Republic of Korea)
+                                                                        <p class="bold">Dughyun Choi</p>(Soonchunhyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20(25")</td>
+                                                                    <td>16:55-17:20</td>
                                                                     <td class="bold">
 																		<!-- Technology for Adolescence Obesity & T2DM  -->TBD
                                                                     </td>
@@ -3333,7 +3356,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:45(25")</td>
+                                                                    <td>17:20-17:45</td>
                                                                     <td class="bold">
                                                                         Emerging Biomarkers of Type 2 Diabetes in Obese Youth vs Adult
                                                                     </td>
@@ -3342,14 +3365,14 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>17:45-18:00(15")</td>
+                                                                    <td>17:45-18:00</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td></td>
                                                                 </tr>
                                                                 <!-- <tr>
-                                                                    <td rowspan="4">17:30-18:00(30")</td>
+                                                                    <td rowspan="4">17:30-18:00</td>
                                                                     <td rowspan="4" class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -3397,7 +3420,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>17:30-18:00(30")</td>
+                                                <td>17:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -3425,9 +3448,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Sponsored Session 1</p>
+                                                    <p class="font_20 bold">Sponsored Session 1 : Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Kiyoung Lee</span>
                                                         (Gachon
@@ -3454,7 +3477,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:50(30")</td>
+                                                                    <td>09:20-09:50</td>
                                                                     <td class="bold">
                                                                         <!-- The Role of Dapagliflozin in T2D ;
                                                                         DECLARE
@@ -3467,7 +3490,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20(30")</td>
+                                                                    <td>09:50-10:20</td>
                                                                     <td class="bold">
                                                                         <!-- The Role of Dapagliflozin in Heart
                                                                         Failure;
@@ -3478,7 +3501,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:20-10:50(30")</td>
+                                                                    <td>10:20-10:50</td>
                                                                     <td class="bold">
                                                                         <!-- The Role of Dapagliflozin in Chronic
                                                                         Kidney
@@ -3489,7 +3512,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
-                                                                    <td>10:50-15:40(300")</td>
+                                                                    <td>10:50-15:40</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -3518,7 +3541,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentatoin 2</p>
                                                     <!-- <p>
@@ -3547,7 +3570,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:10(10")</td>
+                                                                    <td>13:00-13:10</td>
                                                                     <td class="bold"><!-- Predicted Inflammatory
                                                                         Status and
                                                                         Non-alcoholic Fatty Liver Disease
@@ -3560,7 +3583,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:10-13:20(10")</td>
+                                                                    <td>13:10-13:20</td>
                                                                     <td class="bold"><!-- Macrophage-Specific
                                                                         Connexin 43
                                                                         Knockout Protects Mice from
@@ -3574,7 +3597,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:20-13:30(10")</td>
+                                                                    <td>13:20-13:30</td>
                                                                     <td class="bold"><!-- MicroRNA 302a Modulates
                                                                         Cholesterol
                                                                         Homeostasis and Atherosclerosis --></td>
@@ -3585,7 +3608,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:30-13:40(10")</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold"><!-- Vutiglabridin Modulates
                                                                         Paraoxonase-2 and Reduces Body
                                                                         Weight in a
@@ -3599,7 +3622,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:40-13:50(10")</td>
+                                                                    <td>13:40-13:50</td>
                                                                     <td class="bold"><!-- Protective Effect of
                                                                         Hesperidin
                                                                         Against High Fat Diet Induced Obese
@@ -3614,7 +3637,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:50-14:00(10")</td>
+                                                                    <td>13:50-14:00</td>
                                                                     <td class="bold"><!-- Semaglutide 2.4 mg and
                                                                         Intensive
                                                                         Behavioral Therapy in Subjects With
@@ -3650,7 +3673,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>14:00-15:30(90")</td>
+                                                <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 2</p>
                                                     <!-- <p>
@@ -3671,7 +3694,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -3680,56 +3703,40 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:30(30")</td>
+                                                                    <td>14:00-14:30</td>
                                                                     <td class="bold">
                                                                         <!-- Phentermine/Topiramate for the
                                                                         Treatment of
-                                                                        Adolescent -->
+                                                                        Adolescent -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Hyun Wook Chae</p>
                                                                         (Yonsei
-                                                                        University, Korea) -->
+                                                                        University, Korea) -->TBD
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:30-15:00(30")</td>
+                                                                    <td>14:30-15:00</td>
                                                                     <td class="bold">
-                                                                        <!-- Phentermine/Topiramate ER for the
-                                                                        Patients with
-                                                                        Type 2 Diabetes and Obesity -->
+                                                                        Role of DPP4-I under the Latest Treatment Trend
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Da Hea Seo</p>(Inha
-                                                                        University,
-                                                                        Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Eun Roh</p>(Hallym University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:00-15:30(30")</td>
+                                                                    <td>15:00-15:30</td>
                                                                     <td class="bold">
                                                                         <!-- Case Sharing of Empowering Weight
                                                                         Management
-                                                                        Using Phentermine/Topiramate ER -->
+                                                                        Using Phentermine/Topiramate ER -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Yu-Jin Kwon</p>
                                                                         (Yonsei
-                                                                        University, Korea) -->
+                                                                        University, Korea) -->TBD
                                                                     </td>
                                                                 </tr>
-                                                                <!-- <tr>
-                                                                    <td>15:30-16:30(60")</td>
-                                                                    <td class="bold" colspan="2">
-                                                                        Break
-                                                                    </td>
-                                                                </tr> -->
-                                                                <!-- <tr>
-                                                                    <td>18:00-21:30(210")</td>
-                                                                    <td class="bold" colspan="2">
-                                                                        Congress Banquet Ceremony
-                                                                    </td>
-                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -3739,11 +3746,11 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <!-- <li name="congress_banquet_ceremony">
-                                <div class="clearfix2 caption">
+                            <li name="obesity_treatment_guidelines_symposium">
+                                <!-- <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
                                     <span>Room5(6F)</span>
-                                </div>
+                                </div> -->
                                 <div class="table_wrap detail_table_common x_scroll border_bottom_70">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -3751,16 +3758,64 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="green_bg">
-                                                <td>18:00-21:30(210")</td>
+                                            <tr class="purple_bg">
+                                                <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Congress Banquet</p>
+                                                    <p class="font_20 bold mb0">Obesity Treatment Guidelines Symposium : Behind the Scenes: The Journey of Evolution and Revising Obesity Guidelines</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16:30-16:55</td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Yasushi Ishigaki</p>(Iwate Medical University, Japan)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:55-17:20</td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        TBD
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:20-17:45</td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Jee Hyun Kang</p>(Konyang University, Republic of Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:45-18:00</td>
+                                                                    <td class="bold">
+                                                                        Panel Discussion
+                                                                    </td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                     <div class="tab_cont">
@@ -3779,7 +3834,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Joint Symposium EASO</p>
                                                 </td>
@@ -3799,17 +3854,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:50(30")</td>
+                                                                    <td>09:20-09:50</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20(30")</td>
+                                                                    <td>09:50-10:20</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
 																<tr>
-                                                                    <td>10:20-10:50(30")</td>
+                                                                    <td>10:20-10:50</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
@@ -3836,9 +3891,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>14:00-15:30(90")</td>
+                                                <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Joint Symposium AOASO 1</p>
+                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-AOASO</p>
                                                 </td>
                                             </tr>
 											<tr>
@@ -3847,7 +3902,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
 											<tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -3856,18 +3911,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:30(30")</td>
-                                                                    <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td>14:00-14:25</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r"><p class="bold">Geeta Appannah</p>(University Putra Malaysia, Malaysia)</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:30-15:00(30")</td>
-                                                                    <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td>14:25-14:50</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r"><p class="bold">Do Thi Ngoc Diep</p>(Vietnam)</td>
                                                                 </tr>
 																<tr>
-                                                                    <td>15:00-15:30(30")</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>14:50-15:15</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r"><p class="bold">Hae-Jin Ko</p>(Kyungpook National University, Republic of Korea)</td>
+                                                                </tr>
+																<tr>
+                                                                    <td>15:15-15:30</td>
+                                                                    <td class="bold">Panel Discussion</td>
                                                                     <td></td>
                                                                 </tr>
                                                             </tbody>
@@ -3894,9 +3954,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>18:30-21:30(180")</td>
+                                                <td>18:30-21:30</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Congress Banquet</p>
+                                                    <p class="font_20 bold mb0">Congress Banquet <span class="font_inherit red_txt">*</span>Invited Only</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -3916,7 +3976,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>16:30-18:00(90")</td>
+                                                <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">IT Convergence Metabolic
                                                         Syndrome Committee
@@ -3948,7 +4008,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:50(20")</td>
+                                                                    <td>16:30-16:50</td>
                                                                     <td class="bold">
                                                                         Possibility of IT-based Technology
                                                                         for Treatment
@@ -3962,7 +4022,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:50-17:10(20")</td>
+                                                                    <td>16:50-17:10</td>
                                                                     <td class="bold">
                                                                         Limitations of IT-based Technology
                                                                         for Treatment
@@ -3976,7 +4036,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:10-17:30(20")</td>
+                                                                    <td>17:10-17:30</td>
                                                                     <td class="bold">
                                                                         Introduction of the Weight
                                                                         Management
@@ -3989,7 +4049,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-17:50(20")</td>
+                                                                    <td>17:30-17:50</td>
                                                                     <td class="bold">
                                                                         Development Direction of the Weight
                                                                         Management
@@ -4002,7 +4062,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:50-18:00(10")</td>
+                                                                    <td>17:50-18:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Discussion
                                                                     </td>
@@ -4035,7 +4095,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>13:00-14:00(60")</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Guided Poster Presentation 1
                                                     </p>
@@ -4077,7 +4137,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20(50")</td>
+                                                <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Jae-Heon Kang</span>
@@ -4101,19 +4161,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>07:30-08:20(50")</td>
+                                                                    <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        <!-- Fixed-ratio Combinations of Basal Insulin (BI)
-                                                                        and GLP-1RA in Patients with Type 2 Diabetes
-                                                                        Inadequately Controlled on BI Therapy -->TBD
+                                                                        Thiazolidinediones and SGLT2i: A Rational Combination Based on T2DM Pathophysiology
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Hong Jun Hwa</p>(Eulji University, Republic of Korea)
+                                                                        <p class="bold">Jun Hwa Hong</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>08:20-08:30(10")</td>
+                                                                    <td>08:20-08:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -4136,7 +4194,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>08:20-08:30(10")</td>
+                                                <td>08:20-08:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4160,7 +4218,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>08:30-09:10(40")</td>
+                                                <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <!-- <p>
@@ -4186,17 +4244,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-09:00(30")</td>
+                                                                    <td>08:30-09:00</td>
                                                                     <td class="bold">
-                                                                        <!-- Healthful Dietary Patterns to Prevent and Treat
-                                                                        Cardiovascular Disease and Obesity -->TBD
+                                                                        The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Tamas Horvath</p>Yale University, USA
+                                                                        <p class="bold">Tamas Horvath</p>(Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10(10")</td>
+                                                                    <td>09:00-09:10</td>
                                                                     <td class="bold" colspan="2">
                                                                         Q&A
                                                                     </td>
@@ -4219,7 +4276,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>09:10-09:20(10")</td>
+                                                <td>09:10-09:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4243,7 +4300,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 13 : Health Consequences of Obesity</p>
                                                     <!-- <p>
@@ -4270,7 +4327,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         MAFLD and NAFLD in the Prediction of Incident Chronic Kidney Disease
                                                                     </td>
@@ -4279,7 +4336,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         MAFLD versus NAFLD and the Risk of Cardiovascular Disease
                                                                     </td>
@@ -4288,9 +4345,9 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Determinants of the Prognosis of NAFLD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Erika B. Parente</p>(University
@@ -4299,8 +4356,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">10:20-10:50(30")</td> -->
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <!-- <td rowspan="2">10:20-10:50</td> -->
+                                                                    <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -4315,7 +4372,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -4338,7 +4395,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4362,7 +4419,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:00-11:40(40")</td>
+                                                <td>11:00-11:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyung Hee
@@ -4386,7 +4443,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:00-11:30(30")</td>
+                                                                    <td>11:00-11:30</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->TBD
@@ -4396,7 +4453,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:30-11:40(10")</td>
+                                                                    <td>11:30-11:40</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->Q&A
@@ -4407,7 +4464,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
 																<tr>
-                                                                    <td>11:40-11:50(10")</td>
+                                                                    <td>11:40-11:50</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -4431,7 +4488,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>11:40-11:50(10")</td>
+                                                <td>11:40-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4455,7 +4512,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>11:50-12:50(60")</td>
+                                                <td>11:50-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 4</p>
                                                    <!--  <p><span class="bold">Chairperson : Hyun Ho Shin</span> (Asan
@@ -4479,7 +4536,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:50-12:50(60")</td>
+                                                                    <td>11:50-12:50</td>
                                                                     <td class="bold">
                                                                         <!-- Phentermine/Topiramate Extended Release for the
                                                                         Treatment of Obesity
@@ -4491,7 +4548,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>12:50-13:50(60")</td>
+                                                                    <td>12:50-13:50</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -4515,7 +4572,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4536,7 +4593,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -4560,7 +4617,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>13:50-14:20(30")</td>
+                                                <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p> -->
@@ -4583,16 +4640,14 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:50-14:20(30")</td>
-                                                                    <td class="bold">
-                                                                        Dopamine Subsystems that Track Internal States
-                                                                    </td>
+                                                                    <td>13:50-14:20</td>
+                                                                    <td class="bold">Brainstem Circuits that Control Ingestion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Zachary Knight</p>(University of California, San Francisco, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:20-14:30(10")</td>
+                                                                    <td>14:20-14:30</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -4620,7 +4675,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>14:30-15:10(40")</td>
+                                                <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p> -->
@@ -4643,16 +4698,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:30-15:00(30")</td>
+                                                                    <td>14:30-15:00</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        National Obesity Strategy in Korea: Past, Present and Future
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>15:00-15:10(10")</td>
+                                                                    <td>15:00-15:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -4674,7 +4729,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20(10")</td>
+                                                <td>15:10-15:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4698,7 +4753,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>15:20-16:50(90")</td>
+                                                <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 17 : The Power of Synergy: Optimizing Anti-obesity Treatment with Combination Pharmacotherapy</p>
                                                     <!-- <p>
@@ -4726,36 +4781,33 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:20-15:45(25")</td>
+                                                                    <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        <!-- Current and Emerging Pharmacotherapy for Obesity -->
-																		TBD
+                                                                        Unveiling the New Wave: A Comprehensive Overview of Emerging Anti-Obesity Medications
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:45-16:10(25")</td>
+                                                                    <td>15:45-16:10</td>
                                                                     <td class="bold">
                                                                         <!-- Upcoming New Combinations of Anti-Obesity Drugs -->
 																		TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Young Min Cho</p>(Seoul National
-                                                                        University, Korea) -->
-																		TBD
+                                                                        <p class="bold">Jennifer Strande</p>(AMGEN, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:35(25")</td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Se Hee Min</p>(Univeristy of Ulsan, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:35-16:50(15")</td>
+                                                                    <td>16:35-16:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -4777,7 +4829,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>16:50-17:00(10")</td>
+                                                <td>16:50-17:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4801,7 +4853,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>17:00-17:40(40")</td>
+                                                <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
@@ -4824,18 +4876,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:30(30")</td>
+                                                                    <td>17:00-17:30</td>
                                                                     <td class="bold">
                                                                         <!-- Relationships of SGLT-2 Treatment with Body
                                                                         Weight -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ele Ferrannini</p>(University of
-                                                                        Pisa School of Medicine, Italy) -->TBD
+                                                                        <p class="bold">John Wilding</p>(University of Liverpool, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-17:40(10")</td>
+                                                                    <td>17:30-17:40</td>
                                                                     <td class="bold">Q&A</td>
 																	<td class="text_r"></td>
                                                                 </tr>
@@ -4863,7 +4914,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>17:40-18:00(20")</td>
+                                                <td>17:40-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Closing Ceremony</p>
                                                 </td>
@@ -4891,7 +4942,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20(50")</td>
+                                                <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 5</p>
                                                     <!-- <p>
@@ -4917,7 +4968,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>07:30-08:20(50")</td>
+                                                                    <td>07:30-08:20</td>
                                                                     <td class="bold">
                                                                         <!-- Early & Lower for Longer ; A to Z about Treating
                                                                         Dyslipidemia in Diabetes Patients -->
@@ -4929,7 +4980,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>08:20-08:30(10")</td>
+                                                                    <td>08:20-08:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -4953,7 +5004,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>08:20-08:30(10")</td>
+                                                <td>08:20-08:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -4977,7 +5028,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>08:30-09:10(40")</td>
+                                                <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p> -->
@@ -5000,24 +5051,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-09:00(30")</td>
+                                                                    <td>08:30-09:00</td>
                                                                     <td class="bold">
-                                                                        <!-- Healthful Dietary Patterns to Prevent and Treat
-                                                                        Cardiovascular Disease and Obesity -->TBD
+                                                                        The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Tamas Horvath</p>Yale University, USA
+                                                                        <p class="bold">Tamas Horvath</p>(Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10(10")</td>
+                                                                    <td>09:00-09:10</td>
                                                                     <td class="bold" colspan="2">
                                                                         Q&A
                                                                     </td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>09:10-09:20(10")</td>
+                                                                    <td>09:10-09:20</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5041,7 +5091,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>09:10-09:20(10")</td>
+                                                <td>09:10-09:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5065,7 +5115,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 14 : Promoting Healthy Muscle and Liver Metabolism</p>
                                                     <!-- <p>
@@ -5092,7 +5142,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         The Role of Muscle in Weight Management
                                                                     </td>
@@ -5101,7 +5151,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
@@ -5110,7 +5160,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         Roles of Dietary Essential Amino Acids and Exercise for Muscle and Metabolic Health
                                                                     </td>
@@ -5119,8 +5169,8 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">10:30-10:50(20")</td> -->
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <!-- <td rowspan="2">10:30-10:50</td> -->
+                                                                    <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -5134,7 +5184,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td colspan="2" class="bold">
                                                                         Break
                                                                     </td>
@@ -5157,7 +5207,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5181,7 +5231,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:00-11:40(40")</td>
+                                                <td>11:00-11:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <!-- <p>
@@ -5206,7 +5256,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:00-11:30(30")</td>
+                                                                    <td>11:00-11:30</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->TBD
@@ -5216,7 +5266,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:30-11:40(10")</td>
+                                                                    <td>11:30-11:40</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->Q&A
@@ -5227,7 +5277,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>11:40-11:50(10")</td>
+                                                                    <td>11:40-11:50</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5251,7 +5301,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>11:40-11:50(10")</td>
+                                                <td>11:40-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5275,7 +5325,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>11:50-12:50(60")</td>
+                                                <td>11:50-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 5</p>
                                                     <!-- <p><span class="bold">Chairperson : Sang Yeoup Lee</span> (Pusan National University, Korea)</p> -->
@@ -5298,7 +5348,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:50-12:50(60")</td>
+                                                                    <td>11:50-12:50</td>
                                                                     <td class="bold">
                                                                         <!-- New Paradigm of Glycemic Variability: EVERGREEN
                                                                         Study -->
@@ -5310,7 +5360,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
 																<tr>
-                                                                    <td>12:50-13:50(60")</td>
+                                                                    <td>12:50-13:50</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5334,7 +5384,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5355,7 +5405,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -5380,7 +5430,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>13:50-14:20(30")</td>
+                                                <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <!-- <p>
@@ -5406,16 +5456,14 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:50-14:20(30")</td>
-                                                                    <td class="bold">
-                                                                        Dopamine Subsystems that Track Internal States
-                                                                    </td>
+                                                                    <td>13:50-14:20</td>
+                                                                    <td class="bold">Brainstem Circuits that Control Ingestion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Zachary Knight</p>(University of California, San Francisco, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:20-14:30(10")</td>
+                                                                    <td>14:20-14:30</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -5443,7 +5491,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>15:20-15:50(30")</td>
+                                                <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <!-- <p>
@@ -5469,16 +5517,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:30-15:00(30")</td>
+                                                                    <td>14:30-15:00</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        National Obesity Strategy in Korea: Past, Present and Future
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>15:00-15:10(10")</td>
+                                                                    <td>15:00-15:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -5500,7 +5548,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20(10")</td>
+                                                <td>15:10-15:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5524,7 +5572,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>15:20-16:50(90")</td>
+                                                <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 18 : Neuroscience</p>
                                                     <!-- <p>
@@ -5551,16 +5599,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:20-15:45(25")</td>
+                                                                    <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Mapping Appetite Circuits with Molecular Connectomics
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Michael Krashes</p>(National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:45-16:10(25")</td>
+                                                                    <td>15:45-16:10</td>
                                                                     <td class="bold">
                                                                         Feeding Regulation by Tuberal Nucleus Somatostatin Neurons
                                                                     </td>
@@ -5570,16 +5618,16 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:35(25")</td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chang-joon Lee</p>(Institute for Basic Science (IBS), Republic of Korea)
+                                                                        <p class="bold">Changjoon Lee</p>(Institute for Basic Science (IBS), Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:35-16:50(15")</td>
+                                                                    <td>16:35-16:50</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -5597,7 +5645,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>17:30-17:40(10")</td>
+                                                                    <td>17:30-17:40</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5620,7 +5668,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20(10")</td>
+                                                <td>15:10-15:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5644,7 +5692,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>17:00-17:40(40")</td>
+                                                <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
@@ -5667,18 +5715,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:30(30")</td>
+                                                                    <td>17:00-17:30</td>
                                                                     <td class="bold">
                                                                         <!-- Relationships of SGLT-2 Treatment with Body
                                                                         Weight -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ele Ferrannini</p>(University of
-                                                                        Pisa School of Medicine, Italy) -->TBD
+                                                                        <p class="bold">John Wilding</p>(University of Liverpool, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-17:40(10")</td>
+                                                                    <td>17:30-17:40</td>
                                                                     <td class="bold">Q&A</td>
 																	<td class="text_r"></td>
                                                                 </tr>
@@ -5706,7 +5753,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>17:40-18:00(20")</td>
+                                                <td>17:40-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Closing Ceremony</p>
                                                 </td>
@@ -5734,7 +5781,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20(50")</td>
+                                                <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 6</p>
                                                     <!-- <p>
@@ -5751,7 +5798,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5760,18 +5807,18 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>07:30-08:20(50")</td>
+                                                                    <td>07:30-08:20</td>
                                                                     <td class="bold">
                                                                         <!-- Early & Lower for Longer ; A to Z about Treating
                                                                         Dyslipidemia in Diabetes Patients -->TBD
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <p class="bold">Yeoree Yang</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>08:20-08:30(10")</td>
+                                                                    <td>08:20-08:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5795,7 +5842,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>08:20-08:30(10")</td>
+                                                <td>08:20-08:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5819,7 +5866,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>08:30-09:10(40")</td>
+                                                <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p> -->
@@ -5842,24 +5889,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-09:00(30")</td>
+                                                                    <td>08:30-09:00</td>
                                                                     <td class="bold">
-                                                                        <!-- Healthful Dietary Patterns to Prevent and Treat
-                                                                        Cardiovascular Disease and Obesity -->TBD
+                                                                        The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Tamas Horvath</p>Yale University, USA
+                                                                        <p class="bold">Tamas Horvath</p>(Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10(10")</td>
+                                                                    <td>09:00-09:10</td>
                                                                     <td class="bold" colspan="2">
                                                                         Q&A
                                                                     </td>
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>09:10-09:20(10")</td>
+                                                                    <td>09:10-09:20</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5883,7 +5929,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>09:10-09:20(10")</td>
+                                                <td>09:10-09:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5907,7 +5953,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 15 : Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
                                                    <!--  <p>
@@ -5934,7 +5980,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers
                                                                     </td>
@@ -5943,7 +5989,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         <!-- Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population -->TBD
                                                                     </td>
@@ -5952,7 +5998,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         <!-- Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities -->TBD
                                                                     </td>
@@ -5961,7 +6007,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <td>10:35-10:50</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -5969,7 +6015,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
 																<tr>
-                                                                    <td>18:00-18:30(30")</td>
+                                                                    <td>18:00-18:30</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -5993,7 +6039,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6017,7 +6063,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:00-11:40(40")</td>
+                                                <td>11:00-11:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                    <!--  <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyung Hee University, Korea)</p> -->
@@ -6040,7 +6086,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:00-11:30(30")</td>
+                                                                    <td>11:00-11:30</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->TBD
@@ -6050,7 +6096,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:30-11:40(10")</td>
+                                                                    <td>11:30-11:40</td>
                                                                     <td class="bold">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->Q&A
@@ -6061,7 +6107,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>11:40-11:50(10")</td>
+                                                                    <td>11:40-11:50</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -6085,7 +6131,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>11:40-11:50(10")</td>
+                                                <td>11:40-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6109,7 +6155,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>11:50-12:50(60")</td>
+                                                <td>11:50-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 6</p>
                                                     <!-- <p><span class="bold">Chairperson : Ga Eun Nam</span> (Korea University, Korea)</p> -->
@@ -6132,7 +6178,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:50-12:50(60")</td>
+                                                                    <td>11:50-12:50</td>
                                                                     <td class="bold">
                                                                         <!-- Utilizing CGM to Empower T2 DM Obese Patients
                                                                         For Better Glycemic Management -->TBD
@@ -6143,7 +6189,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
 																<tr>
-                                                                    <td>12:50-13:50(60")</td>
+                                                                    <td>12:50-13:50</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -6167,7 +6213,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6188,7 +6234,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -6212,7 +6258,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>13:50-14:20(30")</td>
+                                                <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p> -->
@@ -6235,16 +6281,14 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:50-14:20(30")</td>
-                                                                    <td class="bold">
-                                                                        Dopamine Subsystems that Track Internal States
-                                                                    </td>
+                                                                    <td>13:50-14:20</td>
+                                                                    <td class="bold">Brainstem Circuits that Control Ingestion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Zachary Knight</p>(University of California, San Francisco, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:20-14:30(10")</td>
+                                                                    <td>14:20-14:30</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -6272,7 +6316,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>15:20-15:50(30")</td>
+                                                <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p> -->
@@ -6295,16 +6339,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:30-15:00(30")</td>
+                                                                    <td>14:30-15:00</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        National Obesity Strategy in Korea: Past, Present and Future
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae-Heon Kang</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>15:00-15:10(10")</td>
+                                                                    <td>15:00-15:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -6326,7 +6370,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20(10")</td>
+                                                <td>15:10-15:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6350,7 +6394,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>15:20-16:50(90")</td>
+                                                <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 19 : Diversity and Challenges of Pediatric Obesity</p>
                                                     <!-- <p>
@@ -6377,7 +6421,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:20-15:45(25")</td>
+                                                                    <td>15:20-15:45</td>
                                                                     <td class="bold">
                                                                         <!-- Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)  -->TBD
                                                                     </td>
@@ -6386,7 +6430,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:45-16:10(25")</td>
+                                                                    <td>15:45-16:10</td>
                                                                     <td class="bold">
                                                                         <!-- ACTION TEENS: Rationale and Methodology -->
 																		TBD
@@ -6396,7 +6440,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:35(25")</td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">
                                                                         Childhood Obesity and Mental Health
                                                                     </td>
@@ -6405,7 +6449,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>17:00-17:30(30")</td>
+                                                                    <td>17:00-17:30</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -6414,7 +6458,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>17:30-17:40(10")</td>
+                                                                    <td>17:30-17:40</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -6438,7 +6482,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20(10")</td>
+                                                <td>15:10-15:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6462,7 +6506,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>14:30-15:10(40")</td>
+                                                <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
@@ -6485,18 +6529,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:30(30")</td>
+                                                                    <td>17:00-17:30</td>
                                                                     <td class="bold">
                                                                         <!-- Relationships of SGLT-2 Treatment with Body
                                                                         Weight -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ele Ferrannini</p>(University of
-                                                                        Pisa School of Medicine, Italy) -->TBD
+                                                                        <p class="bold">John Wilding</p>(University of Liverpool, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-17:40(10")</td>
+                                                                    <td>17:30-17:40</td>
                                                                     <td class="bold">Q&A</td>
 																	<td class="text_r"></td>
                                                                 </tr>
@@ -6524,7 +6567,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>17:40-18:00(20")</td>
+                                                <td>17:40-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Closing Ceremony</p>
                                                 </td>
@@ -6552,7 +6595,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 16 : International Collaboration</p>
                                                     <!-- <p>
@@ -6579,7 +6622,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:45(25")</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">
                                                                         Impact of Sleep Disturbance on Obesity and Energy Homeostasis
                                                                     </td>
@@ -6588,16 +6631,16 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:45-10:10(25")</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold">
                                                                         Guidelines for the Management of Obesity as a Disease: Japanese Update
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Koutaro Yocote</p>(Chiba University, Japan)
+                                                                        <p class="bold">Koutaro Yokote</p>(Chiba University, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:10-10:35(25")</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         <!-- A Pilot Study of the Effect of Transcranial
                                                                         Direct Current Stimulation (tDCS) on Food
@@ -6610,7 +6653,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>10:35-10:50(15")</td>
+                                                                    <td>10:35-10:50</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -6619,7 +6662,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<!--
                                                                 <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -6644,7 +6687,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>10:50-11:00(10")</td>
+                                                <td>10:50-11:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6669,7 +6712,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 3</p>
                                                     <!-- <p>
@@ -6697,7 +6740,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:50-13:00(10")</td>
+                                                                    <td>12:50-13:00</td>
                                                                     <td class="bold">
                                                                        <!--  Lifestyle Factors Associated to Adiposity Among
                                                                         Adult Women in Malaysia -->
@@ -6708,7 +6751,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:00-13:10(10")</td>
+                                                                    <td>13:00-13:10</td>
                                                                     <td class="bold">
                                                                         <!-- Associations Between Physical Activity Level,
                                                                         Physical Fitness, Energy Intake, Macronutrients
@@ -6721,7 +6764,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:10-13:20(10")</td>
+                                                                    <td>13:10-13:20</td>
                                                                     <td class="bold">
                                                                        <!--  12-OAHSA is a Component of Olive Oil and
                                                                         Mitigates Obesity-induced Inflammation -->
@@ -6732,7 +6775,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:20-13:30(10")</td>
+                                                                    <td>13:20-13:30</td>
                                                                     <td class="bold">
                                                                         <!-- Semaglutide 2.4 mg Induces Weight Loss and
                                                                         Improves Body Composition Across Age Groups in
@@ -6746,7 +6789,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:30-13:40(10")</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold">
                                                                         <!-- Study of Gastric Bypass Versus Gastric
                                                                         Restrictive Surgery in Obese Patients with Type
@@ -6758,7 +6801,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:40-13:50(10")</td>
+                                                                    <td>13:40-13:50</td>
                                                                     <td class="bold">
                                                                         <!-- A Phased Study of Bariatric Surgery in Variable
                                                                         Obesity Phenotypes -->
@@ -6792,7 +6835,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>15:20-16:50(90")</td>
+                                                <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 20</p>
                                                     <!-- <p>
@@ -6819,7 +6862,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:20-15:45(25")</td>
+                                                                    <td>15:20-15:45</td>
                                                                     <td class="bold">
                                                                         <!-- Alterations in Brain and Behavior Contributing
                                                                         to Obesity -->
@@ -6830,7 +6873,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:45-16:10(25")</td>
+                                                                    <td>15:45-16:10</td>
                                                                     <td class="bold">
                                                                         <!-- How to Recover from Food Addiction as a New
                                                                         Piece of the Obesity Framework -->
@@ -6841,7 +6884,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:35(25")</td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">
                                                                         <!-- A Pilot Study of the Effect of Transcranial
                                                                         Direct Current Stimulation (tDCS) on Food
@@ -6854,7 +6897,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>16:35-16:50(15")</td>
+                                                                    <td>16:35-16:50</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -6862,7 +6905,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -6889,7 +6932,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>16:00-17:00(60")</td>
+                                                <td>16:00-17:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Article in JOMES</p>
                                                     <p>
@@ -6916,7 +6959,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:00-16:15(15")</td>
+                                                                    <td>16:00-16:15</td>
                                                                     <td class="bold">
                                                                         Effect of Sodium-Glucose Cotransporter 2
                                                                         Inhibitors on Weight Reduction in Overweight and
@@ -6929,7 +6972,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:15-16:30(15")</td>
+                                                                    <td>16:15-16:30</td>
                                                                     <td class="bold">
                                                                         Impact of COVID-19 and Associated Preventive
                                                                         Measures on Cardiometabolic Risk Factors in
@@ -6941,7 +6984,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:30-16:45(15")</td>
+                                                                    <td>16:30-16:45</td>
                                                                     <td class="bold">
                                                                         Factors Associated with Body Weight Gain among
                                                                         Korean Adults during the COVID-19 Pandemic
@@ -6952,7 +6995,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:45-17:00(15")</td>
+                                                                    <td>16:45-17:00</td>
                                                                     <td class="bold">
                                                                         Award
                                                                     </td>
@@ -6988,9 +7031,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Sponsored Session 3</p>
+                                                    <p class="font_20 bold">Sponsored Session 3 : Is Semaglutide Changing the Paradigm Of Obesity Management?</p>
                                                    <!--  <p>
                                                         <span class="bold">Chairperson : Dae Jung Kim</span> (Ajou
                                                         University, Korea)
@@ -7018,7 +7061,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:50(30")</td>
+                                                                    <td>09:20-09:50</td>
                                                                     <td class="bold">
                                                                         <!-- Obesity and White Adipose Tissue- Links to
                                                                         Comorbidities -->
@@ -7029,7 +7072,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20(30")</td>
+                                                                    <td>09:50-10:20</td>
                                                                     <td class="bold">
                                                                         <!-- Benefits Beyond Weight Loss with GLP-1RA -->
                                                                     </td>
@@ -7039,7 +7082,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>10:20-10:50(30")</td>
+                                                                    <td>10:20-10:50</td>
                                                                     <td class="bold">
                                                                         <!-- GLP-1RA for Obesity Management, How can We
                                                                         Maximize Its Clinical Value? -->
@@ -7050,7 +7093,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                <!--  <tr>
-                                                                    <td>10:50-11:00(10")</td>
+                                                                    <td>10:50-11:00</td>
                                                                     <td class="bold" colspan="2">
                                                                         Break
                                                                     </td>
@@ -7079,7 +7122,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 4</p>
                                                     <!-- <p>
@@ -7106,7 +7149,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:50-13:00(10")</td>
+                                                                    <td>12:50-13:00</td>
                                                                     <td class="bold"><!-- Prevalence of Obesity and
                                                                         Overweight Children in South Korea During
                                                                         COVID-19: Korean National Health and Nutrition
@@ -7117,7 +7160,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:00-13:10(10")</td>
+                                                                    <td>13:00-13:10</td>
                                                                     <td class="bold"><!-- The COVID-19 Pandemics Affects
                                                                         Prevalence of Obesity and Metabolic Syndrome of
                                                                         Children and Adolescents in Korea using the
@@ -7128,7 +7171,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:10-13:20(10")</td>
+                                                                    <td>13:10-13:20</td>
                                                                     <td class="bold"><!-- Comparison of siMS Score by
                                                                         Sociodemographic Characteristics and Nutritional
                                                                         Status among Children aged 6.0-12.9 years in
@@ -7139,7 +7182,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:20-13:30(10")</td>
+                                                                    <td>13:20-13:30</td>
                                                                     <td class="bold"><!-- 6-month Outcome of an Adapted US
                                                                         Clinic-community Model to an Online Intervention
                                                                         for Childhood Obesity in Singapore- a Pilot
@@ -7150,7 +7193,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:30-13:40(10")</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold"><!-- Study of Relationship Between Rates
                                                                         of Mental Health Evaluation among Adolescents
                                                                         Receiving Sleeve Gastrectomy in Jaipur City,
@@ -7161,18 +7204,18 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:40-13:50(10")</td>
+                                                                    <td>13:40-13:50</td>
                                                                     <td class="bold"></td>
                                                                     <td>
                                                                         <!-- <p class="bold">TBA</p>() -->
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
-                                                                    <td>17:30-17:40(10")</td>
+                                                                    <td>17:30-17:40</td>
                                                                     <td class="bold" colspan="2">Break</td>
                                                                 </tr> -->
                                                                 <!-- <tr>
-                                                                    <td>17:40-18:00(20")</td>
+                                                                    <td>17:40-18:00</td>
                                                                     <td class="bold" colspan="2">Closing & Award
                                                                         Ceremony</td>
                                                                 </tr> -->
@@ -7200,7 +7243,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>15:20-16:50(90")</td>
+                                                <td>15:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Article in JOMES</p>
                                                     <!-- <p>
@@ -7228,7 +7271,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:20-15:35(15")</td>
+                                                                    <td>15:20-15:35</td>
                                                                     <td class="bold">
                                                                         Obesity Fact Sheet in Korea, 2021: Trends in Obesity Prevalence and Obesity-Related Comorbidity Incidence Stratified by Age from 2009 to 2019
                                                                     </td>
@@ -7237,7 +7280,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:35-15:50(15")</td>
+                                                                    <td>15:35-15:50</td>
                                                                     <td class="bold">
                                                                         Reference Values for Waist Circumference and Waist–Height Ratio in Korean Children and Adolescents
                                                                     </td>
@@ -7246,7 +7289,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:50-16:05(15")</td>
+                                                                    <td>15:50-16:05</td>
                                                                     <td class="bold">
                                                                        Maintaining Physical Activity Is Associated with Reduced Major Adverse Cardiovascular Events in People Newly Diagnosed with Diabetes
                                                                     </td>
@@ -7255,7 +7298,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:05-16:20(15")</td>
+                                                                    <td>16:05-16:20</td>
                                                                     <td class="bold">
                                                                         Updated Meta-Analysis of Studies from 2011 to 2021 Comparing the Effectiveness of Intermittent Energy Restriction and Continuous Energy Restriction
                                                                     </td>
@@ -7264,7 +7307,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:20-16:30(10")</td>
+                                                                    <td>16:20-16:30</td>
                                                                     <td class="bold">
                                                                         Award Ceremony
                                                                     </td>
@@ -7294,7 +7337,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_green_bg">
-                                                <td>17:40-18:00(20")</td>
+                                                <td>17:40-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Closing & Award Ceremony - Korea Society for Study of Obesity President Chang Beom Lee</p>
                                                 </td>
@@ -7319,7 +7362,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Poster Exhibition</p>
                                                 </td>
@@ -7342,7 +7385,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>09:20-10:50(90")</td>
+                                                <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Joint Symposium TOS</p>
                                                 </td>
@@ -7362,17 +7405,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:50(30")</td>
+                                                                    <td>09:20-09:50</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20(30")</td>
+                                                                    <td>09:50-10:20</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
 																<tr>
-                                                                    <td>10:20-10:50(30")</td>
+                                                                    <td>10:20-10:50</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
@@ -7398,7 +7441,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>16:00-17:30(90")</td>
+                                                <td>16:00-17:30</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Plenary Oral (가안)</p>
                                                 </td>
@@ -7418,17 +7461,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td><!-- 09:20-09:50(30")</td>
+                                                                    <td><!-- 09:20-09:50</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><!-- 09:50-10:20(30")</td>
+                                                                    <td><!-- 09:50-10:20</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
                                             					<tr>
-                                                                    <td><!-- 10:20-10:50(30")</td>
+                                                                    <td><!-- 10:20-10:50</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
@@ -7461,7 +7504,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>12:50-13:50(60")</td>
+                                                <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Guided Poster Presentation 2</p>
                                                 </td>

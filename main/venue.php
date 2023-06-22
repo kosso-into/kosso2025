@@ -28,7 +28,7 @@ $info = sql_fetch($sql_info);
 		</ul>
 	</div> -->
     <h1 class="page_title">Conrad Seoul</h1>
-	<!-- HUBDNCLHJ : app에선 타이틀 Conrad Seoul>Venue로 변경 됨. 메뉴 위치 이동 됨. 노출되는 컨텐츠 [호텔 이름과 주소, 연락처]+[지도]. -->
+	<!-- HUBDNCLHJ : app에선 타이틀 Conrad Seoul>Venue로 변경 됨(아래 h1.page_title 주석해제). 메뉴 위치 이동 됨. 노출되는 컨텐츠 [호텔 이름과 주소, 연락처]+[지도]. -->
     <!-- <h1 class="page_title">Venue</h1> -->
     <div class="inner">
         <!-- 호텔 이름과 주소, 연락처 -->

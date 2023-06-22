@@ -66,7 +66,7 @@
                                             <img src="./img/img_speakers06.jpg">
                                         </div>
                                         <div class="desc_wrap flex1">
-                                            <p class="">TBD</p>
+                                            <p class="">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
                                             <div>
                                                 <h4 class="title">Tamas Horvath</h4>
                                                 <h5>Yale University, USA</h5>
@@ -146,7 +146,7 @@
                                             <img src="./img/img_prof_Zachary A_Knight.png">
                                         </div>
                                         <div class="desc_wrap flex1">
-                                            <p class="">Dopamine Subsystems That Track Internal States</p>
+                                            <p class="">Brainstem Circuits that Control Ingestion</p>
                                             <div>
                                                 <h4 class="title">Zachary Knight</h4>
                                                 <h5>University of California, San Francisco, USA</h5>
@@ -163,10 +163,10 @@
                                 <div class="bottom_wrap">
                                     <div class="flex" id="symposia">
                                         <div class="profile_wrap">
-                                            <img src="./img/img_prof_jae_Heon_Kang.jpg">
+                                            <img src="./img/img_prof_jae_Heon_Kang.png">
                                         </div>
                                         <div class="desc_wrap flex1">
-                                            <p class="">TBD</p>
+                                            <p class="">National Obesity Strategy in Korea: Past, Present and Future</p>
                                             <div>
                                                 <h4 class="title">Jae-Heon Kang</h4>
                                                 <h5>Sungkyunkwan University, Republic of Korea</h5>

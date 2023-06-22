@@ -140,7 +140,7 @@ if ($during_yn !== "Y") {
 						<?php
 							$name_kor_cont = "<tr> 
 												<th>성명</th>
-												<td>".$member_data['first_name_kor']." ".$member_data['last_name_kor']."</td>
+												<td>".$member_data['last_name_kor']."".$member_data['first_name_kor']."</td>
 											</tr>";
 							if($member_data['nation_en'] == "Republic of Korea"){
 								echo $name_kor_cont;
@@ -295,6 +295,16 @@ if ($during_yn !== "Y") {
 							</p>	
 							<input type="text" name="nutritionist_number" id="nutritionist_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : ""?>">
 						</li>
+                        <li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+                            <p class="label">
+                                임상영양사 자격번호  <span class="red_txt">*</span>
+                                <input type="checkbox" id="app4" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["dietitian_number"] ? "checked" : ""?>>
+                                <label for="app4">
+                                    <i></i> <?=$locale("not_applicable")?>
+                                </label>
+                            </p>
+                            <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : ""?>">
+                        </li>
 					<?php }?>
 
                     <!-- <li id="chk_org"> -->

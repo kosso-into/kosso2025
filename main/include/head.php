@@ -12,8 +12,6 @@
     <meta property="og:image" content="/main/img/poster2023.jpg" />
     <meta property="og:description" content="2023 ICOMES hosted by KSSO">
     <meta name="description" content="2023 ICOMES hosted by KSSO">
-	<!-- 개발서버일 경우에만 해당 부분 추가 -->
-	<meta name="robots" content="noindex" />
 
     <!-- datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">

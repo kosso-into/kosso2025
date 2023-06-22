@@ -344,15 +344,25 @@ $(document).ready(function(){
 	});
 
 	//App 탭
-	$(".app_tab li").click(function() {
-		var i = $(this).index();
-		$(this).parent("ul").next(".inner").find(".tab_cont").removeClass("on");
-		$(this).parent("ul").next(".inner").find(".tab_cont").eq(i).addClass("on");
-		$(this).siblings("li").removeClass("on");
-		$(this).addClass("on");
-		console.log($(this).parent("ul").next(".inner").find(".tab_cont"))
-	});
-
+	if ($(".container").hasClass("app_scientific")){
+		$(".app_tab li").click(function() {
+            var i = $(this).index();
+            $(this).parent("ul").next(".inner").children(".tab_wrap").children(".tab_cont").removeClass("on");
+            $(this).parent("ul").next(".inner").children(".tab_wrap").children(".tab_cont").eq(i).addClass("on");
+            $(this).siblings("li").removeClass("on");
+            $(this).addClass("on");
+        });
+	}else {
+		$(".app_tab li").click(function() {
+			var i = $(this).index();
+			$(this).parent("ul").next(".inner").find(".tab_cont").removeClass("on");
+			$(this).parent("ul").next(".inner").find(".tab_cont").eq(i).addClass("on");
+			$(this).siblings("li").removeClass("on");
+			$(this).addClass("on");
+			console.log($(this).parent("ul").next(".inner").find(".tab_cont"))
+		});
+	}
+	
 	// APP 메뉴 탭 높이 맞춤
 	appMenuTab();
 
@@ -384,6 +394,12 @@ $(document).ready(function(){
 	if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
 		document.querySelector(".app_main .app_main_box").style.height = window.innerHeight + "px";
 	}
+
+	// preventDefault
+	//$(".no_event").on("click", function(event){
+	//	event.preventDefault();
+	//	event.stopPropagation();
+	//})
 
 	// Scientific Program 내 스케줄 버튼 토글
 	$(".app_scientific .info button").click(function(event){
@@ -437,6 +453,7 @@ $(document).ready(function(){
 	};
 
 	$(".schedule_area .grade_title").click(function(){
+		$(this).toggleClass("on");
 		$(this).next(".program_detail_ul").slideToggle();
 	});
 });

@@ -86,7 +86,7 @@
 												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
 											END
 										) AS payment_methods,
-										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number,
+										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,
 										rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn,
 										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by, 
 										n.nation_ko, n.nation_en,
@@ -174,6 +174,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">의사면허번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">전문의번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">영양사자격번호</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">임상영양사자격번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">운동사 신청(Y/N)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제상태</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록비</th>';
@@ -279,6 +280,7 @@
 		$licence_number = $rl['licence_number'] ?? 'Not applicable';
 		$specialty_number = $rl['specialty_number'] ?? 'Not applicable';
 		$nutritionist_number = $rl['nutritionist_number'] ?? 'Not applicable';
+        $dietitian_number = $rl['dietitian_number'] ?? 'Not applicable';
 
 		$is_exercise = ($rl['member_type'] == "Exercise Specialist") ? 'Y' : 'N';
 
@@ -303,9 +305,10 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["member_type"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["member_other_type"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["date_of_birth"].'</td>';
-		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'.strval($licence_number).'</td>';
-		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'.strval($specialty_number).'</td>';
-		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'.strval($nutritionist_number).'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $licence_number.'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $specialty_number .'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $nutritionist_number .'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $dietitian_number.'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$is_exercise.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_status"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
@@ -385,9 +388,9 @@
 						<tr class="tr_center">
 							<th>Registration No.</th>
 							<th>결제상태</th>
+							<th>결제방법</th>
 							<th>ID(Email)</th>
 							<th>Member Type</th>
-							<th>참석유형</th>
 							<th>Country</th>
 							<th>KSSO 회원여부</th>
 							<th>Name</th>
@@ -411,15 +414,15 @@
 								<tr class="tr_center">
 									<td><?= $register_no; ?></td>
 									<td class="<?=$list["payment_status"] == "결제대기" ? "red_color" : "blue_color"?>"><?=isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td>
+									<td><?=isset($list["payment_methods"]) ? $list["payment_methods"] : "-" ?></td>
 									<td><a href="./member_detail.php?idx=<?=isset($list["member_idx"]) ? $list["member_idx"] : "" ?>"><?=isset($list["email"]) ? $list["email"] : "-" ?></a></td>
 									<td><?=isset($list["member_type"]) ? $list["member_type"] : "-" ?></td>
-									<td><?=isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-"?></td>
 									<td><?=isset($list["nation_ko"]) ? $list["nation_ko"] : "-" ?></td>
 									<td><?=$list["ksola_member_status"]?></td>
 									<td><a href="./registration_detail.php?idx=<?=isset($list["registration_idx"]) ? $list["registration_idx"] : ""?>"><?=isset($list["name"]) ? $list["name"] : "-" ?></a></td>
 									<td><?=$list["affiliation"]?></td>
 									<td><?=$list["phone"]?></td>
-									<td><?=$list["attendance_type_text"]?></td>
+                                    <td><?=isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-"?></td>
 									<td><?=$list["occupation_type"]?></td>
 									<td><?=$list["member_type"]?></td>
 									<td><?=isset($list["is_score_text"]) ? $list["is_score_text"] : "-"?></td>

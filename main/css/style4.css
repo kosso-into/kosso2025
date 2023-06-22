@@ -609,6 +609,8 @@ section.container.organizing {padding-bottom: 190px;}
 section.container .page_title {background: #f2f2f2; width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 40px 0 48px;}
 .inner {padding-top:50px;}
 h3.title:before {content:'';display: inline-block;  width: 9px;height: 9px; background: transparent; border:6px solid #4267C5; margin-bottom: 2px; border-radius:50%; margin-right: 10px; vertical-align: middle;}
+h3.title.icon_none {padding-left:0;}
+h3.title.icon_none:before {display:none;}
 section.container.login .page_title {color:#fff; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
 .invited_speaker .speaker_list > li {padding: 0px; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
 .invited_speaker .speaker_list .top_wrap {padding: 22px; background:linear-gradient(-45deg, #F8F8F8 40%, #efefef 40%);margin-bottom: 0; display:flex; align-items:center; justify-content:space-between;}
@@ -736,7 +738,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 /*Program Detail*/
 .program_detail table {table-layout:fixed;}
-.program_detail table .col_date {width: 184px;}
+.program_detail table .col_date {width: 140px;}
 .program_detail table td {white-space:normal;}
 .program_detail .tab_li li {padding: 6px 16px 8px; margin-right:10px; margin-bottom:8px;}
 .program_detail .tab_li li a {font-size:18px;}
@@ -1335,8 +1337,8 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	float: right;
 }
 
-
-
+.registration_rating_guides .title + .details {margin-bottom:60px;}
+.registration_rating_guides .title + .details:last-of-type {margin-bottom:0;}
 
 /*======================== 
 	23.06.13 APP CSS
