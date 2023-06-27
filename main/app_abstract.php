@@ -19,6 +19,7 @@
 							<option value="">Keynote Lecture</option>
 							<option value="">Best Article in JOMES</option>
 							<option value="">Symposium</option>
+							<option value="">Obesity Treatment Guidelines Symposium</option>
 							<option value="">Pre-congress Symposium</option>
 							<option value="">Breakfast Symposium</option>
 							<option value="">Luncheon Symposium</option>

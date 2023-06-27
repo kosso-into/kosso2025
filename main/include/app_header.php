@@ -45,6 +45,7 @@
 						<li><a href="/main/app_abstract.php">Keynote Lecture</a></li>
 						<li><a href="/main/app_abstract.php">Best Article in JOMES</a></li>
 						<li><a href="/main/app_abstract.php">Symposium</a></li>
+						<li><a href="/main/app_abstract.php">Obesity Treatment Guidelines Symposium</a></li>
 						<li><a href="/main/app_abstract.php">Pre-congress Symposium</a></li>
 						<li><a href="/main/app_abstract.php">Breakfast Symposium</a></li>
 						<li><a href="/main/app_abstract.php">Luncheon Symposium</a></li>
@@ -52,9 +53,12 @@
 						<li><a href="/main/app_abstract.php">Sponsored Session</a></li>
 						<li><a href="/main/app_abstract.php">Joint Symposium</a></li>
 						<li><a href="/main/app_abstract.php">Oral Presentation</a></li>
-						<li><a href="/main/app_abstract.php">Guided Poster <br/>Presentation</a></li>
+						<li><a href="/main/app_abstract.php">Guided Poster Presentation</a></li>
 						<li><a href="/main/app_abstract.php">Poster Exhibition</a></li>
 					</ul>
+				</li>
+				<li>
+					<a href="/main/app_invited_speakers.php">Invited Speakers</a>
 				</li>
 				<li>
 					<a href="javascript:;">Sponsorship</a>
@@ -64,7 +68,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/main/registration_rating_guides.php">평점 안내</a>
+					<a href="/main/registration_rating_guides.php">평점 안내<br/>(Korean Only)</a>
 				</li>
 				<li>
 					<a href="/main/app_notice.php">Notice</a>
@@ -72,14 +76,14 @@
 				<li>
 					<a href="javascript:;">Survey</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="javascript:;">Stamp Tour</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 						<li><a href="/main/app_my_stamp.php">My Stamp</a></li>
 						<li><a href="/main/app_tour_map.php">Tour Map</a></li>
 					</ul>
-				</li>
+				</li> -->
 				<li>
 					<a href="javascript:;" download="">Program Book <br/>Download</a>
 				</li>

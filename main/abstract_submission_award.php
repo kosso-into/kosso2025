@@ -162,7 +162,7 @@
 							<tr>
 								<td class="text_center">지원자격</td>
 								<td class="text_center">두 가지 모두 충족 시<br>1. 대한비만학회 정회원 및 평생회원<br>2. 의사 면허 소지자</td>
-								<td class="text_center">의사 외 간호사, 약사, 연구자 등</td>
+								<td class="text_center">영양사, 운동사 등</td>
 							</tr>
 							<tr>
 								<td class="text_center">지원범위</td>

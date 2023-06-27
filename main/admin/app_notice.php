@@ -345,7 +345,7 @@
 	var html = '<?=$html?>';
 
 	$(document).ready(function(){
-		$(".app_nav li:nth-child(3)").addClass("on");
+		$(".app_nav li").eq(0).addClass("on");
 	});
 	$(".app_pin_btn").on("click",function(){
 		$(this).toggleClass("on");

@@ -584,6 +584,7 @@
 								</td>
 								<td class="green_bg pointer" name="symposium_20">
 									Symposium 20
+									<p>Basic Exercise with Obesity</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer best_jomes" name="jomes_session">
@@ -601,6 +602,7 @@
 								<td>17:00-17:40</td>
 								<td class="pink_bg pointer" name="plenary_lecture_4" colspan="3">
 									Plenary Lecture 4
+									<p class="bold">Current and Future in Obesity Management</p>
 									<p>John Wilding (Liverpool University, UK)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>

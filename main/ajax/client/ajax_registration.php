@@ -53,6 +53,9 @@
 			case "Participants":
 				$attendance_type = 4;
 				break;
+//            case "Sponsor":
+//                $attendance_type = 5;
+//                break;
 		}
 
 		$category            = isset($data["category"]) ? $data["category"] : "";										// Category

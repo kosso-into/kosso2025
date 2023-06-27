@@ -19,11 +19,11 @@
 </header>
 <nav class="nav app_nav">
 	<ul>
-		<li class="main_nav"><a href="javascript:;">회원관리</a></li>
-		<li class="main_nav"><a href="javascript:;">프로그램 관리</a></li>
+		<!-- <li class="main_nav"><a href="javascript:;">회원관리</a></li> -->
+		<!-- <li class="main_nav"><a href="javascript:;">프로그램 관리</a></li> -->
 		<li class="main_nav"><a href="javascript:;">Notice 관리</a></li>
-		<li class="main_nav"><a href="javascript:;">Sponsorship 관리</a></li>
-		<li class="main_nav"><a href="javascript:;">File Upload</a></li>
+		<!-- <li class="main_nav"><a href="javascript:;">Sponsorship 관리</a></li> -->
+		<!-- <li class="main_nav"><a href="javascript:;">File Upload</a></li> -->
 	</ul>
 </nav>
 <script>
