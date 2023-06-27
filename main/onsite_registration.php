@@ -1,5 +1,15 @@
 <?php include_once('./include/head.php');?>
 
+<?php
+    $nation_query = "SELECT
+                                *
+                            FROM nation
+                            ORDER BY 
+                            idx = 25 DESC, nation_en ASC";
+    $nation_list_query = $nation_query;
+    $nation_list = get_data($nation_list_query);
+?>
+
 <style>
 	.ksola_signup {
 		display:none;
@@ -224,13 +234,16 @@
 							<th><span class="red_txt">*</span> Type of Participation</th>
 							<td>
 								<div class="max_normal">
-									<select id="nation_no" name="nation_no" class="required"> 
-										<option value="" selected>Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
+									<select id="participation_type" name="participation_type" class="required">
+                                        <option value="" selected hidden>Choose</option>
+                                        <?php
+                                        $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
+                                        foreach($participation_arr as $a_arr) {
+                                            $selected = $prev["attendance_type"] == $a_arr ? "selected" : "";
+
+                                            echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+                                        }
+                                        ?>
 									</select>
 								</div>
 							</td>
@@ -238,65 +251,87 @@
 						<tr>
 							<th><span class="red_txt">*</span> Type of Occupation</th>
 							<td>
-								<div class="max_normal">
-									<select id="nation_no" name="nation_no" class="required"> 
-										<option value="" selected>Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-									</select>
-								</div>
+								<ul class="max_normal flex_hide">
+                                    <li>
+                                        <select id="occupation" name="occupation" class="required">
+                                            <option value="" selected hidden>Choose</option>
+                                            <?php
+                                            $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
+
+                                            foreach($occupation_arr as $a_arr) {
+                                                $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
+
+                                                echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </li>
+                                    <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
+                                    <li class="hide_input <?=$prev["occupation_type"] === "Others" ? "on" : ""?>">
+                                        <input type="hidden" name="occupation_prev_input" value="<?=$prev["occupation_other_type"] ?? ""?>"/>
+                                        <input type="text" id="occupation_input" name="occupation_input" value="<?=$prev["occupation_other_type"] ?? ""?>">
+                                    </li>
+								</ul>
 							</td>
 						</tr>
 						<tr>
 							<th><span class="red_txt">*</span> Category</th>
 							<td>
-								<div class="max_normal">
-									<select id="nation_no" name="nation_no" class="required"> 
-										<option value="" selected>Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-										<option value="">Choose</option>
-									</select>
-								</div>
+								<ul class="max_normal flex_hide">
+                                    <li>
+                                        <select id="category" name="category" class="required">
+                                            <option value="" selected hidden>Choose</option>
+                                            <?php
+                                            $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
+
+                                            foreach($category_arr as $a_arr) {
+                                                $selected = $prev["member_type"] == $a_arr ? "selected" : "";
+
+                                                echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </li>
+                                    <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
+                                    <li class="hide_input <?=$prev["member_type"] === "Others" ? "on" : ""?>">
+                                        <input type="hidden" name="title_prev_input" value="<?=$prev["member_other_type"] ?? ""?>"/>
+                                        <input type="text" id="title_input" name="title_input" value="<?=$prev["member_other_type"] ?? ""?>">
+                                    </li>
+								</ul>
 							</td>
 						</tr>
-						<tr>
+						<tr class="">
 							<th><span class="red_txt">*</span> 평점 신청</th>
 							<td>
 								<div class="label_wrap">
-									<input type="radio" class="new_radio" name="apply" id="apply1">
-									<label for="apply1"><i></i>신청함</label>	
-									<input checked="" type="radio" class="new_radio" name="apply" id="apply2">
-									<label for="apply2"><i></i>신청 안 함</label>	
+									<input type="radio" class="new_radio" name="review" id="review1" value="1">
+									<label for="review1"><i></i>신청함</label>
+									<input checked="" type="radio" class="new_radio" name="review" id="review2" value="0">
+									<label for="review2"><i></i>신청 안 함</label>
 								</div>
 							</td>
 						</tr>
-						<tr>
+						<tr class="review_sub_list">
 							<th>의사 면허번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text">
+									<input type="text" name="licence_number" id="licence_number">
 								</div>
 							</td>
 						</tr>
-						<tr>
+						<tr class="review_sub_list">
 							<th>영양사 면허번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text">
+									<input type="text" name="nutritionist_number" id="nutritionist_number">
 								</div>
 							</td>
 						</tr>
-						<tr>
+						<tr class="review_sub_list">
 							<th>임상영양사 자격번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text">
+									<input type="text" name="dietitian_number" id="dietitian_number">
 								</div>
 							</td>
 						</tr>
@@ -304,26 +339,54 @@
 							<th><span class="red_txt">*</span> Others</th>
 							<td>
 								<ul class="radio_list">
-									<li>
-										<input type="radio" class="new_radio" name="other" id="other1">
-										<label for="other1"><i></i>Welcome Reception</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="other" id="other2">
-										<label for="other2"><i></i>Day 2 Breakfast Symposium</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="other" id="other3">
-										<label for="other3"><i></i>Day 2 Luncheon Symposium</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="other" id="other4">
-										<label for="other4"><i></i>Day 3 Breakfast Symposium</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="other" id="other5">
-										<label for="other5"><i></i>Day 3 Luncheon Symposium</label>
-									</li>
+                                    <?php
+                                        $others_arr = array(
+												"Welcome Reception",
+												"Day 2 Breakfast Symposium",
+												"Day 2 Luncheon Symposium",
+												"Day 3 Breakfast Symposium",
+												"Day 3 Luncheon Symposium"
+										);
+
+                                        for($i = 1; $i <= count($others_arr); $i++) {
+                                            $content = $others_arr[$i-1];
+                                            $checked = "";
+
+                                            if($content && in_array($content, $prev_list)){
+                                                $checked = "checked";
+                                            }
+
+                                            echo "
+                                            <li>
+                                                <input type='checkbox' class='checkbox' id='others".$i."' name='others".$i."' value='".$others_arr[$i-1]."' ".$checked.">
+                                                <label for='others".$i."'>
+                                                    <i></i>".$others_arr[$i-1]."
+                                                </label>
+                                            </li>
+                                            ";
+
+                                        }
+                                    ?>
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="other" id="other1">-->
+<!--										<label for="other1"><i></i>Welcome Reception</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="other" id="other2">-->
+<!--										<label for="other2"><i></i>Day 2 Breakfast Symposium</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="other" id="other3">-->
+<!--										<label for="other3"><i></i>Day 2 Luncheon Symposium</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="other" id="other4">-->
+<!--										<label for="other4"><i></i>Day 3 Breakfast Symposium</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="other" id="other5">-->
+<!--										<label for="other5"><i></i>Day 3 Luncheon Symposium</label>-->
+<!--									</li>-->
 								</ul>
 							</td>
 						</tr>
@@ -331,46 +394,81 @@
 							<th><span class="red_txt">*</span> Where did you get the information about the ICOMES 2023?</th>
 							<td>
 								<ul class="radio_list">
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information1">
-										<label for="information1"><i></i>Website of the Korea Society of Obesity</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information2">
-										<label for="information2"><i></i>Promotional email from the Korea Society of Obesity</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information3">
-										<label for="information3"><i></i>Advertising email or the bulletin board from the relevant society</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information4">
-										<label for="information4"><i></i>Information about affiliated companies/organizations</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information5">
-										<label for="information5"><i></i>Invited as a speaker, chairperson, and panelist</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information6">
-										<label for="information6"><i></i>Recommended by a professor</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information7">
-										<label for="information7"><i></i>Recommended by acquaintances</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information8">
-										<label for="information8"><i></i>Pharmaceutical company</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information9">
-										<label for="information9"><i></i>Medical community (MEDI:GATE, Dr.Ville, etc.)</label>
-									</li>
-									<li>
-										<input type="radio" class="new_radio" name="information" id="information10">
-										<label for="information10"><i></i>Medical news and journals</label>
-									</li>
+                                    <?php
+                                        $conference_info_arr = array(
+                                            "Website of the Korea Society of Obesity",
+                                            "Promotional email from the Korea Society of Obesity",
+                                            "Advertising email or the bulletin board from the relevant society",
+                                            "Information about affiliated companies/organizations",
+                                            "Invited as a speaker, moderator, and panelist",
+                                            "Recommended by a professor",
+                                            "Recommended by acquaintances",
+                                            "Pharmaceutical company",
+                                            "Medical community (MEDI:GATE, Dr.Ville, etc.)",
+                                            "Medical news and journals"
+                                        );
+
+                                        $prev_list = explode("*", $prev["conference_info"] ?? "");
+
+                                        for($i = 1; $i <= count($conference_info_arr); $i++) {
+                                            $content = $conference_info_arr[$i-1];
+                                            $checked = "";
+
+                                            if($content && in_array($content, $prev_list)){
+                                                $checked = "checked";
+                                            }
+
+                                            echo "
+                                            <li>
+                                                <input type='checkbox' class='checkbox' id='list".$i."' name='list' value='".$conference_info_arr[$i-1]."' ".$checked.">
+                                                <label for='list".$i."'>
+                                                    <i></i>".$conference_info_arr[$i-1]."
+                                                </label>
+                                            </li>
+                                            ";
+
+                                        }
+                                    ?>
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information1">-->
+<!--										<label for="information1"><i></i>Website of the Korea Society of Obesity</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information2">-->
+<!--										<label for="information2"><i></i>Promotional email from the Korea Society of Obesity</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information3">-->
+<!--										<label for="information3"><i></i>Advertising email or the bulletin board from the relevant society</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information4">-->
+<!--										<label for="information4"><i></i>Information about affiliated companies/organizations</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information5">-->
+<!--										<label for="information5"><i></i>Invited as a speaker, chairperson, and panelist</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information6">-->
+<!--										<label for="information6"><i></i>Recommended by a professor</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information7">-->
+<!--										<label for="information7"><i></i>Recommended by acquaintances</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information8">-->
+<!--										<label for="information8"><i></i>Pharmaceutical company</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information9">-->
+<!--										<label for="information9"><i></i>Medical community (MEDI:GATE, Dr.Ville, etc.)</label>-->
+<!--									</li>-->
+<!--									<li>-->
+<!--										<input type="radio" class="new_radio" name="information" id="information10">-->
+<!--										<label for="information10"><i></i>Medical news and journals</label>-->
+<!--									</li>-->
 								</ul>
 							</td>
 						</tr>
@@ -403,7 +501,21 @@
 
 <script>
 	$(document).ready(function(){
-		$("#user1").change(function(){
+        $("select[name=nation_no]").on("change", function(){
+            const val = $(this).val();
+            // const prevTitle = $("input[name=title_prev_input]").val() ?? "";
+
+            if(val == 'Repulic of Korea'){
+                if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+                    $(this).parent("li").next('.hide_input').addClass("on");
+                }
+            }else{
+                $(this).parent("li").next('.hide_input').removeClass("on");
+                $("input[name=title_input]").val(prevTitle);
+            }
+        });
+
+        $("#user1").change(function(){
 			if($("#user1").prop('checked') == true) {
 				$(".ksola_signup").addClass("on");
 			}
@@ -414,5 +526,33 @@
 				$("input[name=ksola_member_type]").val("");
 			}
 		});
+
+        $("select[name=category]").on("change", function(){
+            const val = $(this).val();
+            const prevTitle = $("input[name=title_prev_input]").val() ?? "";
+
+            if(val == 'Others'){
+                if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+                    $(this).parent("li").next('.hide_input').addClass("on");
+                }
+            }else{
+                $(this).parent("li").next('.hide_input').removeClass("on");
+                $("input[name=title_input]").val(prevTitle);
+            }
+        });
+
+        $("select[name=occupation]").on("change", function(){
+            const val2 = $(this).val();
+            const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
+
+            if(val2 == 'Others'){
+                if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+                    $(this).parent("li").next('.hide_input').addClass("on");
+                }
+            }else{
+                $(this).parent("li").next('.hide_input').removeClass("on");
+                $("input[name=occupation_input]").val(prevTitle2);
+            }
+        });
 	});
 </script>

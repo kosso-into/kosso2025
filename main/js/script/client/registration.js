@@ -187,7 +187,10 @@ function calc_fee(obj){
 		}
 	}
 
-	if(participation_type == "Participants"){
+	if(participation_type == "Participants" || participation_type =="Sponsor"){
+		// if(participation_type == "Sponsor"){
+		// 	category="Others";
+		// }
 		$.ajax({
 			url : PATH+"ajax/client/ajax_registration.php",
 			type : "POST",
@@ -393,3 +396,14 @@ function requireChecked(){
 
 	return 1;
 }
+
+//0627 공백,특수문자 사용 방지
+// function checkRegExp(obj)
+// {
+// 	var regExp = /[ \{\}\[\]\?.,;:|\~!^\-_+┼<>@\#$%&\'\"\\=]/gi;
+// 	if( regExp.test(obj.value) ){
+// 		obj.focus();
+// 		obj.value = obj.value.substring( 0 , obj.value.length - 1 ); // 입력한 특수문자 한자리 지움
+// 		obj.value = obj.value.replace(' ',''); // 공백제거
+// 	}
+// }

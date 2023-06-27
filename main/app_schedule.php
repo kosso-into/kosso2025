@@ -17,10 +17,10 @@
 					<div class="main">
 						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong (Seoul National University)</p>
 						<div class="info">
 							<button></button>
-							<span class="time">07:30-08:20(50”)</span>	
+							<span class="time">07:30-08:20</span>	
 							<span class="branch">Room 1</span>	
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 							<p class="title">Obesity and the Risk of Cancer</p>
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
-								<span class="time">09:50-10:15(25”)</span>
+								<span class="time">09:50-10:15</span>
 							</div>
 						</div>
 					</div>
@@ -39,10 +39,10 @@
 					<div class="main">
 						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong (Seoul National University)</p>
 						<div class="info">
 							<button></button>
-							<span class="time">07:30-08:20(50”)</span>	
+							<span class="time">07:30-08:20</span>	
 							<span class="branch">Room 1</span>	
 						</div>
 					</div>
@@ -52,7 +52,7 @@
 							<p class="title">Obesity and the Risk of Cancer</p>
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
-								<span class="time">09:50-10:15(25”)</span>
+								<span class="time">09:50-10:15</span>
 							</div>
 						</div>
 					</div>
@@ -64,10 +64,10 @@
 					<div class="main">
 						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong (Seoul National University)</p>
 						<div class="info">
 							<button></button>
-							<span class="time">07:30-08:20(50”)</span>	
+							<span class="time">07:30-08:20</span>	
 							<span class="branch">Room 1</span>	
 						</div>
 					</div>
@@ -77,7 +77,7 @@
 							<p class="title">Obesity and the Risk of Cancer</p>
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
-								<span class="time">09:50-10:15(25”)</span>
+								<span class="time">09:50-10:15</span>
 							</div>
 						</div>
 					</div>
@@ -86,10 +86,10 @@
 					<div class="main">
 						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong (Seoul National University)</p>
 						<div class="info">
 							<button></button>
-							<span class="time">07:30-08:20(50”)</span>	
+							<span class="time">07:30-08:20</span>	
 							<span class="branch">Room 1</span>	
 						</div>
 					</div>
@@ -99,7 +99,7 @@
 							<p class="title">Obesity and the Risk of Cancer</p>
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
-								<span class="time">09:50-10:15(25”)</span>
+								<span class="time">09:50-10:15</span>
 							</div>
 						</div>
 					</div>
@@ -111,10 +111,10 @@
 					<div class="main">
 						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong (Seoul National University)</p>
 						<div class="info">
 							<button></button>
-							<span class="time">07:30-08:20(50”)</span>	
+							<span class="time">07:30-08:20</span>	
 							<span class="branch">Room 1</span>	
 						</div>
 					</div>
@@ -124,7 +124,7 @@
 							<p class="title">Obesity and the Risk of Cancer</p>
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
-								<span class="time">09:50-10:15(25”)</span>
+								<span class="time">09:50-10:15</span>
 							</div>
 						</div>
 					</div>
@@ -133,10 +133,10 @@
 					<div class="main">
 						<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 						<p class="title">Breakfast Symposium 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong(Seoul National University)</p>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br>Gildong Hong (Seoul National University)</p>
 						<div class="info">
 							<button></button>
-							<span class="time">07:30-08:20(50”)</span>	
+							<span class="time">07:30-08:20</span>	
 							<span class="branch">Room 1</span>	
 						</div>
 					</div>
@@ -146,7 +146,7 @@
 							<p class="title">Obesity and the Risk of Cancer</p>
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
-								<span class="time">09:50-10:15(25”)</span>
+								<span class="time">09:50-10:15</span>
 							</div>
 						</div>
 					</div>

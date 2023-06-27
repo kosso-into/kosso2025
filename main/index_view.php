@@ -182,8 +182,8 @@
 <div class="speakers_wrap">
 	<div class="container">
 		<h3 class="title">Plenary &amp; Keynote Speakers</h3>
-		<div class="speakers_slick">
-			<ul class="main_speaker2 slick-slider">
+		<div class="">
+			<ul class="main_speaker2">
 				<li class="index_speaker5">
 					<div class="profile_circle"><div class="profile_wrap"></div></div>
 					<h5 class="title">Thiruma V. Arumugam</h5>
@@ -309,6 +309,7 @@
 -->
 <script>
 	$('document').ready(function(){
+		/*
 		$('.main_speaker2').slick({
 			dots: false,
 			navigation: true,
@@ -348,5 +349,6 @@
 				}
 			]
 		});
+		*/
 	});
 </script>

@@ -686,7 +686,7 @@ if ($during_yn !== "Y") {
 														<input type="text" placeholder="Promotion code" name="promotion_code" value="<?=$prev["promotion_code"] ?? ""?>">
 														<input type="hidden" name="promotion_confirm_code" value="<?=$prev["promotion_code"] ?? ""?>"/>
 													</li>
-													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>"></li>
+													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100"></li>
 													<li class="flex_none">
 														<button type="button" class="btn gray2_btn form_btn apply_btn">Apply</button>
 													</li>
@@ -747,6 +747,7 @@ if ($during_yn !== "Y") {
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
 	$(document).ready(function() {
+
 		$('.etc1').hide();
 
 		$(document).on("click", "#license_checkbox", function() {
@@ -812,7 +813,7 @@ if ($during_yn !== "Y") {
 				return
 			}
 
-		
+
 			if(promotionCode == 0){
 				$("input[name=promotion_confirm_code]").val(0).change();
 			}else if(promotionCode == 1){

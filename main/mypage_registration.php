@@ -163,6 +163,9 @@
 							case 4:
 								$attendance_type = "General Participants";
 								break;
+//                            case 5:
+//                                $attendance_type = "Sponsor";
+//                                break;
 						}
 
 						// Others

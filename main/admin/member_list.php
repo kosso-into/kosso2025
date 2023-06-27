@@ -120,7 +120,7 @@
 	$html .= '<tbody>';
 	foreach($member_list as $mk => $ml){
 		$nation_type = ($ml["nation_no"] == 25) ? "국내" : "국외";
-		$name_kor = ($ml["nation_no"] == 25) ? $ml["first_name_kor"].$ml["last_name_kor"] : "-";
+		$name_kor = ($ml["nation_no"] == 25) ? $ml["last_name_kor"].$ml["first_name_kor"] : "-";
 
 		if (!empty($ml['title_option'])) {
 			switch($ml['title_option']) {
@@ -271,7 +271,7 @@
 							<td><?=$list["first_name"]." ".$list["last_name"]?></td>
 							<td><?=$list["first_name"]?></td>
 							<td><?=$list["last_name"]?></td>
-							<td><?=$list["first_name_kor"]." ".$list["last_name_kor"]?></td> <!-- 국문 -->
+							<td><?=$list["last_name_kor"]."".$list["first_name_kor"]?></td> <!-- 국문 -->
 							<td><?=$list["affiliation"]?></td>
 							<td><?=$list["phone"]?></td>
 							<td><?=$list["regist_date"]?></td>

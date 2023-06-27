@@ -43,7 +43,8 @@
 .app_scientific .chairperson span {font:inherit;}
 .app_scientific .info {display:flex; align-items:center;}
 .app_scientific .info button {width:13px; height:13px; border-radius:3px; border:1px solid #F5AA02; margin-right:4px; background:url("../img/icons/icon_star_line.svg") no-repeat center /7px;}
-.app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg.svg");}
+/* .app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg.svg");} */
+.app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg_wh.svg"); background-color:#F5AA02;}
 .app_scientific .info button + span {margin-right:18px;}
 .app_scientific .info span {margin-right:18px; padding-left:11px; font-size:12px; background: no-repeat center left /10px;}
 .app_scientific .info .time {background-image:url("../img/icons/icon_clock_line.svg");}
@@ -54,7 +55,7 @@
 .app_scientific .detail > div.detail_text {background-color:#ECECEC;}
 .app_scientific .detail .title {font-weight:bold;}
 .app_scientific .detail_text {font-size: 13px; line-height: 1.3; color:#707070;}
-.app_scientific .detail .chairperson {padding-bottom:10px;}
+.app_scientific .detail .chairperson {padding-bottom:10px; display:flex; align-items:center; flex-wrap: wrap; gap:2px 8px;}
 
 /*App main*/
 .container.app_version.main { /*padding-bottom: 450px;*/ margin-top: 0; padding-top: 60px !important; }
@@ -71,3 +72,9 @@
 .schedule_area .grade_title {position:relative;}
 .schedule_area .grade_title:after {content:''; display:block; width:10px; height:6px; background:url("../img/icons/icon_arrow_up.svg") no-repeat center /cover; position:absolute; top:50%; right:8px; transform:translateY(-50%);}
 .schedule_area .grade_title.on:after {transform:translateY(-50%) rotateZ(180deg);}
+
+/*App HAPPENING NOW*/
+.app_scientific.app_happening .program_detail_ul .main, .app_scientific.app_invited_speakers_detail .program_detail_ul .main {padding:8px 44px 8px 18px;}
+.app_scientific .program_detail_ul .main .detail_btn {display:inline-block; width:8px; height:16px; background:url("../img/icons/icon_arrow_next_gray2.svg") no-repeat center / 8px; position:absolute; right:18px; top:50%; transform: translateY(-50%);}
+.app_happening .no_data p {font-size:18px;}
+.app_happening .no_data img {max-width:140px; margin-bottom:20px;}

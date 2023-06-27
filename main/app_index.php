@@ -23,33 +23,51 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="/main/program_glance.php">
 					<img src="./img/icons/app_menu02.svg" alt="">
 					<span>PROGRAM</span>
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="/main/app_abstract.php">
 					<img src="./img/icons/app_menu03.svg" alt="">
 					<span>ABSTRACT</span>
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="/main/app_invited_speakers.php">
 					<img src="./img/icons/app_menu04.svg" alt="">
-					<span>STAMP TOUR</span>
+					<span>INVITED<br/>SPEAKERS</span>
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="/main/app_happening_now.php">
+					<img src="./img/icons/app_menu05.svg" alt="">
+					<span>HAPPENING<br/>NOW</span>
+				</a>
+			</li>
+			<li>
+				<a href="/main/app_floor_plan.php">
 					<img src="./img/icons/app_menu05.svg" alt="">
 					<span>FLOOR PLAN</span>
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="/main/sponsor.php">
 					<img src="./img/icons/app_menu06.svg" alt="">
 					<span>SPONSORSHIP</span>
+				</a>
+			</li>
+			<li>
+				<a href="/main/app_notice.php">
+					<img src="./img/icons/app_menu06.svg" alt="">
+					<span>NOTICE</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.kosso.or.kr/">
+					<img src="./img/icons/app_menu06.svg" alt="">
+					<span>KSSO</span>
 				</a>
 			</li>
 		</ul>

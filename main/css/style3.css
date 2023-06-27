@@ -495,9 +495,11 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.footer_center {width: calc(100% - 427px); padding: 0 20px; }
 	.footer_right {padding-right: 0;}
 
+	.main_speaker2 li {width:calc(50% - 30px);}
+	.main_speaker2 li:nth-child(2n+1) {margin-left:0;}
 	.main_speaker2 .title {font-size:18px; margin: 20px 0 10px;}
 	.main_speaker2 .career {font-size:14px;}
-	.main_speaker2 .profile_circle {width:150px; height:150px;}
+	/* .main_speaker2 .profile_circle {width:150px; height:150px;} */
 	/*.main_speaker2 .profile_circle .profile_wrap {width:130px; height:130px; background-size: 150px; background-position: center top -10px;}*/
 	/*.main_speaker2 .index_speaker1 .profile_wrap {background-size:200px; background-position:top left -22px;}*/
 	/*.main_speaker2 .index_speaker3 .profile_wrap {background-size: auto 200px; background-position:center;}*/
@@ -753,7 +755,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.slick-prev {left: -10px;}
 	.slick-next {right: -10px;}
 	.speakers_wrap_title  {font-size: 35px;}
-	.main_speaker2 .title {font-size: 20px;}
+	.main_speaker2 .title {font-size: 17px;}
 	.main_speaker2 .career {font-size: 13px;}
 	
 	/* main > key dates */
@@ -795,6 +797,8 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 }
 
 @media screen and (max-width: 531px){
+	/* main */
+	.main_speaker2 li {width:100%; margin-left:0 !important;}
 	/* submission_guideline.php */
 	.step_gradation li {width: 50%; min-width: 130px;}
 	.step_gradation li:before {top: 50px;}

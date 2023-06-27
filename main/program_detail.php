@@ -129,7 +129,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:20</td>
+                                                                    <td>17:00-17:25</td>
                                                                     <td class="bold">
                                                                         <!-- Effectiveness of Information and Communications Technology-based Interventions for Obesity and Metabolic Syndrome -->
                                                                     </td>
@@ -139,7 +139,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:40</td>
+                                                                    <td>17:25-17:50</td>
                                                                     <td class="bold">
                                                                         <!-- Female Obesity -->
                                                                     </td>
@@ -149,7 +149,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:40-18:00</td>
+                                                                    <td>17:50-18:15</td>
                                                                     <td class="bold">
                                                                         <!-- Obesity and Healthy Life Expectancy -->
                                                                     </td>
@@ -160,7 +160,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <!-- <td rowspan="3">18:00-18:30</td> -->
-                                                                    <td>18:00-18:30</td>
+                                                                    <td>18:15-18:30</td>
                                                                     <!-- <td rowspan="3" class="bold"> -->
                                                                     <td class="bold">
                                                                         Panel Discussion
@@ -645,9 +645,12 @@ echo '<script type="text/javascript">
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.<br>
-													His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.<br>
-													Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
+													<p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+													<ul>
+														<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+														<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+														<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1422,9 +1425,12 @@ echo '<script type="text/javascript">
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.<br>
-													His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.<br>
-													Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
+													<p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+													<ul>
+														<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+														<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+														<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1910,7 +1916,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li name="plenary_lecture_2_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2205,7 +2211,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li name="plenary_lecture_1_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2229,9 +2235,12 @@ echo '<script type="text/javascript">
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.<br>
-													His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.<br>
-													Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
+													<p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+													<ul>
+														<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+														<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+														<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -2346,7 +2355,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                        <!-- Ontogeny of Hunger -->TBD
+                                                                        <!-- Ontogeny of Hunger -->The Roczen Programme: A Digitally Enabled, Medically-led Intervention for Obesity and T2D
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Laura Falvey</p>(Reset Health, UK)
@@ -2356,7 +2365,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                         <!-- Hypothalamic Glucagon Like Peptide-1 Regulates
-                                                                        Food Intake and Glucose Metabolism -->TBD
+                                                                        Food Intake and Glucose Metabolism -->Management of Obesity and Metabolic Diseases through Digital Intervention: Current Evidence and Future Prospects
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea)
@@ -2416,7 +2425,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li class="opening_address_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2440,7 +2449,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li name="keynote_lecture_1_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2760,7 +2769,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li name="plenary_lecture_2_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2903,7 +2912,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                        <!-- Influence of Social and Environmental Factors on Obesity -->TBD
+                                                                        Influence of Social and Environmental Factors on Nutrition and Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ji-Yun Hwang</p>(Sangmyung University, Republic of Korea)
@@ -2915,7 +2924,7 @@ echo '<script type="text/javascript">
                                                                         Socioeconomic Inequalities in Obesity
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Hyeon-Chang Kim</p>(Yonsei University, Republic of Korea)
+                                                                        <p class="bold">Hyeon Chang Kim</p>(Yonsei University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3016,7 +3025,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                        Age-Related Prevalence of Visceral Fat Obesity, Low Muscle Mass, and Myosteatosis
+                                                                        Changes in Body Composition with Aging: Visceral Fat Obesity, Low Muscle Mass, and Myosteatosis
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hong-Kyu Kim</p>(University of Ulsan, Republic of Korea)
@@ -3227,7 +3236,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:20</td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">
                                                                         <!-- Overview of Semaglutide 2.4 mg (STEP) Clinical
                                                                         Trial Program -->
@@ -3238,7 +3247,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:20-14:40</td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">
                                                                         <!-- GLP-1 Analogues Versus Bariatric and Metabolic
                                                                         Surgery; Physician’s View -->
@@ -3249,7 +3258,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>14:40-15:00</td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">
                                                                         <!-- GLP-1 Analogues Versus Bariatric and Metabolic
                                                                         Surgery; Surgeon’s View -->
@@ -3261,7 +3270,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <!-- <td rowspan="2">15:00-15:30</td> -->
-                                                                    <td>15:00-15:30</td>
+                                                                    <td>15:15-15:30</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td>
@@ -3340,7 +3349,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
-                                                                        <!-- Why Should Adolescence & Young Adult Obesity Be A Priority? -->TBD
+                                                                        Facing Obesity and Type 2 Diabetes: From Childhood to Adulthood
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Dughyun Choi</p>(Soonchunhyang University, Republic of Korea)
@@ -3505,7 +3514,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- The Role of Dapagliflozin in Chronic
                                                                         Kidney
-                                                                        Disease; DAPA-CKD -->TBD
+                                                                        Disease; DAPA-CKD -->FAQ Finder : A Case-based Approach to Prescription of Combination Phentermine plus Topiramate ER
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">So Hyun Chun</p>(Sungkyunkwan University, Republic of Korea)
@@ -3732,9 +3741,7 @@ echo '<script type="text/javascript">
                                                                         Using Phentermine/Topiramate ER -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Yu-Jin Kwon</p>
-                                                                        (Yonsei
-                                                                        University, Korea) -->TBD
+                                                                        <p class="bold">Jong Han Choi</p>(Konkuk University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3765,7 +3772,7 @@ echo '<script type="text/javascript">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -3776,7 +3783,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        How were JASSO's Guidelines Established? - The Process Involved in Developing Obesity Guidelines
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yasushi Ishigaki</p>(Iwate Medical University, Japan)
@@ -3854,18 +3861,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:50</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
 																<tr>
-                                                                    <td>10:20-10:50</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold"></td>
+                                                                    <td></td>
+                                                                </tr>
+																<tr>
+                                                                    <td>10:35-10:50</td>
+                                                                    <td class="bold">Panel Discussion</td>
                                                                     <td></td>
                                                                 </tr>
                                                             </tbody>
@@ -3912,7 +3924,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Tackling Obesity in Malaysia. Are We Doing Enough?</td>
                                                                     <td class="text_r"><p class="bold">Geeta Appannah</p>(University Putra Malaysia, Malaysia)</td>
                                                                 </tr>
                                                                 <tr>
@@ -3922,7 +3934,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
 																<tr>
                                                                     <td>14:50-15:15</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Current Status and Facts of Obesity Prevalence for Obesity Prevention and Management in Korea</td>
                                                                     <td class="text_r"><p class="bold">Hae-Jin Ko</p>(Kyungpook National University, Republic of Korea)</td>
                                                                 </tr>
 																<tr>
@@ -4792,8 +4804,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:45-16:10</td>
                                                                     <td class="bold">
-                                                                        <!-- Upcoming New Combinations of Anti-Obesity Drugs -->
-																		TBD
+                                                                        A Phase 1 Randomized, Double-blind placebo-controlled Single and Multiple Ascending Dose Study of AMG 133 in Subjects with Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jennifer Strande</p>(AMGEN, USA)
@@ -4878,8 +4889,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Relationships of SGLT-2 Treatment with Body
-                                                                        Weight -->TBD
+																		Current and Future in Obesity Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">John Wilding</p>(University of Liverpool, UK)
@@ -5153,7 +5163,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Effectors of NAFLD Development: Metabolic, Nutritional and Pharmacologic
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Melanie Cree-Green</p>(University of Colorado Anschutz, USA)
@@ -5668,7 +5678,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20</td>
+                                                <td>16:50-17:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -5717,8 +5727,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Relationships of SGLT-2 Treatment with Body
-                                                                        Weight -->TBD
+                                                                        Current and Future in Obesity Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">John Wilding</p>(University of Liverpool, UK)
@@ -5991,7 +6000,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                        <!-- Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population -->TBD
+                                                                        Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung Eun Jung</p>(The University of Alabama. USA)
@@ -6000,7 +6009,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                        <!-- Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities -->TBD
+                                                                        Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Minsun Jeon</p>(Chungnam National University, Republic of Korea)
@@ -6180,8 +6189,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:50-12:50</td>
                                                                     <td class="bold">
-                                                                        <!-- Utilizing CGM to Empower T2 DM Obese Patients
-                                                                        For Better Glycemic Management -->TBD
+                                                                        Obesity Management in Digital Era
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea)
@@ -6243,7 +6251,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li> -->
-                            <li>
+                            <li name="keynote_lecture_3_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -6301,7 +6309,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li name="keynote_lecture_4_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -6423,7 +6431,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        <!-- Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)  -->TBD
+                                                                        Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ja Hyang Cho</p>(Kyung Hee University, Republic of Korea)
@@ -6432,8 +6440,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:45-16:10</td>
                                                                     <td class="bold">
-                                                                        <!-- ACTION TEENS: Rationale and Methodology -->
-																		TBD
+                                                                        From Origin of Morbid Obesity to New-anti-obesity Therapies in Children
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Antje Korner</p>(University of Leipzig, Germany)
@@ -6449,7 +6456,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
 																<tr>
-                                                                    <td>17:00-17:30</td>
+                                                                    <td>16:35-16:50</td>
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
@@ -6482,7 +6489,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>15:10-15:20</td>
+                                                <td>16:50-17:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -6491,7 +6498,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li>
+                            <li name="plenary_lecture_4_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -6506,7 +6513,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>14:30-15:10</td>
+                                                <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
@@ -6531,8 +6538,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Relationships of SGLT-2 Treatment with Body
-                                                                        Weight -->TBD
+                                                                        Current and Future in Obesity Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">John Wilding</p>(University of Liverpool, UK)
@@ -6837,7 +6843,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>15:20-16:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 20</p>
+                                                    <p class="font_20 bold">Symposium 20 : Basic Exercise with Obesity</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Tae Kyung Lee</span> (Chuncheon National Hospital, Korea) /
                                                         <span class="bold">Sang Kyu Lee</span> (Hallym University,
@@ -6853,7 +6859,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -6864,36 +6870,28 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        <!-- Alterations in Brain and Behavior Contributing
-                                                                        to Obesity -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Carrie R. Ferrario</p>
-                                                                        (University of Michigan, USA) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Seok Ryu</p>(Kyunghee University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>15:45-16:10</td>
                                                                     <td class="bold">
-                                                                        <!-- How to Recover from Food Addiction as a New
-                                                                        Piece of the Obesity Framework -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Carolyn C. Ross</p>(University
-                                                                        of Arizona, USA) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Ji Suk Chae</p>(JS Sports Medicine Center, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">
-                                                                        <!-- A Pilot Study of the Effect of Transcranial
-                                                                        Direct Current Stimulation (tDCS) on Food
-                                                                        Craving and Eating in Individuals with
-                                                                        Overweight and Obesity -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Jo-Eun Jeong</p>(The Catholic
-                                                                        University of Korea, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Hae Sung Lee</p>(Wonkwang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<tr>
@@ -7396,6 +7394,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
 											<tr>
+                                                <!-- <td colspan="2" class="on"> -->
                                                 <td colspan="2">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -7405,18 +7404,23 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>09:20-09:50</td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20</td>
+                                                                    <td>09:45-10:10</td>
                                                                     <td class="bold"></td>
                                                                     <td></td>
                                                                 </tr>
 																<tr>
-                                                                    <td>10:20-10:50</td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold"></td>
+                                                                    <td></td>
+                                                                </tr>
+																<tr>
+                                                                    <td>10:35-10:50</td>
+                                                                    <td class="bold">Panel Discussion</td>
                                                                     <td></td>
                                                                 </tr>
                                                             </tbody>

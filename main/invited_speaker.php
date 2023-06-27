@@ -86,7 +86,7 @@
                                             <img src="./img/img_speakers07.jpg">
                                         </div>
                                         <div class="desc_wrap flex1">
-                                            <p class="">TBD</p>
+                                            <p class="">Current and Future in Obesity Management</p>
                                             <div>
                                                 <h4 class="title">John Wilding</h4>
                                                 <h5>University of Liverpool, UK</h5>

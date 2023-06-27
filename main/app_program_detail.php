@@ -13,7 +13,8 @@ $d_num = $day[-1];
 
 $name = $_GET['name'];
 
-echo $e_num;
+// echo $e_num;
+// echo $d_num;
 
 //kcode == 116 새로고침
 
@@ -24,7 +25,24 @@ echo '<script type="text/javascript">
 					  $(".app_tab li").removeClass("on");
 					  if ("' . $day . '" === "") {
 						$(".app_tab li:first-child").addClass("on");
+						$(".app_tab li:nth-child(1)").trigger("click");
 					  }
+
+						// Room Select Tab 초기화 / 클릭 스크립트 수정
+						$(".app_tab li").click(function(){
+							$(".sort_select").each(function(){
+								var i = $(this).val();
+								if (i === "all"){
+									$(this).parents(".tab_cont").find(".tab_cont").addClass("on");
+								} else {
+									i = (i - 1);
+									$(this).parents(".tab_cont").find(".tab_cont").removeClass("on");
+									$(this).parents(".tab_cont").find(".tab_cont").eq(i).addClass("on");
+									console.log(i)
+								}
+							});
+						});
+
 					  $(".app_tab li:nth-child(' . $d_num . ')").addClass("on");
 					  $(".app_tab + .inner .tab_wrap > .tab_cont").removeClass("on");
 					  $(".app_tab + .inner .tab_wrap > .tab_cont:nth-child(' . $d_num . ')").addClass("on");
@@ -78,7 +96,7 @@ echo '<script type="text/javascript">
 					<li>
 						<select name="" id="" class="sort_select">
 							<option value="" hidden="">Select Room</option>
-							<option value="all">All</option>
+							<option value="all" selected>All</option>
 							<option value="1">Room 1</option>
 							<option value="2">Room 2</option>
 							<option value="3">Room 3</option>
@@ -96,6 +114,7 @@ echo '<script type="text/javascript">
 							<option value="">Keynote Lecture</option>
 							<option value="">Best Article in JOMES</option>
 							<option value="">Symposium</option>
+							<option value="">Obesity Treatment Guidelines Symposium</option>
 							<option value="">Pre-congress Symposium</option>
 							<option value="">Breakfast Symposium</option>
 							<option value="">Luncheon Symposium</option>
@@ -128,21 +147,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:00-17:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:25-17:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:50-18:15</span>
 										</div>
@@ -180,7 +205,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">19:00-19:30</span>
 										</div>
@@ -202,7 +229,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">19:30-20:00</span>
 										</div>
@@ -231,21 +260,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:00-17:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:25-17:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:50-18:15</span>
 										</div>
@@ -283,7 +318,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">19:00-19:30</span>
 										</div>
@@ -321,7 +358,7 @@ echo '<script type="text/javascript">
 					<li>
 						<select name="" id="" class="sort_select">
 							<option value="" hidden="">Select Room</option>
-							<option value="all">All</option>
+							<option value="all" selected>All</option>
 							<option value="1">Room 1</option>
 							<option value="2">Room 2</option>
 							<option value="3">Room 3</option>
@@ -343,6 +380,7 @@ echo '<script type="text/javascript">
 							<option value="">Keynote Lecture</option>
 							<option value="">Best Article in JOMES</option>
 							<option value="">Symposium</option>
+							<option value="">Obesity Treatment Guidelines Symposium</option>
 							<option value="">Pre-congress Symposium</option>
 							<option value="">Breakfast Symposium</option>
 							<option value="">Luncheon Symposium</option>
@@ -375,7 +413,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">07:30-08:20</span>
 										</div>
@@ -406,7 +446,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
-										<p class="chairperson"><span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)</p>
+										<p class="chairperson">
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">08:30-09:00</span>
 										</div>
@@ -444,21 +486,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Obesity and the Risk of Cancer</p>
-										<p class="chairperson"><span class="bold">Yun Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Yun Kyung Cho</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Haejin Yoon</span> (UNIST, Republic of Korea)</p>
+										<p class="title">Dynamic Regulation of Mitochondrial Metabolism in Metabolic Disease</p>
+										<p class="chairperson">
+											<span class="bold">Haejin Yoon</span> (UNIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Obesity Care in Cancer Survivors</p>
-										<p class="chairperson"><span class="bold">Annie Anderson</span> (University of Dundee, UK)</p>
+										<p class="chairperson">
+											<span class="bold">Annie Anderson</span> (University of Dundee, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -496,7 +544,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<!-- <p class="title">TBD</p> -->
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:00-11:10</span>
 										</div>
@@ -518,7 +568,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
-										<p class="chairperson"><span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)</p>
+										<p class="chairperson">
+											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:10-11:40</span>
 										</div>
@@ -556,7 +608,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Eun Young Lee</span> (The Catholic University of Korea, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Eun Young Lee</span> (The Catholic University of Korea, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">12:00-13:00</span>
 										</div>
@@ -576,7 +630,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Symposium 5 : Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Bom Taeck Kim (Ajou University, Republic of Korea), <br/>Ju Young Shin (Sungkyunkwan University, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Bom Taeck Kim (Ajou University, Republic of Korea), <br/>Ju Young Shin (Sungkyunkwan University, Republic of Korea), <br/>Robert J. Heine (Eli Lilly, USA)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
@@ -587,21 +641,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Step Up Your Weight Management with Semaglutide</p>
-										<p class="chairperson"><span class="bold">Bom Taeck Kim</span> (Ajou University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Bom Taeck Kim</span> (Ajou University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:00-14:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Ju Young Shin</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Ju Young Shin</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:25-14:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Metabolic Effects of Tirzepatide, especially in East-Asian Patients from the SURPASS Program</p>
-										<p class="chairperson"><span class="bold">Robert J. Heine</span> (Eli Lilly, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Robert J. Heine</span> (Eli Lilly, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:50-15:15</span>
 										</div>
@@ -639,7 +699,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
-										<p class="chairperson"><span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:40-16:10</span>
 										</div>
@@ -677,21 +739,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Diabesity: From Disease Mechanism to Clinical Management</p>
-										<p class="chairperson"><span class="bold">Dicky L. Tahapary</span> (Cardiovascular and Research Centre-IMERI(Indonesia Medical Education and Research Institute), Indonesia)</p>
+										<p class="chairperson">
+											<span class="bold">Dicky L. Tahapary</span> (Cardiovascular and Research Centre-IMERI(Indonesia Medical Education and Research Institute), Indonesia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:30-16:55</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Sarcopenia and Obesity</p>
-										<p class="chairperson"><span class="bold">Wen-Yuan Lin</span> (China Medical University and Hospital, Taiwan)</p>
+										<p class="chairperson">
+											<span class="bold">Wen-Yuan Lin</span> (China Medical University and Hospital, Taiwan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:55-17:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Tae Nyun Kim</span> (Inje University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Tae Nyun Kim</span> (Inje University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:20-17:45</span>
 										</div>
@@ -727,7 +795,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">07:30-08:20</span>
 										</div>
@@ -758,7 +828,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
-										<p class="chairperson"><span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)</p>
+										<p class="chairperson">
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">08:30-09:00</span>
 										</div>
@@ -796,21 +868,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Dietary Restriction and Vascular Dementia</p>
-										<p class="chairperson"><span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)</p>
+										<p class="chairperson">
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Role of Adiponectin Signaling in Alzheimer's Disease</p>
-										<p class="chairperson"><span class="bold">Dong Gyu Jo</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Dong Gyu Jo</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Impact of Adiposity and Cognitive Function: Closer than You Think</p>
-										<p class="chairperson"><span class="bold">Theresia Handayani Mina</span> (Nanyang Technological University, Singapore)</p>
+										<p class="chairperson">
+											<span class="bold">Theresia Handayani Mina</span> (Nanyang Technological University, Singapore)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -849,7 +927,9 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Keynote Lecture 1</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Matthias Blüher (University of Leipzig, Germany)</p>
+									<p class="chairperson">
+										<span class="bold">Chairpersons:</span> Matthias Blüher (University of Leipzig, Germany)
+									</p>
 									<div class="info">
 										<button></button>
 										<span class="time">11:10-11:50</span>
@@ -860,7 +940,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
-										<p class="chairperson"><span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)</p>
+										<p class="chairperson">
+											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:10-11:40</span>
 										</div>
@@ -918,7 +1000,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Symposium 6</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Hideaki Soya (University of Tsukuba, Japan), <br/>Adelino Sanchez Ramos da Silva (University of Sao Paulo, Brazil), <br/>Jung Gi Hong (CHA University, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Hideaki Soya (University of Tsukuba, Japan), <br/>Jung Gi Hong (CHA University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
@@ -929,21 +1011,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Hideaki Soya</span> (University of Tsukuba, Japan)</p>
+										<p class="chairperson">
+											<span class="bold">Hideaki Soya</span> (University of Tsukuba, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:00-14:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Adelino Sanchez Ramos da Silva</span> (University of Sao Paulo, Brazil)</p>
+										<p class="chairperson">
+											<span class="bold">TBD</span> <!-- (University of Sao Paulo, Brazil) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:25-14:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Jung Gi Hong</span> (CHA University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jung Gi Hong</span> (CHA University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:50-15:15</span>
 										</div>
@@ -981,7 +1069,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
-										<p class="chairperson"><span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:40-16:10</span>
 										</div>
@@ -1019,21 +1109,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Effect of Obesity and HDL Concentration on AD Pathology</p>
-										<p class="chairperson"><span class="bold">Yun Ha Jeong</span> (Korea Brain Research Institute (KBRI), Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Yun Ha Jeong</span> (Korea Brain Research Institute (KBRI), Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:30-16:55</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Weight Bias and Stigma: The Occult Peril in Obesity Management</p>
-										<p class="chairperson"><span class="bold">Kwang Wei Tham</span> (Woodlands Health, Singapore)</p>
+										<p class="chairperson">
+											<span class="bold">Kwang Wei Tham</span> (Woodlands Health, Singapore)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:55-17:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Vasileios Papaliagka</span> (International Hellenic University, Greece)</p>
+										<p class="chairperson">
+											<span class="bold">Vasileios Papaliagka</span> (International Hellenic University, Greece)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:20-17:45</span>
 										</div>
@@ -1069,7 +1165,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">07:30-08:20</span>
 										</div>
@@ -1100,7 +1198,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
-										<p class="chairperson"><span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)</p>
+										<p class="chairperson">
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">08:30-09:00</span>
 										</div>
@@ -1127,7 +1227,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Symposium 3 : Digital Therapeutics</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Ki-Hyun Jeon (Seoul National University, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Ki-Hyun Jeon (Seoul National University, Republic of Korea), <br/>Laura Falvey (Reset Health, UK), <br/>Sang Youl Rhee (Kyung Hee University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">09:20-10:50</span>
@@ -1138,21 +1238,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Ki-Hyun Jeon</span> (Seoul National University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Ki-Hyun Jeon</span> (Seoul National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Laura Falvey</span> (Reset Health, UK)</p>
+										<p class="title">The Roczen Programme: A Digitally Enabled, Medically-led Intervention for Obesity and T2D</p>
+										<p class="chairperson">
+											<span class="bold">Laura Falvey</span> (Reset Health, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)</p>
+										<p class="title">Management of Obesity and Metabolic Diseases through Digital Intervention: Current Evidence and Future Prospects</p>
+										<p class="chairperson">
+											<span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -1202,7 +1308,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
-										<p class="chairperson"><span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)</p>
+										<p class="chairperson">
+											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:10-11:40</span>
 										</div>
@@ -1229,7 +1337,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Luncheon Symposium 3</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Soo Kyoung Kim (Gyeongsang National University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">12:00-13:00</span>
@@ -1240,7 +1348,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Soo Kyoung Kim</span> (Gyeongsang National University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Soo Kyoung Kim</span> (Gyeongsang National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">12:00-13:00</span>
 										</div>
@@ -1271,21 +1381,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Uncovering Novel GPCR Pathways for the Treatment of Obesity and Type 2 Diabetes</p>
-										<p class="chairperson"><span class="bold">Zach Gerhart-Hines</span> (University of Copenhagen, Denmark)</p>
+										<p class="chairperson">
+											<span class="bold">Zach Gerhart-Hines</span> (University of Copenhagen, Denmark)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:00-14:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Double-edged Role of the NLRP3 Inflammasome in Adipose Tissue</p>
-										<p class="chairperson"><span class="bold">Eun Hee Ko</span> (University of Ulsan, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Eun Hee Ko</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:25-14:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Microbiota in Obesity-related Metabolic Diseases in Mouse Models</p>
-										<p class="chairperson"><span class="bold">Je-Kyung Seong</span> (Seoul National University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Je-Kyung Seong</span> (Seoul National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:50-15:15</span>
 										</div>
@@ -1323,7 +1439,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
-										<p class="chairperson"><span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:40-16:10</span>
 										</div>
@@ -1361,21 +1479,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Seung-Yeon Lee</span> (University of Cincinnati, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Seung-Yeon Lee</span> (University of Cincinnati, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:30-16:55</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Ji-Yun Hwang</span> (Sangmyung University, Republic of Korea)</p>
+										<p class="title">Influence of Social and Environmental Factors on Nutrition and Obesity</p>
+										<p class="chairperson">
+											<span class="bold">Ji-Yun Hwang</span> (Sangmyung University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:55-17:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Socioeconomic Inequalities in Obesity</p>
-										<p class="chairperson"><span class="bold">Hyeon Chang Kim</span> (Yonsei University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Hyeon Chang Kim</span> (Yonsei University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:20-17:45</span>
 										</div>
@@ -1410,22 +1534,28 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">Age-Related Prevalence of Visceral Fat Obesity, Low Muscle Mass, and Myosteatosis</p>
-										<p class="chairperson"><span class="bold">Hong-Kyu Kim</span> (University of Ulsan, Republic of Korea)</p>
+										<p class="title">Changes in Body Composition with Aging: Visceral Fat Obesity, Low Muscle Mass, and Myosteatosis</p>
+										<p class="chairperson">
+											<span class="bold">Hong-Kyu Kim</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Clinical Implications of Myosteatosis in Cardiometabolic Health</p>
-										<p class="chairperson"><span class="bold">Chang-hee Jung</span> (University of Ulsan, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Chang-hee Jung</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">New Insights into Fat Distribution: An Integrated Analysis of Hepatic, Pancreatic, Muscular, and Visceral Fat</p>
-										<p class="chairperson"><span class="bold">Hajime Yamazaki</span> (Kyoto University, Japan)</p>
+										<p class="chairperson">
+											<span class="bold">Hajime Yamazaki</span> (Kyoto University, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -1476,21 +1606,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:00-14:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:25-14:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:50-15:15</span>
 										</div>
@@ -1518,22 +1654,28 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Dughyun Choi</span> (Soonchunhyang University, Republic of Korea)</p>
+										<p class="title">Facing Obesity and Type 2 Diabetes: From Childhood to Adulthood</p>
+										<p class="chairperson">
+											<span class="bold">Dughyun Choi</span> (Soonchunhyang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:30-16:55</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Min Sun Kim</span> (Chonbuk National University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Min Sun Kim</span> (Chonbuk National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:55-17:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Emerging Biomarkers of Type 2 Diabetes in Obese Youth vs Adult</p>
-										<p class="chairperson"><span class="bold">Joon Young Kim</span> (Syracuse University, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Joon Young Kim</span> (Syracuse University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:20-17:45</span>
 										</div>
@@ -1569,21 +1711,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Kyoung Min Kim</span> (Yonsei University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Kyoung Min Kim</span> (Yonsei University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:50-10:20</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">So Hyun Chun</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="title">FAQ Finder : A Case-based Approach to Prescription of Combination Phentermine plus Topiramate ER</p>
+										<p class="chairperson">
+											<span class="bold">So Hyun Chun</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:20-10:50</span>
 										</div>
@@ -1616,7 +1764,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Sponsored Session 2</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Eun Roh (Hallym University, Republic of Korea), <br/>Jong Han Choi (Konkuk University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
@@ -1627,21 +1775,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:00-14:30</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Role of DPP4-I under the Latest Treatment Trend</p>
-										<p class="chairperson"><span class="bold">Eun Roh</span> (Hallym University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Eun Roh</span> (Hallym University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:30-15:00</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">Jong Han Choi</span> (Konkuk University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:00-15:30</span>
 										</div>
@@ -1651,8 +1805,8 @@ echo '<script type="text/javascript">
 							<li name="obesity_treatment_guidelines_symposium">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Sponsored Session 2</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="title">Obesity Treatment Guidelines Symposium : Behind the Scenes: The Journey of Evolution and Revising Obesity Guidelines</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Yasushi Ishigaki (Iwate Medical University, Japan), <br/>Jee Hyun Kang (Konyang University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">16:30-18:00</span>
@@ -1662,22 +1816,28 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Yasushi Ishigaki</span> (Iwate Medical University, Japan)</p>
+										<p class="title">How were JASSO's Guidelines Established? - The Process Involved in Developing Obesity Guidelines</p>
+										<p class="chairperson">
+											<span class="bold">Yasushi Ishigaki</span> (Iwate Medical University, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:30-16:55</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Eun Roh --></span> <!-- (Hallym University, Republic of Korea) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD</span> <!-- (Hallym University, Republic of Korea) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:55-17:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Jee Hyun Kang</span> (Konyang University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jee Hyun Kang</span> (Konyang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:20-17:45</span>
 										</div>
@@ -1749,21 +1909,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -1781,7 +1947,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Joint Symposium KSSO-AOASO</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Geeta Appannah (University Putra Malaysia, Malaysia), <br/>Do Thi Ngoc Diep (Vietnam), <br/>Hae-Jin Ko (Kyungpook National University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
@@ -1791,22 +1957,28 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Geeta Appannah</span> (University Putra Malaysia, Malaysia)</p>
+										<p class="title">Tackling Obesity in Malaysia. Are We Doing Enough?</p>
+										<p class="chairperson">
+											<span class="bold">Geeta Appannah</span> (University Putra Malaysia, Malaysia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:00-14:25</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Do Thi Ngoc Diep</span> (Vietnam)</p>
+										<p class="chairperson">
+											<span class="bold">Do Thi Ngoc Diep</span> (Vietnam)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:25-14:50</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Hae-Jin Ko</span> (Kyungpook National University, Republic of Korea)</p>
+										<p class="title">Current Status and Facts of Obesity Prevalence for Obesity Prevention and Management in Korea</p>
+										<p class="chairperson">
+											<span class="bold">Hae-Jin Ko</span> (Kyungpook National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:50-15:15</span>
 										</div>
@@ -1883,7 +2055,7 @@ echo '<script type="text/javascript">
 					<li>
 						<select name="" id="" class="sort_select">
 							<option value="" hidden="">Select Room</option>
-							<option value="all">All</option>
+							<option value="all" selected>All</option>
 							<option value="1">Room 1</option>
 							<option value="2">Room 2</option>
 							<option value="3">Room 3</option>
@@ -1905,6 +2077,7 @@ echo '<script type="text/javascript">
 							<option value="">Keynote Lecture</option>
 							<option value="">Best Article in JOMES</option>
 							<option value="">Symposium</option>
+							<option value="">Obesity Treatment Guidelines Symposium</option>
 							<option value="">Pre-congress Symposium</option>
 							<option value="">Breakfast Symposium</option>
 							<option value="">Luncheon Symposium</option>
@@ -1926,7 +2099,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Breakfast Symposium 4</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Hong Jun Hwa (Eulji University, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Jun Hwa Hong (Eulji University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">07:30-08:20</span>
@@ -1937,7 +2110,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Thiazolidinediones and SGLT2i: A Rational Combination Based on T2DM Pathophysiology</p>
-										<p class="chairperson"><span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">07:30-08:20</span>
 										</div>
@@ -1956,7 +2131,7 @@ echo '<script type="text/javascript">
 							<li name="plenary_lecture_3">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Plenary Lecture 1</p>
+									<p class="title">Plenary Lecture 3</p>
 									<p class="chairperson"><span class="bold">Chairpersons:</span> Tamas Horvath (Yale University, USA)</p>
 									<div class="info">
 										<button></button>
@@ -1968,7 +2143,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
-										<p class="chairperson"><span class="bold">Tamas Horvath</span> (Yale University, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Tamas Horvath</span> (Yale University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">08:30-09:00</span>
 										</div>
@@ -2006,21 +2183,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">MAFLD and NAFLD in the Prediction of Incident Chronic Kidney Disease</p>
-										<p class="chairperson"><span class="bold">Sang-Man Jin</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Sang-Man Jin</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">MAFLD versus NAFLD and the Risk of Cardiovascular Disease</p>
-										<p class="chairperson"><span class="bold">Ming-Hua Zheng</span> (Wenzhou Medical University, China)</p>
+										<p class="chairperson">
+											<span class="bold">Ming-Hua Zheng</span> (Wenzhou Medical University, China)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Determinants of the Prognosis of NAFLD</p>
-										<p class="chairperson"><span class="bold">Bo Kyung Koo</span> (Seoul National University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Bo Kyung Koo</span> (Seoul National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -2058,7 +2241,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:00-11:30</span>
 										</div>
@@ -2096,7 +2281,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Sung Hoon Yu</span> (Hanyang University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Sung Hoon Yu</span> (Hanyang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:50-12:50</span>
 										</div>
@@ -2127,7 +2314,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
-										<p class="chairperson"><span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">13:50-14:20</span>
 										</div>
@@ -2156,7 +2345,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">National Obesity Strategy in Korea: Past, Present and Future</p>
-										<p class="chairperson"><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:30-15:00</span>
 										</div>
@@ -2183,7 +2374,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Symposium 17 : The Power of Synergy: Optimizing Anti-obesity Treatment with Combination Pharmacotherapy</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Jang Won Son (The Catholic University of Korea, Republic of Korea), <br/>Se Hee Min (Univeristy of Ulsan, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Jang Won Son (The Catholic University of Korea, Republic of Korea), <br/>Jennifer Strande  (AMGEN, USA), <br/>Se Hee Min (Univeristy of Ulsan, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">15:20-16:50</span>
@@ -2194,21 +2385,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Unveiling the New Wave: A Comprehensive Overview of Emerging Anti-Obesity Medications</p>
-										<p class="chairperson"><span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:20-15:45</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Jennifer Strande</span> (AMGEN, USA)</p>
+										<p class="title">A Phase 1 Randomized, Double-blind placebo-controlled Single and Multiple Ascending Dose Study of AMG 133 in Subjects with Obesity</p>
+										<p class="chairperson">
+											<span class="bold">Jennifer Strande</span> (AMGEN, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:45-16:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Se Hee Min</span> (Univeristy of Ulsan, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Se Hee Min</span> (Univeristy of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:10-16:35</span>
 										</div>
@@ -2245,8 +2442,10 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">John Wilding</span> (University of Liverpool, UK)</p>
+										<p class="title">Current and Future in Obesity Management</p>
+										<p class="chairperson">
+											<span class="bold">John Wilding</span> (University of Liverpool, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:00-17:30</span>
 										</div>
@@ -2304,7 +2503,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">07:30-08:20</span>
 										</div>
@@ -2323,7 +2524,7 @@ echo '<script type="text/javascript">
 							<li name="plenary_lecture_3_2">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Plenary Lecture 1</p>
+									<p class="title">Plenary Lecture 3</p>
 									<p class="chairperson"><span class="bold">Chairpersons:</span> Tamas Horvath (Yale University, USA)</p>
 									<div class="info">
 										<button></button>
@@ -2335,7 +2536,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
-										<p class="chairperson"><span class="bold">Tamas Horvath</span> (Yale University, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Tamas Horvath</span> (Yale University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">08:30-09:00</span>
 										</div>
@@ -2373,21 +2576,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Muscle in Weight Management</p>
-										<p class="chairperson"><span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Melanie Cree-Green</span> (University of Colorado Anschutz, USA)</p>
+										<p class="title">Effectors of NAFLD Development: Metabolic, Nutritional and Pharmacologic</p>
+										<p class="chairperson">
+											<span class="bold">Melanie Cree-Green</span> (University of Colorado Anschutz, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Roles of Dietary Essential Amino Acids and Exercise for Muscle and Metabolic Health</p>
-										<p class="chairperson"><span class="bold">Il-Young Kim</span> (Gachon University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Il-Young Kim</span> (Gachon University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -2425,7 +2634,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:00-11:30</span>
 										</div>
@@ -2463,7 +2674,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:50-12:50</span>
 										</div>
@@ -2494,7 +2707,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
-										<p class="chairperson"><span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">13:50-14:20</span>
 										</div>
@@ -2523,7 +2738,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">National Obesity Strategy in Korea: Past, Present and Future</p>
-										<p class="chairperson"><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:30-15:00</span>
 										</div>
@@ -2551,7 +2768,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Symposium 18 : Neuroscience</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Michael Krashes (National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA), <br/>Yu Fu (Institute of Molecular and Cell Biology (IMCB), Singapore), <br/>Chang June Lee (Institute for Basic Science (IBS), Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Michael Krashes (National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA), <br/>Yu Fu (Institute of Molecular and Cell Biology (IMCB), Singapore), <br/>Changjoon Lee (Institute for Basic Science (IBS), Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">15:20-16:50</span>
@@ -2562,21 +2779,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Mapping Appetite Circuits with Molecular Connectomics</p>
-										<p class="chairperson"><span class="bold">Michael Krashes</span> (National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA)</p>
+										<p class="chairperson">
+											<span class="bold">Michael Krashes</span> (National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:20-15:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Feeding Regulation by Tuberal Nucleus Somatostatin Neurons</p>
-										<p class="chairperson"><span class="bold">Yu Fu</span> (Institute of Molecular and Cell Biology (IMCB), Singapore)</p>
+										<p class="chairperson">
+											<span class="bold">Yu Fu</span> (Institute of Molecular and Cell Biology (IMCB), Singapore)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:45-16:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Changjoon Lee</span> (Institute for Basic Science (IBS), Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Changjoon Lee</span> (Institute for Basic Science (IBS), Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:10-16:35</span>
 										</div>
@@ -2613,8 +2836,10 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">John Wilding</span> (University of Liverpool, UK)</p>
+										<p class="title">Current and Future in Obesity Management</p>
+										<p class="chairperson">
+											<span class="bold">John Wilding</span> (University of Liverpool, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:00-17:30</span>
 										</div>
@@ -2672,7 +2897,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Yeoree Yang</span> (The Catholic University of Korea, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Yeoree Yang</span> (The Catholic University of Korea, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">07:30-08:20</span>
 										</div>
@@ -2691,7 +2918,7 @@ echo '<script type="text/javascript">
 							<li name="plenary_lecture_3_3">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Plenary Lecture 1</p>
+									<p class="title">Plenary Lecture 3</p>
 									<p class="chairperson"><span class="bold">Chairpersons:</span> Tamas Horvath (Yale University, USA)</p>
 									<div class="info">
 										<button></button>
@@ -2703,7 +2930,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
-										<p class="chairperson"><span class="bold">Tamas Horvath</span> (Yale University, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Tamas Horvath</span> (Yale University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">08:30-09:00</span>
 										</div>
@@ -2741,21 +2970,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers</p>
-										<p class="chairperson"><span class="bold">Shirley Y. Chao</span> (Massachusetts Executive Office of Elder Affairs, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Shirley Y. Chao</span> (Massachusetts Executive Office of Elder Affairs, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Seung Eun Jung</span> (The University of Alabama, USA)</p>
+										<p class="title">Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population</p>
+										<p class="chairperson">
+											<span class="bold">Seung Eun Jung</span> (The University of Alabama, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Minsun Jeon</span> (Chungnam National University, Republic of Korea)</p>
+										<p class="title">Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities</p>
+										<p class="chairperson">
+											<span class="bold">Minsun Jeon</span> (Chungnam National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -2793,7 +3028,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:00-11:30</span>
 										</div>
@@ -2830,8 +3067,10 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)</p>
+										<p class="title">Obesity Management in Digital Era</p>
+										<p class="chairperson">
+											<span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">11:50-12:50</span>
 										</div>
@@ -2862,7 +3101,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
-										<p class="chairperson"><span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)</p>
+										<p class="chairperson">
+											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">13:50-14:20</span>
 										</div>
@@ -2891,7 +3132,9 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">National Obesity Strategy in Korea: Past, Present and Future</p>
-										<p class="chairperson"><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">14:30-15:00</span>
 										</div>
@@ -2928,22 +3171,28 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Ja Hyang Cho</span> (Kyung Hee University, Republic of Korea)</p>
+										<p class="title">Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)</p>
+										<p class="chairperson">
+											<span class="bold">Ja Hyang Cho</span> (Kyung Hee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:20-15:45</span>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">Antje Korner</span> (University of Leipzig, Germany)</p>
+										<p class="title">From Origin of Morbid Obesity to New-anti-obesity Therapies in Children</p>
+										<p class="chairperson">
+											<span class="bold">Antje Korner</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:45-16:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Childhood Obesity and Mental Health</p>
-										<p class="chairperson"><span class="bold">Jeewon Lee</span> (Soonchunhayng University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jeewon Lee</span> (Soonchunhayng University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:10-16:35</span>
 										</div>
@@ -2980,8 +3229,10 @@ echo '<script type="text/javascript">
 								<div class="detail">
 									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">John Wilding</span> (University of Liverpool, UK)</p>
+										<p class="title">Current and Future in Obesity Management</p>
+										<p class="chairperson">
+											<span class="bold">John Wilding</span> (University of Liverpool, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">17:00-17:30</span>
 										</div>
@@ -3039,21 +3290,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Impact of Sleep Disturbance on Obesity and Energy Homeostasis</p>
-										<p class="chairperson"><span class="bold">Alice PS Kong</span> (The Chinese University of Hong Kong, Hong Kong)</p>
+										<p class="chairperson">
+											<span class="bold">Alice PS Kong</span> (The Chinese University of Hong Kong, Hong Kong)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Guidelines for the Management of Obesity as a Disease: Japanese Update</p>
-										<p class="chairperson"><span class="bold">Koutaro Yokote</span> (Chiba University, Japan)</p>
+										<p class="chairperson">
+											<span class="bold">Koutaro Yokote</span> (Chiba University, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:10-10:35</span>
 										</div>
@@ -3092,8 +3349,8 @@ echo '<script type="text/javascript">
 							<li name="symposium_20">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Symposium 20</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="title">Symposium 20 : Basic Exercise with Obesity</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Seok Ryu (Kyunghee University, Republic of Korea), <br/>Ji Suk Chae (JS Sports Medicine Center, Republic of Korea), <br/>Hae Sung Lee (Wonkwang University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">15:20-16:50</span>
@@ -3104,21 +3361,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">Seok Ryu</span> (Kyunghee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:20-15:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">Ji Suk Chae</span> (JS Sports Medicine Center, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:45-16:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">Hae Sung Lee</span> (Wonkwang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:10-16:35</span>
 										</div>
@@ -3154,21 +3417,27 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:20-09:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">09:50-10:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">10:20-10:50</span>
 										</div>
@@ -3212,35 +3481,46 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Obesity Fact Sheet in Korea, 2021: Trends in Obesity Prevalence and Obesity-Related Comorbidity Incidence Stratified by Age from 2009 to 2019</p>
-										<p class="chairperson"><span class="bold">Ye Seul Yang</span> (Seoul National University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Ye Seul Yang</span> (Seoul National University, Republic of Korea)
+											<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:20-15:35</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Reference Values for Waist Circumference and Waist–Height Ratio in Korean Children and Adolescents</p>
-										<p class="chairperson"><span class="bold">Jieun Lee</span>  (Inje University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Jieun Lee</span>  (Inje University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:35-15:50</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Maintaining Physical Activity Is Associated with Reduced Major Adverse Cardiovascular Events in People Newly Diagnosed with Diabetes</p>
-										<p class="chairperson"><span class="bold">Kyoung Hwa Ha</span> (Ajou University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Kyoung Hwa Ha</span> (Ajou University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">15:50-16:05</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Updated Meta-Analysis of Studies from 2011 to 2021 Comparing the Effectiveness of Intermittent Energy Restriction and Continuous Energy Restriction</p>
-										<p class="chairperson"><span class="bold">Kyoung-Kon Kim</span> (Gachon University, Republic of Korea)</p>
+										<p class="chairperson">
+											<span class="bold">Kyoung-Kon Kim</span> (Gachon University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:05-16:20</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">Award Ceremony</p>
-										<p class="chairperson"><span class="bold">Gildong Hong</span>(Seoul National University)</p>
+										<p class="chairperson">
+											<span class="bold">Gildong Hong</span>(Seoul National University)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
 											<span class="time">16:20-16:30</span>
 										</div>
@@ -3269,23 +3549,29 @@ echo '<script type="text/javascript">
 									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
-											<span class="time">09:20-09:50</span>
+											<span class="time">09:20-09:45</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
-											<span class="time">09:50-10:20</span>
+											<span class="time">09:45-10:10</span>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
-										<p class="chairperson"><span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --></p>
+										<p class="chairperson">
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+										</p>
 										<div class="info">
-											<span class="time">10:20-10:50</span>
+											<span class="time">10:10-10:35</span>
 										</div>
 									</div>
 									<div>
@@ -3372,7 +3658,6 @@ echo '<script type="text/javascript">
 				$(this).parents(".tab_cont").find(".tab_cont").eq(i).addClass("on");
 				console.log(i)
 			}
-
 		});
     });
 </script>
