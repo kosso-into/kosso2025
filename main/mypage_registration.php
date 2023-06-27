@@ -266,7 +266,7 @@
 							<?php }else if($list["status"] == 2 || $list["status"] == 3){?>
 								<td>Complete</td>
 								<td>
-									<button type="button" class="btn review_regi_open">Review</button>
+									<button type="button" class="btn review_regi_open" data-idx="<?=$list["idx"]?>">Review</button>
 									<button type="button" class="btn registration_receipt_btn" data-idx="<?=$list["idx"]?>">Receipt</button>
 									<!--<button type="button" class="btn payment_receipt_btn" data-tid="'.$list['payment_obj']['tid'].'">Payment Receipt</button>-->
 									<div class="review_data hidden">
@@ -670,7 +670,7 @@
 				</table>
 			</div>
             <div class="btn_wrap">
-                <button type="button" class="btn pop_close" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button>
+                <button type="button" class="btn cancel_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button>
             </div>
         </div>
     </div>
@@ -838,6 +838,8 @@
 		$(".review_regi_open").click(function(){
 			const html = $(this).siblings(".review_data").find('.detail_table tbody').children().clone();
 			$(".review_regi_pop tbody").html(html);
+			const member_idx = $(this).data("idx");
+			$("[name=registration_cancel_pop_btn]").data("idx", member_idx).attr("data-idx", member_idx);
 			
 			$(".review_regi_pop").show();
 		});
