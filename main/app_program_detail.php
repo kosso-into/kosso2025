@@ -443,7 +443,14 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+										<ul>
+											<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+											<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+											<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
 										<p class="chairperson">
@@ -565,7 +572,18 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+										<ul>
+											<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
+											<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.</li>
+											<li>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004. </li>	
+										</ul>
+									</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
 										<p class="chairperson">
@@ -696,7 +714,20 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+										<ul>
+											<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, </li>
+											<li>and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. </li>
+											<li>In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.</li>
+											<li>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.</li>
+											<li>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 										<p class="chairperson">
@@ -825,7 +856,14 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+										<ul>
+											<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+											<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+											<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
 										<p class="chairperson">
@@ -937,7 +975,18 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+										<ul>
+											<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
+											<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.</li>
+											<li>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004. </li>	
+										</ul>
+									</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
 										<p class="chairperson">
@@ -1066,7 +1115,20 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+										<ul>
+											<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, </li>
+											<li>and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. </li>
+											<li>In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.</li>
+											<li>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.</li>
+											<li>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 										<p class="chairperson">
@@ -1195,7 +1257,14 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+										<ul>
+											<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+											<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+											<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
 										<p class="chairperson">
@@ -1305,7 +1374,18 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+										<ul>
+											<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
+											<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.</li>
+											<li>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004. </li>	
+										</ul>
+									</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
 										<p class="chairperson">
@@ -1436,7 +1516,20 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+										<ul>
+											<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, </li>
+											<li>and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. </li>
+											<li>In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.</li>
+											<li>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.</li>
+											<li>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 										<p class="chairperson">
@@ -2311,7 +2404,18 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+										<ul>
+											<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.</li>
+											<li>His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Nature. Dopamine subsystems that track internal states. 2022</li>
+											<li>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
 										<p class="chairperson">
@@ -2704,7 +2808,18 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+										<ul>
+											<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.</li>
+											<li>His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Nature. Dopamine subsystems that track internal states. 2022</li>
+											<li>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
 										<p class="chairperson">
@@ -3098,7 +3213,18 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
+									<div class="detail_text">
+										<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+										<ul>
+											<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.</li>
+											<li>His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
+										</ul>
+										<p>References</p>
+										<ul>
+											<li>Nature. Dopamine subsystems that track internal states. 2022</li>
+											<li>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+										</ul>
+									</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
 										<p class="chairperson">

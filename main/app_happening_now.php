@@ -4,7 +4,10 @@
 <!-- HUBDNCAJY : App - HAPPENING NOW 페이지 -->
 <section class="container app_version app_happening app_scientific">
 	<div class="app_title_box">
-		<h2 class="app_title">HAPPENING NOW</h2>
+		<h2 class="app_title">
+			HAPPENING NOW
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='javascript:;';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+		</h2>
 	</div>
 	<div class="contents_box">
 		<div class="schedule_area">
@@ -47,10 +50,10 @@
 					<input type="hidden" name="e" value="room3">
 				</li>
 			</ul>
-			<!-- 진행중인 세션 있을 시 화면 -->
-			<!-- <div class="no_data">
-				<img src="/main/img/icons/icon_alarm_clock.png" alt="">
-				<p class="gray_txt">To be announced</p>
+			<!-- 진행중인 세션 없을 시 화면 -->
+			<!--	<div class="no_data">
+				<img src="/main/img/icons/icon_alarm_clock2.svg" alt="">
+				<p>To be<br>announced</p>
 			</div> -->
 		</div>
 	</div>

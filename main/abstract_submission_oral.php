@@ -84,10 +84,10 @@ $info = sql_fetch($sql_info);
                         </tr>
 						<tr>
 							<td class="text_center">Date & Time</td>
-							<td class="text_center">13:00-14:00, Sep. 8(Fri)</td>
-							<td class="text_center">13:00-14:00, Sep. 8(Fri)</td>
-							<td class="text_center">12:50-13:50, Sep. 9(Sat)</td>
-							<td class="text_center">12:50-13:50, Sep. 9(Sat)</td>
+							<td class="text_center">13:00-14:00, Sep. 8 (Fri)</td>
+							<td class="text_center">13:00-14:00, Sep. 8 (Fri)</td>
+							<td class="text_center">12:50-13:50, Sep. 9 (Sat)</td>
+							<td class="text_center">12:50-13:50, Sep. 9 (Sat)</td>
 						</tr>
 						<tr>
 							<td class="text_center">Location</td>
@@ -128,8 +128,8 @@ $info = sql_fetch($sql_info);
                            </colgroup>
                            <tr>
                                <th></th>
-                               <th class="f_bold text_center">Sep. 7(Thu)</th>
-                               <th class="f_bold text_center">Sep. 8(Fri) - Sep. 9(Sat) </th>
+                               <th class="f_bold text_center">Sep. 7 (Thu)</th>
+                               <th class="f_bold text_center">Sep. 8 (Fri) - Sep. 9 (Sat) </th>
                            </tr>
 						<tr>
 							<td class="text_center">Location</td>

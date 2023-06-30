@@ -24,10 +24,10 @@
         <div class="program_wrap section">
             <div class="scroll_table">
                 <ul class="tab_green long centerT program_glance">
-					<li class="on"><a href="javascript:;">All Days<br/>September 7(Thu) ~ 9(Sat)</a></li>
-					<li><a href="javascript:;">Sep.7(Thu)</a></li>
-					<li><a href="javascript:;">Sep.8(Fri)</a></li>
-					<li><a href="javascript:;">Sep.9(Sat)</a></li>
+					<li class="on"><a href="javascript:;">All Days<br/>September 7 (Thu) ~ 9 (Sat)</a></li>
+					<li><a href="javascript:;">Sep.7 (Thu)</a></li>
+					<li><a href="javascript:;">Sep.8 (Fri)</a></li>
+					<li><a href="javascript:;">Sep.9 (Sat)</a></li>
 				</ul>
 				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
 				<div class="rightT mb20">

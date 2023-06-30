@@ -6,8 +6,8 @@
         $sql ="
 					SELECT idx, promotion_code, discount_rate, count_limit
                     FROM promotion_code
-                    WHERE promotion_code = {$promotion_code}
-                    AND count_limit = 1;
+                    WHERE promotion_code = '{$promotion_code}'
+                    AND count_limit = 1
 				  ";
 
         $result = sql_fetch($sql);
@@ -31,7 +31,8 @@
 
     } else if($_POST["flag"] == "regist"){
         $member_idx = $_SESSION["USER"]["idx"];
-        $promotion_code_idx = $_POST["result"]["idx"];
+        $promotion_code_idx = $_POST["data"]["idx"];
+        $promotion_code = $_POST["data"]["promotion_code"];
         $recommender = $_POST["recommender"];
 
         $sql =	"
@@ -39,9 +40,37 @@
 					SET
 						member_idx = {$member_idx},
 						promotion_code_idx = {$promotion_code_idx},
-						recommender = {$recommender},
+						recommender = '{$recommender}',
 						regist_date = NOW()
 					";
+
+        $result = sql_query($sql);
+
+        if($result) {
+            $res = [
+                code => 200,
+                msg => "success",
+                update($promotion_code)
+            ];
+            echo json_encode($res);
+            exit;
+        } else {
+            $res = [
+                code => 400,
+                msg => "insert query error"
+            ];
+            echo json_encode($res);
+            exit;
+        }
+    }
+
+    function update($idx){
+        $sql = "
+                UPDATE promotion_code
+                SET
+                    count_limit = 0
+                WHERE idx = $idx
+                ";
 
         $result = sql_query($sql);
 
@@ -61,4 +90,5 @@
             exit;
         }
     }
+
 ?>

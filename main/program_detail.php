@@ -63,11 +63,11 @@ echo '<script type="text/javascript">
     <h1 class="page_title">Scientific Program</h1>
     <div class="inner">
         <ul class="tab_green long centerT detail_program">
-            <li id="tab1" class="on"><a href="javascript:;">Sep.7(Thu)
+            <li id="tab1" class="on"><a href="javascript:;">Sep.7 (Thu)
                 </a></li>
-            <li id="tab2"><a href="javascript:;">Sep.8(Fri)
+            <li id="tab2"><a href="javascript:;">Sep.8 (Fri)
                 </a></li>
-            <li id="tab3"><a href="javascript:;">Sep.9(Sat)
+            <li id="tab3"><a href="javascript:;">Sep.9 (Sat)
                 </a></li>
         </ul>
         <div class="tab_wrap">
@@ -640,7 +640,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
@@ -853,12 +853,17 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
+														<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
+														<li><span class="font_inherit bold">References</span><br/>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1141,12 +1146,16 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Soo Lim</span> (Seoul National University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+													<ul>
+														<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, and stressors such as sepsis and cancer in humans. Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
+														<li><span class="font_inherit bold">References</span><br/>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1420,7 +1429,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
@@ -1640,12 +1649,17 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
+														<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
+														<li><span class="font_inherit bold">References</span><br/>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1938,12 +1952,16 @@ echo '<script type="text/javascript">
                                                         University, Korea)
                                                     </p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+													<ul>
+														<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, and stressors such as sepsis and cancer in humans. Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
+														<li><span class="font_inherit bold">References</span><br/>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -2230,7 +2248,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Youngkil Choi</span> (Kyung Hee University, Korea)</p> -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
@@ -2469,12 +2487,17 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
+														<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
+														<li><span class="font_inherit bold">References</span><br/>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -2792,12 +2815,16 @@ echo '<script type="text/javascript">
                                                         University, Korea)
                                                     </p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+													<ul>
+														<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, and stressors such as sepsis and cancer in humans. Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
+														<li><span class="font_inherit bold">References</span><br/>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -4634,12 +4661,16 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years. His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
+														<li><span class="font_inherit bold">References</span><br/>Nature. Dopamine subsystems that track internal states. 2022<br/>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -5448,12 +5479,16 @@ echo '<script type="text/javascript">
                                                         (University of Ulsan, Korea)
                                                     </p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years. His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
+														<li><span class="font_inherit bold">References</span><br/>Nature. Dopamine subsystems that track internal states. 2022<br/>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -6268,7 +6303,8 @@ echo '<script type="text/javascript">
                                             <tr class="pink_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture 3</p>
+                                                    <p class="font_20 bold">Key
+													note Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -6276,7 +6312,11 @@ echo '<script type="text/javascript">
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years. His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
+														<li><span class="font_inherit bold">References</span><br/>Nature. Dopamine subsystems that track internal states. 2022<br/>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>

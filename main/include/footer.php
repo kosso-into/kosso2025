@@ -3,8 +3,11 @@
     <div class="fixed_btn_clone"></div>
     <div class="fixed_btn_wrap">
         <ul class="toolbar_wrap">
-            <li><button type="button" onClick="location.href='/main/board_notice.php'"><i><img
-                            src="/main/img/icons/tool_faq.svg" alt=""></i>Notice</button></li>
+            <li>
+				<a href="/main/program_glance.php">
+					<img src="/main/img/icons/tool_program.svg" alt="">
+				</a>
+			</li>
             <li><button type="button" onClick="location.href='/main/registration.php'"><i><img
                             src="/main/img/icons/tool_regist.svg" alt=""></i>Registration</button></li>
             <li><button type="button" onClick="location.href='/main/abstract_submission.php'"><i><img

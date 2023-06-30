@@ -470,6 +470,9 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 @media screen and (max-width: 1232px){
 	/* submission_guideline > 220414 HUBDNC LJH2 추가*/
 	.none1232 {display: none;}
+
+	/*awards*/
+	.download_wrap .long_btn.type2 { margin-left: 0; margin-top: 12px;}
 }
 
 @media screen and (max-width: 1200px){
@@ -816,6 +819,9 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.event_name sup {font-size: 10px;}
 	.submission_guideline li b {font-size: 18px;}
 	section li b.mo_b {font-size: inherit;}
+
+	/*awards*/
+	.download_wrap .long_btn.type2 {line-height: 1.5;}
 }
 
 @media screen and (max-width: 480px){
