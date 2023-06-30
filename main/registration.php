@@ -797,6 +797,7 @@ if ($during_yn !== "Y") {
 			$(this).val(v);
 		});
 
+		/*
 		$(".apply_btn").on("click", function(){
 			const promotionCode = $("input[name=promotion_code]").val();
 			const recommendBy = $("input[name=recommended_by]").val();
@@ -820,6 +821,7 @@ if ($during_yn !== "Y") {
 				$("input[name=promotion_confirm_code]").val(1).change();
 			}
 		});
+		*/
 
         $(".next_btn").on("click", function (){
              if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
