@@ -147,23 +147,23 @@
 			<ul>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
-						<h2>July 6<span>(Thu)</span></h2>
+						<h2>July 6 <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
 						<p>Abstract Submission<br/>Deadline</p>
 					</a>
 				</li>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
-						<h2>August 8<span>(Tue)</span></h2>
+						<h2>August 8 <span>(Tue)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
 						<p>Notification of<br/>Acceptance</p>
 					</a>
 				</li>
 				<li>
 					<a href="/main/registration_guidelines.php">
-						<h2>June 29<span>(Thu)</span></h2>
+						<h2>August 10 <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
-						<p>Early-bird Registration<br/>Deadline</p>
+						<p>Pre-Registration <br/>Deadline</p>
 					</a>
 				</li>
 				<li>

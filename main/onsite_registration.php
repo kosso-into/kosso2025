@@ -9,7 +9,7 @@
     $nation_list_query = $nation_query;
     $nation_list = get_data($nation_list_query);
 ?>
-
+<script src="./js/script/client/onsite_registration.js"></script>
 <style>
 	.ksola_signup {
 		display:none;
@@ -23,10 +23,22 @@
 	.section_div {
 		margin-top:60px;
 	}
+    .korea_only, .korea_radio{
+        display:none;
+    }
+    .korea_only.on, .korea_radio.on{
+        display:revert;
+    }
+    .mo_korea_only, .korea_radio{
+        display:none;
+    }
+    .mo_korea_only.on, .korea_radio.on{
+        display:revert;
+    }
 </style>
 
 <img src="./img/img_onsite_registration.png" class="w100" alt="">
-<section class="container window_open">
+<section class="container window_open onsite_register">
 	<div class="">
 		<div class="term_wrap">
 			<h3 class="title">Use of Personal Information</h3>
@@ -56,7 +68,7 @@
 							<th><span class="red_txt">*</span> Country</th>
 							<td>
 								<div class="max_normal">
-									<select id="nation_no" name="nation_no" class="required"> 
+									<select id="nation_no" name="nation_no" class="required">
 										<option value="" selected hidden>Choose</option>
 									<?php
 										foreach($nation_list AS $n) {
@@ -68,7 +80,7 @@
 									?>
 										<option data-nt="<?= $n['nation_tel']; ?>" value="<?=$n["idx"]?>" <?=$select_option?>><?=$nation?></option>
 									<?php
-										}	
+										}
 									?>
 									</select>
 								</div>
@@ -78,10 +90,12 @@
 							<th class="nowrap"><span class="red_txt">*</span> 대한비만학회(KSSO) 회원 여부</th>
 							<td>
 								<div class="label_wrap">
-									<input type="radio" class="new_radio" name="user" id="user1">
-									<label for="user1"><i></i>회원</label>	
-									<input checked type="radio" class="new_radio" name="user" id="user2">
-									<label for="user2"><i></i>비회원</label>	
+									<input type="radio" class="new_radio" name="user" id="user1" value="1">
+									<label for="user1"><i></i>회원</label>
+									<input checked type="radio" class="new_radio" name="user" id="user2" value="0">
+									<label for="user2"><i></i>비회원</label>
+                                    <input type="hidden" name="ksso_member_check">
+                                    <input type="hidden" name="ksso_member_type">
 								</div>
 							</td>
 						</tr>
@@ -234,7 +248,7 @@
 							<th><span class="red_txt">*</span> Type of Participation</th>
 							<td>
 								<div class="max_normal">
-									<select id="participation_type" name="participation_type" class="required">
+									<select id="participation_type" name="participation_type" class="required" onChange="calc_fee(this)">
                                         <option value="" selected hidden>Choose</option>
                                         <?php
                                         $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
@@ -279,7 +293,7 @@
 							<td>
 								<ul class="max_normal flex_hide">
                                     <li>
-                                        <select id="category" name="category" class="required">
+                                        <select id="category" name="category" class="required" onChange="calc_fee(this)">
                                             <option value="" selected hidden>Choose</option>
                                             <?php
                                             $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
@@ -300,7 +314,7 @@
 								</ul>
 							</td>
 						</tr>
-						<tr class="">
+						<tr class="korea_only">
 							<th><span class="red_txt">*</span> 평점 신청</th>
 							<td>
 								<div class="label_wrap">
@@ -311,7 +325,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list">
+						<tr class="review_sub_list korea_only">
 							<th>의사 면허번호</th>
 							<td>
 								<div class="max_normal">
@@ -319,7 +333,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list">
+						<tr class="review_sub_list korea_only">
 							<th>영양사 면허번호</th>
 							<td>
 								<div class="max_normal">
@@ -327,7 +341,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list">
+						<tr class="review_sub_list korea_only">
 							<th>임상영양사 자격번호</th>
 							<td>
 								<div class="max_normal">
@@ -358,7 +372,7 @@
 
                                             echo "
                                             <li>
-                                                <input type='checkbox' class='checkbox' id='others".$i."' name='others".$i."' value='".$others_arr[$i-1]."' ".$checked.">
+                                                <input type='checkbox' class='checkbox' id='others".$i."' name='others' value='".$others_arr[$i-1]."' ".$checked.">
                                                 <label for='others".$i."'>
                                                     <i></i>".$others_arr[$i-1]."
                                                 </label>
@@ -367,26 +381,6 @@
 
                                         }
                                     ?>
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="other" id="other1">-->
-<!--										<label for="other1"><i></i>Welcome Reception</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="other" id="other2">-->
-<!--										<label for="other2"><i></i>Day 2 Breakfast Symposium</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="other" id="other3">-->
-<!--										<label for="other3"><i></i>Day 2 Luncheon Symposium</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="other" id="other4">-->
-<!--										<label for="other4"><i></i>Day 3 Breakfast Symposium</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="other" id="other5">-->
-<!--										<label for="other5"><i></i>Day 3 Luncheon Symposium</label>-->
-<!--									</li>-->
 								</ul>
 							</td>
 						</tr>
@@ -429,46 +423,6 @@
 
                                         }
                                     ?>
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information1">-->
-<!--										<label for="information1"><i></i>Website of the Korea Society of Obesity</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information2">-->
-<!--										<label for="information2"><i></i>Promotional email from the Korea Society of Obesity</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information3">-->
-<!--										<label for="information3"><i></i>Advertising email or the bulletin board from the relevant society</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information4">-->
-<!--										<label for="information4"><i></i>Information about affiliated companies/organizations</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information5">-->
-<!--										<label for="information5"><i></i>Invited as a speaker, chairperson, and panelist</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information6">-->
-<!--										<label for="information6"><i></i>Recommended by a professor</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information7">-->
-<!--										<label for="information7"><i></i>Recommended by acquaintances</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information8">-->
-<!--										<label for="information8"><i></i>Pharmaceutical company</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information9">-->
-<!--										<label for="information9"><i></i>Medical community (MEDI:GATE, Dr.Ville, etc.)</label>-->
-<!--									</li>-->
-<!--									<li>-->
-<!--										<input type="radio" class="new_radio" name="information" id="information10">-->
-<!--										<label for="information10"><i></i>Medical news and journals</label>-->
-<!--									</li>-->
 								</ul>
 							</td>
 						</tr>
@@ -487,32 +441,41 @@
 					<tbody>
 						<tr>
 							<th>Total</th>
-							<td></td>
+							<td><input type="text" id="reg_fee" name="reg_fee" style="border: none; background: transparent;" placeholder="0" readonly value="<?=$prev["calc_fee"] || $prev["calc_fee"] == 0 ? number_format($prev["calc_fee"]) : ""?>"></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 		<div class="pager_btn_wrap half">
-			<button id="submit" type="button" class="btn green_btn">Submit</button>
+			<button id="submit" type="button" class="btn green_btn" onclick="submit()">Submit</button>
 		</div>
 	</div>
 </section>
 
 <script>
 	$(document).ready(function(){
-        $("select[name=nation_no]").on("change", function(){
-            const val = $(this).val();
-            // const prevTitle = $("input[name=title_prev_input]").val() ?? "";
+        $("select[name=nation_no]").change(function(){
 
-            if(val == 'Repulic of Korea'){
-                if(!$(this).parent("li").next('.hide_input').hasClass("on")){
-                    $(this).parent("li").next('.hide_input').addClass("on");
-                }
-            }else{
-                $(this).parent("li").next('.hide_input').removeClass("on");
-                $("input[name=title_input]").val(prevTitle);
+            var value = $(this).val();
+
+            if (value == 25){
+
+                $(".korea_only").addClass("on");
+                $(".korea_radio").addClass("on");
+            } else {
+                $(".korea_radio").removeClass("on");
+                $(".korea_only").removeClass("on");
+                $(".ksola_signup").removeClass("on");
+
+                remove_value();
+                $("#user2").prop('checked', true);
             }
+
+            var nt = $("#nation_no option:selected").data("nt");
+            $("input[name=nation_tel]").val(nt);
+            $("input[name=tel_nation_tel]").val(nt);
+
         });
 
         $("#user1").change(function(){

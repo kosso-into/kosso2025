@@ -571,6 +571,7 @@ section.container.organizing {padding-bottom: 190px;}
 
 /* 230511 HUBDNCLHJ ******* 작업 */
 .long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; background-color: #0066CC; width: 100%; max-width: 400px;}
+.long_btn.type2 {font-size: 18px; border-radius: 99px; height: auto; }
 section.container .page_title {background: #f2f2f2; width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 40px 0 48px;}
 .inner {padding-top:50px;}
 h3.title:before {content:'';display: inline-block;  width: 9px;height: 9px; background: transparent; border:6px solid #4267C5; margin-bottom: 2px; border-radius:50%; margin-right: 10px; vertical-align: middle;}
@@ -1296,4 +1297,4 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	23.06.13 APP CSS
 ==========================*/
 /* program detail */
-.invited_tag {font-size:10px; border-radius:4px; border:1px solid #000; color:#000; /* margin-left:8px; */ line-height:18px; padding:0 8px; background-color:#fff;}
+.invited_tag {font-size:9px; border-radius:8px; color:#fff; /* margin-left:8px; */ line-height:15px; padding:0 6px 0 24px; background:#336666 url("../img/icons/icon_invited_btn.svg") no-repeat center left 6px /12px;}

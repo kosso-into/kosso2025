@@ -414,7 +414,7 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 .program_glance .section_title_wrap2 {display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px 20px; margin-bottom:5px;}
 .program_glance .section_title_wrap2 > * {flex-shrink:0;}
 .program_glance .section_title_wrap2 h3 {font-size:16px; font-weight:bold; line-height:29px; padding-bottom: 0;}
-.program_detail_td {white-space:normal !important; word-break: break-all !important; /*display:none;*/}
+.program_detail_td {white-space:normal !important; word-break: break-all !important; display:none;}
 .program_detail_td.on {display:table-cell;}
 .program_detail_btn {position:absolute; top:50%; right:20px; transform:translateY(-50%); height: 32px; font-size: 14px; padding: 0 14px;}
 .program_detail_ul .program_detail_td ul {margin-top:12px;}
@@ -487,6 +487,7 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 
 /*Abstract Submission Award*/
 .abstract_submission_award .title {padding-bottom:30px;}
+.abstract_submission_award h4.title {padding-bottom:15px;}
 .abstract_submission_award .title span {display:block; margin-top:20px;}
 /*.abstract_submission_award .section1 > div:not(:first-of-type) {margin-top: 140px;}*/
 .abstract_submission_award .section1 > div:not(:first-of-type) {margin-top: 60px;}
@@ -740,12 +741,13 @@ section.visa .table_vertical th {color: #000;}
 .program_detail_ul .purple_bg + tr td.program_detail_td {background-color:#F4F3FF;}
 .program_detail_ul .green_bg + tr td.program_detail_td {background-color:#F3FCEA;}
 /*히든처리*/
+/*
 .program_detail_ul .pink_bg + tr td.program_detail_td {display: none;}
 .program_detail_ul .sky_bg + tr td.program_detail_td {display: none;}
 .program_detail_ul .purple_bg + tr td.program_detail_td {display: none;}
 .program_detail_ul .green_bg + tr td.program_detail_td {display: none;}
 .program_detail_ul .light_orange_bg + tr td.program_detail_td {display: none;}
-
+*/
 /*sponsor_exhibition*/
 .sponsor_exhibition > div:not(:first-child) {margin-top:70px;}
 .sponsor_exhibition h2 {font-size:44px; font-weight:bold; margin-bottom:50px; border-bottom:2px solid #707070; padding-left:36px;}

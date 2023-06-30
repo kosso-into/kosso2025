@@ -293,6 +293,12 @@
 	.rs2_hidden{display: none;margin-top: 10px;width: calc(100% - 180px);}
 	[name=rs2_unit]{width: 30% !important;}
 	[name=rs2_price]{width: calc(68% - 10px) !important;margin-left: 10px;}
+	.wid_150 {width: 150px !important;}
+	.registration_detail_table {margin-bottom:0; border-bottom:none; table-layout:fixed;}
+	.registration_detail_table th, .registration_detail_table td {border-bottom:1px solid #ccc;}
+	.registration_detail_table th {width:10%;}
+	.registration_detail_table td:last-of-type {width:20%;}
+	.registration_detail_table + table {border-top:none;}
 </style>
 	<section class="detail">
 		<div class="container">
@@ -464,13 +470,15 @@
 					}
 				?>
 				<h2 class="sub_title">결제 정보</h2>
-				<table>
-					<colgroup>
+				<table class="registration_detail_table">
+					<!-- <colgroup>
 						<col width="10%">
-						<col width="40%">
+						<col width="30%">
 						<col width="10%">
-						<col width="40%">
-					</colgroup>
+						<col width="30%">
+						<col width="10%">
+						<col width="10%">
+					</colgroup> -->
 					<tbody>
 						<!--<tr>
 							<th>Online/Offline</th>
@@ -580,13 +588,23 @@
 							<th>환불일</th>
 							<td><?=$refund_date?></td>
 						</tr>
+					</tbody>
+				</table>
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="60%">
+						<col width="10%">
+						<col width="20%">
+					</colgroup>
+					<tbody>
 						<tr>
 							<th>환불받을 계좌</th>
 							<td colspan="1">
-								<div class="clearfix input_wrap2">
-									<input type="text" class="default_width refund" name="refund_bank" placeholder="은행명" value="<?=$refund_bank?>" <?=$disabled?>>
-									<input type="text" class="default_width refund" name="refund_holder" placeholder="예금주" value="<?=$refund_holder?>" <?=$disabled?>>
-									<input type="text" class="default_width refund" name="refund_account" placeholder="계좌번호" value="<?=$refund_account?>" <?=$disabled?>>
+								<div class="clearfix input_wrap2 flex" style="width:100%;">
+									<input type="text" class="refund wid_150" name="refund_bank" placeholder="은행명" value="<?=$refund_bank?>" <?=$disabled?>>
+									<input type="text" class="refund wid_150" name="refund_holder" placeholder="예금주" value="<?=$refund_holder?>" <?=$disabled?>>
+									<input type="text" class="refund wid_150" name="refund_account" placeholder="계좌번호" value="<?=$refund_account?>" <?=$disabled?>>
 									<?php
 										if ($is_modify) {
 									?>

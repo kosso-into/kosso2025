@@ -85,7 +85,7 @@
 		$affiliation = htmlspecialchars($affiliation);
 		$department  = isset($user["department"]) ? $user["department"] : "";
 		$department  = htmlspecialchars($department);
-		$ksso_member_status = isset($user["ksola_member_status"]) || $$user["ksola_member_status"] == 0 ? $user["ksola_member_status"] : "";
+		$ksso_member_status = isset($user["ksola_member_status"]) || $user["ksola_member_status"] == 0 ? $user["ksola_member_status"] : "";
 		
 		$welcome_reception_yn = $data["others1"] != "no" ? "Y" : "N";
 		$day2_breakfast_yn    = $data["others2"] != "no" ? "Y" : "N";
@@ -733,6 +733,7 @@
 	} else if($_POST["flag"] == "calc_fee") {
 		$user_idx = $_SESSION["USER"]["idx"];
 		$category = $_POST["category"];
+        //$country = isset($_POST["country"]) ? $_POST["country"] : "";
 
 		// 카테고리별 상품금액 조회
 		$calc_fee_query =	"
@@ -751,8 +752,8 @@
 			$res = [
 				code => 200,
 				msg => "success",
-				data => $result,
-				country => $country
+				data => $result
+//				country => $country
 			];
 			echo json_encode($res);
 			exit;
@@ -800,7 +801,6 @@
 		$calc_fee = sql_fetch($calc_fee_query);
 
 		if($member_is_korean == 1){
-
 			if($member_ksola >= 1){
 				$result = $calc_fee["on_member_krw"];
 			}else{

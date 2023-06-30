@@ -10,8 +10,8 @@
 		</h2>
 	</div>
 	<div class="inner">
-		<ul>
-			<li class="speaker on">
+		<ul class="speaker_list_wrap">
+			<li class="speaker08 on">
 				<div class="speakers_detail">
 					<img src="./img/img_speakers08.jpg" alt="">
 					<div class="detail_box">
@@ -21,7 +21,7 @@
 				</div>
 				<div class="schedule_area">
 					<ul class="program_detail_ul">
-						<li name="Keynote_Lecture_2" class="day_3">
+						<li name="keynote_lecture_2" class="day_3">
 							<div class="main">
 								<button class="detail_btn"></button>
 								<p class="title">Keynote Lecture 2</p>
@@ -33,7 +33,7 @@
 							</div>
 							<input type="hidden" name="e" value="room1">
 						</li>
-						<li name="Keynote_Lecture_2_2" class="day_3">
+						<li name="keynote_lecture_2_2" class="day_3">
 							<div class="main">
 								<button class="detail_btn"></button>
 								<p class="title">Keynote Lecture 2</p>
@@ -45,7 +45,7 @@
 							</div>
 							<input type="hidden" name="e" value="room2">
 						</li>
-						<li name="Keynote_Lecture_2_3" class="day_3">
+						<li name="keynote_lecture_2_3" class="day_3">
 							<div class="main">
 								<button class="detail_btn"></button>
 								<p class="title">Keynote Lecture 2</p>
