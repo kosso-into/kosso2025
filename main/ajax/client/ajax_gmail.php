@@ -474,9 +474,9 @@ if($language == "ko") {
 				case 4:
 					$attendance_type = "General Participants";
 					break;
-//                case 5:
-//                    $attendance_type = "Sponsor";
-//                    break;
+                case 5:
+                    $attendance_type = "Sponsor";
+                    break;
 			}
 
 			$is_score = $data["is_score"] ?? "";

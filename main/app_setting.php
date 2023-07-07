@@ -6,7 +6,7 @@
 	<div class="app_title_box">
 		<h2 class="app_title">
 			Setting
-			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='javascript:;';">
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';">
 				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>

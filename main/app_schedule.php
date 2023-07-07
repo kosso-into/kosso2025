@@ -6,7 +6,7 @@
 	<div class="app_title_box">
 		<h2 class="app_title">
 			MY SCHEDULE
-			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_notice.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="contents_box">
@@ -31,6 +31,7 @@
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
 								<span class="time">09:50-10:15</span>
+								<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 							</div>
 						</div>
 					</div>
@@ -53,6 +54,7 @@
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
 								<span class="time">09:50-10:15</span>
+								<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 							</div>
 						</div>
 					</div>
@@ -78,6 +80,7 @@
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
 								<span class="time">09:50-10:15</span>
+								<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 							</div>
 						</div>
 					</div>
@@ -100,6 +103,7 @@
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
 								<span class="time">09:50-10:15</span>
+								<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 							</div>
 						</div>
 					</div>
@@ -125,6 +129,7 @@
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
 								<span class="time">09:50-10:15</span>
+								<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 							</div>
 						</div>
 					</div>
@@ -147,6 +152,7 @@
 							<p class="chairperson"><span class="bold">Yun-Kyung Cho</span> (University of Ulsan, Republic of Korea)</p>
 							<div class="info">
 								<span class="time">09:50-10:15</span>
+								<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 							</div>
 						</div>
 					</div>

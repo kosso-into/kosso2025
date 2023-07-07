@@ -4,6 +4,11 @@ $(document).ready(function() {
         const promotionCode = $("input[name=promotion_code]").val();
         const recommender = $("input[name=recommended_by]").val();
 
+        if($("input[name=reg_fee]").val()==0){
+            alert("Please Check the paticipation type");
+            return
+        }
+
         if (!promotionCode) {
             $("input[name=promotion_code]").focus();
             alert("Please Enter the code.");
@@ -32,7 +37,9 @@ $(document).ready(function() {
                 if (res.code == 200) {
                     var result=res.result;
                     if(result.count_limit==0){
-                        alert("이미 사용된 프로모션코드입니다.");
+                        alert("This code has already been used.");
+                        $("input[name=promotion_code]").val('');
+                        $("input[name=recommended_by]").val('');
                         return;
                     } else{
                         var discount_rate=result.discount_rate;
@@ -53,24 +60,4 @@ $(document).ready(function() {
         });
     }
 
-    function regist_promotion_code(result, recommender) {
-        $.ajax({
-            url: PATH + "ajax/client/ajax_promotion.php",
-            type: "POST",
-            data: {
-                flag: "regist",
-                data: result,
-                recommender: recommender
-            },
-            dataType: "JSON",
-            success: function (res) {
-                if (res.code == 200) {
-                    alert("프로모션 코드가 적용되었습니다.");
-                } else {
-                    alert("regist promotion error.");
-                    return;
-                }
-            }
-        });
-    }
 });

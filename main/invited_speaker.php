@@ -126,7 +126,7 @@
                                             <img src="./img/img_speakers08.jpg">
                                         </div>
                                         <div class="desc_wrap flex1">
-                                            <p class="">TBD</p>
+                                            <p class="">Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin</p>
                                             <div>
                                                 <h4 class="title">Jae Myoung Suh</h4>
                                                 <h5>KAIST, Republic of Korea</h5>
@@ -143,7 +143,7 @@
                                 <div class="bottom_wrap">
                                     <div class="flex">
                                         <div class="profile_wrap">
-                                            <img src="./img/img_prof_Zachary A_Knight.png">
+                                            <img src="./img/img_speakers03_1.jpg">
                                         </div>
                                         <div class="desc_wrap flex1">
                                             <p class="">Brainstem Circuits that Control Ingestion</p>

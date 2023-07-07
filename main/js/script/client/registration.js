@@ -83,6 +83,13 @@ $(document).ready(function(){
 					dataType : "JSON",
 					success : function(res){
 						if(res.code == 200) {
+							var registration_idx = res.registration_idx;
+							var reg_promotion_code = $("input[name=promotion_code]").val();
+							var reg_recommender = $("input[name=recommended_by]").val();
+
+							if(reg_promotion_code != "" && reg_recommender != ""){
+								regist_promotion_code(registration_idx,reg_promotion_code,reg_recommender);
+							}
 
 							if(res.email != null){
 								// 구글 메일 발송
@@ -142,6 +149,33 @@ $(document).ready(function(){
 	});
 });
 
+function regist_promotion_code(registration_idx,promotion_code, recommender) {
+
+	data = {
+		registration_idx: registration_idx,
+		promotion_code: promotion_code,
+		recommender: recommender
+	}
+
+	$.ajax({
+		url: PATH + "ajax/client/ajax_promotion.php",
+		type: "POST",
+		data: {
+			flag: "regist",
+			data: data
+		},
+		dataType: "JSON",
+		success: function (res) {
+			if (res.code == 200) {
+				alert("A promotional code has been applied successfully.");
+			} else {
+				alert("regist promotion error.");
+				return;
+			}
+		}
+	});
+}
+
 function gmail_registration(email, name, data, registration_idx) {
 	$.ajax({
 		url : PATH+"ajax/client/ajax_gmail.php",
@@ -188,9 +222,9 @@ function calc_fee(obj){
 	}
 
 	if(participation_type == "Participants" || participation_type =="Sponsor"){
-		// if(participation_type == "Sponsor"){
-		// 	category="Others";
-		// }
+		if(participation_type == "Sponsor"){
+			category="Others";
+		}
 		$.ajax({
 			url : PATH+"ajax/client/ajax_registration.php",
 			type : "POST",
@@ -398,12 +432,12 @@ function requireChecked(){
 }
 
 //0627 공백,특수문자 사용 방지
-// function checkRegExp(obj)
-// {
-// 	var regExp = /[ \{\}\[\]\?.,;:|\~!^\-_+┼<>@\#$%&\'\"\\=]/gi;
-// 	if( regExp.test(obj.value) ){
-// 		obj.focus();
-// 		obj.value = obj.value.substring( 0 , obj.value.length - 1 ); // 입력한 특수문자 한자리 지움
-// 		obj.value = obj.value.replace(' ',''); // 공백제거
-// 	}
-// }
+function checkRegExp(obj)
+{
+	var regExp = /[ \{\}\[\]\?.,;:|\~!^\-_+┼<>@\#$%&\'\"\\=]/gi;
+	if( regExp.test(obj.value) ){
+		obj.focus();
+		obj.value = obj.value.substring( 0 , obj.value.length - 1 ); // 입력한 특수문자 한자리 지움
+		obj.value = obj.value.replace(' ',''); // 공백제거
+	}
+}

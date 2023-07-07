@@ -242,7 +242,7 @@
 						?>
 							<td><a href="./pdf_viewer.php?path=<?=$author_detail["path"]?>" target="_blank"><?=$author_detail["file_name"]?></a></td>
 						<?php } else {?>
-							<td><a href="<?=$author_detail["path"]?>" download=""><?=$author_detail["file_name"]?></a></td>
+							<td><a href="<?=$author_detail["path"]?>" download="<?=$author_detail["submission_code"]?>"><?=$author_detail["file_name"]?></a></td>
 						<?php }?>
 							<!-- <th>Abstract text</th>
 							<td>text contents</td> -->

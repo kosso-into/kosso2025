@@ -5,7 +5,10 @@
 
 <section class="container app_floor_plan app_version">
 	<div class="app_title_box">
-		<h2 class="app_title">Floor Plan</h2>
+		<h2 class="app_title">
+			Floor Plan
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+		</h2>
 	</div>
 	<div class="container_inner inner">
 		<div class="contents_box">

@@ -68,7 +68,7 @@
 							<th><span class="red_txt">*</span> Country</th>
 							<td>
 								<div class="max_normal">
-									<select id="nation_no" name="nation_no" class="required">
+									<select id="nation_no" name="nation_no" class="required" onChange="calc_fee()">
 										<option value="" selected hidden>Choose</option>
 									<?php
 										foreach($nation_list AS $n) {
@@ -113,7 +113,7 @@
 										<input class="passwords" name="kor_pw" type="password" maxlength="60">
 									</li>
 									<li>
-										<button onclick="kor_api()" type="button" class="btn">회원인증</button>
+										<button onclick="kor_api(); calc_fee();" type="button" class="btn">회원인증</button>
 									</li>
 								</ul>
 								<div class="clearfix2">
@@ -248,7 +248,7 @@
 							<th><span class="red_txt">*</span> Type of Participation</th>
 							<td>
 								<div class="max_normal">
-									<select id="participation_type" name="participation_type" class="required" onChange="calc_fee(this)">
+									<select id="participation_type" name="participation_type" class="required" onChange="calc_fee()">
                                         <option value="" selected hidden>Choose</option>
                                         <?php
                                         $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
@@ -293,7 +293,7 @@
 							<td>
 								<ul class="max_normal flex_hide">
                                     <li>
-                                        <select id="category" name="category" class="required" onChange="calc_fee(this)">
+                                        <select id="category" name="category" class="required" onChange="calc_fee()">
                                             <option value="" selected hidden>Choose</option>
                                             <?php
                                             $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
@@ -476,6 +476,14 @@
             $("input[name=nation_tel]").val(nt);
             $("input[name=tel_nation_tel]").val(nt);
 
+
+            $("input[name=ksso_member_type]").val('');
+            $("input[name=ksso_member_check]").val('');
+
+        });
+
+        $("input[name='user']").change(function(){
+            calc_fee();
         });
 
         $("#user1").change(function(){

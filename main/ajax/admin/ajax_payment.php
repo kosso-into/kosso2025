@@ -76,6 +76,24 @@
 
             if ($payment_status == 4) {
                 $update_payment_query .= " refund_date = NOW(), ";
+
+                // 프로모션코드 취소
+                $select_promotion_query =	"
+											SELECT idx, registration_idx, promotion_code_idx
+											FROM management_promotion_code
+											WHERE registration_idx = '{$registration_idx}'
+										";
+                $promotion_code_idx = sql_fetch($select_promotion_query)['promotion_code_idx'];
+
+                if($promotion_code_idx){
+                    $update_promotion_query =	"
+											UPDATE promotion_code
+											SET 
+												count_limit = 1
+											WHERE idx = '{$promotion_code_idx}'
+										";
+                    $update_promotion_result = sql_query($update_promotion_query);
+                }
             }
 
             $update_registartion_query =    "

@@ -2,7 +2,7 @@
 	include_once('./include/head.php');
 	include_once('./include/header.php');
 
-	if($admin_permission["auth_apply_registration"] == 0){
+    if($admin_permission["auth_apply_registration"] == 0){
 		echo '<script>alert("권한이 없습니다.");history.back();</script>';
 	}
 
@@ -51,7 +51,7 @@
 													WHEN '2' THEN 'Chairperson'
 													WHEN '3' THEN 'Panel'
 													WHEN '4' THEN 'Participants'
-													##WHEN '5' THEN 'Sponsor'
+													WHEN '5' THEN 'Sponsor'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
@@ -74,6 +74,7 @@
 											CASE
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
 												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
+												WHEN rr.payment_methods = '2' THEN 'Onsite payment'
 											END
 										    ) AS payment_methods,
 											rr.invitation_check_yn, n_visa.nation_ko AS invitation_nation_text, 
@@ -484,7 +485,7 @@
 							<th>Online/Offline</th>
 							<td><?=$attendance_type?></td>
 							<th>참석유형</th>
-							<td><?=$registration_type?></td>
+							<td><?=$registration_type_text?></td>
 						</tr>
 						<tr>
 							<th>평점신청여부</th>

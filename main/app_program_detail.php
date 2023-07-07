@@ -2,7 +2,6 @@
 <?php include_once('./include/app_header.php'); ?>
 
 
-
 <?php
 
 $type = $_GET['type'];
@@ -75,7 +74,10 @@ echo '<script type="text/javascript">
 
 <section class="container app_version app_scientific">
 	<div class="app_title_box">
-		<h2 class="app_title">PROGRAM</h2>
+		<h2 class="app_title">
+			PROGRAM
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+		</h2>
 		<ul class="app_menu_tab langth_2">
 			<li><a href="./program_glance.php">Program at a Glance</a></li>
 			<li class="on"><a href="./app_program_detail.php">Scientific Program</a></li>
@@ -139,44 +141,44 @@ echo '<script type="text/javascript">
 									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
 									<div class="info">
 										<button></button>
-										<span class="time">17:00-18:30</span>
+										<span class="time">16:00-17:30</span>
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">17:00-17:25</span>
+											<span class="time">16:00-16:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">17:25-17:50</span>
+											<span class="time">16:25-16:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">17:50-18:15</span>
+											<span class="time">16:50-17:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Panel Discussion</p>
 										<!-- <p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p> -->
 										<div class="info">
-											<span class="time">18:15-18:30</span>
+											<span class="time">17:15-17:30</span>
 										</div>
 									</div>
 								</div>
@@ -185,7 +187,7 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<p class="title">Break</p>
 									<div class="info">
-										<span class="time">18:30-19:00</span>
+										<span class="time">17:30-18:00</span>
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
@@ -194,22 +196,22 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Satellite Symposium 1</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Yong-ho Lee (Yonsei University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
-										<span class="time">19:00-19:30</span>
+										<span class="time">18:00-18:30</span>
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yong-ho Lee</span> (Yonsei University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">19:00-19:30</span>
+											<span class="time">18:00-18:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -218,22 +220,22 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Satellite Symposium 2</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Won Yoon Suh (Chungnam National University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
-										<span class="time">19:30-20:00</span>
+										<span class="time">18:30-19:00</span>
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Won Yoon Suh</span> (Chungnam National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">19:30-20:00</span>
+											<span class="time">18:30-19:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -252,44 +254,44 @@ echo '<script type="text/javascript">
 									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
 									<div class="info">
 										<button></button>
-										<span class="time">17:00-18:30</span>
+										<span class="time">16:00-17:30</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">17:00-17:25</span>
+											<span class="time">16:00-16:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">17:25-17:50</span>
+											<span class="time">16:25-16:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">17:50-18:15</span>
+											<span class="time">16:50-17:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Panel Discussion</p>
 										<!-- <p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p> -->
 										<div class="info">
-											<span class="time">18:15-18:30</span>
+											<span class="time">17:15-17:30</span>
 										</div>
 									</div>
 								</div>
@@ -307,22 +309,22 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Satellite Symposium 3</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Chang hee Jung (University of Ulsan, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
-										<span class="time">19:00-19:30</span>
+										<span class="time">18:00-18:30</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Chang hee Jung</span> (University of Ulsan, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">19:00-19:30</span>
+											<span class="time">18:00-18:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -341,7 +343,7 @@ echo '<script type="text/javascript">
 									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
 									<div class="info">
 										<button></button>
-										<span class="time">18:30-21:00</span>
+										<span class="time">19:00-21:00</span>
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
@@ -398,30 +400,31 @@ echo '<script type="text/javascript">
 					------------------->
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_1">
+							<!-- ▼ 삭제됨 [23.07.05] -->
+							<!-- <li name="breakfast_symposium_1">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Breakfast Symposium 1</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">07:30-08:20</span>
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD</span> (Seoul National University)
 										</p>
 										<div class="info">
-											<span class="time">07:30-08:20</span>
+											<span class="time">07:30-08:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
-                            </li>
+							                            </li> -->
 							<!-- <li name="break">
 								<div class="main">
 									<p class="title">Break</p>
@@ -442,22 +445,28 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+									<ul>
+										<li>
+											Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.
+										</li>
+										<li>
+											His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.
+										</li>
+										<li>
+											Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
-										<ul>
-											<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
-											<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
-											<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
 										<p class="chairperson">
-											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)
 										</p>
 										<div class="info">
-											<span class="time">08:30-09:00</span>
+											<span class="time">08:30-09:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -489,33 +498,55 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Seung-Hwan Lee (The Catholic University of Korea, Republic of Korea), Jae Hyun Bae (Korea University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Obesity is strongly associated with increased incidence and progression of cancers, significantly contributing to cancer-related mortality. This session will delve into the latest perspectives on the relationship between obesity and cancer.
+										</li>
+										<li>
+											Professor Yun Kyung Cho will present epidemiological studies that elucidate the impact of obesity on cancer risk. Professor Haejin Yoon will explore the regulation of mitochondrial metabolism and its role in metabolic diseases. Professor Annie Anderson will discuss evidence-based strategies to effectively address excess body fatness in cancer survivors.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Cho YK, Lee J, Kim HS, et al. Metabolic health is a determining factor for incident colorectal cancer in the obese population: A nationwide population-based cohort study. Cancer Med. 2021;10(1):220-229.
+										</li>
+										<li>
+											2. Yoon H, Spinelli JB, Zaganjor E, et al. PHD3 loss promotes exercise capacity and fat oxidation in skeletal muscle. Cell Metab. 2020;32(2):215-228.
+										</li>
+										<li>
+											3. Anderson AS, Martin RM, Renehan AG, et al. Cancer survivorship, excess body fatness and weight-loss intervention-where are we in 2020? Br J Cancer. 2021;124(6):1057-1065
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Obesity and the Risk of Cancer</p>
 										<p class="chairperson">
-											<span class="bold">Yun Kyung Cho</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yun Kyung Cho</span> (University of Ulsan, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Dynamic Regulation of Mitochondrial Metabolism in Metabolic Disease</p>
 										<p class="chairperson">
-											<span class="bold">Haejin Yoon</span> (UNIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Haejin Yoon</span> (UNIST, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Obesity Care in Cancer Survivors</p>
 										<p class="chairperson">
-											<span class="bold">Annie Anderson</span> (University of Dundee, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Annie Anderson</span> (University of Dundee, UK)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -547,15 +578,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<!-- <p class="title">TBD</p> -->
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">11:00-11:10</span>
+											<span class="time">11:00-11:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -571,26 +602,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.
+										</li>
+										<li>
+											Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.
+										</li>
+										<li>
+											2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.
+										</li>	
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
-										<ul>
-											<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
-											<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.</li>
-											<li>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004. </li>	
-										</ul>
-									</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
 										<p class="chairperson">
-											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)
 										</p>
 										<div class="info">
-											<span class="time">11:10-11:40</span>
+											<span class="time">11:10-11:40</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -622,15 +661,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">The Cardio-Renal Benefits of Dapagliflozin and Combination Therapy</p>
 										<p class="chairperson">
-											<span class="bold">Eun Young Lee</span> (The Catholic University of Korea, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Eun Young Lee</span> (The Catholic University of Korea, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">12:00-13:00</span>
+											<span class="time">12:00-13:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -655,33 +694,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Step Up Your Weight Management with Semaglutide</p>
 										<p class="chairperson">
-											<span class="bold">Bom Taeck Kim</span> (Ajou University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Bom Taeck Kim</span> (Ajou University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:00-14:25</span>
+											<span class="time">14:00-14:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Safety and Abuse of Anti-obesity Drugs</p>
 										<p class="chairperson">
-											<span class="bold">Ju Young Shin</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Ju Young Shin</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:25-14:50</span>
+											<span class="time">14:25-14:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Metabolic Effects of Tirzepatide, especially in East-Asian Patients from the SURPASS Program</p>
 										<p class="chairperson">
-											<span class="bold">Robert J. Heine</span> (Eli Lilly, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Robert J. Heine</span> (Eli Lilly, USA)
 										</p>
 										<div class="info">
-											<span class="time">14:50-15:15</span>
+											<span class="time">14:50-15:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -713,28 +752,40 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance,
+										</li>
+										<li>
+											and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans.
+										</li>
+										<li>
+											In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.
+										</li>
+										<li>
+											2. Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.
+										</li>
+										<li>
+											3. Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
-										<ul>
-											<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, </li>
-											<li>and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. </li>
-											<li>In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.</li>
-											<li>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.</li>
-											<li>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 										<p class="chairperson">
-											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)
 										</p>
 										<div class="info">
-											<span class="time">15:40-16:10</span>
+											<span class="time">15:40-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -766,33 +817,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Diabesity: From Disease Mechanism to Clinical Management</p>
 										<p class="chairperson">
-											<span class="bold">Dicky L. Tahapary</span> (Cardiovascular and Research Centre-IMERI(Indonesia Medical Education and Research Institute), Indonesia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Dicky L. Tahapary</span> (Cardiovascular and Research Centre-IMERI(Indonesia Medical Education and Research Institute), Indonesia)
 										</p>
 										<div class="info">
-											<span class="time">16:30-16:55</span>
+											<span class="time">16:30-16:55</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Sarcopenia and Obesity</p>
 										<p class="chairperson">
-											<span class="bold">Wen-Yuan Lin</span> (China Medical University and Hospital, Taiwan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Wen-Yuan Lin</span> (China Medical University and Hospital, Taiwan)
 										</p>
 										<div class="info">
-											<span class="time">16:55-17:20</span>
+											<span class="time">16:55-17:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Osteosarcopenic Obesity: A New Concept of an Old Problem</p>
 										<p class="chairperson">
-											<span class="bold">Tae Nyun Kim</span> (Inje University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Tae Nyun Kim</span> (Inje University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">17:20-17:45</span>
+											<span class="time">17:20-17:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -811,26 +862,26 @@ echo '<script type="text/javascript">
 					------------------->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_2">
+							<li name="breakfast_symposium_1">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Breakfast Symposium 2</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="title">Breakfast Symposium 1</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Jae Hyun Bae (Korea University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">07:30-08:20</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae Hyun Bae</span> (Korea University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">07:30-08:20</span>
+											<span class="time">07:30-08:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -855,22 +906,22 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+									<ul>
+										<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+										<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+										<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
-										<ul>
-											<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
-											<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
-											<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
 										<p class="chairperson">
-											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)
 										</p>
 										<div class="info">
-											<span class="time">08:30-09:00</span>
+											<span class="time">08:30-09:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -902,33 +953,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Dietary Restriction and Vascular Dementia</p>
 										<p class="chairperson">
-											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Role of Adiponectin Signaling in Alzheimer's Disease</p>
 										<p class="chairperson">
-											<span class="bold">Dong Gyu Jo</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Dong Gyu Jo</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Impact of Adiposity and Cognitive Function: Closer than You Think</p>
 										<p class="chairperson">
-											<span class="bold">Theresia Handayani Mina</span> (Nanyang Technological University, Singapore)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Theresia Handayani Mina</span> (Nanyang Technological University, Singapore)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -974,26 +1025,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.
+										</li>
+										<li>
+											Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.
+										</li>
+										<li>
+											2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.
+										</li>	
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
-										<ul>
-											<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
-											<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.</li>
-											<li>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004. </li>	
-										</ul>
-									</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
 										<p class="chairperson">
-											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)
 										</p>
 										<div class="info">
-											<span class="time">11:10-11:40</span>
+											<span class="time">11:10-11:40</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1018,20 +1077,20 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Luncheon Symposium 2</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Yun Kyung Cho (Univeristy of Ulsan, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">12:00-13:00</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
-										<!-- <p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p> -->
+										<p class="chairperson"><span class="bold">Yun Kyung Cho</span> (Univeristy of Ulsan, Republic of Korea)</p>
 										<div class="info">
-											<span class="time">12:00-13:00</span>
+											<span class="time">12:00-13:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -1048,41 +1107,41 @@ echo '<script type="text/javascript">
 							<li name="symposium_6">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Symposium 6</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Hideaki Soya (University of Tsukuba, Japan), <br/>Jung Gi Hong (CHA University, Republic of Korea)</p>
+									<p class="title">Symposium 6 : Clinical Exercise with Obesity</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Hideaki Soya (University of Tsukuba, Japan), <br/>Sukho Lee (Texas A & M University, USA), <br/>Jung Gi Hong (CHA University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Hideaki Soya</span> (University of Tsukuba, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Hideaki Soya</span> (University of Tsukuba, Japan)
 										</p>
 										<div class="info">
-											<span class="time">14:00-14:25</span>
+											<span class="time">14:00-14:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD</span> <!-- (University of Sao Paulo, Brazil) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Sukho Lee</span> (Texas A & M University, USA)
 										</p>
 										<div class="info">
-											<span class="time">14:25-14:50</span>
+											<span class="time">14:25-14:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Jung Gi Hong</span> (CHA University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jung Gi Hong</span> (CHA University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:50-15:15</span>
+											<span class="time">14:50-15:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1114,28 +1173,40 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance,
+										</li>
+										<li>
+											and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans.
+										</li>
+										<li>
+											In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.
+										</li>
+										<li>
+											2. Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.
+										</li>
+										<li>
+											3. Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
-										<ul>
-											<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, </li>
-											<li>and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. </li>
-											<li>In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.</li>
-											<li>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.</li>
-											<li>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 										<p class="chairperson">
-											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)
 										</p>
 										<div class="info">
-											<span class="time">15:40-16:10</span>
+											<span class="time">15:40-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1167,33 +1238,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Effect of Obesity and HDL Concentration on AD Pathology</p>
 										<p class="chairperson">
-											<span class="bold">Yun Ha Jeong</span> (Korea Brain Research Institute (KBRI), Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yun Ha Jeong</span> (Korea Brain Research Institute (KBRI), Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:30-16:55</span>
+											<span class="time">16:30-16:55</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Weight Bias and Stigma: The Occult Peril in Obesity Management</p>
 										<p class="chairperson">
-											<span class="bold">Kwang Wei Tham</span> (Woodlands Health, Singapore)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Kwang Wei Tham</span> (Woodlands Health, Singapore)
 										</p>
 										<div class="info">
-											<span class="time">16:55-17:20</span>
+											<span class="time">16:55-17:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Vasileios Papaliagka</span> (International Hellenic University, Greece)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Vasileios Papaliagka</span> (International Hellenic University, Greece)
 										</p>
 										<div class="info">
-											<span class="time">17:20-17:45</span>
+											<span class="time">17:20-17:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1212,10 +1283,10 @@ echo '<script type="text/javascript">
 					------------------->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_3">
+							<li name="breakfast_symposium_2">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Breakfast Symposium 3</p>
+									<p class="title">Breakfast Symposium 2</p>
 									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
 									<div class="info">
 										<button></button>
@@ -1223,15 +1294,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">07:30-08:20</span>
+											<span class="time">07:30-08:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -1256,22 +1327,22 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
+									<ul>
+										<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
+										<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
+										<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea)</p>
-										<ul>
-											<li>Professor Thiruma V. Arumugam, a distinguished researcher in the fields of physiology and pharmacology at La Trobe University, Australia, is pushing the boundaries of neuroscience and metabolism. In his upcoming lecture, he will discuss how his work on intermittent metabolic switching has enhanced our comprehension of its effect on brain health, paving the way for potential therapeutic interventions.</li>
-											<li>His recent publication in Theranostics, titled "Time-restricted feeding modulates the DNA methylation landscape, attenuates hallmark neuropathology and cognitive impairment in a mouse model of vascular dementia," has presented novel insights into the therapeutic potential of intermittent metabolic switching, offering promising strategies for managing and potentially reversing cognitive impairment in dementia.</li>
-											<li>Further expanding our understanding, Professor Arumugam's article in Cell Metabolism, "Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States," continues to revolutionize our perspective on the role of metabolism in brain aging.</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Intermittent Metabolic Switching and Brain Health</p>
 										<p class="chairperson">
-											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Thiruma V. Arumugam</span> (La Trobe University, Australia)
 										</p>
 										<div class="info">
-											<span class="time">08:30-09:00</span>
+											<span class="time">08:30-09:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1303,33 +1374,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Ki-Hyun Jeon</span> (Seoul National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Ki-Hyun Jeon</span> (Seoul National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Roczen Programme: A Digitally Enabled, Medically-led Intervention for Obesity and T2D</p>
 										<p class="chairperson">
-											<span class="bold">Laura Falvey</span> (Reset Health, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Laura Falvey</span> (Reset Health, UK)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Management of Obesity and Metabolic Diseases through Digital Intervention: Current Evidence and Future Prospects</p>
 										<p class="chairperson">
-											<span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1373,26 +1444,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.
+										</li>
+										<li>
+											Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.
+										</li>
+										<li>
+											2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.
+										</li>	
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
-										<ul>
-											<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
-											<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.</li>
-											<li>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004. </li>	
-										</ul>
-									</div>
 									<div>
 										<p class="title">Adipose Tissue – A Treasure Box for Discoveries</p>
 										<p class="chairperson">
-											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Matthias Blüher</span> (University of Leipzig, Germany)
 										</p>
 										<div class="info">
-											<span class="time">11:10-11:40</span>
+											<span class="time">11:10-11:40</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1424,15 +1503,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Optimum Clinical Approach to Combination-Use of SGLT2i+DPP4i for T2D Patients with Sidapvia</p>
 										<p class="chairperson">
-											<span class="bold">Soo Kyoung Kim</span> (Gyeongsang National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Soo Kyoung Kim</span> (Gyeongsang National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">12:00-13:00</span>
+											<span class="time">12:00-13:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -1457,33 +1536,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Uncovering Novel GPCR Pathways for the Treatment of Obesity and Type 2 Diabetes</p>
 										<p class="chairperson">
-											<span class="bold">Zach Gerhart-Hines</span> (University of Copenhagen, Denmark)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Zach Gerhart-Hines</span> (University of Copenhagen, Denmark)
 										</p>
 										<div class="info">
-											<span class="time">14:00-14:25</span>
+											<span class="time">14:00-14:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">The Double-edged Role of the NLRP3 Inflammasome in Adipose Tissue</p>
 										<p class="chairperson">
-											<span class="bold">Eun Hee Ko</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Eun Hee Ko</span> (University of Ulsan, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:25-14:50</span>
+											<span class="time">14:25-14:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Microbiota in Obesity-related Metabolic Diseases in Mouse Models</p>
 										<p class="chairperson">
-											<span class="bold">Je-Kyung Seong</span> (Seoul National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Je-Kyung Seong</span> (Seoul National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:50-15:15</span>
+											<span class="time">14:50-15:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1515,28 +1594,40 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance,
+										</li>
+										<li>
+											and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans.
+										</li>
+										<li>
+											In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.
+										</li>
+										<li>
+											2. Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.
+										</li>
+										<li>
+											3. Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
-										<ul>
-											<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, </li>
-											<li>and stressors such as sepsis and cancer in humans Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. </li>
-											<li>In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.</li>
-											<li>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.</li>
-											<li>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 										<p class="chairperson">
-											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)
 										</p>
 										<div class="info">
-											<span class="time">15:40-16:10</span>
+											<span class="time">15:40-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1568,33 +1659,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Seung-Yeon Lee</span> (University of Cincinnati, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Seung-Yeon Lee</span> (University of Cincinnati, USA)
 										</p>
 										<div class="info">
-											<span class="time">16:30-16:55</span>
+											<span class="time">16:30-16:55</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Influence of Social and Environmental Factors on Nutrition and Obesity</p>
 										<p class="chairperson">
-											<span class="bold">Ji-Yun Hwang</span> (Sangmyung University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Ji-Yun Hwang</span> (Sangmyung University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:55-17:20</span>
+											<span class="time">16:55-17:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Socioeconomic Inequalities in Obesity</p>
 										<p class="chairperson">
-											<span class="bold">Hyeon Chang Kim</span> (Yonsei University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Hyeon Chang Kim</span> (Yonsei University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">17:20-17:45</span>
+											<span class="time">17:20-17:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1624,33 +1715,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Changes in Body Composition with Aging: Visceral Fat Obesity, Low Muscle Mass, and Myosteatosis</p>
 										<p class="chairperson">
-											<span class="bold">Hong-Kyu Kim</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Hong-Kyu Kim</span> (University of Ulsan, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Clinical Implications of Myosteatosis in Cardiometabolic Health</p>
 										<p class="chairperson">
-											<span class="bold">Chang-hee Jung</span> (University of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Chang-hee Jung</span> (University of Ulsan, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">New Insights into Fat Distribution: An Integrated Analysis of Hepatic, Pancreatic, Muscular, and Visceral Fat</p>
 										<p class="chairperson">
-											<span class="bold">Hajime Yamazaki</span> (Kyoto University, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Hajime Yamazaki</span> (Kyoto University, Japan)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1673,8 +1764,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -1687,41 +1778,41 @@ echo '<script type="text/javascript">
 							<li name="symposium_8">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Symposium 8</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="title">Symposium 8 : Long-term Weight Loss Results and Problems in Asia</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Yosuke Seki (Osaka University, Japan), <br/>C-K Huang (China Medical University, Taiwan), <br/>Han Hong Lee (The Catholic University of Korea, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yosuke Seki</span> (Osaka University, Japan)
 										</p>
 										<div class="info">
-											<span class="time">14:00-14:25</span>
+											<span class="time">14:00-14:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">C-K Huang</span> (China Medical University, Taiwan)
 										</p>
 										<div class="info">
-											<span class="time">14:25-14:50</span>
+											<span class="time">14:25-14:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Han Hong Lee</span> (The Catholic University of Korea, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:50-15:15</span>
+											<span class="time">14:50-15:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1737,40 +1828,40 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Symposium 12 : Obesity: Transition from Adolescence to Young Adult</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Dughyun Choi (Soonchunhyang University, Republic of Korea), <br/>Min Sun Kim (Chonbuk National University, Republic of Korea), <br/>Joon Young Kim (Syracuse University, USA)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Dughyun Choi (Soonchunhyang University, Republic of Korea), <br/>Min Sun Kim (Jeonbuk National University, Republic of Korea), <br/>Joon Young Kim (Syracuse University, USA)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">16:30-18:00</span>
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Facing Obesity and Type 2 Diabetes: From Childhood to Adulthood</p>
 										<p class="chairperson">
-											<span class="bold">Dughyun Choi</span> (Soonchunhyang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Dughyun Choi</span> (Soonchunhyang University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:30-16:55</span>
+											<span class="time">16:30-16:55</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Continuous Glucose Monitoring to Understand Obese and Diabetic Adolescents</p>
 										<p class="chairperson">
-											<span class="bold">Min Sun Kim</span> (Chonbuk National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Min Sun Kim</span> (Jeonbuk National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:55-17:20</span>
+											<span class="time">16:55-17:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Emerging Biomarkers of Type 2 Diabetes in Obese Youth vs Adult</p>
 										<p class="chairperson">
-											<span class="bold">Joon Young Kim</span> (Syracuse University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Joon Young Kim</span> (Syracuse University, USA)
 										</p>
 										<div class="info">
-											<span class="time">17:20-17:45</span>
+											<span class="time">17:20-17:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1793,40 +1884,40 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Sponsored Session 1 : Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Kyoung Min Kim (Yonsei University, Republic of Korea), <br/>So Hyun Chun (Sungkyunkwan University, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Su Jin Jeong (Bucheon Sejong Hospital, Republic of Korea), <br/>Kyoung Min Kim (Yonsei University, Republic of Korea), <br/>So Hyun Chun (Sungkyunkwan University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">09:20-10:50</span>
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Su Jin Jeong</span> (Bucheon Sejong Hospital, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:50</span>
+											<span class="time">09:20-09:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Exploring the Efficacy of Phentermine plus Topiramate ER in Treating Obesity: Real Cases from Korea</p>
 										<p class="chairperson">
-											<span class="bold">Kyoung Min Kim</span> (Yonsei University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Kyoung Min Kim</span> (Yonsei University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:50-10:20</span>
+											<span class="time">09:50-10:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">FAQ Finder : A Case-based Approach to Prescription of Combination Phentermine plus Topiramate ER</p>
 										<p class="chairperson">
-											<span class="bold">So Hyun Chun</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">So Hyun Chun</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">10:20-10:50</span>
+											<span class="time">10:20-10:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -1842,8 +1933,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -1856,7 +1947,7 @@ echo '<script type="text/javascript">
 							<li name="sponsored_session_2">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Sponsored Session 2</p>
+									<p class="title">Sponsored Session 2 : Benefit of DPP4I in Evidence-based Perspective</p>
 									<p class="chairperson"><span class="bold">Chairpersons:</span> Eun Roh (Hallym University, Republic of Korea), <br/>Jong Han Choi (Konkuk University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
@@ -1864,33 +1955,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">14:00-14:30</span>
+											<span class="time">14:00-14:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Role of DPP4-I under the Latest Treatment Trend</p>
 										<p class="chairperson">
-											<span class="bold">Eun Roh</span> (Hallym University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Eun Roh</span> (Hallym University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:30-15:00</span>
+											<span class="time">14:30-15:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Jong Han Choi</span> (Konkuk University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jong Han Choi</span> (Konkuk University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:00-15:30</span>
+											<span class="time">15:00-15:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -1906,33 +1997,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">How were JASSO's Guidelines Established? - The Process Involved in Developing Obesity Guidelines</p>
 										<p class="chairperson">
-											<span class="bold">Yasushi Ishigaki</span> (Iwate Medical University, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yasushi Ishigaki</span> (Iwate Medical University, Japan)
 										</p>
 										<div class="info">
-											<span class="time">16:30-16:55</span>
+											<span class="time">16:30-16:55</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD</span> <!-- (Hallym University, Republic of Korea) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD</span> <!-- (Hallym University, Republic of Korea) -->
 										</p>
 										<div class="info">
-											<span class="time">16:55-17:20</span>
+											<span class="time">16:55-17:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Jee Hyun Kang</span> (Konyang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jee Hyun Kang</span> (Konyang University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">17:20-17:45</span>
+											<span class="time">17:20-17:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -1955,8 +2046,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">TBD</span> </p>
@@ -1998,33 +2089,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 6</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2040,40 +2131,40 @@ echo '<script type="text/javascript">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title">Joint Symposium KSSO-AOASO</p>
-									<p class="chairperson"><span class="bold">Chairpersons:</span> Geeta Appannah (University Putra Malaysia, Malaysia), <br/>Do Thi Ngoc Diep (Vietnam), <br/>Hae-Jin Ko (Kyungpook National University, Republic of Korea)</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Geeta Appannah (University Putra Malaysia, Malaysia), <br/>Do Thi Ngoc Diep (Vietnam Nutrition Association, Vietnam), <br/>Hae-Jin Ko (Kyungpook National University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">14:00-15:30</span>
 										<span class="branch">Room 6</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Tackling Obesity in Malaysia. Are We Doing Enough?</p>
 										<p class="chairperson">
-											<span class="bold">Geeta Appannah</span> (University Putra Malaysia, Malaysia)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Geeta Appannah</span> (University Putra Malaysia, Malaysia)
 										</p>
 										<div class="info">
-											<span class="time">14:00-14:25</span>
+											<span class="time">14:00-14:25</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Prevention of Obesity among School-aged Children in Vietnam: Experiences in Developing Nutrition-related Policy</p>
 										<p class="chairperson">
-											<span class="bold">Do Thi Ngoc Diep</span> (Vietnam)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Do Thi Ngoc Diep</span> (Vietnam Nutrition Association, Vietnam)
 										</p>
 										<div class="info">
-											<span class="time">14:25-14:50</span>
+											<span class="time">14:25-14:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Current Status and Facts of Obesity Prevalence for Obesity Prevention and Management in Korea</p>
 										<p class="chairperson">
-											<span class="bold">Hae-Jin Ko</span> (Kyungpook National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Hae-Jin Ko</span> (Kyungpook National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:50-15:15</span>
+											<span class="time">14:50-15:15</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2096,8 +2187,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 6</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -2125,8 +2216,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 7</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -2188,10 +2279,10 @@ echo '<script type="text/javascript">
 					------------------->
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_4">
+							<li name="breakfast_symposium_3">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Breakfast Symposium 4</p>
+									<p class="title">Breakfast Symposium 3</p>
 									<p class="chairperson"><span class="bold">Chairpersons:</span> Jun Hwa Hong (Eulji University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
@@ -2199,15 +2290,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Thiazolidinediones and SGLT2i: A Rational Combination Based on T2DM Pathophysiology</p>
 										<p class="chairperson">
-											<span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">07:30-08:20</span>
+											<span class="time">07:30-08:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -2232,15 +2323,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Jae Geun Kim (Incheon National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											 Professor Tamas Horvath is Chair of the Department of Comparative Medicine at Yale University School of Medicine in the United States and one of the leading researchers in the field of study on the hypothalamic control of energy homeostasis. 
+										</li>
+										<li>
+											In particular, his research on the regulation of synaptic plasticity by AgRP neurons in hypothalamic neuronal circuitries is one of his most noteworthy accomplishments. In this session, Professor Horvath will introduce the role of hypothalamic AgRP neurons that can be applied to obesity treatment.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											 1. Hunger-promoting AgRP neurons trigger an astrocyte-mediated feed-forward autoactivation loop in mice. J Clin Invest. 2021
+										</li>
+										<li>
+											2. AgRP neurons control compulsive exercise and survival in an activity-based anorexia model. Nature Metabolism. 2020.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
 										<p class="chairperson">
-											<span class="bold">Tamas Horvath</span> (Yale University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Tamas Horvath</span> (Yale University, USA)
 										</p>
 										<div class="info">
-											<span class="time">08:30-09:00</span>
+											<span class="time">08:30-09:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2272,33 +2382,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">MAFLD and NAFLD in the Prediction of Incident Chronic Kidney Disease</p>
 										<p class="chairperson">
-											<span class="bold">Sang-Man Jin</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Sang-Man Jin</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">MAFLD versus NAFLD and the Risk of Cardiovascular Disease</p>
 										<p class="chairperson">
-											<span class="bold">Ming-Hua Zheng</span> (Wenzhou Medical University, China)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Ming-Hua Zheng</span> (Wenzhou Medical University, China)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Determinants of the Prognosis of NAFLD</p>
 										<p class="chairperson">
-											<span class="bold">Bo Kyung Koo</span> (Seoul National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Bo Kyung Koo</span> (Seoul National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2330,15 +2440,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin</p>
 										<p class="chairperson">
-											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">11:00-11:30</span>
+											<span class="time">11:00-11:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2370,15 +2480,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Sung Hoon Yu</span> (Hanyang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Sung Hoon Yu</span> (Hanyang University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">11:50-12:50</span>
+											<span class="time">11:50-12:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -2403,26 +2513,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.
+										</li>
+										<li>
+											His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Nature. Dopamine subsystems that track internal states. 2022
+										</li>
+										<li>
+											2. Cell. Genetic identification of vagal sensory neurons that control feeding. 2019
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
-										<ul>
-											<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.</li>
-											<li>His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Nature. Dopamine subsystems that track internal states. 2022</li>
-											<li>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
 										<p class="chairperson">
-											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)
 										</p>
 										<div class="info">
-											<span class="time">13:50-14:20</span>
+											<span class="time">13:50-14:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2445,15 +2563,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">National Obesity Strategy in Korea: Past, Present and Future</p>
 										<p class="chairperson">
-											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:30-15:00</span>
+											<span class="time">14:30-15:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2485,33 +2603,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Unveiling the New Wave: A Comprehensive Overview of Emerging Anti-Obesity Medications</p>
 										<p class="chairperson">
-											<span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:20-15:45</span>
+											<span class="time">15:20-15:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">A Phase 1 Randomized, Double-blind placebo-controlled Single and Multiple Ascending Dose Study of AMG 133 in Subjects with Obesity</p>
 										<p class="chairperson">
-											<span class="bold">Jennifer Strande</span> (AMGEN, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jennifer Strande</span> (AMGEN, USA)
 										</p>
 										<div class="info">
-											<span class="time">15:45-16:10</span>
+											<span class="time">15:45-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Se Hee Min</span> (Univeristy of Ulsan, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Se Hee Min</span> (Univeristy of Ulsan, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:10-16:35</span>
+											<span class="time">16:10-16:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2543,15 +2661,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Current and Future in Obesity Management</p>
 										<p class="chairperson">
-											<span class="bold">John Wilding</span> (University of Liverpool, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">John Wilding</span> (University of Liverpool, UK)
 										</p>
 										<div class="info">
-											<span class="time">17:00-17:30</span>
+											<span class="time">17:00-17:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2574,8 +2692,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 1</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -2592,26 +2710,26 @@ echo '<script type="text/javascript">
 					------------------->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_5">
+							<li name="breakfast_symposium_4">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Breakfast Symposium 5</p>
-									<!-- <p class="chairperson"><span class="bold">Chairpersons:</span> Gildong Hong (Seoul National University), <br/>Gildong Hong (Seoul National University)</p> -->
+									<p class="title">Breakfast Symposium 4</p>
+									<p class="chairperson"><span class="bold">Chairpersons:</span> Young-Sang Lyu (Chosun University, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
 										<span class="time">07:30-08:20</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Young-Sang Lyu</span> (Chosun University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">07:30-08:20</span>
+											<span class="time">07:30-08:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -2636,15 +2754,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Jae Geun Kim (Incheon National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											 Professor Tamas Horvath is Chair of the Department of Comparative Medicine at Yale University School of Medicine in the United States and one of the leading researchers in the field of study on the hypothalamic control of energy homeostasis. 
+										</li>
+										<li>
+											In particular, his research on the regulation of synaptic plasticity by AgRP neurons in hypothalamic neuronal circuitries is one of his most noteworthy accomplishments. In this session, Professor Horvath will introduce the role of hypothalamic AgRP neurons that can be applied to obesity treatment.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											 1. Hunger-promoting AgRP neurons trigger an astrocyte-mediated feed-forward autoactivation loop in mice. J Clin Invest. 2021
+										</li>
+										<li>
+											2. AgRP neurons control compulsive exercise and survival in an activity-based anorexia model. Nature Metabolism. 2020.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
 										<p class="chairperson">
-											<span class="bold">Tamas Horvath</span> (Yale University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Tamas Horvath</span> (Yale University, USA)
 										</p>
 										<div class="info">
-											<span class="time">08:30-09:00</span>
+											<span class="time">08:30-09:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2676,33 +2813,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Muscle in Weight Management</p>
 										<p class="chairperson">
-											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Robert R. Wolfe</span> (University of Arkansas for Medical Sciences, USA)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Effectors of NAFLD Development: Metabolic, Nutritional and Pharmacologic</p>
 										<p class="chairperson">
-											<span class="bold">Melanie Cree-Green</span> (University of Colorado Anschutz, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Melanie Cree-Green</span> (University of Colorado Anschutz, USA)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Roles of Dietary Essential Amino Acids and Exercise for Muscle and Metabolic Health</p>
 										<p class="chairperson">
-											<span class="bold">Il-Young Kim</span> (Gachon University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Il-Young Kim</span> (Gachon University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2734,15 +2871,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin</p>
 										<p class="chairperson">
-											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">11:00-11:30</span>
+											<span class="time">11:00-11:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2774,15 +2911,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">11:50-12:50</span>
+											<span class="time">11:50-12:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -2807,26 +2944,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.
+										</li>
+										<li>
+											His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Nature. Dopamine subsystems that track internal states. 2022
+										</li>
+										<li>
+											2. Cell. Genetic identification of vagal sensory neurons that control feeding. 2019
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
-										<ul>
-											<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.</li>
-											<li>His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Nature. Dopamine subsystems that track internal states. 2022</li>
-											<li>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
 										<p class="chairperson">
-											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)
 										</p>
 										<div class="info">
-											<span class="time">13:50-14:20</span>
+											<span class="time">13:50-14:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2849,15 +2994,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">National Obesity Strategy in Korea: Past, Present and Future</p>
 										<p class="chairperson">
-											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:30-15:00</span>
+											<span class="time">14:30-15:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2869,16 +3014,15 @@ echo '<script type="text/javascript">
 									</div>
 								</div>
                             </li>
-							<li name="break">
+							<!-- <li name="break">
 								<div class="main">
 									<p class="title">Break</p>
 									<div class="info">
-										<!-- <button></button> -->
 										<span class="time">15:10-15:20</span>
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
-							</li>
+							</li> -->
 							<li name="symposium_18">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
@@ -2890,33 +3034,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Mapping Appetite Circuits with Molecular Connectomics</p>
 										<p class="chairperson">
-											<span class="bold">Michael Krashes</span> (National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Michael Krashes</span> (National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA)
 										</p>
 										<div class="info">
-											<span class="time">15:20-15:45</span>
+											<span class="time">15:20-15:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Feeding Regulation by Tuberal Nucleus Somatostatin Neurons</p>
 										<p class="chairperson">
-											<span class="bold">Yu Fu</span> (Institute of Molecular and Cell Biology (IMCB), Singapore)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yu Fu</span> (Institute of Molecular and Cell Biology (IMCB), Singapore)
 										</p>
 										<div class="info">
-											<span class="time">15:45-16:10</span>
+											<span class="time">15:45-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Changjoon Lee</span> (Institute for Basic Science (IBS), Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Changjoon Lee</span> (Institute for Basic Science (IBS), Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:10-16:35</span>
+											<span class="time">16:10-16:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2948,15 +3092,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Current and Future in Obesity Management</p>
 										<p class="chairperson">
-											<span class="bold">John Wilding</span> (University of Liverpool, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">John Wilding</span> (University of Liverpool, UK)
 										</p>
 										<div class="info">
-											<span class="time">17:00-17:30</span>
+											<span class="time">17:00-17:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -2979,8 +3123,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 2</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -2997,10 +3141,10 @@ echo '<script type="text/javascript">
 					------------------->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_6">
+							<li name="breakfast_symposium_5">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
-									<p class="title">Breakfast Symposium 6</p>
+									<p class="title">Breakfast Symposium 5</p>
 									<p class="chairperson"><span class="bold">Chairpersons:</span> Yeoree Yang (The Catholic University of Korea, Republic of Korea)</p>
 									<div class="info">
 										<button></button>
@@ -3008,15 +3152,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Which Combination is Optimal Choice after Metformin Failure?</p>
 										<p class="chairperson">
-											<span class="bold">Yeoree Yang</span> (The Catholic University of Korea, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Yeoree Yang</span> (The Catholic University of Korea, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">07:30-08:20</span>
+											<span class="time">07:30-08:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -3041,15 +3185,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Jae Geun Kim (Incheon National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											 Professor Tamas Horvath is Chair of the Department of Comparative Medicine at Yale University School of Medicine in the United States and one of the leading researchers in the field of study on the hypothalamic control of energy homeostasis. 
+										</li>
+										<li>
+											In particular, his research on the regulation of synaptic plasticity by AgRP neurons in hypothalamic neuronal circuitries is one of his most noteworthy accomplishments. In this session, Professor Horvath will introduce the role of hypothalamic AgRP neurons that can be applied to obesity treatment.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											 1. Hunger-promoting AgRP neurons trigger an astrocyte-mediated feed-forward autoactivation loop in mice. J Clin Invest. 2021
+										</li>
+										<li>
+											2. AgRP neurons control compulsive exercise and survival in an activity-based anorexia model. Nature Metabolism. 2020.
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
 										<p class="chairperson">
-											<span class="bold">Tamas Horvath</span> (Yale University, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Tamas Horvath</span> (Yale University, USA)
 										</p>
 										<div class="info">
-											<span class="time">08:30-09:00</span>
+											<span class="time">08:30-09:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3081,33 +3244,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers</p>
 										<p class="chairperson">
-											<span class="bold">Shirley Y. Chao</span> (Massachusetts Executive Office of Elder Affairs, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Shirley Y. Chao</span> (Massachusetts Executive Office of Elder Affairs, USA)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population</p>
 										<p class="chairperson">
-											<span class="bold">Seung Eun Jung</span> (The University of Alabama, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Seung Eun Jung</span> (The University of Alabama, USA)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities</p>
 										<p class="chairperson">
-											<span class="bold">Minsun Jeon</span> (Chungnam National University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Minsun Jeon</span> (Chungnam National University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3139,15 +3302,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin</p>
 										<p class="chairperson">
-											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae Myoung Suh</span> (KAIST, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">11:00-11:30</span>
+											<span class="time">11:00-11:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3179,15 +3342,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Obesity Management in Digital Era</p>
 										<p class="chairperson">
-											<span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Sang Youl Rhee</span> (Kyung Hee University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">11:50-12:50</span>
+											<span class="time">11:50-12:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -3212,26 +3375,34 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">
+									<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+									<ul>
+										<li>
+											Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.
+										</li>
+										<li>
+											His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.
+										</li>
+									</ul>
+									<p>• References</p>
+									<ul>
+										<li>
+											1. Nature. Dopamine subsystems that track internal states. 2022
+										</li>
+										<li>
+											2. Cell. Genetic identification of vagal sensory neurons that control feeding. 2019
+										</li>
+									</ul>
+								</div>
 								<div class="detail">
-									<div class="detail_text">
-										<p>Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
-										<ul>
-											<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years.</li>
-											<li>His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
-										</ul>
-										<p>References</p>
-										<ul>
-											<li>Nature. Dopamine subsystems that track internal states. 2022</li>
-											<li>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
-										</ul>
-									</div>
 									<div>
 										<p class="title">Brainstem Circuits that Control Ingestion</p>
 										<p class="chairperson">
-											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Zachary Knight</span> (University of California, San Francisco, USA)
 										</p>
 										<div class="info">
-											<span class="time">13:50-14:20</span>
+											<span class="time">13:50-14:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3254,15 +3425,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">National Obesity Strategy in Korea: Past, Present and Future</p>
 										<p class="chairperson">
-											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">14:30-15:00</span>
+											<span class="time">14:30-15:00</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3294,33 +3465,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)</p>
 										<p class="chairperson">
-											<span class="bold">Ja Hyang Cho</span> (Kyung Hee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Ja Hyang Cho</span> (Kyung Hee University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:20-15:45</span>
+											<span class="time">15:20-15:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">From Origin of Morbid Obesity to New-anti-obesity Therapies in Children</p>
 										<p class="chairperson">
-											<span class="bold">Antje Korner</span> (University of Leipzig, Germany)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Antje Korner</span> (University of Leipzig, Germany)
 										</p>
 										<div class="info">
-											<span class="time">15:45-16:10</span>
+											<span class="time">15:45-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Childhood Obesity and Mental Health</p>
 										<p class="chairperson">
-											<span class="bold">Jeewon Lee</span> (Soonchunhayng University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jeewon Lee</span> (Soonchunhayng University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:10-16:35</span>
+											<span class="time">16:10-16:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3352,15 +3523,15 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Current and Future in Obesity Management</p>
 										<p class="chairperson">
-											<span class="bold">John Wilding</span> (University of Liverpool, UK)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">John Wilding</span> (University of Liverpool, UK)
 										</p>
 										<div class="info">
-											<span class="time">17:00-17:30</span>
+											<span class="time">17:00-17:30</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3383,8 +3554,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 3</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -3412,33 +3583,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Impact of Sleep Disturbance on Obesity and Energy Homeostasis</p>
 										<p class="chairperson">
-											<span class="bold">Alice PS Kong</span> (The Chinese University of Hong Kong, Hong Kong)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Alice PS Kong</span> (The Chinese University of Hong Kong, Hong Kong)
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Guidelines for the Management of Obesity as a Disease: Japanese Update</p>
 										<p class="chairperson">
-											<span class="bold">Koutaro Yokote</span> (Chiba University, Japan)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Koutaro Yokote</span> (Chiba University, Japan)
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3461,8 +3632,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -3483,33 +3654,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 4</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">Seok Ryu</span> (Kyunghee University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Seok Ryu</span> (Kyunghee University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:20-15:45</span>
+											<span class="time">15:20-15:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">The Benefits of Physical Activity Interventions for Obese People</p>
 										<p class="chairperson">
-											<span class="bold">Ji Suk Chae</span> (JS Sports Medicine Center, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Ji Suk Chae</span> (JS Sports Medicine Center, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:45-16:10</span>
+											<span class="time">15:45-16:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
-										<p class="title">TBD</p>
+										<p class="title">Exercise Guidelines for Severe Obese People</p>
 										<p class="chairperson">
-											<span class="bold">Hae Sung Lee</span> (Wonkwang University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Hae Sung Lee</span> (Wonkwang University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:10-16:35</span>
+											<span class="time">16:10-16:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3539,33 +3710,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:50</span>
+											<span class="time">09:20-09:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">09:50-10:20</span>
+											<span class="time">09:50-10:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">10:20-10:50</span>
+											<span class="time">10:20-10:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 								</div>
@@ -3581,8 +3752,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -3603,50 +3774,49 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 5</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">Obesity Fact Sheet in Korea, 2021: Trends in Obesity Prevalence and Obesity-Related Comorbidity Incidence Stratified by Age from 2009 to 2019</p>
 										<p class="chairperson">
 											<span class="bold">Ye Seul Yang</span> (Seoul National University, Republic of Korea)
-											<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</p>
 										<div class="info">
-											<span class="time">15:20-15:35</span>
+											<span class="time">15:20-15:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Reference Values for Waist Circumference and Waist–Height Ratio in Korean Children and Adolescents</p>
 										<p class="chairperson">
-											<span class="bold">Jieun Lee</span>  (Inje University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Jieun Lee</span>  (Inje University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:35-15:50</span>
+											<span class="time">15:35-15:50</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Maintaining Physical Activity Is Associated with Reduced Major Adverse Cardiovascular Events in People Newly Diagnosed with Diabetes</p>
 										<p class="chairperson">
-											<span class="bold">Kyoung Hwa Ha</span> (Ajou University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Kyoung Hwa Ha</span> (Ajou University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">15:50-16:05</span>
+											<span class="time">15:50-16:05</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Updated Meta-Analysis of Studies from 2011 to 2021 Comparing the Effectiveness of Intermittent Energy Restriction and Continuous Energy Restriction</p>
 										<p class="chairperson">
-											<span class="bold">Kyoung-Kon Kim</span> (Gachon University, Republic of Korea)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">Kyoung-Kon Kim</span> (Gachon University, Republic of Korea)
 										</p>
 										<div class="info">
-											<span class="time">16:05-16:20</span>
+											<span class="time">16:05-16:20</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">Award Ceremony</p>
-										<p class="chairperson">
-											<span class="bold">Gildong Hong</span>(Seoul National University)<a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
-										</p>
+										<!-- <p class="chairperson">
+											<span class="bold">Gildong Hong</span>(Seoul National University)
+										</p> -->
 										<div class="info">
 											<span class="time">16:20-16:30</span>
 										</div>
@@ -3671,33 +3841,33 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 6</span>
 									</div>
 								</div>
+								<div class="detail_text">will be updated.</div>
 								<div class="detail">
-									<div class="detail_text">will be updated.</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">09:20-09:45</span>
+											<span class="time">09:20-09:45</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">09:45-10:10</span>
+											<span class="time">09:45-10:10</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson">
-											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) --><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+											<span class="bold">TBD<!-- Gildong Hong --></span> <!-- (Seoul National University) -->
 										</p>
 										<div class="info">
-											<span class="time">10:10-10:35</span>
+											<span class="time">10:10-10:35</span><a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
 										</div>
 									</div>
 									<div>
@@ -3727,8 +3897,8 @@ echo '<script type="text/javascript">
 										<span class="branch">Room 7</span>
 									</div>
 								</div>
-								<!-- <div class="detail">
-									<div class="detail_text">will be updated.</div>
+								<!-- <div class="detail_text">will be updated.</div>
+								<div class="detail">
 									<div>
 										<p class="title">TBD</p>
 										<p class="chairperson"><span class="bold">Gildong Hong</span> (Seoul National University)</p>
@@ -3785,7 +3955,17 @@ echo '<script type="text/javascript">
 				console.log(i)
 			}
 		});
+		$(".chairperson").parent("div").append("<button class='preview_btn'>Preview</button>");
+		$(".preview_btn").on("click", function(event){
+			event.preventDefault();
+            event.stopPropagation();
+			$(this).parent(".main").siblings(".detail_text").stop().slideToggle();	
+			$(this).toggleClass("on");	
+		});
     });
 </script>
-
+<style>
+	div.detail button.preview_btn {display: none;}
+	.app_scientific .preview_btn.on {background-image: url('./img/icons/icon_minus_white.svg');}
+</style>
 <?php include_once('./include/app_footer.php'); ?>

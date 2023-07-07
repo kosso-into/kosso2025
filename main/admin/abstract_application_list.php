@@ -46,7 +46,7 @@
                                             WHEN 0 THEN 'Oral Presentation'
                                             WHEN 1 THEN 'Poster Exhibition'
                                             WHEN 2 THEN 'Guided Poster Presentation'
-                                            WHEN 3 THEN 'Any of them'
+                                            WHEN 3 THEN 'Any of Them'
                                             ELSE ''
                                             END
                                         ) AS presentation_type_text,

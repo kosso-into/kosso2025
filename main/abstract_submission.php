@@ -44,7 +44,7 @@ $user_phone = implode("-", array_splice($_arr_phone, 1));
 
 $user_affiliation_value = $user_info_affiliation ?? "";
 
-if ($during_yn === "Y" && empty($abstract_idx)) {
+if (empty($abstract_idx)) {
 ?>
 <!-- 테스트
 <section class="submit_application abstract_online_submission container">

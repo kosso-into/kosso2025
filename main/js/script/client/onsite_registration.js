@@ -131,19 +131,29 @@ function birthChk(input) {
 }
 
 // 요금계산(프로모션 적용X)
-function calc_fee(obj){
-    if(obj.name == "participation_type"){
-        var participation_type = obj.value;
-        var category = document.getElementById("category").value;
-        if(category == ""){
-            return;
-        }
-    }else if (obj.name == "category"){
-        var category = obj.value;
-        var participation_type = document.getElementById("participation_type").value;
-        if(participation_type == ""){
-            return;
-        }
+function calc_fee(){
+    // if(obj.name == "participation_type"){
+    //     var participation_type = obj.value;
+    //     var category = document.getElementById("category").value;
+    //     if(category == ""){
+    //         return;
+    //     }
+    // }else if (obj.name == "category"){
+    //     var category = obj.value;
+    //     var participation_type = document.getElementById("participation_type").value;
+    //     if(participation_type == ""){
+    //         return;
+    //     }
+    // }
+
+    var category = document.getElementById("category").value;
+    var participation_type = document.getElementById("participation_type").value;
+
+    if(category == ""){
+        return;
+    }
+    if(participation_type==""){
+        return;
     }
 
     var country =  $("select[name=nation_no]").val();
@@ -152,18 +162,30 @@ function calc_fee(obj){
         if(participation_type == "Sponsor"){
             category="Others";
         }
+
+        var ksso_member_type = $("input[name=ksso_member_type]").val();
+        var ksso_member_status = 0;
+
+        if(ksso_member_type == "평생회원"){
+            ksso_member_status = 2;
+        }else if(ksso_member_type == "정회원"){
+            ksso_member_status = 1;
+        }else {
+            ksso_member_status = 0; //비회원
+        }
+
         $.ajax({
-            url : PATH+"ajax/client/ajax_registration.php",
+            url : PATH+"ajax/client/ajax_onsite_registration.php",
             type : "POST",
             data : {
                 flag : "calc_fee",
-                category : category
-                // country : country
+                category : category,
+                country : country,
+                ksso_member_status : ksso_member_status
             },
             dataType : "JSON",
             success : function(res){
                 if(res.code == 200) {
-                    //console.log(res);
                     $("input[name=reg_fee]").val(comma(res.data)).change();
                 } else if(res.code == 400){
                     alert(locale(language.value)("error_registration"));
@@ -200,7 +222,6 @@ function submit(){
 }
 function onsite_submit(){
     var nation_no = $('#nation_no > option:selected').val();
-    var ksso_member_status = $('input[name=user]:checked').val();
     var email = $("input[name=email]").val();
     var password = $("input[name=password]").val();
     var first_name = $("input[name=first_name]").val();
@@ -211,7 +232,8 @@ function onsite_submit(){
     var affiliation_kor = $("input[name=affiliation_kor]").val();
     var department = $("input[name=department]").val();
     var department_kor = $("input[name=department_kor]").val();
-    var phone = $("input[name=phone]").val();
+    var nation_tel = $("input[name=nation_tel]").val();
+    var phone = nation_tel+"-"+$("input[name=phone]").val();
     var date_of_birth = $("input[name=date_of_birth]").val();
 
     var participation_type = $('#participation_type > option:selected').val();
@@ -238,21 +260,23 @@ function onsite_submit(){
 
     var price = $("input[name=reg_fee]").val();
 
-    // ksso api 연동 정보
+    // ksso api 연동 id
     var ksso_member_check = $("input[name=ksso_member_check]").val();
+    // ksso 회원 유형
     var ksso_member_type = $("input[name=ksso_member_type]").val();
     var ksso_member_status = 0;
 
     if(ksso_member_type == "평생회원"){
-        ksola_member_status = 2;
+        ksso_member_status = 2;
     }else if(ksso_member_type == "정회원"){
-        ksola_member_status = 1;
+        ksso_member_status = 1;
     }else {
         ksso_member_status = 0; //비회원
     }
 
     var data = {
         nation_no : nation_no,
+        ksso_member_check : ksso_member_check,
         ksso_member_status : ksso_member_status,
         email : email,
         password : password,
@@ -297,9 +321,9 @@ function onsite_submit(){
                 console.log(res);
                 alert("On-site registration has been completed.\n" +
                     "Please pay your registration fee at the registration desk.");
-                //window.location.replace("/onsite_registration.php");
+                window.location.replace(PATH+"onsite_registration.php");
             } else {
-                alert("onsite registration error. dd");
+                alert("onsite registration error.");
                 return;
             }
         }
@@ -424,6 +448,39 @@ function info_check(){
     }
 }
 
+//이메일 중복 체크 한국으로 체크시
+function email_check(email) {
+    $.ajax({
+        url : PATH+"ajax/client/ajax_member.php",
+        type : "POST",
+        data :  {
+            flag : "id_check",
+            email : email
+        },
+        dataType : "JSON",
+        success : function(res){
+            if(res.code == 200) {
+                //$(".red_alert").eq(0).html("good");
+                //$(".red_alert").eq(0).css('display', 'none');
+                //$(".mo_red_alert").eq(0).html("good");
+                //$(".mo_red_alert").eq(0).css('display', 'none');
+            } else if(res.code == 400) {
+                alert("used_email_msg");
+                $("input[name=email]").val("");
+                $("input[name=mo_email]").val("");
+                //$(".mo_red_alert").eq(0).html("used_email_msg");
+                //$(".mo_red_alert").eq(0).css('display', 'block');
+                return false;
+            } else {
+                //alert("reject_msg");
+                //$(".mo_red_alert").eq(0).html("reject_msg");
+                //$(".mo_red_alert").eq(0).css('display', 'block');
+                return false;
+            }
+        }
+    });
+}
+
 function kor_api() {
     var kor_id = $("input[name=kor_id]").val().trim();
     var kor_pw = $("input[name=kor_pw]").val().trim();
@@ -453,7 +510,7 @@ function kor_api() {
     };
 
     $.ajax({
-        url			: PATH+"/main/signup_api.php",
+        url			: PATH+"/signup_api.php",
         type		: "POST",
         data		: data,
         dataType	: "JSON",

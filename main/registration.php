@@ -182,7 +182,7 @@ if ($during_yn !== "Y") {
                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)" <?=$prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : ""?>>
 							<option value="" selected hidden>Choose</option>
 							<?php
-								$participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants");
+								$participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
 
 //								$idx = 0;
 								foreach($participation_arr as $a_arr) {
@@ -306,58 +306,6 @@ if ($during_yn !== "Y") {
                             <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : ""?>">
                         </li>
 					<?php }?>
-
-                    <!-- <li id="chk_org"> -->
-                    <!--     <p class="label">평점신청 <span class="red_txt">*</span></p> -->
-                    <!--     <div> -->
-                    <!--         <div class="radio_wrap"> -->
-                    <!--             <ul class="flex"> -->
-                    <!--                 <li> -->
-                    <!--                     <input type="radio" class="new_radio registration_check" id="radio1" name="rating" value="1"> -->
-					<!-- 					<label for="radio1"><i></i>필요</label> -->
-                    <!--                 </li> -->
-                    <!--                 <li> -->
-                    <!--                     <input type="radio" class="new_radio registration_check" id="radio2" name="rating" value="0"> -->
-					<!-- 					<label for="radio2"><i></i>불필요 -->
-					<!-- 						<!-- <span class="is_scroe_txt red_txt">(Overseas participants, please check '미신청').</span> -->
-					<!-- 					</label> -->
-
-                    <!--                 </li> -->
-                    <!--             </ul> -->
-                    <!--         </div> -->
-                    <!--     </div> -->
-                    <!-- </li> -->
-                    <!-- <li> -->
-                    <!--     <p class="label"> -->
-					<!-- 		의사면허번호 <span class="red_txt">*</span> -->
-					<!-- 		<input type="checkbox" id="app1" class="checkbox"> -->
-					<!-- 		<label for="app1"> -->
-					<!-- 			<i></i> Not applicable -->
-					<!-- 		</label> -->
-					<!-- 	</p> -->
-                    <!--     <input type="text" name="licence_number" id="licence_number"> -->
-                    <!-- </li> -->
-                    <!-- <li> -->
-                    <!--     <p class="label"> -->
-					<!-- 		전문의번호 <span class="red_txt">*</span> -->
-					<!-- 		<input type="checkbox" id="app2" class="checkbox"> -->
-					<!-- 		<label for="app2"> -->
-					<!-- 			<i></i> Not applicable -->
-					<!-- 		</label> -->
-					<!-- 	</p> -->
-                    <!--     <input type="text" name="specialty_number" id="specialty_number"> -->
-                    <!-- </li> -->
-                    <!-- <li> -->
-                    <!--     <p class="label"> -->
-					<!-- 		영양사 면허번호 <span class="red_txt">*</span> -->
-					<!-- 		<input type="checkbox" id="app3" class="checkbox"> -->
-					<!-- 		<label for="app3"> -->
-					<!-- 			<i></i> Not applicable -->
-					<!-- 		</label> -->
-					<!-- 	</p> -->
-                    <!--     <input type="text" name="nutritionist_number" id="nutritionist_number"> -->
-                    <!-- </li> -->
-
                     <li>
                         <p class="label type2"><?=$locale("register_online_question5_2023")?> <span class="red_txt">*</span></p>
 						<p class="mb10">Please confirm your attendance for all of the following events. </p>
@@ -431,116 +379,6 @@ if ($during_yn !== "Y") {
 												</tr>";
 										}
 									?>
-									<!-- <tr> -->
-									<!-- 	<th class="border_r_none">Welcome Reception</th> -->
-									<!-- 	<th>September 7(Thu)</th> -->
-									<!-- 	<td> -->
-									<!-- 		<div class="radio_wrap"> -->
-									<!-- 			<ul class="flex"> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="yes1" class="radio" name="others1" value="yes"> -->
-									<!-- 					<label for="yes1"> -->
-									<!-- 						<i></i> Yes -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="no1" class="radio" name="others1" value="no"> -->
-									<!-- 					<label for="no1"> -->
-									<!-- 						<i></i> No -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 			</ul> -->
-									<!-- 		</div> -->
-									<!-- 	</td> -->
-									<!-- </tr> -->
-									<!-- <tr> -->
-									<!-- 	<th class="border_r_none">Day 2 Breakfast Symposium</th> -->
-									<!-- 	<th>September 8(Fri)</th> -->
-									<!-- 	<td> -->
-									<!-- 		<div class="radio_wrap"> -->
-									<!-- 			<ul class="flex"> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="yes2" class="radio" name="others2" value="yes"> -->
-									<!-- 					<label for="yes2"> -->
-									<!-- 						<i></i> Yes -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="no2" class="radio" name="others2" value="no"> -->
-									<!-- 					<label for="no2"> -->
-									<!-- 						<i></i> No -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 			</ul> -->
-									<!-- 		</div> -->
-									<!-- 	</td> -->
-									<!-- </tr> -->
-									<!-- <tr> -->
-									<!-- 	<th class="border_r_none">Day 2 Luncheon Symposium</th> -->
-									<!-- 	<th>September 8(Fri)</th> -->
-									<!-- 	<td> -->
-									<!-- 		<div class="radio_wrap"> -->
-									<!-- 			<ul class="flex"> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="yes3" class="radio" name="others3" value="yes"> -->
-									<!-- 					<label for="yes3"> -->
-									<!-- 						<i></i> Yes -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="no3" class="radio" name="others3" value="no"> -->
-									<!-- 					<label for="no3"> -->
-									<!-- 						<i></i> No -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 			</ul> -->
-									<!-- 		</div> -->
-									<!-- 	</td> -->
-									<!-- </tr> -->
-									<!-- <tr> -->
-									<!-- 	<th class="border_r_none">Day 3 Breakfast Symposium</th> -->
-									<!-- 	<th>September 9(Sat)</th> -->
-									<!-- 	<td> -->
-									<!-- 		<div class="radio_wrap"> -->
-									<!-- 			<ul class="flex"> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="yes4" class="radio" name="others4" value="yes"> -->
-									<!-- 					<label for="yes4"> -->
-									<!-- 						<i></i> Yes -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="no4" class="radio" name="others4" value="no"> -->
-									<!-- 					<label for="no4"> -->
-									<!-- 						<i></i> No -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 			</ul> -->
-									<!-- 		</div> -->
-									<!-- 	</td> -->
-									<!-- </tr> -->
-									<!-- <tr> -->
-									<!-- 	<th class="border_r_none">Day 3 Luncheon Symposium</th> -->
-									<!-- 	<th>September 9(Sat)</th> -->
-									<!-- 	<td> -->
-									<!-- 		<div class="radio_wrap"> -->
-									<!-- 			<ul class="flex"> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="yes5" class="radio" name="others5" value="yes"> -->
-									<!-- 					<label for="yes5"> -->
-									<!-- 						<i></i> Yes -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 				<li> -->
-									<!-- 					<input type="radio" id="no5" class="radio" name="others5" value="no"> -->
-									<!-- 					<label for="no5"> -->
-									<!-- 						<i></i> No -->
-									<!-- 					</label> -->
-									<!-- 				</li> -->
-									<!-- 			</ul> -->
-									<!-- 		</div> -->
-									<!-- 	</td> -->
-									<!-- </tr> -->
 								</tbody>
 							</table>
 						</div>
@@ -586,66 +424,7 @@ if ($during_yn !== "Y") {
 									
 								}
 							?>
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list1" name="list1"> -->
-							<!-- 	<label for="list1"> -->
-							<!-- 		<i></i>Website of the Korea Society of Obesity -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list2" name="list2"> -->
-							<!-- 	<label for="list2"> -->
-							<!-- 		<i></i>Promotional email from the Korea Society of Obesity -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list3" name="list3"> -->
-							<!-- 	<label for="list3"> -->
-							<!-- 		<i></i>Advertising email or the bulletin board from the relevant society -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list4" name="list4"> -->
-							<!-- 	<label for="list4"> -->
-							<!-- 		<i></i>Information about affiliated companies/organizations -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list5" name="list5"> -->
-							<!-- 	<label for="list5"> -->
-							<!-- 		<i></i>Invited as a speaker, moderator, and panelist -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list6" name="list6"> -->
-							<!-- 	<label for="list6"> -->
-							<!-- 		<i></i>Recommended by a professor -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list7" name="list7"> -->
-							<!-- 	<label for="list7"> -->
-							<!-- 		<i></i>Recommended by acquaintances -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list8" name="list8"> -->
-							<!-- 	<label for="list8"> -->
-							<!-- 		<i></i>Pharmaceutical company -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list9" name="list9"> -->
-							<!-- 	<label for="list9"> -->
-							<!-- 		<i></i>Medical community (MEDI:GATE, Dr.Ville, etc.) -->
-							<!-- 	</label> -->
-							<!-- </li> -->
-							<!-- <li> -->
-							<!-- 	<input type="checkbox" class="checkbox" id="list10" name="list10"> -->
-							<!-- 	<label for="list10"> -->
-							<!-- 		<i></i>Medical News and Journals -->
-							<!-- 	</label> -->
-							<!-- </li> -->
+
                         </ul>
                     </li>
 					<?php if($prev["status"] != 2 && $prev["status"] != 3){?>
@@ -683,7 +462,7 @@ if ($during_yn !== "Y") {
 											<td>
 												<ul class="half_ul" style="min-width:300px;">
 													<li>
-														<input type="text" placeholder="Promotion code" name="promotion_code" value="<?=$prev["promotion_code"] ?? ""?>">
+														<input type="text" placeholder="Promotion code" name="promotion_code" value="<?=$prev["promotion_code_number"] ?? ""?>">
 														<input type="hidden" name="promotion_confirm_code" value="<?=$prev["promotion_code"] ?? ""?>"/>
 													</li>
 													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100"></li>
@@ -743,6 +522,7 @@ if ($during_yn !== "Y") {
 </section>
 
 <script src="./js/script/client/registration.js?v=0.3"></script>
+<script src="./js/script/client/promotion.js?v=0.3"></script>
 <!-- <script src="./js/script/client/registration.js"></script> -->
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
@@ -872,7 +652,9 @@ if ($during_yn !== "Y") {
 					v = v  - (v * 1.0);
 				}else if(status == 1){
 					v = v  - (v * 0.5);
-				}
+				} else if(status == 2){
+                    v = v  - (v * 0.3);
+                }
 			}
 
 			$("input[name=total_reg_fee]").val(comma(v));
@@ -882,6 +664,8 @@ if ($during_yn !== "Y") {
 					$(".payment_method_wrap").addClass("hidden");
 				}
 				$(".payment_method_wrap li input[name=payment_method]:eq(0)").prop("checked", true);
+                // 0628 추가
+                $(".online_btn.next_btn").addClass("green_btn");
 			}else{
 				$(".payment_method_wrap").removeClass("hidden");
 				$(".payment_method_wrap li input[name=payment_method]").prop("checked", false);

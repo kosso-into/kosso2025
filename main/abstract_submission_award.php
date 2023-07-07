@@ -36,7 +36,7 @@
 							<tr>
 								<th class="text_center">Target</th>
 								<th class="text_center">Amount</th>
-								<th class="text_center">Remark</th>
+								<th class="text_center">Remarks</th>
 							</tr>
 						</thead>
 						<tbody>

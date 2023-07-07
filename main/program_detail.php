@@ -101,7 +101,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>17:00-18:30</td>
+                                                <td>16:00-17:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Young Kil Choi</span> (Kyung Hee University, Korea)</p> -->
@@ -129,43 +129,43 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:25</td>
+                                                                    <td>16:00-16:25</td>
                                                                     <td class="bold">
-                                                                        <!-- Effectiveness of Information and Communications Technology-based Interventions for Obesity and Metabolic Syndrome -->
+                                                                        TBD<!-- Effectiveness of Information and Communications Technology-based Interventions for Obesity and Metabolic Syndrome -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Sang Youl Rhee</p>
                                                                         																		(Kyung Hee University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:25-17:50</td>
+                                                                    <td>16:25-16:50</td>
                                                                     <td class="bold">
-                                                                        <!-- Female Obesity -->
+                                                                        TBD<!-- Female Obesity -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Yoon Jeong Cho</p>
                                                                         																		(Daegu Catholic University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:50-18:15</td>
+                                                                    <td>16:50-17:15</td>
                                                                     <td class="bold">
-                                                                        <!-- Obesity and Healthy Life Expectancy -->
+                                                                        TBD<!-- Obesity and Healthy Life Expectancy -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ye Seul Yang</p>
                                                                         																		(The Catholic University of Korea, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <!-- <td rowspan="3">18:00-18:30</td> -->
-                                                                    <td>18:15-18:30</td>
+                                                                    <td>17:15-17:30</td>
                                                                     <!-- <td rowspan="3" class="bold"> -->
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Suk Chon</p>
                                                                         																		(Kyung Hee University, Korea) -->
                                                                     </td>
@@ -200,7 +200,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>18:30-19:00</td>
+                                                <td>17:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -224,7 +224,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>19:00-19:30</td>
+                                                <td>18:00-18:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Seung Joon Oh </span>(Kyung Hee University, Korea)</p> -->
@@ -238,7 +238,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -247,11 +247,13 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>19:00-19:30</td>
+                                                                    <td>18:00-18:30</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
-                                                                    <td></td>
+                                                                    <td class="text_r">
+																		<p class="bold">Yong-ho Lee</p>(Yonsei University, Republic of Korea)
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -277,7 +279,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>19:30-20:00</td>
+                                                <td>18:30-19:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Seung Joon Oh </span>(Kyung Hee University, Korea)</p> -->
@@ -291,7 +293,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -300,9 +302,11 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>19:30-20:00</td>
+                                                                    <td>18:30-19:00</td>
                                                                     <td class="bold">TBD</td>
-                                                                    <td></td>
+                                                                    <td class="text_r">
+																		<p class="bold">Won Yoon Suh</p>(Chungnam National University, Republic of Korea)
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -332,7 +336,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>17:00-18:30</td>
+                                                <td>16:00-17:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
                                                    <!--  <p>
@@ -360,45 +364,45 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>17:00-17:20</td>
+                                                                    <td>16:00-16:25</td>
                                                                     <td class="bold">
-                                                                        <!-- Effectiveness of Information and Communications
+                                                                        TBD<!-- Effectiveness of Information and Communications
                                                                         Technology-based Interventions for Obesity and
                                                                         Metabolic Syndrome -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Sang Youl Rhee</p>(Kyung Hee
                                                                         University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:40</td>
+                                                                    <td>16:25-16:50</td>
                                                                     <td class="bold">
-                                                                        <!-- Female Obesity -->
+                                                                        TBD<!-- Female Obesity -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Yoon Jeong Cho</p>(Daegu
                                                                         Catholic University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:40-18:00</td>
+                                                                    <td>16:50-17:15</td>
                                                                     <td class="bold">
-                                                                        <!-- Obesity and Healthy Life Expectancy -->
+                                                                        TBD<!-- Obesity and Healthy Life Expectancy -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ye Seul Yang</p>(The Catholic
                                                                         University of Korea, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <!-- <td rowspan="3">18:00-18:30</td> -->
-                                                                    <td>18:00-18:30</td>
+                                                                    <td>17:15-17:30</td>
                                                                     <!-- <td rowspan="3" class="bold"> -->
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Suk Chon</p>(Kyung Hee
                                                                         University, Korea) -->
                                                                     </td>
@@ -439,7 +443,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>18:30-19:00</td>
+                                                <td>17:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -463,7 +467,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>19:00-19:30</td>
+                                                <td>18:00-18:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Minsu Park</span> (Seoul ND
@@ -478,7 +482,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -487,9 +491,11 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>19:00-19:30</td>
+                                                                    <td>18:00-18:30</td>
                                                                     <td class="bold">TBD</td>
-                                                                    <td></td>
+                                                                    <td class="text_r">
+																		<p class="bold">Chang hee Jung</p>(University of Ulsan, Republic of Korea)
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -519,7 +525,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>18:30-21:00</td>
+                                                <td>19:00-21:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb_0">Welcome Cocktail Party</p>
                                                 </td>
@@ -545,13 +551,13 @@ echo '<script type="text/javascript">
                 <div class="tab_wrap">
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-                            <li name="breakfast_symposium_1">
-								<!--
+							<!-- 삭제됨 [23.07.05] -->
+                            <!-- 
+							<li name="breakfast_symposium_1">
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
                                     <span>Room1(3F)</span>
                                 </div>
-								-->
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -563,17 +569,16 @@ echo '<script type="text/javascript">
                                                 <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
-                                                   <!--  <p><span class="bold">Chairperson : Won Jun Kim</span> (University
-                                                        of Ulsan, Korea)</p> -->
-													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                            													<p><span class="bold">Chairperson : Gildong Hong</span> (University
+                                                        of Ulsan, Korea)</p>
+                            													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
-											<tr>
-												<td colspan="2" class="program_detail_td">
-													will be updated.
-												</td>
-											</tr>
+                            											<tr>
+                            												<td colspan="2" class="program_detail_td">
+                            													will be updated.
+                            												</td>
+                            											</tr>
                                             <tr>
                                                 <td colspan="2">
                                                     <div>
@@ -586,12 +591,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        <!-- Perspective in T2DM Patients with NAFLD:
-                                                                        Pioglitazone -->
+                            																		TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Yeon Kyung Choi</p>(Kyungpook
-                                                                        National University, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD, TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -603,6 +606,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+							-->
 							<li name="break" class="border_bottom_70">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -728,12 +732,21 @@ echo '<script type="text/javascript">
                                                         of Korea, Korea)
                                                     </p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Seung-Hwan Lee (The Catholic University of Korea, Republic of Korea), Jae Hyun Bae (Korea University, Republic of Korea)</p>
+													<ul>
+														<li>Obesity is strongly associated with increased incidence and progression of cancers, significantly contributing to cancer-related mortality. This session will delve into the latest perspectives on the relationship between obesity and cancer. Professor Yun Kyung Cho will present epidemiological studies that elucidate the impact of obesity on cancer risk. Professor Haejin Yoon will explore the regulation of mitochondrial metabolism and its role in metabolic diseases. Professor Annie Anderson will discuss evidence-based strategies to effectively address excess body fatness in cancer survivors.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Cho YK, Lee J, Kim HS, et al. Metabolic health is a determining factor for incident colorectal cancer in the obese population: A nationwide population-based cohort study. Cancer Med. 2021;10(1):220-229.<br/>
+															2. Yoon H, Spinelli JB, Zaganjor E, et al. PHD3 loss promotes exercise capacity and fat oxidation in skeletal muscle. Cell Metab. 2020;32(2):215-228.<br/>
+															3. Anderson AS, Martin RM, Renehan AG, et al. Cancer survivorship, excess body fatness and weight-loss intervention-where are we in 2020? Br J Cancer. 2021;124(6):1057-1065
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -777,7 +790,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Hae-Jin Ko</p>(Kyungpook
                                                                         National University, Korea) -->
                                                                     </td>
@@ -862,7 +875,11 @@ echo '<script type="text/javascript">
 													<ul>
 														<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
 														<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
-														<li><span class="font_inherit bold">References</span><br/>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>
+															2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -958,7 +975,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                        <!-- New Insight on GLP-1 RAs in Managing Obesity -->TBD
+                                                                        The Cardio-Renal Benefits of Dapagliflozin and Combination Therapy
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Eun Young Lee</p>(The Catholic University of Korea, Republic of Korea)
@@ -1066,11 +1083,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
                                                                     <td class="bold">
-																		<!-- Safety and Abuse of Antiobesity Drugs -->TBD
+																		Safety and Abuse of Anti-obesity Drugs
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ju Young Shin</p>
-																		(Sungkyunkwan University, Republic of Korea)
+                                                                        <p class="bold">Ju Young Shin</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1088,7 +1104,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
 																		Panel Discussion 
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Kyung-Hee Park</p>(Hallym
                                                                         University, Korea) -->
                                                                     </td>
@@ -1154,7 +1170,12 @@ echo '<script type="text/javascript">
 													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
 													<ul>
 														<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, and stressors such as sepsis and cancer in humans. Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
-														<li><span class="font_inherit bold">References</span><br/>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>
+															2. Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>
+															3. Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -1279,9 +1300,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
-                                                                        <!-- Obesity in Older Adults: Sarcopenia and Low
-                                                                        Muscle Mass -->
-																		TBD
+                                                                        Osteosarcopenic Obesity: A New Concept of an Old Problem
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Tae Nyun Kim</p>(Inje University, Republic of Korea)
@@ -1292,7 +1311,7 @@ echo '<script type="text/javascript">
                                                                     <td>17:45-18:00</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Bumjo Oh</p>(Seoul National
                                                                         University, Korea) -->
                                                                     </td>
@@ -1334,7 +1353,7 @@ echo '<script type="text/javascript">
                     </div>
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                            <li name="breakfast_symposium_2">
+                            <li name="breakfast_symposium_1">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -1351,7 +1370,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>07:30-08:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 2</p>
+                                                    <p class="font_20 bold">Breakfast Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Hanyang University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -1363,7 +1382,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -1374,13 +1393,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        <!-- The Combination of DPP-4 Inhibitor Plus SGLT2
-                                                                        Inhibitor as Attractive Treatment Option: From
-                                                                        Rationale to Clinical Aspects -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Suk Chon</p>(Kyung Hee
-                                                                        University, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1658,7 +1674,11 @@ echo '<script type="text/javascript">
 													<ul>
 														<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
 														<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
-														<li><span class="font_inherit bold">References</span><br/>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>
+															2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -1742,7 +1762,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -1753,12 +1773,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                        <!-- How to Find the Optimal Combination Therapy for
-                                                                        Patients with Type 2 Diabetes -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Il Seong Nam-Goong</p>
-                                                                        (University of Ulsan, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Yun Kyung Cho</p>(Univeristy of Ulsan, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1827,7 +1845,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 6</p>
+                                                    <p class="font_20 bold">Symposium 6 : Clinical Exercise with Obesity</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Kijin Kim</span> (Keimyung
                                                         University, Korea) /
@@ -1855,7 +1873,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        <!-- Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing Cognitive Impairment Associated with Diabetes -->TBD
+                                                                        TBD<!-- Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing Cognitive Impairment Associated with Diabetes -->
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hideaki Soya</p>(University of Tsukuba, Japan)
@@ -1864,11 +1882,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
                                                                     <td class="bold">
-                                                                        <!-- The Proinflammatory Effects of Chronic Excessive Exercise -->TBD
+                                                                        TBD<!-- The Proinflammatory Effects of Chronic Excessive Exercise -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Adelino Sanchez Ramos da Silva</p>(University of Sao Paulo, Brazil) -->
-																		TBD
+                                                                        <p class="bold">Sukho Lee</p>(Texas A & M University, USA)
                                                                     </td>
 																	
                                                                 </tr>
@@ -1960,7 +1977,12 @@ echo '<script type="text/javascript">
 													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
 													<ul>
 														<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, and stressors such as sepsis and cancer in humans. Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
-														<li><span class="font_inherit bold">References</span><br/>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>
+															2. Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>
+															3. Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -2097,7 +2119,7 @@ echo '<script type="text/javascript">
                                                                     <td>17:45-18:00</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ji Won Yoon</p>(Seoul National
                                                                         University, Korea) -->
                                                                     </td>
@@ -2145,7 +2167,7 @@ echo '<script type="text/javascript">
                     </div>
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_3">
+							<li name="breakfast_symposium_2">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.8(Fri)</span>
@@ -2162,7 +2184,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>07:30-08:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 3</p>
+                                                    <p class="font_20 bold">Breakfast Symposium 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Hanyang University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -2189,7 +2211,7 @@ echo '<script type="text/javascript">
                                                                         Inhibitor as Attractive Treatment Option: From
                                                                         Rationale to Clinical Aspects -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Suk Chon</p>(Kyung Hee
                                                                         University, Korea) -->
                                                                     </td>
@@ -2394,7 +2416,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="3" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ki Woo Kim</p>(Yonsei
                                                                         University, Korea) -->
                                                                     </td>
@@ -2496,7 +2518,11 @@ echo '<script type="text/javascript">
 													<ul>
 														<li>Matthias Blüher is Head of the Obesity Outpatient Clinic for Adults at the University of Leipzig Department of Medicine  in Leipzig, Germany. He is Professor of Molecular Endocrinology, with board certifications in Internal Medicine, Endocrinology and Diabetology. From 2006 to 2012, Professor Blüher served as Head of the Clinical Research Group ‘Atherobesity,’ and since 2013, he has been Speaker of the Collaborative Research Center on obesity mechanisms.</li>
 														<li>Professor Blüher has won several awards, including the Obesity Research Award of the German Society for the Study of Obesity, the Ferdinand-Bertram-Prize of the German Diabetes Association, and the Rising Star Lecture at the 44th European Association for the Study of Diabetes (EASD) meeting. More recently, he received the Hans Christian Hagedorn Award from the German Diabetes Association in 2011 and the Minkowski Award from the EASD in 2015.</li>
-														<li><span class="font_inherit bold">References</span><br/>Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New insights into the treatment of obesity. Diabetes Obes Metab. 2023 Apr 13. doi: 10.1111/dom.15077.<br/>
+															2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020 May 1;41(3):bnaa004.
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -2600,8 +2626,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                        <!-- Is There a More Effective Treatment for Obese
-                                                                        Patients Who have Increased Due to COVID-19? -->TBD
+																		Optimum Clinical Approach to Combination-Use of SGLT2i+DPP4i for T2D Patients with Sidapvia
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Soo Kyoung Kim</p>(Gyeongsang National University, Republic of Korea)
@@ -2738,7 +2763,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
 																		Panel Discussion
                                                                     </td>
-																	<td></td>
+																	<td class="text_r"></td>
 																</tr>
 																<!-- <tr> -->
                                                                     <!-- <td> -->
@@ -2823,7 +2848,12 @@ echo '<script type="text/javascript">
 													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea)</p>
 													<ul>
 														<li>Prof. Wolfe is widely respected as the world’s foremost authority on stable isotope tracer methodology and on amino acid/protein nutrition. His research focuses on the regulation of muscle metabolism, particularly as affected by aging, obesity, insulin resistance, and stressors such as sepsis and cancer in humans. Prof. Wolfe has developed numerous metabolic tracing models using stable isotope tracers to quantify a variety of metabolic processes in humans, which has formed the foundation of our understanding of many aspects of normal and abnormal metabolism of glucose, fatty acid, and amino acid/protein in humans. In his plenary lecture, the particular emphasis will be placed on the response of fatty acid kinetics to different conditions (exercise, glucose intake, obesity) in the context of the triglyceride-fatty acid cycle, with his more than 50 years of experience in the human metabolic research.</li>
-														<li><span class="font_inherit bold">References</span><br/>Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Kim IY et al., Tracing metabolic flux in vivo: basic model structures of tracer methodology. 2022 Sep;54(9):1311-1322. doi: 10.1038/s12276-022-00814-z.<br/>
+															2. Miyoshi H et al., Hormonal control of substrate cycling in humans, J Clin Invest. 1988. 1988 May;81(5):1545-55. doi: 10.1172/JCI113487.<br/>
+															3. Sidossis LS, Wolfe RR. Glucose and insulin-induced inhibition of fatty acid oxidation: the glucose-fatty acid cycle reversed. Am J Physiol. 1996 Apr;270(4 Pt 1):E733-8. doi: 10.1152/ajpendo.1996.270.4.E733. PMID: 8928782.
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -2959,7 +2989,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Sung Nim Han</p>(Seoul National
                                                                         University, Korea) -->
                                                                     </td>
@@ -3154,7 +3184,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold"><!-- Morphological Changes in Skeletal
                                                                         Muscles with Age and the Preventive Effect of
                                                                         Endurance Exercise on Sarcopenic Overweight --></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Fujue Ji</p>(Hanyang University,
                                                                         China) -->
                                                                     </td>
@@ -3164,7 +3194,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold"><!-- Factors Associated with Healthy
                                                                         Metabolic Transition Among Overweight/Obese
                                                                         Non-Shift Workers --></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Fatin Hanani Mazri</p>
                                                                         (University Kebangsaan Malaysia, Malaysia) -->
                                                                     </td>
@@ -3175,7 +3205,7 @@ echo '<script type="text/javascript">
                                                                         Measured by a Wearable Activity Tracker on
                                                                         Improving Components of Metabolic Syndrome: A
                                                                         Prospective Study --></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Jae Min Park</p>(Yonsei
                                                                         University, Korea) -->
                                                                     </td>
@@ -3186,7 +3216,7 @@ echo '<script type="text/javascript">
                                                                         Intake are Associated with Health-related
                                                                         Quality of Life in Kidney Transplant Recipients
                                                                         in Vietnam --></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Nguyen ThuHa</p>(Universiti
                                                                         Kebangsaan Malaysia, Malaysia) -->
                                                                     </td>
@@ -3196,7 +3226,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold"><!-- Mobile Health Intervention on
                                                                         Glycemic Control and Quality of Life in Type 1
                                                                         Diabetes Mellitus --></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Md Azharuddin</p>(Jamia Hamdard
                                                                         University, India) -->
                                                                     </td>
@@ -3206,7 +3236,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold"><!-- Mobile Health Intervention on
                                                                         Glycemic Control and Quality of Life in Type 1
                                                                         Diabetes Mellitus --></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Md Azharuddin</p>(Jamia Hamdard
                                                                         University, India) -->
                                                                     </td>
@@ -3237,7 +3267,7 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 8</p>
+                                                    <p class="font_20 bold">Symposium 8 : Long-term Weight Loss Results and Problems in Asia</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Sang Kuon Lee</span> (The
                                                         Catholic University of Korea, Korea) /
@@ -3254,7 +3284,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -3265,34 +3295,31 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        <!-- Overview of Semaglutide 2.4 mg (STEP) Clinical
+                                                                        TBD<!-- Overview of Semaglutide 2.4 mg (STEP) Clinical
                                                                         Trial Program -->
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">David C. W. Lau</p>(University
-                                                                        of Calgary, Canada) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Yosuke Seki</p>(Osaka University, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
                                                                     <td class="bold">
-                                                                        <!-- GLP-1 Analogues Versus Bariatric and Metabolic
+                                                                        TBD<!-- GLP-1 Analogues Versus Bariatric and Metabolic
                                                                         Surgery; Physician’s View -->
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Sang Yeoup Lee</p>(Pusan
-                                                                        National University, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">C-K Huang</p>(China Medical University, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        <!-- GLP-1 Analogues Versus Bariatric and Metabolic
+                                                                        TBD<!-- GLP-1 Analogues Versus Bariatric and Metabolic
                                                                         Surgery; Surgeon’s View -->
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Yong Jin Kim</p>(H Plus Yangji
-                                                                        Hospital, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Han Hong Lee</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3300,7 +3327,7 @@ echo '<script type="text/javascript">
                                                                     <td>15:15-15:30</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Youngsuk Park</p>(Seoul National
                                                                         University, Korea) -->
                                                                     </td>
@@ -3385,10 +3412,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-																		<!-- Technology for Adolescence Obesity & T2DM  -->TBD
+																		Continuous Glucose Monitoring to Understand Obese and Diabetic Adolescents
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Min Sun Kim</p>(Chonbuk National University, Republic of Korea)
+                                                                        <p class="bold">Min Sun Kim</p>(Jeonbuk National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3405,7 +3432,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                                 <!-- <tr>
                                                                     <td rowspan="4">17:30-18:00</td>
@@ -3515,22 +3542,19 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
                                                                     <td class="bold">
-                                                                        <!-- The Role of Dapagliflozin in T2D ;
+                                                                        TBD<!-- The Role of Dapagliflozin in T2D ;
                                                                         DECLARE
                                                                         (Cardiorenal Benefit on T2D; from Prevention to
-                                                                        Treatment)  -->TBD</td>
+                                                                        Treatment)  -->
+																	</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Eun-Jung Rhee</p>
-                                                                        (Sungkyunkwan
-                                                                        University, Korea) -->TBD
+                                                                        <p class="bold">Su Jin Jeong</p>(Bucheon Sejong Hospital, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:50-10:20</td>
                                                                     <td class="bold">
-                                                                        <!-- The Role of Dapagliflozin in Heart
-                                                                        Failure;
-                                                                        DAPA-HF -->TBD
+                                                                        Exploring the Efficacy of Phentermine plus Topiramate ER in Treating Obesity: Real Cases from Korea
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Kyoung Min Kim</p>(Yonsei University, Republic of Korea)
@@ -3607,12 +3631,14 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold"><!-- Predicted Inflammatory
+                                                                    <td class="bold">
+																	<!-- Predicted Inflammatory
                                                                         Status and
                                                                         Non-alcoholic Fatty Liver Disease
                                                                         among Korean
-                                                                        Adults --></td>
-                                                                    <td>
+                                                                        Adults -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Akinkunmi Okekunle
                                                                         </p>(Seoul
                                                                         National University, Nigeria) -->
@@ -3620,13 +3646,15 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
-                                                                    <td class="bold"><!-- Macrophage-Specific
+                                                                    <td class="bold">
+																		<!-- Macrophage-Specific
                                                                         Connexin 43
                                                                         Knockout Protects Mice from
                                                                         Obesity-Induced
                                                                         Inflammation and Metabolic
-                                                                        Dysfunction --></td>
-                                                                    <td>
+                                                                        Dysfunction -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">CheolJun Choi</p>
                                                                         (Seoul National
                                                                         University, Korea) -->
@@ -3634,10 +3662,12 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
-                                                                    <td class="bold"><!-- MicroRNA 302a Modulates
+                                                                    <td class="bold">
+																		<!-- MicroRNA 302a Modulates
                                                                         Cholesterol
-                                                                        Homeostasis and Atherosclerosis --></td>
-                                                                    <td>
+                                                                        Homeostasis and Atherosclerosis -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">William Boisvert</p>
                                                                         (University
                                                                         of Hawaii, USA) -->
@@ -3645,13 +3675,14 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:30-13:40</td>
-                                                                    <td class="bold"><!-- Vutiglabridin Modulates
+                                                                    <td class="bold">
+																		<!-- Vutiglabridin Modulates
                                                                         Paraoxonase-2 and Reduces Body
                                                                         Weight in a
                                                                         Manner Complementary to Semaglutide
                                                                         in DIO Mouse -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">HyungSoon Park</p>
                                                                         (Glaceum
                                                                         incorporation, Korea) -->
@@ -3659,14 +3690,16 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:40-13:50</td>
-                                                                    <td class="bold"><!-- Protective Effect of
+                                                                    <td class="bold">
+																		<!-- Protective Effect of
                                                                         Hesperidin
                                                                         Against High Fat Diet Induced Obese
                                                                         Diabetic
                                                                         Wistar Rats via Reduction of
                                                                         Cytokines and Nrf2
-                                                                        Pathway --></td>
-                                                                    <td>
+                                                                        Pathway -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Vikas Kumar</p>(King
                                                                         Abdulaziz
                                                                         University, India) -->
@@ -3674,12 +3707,14 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:50-14:00</td>
-                                                                    <td class="bold"><!-- Semaglutide 2.4 mg and
+                                                                    <td class="bold">
+																		<!-- Semaglutide 2.4 mg and
                                                                         Intensive
                                                                         Behavioral Therapy in Subjects With
                                                                         Overweight
-                                                                        or Obesity (STEP 3) --></td>
-                                                                    <td>
+                                                                        or Obesity (STEP 3) -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Yousun Ha</p>(Novo
                                                                         Nordisk
                                                                         Pharma Korea, UK) -->
@@ -3711,7 +3746,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Sponsored Session 2</p>
+                                                    <p class="font_20 bold">Sponsored Session 2 : Benefit of DPP4I in Evidence-based Perspective</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Sung Hoon Yu</span>
                                                         (Hanyang
@@ -3741,14 +3776,14 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Phentermine/Topiramate for the
+                                                                        TBD<!-- Phentermine/Topiramate for the
                                                                         Treatment of
-                                                                        Adolescent -->TBD
+                                                                        Adolescent -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Hyun Wook Chae</p>
+                                                                        TBD<!-- <p class="bold">Hyun Wook Chae</p>
                                                                         (Yonsei
-                                                                        University, Korea) -->TBD
+                                                                        University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3763,9 +3798,9 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:00-15:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Case Sharing of Empowering Weight
+                                                                        TBD<!-- Case Sharing of Empowering Weight
                                                                         Management
-                                                                        Using Phentermine/Topiramate ER -->TBD
+                                                                        Using Phentermine/Topiramate ER -->
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jong Han Choi</p>(Konkuk University, Republic of Korea)
@@ -3839,7 +3874,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -3890,22 +3925,22 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
 																<tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
 																<tr>
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -3956,8 +3991,10 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r"><p class="bold">Do Thi Ngoc Diep</p>(Vietnam)</td>
+                                                                    <td class="bold">
+																		Prevention of Obesity among School-aged Children in Vietnam: Experiences in Developing Nutrition-related Policy
+																	</td>
+                                                                    <td class="text_r"><p class="bold">Do Thi Ngoc Diep</p>(Vietnam Nutrition Association, Vietnam)</td>
                                                                 </tr>
 																<tr>
                                                                     <td>14:50-15:15</td>
@@ -3967,7 +4004,7 @@ echo '<script type="text/javascript">
 																<tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -4140,6 +4177,11 @@ echo '<script type="text/javascript">
                                                     </p>
                                                 </td>
                                             </tr>
+											<tr>
+												<td colspan="2" class="program_detail_td">
+													will be updated.
+												</td>
+											</tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -4161,7 +4203,7 @@ echo '<script type="text/javascript">
                 <div class="tab_wrap">
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-                            <li name="breakfast_symposium_4">
+                            <li name="breakfast_symposium_3">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -4178,7 +4220,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>07:30-08:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 4</p>
+                                                    <p class="font_20 bold">Breakfast Symposium 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Jae-Heon Kang</span>
                                                         (Sungkyunkwan University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
@@ -4265,12 +4307,20 @@ echo '<script type="text/javascript">
                                                         University, Korea)
                                                     </p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Jae Geun Kim (Incheon National University, Republic of Korea)</p>
+													<ul>
+														<li>Professor Tamas Horvath is Chair of the Department of Comparative Medicine at Yale University School of Medicine in the United States and one of the leading researchers in the field of study on the hypothalamic control of energy homeostasis. In particular, his research on the regulation of synaptic plasticity by AgRP neurons in hypothalamic neuronal circuitries is one of his most noteworthy accomplishments. In this session, Professor Horvath will introduce the role of hypothalamic AgRP neurons that can be applied to obesity treatment.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Hunger-promoting AgRP neurons trigger an astrocyte-mediated feed-forward autoactivation loop in mice. J Clin Invest. 2021 <br/>
+															2. AgRP neurons control compulsive exercise and survival in an activity-based anorexia model. Nature Metabolism. 2020.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -4293,8 +4343,11 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:00-09:10</td>
-                                                                    <td class="bold" colspan="2">
+                                                                    <td class="bold">
                                                                         Q&A
+                                                                    </td>
+																	<td class="text_r">
+                                                                        
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4399,7 +4452,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Jun Hwa Hong</p>(Eulji
                                                                         University, Korea) -->
                                                                     </td>
@@ -4484,8 +4537,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:00-11:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->TBD
+                                                                        Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin
                                                                     </td>
                                                                     <td class="text_r">
                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
@@ -4497,7 +4549,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Chrono-nutrition: Time Restricted Eating to
                                                                         Improve Metabolic Health -->Q&A
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                        <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
@@ -4669,7 +4721,11 @@ echo '<script type="text/javascript">
 													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
 													<ul>
 														<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years. His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
-														<li><span class="font_inherit bold">References</span><br/>Nature. Dopamine subsystems that track internal states. 2022<br/>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Nature. Dopamine subsystems that track internal states. 2022<br/>
+															2. Cell. Genetic identification of vagal sensory neurons that control feeding. 2019
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -4968,7 +5024,7 @@ echo '<script type="text/javascript">
                     </div>
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                            <li name="breakfast_symposium_5">
+                            <li name="breakfast_symposium_4">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -4985,7 +5041,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>07:30-08:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 5</p>
+                                                    <p class="font_20 bold">Breakfast Symposium 4</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Dae Jung Kim</span> (Ajou
                                                         University, Korea)
@@ -5011,12 +5067,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        <!-- Early & Lower for Longer ; A to Z about Treating
-                                                                        Dyslipidemia in Diabetes Patients -->
+                                                                        TBD
                                                                     </td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Su Jin Jeong</p>(Sejong General
-                                                                        Hospital, Korea) -->
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Young-Sang Lyu</p>(Chosun University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5074,12 +5128,20 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Jae Geun Kim (Incheon National University, Republic of Korea)</p>
+													<ul>
+														<li>Professor Tamas Horvath is Chair of the Department of Comparative Medicine at Yale University School of Medicine in the United States and one of the leading researchers in the field of study on the hypothalamic control of energy homeostasis. In particular, his research on the regulation of synaptic plasticity by AgRP neurons in hypothalamic neuronal circuitries is one of his most noteworthy accomplishments. In this session, Professor Horvath will introduce the role of hypothalamic AgRP neurons that can be applied to obesity treatment.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Hunger-promoting AgRP neurons trigger an astrocyte-mediated feed-forward autoactivation loop in mice. J Clin Invest. 2021 <br/>
+															2. AgRP neurons control compulsive exercise and survival in an activity-based anorexia model. Nature Metabolism. 2020.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -5102,9 +5164,12 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:00-09:10</td>
-                                                                    <td class="bold" colspan="2">
+                                                                    <td class="bold">
                                                                         Q&A
                                                                     </td>
+																	<td class="text_r">
+																		
+																	</td>
                                                                 </tr>
 																<!--
                                                                 <tr>
@@ -5214,7 +5279,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Tae-Nyun Kim</p> (Inje
                                                                         University, Korea) -->
                                                                     </td>
@@ -5299,8 +5364,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:00-11:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->TBD
+																		Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin
                                                                     </td>
                                                                     <td class="text_r">
                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
@@ -5309,11 +5373,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:30-11:40</td>
                                                                     <td class="bold">
-                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->Q&A
+                                                                        Q&A
                                                                     </td>
-                                                                    <td>
-                                                                       <p class="bold"></p>
+                                                                    <td class="text_r">
+																		
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5394,7 +5457,7 @@ echo '<script type="text/javascript">
                                                                         <!-- New Paradigm of Glycemic Variability: EVERGREEN
                                                                         Study -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Yun Kyung Cho</p>(University of
                                                                         Ulsan, Korea) -->
                                                                     </td>
@@ -5487,7 +5550,11 @@ echo '<script type="text/javascript">
 													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
 													<ul>
 														<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years. His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
-														<li><span class="font_inherit bold">References</span><br/>Nature. Dopamine subsystems that track internal states. 2022<br/>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Nature. Dopamine subsystems that track internal states. 2022<br/>
+															2. Cell. Genetic identification of vagal sensory neurons that control feeding. 2019
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -5676,7 +5743,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Sang Youl Rhee</p>(Kyung Hee
                                                                         University, Korea)
                                                                         <p class="bold">Byoungduck Han</p>(Korea
@@ -5810,7 +5877,7 @@ echo '<script type="text/javascript">
                     </div>
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-							<li name="breakfast_symposium_6">
+							<li name="breakfast_symposium_5">
 								<!--
                                 <div class="clearfix2 caption">
                                     <span>Sep.9(Sat)</span>
@@ -5827,7 +5894,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>07:30-08:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 6</p>
+                                                    <p class="font_20 bold">Breakfast Symposium 5</p>
                                                     <!-- <p>
                                                         <span class="bold">Chairperson : Dae Jung Kim</span> (Ajou
                                                         University, Korea)
@@ -5853,8 +5920,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        <!-- Early & Lower for Longer ; A to Z about Treating
-                                                                        Dyslipidemia in Diabetes Patients -->TBD
+                                                                        Which Combination is Optimal Choice after Metformin Failure?
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yeoree Yang</p>(The Catholic University of Korea, Republic of Korea)
@@ -5915,12 +5981,20 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Jae Geun Kim (Incheon National University, Republic of Korea)</p>
+													<ul>
+														<li>Professor Tamas Horvath is Chair of the Department of Comparative Medicine at Yale University School of Medicine in the United States and one of the leading researchers in the field of study on the hypothalamic control of energy homeostasis. In particular, his research on the regulation of synaptic plasticity by AgRP neurons in hypothalamic neuronal circuitries is one of his most noteworthy accomplishments. In this session, Professor Horvath will introduce the role of hypothalamic AgRP neurons that can be applied to obesity treatment.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Hunger-promoting AgRP neurons trigger an astrocyte-mediated feed-forward autoactivation loop in mice. J Clin Invest. 2021 <br/>
+															2. AgRP neurons control compulsive exercise and survival in an activity-based anorexia model. Nature Metabolism. 2020.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -5943,9 +6017,12 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:00-09:10</td>
-                                                                    <td class="bold" colspan="2">
+                                                                    <td class="bold">
                                                                         Q&A
                                                                     </td>
+																	<td class="text_r">
+																		
+																	</td>
                                                                 </tr>
 																<!--
                                                                 <tr>
@@ -6055,7 +6132,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
 																<!--
 																<tr>
@@ -6132,8 +6209,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:00-11:30</td>
                                                                     <td class="bold">
-                                                                        <!-- Chrono-nutrition: Time Restricted Eating to
-                                                                        Improve Metabolic Health -->TBD
+                                                                        Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin
                                                                     </td>
                                                                     <td class="text_r">
                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Republic of Korea)
@@ -6303,11 +6379,10 @@ echo '<script type="text/javascript">
                                             <tr class="pink_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Key
-													note Lecture 3</p>
+                                                    <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <!-- <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
@@ -6315,7 +6390,11 @@ echo '<script type="text/javascript">
 													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
 													<ul>
 														<li>Professor Zachary Knight is a pioneer in the field of elucidating the neural mechanisms of appetite, homeostasis, and obesity, having published some of the finest research in Nature, Cell, and elsewhere over the past few years. His use of potent neuroscience tools is always accompanied by a profound understanding of concepts related to appetite. In this keynote lecture, he will present his most recent findings regarding the function of neural circuits in the brainstem in regulating eating behavior.</li>
-														<li><span class="font_inherit bold">References</span><br/>Nature. Dopamine subsystems that track internal states. 2022<br/>Cell. Genetic identification of vagal sensory neurons that control feeding. 2019</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Nature. Dopamine subsystems that track internal states. 2022<br/>
+															2. Cell. Genetic identification of vagal sensory neurons that control feeding. 2019
+														</li>
 													</ul>
 												</td>
 											</tr>
@@ -6500,7 +6579,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -6791,7 +6870,7 @@ echo '<script type="text/javascript">
                                                                        <!--  Lifestyle Factors Associated to Adiposity Among
                                                                         Adult Women in Malaysia -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Norsham Juliana</p>(University
                                                                         Sains Islam Malaysia, Malaysia) -->
                                                                     </td>
@@ -6804,7 +6883,7 @@ echo '<script type="text/javascript">
                                                                         Intake and Muscle-Fat Ratio among the Primary
                                                                         School Children in Malaysia -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold"> Mun Hong Joseph Cheah</p>
                                                                         (University Putra Malaysia, Malaysia) -->
                                                                     </td>
@@ -6815,7 +6894,7 @@ echo '<script type="text/javascript">
                                                                        <!--  12-OAHSA is a Component of Olive Oil and
                                                                         Mitigates Obesity-induced Inflammation -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Shindy Soedono</p>(Soonchunhyang
                                                                         University, Indonesia) -->
                                                                     </td>
@@ -6828,7 +6907,7 @@ echo '<script type="text/javascript">
                                                                         Adults With Overweight or Obesity: Post-Hoc
                                                                         Analysis of the STEP 1 Trial -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Sidi Mohamed El Amine Taha
                                                                             Dahaoui</p>(Novo Nordisk Pharma Korea,
                                                                         Algeria) -->
@@ -6841,7 +6920,7 @@ echo '<script type="text/javascript">
                                                                         Restrictive Surgery in Obese Patients with Type
                                                                         2 Diabetes -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Pardeep Kumar</p>(Shri MMVD
                                                                         Institute, India) -->
                                                                     </td>
@@ -6852,7 +6931,7 @@ echo '<script type="text/javascript">
                                                                         <!-- A Phased Study of Bariatric Surgery in Variable
                                                                         Obesity Phenotypes -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                        <!--  <p class="bold">Sukrat Sinha</p>(Manipal
                                                                         University, India) -->
                                                                     </td>
@@ -6919,7 +6998,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:45-16:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        The Benefits of Physical Activity Interventions for Obese People
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ji Suk Chae</p>(JS Sports Medicine Center, Republic of Korea)
@@ -6928,7 +7007,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Exercise Guidelines for Severe Obese People
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hae Sung Lee</p>(Wonkwang University, Republic of Korea)
@@ -6939,7 +7018,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -7104,7 +7183,7 @@ echo '<script type="text/javascript">
                                                                         <!-- Obesity and White Adipose Tissue- Links to
                                                                         Comorbidities -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold"> Mikael Ryden</p>(Karolinska
                                                                         University, Sweden) -->
                                                                     </td>
@@ -7114,7 +7193,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         <!-- Benefits Beyond Weight Loss with GLP-1RA -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Chang Hee Jung</p>(University of
                                                                         Ulsan, Korea) -->
                                                                     </td>
@@ -7125,7 +7204,7 @@ echo '<script type="text/javascript">
                                                                         <!-- GLP-1RA for Obesity Management, How can We
                                                                         Maximize Its Clinical Value? -->
                                                                     </td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Hyuktae Kwon</p>(Seoul National
                                                                         University, Korea) -->
                                                                     </td>
@@ -7188,55 +7267,65 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>12:50-13:00</td>
-                                                                    <td class="bold"><!-- Prevalence of Obesity and
+                                                                    <td class="bold">
+																		<!-- Prevalence of Obesity and
                                                                         Overweight Children in South Korea During
                                                                         COVID-19: Korean National Health and Nutrition
-                                                                        Examination Survey 2018-2020 --></td>
-                                                                    <td>
+                                                                        Examination Survey 2018-2020 -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Ji Won Park</p>(Korea
                                                                         University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold"><!-- The COVID-19 Pandemics Affects
+                                                                    <td class="bold">
+																		<!-- The COVID-19 Pandemics Affects
                                                                         Prevalence of Obesity and Metabolic Syndrome of
                                                                         Children and Adolescents in Korea using the
-                                                                        KNHANES 2019-2020 --></td>
-                                                                    <td>
+                                                                        KNHANES 2019-2020 -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Jung Eun Choi</p>(Ewha Womans
                                                                         University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
-                                                                    <td class="bold"><!-- Comparison of siMS Score by
+                                                                    <td class="bold">
+																		<!-- Comparison of siMS Score by
                                                                         Sociodemographic Characteristics and Nutritional
                                                                         Status among Children aged 6.0-12.9 years in
-                                                                        Malaysia --></td>
-                                                                    <td>
+                                                                        Malaysia -->
+																	</td>
+                                                                    <td class="text_r">
                                                                        <!--  <p class="bold">Kuan Chiet Teh</p>(University
                                                                         Kebangsaan Malaysia, Malaysia) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
-                                                                    <td class="bold"><!-- 6-month Outcome of an Adapted US
+                                                                    <td class="bold">
+																		<!-- 6-month Outcome of an Adapted US
                                                                         Clinic-community Model to an Online Intervention
                                                                         for Childhood Obesity in Singapore- a Pilot
-                                                                        Randomized Controlled Trial  --></td>
-                                                                    <td>
+                                                                        Randomized Controlled Trial  -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Elaine Chew</p>(Duke University,
                                                                         Singapore) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:30-13:40</td>
-                                                                    <td class="bold"><!-- Study of Relationship Between Rates
+                                                                    <td class="bold">
+																		<!-- Study of Relationship Between Rates
                                                                         of Mental Health Evaluation among Adolescents
                                                                         Receiving Sleeve Gastrectomy in Jaipur City,
-                                                                        India --></td>
-                                                                    <td>
+                                                                        India -->
+																	</td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">Vikas Sharma</p>(SN Medical
                                                                         College, India) -->
                                                                     </td>
@@ -7244,7 +7333,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>13:40-13:50</td>
                                                                     <td class="bold"></td>
-                                                                    <td>
+                                                                    <td class="text_r">
                                                                         <!-- <p class="bold">TBA</p>() -->
                                                                     </td>
                                                                 </tr>
@@ -7446,22 +7535,22 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
 																<tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold"></td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
 																<tr>
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td></td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -7553,6 +7642,11 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold mb0">Guided Poster Presentation 2</p>
                                                 </td>
                                             </tr>
+											<tr>
+												<td colspan="2" class="program_detail_td">
+													will be updated.
+												</td>
+											</tr>
                                         </tbody>
                                     </table>
                                 </div>

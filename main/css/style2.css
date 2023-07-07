@@ -5,6 +5,7 @@
 
 /* layout */
 section.container.welcome {padding-bottom: 90px;}
+section.container.app_version.welcome {padding: 0 0 90px;}
 
 /* header*/
 header{background: #444;position: relative;z-index: 999;position: fixed;top: 0;left: 0;width: 100%;}
@@ -167,7 +168,7 @@ section.container.login.bg {border: 0px;}
 .main_speaker2 .profile_circle {width: 100%; height: 200px; background-color: #F2F2F2; position: relative; margin: 0 auto 20px;}
 .main_speaker2 .profile_wrap {height:100%; background: center / cover no-repeat url("../img/img_speakers01.jpg");}
 .main_speaker2 .index_speaker2 .profile_wrap {background-image: url("../img/img_speakers02.jpg")}
-.main_speaker2 .index_speaker3 .profile_wrap {background-image: url("../img/img_speakers03.jpg");/*background-position:center; background-size: auto 270px;*/}
+.main_speaker2 .index_speaker3 .profile_wrap {background-image: url("../img/img_speakers03_1.jpg");/*background-position:center; background-size: auto 270px;*/}
 .main_speaker2 .index_speaker4 .profile_wrap {background-image: url("../img/img_speakers04.png")}
 .main_speaker2 .index_speaker5 .profile_wrap {background-image: url("../img/img_speakers05.jpg");}
 .main_speaker2 .index_speaker6 .profile_wrap {background-image: url("../img/img_speakers06.jpg");}

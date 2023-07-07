@@ -7,8 +7,8 @@
 	<div class="app_main_inner">
 		<div class="app_main_box">
 			<div class="logo_wrap">
-				<img src="./img/sponsor/logo01.png" alt="Alvogen">
-				<img src="./img/sponsor/logo02_1.png" alt="novo nordisk">
+				<img src="./img/sponsor/logo01_1.png" alt="Alvogen">
+				<img src="./img/sponsor/logo02_1_1.png" alt="novo nordisk">
 			</div>
 		</div>
 	</div>

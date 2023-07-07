@@ -27,7 +27,7 @@
 			if(!$prev["idx"]){
 				$res = [
 					code => 403,
-					msg => "Can not modify registeration, should be checked registration status and owner"
+					msg => "Can not modify registration, should be checked registration status and owner"
 				];
 				echo json_encode($res);
 				exit;
@@ -53,9 +53,9 @@
 			case "Participants":
 				$attendance_type = 4;
 				break;
-//            case "Sponsor":
-//                $attendance_type = 5;
-//                break;
+            case "Sponsor":
+                $attendance_type = 5;
+                break;
 		}
 
 		$category            = isset($data["category"]) ? $data["category"] : "";										// Category
@@ -92,15 +92,15 @@
 		$day2_luncheon_yn     = $data["others3"] != "no" ? "Y" : "N";
 		$day3_breakfast_yn    = $data["others4"] != "no" ? "Y" : "N";
 		$day3_luncheon_yn     = $data["others5"] != "no" ? "Y" : "N";
-		$promotion_code       = isset($data["promotion_code"]) ? $data["promotion_code"] : "";							// 프로모션코드
+        $promotion_code_number= isset($data["promotion_code"]) ? $data["promotion_code"] : "";                          // 프로모션코드 번호
+		$promotion_code       = isset($data["promotion_confirm_code"]) ? $data["promotion_confirm_code"] : "";			// 프로모션코드 할인율(0:100%, 1:50%, 2:30%)
 		$recommended_by       = isset($data["recommended_by"]) ? $data["recommended_by"] : "";							// 추천인
 		$payment_method       = isset($data["payment_method"]) ? $data["payment_method"] : "";							// 결제 방식(0:카드 결제, 1:계좌 이체)
 		$payment_method       = $payment_method == "credit" ? 0 : 1;													
-		$conference_info      = implode("*", $data["conference_info_arr"]);												// 정보획득매체
+		$conference_info      = implode("*", $data["conference_info_arr"]);									// 정보획득매체
 
 		$price				  = isset($data["reg_fee"]) ? $data["reg_fee"] : "";										// 결제금액
 		$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
-
 
 		if(!$update_idx){
 			if($price == "" || $total_price == ""){
@@ -212,7 +212,13 @@
 				}
 
 				if($data["promotion_confirm_code"] != ''){
-					if($promotion_code != "") {
+                    if($promotion_code_number != "") {
+                        $add_set .= ", promotion_code_number = '{$promotion_code_number}' ";
+                    }else{
+                        $add_set .= ", promotion_code_number = NULL ";
+                    }
+
+                    if($promotion_code != "") {
 						$add_set .= ", promotion_code = '{$promotion_code}' ";
 					}else{
 						$add_set .= ", promotion_code = NULL ";
@@ -224,6 +230,7 @@
 						$add_set .= ", recommended_by = NULL ";
 					}
 				}else{
+                    $add_set .= ", promotion_code_number = NULL ";
 					$add_set .= ", promotion_code = NULL ";
 					$add_set .= ", recommended_by = NULL ";
 				}
@@ -266,7 +273,10 @@
             }
 
 			if($data["promotion_confirm_code"] !== ''){
-				if($promotion_code != "") {
+				if($promotion_code_number != ""){
+                    $add_set .= ", promotion_code_number = '{$promotion_code_number}' ";
+                }
+                if($promotion_code != "") {
 					$add_set .= ", promotion_code = '{$promotion_code}' ";
 				}
 				if($recommended_by != "") {
@@ -608,6 +618,24 @@
 			exit;
 		}
 
+        // 프로모션코드 취소
+        $select_promotion_query =	"
+											SELECT idx, registration_idx, promotion_code_idx
+											FROM management_promotion_code
+											WHERE registration_idx = '{$registration_idx}'
+										";
+        $promotion_code_idx = sql_fetch($select_promotion_query)['promotion_code_idx'];
+
+        if($promotion_code_idx){
+            $update_promotion_query =	"
+											UPDATE promotion_code
+											SET 
+												count_limit = '1'
+											WHERE idx = '{$promotion_code_idx}'
+										";
+            $update_promotion_result = sql_query($update_promotion_query);
+        }
+
 		$update_registration_query =	"
 											UPDATE request_registration
 											SET 
@@ -733,7 +761,7 @@
 	} else if($_POST["flag"] == "calc_fee") {
 		$user_idx = $_SESSION["USER"]["idx"];
 		$category = $_POST["category"];
-        //$country = isset($_POST["country"]) ? $_POST["country"] : "";
+        $country = $_POST["country"] ?? "";
 
 		// 카테고리별 상품금액 조회
 		$calc_fee_query =	"
@@ -744,7 +772,7 @@
 							";
 		$calc_fee = sql_fetch($calc_fee_query);
 
-		$result = calcFee($user_idx, $category);
+		$result = calcFee($user_idx, $category, $country);
 		
 		//$result = isset($calc_fee["on_member_usd"]) ? $calc_fee["on_member_usd"] : "0";
 		if($calc_fee) {
@@ -752,8 +780,8 @@
 			$res = [
 				code => 200,
 				msg => "success",
-				data => $result
-//				country => $country
+				data => $result,
+				country => $country
 			];
 			echo json_encode($res);
 			exit;
@@ -770,7 +798,7 @@
 		}
 	} 
 
-	function calcFee($user_idx, $category){
+	function calcFee($user_idx, $category, $country){
 		// 회원검증
 		$sql = "SELECT 
 					m.idx, 
@@ -800,24 +828,72 @@
 							";
 		$calc_fee = sql_fetch($calc_fee_query);
 
-		if($member_is_korean == 1){
-			if($member_ksola >= 1){
-				$result = $calc_fee["on_member_krw"];
-			}else{
-				$result = $calc_fee["on_guest_krw"];
-			}
-		}else{
-			if(($member_idx && !isset($calc_fee["on_member_usd"])) || (!$member_idx && !isset($calc_fee["on_guest_usd"]))){
-				echo json_encode(array("code"=>403, "msg"=>"Not invalid price type"));
-				exit;
-			}
+//		if($member_is_korean == 1 || $country==25){
+//			if($member_ksola >= 1){
+//                if($country==25){
+//				    $result = $calc_fee["on_member_krw"];
+//                }
+//			}else{
+//                if($country==25){
+//				    $result = $calc_fee["on_guest_krw"];
+//                }
+//			}
+//		}else{
+//			if(($member_idx && !isset($calc_fee["on_member_usd"])) || (!$member_idx && !isset($calc_fee["on_guest_usd"]))){
+//				echo json_encode(array("code"=>403, "msg"=>"Not invalid price type"));
+//				exit;
+//			}
+//
+//			if($member_ksola >= 1){
+//				$result = $calc_fee["on_member_usd"];
+//			}else{
+//				$result = $calc_fee["on_guest_usd"];
+//			}
+//		}
 
-			if($member_ksola >= 1){
-				$result = $calc_fee["on_member_usd"];
-			}else{
-				$result = $calc_fee["on_guest_usd"];
-			}
-		}
+//        print_r($calc_fee);
+//        print_r("memberiskorean=".$member_is_korean);
+//        print_r("memberksola=".$member_ksola);
+
+        if($country==null){
+            if($member_is_korean == 1){
+                if($member_ksola >= 1){
+                    $result = $calc_fee["on_member_krw"];
+                }else{
+                    $result = $calc_fee["on_guest_krw"];
+                }
+            }else{
+                if(($member_idx && !isset($calc_fee["on_member_usd"])) || (!$member_idx && !isset($calc_fee["on_guest_usd"]))){
+                    echo json_encode(array("code"=>403, "msg"=>"Not invalid price type"));
+                    exit;
+                }
+
+                if($member_ksola >= 1){
+                    $result = $calc_fee["on_member_usd"];
+                }else{
+                    $result = $calc_fee["on_guest_usd"];
+                }
+            }
+        } else {
+            if($country == 25){
+                if($member_ksola >= 1){
+                    $result = $calc_fee["on_member_krw"];
+                }else{
+                    $result = $calc_fee["on_guest_krw"];
+                }
+            }else{
+                if(($member_idx && !isset($calc_fee["on_member_usd"])) || (!$member_idx && !isset($calc_fee["on_guest_usd"]))){
+                    echo json_encode(array("code"=>403, "msg"=>"Not invalid price type"));
+                    exit;
+                }
+
+                if($member_ksola >= 1){
+                    $result = $calc_fee["on_member_usd"];
+                }else{
+                    $result = $calc_fee["on_guest_usd"];
+                }
+            }
+        }
 
 		return $result;
 	}

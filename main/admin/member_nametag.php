@@ -11,7 +11,7 @@
 	if ($member_idx == "all") {
 		$sql_info = "SELECT
 						req.idx AS registration_idx, mb.idx,
-						md5(mb.idx) AS idx_encrypt,
+						md5(registration_no) AS registration_no_encrypt,
 						mb.last_name, mb.first_name,
 						mb.affiliation,
                         mb.is_deleted,
@@ -20,7 +20,7 @@
 					FROM member AS mb
 					INNER JOIN (
 						SELECT
-							rr.idx, rr.register, 
+							rr.idx, rr.register, CONCAT('ICOMES2023-',rr.idx) AS registration_no,
 							(
 								CASE pmt.`type`
 									WHEN 0 THEN 'KRW'
@@ -51,7 +51,7 @@
 	} else {
 		$sql_info = "SELECT
 						req.idx AS registration_idx, mb.idx,
-						md5(mb.idx) AS idx_encrypt,
+						md5(registration_no) AS registration_no_encrypt,
 						mb.last_name, mb.first_name,
 						mb.affiliation,
 						nat.nation_en,
@@ -59,7 +59,7 @@
 					FROM member AS mb
 					INNER JOIN (
 						SELECT
-							rr.idx, rr.register, 
+							rr.idx, rr.register, CONCAT('ICOMES2023-',rr.idx) AS registration_no,
 							(
 								CASE pmt.`type`
 									WHEN 0 THEN 'KRW'
@@ -132,8 +132,8 @@
 				<div id="printThis">
                 <?php
                     foreach ($infoes as $info) {
-//                         error_log(print_r('UNIT: ' . $info['pay_unit'] . PHP_EOL, TRUE), 3, '/tmp/errors.log');
-//                         error_log(print_r('PRICE: ' . $info['pay_price'] . PHP_EOL, TRUE), 3, '/tmp/errors.log');
+//                      error_log(print_r('UNIT: ' . $info['pay_unit'] . PHP_EOL, TRUE), 3, '/tmp/errors.log');
+//                      error_log(print_r('PRICE: ' . $info['pay_price'] . PHP_EOL, TRUE), 3, '/tmp/errors.log');
                 ?>
 				<div class="a4_area">
 					<div class="bg_area">
@@ -141,7 +141,7 @@
 						<div class="txt_con">
 							<div class="nick_name" id="nick_name"><?=$info['first_name'] . " " . $info['last_name']?></div>
 							<div class="org draggable"><?=$info['affiliation'] . "<br>" . $info['nation_en']?></div>
-							<div id="qrcode<?=$info['idx']?>" class="draggable qrcodes" data-encrypt="<?=$info['idx_encrypt']?>"></div>
+							<div id="qrcode<?=$info['idx']?>" class="draggable qrcodes" data-encrypt="<?=$info['registration_no_encrypt']?>"></div>
 							<!-- div class="receipt receipt_name"><?=$info['last_name'].$info['first_name']?></div -->
 							<!--div class="payment_price"><?=$info['pay_unit']." ".number_format($info['pay_price'])?></div-->
 						</div>

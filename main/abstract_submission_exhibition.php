@@ -105,8 +105,8 @@ $info = sql_fetch($sql_info);
 				</div>
 				<div class="text_box indent">
 					<ul>
-						<li>• The ICOMES secretariat will be responsible for the printing and display of posters on behalf of the presenter.</li>
-						<li>• It is mandatory for all presenters of posters to submit their final presentation materials, including PPT and PDF formats, to the secretariat via email (<a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>) before the deadline of <span class="f_bold">August 24(Thu)</span>.</li>
+						<li>• The ICOMES secretariat will be responsible for the printing and displaying of posters on behalf of the presenter.</li>
+						<li>• All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before the deadline of <span class="f_bold italic">August 24 (Thu).</span></li>
 						<li class="f_bold">• Please download the designated poster form below.</li>
 						<li>• If presenters fail to submit their posters before the designated deadlines, they may face penalties such as automatic withdrawal of their accepted abstracts. Therefore, it is strongly advised that presenters keep this in mind and submit their posters in a timely manner.</li>
 					</ul>

@@ -55,7 +55,7 @@
 												WHEN '2' THEN 'Chairperson'
 												WHEN '3' THEN 'Panel'
 												WHEN '4' THEN 'Participants'
-												##WHEN '5' THEN 'Sponsor'
+												WHEN '5' THEN 'Sponsor'
 												ELSE '-'
 											END
 										) AS attendance_type_text,
@@ -78,6 +78,8 @@
 												THEN '환불대기'
 												WHEN rr.status = '4'
 												THEN '환불완료'
+											    WHEN rr.status = '5'
+												THEN '현장결제'
 												ELSE '-'
 											END
 										) AS payment_status,
@@ -85,11 +87,19 @@
 											CASE
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
 												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
+												WHEN rr.payment_methods = '2' THEN 'Onsite payment'
 											END
 										) AS payment_methods,
 										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,
 										rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn,
-										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by, 
+										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by,
+										(
+                                            CASE
+                                                WHEN rr.promotion_code = 0 THEN '100%'
+                                                WHEN rr.promotion_code = 1 THEN '50%'
+                                                WHEN rr.promotion_code = 2 THEN '30%'
+                                            END
+                                        ) AS discount_rate, rr.promotion_code_number,
 										n.nation_ko, n.nation_en,
 										m.idx AS member_idx,
 										m.affiliation, m.department,
@@ -182,6 +192,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제 방식</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제금액</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">할인율</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Promotion Code</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">추천인</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Welcome Reception</th>';
@@ -316,7 +327,8 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_methods"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
-		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["promotion_code"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["discount_rate"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["promotion_code_number"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["recommended_by"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["welcome_reception_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_breakfast_yn"].'</td>';

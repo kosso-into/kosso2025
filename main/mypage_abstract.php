@@ -726,8 +726,19 @@
 			});
 		}
 
+        var presentation_type_text="";
+        if(submit_data.presentation_type==0){
+            presentation_type_text="Oral Presentation";
+        } else if(submit_data.presentation_type==1){
+            presentation_type_text="Poster Exhibition";
+        } else if(submit_data.presentation_type==2){
+            presentation_type_text="Guided Poster Presentation";
+        } else if(submit_data.presentation_type==3){
+            presentation_type_text="Any of Them";
+        }
+
 		$("#submission_code").text(submit_data.submission_code);
-		$("#presentation_type").text(submit_data.presentation_type);
+		$("#presentation_type").text(presentation_type_text);
 		$("#abstract_category").text(submit_data.abstract_category+".");
 		$("#abstract_category_text").text(abstract_category_arr[submit_data.abstract_category]);
 		$("#abstract_title").text(submit_data.abstract_title);

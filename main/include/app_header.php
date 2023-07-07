@@ -1,5 +1,3 @@
-<!-- HUBDNCAJY : 사용자 App에서 사용하는 header, nav 입니다. -->
-
 <!-- 사용자 App header -->
 <header class="app_header">
 	<div class="hd_inner">

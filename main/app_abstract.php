@@ -6,7 +6,7 @@
 <section class="container app_version layout_type2">
 	<div class="inner">
 		<div class="app_title_box">
-			<h2 class="app_title">Abstract</h2>
+			<h2 class="app_title">Abstract<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		</div>
 		<div class="app_contents_box">
 			<div class="app_contents_wrap type2">
@@ -33,7 +33,7 @@
 					</li>
 				</ul>
 				<ul class="pdf_list">
-					<li><a href="./download/dummy.pdf">Plenary Lecture 1</a></li>
+					<li><a href="./app_abstract_viewer.php?file=dummy.pdf">Plenary Lecture 1</a></li>
 					<li><a href="./download/dummy.pdf">Plenary Lecture 2</a></li>
 					<li><a href="./download/dummy.pdf">Plenary Lecture 3</a></li>
 					<li><a href="./download/dummy.pdf">Plenary Lecture 4</a></li>

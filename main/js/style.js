@@ -14,6 +14,40 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
+	// Program At a Glance 줌 스크립트
+	//pinch 진행 상태
+	let scaling  = false;
+	//pinch 초기 거리
+	let setDist = 0;
+
+	$(".program_table").on("touchstart", function(event){
+		if(event.originalEvent.touches.length  === 2){
+			scaling  = true;
+		}
+	})
+
+	$(".program_table").on("touchmove", function(event){
+		if(scaling){
+			var dist = Math.hypot(
+				event.originalEvent.touches[0].pageX - event.originalEvent.touches[1].pageX,
+				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
+			);
+			dist = Math.floor(dist/20);
+			if(setDist == 0) setDist = dist;
+			if(setDist < dist){
+				$(this).css("width", 1.1*parseFloat(imgWidth));
+				$(this).css("height", 1.1*parseFloat(imgHeight));
+				setDist = dist;
+			} else if(setDist > dist){
+				$(this).css("width", 0.9*parseFloat(imgWidth));
+				$(this).css("height", 0.9*parseFloat(imgHeight));
+				setDist = dist;
+			}
+			imgWidth = $(".program_table")[0].clientWidth;
+			imgHeight = $(".program_table")[0].clientHeight;
+		}
+	})
+
 	//데이트피커
 	$(".date_input").datepicker({
 		//dateFormat: "yy-mm-dd"
@@ -391,8 +425,21 @@ $(document).ready(function(){
 	//$(window).trigger("resize");
 
 	// APP 로그인/로딩페이지 height 설정
+	//if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
+	//	//$(window).resize(resizing);
+	//	//resizing();
+	//	//function resizing(){
+	//		document.querySelector(".app_main .app_main_box").style.height = window.innerHeight + "px";	
+	//	//}
+	//}
+
+	// APP 로그인/로딩페이지 height 설정
 	if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
-		document.querySelector(".app_main .app_main_box").style.height = window.innerHeight + "px";
+		$(window).resize(function(){
+			var  window_height = $(window).outerHeight();
+			$(".app_main .app_main_box").height(window_height);
+		});
+		$(window).trigger("resize");
 	}
 
 	// preventDefault
@@ -411,7 +458,7 @@ $(document).ready(function(){
 
 	// Scientific Program 상세영역 토글
 	$(".app_scientific .program_detail_ul .main").click(function(){
-		$(this).next(".detail").stop().slideToggle();
+		$(this).siblings(".detail").stop().slideToggle();
 	});
 
 	//팝업

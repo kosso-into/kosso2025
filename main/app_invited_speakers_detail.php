@@ -15,7 +15,7 @@
 				<div class="speakers_detail">
 					<img src="./img/img_speakers08.jpg" alt="">
 					<div class="detail_box">
-						<p>Jae Myoung Suh<span>KAIST, Republic of Korea</span></p>
+						<p>Jae Myoung Suh<span>KAIST<br>Republic of Korea</span></p>
 						<a href="javascript:;" class="download_btn">CV</a>
 					</div>
 				</div>

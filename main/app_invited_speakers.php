@@ -6,15 +6,15 @@
 	<div class="app_title_box">
 		<h2 class="app_title">
 			Invited Speakers
-			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='javascript:;';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="container_inner">
 		<div class="contents_box">
 			<div class="app_search_area">
-				<p class="f_bold">Please enter keywords</span></p>
+				<!-- <p class="f_bold">Please enter keywords</span></p> -->
 				<div class="search_input">
-					<input type="text" placeholder="Search">
+					<input type="text" placeholder="Please enter keywords">
 					<button type="button" class="search_icon"></button>
 				</div>
 			</div>

@@ -543,6 +543,11 @@ section.container.organizing {padding-bottom: 190px;}
 .purple_bg {background-color:rgba(181,178,255,0.3) !important;}
 .blue_bg {background-color:#00b0f0 !important;}
 .light_orange_bg {background-color:#FFEDD5 !important;}
+/*230705 HUBDNC AJY 추가*/
+.dots_div {font:inherit; display:flex; align-items:flex-end; justify-content:center;}
+.dots_img {width:auto; height:1.75px; margin:0 1px 2px;}
+.colons_div {font:inherit; display:flex; align-items:center; justify-content:center;}
+.colons_img {width:auto !important; height:6px; margin:0 1px !important;}
 
 /*invited speaker*/
 .invited .inner {padding-top: 0; border:1px solid transparent;}
@@ -765,10 +770,10 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 
 @media screen and (max-width: 1024px) {
-    body{-webkit-text-size-adjust: 100%;}
+    /* body{-webkit-text-size-adjust: 100%;} */
 	.pc_only{display:none;}
 	.tablet_show, .tablet_only{display:block;}
-    .form_section{padding: 250px 0 250px}
+    .form_section{padding: 250px 0 250px;}
 	.mobile_none {display:none;}
 	.program_table{min-width:1200px;}
 	section.container .page_title {padding: 36px 0 48px !important;}
@@ -1233,6 +1238,13 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	/*교육이수내역(사후생성)*/
 	.custom_col {width:100px;}
 	.pop_education .btn {min-width: 120px; padding: 0 20px; font-size: 18px;}
+
+	/* .program_table {transform: scale(0.7); transform-origin: 0 0;} */
+	.program_table {min-width:800px;}
+	.program_table th, .program_table td {padding:6px;}
+	.program_table thead th.font_big, .program_table thead th {font-size:10px}
+	.program_table tbody td {font-size:8px; line-height:10px;}
+	.program_table tbody td p {font-size:6px;}
 }
 
 @media screen and (max-width: 400px) {
@@ -1297,4 +1309,4 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	23.06.13 APP CSS
 ==========================*/
 /* program detail */
-.invited_tag {font-size:9px; border-radius:8px; color:#fff; /* margin-left:8px; */ line-height:15px; padding:0 6px 0 24px; background:#336666 url("../img/icons/icon_invited_btn.svg") no-repeat center left 6px /12px;}
+.invited_tag {font-size:11px; border-radius:8px; color:#fff; /* margin-left:8px; */ line-height:15px; padding:2px 6px 2px 24px; background:#336666 url("../img/icons/icon_invited_btn.svg") no-repeat center left 6px /12px;}
