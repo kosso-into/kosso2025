@@ -5,35 +5,35 @@
 <!-- HUBDNCHYJ : App 일 경우 padding/margin을 조정하는 app_version 클래스가 container에 들어가야 함 -->
 <section class="container program_glance">
 	<!-- HUBDNCHYJ : App 일 경우 타이틀 영역 입니다. -->
-	<!-- <div class="app_title_box"> -->
-	<!-- 	<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
-	<!-- 	<ul class="app_menu_tab langth_2"> -->
-	<!-- 		<li class="on"><a href="./program_glance.php">Program at a Glance</a></li> -->
-	<!-- 		<li><a href="./program_detail.php">Scientific Program</a></li> -->
-	<!-- 	</ul> -->
-	<!-- </div> -->
+<!-- 	<div class="app_title_box"> -->
+<!-- 		<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
+<!-- 		<ul class="app_menu_tab langth_2"> -->
+<!-- 			<li class="on"><a href="./program_glance.php">Program at a Glance</a></li> -->
+<!-- 			<li><a href="./program_detail.php">Scientific Program</a></li> -->
+<!-- 		</ul> -->
+<!-- 	</div> -->
     <h1 class="page_title">Program at a Glance</h1>
 	<!-- HUBDNCHYJ : App 에서는 이 클래스 사용하시면 됩니다. -->
-	<!-- <ul class="app_tab program"> -->
-	<!-- 	<li class="row2 on"><a href="javascript:;">All Days</a></li> -->
-	<!-- 	<li><a href="javascript:;">Sep.7(Thu)</a></li> -->
-	<!-- 	<li><a href="javascript:;">Sep.8(Fri)</a></li> -->
-	<!-- 	<li><a href="javascript:;">Sep.9(Sat)</a></li> -->
-	<!-- </ul> -->
+<!-- 	<ul class="app_tab program"> -->
+<!-- 		<li class="row2 on"><a href="javascript:;">All Days</a></li> -->
+<!-- 		<li><a href="javascript:;">Sep.7(Thu)</a></li> -->
+<!-- 		<li><a href="javascript:;">Sep.8(Fri)</a></li> -->
+<!-- 		<li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li> -->
+<!-- 	</ul> -->
     <div class="inner">
         <div class="program_wrap section">
             <div class="scroll_table">
                 <ul class="tab_green long centerT program_glance">
-					<li class="on"><a href="javascript:;">All Days<br/>September 7 (Thu) ~ 9 (Sat)</a></li>
-					<li><a href="javascript:;">Sep.7 (Thu)</a></li>
-					<li><a href="javascript:;">Sep.8 (Fri)</a></li>
-					<li><a href="javascript:;">Sep.9 (Sat)</a></li>
-				</ul>
+                					<li class="on"><a href="javascript:;">All Days<br/>September 7 (Thu) ~ 9 (Sat)</a></li>
+                					<li><a href="javascript:;">Sep.7 (Thu)</a></li>
+                					<li><a href="javascript:;">Sep.8 (Fri)</a></li>
+                					<li><a href="javascript:;">Sep.9 (Sat)</a></li>
+                				</ul>
 				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
-				<div class="rightT mb20">
-                    <button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0622.pdf')"
-                        class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
-                </div>
+				<!-- <div class="rightT mb20">
+				                    <button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0622.pdf')"
+				                        class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
+				                </div> -->
 				<div class="program_table_wrap">
 					<table class="program_table main-table">
 						<colgroup>
@@ -715,13 +715,13 @@
 </section>
 
 <!-- HUBDNCHYJ : App 일때만 노출되는 팝업 입니다. -->
-<div class="popup hold_pop"> <!-- style="display:block;" -->
-	<div class="pop_bg"></div>
-	<div class="pop_contents transparent center_t">
-		<img src="./img/icons/icon_resize.png" alt="">
-		<p class="white_t center_t">Touch on a session to check the details. <br/>Use your fingers to zoom in/out</p>
-	</div>
-</div>
+<!-- <div class="popup hold_pop" style="display:block;"> <!-- --> -->
+<!-- 	<div class="pop_bg"></div> -->
+<!-- 	<div class="pop_contents transparent center_t"> -->
+<!-- 		<img src="./img/icons/icon_resize.png" alt=""> -->
+<!-- 		<p class="white_t center_t">Touch on a session to check the details. <br/>Use your fingers to zoom in/out</p> -->
+<!-- 	</div> -->
+<!-- </div> -->
 
 <script>
 $(document).ready(function() {
@@ -738,6 +738,10 @@ $(document).ready(function() {
 		}
 	});
 	$(window).trigger("resize");*/
+
+	$(".hold_pop .pop_contents").click(function(){
+		$(".hold_pop").hide();
+	});
 
 	/* td 클릭 시 페이지 이동 */
 	$("td.pointer").click(function() {

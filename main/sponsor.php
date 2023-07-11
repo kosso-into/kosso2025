@@ -3,14 +3,13 @@
 
 <section class="container sponsor">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-	<!--
-	<div class="app_title_box">
-		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<ul class="app_menu_tab langth_2">
-			<li class="on"><a href="./sponsor.php">Sponsorship</a></li>
-			<li><a href="./sponsor_exhibition.php">Exhibition</a></li>
-		</ul>
-	</div> -->
+<!-- 	<div class="app_title_box"> -->
+<!-- 		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
+<!-- 		<ul class="app_menu_tab langth_2"> -->
+<!-- 			<li class="on"><a href="./sponsor.php">Sponsorship</a></li> -->
+<!-- 			<li><a href="./sponsor_exhibition.php">Exhibition</a></li> -->
+<!-- 		</ul> -->
+<!-- 	</div> -->
 	<!-- HUBDNCLHJ : APP일시 h1.page_title 주석처리 후 app 메뉴 탭 주석해제 -->
     <h1 class="page_title">Sponsorship</h1>
 	<div class="app_contents_box">
@@ -32,19 +31,19 @@
 				<li>
 					<a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a>
 				</li>
-				<li>
+				<li class="small">
 					<a href="http://eng.yuhan.co.kr/Main/" class="yuhan">YUHAN</a>
 				</li>
 				<li>
 					<a href="http://en.donga-st.com/Main.da" class="dong_a">Dong-A ST</a>
 				</li>
-				<li>
+				<li class="small">
 					<a href="https://www.msd.com/" class="msd">MSD</a>
 				</li>
 				<li class="small">
 					<a href="https://www.inno-n.com/eng" class="inno_n">inno N</a>
 				</li>
-				<li class="small">
+				<li>
 					<a href="https://www.hanmipharm.com/ehanmi/handler/Home-Start" class="hanmi_pharm">Hanmi Pharm</a>
 				</li>
 				<li>
@@ -62,13 +61,13 @@
 				<li>
 					<a href="https://www.lgchem.com/main/index" class="lg_chem">LG Chem</a>
 				</li>
-				<li>
+				<li class="small">
 					<a href="https://www.celltrion.com/en-us/home/index" class="celltrion">CELLTRION</a>
 				</li>
 				<li>
 					<a href="https://www.gccorp.com/eng/index" class="gc_biopharma">GC Niopharma</a>
 				</li>
-				<li>
+				<li class="small">
 					<a href="https://www.sanofi.com/en/our-company" class="sanofi">sanofi</a>
 				</li>
 			</ul>

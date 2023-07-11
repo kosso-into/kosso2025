@@ -41,16 +41,15 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text_center">Oral Presenter<br/>Guided Poster Presenter<br/>Poster Exhibitor</td>
-								<td class="text_center">USD 500</td>
-								<td class="text_center">On-site attendance and presentation are required.</td>
-							</tr>
-							<!--<tr>
-								<td class="text_center">Guided Poster Presenter</td>
-								<td class="text_center">USD 300</td>
-								<td class="text_center"></td>
+								<td class="text_center">Oral Presenter</td>
+								<td class="text_center">USD 700</td>
+								<td rowspan="2" class="text_center">On-site attendance and presentation are required.</td>
 							</tr>
 							<tr>
+								<td class="text_center">Guided Poster Presenter<br>Poster Exhibitior</td>
+								<td class="text_center border_r">USD 500</td>
+							</tr>
+							<!--<tr>
 								<td class="text_center">Oral Presenter</td>
 								<td class="text_center">USD 500</td>
 								<td class="text_center"></td>

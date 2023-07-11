@@ -20,13 +20,15 @@
             <li>
                 <div>
                     <div class="imgs"></div>
-                    <button class="btn green_btn"
-                        onClick="javascript:window.open('https://www.hilton.com/en/hotels/selcici-conrad-seoul/')">Go to
-                        reservation</button>
+                    <div class="btn_wrap">
+                         <button class="btn green_btn"
+                        onClick="javascript:window.open('https://www.hilton.com/en/hotels/selcici-conrad-seoul/')">Go to Website</button>
+                    <a href="./download/ICOMES_2023_Conrad_Seoul_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="./img/icons/icon_download_white.svg" alt="">Reservation Form Download</a>
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
+                    </div>
                 </div>
                 <div>
-                    <p>Conrad Seoul</p>
+                    <p>Conrad Seoul <span class="font_16">(Special rate for ICOMES participants applied)</span></p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
                             <colgroup>
@@ -65,6 +67,16 @@
                                             class="underline">https://www.hilton.com</a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>How to<br>reserve</th>
+                                    <td colspan="3">
+                                        1. <span class="font_b">Download the reservation form.</span><br>
+                                        2. Fill out the form.<br>
+                                        3. <span class="font_b">Send it directly to the hotel email</span><br>
+                                        (<a href="mailto:Conradseoul_GroupReservations@hilton.com" target="_blank" class="underline">Conradseoul_GroupReservations@hilton.com</a>)<br>
+                                        4. Confirm the confirmation letter.
+                                    </td>
+                               </tr>
                             </tbody>
                         </table>
                     </div>
@@ -75,8 +87,7 @@
                 <div>
                     <div class="imgs"></div>
                     <button class="btn green_btn"
-                        onClick="javascript:window.location.href='https://all.accor.com/hotel/B200/index.ko.shtml'">Go
-                        to reservation</button>
+                        onClick="javascript:window.location.href='https://all.accor.com/hotel/B200/index.ko.shtml'">Go to Website</button>
                 </div>
                 <div>
                     <p>Fairmont Ambassador Seoul</p>
@@ -118,6 +129,7 @@
                                             class="underline">https://all.accor.com</a>
                                     </td>
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -128,8 +140,7 @@
                 <div>
                     <div class="imgs"></div>
                     <button class="btn green_btn"
-                        onClick="javascript:window.location.href='https://www.glad-hotels.com/hub/index.do?locale=en';">Go
-                        to reservation</button>
+                        onClick="javascript:window.location.href='https://www.glad-hotels.com/hub/index.do?locale=en';">Go to Website</button>
                 </div>
                 <div>
                     <p>Glad Yeouido</p>

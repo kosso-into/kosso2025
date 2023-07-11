@@ -521,7 +521,7 @@ function kor_api() {
 
     function success(res) {
         var kor_sign = JSON.parse(res.value);
-        console.log(kor_sign);
+        //console.log(kor_sign);
         var user_row = kor_sign.user_row;
         //alert(user_row.user_type); return;
 
@@ -542,7 +542,6 @@ function kor_api() {
             $("#privacy").prop("checked", false);
             $("[name=kor_id]").focus();
         } else if(kor_sign.code == "N6") {
-
             alert("회원님은 대한비만학회 " + user_row.user_type + " 입니다");
             var check_email= email_check(user_row.email);
             if(check_email == false) {
@@ -555,6 +554,7 @@ function kor_api() {
             $("input[name=licence_number]").val(kor_sign.license_number);
             $("input[name=affiliation_kor]").val(kor_sign.office_name);
 
+            calc_fee();
         }
 
     }

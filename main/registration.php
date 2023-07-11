@@ -465,7 +465,7 @@ if ($during_yn !== "Y") {
 														<input type="text" placeholder="Promotion code" name="promotion_code" value="<?=$prev["promotion_code_number"] ?? ""?>">
 														<input type="hidden" name="promotion_confirm_code" value="<?=$prev["promotion_code"] ?? ""?>"/>
 													</li>
-													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100"></li>
+													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100" onkeyup="checkRegExp(this);" onchange="checkRegExp(this);"></li>
 													<li class="flex_none">
 														<button type="button" class="btn gray2_btn form_btn apply_btn">Apply</button>
 													</li>

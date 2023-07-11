@@ -2,6 +2,90 @@
 include_once('./include/head.php');
 include_once('./include/header.php');
 
+$language = isset($_SESSION["language"]) ? $_SESSION["language"] : "en";
+$locale = locale($language);
+
+$_page_config = array(
+    "m1" => [
+        "welcome",
+        "organizing_committee",
+        "overview",
+        "venue",
+        "photo"
+    ],
+    "m2" => [
+        "program_glance",
+        "program_detail",
+        "invited_speaker"
+    ],
+    "m3" => [
+        "poster_abstract_submission",
+        "abstract_submission",
+        "abstract_submission2",
+        "abstract_submission3",
+        "eposter",
+        "lecture_note_submission",
+        "lecture_submission",
+        "lecture_submission2",
+        "lecture_submission3",
+        "oral_presenters",
+        "eposter_presenters"
+    ],
+    "m4" => [
+        "registration_guidelines",
+        "registration",
+        "registration2",
+        "registration3"
+    ],
+    "m5" => [
+        "sponsor_information",
+        "application",
+        "application_complete"
+    ],
+    "m6" => [
+        "accommodation",
+        "attraction_historic",
+        "useful_information"
+    ]
+);
+
+$_page = str_replace(".php", "", end(explode("/", $_SERVER["REQUEST_URI"])));
+
+//초록 마감 기간
+$sql_during =    "SELECT
+						IF(DATE(NOW()) BETWEEN period_poster_start AND period_poster_end, 'Y', 'N') AS yn
+					FROM info_event";
+$during_yn = sql_fetch($sql_during)['yn'];
+
+//오늘 날짜 구하기 d_day 구하기
+$today = date("Y. m. d");
+$d_day = new DateTime("2023-09-07");
+
+$current_date = new DateTime();
+$current_date->format('Y-m-d');
+
+$intvl = $current_date->diff($d_day);
+$d_days = $intvl->days + 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $sql_title =    "SELECT
 						GROUP_CONCAT(title) AS title_concat
 					FROM (
@@ -18,16 +102,15 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
 
 <section class="container organizing">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-	<!--
-	<div class="app_title_box">
-		<h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<ul class="app_menu_tab">
-			<li><a href="./welcome.php">Welcome Message</a></li>
-			<li class="on"><a href="./organizing_committee.php">Organization</a></li>
-			<li><a href="./overview.php">Overview</a></li>
-			<li><a href="./venue.php">Venue</a></li>
-		</ul>
-	</div> -->
+<!-- 	<div class="app_title_box"> -->
+<!-- 		<h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
+<!-- 		<ul class="app_menu_tab"> -->
+<!-- 			<li><a href="./welcome.php">Welcome Message</a></li> -->
+<!-- 			<li class="on"><a href="./organizing_committee.php">Organization</a></li> -->
+<!-- 			<li><a href="./app_overview.php">Overview</a></li> -->
+<!-- 			<li><a href="./venue.php">Venue</a></li> -->
+<!-- 		</ul> -->
+<!-- 	</div> -->
     <div>
         <h1 class="page_title">Organization</h1>
         <div class="inner">

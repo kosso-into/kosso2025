@@ -105,7 +105,7 @@ $info = sql_fetch($sql_info);
 <!-- 		<ul class="app_menu_tab"> -->
 <!-- 			<li><a href="./welcome.php">Welcome Message</a></li> -->
 <!-- 			<li><a href="./organizing_committee.php">Organization</a></li> -->
-<!-- 			<li><a href="./app_overview.php">Overview</a></li> -->
+<!-- 			<li><a href="./overview.php">Overview</a></li> -->
 <!-- 			<li class="on"><a href="./venue.php">Venue</a></li> -->
 <!-- 		</ul> -->
 <!-- 	</div>     -->
@@ -158,6 +158,152 @@ $info = sql_fetch($sql_info);
         <div class="section section3"> <!-- APP 미노출 -->
 <!-- 			<h3 class="title">Transportation</h3> -->
             <ul class="contact_list"> <!-- APP 미노출 --> 
+                <!-- parking
+                <li>
+                    <div class="details_info_wrap">
+                        <div class="clearfix2">
+                            <div class="img_wrap">
+                                <img src="./img/contact_01.svg" alt="주차">
+                            </div>
+                            <div class="info">
+                                <h3 class="title"><?= $locale("contact_tit1") ?></h3>
+                                <ul>
+                                    <li class="clearfix"><?= $locale("contact_1_1") ?></li>
+                                    <li class="clearfix">
+                                        <!--<?= $locale("contact_1_2") ?>
+                                        <p>Valet parking :</p>
+                                        <p>KRW 27,000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                <!-- transportaion 
+                <li>
+                    <div class="details_info_wrap">
+                        <div class="clearfix2">
+                            <div class="img_wrap">
+                                <img src="./img/contact_02.svg" alt="교통">
+                            </div>
+                            <div class="info">
+                                <h3 class="title"><?= $locale("contact_tit2") ?></h3>
+                                <ul>
+                                    <li class="clearfix"><?= $locale("contact_2_1") ?></li>
+                                    <li class="clearfix"><?= $locale("contact_2_2") ?></li>
+                                    <li class="clearfix"><?= $locale("contact_2_3") ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                <!-- subway
+                <li>
+                    <div class="details_info_wrap">
+                        <div class="clearfix2">
+                            <div class="img_wrap">
+                                <img src="./img/contact_03.svg" alt="지하철">
+                            </div>
+                            <div class="info">
+                                <h3 class="title"><?= $locale("contact_tit3") ?></h3>
+                                <ul>
+                                    <!-- <li class="clearfix"><?= $locale("contact_3_1") ?></li> 
+                                    <li class="clearfix">
+                                        <p class="subway_line"><span class="purple">Line5</span>, <span class="brown">Line 9</span> Yeouido Station Exit 3</p>
+                                        <p>Go straight along the moving walk towards the subway exit<br>→ Enter the IFC
+                                            Mall Entrance<br>→ Take the escalator in front of MUJI and go to L1<br>→ You
+                                            can fine the entrance to Conrad Seoul between Garden Juno and Sephora.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>  -->
+                <!-- bus 
+                <li>
+                    <div class="details_info_wrap">
+                        <div class="clearfix2">
+                            <div class="img_wrap">
+                                <img src="./img/contact_04.svg" alt="버스">
+                            </div>
+                            <div class="info">
+                                <h3 class="title"><?= $locale("contact_tit4") ?></h3>
+                                <ul class="bus_area">
+                                    <li class="clearfix">
+                                        <p><?= $locale("contact_4_1") ?></p>
+                                    </li>
+                                    <li class="clearfix green">
+                                        <span class="bus_tit"><?= $locale("contact_bus_1") ?></span>
+                                        <span>6513 / 5618 / 5623 / 5012 / 6628 / 6623 / 5615 / 7611</span>
+                                    </li>
+                                    <li class="clearfix blue">
+                                        <span class="bus_tit"><?= $locale("contact_bus_2") ?></span>
+                                        <span>162 / 261 / 662 / 360 / 661 / 262 / 260 / 160 / 600 / 753</span>
+                                    </li>
+                                    <li class="clearfix blue">
+                                        <span class="bus_tit"><?= $locale("contact_bus_3") ?></span>
+                                        <span>871 / 320 / 301 / 5601 / 300 / 108</span>
+                                    </li>
+                                    <li class="clearfix green">
+                                        <span class="bus_tit"><?= $locale("contact_bus_4") ?></span>
+                                        <span>10 / 83 / 11-1 / 11-2 / 510 / 88</span>
+                                    </li>
+                                    <li class="clearfix red">
+                                        <span class="bus_tit"><?= $locale("contact_bus_5") ?></span>
+                                        <span>8600</span>
+                                    </li>
+                                    <li class="clearfix red">
+                                        <span class="bus_tit"><?= $locale("contact_bus_6") ?></span>
+                                        <span>2500 / M5609</span>
+                                    </li>
+                                </ul>
+                                <ul class="bus_area">
+                                    <li class="clearfix">
+                                        <p><?= $locale("contact_4_2") ?></p>
+                                    </li>
+                                    <li class="clearfix green">
+                                        <span class="bus_tit"><?= $locale("contact_bus_1") ?></span>
+                                        <span>5713 / 7613</span>
+                                    </li>
+                                    <li class="clearfix blue">
+                                        <span class="bus_tit"><?= $locale("contact_bus_2") ?></span>
+                                        <span>753</span>
+                                    </li>
+                                    <li class="clearfix red">
+                                        <span class="bus_tit"><?= $locale("contact_bus_7") ?></span>
+                                        <span>7007-1 / 700</span>
+                                    </li>
+                                    <li class="clearfix red">
+                                        <span class="bus_tit"><?= $locale("contact_bus_6") ?></span>
+                                        <span>M7613</span>
+                                    </li>
+                                    <li class="clearfix orange">
+                                        <span class="bus_tit"><?= $locale("contact_bus_8") ?></span>
+                                        <span>62</span>
+                                    </li>
+                                </ul>
+                                <ul class="bus_area">
+                                    <li class="clearfix">
+                                        <p><?= $locale("contact_4_3") ?></p>
+                                    </li>
+                                    <li class="clearfix blue">
+                                        <span class="bus_tit"><?= $locale("contact_bus_3") ?></span>
+                                        <span>108</span>
+                                    </li>
+                                </ul>
+                                <ul class="bus_area">
+                                    <li class="clearfix">
+                                        <p><?= $locale("contact_4_4") ?></p>
+                                    </li>
+                                    <li class="clearfix orange">
+                                        <span class="bus_tit"><?= $locale("contact_bus_8") ?></span>
+                                        <span>61</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
                 <!-- airplane -->
                 <li>  <!-- APP 미노출 -->
                     <div class="details_info_wrap"> <!-- APP 미노출--> 

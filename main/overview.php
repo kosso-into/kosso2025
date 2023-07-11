@@ -51,16 +51,15 @@ $floor = get_data($sql_floor);
 
 <section class="container overview">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-	<!--
-	<div class="app_title_box">
-		<h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<ul class="app_menu_tab">
-			<li><a href="./welcome.php">Welcome Message</a></li>
-			<li><a href="./organizing_committee.php">Organization</a></li>
-			<li class="on"><a href="./overview.php">Overview</a></li>
-			<li><a href="./venue.php">Venue</a></li>
-		</ul>
-	</div> -->
+<!-- 	<div class="app_title_box"> -->
+<!-- 		<h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
+<!-- 		<ul class="app_menu_tab"> -->
+<!-- 			<li><a href="./welcome.php">Welcome Message</a></li> -->
+<!-- 			<li><a href="./organizing_committee.php">Organization</a></li> -->
+<!-- 			<li class="on"><a href="./overview.php">Overview</a></li> -->
+<!-- 			<li><a href="./venue.php">Venue</a></li> -->
+<!-- 		</ul> -->
+<!-- 	</div> -->
 	<h1 class="page_title">Overview</h1>
     <div class="table_wrap x_scroll inner">
          <table class="c_table2 detail_table">
