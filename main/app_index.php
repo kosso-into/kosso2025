@@ -79,6 +79,8 @@
 		$(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "/main/img/icons/icon_hamburger2.svg");
 	});
+
+	webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
 </script>
 
 <?php

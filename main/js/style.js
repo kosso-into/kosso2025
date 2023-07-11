@@ -221,29 +221,31 @@ $(document).ready(function(){
 		$(".fixed_btn_wrap").addClass("index_pg");
 	}
 	// fixed button 스크롤할때 고정
-	var footer_height = $('.footer_wrap').outerHeight();
-	$(window).on('scroll', function(){
-		var scroll_top = $(window).scrollTop();
-		
-		if(scroll_top > 50){
-			$(".btn_top").fadeIn(300);
-		}else{
-			$(".btn_top").fadeOut(300);
-		}
-
-		var footer_top = $(".footer_wrap").offset().top;
-		var fixed_bottom = $(".fixed_btn_clone").offset().top + $(".fixed_btn_clone").outerHeight();
-		if(!$("section").hasClass("index_test")){
-
-			if(32 >= footer_top - fixed_bottom){
-				$(".fixed_btn_wrap").addClass("on");
-				$(".fixed_btn_wrap").css("bottom", footer_height+32+"px");
+	if (!$(".container").hasClass("onsite_register")){
+		var footer_height = $('.footer_wrap').outerHeight();
+		$(window).on('scroll', function(){
+			var scroll_top = $(window).scrollTop();
+			
+			if(scroll_top > 50){
+				$(".btn_top").fadeIn(300);
 			}else{
-				$(".fixed_btn_wrap").removeClass("on");
-				$(".fixed_btn_wrap").css("bottom", "32px");
+				$(".btn_top").fadeOut(300);
 			}
-		}
-	});
+
+			var footer_top = $(".footer_wrap").offset().top;
+			var fixed_bottom = $(".fixed_btn_clone").offset().top + $(".fixed_btn_clone").outerHeight();
+			if(!$("section").hasClass("index_test")){
+
+				if(32 >= footer_top - fixed_bottom){
+					$(".fixed_btn_wrap").addClass("on");
+					$(".fixed_btn_wrap").css("bottom", footer_height+32+"px");
+				}else{
+					$(".fixed_btn_wrap").removeClass("on");
+					$(".fixed_btn_wrap").css("bottom", "32px");
+				}
+			}
+		});
+	}
 
 
 	// top button 클릭이벤트
@@ -381,8 +383,8 @@ $(document).ready(function(){
 	if ($(".container").hasClass("app_scientific")){
 		$(".app_tab li").click(function() {
             var i = $(this).index();
-            $(this).parent("ul").next(".inner").children(".tab_wrap").children(".tab_cont").removeClass("on");
-            $(this).parent("ul").next(".inner").children(".tab_wrap").children(".tab_cont").eq(i).addClass("on");
+//            $(this).parent("ul").next(".inner").children(".tab_wrap").children(".tab_cont").removeClass("on");
+//            $(this).parent("ul").next(".inner").children(".tab_wrap").children(".tab_cont").eq(i).addClass("on");
             $(this).siblings("li").removeClass("on");
             $(this).addClass("on");
         });
@@ -437,7 +439,8 @@ $(document).ready(function(){
 	if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
 		$(window).resize(function(){
 			var  window_height = $(window).outerHeight();
-			$(".app_main .app_main_box").height(window_height);
+			// $(".app_main .app_main_box").height(window_height);
+			$(".app_main .app_main_box").css("min-height", window_height);
 		});
 		$(window).trigger("resize");
 	}
@@ -457,7 +460,7 @@ $(document).ready(function(){
 	});
 
 	// Scientific Program 상세영역 토글
-	$(".app_scientific .program_detail_ul .main").click(function(){
+	$(".app_scientific .program_detail_ul .main").on("click", function(){
 		$(this).siblings(".detail").stop().slideToggle();
 	});
 

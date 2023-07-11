@@ -53,6 +53,7 @@ select{padding:5px 0 5px 10px;background-image:url(../img/icons/faq_arrow.png);b
 input[type="checkbox"] , input[type="radio"]{-webkit-border-radius:0;-webkit-appearance:none;}
 /*IOS 사파리 기본 스타일 제거*/
 input, textarea, button { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; }
+html {-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
 /*reset end*/
 
 /*font_size & color & family*/
@@ -65,6 +66,7 @@ input, textarea, button { appearance: none; -moz-appearance: none; -webkit-appea
 /*.red_txt{color:#ff0000 !important;}*/
 .red_txt{color:#FF3333 !important;}
 .brown_txt{color:#921004 !important;}
+.blue_txt{color:#00666B !important;}
 .font_small{font-size:13px !important;}
 .font_light{font-weight: 400;}
 .f_bold{font-weight: bold !important;}
@@ -114,6 +116,7 @@ a.underline {text-decoration: underline !important;}
 .fee_chk p {margin-right: 10px;}
 .regi_fee {display:flex; align-items:center; margin-bottom: -1px;}
 .italic {font-style:italic;}
+.font_b {font-weight:bold !important;}
 
 /* title */
 .sub_section_title{font-size:20px;display:inline-block;background:#ADF002;color:#000;padding:6px 28px;border-radius:20px;}
@@ -183,6 +186,7 @@ p.sub_section_title.main_theme{color: #000;font-weight: 600;letter-spacing: -0.5
 /*btn*/
 .btn{font-size:20px; font-weight:bold; height:50px; cursor:pointer; background:transparent; color:#585858; border-radius:30px; padding:0 30px; border:1px solid #585859;}
 a.btn{line-height:50px; text-align: center;}
+.accommodation .download_btn {font-size: 20px !important; text-decoration:none !important; font-weight:bold !important;}
 /*.btn.white_border{border-color:#fff;color:#fff;}*/
 /*.btn:hover{background:#ADF000;color:#fff;border-color:#ADF000;}*/
 .fixed_btn{position:fixed;bottom:40px;right:20px; right: 140px;border-radius:50%;font-size:16px;width:110px;height:110px;background:#DEDEDE;font-weight:600;padding-right:10px;padding-bottom:10px; z-index:10;}
@@ -284,8 +288,9 @@ td.pc_only {display:table-cell;}
 /*footer*//* 220321 HUBDNC LJH2 수정 */
 .footer_wrap {padding: 60px 0 54px; background-color: #F2F2F2; position:relative;}
 .s_logo_list{margin-bottom:20px;}
-.s_logo_list li img{position:absolute;max-height:100%;max-width:100%;top:50%;left:50%;transform:translate(-50%, -50%);}
 .s_logo_list li{height:40px;position:relative;margin: 0 10px;}
+.s_logo_list li img{position:absolute;max-height:100%;max-width:100%;top:50%;left:50%;transform:translate(-50%, -50%);}
+.s_logo_list li a {text-indent:-9999px; width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain;  display: block;}
 .footer h5 {font-size: 16px; font-weight: bold; color: #7C7C7C; padding-left: 10px; position: relative;}
 .footer h5:before {content: ""; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: #7C7C7C; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .footer .container > h5 {margin: 60px 0 50px;}
@@ -375,6 +380,7 @@ td.pc_only {display:table-cell;}
 }
 .c_table th:last-of-type, .c_table2 th:last-of-type {border-right: 0;}
 .c_table td:last-of-type, .c_table2 td:last-of-type {border-right: 0;}
+.c_table td.border_r, .c_table2 td.border_r {border-right: 1px solid #707070;}
 /*.c_table tr:last-of-type th, .c_table tr:last-of-type td, .c_table2 tr:last-of-type th, .c_table2 tr:last-of-type td{border-bottom:0;}*/
 .c_table th{text-align:left;}
 .c_table td{font-size:16px;font-weight:300; /*white-space:initial;*/}
@@ -1114,12 +1120,14 @@ section.app_version .inner {padding-top:40px !important; margin-top:0 !important
 section.container.app_version .page_title {width:calc(100% + 36px); margin-left: -18px; background: transparent; margin-bottom: 0;}
 /*section.container.app_version.welcome, section.container.app_version.organizing {padding-bottom: 50px;}*/
 section.app_version .container_inner {width:calc(100% + 36px); margin-left: -18px;}
-section.app_version .app_contents_box {width:calc(100% + 32px); margin-left: -18px;}
+section.app_version .container_inner.w_full {width:100%; margin-left:0;}
+/* section.app_version .app_contents_box {width:calc(100% + 32px); margin-left: -18px;} */
+section.app_version .app_contents_box {width:calc(100% + 36px); margin-left: -18px;}
 
 /*app loading*/
 .app_main {padding: 0 !important; margin: 0 !important; width: 100% !important; border: none  !important; max-width:100% !important;}
 .app_loading .app_main_box {width:100%; height: 100%; position: relative; background: url("../img/app_loading_bg.png") no-repeat center / cover;}
-.app_loading .app_main_box .app_main_txt {min-width:21.88rem; padding:0 2.5rem; position: absolute; left: 50%;top: 6.88rem; transform:translateX(-50%); text-align: center;}
+.app_loading .app_main_box .app_main_txt {min-width:21.88rem; padding:0 2.5rem; position: absolute; left: 50%;top:5.88rem; transform:translateX(-50%); text-align: center;}
 .app_main_box .app_main_txt > img {width:100%; height:100%; margin-bottom: 1rem;}
 .app_main_box .app_main_txt p {font-size: 1.13rem; color:#fff; font-weight: bold;}
 .app_main_box .app_main_txt p + p {margin-top: 0.5rem;}
@@ -1204,36 +1212,36 @@ h2.app_title {width: 100%; font-size: 16px; background: #000066; text-align: cen
 .app_half_ul {display:flex; align-items:center; gap:8px;}
 .app_half_ul li {flex:1;}
 
-/*app sponsor*/
+/*sponsor*/
 .grade_wrap {display:flex; flex-wrap:wrap; gap:0.88rem 0; padding: 1.5rem 0.75rem 2.19rem; justify-content:space-between;}
 .grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
 .grade_wrap li.small {padding: 30px;}
 .grade_wrap li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
-.grade_wrap li a.alvogen {background-image: url("../img/sponsor/logo01.png"); transform:scale(0.8); }
-.grade_wrap li a.novo_nordisk {background-image: url("../img/sponsor/logo02_1.png");}
-.grade_wrap li a.daewoong {background-image: url("../img/sponsor/logo03.png");}
-.grade_wrap li a.chong_kun_dang {background-image: url("../img/sponsor/logo05_1.png");}
-.grade_wrap li a.yuhan {background-image: url("../img/sponsor/logo04.png");}
-.grade_wrap li a.handok {background-image: url("../img/sponsor/logo06.png");}
-.grade_wrap li a.dong_a {background-image: url("../img/sponsor/logo07.png");}
-.grade_wrap li a.hanmi_pharm {background-image: url("../img/sponsor/logo08_2.png");}
-.grade_wrap li a.astra_zeneca {background-image: url("../img/sponsor/logo09.png");}
-.grade_wrap li a.inno_n {background-image: url("../img/sponsor/logo10_1.png");}
-.grade_wrap li a.msd {background-image: url("../img/sponsor/logo11.png");}
-.grade_wrap li a.celltrion {background-image: url("../img/sponsor/logo12.png");}
-.grade_wrap li a.lg_chem {background-image: url("../img/sponsor/logo13.png");}
-.grade_wrap li a.sanofi {background-image: url("../img/sponsor/logo14_1.png");}
-.grade_wrap li a.organon {background-image: url("../img/sponsor/logo15.png");}
-.grade_wrap li a.dalimbiotech {background-image: url("../img/sponsor/logo16.png");}
-.grade_wrap li a.kwangdong {background-image: url("../img/sponsor/logo17.png");}
-.grade_wrap li a.daiichi_sankyo {background-image: url("../img/sponsor/logo18.png");}
-.grade_wrap li a.boehringer {background-image: url("../img/sponsor/logo19_1.png");}
-.grade_wrap li a.aju_pharm {background-image: url("../img/sponsor/logo20.png");}
-.grade_wrap li a.boryung {background-image: url("../img/sponsor/logo21.png");}
-.grade_wrap li a.jw_pharm {background-image: url("../img/sponsor/logo22_1.png");}
-.grade_wrap li a.gc_biopharma {background-image: url("../img/sponsor/logo23_1.png");}
-.grade_wrap li a.daewon {background-image: url("../img/sponsor/logo24.png");}
-.grade_wrap li a.lilly {background-image: url("../img/sponsor/logo25.png");}
+a.alvogen {background-image: url("../img/sponsor/logo01.png"); /*transform:scale(0.8);*/ }
+a.novo_nordisk {background-image: url("../img/sponsor/logo02_1.png");}
+a.daewoong {background-image: url("../img/sponsor/logo03.png");}
+a.yuhan {background-image: url("../img/sponsor/logo04.png");}
+a.chong_kun_dang {background-image: url("../img/sponsor/logo05_1.png");}
+a.handok {background-image: url("../img/sponsor/logo06.png");}
+a.dong_a {background-image: url("../img/sponsor/logo07.png");}
+a.hanmi_pharm {background-image: url("../img/sponsor/logo08_2.png");}
+a.astra_zeneca {background-image: url("../img/sponsor/logo09.png");}
+a.inno_n {background-image: url("../img/sponsor/logo10_1.png");}
+a.msd {background-image: url("../img/sponsor/logo11.png");}
+a.celltrion {background-image: url("../img/sponsor/logo12.png");}
+a.lg_chem {background-image: url("../img/sponsor/logo13.png");}
+a.sanofi {background-image: url("../img/sponsor/logo14_1.png");}
+a.organon {background-image: url("../img/sponsor/logo15.png");}
+a.dalimbiotech {background-image: url("../img/sponsor/logo16.png");}
+a.kwangdong {background-image: url("../img/sponsor/logo17.png");}
+a.daiichi_sankyo {background-image: url("../img/sponsor/logo18.png");}
+a.boehringer {background-image: url("../img/sponsor/logo19_1.png");}
+a.aju_pharm {background-image: url("../img/sponsor/logo20.png");}
+a.boryung {background-image: url("../img/sponsor/logo21.png");}
+a.jw_pharm {background-image: url("../img/sponsor/logo22_1.png");}
+a.gc_biopharma {background-image: url("../img/sponsor/logo23_1.png");}
+a.daewon {background-image: url("../img/sponsor/logo24.png");}
+a.lilly {background-image: url("../img/sponsor/logo25.png");}
 
 /*app STAMP TOUR > My Stamp*/
 .container.app_my_stamp .container_inner {padding-bottom: 40px;}

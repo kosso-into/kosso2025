@@ -3,14 +3,13 @@
 
 <section class="container sponsor app_tour_map">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-	<!--
-	<div class="app_title_box">
-		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<ul class="app_menu_tab langth_2">
-			<li><a href="./sponsor.php">Sponsorship</a></li>
-			<li class="on"><a href="./sponsor_exhibition.php">Exhibition</a></li>
-		</ul>
-	</div> -->
+<!-- 	<div class="app_title_box"> -->
+<!-- 		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
+<!-- 		<ul class="app_menu_tab langth_2"> -->
+<!-- 			<li><a href="./sponsor.php">Sponsorship</a></li> -->
+<!-- 			<li class="on"><a href="./sponsor_exhibition.php">Exhibition</a></li> -->
+<!-- 		</ul> -->
+<!-- 	</div> -->
 	<!-- HUBDNCLHJ : APP일시 h1.page_title 주석처리 후 app 메뉴 탭 주석해제 -->
 	<h1 class="page_title">Exhibition</h1>
 	<!-- HUBDNCLHJ : APP일시 div.inner 주석 후 container_inner 주석해제 -->
