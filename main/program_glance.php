@@ -404,7 +404,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />30-21<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />30-20<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
 								</td>
 								<td></td>
 								<td></td>

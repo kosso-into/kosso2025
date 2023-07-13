@@ -455,8 +455,8 @@ $(document).ready(function(){
 	$(".app_scientific .info button").click(function(event){
 		event.preventDefault();
 		event.stopPropagation();
-		$(".program_alarm_pop").show();
-		$(this).toggleClass("on");
+		//$(".program_alarm_pop").show();
+		//$(this).toggleClass("on");
 	});
 
 	// Scientific Program 상세영역 토글

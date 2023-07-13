@@ -33,15 +33,68 @@
 					</li>
 				</ul>
 				<ul class="pdf_list">
-					<li><a href="./app_abstract_viewer.php?file=dummy.pdf">Plenary Lecture 1</a></li>
-					<li><a href="./download/dummy.pdf">Plenary Lecture 2</a></li>
-					<li><a href="./download/dummy.pdf">Plenary Lecture 3</a></li>
-					<li><a href="./download/dummy.pdf">Plenary Lecture 4</a></li>
+					<li class="pdf plenary_lecture"><a href="javascript:void(0);">Plenary Lecture 1</a></li>
+                    <input type="hidden" name="Plenary Lecture 1" value="http://43.200.170.254/main/download/dummy.pdf" />
+					<li class="pdf"><a href="javascript:void(0);">Plenary Lecture 2</a></li>
+                    <input type="hidden" name="Plenary Lecture 2" value="http://43.200.170.254/main/download/dummy.pdf" />
+					<li class="pdf"><a href="javascript:void(0);">Plenary Lecture 3</a></li>
+                    <input type="hidden" name="Plenary Lecture 3" value="http://43.200.170.254/main/download/dummy.pdf" />
+					<li class="pdf"><a href="javascript:void(0);">Plenary Lecture 4</a></li>
+                    <input type="hidden" name="Plenary Lecture 4" value="http://43.200.170.254/main/download/dummy.pdf" />
+
+                    <li class="pdf"><a href="javascript:void(0);">Keynote Lecture 1</a></li>
+                    <input type="hidden" name="Keynote Lecture 1" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Keynote Lecture 2</a></li>
+                    <input type="hidden" name="Keynote Lecture 2" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Keynote Lecture 3</a></li>
+                    <input type="hidden" name="Keynote Lecture 3" value="http://43.200.170.254/main/download/dummy.pdf" />
+
+                    <li class="pdf"><a href="javascript:void(0);">Best Article in JOMES</a></li>
+                    <input type="hidden" name="Best Article in JOMES" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Symposium</a></li>
+                    <input type="hidden" name="Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Obesity Treatment Guidelines Symposium</a></li>
+                    <input type="hidden" name="Obesity Treatment Guidelines Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Pre-congress Symposium</a></li>
+                    <input type="hidden" name="Pre-congress Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Luncheon Symposium</a></li>
+                    <input type="hidden" name="Luncheon Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Satellite Symposium</a></li>
+                    <input type="hidden" name="Satellite Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Sponsored Session</a></li>
+                    <input type="hidden" name="Sponsored Session" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Joint Symposium</a></li>
+                    <input type="hidden" name="Joint Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Oral Presentation</a></li>
+                    <input type="hidden" name="Oral Presentation" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Guided Poster Presentation</a></li>
+                    <input type="hidden" name="Guided Poster Presentation" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <li class="pdf"><a href="javascript:void(0);">Poster Exhibition</a></li>
+                    <input type="hidden" name="Poster Exhibition" value="http://43.200.170.254/main/download/dummy.pdf" />
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
+<script>
+    $(document).on("click",".pdf",function(){
+        let path = $(this).next().val();
+        openPDF_ios(path);
+    });
+
+
+    function openPDF_Android(path){
+    AndroidScript.openPDF(path);
+    }
+
+    function openPDF_ios(path){
+        try{
+            webkit.messageHandlers.openPDF.postMessage(path);
+        } catch (err){
+            alert(err);
+        }
+    }
+</script>
 
 <?php
 	include_once ("./include/app_footer.php");

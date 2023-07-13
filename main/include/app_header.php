@@ -72,7 +72,7 @@
 					<a href="/main/app_notice.php">Notice</a>
 				</li>
 				<li>
-					<a href="javascript:;">Survey</a>
+					<a href="/main/app_survey.php">Survey</a>
 				</li>
 				<!-- <li>
 					<a href="javascript:;">Stamp Tour</a>

@@ -79,11 +79,11 @@
             <li><a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a></li>
             <li><a href="https://www.daiichisankyo.com/" class="daiichi_sankyo">Daiichi Sankyo</a></li>
             <li><a href="https://www.organon.com/" class="organon">ORGANON</a></li>
-            <li><a href="https://www.boehringer-ingelheim.com/kr/" class="boehringer">Boehringer INgelheim</a></li>
+            <li><a href="https://www.boehringer-ingelheim.com/" class="boehringer">Boehringer INgelheim</a></li>
             <li><a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a></li>
             <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a></li>
             <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a></li>
-            <li><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
+            <li><a href="https://www.lilly.com/" class="lilly">Lilly</a></li>
             <li><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
         </ul>
     </div>

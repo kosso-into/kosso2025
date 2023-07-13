@@ -228,7 +228,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <p><span class="bold">Chairperson : Sang Yeoup Lee</span> (Pusan National University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -282,7 +282,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
                                                     <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Myongji Hospital, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -469,7 +469,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 3</p>
                                                     <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul Happiness Clinic of Internal Medicine)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -1037,7 +1037,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 5 : Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
                                                     <p><span class="bold">Chairpersons : Young Seol Kim</span> <span class="nowrap">(Kyung Hee University, Republic of Korea),</span> <span class="bold">Kyung-Hee Park</span> (Hallym University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -1230,7 +1230,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 9 : Obesity in Special Conditions</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -1348,7 +1348,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
                                                     <p><span class="bold">Chairperson : Kiyoung Lee</span> (Gachon University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -1368,7 +1368,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Optimizing Combination Therapy for Type 2 Diabetes
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae Hyun Bae</p>(Korea University, Republic of Korea)
@@ -1502,7 +1502,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
                                                     <p><span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Republic of Korea), <span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -1720,7 +1720,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
                                                     <p><span class="bold">Chairperson : Kyung-Soo Kim</span> (The Catholic University of Korea, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -1814,7 +1814,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 6 : Clinical Exercise with Obesity</p>
                                                     <p><span class="bold">Chairperson : Minchul Lee</span> (CHA University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -2020,7 +2020,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 10 : Neuropsychological Aspect of Obesity</p>
                                                     <p><span class="bold">Chairperson : Min-Seon Kim</span> (University of Ulsan, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -2137,7 +2137,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 2</p>
                                                     <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul Happiness Clinic of Internal Medicine)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -2310,7 +2310,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 3 : Digital Therapeutics</p>
                                                     <p><span class="bold">Chairperson : Sang-Yong Kim</span> (Chosun University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -2548,7 +2548,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 3</p>
                                                     <p><span class="bold">Chairperson : Jae-Heon Kang</span> (Sungkyunkwan University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -2876,7 +2876,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 11 : Social and Environmental Determinants: Nutritional View of Obesity</p>
                                                     <p><span class="bold">Chairpersons : Cho-il Kim</span> (Seoul National University, Republic of Korea), <span class="bold">Eun Mi Kim</span> (Kangbuk Samsung Hospital, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -3688,7 +3688,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 2 : Benefit of DPP4I in Evidence-based Perspective</p>
                                                     <p><span class="bold">Chairperson : Sung Hoon Yu</span> (Hanyang University, Republic of Korea), <span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -3762,7 +3762,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold mb0">Obesity Treatment Guidelines Symposium : Behind the Scenes: The Journey of Evolution and Revising Obesity Guidelines</p>
                                                     <p><span class="bold">Chairperson : Jong-Hwa Kim</span> (Bucheon Sejong Hospital, Republic of Korea), <span class="bold">Hyuktae Kwon</span> (Seoul National University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -3901,7 +3901,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold mb0">Joint Symposium KSSO-AOASO</p>
                                                     <p><span class="bold">Chairperson : Kyoung-Kon Kim</span> (Gachon University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -3964,7 +3964,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="yellow_bg">
-                                                <td>18:30-21:30</td>
+                                                <td>18:30-20:30</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Congress Banquet <span class="font_inherit red_txt">*</span>Invited Only</p>
                                                 </td>
@@ -4156,7 +4156,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
                                                     <p><span class="bold">Chairperson : Seong Ho Han</span> (Dong-A University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4448,7 +4448,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4538,7 +4538,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 4</p>
                                                     <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4640,7 +4640,7 @@ echo '<script type="text/javascript">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
-                                                    <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Soon-Jib Yoo</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -4706,7 +4706,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Young kil Choi</span> (Kyung Hee University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4783,7 +4783,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 17 : The Power of Synergy: Optimizing Anti-obesity Treatment with Combination Pharmacotherapy</p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4876,7 +4876,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4963,7 +4963,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 4</p>
                                                     <p><span class="bold">Chairperson : Tae Sun Park</span> (Jeonbuk National University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -4972,7 +4972,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5140,7 +5140,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 14 : Promoting Healthy Muscle and Liver Metabolism</p>
                                                     <p><span class="bold">Chairpersons : Kijin Kim</span> (Keimyung University, Republic of Korea), <span class="bold">Yuna Shin</span> (Dankook University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -5251,7 +5251,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -5340,7 +5340,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 5</p>
                                                     <p><span class="bold">Chairperson : Hyung Joon Yoo</span> (CM Hospital, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -5443,7 +5443,7 @@ echo '<script type="text/javascript">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
-                                                    <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Soon-Jib Yoo</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -5509,7 +5509,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Young kil Choi</span> (Kyung Hee University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -5586,7 +5586,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 18 : Neuroscience</p>
                                                     <p><span class="bold">Chairpersons : Eun-Jung Rhee</span> (Sungkyunkwan University, Republic of Korea), <span class="bold">Hyung Jin Choi</span> (Seoul National University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -5700,6 +5700,7 @@ echo '<script type="text/javascript">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
+                                                    <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Republic of Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -5789,7 +5790,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 5</p>
                                                     <p><span class="bold">Chairperson : Jung Hwan Kim</span> (Eulji University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -5966,7 +5967,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 15 : Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
                                                    <p><span class="bold">Chairperson : Sung Nim Han</span> (Seoul National University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -6071,7 +6072,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -6262,7 +6263,7 @@ echo '<script type="text/javascript">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
-                                                    <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Soon-Jib Yoo</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -6328,7 +6329,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Young kil Choi</span> (Kyung Hee University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -6405,7 +6406,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 19 : Diversity and Challenges of Pediatric Obesity</p>
                                                     <p><span class="bold">Chairpersons : Sochung Chung</span> (Konkuk University, Republic of Korea), <span class="bold">Yong Hee Hong</span> (Soonchunhyang University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -6510,6 +6511,7 @@ echo '<script type="text/javascript">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
+                                                    <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Republic of Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -6599,7 +6601,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 16 : International Collaboration</p>
                                                     <p><span class="bold">Chairpersons : Luca Busetto</span> (Italy), <span class="bold">Soo Lim</span> (Seoul National University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -6834,7 +6836,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 20 : Basic Exercise with Obesity</p>
                                                     <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Republic of Korea), <span class="bold">Jeong Ah Lee</span> (Kyung Hee University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -7017,7 +7019,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 3 : Is Semaglutide Changing the Paradigm Of Obesity Management?</p>
                                                    <p><span class="bold">Chairpersons : Young-Sung Suh</span> (Keimyung University, Republic of Korea), <span class="bold">Seung-Hwan Lee</span> (The Catholic University of Korea, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
@@ -7231,7 +7233,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Best Article in JOMES</p>
                                                     <p><span class="bold">Chairperson : You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea)</p>
-													<button class="btn gray2_btn program_detail_btn">Preview</button>
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
 											<tr>
