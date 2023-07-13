@@ -17,7 +17,7 @@
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li>
-				<a href="javascript:;">
+				<a href="/main/welcome.php">
 					<img src="./img/icons/app_menu01.svg" alt="">
 					<span>ICOMES 2023</span>
 				</a>

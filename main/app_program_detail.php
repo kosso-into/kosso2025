@@ -76,6 +76,7 @@ echo '<script type="text/javascript">
 ?>
 
 <?php
+    $member_idx         = $_SESSION["USER"]["idx"];
     $program_date       = $_GET["program_date"] ?? "";
     $option_room		= $_GET["option_room"] ?? "";
     $option_category	= $_GET["option_category"] ?? "";
@@ -110,18 +111,30 @@ echo '<script type="text/javascript">
     $category_list = get_data($select_category_sql);
 
     $select_program_list = "
-                            SELECT p.idx, program_name, program_place_idx, pp.program_place_name ,program_category_idx, program_date, 
-                                   date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
+                            SELECT p.idx, program_name, chairpersons, preview, program_place_idx, pp.program_place_name ,program_category_idx, program_date, 
+                                   date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time,
+                                   (CASE
+                                       WHEN s.idx IS NULL THEN 'N'
+                                       ELSE 'Y'
+                                       END
+                                   ) as schedule_check
                             FROM program p
                             LEFT JOIN program_place pp on p.program_place_idx = pp.idx
-                            WHERE is_deleted = 'N'
+                            LEFT JOIN(
+                                SELECT s.idx, member_idx, s.program_idx, s.register_date, s.is_deleted
+                                FROM schedule s
+                                WHERE member_idx='{$member_idx}'
+                            )s on s.program_idx=p.idx
+                            WHERE p.is_deleted = 'N'
                             AND program_date = '2023-09-07'
                             {$row_sql}
                             ";
+
     $program_list = get_data($select_program_list);
 
     $select_contents_list = "
-                             SELECT idx, program_idx, contents_title, author, date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
+                             SELECT idx, program_idx, contents_title, SUBSTRING_INDEX(speaker,'&^',1) AS speaker, SUBSTRING_INDEX(speaker,'&^',-1) AS speaker_aff,
+                                    date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
                              FROM program_contents
                              WHERE is_deleted = 'N'
                             ";
@@ -134,12 +147,15 @@ echo '<script type="text/javascript">
         $resultObj[$pl_idx] = [
             'idx' => $pl_idx,
             'program_name' => $pl['program_name'],
+            'chairpersons' => $pl['chairpersons'],
+            'preview' => $pl['preview'],
             'program_place_name' => $pl['program_place_name'],
             'program_category_idx' => $pl['program_category_idx'],
             'program_date' => $pl['program_date'],
             'start_time' => $pl['start_time'],
             'end_time' => $pl['end_time'],
-            'contents' => []
+            'contents' => [],
+            'schedule_check' => $pl['schedule_check']
         ];
 
         foreach ($contents_list as $cl){
@@ -148,7 +164,8 @@ echo '<script type="text/javascript">
                 'cl_idx' => $cl['idx'],
                 'program_idx' => $program_idx,
                 'contents_title' => $cl['contents_title'],
-                'author' => $cl['author'],
+                'speaker' => $cl['speaker'],
+                'speaker_aff' => $cl['speaker_aff'],
                 'start_time' => $cl['start_time'],
                 'end_time' => $cl['end_time']
             ];
@@ -158,6 +175,8 @@ echo '<script type="text/javascript">
             }
         }
     }
+
+
 
 ?>
 
@@ -191,7 +210,7 @@ echo '<script type="text/javascript">
 					<li>
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
 							<option value="" hidden="">Select Room</option>
-							<option value="" selected>All</option>
+							<option value="">All</option>
                             <?php
                                 foreach($place_list as $place){
                             ?>
@@ -224,19 +243,43 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <?php
                                 foreach ($resultObj as $program){
+                                    if($program['schedule_check']==='Y'){
+                                        $schedule="on";
+                                    } else {
+                                        $schedule="";
+                                    }
                             ?>
 							<li name="">
 								<div class="main">
 									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
 									<p class="title"><?=$program['program_name']?></p>
-                                    <p class="chairperson"><span class="bold">Chairpersons:</span> Yong-ho Lee (Yonsei University, Republic of Korea)</p>
-									<div class="info">
-										<button value="<?=$program['idx']?>"></button>
+                                    <?php
+                                        if($program['chairpersons']!=null){
+                                    ?>
+                                    <p class="chairperson"><span class="bold">Chairpersons: </span> <?=$program['chairpersons']?></p>
+                                    <?php
+                                    }
+                                    ?>
+                                    <div class="info">
+										<button class="<?=$schedule?>" value="<?=$program['idx']?>"></button>
 										<span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
 										<span class="branch"><?=$program['program_place_name']?></span>
 									</div>
+                                    <?php
+                                        if($program['preview']!=null || $program['preview']!=""){
+                                    ?>
+                                    <button class="preview_btn">Preview</button>
+                                    <?php
+                                    }
+                                    ?>
 								</div>
-<!--								<div class="detail_text">will be updated.</div>-->
+                                <?php
+                                    if($program['preview']!=null || $program['preview']!=""){
+                                ?>
+								<div class="detail_text"><?=$program['preview']?></div>
+                                <?php
+                                }
+                                ?>
 								<div class="detail">
 									<?php
                                         foreach ($program['contents'] as $contents){
@@ -244,12 +287,12 @@ echo '<script type="text/javascript">
                                     <div>
 										<p class="title"><?=$contents['contents_title']?></p>
 										<p class="chairperson">
-											<span class="bold"><?=$contents['author']?></span> (Chungnam National University, Republic of Korea)
+											<span class="bold"><?=$contents['speaker']?></span> <?=$contents['speaker_aff']?>
 										</p>
 										<div class="info">
 											<span class="time"><?=$contents['start_time']?>-<?=$contents['end_time']?></span>
                                             <?php
-                                                if($contents['author']!=null){
+                                                if($contents['speaker']!=null){
                                             ?>
                                             <a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
                                             <?php
@@ -285,7 +328,7 @@ echo '<script type="text/javascript">
 		<span class="tags">Add alarm complete</span>
 		<!-- <span class="tags">Complete</span> -->
 		<!-- <span class="tags">Remove alarm complete</span> -->
-		<!-- <span class="tags">Cancle</span> -->
+		<!-- <span class="tags">Cancel</span> -->
 	</div>
 </div>
 
@@ -312,13 +355,17 @@ echo '<script type="text/javascript">
 		// 		// console.log(i)
 		// 	}
 		// });
-		$(".chairperson").parent("div").append("<button class='preview_btn'>Preview</button>");
+		// $(".chairperson").parent("div").append("<button class='preview_btn'>Preview</button>");
 		$(".preview_btn").on("click", function(event){
 			event.preventDefault();
             event.stopPropagation();
 			$(this).parent(".main").siblings(".detail_text").stop().slideToggle();	
 			$(this).toggleClass("on");	
 		});
+
+        $(".app_scientific .info button").click(function(event){
+            Schedule(event);
+        });
     });
 
 </script>

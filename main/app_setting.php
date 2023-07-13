@@ -23,7 +23,7 @@
 					</label>
 				</div>
 			</div>
-			<p class="app_setting_desc">If your iOS user does not receive the PUSH notification, please proceed as follows: iPhone > Settings > Notification > ICOMES 2023. Changethe notification permission to ‘ON’</p>
+			<p class="app_setting_desc">If your iOS user does not receive the PUSH notification, please proceed as follows: iPhone > Settings > Notification > ICOMES 2023. Change the notification permission to ‘ON’</p>
 		</div>
 	</div>
 </section>

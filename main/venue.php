@@ -127,11 +127,11 @@ $info = sql_fetch($sql_info);
                     <!-- <h6><?= $info['name'] ?></h6> -->
                     <ul class="info_list">
                         <li>
-                            <p><?= $locale("address") ?></p>
+                            <p><!-- <?= $locale("address") ?> -->Address</p>
                             <p><?= $info['address'] ?></p>
                         </li>
                         <li>
-                            <p><?= $locale("tel") ?></p>
+                            <p><!-- <?= $locale("tel") ?> -->Tel</p>
                             <p><?= $info['tel'] ?></p>
                         </li>
 						<!-- 23-05-02 웹사이트 추가 -->

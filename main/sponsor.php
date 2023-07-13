@@ -89,7 +89,7 @@
 					<a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a>
 				</li>
 				<li>
-					<a href="https://www.boehringer-ingelheim.com/kr/" class="boehringer">Boehringer INgelheim</a>
+					<a href="https://www.boehringer-ingelheim.com/" class="boehringer">Boehringer INgelheim</a>
 				</li>
 				<li>
 					<a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a>
@@ -98,7 +98,7 @@
 					<a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a>
 				</li>
 				<li class="small">
-					<a href="https://www.lilly.co.kr/" class="lilly">Lilly</a>
+					<a href="https://www.lilly.com/" class="lilly">Lilly</a>
 				</li>
 				<li>
 					<a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a>
