@@ -25,7 +25,7 @@
 			(
 				CASE
 					WHEN reg.ksso_member_status IS NULL OR reg.ksso_member_status = 0 THEN 'Non-member'
-					WHEN reg.ksso_member_status > 0 THEN 'member'
+					WHEN reg.ksso_member_status > 0 THEN 'Member'
 				END
 			) AS ksso_member_status,
             p.idx AS payment_idx, p.`type` AS payment_type, p.total_price_kr, p.total_price_us,
