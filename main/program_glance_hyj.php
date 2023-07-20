@@ -1,6 +1,12 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
 
+<style>
+	section.app_version .inner {
+		padding-top:0 !important;
+	}
+</style>
+
 <!-- HUBDNCHYJ : App 일 경우 padding/margin을 조정하는 app_version 클래스가 container에 들어가야 함 -->
 <section class="container program_glance app_version">
 	<div class="app_title_box">
@@ -13,7 +19,7 @@
 		</ul>
 	</div>
 	<!-- HUBDNCHYJ : App 에서는 이 클래스 사용하시면 됩니다. -->
-	<ul class="app_tab program">
+	<ul class="app_tab program glance">
 		<li class="row2 on"><a href="javascript:;">All Days</a></li>
 		<li><a href="javascript:;">Sep.7(Thu)</a></li>
 		<li><a href="javascript:;">Sep.8(Fri)</a></li>
@@ -49,7 +55,7 @@
 						<tbody name="day" class="day_tbody day_1">
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />00-17<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">16:00-17:30</div>
 								</td>
 								<td class="purple_bg pointer" name="pre_congress_symposium_1">
 									Pre-congress<br/>Symposium 1
@@ -67,13 +73,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17<img src="./img/icons/icon_colons.svg" class="colons_img" />30-18<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">17:30-18:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />00-18<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18:00-18:30</div>
 								</td>
 								<td class="sky_bg pointer" name="satellite_symposium_1">
 									Satellite<br />Symposium 1
@@ -91,7 +97,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />30-19<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">18:30-19:00</div>
 								</td>
 								<td class="sky_bg pointer" name="satellite_symposium_1">
 									Satellite<br />Symposium 2
@@ -106,7 +112,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">19<img src="./img/icons/icon_colons.svg" class="colons_img" />00-21<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">19:00-21:00</div>
 								</td>
 								<td></td>
 								<td></td>
@@ -131,7 +137,7 @@
 						<tbody name="day" class="day_tbody day_2">
 							<tr>
 								<td>
-									<div class="colons_div">07<img src="./img/icons/icon_colons.svg" class="colons_img" />30-08<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">07:30-08:20</div>
 								</td>
 								<td></td>
 								<td class="sky_bg pointer" name="breakfast_symposium_1">
@@ -149,13 +155,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />20-08<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">08:20-08:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />30-09<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">08:30-09:10</div>
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_1">
 									Plenary Lecture 1 
@@ -170,13 +176,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />10-09<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">09:10-09:20</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />20-10<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_1">
 									Symposium 1 <p>Obesity and Cancer</p>
@@ -206,13 +212,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">10<img src="./img/icons/icon_colons.svg" class="colons_img" />50-11<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">10:50-11:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />00-11<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">11:00-11:10</div>
 								</td>
 								<td colspan="3" class="yellow_bg pointer" name="opening_address">
 									Opening Address
@@ -225,7 +231,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />10-11<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">11:10-11:50</div>
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="keynote_lecture_1">
 									Keynote Lecture 1 
@@ -240,13 +246,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />50-12<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">11:50-12:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">12<img src="./img/icons/icon_colons.svg" class="colons_img" />00-13<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">12:00-13:00</div>
 								</td>
 								<td class="sky_bg pointer" name="luncheon_symposium_1">
 									Luncheon<br />Symposium 1
@@ -267,7 +273,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">13<img src="./img/icons/icon_colons.svg" class="colons_img" />00-14<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">13:00-14:00</div>
 								</td>
 								<!-- <td colspan="3" class="green_bg" name="poster_exhibition_d2"> -->
 								<!-- 	<!-- 	Poster Exhibition -->
@@ -296,7 +302,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">14<img src="./img/icons/icon_colons.svg" class="colons_img" />00-15<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">14:00-15:30</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_5">
 									Symposium 5 <p>Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
@@ -326,13 +332,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />30-15<img src="./img/icons/icon_colons.svg" class="colons_img" />40</div>
+									<div class="colons_div">15:30-15:40</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />40-16<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">15:40-16:20</div>
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_2">
 									Plenary Lecture 2 
@@ -347,13 +353,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />20-16<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">16:20-16:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />30-18<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_9">
 									Symposium 9 <p>Obesity in Special Conditions</p>
@@ -386,13 +392,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />00-18<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18:00-18:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />30-21<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18:30-21:30</div>
 								</td>
 								<td></td>
 								<td></td>
@@ -418,7 +424,7 @@
 						<tbody name="day" class="day_tbody day_3">
 							<tr>
 								<td>
-									<div class="colons_div">07<img src="./img/icons/icon_colons.svg" class="colons_img" />30-08<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">07:30-08:20</div>
 								</td>
 								<td class="sky_bg pointer" name="breakfast_symposium_3">
 									Breakfast<br />Symposium 3
@@ -439,13 +445,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />20-08<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">08:20-08:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />30-09<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">08:30-09:10</div>
 								</td>
 								<td class="pink_bg pointer" name="plenary_lecture_3" colspan="3">
 									Plenary Lecture 3 
@@ -460,13 +466,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />10-09<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">09:10-09:20</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />20-10<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_13">
 									Symposium 13 <p>Health Consequences of Obesity</p>
@@ -496,13 +502,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">10<img src="./img/icons/icon_colons.svg" class="colons_img" />50-11<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">10:50-11:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />00-11<img src="./img/icons/icon_colons.svg" class="colons_img" />40</div>
+									<div class="colons_div">11:00-11:40</div>
 								</td>
 								<td class="pink_bg pointer" name="keynote_lecture_2" colspan="3">
 									Keynote Lecture 2 <p class="bold">Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin</p>
@@ -516,13 +522,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">14<img src="./img/icons/icon_colons.svg" class="colons_img" />40-11<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">14:40-11:50</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />50-12<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">11:50-12:50</div>
 								</td>
 								<td class="sky_bg pointer" name="luncheon_symposium_4">
 									Luncheon<br />Symposium 4
@@ -543,7 +549,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">12<img src="./img/icons/icon_colons.svg" class="colons_img" />50-13<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">12:50-13:50</div>
 								</td>
 								<!-- <td colspan="3" class="green_bg" name="poster_exhibition_d3"> -->
 								<!-- 	Poster Exhibition -->
@@ -572,7 +578,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">13<img src="./img/icons/icon_colons.svg" class="colons_img" />50-14<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">13:50-14:30</div>
 								</td>
 								<td class="pink_bg pointer" name="keynote_lecture_3" colspan="3">
 									Keynote Lecture 3 
@@ -606,7 +612,7 @@
 							<!-- </tr> -->
 							<tr>
 								<td>
-									<div class="colons_div">14<img src="./img/icons/icon_colons.svg" class="colons_img" />30-15<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">14:30-15:10</div>
 								</td>
 								<!-- <td>15:20-15:50</td> -->
 								<td class="pink_bg pointer" name="keynote_lecture_4" colspan="3">
@@ -622,13 +628,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />10-15<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">15:10-15:20</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />20-16<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">15:20-16:50</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_17">
 									Symposium 17 
@@ -659,13 +665,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />50-17<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">16:50-17:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17<img src="./img/icons/icon_colons.svg" class="colons_img" />00-17<img src="./img/icons/icon_colons.svg" class="colons_img" />40</div>
+									<div class="colons_div">17:00-17:40</div>
 								</td>
 								<td class="pink_bg pointer" name="plenary_lecture_4" colspan="3">
 									Plenary Lecture 4
@@ -680,7 +686,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17<img src="./img/icons/icon_colons.svg" class="colons_img" />40-18<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">17:40-18:00</div>
 								</td>
 								<td class="yellow_bg pointer" name="closing_ceremony" colspan="3">
 									Closing Ceremony
@@ -738,6 +744,91 @@ $(document).ready(function() {
 		}
 
 	});
+
+
+
+
+
+
+
+
+
+	// Program At a Glance 줌 스크립트
+
+	var height_array = [];
+	var tbody_height;
+	var table_width = $(".program_table").outerWidth();
+
+	$(".program_table tbody").each(function(){
+		tbody_height = $(this).outerHeight();
+		height_array.push(tbody_height)
+
+		$(".app_tab.glance li").click(function(){
+			var i = $(this).index()-1;
+			$(".program_table").css({"width":table_width, "height":height_array[i]})
+			$(".program_table td").css({"font-size":"8px", "line-height":"12px"})
+			$(".program_table td p").css({"font-size":"6px", "line-height":"10px"})
+
+			// $(".program_table").trigger("touchmove");
+
+			//alert(table_width)
+			//alert(table_Height)
+			//alert(table_font_size)
+			//alert(table_font_size_p)
+			console.log(height_array[i]);
+		});
+	});
+
+	//pinch 진행 상태
+	let scaling  = false;
+	//pinch 초기 거리
+	let setDist = 0;
+
+	$(document).on("touchstart", ".program_table", function(event){
+		if(event.originalEvent.touches.length  === 2){
+			scaling  = true;
+		}
+	})
+
+	var table_font_size = $(".program_table td").css("font-size");
+	var table_font_size_p = $(".program_table td p").css("font-size")
+	var table_line_height = $(".program_table td").css("line-height");
+
+	$(document).on("touchmove", ".program_table", function(event){
+		if(scaling){
+			var dist = Math.hypot(
+				event.originalEvent.touches[0].pageX - event.originalEvent.touches[1].pageX,
+				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
+			);
+			dist = Math.floor(dist/20);
+			if(setDist == 0) setDist = dist;
+			fontSize = $(".program_table td").css("font-size");
+			fontSizeP = $(".program_table td p").css("font-size")
+			imgWidth = $(".program_table")[0].clientWidth;
+			imgHeight = $(".program_table")[0].clientHeight;
+			// alert(parseInt(fontSize))
+			if(setDist < dist){
+				$(this).css("width", 1.1*parseFloat(imgWidth));
+				$(this).css("height", 0.8*parseFloat(imgHeight));
+				$(this).find("td").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+				$(this).find("td").find("p").css({"font-size": 1.1*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
+				setDist = dist;
+			} else if(setDist > dist){
+				if (parseInt(fontSize) >= 10)	{
+					$(this).css("width", 0.9*parseFloat(imgWidth));
+					$(this).css("height", 0.5*parseFloat(imgHeight));
+					$(this).find("td").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+					$(this).find("td").find("p").css({"font-size": 0.9*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
+					setDist = dist;
+				}
+			}
+		}
+	})
+
+
+
+
+
 });
 
 function table_location(event, _this, e, day, this_name) {

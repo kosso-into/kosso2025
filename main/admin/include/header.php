@@ -65,6 +65,7 @@
 				<li class="faq"><a href="./board_category_list.php">FAQ</a></li>
 			</ul>
 		</li>
+        <li class="main_nav"><a href="./app_notice.php"><i class="la la-clipboard"></i>App Notice 관리</a></li>
 	</ul>
 </nav>
 <script>

@@ -1,10 +1,15 @@
+
 <?php
 	include_once('./include/head.php');
-	include_once('./include/app_header.php');
+	include_once('./include/header.php');
 
 	if($admin_permission["auth_board_notice"] == 0){
 		echo '<script>alert("권한이 없습니다.");history.back();</script>';
 	}
+
+    if($_SESSION["ADMIN"]===[]){
+        echo '<script>alert("권한이 없습니다.");history.back();</script>';
+    }
 
     $title = $_GET["app_title"] ?? "";
     $s_date = $_GET["s_date"] ?? "";
@@ -26,14 +31,9 @@
 
     $sql =	"
                 SELECT
-                    b.idx, b.title_en, b.title_en, f.path, DATE_FORMAT(b.register_date, '%Y-%m-%d') AS register_date
+                    b.idx, b.title_en, pin, b.register_date
+					#DATE_FORMAT(b.register_date, '%Y-%m-%d') AS register_date
                 FROM board AS b
-                LEFT JOIN(
-                    SELECT
-                        idx, CONCAT(path,'/',save_name) AS path
-                    FROM `file`
-                )AS f
-                ON b.thumnail = f.idx
                 WHERE b.is_deleted = 'N'
                 AND b.`type` = 3
                 {$where}
@@ -42,11 +42,12 @@
 
     $list = get_data($sql);
     $total_count = count($list);
+
+    $today = date('Y-m-d', time());
 ?>
 <style>
 	.register_btn {float: right;}
-	.app_add_notice_btn {float: right;}
-</style>
+</style> 
 	<section class="list app_notice">
 		<div class="container">
 			<div class="title clearfix">
@@ -54,7 +55,7 @@
                     if($admin_permission["auth_board_notice"] > 1){
 				?>
 					<h1 class="font_title">Notice</h1>
-					<button type="button" class="btn app_add_notice_btn">Notice 등록</button>
+<!-- 					<button type="button" class="btn floatR">엑셀 다운로드</button> -->
 				<?php
                 }
 				?>
@@ -83,9 +84,12 @@
 			   </form>
 			</div>
 			<div class="contwrap">
-				<p class="table_title">List</p>
+                <div class="flex_between title_wrap">
+    				<p class="table_title">List</p>
+                    <button type="button" class="btn app_add_notice_btn" onclick="location.href='./app_notice_detail.php'">Notice 등록</button>
+                </div>
 <!-- 				<table id="datatable" class="list_table"> -->
-				<table class="list_table app">
+				<table id="datatable" class="list_table app">
 					<colgroup>
 						<col width="10%">
 						<col width="60%">
@@ -94,7 +98,7 @@
 					</colgroup>
 					<thead>
 						<tr class="tr_center">
-							<th>Date</th>
+							<th>등록일시</th>
 							<th>Title</th>
 							<th>Push</th>
 							<th>Management</th>
@@ -103,15 +107,21 @@
 					<tbody>
                     <?php
                         foreach ($list as $l) {
+                            if($l['pin']==='Y'){
+                                $pin = 'on';
+                            } else {
+                                $pin = '';
+                            }
                     ?>
 						<tr class="tr_center">
+                            <!-- 230717 HUBDNCLHJ : register_date 년,월,일 시,분,초 까지 노출되어야 합니다.-->
  						    <td><?=$l["register_date"]?></td>
 							<td class="notice_title"><p class="ellipsis"><?=$l["title_en"]?></p></td>
-							<td><button type="button" class="btn app_push_btn app_push_open" name="pop_btn">Push</button></td>	
+							<td><button type="button" class="btn app_push_btn app_push_open" name="pop_btn" value="<?=$l['idx']?>>">Push</button></td>
 							<td>
-								<button type="button" class="btn app_pin_btn on">Pin</button>
-								<button type="button" class="btn app_modify_btn">Modify</button>
-								<button type="button" class="btn app_delete_btn">Delete</button>
+								<button type="button" class="btn app_pin_btn <?=$pin?>" value="<?=$l['idx']?>">Pin</button>
+								<button type="button" class="btn app_modify_btn" value="<?=$l['idx']?>">Modify</button>
+								<button type="button" class="btn app_delete_btn" value="<?=$l['idx']?>">Delete</button>
 							</td>	
 						</tr>
 					</tbody>
@@ -120,6 +130,7 @@
                     ?>
 				</table>
 			</div>
+            <!--
 			<div class="contwrap">
 				<p class="table_title">Contents</p>
 				<form name="">
@@ -151,12 +162,43 @@
 						<button type="button" class="btn" name="save">Complete</button>
 					</div>
 				</form>
-			</div>
-		</div>
+			</div> -->
+            <!-- 페이지네이션 -->
+<!--            <div class="row centerT">-->
+<!--                <div class="col-sm-12 col-md-5"></div>-->
+<!--                <div class="col-sm-12 col-md-7">-->
+<!--                    <div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate">-->
+<!--                        <ul class="pagination">-->
+<!--                            <li class="paginate_button page-item previous disabled" id="datatable_previous">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>-->
+<!--                            </li>-->
+<!--                            <li class="paginate_button page-item active">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="1" tabindex="0" class="page-link">1</a>-->
+<!--                            </li>-->
+<!--                            <li class="paginate_button page-item ">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="2" tabindex="0" class="page-link">2</a>-->
+<!--                            </li>-->
+<!--                            <li class="paginate_button page-item ">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="3" tabindex="0" class="page-link">3</a>-->
+<!--                            </li>-->
+<!--                            <li class="paginate_button page-item ">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="4" tabindex="0" class="page-link">4</a>-->
+<!--                            </li>-->
+<!--                            <li class="paginate_button page-item ">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="5" tabindex="0" class="page-link">5</a>-->
+<!--                            </li>-->
+<!--                            <li class="paginate_button page-item next" id="datatable_next">-->
+<!--                                <a href="#" aria-controls="datatable" data-dt-idx="6" tabindex="0" class="page-link">Next</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--		</div>-->
 	</section>
 
 <!-- Push popup -->
-<div class="pop_wrap app_push_pop">
+<div class="pop_wrap app_push_pop_notice">
 	<div class="pop_dim"></div>
 	<div class="pop_cont">
 		<div class="pop_title">Push
@@ -165,13 +207,13 @@
 		<div class="pop_inner center_t">
 			<p class="pop_inner_title">title</p>
 			<div class="text_area">
-				<textarea name="notice_title" id="notice_title" cols="30" rows="10">[Notice] ICOMES 2023 Welcome Cocktail Party begins soon!</textarea>			
+				<textarea name="notice_title" id="notice_title" cols="30" rows="10" disabled></textarea>
 			</div>
 
 			<ul class="flex app_date_ul">
 				<li class="flex">
 					<span>Date</span>
-					<input type="text" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" name="s_date" value="" data-type="date">
+					<input type="text" class="" data-language="en" data-date-format="yyyy-mm-dd" name="s_date" value="<?=$today?>" data-type="date" disabled/>
 				</li>
 			<!-- 23-06-12 예약발송 제외하기로 함 -->
 			<!--
@@ -184,20 +226,19 @@
 		<p class="center_t bold">Would you like to proceed with the app push?</p>
 		<div class="btn_wrap center_t">
 			<button type="button" class="btn pop_close">No</button>
-			<button type="button" class="btn pop_close">Yes</button>
+			<button type="button" class="btn pop_close push_y">Yes</button>
 		</div>
 	</div>
 </div>
 
 <script src="./js/common.js"></script>
+<script src="./js/app_notice.js"></script>
+<script src="../js/config.js"></script>
 <script>
 	var html = '<?=$html?>';
 
 	$(document).ready(function(){
 		$(".app_nav li").eq(0).addClass("on");
-	});
-	$(".app_pin_btn").on("click",function(){
-		$(this).toggleClass("on");
 	});
 </script>
 <?php include_once('./include/footer.php');?>

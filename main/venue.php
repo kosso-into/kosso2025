@@ -1,6 +1,15 @@
 <?php
 include_once('./include/head.php');
-include_once('./include/header.php');
+
+$session_user = $_SESSION['USER'] ?? NULL;
+$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+
+//230714 HUBDNC 앱 로그인 시 파라미터 추가 된 부분
+if(!empty($session_user) && $session_app_type == 'Y') {
+    include_once('./include/app_header.php');
+} else {
+    include_once('./include/header.php');
+}
 
 $language = isset($_SESSION["language"]) ? $_SESSION["language"] : "en";
 $locale = locale($language);
@@ -96,79 +105,82 @@ $sql_info =    "SELECT
 				LEFT JOIN `file` AS fi_img
 					ON fi_img.idx = igv." . $language . "_img";
 $info = sql_fetch($sql_info);
+
+	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
 ?>
 
-<section class="container venue">
+<section class="container venue <?= $add_section_class; ?>">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-<!-- 	<div class="app_title_box"> -->
-<!-- 		<h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
-<!-- 		<ul class="app_menu_tab"> -->
-<!-- 			<li><a href="./welcome.php">Welcome Message</a></li> -->
-<!-- 			<li><a href="./organizing_committee.php">Organization</a></li> -->
-<!-- 			<li><a href="./app_overview.php">Overview</a></li> -->
-<!-- 			<li class="on"><a href="./venue.php">Venue</a></li> -->
-<!-- 		</ul> -->
-<!-- 	</div>     -->
-<!-- 	<h1 class="page_title">Venue</h1> -->
-    
+<?php
+	if(!empty($session_user) && $session_app_type == 'Y') {
+?>
+    <div class="app_title_box">
+        <h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+        <ul class="app_menu_tab">
+            <li><a href="./welcome.php">Welcome Message</a></li>
+            <li><a href="./organizing_committee.php">Organization</a></li>
+            <li><a href="./app_overview.php">Overview</a></li>
+            <li class="on"><a href="./venue.php">Venue</a></li>
+        </ul>
+    </div>    
+    <h1 class="page_title">Venue</h1> 
+<?php
+	} 
+?>
 	<!-- HUBDNCLHJ : app에선 타이틀 Conrad Seoul>Venue로 변경 됨(위 h1.page_title{Venue} 주석해제 후 아래 h1.page_title{Conrad Seoul} 주석처리). 메뉴 위치 이동 됨. 노출되는 컨텐츠 [호텔 이름과 주소, 연락처]+[지도]. -->
+<?php
+	if (!empty($session_app_type) && $session_app_type == 'N') {
+		// Web일때
+?>
 	<h1 class="page_title">Conrad Seoul</h1>
+<?php
+	} 
+?>
     <div class="inner">
         <!-- 호텔 이름과 주소, 연락처 -->
         <div class="section section1">
-            <div class="clearfix2">
+            <div>
                 <!-- <div class="img_wrap" style="background: center / cover no-repeat url('<?= $info['fi_img_url'] ?>')">
 						<img src="<?= $info['fi_img_url'] ?>" alt="hotel img">
 					 </div> -->
                 <div class="img_wrap">
 					<img src="./img/conrad_seoul.jpg" alt="conrad seoul">
                 </div>
-                <div class="info_wrap">
-                    <!-- <h6><?= $info['name'] ?></h6> -->
-                    <ul class="info_list">
-                        <li>
-                            <p><!-- <?= $locale("address") ?> -->Address</p>
-                            <p><?= $info['address'] ?></p>
-                        </li>
-                        <li>
-                            <p><!-- <?= $locale("tel") ?> -->Tel</p>
-                            <p><?= $info['tel'] ?></p>
-                        </li>
-						<!-- 23-05-02 웹사이트 추가 -->
-						<li>
+				<ul class="app_overview_ul app_venue_info">
+					<li>
+						<p>Conrad Seoul</p>
+						<div class="flex_top">
+							<p>Address</p>
+							<p><?= $info['address'] ?></p>
+						</div>
+						<div class="flex_top">
+							<p>Tel</p>
+							<p><?= $info['tel'] ?></p>
+						</div>
+						<div class="flex_top">
 							<p>Website</p>
 							<p><a href="https://www.conradseoul.co.kr/hub/en/main.do" class="link" target="_blank">www.conradseoul.co.kr</a></p>
-							<!-- <p><?= $locale("web") ?></p>
-                            <p><?= $info['web'] ?></p> -->
-						</li>
-                    </ul>
-                    <!-- <div class="btn_wrap"> -->
-                    <!--     <a href="<?= $info['homepage_en'] ?>" target="_blank"><button type="button" class="btn green_btn">Go to Website - ENG</button></a> -->
-                    <!--     <a href="<?= $info['homepage_ko'] ?>" target="_blank"><button type="button" class="btn green_btn">Go to Website - KOR</button></a> -->
-                    <!-- </div> -->	
-                </div>
+						</div>
+					</li>
+				</ul>
             </div>
         </div>
 		<!-- 지도 -->
 		<div class="section section2">
 			<h3 class="title">Location</h3>
-			<div class="map_area" id="googleMap"></div>
+			<div class="map_area" id="map"></div>
 		</div>
-        <!-- 교통편 -->
-        <div class="section section3"> <!-- APP 미노출 -->
-<!-- 			<h3 class="title">Transportation</h3> -->
-            <ul class="contact_list"> <!-- APP 미노출 --> 
-                <!-- airplane -->
-                <li>  <!-- APP 미노출 -->
-                    <div class="details_info_wrap"> <!-- APP 미노출--> 
-                        <div class="clearfix2"> <!-- APP 미노출 -->
-							<!--
-                            <div class="img_wrap">
-                                <img src="./img/contact_05.svg" alt="비행기">
-                            </div> -->
-                            <div class="info"> <!-- APP 미노출 -->
-                                <h3 class="title">Airport ▶ CONRAD Seoul Hotel, Korea</h3> <!-- APP 미노출 -->
-                                <!--(1)-->
+<?php
+    if(empty($session_user) && $session_app_type == 'N') {
+?>
+        <!-- 교통편 START / 웹 뷰 --> 
+        <div class="section section3"> 
+            <ul class="contact_list"> 
+                <li>  
+                    <div class="details_info_wrap">  
+                        <div class="clearfix2">
+                            <div class="info"> 
+                                <h3 class="title">Airport ▶ CONRAD Seoul Hotel, Korea</h3>
                                 <div class="airplane_cont">
                                     <h5>By Bus <span>(No. 6019 / Airport Bus)</span></h5>
                                     <div class="table_wrap detail_table_common x_scroll">
@@ -195,19 +207,18 @@ $info = sql_fetch($sql_info);
                                                     <th>Bus Stop</th>
                                                     <td>Marriott Hotel (Yeouido Station)</td>
                                                 </tr>
-                                												<tr>
+                                                                                <tr>
                                                     <th>Remarks</th>
                                                     <td>
-                                														Advance ticket purchase is required before boarding the bus.<br>
-                                														- Location of airport ticket counter. Terminal 1 Gate 6~13 (1F) / Terminal 2 : Eastside B1<br>
-                                														- K-Limousine Website : <a href="http://www.klimousine.com/eng/main" target="_blank" class="link">www.klimousine.com</a>
-                                													</td>
+                                                                                        Advance ticket purchase is required before boarding the bus.<br>
+                                                                                        - Location of airport ticket counter. Terminal 1 Gate 6~13 (1F) / Terminal 2 : Eastside B1<br>
+                                                                                        - K-Limousine Website : <a href="http://www.klimousine.com/eng/main" target="_blank" class="link">www.klimousine.com</a>
+                                                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                </div> <!-- APP 미노출 -->
-                                <!--(2)-->
+                                </div> 
                                 <div class="airplane_cont">
                                     <h5>By Subway</h5>
                                     <p>
@@ -256,14 +267,12 @@ $info = sql_fetch($sql_info);
                                             </tbody>
                                         </table>
                                     </div>
-                                </div> <!-- APP 미노출 -->
-                                <!--(3)-->
+                                </div> 
                                 <div class="airplane_cont">
-                                    <h5>By Taxi<span>(Incheon Airport ▶ Conrad Seoul Hotel)</span></h5>
                                     <h5>By Taxi</h5>
-									<p>Taxi services are always available and the fare from Incheon International Airport to the Venue(Conrad Seoul) is approximately KRW 55,000 for a standard taxi. Expressway fee(KRW 7,100 each way) will be added to the total fare. The rides take about 40-50 minutes, however, it may vary depending on traffic conditions. There is an additional fee for taxi rides taken between midnight and 4:00 am, resulting in an approximate 20% increase in the fare.</p> <!-- APP 미노출 -->
+                                            <p>Taxi services are always available and the fare from Incheon International Airport to the Venue(Conrad Seoul) is approximately KRW 55,000 for a standard taxi. Expressway fee(KRW 7,100 each way) will be added to the total fare. The rides take about 40-50 minutes, however, it may vary depending on traffic conditions. There is an additional fee for taxi rides taken between midnight and 4:00 am, resulting in an approximate 20% increase in the fare.</p> 
                                     <div class="table_wrap detail_table_common x_scroll">
-                                    										<table class="c_table type2">
+                                                                            <table class="c_table type2">
                                             <thead>
                                                 <tr>
                                                     <th rowspan="2" >Type</th>
@@ -271,62 +280,64 @@ $info = sql_fetch($sql_info);
                                                     <th colspan="2">Stop Location</th>
                                                     <th rowspan="2">Remarks</th>
                                                 </tr>
-                                    												<tr>
-                                    													<th>Terminal 1</th>
-                                    													<th>Terminal 2</th>
-                                    												</tr>
+                                                                                    <tr>
+                                                                                        <th>Terminal 1</th>
+                                                                                        <th>Terminal 2</th>
+                                                                                    </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                    													<td>Standard Taxi</td>
-                                    													<td>3,800</td>
-                                    													<td>5C, 6C, 6D</td>
-                                    													<td>5C</td>
-                                    													<td>24:00 - 04:00 additional late-night charge 20%</td>
-                                    												</tr>
-                                    												<tr>
-                                    													<td>First-Class / Oversized Taxi<br>(Up to 9 passengers)</td>
-                                    													<td>6,500</td>
-                                    													<td>7C/8C</td>
-                                    													<td>5D</td>
-                                    													<td>No late-night surcharge or timed fare</td>
-                                    												</tr>
-                                    												<tr>
-                                    													<td>International Taxi</td>
-                                    													<td>Standard Seoul's<br>distance fare applies</td>
-                                    													<td>4C</td>
-                                    													<td>1C</td>
-                                    													<td>
-                                    														Taxis officially designated to provide foreign<br>
-                                    														language service<br>
-                                    														For reservation: <a href="http://www.intltaxi.co.kr" target="_blank" class="link">www.intltaxi.co.kr</a>
-                                    													</td>
-                                    												</tr>
+                                                                                        <td>Standard Taxi</td>
+                                                                                        <td>3,800</td>
+                                                                                        <td>5C, 6C, 6D</td>
+                                                                                        <td>5C</td>
+                                                                                        <td>24:00 - 04:00 additional late-night charge 20%</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>First-Class / Oversized Taxi<br>(Up to 9 passengers)</td>
+                                                                                        <td>6,500</td>
+                                                                                        <td>7C/8C</td>
+                                                                                        <td>5D</td>
+                                                                                        <td>No late-night surcharge or timed fare</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>International Taxi</td>
+                                                                                        <td>Standard Seoul's<br>distance fare applies</td>
+                                                                                        <td>4C</td>
+                                                                                        <td>1C</td>
+                                                                                        <td>
+                                                                                            Taxis officially designated to provide foreign<br>
+                                                                                            language service<br>
+                                                                                            For reservation: <a href="http://www.intltaxi.co.kr" target="_blank" class="link">www.intltaxi.co.kr</a>
+                                                                                        </td>
+                                                                                    </tr>
                                             </tbody>
                                         </table>
-                                    </div> <!-- APP 미노출 -->
-									<div class="taxi_text_area">
-										For more information on each mode of transportation and the related services, please visit the websites below.
-										<div>
-											-
-											<a href="https://www.airport.kr/ap/en/index.do" target="_blank" class="link">Incheon International Airport(click!) </a>
-											/
-											<a href="https://www.airport.co.kr/gimpoeng/index.do" target="_blank" class="link">Gimpo International Airport(click!)</a>   
-										</div>
-									</div> <!-- APP 미노출 -->
+                                    </div> 
+                                            <div class="taxi_text_area">
+                                                For more information on each mode of transportation and the related services, please visit the websites below.
+                                                <div>
+                                                    -
+                                                    <a href="https://www.airport.kr/ap/en/index.do" target="_blank" class="link">Incheon International Airport(click!) </a>
+                                                    /
+                                                    <a href="https://www.airport.co.kr/gimpoeng/index.do" target="_blank" class="link">Gimpo International Airport(click!)</a>   
+                                                </div>
+                                            </div> 
                                 </div>
-                                <!--(3) end-->
-                            </div> <!-- APP 미노출--> 
-                        </div> <!-- APP 미노출 --> 
-                    </div><!-- APP 미노출 -->
-                </li> <!-- APP 미노출-->
-            </ul>  <!-- APP 미노출 -->
-        </div> <!-- APP 미노출 -->
+                            </div>  
+                        </div>  
+                    </div>
+                </li> 
+            </ul>  
+        </div>
+<?php
+	} 
+?>
         <!-- 교통편 / end -->
     </div>
 </section>
 
-<script>
+<!-- <script>
 function myMap() {
     var mapOptions = {
         center: new google.maps.LatLng(37.525609, 126.925992),
@@ -338,9 +349,9 @@ function myMap() {
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXP4XIvOKkpyrbqfN57uTgtFehx5HOMJw&callback=myMap">
-</script>
+</script> -->
 
-<!--
+
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=855afe12d2495e8a68f985bd09c52bc5"></script>
 <script>
 	var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -351,6 +362,13 @@ function myMap() {
 
 	var map = new kakao.maps.Map(container, options);
 </script>
--->
 
-<?php include_once('./include/footer.php'); ?>
+
+<?php 
+    if (!empty($session_app_type) && $session_app_type == 'Y') {
+        // mo일때
+        include_once('./include/app_footer.php'); 
+    }else {
+        include_once('./include/footer.php');
+    }
+?>

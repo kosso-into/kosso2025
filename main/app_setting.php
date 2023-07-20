@@ -1,5 +1,6 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
+<script src="./js/script/client/app_setting.js"></script>
 
 <!-- HUBDNCLHJ : app setting 페이지 -->
 <section class="container app_setting app_version">

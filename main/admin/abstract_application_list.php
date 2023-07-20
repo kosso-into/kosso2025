@@ -331,7 +331,7 @@
 						<?php if($ext == "pdf") { ?>
 							<td><a href="./pdf_viewer.php?path=<?=$list["path"]?>" target="_blank"><?=$list["abstract_file_name"]?></a></td>
 						<?php } else { ?>
-							<td><a href="<?=$list["path"]?>" download><?=$list["abstract_file_name"]?></a></td>
+							<td><a href="<?=$list["path"]?>" download="<?=$list["submission_code"]?>"><?=$list["abstract_file_name"]?></a></td>
 						<?php } ?>
 							<td><?=$list["category"]?></td>
 							<td><?=$list["presentation_type_text"]?></td>

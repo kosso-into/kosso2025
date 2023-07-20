@@ -64,6 +64,11 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 .subway_line span {font: inherit;}
 .subway_line span.purple {color: #A308DD;}
 .subway_line span.brown {color: #A36C20;}
+.app_venue_info {margin-top:10px;}
+.app_venue_info li > div:first-of-type {padding-top:16px;}
+.app_venue_info li > div:last-of-type {padding-bottom:16px;}
+.app_venue_info li > div {padding: 8px 16px;}
+.app_venue_info li > div > p:first-of-type {min-width:100px;}
 
 /*organizing*/
 .organizing .fixed_table *{white-space: normal;}
@@ -524,7 +529,7 @@ section.container.organizing {padding-bottom: 190px;}
 .program_table thead tr th:last-of-type{border-right:0} 
 .program_table thead th p{font-size:14px;color:#fff;font-weight:normal;}
 .program_table tbody img{width: 50px;margin-top: 10px;}
-.program_table tbody td{border-right:1px solid #999;font-size:12px;font-weight:bold; position: relative; line-height:18px;}
+.program_table tbody td{border-right:1px solid #999;font-size:12px;font-weight:bold; position: relative; line-height:1.6;}
 /*.program_table tbody td:not(:first-child){vertical-align:top;}*/
 .program_table tbody .font_10_tr td:not(:first-child){font-size:10px; line-height:14px;}
 .program_table tbody .font_10_tr td:not(:first-child) p{font-size:10px; word-break: break-all;}
@@ -1268,6 +1273,8 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	/* .board_area .dates_list p {width: calc(100% - 120px);} */
 	.board_area .dates_list p {width: calc(100% - 100px);}
 	.board_area .dates_list p a {font-size: 14px;}
+
+	.venue .section2 .map_area {height: 200px;}
 
 }
 

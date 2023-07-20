@@ -1,5 +1,18 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
+<script src="./js/app_notice.js"></script>
+<?php
+$idx=$_GET['idx'];
+
+$select_notice_detail_query="
+                                SELECT idx, type, title_en, content_en
+                                FROM board
+                                WHERE is_deleted='N'
+                                AND type=3
+                                ANd idx = {$idx}
+                            ";
+$notice = sql_fetch($select_notice_detail_query);
+?>
 
 <!-- HUBDNCAJY : App - Notice > 상세 페이지 -->
 <section class="container app_version">
@@ -14,18 +27,15 @@
 			<div class="app_contents_wrap type3">
 				<div class="app_notice_detail">
 					<div class="app_notice_title">
-						ICOMES 2023 Welcome Cocktail Party begins soon! 
+						<?=$notice['title_en']?>
 					</div>
 					<div class="app_notice_cont">
-						Welcome cocktail party is about to start from 18:30 at the 3rd  floor, Grand ballroom. <br/>
-						It will be the perfect opportunity to network and mingle with your peers. <br/>
-						Light refreshments will be provided.
+						<?=$notice['content_en']?>
 					</div>
 				</div>
 			</div> 
 		</div>
 	</div>
 </section>
-
 
 <?php include_once('./include/app_footer.php');?>

@@ -2,6 +2,25 @@
 	include_once('./include/head.php');
 	include_once('./include/app_header.php');
 ?>
+<?php
+    if(empty($_SESSION["USER"])){
+        echo "
+                <script>
+                    if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                        window.AndroidScript.logout('');
+                    }
+                
+                    if (webkit.messageHandlers!=null) {
+                        try{
+                            window.webkit.messageHandlers.logout.postMessage('');
+                        } catch (err){
+                            console.log(err);
+                        }
+                    }
+                </script>
+        ";
+    }
+?>
 
 <style>
 	html {background: url("./img/img_app_vsl5.jpg") no-repeat left bottom /cover;}
@@ -64,10 +83,16 @@
 					<span>NOTICE</span>
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="https://www.kosso.or.kr/">
 					<img src="./img/icons/app_menu09.svg" alt="">
 					<span>KSSO</span>
+				</a>
+			</li> -->
+			<li>
+				<a href="https://www.jomes.org/" target="_blank">
+					<img src="./img/icons/app_menu09_1.svg" alt="">
+					<span>JOMES</span>
 				</a>
 			</li>
 		</ul>
@@ -80,7 +105,7 @@
 		$(".app_nav_btn img").attr("src", "/main/img/icons/icon_hamburger2.svg");
 	});
 
-	webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
+	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
 </script>
 
 <?php

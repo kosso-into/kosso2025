@@ -15,7 +15,7 @@
 		<div class="contents_box">
 			<div class="app_contents_wrap">
 				<div class="survey_box box_top">
-					<a href="javascript:;">
+					<a href="https://forms.gle/qmVnFNuJqAj7L4mj6/" target="_blank">
 						<img src="./img/icons/icon_survey_en.svg" alt="">
 						<p class="center_t">
 							<span class="bold">ICOMES 2023</span><br/>
@@ -25,7 +25,7 @@
 					</a>
 				</div>
 				<div class="survey_box box_bottom">
-					<a href="javascript:;">
+					<a href="https://forms.gle/zfJbNAyNxggE7NxX9/" target="_blank">
 						<img src="./img/icons/icon_survey_kr.svg" alt="">
 						<p class="center_t">
 							<span class="bold">ICOMES 2023</span><br/>
