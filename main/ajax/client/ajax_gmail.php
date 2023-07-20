@@ -482,8 +482,16 @@ if($language == "ko") {
 			$is_score = $data["is_score"] ?? "";
 			$is_score = ($is_score == 1) ? "필요" : "불필요";
 
+			/*
 			$member_status = $data["member_status"] ?? "-";
 			$member_status = ($member_status == 1) ? "Yes" : "No";
+			*/
+			$member_status = $data["ksso_member_status"] ?? "-";
+            if($member_status == 0) {
+                $member_status = "No";
+            } else {
+                $member_status = "Yes";
+            }
 
 			$nation_no = $data["nation_no"] ?? "";
 			$nation_sql = "SELECT

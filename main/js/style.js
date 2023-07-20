@@ -14,39 +14,8 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	// Program At a Glance 줌 스크립트
-	//pinch 진행 상태
-	let scaling  = false;
-	//pinch 초기 거리
-	let setDist = 0;
+	
 
-	$(".program_table").on("touchstart", function(event){
-		if(event.originalEvent.touches.length  === 2){
-			scaling  = true;
-		}
-	})
-
-	$(".program_table").on("touchmove", function(event){
-		if(scaling){
-			var dist = Math.hypot(
-				event.originalEvent.touches[0].pageX - event.originalEvent.touches[1].pageX,
-				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
-			);
-			dist = Math.floor(dist/20);
-			if(setDist == 0) setDist = dist;
-			if(setDist < dist){
-				$(this).css("width", 1.1*parseFloat(imgWidth));
-				$(this).css("height", 1.1*parseFloat(imgHeight));
-				setDist = dist;
-			} else if(setDist > dist){
-				$(this).css("width", 0.9*parseFloat(imgWidth));
-				$(this).css("height", 0.9*parseFloat(imgHeight));
-				setDist = dist;
-			}
-			imgWidth = $(".program_table")[0].clientWidth;
-			imgHeight = $(".program_table")[0].clientHeight;
-		}
-	})
 
 	//데이트피커
 	$(".date_input").datepicker({
@@ -221,7 +190,7 @@ $(document).ready(function(){
 		$(".fixed_btn_wrap").addClass("index_pg");
 	}
 	// fixed button 스크롤할때 고정
-	if (!$(".container").hasClass("onsite_register")){
+	if (!$(".container").hasClass("onsite_register") && !$(".container").hasClass("app_version")){
 		var footer_height = $('.footer_wrap').outerHeight();
 		$(window).on('scroll', function(){
 			var scroll_top = $(window).scrollTop();
@@ -395,7 +364,7 @@ $(document).ready(function(){
 			$(this).parent("ul").next(".inner").find(".tab_cont").eq(i).addClass("on");
 			$(this).siblings("li").removeClass("on");
 			$(this).addClass("on");
-			console.log($(this).parent("ul").next(".inner").find(".tab_cont"))
+			// console.log($(this).parent("ul").next(".inner").find(".tab_cont"))
 		});
 	}
 	

@@ -1,17 +1,47 @@
 <?php include_once('./include/head.php'); ?>
-<?php include_once('./include/header.php'); ?>
+<?php 
+    $session_user = $_SESSION['USER'] ?? NULL;
+    $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 
-<section class="container sponsor">
+    if(!empty($session_user) && $session_app_type == 'Y') {
+        include_once('./include/app_header.php');
+    } else {
+        include_once('./include/header.php');
+    }
+
+    $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
+?>
+
+<style>
+    .grade_wrap li a.daewon, .grade_wrap li a.lilly {transform:scale(1) !important;}
+</style>
+
+<!-- app일 시 section에 app_version 클래스 추가 -->
+<section class="container sponsor <?= $add_section_class; ?>">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-<!-- 	<div class="app_title_box"> -->
-<!-- 		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
-<!-- 		<ul class="app_menu_tab langth_2"> -->
-<!-- 			<li class="on"><a href="./sponsor.php">Sponsorship</a></li> -->
-<!-- 			<li><a href="./sponsor_exhibition.php">Exhibition</a></li> -->
-<!-- 		</ul> -->
-<!-- 	</div> -->
+<?php
+    if(!empty($session_user) && $session_app_type == 'Y') {
+?>
+	<div class="app_title_box">
+		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+		<ul class="app_menu_tab langth_2">
+			<li class="on"><a href="./sponsor.php">Sponsorship</a></li>
+			<li><a href="./sponsor_exhibition.php">Exhibition</a></li>
+		</ul>
+	</div>
+<?php
+    } 
+?>
 	<!-- HUBDNCLHJ : APP일시 h1.page_title 주석처리 후 app 메뉴 탭 주석해제 -->
+
+<?php
+	if (!empty($session_app_type) && $session_app_type == 'N') {
+		// Web일때
+?>
     <h1 class="page_title">Sponsorship</h1>
+<?php
+    }
+?>
 	<div class="app_contents_box">
 		<div class="sponsor_grade">
 			<p class="grade_title pink_bg">Diamond</p>
@@ -108,4 +138,11 @@
 	</div>
 </section>
 
-<?php include_once('./include/footer.php'); ?>
+<?php 
+    if (!empty($session_app_type) && $session_app_type == 'Y') {
+        // mo일때
+        include_once('./include/app_footer.php'); 
+    }else {
+        include_once('./include/footer.php');
+    }
+?>

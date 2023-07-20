@@ -1,16 +1,16 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
-<script src="./js/script/client/app_program_detail.js?v=0.3"></script>
+
+<script src="./js/script/client/app_program_detail.js?v=0.4"></script>
 
 <?php
 
 $type = $_GET['type'];
-$e = $_GET['e'] ?? 'room1';
-$day = $_GET['day'] ?? 'day_tbody_day_1';
+$day = $_GET['day'] ?? '';
+$name = $_GET['name'] ?? '';
+$e = $_GET['e'] ?? '';
 $e_num = $e[-1];
-$d_num = $day[-1];
-
-$name = $_GET['name'] ?? 'pre_congress_symposium_1';
+$d_num = $day[-1] ?? '1';
 
 // echo $e_num;
 // echo $d_num;
@@ -18,17 +18,17 @@ $name = $_GET['name'] ?? 'pre_congress_symposium_1';
 //kcode == 116 새로고침
 
 echo '<script type="text/javascript">
-				  $(document).ready(function(){
-					  //탭 활성화
-					  //큰탭
-					  $(".app_tab li").removeClass("on");
-					  if ("' . $day . '" === "") {
-						$(".app_tab li:first-child").addClass("on");
-						$(".app_tab li:nth-child(1)").trigger("click");
-					  }
+              $(document).ready(function(){
+                  //탭 활성화
+                  //큰탭
+                  $(".app_tab li").removeClass("on");
+                  if ("' . $day . '" === "") {
+                    $(".app_tab li:first-child").addClass("on");
+                    $(".app_tab li:nth-child(1)").trigger("click");
+                  }
 
-						// Room Select Tab 초기화 / 클릭 스크립트 수정
-						$(".app_tab li").click(function(){
+                    // Room Select Tab 초기화 / 클릭 스크립트 수정
+                    $(".app_tab li").click(function(){
 //							$(".sort_select").each(function(){
 //								var i = $(this).val();
 //								if (i === "all"){
@@ -40,113 +40,142 @@ echo '<script type="text/javascript">
 //									console.log(i)
 //								}
 //							});
-							var date = $(".program > .on").val();
-							$("input[name=program_date]").val(date);
-							
-							selectProgram();
-						});
+                        var date = $(".program > .on").val();
+                        $("input[name=program_date]").val(date);
+                        
+                        selectProgram();
+                    });
 
-					  $(".app_tab li:nth-child(' . $d_num . ')").addClass("on");
-					  $(".app_tab + .inner .tab_wrap > .tab_cont").removeClass("on");
-					  $(".app_tab + .inner .tab_wrap > .tab_cont:nth-child(' . $d_num . ')").addClass("on");
-					  //작은탭
-					  $(".app_tab + .inner .tab_wrap > .tab_cont .tab_cont").removeClass("on");
-					  $(".app_tab + .inner .tab_wrap > .tab_cont.on .tab_cont").eq(' . $e_num . ' - 1).addClass("on");
+                  $(".app_tab li:nth-child(' . $d_num . ')").addClass("on");
+                  //$(".app_tab + .inner .tab_wrap > .tab_cont").removeClass("on");
+                  $(".app_tab + .inner .tab_wrap > .tab_cont:nth-child(' . $d_num . ')").addClass("on");
+                  //작은탭
+                  //$(".app_tab + .inner .tab_wrap > .tab_cont .tab_cont").removeClass("on");
+                  $(".app_tab + .inner .tab_wrap > .tab_cont.on .tab_cont").eq(' . $e_num . ' - 1).addClass("on");
 
-					  window.onkeydown = function() {
-					  	var kcode = event.keyCode;
-						if(kcode == 116) {
-							history.replaceState({}, null, location.pathname);
-							window.scrollTo({top:0, left:0, behavior:"auto"});
-						}
-					  }
+                  window.onkeydown = function() {
+                    var kcode = event.keyCode;
+                    if(kcode == 116) {
+                        history.replaceState({}, null, location.pathname);
+                        window.scrollTo({top:0, left:0, behavior:"auto"});
+                    }
+                  }
 
-					  //스크롤 위치 & 액션
-					  $(".program_detail_ul li").each(function(){
-						if("' . $name . '" === $(this).attr("name")) {
-							var this_top = $(this).offset().top;
-							$("html, body").animate({scrollTop: this_top - 70}, 1000);
-							console.log("scrollTop: ", this_top - 150)
-						}
-					  });
+                  //스크롤 위치 & 액션
+                  $(".program_detail_ul li").each(function(){
+                    if("' . $name . '" === $(this).attr("name")) {
+                        var this_top = $(this).offset().top;
+                        $("html, body").animate({scrollTop: this_top - 70}, 1000);
+                        console.log("scrollTop: ", this_top - 150)
+                    }
+                  });
 
-				  });
+              });
 		</script>';
 
 ?>
 
 <?php
     $member_idx         = $_SESSION["USER"]["idx"];
-    $program_date       = $_GET["program_date"] ?? "";
-    $option_room		= $_GET["option_room"] ?? "";
-    $option_category	= $_GET["option_category"] ?? "";
+    $option_room		= "";
 
     $row_sql = "";
 
-    switch ($program_date){
-        case "1" : $program_date = "2023-09-07";
+    switch ($day){
+        case "day_tbody day_1" : case "day_1" : $day = "2023-09-07";
             break;
-        case "2" : $program_date = "2023-09-08";
+        case "day_tbody day_2" : case "day_2" : $day = "2023-09-08";
             break;
-        case "3" : $program_date = "2023-09-09";
+        case "day_tbody day_3" : case "day_3" : $day = "2023-09-09";
             break;
     }
 
-    if($program_date != ""){
-        $row_sql .= " AND program_date = '$program_date' ";
+    switch ($e){
+        case "room1" : case "Room1" : $option_room = "1";
+            break;
+        case "room2" : case "Room2" : $option_room = "2";
+            break;
+        case "room3" : case "Room3" : $option_room = "3";
+            break;
+        case "room4" : case "Room4" : $option_room = "4";
+            break;
+        case "room5" : case "Room5" : $option_room = "5";
+            break;
+        case "room6" : case "Room6" : $option_room = "6";
+            break;
+        case "room7" : case "Room7" : $option_room = "7";
+            break;
     }
 
-    if($option_room != ""){
-        $row_sql .= " AND program_place_idx = $option_room ";
+    if($_GET===[]){
+        $row_sql .= " AND program_date = '2023-09-07' ";
     }
 
-    if($option_category != ""){
-        $row_sql .= " AND program_category_idx = $option_category ";
+    if($day != ""){
+        $row_sql .= " AND program_date = '$day' ";
     }
 
-    $select_place_sql = " SELECT * FROM program_place ";
+    if($e != ""){
+        $row_sql .= " AND program_place_idx = '$option_room' ";
+    }
+
+    $select_place_sql = " SELECT idx, program_place_name FROM program_place";
     $place_list = get_data($select_place_sql);
 
-    $select_category_sql = " SELECT * FROM program_category ";
+    $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18";
     $category_list = get_data($select_category_sql);
+    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
 
-    $select_program_list = "
-                            SELECT p.idx, program_name, chairpersons, preview, program_place_idx, pp.program_place_name ,program_category_idx, program_date, 
-                                   date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time,
-                                   (CASE
-                                       WHEN s.idx IS NULL THEN 'N'
-                                       ELSE 'Y'
-                                       END
-                                   ) as schedule_check
-                            FROM program p
-                            LEFT JOIN program_place pp on p.program_place_idx = pp.idx
-                            LEFT JOIN(
-                                SELECT s.idx, member_idx, s.program_idx, s.register_date, s.is_deleted
-                                FROM schedule s
-                                WHERE member_idx='{$member_idx}'
-                            )s on s.program_idx=p.idx
-                            WHERE p.is_deleted = 'N'
-                            AND program_date = '2023-09-07'
-                            {$row_sql}
+    $select_program_query = "
+                            SELECT @rownum := @rownum+1 AS rownum, P.*
+                            FROM (
+                                     SELECT p.idx, program_name, program_tag_name, chairpersons, preview, program_place_idx, pp.program_place_name ,program_category_idx, program_date,
+                                            date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time, start_time as _start_time,
+                                            (CASE
+                                                 WHEN s.idx IS NULL THEN 'N'
+                                                 ELSE 'Y'
+                                                END
+                                                ) as schedule_check, path
+                                     FROM program p
+                                     LEFT JOIN (SELECT va.program_idx, path FROM viewer_abstract va) va ON va.program_idx=p.idx
+                                     LEFT JOIN program_place pp on p.program_place_idx = pp.idx
+                                     LEFT JOIN(
+                                         SELECT s.idx, member_idx, s.program_idx, s.register_date, s.is_deleted
+                                         FROM schedule s
+                                         WHERE member_idx={$member_idx}
+                                           AND is_deleted='N'
+                                     )s on s.program_idx=p.idx
+                                     JOIN (SELECT @rownum := 0) AS R
+                                     WHERE p.is_deleted = 'N'
+                                     {$row_sql}
+                                     ORDER BY _start_time ASC, program_name ASC
+                                 ) P
                             ";
 
-    $program_list = get_data($select_program_list);
+    $program_list = get_data($select_program_query);
 
-    $select_contents_list = "
-                             SELECT idx, program_idx, contents_title, SUBSTRING_INDEX(speaker,'&^',1) AS speaker, SUBSTRING_INDEX(speaker,'&^',-1) AS speaker_aff,
+    $select_contents_query = "
+                             SELECT pc.idx, program_idx, contents_title, isp.idx AS speaker_idx, first_name, last_name, affiliation, nation,
                                     date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
-                             FROM program_contents
+                             FROM program_contents pc
+                             LEFT JOIN (
+                                SELECT isp.idx, program_contents_idx, first_name, last_name, nation, affiliation
+                                FROM invited_speaker isp
+                                WHERE isp.is_deleted='N'
+                             ) isp ON isp.idx = pc.speaker_idx
                              WHERE is_deleted = 'N'
                             ";
-    $contents_list = get_data($select_contents_list);
+    $contents_list = get_data($select_contents_query);
 
     $resultObj = [];
+	$room_list = [];
     foreach($program_list as $pl){
         $pl_idx = $pl['idx'];
 
-        $resultObj[$pl_idx] = [
+        $resultObj[$pl['rownum']] = [
             'idx' => $pl_idx,
             'program_name' => $pl['program_name'],
+            'program_tag_name' => $pl['program_tag_name'],
             'chairpersons' => $pl['chairpersons'],
             'preview' => $pl['preview'],
             'program_place_name' => $pl['program_place_name'],
@@ -155,7 +184,8 @@ echo '<script type="text/javascript">
             'start_time' => $pl['start_time'],
             'end_time' => $pl['end_time'],
             'contents' => [],
-            'schedule_check' => $pl['schedule_check']
+            'schedule_check' => $pl['schedule_check'],
+            'path' => $pl['path']
         ];
 
         foreach ($contents_list as $cl){
@@ -164,28 +194,31 @@ echo '<script type="text/javascript">
                 'cl_idx' => $cl['idx'],
                 'program_idx' => $program_idx,
                 'contents_title' => $cl['contents_title'],
-                'speaker' => $cl['speaker'],
-                'speaker_aff' => $cl['speaker_aff'],
+                'speaker_idx' => $cl['speaker_idx'],
+                'first_name' => $cl['first_name'],
+                'last_name' => $cl['last_name'],
+                'affiliation' => $cl['affiliation'],
+                'nation' => $cl['nation'],
                 'start_time' => $cl['start_time'],
                 'end_time' => $cl['end_time']
             ];
 
             if($pl_idx === $program_idx){
-                $resultObj[$pl_idx]['contents'][]=$cl_info;
+                $resultObj[$pl['rownum']]['contents'][]=$cl_info;
             }
         }
+		
+		if (!in_array($pl['program_place_name'], $room_list)) {
+			$room_list[] = $pl['program_place_name'];
+		}
     }
-
-
-
 ?>
-
 
 <section class="container app_version app_scientific">
 	<div class="app_title_box">
 		<h2 class="app_title">
 			PROGRAM
-			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 		<ul class="app_menu_tab langth_2">
 			<li><a href="./program_glance.php">Program at a Glance</a></li>
@@ -201,28 +234,28 @@ echo '<script type="text/javascript">
 	</ul>
     <div class="inner">
         <div class="tab_wrap">
-			<!-----------------
-				Day 1
-			------------------->
             <div class="tab_cont on">
-
                 <ul class="app_sort_form app_half_ul">
 					<li>
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
-							<option value="" hidden="">Select Room</option>
+							<option value="" hidden>Select Room</option>
 							<option value="">All</option>
                             <?php
                                 foreach($place_list as $place){
+									//$is_place_arr_type = (!empty($room_list) && in_array($place['program_place_name'], $room_list)) ? 1 : 0;
+
+									//if ($is_place_arr_type) {
                             ?>
-									<option value="<?=$place['idx']?>" <?= !empty($option_room) && $place['idx'] == $option_room ? "selected" : "" ?>><?=$place['program_place_name']?></option>
+										<option value="<?=$place['idx']?>" <?= !empty($option_room) && $place['idx'] == $option_room ? "selected" : "" ?>><?=$place['program_place_name']?></option>
                             <?php
+									//}
 								}
                             ?>
 						</select>
 					</li>
 					<li>
 						<select name="option_category" id="option_category" class="" onchange="selectProgram();">
-                            <option value="" hidden="">Select Category</option>
+                            <option value="" hidden>Select Category</option>
                             <option value="">All</option>
                             <?php
                                 foreach($category_list as $category){
@@ -236,9 +269,6 @@ echo '<script type="text/javascript">
 				</ul>
                 </form>
                 <div class="tab_wrap on">
-					<!-----------------
-						Day 1 > Room 1
-					------------------->
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
                             <?php
@@ -249,12 +279,18 @@ echo '<script type="text/javascript">
                                         $schedule="";
                                     }
                             ?>
-							<li name="">
+							<li name="<?=$program['program_tag_name']?>">
 								<div class="main">
-									<a href="/main/app_abstract.php" class="right_tag">Abstract</a>
+                                    <?php
+                                        if(in_array($program['program_category_idx'], $abstract_category_list, true)){
+                                    ?>
+									<a href="<?=$program['path']?>" class="right_tag" onclick="openPDF(event)">Abstract</a>
+                                    <?php
+                                    }
+                                    ?>
 									<p class="title"><?=$program['program_name']?></p>
                                     <?php
-                                        if($program['chairpersons']!=null){
+                                        if($program['chairpersons']!==null){
                                     ?>
                                     <p class="chairperson"><span class="bold">Chairpersons: </span> <?=$program['chairpersons']?></p>
                                     <?php
@@ -286,15 +322,21 @@ echo '<script type="text/javascript">
                                     ?>
                                     <div>
 										<p class="title"><?=$contents['contents_title']?></p>
+                                        <?php
+                                            if($contents['speaker_idx']!==null){
+                                        ?>
 										<p class="chairperson">
-											<span class="bold"><?=$contents['speaker']?></span> <?=$contents['speaker_aff']?>
+											<span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>, <?=$contents['nation']?>)
 										</p>
+                                        <?php
+                                        }
+                                        ?>
 										<div class="info">
 											<span class="time"><?=$contents['start_time']?>-<?=$contents['end_time']?></span>
                                             <?php
-                                                if($contents['speaker']!=null){
+                                                if($contents['speaker_idx']!==null){
                                             ?>
-                                            <a href="/main/app_invited_speakers_detail.php" class="invited_tag">Speakers info</a>
+                                            <a href="/main/app_invited_speakers_detail.php?idx=<?=$contents['speaker_idx']?>" class="invited_tag">Speakers info</a>
                                             <?php
                                             }
                                             ?>
@@ -321,19 +363,26 @@ echo '<script type="text/javascript">
 	<div class="pop_contents">
 		<ul class="list_style_none">
 			<li>Do you want to set an alarm 10 minutes before the start?</li>
-			<li>Yes</li>
-			<li>No</li>
+			<li class="is_alarm_y">Yes</li>
+			<li class="is_alarm_n">No</li>
 		</ul>
-		<!-- 팝업창 문구 -->
-		<span class="tags">Add alarm complete</span>
-		<!-- <span class="tags">Complete</span> -->
-		<!-- <span class="tags">Remove alarm complete</span> -->
-		<!-- <span class="tags">Cancel</span> -->
 	</div>
+</div>
+
+<div class="popup bottom alarm_message_pop">
+    <div class="pop_bg"></div>
+    <div class="pop_contents">
+        <!-- 팝업창 문구 -->
+        <span class="tags"></span>
+    </div>
 </div>
 
 <script>
     $(document).ready(function() {
+		$(".main .right_tag, .preview_btn").click(function(event) {
+            event.stopPropagation();
+        });
+
         $(".program_detail_btn").click(function(event) {
             event.preventDefault();
             event.stopPropagation();
@@ -341,7 +390,8 @@ echo '<script type="text/javascript">
         });
 
 		$(".popup.bottom .pop_contents li").click(function(){
-			$(this).parents(".popup").hide();
+			// $(this).parents(".popup").hide();
+            $('.program_alarm_pop').show();
 		});
 
 		// $(".sort_select").change(function(){
@@ -356,6 +406,7 @@ echo '<script type="text/javascript">
 		// 	}
 		// });
 		// $(".chairperson").parent("div").append("<button class='preview_btn'>Preview</button>");
+
 		$(".preview_btn").on("click", function(event){
 			event.preventDefault();
             event.stopPropagation();
@@ -365,6 +416,10 @@ echo '<script type="text/javascript">
 
         $(".app_scientific .info button").click(function(event){
             Schedule(event);
+        });
+
+        $(".right_tag").click(function(event){
+            event.preventDefault();
         });
     });
 

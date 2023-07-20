@@ -65,6 +65,7 @@ label.readonly {color: #999;}
 
 /*flex*/
 .flex{display: flex;}
+.flex_between {display: flex; justify-content:space-between; align-items:center;}
 .ai_cen{align-items: center;}
 .ac_cen{align-content: center;}
 .f_right{margin-left: auto;}
@@ -264,6 +265,10 @@ div.dataTables_wrapper div.dataTables_paginate{text-align:center;}
 .pop_wrap .center_t {text-align: center;} 
 .pop_wrap .pop_inner_title {text-align: left; padding: 8px 12px; background: #ccc; font-weight: bold;} 
 .pop_wrap .text_area textarea {width:100%;} 
-.pop_wrap.app_push_pop .app_date_ul li {width:100%; margin-top: -1px;}
-.pop_wrap.app_push_pop .app_date_ul li > span {width:20%; background: #ccc; padding: 4px 8px;}
-.pop_wrap.app_push_pop .app_date_ul li > input {width:80%; padding: 4px 8px;}
+.pop_wrap.app_push_pop_notice .app_date_ul li {width:100%; margin-top: -1px;}
+.pop_wrap.app_push_pop_notice .app_date_ul li > span {width:20%; background: #ccc; padding: 4px 8px;}
+.pop_wrap.app_push_pop_notice .app_date_ul li > input {width:80%; padding: 4px 8px;}
+
+/*app notice 관리*/
+.title_wrap {margin-bottom: 12px;}
+.app_push_btn {width:calc(100% - 12%);}

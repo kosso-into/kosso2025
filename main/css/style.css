@@ -22,7 +22,7 @@
 .pdf_list a {display:block; padding:16px; font-weight:bold; color:#000066; text-align:center;}
 
 /*scientific program*/
-.app_version.app_scientific {width:100%; /*margin-left:0; margin-right:0;*/ border:none;}
+.app_version.app_scientific {width:100%; /*margin-left:0; margin-right:0;*/ border:none; padding-bottom:100px !important;}
 .app_version.app_scientific .inner {padding-top:0 !important; margin-bottom: 0;}
 .app_version.app_scientific .app_tab, .app_version.app_scientific .app_title_box {width:100%; margin-left:0;}
 .app_scientific .app_sort_form {border-top:1.5px solid #989898;}
@@ -38,13 +38,13 @@
 .app_scientific .chairperson span {font:inherit;}
 
 .app_scientific .info {display:flex; align-items:center;}
-.app_scientific .info button {width:13px; height:13px; border-radius:3px; border:1px solid #F5AA02; margin-right:4px; background:url("../img/icons/icon_star_line.svg") no-repeat center /7px;}
+.app_scientific .info button {width: 17px; height: 17px; border-radius:3px; border:1px solid #F5AA02; margin-right: 6px; background:url("../img/icons/icon_star_line.svg") no-repeat center / 11px;}
 /* .app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg.svg");} */
 .app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg_wh.svg"); background-color:#F5AA02;}
 .app_scientific .info button + span {margin-right:18px;}
-.app_scientific .info span {margin-right:18px; padding-left:11px; /*font-size:14px;*/ font-size: 13px; background: no-repeat center left /10px;}
-.app_scientific .info .time {background-image:url("../img/icons/icon_clock_line.svg");}
-.app_scientific .info .branch {background-image:url("../img/icons/icon_branch.svg"); background-size:6px;}
+.app_scientific .info span {margin-right:18px; padding-left: 14px; /*font-size:14px;*/ font-size: 13px; background: no-repeat center left /10px;}
+.app_scientific .info .time {background-image:url("../img/icons/icon_clock_line.svg"); background-size: 13px;}
+.app_scientific .info .branch {background-image:url("../img/icons/icon_branch.svg"); background-size: 10px;}
 /*detail*/
 .app_scientific .detail {display:none;}
 .app_scientific .detail > div {background-color:#DEDDDD; border-top:1px solid #989898;}
@@ -59,7 +59,7 @@
 .app_scientific .preview_btn {position:absolute; bottom:7px; right:9px; border-radius:3px; color:#fff; background:#999 url('../img/icons/icon_plus_white.svg') no-repeat left  4px center /7px; padding:4px 7px 4px 14px; font-size:11px; transition: all 0.4s;}
 
 /*App main*/
-.container.app_version.main { padding-bottom: 120px !important; margin-top: 0; padding-top: 60px !important; }
+.container.app_version.main { padding-bottom: /*120*/150px !important; margin-top: 0; padding-top: 60px !important; }
 .app_vsl {position:relative; max-width:1200px; margin:0 auto 30px; width:85%;}
 .app_vsl .text {display:block; width:100%;}
 .app_index_menu {display:block; width:100%; margin:0 auto; display:flex; flex-wrap:wrap; justify-contents:space-between;}
@@ -73,6 +73,11 @@
 .schedule_area .grade_title {position:relative;}
 .schedule_area .grade_title:after {content:''; display:block; width:10px; height:6px; background:url("../img/icons/icon_arrow_up.svg") no-repeat center /cover; position:absolute; top:50%; right:8px; transform:translateY(-50%);}
 .schedule_area .grade_title.on:after {transform:translateY(-50%) rotateZ(180deg);}
+/* .schedule_btn_wrap {text-align: center;} */
+.schedule_btn_wrap {position: relative;}
+/* .schedule_btn_wrap .remove_alarm_btn { background-color: #404040; color:#fff;font-size: 24px; padding: 10px 12px; height: 48px;line-height: 1; border-radius:4px; margin-top: 12px;	} */
+.schedule_btn_wrap .remove_alarm_btn {display: none; min-width:125px; height: 28px; line-height:28px; border-radius:28px; background-color:#000066; color:#fff; padding:0 24px; font-size:12px; position:absolute; top:-40px; left:50%; transform:translateX(-50%);}
+.schedule_btn_wrap .remove_alarm_btn.on {display: block;}
 
 /*App HAPPENING NOW*/
 /* .app_scientific.app_happening .program_detail_ul .main, .app_scientific.app_invited_speakers_detail .program_detail_ul .main {padding:10px 18px;} */
@@ -83,6 +88,7 @@
 .app_happening .no_data img {max-width:130px; margin-bottom:18px;}
 
 /*APP Overview*/
+.app_version.app_overview {padding-bottom: 60px !important;}
 .app_overview .app_menu_tab {border-bottom:1px solid #383484;}
 .app_overview_ul li:not(:first-child) {border-top:1px solid #383484;}
 .app_overview_ul li:last-child {border-bottom:1px solid #999999;}

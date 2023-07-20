@@ -22,7 +22,7 @@
 											rr.banquet_yn,
 											rr.member_type,
 											rr.occupation_type,
-											rr.member_status,
+											rr.ksso_member_status,
 											m.member_idx, m.member_email, m.member_name, m.member_nation,
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.first_name,' ',rr.last_name) AS registration_name, rr.phone,
 											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number, 
@@ -56,9 +56,11 @@
 												END
 											) AS attendance_type_text,
 											(CASE
-												WHEN rr.member_status = '1'
+											    WHEN rr.ksso_member_status = '2'
 												THEN 'Member'
-												WHEN rr.member_status = '0'
+												WHEN rr.ksso_member_status = '1'
+												THEN 'Member'
+												WHEN rr.ksso_member_status = '0'
 												THEN 'Non-Member'
 												ELSE '-'
 											END) AS member_status_text,
@@ -116,7 +118,7 @@
 	$member_idx = isset($registration_detail["member_idx"]) ? $registration_detail["member_idx"] : "";
 	$member_type = isset($registration_detail["member_type"]) ? $registration_detail["member_type"] : "";
 	$occupation_type = isset($registration_detail["occupation_type"]) ? $registration_detail["occupation_type"] : "";
-	$member_status = isset($registration_detail["member_status"]) ? $registration_detail["member_status"] : "";
+	$member_status = isset($registration_detail["ksso_member_status"]) ? $registration_detail["ksso_member_status"] : "";
 	$member_email = isset($registration_detail["member_email"]) ? $registration_detail["member_email"] : "";
 	$member_name = isset($registration_detail["member_name"]) ? $registration_detail["member_name"] : "";
 	$member_nation = isset($registration_detail["member_nation"]) ? $registration_detail["member_nation"] : "";

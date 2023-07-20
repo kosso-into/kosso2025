@@ -5,7 +5,7 @@
     $member_idx=$_SESSION["USER"]["idx"];
     $sql_info = "
                     SELECT
-                        md5(registration_no) AS registration_no_encrypt ,qr_num, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.nation_no
+                        registration_no ,qr_num, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.nation_no, qr.idx AS r_idx
                     FROM member m
                     LEFT JOIN nation n ON m.nation_no = n.idx
                     LEFT JOIN (
@@ -33,13 +33,22 @@
 	<div class="container_inner inner">
 		<div class="contents_box">
 			<div class="contents_wrap">
-				<p class="app_qr_num">No. <?=$member_data['qr_num']?></p>
-				<div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no_encrypt']?>"></div>
-				<div class="app_txt_area">
-					<strong class="app_qr_name"><?=$member_data['first_name']." ".$member_data['last_name']?></strong>
-					<p class="app_qr_affiliation"><?=$member_data['affiliation']?>, <span><?=$member_data['nation_en']?></span></p>
-				</div>
-			</div>
+                <p class="app_qr_num">No. <?=$member_data['r_idx']?></p>
+                <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div>
+                <div class="app_txt_area">
+                    <strong class="app_qr_name"><?=$member_data['first_name']." ".$member_data['last_name']?></strong>
+                    <p class="app_qr_affiliation"><?=$member_data['affiliation']?> <span><?=$member_data['nation_en']?></span></p>
+                </div>
+            </div>
+            <!-- 성함, 소속 2줄일 경우 확인을 위한 예시 마크업 -->
+            <!-- <div class="contents_wrap">
+                <p class="app_qr_num">No. 0001</p>
+                <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no_encrypt']?>"></div>
+                <div class="app_txt_area">
+                    <strong class="app_qr_name">Theresia Handayani Mina Handayani Mina</strong>
+                    <p class="app_qr_affiliation">The Catholic Catholic University of Korea <span>Republic of Korea</span></p>
+                </div>
+            </div> -->
 		</div>
 	</div>
 </section>
@@ -50,8 +59,8 @@
         // qrcode 생성
         var qrcode = new QRCode(document.getElementById("qrcode"), {
             text: document.getElementById("qrcode").dataset.encrypt,
-            width: 358,
-            height: 288,
+            width: 220,
+            height: 220,
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H

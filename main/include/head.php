@@ -34,6 +34,7 @@
     <script src="/main/js/en.js?ver=<?= time() ?>"></script>
     <script src="/main/js/ko.js?ver=<?= time() ?>"></script>
     <script src="/main/js/lang.js"></script>
+    <script src="/main/js/jquery.zoomooz.min.js"></script>
     <script src="/main/js/locale.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y16N5RM5E5"></script>
@@ -56,4 +57,67 @@
 	} else {
 		include_once("./main/common/common.php");
 	}
-	?>
+	
+	// 230718 HUBDNC 위치 변경
+	$_page_config = array(
+		"m1" => [
+			"welcome",
+			"organizing_committee",
+			"overview",
+			"venue",
+			"photo"
+		],
+		"m2" => [
+			"program_glance",
+			"program_detail",
+			"invited_speaker"
+		],
+		"m3" => [
+			"poster_abstract_submission",
+			"abstract_submission",
+			"abstract_submission2",
+			"abstract_submission3",
+			"eposter",
+			"lecture_note_submission",
+			"lecture_submission",
+			"lecture_submission2",
+			"lecture_submission3",
+			"oral_presenters",
+			"eposter_presenters"
+		],
+		"m4" => [
+			"registration_guidelines",
+			"registration",
+			"registration2",
+			"registration3"
+		],
+		"m5" => [
+			"sponsor_information",
+			"application",
+			"application_complete"
+		],
+		"m6" => [
+			"accommodation",
+			"attraction_historic",
+			"useful_information"
+		]
+	);
+
+	$_page = str_replace(".php", "", end(explode("/", $_SERVER["REQUEST_URI"])));
+
+	//초록 마감 기간
+	$sql_during =    "SELECT
+							IF(DATE(NOW()) BETWEEN period_poster_start AND period_poster_end, 'Y', 'N') AS yn
+						FROM info_event";
+	$during_yn = sql_fetch($sql_during)['yn'];
+
+	//오늘 날짜 구하기 d_day 구하기
+	$today = date("Y. m. d");
+	$d_day = new DateTime("2023-09-07");
+
+	$current_date = new DateTime();
+	$current_date->format('Y-m-d');
+
+	$intvl = $current_date->diff($d_day);
+	$d_days = $intvl->days + 1;
+?>

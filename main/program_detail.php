@@ -281,7 +281,7 @@ echo '<script type="text/javascript">
                                                 <td>18:30-19:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Myongji Hospital, Republic of Korea)</p>
+                                                    <!-- <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Myongji Hospital, Republic of Korea)</p>-->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -301,7 +301,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:30-19:00</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Hypertension Management in Older Persons: Intensive vs Standard Treatment</td>
                                                                     <td class="text_r">
 																		<p class="bold">Won Yoon Suh</p>(Chungnam National University, Republic of Korea)
                                                                     </td>
@@ -468,7 +468,7 @@ echo '<script type="text/javascript">
                                                 <td>18:00-18:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 3</p>
-                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul Happiness Clinic of Internal Medicine)</p>
+                                                    <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -488,7 +488,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:00-18:30</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Atorvastatin/Ezetimibe Treatment for the Dyslipidemia in Patients with Type 2 Diabetes</td>
                                                                     <td class="text_r">
 																		<p class="bold">Chang Hee Jung</p>(University of Ulsan, Republic of Korea)
                                                                     </td>
@@ -751,7 +751,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                        Obesity and the Risk of Cancer
+                                                                        Obesity and the Risk of Cancer: Key Lessons from Epidemiologic Studies
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yun Kyung Cho</p>(University of Ulsan, Republic of Korea)
@@ -941,8 +941,7 @@ echo '<script type="text/javascript">
                                                 <td>12:00-13:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : Hyung Joon Yoo</span> (CM
-                                                        Hospital, Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Bumjo Oh</span> (Seoul National University, Republic of Korea)</p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -1036,13 +1035,23 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 5 : Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
-                                                    <p><span class="bold">Chairpersons : Young Seol Kim</span> <span class="nowrap">(Kyung Hee University, Republic of Korea),</span> <span class="bold">Kyung-Hee Park</span> (Hallym University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p><span class="bold">Chairpersons : Young Seol Kim</span>(Kyung Hee University, Republic of Korea), <br><span class="bold">Kyung-Hee Park</span> (Hallym University, Republic of Korea)</p>
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Kyung Hee Park (Hallym University, Republic of Korea), Jin-Wook Kim (Hippocrata Clinic), Yoon Jeong Cho (Daegu Catholic University, Republic of Korea)</p>
+													<ul>
+														<li>The development of new drugs for treating obesity is ongoing, and more potent medications are being introduced. Among them, semaglutide and tirzepatide will soon be available in Korea, and their efficacy has been proven based on various clinical trials. In Symposium 5, we will discuss the efficacy of semaglutide and tirzepatide, as well as expectations and side effects associated with their use. In line with this, we will explore the safety and status of drug abuse when using anti-obesity drugs, which should be considered as important as their efficacy. This symposium will provide an opportunity for us to collectively contemplate the direction for optimal treatment in this field.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. J Obes Metab Syndr. 2023 Jun 30; 32(2): 121–129. Diagnosis of Obesity: 2022 Update of Clinical Practice Guidelines for Obesity by the Korean Society for the Study of Obesity<br/>
+															2. Lancet Diabetes Endocrinol 2022; 10: 193–206. Semaglutide once a week in adults with overweight or obesity, with or without type 2 diabetes in an east Asian population (STEP 6): a randomised, double-blind, double-dummy, placebo-controlled, phase 3a trial<br/>
+															3. Diabetes Obes Metab. 2023 Apr;25(4):1056-1067. Safety and efficacy analyses across age and body mass index subgroups in East Asian participants with type 2 diabetes in the phase 3 tirzepatide studies (SURPASS programme)<br/>
+															4. Diabetes Obes Metab.2021;23:1232–1241.Cardiovascular safety of evogliptin in patients with type 2 diabetes: A nationwide cohort study.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1229,7 +1238,7 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 9 : Obesity in Special Conditions</p>
-                                                    <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Moon-Kyu Lee</span> (Eulji University, Republic of Korea), <br><span class="bold">In Ju Kim</span> (Pusan National University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1501,7 +1510,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
-                                                    <p><span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Republic of Korea), <span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Republic of Korea), <br><span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1740,7 +1749,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Novel Enhanced SGLT2 Inhibitor 'Enavogliflozin'
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yun Kyung Cho</p>(Univeristy of Ulsan, Republic of Korea)
@@ -1843,7 +1852,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
                                                                     <td class="bold">
-                                                                        TBD<!-- The Proinflammatory Effects of Chronic Excessive Exercise -->
+                                                                        Beyond Weight Loss: Unveiling the Vital Roles of Exercise in Conquering Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sukho Lee</p>(Texas A & M University, USA)
@@ -2018,8 +2027,8 @@ echo '<script type="text/javascript">
                                             <tr class="green_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 10 : Neuropsychological Aspect of Obesity</p>
-                                                    <p><span class="bold">Chairperson : Min-Seon Kim</span> (University of Ulsan, Republic of Korea)</p>
+                                                    <p class="font_20 bold">Symposium 10 : The Effect of Obesity and HDL Concentration on AD Pathology</p>
+                                                    <p><span class="bold">Chairpersons : Min-Seon Kim</span> (University of Ulsan, Republic of Korea), <br><span class="bold">Kyu Chang Won</span> (Yeungnam University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2062,7 +2071,7 @@ echo '<script type="text/javascript">
 																		<!-- Therapeutic Potentials of Anti-diabetic Drugs for Alzheimer's Disease -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Vasileios Papaliagkas</p>(International Hellenic University, Greece)
+                                                                        <p class="bold">Yeon Hur</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2146,7 +2155,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -2156,14 +2165,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">
-                                                                        <!-- The Combination of DPP-4 Inhibitor Plus SGLT2
-                                                                        Inhibitor as Attractive Treatment Option: From
-                                                                        Rationale to Clinical Aspects -->
-                                                                    </td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Suk Chon</p>(Kyung Hee
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Seo Young Kang</p> (Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -2647,7 +2651,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 7 : Metabolic Signaling in Obesity-related Diseases</p>
-                                                    <p><span class="bold">Chairperson : Yun-Hee Lee</span> (Seoul National University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Yun-Hee Lee</span> (Seoul National University, Republic of Korea), <br><span class="bold">Chul Sik Kim</span> (Yonsei University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -2875,7 +2879,7 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 11 : Social and Environmental Determinants: Nutritional View of Obesity</p>
-                                                    <p><span class="bold">Chairpersons : Cho-il Kim</span> (Seoul National University, Republic of Korea), <span class="bold">Eun Mi Kim</span> (Kangbuk Samsung Hospital, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Cho-il Kim</span> (Seoul National University, Republic of Korea), <br><span class="bold">Eun Mi Kim</span> (Kangbuk Samsung Hospital, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2991,7 +2995,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 4 : The Myosteatosis: Novel Aspect of Sarcopenia and Obesity</p>
-                                                    <p><span class="bold">Chairperson : Hyuk-Sang Kwon</span> (The Catholic University of Korea, Republic of Korea), <span class="bold">Jee-Hyun Kang</span> (Konyang University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Hyuk-Sang Kwon</span> (The Catholic University of Korea, Republic of Korea), <br><span class="bold">Jee-Hyun Kang</span> (Konyang University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -3097,11 +3101,9 @@ echo '<script type="text/javascript">
                                                 <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentatoin 1</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairperson : Yeongsook Yoon</span> (Inje
-                                                        Univeristy, Korea) /
-                                                        <span class="bold">Jin Wook Kim</span> (Eulji University, Korea)
-                                                    </p> -->
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Yeong Sook Yoon</span> (Inje University, Republic of Korea), <br><span class="bold">Yang-Im Hur</span> (CHA University, Republic of Korea)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -3316,12 +3318,9 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 12 : Obesity : Transition from Adolescence to Young Adult</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairperson : Eun-Jung Rhee</span>
-                                                        (Sungkyunkwan University, Korea) /
-                                                        <span class="bold">Kyung Mook Choi</span> (Korea University,
-                                                        Korea)
-                                                    </p> -->
+                                                    <p>
+                                                        <span class="bold">Chairperson : So Chung Chung</span> (Konkuk University, Republic of Korea)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -3355,7 +3354,7 @@ echo '<script type="text/javascript">
 																		Continuous Glucose Monitoring to Understand Obese and Diabetic Adolescents
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Min Sun Kim</p>(Jeonbuk National University, Republic of Korea)
+                                                                        <p class="bold">Minsun Kim</p>(Jeonbuk National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3454,13 +3453,9 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 1 : Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairperson : Kiyoung Lee</span>
-                                                        (Gachon
-                                                        University, Korea) /
-                                                        <span class="bold">Yang Im Hur</span> (CHA
-                                                        University, Korea)
-                                                    </p> -->
+                                                    <p>
+                                                        <span class="bold">Chairperson : Suk Chon</span> (Kyung Hee University, Republic of Korea)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -3508,7 +3503,7 @@ echo '<script type="text/javascript">
                                                                         Disease; DAPA-CKD -->FAQ Finder : A Case-based Approach to Prescription of Combination Phentermine plus Topiramate ER
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">So Hyun Chun</p>(Sungkyunkwan University, Republic of Korea)
+                                                                        <p class="bold">Sohyun Chun</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -3544,13 +3539,9 @@ echo '<script type="text/javascript">
                                                 <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentatoin 2</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairperson : Hae-Jin Ko</span>
-                                                        (Kyungpook
-                                                        National University, Korea) /
-                                                        <span class="bold">Beom-Taek Kim</span> (Ajou
-                                                        University, Korea)
-                                                    </p> -->
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Jang Won Son</span> (The Catholic University of Korea, Republic of Korea), <br><span class="bold">Jeong Hwan Park</span> (Hanyang University, Republic of Korea)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -3760,8 +3751,8 @@ echo '<script type="text/javascript">
                                             <tr class="purple_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Obesity Treatment Guidelines Symposium : Behind the Scenes: The Journey of Evolution and Revising Obesity Guidelines</p>
-                                                    <p><span class="bold">Chairperson : Jong-Hwa Kim</span> (Bucheon Sejong Hospital, Republic of Korea), <span class="bold">Hyuktae Kwon</span> (Seoul National University, Republic of Korea)</p>
+                                                    <p class="font_20 bold mb0">Obesity Treatment Guidelines Symposium : <br>Behind the Scenes: The Journey of Evolution and Revising Obesity Guidelines</p>
+                                                    <p><span class="bold">Chairpersons : Jong-Hwa Kim</span> (Bucheon Sejong Hospital, Republic of Korea), <br><span class="bold">Hyuktae Kwon</span> (Seoul National University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -3838,7 +3829,9 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Joint Symposium EASO</p>
+                                                    <p><span class="bold">Chairperson : Jason Halford</span> (University of Leeds, UK)</p>
                                                 </td>
+                                                
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
@@ -3846,7 +3839,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
 											<tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -3856,23 +3849,23 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r"></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r"><p class="bold">Luca Busetto</p> (Italy)</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r"></td>
-                                                                </tr>
-																<tr>
-                                                                    <td>10:10-10:35</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r"></td>
-                                                                </tr>
-																<tr>
-                                                                    <td>10:35-10:50</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r"><p class="bold">Jun Hwa Hong</p> (Eulji University, Republic of Korea)</td>
+                                                                </tr>                             
+																<tr>                              
+                                                                    <td>10:10-10:35</td> 
+                                                                    <td class="bold">TBD </td>
+                                                                    <td class="text_r"><p class="bold">Jason Halford</p> (University of Leeds, UK)</td>
+                                                                </tr>                             
+																<tr>                              
+                                                                    <td>10:35-10:50</td> 
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td class="text_r"></td>
+                                                                    <td class="text_r"><p class="bold"></p></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -4558,9 +4551,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:50-12:50</td>
                                                                     <td class="bold">
-                                                                        <!-- Phentermine/Topiramate Extended Release for the
-                                                                        Treatment of Obesity
-                                                                        : A Randomized, Placebo-Controlled Trial -->TBD
+                                                                        In-Depth Review of Phentermine plus Topiramate ER
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sung Hoon Yu</p>(Hanyang University, Republic of Korea)
@@ -4820,7 +4811,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Triple Hormone Receptor Agonist for Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Se Hee Min</p>(Univeristy of Ulsan, Republic of Korea)
                                                                     </td>
@@ -5139,13 +5130,22 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 14 : Promoting Healthy Muscle and Liver Metabolism</p>
-                                                    <p><span class="bold">Chairpersons : Kijin Kim</span> (Keimyung University, Republic of Korea), <span class="bold">Yuna Shin</span> (Dankook University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p><span class="bold">Chairpersons : Kijin Kim</span> (Keimyung University, Republic of Korea), <br><span class="bold">Yun- A Shin</span> (Dankook University, Republic of Korea)</p>
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Il-Young Kim (Gachon University, Republic of Korea), Seung-Hwan Lee (The Catholic University of Korea, Republic of Korea)</p>
+													<ul>
+														<li>In this session, latest research on the important role of optimal provision of nutrition (e.g., essential amino acids and proteins) and/or exercise for one’s overall metabolic health with the focus on skeletal muscle and the liver will be discussed. The two most important metabolic organs in the body will be discussed by world-renowned metabolic researchers who have extensive experience in the use of stable isotope tracer methodology and/or traditional biological tools in dissecting in vivo human metabolism in relation to various aspects of human (animal) pathophysiology, such as obesity, insulin resistance, type 2 diabetes, NAFLD, and sarcopenia.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Weijs PJ, Wolfe RR. Exploration of the protein requirement during weight loss in obese adults. Clin Nutr 35(2):394-8, Apr 2016. PMID:25788405.<br/>
+															2. Fordham TM et al., Metabolic effects of an essential amino acid supplement in adolescents with PCOS and obesity, Obesity, 2023 (in revision).<br/>
+															3. Jang et al., Balanced Free Essential Amino Acids and Resistance Exercise Training Synergistically Improve Dexamethasone-Induced Impairments in Muscle Strength, Endurance, and Insulin Sensitivity in Mice, Int J Mol Sci 202. PMID: 36077132
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -5585,7 +5585,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 18 : Neuroscience</p>
-                                                    <p><span class="bold">Chairpersons : Eun-Jung Rhee</span> (Sungkyunkwan University, Republic of Korea), <span class="bold">Hyung Jin Choi</span> (Seoul National University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Eun-Jung Rhee</span> (Sungkyunkwan University, Republic of Korea), <br><span class="bold">Hyung Jin Choi</span> (Seoul National University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -6005,10 +6005,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                        Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities
+                                                                        Nutrition Education Strategies for the Elderly and the Disabled in Social Welfare Facilities
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Minsun Jeon</p>(Chungnam National University, Republic of Korea)
+                                                                        <p class="bold">Min Sun Jeon</p>(Chungnam National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6161,7 +6161,7 @@ echo '<script type="text/javascript">
                                                 <td>11:50-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 6</p>
-                                                    <!-- <p><span class="bold">Chairperson : Ga Eun Nam</span> (Korea University, Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Ho-Young Son</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -6405,7 +6405,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 19 : Diversity and Challenges of Pediatric Obesity</p>
-                                                    <p><span class="bold">Chairpersons : Sochung Chung</span> (Konkuk University, Republic of Korea), <span class="bold">Yong Hee Hong</span> (Soonchunhyang University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Yong Hee Hong</span> (Soonchunhyang University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -6600,7 +6600,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 16 : International Collaboration</p>
-                                                    <p><span class="bold">Chairpersons : Luca Busetto</span> (Italy), <span class="bold">Soo Lim</span> (Seoul National University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Luca Busetto</span> (Italy), <br><span class="bold">Soo Lim</span> (Seoul National University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -6712,12 +6712,9 @@ echo '<script type="text/javascript">
                                                 <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 3</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairperson : Jinkyung Cho</span> (Korea
-                                                        Institute of Sport Science, Korea) /
-                                                        <span class="bold">You-Cheol Hwang</span> (Kyung Hee University,
-                                                        Korea)
-                                                    </p> -->
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Bo Kyung Koo</span> (Seoul National University, Republic of Korea), <br><span class="bold">Jun Sung Moon</span> (Yeungnam University, Republic of Korea)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -6835,7 +6832,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 20 : Basic Exercise with Obesity</p>
-                                                    <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Republic of Korea), <span class="bold">Jeong Ah Lee</span> (Kyung Hee University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Republic of Korea), <br><span class="bold">Jeonga Lee</span> (Kyung Hee University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -7018,7 +7015,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 3 : Is Semaglutide Changing the Paradigm Of Obesity Management?</p>
-                                                   <p><span class="bold">Chairpersons : Young-Sung Suh</span> (Keimyung University, Republic of Korea), <span class="bold">Seung-Hwan Lee</span> (The Catholic University of Korea, Republic of Korea)</p>
+                                                   <p><span class="bold">Chairpersons : Young-Sung Suh</span> (Keimyung University, Republic of Korea), <br><span class="bold">Seung-Hwan Lee</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -7028,7 +7025,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -7038,34 +7035,23 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
-                                                                    <td class="bold">
-                                                                        <!-- Obesity and White Adipose Tissue- Links to
-                                                                        Comorbidities -->
-                                                                    </td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold"> Mikael Ryden</p>(Karolinska
-                                                                        University, Sweden) -->
+                                                                        <p class="bold">Sean Wharton</p> (Wharton Medical Clinic, Canada)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:50-10:20</td>
-                                                                    <td class="bold">
-                                                                        <!-- Benefits Beyond Weight Loss with GLP-1RA -->
-                                                                    </td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Chang Hee Jung</p>(University of
-                                                                        Ulsan, Korea) -->
+                                                                        <p class="bold">HyukTae Kwon</p> (Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:20-10:50</td>
-                                                                    <td class="bold">
-                                                                        <!-- GLP-1RA for Obesity Management, How can We
-                                                                        Maximize Its Clinical Value? -->
-                                                                    </td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Hyuktae Kwon</p>(Seoul National
-                                                                        University, Korea) -->
+                                                                        <p class="bold">TBD</p>
                                                                     </td>
                                                                 </tr>
                                                                <!--  <tr>
@@ -7101,11 +7087,9 @@ echo '<script type="text/javascript">
                                                 <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 4</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairperson : Young-Jun Rhie</span> (Korea University, Korea) /
-                                                        <span class="bold">Joung Hee Lee</span> (Kunsan National
-                                                        University, Korea)
-                                                    </p> -->
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Oh Yoen Kim</span> (Dong-A University, Republic of Korea), <br><span class="bold">Ji Wan Yun</span> (Seoul National University, Republic of Korea)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>

@@ -1,5 +1,28 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
+<?php
+//$today= "2023-09-09";
+$today=date("Y-m-d");
+
+$select_program_query = "
+                            SELECT p.idx, program_name, program_tag_name, chairpersons, program_place_idx, pp.program_place_name ,program_date, 
+                                   date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time,
+                                   (CASE
+                                       WHEN program_date = '2023-09-07' THEN 'day_1'
+                                       WHEN program_date = '2023-09-08' THEN 'day_2'
+                                       WHEN program_date = '2023-09-09' THEN 'day_3'
+                                       ELSE ''
+                                       END
+                                   ) as day
+                            FROM program p
+                            LEFT JOIN program_place pp on p.program_place_idx = pp.idx
+                            WHERE p.is_deleted = 'N'
+                            AND program_date = '{$today}'
+                            ORDER BY program_date, start_time ASC, program_name ASC
+                            ";
+$program_list = get_data($select_program_query);
+
+?>
 
 <!-- HUBDNCAJY : App - HAPPENING NOW 페이지 -->
 <section class="container app_version app_happening app_scientific">
@@ -13,48 +36,44 @@
 		<div class="schedule_area">
 			<!-- 진행중인 세션 있을 시 화면 -->
 			<ul class="program_detail_ul">
-				<li name="plenary_lecture_1" class="day_2">
+                <?php
+                    if($program_list !== array()){
+                        foreach ($program_list as $program){
+                ?>
+				<li name="<?=$program['program_tag_name']?>" class="<?=$program['day']?>">
 					<div class="main">
 						<button class="detail_btn"></button>
-						<p class="title">Plenary Lecture 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Thiruma V. Arumugam (La Trobe University, Australia), <br>Thiruma V. Arumugam (La Trobe University, Australia)</p>
+						<p class="title"><?=$program['program_name']?></p>
+                        <?php
+                            if($program['chairpersons']!==null){
+                        ?>
+						<p class="chairperson"><span class="bold">Chairpersons:</span> <?=$program['chairpersons']?></p>
+                        <?php
+                        }
+                        ?>
 						<div class="info">
-							<span class="time">08:30-09:10</span>	
-							<span class="branch">Room 1</span>	
+							<span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
+							<span class="branch"><?=$program['program_place_name']?></span>
 						</div>
 					</div>
-					<input type="hidden" name="e" value="room1">
+					<input type="hidden" name="e" value="<?=$program['program_place_name']?>">
 				</li>
-				<li name="plenary_lecture_1_2" class="day_2">
-					<div class="main">
-						<button class="detail_btn"></button>
-						<p class="title">Plenary Lecture 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Thiruma V. Arumugam (La Trobe University, Australia), <br>Thiruma V. Arumugam (La Trobe University, Australia)</p>
-						<div class="info">
-							<span class="time">08:30-09:10</span>	
-							<span class="branch">Room 2</span>	
-						</div>
-					</div>
-					<input type="hidden" name="e" value="room2">
-				</li>
-				<li name="plenary_lecture_1_3" class="day_2">
-					<div class="main">
-						<button class="detail_btn"></button>
-						<p class="title">Plenary Lecture 1</p>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> Thiruma V. Arumugam (La Trobe University, Australia), <br>Thiruma V. Arumugam (La Trobe University, Australia)</p>
-						<div class="info">
-							<span class="time">08:30-09:10</span>	
-							<span class="branch">Room 3</span>	
-						</div>
-					</div>
-					<input type="hidden" name="e" value="room3">
-				</li>
+                <?php
+                    }
+                }
+                ?>
+                <?php
+                if($program_list === array()){
+                ?>
 			</ul>
 			<!-- 진행중인 세션 없을 시 화면 -->
-			<!--	<div class="no_data">
+			<div class="no_data">
 				<img src="/main/img/icons/icon_alarm_clock2.svg" alt="">
 				<p>To be<br>announced</p>
-			</div> -->
+			</div>
+            <?php
+            }
+            ?>
 		</div>
 	</div>
 </section>

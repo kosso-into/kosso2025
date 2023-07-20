@@ -1,16 +1,41 @@
 <?php
-include_once('./include/head.php');
-include_once('./include/header.php');
+	include_once('./include/head.php');
+
+	$session_user = $_SESSION['USER'] ?? NULL;
+	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+
+	//230714 HUBDNC 앱 로그인 시 파라미터 추가 된 부분
+	if(!empty($session_user) && $session_app_type == 'Y') {
+		include_once('./include/app_header.php');
+	} else {
+		include_once('./include/header.php');
+	}
+
+	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
 ?>
 
 <!-- app일 시 app_version 클래스 추가 -->
-<section class="container registration registration_rating_guides">
+<section class="container registration registration_rating_guides <?= $add_section_class; ?>">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-<!-- 	<div class="app_title_box"> -->
-<!-- 		<h2 class="app_title">평점 안내<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
-<!-- 	</div> -->
-	<!-- APP에선 h1.page_title 주석처리 후 위 app 메뉴 탭 주석해제 -->
+<?php
+	if(!empty($session_user) && $session_app_type == 'Y') {
+?>
+	<div class="app_title_box">
+		<h2 class="app_title">평점 안내<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+	</div>
+<?php
+	} 
+?>
+	<!-- APP에선 h1.page_title{평점 안내} 주석처리 후 위 app 메뉴 탭 주석해제 -->
+	<!-- HUBDNCHYJ : Web 에서는 이 클래스 사용하시면 됩니다. -->
+<?php
+	if (!empty($session_app_type) && $session_app_type == 'N') {
+		// Web일때
+?>
 	<h1 class="page_title">평점 안내</h1>
+<?php
+	}
+?>
 	<!-- <div class="inner"> -->
 	<!-- 	<img class="coming" src="./img/coming.png"> -->
 	<!-- </div> -->
@@ -153,4 +178,11 @@ include_once('./include/header.php');
 </section>
 
 
-<?php include_once('./include/footer.php'); ?>
+<?php 
+    if (!empty($session_app_type) && $session_app_type == 'Y') {
+        // mo일때
+        include_once('./include/app_footer.php'); 
+    }else {
+        include_once('./include/footer.php');
+    }
+?>

@@ -1,39 +1,88 @@
-<?php include_once('./include/head.php'); ?>
-<!-- HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 -->
-<?php include_once('./include/header.php'); ?>
+<?php 
+	include_once('./include/head.php'); 
+	// HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 
+	$session_user = $_SESSION['USER'] ?? NULL;
+	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+
+	if (!empty($session_user) && $session_app_type == 'Y') {
+		include_once('./include/app_header.php');
+	} else {
+		include_once('./include/header.php');
+	}
+
+	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
+?>
+
+<style>
+	section.app_version .inner {
+		padding-top:0 !important;
+	}
+</style>
 
 <!-- HUBDNCHYJ : App 일 경우 padding/margin을 조정하는 app_version 클래스가 container에 들어가야 함 -->
-<section class="container program_glance">
+<section class="container program_glance <?= $add_section_class; ?>">
 	<!-- HUBDNCHYJ : App 일 경우 타이틀 영역 입니다. -->
-<!-- 	<div class="app_title_box"> -->
-<!-- 		<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2> -->
-<!-- 		<ul class="app_menu_tab langth_2"> -->
-<!-- 			<li class="on"><a href="./program_glance.php">Program at a Glance</a></li> -->
-<!-- 			<li><a href="./program_detail.php">Scientific Program</a></li> -->
-<!-- 		</ul> -->
-<!-- 	</div> -->
-    <h1 class="page_title">Program at a Glance</h1>
+<?php
+	if (!empty($session_app_type) && $session_app_type == 'Y') {
+		// mobile일때
+?>
+		<div class="app_title_box">
+			<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+			<ul class="app_menu_tab langth_2">
+				<li class="on"><a href="./program_glance.php">Program at a Glance</a></li>
+				<li><a href="./app_program_detail.php">Scientific Program</a></li>
+			</ul>
+		</div>
+<?php
+	} else {
+		// pc일때
+?>
+		<h1 class="page_title">Program at a Glance</h1>
+<?php
+	}
+?>
 	<!-- HUBDNCHYJ : App 에서는 이 클래스 사용하시면 됩니다. -->
-<!-- 	<ul class="app_tab program"> -->
-<!-- 		<li class="row2 on"><a href="javascript:;">All Days</a></li> -->
-<!-- 		<li><a href="javascript:;">Sep.7(Thu)</a></li> -->
-<!-- 		<li><a href="javascript:;">Sep.8(Fri)</a></li> -->
-<!-- 		<li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li> -->
-<!-- 	</ul> -->
+<?php
+	if (!empty($session_app_type) && $session_app_type == 'Y') {
+		// mobile일때
+?>
+		<ul class="app_tab program glance" >
+			<li class="row2 all_days on"><a href="javascript:;">All Days</a></li>
+			<li><a href="javascript:;">Sep.7(Thu)</a></li>
+			<li><a href="javascript:;">Sep.8(Fri)</a></li>
+			<li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li>
+		</ul>
+<?php
+	}
+?>
     <div class="inner">
         <div class="program_wrap section">
             <div class="scroll_table">
-                <ul class="tab_green long centerT program_glance">
-                					<li class="on"><a href="javascript:;">All Days<br/>September 7 (Thu) ~ 9 (Sat)</a></li>
-                					<li><a href="javascript:;">Sep.7 (Thu)</a></li>
-                					<li><a href="javascript:;">Sep.8 (Fri)</a></li>
-                					<li><a href="javascript:;">Sep.9 (Sat)</a></li>
-                				</ul>
+<?php
+			if (!empty($session_app_type) && $session_app_type == 'N') {
+			// pc일때
+?>
+				<ul class="tab_green long centerT program_glance">
+					<li class="on"><a href="javascript:;">All Days<br/>September 7 (Thu) ~ 9 (Sat)</a></li>
+					<li><a href="javascript:;">Sep.7 (Thu)</a></li>
+					<li><a href="javascript:;">Sep.8 (Fri)</a></li>
+					<li><a href="javascript:;">Sep.9 (Sat)</a></li>
+				</ul>
+<?php
+			}
+?>
 				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
-				<!-- <div class="rightT mb20">
-				                    <button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0622.pdf')"
-				                        class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
-				                </div> -->
+<?php
+			if (!empty($session_app_type) && $session_app_type == 'N') {
+			// pc일때
+?>
+				<div class="rightT mb20">
+					<button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0718.pdf')"
+						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
+				</div>
+<?php
+			}
+?>
 				<div class="program_table_wrap">
 					<table class="program_table main-table">
 						<colgroup>
@@ -61,7 +110,7 @@
 						<tbody name="day" class="day_tbody day_1">
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />00-17<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">16:00-17:30</div>
 								</td>
 								<td class="purple_bg pointer" name="pre_congress_symposium_1">
 									Pre-congress<br/>Symposium 1
@@ -79,13 +128,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17<img src="./img/icons/icon_colons.svg" class="colons_img" />30-18<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">17:30-18:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />00-18<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18:00-18:30</div>
 								</td>
 								<td class="sky_bg pointer" name="satellite_symposium_1">
 									Satellite<br />Symposium 1
@@ -103,7 +152,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />30-19<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">18:30-19:00</div>
 								</td>
 								<td class="sky_bg pointer" name="satellite_symposium_1">
 									Satellite<br />Symposium 2
@@ -118,7 +167,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">19<img src="./img/icons/icon_colons.svg" class="colons_img" />00-21<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">19:00-21:00</div>
 								</td>
 								<td></td>
 								<td></td>
@@ -143,7 +192,7 @@
 						<tbody name="day" class="day_tbody day_2">
 							<tr>
 								<td>
-									<div class="colons_div">07<img src="./img/icons/icon_colons.svg" class="colons_img" />30-08<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">07:30-08:20</div>
 								</td>
 								<td></td>
 								<td class="sky_bg pointer" name="breakfast_symposium_1">
@@ -161,13 +210,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />20-08<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">08:20-08:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />30-09<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">08:30-09:10</div>
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_1">
 									Plenary Lecture 1 
@@ -182,13 +231,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />10-09<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">09:10-09:20</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />20-10<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_1">
 									Symposium 1 <p>Obesity and Cancer</p>
@@ -218,13 +267,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">10<img src="./img/icons/icon_colons.svg" class="colons_img" />50-11<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">10:50-11:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />00-11<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">11:00-11:10</div>
 								</td>
 								<td colspan="3" class="yellow_bg pointer" name="opening_address">
 									Opening Address
@@ -237,7 +286,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />10-11<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">11:10-11:50</div>
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="keynote_lecture_1">
 									Keynote Lecture 1 
@@ -252,13 +301,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />50-12<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">11:50-12:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">12<img src="./img/icons/icon_colons.svg" class="colons_img" />00-13<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">12:00-13:00</div>
 								</td>
 								<td class="sky_bg pointer" name="luncheon_symposium_1">
 									Luncheon<br />Symposium 1
@@ -279,7 +328,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">13<img src="./img/icons/icon_colons.svg" class="colons_img" />00-14<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">13:00-14:00</div>
 								</td>
 								<!-- <td colspan="3" class="green_bg" name="poster_exhibition_d2"> -->
 								<!-- 	<!-- 	Poster Exhibition -->
@@ -308,7 +357,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">14<img src="./img/icons/icon_colons.svg" class="colons_img" />00-15<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">14:00-15:30</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_5">
 									Symposium 5 <p>Emerging Anti-obesity Drugs: Expectations and Apprehensions</p>
@@ -338,13 +387,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />30-15<img src="./img/icons/icon_colons.svg" class="colons_img" />40</div>
+									<div class="colons_div">15:30-15:40</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />40-16<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">15:40-16:20</div>
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_2">
 									Plenary Lecture 2 
@@ -359,13 +408,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />20-16<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">16:20-16:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />30-18<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_9">
 									Symposium 9 <p>Obesity in Special Conditions</p>
@@ -398,13 +447,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />00-18<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18:00-18:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">18<img src="./img/icons/icon_colons.svg" class="colons_img" />30-20<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">18:30-20:30</div>
 								</td>
 								<td></td>
 								<td></td>
@@ -430,7 +479,7 @@
 						<tbody name="day" class="day_tbody day_3">
 							<tr>
 								<td>
-									<div class="colons_div">07<img src="./img/icons/icon_colons.svg" class="colons_img" />30-08<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">07:30-08:20</div>
 								</td>
 								<td class="sky_bg pointer" name="breakfast_symposium_3">
 									Breakfast<br />Symposium 3
@@ -451,13 +500,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />20-08<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">08:20-08:30</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">08<img src="./img/icons/icon_colons.svg" class="colons_img" />30-09<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">08:30-09:10</div>
 								</td>
 								<td class="pink_bg pointer" name="plenary_lecture_3" colspan="3">
 									Plenary Lecture 3 
@@ -472,13 +521,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />10-09<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">09:10-09:20</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">09<img src="./img/icons/icon_colons.svg" class="colons_img" />20-10<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_13">
 									Symposium 13 <p>Health Consequences of Obesity</p>
@@ -508,13 +557,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">10<img src="./img/icons/icon_colons.svg" class="colons_img" />50-11<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">10:50-11:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />00-11<img src="./img/icons/icon_colons.svg" class="colons_img" />40</div>
+									<div class="colons_div">11:00-11:40</div>
 								</td>
 								<td class="pink_bg pointer" name="keynote_lecture_2" colspan="3">
 									Keynote Lecture 2 <p class="bold">Decoding Adipocyte Plasticity: YAP/TAZ's Dual Control over Energy Storage and Leptin</p>
@@ -528,13 +577,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">14<img src="./img/icons/icon_colons.svg" class="colons_img" />40-11<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">14:40-11:50</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11<img src="./img/icons/icon_colons.svg" class="colons_img" />50-12<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">11:50-12:50</div>
 								</td>
 								<td class="sky_bg pointer" name="luncheon_symposium_4">
 									Luncheon<br />Symposium 4
@@ -555,7 +604,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">12<img src="./img/icons/icon_colons.svg" class="colons_img" />50-13<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">12:50-13:50</div>
 								</td>
 								<!-- <td colspan="3" class="green_bg" name="poster_exhibition_d3"> -->
 								<!-- 	Poster Exhibition -->
@@ -584,7 +633,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">13<img src="./img/icons/icon_colons.svg" class="colons_img" />50-14<img src="./img/icons/icon_colons.svg" class="colons_img" />30</div>
+									<div class="colons_div">13:50-14:30</div>
 								</td>
 								<td class="pink_bg pointer" name="keynote_lecture_3" colspan="3">
 									Keynote Lecture 3 
@@ -618,7 +667,7 @@
 							<!-- </tr> -->
 							<tr>
 								<td>
-									<div class="colons_div">14<img src="./img/icons/icon_colons.svg" class="colons_img" />30-15<img src="./img/icons/icon_colons.svg" class="colons_img" />10</div>
+									<div class="colons_div">14:30-15:10</div>
 								</td>
 								<!-- <td>15:20-15:50</td> -->
 								<td class="pink_bg pointer" name="keynote_lecture_4" colspan="3">
@@ -634,13 +683,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />10-15<img src="./img/icons/icon_colons.svg" class="colons_img" />20</div>
+									<div class="colons_div">15:10-15:20</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">15<img src="./img/icons/icon_colons.svg" class="colons_img" />20-16<img src="./img/icons/icon_colons.svg" class="colons_img" />50</div>
+									<div class="colons_div">15:20-16:50</div>
 								</td>
 								<td class="green_bg pointer" name="symposium_17">
 									Symposium 17 
@@ -671,13 +720,13 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">16<img src="./img/icons/icon_colons.svg" class="colons_img" />50-17<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">16:50-17:00</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17<img src="./img/icons/icon_colons.svg" class="colons_img" />00-17<img src="./img/icons/icon_colons.svg" class="colons_img" />40</div>
+									<div class="colons_div">17:00-17:40</div>
 								</td>
 								<td class="pink_bg pointer" name="plenary_lecture_4" colspan="3">
 									Plenary Lecture 4
@@ -692,7 +741,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17<img src="./img/icons/icon_colons.svg" class="colons_img" />40-18<img src="./img/icons/icon_colons.svg" class="colons_img" />00</div>
+									<div class="colons_div">17:40-18:00</div>
 								</td>
 								<td class="yellow_bg pointer" name="closing_ceremony" colspan="3">
 									Closing Ceremony
@@ -715,14 +764,21 @@
 </section>
 
 <!-- HUBDNCHYJ : App 일때만 노출되는 팝업 입니다. -->
-<!-- <div class="popup hold_pop" style="display:block;"> <!-- --> -->
-<!-- 	<div class="pop_bg"></div> -->
-<!-- 	<div class="pop_contents transparent center_t"> -->
-<!-- 		<img src="./img/icons/icon_resize.png" alt=""> -->
-<!-- 		<p class="white_t center_t">Touch on a session to check the details. <br/>Use your fingers to zoom in/out</p> -->
-<!-- 	</div> -->
-<!-- </div> -->
-
+<?php
+	if (!empty($session_app_type) && $session_app_type == 'Y') {
+	// mo일때
+?>
+		<div class="popup hold_pop" style="display:block;"> <!-- -->
+			<div class="pop_bg"></div>
+			<div class="pop_contents transparent center_t">
+				<img src="./img/icons/icon_resize.png" alt="">
+				<p class="white_t center_t">Touch on a session to check the details. <br/>Use your fingers to zoom in/out</p>
+			</div>
+		</div>
+<?php
+	}
+?>
+<input type="hidden" name="session_app_type" value="<?= $session_app_type ?>">
 <script>
 $(document).ready(function() {
 	/*$(window).resize(function(){
@@ -764,12 +820,114 @@ $(document).ready(function() {
 		}
 
 	});
+
+
+	
+
+
+
+
+	// Program At a Glance 줌 스크립트
+
+	var height_array = [];
+	var tbody_height;
+	var table_width = $(".program_table").outerWidth();
+
+	$(".program_table tbody").each(function(){
+		tbody_height = $(this).outerHeight();
+		height_array.push(tbody_height)
+
+		$(".app_tab.glance li").click(function(){
+			var i = $(this).index()-1;
+			$(".program_table").css({"width":"auto", "height":"auto"})
+			// $(".program_table").css({"width":table_width, "height":height_array[i]})
+			$(".program_table td, .program_table th").css({"font-size":"8px", "line-height":"12px"})
+			$(".program_table td p").css({"font-size":"6px", "line-height":"10px"})
+
+			// $(".program_table").trigger("touchmove");
+
+			//alert(table_width)
+			//alert(table_Height)
+			//alert(table_font_size)
+			//alert(table_font_size_p)
+			console.log(height_array[i]);
+
+		}); 
+	});
+
+	//pinch 진행 상태
+	let scaling  = false;
+	//pinch 초기 거리
+	let setDist = 0;
+
+	$(document).on("touchstart", ".program_table", function(event){
+		if(event.originalEvent.touches.length  === 2){
+			scaling  = true;
+		}
+	})
+
+	var table_font_size = $(".program_table td").css("font-size");
+	var table_font_size_p = $(".program_table td p").css("font-size")
+	var table_line_height = $(".program_table td").css("line-height");
+
+	$(document).on("touchmove", ".program_table", function(event){
+		if(scaling){
+			var dist = Math.hypot(
+				event.originalEvent.touches[0].pageX - event.originalEvent .touches[1].pageX,
+				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
+			);
+			dist = Math.floor(dist/20);
+			if(setDist == 0) setDist = dist;
+			fontSize = $(".program_table td").css("font-size");
+			fontSizeP = $(".program_table td p").css("font-size")
+			imgWidth = $(".program_table")[0].clientWidth;
+			imgHeight = $(".program_table")[0].clientHeight;
+			// alert(parseInt(fontSize))
+			if(setDist < dist){
+				if (parseInt(fontSize) <= 16) {
+					$(this).css("width", 1.1*parseFloat(imgWidth));
+					$(this).css("height", 0.8*parseFloat(imgHeight));
+					$(this).find("td").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+					$(this).find("th").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+					$(this).find("td").find("p").css({"font-size": 1.1*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
+					setDist = dist;
+				}
+			} else if(setDist > dist){
+				if (parseInt(fontSize) >= 8)	{
+					$(this).css("width", 0.9*parseFloat(imgWidth));
+					$(this).css("height", 0.5*parseFloat(imgHeight));
+					$(this).find("td").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+					$(this).find("th").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+					$(this).find("td").find("p").css({"font-size": 0.9*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
+					setDist = dist;
+				}
+			}
+		}
+	})
+
+
+
+
+
+
+
 });
 
 function table_location(event, _this, e, day, this_name) {
-    window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
-    // window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	var session_app_type = $("[name=session_app_type]").val();
+	if (session_app_type != "" && session_app_type == 'N') {
+		window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	} else {
+	    window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	}
 }
 </script>
 
-<?php include_once('./include/footer.php'); ?>
+<?php 
+    if (!empty($session_app_type) && $session_app_type == 'Y') {
+        // mo일때
+        include_once('./include/app_footer.php'); 
+    }else {
+        include_once('./include/footer.php');
+    }
+?>

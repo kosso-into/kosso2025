@@ -83,9 +83,11 @@
 			<tbody>
 				<tr>
 					<td colspan="3">
-						<p>
-							<?=htmlspecialchars_decode($detail['content_en'])?>
-						</p>
+						<div class="table_editor_wrap">
+							<p>
+								<?=htmlspecialchars_decode($detail['content_en'])?>
+							</p>
+						</div>
 					</td>
 				</tr>
 			</tbody>

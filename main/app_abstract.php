@@ -2,6 +2,28 @@
 	include_once ("./include/head.php");
 	include_once ("./include/app_header.php");
 ?>
+<script src="./js/script/client/app_abstract.js?v=0.4"></script>
+
+<?php
+
+$category_idx = $_GET['category_idx'] ?? "";
+$row_sql="";
+if($category_idx!==''){
+    $row_sql .= " AND category_idx = {$category_idx}" ;
+}
+
+$select_category_sql = " SELECT idx, title FROM program_category WHERE idx IN(5,6,7,8,9,10,11,12,13,14,15,16,17,18)";
+$category_list = get_data($select_category_sql);
+
+$select_abstract_query="
+                        SELECT idx, category_idx, path, name
+                        FROM viewer_abstract
+                        WHERE is_deleted='N'
+                        AND category_idx IS NOT NULL
+                        {$row_sql}
+                        ";
+$abstract_list = get_data($select_abstract_query);
+?>
 
 <section class="container app_version app_abstract">
 	<div class="app_title_box">
@@ -12,90 +34,56 @@
 			<div class="app_contents_wrap type3">
 				<ul class="app_sort_form app_half_ul">
 					<li>
-						<select name="" id="">
+						<select name="" id="abstract_category" onchange="selectAbstract()">
 							<option value="" hidden>Select Category</option>
 							<option value="">All</option>
-							<option value="">Plenary Lecture</option>
-							<option value="">Keynote Lecture</option>
-							<option value="">Best Article in JOMES</option>
-							<option value="">Symposium</option>
-							<option value="">Obesity Treatment Guidelines Symposium</option>
-							<option value="">Pre-congress Symposium</option>
-							<option value="">Breakfast Symposium</option>
-							<option value="">Luncheon Symposium</option>
-							<option value="">Satellite Symposium</option>
-							<option value="">Sponsored Session</option>
-							<option value="">Joint Symposium</option>
-							<option value="">Oral Presentation</option>
-							<option value="">Guided Poster Presentation</option>
-							<option value="">Poster Exhibition</option>
+                            <?php
+                            foreach ($category_list as $category){
+                                ?>
+							<option value="<?=$category['idx']?>" <?=$category['idx']==$category_idx?"selected":""?>><?=$category['title']?></option>
+                                <?php
+                            }
+                            ?>
 						</select>
 					</li>
 				</ul>
 				<ul class="pdf_list">
-					<li class="pdf plenary_lecture"><a href="javascript:void(0);">Plenary Lecture 1</a></li>
-                    <input type="hidden" name="Plenary Lecture 1" value="http://43.200.170.254/main/download/dummy.pdf" />
-					<li class="pdf"><a href="javascript:void(0);">Plenary Lecture 2</a></li>
-                    <input type="hidden" name="Plenary Lecture 2" value="http://43.200.170.254/main/download/dummy.pdf" />
-					<li class="pdf"><a href="javascript:void(0);">Plenary Lecture 3</a></li>
-                    <input type="hidden" name="Plenary Lecture 3" value="http://43.200.170.254/main/download/dummy.pdf" />
-					<li class="pdf"><a href="javascript:void(0);">Plenary Lecture 4</a></li>
-                    <input type="hidden" name="Plenary Lecture 4" value="http://43.200.170.254/main/download/dummy.pdf" />
-
-                    <li class="pdf"><a href="javascript:void(0);">Keynote Lecture 1</a></li>
-                    <input type="hidden" name="Keynote Lecture 1" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Keynote Lecture 2</a></li>
-                    <input type="hidden" name="Keynote Lecture 2" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Keynote Lecture 3</a></li>
-                    <input type="hidden" name="Keynote Lecture 3" value="http://43.200.170.254/main/download/dummy.pdf" />
-
-                    <li class="pdf"><a href="javascript:void(0);">Best Article in JOMES</a></li>
-                    <input type="hidden" name="Best Article in JOMES" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Symposium</a></li>
-                    <input type="hidden" name="Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Obesity Treatment Guidelines Symposium</a></li>
-                    <input type="hidden" name="Obesity Treatment Guidelines Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Pre-congress Symposium</a></li>
-                    <input type="hidden" name="Pre-congress Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Luncheon Symposium</a></li>
-                    <input type="hidden" name="Luncheon Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Satellite Symposium</a></li>
-                    <input type="hidden" name="Satellite Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Sponsored Session</a></li>
-                    <input type="hidden" name="Sponsored Session" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Joint Symposium</a></li>
-                    <input type="hidden" name="Joint Symposium" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Oral Presentation</a></li>
-                    <input type="hidden" name="Oral Presentation" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Guided Poster Presentation</a></li>
-                    <input type="hidden" name="Guided Poster Presentation" value="http://43.200.170.254/main/download/dummy.pdf" />
-                    <li class="pdf"><a href="javascript:void(0);">Poster Exhibition</a></li>
-                    <input type="hidden" name="Poster Exhibition" value="http://43.200.170.254/main/download/dummy.pdf" />
+                    <?php
+                        foreach ($abstract_list as $abstract){
+                    ?>
+					<li class="pdf"><a href="<?=$abstract['path']?>" class="pdf_view"><?=$abstract['name']?></a></li>
+                    <?php
+                    }
+                    ?>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
+
 <script>
-    $(document).on("click",".pdf",function(){
-        let path = $(this).next().val();
-        openPDF_ios(path);
-    });
+    $(document).ready(function() {
+        $(".pdf_view").click(function(event){
+            event.preventDefault();
+            let path = event.target.href;
+            openPDF(path);
+        });
 
+        function openPDF(path) {
+            // let path = e.target.href;
 
-    function openPDF_Android(path){
-    AndroidScript.openPDF(path);
-    }
-
-    function openPDF_ios(path){
-        try{
-            webkit.messageHandlers.openPDF.postMessage(path);
-        } catch (err){
-            alert(err);
+            if (typeof (window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+                window.AndroidScript.openPDF(path);
+            } else if (window.webkit && window.webkit.messageHandlers != null) {
+                try {
+                    window.webkit.messageHandlers.openPDF.postMessage(path);
+                } catch (err) {
+                    console.log(err);
+                }
+            }
         }
-    }
+    })
 </script>
-
 <?php
 	include_once ("./include/app_footer.php");
 ?>

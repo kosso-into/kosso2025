@@ -128,7 +128,7 @@ table .phone_num input[type="text"] {width:calc(100% - 85px);}
 
 /* APP */
 /* app_notice*/
-.app_pin_btn {min-width:80px; height:35px; background: #1E1E1E url("../img/icon_thumbtack.svg") no-repeat center; text-indent:-9999px;}
+.app_pin_btn {min-width:35px; height:35px; background: #1E1E1E url("../img/icon_thumbtack.svg") no-repeat center; text-indent:-9999px;}
 .app_pin_btn.on {background-color: rgba(255,192,0); border-color:rgba(255,192,0);}
 .app_notice .list_table.app thead tr th:not(:first-child), .app_notice .list_table.app tbody tr td:not(:first-child) {border-left: 1px solid #ccc;}
 .app_notice .list_table.app td.notice_title {max-width:545px;}

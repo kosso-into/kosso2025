@@ -70,23 +70,24 @@ if($_POST["flag"] == "favorite"){
         }
     }
 
-} else if($_POST["flag"] == "select"){
+} else if($_POST["flag"] === "select"){
     $member_idx = $_SESSION["USER"]["idx"];
     $keywords = $_POST["keywords"];
 
     $row_sql = "";
 
     if($keywords != ""){
-        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%') ";
+        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%' OR nation LIKE '%{$keywords}%') ";
     }
 
     $select_keywords_query = "
-                                SELECT isp.idx, program_contents_idx, last_name, first_name, nation_no, affiliation, LEFT(first_name, 1) AS initial,
+                                SELECT DISTINCT LEFT(first_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, nation, affiliation, 
                                     (CASE
                                          WHEN fisp.idx IS NULL THEN 'N'
                                          ELSE 'Y'
                                             END
-                                    ) AS favorite_check
+                                    ) AS favorite_check,
+									isp.image_path, isp.cv_path
                                 FROM invited_speaker isp
                                 LEFT JOIN(
                                     SELECT fisp.idx, member_idx, invited_speaker_idx
@@ -96,15 +97,44 @@ if($_POST["flag"] == "favorite"){
                                 ) fisp ON isp.idx=fisp.invited_speaker_idx
                                 WHERE isp.is_deleted = 'N'
                                 {$row_sql}
+                                ORDER BY first_name
                             ";
-
     $keywords_list = get_data($select_keywords_query);
+
+	$select_initial_query = "
+                            SELECT DISTINCT LEFT(first_name, 1) AS initial
+                            FROM invited_speaker
+                            WHERE is_deleted='N'
+							{$row_sql}
+                            ORDER BY initial ASC;
+                        ";
+	$initial_list = get_data($select_initial_query);
+
+	$result_arr = [];
+	$child_num = 0;
+
+	foreach ($initial_list as $ink => $ini){
+		$child_num = 0;
+		$result_arr[$ink]['initial'] = $ini['initial'];
+		foreach ($keywords_list as $isk => $isl){
+			if($isl['initial'] == $ini['initial']){
+				$result_arr[$ink]['data'][$child_num]['idx'] = $isl['idx'];
+				$result_arr[$ink]['data'][$child_num]['first_name'] = $isl['first_name'];
+				$result_arr[$ink]['data'][$child_num]['last_name'] = $isl['last_name'];
+				$result_arr[$ink]['data'][$child_num]['image_path'] = $isl['image_path'];
+				$result_arr[$ink]['data'][$child_num]['favorite_check'] = $isl['favorite_check'];
+				$result_arr[$ink]['data'][$child_num]['initial'] = $isl['initial'];
+				
+				$child_num++;
+			}
+		}
+	}
 
     if(isset($keywords_list)){
         $res = [
             code => 200,
             msg => "success",
-            result => $keywords_list
+            result => $result_arr
         ];
         echo json_encode($res);
         exit;

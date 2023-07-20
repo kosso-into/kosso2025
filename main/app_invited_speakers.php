@@ -1,17 +1,18 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
-<script src="./js/script/client/app_invited_speakers.js"></script>
+<script src="./js/script/client/app_invited_speakers.js?ver=0.1"></script>
 
 <?php
 $member_idx = $_SESSION["USER"]["idx"];
 
 $select_invited_speaker_query = "
-                                SELECT isp.idx, program_contents_idx, last_name, first_name, nation_no, affiliation, LEFT(first_name, 1) AS initial,
+                                SELECT DISTINCT LEFT(first_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, affiliation, 
                                     (CASE
                                          WHEN fisp.idx IS NULL THEN 'N'
                                          ELSE 'Y'
                                             END
-                                    ) AS favorite_check
+                                    ) AS favorite_check,
+									image_path, cv_path
                                 FROM invited_speaker isp
                                 LEFT JOIN(
                                     SELECT fisp.idx, member_idx, invited_speaker_idx
@@ -20,6 +21,7 @@ $select_invited_speaker_query = "
                                     AND member_idx = '{$member_idx}'
                                 ) fisp ON isp.idx=fisp.invited_speaker_idx
                                 WHERE isp.is_deleted = 'N'
+                                ORDER BY first_name
                                 ";
 
 $invited_speaker_list = get_data($select_invited_speaker_query);
@@ -38,7 +40,7 @@ $initial_list = get_data($select_initial_query);
 	<div class="app_title_box">
 		<h2 class="app_title">
 			Invited Speakers
-			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="container_inner">
@@ -52,58 +54,68 @@ $initial_list = get_data($select_initial_query);
 			</div>
 			<div class="speakers_area">
 				<!-- My Favorite -->			
-				<p class="category">My Favorite</p>
-				<ul class="speakers_list">
+				<p class="category favorite_list_type">My Favorite</p>
+				<ul class="speakers_list ajax_favorite_list">
                     <?php
                         foreach ($invited_speaker_list as $isl){
                             if($isl['favorite_check']==='Y'){
+								$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
                     ?>
-					<li>
-						<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
-							<div class="speakers_info">
-								<img src="./img/img_speakers08.jpg" alt="">
-								<p><?=$isl['first_name']?> <?=$isl['last_name']?></p>
-							</div>
-						</a>
-						<button type="button" class="favorite_btn on" value="<?=$isl['idx']?>"></button>
-					</li>
+								<li>
+									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
+										<div class="speakers_info">
+											<img src="<?= $is_profile_img ?>" alt="profile_img">
+											<p><?=$isl['first_name']?> <?=$isl['last_name']?></p>
+										</div>
+									</a>
+									<button type="button" class="favorite_btn on" value="<?=$isl['idx']?>"></button>
+								</li>
                     <?php
-                        }
-                    }
+							}
+						}
                     ?>
 				</ul>
 				<!-- J -->
+				<div class="ajax_speakers_list">
                 <?php
                     foreach ($initial_list as $ini){
                 ?>
-				<p class="category"><?=$ini['initial']?></p>
-                <ul class="speakers_list">
+					
+					<div>
+						<p class="category"><?=$ini['initial']?></p>
+						<ul class="speakers_list">
                 <?php
-                    foreach ($invited_speaker_list as $isl){
-                        if($isl['favorite_check']==='Y'){
-                            $favorite = "on";
-                        } else {
-                            $favorite = "";
-                        }
-                        if($isl['initial']==$ini['initial']){
-                            if($isl['favorite_check']==='N'){
+						foreach ($invited_speaker_list as $isl){
+							if($isl['favorite_check']==='Y'){
+								$favorite = "on";
+							} else {
+								$favorite = "";
+							}
+
+							
+							$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
+
+							if($isl['initial']==$ini['initial']){
                 ?>
-					<li>
-						<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
-							<div class="speakers_info">
-								<img src="./img/img_speakers08.jpg" alt="">
-								<p><?=$isl['first_name']?> <?=$isl['last_name']?></p>
-							</div>
-						</a>
-						<button type="button" class="favorite_btn <?=$favorite?>" value="<?=$isl['idx']?>"></button>
-					</li>
+								<li>
+									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
+										<div class="speakers_info">
+											<img src="<?= $is_profile_img ?>" alt="profile_img">
+											<p><?=$isl['first_name']?> <?=$isl['last_name']?></p>
+										</div>
+									</a>
+									<button type="button" class="favorite_btn <?=$favorite?>" value="<?=$isl['idx']?>"></button>
+								</li>
                 <?php
-                            }
-                        }
-                    }
-                }
+							}
+						}
+				?>
+						</ul>
+					</div>
+				<?php
+					}
                 ?>
-				</ul>
+				</div>
 			</div>
 		</div>
 	</div>

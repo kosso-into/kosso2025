@@ -74,7 +74,9 @@
 			<tbody>
 				<tr>
 					<td colspan="3">
-						<?= htmlspecialchars_decode($contents); ?>
+						<div class="table_editor_wrap">						
+							<?= htmlspecialchars_decode($contents); ?>
+						</div>
 					</td>
 				</tr>
 			</tbody>

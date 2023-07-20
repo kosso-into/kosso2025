@@ -16,6 +16,9 @@
         case 2 :
             $auth = $admin_permission["auth_board_faq"];
             break;
+        case 3 :
+            $auth = $admin_permission["auth_board_app"];
+            break;
     }
     if($auth == 0){
         echo '<script>alert("권한이 없습니다.")</script>';

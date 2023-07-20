@@ -38,96 +38,108 @@
 </section>
 
 <script>
-    $(document).ready(function(){
-        $('input').on('keyup', function(e){
-            if(e.keyCode == '13'){
-                login();
-            }
-        });
-        $(".app_login_btn").on("click", function(){
+$(document).ready(function(){
+    let icomes_device = null;
+    let icomes_token = null;
+
+    $('input').on('keyup', function(e){
+        if(e.keyCode == '13'){
             login();
-        });
+        }
+    });
+    $(".app_login_btn").on("click", function(){
+        login();
+    });
 
-        function login(){
-            let email = $("input[name=email]").val();
-            let password = $("input[name=password]").val();
+    if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+        try{
+            window.AndroidScript.getDeviceToken();
+        } catch (err){
+            alert(err);
+        }
+    } else if (window.webkit && window.webkit.messageHandlers!=null) {
+        try{
+            window.webkit.messageHandlers.getDeviceToken.postMessage('');
+        } catch (err){
+            console.log(err);
+        }
+    }
 
-            if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-                // twomojob_token = window.AndroidScript.getToken();
-                // twomojob_device = "android";
-                alert("android");
-            }
+    getDeviceTokenCallback = (device, deviceToken) => {
+        icomes_device = device;
+        icomes_token = deviceToken;
+    }
 
-            if (webkit.messageHandlers.BridgeManager!=null) {
-                try{
-                    webkit.messageHandlers.BridgeManager.postMessage('getDeviceToken');
-                    webkit.messageHandlers.BridgeManager.postMessage('login');
-                } catch (err){
-                    console.log(err);
-                }
-            }
+    function login (){
+        let email = $("input[name=email]").val();
+        let password = $("input[name=password]").val();
 
-            getDeviceTokenCallback = (device, deviceToken) => {
-                alert(device);
-                alert(deviceToken);
-            }
-
-            //alert(webkit.messageHandlers.BridgeManager == null);
-
-            if(email == "") {
-                alert(locale(language.value)("check_email"));
-                return false;
-            } else if(password == "") {
-                alert(locale(language.value)("check_password"));
-                return false;
-            }
-
-            $.ajax({
-                url : "./ajax/client/ajax_member.php",
-                type : "POST",
-                data : {
-                    flag : "app_login",
-                    flag2 : "app",
-                    email : email,
-                    password : password
-                },
-                dataType : "JSON",
-                success : function(res){
-                    if(res.code == 200) {
-                        var href_path = "/main/app_index.php";
-
-                         var from = "<?=$_GET['from']?>";
-                         if (from != "") {
-                             href_path += "/"+from
-                         }
-
-                        var toDate = new Date();
-                        toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
-                        toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
-                        toDate.setSeconds(0);
-                        document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() + ";";
-
-                        //location.href = href_path;
-                    } else if(res.code == 400) {
-                        alert(locale(language.value)("not_matching_email"));
-                        return false;
-                    } else if(res.code == 401) {
-                        alert(locale(language.value)("not_matching_password"));
-                        return false;
-                    } else if(res.code == 402) {
-                        //alert(locale(language.value)("not_certified_email"));
-                        alert("An account confirmation email has been sent to the email address you set during registration. Please check the email sent and verify your account.");
-                        return false;
-                    } else {
-                        alert(locale(language.value)("reject_msg"));
-                    }
-                }
-            });
+        if(email == "") {
+            alert(locale(language.value)("check_email"));
+            return false;
+        } else if(password == "") {
+            alert(locale(language.value)("check_password"));
+            return false;
         }
 
-        // function getDeviceToken(){
-            //AndroidScript.openPDF("http://43.200.170.254/main/download/dummy.pdf");
-        // }
+        $.ajax({
+            url : "./ajax/client/ajax_member.php",
+            type : "POST",
+            data : {
+                flag : "app_login",
+                flag2 : "app",
+                email : email,
+                password : password,
+                icomes_device : icomes_device,
+                icomes_token : icomes_token
+            },
+            dataType : "JSON",
+            success : function(res){
+                if(res.code == 200) {
+                    var href_path = "/main/app_index.php";
 
-    });
+                    var from = "<?=$_GET['from']?>";
+                    if (from != "") {
+                        href_path += "/"+from
+                    }
+
+                    var toDate = new Date();
+                    toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
+                    toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
+                    toDate.setSeconds(0);
+                    document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() + ";";
+
+                    if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+                        window.AndroidScript.login(res.idx);
+                    } else if (window.webkit && window.webkit.messageHandlers!=null) {
+                        try{
+                            window.webkit.messageHandlers.login.postMessage(res.idx);
+                        } catch (err){
+                            console.log(err);
+                        }
+                    }
+
+                    // loginCallback = (res) => {
+                    //     const result = Json.parse(res)
+                    // }
+
+                    location.href = href_path;
+                } else if(res.code == 400) {
+                    alert(locale(language.value)("not_matching_email"));
+                    return false;
+                } else if(res.code == 401) {
+                    alert(locale(language.value)("not_matching_password"));
+                    return false;
+                } else if(res.code == 402) {
+                    //alert(locale(language.value)("not_certified_email"));
+                    alert("An account confirmation email has been sent to the email address you set during registration. Please check the email sent and verify your account.");
+                    return false;
+                } else {
+                    alert(locale(language.value)("reject_msg"));
+                }
+            }
+        });
+    }
+
+});
 </script>

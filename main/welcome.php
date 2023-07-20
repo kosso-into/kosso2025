@@ -1,35 +1,52 @@
 <?php
-include_once('./include/head.php');
-include_once('./include/header.php');
+	include_once('./include/head.php');
 
-//$language
-$sql_info = "SELECT
-					overview_welcome_msg_" . $language . " AS welcome_msg,
-					CONCAT(fi_sign.path, '/', fi_sign.save_name) AS fi_sign_url
-				FROM info_general as ig
-				left join `file` as fi_sign
-					on fi_sign.idx = ig.overview_welcome_sign_" . $language . "_img";
-$info = sql_fetch($sql_info);
+	$session_user = $_SESSION['USER'] ?? NULL;
+	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+
+	//230714 HUBDNC 앱 로그인 시 파라미터 추가 된 부분
+	if(!empty($session_user) && $session_app_type == 'Y') {
+		include_once('./include/app_header.php');
+	} else {
+		include_once('./include/header.php');
+	}
+
+	//$language
+	$sql_info = "SELECT
+						overview_welcome_msg_" . $language . " AS welcome_msg,
+						CONCAT(fi_sign.path, '/', fi_sign.save_name) AS fi_sign_url
+					FROM info_general as ig
+					left join `file` as fi_sign
+						on fi_sign.idx = ig.overview_welcome_sign_" . $language . "_img";
+	$info = sql_fetch($sql_info);
+
+	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
 ?>
 
 <!-- app일때 section에 app_version 클래스 추가 -->
-<section class="container welcome">
+<section class="container welcome <?= $add_section_class; ?>">
 	<!-- HUBDNCLHJ : app 메뉴 탭 주석 해제 -->
-	<!-- <div class="app_title_box">
-        <h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-        <ul class="app_menu_tab">
-            <li class="on"><a href="./welcome.php">Welcome Message</a></li>
-            <li><a href="./organizing_committee.php">Organization</a></li>
-            <li><a href="./app_overview.php">Overview</a></li>
-            <li><a href="./venue.php">Venue</a></li>
-        </ul>
-    </div> -->
-<!-- 	<div class="contents_wrap"> -->
-<!--         <h1 class="page_title">Welcome Message</h1> -->
-<!--         <!-- <div class="inner"> -->
-<!--         			<img class="coming" src="./img/coming.png"> -->
-<!--         </div> -->
-<!--     </div> -->
+<?php
+	if(!empty($session_user) && $session_app_type == 'Y') {
+?>
+		<div class="app_title_box">
+			<h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+			<ul class="app_menu_tab">
+				<li class="on"><a href="./welcome.php">Welcome Message</a></li>
+				<li><a href="./organizing_committee.php">Organization</a></li>
+				<li><a href="./app_overview.php">Overview</a></li>
+				<li><a href="./venue.php">Venue</a></li>
+			</ul>
+		</div>
+<?php
+	} 
+?>
+<!-- 		<div class="contents_wrap"> -->
+<!-- 			<h1 class="page_title">Welcome Message</h1> -->
+<!-- 			<div class="inner"> -->
+<!-- 				<img class="coming" src="./img/coming.png"> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
     <div>
 		<h1 class="page_title">Welcome Message</h1>
         <div class="inner">
@@ -66,5 +83,11 @@ $info = sql_fetch($sql_info);
     </div>
 </section>
 
-
-<?php include_once('./include/footer.php'); ?>
+<?php 
+    if (!empty($session_app_type) && $session_app_type == 'Y') {
+        // mo일때
+        include_once('./include/app_footer.php'); 
+    }else {
+        include_once('./include/footer.php');
+    }
+?>
