@@ -421,7 +421,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_10">
-									Symposium 10 <p>Neuropsychological Aspect of Obesity</p>
+									Symposium 10 <p>The Effect of Obesity and HDL Concentration on AD Pathology</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_11">

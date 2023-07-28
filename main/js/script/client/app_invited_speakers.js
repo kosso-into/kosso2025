@@ -100,7 +100,7 @@ function selectFavorite(){
 												'<a href="./app_invited_speakers_detail.php?idx=' + kl.data[k]['idx'] + '">' +
 												'<div class="speakers_info">' +
 												'<img src="' + is_img_path + '" alt="">' +
-												'<p>' + kl.data[k]['first_name'] + ' ' + kl.data[k]['last_name'] + '</p>' +
+												'<p>' + kl.data[k]['first_name'] + ' ' + kl.data[k]['last_name'] + '<span class="sub">'+kl.data[k]['affiliation']+', '+kl.data[k]['nation']+'</span>' + '</p>' +
 												'</div>' +
 												'</a>' +
 												'<button type="button" class="favorite_btn ' + check_favorite + '" value="' + kl.data[k]['idx'] + '">' + '</button>' +

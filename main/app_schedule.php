@@ -413,7 +413,7 @@ foreach($program_list as $pl){
                         e.target.classList.remove('on');
                         setAlarm(program_idx)
                         AlarmMessage('Remove alarm complete');
-                        setTimeout(() => window.location.reload(), 2000);
+                        setTimeout(() => window.location.reload(), 1000);
                     } else {
                         alert("schedule error.");
                         return;

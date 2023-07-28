@@ -13,7 +13,7 @@
 ?>
 
 <!-- app일 시 section에 app_version 클래스 추가 -->
-<section class="container sponsor app_tour_map <?= $add_section_class; ?>">
+<section class="container sponsor app_tour_map exhibition <?= $add_section_class; ?>">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 <?php
     if(!empty($session_user) && $session_app_type == 'Y') {
@@ -52,7 +52,8 @@
 			<div class="app_contents_wrap type2">
 				<div class="floor floor_3 on">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_3f.png" alt="">
+						<!-- <img src="/main/img/floor_map_3f.png" alt=""> -->
+						<img src="/main/img/img_floor_3.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -133,7 +134,8 @@
 				</div>
 				<div class="floor floor_5">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_5f.png" alt="">
+						<!-- <img src="/main/img/floor_map_5f.png" alt=""> -->
+						<img src="/main/img/img_floor_5.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -219,7 +221,8 @@
 				</div>
 				<div class="floor floor_6">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_6f.png" alt="">
+						<!-- <img src="/main/img/floor_map_6f.png" alt=""> -->
+						<img src="/main/img/img_floor_6.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">

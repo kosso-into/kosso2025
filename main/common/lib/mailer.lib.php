@@ -1,7 +1,10 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"]."/main/plugin/PHPMailer/PHPMailerAutoload.php");
-include_once($_SERVER["DOCUMENT_ROOT"]."/main/plugin/PHPMailer/class.phpmailer.php");
-include_once($_SERVER["DOCUMENT_ROOT"]."/main/common/locale.php");
+
+$root_path = '/var/www/icomes.or.kr/main';
+
+include_once("{$root_path}/plugin/PHPMailer/PHPMailerAutoload.php");
+include_once("{$root_path}/plugin/PHPMailer/class.phpmailer.php");
+include_once("{$root_path}/common/locale.php");
 
 class Template
 {

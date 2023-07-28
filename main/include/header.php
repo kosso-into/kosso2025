@@ -376,11 +376,11 @@ $(".gnb > li, .depth2").hover(function() {
     $(".depth2").css("height", "0");
 })
 
-$(".online_submission_alert").click(function() {
-    var during_yn = $("input[name=during_yn]").val();
-    if (during_yn !== 'Y') {
-        alert("The abstract submission deadline has expired and submission is not possible.");
-        return false;
-    }
-});
+// $(".online_submission_alert").click(function() {
+//     var during_yn = $("input[name=during_yn]").val();
+//     if (during_yn !== 'Y') {
+//         alert("The abstract submission deadline has expired and submission is not possible.");
+//         return false;
+//     }
+// });
 </script>

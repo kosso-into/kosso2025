@@ -219,8 +219,6 @@ if($_POST["flag"] == "select") {
                                     AND program_idx = '{$program_idx}'
                                 ";
 
-    print_r($select_push_schedule_query);
-    exit;
     $result = sql_fetch($select_push_schedule_query);
 
     if(!empty($result) && $is_push==="delete"){
@@ -244,8 +242,7 @@ if($_POST["flag"] == "select") {
                                     WHERE member_idx={$member_idx}
                                     ";
         $device_info = sql_fetch($select_device_query);
-
-
+        
         $select_push_time_query = "
                                         SELECT start_time
                                         FROM program
@@ -270,7 +267,7 @@ if($_POST["flag"] == "select") {
         $insert_push_schedule = sql_query($insert_push_schedule_query);
     }
 
-    if($insert_push_schedule || $delete_result){
+    if(!empty($member_idx)){
         $res = [
             'code' => 200,
             'msg' => "success"

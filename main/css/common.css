@@ -1213,6 +1213,7 @@ h2.app_title {width: 100%; font-size: 16px; background: #000066; text-align: cen
 /*app 페이지 탭 (자주)*/
 .inner.app_version {padding:0 !important; margin:0 !important;}
 .app_tab {/*margin-bottom: 24px;*/ padding:16px 0 20px; width: calc(100% + 36px); margin-left:-18px; overflow-x:auto; white-space:nowrap; font-size:0; text-align:center;}
+.exhibition .app_tab {width:100% !important; margin-left: 0px;}
 .app_tab li {display:inline-block; position:relative; text-align:center; cursor:pointer; vertical-align:middle; padding-left:5px;}
 .app_tab li:not(:first-child):after {content:''; display:block; position:absolute; top:0; left:0; width:5px; height:100%; background-color:#fff;}
 .app_tab li a {font-size:13px; font-weight:bold; color:#000000; padding:7px 18px; border-radius:8px; border:1px solid #707070;}
@@ -1361,9 +1362,10 @@ a.lilly {background-image: url("../img/sponsor/logo25.png");}
 .speakers_list:last-child li:last-child {border-bottom:1px solid #989898;}
 .speakers_list .favorite_btn {width: 31px;height: 31px; border: 1px solid #F5AA02; border-radius:10px; position: absolute; right:25px; top:50%; transform:translateY(-50%); background:url("../img/icons/icon_app_fav_star.svg") no-repeat center / 17px;}
 .speakers_list .favorite_btn.on {background-image:url("../img/icons/icon_app_fav_star_on.svg");}
-.speakers_info {display:flex; align-items:center;}
-.speakers_info img {width: 70px; height: 70px; border-radius:50%; margin-right: 16px; object-fit: cover;}
+.speakers_info {display:flex; align-items:center; max-width:calc(100% - 47px);}
+.speakers_info img {width: 70px; height: 70px; border-radius:50%; margin-right: 16px; object-fit: cover; flex-shrink: 0;}
 .speakers_info p {font-size: 14px; font-weight: bold;}
+.speakers_info p .sub {display: block; font-size: 12px; font-weight: 400; margin-top:8px;}
 
 /*app invited speakers > detail*/
 .app_version.app_invited_speakers_detail .inner {padding: 0;}

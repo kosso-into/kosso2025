@@ -52,6 +52,7 @@
 													WHEN '3' THEN 'Panel'
 													WHEN '4' THEN 'Participants'
 													WHEN '5' THEN 'Sponsor'
+													WHEN '6' THEN 'Others'
 													ELSE '-'
 												END
 											) AS attendance_type_text,

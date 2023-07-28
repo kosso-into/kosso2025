@@ -124,6 +124,8 @@ if($_POST["flag"] == "favorite"){
 				$result_arr[$ink]['data'][$child_num]['image_path'] = $isl['image_path'];
 				$result_arr[$ink]['data'][$child_num]['favorite_check'] = $isl['favorite_check'];
 				$result_arr[$ink]['data'][$child_num]['initial'] = $isl['initial'];
+                $result_arr[$ink]['data'][$child_num]['nation'] = $isl['nation'];
+                $result_arr[$ink]['data'][$child_num]['affiliation'] = $isl['affiliation'];
 				
 				$child_num++;
 			}
