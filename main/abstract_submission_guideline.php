@@ -46,7 +46,7 @@ $info = sql_fetch($sql_info);
                 <div class="text_center btn_box mt25">
                     <!-- <a href="https://image.webeon.net/icomes/ICOMES%202023_Abstract%20template_ver1.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a> -->
 					<a href="./download/ICOMES_2023_Abstract_form.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Abstract Form Download</a>
-                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn">Go to Abstract Submission</a>
+                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn online_submission_alert">Go to Abstract Submission</a>
                 </div>
                 <!-- <a href="./download/ICOMES_2022_Abstract_template.docx" class="btn long_btn" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a></div> -->
             </div>
@@ -73,8 +73,8 @@ $info = sql_fetch($sql_info);
 								<td class="f_bold">Mid-May</td>
 							</tr>
 							<tr>
-								<th>Abstract Submission<br class="br_mb_only"> Deadline</th>
-								<td><span class="font_inherit red_t f_bold">July 27 (Thu)</span></td>
+								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
+								<td><span class="font_inherit f_bold">July 27 (Thu)</span></td>
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
@@ -327,7 +327,5 @@ $info = sql_fetch($sql_info);
     </div>
     <!-- <button type="button" class="fixed_btn" onclick="window.location.href='./abstract_submission.php';"><?= $locale("abstract_submission_btn") ?></button> -->
 </section>
-
-
 
 <?php include_once('./include/footer.php'); ?>

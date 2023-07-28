@@ -91,10 +91,10 @@ $info = sql_fetch($sql_info);
 						</tr>
 						<tr>
 							<td class="text_center">Location</td>
-							<td class="text_center">Room 4</td>
-							<td class="text_center">Room 5</td>
-							<td class="text_center">Room 4</td>
-							<td class="text_center">Room 5</td>
+							<td class="text_center">Room 4, 5F</td>
+							<td class="text_center">Room 5, 5F</td>
+							<td class="text_center">Room 4, 5F</td>
+							<td class="text_center">Room 5, 5F</td>
 						</tr>
                     </table>
                 </div>
@@ -129,16 +129,20 @@ $info = sql_fetch($sql_info);
                            <tr>
                                <th></th>
                                <th class="f_bold text_center">Sep. 7 (Thu)</th>
-                               <th class="f_bold text_center">Sep. 8 (Fri) - Sep. 9 (Sat) </th>
+                               <th class="f_bold text_center">Sep. 8 (Fri)</th>
+                               <th class="f_bold text_center">Sep. 9 (Sat)</th>
                            </tr>
 						<tr>
 							<td class="text_center">Location</td>
-							<td colspan="2" class="text_center">TBD</td>
+							<td class="text_center">Dressing Room, 3F</td>
+							<td class="text_center">Park Studio, 5F</td>
+							<td class="text_center">Park Studio, 5F</td>
 						</tr>
 						<tr>
 							<td class="text_center">Operating Hour</td>
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
+							<td class="text_center">14:00 - 19:00</td>
+							<td class="text_center">07:30 - 18:00</td>
+							<td class="text_center">07:30 - 17:00</td>
 						</tr>
                        </table>
                    </div>

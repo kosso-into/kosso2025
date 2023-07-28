@@ -121,8 +121,13 @@ foreach($program_list as $pl){
                             <p class="title"><?=$program['program_name']?></p>
                             <?php
                             if($program['chairpersons']!=null){
+                                if(substr_count($program['chairpersons'],',')>=2){
+                                    $chairperson = 'Chairpersons:';
+                                } else {
+                                    $chairperson = 'Chairperson:';
+                                }
                                 ?>
-                                <p class="chairperson"><span class="bold">Chairpersons: </span> <?=$program['chairpersons']?></p>
+                                <p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
                                 <?php
                             }
                             ?>
@@ -205,8 +210,13 @@ foreach($program_list as $pl){
                                 <p class="title"><?=$program['program_name']?></p>
                                 <?php
                                 if($program['chairpersons']!=null){
+                                    if(substr_count($program['chairpersons'],',')>=2){
+                                        $chairperson = 'Chairpersons:';
+                                    } else {
+                                        $chairperson = 'Chairperson:';
+                                    }
                                     ?>
-                                    <p class="chairperson"><span class="bold">Chairpersons: </span> <?=$program['chairpersons']?></p>
+                                    <p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
                                     <?php
                                 }
                                 ?>
@@ -289,8 +299,13 @@ foreach($program_list as $pl){
                                 <p class="title"><?=$program['program_name']?></p>
                                 <?php
                                 if($program['chairpersons']!=null){
+                                    if(substr_count($program['chairpersons'],',')>=2){
+                                        $chairperson = 'Chairpersons:';
+                                    } else {
+                                        $chairperson = 'Chairperson:';
+                                    }
                                     ?>
-                                    <p class="chairperson"><span class="bold">Chairpersons: </span> <?=$program['chairpersons']?></p>
+                                    <p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
                                     <?php
                                 }
                                 ?>

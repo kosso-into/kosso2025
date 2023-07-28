@@ -88,8 +88,8 @@ $info = sql_fetch($sql_info);
 						</tr>
 						<tr>
 							<td class="text_center">Location</td>
-							<td class="text_center">Room 7</td>
-							<td class="text_center">Room 7</td>
+							<td class="text_center">Room 7, 6F</td>
+							<td class="text_center">Room 7, 6F</td>
 						</tr>
                     </table>
                 </div>

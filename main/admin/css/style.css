@@ -132,3 +132,9 @@ table .phone_num input[type="text"] {width:calc(100% - 85px);}
 .app_pin_btn.on {background-color: rgba(255,192,0); border-color:rgba(255,192,0);}
 .app_notice .list_table.app thead tr th:not(:first-child), .app_notice .list_table.app tbody tr td:not(:first-child) {border-left: 1px solid #ccc;}
 .app_notice .list_table.app td.notice_title {max-width:545px;}
+
+
+/* 230721 HUBDNCAJY 추가 */
+/* 신청서 관리 */
+.refund_forms {display:flex; align-items:center; gap:4px;}
+.refund_forms span, .refund_forms button {flex-shrink: 0;}

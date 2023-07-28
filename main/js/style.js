@@ -475,4 +475,33 @@ $(document).ready(function(){
 		$(this).toggleClass("on");
 		$(this).next(".program_detail_ul").slideToggle();
 	});
+
+	// 페이지 상단영역 고정 - (공통 : ~ app_title_box까지)
+	fixTopCont();
+
+	function fixTopCont() {
+		var app_title_h = $(".app_title_box").outerHeight();                     // .app_title_box 의 height 
+		var container_mg_top = $(".container").css("margin-top");
+		var num_mg_top = parseInt(container_mg_top);                             // container 의 기존 상단 margin
+		$(".container").css("margin-top", (app_title_h+num_mg_top-1) + "px");
+
+		// 개별 고정요소가 있을 경우
+		if ($("*").hasClass("fix_cont")) {
+			var fix_cont_h = $(".fix_cont").outerHeight();
+			var num_cont_h = parseInt(fix_cont_h);
+
+			$(".container").css("margin-top", (app_title_h+num_mg_top+num_cont_h-1) + "px");
+			$(".fix_cont").css("top", (app_title_h+num_mg_top) + "px")
+			
+			// 하단에 개별 고정요소가 있을 경우
+			if ($("*").hasClass("fix_cont_sub")) {
+				var fix_cont_sub_h = $(".fix_cont_sub").outerHeight();
+				var num_cont_sub_h = parseInt(fix_cont_sub_h);
+
+				$(".container").css("margin-top", (app_title_h+num_mg_top+num_cont_h+num_cont_sub_h-1) + "px");
+				$(".fix_cont_sub").css("top", (app_title_h+num_mg_top+num_cont_h) + "px")
+			}
+		}
+	}
+
 });

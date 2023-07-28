@@ -24,11 +24,14 @@
 /*scientific program*/
 .app_version.app_scientific {width:100%; /*margin-left:0; margin-right:0;*/ border:none; padding-bottom:100px !important;}
 .app_version.app_scientific .inner {padding-top:0 !important; margin-bottom: 0;}
-.app_version.app_scientific .app_tab, .app_version.app_scientific .app_title_box {width:100%; margin-left:0;}
+.app_version.app_scientific .app_tab {width:100%; /* margin-left:0; */ max-width:1236px;}
+.app_version.app_scientific .app_title_box {width:100%; /* margin-left:0; */ max-width:1236px; margin:0 auto; left:50%; transform:translateX(-50%);}
 .app_scientific .app_sort_form {border-top:1.5px solid #989898;}
 .app_scientific .program_detail_ul li {border-bottom:1px solid #989898;}
 .app_scientific .program_detail_ul li:not(:first-child) {margin-top:0;}
 .app_scientific .program_detail_ul .main, .app_scientific .program_detail_ul .detail > div {padding:8px 18px;}
+.app_version.app_scientific.app_program_detail .inner {max-width:1236px;}
+.app_version.app_scientific.app_program_detail .app_sort_form {width:100%; max-width:1200px; margin-left:-18px;}
 /*main*/
 .app_scientific .program_detail_ul .main {cursor:pointer; position:relative; padding: 8px 76px 8px 18px;}
 .app_scientific .right_tag {display:inline-block; padding:4px 8px; background-color:#FF6666; color:#fff; font-size:12px; border-radius:3px; position:absolute; top:8px; right:8px;}
@@ -57,6 +60,7 @@
 .app_scientific .detail_text li:not(last-child) {margin-bottom: 4px;}
 .app_scientific .detail .chairperson {padding-bottom:10px; display:flex; align-items:center; flex-wrap: wrap; gap:2px 8px;}
 .app_scientific .preview_btn {position:absolute; bottom:7px; right:9px; border-radius:3px; color:#fff; background:#999 url('../img/icons/icon_plus_white.svg') no-repeat left  4px center /7px; padding:4px 7px 4px 14px; font-size:11px; transition: all 0.4s;}
+.app_scientific.app_program_detail .app_sort_form.app_half_ul {gap:0;}
 
 /*App main*/
 .container.app_version.main { padding-bottom: /*120*/150px !important; margin-top: 0; padding-top: 60px !important; }
@@ -89,8 +93,7 @@
 
 /*APP Overview*/
 .app_version.app_overview {padding-bottom: 60px !important;}
-.app_overview .app_menu_tab {border-bottom:1px solid #383484;}
-.app_overview_ul li:not(:first-child) {border-top:1px solid #383484;}
+.app_overview_ul li {border-top:1px solid #383484;}
 .app_overview_ul li:last-child {border-bottom:1px solid #999999;}
 .app_overview_ul li > p {padding:10px 16px; background-color:#EDEDED; font-size:15px; font-weight:bold; color:#000000; border-bottom:1px solid #999999;}
 .app_overview_ul li > div {padding:16px; font-size:14px; line-height:1.3; color:#000000;}
@@ -108,6 +111,11 @@
 .survey_box p {margin:14px 18px; color:#FFFFFF; font-size:18px; line-height:1.4;}
 .survey_box p .bold {font-size:21px; color:#FFFFFF;}
 .survey_box .lang {height:31px; padding:0 24px; border-radius:99px; border:1px solid #FFFFFF; color:#FFFFFF; font-size:19px; line-height:29px;}
+
+@media screen and (max-width: 1024px) {
+	/*app_program_detail*/
+	.app_scientific.app_program_detail .app_sort_form.app_half_ul {width: 100%; margin-left:0;}
+}
 
 @media screen and (max-width: 768px) {
 	.app_index_menu li img {width:100px;}

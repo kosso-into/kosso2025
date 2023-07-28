@@ -281,7 +281,7 @@ echo '<script type="text/javascript">
                                                 <td>18:30-19:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : Jae Hyuk Lee</span> (Myongji Hospital, Republic of Korea)</p>-->
+                                                    <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam National University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1152,7 +1152,7 @@ echo '<script type="text/javascript">
                                                 <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
-                                                    <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyunghee University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyung Hee University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -1182,7 +1182,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:40-16:10</td>
                                                                     <td class="bold">
-                                                                        Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
+                                                                        Understanding Human Metabolic Dysregulation in Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Robert R. Wolfe</p>(University of Arkansas for Medical Sciences, USA)
@@ -1822,7 +1822,10 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 6 : Clinical Exercise with Obesity</p>
-                                                    <p><span class="bold">Chairperson : Minchul Lee</span> (CHA University, Republic of Korea)</p>
+                                                    <p>
+														<span class="bold">Chairpersons : Minchul Lee</span> (CHA University, Republic of Korea),<br/>
+														<span class="bold">Hyo Youl Moon</span> (Seoul National University, Republic of Korea)
+													</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1862,7 +1865,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        From Exercise to Lifestyle Coaching: A Data based Wellness Coaching System
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jung Gi Hong</p>(CHA University, Republic of Korea)
@@ -1934,7 +1937,7 @@ echo '<script type="text/javascript">
                                                 <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
-                                                    <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyunghee University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyung Hee University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -1964,7 +1967,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:40-16:10</td>
                                                                     <td class="bold">
-                                                                        Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
+                                                                        Understanding Human Metabolic Dysregulation in Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Robert R. Wolfe</p>(University of Arkansas for Medical Sciences, USA)
@@ -2313,13 +2316,19 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 3 : Digital Therapeutics</p>
-                                                    <p><span class="bold">Chairperson : Sang-Yong Kim</span> (Chosun University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p>
+														<span class="bold">Chairpersons : Sang-Yong Kim</span> (Chosun University, Republic of Korea),<br/>
+														<span class="bold">Won Young Lee</span> (Sungkyunkwan University, Republic of Korea)
+													</p>
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Sang Youk Rhee (Kyung Hee University, Republic of Korea)</p>
+													<ul>
+														<li>This session aims to explore the latest status of intervention methodology based on Information and Communication Technologies (ICTs) for the management of diverse chronic diseases, such as obesity and metabolic syndrome. First, Professor Ki-Hyun Jeon from Seoul National University will open the session by introducing the latest research advancements in the related field, including his own studies. Doctor Laura Falvey from Reset Health will then present highly reliable evidence for the remarkable effects of digital treatment methods based on the results of randomized controlled trials (RCTs) from the Roczen Programme, which were recently released at the European Congress on Obesity. Lastly, Professor Sang Youl Rhee from Kyung Hee University will discuss the effectiveness of the ICT-based intervention and the necessary approaches for their wide use in various chronic disease patients in the future, drawing on a wealth of literature introduced thus far, including systematic literature reviews.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -2334,8 +2343,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                        <!-- Neural Mechanism of Hunger-gated Food-seeking
-                                                                        and Interacting -->TBD
+                                                                        The Role of Digital Innovations in Obesity and Metabolic Syndrome Treatment
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ki-Hyun Jeon</p>(Seoul National University, Republic of Korea)
@@ -2685,7 +2693,7 @@ echo '<script type="text/javascript">
                                                                        Uncovering Novel GPCR Pathways for the Treatment of Obesity and Type 2 Diabetes
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Zach Gerhart-Hines</p>(University of Copenhagen, Denmark)
+                                                                        <p class="bold">Zachary Gerhart-Hines</p>(University of Copenhagen, Denmark)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2785,7 +2793,7 @@ echo '<script type="text/javascript">
                                                 <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
-                                                    <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyunghee University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairperson : Jeong-Taek Woo</span> (Kyung Hee University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -2815,7 +2823,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:40-16:10</td>
                                                                     <td class="bold">
-                                                                        Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
+                                                                        Understanding Human Metabolic Dysregulation in Vivo Using Stable Isotope Tracers: More than 50 Years of Experience
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Robert R. Wolfe</p>(University of Arkansas for Medical Sciences, USA)
@@ -3321,13 +3329,19 @@ echo '<script type="text/javascript">
                                                     <p>
                                                         <span class="bold">Chairperson : So Chung Chung</span> (Konkuk University, Republic of Korea)
                                                     </p>
-													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Jae Hyun Kim (Seoul National University, Republic of Korea), Yong Hee Hong (Soonchunhyang University, Republic of Korea)</p>
+													<ul>
+														<li>As obesity in children and adolescents increases, we should take note of its development into obesity in adults, as well as its connection with type 2 diabetes in adolescents and young adults. In this session, we will explore the lifecycle perspective of obesity and type 2 diabetes, starting from childhood to adulthood, and gain an understanding of glucose patterns in children and adolescents with obesity and diabetes through continuous glucose measurement. Additionally, we will discuss recent advancements in new biomarkers associated with type 2 diabetes in obese children and adolescents.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															 1. Choi D, Kim S, Woo J, et al. Weight Change Alters the Small RNA Profile of Urinary Extracellular Vesicles in Obesity. Obes Facts. 2022;15(2):292-301.<br/> 2. Choi IH, Yeom SW, Kim SY, You J, Kim JS, Kim M. Analysis of Cause-of-Death Mortality in Children and Young Adults with Diabetes: A Nationwide 10-Year Follow-Up Cohort Study. Children (Basel). 2023;10(2):358.<br/> 3. Leister KR, Cilhoroz BT, Rosenberg J, Brown EC, Kim JY. Metabolic syndrome: Operational definitions and aerobic and resistance training benefits on physical and metabolic health in children and adolescents. Diabetes Metab Syndr. 2022;16(6):102530.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -3477,10 +3491,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
                                                                     <td class="bold">
-                                                                        TBD<!-- The Role of Dapagliflozin in T2D ;
-                                                                        DECLARE
-                                                                        (Cardiorenal Benefit on T2D; from Prevention to
-                                                                        Treatment)  -->
+                                                                        Phentermine plus Topiramate ER Review & More Expectation
 																	</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Su Jin Jeong</p>(Bucheon Sejong Hospital, Republic of Korea)
@@ -3678,7 +3689,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 2 : Benefit of DPP4I in Evidence-based Perspective</p>
-                                                    <p><span class="bold">Chairperson : Sung Hoon Yu</span> (Hanyang University, Republic of Korea), <span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Sung Hoon Yu</span> (Hanyang University, Republic of Korea), <br><span class="bold">Jun Hwa Hong</span> (Eulji University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -3704,9 +3715,7 @@ echo '<script type="text/javascript">
                                                                         Adolescent -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        TBD<!-- <p class="bold">Hyun Wook Chae</p>
-                                                                        (Yonsei
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Jeong Hwan Park</p> (Hanyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3786,7 +3795,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Unveiling the Process of Establishing Clinical Practice Guidelines for Obesity by KSSO 
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jee Hyun Kang</p>(Konyang University, Republic of Korea)
@@ -3828,8 +3837,11 @@ echo '<script type="text/javascript">
                                             <tr class="purple_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Joint Symposium EASO</p>
-                                                    <p><span class="bold">Chairperson : Jason Halford</span> (University of Leeds, UK)</p>
+                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-EASO</p>
+                                                    <p>
+														<span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Republic of Korea),<br/>
+														<span class="bold">Jason Halford</span> (University of Leeds, UK)
+													</p>
                                                 </td>
                                                 
                                             </tr>
@@ -3859,7 +3871,7 @@ echo '<script type="text/javascript">
                                                                 </tr>                             
 																<tr>                              
                                                                     <td>10:10-10:35</td> 
-                                                                    <td class="bold">TBD </td>
+                                                                    <td class="bold">Effects of New Drugs on Appetite and Eating Behaviour</td>
                                                                     <td class="text_r"><p class="bold">Jason Halford</p> (University of Leeds, UK)</td>
                                                                 </tr>                             
 																<tr>                              
@@ -3893,7 +3905,10 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Joint Symposium KSSO-AOASO</p>
-                                                    <p><span class="bold">Chairperson : Kyoung-Kon Kim</span> (Gachon University, Republic of Korea)</p>
+                                                    <p>
+														<span class="bold">Chairpersons : Kyoung-Kon Kim</span> (Gachon University, Republic of Korea),<br/>
+														<span class="bold">Yoon Jeong Cho</span> (Daegu Catholic University, Republic of Korea)
+													</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -4924,7 +4939,7 @@ echo '<script type="text/javascript">
                                             <tr class="yellow_bg">
                                                 <td>17:40-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Closing Ceremony</p>
+                                                    <p class="font_20 bold mb0">Closing & Award Ceremony</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -4974,7 +4989,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Cutting Edge Care of Pitavastatin with Ezetimibe Combination Therapy
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Young-Sang Lyu</p>(Chosun University, Republic of Korea)
@@ -5130,7 +5145,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 14 : Promoting Healthy Muscle and Liver Metabolism</p>
-                                                    <p><span class="bold">Chairpersons : Kijin Kim</span> (Keimyung University, Republic of Korea), <br><span class="bold">Yun- A Shin</span> (Dankook University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Kijin Kim</span> (Keimyung University, Republic of Korea), <br><span class="bold">Yun-A Shin</span> (Dankook University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -5606,7 +5621,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        Mapping Appetite Circuits with Molecular Connectomics
+                                                                        High-fat Food Biases Hypothalamic and Mesolimbic Expression of Consummatory Drives
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Michael Krashes</p>(National Institute of Diabetes and Digestive and Kidney Diseases(NIDDK), USA)
@@ -5625,7 +5640,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Hypothalamic GABRA5-positive Neurons Control Obesity via Astrocytic GABA
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Changjoon Lee</p>(Institute for Basic Science (IBS), Republic of Korea)
@@ -5760,7 +5775,7 @@ echo '<script type="text/javascript">
                                             <tr class="yellow_bg">
                                                 <td>17:40-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Closing Ceremony</p>
+                                                    <p class="font_20 bold mb0">Closing & Award Ceremony</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -5990,7 +6005,7 @@ echo '<script type="text/javascript">
                                                                         Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Shirley Y. Chao</p>(Massachusetts Executive Office of Elder Affairs, USA)
+                                                                        <p class="bold">Shirley Y. Chao</p>(FoodPolicy Insights, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6571,7 +6586,7 @@ echo '<script type="text/javascript">
                                             <tr class="yellow_bg">
                                                 <td>17:40-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Closing Ceremony</p>
+                                                    <p class="font_20 bold mb0">Closing & Award Ceremony</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -6645,8 +6660,7 @@ echo '<script type="text/javascript">
                                                                         Overweight and Obesity -->TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jo-Eun Jeong</p>(The Catholic
-                                                                        University of Korea, Korea) -->TBD
+																		<p class="bold">Gary Sweeney</p>(York University, Canada)
                                                                     </td>
                                                                 </tr>
 																<tr>
@@ -6853,10 +6867,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        A Sports Psychological Approach to Increase Participation in Exercise for People with Obesity
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Seok Ryu</p>(Kyunghee University, Republic of Korea)
+                                                                        <p class="bold">Seok Ryu</p>(Kyung Hee University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

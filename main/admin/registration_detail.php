@@ -33,7 +33,7 @@
 											rr.day3_luncheon_yn,
 											rr.price,
 											IFNULL(rr.status, '1') AS registration_status,
-											DATE(p.payment_date) AS payment_date, p.total_price_kr, p.total_price_us, p.refund_reason, DATE_FORMAT(p.refund_date, '%Y-%m-%d') AS refund_date, p.refund_bank, p.refund_holder, p.refund_account,
+											DATE(p.payment_date) AS payment_date, p.total_price_kr, p.total_price_us, p.refund_reason, DATE_FORMAT(p.refund_date, '%Y-%m-%d') AS refund_date, p.refund_bank, p.refund_holder, p.refund_account, p.refund_amount,
 											n.nation_ko AS registration_nation, rr.register_path, rr.conference_info, rr.etc1,
 											f.original_name as file_name, CONCAT(f.path,'/',f.save_name) AS file_path,
 											(
@@ -146,6 +146,7 @@
 	$refund_bank = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_bank"] : "";
 	$refund_holder = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_holder"] : "";
 	$refund_account = isset($registration_detail["refund_account"]) ? $registration_detail["refund_account"] : "";
+    $refund_amount = $registration_detail["refund_amount"] ?? $payment_price;
 	$register_date = isset($registration_detail["register_date"]) ? $registration_detail["register_date"] : "";
 	$register_path = $registration_detail["register_path"] ?? null;
 	$etc = $registration_detail["etc1"] ?? null;
@@ -589,8 +590,20 @@
                             <?php
                             }
                             ?>
-							<th>환불일</th>
-							<td><?=$refund_date?></td>
+							<th>환불일 / 환불금액</th>
+							<!-- <td><?=$refund_date?> / <input type="text" class="" name="refund_amount" placeholder="환불금액"/><button type="button" class="btn submit refund" data-type="update_refund_amount" <?=$disabled?>>저장</button></td> -->
+							<td>
+								<div class="refund_forms">
+									<span><?=$refund_date?> / </span><input type="text" class="refund" name="refund_amount" placeholder="환불금액" value="<?=$refund_amount?>" <?=$disabled?>/>
+                                    <?php
+                                    if ($is_modify) {
+                                    ?>
+                                    <button type="button" class="btn submit refund" data-type="update_refund_amount" <?=$disabled?>>저장</button>
+                                        <?php
+                                    }
+                                    ?>
+								</div>
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -668,7 +681,9 @@ $(document).ready(function(){
 	$(".submit").on("click", function(){
 		var data = {};
 		var submit_type = $(this).data("type");
+
 		var registration_idx = $("input[name=registration_idx]").val();
+        var refund_amount = $("input[name=refund_amount]").val();
 
 		if(submit_type == "update_payment_status") {
 			if(!$("select[name=payment_status]").val()) {
@@ -695,14 +710,20 @@ $(document).ready(function(){
 			data["refund_reason"] = $("input[name=refund_reason]").val();
 		} else if(submit_type == "update_refund_info") {
 			if($("input[name=refund_bank]").val() == "" || $("input[name=refund_holder]").val() == "" || $("input[name=refund_account]").val() == "") {
-			alert("환불받은 계좌 정보를 확인해주세요.");
-			return false;
+                alert("환불받은 계좌 정보를 확인해주세요.");
+                return false;
 			}
 			data["refund_bank"] = $("input[name=refund_bank]").val();
 			data["refund_holder"] = $("input[name=refund_holder]").val();
 			data["refund_account"] = $("input[name=refund_account]").val();
 			
-		}
+		} else if(submit_type === "update_refund_amount") {
+            if(refund_amount===""){
+                alert("환불금액이 입력되지 않았습니다.")
+                return false;
+            }
+            data["refund_amount"] = refund_amount;
+        }
 
 		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
 			$.ajax({

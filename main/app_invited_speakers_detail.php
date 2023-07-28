@@ -25,7 +25,14 @@ $select_program_query = "
                                        WHEN program_date = '2023-09-09' THEN 'day_3'
                                        ELSE ''
                                        END
-                                   ) as day
+                                   ) as day,
+                                   (CASE
+                                       WHEN program_date = '2023-09-07' THEN 'Sep.7(Thu)'
+                                       WHEN program_date = '2023-09-08' THEN 'Sep.8(Fri)'
+                                       WHEN program_date = '2023-09-09' THEN 'Sep.9(Sat)'
+                                       ELSE ''
+                                       END
+                                   ) as date
                             FROM program p
                             LEFT JOIN (
                                 SELECT pc.idx, pc.program_idx, pc.contents_title, pc.speaker_idx
@@ -35,6 +42,7 @@ $select_program_query = "
                             LEFT JOIN invited_speaker isp on isp.idx=pc.speaker_idx
                             LEFT JOIN program_place pp on pp.idx = p.program_place_idx
                             WHERE isp.is_deleted = 'N'
+                            AND p.is_deleted = 'N'
 							AND isp.idx= {$invited_speaker_idx}
                             ";
 
@@ -70,6 +78,11 @@ $program_list = get_data($select_program_query);
 					<ul class="program_detail_ul">
                         <?php
                             foreach ($program_list as $program){
+                                if(substr_count($program['chairpersons'],',')>=2){
+                                    $chairperson = 'Chairpersons:';
+                                } else {
+                                    $chairperson = 'Chairperson:';
+                                }
                         ?>
 						<li name="<?=$program['program_tag_name']?>" class="<?=$program['day']?>">
 							<div class="main">
@@ -78,12 +91,12 @@ $program_list = get_data($select_program_query);
                                 <?php
                                     if($program['chairpersons']!==null){
                                 ?>
-								<p class="chairperson"><span class="bold">Chairpersons:</span> <?=$program['chairpersons']?></p>
+								<p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
                                 <?php
                                 }
                                 ?>
 								<div class="info">
-									<span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
+									<span class="time"><?=$program['start_time']?>-<?=$program['end_time']?>, <?=$program['date']?></span>
 									<span class="branch"><?=$program['program_place_name']?></span>
 								</div>
 							</div>

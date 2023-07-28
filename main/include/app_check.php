@@ -48,7 +48,7 @@ if (empty($_SESSION["USER"])) {
             dataType: "JSON",
             success: function (res) {
                 //alert("hello");
-            }
+		    }
         });
     }
 </script>

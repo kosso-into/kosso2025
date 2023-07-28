@@ -38,7 +38,7 @@ $(document).on("keydown", "#keywords", function(key){
 	}
 });
 
-function selectFavorite(){
+function selectKeywords(){
     let keywords = $('#keywords').val();
 
     $.ajax({

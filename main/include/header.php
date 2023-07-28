@@ -157,6 +157,19 @@ $(document).ready(function() {
     $(".not_yet").click(function() {
         alert("Coming soon.")
     });
+
+    $(".online_submission_alert").click(function(event) {
+        event.preventDefault();
+        alert("The abstract submission has expired.\nAbstract submission is not available.");
+
+        let parent = event.target.parentElement.parentElement;
+
+        if(parent.classList.contains('m_sub_nav')){
+            parent.style.display = 'block';
+        }
+
+        return false;
+    });
 });
 </script>
 

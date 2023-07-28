@@ -61,12 +61,22 @@ echo '<script type="text/javascript">
                     }
                   }
 
-                  //스크롤 위치 & 액션
-                  $(".program_detail_ul li").each(function(){
+                  //스크롤 위치 & 액션 원본
+                  /*$(".program_detail_ul li").each(function(){
                     if("' . $name . '" === $(this).attr("name")) {
                         var this_top = $(this).offset().top;
                         $("html, body").animate({scrollTop: this_top - 70}, 1000);
                         console.log("scrollTop: ", this_top - 150)
+                    }
+                  });*/
+
+                  //스크롤 위치 & 액션 가운데로 수정
+                  var window_h = $(window).outerHeight() / 2.3;
+                  $(".program_detail_ul li").each(function(){
+                    if("' . $name . '" === $(this).attr("name")) {
+                        var this_top = $(this).offset().top;
+                        $("html, body").animate({scrollTop: this_top - window_h}, 1000);
+						console.log(this_top + window_h)
                     }
                   });
 
@@ -105,6 +115,8 @@ echo '<script type="text/javascript">
             break;
         case "room7" : case "Room7" : $option_room = "7";
             break;
+        case "Room1~3" : $option_room = "8";
+            break;
     }
 
     if($_GET===[]){
@@ -116,13 +128,19 @@ echo '<script type="text/javascript">
     }
 
     if($e != ""){
-        $row_sql .= " AND program_place_idx = '$option_room' ";
+        if($option_room == 1 || $option_room == 2 || $option_room == 3){
+            $row_sql .= " AND program_place_idx IN ($option_room, 8) ";
+        } else if($option_room == 8){
+            $row_sql .= "";
+        } else {
+            $row_sql .= " AND program_place_idx IN ($option_room) ";
+        }
     }
 
-    $select_place_sql = " SELECT idx, program_place_name FROM program_place";
+    $select_place_sql = " SELECT idx, program_place_name FROM program_place WHERE idx!=8";
     $place_list = get_data($select_place_sql);
 
-    $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18";
+    $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
     $category_list = get_data($select_category_sql);
     $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
 
@@ -148,7 +166,7 @@ echo '<script type="text/javascript">
                                      JOIN (SELECT @rownum := 0) AS R
                                      WHERE p.is_deleted = 'N'
                                      {$row_sql}
-                                     ORDER BY _start_time ASC, program_name ASC
+                                     ORDER BY _start_time ASC, program_name*1 ASC
                                  ) P
                             ";
 
@@ -214,7 +232,7 @@ echo '<script type="text/javascript">
     }
 ?>
 
-<section class="container app_version app_scientific">
+<section class="container app_version app_scientific app_program_detail">
 	<div class="app_title_box">
 		<h2 class="app_title">
 			PROGRAM
@@ -226,7 +244,7 @@ echo '<script type="text/javascript">
 		</ul>
 	</div>
     <form name="select_form">
-	<ul class="app_tab program center_t">
+	<ul class="app_tab program center_t fix_cont">
 		<li value="1" class="on"><a href="javascript:;">Sep.7(Thu)</a></li>
 		<li value="2"><a href="javascript:;">Sep.8(Fri)</a></li>
 		<li value="3"><a href="javascript:;">Sep.9(Sat)</a></li>
@@ -235,7 +253,7 @@ echo '<script type="text/javascript">
     <div class="inner">
         <div class="tab_wrap">
             <div class="tab_cont on">
-                <ul class="app_sort_form app_half_ul">
+                <ul class="app_sort_form app_half_ul fix_cont_sub">
 					<li>
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
 							<option value="" hidden>Select Room</option>
@@ -291,8 +309,13 @@ echo '<script type="text/javascript">
 									<p class="title"><?=$program['program_name']?></p>
                                     <?php
                                         if($program['chairpersons']!==null){
+                                            if(substr_count($program['chairpersons'],',')>=2){
+                                                $chairperson = 'Chairpersons:';
+                                            } else {
+                                                $chairperson = 'Chairperson:';
+                                            }
                                     ?>
-                                    <p class="chairperson"><span class="bold">Chairpersons: </span> <?=$program['chairpersons']?></p>
+                                    <p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
                                     <?php
                                     }
                                     ?>

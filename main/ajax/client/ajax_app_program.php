@@ -19,16 +19,20 @@ if($_POST["flag"] == "select") {
             break;
     }
 
-    if($date != ""){
+    if($date !== ""){
         $row_sql .= " AND program_date = '{$program_date}' ";
         $row_sql2 = " AND start_time >= '{$program_date}' ";
     }
 
-    if($option_room != ""){
-        $row_sql .= " AND program_place_idx = $option_room ";
+    if($option_room !== ""){
+        if($option_room == 1 || $option_room ==2 || $option_room==3){
+            $row_sql .= " AND program_place_idx IN ($option_room, 8) ";
+        } else{
+            $row_sql .= " AND program_place_idx = $option_room ";
+        }
     }
 
-    if($option_category != ""){
+    if($option_category !== ""){
         $row_sql .= " AND program_category_idx = $option_category ";
     }
 
@@ -54,7 +58,7 @@ if($_POST["flag"] == "select") {
                                      JOIN (SELECT @rownum := 0) AS R
                                      WHERE p.is_deleted = 'N'
                                      {$row_sql}
-                                     ORDER BY _start_time ASC, program_name ASC
+                                     ORDER BY _start_time ASC, program_name*1 ASC
                                  ) P
                             ";
     $program_list = get_data($select_program_query);
@@ -137,7 +141,7 @@ if($_POST["flag"] == "select") {
         exit;
     }
 
-} else if($_POST["flag"] == "schedule"){
+} else if($_POST["flag"] === "schedule"){
     $member_idx = $_SESSION["USER"]["idx"];
     $program_idx = $_POST['program_idx'] ?? "";
     $check_schedule = $_POST['check_schedule'];
