@@ -6,17 +6,19 @@
     if(!empty($session_user) && $session_app_type == 'Y') {
         include_once('./include/app_header.php');
     } else {
-        include_once('./include/header.php');
+        //include_once('./include/header.php');
+		include_once('./include/app_header.php');
     }
 
     $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
 ?>
 
 <!-- app일 시 section에 app_version 클래스 추가 -->
-<section class="container sponsor app_tour_map exhibition <?= $add_section_class; ?>">
+<section class="container sponsor app_tour_map exhibition <?= $add_section_class; ?> app_version">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 <?php
-    if(!empty($session_user) && $session_app_type == 'Y') {
+	//if(!empty($session_user) && $session_app_type == 'Y') {
+    if(!empty($session_user) && $session_app_type == 'N') {
 ?>
 	<div class="app_title_box">
 		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
@@ -33,14 +35,15 @@
 	if (!empty($session_app_type) && $session_app_type == 'N') {
 		// Web일때
 ?>
-    <h1 class="page_title">Exhibition</h1>
+    <!-- <h1 class="page_title">Exhibition</h1> -->
 <?php
     }
 ?>
 	<!-- HUBDNCLHJ : APP일시 div.inner 주석 후 container_inner 주석해제 -->
     <!-- 앱 뷰 -->
 <?php
-    if(!empty($session_user) && $session_app_type == 'Y') {
+    //if(!empty($session_user) && $session_app_type == 'Y') {
+	if(!empty($session_user) && $session_app_type == 'N') {
 ?>
 	<div class="container_inner">
 		<div class="contents_box">
@@ -292,11 +295,11 @@
 	if (!empty($session_app_type) && $session_app_type == 'N') {
 		// Web일때
 ?>
-    <div class="inner">
-		<div class="sponsor_exhibition">
-			<img class="coming" src="./img/coming.png" />
-		</div>
-	</div>
+    <!-- <div class="inner">
+    		<div class="sponsor_exhibition">
+    			<img class="coming" src="./img/coming.png" />
+    		</div>
+    	</div> -->
 <?php
     }
 ?>
@@ -334,6 +337,7 @@
         // mo일때
         include_once('./include/app_footer.php'); 
     }else {
-        include_once('./include/footer.php');
+        //include_once('./include/footer.php');
+		include_once('./include/app_footer.php');
     }
 ?>

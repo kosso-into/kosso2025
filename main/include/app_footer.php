@@ -19,8 +19,8 @@ $select_schedule_query = "
                             )s on s.program_idx=p.idx
                             WHERE p.is_deleted = 'N'
                             AND s.idx IS NOT NULL
-                            AND '2023-09-07 15:50:00'>=start_time - interval 10 minute
-                            AND '2023-09-07 15:50:00'<=start_time + interval 1 minute
+                            AND NOW()>=start_time - interval 10 minute
+                            AND NOW()<=start_time + interval 1 minute
                             ORDER BY program_date ASC, start_time ASC
                         ";
 $schedule = sql_fetch($select_schedule_query);

@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
-<?php include_once('./include/header.php'); ?>
+<?php include_once('./include/app_header.php'); ?>
 
-<section class="container sponsor app_tour_map app_version">
+<section class="container sponsor app_tour_map app_version exhibition">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 	<div class="app_title_box">
 		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
@@ -23,7 +23,8 @@
 			<div class="app_contents_wrap type2">
 				<div class="floor floor_3 on">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_3f.png" alt="">
+						<!-- <img src="/main/img/floor_map_3f.png" alt=""> -->
+						<img src="/main/img/img_floor_3.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -104,7 +105,8 @@
 				</div>
 				<div class="floor floor_5">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_5f.png" alt="">
+						<!-- <img src="/main/img/floor_map_5f.png" alt=""> -->
+						<img src="/main/img/img_floor_5.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -190,7 +192,8 @@
 				</div>
 				<div class="floor floor_6">
 					<div class="floor_map">
-						<img src="/main/img/floor_map_6f.png" alt="">
+						<!-- <img src="/main/img/floor_map_6f.png" alt=""> -->
+						<img src="/main/img/img_floor_6.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -553,4 +556,4 @@
 	});
 </script>
 
-<?php include_once('./include/footer.php'); ?>
+<?php include_once('./include/app_footer.php'); ?>

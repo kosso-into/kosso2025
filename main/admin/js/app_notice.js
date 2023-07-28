@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    let notice_idx = "";
+
     $(".app_pin_btn").on("click",function(event) {
         //$(this).toggleClass("on");
 
@@ -60,20 +62,25 @@ $(document).ready(function(){
     });
 
     $(".push_y").on("click",function(event) {
-        let message = ($('textarea[name=notice_title]').text());
+        let message = $('textarea[name=notice_title]').val();
 
         $.ajax({
             url: "/main/ajax/admin/ajax_app_notice.php",
             type: "POST",
             data: {
                 flag: "push",
-                message: message
+                message: message,
+                notice_idx: notice_idx
             },
             dataType: "JSON",
             success: function (res) {
                 console.log("push")
             }
         });
+    });
+
+    $(".app_push_btn").on("click",function(event) {
+        notice_idx=event.target.value;
     });
 
 	$(".app_modify_btn").on("click",function(event) {

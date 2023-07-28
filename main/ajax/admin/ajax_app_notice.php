@@ -41,6 +41,7 @@ if($_POST["flag"]==="pin"){
 
 } else if($_POST["flag"] === "push"){
     $push_message = $_POST["message"];
+    $notice_idx = $_POST["notice_idx"];
 
     $select_query = "
                     SELECT DISTINCT token, type, m.idx, is_alarm
@@ -64,7 +65,7 @@ if($_POST["flag"]==="pin"){
     }
 
     $title = "ICOMES2023";
-    $url = 'url';
+    $url = '/main/app_notice_detail.php?idx='.$notice_idx;
     $message = $push_message;
 
     $data = [
@@ -190,6 +191,7 @@ if($_POST["flag"]==="pin"){
 								register = '{$register}'          
 					";
 	}
+
     $insert_notice = sql_query($insert_query);
 
     if($insert_notice){

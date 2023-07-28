@@ -30,8 +30,8 @@
 
     } else if($_POST["flag"] == "regist"){
         $registration_idx = $_POST["data"]["registration_idx"];
-        $promotion_code = $_POST["data"]["promotion_code"];
-        $recommender = $_POST["data"]["recommender"];
+        $promotion_code = $_POST["data"]["promotion_code"] ?? "";
+        $recommender = $_POST["data"]["recommender"] ?? "";
 
         $promotion_code_sql ="
 					SELECT idx, promotion_code

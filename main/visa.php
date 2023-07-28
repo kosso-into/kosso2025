@@ -19,12 +19,7 @@
     <h1 class="page_title">VISA & K-ETA</h1>
     <div class="inner">
         <div class="visa_desc text_box">
-            <p>
-                Foreign visitors who wish to enter the Republic of Korea must have a valid passport and obtain a Korean
-                visa before the visitation. However, people from 112 countries who wish to visit Korea temporarily are
-                permitted to enter without a visa according to visa-exemption agreements or in accordance with
-                principles of reciprocity or national interest.
-            </p>
+            <p>Foreign visitors who wish to enter the Republic of Korea must have a valid passport and obtain a Korean visa before the visitation. However, people from some countries who wish to visit Korea temporarily are permitted to enter without a visa according to visa-exemption agreements or in accordance with principles of reciprocity or national interest.</p>
         </div>
         <div class="section">
             <h3 class="title">VISA</h3>
@@ -97,13 +92,9 @@
                 </p>
                 <div class="text_box indent">
                     <ul>
-                        <li>• The purpose of travel should be for tourism, visiting family members, participating in
-                            events or meetings, or commercial business (excluding the pursuit of profit).</li>
-                        <li>• Starting 1st September 2021, K-ETA is mandatory for all foreigners entering Korea from
-                            visa-waiver countries and visa-free countries. (Ireland included) All foreigners without
-                            either a K-ETA or a valid Visa will not be permitted to board a plane to Korea. (You do not
-                            need a K-ETA if you have a valid visa)
-                        </li>
+                        <li>• The purpose of travel should be for tourism, visiting family members, participating in events or meetings, or commercial business (excluding the pursuit of profit).</li>
+                        <li>• Starting 1st September 2021, K-ETA is mandatory for all foreigners entering Korea from visa-waiver countries and visa-free countries. All foreigners without either a K-ETA or a valid Visa will not be permitted to board a plane to Korea. (You do not need a K-ETA if you have a valid visa)</li>
+						<li class="bold">• Starting 1st April 1, 2023, K-ETA (The Korea Electronic Travel Authorization) will be temporarily exempted to the 26 countries/regions listed below.<br/>- Austria, Australia, Belgium, Canada, Czech Republic, Denmark, Finland, France, Germany, Hong Kong, Italy, Japan, Macau, Netherlands, New Zealand, Norway, Poland, Qatar, Romania, Saudi Arabia, Singapore, Spain, Sweden, Taiwan, UAE, United Kingdom, United States (including Guam)</li>
                     </ul>
                 </div>
             </div>

@@ -12,7 +12,11 @@ if($category_idx!==''){
     $row_sql .= " AND category_idx = {$category_idx}" ;
 }
 
-$select_category_sql = " SELECT idx, title FROM program_category WHERE idx IN(5,6,7,8,9,10,11,12,13,14,15,16,17,18)";
+$select_category_sql = " SELECT idx, title 
+                         FROM program_category 
+                         WHERE idx IN(5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+                         ORDER BY sort_num ASC;
+                         ";
 $category_list = get_data($select_category_sql);
 
 $select_abstract_query="
@@ -32,7 +36,7 @@ $abstract_list = get_data($select_abstract_query);
 	<div class="container_inner w_full">
 		<div class="app_contents_box">
 			<div class="app_contents_wrap type3">
-				<ul class="app_sort_form app_half_ul">
+				<ul class="app_sort_form app_half_ul fix_cont">
 					<li>
 						<select name="" id="abstract_category" onchange="selectAbstract()">
 							<option value="" hidden>Select Category</option>

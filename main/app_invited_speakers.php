@@ -12,7 +12,7 @@ $select_invited_speaker_query = "
                                          ELSE 'Y'
                                             END
                                     ) AS favorite_check,
-									image_path, cv_path
+									image_path, cv_path, nation
                                 FROM invited_speaker isp
                                 LEFT JOIN(
                                     SELECT fisp.idx, member_idx, invited_speaker_idx
@@ -45,10 +45,10 @@ $initial_list = get_data($select_initial_query);
 	</div>
 	<div class="container_inner">
 		<div class="contents_box">
-			<div class="app_search_area">
+			<div class="app_search_area fix_cont">
 				<!-- <p class="f_bold">Please enter keywords</span></p> -->
 				<div class="search_input">
-					<input id="keywords" type="text" placeholder="Please enter keywords">
+					<input id="keywords" type="text" placeholder="Please enter keywords" oninput="selectKeywords();">
 					<button type="button" class="search_icon"></button>
 				</div>
 			</div>
@@ -65,7 +65,7 @@ $initial_list = get_data($select_initial_query);
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
-											<p><?=$isl['first_name']?> <?=$isl['last_name']?></p>
+											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span></p>
 										</div>
 									</a>
 									<button type="button" class="favorite_btn on" value="<?=$isl['idx']?>"></button>
@@ -101,7 +101,7 @@ $initial_list = get_data($select_initial_query);
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
-											<p><?=$isl['first_name']?> <?=$isl['last_name']?></p>
+											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span></p>
 										</div>
 									</a>
 									<button type="button" class="favorite_btn <?=$favorite?>" value="<?=$isl['idx']?>"></button>
@@ -128,7 +128,7 @@ $initial_list = get_data($select_initial_query);
 		})
 
         $(".search_icon").click(function(){
-            selectFavorite();
+            selectKeywords();
         })
 	});
 </script>

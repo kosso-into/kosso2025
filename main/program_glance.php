@@ -46,12 +46,14 @@
 	if (!empty($session_app_type) && $session_app_type == 'Y') {
 		// mobile일때
 ?>
-		<ul class="app_tab program glance" >
-			<li class="row2 all_days on"><a href="javascript:;">All Days</a></li>
-			<li><a href="javascript:;">Sep.7(Thu)</a></li>
-			<li><a href="javascript:;">Sep.8(Fri)</a></li>
-			<li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li>
-		</ul>
+		<div class="app_tab_wrap fix_cont">
+			<ul class="app_tab program glance">
+				<li class="row2 all_days on"><a href="javascript:;">All Days</a></li>
+				<li><a href="javascript:;">Sep.7(Thu)</a></li>
+				<li><a href="javascript:;">Sep.8(Fri)</a></li>
+				<li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li>
+			</ul>
+		</div>
 <?php
 	}
 ?>
@@ -260,7 +262,7 @@
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="purple_bg pointer" name="joint_symposium_easo">
-									Joint Symposium EASO
+									Joint Symposium <br/>KSSO-EASO
 									<input type="hidden" name="e" value="room6">
 								</td>
 								<td></td>
@@ -421,7 +423,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_10">
-									Symposium 10 <p>Neuropsychological Aspect of Obesity</p>
+									Symposium 10 <p>The Effect of Obesity and HDL Concentration on AD Pathology</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_11">
@@ -550,7 +552,7 @@
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="purple_bg pointer" name="joint_symposium_tos">
-									Joint Symposium TOS
+									Joint Symposium <br/>KSSO-TOS
 									<input type="hidden" name="e" value="room6">
 								</td>
 								<td></td>
@@ -744,7 +746,7 @@
 									<div class="colons_div">17:40-18:00</div>
 								</td>
 								<td class="yellow_bg pointer" name="closing_ceremony" colspan="3">
-									Closing Ceremony
+									Closing & Award Ceremony
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>

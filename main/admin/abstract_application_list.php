@@ -260,7 +260,8 @@
 		<div class="container">
 			<div class="title clearfix">
 				<h1 class="font_title">Poster Abstract Submission</h1>
-				<button class="btn excel_download_btn" onclick="javascript:fnExcelReport('Poster Abstract Submission', html);">엑셀 다운로드</button>
+                <button class="btn excel_download_btn" onclick="javascript:fnExcelReport('Poster Abstract Submission', html);">엑셀 다운로드</button>
+                <button class="btn excel_download_btn" onclick="javascript:window.location.href='/main/common/lib/zipArchive.php'">전체 파일 다운로드</button>
 			</div>
 			<div class="contwrap centerT has_fixed_title">
 				<form name="search_form">

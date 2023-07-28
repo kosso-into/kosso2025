@@ -7,7 +7,7 @@
         echo "
                 <script>
                     if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
-                        window.AndroidScript.logout('');
+                        window.AndroidScript.logout();
                     }
                 
                     if (webkit.messageHandlers!=null) {

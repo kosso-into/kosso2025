@@ -162,8 +162,8 @@
 							<td><?= $submission["regist_date"] ?></td>
 							<td data-idx="<?= $submission["idx"] ?>">
 								<button type="button" class="btn review_regi_open">Review</button>
-								<button type="button" class="btn modify_btn">Modify</button>
-								<button type="button" class="btn delete_btn">Delete</button>
+<!--								<button type="button" class="btn modify_btn online_submission_alert">Modify</button>-->
+<!--								<button type="button" class="btn delete_btn online_submission_alert">Delete</button>-->
 							</td>
 						</tr>
 					<?php } ?>
@@ -173,7 +173,7 @@
 			<div class="pagination">
 			</div>
 			<div class="centerT">
-				<button class="btn blue_btn long" onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button>
+				<button class="btn blue_btn long online_submission_alert">Make a new submission</button>
 			</div>
 		</div> 
 	</div>
@@ -636,36 +636,36 @@
 	const position_arr = ["Professor", "Physician", "Researcher", "Student", "Other"];
 
 	$(document).ready(function(){
-		$(".delete_btn").on("click", function(){
-			const idx = $(this).parent().data("idx");
-			if(confirm(locale(language.value)("submission_cancel_msg"))) {
-				$.ajax({
-					url : PATH+"ajax/client/ajax_submission.php",
-					type : "POST",
-					data : {
-						flag : "submission_delete",
-						idx : idx
-					},
-					dataType : "JSON",
-					success : function(res){
-						if(res.code == 200) {
-							alert(locale(language.value)("complet_submission_cancel"));
-							location.reload();
-						} else if(res.code == 400) {
-							alert(locale(language.value)("error_submission_cancel"));
-							return false;
-						} else {
-							alert(locale(language.value("reject_msg")));
-							return false;
-						}
-					}
-				});
-			}
-		});
+		// $(".delete_btn").on("click", function(){
+		// 	const idx = $(this).parent().data("idx");
+		// 	if(confirm(locale(language.value)("submission_cancel_msg"))) {
+		// 		$.ajax({
+		// 			url : PATH+"ajax/client/ajax_submission.php",
+		// 			type : "POST",
+		// 			data : {
+		// 				flag : "submission_delete",
+		// 				idx : idx
+		// 			},
+		// 			dataType : "JSON",
+		// 			success : function(res){
+		// 				if(res.code == 200) {
+		// 					alert(locale(language.value)("complet_submission_cancel"));
+		// 					location.reload();
+		// 				} else if(res.code == 400) {
+		// 					alert(locale(language.value)("error_submission_cancel"));
+		// 					return false;
+		// 				} else {
+		// 					alert(locale(language.value("reject_msg")));
+		// 					return false;
+		// 				}
+		// 			}
+		// 		});
+		// 	}
+		// });
 		
 		$(".modify_btn").on("click", function(){
 			const idx = $(this).parent().data("idx");
-			window.location.href="./abstract_submission.php?idx="+idx;
+			//window.location.href="./abstract_submission.php?idx="+idx;
 		})
 
 		$(".review_regi_open").click(function(){

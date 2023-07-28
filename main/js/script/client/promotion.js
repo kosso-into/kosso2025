@@ -15,11 +15,11 @@ $(document).ready(function() {
             return
         }
 
-        if (!recommender) {
-            $("input[name=recommended_by]").focus();
-            alert("Please Enter the recommender.");
-            return
-        }
+        // if (!recommender) {
+        //     $("input[name=recommended_by]").focus();
+        //     alert("Please Enter the recommender.");
+        //     return
+        // }
 
         select_promotion_code(promotionCode,recommender);
     });
@@ -53,7 +53,7 @@ $(document).ready(function() {
                         }
                     }
                 } else {
-                    alert("select promotion error.");
+                    alert("Please check the promotion code.");
                     return;
                 }
             }

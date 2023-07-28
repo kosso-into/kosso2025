@@ -96,18 +96,8 @@ class Push
         curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
         curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields ) );
 
-        $response = curl_exec($ch);
-        curl_close($ch);
-
-        print_r($response);
-        exit;
-
-
-        return;
-
         //create the multiple cURL handle
         $mh = curl_multi_init();
-        print_r($mh);
 
         //add the two handles
         curl_multi_add_handle($mh,$ch);

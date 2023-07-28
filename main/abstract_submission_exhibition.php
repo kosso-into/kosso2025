@@ -70,34 +70,31 @@ $info = sql_fetch($sql_info);
                     <h3 class="title">Schedule of Poster Exhibition</h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-                     <table class="c_table detail_table ">
-                        <colgroup>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                        </colgroup>
-                        <tr>
-							<th></th>
-                            <th class="f_bold text_center">Day 1 <br class="br_mb_only">(Sep. 7)</th>
-                            <th class="f_bold text_center">Day 2 <br class="br_mb_only">(Sep. 8)</th>
-                            <th class="f_bold text_center">Day 3 <br class="br_mb_only">(Sep. 9)</th>
-                        </tr>
-						<tr>
-							<td class="text_center">Time</td>
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
-						</tr>
-						<tr>
-							<td class="text_center">Location</td>
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
-						</tr>
-                    </table>
+				   <table class="c_table detail_table">
+					   <colgroup>
+						   <col>
+						   <col>
+						   <col>
+					   </colgroup>
+					   <tr>
+						   <th></th>
+						   <th class="f_bold text_center">Sep. 8(Fri)</th>
+						   <th class="f_bold text_center">Sep. 9 (Sat)</th>
+					   </tr>
+					<tr>
+						<td class="text_center">Location</td>
+						<td class="text_center">Poster Zone, 6F</td>
+						<td class="text_center">Poster Zone, 6F</td>
+					</tr>
+					<tr>
+						<td class="text_center">Time</td>
+						<td class="text_center">07:30 - 18:00</td>
+						<td class="text_center">07:30 - 17:00</td>
+					</tr>
+				   </table>
                 </div>
             </div>
+			<p class="mt10">* September 7th is closed for poster installation. </p>
 			<!--Submission of Presentation Material-->
 			<div>
 				<div class="section_title_wrap2">

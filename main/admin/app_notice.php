@@ -117,7 +117,7 @@
                             <!-- 230717 HUBDNCLHJ : register_date 년,월,일 시,분,초 까지 노출되어야 합니다.-->
  						    <td><?=$l["register_date"]?></td>
 							<td class="notice_title"><p class="ellipsis"><?=$l["title_en"]?></p></td>
-							<td><button type="button" class="btn app_push_btn app_push_open" name="pop_btn" value="<?=$l['idx']?>>">Push</button></td>
+							<td><button type="button" class="btn app_push_btn app_push_open" name="pop_btn" value="<?=$l['idx']?>">Push</button></td>
 							<td>
 								<button type="button" class="btn app_pin_btn <?=$pin?>" value="<?=$l['idx']?>">Pin</button>
 								<button type="button" class="btn app_modify_btn" value="<?=$l['idx']?>">Modify</button>

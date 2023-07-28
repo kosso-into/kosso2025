@@ -1,6 +1,6 @@
 <?php 
-	include_once('/var/www/icomes2023/main/common/common.php');
-	include_once('/var/www/icomes2023/main/push_library/push.php'); 
+	include_once("/var/www/icomes2023/main/common/common.php");
+	include_once("/var/www/icomes2023/main/push_library/push.php"); 
 
 	$select_query = "SELECT 
 						ps.idx, ps.member_idx, ps.type, ps.token, ps.program_idx, 
@@ -23,6 +23,8 @@
 					ON m.idx = ps.member_idx
 					WHERE push_time >= DATE_ADD(NOW(), INTERVAL -1 MINUTE)
                     AND push_time <= DATE_ADD(NOW(), INTERVAL +1 MINUTE)
+                    AND ps.type IS NOT NULL
+                    AND ps.token IS NOT NULL
 					";
 
 	$push_list = get_data($select_query);
@@ -32,7 +34,7 @@
 	}
 
 	$title   = "ICOMES2023";
-	$url     = 'url';
+	$url     = '/main/app_schedule.php';
 	$message = '';
 
 	//$data = [

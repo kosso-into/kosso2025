@@ -61,7 +61,13 @@ function selectProgram(){
                     }
 
                     if(pl.chairpersons!=null){
-                        chairpersons_html += '<p class="chairperson"><span class="bold">Chairpersons: </span>'+pl.chairpersons+'</p>'
+                        var chairperson = "";
+                        if((pl.chairpersons.split(',').length-1)>=2){
+                            chairperson = "Chairpersons: ";
+                        } else {
+                            chairperson = "Chairperson: "
+                        }
+                        chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
                     }
 
                     if(pl.preview!=null){

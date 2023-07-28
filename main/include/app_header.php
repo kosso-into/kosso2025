@@ -1,3 +1,7 @@
+<?php
+	include_once('./include/app_check.php');
+?>
+
 <!-- 사용자 App header -->
 <header class="app_header">
 	<div class="hd_inner">

@@ -16,6 +16,8 @@
         $refund_holder = isset($data["refund_holder"]) ? $data["refund_holder"] : "";
         $refund_account = isset($data["refund_account"]) ?$data["refund_account"] : "";
 
+        $refund_amount = $data["refund_amount"] ?? "";
+
         $registration_info = sql_fetch("SELECT * FROM request_registration WHERE idx = {$registration_idx}");
         $payment_no = $registration_info['payment_no'];
 
@@ -129,10 +131,14 @@
             $update_payment_query .= " refund_account = '{$refund_account}', ";
         }
 
+        if($refund_amount !== "") {
+            $update_payment_query .= " refund_amount = '{$refund_amount}', ";
+        }
+
         $update_payment_query = substr($update_payment_query, 0, -2);
 
         $update_payment_query .= " WHERE idx = '{$payment_no}' ";
- 
+
         $payment_update = sql_query($update_payment_query);
 
         if(!$payment_update) {

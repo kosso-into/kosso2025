@@ -286,6 +286,11 @@ function other_change(value) {
 	$("#submit_btn").addClass("gray_btn");
 }*/
 $(document).ready(function() {
+    alert("Abstract Submission is closed.");
+    window.history.back();
+    window.location.href = "/main/index.php";
+    return;
+
     $(document).on("click", ".blue_btn", function() {
         var idx = $(this).data("idx");
         var data = {};
