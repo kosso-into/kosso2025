@@ -73,12 +73,12 @@ $info = sql_fetch($sql_info);
 								<td class="f_bold">Mid-May</td>
 							</tr>
 							<tr>
-								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
-								<td><span class="font_inherit f_bold">July 27 (Thu)</span></td>
+								<th>Abstract Submission<br class="br_mb_only"> Deadline</th>
+								<td><span class="font_inherit f_bold">August 10 (Thu)</span></td>
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
-								<td class="f_bold">August 8 (Tue)</td>
+								<td class="f_bold">August 14 (Mon)</td>
 							</tr>
 							<tr>
 								<th>Registration Deadline for<br class="br_mb_only"> Approved Abstract Presenters</th>

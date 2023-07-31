@@ -1,6 +1,6 @@
 <?php
 
-$root_path = '/var/www/icomes.or.kr/main';
+$root_path = '/var/www/icomes2023/main';
 
 include_once("{$root_path}/plugin/PHPMailer/PHPMailerAutoload.php");
 include_once("{$root_path}/plugin/PHPMailer/class.phpmailer.php");

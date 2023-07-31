@@ -286,7 +286,7 @@ function other_change(value) {
 	$("#submit_btn").addClass("gray_btn");
 }*/
 $(document).ready(function() {
-    // alert("Abstract Submission is closed.");
+    // alert("The abstract submission has expired.\nAbstract submission is not available.");
     // window.history.back();
     // window.location.href = "/main/index.php";
     // return;
