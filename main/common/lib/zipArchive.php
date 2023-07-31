@@ -156,7 +156,7 @@ $select_abstract_query = "
                               AND ra.`type` = 0
                               AND m.is_deleted = 'N'
                             ORDER BY ra.register_date DESC
-                            LIMIT 10
+                            #LIMIT 20
                         ";
 $abstract_list = get_data($select_abstract_query);
 

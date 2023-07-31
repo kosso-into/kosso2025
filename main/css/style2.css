@@ -1097,9 +1097,9 @@ br.br_530_only {display: none;}
 	/*useful information*/
 	.useful_list p {font-size:16px; margin-bottom:8px;}
 	.useful_list li {font-size: 14px; line-height: 22px;}
-	.useful_list > li > div {float:none;}
-	.useful_list > li > div:first-child {width:100%; max-width:300px; margin:0 auto;}
-	.useful_list > li > div:last-child {width:100%; height:auto; margin-left:0; margin-top:16px;}
+	.container .useful_list > li > div {float:none;}
+	.container .useful_list > li > div:first-child {width:100%; max-width:300px; margin:0 auto;}
+	.container .useful_list > li > div:last-child {width:100%; height:auto; margin-left:0; margin-top:16px;}
 
 	/*mypage_certification*/
 	.mypage_certification .text_box p {font-size:16px; line-height:24px;}
