@@ -307,6 +307,18 @@
 	</div>
 </div>
 -->
+
+<!-- ICOMES 2023 Main 팝업 -->
+<div class="popup last_breaking_pop">
+    <div class="pop_bg"></div>
+    <div class="pop_contents">
+		<a href="/main/abstract_submission.php"><img src="/main/img/Last_Breaking_popup_230731.png" alt=""></a>
+        <div class="pop_bottoms">
+			<button type="button" class="pop_close bold">Close</button>
+        </div>
+    </div>
+</div>
+
 <script>
 	$('document').ready(function(){
 		/*
@@ -350,5 +362,8 @@
 			]
 		});
 		*/
+
+		//ICOMES 2023 Main 팝업
+		$(".last_breaking_pop").show();
 	});
 </script>
