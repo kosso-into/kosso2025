@@ -352,3 +352,13 @@
 		*/
 	});
 </script>
+
+<!-- ICOMES 2023 Main 팝업 -->
+<div class="popup last_breaking_pop">
+    <div class="pop_bg"></div>
+    <div class="pop_contents">
+        <button type="button" class="pop_close"><img src="/main/img/icons/pop_close.png"></button>
+        <h3 class="pop_title">Terms</h3>
+        <?= $locale("terms") ?>
+    </div>
+</div>
