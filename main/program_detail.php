@@ -721,7 +721,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 1 : Obesity and Cancer</p>
-                                                    <p><span class="bold">Chairperson : Sung Rae Kim</span> (The Catholic University of Korea, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Republic of Korea), <br><span class="bold">Yoon-Sok Chung</span> (Ajou University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -1510,7 +1510,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
-                                                    <p><span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Republic of Korea), <br><span class="bold">Jang Won Son</span> (The Catholic University of Korea, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Jaetaek Kim</span> (Chung-Ang University, Republic of Korea), <br><span class="bold">Ki Woo Kim</span> (Yonsei University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1846,7 +1846,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        TBD<!-- Effects of Exercise and Cerebral Glucose Metabolism as a Strategy for Preventing Cognitive Impairment Associated with Diabetes -->
+                                                                        Effects of Mild Exercise Regimen that Alleviates Dysfunctions of Memory and Hippocampal Lactate Transporter in Type II Diabetic Rats
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hideaki Soya</p>(University of Tsukuba, Japan)
@@ -2168,7 +2168,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">
+																		Contrave: Using a Phenotype-guided Approach for the Treatment of Obesity
+                                                                    </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seo Young Kang</p> (Eulji University, Republic of Korea)
                                                                     </td>
@@ -3326,9 +3328,7 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 12 : Obesity : Transition from Adolescence to Young Adult</p>
-                                                    <p>
-                                                        <span class="bold">Chairperson : So Chung Chung</span> (Konkuk University, Republic of Korea)
-                                                    </p>
+													<p><span class="bold">Chairpersons : Ki Hyeong Lee</span> (Korea University, Republic of Korea), <br><span class="bold">So Chung Chung</span> (Konkuk University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
@@ -3837,7 +3837,7 @@ echo '<script type="text/javascript">
                                             <tr class="purple_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-EASO</p>
+                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-EASO<br/>Decoding Weight Regain in Obesity Management: Key Insights and Strategies</p>
                                                     <p>
 														<span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Republic of Korea),<br/>
 														<span class="bold">Jason Halford</span> (University of Leeds, UK)
@@ -3861,8 +3861,8 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r"><p class="bold">Luca Busetto</p> (Italy)</td>
+                                                                    <td class="bold">Biological Mechanisms of Weight Regain</td>
+                                                                    <td class="text_r"><p class="bold">Luca Busetto</p> (University of Padova, Italy)</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
@@ -3904,7 +3904,7 @@ echo '<script type="text/javascript">
                                             <tr class="purple_bg">
                                                 <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-AOASO</p>
+                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-AOASO<br/>The Contemporary Landscape of Obesity Management in the Asian-Oceanian Region</p>
                                                     <p>
 														<span class="bold">Chairpersons : Kyoung-Kon Kim</span> (Gachon University, Republic of Korea),<br/>
 														<span class="bold">Yoon Jeong Cho</span> (Daegu Catholic University, Republic of Korea)
@@ -4115,8 +4115,8 @@ echo '<script type="text/javascript">
                                             <tr class="light_orange_bg">
                                                 <td>13:00-14:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Guided Poster Presentation 1
-                                                    </p>
+                                                    <p class="font_20 bold mb0">Guided Poster Presentation 1</p>
+													<p><span class="bold">Chairperson : Ga Eun Nam</span> (Korea University, Republic of Korea)</p>
                                                 </td>
                                             </tr>
 											<tr>
@@ -4331,7 +4331,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 13 : Health Consequences of Obesity</p>
-                                                    <p><span class="bold">Chairperson : Seungjoon Oh</span> (Kyung Hee University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Seungjoon Oh</span> (Kyung Hee University, Republic of Korea), <br><span class="bold">Won Jun Kim</span> (University of Ulsan, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -6005,7 +6005,7 @@ echo '<script type="text/javascript">
                                                                         Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Shirley Y. Chao</p>(FoodPolicy Insights, USA)
+                                                                        <p class="bold">Shirley Y. Chao</p>(Food Policy Insights, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6420,7 +6420,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 19 : Diversity and Challenges of Pediatric Obesity</p>
-                                                    <p><span class="bold">Chairperson : Yong Hee Hong</span> (Soonchunhyang University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Young-Jun Rhie</span> (Korea University, Republic of Korea), <br><span class="bold">Yong Hee Hong</span> (Soonchunhyang University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -6615,7 +6615,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 16 : International Collaboration</p>
-                                                    <p><span class="bold">Chairpersons : Luca Busetto</span> (Italy), <br><span class="bold">Soo Lim</span> (Seoul National University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Luca Busetto</span> (University of Padova, Italy), <br><span class="bold">Soo Lim</span> (Seoul National University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -7230,7 +7230,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Article in JOMES</p>
-                                                    <p><span class="bold">Chairperson : You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea)</p>
+													<p><span class="bold">Chairpersons : Dae Joong Kim</span> (Ajou University, Republic of Korea), <br><span class="bold">You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -7349,69 +7349,63 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li> -->
-							<li name="joint_symposium_TOS">
-								<!--
-                                <div class="clearfix2 caption">
-                                    <span>Sep.9(Sat)</span>
-                                </div>
-								-->
-                                <div class="table_wrap detail_table_common x_scroll border_bottom_70">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="purple_bg">
-                                                <td>09:20-10:50</td>
-                                                <td>
-                                                    <p class="font_20 bold mb0">Joint Symposium TOS</p>
-                                                </td>
-                                            </tr>
+							<!-- <li name="joint_symposium_TOS">
+							                                <div class="table_wrap detail_table_common x_scroll border_bottom_70">
+							                                    <table class="c_table detail_table">
+							                                        <colgroup>
+							                                            <col class="col_date">
+							                                            <col>
+							                                        </colgroup>
+							                                        <tbody>
+							                                            <tr class="purple_bg">
+							                                                <td>09:20-10:50</td>
+							                                                <td>
+							                                                    <p class="font_20 bold mb0">Joint Symposium TOS</p>
+							                                                </td>
+							                                            </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
 													will be updated.
 												</td>
 											</tr>
 											<tr>
-                                                <!-- <td colspan="2" class="on"> -->
-                                                <td colspan="2">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>09:20-09:45</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r"></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>09:45-10:10</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r"></td>
-                                                                </tr>
+							                                                <td colspan="2">
+							                                                    <div>
+							                                                        <table class="c_table detail_table padding_0">
+							                                                            <colgroup>
+							                                                                <col class="col_date">
+							                                                                <col>
+							                                                            </colgroup>
+							                                                            <tbody>
+							                                                                <tr>
+							                                                                    <td>09:20-09:45</td>
+							                                                                    <td class="bold"></td>
+							                                                                    <td class="text_r"></td>
+							                                                                </tr>
+							                                                                <tr>
+							                                                                    <td>09:45-10:10</td>
+							                                                                    <td class="bold"></td>
+							                                                                    <td class="text_r"></td>
+							                                                                </tr>
 																<tr>
-                                                                    <td>10:10-10:35</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r"></td>
-                                                                </tr>
+							                                                                    <td>10:10-10:35</td>
+							                                                                    <td class="bold"></td>
+							                                                                    <td class="text_r"></td>
+							                                                                </tr>
 																<tr>
-                                                                    <td>10:35-10:50</td>
-                                                                    <td class="bold">Panel Discussion</td>
-                                                                    <td class="text_r"></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
+							                                                                    <td>10:35-10:50</td>
+							                                                                    <td class="bold">Panel Discussion</td>
+							                                                                    <td class="text_r"></td>
+							                                                                </tr>
+							                                                            </tbody>
+							                                                        </table>
+							                                                    </div>
+							                                                </td>
+							                                            </tr>
+							                                        </tbody>
+							                                    </table>
+							                                </div>
+							                            </li> -->
 							<!--
 							<li name="plenary_oral">
                                 <div class="clearfix2 caption">
@@ -7491,6 +7485,7 @@ echo '<script type="text/javascript">
                                                 <td>12:50-13:50</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Guided Poster Presentation 2</p>
+													<p><span class="bold">Chairperson : Jun Hwa Hong</span> (Eulji University, Republic of Korea)</p>
                                                 </td>
                                             </tr>
 											<tr>

@@ -79,7 +79,7 @@
 			// pc일때
 ?>
 				<div class="rightT mb20">
-					<button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0718.pdf')"
+					<button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0802.pdf')"
 						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
 				</div>
 <?php
@@ -261,8 +261,8 @@
 									<p>Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg pointer" name="joint_symposium_easo">
-									Joint Symposium <br/>KSSO-EASO
+								<td class="purple_bg pointer" name="joint_symposium_easo">Joint Symposium <br/>KSSO-EASO
+                                    <p>Decoding Weight Regain in Obesity Management: Key Insights and Strategies</p>
 									<input type="hidden" name="e" value="room6">
 								</td>
 								<td></td>
@@ -381,8 +381,8 @@
 									Sponsored Session 2 <p>Benefit of DPP4I in Evidence-based Perspective</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg pointer" name="joint_symposium_aoaso_1">
-									Joint Symposium <br/>KSSO-AOASO
+								<td class="purple_bg pointer" name="joint_symposium_aoaso_1">Joint Symposium <br/>KSSO-AOASO
+                                    <p>The Contemporary Landscape of Obesity Management in the Asian-Oceanian Region</p>
 									<input type="hidden" name="e" value="room6">
 									</td>
 								<td></td>
@@ -551,10 +551,11 @@
 									Sponsored Session 3 <p>Is Semaglutide Changing the Paradigm Of Obesity Management?</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td class="purple_bg pointer" name="joint_symposium_tos">
-									Joint Symposium <br/>KSSO-TOS
-									<input type="hidden" name="e" value="room6">
-								</td>
+                                <td></td>
+								<!-- <td class="purple_bg pointer" name="joint_symposium_tos">
+                                    Joint Symposium <br/>KSSO-TOS
+                                    <input type="hidden" name="e" value="room6">
+                                </td> -->
 								<td></td>
 							</tr>
 							<tr>

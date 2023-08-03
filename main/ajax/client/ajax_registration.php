@@ -4,7 +4,6 @@
 			
 		//var_dump($_POST); exit;
 		//var_dump($_SESSION); exit;
-		
 
 		$user_idx = $_SESSION["USER"]["idx"];
 		$data = isset($_POST["data"]) ? $_POST["data"] : "";
@@ -98,6 +97,8 @@
 		$payment_method       = isset($data["payment_method"]) ? $data["payment_method"] : "";							// 결제 방식(0:카드 결제, 1:계좌 이체)
 		$payment_method       = $payment_method == "credit" ? 0 : 1;													
 		$conference_info      = implode("*", $data["conference_info_arr"]);									// 정보획득매체
+
+        $special_request      = $data["special_request"] ?? "";                                                            // Special Request For Food
 
 		$price				  = isset($data["reg_fee"]) ? $data["reg_fee"] : "";										// 결제금액
 		$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
@@ -404,6 +405,9 @@
 			$add_set .= ", conference_info = NULL ";
 		}
 
+        if($special_request !== ""){
+            $add_set .= ", special_request_food = {$special_request} ";
+        }
 
 		if($update_idx){
 			$sql =	"
@@ -778,10 +782,10 @@
 		if($calc_fee) {
 
 			$res = [
-				code => 200,
-				msg => "success",
-				data => $result,
-				country => $country
+				'code' => 200,
+				'msg' => "success",
+				'data' => $result,
+				'country' => $country
 			];
 			echo json_encode($res);
 			exit;
@@ -789,8 +793,8 @@
 		} else {
 
 			$res = [
-				code => 400,
-				msg => "error",
+				'code' => 400,
+				'msg' => "error",
 			];
 			echo json_encode($res);
 			exit;

@@ -18,8 +18,14 @@ if($registrationNo){
 		$register = $prev["register"] ?? 0;
 		$category = $prev["member_type"] ?? "";
         $occupation = $prev["occupation_type"] ?? "";
+        $nation_no = $prev["nation_no"] ?? "";
 
-		$calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category) : 0;
+        if($prev["attendance_type"] == 4 || $prev["attendance_type"] == 5){
+            $calc_fee = calcFee($register, $category, $nation_no);
+        } else{
+            $calc_fee = 0;
+        }
+		//$calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category, $nation_no) : 0;
 		$prev["calc_fee"] = $calc_fee;
 	}
 }
@@ -184,9 +190,30 @@ if ($during_yn !== "Y") {
 							<?php
 								$participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
 
-//								$idx = 0;
 								foreach($participation_arr as $a_arr) {
-									$selected = $prev["attendance_type"] == $a_arr ? "selected" : "";
+                                    $attendance_type = "";
+                                    switch($prev["attendance_type"]) {
+                                        case 0:
+                                            $attendance_type = "Committee";
+                                            break;
+                                        case 1:
+                                            $attendance_type = "Speaker";
+                                            break;
+                                        case 2:
+                                            $attendance_type = "Chairperson";
+                                            break;
+                                        case 3:
+                                            $attendance_type = "Panel";
+                                            break;
+                                        case 4:
+                                            $attendance_type = "Participants";
+                                            break;
+                                        case 5:
+                                            $attendance_type = "Sponsor";
+                                            break;
+                                    }
+
+									$selected = $attendance_type === $a_arr ? "selected" : "";
 
 									echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
 //									$idx = $idx + 1;
@@ -384,6 +411,24 @@ if ($during_yn !== "Y") {
 						</div>
                     </li>
                     <li>
+                        <p class="label">Special Request for Food <span class="red_txt">*</span></p>
+                        <ul class="chk_list info_check_list flex_center type2">
+                            <?= $prev["special_request_food"] === '0' ? "selected" : "" ?>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request1" name='special_request' value="0" <?= $prev["special_request_food"] === '0' ? "checked" : "" ?>/>
+                                <label for="special_request1"><i></i>Not Applicable</label>
+                            </li>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request2" name='special_request' value="1" <?= $prev["special_request_food"] === '1' ? "checked" : "" ?>/>
+                                <label for="special_request2"><i></i>Vegetarian</label>
+                            </li>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request3" name='special_request' value="2" <?= $prev["special_request_food"] === '2' ? "checked" : "" ?>/>
+                                <label for="special_request3"><i></i>Halal</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <p class="label">
 							<?=$locale("register_online_question6_2023")?> <span class="red_txt">*</span>
 						</p>
@@ -483,13 +528,13 @@ if ($during_yn !== "Y") {
 												<div class="radio_wrap">
 													<ul class="flex">
 														<li>
-															<input type="radio" id="credit" class="new_radio" name="payment_method" value="credit" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] != 1 ? "checked" : ""?>>
+															<input type="radio" id="credit" class="new_radio" name="payment_method" value="credit" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] !== '1' ? "checked" : ""?>>
 															<label for="credit">
 																<i></i>Credit card
 															</label>
 														</li>
 														<li>
-															<input type="radio" id="bank" class="new_radio" name="payment_method" value="bank" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] == 1 ? "checked" : ""?>>
+															<input type="radio" id="bank" class="new_radio" name="payment_method" value="bank" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] === '1' ? "checked" : ""?>>
 															<label for="bank">
 																<i></i>Bank transfer
 															</label>
@@ -512,7 +557,7 @@ if ($during_yn !== "Y") {
 					<!-- <?= $locale("prev_btn") ?> -->
 					Previous
 				</button>
-                <button type="button" class="btn online_btn <?=$registrationNo ? "blue_btn" : ""?> next_btn pointer">
+                <button type="button" class="btn online_btn <?=$registrationNo ? "green_btn" : ""?> next_btn pointer">
 					<!-- <?= $locale("next_btn") ?> -->
 					<?=$registrationNo ? "Modify" : "Submit"?>
 				</button>
