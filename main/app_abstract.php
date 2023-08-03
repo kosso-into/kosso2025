@@ -25,6 +25,7 @@ $select_abstract_query="
                         WHERE is_deleted='N'
                         AND category_idx IS NOT NULL
                         {$row_sql}
+                        ORDER BY sort_num
                         ";
 $abstract_list = get_data($select_abstract_query);
 ?>

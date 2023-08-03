@@ -20,7 +20,7 @@
         SELECT
             reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
 			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
-			reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, 
+			reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
 			(
 				CASE
@@ -175,36 +175,49 @@
 						$day3_breakfast_yn = $list["day3_breakfast_yn"] ?? "N";
 						$day3_luncheon_yn = $list["day3_luncheon_yn"] ?? "N";
 
+                        // Special Requset for Food
+                        $special_request = $list["special_request_food"] ?? "";
+                        $special_request_food = "";
+                        if($special_request === '0'){
+                            $special_request_food = "Not Applicable";
+                        } else if($special_request === '1'){
+                            $special_request_food = "Vegetarian";
+                        } else if($special_request === '2'){
+                            $special_request_food = "Halal";
+                        } else {
+                            $special_request_food = "-";
+                        }
+
 						$other_html = "";
 
-						if($welcome_reception_yn == "Y"){
+						if($welcome_reception_yn === "Y"){
 							$other_html .= "
 											<input type='checkbox' class='checkbox' id='other1' disabled>
 											<label for='other1'><i></i>Welcome Reception – September 7(Thu)</label>
 										   ";
 						}
-						if($day2_breakfast_yn == "Y"){
+						if($day2_breakfast_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
 											<input type='checkbox' class='checkbox' id='other2' disabled>
 											<label for='other2'><i></i>Day 2 Breakfast Symposium – September 8(Fri)</label>
 										   ";
 						}
-						if($day2_luncheon_yn == "Y"){
+						if($day2_luncheon_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
 											<input type='checkbox' class='checkbox' id='other3' disabled>
 											<label for='other3'><i></i>Day 2 Luncheon Symposium – September 8(Fri)</label>
 										   ";
 						}
-						if($day3_breakfast_yn == "Y"){
+						if($day3_breakfast_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
 											<input type='checkbox' class='checkbox' id='other4' disabled>
 											<label for='other4'><i></i>Day 3 Breakfast Symposium – September 9(Sat)</label>
 										   ";
 						}
-						if($day3_luncheon_yn == "Y"){
+						if($day3_luncheon_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
 											<input type='checkbox' class='checkbox' id='other5' disabled>
@@ -337,6 +350,10 @@
 													<th>Others</th>
 													<td><?=$other_html?></td>
 												</tr>
+                                                <tr>
+                                                    <th>Special Request <br/>for Food</th>
+                                                    <td><?=$special_request_food?></td>
+                                                </tr>
 												<tr>
 													<th>Where did you get the <br/>information about<br/> the conference?</th>
 													<td><?=$info_html?></td>

@@ -185,10 +185,10 @@ section.visa .circle_title + .details {margin-bottom: 72px;}
 .accommodation .useful_list > li > div:last-child {width: calc(100% - 428px);}
 /*.accommodation .useful_list > li:last-child > div {height: 288.6px;}*/
 .accommodation .useful_list > li:nth-of-type(1) .imgs {background-image: url("../img/hotel_img1.jpg");}
-.accommodation .useful_list > li:nth-of-type(2) .imgs {background-image: url("../img/hotel_img6.jpg");}
-.accommodation .useful_list > li:nth-of-type(3) .imgs {background-image: url("../img/hotel_img7.jpg");}
-.accommodation .useful_list > li:nth-of-type(4) .imgs {background-image: url("../img/hotel_img4.png");}
-.accommodation .useful_list > li:nth-of-type(5) .imgs {background-image: url("../img/hotel_img5.png");}
+.accommodation .useful_list > li:nth-of-type(2) .imgs {background-image: url("../img/hotel_img8.jpg");}
+.accommodation .useful_list > li:nth-of-type(3) .imgs {background-image: url("../img/hotel_img9.jpg");}
+.accommodation .useful_list > li:nth-of-type(4) .imgs {background-image: url("../img/hotel_img6.jpg");}
+.accommodation .useful_list > li:nth-of-type(5) .imgs {background-image: url("../img/hotel_img7.jpg");}
 
 /* 220407 HUBDNC LJH2 */
 /* program_at_glance */

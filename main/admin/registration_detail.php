@@ -31,6 +31,7 @@
 											rr.day2_luncheon_yn,
 											rr.day3_breakfast_yn,
 											rr.day3_luncheon_yn,
+											rr.special_request_food,
 											rr.price,
 											IFNULL(rr.status, '1') AS registration_status,
 											DATE(p.payment_date) AS payment_date, p.total_price_kr, p.total_price_us, p.refund_reason, DATE_FORMAT(p.refund_date, '%Y-%m-%d') AS refund_date, p.refund_bank, p.refund_holder, p.refund_account, p.refund_amount,
@@ -147,6 +148,20 @@
 	$refund_holder = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_holder"] : "";
 	$refund_account = isset($registration_detail["refund_account"]) ? $registration_detail["refund_account"] : "";
     $refund_amount = $registration_detail["refund_amount"] ?? $payment_price;
+
+    // Special Request For Food
+    $special_request = $registration_detail["special_request_food"] ?? "";
+    $special_request_food = "";
+    if($special_request === '0'){
+        $special_request_food = "Not Applicable";
+    } else if($special_request === '1'){
+        $special_request_food = "Vegetarian";
+    } else if($special_request === '2'){
+        $special_request_food = "Halal";
+    } else {
+        $special_request_food = "-";
+    }
+
 	$register_date = isset($registration_detail["register_date"]) ? $registration_detail["register_date"] : "";
 	$register_path = $registration_detail["register_path"] ?? null;
 	$etc = $registration_detail["etc1"] ?? null;
@@ -410,6 +425,10 @@
 								</div>
 							</td>
 						</tr>
+                        <tr>
+                            <th>Special Request for Food</th>
+                            <td colspan="3"><?=$special_request_food?></td>
+                        </tr>
 						<tr>
 							<th>Register Path</th>
 							<td colspan="3">

@@ -347,7 +347,9 @@ function inputCheck(check_type) {
 			}else if(requireCheck == -7) {
 				alert('Please select payment method');
 			}else if(requireCheck == -8) {
-				alret('check_occupation_category ')
+				alret('check occupation category')
+			}else if(requireCheck == -9) {
+				alert('check special request for food')
 			}else{
 				alert('Please checked input data');
 			}
@@ -410,6 +412,11 @@ function requireChecked(){
 
 	if(otherTotalCount > otherCheckCount){
 		return -5;
+	}
+
+	// Special food
+	if(!$('input:radio[name=special_request]').is(':checked')){
+		return -9;
 	}
 
 	// Info Check

@@ -86,7 +86,7 @@ $floor = get_data($sql_floor);
                  <th>Venue</th>
                  <td>
                      <!--<?= htmlspecialchars_decode($info['venue_name']) ?>-->
-                     Conrad Seoul Hotel, Seoul, Republic of Korea
+                     Conrad Seoul Hotel, Republic of Korea
                  </td>
              </tr>
              <tr>

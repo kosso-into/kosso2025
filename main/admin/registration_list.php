@@ -91,7 +91,7 @@
 											END
 										) AS payment_methods,
 										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,
-										rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn,
+										rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn, rr.special_request_food,
 										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by,
 										(
                                             CASE
@@ -200,6 +200,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Breakfast</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Special Request for Food</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Where did you get the information about the conference?</th>';
 	$html .= '</tr>';
 	$html .= '</thead>';
@@ -294,6 +295,17 @@
 		$nutritionist_number = $rl['nutritionist_number'] ?? 'Not applicable';
         $dietitian_number = $rl['dietitian_number'] ?? 'Not applicable';
 
+        $special_request_food = "";
+        if($rl['special_request_food'] === '0'){
+            $special_request_food = "Not Applicable";
+        } else if($rl['special_request_food'] === '1'){
+            $special_request_food = "Vegetarian";
+        } else if($rl['special_request_food'] === '2'){
+            $special_request_food = "Halal";
+        } else {
+            $special_request_food = "-";
+        }
+
 		$is_exercise = ($rl['member_type'] == "Exercise Specialist") ? 'Y' : 'N';
 
 		$html .= '<tr class="tr_center">';
@@ -335,6 +347,7 @@
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_luncheon_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day3_breakfast_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day3_luncheon_yn"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$special_request_food.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$conference_info.'</td>';
 		$html .= '</tr>';
 	}
@@ -413,6 +426,7 @@
 							<th>Type of Occupation</th>
 							<th>Category</th>
 							<th>평점신청여부</th>
+							<th>Special Request for Food</th>
 							<th>등록일</th>
 						</tr>
 					</thead>
@@ -423,6 +437,16 @@
 						} else {
 							foreach($registration_list as $list) {
 								$register_no = !empty($list["registration_idx"]) ? "ICOMES2023-".$list["registration_idx"] : "-";
+                                $special_request_food = "";
+                                if($list['special_request_food'] === '0'){
+                                    $special_request_food = "Not Applicable";
+                                } else if($list['special_request_food'] === '1'){
+                                    $special_request_food = "Vegetarian";
+                                } else if($list['special_request_food'] === '2'){
+                                    $special_request_food = "Halal";
+                                } else {
+                                    $special_request_food = "-";
+                                }
 					?>
 								<tr class="tr_center">
 									<td><?= $register_no; ?></td>
@@ -439,6 +463,7 @@
 									<td><?=$list["occupation_type"]?></td>
 									<td><?=$list["member_type"]?></td>
 									<td><?=isset($list["is_score_text"]) ? $list["is_score_text"] : "-"?></td>
+									<td><?=$special_request_food?></td>
 									<td><?=isset($list["register_date"]) ? $list["register_date"] : "-"?></td>
 								</tr>
 					<?php 
