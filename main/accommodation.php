@@ -74,7 +74,10 @@
                                         3. <span class="font_b">Send it directly to the hotel email</span><br>
                                         (<a href="mailto:Conradseoul_GroupReservations@hilton.com" target="_blank" class="underline">Conradseoul_GroupReservations@hilton.com</a>)<br>
                                         4. Confirm the confirmation letter.
-                                        <p class="red_t font_small mt4">* Reservation can be changed / cancelled or amended 30 days prior to the congress date (By August 6th)</p>
+                                        <p class="red_t font_small mt4">
+                                            * Reservation can be changed, canceled, or amended up to 30 days before the congress date within a special rate from ICOMES 2023 (until August 6th).<br>
+                                            * Starting August 7th, the rate may vary, and it is non-refundable upon booking. For further information, please kindly contact the hotel directly.
+                                        </p>
                                     </td>
                                </tr>
                             </tbody>

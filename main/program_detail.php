@@ -1239,12 +1239,15 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 9 : Obesity in Special Conditions</p>
                                                     <p><span class="bold">Chairpersons : Moon-Kyu Lee</span> (Eulji University, Republic of Korea), <br><span class="bold">In Ju Kim</span> (Pusan National University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Yun-Hee Lee (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>The topic of this session is “Obesity in special conditions”. Beyond recognizing obesity as the same disease condition, we would like to have time to look at cases with various accompanying diseases. The first speaker, Dicky L. Tahapary, will discuss the diagnosis and treatment of obese patients with diabetes. The second speaker, Wen-Yuan Lin, will introduce studies related to obesity with sarcopenia. The last speaker, Professor Tae Nyun Kim, will discuss the new concept of osteoporosis-sarcopenic obesity.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1511,12 +1514,21 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
                                                     <p><span class="bold">Chairpersons : Jaetaek Kim</span> (Chung-Ang University, Republic of Korea), <br><span class="bold">Ki Woo Kim</span> (Yonsei University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Republic of Korea), Kyung Ae Lee (Jeonbuk National University)</p>
+													<ul>
+														<li>In this session, Professor Thiruma V. Arumugam will elucidate on the transformative effects of dietary restriction on vascular dementia, providing invaluable insights into how our eating habits can directly impact our cognitive health. Following him, Professor Dong Gyu Jo will elaborate on adiponectin's role in Alzheimer's Disease, offering clues for potential therapeutic strategies. Lastly, Professor Theresia Handayani Mina will explore the link between body fat, metabolic risks, and cognitive function.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Hallmarks of Brain Aging: Adaptive and Pathological Modification by Metabolic States. Cell Metab. 2018 Jun 5;27(6):1176-1199.<br/>
+															2. Physiology and pharmacology of amyloid precursor protein. Pharmacol Ther. 2022 Jul;235:108122.<br/>
+															3. Adiposity impacts cognitive function in Asian populations: an epidemiological and Mendelian Randomization study. Lancet Reg Health West Pac. 2023 Feb 14;33:100710.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -1846,7 +1858,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        Effects of Mild Exercise Regimen that Alleviates Dysfunctions of Memory and Hippocampal Lactate Transporter in Type II Diabetic Rats
+                                                                        Mild Exercise May Alleviate Memory Dysfunction and Regulate Hippocampal Lactate Metabolism in Type II Diabetic Rats
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hideaki Soya</p>(University of Tsukuba, Japan)
@@ -1872,27 +1884,13 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <!-- <td rowspan="2">15:00-15:30</td> -->
                                                                     <td>15:15-15:30</td>
-                                                                    <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td>
-                                                                        <!-- <p class="bold">Hyuntae Park</p>(Dong-A
-                                                                        University, Korea) -->
+                                                                    <td class="text_r panels">
+                                                                        <p><span class="bold">Kyeongho Byun</span> (Incheon National University, Republic of Korea),</p>
+                                                                        <p><span class="bold">Min-Seong Ha</span> (University of Seoul, Republic of Korea)</p>
                                                                     </td>
                                                                 </tr>
-                                                                <!-- <tr>
-                                                                    <td>
-                                                                        <p class="bold">Justin Y. Jeon</p>(Yonsei
-                                                                        University, Korea)
-                                                                    </td>
-                                                                </tr> 
-                                                                <tr>
-                                                                    <td>15:30-15:40</td>
-                                                                    <td class="bold" colspan="2">
-                                                                        Break
-                                                                    </td>
-                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -3328,7 +3326,7 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 12 : Obesity : Transition from Adolescence to Young Adult</p>
-													<p><span class="bold">Chairpersons : Ki Hyeong Lee</span> (Korea University, Republic of Korea), <br><span class="bold">So Chung Chung</span> (Konkuk University, Republic of Korea)</p>
+													<p><span class="bold">Chairpersons : Kee-Hyoung Lee</span> (Korea University, Republic of Korea), <br><span class="bold">So Chung Chung</span> (Konkuk University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
@@ -3786,10 +3784,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        Update on Obesity Guidelines: What We Need Else?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        TBD
+                                                                        <p class="bold">Luca Busetto</p>(University of Padova, Italy)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4834,7 +4832,11 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:35-16:50</td>
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td class="text_r"></td>
+																	<td class="text_r panels">
+                                                                        <p><span class="bold">Chang Hee Jung</span> (University of Ulsan, Republic of Korea),</p>
+                                                                        <p><span class="bold">Jun Sung Moon</span> (Yeungnam University, Republic of Korea),</p>
+                                                                        <p><span class="bold">Eun Roh</span> (Hallym University, Republic of Korea)</p>
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -5364,7 +5366,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -5375,12 +5377,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:50-12:50</td>
                                                                     <td class="bold">
-                                                                        <!-- New Paradigm of Glycemic Variability: EVERGREEN
-                                                                        Study -->
+                                                                        STEP UP in Obesity Treatment with New Generation of GLP-1 RA
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Yun Kyung Cho</p>(University of
-                                                                        Ulsan, Korea) -->
+                                                                        <p class="bold">Robert Busch</p>(Albany Medical Center, USA)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5981,13 +5981,22 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 15 : Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
-                                                   <p><span class="bold">Chairperson : Sung Nim Han</span> (Seoul National University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<p><span class="bold">Chairperson : Sung Nim Han</span> (Seoul National University, Republic of Korea)</p>
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Hyunjung Lim (Kyung Hee University), Sujin Song (Hannam University), Oh Yoen Kim (Dong-A University)</p>
+													<ul>
+														<li>Obesity is no longer an individual or family problem but is recognized as a disease that society must solve together. It is also pointed out as a cause of socially enormous economic loss and class polarization. This session introduces community-based nutrition interventions and approaches for obesity management in vulnerable groups. The first speaker Dr. Shirley Y. Chao from the Massachusetts Executive Office of Elder Affairs in the USA will lecture on ‘Integrating Frailty and Malnutrition Screening into Community Care for Older Adults and Their Caregivers.' The second speaker Professor Seung Eun Jung from the University of Alabama in the USA will introduce 'Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population.' Lastly, Professor Minsun Jeon of Chungnam National University in the Republic of Korea lectures on 'Nutrition Management Strategies for the Elderly and the Disabled in Social Welfare Facilities' and discusses obesity management in vulnerable groups in this session.</li>
+														<li>
+															<span class="font_inherit bold">• References</span><br/>
+															1. Chao S, Corish CA, Keller H, Rasmussen H, Arensberg MB, Dwyer JT.<br/>Are you prepared for the decade of healthy aging 2020-2030? A panel summary from the academy of nutrition and dietetics 2020 food & nutrition conference & expo virtual event, Nutrition Today 56(4):183-192, 2021. <br/>
+															2. Jung SE, Shin YH, Kim H, Hermann J, Bice C. Identifying Underlying Beliefs About Fruit and Vegetable Consumption Among Low-Income Older Adults: An Elicitation Study Based on the Theory of Planned Behavior, J Nutr Educ Behav. 49(9):717-723, 2017<br/>
+															3. Han S, Jeon M Development and Application of Nutrition Education Program for the Elderly in Low Income Korean Journal of Human Ecology. 28(2):171-183, 2019.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -6014,7 +6023,7 @@ echo '<script type="text/javascript">
                                                                         Community-based Strategies to Decrease Health Disparities and Improve Nutritional Status for US Low-income Population
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Seung Eun Jung</p>(The University of Alabama. USA)
+                                                                        <p class="bold">Seung Eun Jung</p>(The University of Alabama, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6654,10 +6663,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                        <!-- A Pilot Study of the Effect of Transcranial
-                                                                        Direct Current Stimulation (tDCS) on Food
-                                                                        Craving and Eating in Individuals with
-                                                                        Overweight and Obesity -->TBD
+                                                                        A Translational Journey from Fundamental Basic Research to Adiponectin Therapeutics
                                                                     </td>
                                                                     <td class="text_r">
 																		<p class="bold">Gary Sweeney</p>(York University, Canada)
@@ -7056,16 +7062,16 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:50-10:20</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The Principles of Obesity Management; Can Semaglutide 2.4mg Make a Change?</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">HyukTae Kwon</p> (Seoul National University, Republic of Korea)
+                                                                        <p class="bold">Hyuktae Kwon</p> (Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:20-10:50</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">New Perspectives on Obesity Pharmaco-therapy: GLP-1RA Clinical Development</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>
+                                                                        <p class="bold">Robert Busch</p> (Albany Medical Center, USA)
                                                                     </td>
                                                                 </tr>
                                                                <!--  <tr>

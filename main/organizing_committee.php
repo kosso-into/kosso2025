@@ -84,7 +84,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                             <td>Nutrition Team</td>
                         </tr>
                         <tr>
-                            <td>Yoon-A Shin</td>
+                            <td>Yun-A Shin</td>
                             <td>Dankook University</td>
                             <td>International Sports Studies</td>
                         </tr>
@@ -103,11 +103,11 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         <tr>
                             <th rowspan="7">Vice-Secretary General</th>
                             <td>Kyung-Soo Kim</td>
-                            <td>Cha University</td>
+                            <td>CHA University</td>
                             <td>Internal Medicine</td>
                         </tr>
                         <tr>
-                            <td>Yun-Kyung Cho</td>
+                            <td>Yun Kyung Cho</td>
                             <td>University of Ulsan</td>
                             <td>Endocrinology</td>
                         </tr>
@@ -150,7 +150,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </tr>
                         <tr>
                             <th>Training</th>
-                            <td>Jee Hyun Kang</td>
+                            <td>Jee-Hyun Kang</td>
                             <td>Konyang University</td>
                             <td>Family Medicine</td>
                         </tr>
@@ -174,13 +174,13 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </tr>
                         <tr>
                             <th>Public Relations</th>
-                            <td>Yang Im Hur</td>
+                            <td>Yang-Im Hur</td>
                             <td>CHA University</td>
                             <td>Family Medicine</td>
                         </tr>
                         <tr>
                             <th>Strategic Planning</th>
-                            <td>Sang Yong Kim</td>
+                            <td>Sangyong Kim</td>
                             <td>Chosun University</td>
                             <td>Endocrinology</td>
                         </tr>
@@ -211,7 +211,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         <tr>
                             <th>Private Practice</th>
                             <td>Changhyun Lee</td>
-                            <td>Seoul Happiness internal medicine clinic</td>
+                            <td>Seoul Happiness Clinic of Internal Medicine</td>
                             <td>Gastroenterology</td>
                         </tr>
                         <tr>
@@ -228,7 +228,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </tr>
                         <tr>
                             <th>Clinical Guidelines</th>
-                            <td>Hyuk tae Kwon</td>
+                            <td>Hyuktae Kwon</td>
                             <td>Seoul National University</td>
                             <td>Family Medicine</td>
                         </tr>
@@ -240,7 +240,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </tr>
                         <tr>
                             <th>Exercise</th>
-                            <td>Jong Hee Kim</td>
+                            <td>Jong-Hee Kim</td>
                             <td>Hanyang University</td>
                             <td>Physical Education</td>
                         </tr>
@@ -258,7 +258,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </tr>
                         <tr>
                             <th>Childhood and Adolescence</th>
-                            <td>Hong, Yong Hee</td>
+                            <td>Yong Hee Hong</td>
                             <td>Soonchunhyang University</td>
                             <td>Pediatrics</td>
                         </tr>
@@ -281,7 +281,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                             <td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Chung, Sochung</td>
+                            <td>Sochung Chung</td>
                             <td>Konkuk University</td>
                             <td>Pediatrics</td>
                         </tr>
@@ -342,12 +342,12 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
 							<td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Changhee Jung</td>
+                            <td>Chang Hee Jung</td>
                             <td>University of Ulsan</td>
 							<td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Ji Won Yoon</td>
+                            <td>Ji Wan Yoon</td>
                             <td>Seoul National University</td>
 							<td>Internal Medicine</td>
                         </tr>
@@ -382,7 +382,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
 							<td>Family Medicine</td>
                         </tr>
                         <tr>
-                            <td>Hyuk tae Kwon</td>
+                            <td>Hyuktae Kwon</td>
                             <td>Seoul National University</td>
 							<td>Family Medicine</td>
                         </tr>
@@ -407,7 +407,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
 							<td>Medical Nutrition</td>
                         </tr>
                         <tr>
-                            <td>Oh Yoen KIM</td>
+                            <td>Oh Yoen Kim</td>
                             <td>Dong-A University</td>
 							<td>Food Science and Nutrition</td>
                         </tr>

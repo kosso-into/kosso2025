@@ -580,7 +580,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">14:40-11:50</div>
+									<div class="colons_div">11:40-11:50</div>
 								</td>
 								<td colspan="7" class="light_gray_bg">Break</td>
 							</tr>

@@ -75,7 +75,7 @@
 						<h1>Cheol-Young Park</h1>
 						<h5>President</h5>
 						<p>Korea Society for Study of Obesity</p>
-						<div class="headman_sign"><img src="./img/headman_sign2.png" alt=""></div>
+						<div class="headman_sign"><img src="./img/headman_sign2_1.png" alt=""></div>
 					</div>
 				</div>
 			</div>

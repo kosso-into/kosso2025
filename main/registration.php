@@ -653,8 +653,8 @@ if ($during_yn !== "Y") {
                  !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
                  !$("input[name=others5]").is(":checked")) {
                  $("#focus_others").focus();
-                 alert("Please confirm the 'others' section");
-                 return
+                 alert("Please confirm the 'Others' section");
+                 return false;
              }
         });
 
@@ -662,7 +662,7 @@ if ($during_yn !== "Y") {
 			const val = $(this).val();
 			const prevTitle = $("input[name=title_prev_input]").val() ?? "";
 
-			if(val == 'Others'){
+			if(val === 'Others'){
 				if(!$(this).parent("li").next('.hide_input').hasClass("on")){
 					$(this).parent("li").next('.hide_input').addClass("on");
 				}
@@ -676,7 +676,7 @@ if ($during_yn !== "Y") {
             const val2 = $(this).val();
             const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
 
-            if(val2 == 'Others'){
+            if(val2 === 'Others'){
                 if(!$(this).parent("li").next('.hide_input').hasClass("on")){
                     $(this).parent("li").next('.hide_input').addClass("on");
                 }

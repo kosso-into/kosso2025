@@ -270,9 +270,9 @@ $info = sql_fetch($sql_info);
                                 </div> 
                                 <div class="airplane_cont">
                                     <h5>By Taxi</h5>
-                                            <p>Taxi services are always available and the fare from Incheon International Airport to the Venue(Conrad Seoul) is approximately KRW 55,000 for a standard taxi. Expressway fee(KRW 7,100 each way) will be added to the total fare. The rides take about 40-50 minutes, however, it may vary depending on traffic conditions. There is an additional fee for taxi rides taken between midnight and 4:00 am, resulting in an approximate 20% increase in the fare.</p> 
+                                        <p>Taxi services are always available, and the fare from Incheon International Airport to the Venue (Conrad Seoul) is approximately KRW 55,000 for a standard taxi. The expressway fee (KRW 7,100 each way) will be added to the total fare. The rides take about 40-50 minutes. However, it may vary depending on traffic conditions. There is an additional fee for taxi rides taken between 22:00 pm and 4:00 am, resulting in an approximate 20%~ 40% increase in the fare.</p> 
                                     <div class="table_wrap detail_table_common x_scroll">
-                                                                            <table class="c_table type2">
+                                        <table class="c_table type2">
                                             <thead>
                                                 <tr>
                                                     <th rowspan="2" >Type</th>
@@ -280,49 +280,49 @@ $info = sql_fetch($sql_info);
                                                     <th colspan="2">Stop Location</th>
                                                     <th rowspan="2">Remarks</th>
                                                 </tr>
-                                                                                    <tr>
-                                                                                        <th>Terminal 1</th>
-                                                                                        <th>Terminal 2</th>
-                                                                                    </tr>
+												<tr>
+													<th>Terminal 1</th>
+													<th>Terminal 2</th>
+												</tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                                                        <td>Standard Taxi</td>
-                                                                                        <td>3,800</td>
-                                                                                        <td>5C, 6C, 6D</td>
-                                                                                        <td>5C</td>
-                                                                                        <td>24:00 - 04:00 additional late-night charge 20%</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>First-Class / Oversized Taxi<br>(Up to 9 passengers)</td>
-                                                                                        <td>6,500</td>
-                                                                                        <td>7C/8C</td>
-                                                                                        <td>5D</td>
-                                                                                        <td>No late-night surcharge or timed fare</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>International Taxi</td>
-                                                                                        <td>Standard Seoul's<br>distance fare applies</td>
-                                                                                        <td>4C</td>
-                                                                                        <td>1C</td>
-                                                                                        <td>
-                                                                                            Taxis officially designated to provide foreign<br>
-                                                                                            language service<br>
-                                                                                            For reservation: <a href="http://www.intltaxi.co.kr" target="_blank" class="link">www.intltaxi.co.kr</a>
-                                                                                        </td>
-                                                                                    </tr>
+													<td>Standard Taxi</td>
+													<td>4,800</td>
+													<td>5C, 6C, 6D</td>
+													<td>5C</td>
+													<td>22:00 - 04:00<br/>Additional late-night charge of 20% ~ 40%</td>
+												</tr>
+												<tr>
+													<td>First-Class / Oversized Taxi<br>(Up to 9 passengers)</td>
+													<td>7,000</td>
+													<td>7C/8C</td>
+													<td>5D</td>
+													<td>22:00 - 04:00<br/>Additional late-night charge of 20% ~ 40%</td>
+												</tr>
+												<tr>
+													<td>International Taxi</td>
+													<td>Standard Seoul's<br>distance fare applies</td>
+													<td>4C</td>
+													<td>1C</td>
+													<td>
+														Taxis are officially designated to provide foreign<br>
+														language service<br>
+														For reservation: <a href="http://www.intltaxi.co.kr" target="_blank" class="link">www.intltaxi.co.kr</a>
+													</td>
+												</tr>
                                             </tbody>
                                         </table>
                                     </div> 
-                                            <div class="taxi_text_area">
-                                                For more information on each mode of transportation and the related services, please visit the websites below.
-                                                <div>
-                                                    -
-                                                    <a href="https://www.airport.kr/ap/en/index.do" target="_blank" class="link">Incheon International Airport(click!) </a>
-                                                    /
-                                                    <a href="https://www.airport.co.kr/gimpoeng/index.do" target="_blank" class="link">Gimpo International Airport(click!)</a>   
-                                                </div>
-                                            </div> 
+									<div class="taxi_text_area">
+										For more information on each mode of transportation and the related services, please visit the websites below.
+										<div>
+											-
+											<a href="https://www.airport.kr/ap/en/index.do" target="_blank" class="link">Incheon International Airport(click!) </a>
+											/
+											<a href="https://www.airport.co.kr/gimpoeng/index.do" target="_blank" class="link">Gimpo International Airport(click!)</a>   
+										</div>
+									</div> 
                                 </div>
                             </div>  
                         </div>  
@@ -337,21 +337,37 @@ $info = sql_fetch($sql_info);
     </div>
 </section>
 
-<!-- <script>
-function myMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(37.525609, 126.925992),
-        zoom: 16
-    };
+<script>
 
-    var map = new google.maps.Map(
-        document.getElementById("googleMap"), mapOptions);
-}
+window.initMap = function () {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 37.5253, lng: 126.9266 },
+    zoom: 15,
+  });
+
+  /*const malls = [
+    { label: "C", name: "코엑스몰", lat: 37.5115557, lng: 127.0595261 },
+    { label: "G", name: "고투몰", lat: 37.5062379, lng: 127.0050378 },
+    { label: "D", name: "동대문시장", lat: 37.566596, lng: 127.007702 },
+    { label: "I", name: "IFC몰", lat: 37.5251644, lng: 126.9255491 },
+    { label: "L", name: "롯데월드타워몰", lat: 37.5125585, lng: 127.1025353 },
+    { label: "M", name: "명동지하상가", lat: 37.563692, lng: 126.9822107 },
+    { label: "T", name: "타임스퀘어", lat: 37.5173108, lng: 126.9033793 },
+  ];
+  malls.forEach(({ label, name, lat, lng }) => {
+    const marker = new google.maps.Marker({
+      position: { lat, lng },
+      label,
+      map,
+    });
+  });*/
+};
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXP4XIvOKkpyrbqfN57uTgtFehx5HOMJw&callback=myMap">
-</script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG07_wEQCuA6ATw57sOmlXHl49_hR1_mA&callback=initMap"
+  ></script>
 
-
+<!--
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=855afe12d2495e8a68f985bd09c52bc5"></script>
 <script>
 	var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -362,7 +378,7 @@ function myMap() {
 
 	var map = new kakao.maps.Map(container, options);
 </script>
-
+-->
 
 <?php 
     if (!empty($session_app_type) && $session_app_type == 'Y') {

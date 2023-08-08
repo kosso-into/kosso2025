@@ -6,11 +6,11 @@
 		echo '<script>alert("권한이 없습니다.");history.back();</script>';
 	}
 
-	$id = isset($_GET["id"]) ? $_GET["id"] : "";
-	$name = isset($_GET["name"]) ? $_GET["name"] : "";
-	$title = isset($_GET["title"]) ? $_GET["title"] : "";
-	$s_date = isset($_GET["s_date"]) ? $_GET["s_date"] : "";
-	$e_date = isset($_GET["e_date"]) ? $_GET["e_date"] : "";
+	$id = $_GET["id"] ?? "";
+	$name = $_GET["name"] ?? "";
+	$title = $_GET["title"] ?? "";
+	$s_date = $_GET["s_date"] ?? "";
+	$e_date = $_GET["e_date"] ?? "";
 
 	$where = "";
 	
@@ -138,6 +138,7 @@
 	$html .= '<th>Title</th>';
 	$html .= '<th>File</th>';
 	$html .= '<th>Presenting Author Name</th>';
+	$html .= '<th>Presenting Author Affiliation</th>';
 	$html .= '<th>Presenting Author E-mail</th>';
 	$html .= '<th>Corresponding Author Name</th>';
 	$html .= '<th>Corresponding Author E-mail</th>';
@@ -166,10 +167,12 @@
 
         $al_ra_name = $al["ra_name"];
         $al_ra_email = $al["ra_email"];
+        $al_ra_affiliation = $al["ra_affiliation"];
 
         $resultData[$no] = [
             'presenting_author_name' => null,
             'presenting_author_email' => null,
+            'presenting_author_affiliation' => null,
             'corresponding_author_name' => null,
             'corresponding_author_email' => null,
         ];
@@ -177,6 +180,7 @@
         if($al["presenting_author"]==='Y') {
             $resultData[$no]['presenting_author_name'] = $al_ra_name;
             $resultData[$no]['presenting_author_email'] = $al_ra_email;
+            $resultData[$no]['presenting_author_affiliation'] = $al_ra_affiliation;
         }
 
         if($al["corresponding_author"]==='Y'){
@@ -188,11 +192,13 @@
 
             $ral_ra_name = $ral["ra_name"];
             $ral_ra_email = $ral["ra_email"];
+            $ral_ra_affiliation = $ral["ra_affiliation"];
 
             if($al["parent_author"]===$ral["parent_author"]){
                 if($ral["presenting_author"]==='Y'){
                     $resultData[$no]['presenting_author_name'] = $ral_ra_name;
                     $resultData[$no]['presenting_author_email'] = $ral_ra_email;
+                    $resultData[$no]['presenting_author_affiliation'] = $ral_ra_affiliation;
                 }
 
                 if($ral["corresponding_author"]==='Y'){
@@ -220,6 +226,7 @@
 		$html .= '<td>'.$al["abstract_file_name"].'</td>';
 
 		$html .= '<td>'.$resultData[$no]['presenting_author_name'].'</td>';
+		$html .= '<td>'.str_replace('★','<br>',$resultData[$no]["presenting_author_affiliation"]).'</td>';
 		$html .= '<td>'.$resultData[$no]['presenting_author_email'].'</td>';
 		$html .= '<td>'.$resultData[$no]['corresponding_author_name'].'</td>';
 		$html .= '<td>'.$resultData[$no]['corresponding_author_email'].'</td>';
@@ -253,7 +260,6 @@
 
 	$html = str_replace("'", "\'", $html);
 	$html = str_replace("\n", "", $html);
-
 	$count= count($abstract_list);
 ?>
 	<section class="list">
@@ -329,7 +335,7 @@
 							<td><?=$list["nation_ko"]?></td>
 							<td><?=$list["name"]?></td>
 							<td><a href="./abstract_application_detail.php?idx=<?=$list["abstract_idx"]?>"><?=$list["abstract_title"]?></a></td>
-						<?php if($ext == "pdf") { ?>
+						<?php if($ext === "pdf") { ?>
 							<td><a href="./pdf_viewer.php?path=<?=$list["path"]?>" target="_blank"><?=$list["abstract_file_name"]?></a></td>
 						<?php } else { ?>
 							<td><a href="<?=$list["path"]?>" download="<?=$list["submission_code"]?>"><?=$list["abstract_file_name"]?></a></td>
