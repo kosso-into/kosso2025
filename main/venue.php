@@ -207,13 +207,13 @@ $info = sql_fetch($sql_info);
                                                     <th>Bus Stop</th>
                                                     <td>Marriott Hotel (Yeouido Station)</td>
                                                 </tr>
-                                                                                <tr>
+                                                <tr>
                                                     <th>Remarks</th>
                                                     <td>
-                                                                                        Advance ticket purchase is required before boarding the bus.<br>
-                                                                                        - Location of airport ticket counter. Terminal 1 Gate 6~13 (1F) / Terminal 2 : Eastside B1<br>
-                                                                                        - K-Limousine Website : <a href="http://www.klimousine.com/eng/main" target="_blank" class="link">www.klimousine.com</a>
-                                                                                    </td>
+                                                        Advance ticket purchase is required before boarding the bus.<br>
+                                                        - Location of airport ticket counter. Terminal 1 Gate 6~13 (1F) / Terminal 2 : Eastside B1<br>
+                                                        - K-Limousine Website : <a href="http://www.klimousine.com/eng/main" target="_blank" class="link">www.klimousine.com</a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -313,7 +313,7 @@ $info = sql_fetch($sql_info);
 												</tr>
                                             </tbody>
                                         </table>
-                                    </div> 
+                                    </div>  
 									<div class="taxi_text_area">
 										For more information on each mode of transportation and the related services, please visit the websites below.
 										<div>

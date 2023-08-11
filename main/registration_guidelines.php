@@ -52,7 +52,7 @@ $price = get_data($sql_price);
                     </tr>
                     <tr>
                         <th>Pre-registration<br class="br_mb_only"> Deadline</th>
-                        <td class="f_bold">August 10 (Thu)</td>
+                        <td class="f_bold">August 24 (Thu)</td>
                     </tr>
                 </table>
             </div>

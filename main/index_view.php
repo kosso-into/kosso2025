@@ -161,7 +161,7 @@
 				</li>
 				<li>
 					<a href="/main/registration_guidelines.php">
-						<h2>August 10 <span>(Thu)</span></h2>
+						<h2>August 24 <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
 						<p>Pre-Registration <br/>Deadline</p>
 					</a>
@@ -364,6 +364,6 @@
 		*/
 
 		//ICOMES 2023 Main 팝업
-		$(".last_breaking_pop").show();
+		//$(".last_breaking_pop").show();
 	});
 </script>

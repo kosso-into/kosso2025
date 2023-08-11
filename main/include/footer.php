@@ -10,7 +10,7 @@
 			</li>
             <li><button type="button" onClick="location.href='/main/registration.php'"><i><img
                             src="/main/img/icons/tool_regist.svg" alt=""></i>Registration</button></li>
-            <li><button type="button" onClick="location.href='/main/abstract_submission.php'" class="online_submission_alert"><i><img
+            <li><button type="button" class="online_submission_alert"><i><img
                             src="/main/img/icons/tool_abstract.svg" alt=""></i>Abstract</button></li>
             <?php
             if ($_SESSION["USER"]["idx"] == "") {

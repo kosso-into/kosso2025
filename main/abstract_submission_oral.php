@@ -50,7 +50,7 @@ $info = sql_fetch($sql_info);
                             <td class="f_bold">Mid-May</td>
                         </tr>
                         <tr>
-                            <th>Abstract Submission Deadline</th>
+                            <th class="close_th">Abstract Submission Deadline</th>
                             <td><span class="font_inherit red_t f_bold">August 10 (Thu)</span></td>
                         </tr>
                         <tr>

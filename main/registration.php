@@ -148,7 +148,7 @@ if ($during_yn !== "Y") {
 												<th>성명</th>
 												<td>".$member_data['last_name_kor']."".$member_data['first_name_kor']."</td>
 											</tr>";
-							if($member_data['nation_en'] == "Republic of Korea"){
+							if($member_data['nation_en'] === "Republic of Korea"){
 								echo $name_kor_cont;
 							}
 						?>
@@ -164,7 +164,7 @@ if ($during_yn !== "Y") {
 							<th>Phone Number</th>
 							<td><?= $member_data['phone']?></td>
 						</tr>
-						<?php if($member_data['nation_en'] == "Republic of Korea"){ ?>
+						<?php if($member_data['nation_en'] === "Republic of Korea"){ ?>
 							<tr> 
 								<th>Member of KSSO</th>
 								<td id='ksola_member_status'><?=$member_data['ksola_member_status'] == 0 ? 'Non-Member' : 'Member'?></td>

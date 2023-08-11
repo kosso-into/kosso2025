@@ -53,7 +53,7 @@
 	    <!-- 1. 연수 평점 안내 end -->
 
 		<!-- 2. 제공 평점 start -->
-		<h3 class="title">제공 평점 <span class="red_txt font_inherit">(예정)</span></h3>
+		<h3 class="title">제공 평점 <!--<span class="red_txt font_inherit">(예정)</span>--></h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
 				<table class="c_table2 detail_table center">
@@ -165,7 +165,7 @@
 			<div class="mt10">
 				<ul class="indent_ul">
 					<li>• 이수 시간은 학술대회장에 설치된 '입출결 확인 시스템'으로 기록됩니다.</li>
-					<li class="bold">• 입실 시와 퇴실 시 1일 2회 명찰의 QR 코드를 입출결 확인 시스템에 태깅하여 주십시오.</li>
+					<li class="bold">• 입실 시와 퇴실 시 1일 2회 명찰 혹은 어플리케이션의 QR 코드를 입출결 확인 시스템에 태깅하여 주십시오.</li>
 					<li>• 입/퇴실 시 QR 코드를 태깅하지 않은 경우 이수 시간이 인정되지 않습니다.</li>
 					<li class="red_txt bold">• 휴게 시간은 이수 시간에 포함되지 않습니다.</li>
 					<li class="red_txt bold">• 이수 시간은 학술대회 시작 시간부터 종료 시간 내에서만 인정됩니다.</li>
