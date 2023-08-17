@@ -308,7 +308,7 @@
 </div>
 -->
 
-<!-- ICOMES 2023 Main 팝업 -->
+<!-- ICOMES 2023 Main 팝업
 <div class="popup last_breaking_pop">
     <div class="pop_bg"></div>
     <div class="pop_contents">
@@ -318,52 +318,73 @@
         </div>
     </div>
 </div>
+ -->
+
+<!-- 2023/08/16 팝업 -->
+<div class="popup notification_pop" style="display:block;">
+    <div class="pop_bg"></div>
+    <div class="pop_contents">
+		<div class="top">Notification of Acceptance</div>
+		<div class="inner">
+			<ul>
+				<li>
+					<button type="button" onClick="javascript:window.open('./download/Oral Presentation_0817.pdf')">Oral Presentation List<img src="./img/icons/download_w2.svg" /></button>			
+				</li>
+				<li>
+					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')">Guided Poster Presentation List<img src="./img/icons/download_w2.svg" /></button>			
+				</li>
+				<li>
+					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')">Poster Exhibition List<img src="./img/icons/download_w2.svg" /></button>			
+				</li>
+			</ul>
+		</div>
+		<div class="close_area">
+			<div>
+				<input type="checkbox" id="today_check" name="hidden" class="checkbox input required">
+				<label for="today_check">Do not open this window for 24 hours.</label>
+			</div>
+			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="./img/main_pop_close.png" alt=""></a>
+		</div>	
+    </div>
+</div>
 
 <script>
-	$('document').ready(function(){
-		/*
-		$('.main_speaker2').slick({
-			dots: false,
-			navigation: true,
-			infinite: true,
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 6000,
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1,
-					}
-				},
-				{
-					breakpoint: 850,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 600,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 0,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
-		*/
+    // 쿠키 가져오기
+    var getCookie = function (cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
 
-		//ICOMES 2023 Main 팝업
-		//$(".last_breaking_pop").show();
-	});
+    // 24시간 기준 쿠키 설정하기  
+    var setCookie = function (cname, cvalue, exdays) {
+        var todayDate = new Date();
+        todayDate.setTime(todayDate.getTime() + (exdays*24*60*60*1000));    
+        var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    var couponClose = function(){
+        if($("#today_check").is(":checked") == true){
+            setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
+        }
+        $(".notification_pop").hide();
+    }
+    
+    $(document).ready(function(){
+        var cookiedata = document.cookie;
+        if(cookiedata.indexOf("close=Y")<0){
+            $(".notification_pop").show();
+        }else{
+            $(".notification_pop").hide();
+        }
+        $(".notification_pop .pop_close").click(function(){
+            couponClose();
+        });
+    });
 </script>

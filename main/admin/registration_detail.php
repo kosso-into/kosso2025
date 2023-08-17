@@ -79,6 +79,7 @@
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
 												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
 												WHEN rr.payment_methods = '2' THEN 'Onsite payment'
+												WHEN rr.payment_methods = '3' THEN 'Admin registration'
 											END
 										    ) AS payment_methods,
 											rr.invitation_check_yn, n_visa.nation_ko AS invitation_nation_text, 

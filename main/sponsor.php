@@ -92,7 +92,7 @@
 					<a href="https://www.lgchem.com/main/index" class="lg_chem">LG Chem</a>
 				</li>
 				<li class="small">
-					<a href="https://www.celltrion.com/en-us/home/index" class="celltrion">CELLTRION</a>
+					<a href="https://www.celltrionph.com/en-us/home/index" class="celltrion">CELLTRION</a>
 				</li>
 				<li>
 					<a href="https://www.gccorp.com/eng/index" class="gc_biopharma">GC Niopharma</a>
@@ -128,7 +128,7 @@
 					<a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a>
 				</li>
 				<li class="small">
-					<a href="https://www.lilly.com/" class="lilly">Lilly</a>
+					<a href="https://www.lilly.co.kr/" class="lilly">Lilly</a>
 				</li>
 				<li>
 					<a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a>

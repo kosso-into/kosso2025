@@ -112,12 +112,12 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                             <td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Young-Sang Lyu</td>
+                            <td>Youngsang Lyu</td>
                             <td>Chosun University</td>
                             <td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Kye young Park</td>
+                            <td>Kye-Yeung Park</td>
                             <td>Hanyang University</td>
                             <td>Family Medicine</td>
                         </tr>
