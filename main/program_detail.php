@@ -781,8 +781,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Hae-Jin Ko</p>(Kyungpook
-                                                                        National University, Korea) -->
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1066,7 +1065,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-																		Step Up Your Weight Management with Semaglutide
+																		STEP Up Your Weight Management with Semaglutide
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Bom Taeck Kim</p>(Ajou University, Republic of Korea)
@@ -1097,8 +1096,8 @@ echo '<script type="text/javascript">
 																		Panel Discussion 
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Kyung-Hee Park</p>(Hallym
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Jin-Wook Kim</p>(Hippocrata Clinic, Republic of Korea), <br>
+                                                                        <p class="bold">Seo Young Kang</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -1288,7 +1287,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
-                                                                        Osteosarcopenic Obesity: A New Concept of an Old Problem
+                                                                        Osteo-Sarcopenic Obesity: A New Concept of an Old Problem
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Tae Nyun Kim</p>(Inje University, Republic of Korea)
@@ -1300,8 +1299,7 @@ echo '<script type="text/javascript">
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Bumjo Oh</p>(Seoul National
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Hyon-Seung Yi</p>(Chungnam National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -1513,7 +1511,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
-                                                    <p><span class="bold">Chairpersons : Jaetaek Kim</span> (Chung-Ang University, Republic of Korea), <br><span class="bold">Ki Woo Kim</span> (Yonsei University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Republic of Korea), <br><span class="bold">Jaetaek Kim</span> (Chung-Ang University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -1555,7 +1553,7 @@ echo '<script type="text/javascript">
                                                                         Role of Adiponectin Signaling in Alzheimer's Disease
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Dong Gyu Jo</p>(Sungkyunkwan University, Republic of Korea)
+                                                                        <p class="bold">Dong-Gyu Jo</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1575,8 +1573,8 @@ echo '<script type="text/javascript">
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jang Won Son</p>(The Catholic
-                                                                        University of Korea, Korea) -->
+                                                                        <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Republic of Korea), <br>
+                                                                        <p class="bold">Kyung Ae Lee</p>(Jeonbuk National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -2721,7 +2719,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
 																		Panel Discussion
                                                                     </td>
-																	<td class="text_r"></td>
+																	<td class="text_r"><p class="bold">Hye Yeon Koo</p>(Seoul National University, Republic of Korea)</td>
 																</tr>
 																<!-- <tr> -->
                                                                     <!-- <td> -->
@@ -2908,7 +2906,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
-                                                                        <!-- Nutrition Focused Interventions to Address Social Determinants of Obesity in the US -->TBD
+                                                                        Social Determinants of Health and Obesity and Approaches to Obesity Prevention and Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung-Yeon Lee</p>(University of Cincinnati, USA)
@@ -3065,8 +3063,7 @@ echo '<script type="text/javascript">
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Seo Young Kang</p>(University of
-                                                                        Ulsan, Korea) -->
+                                                                        <p class="bold">Kye-Yeung Park</p>(Hanyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -3246,8 +3243,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        TBD<!-- Overview of Semaglutide 2.4 mg (STEP) Clinical
-                                                                        Trial Program -->
+                                                                        Long-term Outcomes and Problems of Sleeve Gastrectomy
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yosuke Seki</p>(Osaka University, Japan)
@@ -3265,8 +3261,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        TBD<!-- GLP-1 Analogues Versus Bariatric and Metabolic
-                                                                        Surgery; Surgeon’s View -->
+                                                                       Sleeve Conversion to Bypass or Sleeve Plus
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Han Hong Lee</p>(The Catholic University of Korea, Republic of Korea)
@@ -3278,8 +3273,8 @@ echo '<script type="text/javascript">
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Youngsuk Park</p>(Seoul National
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Sol Lee</p>(Seoul Medical Center, Republic of Korea), <br>
+                                                                        <p class="bold">HanMo Yoo</p>(The Catholic University of Korea, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -3466,7 +3461,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 1 : Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
                                                     <p>
-                                                        <span class="bold">Chairperson : Suk Chon</span> (Kyung Hee University, Republic of Korea)
+                                                        <span class="bold">Chairpersons : Suk Chon</span> (Kyung Hee University, Republic of Korea), <br><span class="bold">Jae Hyung Cho</span> (The Catholic University of Korea, Republic of Korea)
                                                     </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -3708,9 +3703,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:30</td>
                                                                     <td class="bold">
-                                                                        TBD<!-- Phentermine/Topiramate for the
-                                                                        Treatment of
-                                                                        Adolescent -->
+                                                                        Key Factors on Glucose Management in Evidence-based Perspective
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jeong Hwan Park</p> (Hanyang University, Republic of Korea)
@@ -3864,7 +3857,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Management of Weight Regain</td>
                                                                     <td class="text_r"><p class="bold">Jun Hwa Hong</p> (Eulji University, Republic of Korea)</td>
                                                                 </tr>                             
 																<tr>                              
@@ -3875,7 +3868,7 @@ echo '<script type="text/javascript">
 																<tr>                              
                                                                     <td>10:35-10:50</td> 
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td class="text_r"><p class="bold"></p></td>
+                                                                    <td class="text_r"><p class="bold">Se Hee Min</p>(Univeristy of Ulsan, Republic of Korea)</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -4369,10 +4362,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                        MAFLD versus NAFLD and the Risk of Cardiovascular Disease
+                                                                        Real-world Data Applications in Glucose Tolerance Status, MAFLD and Cardiovascular Disease?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ming-Hua Zheng</p>(Wenzhou Medical University, China)
+                                                                        <p class="bold">Kazuya Fujihara</p>(Niigata University, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4392,8 +4385,7 @@ echo '<script type="text/javascript">
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jun Hwa Hong</p>(Eulji
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Jun Hwa Hong</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -4454,12 +4446,20 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea), Jun Hwa Hong (Eulji University, Republic of Korea)</p>
+													<ul>
+														<li>The interplay between adipose tissue's function as an energy reservoir and an endocrine organ is crucial for maintaining metabolic health. A key player in this dynamic balance is leptin, a hormone whose regulation is tightly linked to fat mass. Here we will discuss the multifaceted role of LATS1/2-YAP/TAZ signaling in regulating adipocyte plasticity and leptin production to maintain metabolic homeostasis. </li>
+                                                        <li>
+															<span class="font_inherit bold">• References</span><br>
+															1. Sethi, J.K. and A.J. Vidal-Puig, Thematic review series: adipocyte biology. Adipose tissue function and plasticity orchestrate nutritional adaptation. J Lipid Res, 2007. 48(6): p. 1253-62.<br>
+															2. Halder, G. and R.L. Johnson, Hippo signaling: growth control and beyond. Development, 2011. 138(1): p. 9-22.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -4710,12 +4710,15 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Young kil Choi</span> (Kyung Hee University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Obesity is not only a serious disease in itself, but also a health risk factor that causes various diseases, so governmental plan and policy cooperation are needed. Korean government established and announced the first national obesity management comprehensive plan in 2018 to provide an opportunity to raise public awareness of the importance of obesity prevention and management and to monitor the pregress. In this lecture, I would like to introduce the past, present and future of Korea's national obesity strategy.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -4994,7 +4997,7 @@ echo '<script type="text/javascript">
                                                                         Cutting Edge Care of Pitavastatin with Ezetimibe Combination Therapy
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Young-Sang Lyu</p>(Chosun University, Republic of Korea)
+                                                                        <p class="bold">Youngsang Lyu</p>(Chosun University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
 																<!--
@@ -5207,8 +5210,7 @@ echo '<script type="text/javascript">
                                                                     <!-- <td rowspan="2" class="bold">Panel Discussion</td> -->
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Tae-Nyun Kim</p> (Inje
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Yong-ho Lee</p>(Yonsei University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -5268,12 +5270,20 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea), Jun Hwa Hong (Eulji University, Republic of Korea)</p>
+													<ul>
+														<li>The interplay between adipose tissue's function as an energy reservoir and an endocrine organ is crucial for maintaining metabolic health. A key player in this dynamic balance is leptin, a hormone whose regulation is tightly linked to fat mass. Here we will discuss the multifaceted role of LATS1/2-YAP/TAZ signaling in regulating adipocyte plasticity and leptin production to maintain metabolic homeostasis. </li>
+                                                        <li>
+															<span class="font_inherit bold">• References</span><br>
+															1. Sethi, J.K. and A.J. Vidal-Puig, Thematic review series: adipocyte biology. Adipose tissue function and plasticity orchestrate nutritional adaptation. J Lipid Res, 2007. 48(6): p. 1253-62.<br>
+															2. Halder, G. and R.L. Johnson, Hippo signaling: growth control and beyond. Development, 2011. 138(1): p. 9-22.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -5524,12 +5534,15 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Young kil Choi</span> (Kyung Hee University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Obesity is not only a serious disease in itself, but also a health risk factor that causes various diseases, so governmental plan and policy cooperation are needed. Korean government established and announced the first national obesity management comprehensive plan in 2018 to provide an opportunity to raise public awareness of the importance of obesity prevention and management and to monitor the pregress. In this lecture, I would like to introduce the past, present and future of Korea's national obesity strategy.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -5652,10 +5665,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Sang Youl Rhee</p>(Kyung Hee
-                                                                        University, Korea)
-                                                                        <p class="bold">Byoungduck Han</p>(Korea
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Won Jun Kim</p>(University of Ulsan, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -6096,12 +6106,20 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea), Jun Hwa Hong (Eulji University, Republic of Korea)</p>
+													<ul>
+														<li>The interplay between adipose tissue's function as an energy reservoir and an endocrine organ is crucial for maintaining metabolic health. A key player in this dynamic balance is leptin, a hormone whose regulation is tightly linked to fat mass. Here we will discuss the multifaceted role of LATS1/2-YAP/TAZ signaling in regulating adipocyte plasticity and leptin production to maintain metabolic homeostasis. </li>
+                                                        <li>
+															<span class="font_inherit bold">• References</span><br>
+															1. Sethi, J.K. and A.J. Vidal-Puig, Thematic review series: adipocyte biology. Adipose tissue function and plasticity orchestrate nutritional adaptation. J Lipid Res, 2007. 48(6): p. 1253-62.<br>
+															2. Halder, G. and R.L. Johnson, Hippo signaling: growth control and beyond. Development, 2011. 138(1): p. 9-22.
+														</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -6353,12 +6371,15 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Young kil Choi</span> (Kyung Hee University, Republic of Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
 											<tr>
 												<td colspan="2" class="program_detail_td">
-													will be updated.
+													<p class="bold">Organizer: Soo Lim (Seoul National University, Republic of Korea)</p>
+													<ul>
+														<li>Obesity is not only a serious disease in itself, but also a health risk factor that causes various diseases, so governmental plan and policy cooperation are needed. Korean government established and announced the first national obesity management comprehensive plan in 2018 to provide an opportunity to raise public awareness of the importance of obesity prevention and management and to monitor the pregress. In this lecture, I would like to introduce the past, present and future of Korea's national obesity strategy.</li>
+													</ul>
 												</td>
 											</tr>
                                             <tr>
@@ -6450,7 +6471,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                        Explore the Latest Data of Pediatric Obesity; Update of AAP Guidelines (2023)
+                                                                        Explore the Latest Data of Pediatric Obesity: Update of AAP Guidelines 2023
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ja Hyang Cho</p>(Kyung Hee University, Republic of Korea)
@@ -6903,6 +6924,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
+                                                                        <p class="bold">Hyun-seok Ji</p>(Yeungnam University, Republic of Korea), <br>
+                                                                        <p class="bold">Jin-Wook Lee</p>(Dankook University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -7055,7 +7078,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The Burden of Obesity and the Challenges Associated with Weight Management</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sean Wharton</p> (Wharton Medical Clinic, Canada)
                                                                     </td>

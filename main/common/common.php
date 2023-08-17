@@ -274,7 +274,7 @@ session.use_trans_sid -> url 을 통해서 세션아이디(기본 - PHPSESSID)�
 */
 @ini_set("session.use_trans_sid", 0); // PHPSESSID를 자동으로 넘기지 않음
 
-ini_set("session.cache_expire", 1440); // 세션 캐쉬 보관시간 (분) 앱 자동 로그인시 세션 만료 14400(10일)으로 수정 필요
+ini_set("session.cache_expire", 1440*10); // 세션 캐쉬 보관시간 (분) 230814 앱로그인 유지를 위한 세션시간 변경
 ini_set("session.gc_maxlifetime", 86400); // session data의 garbage collection 존재 기간을 지정 (초)
 ini_set("session.gc_probability", 0);
 ini_set("session.gc_divisor", 1000);

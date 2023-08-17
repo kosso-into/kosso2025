@@ -72,7 +72,7 @@
             <li><a href="https://m.daewoong.co.kr/en/main/index" class="daewoong">DAEWOONG</a></li>
             <li><a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a></li>
             <li><a href="https://www.lgchem.com/main/index" class="lg_chem">LG Chem</a></li>
-            <li><a href="https://www.celltrion.com/en-us/home/index" class="celltrion">CELLTRION</a></li>
+            <li><a href="https://www.celltrionph.com/en-us/home/index" class="celltrion">CELLTRION</a></li>
             <li><a href="https://www.gccorp.com/eng/index" class="gc_biopharma">GC Niopharma</a></li>
             <li><a href="https://www.sanofi.com/en/our-company" class="sanofi">sanofi</a></li>
             <li><a href="http://ajupharm.co.kr/en/index.html" class="aju_pharm">AJU PHARM</a></li>
@@ -83,7 +83,7 @@
             <li><a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a></li>
             <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a></li>
             <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a></li>
-            <li class="small"><a href="https://www.lilly.com/" class="lilly">Lilly</a></li>
+            <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
             <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
         </ul>
     </div>

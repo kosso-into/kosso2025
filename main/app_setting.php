@@ -27,6 +27,37 @@
 			<p class="app_setting_desc">If your iOS user does not receive the PUSH notification, please proceed as follows: iPhone > Settings > Notification > ICOMES 2023. Change the notification permission to ‘ON’</p>
 		</div>
 	</div>
+	<button class="btn app_logout_btn">LOGOUT</button>
 </section>
+<script>
+    $(".app_logout_btn").on("click", function() {
+        $.ajax({
+            url: "./ajax/client/ajax_member.php",
+            type: "POST",
+            data: {
+                flag: "app_logout"
+            },
+            dataType: "JSON",
+            success: function() {
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+                    window.location.href = '/main/app_login.php';
+                }
+
+                if (webkit.messageHandlers!=null) {
+                    try{
+                        window.webkit.messageHandlers.logout.postMessage('');
+                        window.location.href = '/main/app_login.php';
+                    } catch (err){
+                        console.log(err);
+                    }
+                }
+            },
+            error: function() {
+                alert("일시적으로 로그아웃 요청이 거절되었습니다.");
+            }
+        });
+    });
+</script>
 
 <?php include_once('./include/app_footer.php');?>

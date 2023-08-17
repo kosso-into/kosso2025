@@ -34,6 +34,17 @@ $info = sql_fetch($sql_info);
             if (count($key_date) > 0) {
                 $weekday = ["일", "월", "화", "수", "목", "금", "토"];
             ?>
+            <!--List of Accepted Abstract-->
+            <div>
+                <div class="section_title_wrap2">
+                    <h3 class="title">List of Accepted Abstract</h3>
+                </div>
+                <div class="list_accepted_abstract_btn">
+					<button type="button" onClick="javascript:window.open('./download/Oral Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Oral Presentation</button>
+					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
+					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />Poster Exhibition</button>
+                </div>
+            </div>
             <!--keydate-->
             <div>
                 <div class="section_title_wrap2">
@@ -128,19 +139,19 @@ $info = sql_fetch($sql_info);
                            </colgroup>
                            <tr>
                                <th></th>
-                               <th class="f_bold text_center">Sep. 7 (Thu)</th>
+<!--                                <th class="f_bold text_center">Sep. 7 (Thu)</th> -->
                                <th class="f_bold text_center">Sep. 8 (Fri)</th>
                                <th class="f_bold text_center">Sep. 9 (Sat)</th>
                            </tr>
 						<tr>
 							<td class="text_center">Location</td>
-							<td class="text_center">Dressing Room, 3F</td>
+<!-- 							<td class="text_center">Dressing Room, 3F</td> -->
 							<td class="text_center">Park Studio, 5F</td>
 							<td class="text_center">Park Studio, 5F</td>
 						</tr>
 						<tr>
 							<td class="text_center">Operating Hour</td>
-							<td class="text_center">14:00 - 19:00</td>
+<!-- 							<td class="text_center">14:00 - 19:00</td> -->
 							<td class="text_center">07:30 - 18:00</td>
 							<td class="text_center">07:30 - 17:00</td>
 						</tr>
