@@ -24,10 +24,10 @@
 	";
 	$data = sql_fetch($sql);
 
-	if (!$data) {
+	/*if (!$data) {
 		echo "<script>alert('Registration Not Found.');window.close();</script>";
 		exit;
-	}
+	}*/
 ?>
 <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
 
@@ -101,10 +101,10 @@
 		<button type="button" class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">Save</button>
 		<!-- <a class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">Save</a> -->
 	</div>
-	<!-- <div style="display:none"> -->
-	<!-- 	<a class="a_tag" href="./pdf_library/viewer.html?file=sample.pdf">view</a> -->
-	<!-- 	<iframe src="./pdf_library/viewer.html?file=sample.pdf" style="width:500px; height:300px; border:1px solid #00c;"></iframe> -->
-	<!-- </div> -->
+<!--	 <div style="display:none">-->
+<!--	 	<a class="a_tag" href="./pdf_library/viewer.html?file=sample.pdf">view</a>-->
+<!--	 	<iframe src="./pdf_library/viewer.html?file=sample.pdf" style="width:500px; height:300px; border:1px solid #00c;"></iframe>-->
+<!--	 </div>-->
 	
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
@@ -112,88 +112,87 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>-->
 
 <script>
 
-function CreatePDFfromHTML() {
-	
-	var idx = "<?= $idx?>";
-
-	window.location.replace("pre_registration_confirm2.php?idx="+idx);
-
-	
-}
-
 //function CreatePDFfromHTML() {
-	
-    //var HTML_Width = $(".pre_registration_confirm").width();
-    //var HTML_Height = $(".pre_registration_confirm").height();
-    //var top_left_margin = 15;
-    //var PDF_Width = (HTML_Width + (top_left_margin * 2));
-    //var PDF_Height = (PDF_Width * 1.5) + (top_left_margin * 2);
-    //var canvas_image_width = HTML_Width;
-    //var canvas_image_height = HTML_Height;
-
-    //var totalPDFPages = Math.ceil(HTML_Height / PDF_Height) - 1;
-
-	//var newWidth = HTML_Width * 3;
-	//var newHeight = HTML_Height;
-
-	//var pre = $(".pre_registration_confirm")[0];
-
-	//$(pre).css({
-	//	'width': newWidth,
-	//	'height': newHeight
-	//});
-
-
-    //html2canvas(pre).then(function (canvas) {
-    //    var imgData = canvas.toDataURL("image/PNG", 1);
-
-	//	imgData.onload = function(){
-	//	var width = this.naturalWidth,
-	//			height = this.naturalHeight,
-	//			canvas = document.getElementById('c'),
-	//			ctx = canvas.getContext('2d');
-
-	//		canvas.width = Math.floor(width / 2);
-	//		canvas.height = Math.floor(height / 2);
-
-	//		ctx.scale(0.5, 0.5);
-	//		ctx.drawImage(this, 0, 0);
-	//		ctx.rect(0,0,500,500);
-	//		ctx.stroke();
-
-	//		// restore original 1x1 scale
-	//		ctx.scale(2, 2);
-	//		ctx.rect(0,0,500,500);
-	//		ctx.stroke();
-	//	};
-    //    var pdf = new jsPDF('p', 'pt', [PDF_Width , PDF_Height]);
-    //    pdf.addImage(imgData, 'PNG', top_left_margin, top_left_margin, canvas_image_width, canvas_image_height);
-    //    for (var i = 1; i <= totalPDFPages; i++) { 
-    //        pdf.addPage(PDF_Width, PDF_Height);
-    //        pdf.addImage(imgData, 'PNG', top_left_margin, -(PDF_Height*i)+(top_left_margin*4),canvas_image_width,canvas_image_height);
-    //    }
-
-	//    var today = new Date();
-
-	//	var year = today.getFullYear();
-	//	var month = ('0' + (today.getMonth() + 1)).slice(-2);
-	//	var day = ('0' + today.getDate()).slice(-2);
-
-	//	var hours = ('0' + today.getHours()).slice(-2); 
-	//	var minutes = ('0' + today.getMinutes()).slice(-2);
-	//	var seconds = ('0' + today.getSeconds()).slice(-2); 
-
-	//	var today_tile = year + month  + day + hours + minutes + seconds;
-
-	//    pdf.save("icomes2022_certification_"+today_tile+".pdf");
-	//   
-    //});
+//
+//	var idx = "<?php //= $idx?>//";
+//
+//	window.location.replace("pre_registration_confirm2.php?idx="+idx);
+//
 //}
+
+// function CreatePDFfromHTML() {
+//
+//     var HTML_Width = $(".pre_registration_confirm").width();
+//     var HTML_Height = $(".pre_registration_confirm").height();
+//     var top_left_margin = 15;
+//     var PDF_Width = (HTML_Width + (top_left_margin * 2));
+//     var PDF_Height = (PDF_Width * 1.5) + (top_left_margin * 2);
+//     var canvas_image_width = HTML_Width;
+//     var canvas_image_height = HTML_Height;
+//
+//     var totalPDFPages = Math.ceil(HTML_Height / PDF_Height) - 1;
+//
+// 	var newWidth = HTML_Width * 3;
+// 	var newHeight = HTML_Height;
+//
+// 	var pre = $(".pre_registration_confirm")[0];
+//
+// 	$(pre).css({
+// 		'width': newWidth,
+// 		'height': newHeight
+// 	});
+//
+//
+//     html2canvas(pre).then(function (canvas) {
+//        var imgData = canvas.toDataURL("image/PNG", 1);
+//
+// 		imgData.onload = function(){
+// 		var width = this.naturalWidth,
+// 				height = this.naturalHeight,
+// 				canvas = document.getElementById('c'),
+// 				ctx = canvas.getContext('2d');
+//
+// 			canvas.width = Math.floor(width / 2);
+// 			canvas.height = Math.floor(height / 2);
+//
+// 			ctx.scale(0.5, 0.5);
+// 			ctx.drawImage(this, 0, 0);
+// 			ctx.rect(0,0,500,500);
+// 			ctx.stroke();
+//
+// 			// restore original 1x1 scale
+// 			ctx.scale(2, 2);
+// 			ctx.rect(0,0,500,500);
+// 			ctx.stroke();
+// 		};
+//        var pdf = new jsPDF('p', 'pt', [PDF_Width , PDF_Height]);
+//        pdf.addImage(imgData, 'PNG', top_left_margin, top_left_margin, canvas_image_width, canvas_image_height);
+//        for (var i = 1; i <= totalPDFPages; i++) {
+//            pdf.addPage(PDF_Width, PDF_Height);
+//            pdf.addImage(imgData, 'PNG', top_left_margin, -(PDF_Height*i)+(top_left_margin*4),canvas_image_width,canvas_image_height);
+//        }
+//
+// 	   var today = new Date();
+//
+// 		var year = today.getFullYear();
+// 		var month = ('0' + (today.getMonth() + 1)).slice(-2);
+// 		var day = ('0' + today.getDate()).slice(-2);
+//
+// 		var hours = ('0' + today.getHours()).slice(-2);
+// 		var minutes = ('0' + today.getMinutes()).slice(-2);
+// 		var seconds = ('0' + today.getSeconds()).slice(-2);
+//
+// 		var today_tile = year + month  + day + hours + minutes + seconds;
+//
+// 	   pdf.save("icomes2022_certification_"+today_tile+".pdf");
+//
+//     });
+// }
 
 </script>
 </body>

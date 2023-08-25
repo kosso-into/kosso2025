@@ -40,9 +40,9 @@ $info = sql_fetch($sql_info);
                     <h3 class="title">List of Accepted Abstract</h3>
                 </div>
                 <div class="list_accepted_abstract_btn">
-					<button type="button" onClick="javascript:window.open('./download/Oral Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Oral Presentation</button>
-					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
-					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />Poster Exhibition</button>
+					<button type="button" onClick="javascript:window.open('./download/Oral Presentation_0824.pdf')"><img src="./img/icons/download_w.svg" />Oral Presentation</button>
+					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0824.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
+					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0824.pdf')"><img src="./img/icons/download_w.svg" />Poster Exhibition</button>
                 </div>
             </div>
             <!--keydate-->

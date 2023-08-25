@@ -64,7 +64,7 @@ if($_POST["flag"] == "select") {
     $program_list = get_data($select_program_query);
 
     $select_contents_query = "
-                             SELECT pc.idx, program_idx, contents_title, isp.idx AS speaker_idx, first_name, last_name, affiliation, nation,
+                             SELECT pc.idx, program_idx, contents_title, isp.idx AS speaker_idx, first_name, last_name, affiliation, nation, pc.speaker,
                                     date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
                              FROM program_contents pc
                              LEFT JOIN (
@@ -74,6 +74,7 @@ if($_POST["flag"] == "select") {
                              ) isp ON isp.idx = pc.speaker_idx
                              WHERE is_deleted = 'N'
                              {$row_sql2}
+                             ORDER BY start_time
                             ";
     $contents_list = get_data($select_contents_query);
 
@@ -109,6 +110,7 @@ if($_POST["flag"] == "select") {
                 'last_name' => $cl['last_name'],
                 'affiliation' => $cl['affiliation'],
                 'nation' => $cl['nation'],
+                'speaker' => $cl['speaker'],
                 'start_time' => $cl['start_time'],
                 'end_time' => $cl['end_time']
             ];

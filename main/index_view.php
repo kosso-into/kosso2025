@@ -328,13 +328,13 @@
 		<div class="inner">
 			<ul>
 				<li>
-					<button type="button" onClick="javascript:window.open('/main/download/Oral Presentation_0817.pdf')">Oral Presentation List<img src="/main/img/icons/download_w2.svg" /></button>			
+					<button type="button" onClick="javascript:window.open('/main/download/Oral Presentation_0824.pdf')">Oral Presentation List<img src="/main/img/icons/download_w2.svg" /></button>			
 				</li>
 				<li>
-					<button type="button" onClick="javascript:window.open('/main/download/Guided Poster Presentation_0817.pdf')">Guided Poster Presentation List<img src="/main/img/icons/download_w2.svg" /></button>			
+					<button type="button" onClick="javascript:window.open('/main/download/Guided Poster Presentation_0824.pdf')">Guided Poster Presentation List<img src="/main/img/icons/download_w2.svg" /></button>			
 				</li>
 				<li>
-					<button type="button" onClick="javascript:window.open('/main/download/Poster Exhibition_0817_v2.pdf')">Poster Exhibition List<img src="/main/img/icons/download_w2.svg" /></button>			
+					<button type="button" onClick="javascript:window.open('/main/download/Poster Exhibition_0824.pdf')">Poster Exhibition List<img src="/main/img/icons/download_w2.svg" /></button>
 				</li>
 			</ul>
 		</div>

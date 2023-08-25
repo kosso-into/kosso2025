@@ -109,7 +109,7 @@ $locale = locale($language);
                         <ul class="sub_nav">
                             <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
-                            <li><a href="/main/registration.php">Online Registration</a></li>
+                            <li><a href="/main/registration.php" class="online_registration_alert">Online Registration</a></li>
                             <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                         </ul>
                     </li>
@@ -170,6 +170,19 @@ $(document).ready(function() {
 
         return false;
     });
+
+    // $(".online_registration_alert").click(function(event) {
+    //     event.preventDefault();
+    //     alert("The registration has expired.\nOnline registration is not available.");
+    //
+    //     let parent = event.target.parentElement.parentElement;
+    //
+    //     if(parent.classList.contains('m_sub_nav')){
+    //         parent.style.display = 'block';
+    //     }
+    //
+    //     return false;
+    // });
 });
 </script>
 

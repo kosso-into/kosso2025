@@ -8,6 +8,8 @@
 					FROM info_event";
 	$during_yn = sql_fetch($sql_during)['yn'];
 
+    $currentDateTime = new DateTime(); // 현재 시간을 가져옴
+    $targetDateTime = new DateTime('2023-09-09 18:00:00');
 
 	// [22.04.25] 미로그인시 처리
 	if($user_idx <= 0) {
@@ -110,11 +112,15 @@
 			?>
 		</ul>
 		<!-- 행사끝나고 나서 공개예정 -->
-		<!--
+        <?php
+        if ($currentDateTime >= $targetDateTime){
+        ?>
 		<div class="rightT">
-			<button class="btn green_btn long mb20 certificate_brn" type="button">Certificate of Attendance</button>
+			<button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button>
 		</div>
-		-->
+        <?php
+        }
+        ?>
 		<div class="table_wrap x_scroll">
 			<table class="table_vertical registration_table">
 				<thead>
@@ -1051,8 +1057,9 @@
         window.location.href = paymentUrl;
     });
 
-	$(".certificate_brn").on("click", function(){
-		alert("행사가 종료후 공개될 예정입니다.");
+	$(".certificate_btn").on("click", function(){
+        var url = "./certificate_of_attendance.php";
+        window.open(url,"Certificate of attendance","width=1150, height=900, top=30, left=200");
 	});
 
     $(".cancel_btn").on("click",function(){

@@ -572,6 +572,10 @@ if ($during_yn !== "Y") {
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
 	$(document).ready(function() {
+        // alert("The registration has expired.\nOnline registration is not available.");
+        // window.history.back();
+        // window.location.href = "/main/index.php";
+        // return;
 
 		$('.etc1').hide();
 

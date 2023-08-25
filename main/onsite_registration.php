@@ -44,9 +44,9 @@
 			<h3 class="title">Use of Personal Information</h3>
 			<div class="term_box">
 				<strong>Purpose</strong>
-				<p>The Korean Society for the Study of Obesity (KSSO) provides online pre-registration services for ICOMES 2023. Based on your personal information, you can sign up for the conference and complete the payment for registration.</p>
+				<p>The Korean Society for the Study of Obesity (KSSO) provides online on-site registration services for ICOMES 2023. Based on your personal information, you can sign up for the conference and complete the payment for registration.</p>
 				<strong>Collecting Personal Information</strong>
-				<p>ICOMES 2023 requires you to provide your personal information to complete pre-registration online. You will be asked to enter your name, ID (email), password, date of birth, institution/organization, department, mobile, and telephone number.</p>
+				<p>ICOMES 2023 requires you to provide your personal information to complete on-site registration online. You will be asked to enter your name, ID (email), password, date of birth, institution/organization, department, mobile, and telephone number.</p>
 				<strong>Storing Personal Information</strong>
 				<p>ICOMES 2023 will continue to store your personal information to provide you with useful services, such as conference updates and newsletters.</p>
 			</div>
@@ -384,6 +384,26 @@
 								</ul>
 							</td>
 						</tr>
+                        <tr>
+                            <th><span class="red_txt">*</span> Special Request for Food</th>
+                            <td>
+                                <ul class="chk_list info_check_list flex_center type2">
+                                    <?= $prev["special_request_food"] === '0' ? "selected" : "" ?>
+                                    <li>
+                                        <input type="radio" class='checkbox' id="special_request1" name='special_request' value="0" <?= $prev["special_request_food"] === '0' ? "checked" : "" ?>/>
+                                        <label for="special_request1"><i></i>Not Applicable</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class='checkbox' id="special_request2" name='special_request' value="1" <?= $prev["special_request_food"] === '1' ? "checked" : "" ?>/>
+                                        <label for="special_request2"><i></i>Vegetarian</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class='checkbox' id="special_request3" name='special_request' value="2" <?= $prev["special_request_food"] === '2' ? "checked" : "" ?>/>
+                                        <label for="special_request3"><i></i>Halal</label>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
 						<tr>
 							<th><span class="red_txt">*</span> Where did you get the information about the ICOMES 2023?</th>
 							<td>

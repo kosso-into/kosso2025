@@ -309,6 +309,12 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 /*23.05.12 HUBDNC AJY 추가*/
 .ksola_signup .simple_join .red_txt {font:inherit; margin-left:0;}
 
+/*23.08.24 HUBDNC AJY 추가*/
+.down_btns {text-align:right; margin-bottom:20px;}
+.down_btns .btn {padding: 0 12px; height: 29px; font-size: 14px; font-weight: bold;}
+.down_btns .btn a {font:inherit; color:inherit;}
+.down_btns .btn img {width: 14px; margin-right: 2px;}
+
 /* sign_list > form버전 */
 .max685 {max-width: 685px; margin: auto;}
 .max685.sign_list .label:not(label) {font-size: 16px; font-weight: 600; margin-bottom: 8px;}
@@ -1113,6 +1119,10 @@ br.br_530_only {display: none;}
 
 	/*invited_speaker2*/
 	.invited_speaker .speaker_list .top_wrap {background: linear-gradient(-45deg, #F8F8F8 40%, #efefef 40%);}
+
+	/*23.08.24 HUBDNC AJY 추가*/
+	.down_btns .btn {padding: 0 10px; height: 25px; font-size: 12px;}
+	.down_btns .btn img {width: 12px;}
 }
 
 @media screen and (max-width:620px) {
@@ -1277,6 +1287,10 @@ br.br_530_only {display: none;}
 
 	/* welcome */
 	.headman_r {padding: 0;}
+
+	/*23.08.24 HUBDNC AJY 추가*/
+	.down_btns {text-align:center;}
+	.down_btns .btn {font-size: 11px;}
 }
 
 @media screen and (max-width: 468px){
