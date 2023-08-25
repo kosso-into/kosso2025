@@ -9,14 +9,15 @@
 	 	<h2 class="app_title">Floor Plan</h2>
 	</div> -->
 	<h1 class="page_title">Floor Plan</h1>
-    <div class="inner">
+    <div class="inner type2">
 		<!--
         <div class="sub_banner">
             <h1>Floor Plan</h1>
         </div> -->
         <div class="section section1">
-            <img class="coming" src="./img/coming.png" />
-
+            <div class="img_wrap">
+                <img class="floor_map" src="./img/floor_map_img04.jpg"/>            
+            </div>
         </div>
     </div>
 </section>

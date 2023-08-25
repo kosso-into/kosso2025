@@ -40,11 +40,11 @@ $sql = "
 	WHERE rr.idx = {$registration_idx}
 	AND rr.register = {$user_idx}
 ";
-$data = sql_fetch($sql);
-if (!$data) {
+//$data = sql_fetch($sql);
+/*if (!$data) {
 	echo "<script>alert('Registration Not Found.');window.close();</script>";
 	exit;
-}
+}*/
 
 // 행사 끝나고 출력해야함
 //$is_korea = ($user_idx == 14);

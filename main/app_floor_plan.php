@@ -23,48 +23,47 @@
 			</div>
 		-->
 			<div class="floor_area">
-				<img src="./img/img_floor_3.png" alt="">
+				<img src="./img/img_app_floor_3.png" alt="">
 				<div class="a_wrap floor_3">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 1]</li>
 						<li class="floor_pop_title">September 7 (Thu)</li>
-						<li>- Pre-congress Symposium 1</li>
 						<li>- Satellite Symposium 1,2</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
-						<li>- Opening Address</li>
 						<li>- Plenary Lecture 1,2</li>
 						<li>- Keynote Lecture 1</li>
 						<li>- Symposium 1,5,9</li>
 						<li>- Luncheon Symposium 1</li>
+						<li>- Opening Address</li>
 						<li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Closing Ceremony</li>
                         <li>- Plenary Lecture 3,4</li>
                         <li>- Keynote Lecture 2,3,4</li>
                         <li>- Symposium 13,17</li>
                         <li>- Breakfast Symposium 3</li>
                         <li>- Luncheon Symposium 4</li>
+                        <li>- Closing & Award Ceremony</li>
 					</ul>
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 2]</li>
 						<li class="floor_pop_title">September 7 (Thu)</li>
-                        <li>- Pre-congress Symposium 2</li>
+                        <li>- Pre-congress Symposium 1,2</li>
                         <li>- Satellite Symposium 3</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
-                        <li>- Opening Address</li>
                         <li>- Plenary Lecture 1,2</li>
                         <li>- Keynote Lecture 1</li>
                         <li>- Symposium 2,6,10</li>
                         <li>- Breakfast Symposium 1</li>
                         <li>- Luncheon Symposium 2</li>
+                        <li>- Opening Address</li>
 						<li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Closing Ceremony</li>
                         <li>- Plenary Lecture 3,4</li>
                         <li>- Keynote Lecture 2,3,4</li>
                         <li>- Symposium 14,18</li>
                         <li>- Breakfast Symposium 4</li>
                         <li>- Luncheon Symposium 5</li>
+                        <li>- Closing & Award Ceremony</li>
 					</ul>
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
@@ -72,25 +71,25 @@
 						<li class="floor_pop_title">September 7 (Thu)</li>
                         <li>- Welcome Cocktail Party</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
-                        <li>- Opening Address</li>
                         <li>- Plenary Lecture 1,2</li>
                         <li>- Keynote Lecture 1</li>
                         <li>- Symposium 3,7,11</li>
                         <li>- Breakfast Symposium 2</li>
                         <li>- Luncheon Symposium 3</li>
+                        <li>- Opening Address</li>
 						<li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Closing Ceremony</li>
                         <li>- Plenary Lecture 3,4</li>
-                        <li>- Plenary Lecture 3,4</li>
+                        <li>- Keynote Lecture 2,3,4</li>
                         <li>- Symposium 15,19</li>
                         <li>- Breakfast Symposium 5</li>
                         <li>- Luncheon Symposium 6</li>
+                        <li>- Closing & Award Ceremony</li>
 					</ul>
 				</div>
                 <div class="a_wrap center_bottom">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Registration]</li>
+                        <li class="floor_pop_title">[Registration Desk]</li>
 						<li class="floor_pop_title">September 7 (Thu)</li>
                         <li>- Operating Hours: 14:00-19:30</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
@@ -99,17 +98,17 @@
                         <li>- Operating Hours: 07:00-18:30</li>
 					</ul>
 				</div>
-				<div class="a_wrap right_bottom">
+				<!-- <div class="a_wrap right_bottom">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Preview Room]</li>
-                        <li class="floor_pop_title">September 7 (Thu)</li>
-                        <li>- Operating Hours: 14:00-19:00<br>* Closed on September 8th and September 9th.</li>
+				                        <li class="floor_pop_title">[Preview Room]</li>
+				                        <li class="floor_pop_title">September 7 (Thu)</li>
+				                        <li>- Operating Hours: 14:00-19:00<br>* Closed on September 8th and September 9th.</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 			<div class="floor_area">
-				<img src="./img/img_floor_5.png" alt="">
+				<img src="./img/img_app_floor_5.png" alt="">
 				<div class="a_wrap floor_5">
 					<div class="inner_a_wrap">
 						<!-- <a href="javascript:;"></a>
@@ -121,7 +120,7 @@
                             <li class="floor_pop_title">[Preview Room]</li>
                             <li class="floor_pop_title">September 8 (Fri)</li>
                             <li>Operating Hours: 07:00-18:30</li>
-                            <li class="floor_pop_title">September 8 (Fri)</li>
+                            <li class="floor_pop_title">September 9 (Sat)</li>
                             <li>Operating Hours: 07:00-18:30<br>* Closed on September 7th.</li>
 						</ul>
 					</div>
@@ -139,28 +138,26 @@
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 5]</li>
                         <li class="floor_pop_title">September 8 (Fri)</li>
-                        <li>- Sponsored Session 1,2</li>
                         <li>- Obesity Treatment Guidelines Symposium</li>
+                        <li>- Sponsored Session 1,2</li>
                         <li>- Oral Presentation 2</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Sponsored Session 1,2</li>
+                        <li>- Sponsored Session 3</li>
                         <li>- Best Article in JOMES</li>
                         <li>- Oral Presentation 4</li>
 					</ul>
 				</div>
 			</div>
 			<div class="floor_area">
-				<img src="./img/img_floor_6.png" alt="">
+				<img src="./img/img_app_floor_6.png" alt="">
 				<div class="a_wrap floor_6_1">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 6]</li>
                         <li class="floor_pop_title">September 8 (Fri)</li>
-                        <li>- Congress Banquet <span class="red_t">*</span>Invited Only</li>
-                        <li>- Joint Symposium EASO</li>
+                        <li>- Joint Symposium KSSO-EASO</li>
                         <li>- Joint Symposium KSSO-AOASO</li>
-                        <li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Joint Symposium TOS</li>
+                        <li>- Congress Banquet <span class="red_t">*</span>Invited Only</li>
 					</ul>
 				</div>
 				<div class="a_wrap floor_6_2">
@@ -174,9 +171,9 @@
                     </ul> -->
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Cloak Room]</li>
+                        <li class="floor_pop_title">[Poster Zone]</li>
                         <li class="floor_pop_title">September 8 (Fri)</li>
-                        <li>- Operating Hours: 07:30-18:00</li>
+                        <li>- Exhibition Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
                         <li>- Exhibition Hours: 07:30-17:00</li>
 					</ul>
@@ -184,11 +181,11 @@
 				<div class="a_wrap floor_6_3">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Room 7]</li>
-						<li class="floor_pop_title">September 8 (Fri)</li>
-                        <li>- Guided Poster Presentation 1</li>
+                        <li class="floor_pop_title">[Poster Zone]</li>
+                        <li class="floor_pop_title">September 8 (Fri)</li>
+                        <li>- Exhibition Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Guided Poster Presentation 1</li>
+                        <li>- Exhibition Hours: 07:30-17:00</li>
 					</ul>
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
@@ -223,6 +220,16 @@
                         <li>- Operating Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
                         <li>- Exhibition Hours: 07:30-17:00</li>
+					</ul>
+				</div>
+				<div class="a_wrap floor_6_center">
+					<a href="javascript:;"></a>
+					<ul class="pop_text">
+					    <li class="floor_pop_title">[Souvenir Exchange]</li>
+						<li class="floor_pop_title">September 8 (Fri)</li>
+					    <li>- Operating Hours: 07:00-18:00</li>
+						<li class="floor_pop_title">September 9 (Sat)</li>
+					    <li>- Exhibition Hours: 07:00-17:00</li>
 					</ul>
 				</div>
 			</div>

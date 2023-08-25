@@ -112,14 +112,11 @@
 						<tbody name="day" class="day_tbody day_1">
 							<tr>
 								<td>
-									<div class="colons_div">16:00-17:30</div>
+									<div class="colons_div">15:00-16:45</div>
 								</td>
+								<td></td>
 								<td class="purple_bg pointer" name="pre_congress_symposium_1">
 									Pre-congress<br/>Symposium 1
-									<input type="hidden" name="e" value="room1">
-								</td>
-								<td class="purple_bg pointer" name="pre_congress_symposium_2">
-									Pre-congress<br/>Symposium 2
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td></td>
@@ -130,11 +127,31 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">17:30-18:00</div>
+									<div class="colons_div">16:45-17:00</div>
 								</td>
-								<td colspan="7" class="light_gray_bg">Break</td>
+								<td colspan="2" class="light_gray_bg">Break</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
 							</tr>
 							<tr>
+								<td>
+									<div class="colons_div">17:00-18:00</div>
+								</td>
+                                <td></td>
+                                <td class="purple_bg pointer" name="pre_congress_symposium_2">
+									Pre-congress<br/>Symposium 2
+									<input type="hidden" name="e" value="room2">
+								</td>
+                                <td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+                            <tr>
 								<td>
 									<div class="colons_div">18:00-18:30</div>
 								</td>
@@ -156,7 +173,7 @@
 								<td>
 									<div class="colons_div">18:30-19:00</div>
 								</td>
-								<td class="sky_bg pointer" name="satellite_symposium_1">
+								<td class="sky_bg pointer" name="satellite_symposium_2">
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">
 								</td>
@@ -399,7 +416,7 @@
 								</td>
 								<td colspan="3" class="pink_bg pointer" name="plenary_lecture_2">
 									Plenary Lecture 2 
-									<p class="bold">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
+									<p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p>
 									<p>Robert R. Wolfe  <br/>(University of Arkansas for Medical Sciences, USA)</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
@@ -548,7 +565,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer" name="sponsored_session_3">
-									Sponsored Session 3 <p>Is Semaglutide Changing the Paradigm Of Obesity Management?</p>
+									Sponsored Session 3 <p>Is GLP-1RA Changing the Paradigm of Obesity Management?</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
                                 <td></td>
@@ -715,7 +732,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="sky_bg pointer best_jomes" name="jomes_session">
-									Best Article in JOMES
+									Best Articles in JOMES
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>

@@ -37,6 +37,10 @@ function selectProgram(){
                         if(cl.speaker_idx!=null){
                             speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
                             speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
+                        } else {
+                            if(cl.speaker!=null){
+                                speaker_html += '<p class="chairperson">'+'<span class="">'+cl.speaker+'</span>'+'</p>';
+                            }
                         }
 
                         contents_html += '<div>'+

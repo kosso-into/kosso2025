@@ -252,6 +252,8 @@ function onsite_submit(){
     var day3_breakfast_yn = $("input:checkbox[id='others4']:checked").val()
     var day3_luncheon_yn = $("input:checkbox[id='others5']:checked").val()
 
+    var special_request = $("input[name='special_request']:checked").val()
+
     const conference_info_arr=[];
     var info = $("input[name='list']:checked");
     $(info).each(function (){
@@ -304,6 +306,7 @@ function onsite_submit(){
         day2_luncheon_yn : day2_luncheon_yn,
         day3_breakfast_yn : day3_breakfast_yn,
         day3_luncheon_yn : day3_luncheon_yn,
+        special_request : special_request,
         conference_info_arr : conference_info_arr,
         price : price
     };
@@ -395,6 +398,10 @@ function requiredCheck(){
         return false;
     // Others
     } else if(others_check()==false){
+        return false;
+    // Special Request for Food
+    } else if(!$('input:radio[name=special_request]').is(':checked')){
+        alert("Please check the Special Request for Food section.");
         return false;
     // Information
     } else if(info_check()==false){

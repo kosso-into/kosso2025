@@ -1,6 +1,6 @@
 <?php include_once("../../common/common.php");?>
 <?php
-if($_POST["flag"] == "onsite") {
+if($_POST["flag"] === "onsite") {
     $data = isset($_POST["data"]) ? $_POST["data"] : "";
 
     // ksso 회원 상태(0:비회원, 1:정회원, 2:평생회원)
@@ -61,6 +61,9 @@ if($_POST["flag"] == "onsite") {
     $day2_luncheon_yn     = $data["day2_luncheon_yn"] !== null ? "Y" : "N";
     $day3_breakfast_yn    = $data["day3_breakfast_yn"] !== null ? "Y" : "N";
     $day3_luncheon_yn     = $data["day3_luncheon_yn"] !== null ? "Y" : "N";
+
+    $special_request = $data["special_request"] ?? "";
+
     $conference_info = implode("*", $data["conference_info_arr"]);
     $price = $data["price"] ?? "";
 
@@ -125,6 +128,7 @@ if($_POST["flag"] == "onsite") {
                                             day2_luncheon_yn = '{$day2_luncheon_yn}',
                                             day3_breakfast_yn = '{$day3_breakfast_yn}',
                                             day3_luncheon_yn = '{$day3_luncheon_yn}',
+                                            special_request_food = {$special_request},
                                             payment_methods = 2,
                                             price = '{$price}'
                                     ";
@@ -153,6 +157,114 @@ if($_POST["flag"] == "onsite") {
 
     $insert_registration = sql_query($insert_registration_query);
 
+    // reg2. users insert 230822
+    $select_registration_sql = "
+                                SELECT rr.idx, email, nation_no, nation_en
+                                FROM request_registration rr
+                                JOIN nation n ON n.idx = rr.nation_no
+                                WHERE email = '{$email}'
+                                ";
+    $users_registration = sql_fetch($select_registration_sql);
+    $registration_idx = $users_registration['idx'];
+    $nation_eng = $users_registration['nation_en'];
+    $registration_no = 'ICOMES2023-'.$registration_idx;
+    $name_kor = $last_name_kor.$first_name_kor;
+
+    $ksso_member_status_text="";
+    switch($ksso_member_status) {
+        case 0:
+            $ksso_member_status_text = "비회원";
+            break;
+        case 1:
+            $ksso_member_status_text = "정회원";
+            break;
+        case 2:
+            $ksso_member_status_text = "평생회원";
+            break;
+    }
+
+    $is_score_text="";
+    switch($is_score) {
+        case 0 :
+            $is_score_text = "미신청";
+            break;
+        case 1 :
+            $is_score_text = "신청";
+            break;
+    }
+
+    $special_request_text="";
+    switch($special_request){
+        case 0 :
+            $special_request_text = "Not Applicable";
+            break;
+        case 1 :
+            $special_request_text = "Vegetarian";
+            break;
+        case 2 :
+            $special_request_text = "Halal";
+            break;
+    }
+
+    $insert_reg_user_sql = "
+                        INSERT reg2.users
+                        SET
+                            id = {$registration_idx},
+                            registration_no = '{$registration_no}',
+                            first_name = '{$first_name}',
+                            last_name = '{$last_name}',
+                            email = '{$email}',
+                            nation = '{$nation_eng}',
+                            phone = '{$phone}',
+                            affiliation = '{$affiliation}',
+                            department = '{$department}',
+                            attendance_type = '{$participation_type}',
+                            member_type = '{$member_type}',
+                            occupation_type = '{$occupation}',
+                            ksso_member_status = '{$ksso_member_status_text}',
+                            fee = {$price},
+                            is_score = '{$is_score_text}',
+                            conference_info = '{$conference_info}',
+                            welcome_reception_yn = '{$welcome_reception_yn}',
+                            day2_breakfast_yn = '{$day2_breakfast_yn}',
+                            day2_luncheon_yn = '{$day2_luncheon_yn}',
+                            day3_breakfast_yn = '{$day3_breakfast_yn}',
+                            day3_luncheon_yn = '{$day3_luncheon_yn}',
+                            special_request_food = '{$special_request_text}',
+                            date_of_birth = '{$date_of_birth}'
+                    ";
+
+    if($nation_no == 25) {
+        $insert_reg_user_sql .= ", name_kor = '{$name_kor}' ";
+        $insert_reg_user_sql .= ", first_name_kor = '{$first_name_kor}' ";
+        $insert_reg_user_sql .= ", affiliation_kor = '{$affiliation_kor}' ";
+        $insert_reg_user_sql .= ", department_kor = '{$department_kor}' ";
+    }
+
+    if(!empty($licence_number)){
+        $insert_reg_user_sql .= ", licence_number = '{$licence_number}' ";
+    }
+    if(!empty($nutritionist_number)){
+        $insert_reg_user_sql .= ", nutritionist_number = '{$nutritionist_number}' ";
+    }
+    if(!empty($dietitian_number)){
+        $insert_reg_user_sql .= ", dietitian_number = '{$dietitian_number}' ";
+    }
+
+    if(!empty($member_other_type)){
+        $insert_reg_user_sql .= ", member_other_type = '{$member_other_type}' ";
+    } else {
+        $insert_reg_user_sql .= ", member_other_type = NULL ";
+    }
+
+    if(!empty($occupation_other_type)){
+        $insert_reg_user_sql .= ", occupation_other_type = '{$occupation_other_type}' ";
+    } else {
+        $insert_reg_user_sql .= ", occupation_other_type = NULL ";
+    }
+
+    $insert_reg_user = sql_query($insert_reg_user_sql);
+
     if($insert_registration) {
         $res = [
             code => 200,
@@ -167,7 +279,7 @@ if($_POST["flag"] == "onsite") {
         echo json_encode($res);
     }
     exit;
-} else if($_POST["flag"] == "calc_fee"){
+} else if($_POST["flag"] === "calc_fee"){
 
     $ksso_member_status = $_POST["ksso_member_status"];
     $category = $_POST["category"];

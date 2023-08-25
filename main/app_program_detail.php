@@ -173,7 +173,7 @@ echo '<script type="text/javascript">
     $program_list = get_data($select_program_query);
 
     $select_contents_query = "
-                             SELECT pc.idx, program_idx, contents_title, isp.idx AS speaker_idx, first_name, last_name, affiliation, nation,
+                             SELECT pc.idx, program_idx, contents_title, isp.idx AS speaker_idx, first_name, last_name, affiliation, nation, pc.speaker,
                                     date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
                              FROM program_contents pc
                              LEFT JOIN (
@@ -182,6 +182,7 @@ echo '<script type="text/javascript">
                                 WHERE isp.is_deleted='N'
                              ) isp ON isp.idx = pc.speaker_idx
                              WHERE is_deleted = 'N'
+                             ORDER BY start_time
                             ";
     $contents_list = get_data($select_contents_query);
 
@@ -217,6 +218,7 @@ echo '<script type="text/javascript">
                 'last_name' => $cl['last_name'],
                 'affiliation' => $cl['affiliation'],
                 'nation' => $cl['nation'],
+                'speaker' => $cl['speaker'],
                 'start_time' => $cl['start_time'],
                 'end_time' => $cl['end_time']
             ];
@@ -352,6 +354,14 @@ echo '<script type="text/javascript">
 											<span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>, <?=$contents['nation']?>)
 										</p>
                                         <?php
+                                        } else {
+                                            if($contents['speaker']!==null){
+                                        ?>
+                                        <p class="chairperson">
+                                            <span><?=$contents['speaker']?></span>
+                                        </p>
+                                        <?php
+                                            }
                                         }
                                         ?>
 										<div class="info">

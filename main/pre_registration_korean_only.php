@@ -26,10 +26,10 @@
 
 	$data = sql_fetch($sql);
 
-	if (!$data) {
+	/*if (!$data) {
 		echo "<script>alert('Registration Not Found.');window.close();</script>";
 		exit;
-	}
+	}*/
 ?>
 <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
 

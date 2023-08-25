@@ -440,7 +440,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .popup.pop_2023 .btns:before {content:''; display:block; width:124px; height:40px; border-radius:30px; background-color:#921004; position:absolute; top:0; left:50%; transform:translate(-50%,-87%); }
 
 /*mypage_registration*/
-.certificate_brn {padding: 0 16px; height: 32px; font-size: 14px; font-weight: bold;}
+.certificate_btn {padding: 0 16px; height: 32px; font-size: 14px; font-weight: bold;}
 
 /*mypage_Account*/
 .mypage .tel_number.tel_phone {width:96px;}

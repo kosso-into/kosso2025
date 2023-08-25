@@ -285,8 +285,8 @@
 <div class="popup pop_2023" style="display:block;">
 	<div class="pop_bg"></div>
 	<div class="pop_contents">
-		<img src="./img/pop_2023_bg.png" class="bg" alt="">
-		<img src="./img/pop_2023_line.png" class="line" alt="">
+		<img src="/main/img/pop_2023_bg.png" class="bg" alt="">
+		<img src="/main/img/pop_2023_line.png" class="line" alt="">
 		<div class="pop_text_box">
 			<h1>
 				<p>See you on the next</p>
@@ -302,7 +302,7 @@
 				<input type="checkbox" id="today_check" class="checkbox input required">
 				<label for="today_check">Do not open this window for 24 hours.</label>
 			</div>
-			<a href="javascript:;" class="">Close <img src="./img/main_pop_close.png" alt=""></a>
+			<a href="javascript:;" class="">Close <img src="/main/img/main_pop_close.png" alt=""></a>
 		</div>	
 	</div>
 </div>
@@ -328,13 +328,13 @@
 		<div class="inner">
 			<ul>
 				<li>
-					<button type="button" onClick="javascript:window.open('./download/Oral Presentation_0817.pdf')">Oral Presentation List<img src="./img/icons/download_w2.svg" /></button>			
+					<button type="button" onClick="javascript:window.open('/main/download/Oral Presentation_0824.pdf')">Oral Presentation List<img src="/main/img/icons/download_w2.svg" /></button>			
 				</li>
 				<li>
-					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')">Guided Poster Presentation List<img src="./img/icons/download_w2.svg" /></button>			
+					<button type="button" onClick="javascript:window.open('/main/download/Guided Poster Presentation_0824.pdf')">Guided Poster Presentation List<img src="/main/img/icons/download_w2.svg" /></button>			
 				</li>
 				<li>
-					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')">Poster Exhibition List<img src="./img/icons/download_w2.svg" /></button>			
+					<button type="button" onClick="javascript:window.open('/main/download/Poster Exhibition_0824.pdf')">Poster Exhibition List<img src="/main/img/icons/download_w2.svg" /></button>			
 				</li>
 			</ul>
 		</div>
@@ -343,7 +343,7 @@
 				<input type="checkbox" id="today_check" name="hidden" class="checkbox input required">
 				<label for="today_check">Do not open this window for 24 hours.</label>
 			</div>
-			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="./img/main_pop_close.png" alt=""></a>
+			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
 		</div>	
     </div>
 </div>
