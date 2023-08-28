@@ -138,7 +138,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>18:00-18:30</td>
                                                                     <td class="bold">
-                                                                        Jardiance, Treatment of T2D Patients Considering Renal Function
+                                                                        Empagliflozin, Treatment of T2D patients Considering Renal Function
                                                                     </td>
                                                                     <td class="text_r">
 																		<p class="bold">Yong-ho Lee</p>(Yonsei University, Republic of Korea)
@@ -386,7 +386,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>18:00-18:30</td>
+                                                <td>18:30-19:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 3</p>
                                                     <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou University, Republic of Korea)</p>
@@ -408,7 +408,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>18:00-18:30</td>
+                                                                    <td>18:30-19:00</td>
                                                                     <td class="bold">Atorvastatin/Ezetimibe Treatment for the Dyslipidemia in Patients with Type 2 Diabetes</td>
                                                                     <td class="text_r">
 																		<p class="bold">Chang Hee Jung</p>(University of Ulsan, Republic of Korea)
@@ -1243,7 +1243,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 : Obesity and Neurodegenerative Diseases</p>
-                                                    <p><span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Republic of Korea), <br><span class="bold">Jaetaek Kim</span> (Chung-Ang University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Jaetaek Kim</span> (Chung-Ang University, Republic of Korea), <br><span class="bold">Ki Woo Kim</span> (Yonsei University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -1510,8 +1510,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 6 : Clinical Exercise with Obesity</p>
                                                     <p>
-														<span class="bold">Chairpersons : Minchul Lee</span> (CHA University, Republic of Korea),<br/>
-														<span class="bold">Hyo Youl Moon</span> (Seoul National University, Republic of Korea)
+														<span class="bold">Chairpersons : Hyo Youl Moon</span> (Seoul National University, Republic of Korea),<br/>
+														<span class="bold">Minchul Lee</span> (CHA University, Republic of Korea)
 													</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -1689,7 +1689,7 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 10 : Neuropsychological Aspect of Obesity</p>
-                                                    <p><span class="bold">Chairpersons : Min-Seon Kim</span> (University of Ulsan, Republic of Korea), <br><span class="bold">Kyu Chang Won</span> (Yeungnam University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Kyu Chang Won</span> (Yeungnam University, Republic of Korea), <br><span class="bold">Min-Seon Kim</span> (University of Ulsan, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1738,6 +1738,7 @@ echo '<script type="text/javascript">
                                                                     <td>17:45-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
+                                                                        <p class="bold">Ga Eun Nam</p>(Korea University, Republic of Korea),<br/>
                                                                         <p class="bold">Young Sang Lyu</p>(Chosun University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -1787,7 +1788,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-																		Contrave: Using a Phenotype-guided Approach for the Treatment of Obesity
+																		Bupropion+Naltrexone: Using a Phenotype-guided Approach for the Treatment of Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seo Young Kang</p> (Eulji University, Republic of Korea)
@@ -1909,8 +1910,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 3 : Digital Therapeutics</p>
                                                     <p>
-														<span class="bold">Chairpersons : Sang-Yong Kim</span> (Chosun University, Republic of Korea),<br/>
-														<span class="bold">Won Young Lee</span> (Sungkyunkwan University, Republic of Korea)
+														<span class="bold">Chairpersons : Won Young Lee</span> (Sungkyunkwan University, Republic of Korea),<br/>
+														<span class="bold">Sang-Yong Kim</span> (Chosun University, Republic of Korea)
 													</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -1963,7 +1964,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea)
+                                                                        <p class="bold">Sang Youl Rhee</p>(Kyung Hee University, Republic of Korea),
+                                                                        <p class="bold">Hyunji Sang</p>(Kyung Hee University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2170,7 +2172,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 7 : Metabolic Signaling in Obesity-related Diseases</p>
-                                                    <p><span class="bold">Chairpersons : Yun-Hee Lee</span> (Seoul National University, Republic of Korea), <br><span class="bold">Chul Sik Kim</span> (Yonsei University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Chul Sik Kim</span> (Yonsei University, Republic of Korea), <br><span class="bold">Yun-Hee Lee</span> (Seoul National University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -2219,7 +2221,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        Microbiota in Obesity-related Metabolic Diseases in Mouse Models
+                                                                        Microbiota in Obesity-related Metabolic Diseases
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Je Kyung Seong</p>(Seoul National University, Republic of Korea)
@@ -2230,7 +2232,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
 																		Panel Discussion
                                                                     </td>
-																	<td class="text_r"><p class="bold">Hye Yeon Koo</p>(Seoul National University, Republic of Korea)</td>
+																	<td class="text_r">
+																		<p class="bold">Dughyun Choi</p>(Soonchunhyang University, Republic of Korea),<br/>
+																		<p class="bold">Hye Yeon Koo</p>(Seoul National University, Republic of Korea)
+																	</td>
 																</tr>
                                                             </tbody>
                                                         </table>
@@ -2402,8 +2407,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Sung Nim Han</p>(Seoul National
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Oh Yoen Kim</p>(Dong-A University, Republic of Korea),<br/>
+                                                                        <p class="bold">Min-Jeong Shin</p>(Korea University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2491,8 +2496,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Kye-Yeung Park</p>(Hanyang University, Republic of Korea), <br>
-                                                                        <p class="bold">Yun-Hee Lee</p>(Seoul National University, Republic of Korea)
+                                                                        <p class="bold">Yun-Hee Lee</p>(Seoul National University, Republic of Korea), <br>
+                                                                        <p class="bold">Kye-Yeung Park</p>(Hanyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2643,8 +2648,8 @@ echo '<script type="text/javascript">
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sol Lee</p>(Seoul Medical Center, Republic of Korea), <br>
-                                                                        <p class="bold">HanMo Yoo</p>(The Catholic University of Korea, Republic of Korea)
+                                                                        <p class="bold">HanMo Yoo</p>(The Catholic University of Korea, Republic of Korea), <br>
+                                                                        <p class="bold">Sol Lee</p>(Seoul Medical Center, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2726,6 +2731,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
+																		<p class="bold">Byoungduck Han</p>(Korea University, Republic of Korea),<br/>
 																		<p class="bold">Yong Hyuk Kim</p>(Yonsei University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
@@ -2754,7 +2760,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 1 : Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
-                                                    <p><span class="bold">Chairpersons : Jae Hyung Cho</span> (The Catholic University of Korea, Republic of Korea), <br><span class="bold">Suk Chon</span> (Kyung Hee University, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Suk Chon</span> (Kyung Hee University, Republic of Korea), <br><span class="bold">Jae Hyung Cho</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -3009,7 +3015,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td class="text_r"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Jun Hwa Hong</p>(Eulji University, Republic of Korea),<br/>
+                                                                        <p class="bold">Yang-Im Hur</p>(CHA University, Republic of Korea)
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -3142,7 +3151,10 @@ echo '<script type="text/javascript">
 																<tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <td class="text_r"></td>
+                                                                    <td class="text_r">
+																		<p class="bold">Chang Hee Jung</p>(University of Ulsan, Republic of Korea),<br/>
+																		<p class="bold">Won Yoon Suh</p>(Chungnam National University, Republic of Korea)
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -3206,7 +3218,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold">Long-Term Contribution of Inactivity Associated with Disaster: A Five-Year Longitudinal Changes in Body Composition</td>
+                                                                    <td class="bold">Contribution of Inactivity Associated with Disaster to Obesity: A Five-Year Longitudinal Changes in Body Composition</td>
                                                                     <td class="text_r"><p class="bold">Makoto Ayabe</p>(Okayama Prefectural University, Japan)</td>
                                                                 </tr>
                                                                 <tr>
@@ -3837,7 +3849,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">Triple Hormone Receptor Agonist for Obesity</td>
+                                                                    <td class="bold">A Novel Triple GIP, GLP-1, and Glucagon Receptor Agonist in for Obesity Treatment</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Se Hee Min</p>(Univeristy of Ulsan, Republic of Korea)
                                                                     </td>
@@ -3846,8 +3858,8 @@ echo '<script type="text/javascript">
                                                                     <td>16:35-16:50</td>
                                                                     <td class="bold">Panel Discussion</td>
 																	<td class="text_r">
-                                                                        <p class="bold">Jun Sung Moon</p>(Yeungnam University, Republic of Korea),<br>
-                                                                        <p class="bold">Eun Roh</p>(Hallym University, Republic of Korea)
+                                                                        <p class="bold">Eun Roh</p>(Hallym University, Republic of Korea),<br>
+                                                                        <p class="bold">Jun Sung Moon</p>(Yeungnam University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4171,8 +4183,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
 																	<td class="text_r">
-                                                                        <p class="bold">Gyuri Kim</p>(Sungkyunkwan University, Republic of Korea), <br>
-                                                                        <p class="bold">Yong-ho Lee</p>(Yonsei University, Republic of Korea) 
+                                                                        <p class="bold">Yong-ho Lee</p>(Yonsei University, Republic of Korea), <br>
+                                                                        <p class="bold">Gyuri Kim</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4816,7 +4828,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 15 : Community-based Nutrition Interventions and Approaches for Vulnerable Groups</p>
-													<p><span class="bold">Chairpersons : Sung Nim Han</span> (Seoul National University, Republic of Korea), <br><span class="bold">Kyu Rae Lee</span> (Gachon University, Republic of Korea)</p>
+													<p><span class="bold">Chairpersons : Kyu Rae Lee</span> (Gachon University, Republic of Korea), <br><span class="bold">Sung Nim Han</span> (Seoul National University, Republic of Korea)</p>
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -4875,7 +4887,10 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td class="text_r"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">SuJin Song</p>(Hannam University, Republic of Korea),<br/>
+                                                                        <p class="bold">Hannah Oh</p>(Korea University, Republic of Korea)
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -5250,6 +5265,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
+                                                                        <p class="bold">In Hyuk Chung</p>(National Health Insurance Service Ilsan Hospital, Republic of Korea),<br/>
+                                                                        <p class="bold">Eungu Kang</p>(Korea University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -5736,7 +5753,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Articles in JOMES</p>
-													<p><span class="bold">Chairpersons : You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea), <br><span class="bold">Dae Joong Kim</span> (Ajou University, Republic of Korea)</p>
+													<p><span class="bold">Chairpersons : Dae Joong Kim</span> (Ajou University, Republic of Korea), <br><span class="bold">You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>

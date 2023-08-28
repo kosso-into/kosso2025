@@ -118,20 +118,20 @@
 		</ul>
 		<div>
 			<!-- 230824 다운로드 버튼 추가 -->
-<!--            --><?php
-//                if($_SESSION["USER"]["regi_status"]==2 || $_SESSION["USER"]["regi_status"]==5){
-//            ?>
-<!--			<div class="down_btns">-->
-<!--				<button class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">-->
-<!--                    <a href="">Abstract Book Download</a>-->
-<!--                </button>-->
-<!--				<button class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">-->
-<!--                    <a href="">Program Book Download</a>-->
-<!--                </button>-->
-<!--			</div>-->
-<!--            --><?php
-//                }
-//            ?>
+            <?php
+                if($_SESSION["USER"]["regi_status"]==2 || $_SESSION["USER"]["regi_status"]==5){
+            ?>
+			<div class="down_btns">
+				<button class="btn blue_btn nowrap book"><img src="./img/icons/icon_download_white.svg" alt="">
+                    <a href="">Abstract Book Download</a>
+                </button>
+				<button class="btn blue_btn nowrap book"><img src="./img/icons/icon_download_white.svg" alt="">
+                    <a href="">Program Book Download</a>
+                </button>
+			</div>
+            <?php
+                }
+            ?>
 			<form class="table_wrap" name="modify_form">
 			<div class="pc_only">
 				<table class="table detail_table">
@@ -490,6 +490,12 @@
 <script src="./js/script/client/member.js"></script>
 <script>
 $(document).ready(function() {
+    $('.book').on('click', function(event) {
+        event.preventDefault();
+        alert('Updates are planned.');
+        return false;
+    });
+
     //비밀번호 입력 시 비밀번호 필수값으로 전환
     $("#password, #re_password").on("change", function() {
         $(this).attr("name", $(this).attr("id"));

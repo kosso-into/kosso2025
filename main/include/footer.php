@@ -8,27 +8,27 @@
 					<img src="/main/img/icons/tool_program.svg" alt="">
 				</a>
 			</li>
-<!--            --><?php
-//                if($_SESSION["USER"]["regi_status"]==2 || $_SESSION["USER"]["regi_status"]==5){
-//            ?>
-<!--            [230824] 다운로드 버튼 추가 / 파일 전달X -->
-<!--            <li>-->
-<!--				<a href="" class="type2 pink">-->
-<!--                    <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>-->
-<!--                    Abstract Book <br/>Download-->
-<!--                </a>-->
-<!--            </li>-->
-<!--			<li>-->
-<!--                <a href="" class="type2 violet">-->
-<!--                    <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>-->
-<!--                    Program Book <br/>Download-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            --><?php
-//            } else {
-//            ?>
+            <?php
+                if($_SESSION["USER"]["regi_status"]==2 || $_SESSION["USER"]["regi_status"]==5){
+            ?>
+            <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
             <li>
-				<button type="button" onclick="location.href='/main/registration.php'" class="online_registration_alert">
+				<a href="" class="type2 pink">
+                    <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
+                    Abstract Book <br/>Download
+                </a>
+            </li>
+			<li>
+                <a href="" class="type2 violet">
+                    <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
+                    Program Book <br/>Download
+                </a>
+            </li>
+            <?php
+            } else {
+            ?>
+            <li>
+				<button type="button" class="online_registration_alert">
 					<i><img src="/main/img/icons/tool_regist.svg" alt=""></i>Registration
 				</button>
 			</li>
@@ -37,7 +37,9 @@
 					<i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>Abstract
 				</button>
 			</li>
-
+            <?php
+            }
+            ?>
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
@@ -199,5 +201,11 @@ $('.term3_btn').on('click', function() {
 })
 $('.term4_btn').on('click', function() {
     $('.term4').show();
+})
+
+$('.type2').on('click', function(event) {
+    event.preventDefault();
+    alert('Updates are planned.');
+    return false;
 })
 </script>

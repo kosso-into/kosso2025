@@ -279,9 +279,9 @@
 								<td>
 									<?php if($list["payment_methods"] == 1){?>
 										<!--<a href="./online_registration.php" target="_blank" class="btn">Modify</a> 퍼블 ver-->
-										<a href="./registration.php?idx=<?=$list["idx"]?>" target="_blank" class="btn">Modify</a>
+<!--										<a href="./registration.php?idx=--><?php //=$list["idx"]?><!--" target="_blank" class="btn">Modify</a>-->
 									<?php }else{?>
-										<button type="button" class="btn payment_btn" data-url="<?=$payment_url?>">Payment</button>
+<!--										<button type="button" class="btn payment_btn" data-url="--><?php //=$payment_url?><!--">Payment</button>-->
 									<?php }?>
 									<button type="button" class="btn cancel_btn" data-idx="<?=$list["idx"]?>">Cancel</button>
 								</td>

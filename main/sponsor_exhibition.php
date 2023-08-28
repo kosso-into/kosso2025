@@ -34,6 +34,208 @@
 		// Web일때
 ?>
     <h1 class="page_title">Exhibition</h1>
+	
+	<div class="container_inner">
+		<div class="contents_box exhibition">
+			<div class="clearfix2">
+				<img src="/main/img/img_floor_3.png" alt="">
+				<div class="floor_table_wrap">
+					<table class="floor_table">
+						<colgroup>
+							<col width="120px"/>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Booth No.</th>
+								<th>Company Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="level_green">
+								<td>1</td>
+								<td>KSSO</td>
+							</tr>
+							<tr class="level_green">
+								<td>2</td>
+								<td>JOMES</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>3-4</td>
+								<td>Chong Kun Dang</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>5-6</td>
+								<td>Yuhan</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>7-8</td>
+								<td>Handok</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>9-10</td>
+								<td>MSD</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>11-12</td>
+								<td>Dong-A ST</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>13-14</td>
+								<td>Daewoong</td>
+							</tr>
+							<tr class="level_pink">
+								<td>15-18</td>
+								<td>Alvogen</td>
+							</tr>
+							<tr class="level_cyan">
+								<td>19-21</td>
+								<td>Novo Nordisk</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>22-23</td>
+								<td>Hanmi Pharm.</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>24-25</td>
+								<td>AstraZeneca</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="clearfix2">
+				<img src="/main/img/img_floor_5.png" alt="">
+				<div class="floor_table_wrap">
+					<table class="floor_table">
+						<colgroup>
+							<col width="120px"/>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Booth No.</th>
+								<th>Company Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="level_brown">
+								<td>26-27</td>
+								<td>Kwangdong</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>28</td>
+								<td>SELVAS Healthcare</td>
+							</tr>
+							<tr class="level_yellow">
+								<td>29-30</td>
+								<td>inno.N</td>
+							</tr>
+							<tr class="level_gray">
+								<td>31-32</td>
+								<td>Celltrion</td>
+							</tr>
+							<tr class="level_brown">
+								<td>33-34</td>
+								<td>Daiichi-Sankyo</td>
+							</tr>
+							<tr class="level_brown">
+								<td>35-36</td>
+								<td>Aju Pharm</td>
+							</tr>
+							<tr class="level_gray">
+								<td>37-38</td>
+								<td>GC Biopharma</td>
+							</tr>
+							<tr class="level_brown">
+								<td>39-40</td>
+								<td>Daewon</td>
+							</tr>
+							<tr class="level_gray">
+								<td>41-42</td>
+								<td>Sanoﬁ</td>
+							</tr>
+							<tr class="level_gray">
+								<td>43-44</td>
+								<td>LG Chem</td>
+							</tr>
+							<tr class="level_brown">
+								<td>45-46</td>
+								<td>Oraganon</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>47</td>
+								<td>Bukwang</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>48</td>
+								<td>Otsuka</td>
+							</tr>
+							<tr class="level_brown">
+								<td>49-50</td>
+								<td>Boryung</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>51</td>
+								<td>EOFLOW</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="clearfix2">
+				<img src="/main/img/img_floor_6.png" alt="">
+				<div class="floor_table_wrap">
+					<table class="floor_table">
+						<colgroup>
+							<col width="120px"/>
+							<col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Booth No.</th>
+								<th>Company Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="level_brown">
+								<td>52-53</td>
+								<td>Biily</td>
+							</tr>
+							<tr class="level_brown">
+								<td>54-55</td>
+								<td>Lilly</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>56</td>
+								<td>KUKJE PHARM CO.,LTD</td>
+							</tr>
+							<tr class="level_brown">
+								<td>57-58</td>
+								<td>Dalimbiotech</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>59</td>
+								<td>VIATRIS</td>
+							</tr>
+							<tr class="level_brown">
+								<td>60-61</td>
+								<td>JW Pahrmacutical</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>62</td>
+								<td>Novartis</td>
+							</tr>
+							<tr class="level_skyblue">
+								<td>63</td>
+								<td>Nexpharm Korea</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 <?php
     }
 ?>
@@ -58,75 +260,63 @@
 					<div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
-								<col width="17%"/>
-								<col width="25%"/>
+								<col width="120px"/>
 								<col />
 							</colgroup>
+							<thead>
+								<tr>
+									<th>Booth No.</th>
+									<th>Company Name</th>
+								</tr>
+							</thead>
 							<tbody>
-								<tr>
-									<td>01~03</td>
-									<td class="aqua_td">Platinum</td>
-									<td>Novo Nordisk</td>
+								<tr class="level_green">
+									<td>1</td>
+									<td>KSSO</td>
 								</tr>
-								<tr>
-									<td>04~05</td>
-									<td class="gold_td">Gold</td>
-									<td>Handok</td>
+								<tr class="level_green">
+									<td>2</td>
+									<td>JOMES</td>
 								</tr>
-								<tr>
-									<td>06</td>
-									<td class="violet_td">Others</td>
-									<td>viatris</td>
-								</tr>
-								<tr>
-									<td>07~08</td>
-									<td class="gold_td">Gold</td>
-									<td>Yuhan</td>
-								</tr>
-								<tr>
-									<td>09~10</td>
-									<td class="gold_td">Gold</td>
-									<td>Dong-A ST</td>
-								</tr>
-								<tr>
-									<td>11~12</td>
-									<td class="gold_td">Gold</td>
-									<td>MSD</td>
-								</tr>
-								<tr>
-									<td>13~14</td>
-									<td class="gold_td">Gold</td>
-									<td>inno.N</td>
-								</tr>
-								<tr>
-									<td>15~18</td>
-									<td class="pink_td">Diamond</td>
-									<td>Alvogen</td>
-								</tr>
-								<tr>
-									<td>19</td>
-									<td class="violet_td">Others</td>
-									<td>Novartis</td>
-								</tr>
-								<tr>
-									<td>20</td>
-									<td class="violet_td">Others</td>
-									<td>Jeil Pharm</td>
-								</tr>
-								<tr>
-									<td>21~22</td>
-									<td class="gold_td">Gold</td>
-									<td>Hanmi Pharm.</td>
-								</tr>
-								<tr>
-									<td>23~24</td>
-									<td class="gold_td">Gold</td>
+								<tr class="level_yellow">
+									<td>3-4</td>
 									<td>Chong Kun Dang</td>
 								</tr>
-								<tr>
-									<td>25~26</td>
-									<td class="gold_td">Gold</td>
+								<tr class="level_yellow">
+									<td>5-6</td>
+									<td>Yuhan</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>7-8</td>
+									<td>Handok</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>9-10</td>
+									<td>MSD</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>11-12</td>
+									<td>Dong-A ST</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>13-14</td>
 									<td>Daewoong</td>
+								</tr>
+								<tr class="level_pink">
+									<td>15-18</td>
+									<td>Alvogen</td>
+								</tr>
+								<tr class="level_cyan">
+									<td>19-21</td>
+									<td>Novo Nordisk</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>22-23</td>
+									<td>Hanmi Pharm.</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>24-25</td>
+									<td>AstraZeneca</td>
 								</tr>
 							</tbody>
 						</table>
@@ -140,80 +330,75 @@
 					<div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
-								<col width="17%"/>
-								<col width="25%"/>
+								<col width="120px"/>
 								<col />
 							</colgroup>
+							<thead>
+								<tr>
+									<th>Booth No.</th>
+									<th>Company Name</th>
+								</tr>
+							</thead>
 							<tbody>
-								<tr>
-									<td>27~28</td>
-									<td class="gold_td">Gold</td>
-									<td>AstraZeneca</td>
-								</tr>
-								<tr>
-									<td>29~30</td>
-									<td class="silver_td">Silver</td>
-									<td>LG Chem</td>
-								</tr>
-								<tr>
-									<td>31</td>
-									<td class="violet_td">Others</td>
-									<td>SELVAS Healthcare</td>
-								</tr>
-								<tr>
-									<td>32~33</td>
-									<td class="silver_td">Silver</td>
-									<td>Celltrion</td>
-								</tr>
-								<tr>
-									<td>34</td>
-									<td class="violet_td">Others</td>
-									<td>Kukje Pharm</td>
-								</tr>
-								<tr>
-									<td>35~36</td>
-									<td class="silver_td">Silver</td>
-									<td>GC Biopharma</td>
-								</tr>
-								<tr>
-									<td>37~38</td>
-									<td class="silver_td">Silver</td>
-									<td>Sanofi</td>
-								</tr>
-								<tr>
-									<td>39~40</td>
-									<td class="bronze_td">Bronze</td>
-									<td>Aju Pharm</td>
-								</tr>
-								<tr>
-									<td>41</td>
-									<td class="violet_td">Others</td>
-									<td>Lphysio</td>
-								</tr>
-								<tr>
-									<td>42~43</td>
-									<td class="bronze_td">Bronze</td>
+								<tr class="level_brown">
+									<td>26-27</td>
 									<td>Kwangdong</td>
 								</tr>
-								<tr>
-									<td>44~45</td>
-									<td class="bronze_td">Bronze</td>
+								<tr class="level_skyblue">
+									<td>28</td>
+									<td>SELVAS Healthcare</td>
+								</tr>
+								<tr class="level_yellow">
+									<td>29-30</td>
+									<td>inno.N</td>
+								</tr>
+								<tr class="level_gray">
+									<td>31-32</td>
+									<td>Celltrion</td>
+								</tr>
+								<tr class="level_brown">
+									<td>33-34</td>
 									<td>Daiichi-Sankyo</td>
 								</tr>
-								<tr>
-									<td>46</td>
-									<td class="violet_td">Others</td>
-									<td>Eoflow</td>
+								<tr class="level_brown">
+									<td>35-36</td>
+									<td>Aju Pharm</td>
 								</tr>
-								<tr>
-									<td>47</td>
-									<td class="violet_td">Others</td>
-									<td>InBody</td>
+								<tr class="level_gray">
+									<td>37-38</td>
+									<td>GC Biopharma</td>
 								</tr>
-								<tr>
-									<td>48~49</td>
-									<td class="bronze_td">Bronze</td>
+								<tr class="level_brown">
+									<td>39-40</td>
+									<td>Daewon</td>
+								</tr>
+								<tr class="level_gray">
+									<td>41-42</td>
+									<td>Sanoﬁ</td>
+								</tr>
+								<tr class="level_gray">
+									<td>43-44</td>
+									<td>LG Chem</td>
+								</tr>
+								<tr class="level_brown">
+									<td>45-46</td>
 									<td>Oraganon</td>
+								</tr>
+								<tr class="level_skyblue">
+									<td>47</td>
+									<td>Bukwang</td>
+								</tr>
+								<tr class="level_skyblue">
+									<td>48</td>
+									<td>Otsuka</td>
+								</tr>
+								<tr class="level_brown">
+									<td>49-50</td>
+									<td>Boryung</td>
+								</tr>
+								<tr class="level_skyblue">
+									<td>51</td>
+									<td>EOFLOW</td>
 								</tr>
 							</tbody>
 						</table>
@@ -227,55 +412,47 @@
 					<div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
-								<col width="17%"/>
-								<col width="25%"/>
+								<col width="120px"/>
 								<col />
 							</colgroup>
+							<thead>
+								<tr>
+									<th>Booth No.</th>
+									<th>Company Name</th>
+								</tr>
+							</thead>
 							<tbody>
-								<tr>
-									<td>50~51</td>
-									<td class="bronze_td">Bronze</td>
-									<td>Boryung</td>
+								<tr class="level_brown">
+									<td>52-53</td>
+									<td>Biily</td>
 								</tr>
-								<tr>
-									<td>52~53</td>
-									<td class="bronze_td">Bronze</td>
-									<td>BILLY</td>
-								</tr>
-								<tr>
-									<td>54</td>
-									<td class="lime_td">JOMES</td>
-									<td>JOMES</td>
-								</tr>
-								<tr>
-									<td>55~56</td>
-									<td class="bronze_td">Bronze</td>
-									<td>Dalimbiotech</td>
-								</tr>
-								<tr>
-									<td>57</td>
-									<td class="violet_td">Others</td>
-									<td>Nexpharm Korea</td>
-								</tr>
-								<tr>
-									<td>58~59</td>
-									<td class="bronze_td">Bronze</td>
-									<td>Daewon</td>
-								</tr>
-								<tr>
-									<td>60</td>
-									<td class="violet_td">Others</td>
-									<td>Kuhnil</td>
-								</tr>
-								<tr>
-									<td>61~62</td>
-									<td class="bronze_td">Bronze</td>
+								<tr class="level_brown">
+									<td>54-55</td>
 									<td>Lilly</td>
 								</tr>
-								<tr>
-									<td>63~64</td>
-									<td class="bronze_td">Bronze</td>
+								<tr class="level_skyblue">
+									<td>56</td>
+									<td>KUKJE PHARM CO.,LTD</td>
+								</tr>
+								<tr class="level_brown">
+									<td>57-58</td>
+									<td>Dalimbiotech</td>
+								</tr>
+								<tr class="level_skyblue">
+									<td>59</td>
+									<td>VIATRIS</td>
+								</tr>
+								<tr class="level_brown">
+									<td>60-61</td>
 									<td>JW Pahrmacutical</td>
+								</tr>
+								<tr class="level_skyblue">
+									<td>62</td>
+									<td>Novartis</td>
+								</tr>
+								<tr class="level_skyblue">
+									<td>63</td>
+									<td>Nexpharm Korea</td>
 								</tr>
 							</tbody>
 						</table>
@@ -286,19 +463,6 @@
 	</div>
 <?php
     } 
-?>
-    <!-- 웹 뷰 -->
-<?php
-	if (!empty($session_app_type) && $session_app_type == 'N') {
-		// Web일때
-?>
-    <div class="inner">
-		<div class="sponsor_exhibition">
-			<img class="coming" src="./img/coming.png" />
-		</div>
-	</div>
-<?php
-    }
 ?>
 	
 </section>

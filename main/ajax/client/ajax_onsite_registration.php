@@ -218,6 +218,7 @@ if($_POST["flag"] === "onsite") {
                             phone = '{$phone}',
                             affiliation = '{$affiliation}',
                             department = '{$department}',
+                            org_nametag = '{$affiliation}',
                             attendance_type = '{$participation_type}',
                             member_type = '{$member_type}',
                             occupation_type = '{$occupation}',
@@ -236,7 +237,6 @@ if($_POST["flag"] === "onsite") {
 
     if($nation_no == 25) {
         $insert_reg_user_sql .= ", name_kor = '{$name_kor}' ";
-        $insert_reg_user_sql .= ", first_name_kor = '{$first_name_kor}' ";
         $insert_reg_user_sql .= ", affiliation_kor = '{$affiliation_kor}' ";
         $insert_reg_user_sql .= ", department_kor = '{$department_kor}' ";
     }
@@ -265,7 +265,7 @@ if($_POST["flag"] === "onsite") {
 
     $insert_reg_user = sql_query($insert_reg_user_sql);
 
-    if($insert_registration) {
+    if($insert_reg_user) {
         $res = [
             code => 200,
             msg => "onsite_registration success"
