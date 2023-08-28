@@ -91,7 +91,7 @@
 						<tr>
 							<td>대한운동사협회</td>
 							<td>없음</td>
-							<td colspan="2">40평점</td>
+							<td colspan="2">40평점<br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
 						</tr>
 					</tbody>
 				</table>

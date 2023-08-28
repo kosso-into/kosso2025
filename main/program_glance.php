@@ -116,7 +116,7 @@
 								</td>
 								<td></td>
 								<td class="purple_bg pointer" name="pre_congress_symposium_1">
-									Pre-congress<br/>Symposium 1
+									Pre-congress<br/>Symposium 1<p>적절한 비만관리를 위한 정책적 논의</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td></td>
@@ -142,7 +142,7 @@
 								</td>
                                 <td></td>
                                 <td class="purple_bg pointer" name="pre_congress_symposium_2">
-									Pre-congress<br/>Symposium 2
+									Pre-congress<br/>Symposium 2<p>Obesity in Asia-Pacific – Is It Different from Rest of the World?</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
                                 <td></td>
@@ -159,10 +159,7 @@
 									Satellite<br />Symposium 1
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="sky_bg pointer" name="satellite_symposium_3">
-									Satellite<br />Symposium 3
-									<input type="hidden" name="e" value="room2">
-								</td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -177,7 +174,10 @@
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td></td>
+								<td class="sky_bg pointer" name="satellite_symposium_3">
+									Satellite<br />Symposium 3
+									<input type="hidden" name="e" value="room2">
+								</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -440,7 +440,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="green_bg pointer" name="symposium_10">
-									Symposium 10 <p>The Effect of Obesity and HDL Concentration on AD Pathology</p>
+									Symposium 10 <p>Neuropsychological Aspect of Obesity</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="green_bg pointer" name="symposium_11">

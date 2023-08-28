@@ -171,18 +171,18 @@ $(document).ready(function() {
         return false;
     });
 
-    // $(".online_registration_alert").click(function(event) {
-    //     event.preventDefault();
-    //     alert("The registration has expired.\nOnline registration is not available.");
-    //
-    //     let parent = event.target.parentElement.parentElement;
-    //
-    //     if(parent.classList.contains('m_sub_nav')){
-    //         parent.style.display = 'block';
-    //     }
-    //
-    //     return false;
-    // });
+    $(".online_registration_alert").click(function(event) {
+        event.preventDefault();
+        alert("The registration has expired.\nOnline registration is not available.");
+
+        let parent = event.target.parentElement.parentElement;
+
+        if(parent.classList.contains('m_sub_nav')){
+            parent.style.display = 'block';
+        }
+
+        return false;
+    });
 });
 </script>
 

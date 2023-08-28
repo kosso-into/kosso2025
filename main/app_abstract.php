@@ -71,7 +71,13 @@ $abstract_list = get_data($select_abstract_query);
         $(".pdf_view").click(function(event){
             event.preventDefault();
             let path = event.target.href;
-            openPDF(path);
+
+            if(path==='https://icomes.or.kr/main/app_abstract.php'){
+                alert('Updates are planned.');
+                return false;
+            } else {
+                openPDF(path);
+            }
         });
 
         function openPDF(path) {
