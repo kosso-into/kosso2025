@@ -1041,7 +1041,7 @@ section.container.sponsor {padding-top: 164px;}
 
 /* 기간지난 tr Close */
 .close_th {position:relative;}
-.close_th:after {content:''; display:block; position:absolute; top:50%; right:0; transform:translate(50%,-50%) rotateZ(-24deg); width:100px; height:35px; background:url("../img/icons/icon_closed.png") no-repeat center /contain;}
+.close_th:after {content:''; display:block; position:absolute; top:50%; right:0; transform:translate(50%,-50%) rotateZ(-24deg); width:100px; height:35px; background:url("../img/icons/icon_closed.png") no-repeat center /contain; z-index:10;}
 
 
 
