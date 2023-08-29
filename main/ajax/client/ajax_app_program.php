@@ -58,7 +58,7 @@ if($_POST["flag"] == "select") {
                                      JOIN (SELECT @rownum := 0) AS R
                                      WHERE p.is_deleted = 'N'
                                      {$row_sql}
-                                     ORDER BY _start_time ASC, program_name*1 ASC
+                                     ORDER BY _start_time ASC, CAST(SUBSTRING_INDEX(program_tag_name, '_', -1) AS SIGNED), program_tag_name
                                  ) P
                             ";
     $program_list = get_data($select_program_query);

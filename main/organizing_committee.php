@@ -112,7 +112,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                             <td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Youngsang Lyu</td>
+                            <td>Young Sang Lyu</td>
                             <td>Chosun University</td>
                             <td>Endocrinology</td>
                         </tr>
@@ -180,7 +180,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </tr>
                         <tr>
                             <th>Strategic Planning</th>
-                            <td>Sangyong Kim</td>
+                            <td>Sang-Yong Kim</td>
                             <td>Chosun University</td>
                             <td>Endocrinology</td>
                         </tr>
@@ -281,7 +281,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                             <td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Sochung Chung</td>
+                            <td>SoChung Chung</td>
                             <td>Konkuk University</td>
                             <td>Pediatrics</td>
                         </tr>
@@ -347,7 +347,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
 							<td>Endocrinology</td>
                         </tr>
                         <tr>
-                            <td>Ji Wan Yoon</td>
+                            <td>Ji Won Yoon</td>
                             <td>Seoul National University</td>
 							<td>Internal Medicine</td>
                         </tr>

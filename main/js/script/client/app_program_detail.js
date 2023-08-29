@@ -61,6 +61,9 @@ function selectProgram(){
                     }
 
                     if(abstract_category_list.includes(pl.program_category_idx)){
+                        if(pl.path==null){
+                            pl.path = 'javascript:void(0)';
+                        }
                         abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
                     }
 
@@ -128,6 +131,7 @@ function selectProgram(){
 
                     $(".right_tag").click(function(event){
                         event.preventDefault();
+                        event.stopPropagation();
                     });
                 })
 
@@ -169,7 +173,7 @@ function Schedule(e){
             if (res.code == 200) {
                 // Scientific Program 내 스케줄 버튼 토글
                 if(e.target.classList.contains('on')){
-                    AlarmMessage('Cancle');
+                    AlarmMessage('Cancel');
                     e.target.classList.remove('on');
                     is_push = 'delete';
                     setAlarm(program_idx, is_push);
@@ -198,15 +202,21 @@ function Schedule(e){
 }
 
 function openPDF(e){
+    e.preventDefault();
     let path=e.target.href;
 
-    if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-        window.AndroidScript.openPDF(path);
-    } else if(window.webkit && window.webkit.messageHandlers!=null) {
-        try{
-            window.webkit.messageHandlers.openPDF.postMessage(path);
-        } catch (err){
-            console.log(err);
+    if(path === 'javascript:void(0)'){
+        alert('Updates are planned.');
+        return false;
+    } else{
+        if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+            window.AndroidScript.openPDF(path);
+        } else if(window.webkit && window.webkit.messageHandlers!=null) {
+            try{
+                window.webkit.messageHandlers.openPDF.postMessage(path);
+            } catch (err){
+                console.log(err);
+            }
         }
     }
 }

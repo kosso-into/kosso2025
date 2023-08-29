@@ -56,7 +56,9 @@ $abstract_list = get_data($select_abstract_query);
                     <?php
                         foreach ($abstract_list as $abstract){
                     ?>
-					<li class="pdf"><a href="<?=$abstract['path']?>" class="pdf_view"><?=$abstract['name']?></a></li>
+					<li class="pdf">
+                        <a href="<?=$abstract['path'] ?? 'javascript:void(0)'?>" class="pdf_viewer"><?=$abstract['name']?></a>
+                    </li>
                     <?php
                     }
                     ?>
@@ -67,33 +69,11 @@ $abstract_list = get_data($select_abstract_query);
 </section>
 
 <script>
-    $(document).ready(function() {
-        $(".pdf_view").click(function(event){
-            event.preventDefault();
-            let path = event.target.href;
-
-            if(path==='https://icomes.or.kr/main/app_abstract.php'){
-                alert('Updates are planned.');
-                return false;
-            } else {
-                openPDF(path);
-            }
-        });
-
-        function openPDF(path) {
-            // let path = e.target.href;
-
-            if (typeof (window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-                window.AndroidScript.openPDF(path);
-            } else if (window.webkit && window.webkit.messageHandlers != null) {
-                try {
-                    window.webkit.messageHandlers.openPDF.postMessage(path);
-                } catch (err) {
-                    console.log(err);
-                }
-            }
-        }
-    })
+    $(".pdf_viewer").click(function(event){
+        event.preventDefault();
+        let path = event.target.href;
+        openPDF(path);
+    });
 </script>
 <?php
 	include_once ("./include/app_footer.php");

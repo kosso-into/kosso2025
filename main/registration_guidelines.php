@@ -36,7 +36,7 @@ $price = get_data($sql_price);
         <div class="inner">
             <!--1. important dates start-->
             <h3 class="title">Key Dates</h3>
-            <div class="table_wrap detail_table_common details x_scroll">
+            <div class="table_wrap detail_table_common details">
                 <table class="c_table detail_table">
                     <colgroup>
                         <col class="submission_col">
@@ -51,7 +51,7 @@ $price = get_data($sql_price);
                         <td class="f_bold">June 29 (Thu)</td>
                     </tr>
                     <tr>
-                        <th>Pre-registration<br class="br_mb_only"> Deadline</th>
+                        <th class="close_th">Pre-registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">August 24 (Thu)</td>
                     </tr>
                 </table>

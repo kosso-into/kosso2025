@@ -62,7 +62,7 @@
 					<div class="headman_l"><img src="./img/headman_img1.png" alt=""></div>
 					<div class="headman_r">
 						<!-- <h5>Name</h5> -->
-						<h1>Sung Soo Kim</h1>
+						<h1>Sung Soo Kim, M.D., Ph.D</h1>
 						<h5>Chairman</h5>
 						<p>Korea Society for Study of Obesity</p>
 						<div class="headman_sign"><img src="./img/headman_sign1.png" alt=""></div>
@@ -72,7 +72,7 @@
 					<div class="headman_l"><img src="./img/headman_img2.png" alt=""></div>
 					<div class="headman_r">
 						<!-- <h5>Name</h5> -->
-						<h1>Cheol-Young Park</h1>
+						<h1>Cheol-Young Park, M.D., Ph.D</h1>
 						<h5>President</h5>
 						<p>Korea Society for Study of Obesity</p>
 						<div class="headman_sign"><img src="./img/headman_sign2_1.png" alt=""></div>
