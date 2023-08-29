@@ -1,11 +1,16 @@
-function openPDF(path){
-    if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-        window.AndroidScript.openPDF(path);
-    } else if(window.webkit && window.webkit.messageHandlers!=null) {
-        try{
-            window.webkit.messageHandlers.openPDF.postMessage(path);
-        } catch (err){
-            console.log(err);
+function openPDF(path) {
+    if(path==='javascript:void(0)') {
+        alert('Updates are planned.')
+        return false;
+    } else {
+        if (typeof (window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+            window.AndroidScript.openPDF(path);
+        } else if (window.webkit && window.webkit.messageHandlers != null) {
+            try {
+                window.webkit.messageHandlers.openPDF.postMessage(path);
+            } catch (err) {
+                console.log(err);
+            }
         }
     }
 }
@@ -29,30 +34,19 @@ function selectAbstract(){
                 $('.pdf_list').html(_html);
 
                 Object.values(abstract_list).forEach(al=> {
-                    _html += '<li class="pdf"><a href="'+al.path+'" class="pdf_view">' + al.name + '</a></li>';
+                    if(al.path==null){
+                        al.path='javascript:void(0)'
+                    }
+                    _html += '<li class="pdf"><a href="'+al.path+'" class="pdf_viewer">' + al.name + '</a></li>';
                 });
 
                 $('.pdf_list').html(_html);
 
-                $(".pdf_view").click(function(event){
+                $(".pdf_viewer").click(function(event){
                     event.preventDefault();
                     let path = event.target.href;
                     openPDF(path);
                 });
-
-                function openPDF(path) {
-                    // let path = e.target.href;
-
-                    if (typeof (window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-                        window.AndroidScript.openPDF(path);
-                    } else if (window.webkit && window.webkit.messageHandlers != null) {
-                        try {
-                            window.webkit.messageHandlers.openPDF.postMessage(path);
-                        } catch (err) {
-                            console.log(err);
-                        }
-                    }
-                }
             } else {
                 alert("abstract error.");
                 return;

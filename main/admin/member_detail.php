@@ -469,6 +469,9 @@ $(document).ready(function(){
 
 		var status = process.status;
 		var data = process.data;
+
+        console.log(data['nation_tel']);
+        console.log(data['phone']);
 		
 		if (data['phone'] != "") {
 			data['phone'] = data['nation_tel'] + '-' + data['phone'];
@@ -505,6 +508,7 @@ $(document).ready(function(){
 		data['ksola_member_status'] = $("[name=user]:checked").val();
 
 		console.log(data);
+        console.log(status);
 
 		if(status) {
 			if(confirm("저장하시겠습니까?")) {
@@ -567,7 +571,7 @@ function inputCheck() {
 					alert("이메일을 입력하지 않으셨습니다.");
 				} else if(ok == "password") {
 					alert("비밀번호를 입력하지 않으셨습니다.");
-				} else if(ok == "re_password") {	
+				} else if(ok == "re_password") {
 					alert("비밀번호 확인을 입력하지 않으셨습니다.")
 				} else if(ok == "first_name") {
 					alert("영문 이름을 입력하지 않으셨습니다.");

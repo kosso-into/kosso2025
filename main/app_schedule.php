@@ -25,7 +25,7 @@ $select_program_query = "
                                      JOIN (SELECT @rownum := 0) AS R
                                      WHERE p.is_deleted = 'N'
                                      AND s.idx IS NOT NULL
-                                     ORDER BY _start_time ASC, program_name ASC
+                                     ORDER BY _start_time ASC, CAST(SUBSTRING_INDEX(program_tag_name, '_', -1) AS SIGNED), program_tag_name
                                  ) P
                             ";
 
@@ -116,7 +116,7 @@ foreach($program_list as $pl){
                             <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                             ?>
-                            <a href="<?=$program['path']?>" class="right_tag">Abstract</a>
+                            <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">Abstract</a>
                             <?php
                             }
                             ?>
@@ -213,7 +213,7 @@ foreach($program_list as $pl){
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     ?>
-                                    <a href="<?=$program['path']?>" class="right_tag">Abstract</a>
+                                    <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">Abstract</a>
                                     <?php
                                 }
                                 ?>
@@ -310,7 +310,7 @@ foreach($program_list as $pl){
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     ?>
-                                    <a href="<?=$program['path']?>" class="right_tag">Abstract</a>
+                                    <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">Abstract</a>
                                     <?php
                                 }
                                 ?>
@@ -428,7 +428,12 @@ foreach($program_list as $pl){
         $(".right_tag").click(function(event){
             event.preventDefault();
             let path = event.target.href;
-            openPDF(path);
+            if(path==='javascript:void(0)'){
+                alert('Updates are planned.');
+                return false;
+            } else {
+                openPDF(path);
+            }
         });
 
         function Schedule(e){

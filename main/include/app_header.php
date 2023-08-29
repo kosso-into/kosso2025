@@ -87,10 +87,10 @@
 					</ul>
 				</li> -->
 				<li>
-					<a href="./download/(APP) ICOMES2023_Program Book Download_230717.pdf" download class="pdf_view">Program Book <br/>Download</a>
+					<a href="javascript:void(0)" download class="pdf_view">Program Book <br/>Download</a>
 				</li>
 				<li>
-					<a href="./download/(APP) ICOMES2023_Abstract Book Download_230717.pdf" download class="pdf_view">Abstract Book <br/>Download</a>
+					<a href="javascript:void(0)" download class="pdf_view">Abstract Book <br/>Download</a>
 				</li>
 			</ul>
 		</div>
@@ -102,7 +102,12 @@
         $(".pdf_view").click(function(event){
             event.preventDefault();
             let path = event.target.href;
-            openPDF(path);
+            if(path==='javascript:void(0)'){
+                alert('Updates are planned.')
+                return false;
+            } else {
+                openPDF(path);
+            }
         });
 
         function openPDF(path) {

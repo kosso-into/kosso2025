@@ -17,7 +17,28 @@ $d_num = $day[-1] ?? '1';
 
 //kcode == 116 새로고침
 
+$option_room = "";
+switch ($e){
+    case "room1" : case "Room1" : $option_room = "1";
+    break;
+    case "room2" : case "Room2" : $option_room = "2";
+    break;
+    case "room3" : case "Room3" : $option_room = "3";
+    break;
+    case "room4" : case "Room4" : $option_room = "4";
+    break;
+    case "room5" : case "Room5" : $option_room = "5";
+    break;
+    case "room6" : case "Room6" : $option_room = "6";
+    break;
+    case "room7" : case "Room7" : $option_room = "7";
+    break;
+    case "Room1~3" : $option_room = "8";
+    break;
+}
+
 echo '<script type="text/javascript">
+              const init_room = "' . $option_room . '"
               $(document).ready(function(){
                   //탭 활성화
                   //큰탭
@@ -26,7 +47,7 @@ echo '<script type="text/javascript">
                     $(".app_tab li:first-child").addClass("on");
                     $(".app_tab li:nth-child(1)").trigger("click");
                   }
-
+                  
                     // Room Select Tab 초기화 / 클릭 스크립트 수정
                     $(".app_tab li").click(function(){
 //							$(".sort_select").each(function(){
@@ -43,6 +64,18 @@ echo '<script type="text/javascript">
                         var date = $(".program > .on").val();
                         $("input[name=program_date]").val(date);
                         
+                       /* var _options = $(".select_day_program select option");
+                        
+                        _options.prop("hidden", true);
+                        $(".select_day_program select option.day" + date).prop("hidden", false);
+                        
+                        if($(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("hidden")) {
+                            $(_options[0]).prop("selected", true);
+                        } else {
+                            $(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("selected", true);
+                        }*/
+                        setRoom();
+                       
                         selectProgram();
                     });
 
@@ -52,6 +85,7 @@ echo '<script type="text/javascript">
                   //작은탭
                   //$(".app_tab + .inner .tab_wrap > .tab_cont .tab_cont").removeClass("on");
                   $(".app_tab + .inner .tab_wrap > .tab_cont.on .tab_cont").eq(' . $e_num . ' - 1).addClass("on");
+                    setRoom(true);
 
                   window.onkeydown = function() {
                     var kcode = event.keyCode;
@@ -81,13 +115,31 @@ echo '<script type="text/javascript">
                   });
 
               });
+              
+             function setRoom(init = false) {
+                var date = $(".program > .on").val();
+                var _options = $(".select_day_program select option");
+                
+                _options.prop("hidden", true);
+                $(".select_day_program select option.day" + date).prop("hidden", false);
+                
+                if(init) {
+                    if($(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("hidden")) {
+                        $(_options[0]).prop("selected", true);
+                    } else {
+                        $(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("selected", true);
+                    }
+                } else {
+                    $(_options[0]).prop("selected", true);
+                }
+                $(".select_day_program li:last-of-type select option:first-of-type").prop("selected", true);
+             }
 		</script>';
 
 ?>
 
 <?php
     $member_idx         = $_SESSION["USER"]["idx"];
-    $option_room		= "";
 
     $row_sql = "";
 
@@ -97,25 +149,6 @@ echo '<script type="text/javascript">
         case "day_tbody day_2" : case "day_2" : $day = "2023-09-08";
             break;
         case "day_tbody day_3" : case "day_3" : $day = "2023-09-09";
-            break;
-    }
-
-    switch ($e){
-        case "room1" : case "Room1" : $option_room = "1";
-            break;
-        case "room2" : case "Room2" : $option_room = "2";
-            break;
-        case "room3" : case "Room3" : $option_room = "3";
-            break;
-        case "room4" : case "Room4" : $option_room = "4";
-            break;
-        case "room5" : case "Room5" : $option_room = "5";
-            break;
-        case "room6" : case "Room6" : $option_room = "6";
-            break;
-        case "room7" : case "Room7" : $option_room = "7";
-            break;
-        case "Room1~3" : $option_room = "8";
             break;
     }
 
@@ -166,7 +199,7 @@ echo '<script type="text/javascript">
                                      JOIN (SELECT @rownum := 0) AS R
                                      WHERE p.is_deleted = 'N'
                                      {$row_sql}
-                                     ORDER BY _start_time ASC, program_name*1 ASC
+                                     ORDER BY _start_time ASC, CAST(SUBSTRING_INDEX(program_tag_name, '_', -1) AS SIGNED), program_tag_name
                                  ) P
                             ";
 
@@ -255,35 +288,59 @@ echo '<script type="text/javascript">
     <div class="inner">
         <div class="tab_wrap">
             <div class="tab_cont on">
-                <ul class="app_sort_form app_half_ul fix_cont_sub">
+                <ul class="app_sort_form app_half_ul fix_cont_sub select_day_program">
 					<li>
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
 							<option value="" hidden>Select Room</option>
-							<option value="">All</option>
-                            <?php
-                                foreach($place_list as $place){
-									//$is_place_arr_type = (!empty($room_list) && in_array($place['program_place_name'], $room_list)) ? 1 : 0;
-
-									//if ($is_place_arr_type) {
-                            ?>
-										<option value="<?=$place['idx']?>" <?= !empty($option_room) && $place['idx'] == $option_room ? "selected" : "" ?>><?=$place['program_place_name']?></option>
-                            <?php
-									//}
-								}
-                            ?>
+							<option value="" class="day1 day2 day3">All</option>
+<!--                            --><?php
+//                                foreach($place_list as $place){
+//									//$is_place_arr_type = (!empty($room_list) && in_array($place['program_place_name'], $room_list)) ? 1 : 0;
+//
+//									//if ($is_place_arr_type) {
+//                            ?>
+<!--										<option value="--><?php //=$place['idx']?><!--" --><?php //= !empty($option_room) && $place['idx'] == $option_room ? "selected" : "" ?><!-->--><?php //=$place['program_place_name']?><!--</option>-->
+<!--                            --><?php
+//									//}
+//								}
+//                            ?>
+                            <option value="1" class="day1 day2 day3">Room1</option>
+                            <option value="2" class="day1 day2 day3">Room2</option>
+                            <option value="3" class="day1 day2 day3">Room3</option>
+                            <option value="4" class="day2 day3">Room4</option>
+                            <option value="5" class="day2 day3">Room5</option>
+                            <option value="6" class="day2">Room6</option>
+                            <option value="7" class="day2 day3">Room7</option>
 						</select>
 					</li>
 					<li>
 						<select name="option_category" id="option_category" class="" onchange="selectProgram();">
                             <option value="" hidden>Select Category</option>
-                            <option value="">All</option>
-                            <?php
-                                foreach($category_list as $category){
-                            ?>
-									<option value="<?=$category['idx']?>" <?= !empty($option_category) && $category['idx'] == $option_category ? "selected" : "" ?>><?=$category['title']?></option>
-                            <?php
-								}
-                            ?>
+                            <option value="" class="day1 day2 day3">All</option>
+<!--                            --><?php
+//                                foreach($category_list as $category){
+//                            ?>
+<!--									<option value="--><?php //=$category['idx']?><!--" --><?php //= !empty($option_category) && $category['idx'] == $option_category ? "selected" : "" ?><!-->--><?php //=$category['title']?><!--</option>-->
+<!--                            --><?php
+//								}
+//                            ?>
+                            <option value="5" class="day2 day3">Pleanary Lecture</option>
+                            <option value="6" class="day2 day3">Keynote Lecture</option>
+                            <option value="8" class="day2 day3">Symposium</option>
+                            <option value="15" class="day2">Joint Symposium</option>
+                            <option value="9" class="day2">Obesity Treatment Guidelines Symposium</option>
+                            <option value="7" class="day3">Best Articles in JOMES</option>
+                            <option value="10" class="day1">Pre-congress Symposium</option>
+                            <option value="11" class="day2 day3">Breakfast Symposium</option>
+                            <option value="12" class="day2 day3">Luncheon Symposium</option>
+                            <option value="13" class="day1">Satellite Symposium</option>
+                            <option value="14" class="day2 day3">Sponsored Session</option>
+                            <option value="16" class="day2 day3">Oral Presentation</option>
+                            <option value="17" class="day2 day3">Guided Poster Presentation</option>
+                            <option value="1" class="day2">Opening Address</option>
+                            <option value="2" class="day3">Closing & Award Ceremony</option>
+                            <option value="3" class="day1">Welcome Cocktail Party</option>
+                            <option value="4" class="day2">Congress Banquet</option>
 						</select>
 					</li>
 				</ul>
@@ -304,14 +361,14 @@ echo '<script type="text/javascript">
                                     <?php
                                         if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     ?>
-									<a href="<?=$program['path']?>" class="right_tag" onclick="openPDF(event)">Abstract</a>
+									<a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag" onclick="openPDF(event)">Abstract</a>
                                     <?php
                                     }
                                     ?>
 									<p class="title"><?=$program['program_name']?></p>
                                     <?php
                                         if($program['chairpersons']!==null){
-                                            if(substr_count($program['chairpersons'],',')>=2){
+                                            if(substr_count($program['chairpersons'],'(')>=2){
                                                 $chairperson = 'Chairpersons:';
                                             } else {
                                                 $chairperson = 'Chairperson:';

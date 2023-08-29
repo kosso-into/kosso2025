@@ -77,11 +77,11 @@ if($_POST["flag"] == "favorite"){
     $row_sql = "";
 
     if($keywords != ""){
-        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%' OR nation LIKE '%{$keywords}%') ";
+        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%' OR nation LIKE '%{$keywords}%' OR CONCAT(first_name,' ',last_name) LIKE '%{$keywords}%') ";
     }
 
     $select_keywords_query = "
-                                SELECT DISTINCT LEFT(first_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, nation, affiliation, 
+                                SELECT DISTINCT LEFT(first_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, nation, affiliation,
                                     (CASE
                                          WHEN fisp.idx IS NULL THEN 'N'
                                          ELSE 'Y'
