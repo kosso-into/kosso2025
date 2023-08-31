@@ -38,7 +38,7 @@
 	<div class="container_inner">
 		<div class="contents_box exhibition">
 			<div class="clearfix2">
-				<img src="/main/img/img_floor_3.png" alt="">
+				<img src="/main/img/img_exhibition_web_floor_3.png" alt="">
 				<div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
@@ -105,7 +105,7 @@
 				</div>
 			</div>
 			<div class="clearfix2">
-				<img src="/main/img/img_floor_5.png" alt="">
+				<img src="/main/img/img_exhibition_web_floor_5.png" alt="">
 				<div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
@@ -184,7 +184,7 @@
 				</div>
 			</div>
 			<div class="clearfix2">
-				<img src="/main/img/img_floor_6.png" alt="">
+				<img src="/main/img/img_exhibition_web_floor_6.png" alt="">
 				<div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
@@ -255,7 +255,7 @@
 				<div class="floor floor_3 on">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_3f.png" alt=""> -->
-						<img src="/main/img/img_floor_3.png" alt="">
+						<img src="/main/img/img_exhibition_app_floor_3.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -325,7 +325,7 @@
 				<div class="floor floor_5">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_5f.png" alt=""> -->
-						<img src="/main/img/img_floor_5.png" alt="">
+						<img src="/main/img/img_exhibition_app_floor_3.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">
@@ -407,7 +407,7 @@
 				<div class="floor floor_6">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_6f.png" alt=""> -->
-						<img src="/main/img/img_floor_6.png" alt="">
+						<img src="/main/img/img_exhibition_app_floor_3.png" alt="">
 					</div>
 					<div class="floor_table_wrap">
 						<table class="floor_table">

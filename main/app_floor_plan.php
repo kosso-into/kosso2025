@@ -29,6 +29,7 @@
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 1]</li>
 						<li class="floor_pop_title">September 7 (Thu)</li>
+						<li>- Pre-congress Symposium 1</li>
 						<li>- Satellite Symposium 1,2</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
 						<li>- Plenary Lecture 1,2</li>
@@ -48,7 +49,7 @@
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 2]</li>
 						<li class="floor_pop_title">September 7 (Thu)</li>
-                        <li>- Pre-congress Symposium 1,2</li>
+                        <li>- Pre-congress Symposium 2</li>
                         <li>- Satellite Symposium 3</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
                         <li>- Plenary Lecture 1,2</li>
@@ -219,7 +220,7 @@
                         <li class="floor_pop_title">September 8 (Fri)</li>
                         <li>- Operating Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Exhibition Hours: 07:30-17:00</li>
+                        <li>- Operating Hours: 07:30-17:00</li>
 					</ul>
 				</div>
 				<div class="a_wrap floor_6_center">
@@ -227,9 +228,9 @@
 					<ul class="pop_text">
 					    <li class="floor_pop_title">[Souvenir Exchange]</li>
 						<li class="floor_pop_title">September 8 (Fri)</li>
-					    <li>- Operating Hours: 07:00-18:00</li>
+					    <li>- Operating Hours: 07:30-18:00</li>
 						<li class="floor_pop_title">September 9 (Sat)</li>
-					    <li>- Exhibition Hours: 07:00-17:00</li>
+					    <li>- Operating Hours: 07:30-17:00</li>
 					</ul>
 				</div>
 			</div>

@@ -2,6 +2,11 @@
 <?php include_once('./include/app_header.php'); ?>
 
 <script src="./js/script/client/app_program_detail.js?v=0.4"></script>
+<style>
+    /*230830 안재현 로딩화면 추가 */
+    .loading_list{text-align: center; padding:30%; border-bottom:none !important;}
+    .loading_list img{width:40px;}
+</style>
 
 <?php
 
@@ -38,55 +43,9 @@ switch ($e){
 }
 
 echo '<script type="text/javascript">
-              const init_room = "' . $option_room . '"
               $(document).ready(function(){
-                  //탭 활성화
-                  //큰탭
-                  $(".app_tab li").removeClass("on");
-                  if ("' . $day . '" === "") {
-                    $(".app_tab li:first-child").addClass("on");
-                    $(".app_tab li:nth-child(1)").trigger("click");
-                  }
-                  
-                    // Room Select Tab 초기화 / 클릭 스크립트 수정
-                    $(".app_tab li").click(function(){
-//							$(".sort_select").each(function(){
-//								var i = $(this).val();
-//								if (i === "all"){
-//									$(this).parents(".tab_cont").find(".tab_cont").addClass("on");
-//								} else {
-//									i = (i - 1);
-//									$(this).parents(".tab_cont").find(".tab_cont").removeClass("on");
-//									$(this).parents(".tab_cont").find(".tab_cont").eq(i).addClass("on");
-//									console.log(i)
-//								}
-//							});
-                        var date = $(".program > .on").val();
-                        $("input[name=program_date]").val(date);
-                        
-                       /* var _options = $(".select_day_program select option");
-                        
-                        _options.prop("hidden", true);
-                        $(".select_day_program select option.day" + date).prop("hidden", false);
-                        
-                        if($(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("hidden")) {
-                            $(_options[0]).prop("selected", true);
-                        } else {
-                            $(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("selected", true);
-                        }*/
-                        setRoom();
-                       
-                        selectProgram();
-                    });
-
-                  $(".app_tab li:nth-child(' . $d_num . ')").addClass("on");
-                  //$(".app_tab + .inner .tab_wrap > .tab_cont").removeClass("on");
-                  $(".app_tab + .inner .tab_wrap > .tab_cont:nth-child(' . $d_num . ')").addClass("on");
-                  //작은탭
-                  //$(".app_tab + .inner .tab_wrap > .tab_cont .tab_cont").removeClass("on");
-                  $(".app_tab + .inner .tab_wrap > .tab_cont.on .tab_cont").eq(' . $e_num . ' - 1).addClass("on");
-                    setRoom(true);
-
+                  //탭 활성화 -> app_prograam_detail.js 에서 핸들링
+                 
                   window.onkeydown = function() {
                     var kcode = event.keyCode;
                     if(kcode == 116) {
@@ -103,37 +62,7 @@ echo '<script type="text/javascript">
                         console.log("scrollTop: ", this_top - 150)
                     }
                   });*/
-
-                  //스크롤 위치 & 액션 가운데로 수정
-                  var window_h = $(window).outerHeight() / 2.3;
-                  $(".program_detail_ul li").each(function(){
-                    if("' . $name . '" === $(this).attr("name")) {
-                        var this_top = $(this).offset().top;
-                        $("html, body").animate({scrollTop: this_top - window_h}, 1000);
-						console.log(this_top + window_h)
-                    }
-                  });
-
               });
-              
-             function setRoom(init = false) {
-                var date = $(".program > .on").val();
-                var _options = $(".select_day_program select option");
-                
-                _options.prop("hidden", true);
-                $(".select_day_program select option.day" + date).prop("hidden", false);
-                
-                if(init) {
-                    if($(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("hidden")) {
-                        $(_options[0]).prop("selected", true);
-                    } else {
-                        $(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("selected", true);
-                    }
-                } else {
-                    $(_options[0]).prop("selected", true);
-                }
-                $(".select_day_program li:last-of-type select option:first-of-type").prop("selected", true);
-             }
 		</script>';
 
 ?>
@@ -268,6 +197,11 @@ echo '<script type="text/javascript">
 ?>
 
 <section class="container app_version app_scientific app_program_detail">
+    <input type="hidden" name="scroll_target" value="<?=$name?>"/>
+    <input type="hidden" name="day" value="<?=$day?>"/>
+    <input type="hidden" name="e_num" value="<?=$e_num?>"/>
+    <input type="hidden" name="d_num" value="<?=$d_num?>"/>
+    <input type="hidden" name="init_room" value="<?=$option_room?>"/>
 	<div class="app_title_box">
 		<h2 class="app_title">
 			PROGRAM
@@ -280,7 +214,7 @@ echo '<script type="text/javascript">
 	</div>
     <form name="select_form">
 	<ul class="app_tab program center_t fix_cont">
-		<li value="1" class="on"><a href="javascript:;">Sep.7(Thu)</a></li>
+		<li value="1"><a href="javascript:;">Sep.7(Thu)</a></li>
 		<li value="2"><a href="javascript:;">Sep.8(Fri)</a></li>
 		<li value="3"><a href="javascript:;">Sep.9(Sat)</a></li>
         <input type="hidden" name="program_date">
@@ -348,98 +282,9 @@ echo '<script type="text/javascript">
                 <div class="tab_wrap on">
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-                            <?php
-                                foreach ($resultObj as $program){
-                                    if($program['schedule_check']==='Y'){
-                                        $schedule="on";
-                                    } else {
-                                        $schedule="";
-                                    }
-                            ?>
-							<li name="<?=$program['program_tag_name']?>">
-								<div class="main">
-                                    <?php
-                                        if(in_array($program['program_category_idx'], $abstract_category_list, true)){
-                                    ?>
-									<a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag" onclick="openPDF(event)">Abstract</a>
-                                    <?php
-                                    }
-                                    ?>
-									<p class="title"><?=$program['program_name']?></p>
-                                    <?php
-                                        if($program['chairpersons']!==null){
-                                            if(substr_count($program['chairpersons'],'(')>=2){
-                                                $chairperson = 'Chairpersons:';
-                                            } else {
-                                                $chairperson = 'Chairperson:';
-                                            }
-                                    ?>
-                                    <p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
-                                    <?php
-                                    }
-                                    ?>
-                                    <div class="info">
-										<button class="<?=$schedule?>" value="<?=$program['idx']?>"></button>
-										<span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
-										<span class="branch"><?=$program['program_place_name']?></span>
-									</div>
-                                    <?php
-                                        if($program['preview']!=null || $program['preview']!=""){
-                                    ?>
-                                    <button class="preview_btn">Preview</button>
-                                    <?php
-                                    }
-                                    ?>
-								</div>
-                                <?php
-                                    if($program['preview']!=null || $program['preview']!=""){
-                                ?>
-								<div class="detail_text"><?=$program['preview']?></div>
-                                <?php
-                                }
-                                ?>
-								<div class="detail">
-									<?php
-                                        foreach ($program['contents'] as $contents){
-                                    ?>
-                                    <div>
-										<p class="title"><?=$contents['contents_title']?></p>
-                                        <?php
-                                            if($contents['speaker_idx']!==null){
-                                        ?>
-										<p class="chairperson">
-											<span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>, <?=$contents['nation']?>)
-										</p>
-                                        <?php
-                                        } else {
-                                            if($contents['speaker']!==null){
-                                        ?>
-                                        <p class="chairperson">
-                                            <span><?=$contents['speaker']?></span>
-                                        </p>
-                                        <?php
-                                            }
-                                        }
-                                        ?>
-										<div class="info">
-											<span class="time"><?=$contents['start_time']?>-<?=$contents['end_time']?></span>
-                                            <?php
-                                                if($contents['speaker_idx']!==null){
-                                            ?>
-                                            <a href="/main/app_invited_speakers_detail.php?idx=<?=$contents['speaker_idx']?>" class="invited_tag">Speakers info</a>
-                                            <?php
-                                            }
-                                            ?>
-										</div>
-									</div>
-                                    <?php
-                                    }
-                                    ?>
-								</div>
+                            <li class="loading_list">
+                                <img src="/main/img/icons/loading.gif">
                             </li>
-                            <?php
-                            }
-                            ?>
                         </ul>
                     </div>
                 </div>

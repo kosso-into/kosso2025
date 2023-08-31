@@ -1198,7 +1198,8 @@ p.app_setting_desc {padding: 1rem; background: #f2f2f2; border-bottom: 1px solid
 .container.app_version .page_title {position:static; width:100vw;}
 h2.app_title {width: 100%; font-size: 16px; background: #000066; text-align: center; color:#fff; padding: 12px 0 10px; font-weight: bold; position:relative;}
 .app_title_prev {position:absolute; top:50%; left:16px; transform:translateY(-50%);}  /*이전페이지 이동버튼*/
-.app_title_prev img {width:12px;}
+.app_title_prev img , .app_title_prev.pop_close img {width:12px;}
+.invited_speaker_page_pop .app_title_prev.pop_close {width:12px; top:50%;}
 .app_version.layout_type2 .app_title_prev {left:34px;}
 .app_menu_tab {width:100%; display:flex; align-items:center; border-bottom:1px solid #989898;}
 .app_menu_tab li {width:calc(25%); text-align: center; }
@@ -1358,6 +1359,7 @@ a.lilly {background-image: url("../img/sponsor/logo25.png");}
 .floor_area .a_wrap.floor_6_3 a:nth-of-type(4) {height:14.2%;}
 .floor_area .a_wrap.floor_6_3 a:nth-of-type(5)::after {content:''; display: block; width: 29%; height: 13.5%; background-color: #fff; position: absolute; right:0; bottom:0; cursor:context-menu;}
 .floor_area .a_wrap.floor_6_center {width:5.8%; height:2.2%; top:74.3%; bottom:19.5%; left:54%;} 
+.floor_area .a_wrap.floor_6_center a {width:100%;} 
 .floor_area .pop_text {display:none;}
  
 /*app invited speakers*/
@@ -1408,3 +1410,15 @@ a.lilly {background-image: url("../img/sponsor/logo25.png");}
 
 /*APP 상단 고정요소*/
 .fix_cont, .fix_cont_sub {position:fixed; z-index:15;}
+
+
+/*.invited_speaker_page_pop .pop_bg {transp}*/
+.invited_speaker_page_pop .pop_contents {padding: 0; width: 100%; max-width: 100%; height: calc(100% - 58px); max-height: 100%; left: 0; top: 0; transform: translate(0);}
+.invited_speaker_page_pop .pop_contents {padding: 0; width: 100%; max-width: 100%; height: calc(100% - 58px); max-height: 100%; left: 0; top: 58px; transform: translate(0);}
+.invited_speaker_page_pop .app_title_box {top:0;}
+.invited_speaker_page_pop .pop_contents ul:not(.list_style_none) li:before {display:none;}
+.invited_speaker_page_pop .app_version.app_scientific {margin-top:42px !important; margin-bottom:0 !important; height: calc(100% - 125px); padding-bottom: 0 !important;}
+.invited_speaker_page_pop .container .inner {height:100%;}
+.invited_speaker_page_pop .container .speaker_list_wrap, .invited_speaker_page_pop .container .speaker_list_wrap li {height:100%;}
+.invited_speaker_page_pop .container .speaker_list_wrap .schedule_area {height:calc(100% - 164px); overflow-y:auto;}
+.invited_speaker_page_pop .ft_menu li {margin-bottom:0;}

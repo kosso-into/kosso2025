@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+	//app_program_detail
+	$(".app_program_detail .app_tab li").click(function(){
+		var idx = $(this).index();
+		$(".tab_cont .day_ul").removeClass("on");
+		$(".tab_cont .day_ul").eq(idx).addClass("on");
+	});
+
 	// 아이폰 사파리에서 더블 탭 막기
 	var lastTouchEnd = 0;
 	document.documentElement.addEventListener('touchend', function (event) {
@@ -408,8 +416,8 @@ $(document).ready(function(){
 	if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
 		$(window).resize(function(){
 			var  window_height = $(window).outerHeight();
-			// $(".app_main .app_main_box").height(window_height);
-			$(".app_main .app_main_box").css("min-height", window_height);
+			$(".app_main .app_main_box").height(window_height);
+			//$(".app_main .app_main_box").css("min-height", window_height);
 		});
 		$(window).trigger("resize");
 	}

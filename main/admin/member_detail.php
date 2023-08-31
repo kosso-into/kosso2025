@@ -470,8 +470,8 @@ $(document).ready(function(){
 		var status = process.status;
 		var data = process.data;
 
-        console.log(data['nation_tel']);
-        console.log(data['phone']);
+        // console.log(data['nation_tel']);
+        // console.log(data['phone']);
 		
 		if (data['phone'] != "") {
 			data['phone'] = data['nation_tel'] + '-' + data['phone'];
@@ -554,6 +554,7 @@ function birthChk(input) {
 function inputCheck() {
 	var data = {};
 	var formData = $("form[name=member_detail_form]").serializeArray();
+
 	// 23.05.12 HUBDNC_NYM 대한민국 국적일 때만 한국이름 체크
 	var nationNo = parseInt($("select[name=nation_no] :selected").val());
 	// 23.05.12 HUBDNC_NYM Title -> Others 선택시 
@@ -565,7 +566,7 @@ function inputCheck() {
 		var ok = value["name"];
 		var ov = value["value"];
 
-		if(ov == "" || ov == "undefined" || ov == null) {
+		if(ov == "" || ov == undefined || ov == null) {
 			if(ok == "email" || ok == "password" || ok == "re_password" || ok == "first_name" || ok == "last_name" || ok == "first_name_kor" || ok == "last_name_kor" || ok == "phone" || ok == "affiliation" || ok == "department" || ok == "affiliation_kor" || ok == "department_kor" || ok == "date_of_birth") {
 				if(ok == "email") {
 					alert("이메일을 입력하지 않으셨습니다.");
@@ -595,7 +596,8 @@ function inputCheck() {
 					alert("생년월일을 입력하지 않으셨습니다.");
 				}
 
-				$("input[name="+ok+"]").focus();
+				$('input[name="'+ok+'"]').focus();
+
 				inputCheck = false;
 				return false;
 			}
@@ -608,6 +610,7 @@ function inputCheck() {
 			}
 		}
 		data[ok] = ov;
+		console.log(data)
 	});
 
 	if(inputCheck) {
