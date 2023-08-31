@@ -114,11 +114,11 @@
 								<td>
 									<div class="colons_div">15:00-16:45</div>
 								</td>
-								<td></td>
 								<td class="purple_bg pointer" name="pre_congress_symposium_1">
 									Pre-congress<br/>Symposium 1<p>적절한 비만관리를 위한 정책적 논의</p>
-									<input type="hidden" name="e" value="room2">
+									<input type="hidden" name="e" value="room1">
 								</td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>

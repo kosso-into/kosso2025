@@ -110,6 +110,8 @@
 	});
 
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
+
+
 </script>
 
 <?php

@@ -81,6 +81,101 @@ echo '<script type="text/javascript">
                 <div class="tab_wrap">
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
+							<li name="pre_congress_symposium_1">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="purple_bg">
+                                                <td>15:00-16:45</td>
+                                                <td>
+                                                    <p class="font_20 bold">Pre-congress Symposium 1 : 적절한 비만관리를 위한 정책적 논의</p>
+													<p><span class="bold">Chairpersons : 김성수</span> (대한비만학회 회장), <span class="bold">김종화</span> (부천세종병원 내분비내과)</p>
+													<!-- [↓] 확정 시 까지 버튼 숨김 -->
+													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                </td>
+                                            </tr>
+											<tr>
+												<td colspan="2" class="program_detail_td">
+													will be updated.
+												</td>
+											</tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+																<tr>
+                                                                    <td>15:00-15:05</td>
+                                                                    <td class="bold">
+                                                                        개회사
+                                                                    </td>
+                                                                    <td class="text_r">
+																		<p class="bold">박철영</p>(대한비만학회 이사장)
+                                                                    </td>
+                                                                </tr>
+																<tr>
+                                                                    <td>15:05-15:10</td>
+                                                                    <td class="bold">
+                                                                        축사
+                                                                    </td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+																<tr>
+                                                                    <td>15:10-15:25</td>
+                                                                    <td class="bold">
+                                                                        학회에서 바라는 비만 관리를 위한 정부 정책 방향
+                                                                    </td>
+                                                                    <td class="text_r">
+																		<p class="bold">김경곤</p>(대한비만학회 부회장)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>15:25-15:45</td>
+                                                                    <td class="bold">
+                                                                        비만대사수술 청구 현황 분석 및 제언
+                                                                    </td>
+                                                                    <td class="text_r">
+																		<p class="bold">박정혜</p>(건강보험심사평가원 심사운영부 부장)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>15:45-16:05</td>
+                                                                    <td class="bold">
+                                                                        소아청소년 비만 관리 제언
+                                                                    </td>
+                                                                    <td class="text_r">
+																		<p class="bold">홍용희</p>(대한비만학회 소아청소년위원회 이사)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:05-16:45</td>
+                                                                    <td class="bold">
+                                                                        패널토의
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">이충헌</p>(KBS 기자),<br>
+                                                                        <p class="bold">정연희</p>(보건복지부 건강증진과 과장),<br>
+                                                                        <p class="bold">한병덕</p>(고려의대 가정의학과 교수),<br>
+                                                                        <p class="bold">한상문</p>(대한비만학회 비만대사수술위원회 이사)
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
 							<li name="break" class="border_bottom_70">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -90,7 +185,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_gray_bg">
-                                                <td>17:30-18:00</td>
+                                                <td>16:45-17:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Break</p>
                                                 </td>
@@ -209,81 +304,6 @@ echo '<script type="text/javascript">
                     </div>
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                            <li name="pre_congress_symposium_1">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="purple_bg">
-                                                <td>15:00-16:45</td>
-                                                <td>
-                                                    <p class="font_20 bold">Pre-congress Symposium 1 : 적절한 비만관리를 위한 정책적 논의</p>
-													<p><span class="bold">Chairpersons : 김성수</span> (충남의대), <span class="bold">김종화</span> (부천세종병원)</p>
-													<!-- [↓] 확정 시 까지 버튼 숨김 -->
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
-                                                </td>
-                                            </tr>
-											<tr>
-												<td colspan="2" class="program_detail_td">
-													will be updated.
-												</td>
-											</tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>15:00-15:15</td>
-                                                                    <td class="bold">
-                                                                        학회에서 바라는 비만 관리를 위한 정부 정책 방향 
-                                                                    </td>
-                                                                    <td class="text_r">
-																		<p class="bold">김경곤</p>(대한비만학회 부회장)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>15:15-15:40</td>
-                                                                    <td class="bold">
-                                                                        비만대사수술 청구 현황 분석 및 제언
-                                                                    </td>
-                                                                    <td class="text_r">
-																		<p class="bold">박정혜</p>(건강보험심사평가원)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>15:40-16:05</td>
-                                                                    <td class="bold">
-                                                                        소아청소년 비만 관리 제언
-                                                                    </td>
-                                                                    <td class="text_r">
-																		<p class="bold">홍용희</p>(대한비만학회 소아청소년 이사)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>16:05-16:45</td>
-                                                                    <td class="bold">
-                                                                        Panel Discussion
-                                                                    </td>
-                                                                    <td class="text_r">
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
                             <li name="break" class="border_bottom_70">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -313,13 +333,10 @@ echo '<script type="text/javascript">
                                             <tr class="purple_bg">
                                                 <td>17:00-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Pre-congress Symposium 2</p>
-                                                   <!--  <p>
-                                                        <span class="bold">Chairperson : Tae Sun Park</span> (Jeonbuk
-                                                        National University, Korea) /
-                                                        <span class="bold">Jee-Hyun Kang</span> (Konyang University,
-                                                        Korea)
-                                                    </p> -->
+                                                    <p class="font_20 bold">Pre-congress Symposium 2 : Obesity in Asia-Pacific – Is It Different from Rest of the World?</p>
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Kyu Rae Lee</span> (Gachon University, Republic of Korea), <br><span class="bold">Koutaro Yokote</span> (Chiba University, Japan)
+                                                    </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -330,7 +347,7 @@ echo '<script type="text/javascript">
 												</td>
 											</tr>
                                             <tr>
-                                                <td colspan="2">
+                                                <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
                                                             <colgroup>
@@ -340,22 +357,16 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>17:00-17:20</td>
-                                                                    <td class="bold">
-                                                                        TBD
-                                                                    </td>
+                                                                    <td class="bold">Prevalence and Trends of Obesity and Metabolic Syndrome in the Asia-pacific Region</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Sang Youl Rhee</p>(Kyung Hee
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Jun-Hyuk Lee</p>(Eulji University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:20-17:40</td>
-                                                                    <td class="bold">
-                                                                        TBD
-                                                                    </td>
+                                                                    <td class="bold">Perspective on Diagnostic Criteria for Obesity in Asia and Global</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Yoon Jeong Cho</p>(Daegu
-                                                                        Catholic University, Korea) -->
+                                                                        <p class="bold">Hyuktae Kwon</p>(Seoul National University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -364,8 +375,11 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Suk Chon</p>(Kyung Hee
-                                                                        University, Korea) -->
+                                                                        <p class="bold">Gaga Irawan Nugraha</p>(Faculty of Medicine, Universitas Padjadjaran, Indonesia),<br>
+                                                                        <p class="bold">Daruneewan Warodomwichit</p>(Ramathibodi Hospital, Mahidol University, Thailand),<br>
+                                                                        <p class="bold">Sang Yeoup Lee</p>(Pusan National University, Republic of Korea),<br>
+                                                                        <p class="bold">Wen-Yuan Lin</p>(China Medical University and Hospital, Taiwan),<br>
+																		<p class="bold">Kwang Wei Tham</p>(Woodlands Health, Singapore)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -627,8 +641,9 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                         Panel Discussion
                                                                     </td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Republic of Korea)
+																	<td class="text_r">
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Republic of Korea),<br>
+                                                                        <p class="bold">You-Bin Lee</p>(Sungkyunkwan University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2520,7 +2535,7 @@ echo '<script type="text/javascript">
                                             <tr class="light_orange_bg">
                                                 <td>13:00-14:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Oral Presentatoin 1</p>
+                                                    <p class="font_20 bold">Oral Presentation 1</p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Yeong Sook Yoon</span> (Inje University, Republic of Korea), <br><span class="bold">Yang-Im Hur</span> (CHA University, Republic of Korea)
                                                     </p>
@@ -2623,7 +2638,7 @@ echo '<script type="text/javascript">
                                                                         Long-term Outcomes and Problems of Sleeve Gastrectomy
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yosuke Seki</p>(Osaka University, Japan)
+                                                                        <p class="bold">Yosuke Seki</p>(Yotsuya Medical Cube, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2803,7 +2818,7 @@ echo '<script type="text/javascript">
                                                                         FAQ Finder : A Case-based Approach to Prescription of Combination Phentermine plus Topiramate ER
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sohyun Chun</p>(Sungkyunkwan University, Republic of Korea)
+                                                                        <p class="bold">Sohyun Chun</p>(Samsung Medical Center, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2826,9 +2841,9 @@ echo '<script type="text/javascript">
                                             <tr class="light_orange_bg">
                                                 <td>13:00-14:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Oral Presentatoin 2</p>
+                                                    <p class="font_20 bold">Oral Presentation 2</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Jang Won Son</span> (The Catholic University of Korea, Republic of Korea), <br><span class="bold">Jeong Hwan Park</span> (Hanyang University, Republic of Korea)
+                                                        <span class="bold">Chairpersons : Jang Won Son</span> (The Catholic University of Korea, Republic of Korea), <br><span class="bold">Jung Hwan Park</span> (Hanyang University, Republic of Korea)
                                                     </p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -2904,7 +2919,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 2 : Benefit of DPP4I in Evidence-based Perspective</p>
-													<p><span class="bold">Chairperson : Jun Hwa Hong</span> (Eulji University, Republic of Korea)</p>
+													<p><span class="bold">Chairpersons : Jaehyeock Lee</span> (Myongji Hospital, Republic of Korea), <br> <span class="bold">Jun Hwa Hong</span>(Eulji University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2928,7 +2943,7 @@ echo '<script type="text/javascript">
                                                                         Key Factors on Glucose Management in Evidence-based Perspective
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jeong Hwan Park</p> (Hanyang University, Republic of Korea)
+                                                                        <p class="bold">Jung Hwan Park</p> (Hanyang University, Republic of Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5489,7 +5504,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold">Remission of Type 2 Diabetes after 10. Metabolic and Bariatric Surgery in Less Obese People versus Severely Obese People: A Systematic Review and Meta-Analysis</td>
+                                                                    <td class="bold">Remission of Type 2 Diabetes after Metabolic and Bariatric Surgery in Less Obese People versus Severely Obese People: A Systematic Review and Meta-Analysis</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae Hyun Bae</p>(Korea University, Republic of Korea)
                                                                     </td>

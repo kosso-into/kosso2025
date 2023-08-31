@@ -321,7 +321,7 @@
  -->
 
 <!-- 2023/08/16 팝업 -->
-<div class="popup notification_pop" style="display:block;">
+<!-- <div class="popup notification_pop" style="display:block;">
     <div class="pop_bg"></div>
     <div class="pop_contents">
 		<div class="top">Notification of Acceptance</div>
@@ -346,7 +346,41 @@
 			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
 		</div>	
     </div>
+</div> -->
+
+<!-- 230831 팝업 1/2 -->
+<div class="popup main_pop application_pop" style="display:block;">
+    <!-- <div class="pop_bg"></div> -->
+    <div class="pop_contents">
+		<img src="/main/img/230831_pop01.png" alt="">
+		<div class="close_area">
+			<div>
+				<input type="checkbox" id="today_check2" name="hidden" class="checkbox input required">
+				<label for="today_check2">Do not open this window for 24 hours.</label>
+			</div>
+			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
+		</div>	
+    </div>
 </div>
+
+<!-- 230831 팝업 2/2 -->
+<div class="popup main_pop symposium_pop" style="display:block;">
+    <!-- <div class="pop_bg"></div> -->
+    <div class="pop_contents">
+		<img src="/main/img/230831_pop02.png" alt="">
+		<a href="https://forms.gle/dvj5zCac9edUhBjR8" target="_blank">
+            <img src="/main/img/230831_pop02_btn.png" alt="" class="main_pop_btn">        
+        </a>
+		<div class="close_area">
+			<div>
+				<input type="checkbox" id="today_check1" name="hidden" class="checkbox input required">
+				<label for="today_check1">Do not open this window for 24 hours.</label>
+			</div>
+			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
+		</div>	
+    </div>
+</div>
+
 
 <script>
     // 쿠키 가져오기
