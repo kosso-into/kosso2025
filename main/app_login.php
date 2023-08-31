@@ -2,13 +2,15 @@
 	include_once('./include/head.php');
 ?>
 <?php
-//    if(($_SESSION["USER"])!=[]){
+    if(($_SESSION["USER"])!=[]){
 //        echo "<script>location.href='/main/app_index.php'</script>";
-//    }
+        echo "<script>location.replace('/main/app_index.php')</script>";
+    }
 ?>
 <script src="./js/script/client/app_login.js"></script>
 <style>
 	html, body {overflow:hidden; background: #000f32 url("../img/app_login_bg2.jpg") no-repeat center bottom /cover;}
+	.app_main_box {min-height:700px;}
 </style>
 
 <!-- HUBDNCLHJ : app login 페이지 -->
@@ -39,6 +41,11 @@
 
 <script>
 $(document).ready(function(){
+	var varUA = navigator.userAgent.toLowerCase();
+	if ( varUA.indexOf('android') > -1) {
+		alert("Please update the app.")
+	}
+
     let icomes_device = null;
     let icomes_token = null;
 

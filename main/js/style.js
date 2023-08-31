@@ -408,8 +408,8 @@ $(document).ready(function(){
 	if ($(".app_main .app_main_inner > div").hasClass("app_main_box")) {
 		$(window).resize(function(){
 			var  window_height = $(window).outerHeight();
-			// $(".app_main .app_main_box").height(window_height);
-			$(".app_main .app_main_box").css("min-height", window_height);
+			$(".app_main .app_main_box").height(window_height);
+			// $(".app_main .app_main_box").css("min-height", window_height);
 		});
 		$(window).trigger("resize");
 	}

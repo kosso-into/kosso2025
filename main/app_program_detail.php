@@ -120,11 +120,11 @@ echo '<script type="text/javascript">
                 var date = $(".program > .on").val();
                 var _options = $(".select_day_program select option");
                 
-                _options.prop("hidden", true);
-                $(".select_day_program select option.day" + date).prop("hidden", false);
+                _options.prop("disabled", true);
+                $(".select_day_program select option.day" + date).prop("disabled", false);
                 
                 if(init) {
-                    if($(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("hidden")) {
+                    if($(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("disabled")) {
                         $(_options[0]).prop("selected", true);
                     } else {
                         $(".select_day_program li:first-of-type select option[value=\'" + init_room + "\']").prop("selected", true);
