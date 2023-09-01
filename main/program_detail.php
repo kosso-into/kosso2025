@@ -2775,7 +2775,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 1 : Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p>
-                                                    <p><span class="bold">Chairpersons : Suk Chon</span> (Kyung Hee University, Republic of Korea), <br><span class="bold">Jae Hyung Cho</span> (The Catholic University of Korea, Republic of Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Suk Chon</span> (Kyung Hee University, Republic of Korea), <br><span class="bold">Jae Hyoung Cho</span> (The Catholic University of Korea, Republic of Korea)</p>
 													<!-- [↓] 확정 시 까지 버튼 숨김 -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -5658,7 +5658,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:50-10:20</td>
-                                                                    <td class="bold">The Principles of Obesity Management; Can GLP1 RA Make a Change?</td>
+                                                                    <td class="bold">The Principles of Obesity Management; Can TIDES Make a Change?</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hyuktae Kwon</p> (Seoul National University, Republic of Korea)
                                                                     </td>
@@ -5768,7 +5768,7 @@ echo '<script type="text/javascript">
                                                 <td>15:20-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Articles in JOMES</p>
-													<p><span class="bold">Chairpersons : Dae Joong Kim</span> (Ajou University, Republic of Korea), <br><span class="bold">You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea)</p>
+													<p><span class="bold">Chairpersons : Dae Jung Kim</span> (Ajou University, Republic of Korea), <br><span class="bold">You-Cheol Hwang</span> (Kyung Hee University, Republic of Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>

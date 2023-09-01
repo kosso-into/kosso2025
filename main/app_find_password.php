@@ -4,8 +4,9 @@ include_once('./include/header.php');
 ?>
 
 <style>
-    .blue_header {display: none;}
-    section.container.login.bg {margin-top: 0 !important;}
+.blue_header {display: none;}
+section.container.login.bg {margin-top: 0 !important;}
+
 </style>
 
 <section class="container login_form form_layout find_password login bg style_2023">

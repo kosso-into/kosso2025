@@ -16,7 +16,7 @@
         </div> -->
         <div class="section section1">
             <div class="img_wrap">
-                <img class="floor_map" src="./img/floor_map_img04.jpg"/>            
+                <img class="floor_map" src="./img/ICOMES 2023_Floor plan (web).jpg"/>            
             </div>
         </div>
     </div>

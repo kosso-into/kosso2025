@@ -232,6 +232,36 @@
 							</tr>
 						</tbody>
 					</table>
+					<table class="floor_table">
+						<thead>
+							<tr>
+								<th>Event Zone</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="level_peach">
+								<td>Souvenir Exchange</td>
+							</tr>
+							<tr class="level_lightpink">
+								<td>Caricature Booth</td>
+							</tr>
+							<tr class="level_lime">
+								<td>Photo Zone</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="floor_table">
+						<thead>
+							<tr>
+								<th>Barista Coffee</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="level_lightyellow">
+								<td>Coffee Booth</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -453,6 +483,36 @@
 								<tr class="level_skyblue">
 									<td>63</td>
 									<td>Nexpharm Korea</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="floor_table">
+							<thead>
+								<tr>
+									<th>Event Zone</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="level_peach">
+									<td>Souvenir Exchange</td>
+								</tr>
+								<tr class="level_lightpink">
+									<td>Caricature Booth</td>
+								</tr>
+								<tr class="level_lime">
+									<td>Photo Zone</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="floor_table">
+							<thead>
+								<tr>
+									<th>Barista Coffee</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="level_lightyellow">
+									<td>Coffee Booth</td>
 								</tr>
 							</tbody>
 						</table>
