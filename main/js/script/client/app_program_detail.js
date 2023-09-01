@@ -15,6 +15,7 @@ window.onpageshow = function(event) {
             $(`#option_category option[value='${option_category}']`).prop("selected", true);
 
             createHTMLList(data.list, data.active);
+            setRoom(true);
         }else{
             //초기설정
             init();

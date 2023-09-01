@@ -32,7 +32,7 @@
 						<input type="password" name="password" placeholder="Password">
 					</li>
 				</ul>
-				<a href="./find_password.php" class="app_find_password">Find password</a>
+				<a href="./app_find_password.php" class="app_find_password">Find password</a>
 				<button type="button" class="btn app_login_btn">Log in</button>
 			</div>
 		</div>

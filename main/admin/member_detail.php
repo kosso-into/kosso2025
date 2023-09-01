@@ -507,9 +507,6 @@ $(document).ready(function(){
 		*/
 		data['ksola_member_status'] = $("[name=user]:checked").val();
 
-		console.log(data);
-        console.log(status);
-
 		if(status) {
 			if(confirm("저장하시겠습니까?")) {
 				$.ajax({
@@ -560,7 +557,9 @@ function inputCheck() {
 	// 23.05.12 HUBDNC_NYM Title -> Others 선택시 
 	var titleNo = parseInt($("select[name=title] :selected").val());
 
-	var inputCheck = true;
+	var inputCheck2 = true;
+
+	console.log(formData);
 
 	$.each(formData, function(key, value){
 		var ok = value["name"];
@@ -570,54 +569,77 @@ function inputCheck() {
 			if(ok == "email" || ok == "password" || ok == "re_password" || ok == "first_name" || ok == "last_name" || ok == "first_name_kor" || ok == "last_name_kor" || ok == "phone" || ok == "affiliation" || ok == "department" || ok == "affiliation_kor" || ok == "department_kor" || ok == "date_of_birth") {
 				if(ok == "email") {
 					alert("이메일을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "password") {
 					alert("비밀번호를 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "re_password") {
-					alert("비밀번호 확인을 입력하지 않으셨습니다.")
+					alert("비밀번호 확인을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "first_name") {
 					alert("영문 이름을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "last_name") {
 					alert("영문 이름(성)을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if((nationNo == 25) && (ok == "first_name_kor")) {
 					alert("국문 이름을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if((nationNo == 25) && (ok == "last_name_kor")) {
 					alert("국문 이름(성)을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "phone") {
 					alert("핸드폰 번호를 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "affiliation") {
 					alert("영문 소속을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "department") {
 					alert("영문 부서를 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if((nationNo == 25) && (ok == "affiliation_kor")) {
 					alert("국문 소속을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if((nationNo == 25) && (ok == "department_kor")) {
 					alert("국문 부서를 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				} else if(ok == "date_of_birth") {
 					alert("생년월일을 입력하지 않으셨습니다.");
+					inputCheck2 = false;
+					return false;
 				}
 
 				$('input[name="'+ok+'"]').focus();
-
-				inputCheck = false;
-				return false;
 			}
 		} else {
 			if(ok== "re_password" && ov != $("input[name=password]").val()) {
 				alert("비밀번호가 일치하지 않습니다.");
 				$("input[name="+ok+"]").focus();
-				inputCheck = false;
+				inputCheck2 = false;
 				return false;
 			}
 		}
+
 		data[ok] = ov;
-		console.log(data)
 	});
 
-	if(inputCheck) {
+	if(inputCheck2) {
 		var result_birth = $("[name=date_of_birth]").val();
 		if(!$("select[name=nation_no]").val()) {
 			alert("국가를 선택하지 않으셨습니다.");
-			inputCheck = false;
+			inputCheck2 = false;
 			return false;
 		}
 
@@ -644,7 +666,7 @@ function inputCheck() {
 
 	return {
 		data : data,
-		status : inputCheck
+		status : inputCheck2
 	}
 }
 

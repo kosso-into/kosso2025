@@ -1101,6 +1101,16 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .level_gray td:first-child:after {background-color:#ABAEB0 !important;}
 .level_gray td:last-child {background-color:rgba(171,174,176,0.15) !important;}
 
+.level_peach td:after {background-color:#FCD9CD !important;}
+.level_peach td {background-color:rgba(252,217,205,0.2) !important;}
+.level_lightpink td:after {background-color:#F27F9D !important;}
+.level_lightpink td {background-color:rgba(242,127,157,0.2) !important;}
+.level_lime td:after {background-color:#E7E614 !important;}
+.level_lime td {background-color:rgba(231,230,20,0.2) !important;}
+.level_lightyellow td:after {background-color:#FFED66 !important;}
+.level_lightyellow td {background-color:rgba(255,237,102,0.2) !important;}
+
+
 @media screen and (max-width : 1024px) {
 	.contents_box.exhibition .clearfix2 > *, .contents_box.exhibition .clearfix2 > img {width:100%;}
 	.contents_box.exhibition .clearfix2 > div {margin-top:30px;}
@@ -1121,6 +1131,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .floor_map img {width:100%;}
 .floor_table_wrap {width:100%; overflow-x:auto;}
 .floor_table {width:100%; border-top:2px solid #000000; border-bottom:2px solid #000000;}
+.floor_table + .floor_table {margin-top:33px;}
 .floor_table th, .floor_table td {font-size:11px; font-weight:bold; text-align:center;}
 .floor_table th {padding:6px; background-color:#999999; color:#FFFFFF; position:relative; white-space:nowrap;}
 .floor_table th:not(:last-child):after {content:""; display:inline-block; width:1px; height:calc(100% - 14px); background-color:#FFFFFF; position:absolute; top:50%; right:0; transform:translateY(-50%);}

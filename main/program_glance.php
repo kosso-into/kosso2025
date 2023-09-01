@@ -79,7 +79,7 @@
 			// pc일때
 ?>
 				<div class="rightT mb20">
-					<button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0802.pdf')"
+					<button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')"
 						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
 				</div>
 <?php
