@@ -66,6 +66,7 @@ if($_POST["flag"] === "onsite") {
 
     $conference_info = implode("*", $data["conference_info_arr"]);
     $price = $data["price"] ?? "";
+    $fee= str_replace(",","",$price);
 
     $insert_member_query =	"
                                 INSERT member
@@ -130,7 +131,7 @@ if($_POST["flag"] === "onsite") {
                                             day3_luncheon_yn = '{$day3_luncheon_yn}',
                                             special_request_food = {$special_request},
                                             payment_methods = 2,
-                                            price = '{$price}'
+                                            price = '{$fee}'
                                     ";
 
     if(!empty($member_other_type)){
@@ -209,7 +210,6 @@ if($_POST["flag"] === "onsite") {
     $insert_reg_user_sql = "
                         INSERT reg2.users
                         SET
-                            id = {$registration_idx},
                             registration_no = '{$registration_no}',
                             first_name = '{$first_name}',
                             last_name = '{$last_name}',
@@ -223,7 +223,7 @@ if($_POST["flag"] === "onsite") {
                             member_type = '{$member_type}',
                             occupation_type = '{$occupation}',
                             ksso_member_status = '{$ksso_member_status_text}',
-                            fee = {$price},
+                            fee = '{$fee}',
                             is_score = '{$is_score_text}',
                             conference_info = '{$conference_info}',
                             welcome_reception_yn = '{$welcome_reception_yn}',
@@ -267,14 +267,14 @@ if($_POST["flag"] === "onsite") {
 
     if($insert_reg_user) {
         $res = [
-            code => 200,
-            msg => "onsite_registration success"
+            'code' => 200,
+            'msg' => "onsite_registration success"
         ];
         echo json_encode($res);
     } else {
         $res = [
-            code => 400,
-            msg => "onsite_registration error"
+            'code' => 400,
+            'msg' => "onsite_registration error"
         ];
         echo json_encode($res);
     }
