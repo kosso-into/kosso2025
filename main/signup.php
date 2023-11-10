@@ -1013,26 +1013,23 @@ function name_check(name, mo) {
 
     console.log(name);
 
-
-    first_name = (typeof(first_name) != "undefined") ? first_name : null;
-
-    if (!first_name || first_name_len <= 0) {
-        $("input[name=" + name + "]").focus();
-        if (mo === "mo") {
-            name = name.replace("mo_", "");
-        }
-        if (name === "short_input") {
-            alert("Invalid Others");
-        } else {
-            if (name == "name_kor") {
-                name = "name (KOR)";
-            } else if (name == "affiliation_kor") {
-                name = "affiliation (KOR)";
-            }
-            alert("Invalid " + name);
-        }
+    if (mo === "mo") {
+        name = name.replace("mo_", "");
         return false;
     }
+    if (name === "short_input") {
+        alert("Invalid Others");
+        return false;
+    } else {
+        if (name == "name_kor") {
+            name = "name (KOR)";
+        } else if (name == "affiliation_kor") {
+            name = "affiliation (KOR)";
+        }
+        alert("Invalid " + name);
+        return false;
+    }
+
     return true;
 }
 
@@ -1671,6 +1668,7 @@ function email_check(email) {
                 //$(".red_alert").eq(0).css('display', 'none');
                 //$(".mo_red_alert").eq(0).html("good");
                 //$(".mo_red_alert").eq(0).css('display', 'none');
+                return true;
             } else if (res.code == 400) {
                 alert("used_email_msg");
                 $("input[name=email]").val("");

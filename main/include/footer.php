@@ -88,7 +88,23 @@
     </div> -->
     <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
-            <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <li><a class="blank"></a></li>
+            <!-- <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
             <li><a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a></li>
             <li><a href="http://eng.yuhan.co.kr/Main/" class="yuhan">YUHAN</a></li>
@@ -112,7 +128,7 @@
             <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a></li>
             <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a></li>
             <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
-            <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
+            <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li> -->
         </ul>
     </div>
     <footer class="footer">
@@ -123,10 +139,6 @@
                 <div class="footer_l">
                     <div class="clearfix">
                         <img src="/main/img/icons/fl01.png" alt="">
-                        <img src="/main/img/icons/fl02.png" alt="">
-                        <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
-                                src="/main/img/icons/fl03.png" alt=""></a>
-                        <img src="/main/img/icons/fl04.png" alt="">
                     </div>
                 </div>
                 <div class="footer_c">

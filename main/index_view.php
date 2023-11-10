@@ -2,7 +2,7 @@
 // main
 $img_col_name = check_device() ? "mo_" : "pc_";
 $img_col_name .= $language . "_img";
-$banner_query =	"SELECT
+$banner_query =    "SELECT
 						b.idx,
 						CONCAT(fi_img.path, '/', fi_img.save_name) AS fi_img_url
 					FROM banner AS b
@@ -13,7 +13,7 @@ $banner = get_data($banner_query);
 $banner_cnt = count($banner);
 
 // event
-$info_query =	"SELECT
+$info_query =    "SELECT
 						ie.title AS event_title,
 						ie.period_event_start,
 						ie.period_event_end,
@@ -23,7 +23,7 @@ $info_query =	"SELECT
 $info = sql_fetch($info_query);
 
 //key date
-$key_date_query =	"SELECT
+$key_date_query =    "SELECT
 							`key_date`,
 							contents_" . $language . " AS contents
 						FROM key_date
@@ -75,34 +75,16 @@ body {
 </style>
 
 <section class="main_section">
-    <!-- 배경이미지
-	<div class="bg_wrap">
-		<div class="dim"></div>
-		<div class="main_bg_slider">
-			<div class="video_wrap">
-				<video src="https://player.vimeo.com/external/595050190.hd.mp4?s=f5a9471e806bff619dc115c9dfc5db80d5df87fb&profile_id=174" autoplay="autoplay" muted="muted" playsinline id="main_video_bg" loop></video>
-			</div>
-			<?php
-			foreach ($banner as $bn) {
-			?>
-			<div class="main_img_wrap"><img src="<?= $bn['fi_img_url'] ?>"></div>
-			<?php
-			}
-			?>
-		</div>
-	</div>
-	-->
+
     <div class="section_bg">
-        <!-- <div class="video_wrap"> -->
-        <!-- <div class="dim"></div> -->
-        <!-- <video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f" autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video> -->
-        <!-- </div> -->
+
         <div class="container">
             <!-- <img src="/main/img/img_vsl_text.png" class="pc_only img_vsl_text" alt=""> -->
-            <div class="mb_only img_vsl_text" style="">
-                <img src="/main/img/img_vsl_text_mb.svg" alt="">
-                <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
-                <p>CONRAD Seoul Hotel, Korea</p>
+            <h1 class="main_title">대한비만학회 춘계학술대회</h1>
+            <div class="mb_only img_vsl_text">
+                <!-- <img src="/main/img/img_vsl_text_mb.svg" alt=""> -->
+                <!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
+                <p>CONRAD Seoul Hotel, Korea</p> -->
             </div>
             <!-- 상단 타이틀 -->
             <div class="txt_wrap">
@@ -114,7 +96,7 @@ body {
                 <!-- 		class="point_txt f_bold">ME</b>tabolic <b class="point_txt f_bold">S</b>yndrome hosted by KSSO</p> -->
                 <!-- <p class="e_place"> -->
                 <?php
-				/*$date_start = date_create($info['period_event_start']);
+                /*$date_start = date_create($info['period_event_start']);
 					$date_end = date_create($info['period_event_end']);
 
 					$format_start = "M d(D)";
@@ -129,7 +111,7 @@ body {
 
 					$date_text = date_format($date_start, $format_start) . "-" . date_format($date_end, $format_end);
 					$venue_text = $info['venue_name'];*/
-				?>
+                ?>
                 <!-- <?= $date_text ?>&nbsp;/&nbsp;<?= $venue_text ?> -->
                 <!-- SEP 7<span>(Thu)</span>-9<span>(Sat)</span>, 2023 / CONRAD Seoul Hotel, Korea -->
                 <!-- </p> -->
@@ -148,43 +130,12 @@ body {
         <div class="main_btn_wrap">
             <button type="button" class="btn_circle_arrow"></button>
         </div>
-        <div class="dates_area">
-            <ul>
-                <li>
-                    <a href="/main/abstract_submission_guideline.php">
-                        <h2>1월 16일 <span>(월)</span></h2>
-                        <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
-                        <p>초록, 등록 접수 시작</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/main/abstract_submission_guideline.php">
-                        <h2>2월 22일<span>(수)</span></h2>
-                        <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
-                        <p>초록 접수 마감</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/main/registration_guidelines.php">
-                        <h2>2월 24일 <span>(금)</span></h2>
-                        <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
-                        <p>사전등록 마감</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/main/abstract_submission_award.php">
-                        <!-- <h2>2 Jun</h2> -->
-                        <h2>Awards &amp;<br />Grants</h2>
-                        <i><img src="/main/img/img_trophy.svg" alt=""></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+
     </div>
 </section>
 
 <!-- Plenary Speakers -->
-<div class="speakers_wrap">
+<!-- <div class="speakers_wrap">
     <div class="container">
         <h3 class="title">Plenary &amp; Keynote Speakers</h3>
         <div class="">
@@ -214,43 +165,45 @@ body {
             </ul>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Key dates & News,Notice -->
 <section>
     <div class="container">
         <div class="noti_wrap">
             <!-- 2022년 버전에 뉴스레터 없어서 테스트 텍스트로 넣어놓음 -->
-            <div class="noti_area">
+            <!-- <div class="noti_area">
                 <h3 class="title">Newsletter<a href="/main/board_newsletter.php" class="moreview_btn">+</a></h3>
                 <ul>
                     <?php
-					if ($total_newsletter > 0) {
-						foreach ($newsletter_list as $newsletter) {
-					?>
+                    if ($total_newsletter > 0) {
+                        foreach ($newsletter_list as $newsletter) {
+                    ?>
                     <li><a href="/main/board_newsletter_detail.php?no=<?= $newsletter["idx"] ?>">
                             <p><?= $newsletter["title_en"] ?></p><span><?= $newsletter["date_ymd"] ?? "-" ?></span>
                         </a></li>
                     <?php
-						}
-					} else {
-						?>
+                        }
+                    } else {
+                    ?>
                     <li>
                         <div class='no_data'>Will be updated</div>
                     </li>
                     <?php
-					}
-					?>
+                    }
+                    ?>
                 </ul>
-            </div>
+            </div> -->
             <!-- 2022년 버전에 공지사항 없어서 테스트 텍스트로 넣어놓음 -->
             <div class="noti_area">
-                <h3 class="title">Notice<a href="/main/board_notice.php" class="moreview_btn">+</a></h3>
+                <h3 class="title">공지사항 <span class="gray_title_txt">NOTICE</span><a href="/main/board_notice.php"
+                        class="moreview_btn">+</a>
+                </h3>
                 <ul>
                     <?php if (count($notice_list) > 0) { ?>
                     <?php
-						for ($i = 0; $i < count($notice_list); $i++) {
-							$notice = $notice_list[$i];
-						?>
+                        for ($i = 0; $i < 3; $i++) {
+                            $notice = $notice_list[$i];
+                        ?>
                     <li><a href="/main/board_notice_detail.php?no=<?= $notice["idx"] ?>&i=<?= $total_notice - $i ?>">
                             <p><?= $notice["title_en"] ?? "" ?></p><span><?= $notice["date_ymd"] ?? "" ?></span>
                         </a></li>
@@ -261,6 +214,34 @@ body {
                     </li>
                     <?php } ?>
                 </ul>
+            </div>
+            <div>
+                <h3 class="title">학술대회 주요 일정 <span class="gray_title_txt">KEY DATES</span></h3>
+                <div class="dates_area">
+                    <ul>
+                        <li>
+                            <a href="/main/abstract_submission_guideline.php">
+                                <p>초록, 등록<br>오픈</p>
+                                <h2>1월 16일 (월)</h2>
+                                <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/main/abstract_submission_guideline.php">
+                                <p>초록 접수 <br>마감</p>
+                                <h2>2월 22일(수)</h2>
+                                <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/main/registration_guidelines.php">
+                                <p>사전등록 <br>마감</p>
+                                <h2>2월 24일 (금)</h2>
+                                <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
