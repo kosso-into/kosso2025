@@ -49,7 +49,7 @@ $locale = locale($language);
                     <li><a href="https://www.kosso.or.kr/eng/">대한비만학회</a></li>
                 </ul>
                 <div>
-                    <button type="button" class="m_nav_btn"><img src="/main/img/icons/m_nav.png"></button>
+                    <!-- <button type="button" class="m_nav_btn"><img src="/main/img/icons/m_nav.png"></button> -->
                 </div>
             </div>
             <!-- <div class="mb_g_h_tool tablet_show">
@@ -208,7 +208,7 @@ $(document).ready(function() {
 	</div>
 	-->
     <div class="m_nav_top">
-        <img src="/main/img/icon_logo_blue.svg" alt="" class="pointer logo"
+        <img src="/main/img/footer_logo_mini.png" alt="" class="pointer logo"
             onclick="javascript:location.href='/main/index.php'">
         <button type="button" class="n_nav_close"><img src="/main/img/icons/m_nav_close.svg"></button>
     </div>
