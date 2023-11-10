@@ -9,12 +9,12 @@ section.container.app_version.welcome {padding: 0 0 90px;}
 
 /* header*/
 header{background: #444;position: relative;z-index: 999;position: fixed;top: 0;left: 0;width: 100%;}
-header a{color:#fff;}
+header a{color:#000;}
 header .logo img:nth-of-type(2){display:none;}
 header .btn{padding:0 12px;height:38px;line-height:36px;font-size:17px;margin-top:20px;}
 /*header .top{padding:48px 0 30px;}*/
 header .depth01{/*display:flex;flex-direction:row;justify-content:space-between;border-top:1px solid #F7F7F7;*/}
-header .depth01>li{width: 14.28%;}
+header .depth01>li{width: 9.28%;}
 header .depth01>li>a{font-weight:bold;/*padding:30px 0;*/line-height:38px;width:100%;display:block;text-align:center; position:relative; z-index:10;}
 /*header .depth01>li:hover>a span{color:#ADF002 !important;}*/
 header .depth01>li>a span{font-size:20px;font-weight:600;color:#fff;}
@@ -49,7 +49,7 @@ header.nav_show .toggle_wrap{border-color:#585858;}
 header.nav_show .toggle_wrap label{color:#585858;}
 header.nav_show .toggle{background:#585858;}
 header.green_header {background-color: #00666B; position: fixed;}
-header.blue_header {background-color: #000066; position: fixed;}
+header.blue_header {background-color: #fff; position: fixed;}
 
 .g_h_top {padding: 10px 0; background-color: #fff;}
 .g_h_top .container {position: relative; }
@@ -73,8 +73,8 @@ header.blue_header {background-color: #000066; position: fixed;}
 /* 220329 HUBDNC LJH2 */
 /* header > fixed_btn */
 .dday_wrap {position: absolute; left: 13px; top: -11px;}
-.dday_top {padding: 0 26px; border-radius: 0 0 29px 29px; background-color: #00666B; text-align: center;}
-.dday_top span {font-size: 35px; font-weight: bold; color: #FFF;}
+.dday_top {padding: 0 26px; border-radius: 0 0 29px 29px; /*background-color: #00666B;*/ text-align: center;}
+.dday_top span {font-size: 35px; font-weight: bold; color: green;}
 .dday_bot {margin-top: 10px; font-size: 14px; font-weight: 400; color: #000;text-align:center;}
 .dday_bot span {font-size: 15px; font-weight: bold; color: inherit;}
 
