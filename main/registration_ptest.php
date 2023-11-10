@@ -25,8 +25,8 @@ if($registrationNo){
 }
 
 //경로 주의
-if ($_SERVER["HTTP_HOST"] == "www.icomes.or.kr") {
-    echo "<script>location.replace('https://icomes.or.kr/main/registration.php')</script>";
+if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
+    echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
 }
 
 

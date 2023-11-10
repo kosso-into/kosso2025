@@ -126,7 +126,7 @@ $dompdf->stream($file_name);
 
 // 이미지 출력 필요한 경우 경로를 base64 값으로 변경해야함
 // 링크에는 도메인이 포함되어 있어야 함
-//function transfer_base64($url){//"https://icomes.or.kr/main";
+//function transfer_base64($url){//"https://kosso.org/main";
 
 //	$url = DOMAIN.$url;
 //	$url_encode = base64_encode(file_get_contents_curl(@$url));

@@ -236,6 +236,7 @@ a[target="_blank"]:not(".download_btn, .link_btn, .download_btn2, .link_btn2, .b
 
 /*이전 스타일*/
 .login_form .btn{font-size:20px; font-weight:bold; height:50px; cursor:pointer; background:transparent; color:#585858; border-radius:30px; padding:0 30px; border:1px solid #585859;}
+.login_form .login_alert{font-size: 16px; font-weight: bold; line-height: 50px;color:red}
 .login_form .green_btn {background-color:#10BF99; border-color:#10BF99; color:#fff;}
 .login_form .yellow_btn {background-color:#FFEB00; border-color:#FFEB00; color:#000;}
 .login_form .gray_btn {background-color:#999999; border-color: #999999; color: #fff;}

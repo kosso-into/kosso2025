@@ -29,7 +29,7 @@ $(document).ready(function () {
         });
         
         
-//        $("#video_01").html("<video id='vid_auto' preload='auto' muted='muted' volume='0' playsinline autoplay loop><source src='http://pre.icomes.or.kr/assets/video/main_vid.mp4'></video>");
+//        $("#video_01").html("<video id='vid_auto' preload='auto' muted='muted' volume='0' playsinline autoplay loop><source src='http://pre.kosso.org/assets/video/main_vid.mp4'></video>");
         $("#video_01").html("<video id='vid_auto' preload='auto' muted='muted' volume='0' playsinline autoplay loop><source src='../../assets/download/vid_03.mp4'></video>");
 
 

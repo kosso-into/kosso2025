@@ -12,7 +12,7 @@ $locale = locale($language);
                 <div class="dday_bot">Today is <span><?= $today; ?></span></div>
             </div>
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
-            <div class="g_h_logo"><img src="/main/img/icon_logo_blue.svg" alt="" class="pointer"
+            <div class="g_h_logo"><img src="/main/img/footer_logo_mini.png" style="height: 60px;" alt="" class="pointer"
                     onClick="javascript:location.href='/main/index.php'"></div>
             <ul class="g_h_tool">
                 <!-- <li><a href="/main/index.php">Home</a></li> -->
@@ -109,7 +109,8 @@ $locale = locale($language);
                         <ul class="sub_nav">
                             <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
-                            <li><a href="/main/registration.php" class="online_registration_alert">Online Registration</a></li>
+                            <li><a href="/main/registration.php" class="online_registration_alert">Online
+                                    Registration</a></li>
                             <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                         </ul>
                     </li>
@@ -158,31 +159,31 @@ $(document).ready(function() {
         alert("Coming soon.")
     });
 
-    $(".online_submission_alert").click(function(event) {
-        event.preventDefault();
-        alert("The abstract submission has expired.\nAbstract submission is not available.");
+    // $(".online_submission_alert").click(function(event) {
+    //     event.preventDefault();
+    //     alert("The abstract submission has expired.\nAbstract submission is not available.");
 
-        let parent = event.target.parentElement.parentElement;
+    //     let parent = event.target.parentElement.parentElement;
 
-        if(parent.classList.contains('m_sub_nav')){
-            parent.style.display = 'block';
-        }
+    //     if (parent.classList.contains('m_sub_nav')) {
+    //         parent.style.display = 'block';
+    //     }
 
-        return false;
-    });
+    //     return false;
+    // });
 
-    $(".online_registration_alert").click(function(event) {
-        event.preventDefault();
-        alert("The registration has expired.\nOnline registration is not available.");
+    // $(".online_registration_alert").click(function(event) {
+    //     event.preventDefault();
+    //     // alert("The registration has expired.\nOnline registration is not available.");
 
-        let parent = event.target.parentElement.parentElement;
+    //     let parent = event.target.parentElement.parentElement;
 
-        if(parent.classList.contains('m_sub_nav')){
-            parent.style.display = 'block';
-        }
+    //     if (parent.classList.contains('m_sub_nav')) {
+    //         parent.style.display = 'block';
+    //     }
 
-        return false;
-    });
+    //     return false;
+    // });
 });
 </script>
 
