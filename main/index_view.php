@@ -75,16 +75,34 @@ body {
 </style>
 
 <section class="main_section">
-
+    <!-- 배경이미지
+	<div class="bg_wrap">
+		<div class="dim"></div>
+		<div class="main_bg_slider">
+			<div class="video_wrap">
+				<video src="https://player.vimeo.com/external/595050190.hd.mp4?s=f5a9471e806bff619dc115c9dfc5db80d5df87fb&profile_id=174" autoplay="autoplay" muted="muted" playsinline id="main_video_bg" loop></video>
+			</div>
+			<?php
+            foreach ($banner as $bn) {
+            ?>
+			<div class="main_img_wrap"><img src="<?= $bn['fi_img_url'] ?>"></div>
+			<?php
+            }
+            ?>
+		</div>
+	</div>
+	-->
     <div class="section_bg">
-
+        <!-- <div class="video_wrap"> -->
+        <!-- <div class="dim"></div> -->
+        <!-- <video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f" autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video> -->
+        <!-- </div> -->
         <div class="container">
             <!-- <img src="/main/img/img_vsl_text.png" class="pc_only img_vsl_text" alt=""> -->
-            <h1 class="main_title">대한비만학회 춘계학술대회</h1>
-            <div class="mb_only img_vsl_text">
-                <!-- <img src="/main/img/img_vsl_text_mb.svg" alt=""> -->
-                <!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
-                <p>CONRAD Seoul Hotel, Korea</p> -->
+            <div class="mb_only img_vsl_text" style="">
+                <img src="/main/img/img_vsl_text_mb.svg" alt="">
+                <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
+                <p>CONRAD Seoul Hotel, Korea</p>
             </div>
             <!-- 상단 타이틀 -->
             <div class="txt_wrap">
@@ -130,12 +148,43 @@ body {
         <div class="main_btn_wrap">
             <button type="button" class="btn_circle_arrow"></button>
         </div>
-
+        <div class="dates_area">
+            <ul>
+                <li>
+                    <a href="/main/abstract_submission_guideline.php">
+                        <h2>August 10 <span>(Thu)</span></h2>
+                        <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
+                        <p>Abstract Submission<br />Deadline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/main/abstract_submission_guideline.php">
+                        <h2>August 14 <span>(Mon)</span></h2>
+                        <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
+                        <p>Notification of<br />Acceptance</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/main/registration_guidelines.php">
+                        <h2>August 24 <span>(Thu)</span></h2>
+                        <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
+                        <p>Pre-Registration <br />Deadline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/main/abstract_submission_award.php">
+                        <!-- <h2>2 Jun</h2> -->
+                        <h2>Awards &amp;<br />Grants</h2>
+                        <i><img src="/main/img/img_trophy.svg" alt=""></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 
 <!-- Plenary Speakers -->
-<!-- <div class="speakers_wrap">
+<div class="speakers_wrap">
     <div class="container">
         <h3 class="title">Plenary &amp; Keynote Speakers</h3>
         <div class="">
@@ -165,13 +214,13 @@ body {
             </ul>
         </div>
     </div>
-</div> -->
+</div>
 <!-- Key dates & News,Notice -->
 <section>
     <div class="container">
         <div class="noti_wrap">
             <!-- 2022년 버전에 뉴스레터 없어서 테스트 텍스트로 넣어놓음 -->
-            <!-- <div class="noti_area">
+            <div class="noti_area">
                 <h3 class="title">Newsletter<a href="/main/board_newsletter.php" class="moreview_btn">+</a></h3>
                 <ul>
                     <?php
@@ -184,7 +233,7 @@ body {
                     <?php
                         }
                     } else {
-                    ?>
+                        ?>
                     <li>
                         <div class='no_data'>Will be updated</div>
                     </li>
@@ -192,16 +241,14 @@ body {
                     }
                     ?>
                 </ul>
-            </div> -->
+            </div>
             <!-- 2022년 버전에 공지사항 없어서 테스트 텍스트로 넣어놓음 -->
             <div class="noti_area">
-                <h3 class="title">공지사항 <span class="gray_title_txt">NOTICE</span><a href="/main/board_notice.php"
-                        class="moreview_btn">+</a>
-                </h3>
+                <h3 class="title">Notice<a href="/main/board_notice.php" class="moreview_btn">+</a></h3>
                 <ul>
                     <?php if (count($notice_list) > 0) { ?>
                     <?php
-                        for ($i = 0; $i < 3; $i++) {
+                        for ($i = 0; $i < count($notice_list); $i++) {
                             $notice = $notice_list[$i];
                         ?>
                     <li><a href="/main/board_notice_detail.php?no=<?= $notice["idx"] ?>&i=<?= $total_notice - $i ?>">
@@ -214,34 +261,6 @@ body {
                     </li>
                     <?php } ?>
                 </ul>
-            </div>
-            <div>
-                <h3 class="title">학술대회 주요 일정 <span class="gray_title_txt">KEY DATES</span></h3>
-                <div class="dates_area">
-                    <ul>
-                        <li>
-                            <a href="/main/abstract_submission_guideline.php">
-                                <p>초록, 등록<br>오픈</p>
-                                <h2>1월 16일 (월)</h2>
-                                <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main/abstract_submission_guideline.php">
-                                <p>초록 접수 <br>마감</p>
-                                <h2>2월 22일(수)</h2>
-                                <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/main/registration_guidelines.php">
-                                <p>사전등록 <br>마감</p>
-                                <h2>2월 24일 (금)</h2>
-                                <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
@@ -321,77 +340,74 @@ body {
 </div> -->
 
 <!-- 230831 팝업 1/2 -->
-<!-- <div class="popup main_pop application_pop" style="display:block;">
-    <div class="pop_bg"></div>
+<!--<div class="popup main_pop application_pop" style="display:block;">
     <div class="pop_contents">
-		<img src="/main/img/230831_pop01.png" alt="">
-		<div class="close_area">
-			<div>
-				<input type="checkbox" id="today_check2" name="hidden" class="checkbox input required">
-				<label for="today_check2">Do not open this window for 24 hours.</label>
-			</div>
-			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
-		</div>	
+        <img src="/main/img/230831_pop01.png" alt="">
+        <div class="close_area">
+            <div>
+                <input type="checkbox" id="today_check2" name="hidden" class="checkbox input required">
+                <label for="today_check2">Do not open this window for 24 hours.</label>
+            </div>
+            <a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
+        </div>
     </div>
-</div>
+</div>-->
 
-230831 팝업 2/2
-<div class="popup main_pop symposium_pop" style="display:block;">
-    <div class="pop_bg"></div>
+<!-- 230831 팝업 2/2 -->
+<!--<div class="popup main_pop symposium_pop" style="display:block;">
     <div class="pop_contents">
-		<img src="/main/img/230831_pop02.png" alt="">
-		<a href="https://forms.gle/dvj5zCac9edUhBjR8" target="_blank">
-            <img src="/main/img/230831_pop02_btn.png" alt="" class="main_pop_btn">        
+        <img src="/main/img/230831_pop02.png" alt="">
+        <a href="https://forms.gle/dvj5zCac9edUhBjR8" target="_blank">
+            <img src="/main/img/230831_pop02_btn.png" alt="" class="main_pop_btn">
         </a>
-		<div class="close_area">
-			<div>
-				<input type="checkbox" id="today_check1" name="hidden" class="checkbox input required">
-				<label for="today_check1">Do not open this window for 24 hours.</label>
-			</div>
-			<a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
-		</div>	
+        <div class="close_area">
+            <div>
+                <input type="checkbox" id="today_check1" name="hidden" class="checkbox input required">
+                <label for="today_check1">Do not open this window for 24 hours.</label>
+            </div>
+            <a href="javascript:;" class="pop_close" onclick="closeWin()">Close <img src="/main/img/main_pop_close.png" alt=""></a>
+        </div>
     </div>
-</div> -->
+</div>-->
 
 
-<!-- <script>
-    // 쿠키 가져오기
-    var getCookie = function (cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0; i<ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1);
-            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
-        }
-        return "";
+<script>
+// 쿠키 가져오기
+var getCookie = function(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
     }
+    return "";
+}
 
-    // 24시간 기준 쿠키 설정하기  
-    var setCookie = function (cname, cvalue, exdays) {
-        var todayDate = new Date();
-        todayDate.setTime(todayDate.getTime() + (exdays*24*60*60*1000));    
-        var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
-        document.cookie = cname + "=" + cvalue + "; " + expires;
+// 24시간 기준 쿠키 설정하기  
+var setCookie = function(cname, cvalue, exdays) {
+    var todayDate = new Date();
+    todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+var couponClose = function() {
+    if ($("#today_check").is(":checked") == true) {
+        setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
     }
+    $(".notification_pop").hide();
+}
 
-    var couponClose = function(){
-        if($("#today_check").is(":checked") == true){
-            setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
-        }
+$(document).ready(function() {
+    var cookiedata = document.cookie;
+    if (cookiedata.indexOf("close=Y") < 0) {
+        $(".notification_pop").show();
+    } else {
         $(".notification_pop").hide();
     }
-    
-    $(document).ready(function(){
-        var cookiedata = document.cookie;
-        if(cookiedata.indexOf("close=Y")<0){
-            $(".notification_pop").show();
-        }else{
-            $(".notification_pop").hide();
-        }
-        $(".notification_pop .pop_close").click(function(){
-            couponClose();
-        });
+    $(".notification_pop .pop_close").click(function() {
+        couponClose();
     });
+});
 </script>
- -->

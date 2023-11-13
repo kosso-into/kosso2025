@@ -58,53 +58,12 @@
         <button type="button" class="btn_top"><img src="/main/img/icons/icon_top_btn.svg" alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
-    <!--
+
+
     <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
-            <li><img src="./img/sponsor/logo01.png" alt=""></li>
-            <li><img src="./img/sponsor/logo02.png" alt=""></li>
-            <li><img src="./img/sponsor/logo03.png" alt=""></li>
-            <li><img src="./img/sponsor/logo04.png" alt=""></li>
-            <li><img src="./img/sponsor/logo05.png" alt=""></li>
-            <li><img src="./img/sponsor/logo06.png" alt=""></li>
-            <li><img src="./img/sponsor/logo07.png" alt=""></li>
-            <li><img src="./img/sponsor/logo08.png" alt=""></li>
-            <li><img src="./img/sponsor/logo09.png" alt=""></li>
-            <li><img src="./img/sponsor/logo10.png" alt=""></li>
-            <li><img src="./img/sponsor/logo11.png" alt=""></li>
-            <li><img src="./img/sponsor/logo12.png" alt=""></li>
-            <li><img src="./img/sponsor/logo13.png" alt=""></li>
-            <li><img src="./img/sponsor/logo14_1.png" style="max-height:20px;" alt=""></li>
-            <li><img src="./img/sponsor/logo15.png" alt=""></li>
-            <li><img src="./img/sponsor/logo16.png" alt=""></li>
-            <li><img src="./img/sponsor/logo17.png" alt=""></li>
-            <li><img src="./img/sponsor/logo18.png" alt=""></li>
-            <li><img src="./img/sponsor/logo19.png" alt=""></li>
-            <li><img src="./img/sponsor/logo20.png" alt=""></li>
-            <li><img src="./img/sponsor/logo21.png" alt=""></li>
-            <li><img src="./img/sponsor/logo22.png" alt=""></li>
-            <li><img src="./img/sponsor/logo23.png" alt=""></li>
-        </ul>
-    </div> -->
-    <div class="sponsor_logo-wrap container">
-        <ul class="s_logo_list">
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <li><a class="blank"></a></li>
-            <!-- <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
+
+            <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
             <li><a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a></li>
             <li><a href="http://eng.yuhan.co.kr/Main/" class="yuhan">YUHAN</a></li>
@@ -128,7 +87,7 @@
             <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a></li>
             <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a></li>
             <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
-            <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li> -->
+            <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
         </ul>
     </div>
     <footer class="footer">
