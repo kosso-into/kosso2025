@@ -8,24 +8,23 @@ $locale = locale($language);
     <div class="g_h_top">
         <div class="container">
             <div class="dday_wrap">
-                <div class="dday_top"><span>D-<?= number_format($d_days); ?></span></div>
+                <div class="dday_top"><span>D+<?= number_format($d_days); ?></span></div>
                 <div class="dday_bot">Today is <span><?= $today; ?></span></div>
             </div>
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
-            <div class="g_h_logo"><img src="/main/img/icon_logo_ko.png" alt="" class="pointer"
-                    onClick="javascript:location.href='/main/index.php'"></div>
+            <div class="g_h_logo"><img src="/main/img/icon_logo_ko.png" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div>
             <ul class="g_h_tool">
                 <!-- <li><a href="/main/index.php">Home</a></li> -->
                 <?php
                 if ($_SESSION["USER"]["idx"] == "") {
                 ?>
-                <li><a href="/main/login.php">Log in</a></li>
-                <li><a href="/main/signup.php">Sign up</a></li>
+                    <li><a href="/main/login.php">Log in</a></li>
+                    <li><a href="/main/signup.php">Sign up</a></li>
                 <?php
                 } else {
                 ?>
-                <li><a href="/main/mypage.php">My page</a></li>
-                <li><a class="logout_btn" href="javascript:;">Logout</a></li>
+                    <li><a href="/main/mypage.php">My page</a></li>
+                    <li><a class="logout_btn" href="javascript:;">Logout</a></li>
                 <?php
                 }
                 ?>
@@ -37,13 +36,13 @@ $locale = locale($language);
                     <?php
                     if ($_SESSION["USER"]["idx"] == "") {
                     ?>
-                    <li><a href="/main/login.php">Log in</a></li>
-                    <li><a href="/main/signup.php">Sign up</a></li>
+                        <li><a href="/main/login.php">Log in</a></li>
+                        <li><a href="/main/signup.php">Sign up</a></li>
                     <?php
                     } else {
                     ?>
-                    <li><a href="/main/mypage.php">My page</a></li>
-                    <li><a class="logout_btn" href="javascript:;">Logout</a></li>
+                        <li><a href="/main/mypage.php">My page</a></li>
+                        <li><a class="logout_btn" href="javascript:;">Logout</a></li>
                     <?php
                     }
                     ?>
@@ -153,37 +152,37 @@ $locale = locale($language);
 <!-- 220308 HUBDNC LJH 추가 : 끝-->
 
 <script>
-$(document).ready(function() {
-    $(".not_yet").click(function() {
-        alert("Coming soon.")
+    $(document).ready(function() {
+        $(".not_yet").click(function() {
+            alert("Coming soon.")
+        });
+
+        $(".online_submission_alert").click(function(event) {
+            event.preventDefault();
+            alert("The abstract submission has expired.\nAbstract submission is not available.");
+
+            let parent = event.target.parentElement.parentElement;
+
+            if (parent.classList.contains('m_sub_nav')) {
+                parent.style.display = 'block';
+            }
+
+            return false;
+        });
+
+        $(".online_registration_alert").click(function(event) {
+            event.preventDefault();
+            alert("The registration has expired.\nOnline registration is not available.");
+
+            let parent = event.target.parentElement.parentElement;
+
+            if (parent.classList.contains('m_sub_nav')) {
+                parent.style.display = 'block';
+            }
+
+            return false;
+        });
     });
-
-    $(".online_submission_alert").click(function(event) {
-        event.preventDefault();
-        alert("The abstract submission has expired.\nAbstract submission is not available.");
-
-        let parent = event.target.parentElement.parentElement;
-
-        if (parent.classList.contains('m_sub_nav')) {
-            parent.style.display = 'block';
-        }
-
-        return false;
-    });
-
-    $(".online_registration_alert").click(function(event) {
-        event.preventDefault();
-        alert("The registration has expired.\nOnline registration is not available.");
-
-        let parent = event.target.parentElement.parentElement;
-
-        if (parent.classList.contains('m_sub_nav')) {
-            parent.style.display = 'block';
-        }
-
-        return false;
-    });
-});
 </script>
 
 <div class="m_nav_wrap">
@@ -199,14 +198,14 @@ $(document).ready(function() {
 	</div>
 	-->
     <div class="m_nav_top">
-        <img src="/main/img/icon_logo_ko.png" alt="" class="pointer logo"
-            onclick="javascript:location.href='/main/index.php'">
+        <img src="/main/img/icon_logo_ko.png" alt="" class="pointer logo" onclick="javascript:location.href='/main/index.php'">
         <button type="button" class="n_nav_close"><img src="/main/img/icons/m_nav_close.svg"></button>
     </div>
     <div class="m_nav">
         <ul class="m_nav_ul">
             <li class="m_nav_li">
-                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>KSSO 2024</span></a>
+                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>KSSO
+                        2024</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m1"]) ? "block" : "none") ?>">
                     <li><a href="/main/welcome.php">Welcome Message</a></li>
                     <!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
@@ -216,8 +215,7 @@ $(document).ready(function() {
                 </ul>
             </li>
             <li class="m_nav_li">
-                <a href="javascript:;"
-                    class="<?= (in_array($_page, $_page_config["m2"]) ? "show" : "") ?>"><span>프로그램</span></a>
+                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m2"]) ? "show" : "") ?>"><span>프로그램</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m2"]) ? "block" : "none") ?>">
                     <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
                     <!-- <li><a href="/main/program_detail.php">Program in Detail</a></li> -->
@@ -226,8 +224,7 @@ $(document).ready(function() {
                 </ul>
             </li>
             <li class="m_nav_li">
-                <a href="javascript:;"
-                    class="<?= (in_array($_page, $_page_config["m3"]) ? "show" : "") ?>"><span>초록</span></a>
+                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m3"]) ? "show" : "") ?>"><span>초록</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m3"]) ? "block" : "none") ?>">
                     <!-- <li><a href="poster_abstract_submission.php">Submission Guideline</a></li> -->
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
@@ -351,27 +348,37 @@ $(document).ready(function() {
 </div>
 <input type="hidden" value="<?= $during_yn ?>" name="during_yn">
 <script>
-$(document).ready(function() {
-    $(".logout_btn").on("click", function() {
-        if (PATH == "./") {
-            path_content = "/main/";
-        } else {
-            path_content = PATH;
-        }
-
-        $.ajax({
-            url: path_content + "ajax/client/ajax_member.php",
-            type: "GET",
-            data: {
-                flag: "logout"
-            },
-            dataType: "JSON",
-            success: function() {
-                window.location.replace(PATH);
-            },
-            error: function() {
-                alert("일시적으로 로그아웃 요청이 거절되었습니다.");
+    $(document).ready(function() {
+        $(".logout_btn").on("click", function() {
+            if (PATH == "./") {
+                path_content = "/main/";
+            } else {
+                path_content = PATH;
             }
+
+            $.ajax({
+                url: path_content + "ajax/client/ajax_member.php",
+                type: "GET",
+                data: {
+                    flag: "logout"
+                },
+                dataType: "JSON",
+                success: function() {
+                    window.location.replace(PATH);
+                },
+                error: function() {
+                    alert("일시적으로 로그아웃 요청이 거절되었습니다.");
+                }
+            });
+        });
+
+        /* 220308 HUBDNC LJH2 추가 */
+        var header_height = $(".header").outerHeight();
+        $(".depth2").css("top", header_height);
+        $(".gnb li, .depth2 li").mouseenter(function() {
+            $(".gnb li").removeClass("on");
+            $(this).addClass("on");
+            $(this).parents("li").addClass("on");
         });
     });
 
@@ -383,29 +390,19 @@ $(document).ready(function() {
         $(this).addClass("on");
         $(this).parents("li").addClass("on");
     });
-});
 
-/* 220308 HUBDNC LJH2 추가 */
-var header_height = $(".header").outerHeight();
-$(".depth2").css("top", header_height);
-$(".gnb li, .depth2 li").mouseenter(function() {
-    $(".gnb li").removeClass("on");
-    $(this).addClass("on");
-    $(this).parents("li").addClass("on");
-});
+    /* 220314 HUBDNC LJH2 추가 */
+    $(".gnb > li, .depth2").hover(function() {
+        $(".depth2").css("height", "100%");
+    }, function() {
+        $(".depth2").css("height", "0");
+    })
 
-/* 220314 HUBDNC LJH2 추가 */
-$(".gnb > li, .depth2").hover(function() {
-    $(".depth2").css("height", "100%");
-}, function() {
-    $(".depth2").css("height", "0");
-})
-
-// $(".online_submission_alert").click(function() {
-//     var during_yn = $("input[name=during_yn]").val();
-//     if (during_yn !== 'Y') {
-//         alert("The abstract submission deadline has expired and submission is not possible.");
-//         return false;
-//     }
-// });
+    // $(".online_submission_alert").click(function() {
+    //     var during_yn = $("input[name=during_yn]").val();
+    //     if (during_yn !== 'Y') {
+    //         alert("The abstract submission deadline has expired and submission is not possible.");
+    //         return false;
+    //     }
+    // });
 </script>

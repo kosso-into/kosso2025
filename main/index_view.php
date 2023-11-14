@@ -214,10 +214,17 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
+<<<<<<< HEAD
+                    <h5 class="title">John Wilding</h5>
+                    <div class="career">University of Liverpool,<br>UK</div>
+                </li>
+                <li class="index_speaker2">
+=======
                     <h5 class="title">TBD</h5>
                     <div class="career">TBD</div>
                 </li>
                 <!-- <li class="index_speaker2">
+>>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
@@ -244,7 +251,11 @@ body {
                     </div>
                     <h5 class="title">Jae-Heon Kang</h5>
                     <div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
+<<<<<<< HEAD
+                </li>
+=======
                 </li> -->
+>>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
             </ul>
         </div>
     </div>
