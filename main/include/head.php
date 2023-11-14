@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="ko-KR">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-    <title>ICOMES 2023</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+
+    <title>KSSO 2024</title>
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="ICOMES 2023">
     <meta property="og:image" content="/main/img/poster2023.jpg" />
-    <meta property="og:description" content="2023 ICOMES hosted by KSSO">
-    <meta name="description" content="2023 ICOMES hosted by KSSO">
+
+    <meta property="og:description" content="2024 KSSO hosted by KSSO">
+    <meta name="description" content="2024 KSSO hosted by KSSO">
 
     <!-- datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
@@ -18,7 +22,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/uwj4our.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/main/css/common.css?ver=<?= time() ?>">
     <link rel="stylesheet" href="/main/css/style.css?ver=<?= time() ?>">
     <link rel="stylesheet" href="/main/css/style2.css?ver=<?= time() ?>">
@@ -60,11 +66,7 @@
 	// 230718 HUBDNC 위치 변경
 	$_page_config = array(
 		"m1" => [
-			"welcome",
-			"organizing_committee",
-			"overview",
-			"venue",
-			"photo"
+			"Welcom Message"
 		],
 		"m2" => [
 			"program_glance",
@@ -112,7 +114,8 @@
 
 	//오늘 날짜 구하기 d_day 구하기
 	$today = date("Y. m. d");
-	$d_day = new DateTime("2023-09-07");
+
+	$d_day = new DateTime("2024-03-08");
 
 	$current_date = new DateTime();
 	$current_date->format('Y-m-d');

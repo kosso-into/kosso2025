@@ -11,45 +11,45 @@
             <?php
             if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
             ?>
-            <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
-            <li>
-                <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" target="_blank" class="type2 pink">
-                    <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
-                    Abstract Book <br />Download
-                </a>
-            </li>
-            <li>
-                <a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" target="_blank" class="type2 violet">
-                    <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
-                    Program Book <br />Download
-                </a>
-            </li>
+                <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
+                <li>
+                    <a href="" target="_blank" class="type2 pink">
+                        <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
+                        초록집 <br />Download
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="type2 violet">
+                        <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
+                        Program Book <br />Download
+                    </a>
+                </li>
             <?php
             } else {
             ?>
-            <li>
-                <button type="button" class="online_registration_alert">
-                    <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>Registration
-                </button>
-            </li>
-            <li>
-                <button type="button" class="online_submission_alert">
-                    <i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>Abstract
-                </button>
-            </li>
+                <li>
+
+                    <button type="button" class="not_yet">
+                        <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>등록
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="not_yet">
+                        <i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>초록 접수
+
+                    </button>
+                </li>
             <?php
             }
             ?>
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-            <li><button type="button" onClick="alert('Need to login.')"><i><img src="/main/img/icons/tool_mypage.svg"
-                            alt=""></i>My page</button></li>
+                <li><button type="button" onClick="alert('Need to login.')"><i><img src="/main/img/icons/tool_mypage.svg" alt=""></i>My page</button></li>
             <?php
             } else {
             ?>
-            <li><button type="button" onClick="location.href='/main/mypage.php'"><i><img
-                            src="/main/img/icons/tool_mypage.svg" alt=""></i>My Page</button></li>
+                <li><button type="button" onClick="location.href='/main/mypage.php'"><i><img src="/main/img/icons/tool_mypage.svg" alt=""></i>My Page</button></li>
             <?php
             }
             ?>
@@ -122,26 +122,38 @@
             <div class="f_bottom clearfix">
                 <div class="footer_l">
                     <div class="clearfix">
-                        <img src="/main/img/icons/fl01.png" alt="">
-                        <img src="/main/img/icons/fl02.png" alt="">
-                        <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
-                                src="/main/img/icons/fl03.png" alt=""></a>
-                        <img src="/main/img/icons/fl04.png" alt="">
+                        <<<<<<< HEAD <img src="/main/img/icons/fl01.png" alt="">
+                            <img src="/main/img/icons/fl02.png" alt="">
+                            <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;" src="/main/img/icons/fl03.png" alt=""></a>
+                            <img src="/main/img/icons/fl04.png" alt="">
+                            =======
+                            <img src="/main/img/icons/fl05.png" alt="">
+                            <!-- <img src="/main/img/icons/fl02.png" alt=""> -->
+                            <!-- <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;" src="/main/img/icons/fl03.png" alt=""></a> -->
+                            <!-- <img src="/main/img/icons/fl04.png" alt=""> -->
+                            >>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
                     </div>
                 </div>
                 <div class="footer_c">
                     <!-- <p>Organized by</p> -->
-                    <p>Korean Society for the Study of Obesity(KSSO)</p>
-                    <ul>
-                        <li>Room 1010, Renaissance tower, 14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
-                        <li>T. 82-2-364-0886,0887</li>
-                        <li>F. 82-2-364-0883</li>
-                        <li>E. <a href="mailto:webmaster@kosso.or.kr"
-                                class="font_inherit link">webmaster@kosso.or.kr</a></li>
-                        <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">https://www.kosso.or.kr</a>
-                        </li>
-                    </ul>
-                    <!--
+                    <<<<<<< HEAD <p>Korean Society for the Study of Obesity(KSSO)</p>
+                        <ul>
+                            <li>Room 1010, Renaissance tower, 14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
+                            =======
+                            <p>대한비만학회(KSSO)</p>
+                            <ul>
+                                <li>[04195] 서울특별시 마포구 만리재로 14 르네상스 타워 1010호</li>
+                                >>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
+                                <li>T. 82-2-364-0886,0887</li>
+                                <li>F. 82-2-364-0883</li>
+                                <li>E. <a href="mailto:webmaster@kosso.or.kr" class="font_inherit link">webmaster@kosso.or.kr</a></li>
+                                <<<<<<< HEAD <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">https://www.kosso.or.kr</a>
+                                    =======
+                                    <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">www.kosso.or.kr</a>
+                                        >>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
+                                    </li>
+                            </ul>
+                            <!--
                     <ul>
                         <li>Tel. 82-2-6941-0888, 82-2-364-0886,0887 / Fax. 82-2-364-0883</li>
                         <li>Email. webmaster@kosso.or.kr / kosso@kosso.or.kr</li>
@@ -155,14 +167,23 @@
                 </div>
                 <div class="footer_r">
                     <!-- <p>Conference Secretariat</p> -->
-                    <p>Secretariat of ICOMES 2023</p>
-                    <ul>
-                        <li>A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea</li>
-                        <li>T. 82-2-2285-2582</li>
-                        <li>F. 82-2-2285-2530</li>
-                        <li>E. <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a></li>
-                    </ul>
-                    <!--
+                    <<<<<<< HEAD <p>Secretariat of ICOMES 2023</p>
+                        <ul>
+                            <li>A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea</li>
+                            <li>T. 82-2-2285-2582</li>
+                            <li>F. 82-2-2285-2530</li>
+                            <li>E. <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>
+                            </li>
+                            =======
+                            <p>제58차 대한비만학회 춘계학술대회 운영 사무국</p>
+                            <ul>
+                                <li>[04315] 서울특별시 용산구 백범로 341, 금호리첸시아 A블럭 3층 308호</li>
+                                <li>T. 82-2-2285-2582</li>
+                                <li>F. 82-2-2285-2530</li>
+                                <li>E. <a href="mailto:TBD@TBD.com" class="font_inherit link">TBD@TBD.com</a></li>
+                                >>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
+                            </ul>
+                            <!--
                     <ul>
                         <li>Tel. +82-2-2285-2582  | Fax : 82-2-2285-2530
                             <br />Email : icomes@into-on.com
@@ -199,17 +220,17 @@
     </div>
 </div>
 <script>
-$('.term3_btn').on('click', function() {
-    $('.term3').show();
-})
-$('.term4_btn').on('click', function() {
-        $('.term4').show();
+    $('.term3_btn').on('click', function() {
+        $('.term3').show();
     })
+    $('.term4_btn').on('click', function() {
+            $('.term4').show();
+        })
 
-    <
-    !--$('.type2').on('click', function(event) {
-        event.preventDefault();
-        alert('Updates are planned.');
-        return false;
-    }) -- >
+        <
+        !--$('.type2').on('click', function(event) {
+            event.preventDefault();
+            alert('Updates are planned.');
+            return false;
+        }) -- >
 </script>

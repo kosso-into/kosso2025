@@ -1,6 +1,6 @@
 <?php
-	include_once('/var/www/icomes.or.kr/main/common/common.php');
-	include_once('/var/www/icomes.or.kr/main/push_library/push.php');
+	include_once('/var/www/kosso.org/main/common/common.php');
+	include_once('/var/www/kosso.org/main/push_library/push.php');
 
 	$select_query = "SELECT 
 						ps.idx, ps.member_idx, ps.type, ps.token, ps.program_idx, 

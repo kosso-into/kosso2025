@@ -286,10 +286,12 @@ function other_change(value) {
 	$("#submit_btn").addClass("gray_btn");
 }*/
 $(document).ready(function() {
+    /**  효준 초록 접수 종류후 추적 해제
     alert("The abstract submission has expired.\nAbstract submission is not available.");
     window.history.back();
     window.location.href = "/main/index.php";
-    return;
+    return; 
+    */
 
     $(document).on("click", ".blue_btn", function() {
         var idx = $(this).data("idx");

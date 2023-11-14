@@ -26,17 +26,17 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li class="on"><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a href="./abstract_submission.php" class="online_submission_alert">Online Submission</a></li>
+            <li><a href="./abstract_submission.php" class="">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
-            <li><a href="./abstract_submission_award.php">Awards & Grants</a></li>
+            <!-- <li><a href="./abstract_submission_award.php">Awards & Grants</a></li> -->
         </ul>
         <div class="section section1">
             <div>
                 <div class="text_box">
                     <ul>
-                        <li>The ICOMES 2023 organizing committee cordially invites you to submit abstracts for oral presentations, poster exhibitions, and guided poster presentations. </li>
-                        <li>All abstracts must be submitted via the online submission system. <br/>Please read the guidelines before submitting your abstract(s).</li>
+                        <li>2024 대한비만학회 춘계학술대회에서는 구두 발표, 포스터 전시를 위한 초록 제출을 정중히 요청합니다.</li>
+                        <li>모든 초록은 해당 사이트를 통해 제출되어야 합니다.<br/>Please read the guidelines before submitting your abstract(s).</li>
                         <!--
 						<li class="f_bold">• If you are selected by submitting an abstract, 100% of the registration fee can be reduced.</li>
 						<li>• The reduction is based on the payment of the pre-registration fee, and only the submitter will receive a refund within 2 weeks after the congress.</li>
@@ -46,7 +46,7 @@ $info = sql_fetch($sql_info);
                 <div class="text_center btn_box mt25">
                     <!-- <a href="https://image.webeon.net/icomes/ICOMES%202023_Abstract%20template_ver1.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a> -->
 					<a href="./download/ICOMES_2023_Abstract_form.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Abstract Form Download</a>
-                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn online_submission_alert">Go to Abstract Submission</a>
+                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn">Go to Abstract Submission</a>
                 </div>
                 <!-- <a href="./download/ICOMES_2022_Abstract_template.docx" class="btn long_btn" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a></div> -->
             </div>

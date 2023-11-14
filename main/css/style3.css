@@ -566,7 +566,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	/* header */
 	.g_h_top {padding: 10px 0;}
 	.g_h_logo {height: 40px;}
-	.g_h_logo img {height: 100%; width:100px;}
+	.g_h_logo img {height: 100%;}
 	.g_h_top .g_h_tool {display: none;}
 	/* .g_h_top .m_nav_btn {margin: 0; position: absolute; right: 0; top: 50%; transform: translateY(-50%);} */
 	.g_h_top .m_nav_btn img {filter: invert(1);}

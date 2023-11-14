@@ -151,30 +151,30 @@ body {
         <div class="dates_area">
             <ul>
                 <li>
-                    <a href="/main/abstract_submission_guideline.php">
-                        <h2>August 10 <span>(Thu)</span></h2>
+                    <a href="">
+                        <h2>TBD <span>(TBD)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
-                        <p>Abstract Submission<br />Deadline</p>
+                        <p>등록 접수<br />오픈일</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/main/abstract_submission_guideline.php">
-                        <h2>August 14 <span>(Mon)</span></h2>
+                    <a href="">
+                        <h2>TBD <span>(TBD)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
-                        <p>Notification of<br />Acceptance</p>
+                        <p>사전 등록<br />마감일</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/main/registration_guidelines.php">
-                        <h2>August 24 <span>(Thu)</span></h2>
+                    <a href="">
+                        <h2>TBD <span>(TBD)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
-                        <p>Pre-Registration <br />Deadline</p>
+                        <p>초록 접수<br />마감일</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/main/abstract_submission_award.php">
-                        <!-- <h2>2 Jun</h2> -->
-                        <h2>Awards &amp;<br />Grants</h2>
+                    <a href="">
+                        <h2>TBD</h2> 
+                        <h2>TBD</h2>
                         <i><img src="/main/img/img_trophy.svg" alt=""></i>
                     </a>
                 </li>
@@ -193,31 +193,38 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
-                    <h5 class="title">Thiruma V. Arumugam</h5>
-                    <div class="career">La Trobe University,<br>Australia</div>
+                    <h5 class="title">TBD</h5>
+                    <div class="career">TBD</div>
                 </li>
                 <li class="index_speaker1">
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
-                    <h5 class="title">Robert R. Wolfe</h5>
-                    <div class="career">University of Arkansas for<br>Medical Sciences, USA</div>
+                    <h5 class="title">TBD</h5>
+                    <div class="career">TBD</div>
                 </li>
                 <li class="index_speaker6">
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
-                    <h5 class="title">Tamas Horvath</h5>
-                    <div class="career">Yale University,<br>USA</div>
+                    <h5 class="title">TBD</h5>
+                    <div class="career">TBD</div>
                 </li>
                 <li class="index_speaker7">
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
+<<<<<<< HEAD
                     <h5 class="title">John Wilding</h5>
                     <div class="career">University of Liverpool,<br>UK</div>
                 </li>
                 <li class="index_speaker2">
+=======
+                    <h5 class="title">TBD</h5>
+                    <div class="career">TBD</div>
+                </li>
+                <!-- <li class="index_speaker2">
+>>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
@@ -244,7 +251,11 @@ body {
                     </div>
                     <h5 class="title">Jae-Heon Kang</h5>
                     <div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
+<<<<<<< HEAD
                 </li>
+=======
+                </li> -->
+>>>>>>> 4fb3f920ba68fc3e5462c0f8406f0204ce56bece
             </ul>
         </div>
     </div>
