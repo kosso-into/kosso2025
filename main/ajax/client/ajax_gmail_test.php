@@ -120,7 +120,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 	if ($_SERVER["HTTP_HOST"] == "43.200.170.254") {
 		$background_img_url = "https://icomes-hub.store";
 	} else {
-		$background_img_url = "https://icomes.or.kr";
+		$background_img_url = "https://kosso.org";
 	}
 
 	$rawMessageString = "From: ICOMES2023<secretariat@kosso.org>\r\n";
@@ -223,7 +223,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									<tbody>
 										<tr>
 											<td colspan='3'>
-												<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:750px;'>
+												<img src='https://www.kosso.org/main/img/mail_header_2023.png' width='750' style='width:750px;'>
 											</td>
 										</tr>
 										<tr>
@@ -270,14 +270,14 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 											<td style='padding-top:16px;'>
 												<p>Warmest regards,</p>
 												<div style='text-align: center;'>
-													<a href='https://www.icomes.or.kr/'><img src='https://www.icomes.or.kr/main/img/icomes_btn.png' alt=''></a>
+													<a href='https://www.kosso.org/'><img src='https://www.kosso.org/main/img/icomes_btn.png' alt=''></a>
 												</div>
 											</td>
 											<td width='74' style='width:74px;'></td>
 										</tr>
 										<tr>
 											<td colspan='3' style='padding-top:50px;'>
-												<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:750px;'>
+												<img src='https://www.kosso.org/main/img/mail_footer_2023.png' width='750' style='width:750px;'>
 											</td>
 										</tr>
 									</tbody>
@@ -390,7 +390,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 							<tbody>
 								<tr>
 									<td colspan='3'>
-										<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
+										<img src='https://www.kosso.org/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
 									</td>
 								</tr>
 								<tr>
@@ -428,7 +428,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									<td width='74' style='width:74px;'></td>
 									<td>
 										<div style='text-align: center;'>
-											<a href='{$callback_url}'><img src='https://www.icomes.or.kr/main/img/icomes_pw_btn.png' alt=''></a>
+											<a href='{$callback_url}'><img src='https://www.kosso.org/main/img/icomes_pw_btn.png' alt=''></a>
 										</div>
 										<p>Best regards,</p>
 									</td>
@@ -436,7 +436,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 								</tr>
 								<tr>
 									<td colspan='3' style='padding-top:50px;'>
-										<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
+										<img src='https://www.kosso.org/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
 									</td>
 								</tr>
 							</tbody>
@@ -589,7 +589,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$info_html = "";
 			$info = explode("*", $data["conference_info"] ?? "");
 
-			for ($a = 0; $a < count($info); $a++) {
+			for ($a = 0; $a <label count($info); $a++) {
 				if ($info[$a]) {
 					$info_html .= $info_html != "" ? "<br/>" : "";
 					$info_html .= "
@@ -644,7 +644,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										<tbody>
 											<tr>
 												<td colspan='3'>
-													<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
+													<img src='https://www.kosso.org/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
 												</td>
 											</tr>
 											<tr>
@@ -764,14 +764,14 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 													<p>Secretariat of ICOMES 2023</p>
 													<br/>
 													<div style='text-align: center;'>
-														<a href='https://www.icomes.or.kr/'><img src='https://www.icomes.or.kr/main/img/icomes_btn.png' alt=''></a>
+														<a href='https://www.kosso.org/'><img src='https://www.kosso.org/main/img/icomes_btn.png' alt=''></a>
 													</div>
 												</td>
 												<td width='74' style='width:74px;'></td>
 											</tr>
 											<tr>
 												<td colspan='3' style='padding-top:50px;'>
-													<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
+													<img src='https://www.kosso.org/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
 												</td>
 											</tr>
 										</tbody>
@@ -962,7 +962,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 																				<p style='font-size:10px; line-height:14px; color:#000; text-align:left;'>
 																					We express our gratitude to you for your interest in the ICOMES 2022 and look<br/>forward to seeing you in September in Seoul, Korea.
 																					<br/><br/>
-																					Please visit our website(https://icomes.or.kr) with your account to submit the abstract and register.<br/>If you Early-Register and pay the registration fee by May 12th(Thu), you will receive a 30% discount!<br/>Don’t miss out on early bird register rates!<br/>Note the payment deadline of August 11(Thu) at 12pm(KST).
+																					Please visit our website(https://kosso.org) with your account to submit the abstract and register.<br/>If you Early-Register and pay the registration fee by May 12th(Thu), you will receive a 30% discount!<br/>Don’t miss out on early bird register rates!<br/>Note the payment deadline of August 11(Thu) at 12pm(KST).
 																					<br/><br/>
 																					Warmest regards,
 																					<br/><br/>
@@ -995,7 +995,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			$rawMessageString .= "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='{$background_img_url}/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Letter of Invitation</h1><div style='width:calc(100% - 80px); margin:24px auto 100px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p><p style='font-size:10px; color:#000 ;margin-top:16px; margin-bottom:25px;'>On behalf of the ICOMES organizing committee, we cordially invite you as participant to “ICOMES 2022 International Conference” to be held at the Conrad Seoul Hotel, Seoul, Korea on September 1(Thu)-3(Sat), 2022. </p><p style='font-size:10px; color:#000; margin-bottom:25px;'>ICOMES has grown as a worldwide academic society with more than 1000 participants and eminent representative speakers in obesity every year since 2015 at its launch. ICOMES is an international academic conference that promotes cooperation among multidisciplinary study fields, providing in-depth lectures and symposiums on basic medicine and clinical medicine on obesity, metabolic syndrome, dyslipidemia, and other obesity-related diseases.<br/>The main theme of ICOMES 2022 is ‘The Next Normal - The Future of Obesity Care’. Your Presentation will be a great addition to our conference.</p><p style='font-size:10px; color:#000;'>For building instructive, insightful and interesting meeting, we would like you to take as a role of; </p><div style='padding:10px 0; margin-top:16px; border-top:1px solid #000; border-bottom:1px solid #000;'><div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Date</span><span style='vertical-align:middle; font-size:10px;'>September 1(Thu)~3(Sat)</span></div>
 			<div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Venue</span><span style='vertical-align:middle; font-size:10px;'>Conrad Hotel Seoul, Korea</span></div></div><div style='font-size:10px; margin:14px 0 60px;'>
-			We invite you to ICOMES 2022 to create an informative, insightful and exciting<br/>meeting. <a href='mailto:icomes_registration@into-on.com' style='font-size:10px; font-weight:bold; color:#10BF99;'>(icomes_registration@into-on.com).</a></div><ul style='margin:0; padding:0; text-align:center; font-size:0;'><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top;'><p style='font-size:12px; font-weight:bold; margin:0;'>Kijin Kim</p><p style='font-size:8px;'>Chairman of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign01.png' alt=''></li><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top; margin-left:15%;'><p style='font-size:12px; font-weight:bold; margin:0;'>Chang-Beom Lee</p><p style='font-size:8px;'>President of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign02.png' style='margin-top:10px;' alt=''></li></ul></div><img src='{$background_img_url}/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
+			We invite you to ICOMES 2022 to create an informative, insightful and exciting<br/>meeting. <a href='mailto:icomes_registration@into-on.com' style='font-size:10px; font-weight:bold; color:#10BF99;'>(icomes_registration@into-on.com).</a></div><ul style='margin:0; padding:0; text-align:center; font-size:0;'><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top;'><p style='font-size:12px; font-weight:bold; margin:0;'>Kijin Kim</p><p style='font-size:8px;'>Chairman of Korean Society<br/>for the Study of Obesity</p><img src='https://kosso.org/main/img/mail_sign01.png' alt=''></li><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top; margin-left:15%;'><p style='font-size:12px; font-weight:bold; margin:0;'>Chang-Beom Lee</p><p style='font-size:8px;'>President of Korean Society<br/>for the Study of Obesity</p><img src='https://kosso.org/main/img/mail_sign02.png' style='margin-top:10px;' alt=''></li></ul></div><img src='{$background_img_url}/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
 		}
 
 
@@ -1016,7 +1016,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$first_name			= $submit_data["first_name"] ?? "";
 			$last_name			= $submit_data["last_name"] ?? "";
 
-			$url = $_SERVER['HTTP_HOST'] ?? "www.icomes.or.kr";
+			$url = $_SERVER['HTTP_HOST'] ?? "www.kosso.org";
 
 			$rawMessageString .= '<div><table width="750" style="border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;">
 								<tr><td colspan="3"><img src="https://' . $url . '/main/img/mail_header_2023.png" width="750" style="width:100%; max-width:100%;"></td></tr>
@@ -1248,8 +1248,8 @@ if ($_POST["flag"] == "signup") {
 
 		$message = createMessage("en", "sign_up", "", $email, $subject, date("Y-m-d H:i:s"), "", $callback_url, 1);
 		//var_dump($message); exit;
-		createDraft($service, "secretariat@kosso.org", $message);
-		sendMessage($service, "secretariat@kosso.org", $message);
+		createDraft($service, "info@kosso.org", $message);
+		sendMessage($service, "info@kosso.org", $message);
 	} catch (\Throwable $tw) {
 		echo $tw->getMessage();
 		exit;
@@ -1295,8 +1295,8 @@ if ($_POST["flag"] == "find_password") {
 		$callback_url = D9_DOMAIN . "/password_reset.php?e=" . $email . "&t=" . $random_token;
 
 		$message = createMessage($language, "find_password", $name, $email, "[ICOMES 2023]" . $subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
-		createDraft($service, "secretariat@kosso.org", $message);
-		sendMessage($service, "secretariat@kosso.org", $message);
+		createDraft($service, "info@kosso.org", $message);
+		sendMessage($service, "info@kosso.org", $message);
 
 		$hash_temporary_password = password_hash($temporary_password, PASSWORD_DEFAULT);
 
@@ -1335,22 +1335,22 @@ if ($_POST["flag"] == "find_password") {
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
 	$message = createMessage("en", "payment", $name, $email, "[ICOMES] Payment Confirmation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
-	createDraft($service, "secretariat@kosso.org", $message);
-	sendMessage($service, "secretariat@kosso.org", $message);
+	createDraft($service, "info@kosso.org", $message);
+	sendMessage($service, "info@kosso.org", $message);
 } else if ($_POST["flag"] == "registration") {
 	$name = $_POST["name"] ?? null;
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
 	$registration_idx = $_POST["registration_idx"] ?? null;
 	$message = createMessage("en", "registration", $name, $email, "[ICOMES] Registration", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
-	createDraft($service, "secretariat@kosso.org", $message);
-	sendMessage($service, "secretariat@kosso.org", $message);
+	createDraft($service, "info@kosso.org", $message);
+	sendMessage($service, "info@kosso.org", $message);
 
 	$invitation_check_yn = $_POST["invitation_check_yn"] ?? null;
 	if ($invitation_check_yn == "Y") {
 		$message = createMessage("en", "visa_registration", $name, $email, "[ICOMES] Registration Invitation", date("Y-m-d H:i:s"), "", "", 1);
-		createDraft($service, "secretariat@kosso.org", $message);
-		sendMessage($service, "secretariat@kosso.org", $message);
+		createDraft($service, "info@kosso.org", $message);
+		sendMessage($service, "info@kosso.org", $message);
 	}
 
 	if ($message) {
@@ -1422,8 +1422,8 @@ if ($_POST["flag"] == "find_password") {
 	];
 
 	$message = createMessage($language, "abstract", "", $email, "[ICOMES 2023]" . $subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
-	createDraft($service, "secretariat@kosso.org", $message);
-	sendMessage($service, "secretariat@kosso.org", $message);
+	createDraft($service, "info@kosso.org", $message);
+	sendMessage($service, "info@kosso.org", $message);
 }
 
 

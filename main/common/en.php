@@ -778,7 +778,7 @@
 
 <p><span class='terms_title'>Article 1 (Purpose)</span></p>
 
-<p class='ml40'>These Terms and Conditions provided by the ICOMES 2021 homepage <a href='http://icomes.or.kr/'>http://icomes.or.kr/</a> (hereinafter called the &quot;Society Homepage&quot;) operated by the Korean Society for the Study of Obesity (e-commerce business), are to regulate the website of the Society and the rights, duty and responsibility of the users for the use of internet-related services (hereinafter called &quot;Services&quot;).</p>
+<p class='ml40'>These Terms and Conditions provided by the ICOMES 2021 homepage <a href='http://kosso.org/'>http://kosso.org/</a> (hereinafter called the &quot;Society Homepage&quot;) operated by the Korean Society for the Study of Obesity (e-commerce business), are to regulate the website of the Society and the rights, duty and responsibility of the users for the use of internet-related services (hereinafter called &quot;Services&quot;).</p>
 
 <p class='ml40'>※&quot;These Terms and Conditions shall also apply to electronic commerce using PC communication, wireless, etc., unless it is against its nature.&quot;</p>
 
@@ -1253,7 +1253,7 @@
 		<p>
 			<span class='terms_big_title'>Personal Information Processing Policy</span>
 			<br/>       <br />
-			&lt; Korean Society for the Study of Obesity &gt;(&#39;http://icomes.or.kr/ &#39;hereinafter referred to as &#39;ICOMES 2021&#39;) establishes and discloses the following personal information processing policies in order to protect the personal information of the government entity and to deal with related grievances promptly and smoothly in accordance with Article 30 of the 「Personal Information Protection Act」       </p>
+			&lt; Korean Society for the Study of Obesity &gt;(&#39;http://kosso.org/ &#39;hereinafter referred to as &#39;ICOMES 2021&#39;) establishes and discloses the following personal information processing policies in order to protect the personal information of the government entity and to deal with related grievances promptly and smoothly in accordance with Article 30 of the 「Personal Information Protection Act」       </p>
 
 <p style='text-align:right'><br />
 ○ This privacy policy will take effect from May 3, 2021.</p>
@@ -1262,7 +1262,7 @@
     <br />
 <span class='terms_title'>Article 1(Purpose of processing personal information)</span></p>
 
-<p>&lt; Korean Society for the Study of Obesity &gt;(&#39;http://icomes.or.kr/&#39;&#39;hereinafter referred to as &#39;ICOMES 2021&#39;) processes personal information for the following purposes. The personal information being processed is not used for purposes other than the following purposes, and if the purpose of use changes, we will take necessary measures such as obtaining separate consent in accordance with Article 18 of the 「Personal Information Protection Act」.</p>
+<p>&lt; Korean Society for the Study of Obesity &gt;(&#39;http://kosso.org/&#39;&#39;hereinafter referred to as &#39;ICOMES 2021&#39;) processes personal information for the following purposes. The personal information being processed is not used for purposes other than the following purposes, and if the purpose of use changes, we will take necessary measures such as obtaining separate consent in accordance with Article 18 of the 「Personal Information Protection Act」.</p>
 
 <p class='ml40'><br />
 1. Homepage membership registration and management  <br />

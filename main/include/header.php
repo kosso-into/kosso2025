@@ -12,7 +12,7 @@ $locale = locale($language);
                 <div class="dday_bot">Today is <span><?= $today; ?></span></div>
             </div>
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
-            <div class="g_h_logo"><img src="/main/img/icon_logo_blue.svg" alt="" class="pointer"
+            <div class="g_h_logo"><img src="/main/img/icon_logo_ko.png" alt="" class="pointer"
                     onClick="javascript:location.href='/main/index.php'"></div>
             <ul class="g_h_tool">
                 <!-- <li><a href="/main/index.php">Home</a></li> -->
@@ -68,40 +68,39 @@ $locale = locale($language);
             <div class="nav_wrap pc_only">
                 <ul class="depth01 clearfix">
                     <li>
-                        <a href="/main/welcome.php">ICOMES 2023</a>
+                        <a href="/main/welcome.php">KSSO 2024</a>
                         <ul class="sub_nav">
                             <li><a href="/main/welcome.php">Welcome Message</a></li>
-                            <li><a href="/main/organizing_committee.php">Organization</a></li>
-                            <li><a href="/main/overview.php">Overview</a></li>
+                            <!--li><a href="/main/organizing_committee.php">Organization</a></li-->
+                            <!--li><a href="/main/overview.php">Overview</a></li-->
                             <!-- <li><a href="/main/venue.php">Venue</a></li> -->
-                            <li><a href="/main/photo.php">Photo Gallery</a></li>
+                            <!-- <li><a href="/main/photo.php">Photo Gallery</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/program_glance.php">Program</a>
+                        <a href="/main/comingsoon.php">프로그램</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/program_glance.php">Program at a Glance</a></li>
+                            <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
                             <li>
                                 <!-- <a href="/main/program_detail.php">Program in Detail</a> -->
                             </li>
-                            <li><a href="/main/program_detail.php">Scientific Program</a></li>
-                            <li><a href="/main/invited_speaker.php">Invited Speakers</a></li>
+                            <li><a href="/main/comingsoon.php">Scientific Program</a></li>
+                            <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/abstract_submission_guideline.php">Abstracts</a>
+                        <a href="/main/abstract_submission_guideline.php">초록</a>
                         <ul class="sub_nav">
                             <!-- <li><a href="/main/abstract_submission_guideline.php">Abstract Submission</a></li> -->
                             <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
                             <li>
                                 <!-- <a href="/main/abstract_submission_guideline.php">Abstract Submission Guideline</a> -->
                             </li>
-                            <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
-                            <li><a href="/main/abstract_submission.php" class="online_submission_alert">Online
-                                    Submission</a></li>
-                            <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
+                            <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
+                            <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a></li>
+                            <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
-                            <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
+                            <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
                         </ul>
                     </li>
                     <li>
@@ -200,45 +199,44 @@ $(document).ready(function() {
 	</div>
 	-->
     <div class="m_nav_top">
-        <img src="/main/img/icon_logo_blue.svg" alt="" class="pointer logo"
+        <img src="/main/img/icon_logo_ko.png" alt="" class="pointer logo"
             onclick="javascript:location.href='/main/index.php'">
         <button type="button" class="n_nav_close"><img src="/main/img/icons/m_nav_close.svg"></button>
     </div>
     <div class="m_nav">
         <ul class="m_nav_ul">
             <li class="m_nav_li">
-                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>ICOMES
-                        2023</span></a>
+                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>KSSO 2024</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m1"]) ? "block" : "none") ?>">
                     <li><a href="/main/welcome.php">Welcome Message</a></li>
-                    <li><a href="/main/organizing_committee.php">Organization</a></li>
+                    <!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
                     <li><a href="/main/overview.php">Overview</a></li>
 
-                    <li><a href="/main/photo.php">Photo Gallery</a></li>
+                    <li><a href="/main/photo.php">Photo Gallery</a></li> -->
                 </ul>
             </li>
             <li class="m_nav_li">
                 <a href="javascript:;"
-                    class="<?= (in_array($_page, $_page_config["m2"]) ? "show" : "") ?>"><span>Program</span></a>
+                    class="<?= (in_array($_page, $_page_config["m2"]) ? "show" : "") ?>"><span>프로그램</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m2"]) ? "block" : "none") ?>">
-                    <li><a href="/main/program_glance.php">Program at a Glance</a></li>
+                    <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
                     <!-- <li><a href="/main/program_detail.php">Program in Detail</a></li> -->
-                    <li><a href="/main/program_detail.php">Scientific Program</a></li>
-                    <li><a href="/main/invited_speaker.php">Invited Speakers</a></li>
+                    <li><a href="/main/comingsoon.php">Scientific Program</a></li>
+                    <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                 </ul>
             </li>
             <li class="m_nav_li">
                 <a href="javascript:;"
-                    class="<?= (in_array($_page, $_page_config["m3"]) ? "show" : "") ?>"><span>Abstracts</span></a>
+                    class="<?= (in_array($_page, $_page_config["m3"]) ? "show" : "") ?>"><span>초록</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m3"]) ? "block" : "none") ?>">
                     <!-- <li><a href="poster_abstract_submission.php">Submission Guideline</a></li> -->
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
-                    <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
+                    <li><a href="/main/abstract_submission_guideline.php">초록접수 안내</a></li>
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
-                    <li><a href="/main/abstract_submission.php" class="online_submission_alert">Online Submission</a>
+                    <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a>
                     </li>
-                    <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
-                    <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
+                    <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
+                    <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">

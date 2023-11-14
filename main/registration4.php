@@ -2,7 +2,7 @@
 	include_once('./include/head.php');
 	include_once('./include/header.php');
 
-	//if($_SERVER["HTTP_HOST"] == "www.kosso.org") {
+	//if($_SERVER["HTTP_HOST"] == "www.icomes.or.kr") {
 	//	echo "<script>location.replace('http://54.180.86.106/main/registration.php')</script>";
 	//}
 

@@ -32,21 +32,20 @@ $(document).ready(function(){
 	});
 
 	//pc header hover action 
-	//231110 주석
-	// $('.depth01 li a').on('mouseenter',function(){
-	// 	var bar_width = $(this).width();
-	// 	var left_position = $(this).position().left;
-	// 	$('.depth01 li a img').attr('src','./img/icons/nav_arrow_black.png');
-	// 	$(this).children('img').attr('src','./img/icons/nav_arrow_on.png');
-	// 	$('.bar').css('width', bar_width);
-	// 	$('.bar').css('left', left_position);
-	// 	$(this).parents('header').addClass('nav_show');
-	// 	$('.nav_dim').show();
-	// });
-	// $("header .depth01 li ul").mouseover(function(){
-	// 	var left_spot = $(this).parent("li").position().left;
-	// 	$('.bar').css('left', left_spot);
-	// });
+	$('.depth01 li a').on('mouseenter',function(){
+		var bar_width = $(this).width();
+		var left_position = $(this).position().left;
+		$('.depth01 li a img').attr('src','./img/icons/nav_arrow_black.png');
+		$(this).children('img').attr('src','./img/icons/nav_arrow_on.png');
+		$('.bar').css('width', bar_width);
+		$('.bar').css('left', left_position);
+		$(this).parents('header').addClass('nav_show');
+		$('.nav_dim').show();
+	});
+	$("header .depth01 li ul").mouseover(function(){
+		var left_spot = $(this).parent("li").position().left;
+		$('.bar').css('left', left_spot);
+	});
 
 	//footer s_logo_list
 	$('.s_logo_list').slick({

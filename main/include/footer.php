@@ -13,13 +13,13 @@
             ?>
             <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
             <li>
-                <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" target="_blank" class="type2 pink">
+                <a href="" target="_blank" class="type2 pink">
                     <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
-                    Abstract Book <br />Download
+                    초록집 <br />Download
                 </a>
             </li>
             <li>
-                <a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" target="_blank" class="type2 violet">
+                <a href="" target="_blank" class="type2 violet">
                     <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
                     Program Book <br />Download
                 </a>
@@ -28,12 +28,12 @@
             } else {
             ?>
             <li>
-                <button type="button" class="online_registration_alert">
-                    <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>등록 접수
+                <button type="button" class="not_yet">
+                    <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>등록
                 </button>
             </li>
             <li>
-                <button type="button" class="online_submission_alert">
+                <button type="button" class="not_yet">
                     <i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>초록 접수
                 </button>
             </li>
@@ -44,12 +44,12 @@
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
             <li><button type="button" onClick="alert('Need to login.')"><i><img src="/main/img/icons/tool_mypage.svg"
-                            alt=""></i>마이 페이지</button></li>
+                            alt=""></i>My page</button></li>
             <?php
             } else {
             ?>
             <li><button type="button" onClick="location.href='/main/mypage.php'"><i><img
-                            src="/main/img/icons/tool_mypage.svg" alt=""></i>마이 페이지</button></li>
+                            src="/main/img/icons/tool_mypage.svg" alt=""></i>My Page</button></li>
             <?php
             }
             ?>
@@ -58,11 +58,36 @@
         <button type="button" class="btn_top"><img src="/main/img/icons/icon_top_btn.svg" alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
-
-
+    <!--
     <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
-
+            <li><img src="./img/sponsor/logo01.png" alt=""></li>
+            <li><img src="./img/sponsor/logo02.png" alt=""></li>
+            <li><img src="./img/sponsor/logo03.png" alt=""></li>
+            <li><img src="./img/sponsor/logo04.png" alt=""></li>
+            <li><img src="./img/sponsor/logo05.png" alt=""></li>
+            <li><img src="./img/sponsor/logo06.png" alt=""></li>
+            <li><img src="./img/sponsor/logo07.png" alt=""></li>
+            <li><img src="./img/sponsor/logo08.png" alt=""></li>
+            <li><img src="./img/sponsor/logo09.png" alt=""></li>
+            <li><img src="./img/sponsor/logo10.png" alt=""></li>
+            <li><img src="./img/sponsor/logo11.png" alt=""></li>
+            <li><img src="./img/sponsor/logo12.png" alt=""></li>
+            <li><img src="./img/sponsor/logo13.png" alt=""></li>
+            <li><img src="./img/sponsor/logo14_1.png" style="max-height:20px;" alt=""></li>
+            <li><img src="./img/sponsor/logo15.png" alt=""></li>
+            <li><img src="./img/sponsor/logo16.png" alt=""></li>
+            <li><img src="./img/sponsor/logo17.png" alt=""></li>
+            <li><img src="./img/sponsor/logo18.png" alt=""></li>
+            <li><img src="./img/sponsor/logo19.png" alt=""></li>
+            <li><img src="./img/sponsor/logo20.png" alt=""></li>
+            <li><img src="./img/sponsor/logo21.png" alt=""></li>
+            <li><img src="./img/sponsor/logo22.png" alt=""></li>
+            <li><img src="./img/sponsor/logo23.png" alt=""></li>
+        </ul>
+    </div> -->
+    <div class="sponsor_logo-wrap container">
+        <ul class="s_logo_list">
             <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
             <li><a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a></li>
@@ -97,18 +122,23 @@
             <div class="f_bottom clearfix">
                 <div class="footer_l">
                     <div class="clearfix">
-                        <img src="/main/img/icons/fl01.png" alt="">
+                        <img src="/main/img/icons/fl05.png" alt="">
+                        <!-- <img src="/main/img/icons/fl02.png" alt=""> -->
+                        <!-- <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;" src="/main/img/icons/fl03.png" alt=""></a> -->
+                        <!-- <img src="/main/img/icons/fl04.png" alt=""> -->
                     </div>
                 </div>
                 <div class="footer_c">
                     <!-- <p>Organized by</p> -->
-                    <p>대한비만학회</p>
+                    <p>대한비만학회(KSSO)</p>
                     <ul>
-                        <li><b>CONTACT NUMBER</b> 02-6941-0888</li>
-                        <li><b>FAX</b> 02-364-0883</li>
-                        <li><b>E-MAIL</b> <a href="mailto:webmaster@kosso.or.kr"
+                        <li>[04195] 서울특별시 마포구 만리재로 14 르네상스 타워 1010호</li>
+                        <li>T. 82-2-364-0886,0887</li>
+                        <li>F. 82-2-364-0883</li>
+                        <li>E. <a href="mailto:webmaster@kosso.or.kr"
                                 class="font_inherit link">webmaster@kosso.or.kr</a></li>
-                        <li><b>ADDRESS</b> [04195] 서울특별시 마포구 만리재로 14르네상스 타워 1010호</li>
+                        <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">www.kosso.or.kr</a>
+                        </li>
                     </ul>
                     <!--
                     <ul>
@@ -124,11 +154,12 @@
                 </div>
                 <div class="footer_r">
                     <!-- <p>Conference Secretariat</p> -->
-                    <p>제57차 대한비만학회 춘계학술대회 운영 사무국</p>
+                    <p>제58차 대한비만학회 춘계학술대회 운영 사무국</p>
                     <ul>
-                        <li><b>CONTACT NUMBER</b> 02-2039-5706</li>
-                        <li><b>E-MAIL</b> <a href="mailto:kssoasc2023@into-on.com"
-                                class="font_inherit link">kssoasc2023@into-on.com</a></li>
+                        <li>[04315] 서울특별시 용산구 백범로 341, 금호리첸시아 A블럭 3층 308호</li>
+                        <li>T. 82-2-2285-2582</li>
+                        <li>F. 82-2-2285-2530</li>
+                        <li>E. <a href="mailto:TBD@TBD.com" class="font_inherit link">TBD@TBD.com</a></li>
                     </ul>
                     <!--
                     <ul>

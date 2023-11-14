@@ -10,8 +10,8 @@ if(!$registration_idx) {
 }
 
 //경로 주의
-if($_SERVER["HTTP_HOST"] == "www.kosso.org") {
-    echo "<script>location.replace('https://kosso.org/main/registration2_test.php?idx={$registration_idx}')</script>";
+if($_SERVER["HTTP_HOST"] == "www.icomes.or.kr") {
+    echo "<script>location.replace('https://icomes.or.kr/main/registration2_test.php?idx={$registration_idx}')</script>";
 }
 
 //결제번호 생성
@@ -425,7 +425,7 @@ include_once(D9_PATH."/plugin/KG_INICIS/inicis_loader.php");
         </div>
 
         <!-- 엑심베이 결제 -->
-        <form class="form-horizontal" name="regForm" method="post" action="https://kosso.org/main/plugin/eximbay/request.php">
+        <form class="form-horizontal" name="regForm" method="post" action="https://icomes.or.kr/main/plugin/eximbay/request.php">
             <!-- 결제에 필요 한 필수 파라미터 -->
             <input type="hidden" name="ver" value="230" /><!-- 연동 버전 -->
             <input type="hidden" name="txntype" value="PAYMENT" /><!-- 거래 타입 -->
@@ -433,8 +433,8 @@ include_once(D9_PATH."/plugin/KG_INICIS/inicis_loader.php");
 
             <!-- statusurl(필수 값) : 결제 완료 시 Back-end 방식으로 Eximbay 서버에서 statusurl에 지정된 가맹점 페이지를 Back-end로 호출하여 파라미터를 전송 -->
             <!-- 스크립트, 쿠키, 세션 사용 불가 -->
-            <input type="hidden" name="statusurl" value="https://kosso.org/main/plugin/eximbay/status.php" />
-            <input type="hidden" name="returnurl" value="https://kosso.org/main/plugin/eximbay/return.php" />
+            <input type="hidden" name="statusurl" value="https://icomes.or.kr/main/plugin/eximbay/status.php" />
+            <input type="hidden" name="returnurl" value="https://icomes.or.kr/main/plugin/eximbay/return.php" />
 
             <!--결제 완료 시 Front-end 방식으로 사용자 브라우저 상에 호출되어 보여질 가맹점 페이지 -->
 

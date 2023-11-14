@@ -755,7 +755,7 @@
 
 <p><span style='font-size:20px;font-weight:bold;'>제1조(목적)</span></p>
 
-<p>이 약관은 대한비만학회(전자상거래 사업자)가 운영하는 ICOMES 2021 홈페이지&ldquo;http://icomes.or.kr/&rdquo;(이하 &ldquo;학회 홈페이지&rdquo;라 한다)에서 제공하는 인터넷 관련 서비스(이하 &ldquo;서비스&rdquo;라 한다)를 이용함에 있어 학회 홈페이지와 이용자의 권리&middot;의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+<p>이 약관은 대한비만학회(전자상거래 사업자)가 운영하는 ICOMES 2021 홈페이지&ldquo;http://kosso.org/&rdquo;(이하 &ldquo;학회 홈페이지&rdquo;라 한다)에서 제공하는 인터넷 관련 서비스(이하 &ldquo;서비스&rdquo;라 한다)를 이용함에 있어 학회 홈페이지와 이용자의 권리&middot;의무 및 책임사항을 규정함을 목적으로 합니다.</p>
 
 <p>&nbsp; ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」</p>
 
@@ -1239,7 +1239,7 @@
         <p><span style='font-size:36px'>개인정보처리방침&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span><br />
 <br />
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
-&lt; 대한비만학회 &gt;(&#39;http://icomes.or.kr/ &#39;이하 &#39;ICOMES 2021&#39;)은(는) 「개인정보 보호법」 제30조에 따라 정부주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립&middot;공개합니다.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+&lt; 대한비만학회 &gt;(&#39;http://kosso.org/ &#39;이하 &#39;ICOMES 2021&#39;)은(는) 「개인정보 보호법」 제30조에 따라 정부주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립&middot;공개합니다.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
 
 <p style='text-align: right;'>&nbsp;<br />
 ○ 이 개인정보처리방침은 2021년 5월 3부터 적용됩니다.&nbsp;</p>
@@ -1247,7 +1247,7 @@
 <p><br />
 <span style='font-size:20px';font-weight:bold;>제1조(개인정보의 처리 목적)</span></p>
 
-<p>&lt; 대한비만학회 &gt;(&#39;http://icomes.or.kr/&#39;이하 &#39;ICOMES 2021&#39;)은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 겨우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.&nbsp;</p>
+<p>&lt; 대한비만학회 &gt;(&#39;http://kosso.org/&#39;이하 &#39;ICOMES 2021&#39;)은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 겨우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.&nbsp;</p>
 
 <p style='margin-left: 40px;'>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
 1. 홈페이지 회원가입 및 관리&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
