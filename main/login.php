@@ -13,7 +13,7 @@ if ($_SESSION["USER"]) {
     <!-- 백그라운드 이미지 slick -->
     <!--container -->
     <div>
-        <a href="./index.php" class="logo"><img src="./img/image_logo_2023_white.png"></a>
+        <a href="./index.php" class="logo"><img src="./img/app_loading_logo.png"></a>
         <form>
             <ul>
                 <li>
@@ -28,11 +28,10 @@ if ($_SESSION["USER"]) {
             <!-- </div> -->
             <button type="button" class="btn login_btn main_btn">로그인</button>
             <div class="btn_wrap clearfix2">
-                <button type="button" class="btn gray_line_btn" onclick="window.location.href='./find_password.php';">PW
-                    찾기</button>
+                <button type="button" class="btn gray_line_btn"
+                    onclick="window.location.href='./find_password.php';">비밀번호 찾기</button>
                 <button type="button" class="btn gray_line_btn"
                     onclick="window.location.href='./signup.php';">회원가입</button>
-                <p class="login_alert">처음 방문 하신 분은 회원가입을 먼저 진행해 주십시오.</p>
             </div>
         </form>
     </div>
@@ -56,10 +55,10 @@ function login() {
     var password = $("input[name=password]").val();
 
     if (email == "") {
-        alert(locale(language.value)("check_email"));
+        alert("ID(email)을 입력해주세요.");
         return false;
     } else if (password == "") {
-        alert(locale(language.value)("check_password"));
+        alert("비밀번호를 입력해주세요.");
         return false;
     }
 
@@ -90,15 +89,15 @@ function login() {
 
                 location.href = href_path;
             } else if (res.code == 400) {
-                alert("이메일 주소를 확인해 주십시오");
+                alert("이메일을 확인해주세요.");
                 return false;
             } else if (res.code == 401) {
-                alert("비밀번호를 확인해주십시오");
+                alert("비밀번호를 확인해주세요.");
                 return false;
             } else if (res.code == 402) {
                 //alert(locale(language.value)("not_certified_email"));
                 alert(
-                    "An account confirmation email has been sent to the email address you set during registration. Please check the email sent and verify your account."
+                    "회원 가입 시 설정한 이메일 주소로 계정 확인 이메일이 전송되었습니다. 받은 이메일을 확인하고 계정을 인증해 주세요."
                 );
                 return false;
             } else {

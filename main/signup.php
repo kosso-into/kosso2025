@@ -28,7 +28,7 @@ $nation_list = get_data($nation_query);
 
 .korea_only,
 .korea_radio {
-    display: revert;
+    display: none;
 }
 
 .korea_only.on,
@@ -38,7 +38,7 @@ $nation_list = get_data($nation_query);
 
 .mo_korea_only,
 .korea_radio {
-    display: revert;
+    display: none;
 }
 
 .mo_korea_only.on,
@@ -98,11 +98,11 @@ $nation_list = get_data($nation_query);
 
 /* 2022-05-10 HUBDNC LJH2 수정 */
 .pc_only input.tel_number {
-    width: 96px;
+    width: 32%;
 }
 
 .pc_only input.tel_numbers {
-    width: 115px;
+    width: 32%;
     margin-left: 2px;
 }
 
@@ -126,6 +126,11 @@ $nation_list = get_data($nation_query);
     .mb_only input.tel_numbers.tel_phone2 {
         width: calc(33% - 5px);
     }
+
+    /* .mb_only input.tel_numbers.tel_phone2 {
+        width: 100%;
+        margin: 10px 0 0;
+    } */
 }
 </style>
 <script>
@@ -142,6 +147,75 @@ $(document).ready(function() {
         }
     });
 
+    $("select[name=nation_no]").change(function() {
+        var value = $(this).val();
+
+        if (value == 25) {
+            $(".red_alert").eq(0).html("");
+            $(".red_alert").eq(1).html("");
+            $(".red_alert").eq(2).html("");
+            $(".red_alert").eq(3).html("");
+            $(".red_alert").eq(4).html("");
+            $(".korea_only").addClass("on");
+
+            $(".korea_radio").addClass("on");
+        } else {
+            $(".korea_radio").removeClass("on");
+            $(".korea_only").removeClass("on");
+            $(".ksola_signup").removeClass("on");
+
+            remove_value();
+            $("#user2").prop('checked', true);
+        }
+
+        var nt = 82;
+        $("input[name=nation_tel]").val(nt);
+        $("input[name=tel_nation_tel]").val(nt);
+
+        if (nt != 82) {
+            $(".red_alert").eq(0).html("good");
+            $(".red_alert").eq(1).html("good");
+            $(".red_alert").eq(2).html("good");
+            $(".red_alert").eq(3).html("good");
+            $(".red_alert").eq(4).html("good");
+        }
+    });
+    $("select[name=nation_no]").trigger("change")
+
+
+    $("input[name=food]").change(function() {
+
+        var this_chk = $(this).val();
+        if (this_chk == "Others") {
+            $(".other_radio").next("label").find("input").addClass("on");
+        } else {
+            $(".other_radio").next("label").find("input").removeClass("on");
+        }
+    });
+
+    //$(".select_others").change(function(){
+    //	
+    //	var this_chk = $(this).val();
+    //	if (this_chk == "Others"){
+    //		$(this).next().attr("style", "display:block;");
+    //	} else {
+    //		$(this).next().attr("style", "display:none;");
+    //		$(this).next().val("");
+    //	}
+    //});
+
+    // Title 변경 시 (230518)
+    $("select[name=title], select[name=mo_title]").on("change", function() {
+        var _target_val = parseInt($(this).val());
+        if (_target_val == 4) {
+            $("[name=title_input], [name=mo_title_input]").show();
+            $("[name=title_input], [name=mo_title_input]").parent().addClass("on");
+        } else {
+            $("[name=title_input], [name=mo_title_input]").hide();
+            $("[name=title_input], [name=mo_title_input]").parent().removeClass("on");
+        }
+    });
+
 
     $(".not_checkbox").click(function() {
         var _this = $(this).is(":checked");
@@ -155,6 +229,18 @@ $(document).ready(function() {
         }
     });
 
+    //$("input[name=phone]").change(function(){
+
+    //	var nation_tel = $("input[name=nation_tel]").val();
+    //	var phone_num = $("input[name=phone]").val();
+    //	if (nation_tel == "82"){
+    //		if(!phone_num.includes('-') || phone_num.length < 9){
+    //			alert("Please Check phone format\n ex) 0000-0000");
+    //			$("input[name=phone]").val("");
+    //		}
+    //	}
+
+    //});
 });
 
 function remove_value() {
@@ -175,7 +261,17 @@ function remove_value() {
 
 
 $(document).ready(function() {
+    //$("#category").change(function(){
+    //	var value = $(this).val();
+    //	if (value == "Others"){
+    //		$(this).addClass("on");
+    //		$(this).next("input").addClass("on");
+    //	} else {
+    //		$(this).removeClass("on");
+    //		$(this).next("input").removeClass("on");
+    //	}
 
+    //});
     $("#mo_user1").change(function() {
         if ($("#mo_user1").prop('checked') == true) {
             $(".mo_ksola_signup").addClass("on");
@@ -188,7 +284,55 @@ $(document).ready(function() {
             $("input[name=ksola_member_type]").val("");
         }
     });
+    $("select[name='mo_nation_no']").change(function() {
 
+        var value = $(this).val();
+
+        if (value == 25) {
+            $(".mo_red_alert").eq(0).html("");
+            $(".mo_red_alert").eq(1).html("");
+            $(".mo_red_alert").eq(2).html("");
+            $(".mo_red_alert").eq(3).html("");
+            $(".mo_red_alert").eq(4).html("");
+
+            $(".mo_korea_only").addClass("on");
+            $(".mo_korea_radio").addClass("on");
+        } else {
+            $(".mo_korea_radio").removeClass("on");
+            $(".mo_korea_only").removeClass("on");
+            $(".mo_ksola_signup").removeClass("on");
+
+            remove_value();
+            $("#mo_user2").prop('checked', true);
+        }
+
+        var nt = $("#mo_nation_no option:selected").data("nt");
+        $("input[name=mo_nation_tel]").val(nt);
+        $("input[name=mo_tel_nation_tel]").val(nt);
+
+        if (nt != 82) {
+            $(".mo_red_alert").eq(0).html("good");
+            $(".mo_red_alert").eq(1).html("good");
+            $(".mo_red_alert").eq(2).html("good");
+            $(".mo_red_alert").eq(3).html("good");
+            $(".mo_red_alert").eq(4).html("good");
+        }
+    });
+
+    $("select[name='mo_nation_no']").trigger("change")
+
+    $("input[name=mo_food]").change(function() {
+
+        var this_chk = $(this).val();
+        //console.log(this_chk);
+        if (this_chk == "Others") {
+            //$(".mo_other_radio").next("label").find("input").addClass("on");
+            $("input[name=mo_short_input]").removeClass("mo_other_radio");
+        } else {
+            //$(".mo_other_radio").next("label").find("input").removeClass("on");
+            $("input[name=mo_short_input]").addClass("mo_other_radio");
+        }
+    });
 });
 
 function remove_value() {
@@ -209,7 +353,7 @@ function remove_value() {
 </script>
 
 <section class="container form_page sign_up">
-    <h1 class="page_title">Sign Up</h1>
+    <h1 class="page_title">회원가입</h1>
     <div class="inner">
         <div class="sub_background_box">
             <div class="sub_inner">
@@ -223,32 +367,28 @@ function remove_value() {
 				-->
                 </div>
                 <div class="term_wrap">
-                    <h3 class="title">Use of Personal Information</h3>
+                    <h3 class="title">개인정보 수집 및 이용에 관한 안내</h3>
                     <div class="term_box">
-                        <strong>Purpose</strong>
-                        <p>The Korean Society for the Study of Obesity (KSSO) provides online pre-registration services
-                            for ICOMES 2023. Based on your personal information, you can sign up for the conference and
-                            complete the payment for registration.</p>
-                        <strong>Collecting Personal Information</strong>
-                        <p>ICOMES 2023 requires you to provide your personal information to complete pre-registration
-                            online. You will be asked to enter your name, ID (email), password, date of birth,
-                            institution/organization, department, mobile, and telephone number.</p>
-                        <strong>Storing Personal Information</strong>
-                        <p>ICOMES 2023 will continue to store your personal information to provide you with useful
-                            services, such as conference updates and newsletters.</p>
+                        <strong>목적</strong>
+                        <p>비만학회(KSSO)는 춘계학술대회를 위한 온라인 사전 등록 서비스를 제공합니다. 귀하의 개인정보를 기반으로 회원가입 및 등록 비용 결제를 완료할 수 있습니다.</p>
+                        <strong>개인정보 수집</strong>
+                        <p>대한 비만학회 춘계학술대회에서는 온라인 사전 등록을 완료하기 위해 귀하께서 개인정보를 제공하셔야 합니다. 이름, 신분증(ID) 이메일, 비밀번호, 생년월일, 소속
+                            기관/단체, 부서, 휴대전화 및 전화번호를 입력하도록 요청됩니다.</p>
+                        <strong>개인정보 보관</strong>
+                        <p>대한 비만학회 춘계학술대회는 귀하에게 회의 업데이트 및 뉴스레터와 같은 유용한 서비스를 제공하기 위해 귀하의 개인정보를 저장할 것입니다.</p>
                     </div>
                     <div class="term_label">
                         <input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1"
                             name="terms1" value="Y">
-                        <label for="terms1">I agree to the collection and use of my personal information.
+                        <label for="terms1">개인정보 수집 및 이용에 동의합니다.
                             <!-- <a href="javascript:;" class="term1_btn red_txt"> Details &gt;</a> -->
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-        <h3 class="title">제 58차 대한비만학회 춘계학술대회 가입을 환영합니다!<span class="mini_alert"> (<span class="red_txt">*</span>는 필수
-                항목입니다.) </span></h3>
+        <h3 class="title">개인정보 <span class="mini_alert">
+                <span class="red_txt">*</span>는 필수 입력입니다.</span></h3>
         <form class="table_wrap">
             <div class="pc_only">
                 <table class="table detail_table">
@@ -257,7 +397,31 @@ function remove_value() {
                         <col width="*" />
                     </colgroup>
                     <tbody>
-                        <tr>
+                        <tr style="display: none;">
+                            <th><span class="red_txt">*</span><?= $locale("country") ?></th>
+                            <td>
+                                <div class="max_long">
+                                    <select id="nation_no" name="nation_no" class="required" value="25">
+                                        <option value="25" data-nt="82" selected hidden>Choose</option>
+                                        <?php
+										foreach ($nation_list as $n) {
+											if ($language == "ko") {
+												$nation = $n["nation_ko"];
+											} else {
+												$nation = $n["nation_en"];
+											}
+										?>
+                                        <option data-nt="<?= $n['nation_tel']; ?>" value="<?= $n["idx"] ?>"
+                                            <?= $select_option ?>><?= $nation ?></option>
+                                        <?php
+										}
+										?>
+                                    </select>
+                                    <!-- <span class="mini_alert red_txt red_alert_option"></span> -->
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="korea_radio">
                             <th class="nowrap"><span class="red_txt">*</span>대한비만학회(KSSO) 회원 여부</th>
                             <td>
                                 <div class="label_wrap">
@@ -271,6 +435,7 @@ function remove_value() {
                         <tr class="ksola_signup">
                             <th style="background-color:transparent"></th>
                             <td>
+                                <!-- <button type="button" class="btn green_btn long_btn" onclick="javascript:window.open('https://www.lipid.or.kr/member/member_confirm.php')">한국지질동맥경화학회 회원정보로 간편 가입</button> -->
                                 <p>대한비만학회 회원 정보로 간편 가입</p>
                                 <ul class="simple_join clearfix">
                                     <li>
@@ -294,8 +459,7 @@ function remove_value() {
                                         </label>
                                     </div>
                                     <a href="https://www.kosso.or.kr/join/search_id.html" target="_blank"
-                                        class="id_pw_find">KSSO 회원
-                                        ID/PW 찾기</a>
+                                        class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
                                 </div>
 
                                 <!-- <div> -->
@@ -304,48 +468,103 @@ function remove_value() {
                             </td>
                         </tr>
                         <tr>
-                            <th><span class="red_txt">*</span>ID(E-Mail)</th>
+                            <th><span class="red_txt">*</span><?= $locale("id") ?></th>
                             <td>
                                 <div class="max_long responsive_float">
                                     <input type="text" name="email" class="required" maxlength="50">
                                     <!-- <span class="mini_alert red_txt red_alert"></span> -->
                                 </div>
-
+                                <span class="mini_alert brown_txt">가입 이후에 수정하기 어렵습니다. ID를 정확히 입력했는지 확인해 주세요.</span>
                             </td>
                         </tr>
                         <tr>
-                            <th><span class="red_txt">*</span><?= $locale("password") ?></th>
+                            <th><span class="red_txt">*</span>비밀번호</th>
                             <td>
                                 <div class="max_long">
                                     <input class="passwords" type="password" name="password" class="required"
-                                        placeholder="Password" maxlength="60">
+                                        placeholder="비밀번호" maxlength="60">
                                     <!-- <span class="mini_alert red_txt red_alert"></span> -->
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <th><span class="red_txt">*</span>Password 확인</th>
+                            <th><span class="red_txt">*</span>비밀번호 재확인</th>
                             <td>
                                 <div class="max_long">
                                     <input class="passwords" type="password" name="password2" class="required"
-                                        placeholder="Re-type Password" maxlength="60">
+                                        placeholder="비밀번호 재확인" maxlength="60">
                                     <!-- <span class="mini_alert red_txt red_alert"></span> -->
                                 </div>
                             </td>
                         </tr>
                         <!-- Name -->
-                        <tr class="korea_only">
-                            <th><span class="red_txt">*</span>성명</th>
+                        <tr style="display: none;">
+                            <th><span class="red_txt">*</span><?= $locale("name") ?></th>
                             <td class="name_td clearfix">
                                 <div class="max_normal">
-                                    <input name="first_name_kor" type="text" placeholder="이름" maxlength="60">
+                                    <input name="first_name" type="text" placeholder="First name" maxlength="60">
+                                    <!-- <span class="mini_alert red_txt red_alert"></span> -->
+                                    <!-- <span class="mini_alert red_txt red_alert"></span> -->
                                 </div>
                                 <div class="max_normal">
+                                    <input name="last_name" type="text" placeholder="Last name" maxlength="60">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="korea_only">
+                            <th><span class="red_txt">*</span>성명</th>
+                            <!-- <th><span class="red_txt">*</span><?= $locale("name") ?>(KOR)</th> -->
+                            <td class="clearfix">
+                                <div class="max_long">
+                                    <input name="first_name_kor" type="text" maxlength="60">
+                                </div>
+                                <div style="display: none;" class="max_normal">
                                     <input name="last_name_kor" type="text" placeholder="성" maxlength="60">
                                 </div>
                             </td>
                         </tr>
-
+                        <tr style="display: none;">
+                            <th><span class="red_txt">*</span>Title</th>
+                            <td class="clearfix">
+                                <div class="max_normal">
+                                    <select name="title" id="title" class="title_select">
+                                        <option value="0" selected>Professor</option>
+                                        <option value="1">Dr.</option>
+                                        <option value="2">Mr.</option>
+                                        <option value="3">Ms.</option>
+                                        <option value="4">Others</option>
+                                    </select>
+                                </div>
+                                <div class="max_normal hide_input">
+                                    <input type="text" id="title_input" name="title_input">
+                                </div>
+                            </td>
+                        </tr>
+                        <!--
+						<tr>
+							<th><span class="red_txt">*</span>Title</th>
+							<td>
+								<div class="max_long">
+									<select name="title" id="title">
+										<option value="Professor">Professor</option>
+										<option value="Dr.">Dr.</option>
+										<option value="Mr.">Mr.</option>
+										<option value="Ms.">Ms.</option>
+										<option value="Others">Others</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						-->
+                        <tr style="display: none;">
+                            <th><span class="red_txt">*</span><?= $locale("affiliation") ?></th>
+                            <td>
+                                <div class="max_long">
+                                    <input type="text" name="affiliation" maxlength="100">
+                                    <!-- <span class="mini_alert red_txt red_alert"></span> -->
+                                </div>
+                            </td>
+                        </tr>
                         <tr class="korea_only">
                             <th><span class="red_txt">*</span>소속</th>
                             <!-- <th><span class="red_txt">*</span><?= $locale("affiliation") ?>(KOR)</th> -->
@@ -357,6 +576,33 @@ function remove_value() {
                             </td>
                         </tr>
                         <!-- Department -->
+                        <tr style="display: none;">
+                            <th><span class="red_txt">*</span><?= $locale("department") ?></th>
+                            <td>
+                                <div class="max_long">
+                                    <input type="text" name="department" maxlength="100">
+                                    <!-- <span class="mini_alert red_txt red_alert"></span> -->
+                                </div>
+                            </td>
+                            <!--
+							<td class="clearfix">
+								<div class="max_normal responsive_float">
+									<select name="department" id="department">
+										<option value="" selected hidden>Choose</option>
+									<?php
+									$department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
+
+									foreach ($department_arr as $d_arr) {
+										echo '<option value="' . $d_arr . '">' . $d_arr . '</option>';
+									}
+									?>
+									</select>
+									<!-- <span class="mini_alert red_txt red_alert_option"></span>
+								</div>
+								<!-- <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
+								<span class="mini_alert"></span>
+							</td> -->
+                        </tr>
                         <tr class="korea_only">
                             <th><span class="red_txt">*</span>부서</th>
                             <!-- <th><span class="red_txt">*</span><?= $locale("department") ?>(KOR)</th> -->
@@ -366,23 +612,225 @@ function remove_value() {
                                     <!-- <span class="mini_alert red_txt red_alert"></span> -->
                                 </div>
                             </td>
+                            <!--
+							<td class="clearfix">
+								<div class="max_normal responsive_float">
+									<select name="department_kor" id="department_kor">
+										<option value="" selected hidden>Choose</option>
+									<?php
+									$department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
 
+									foreach ($department_arr as $d_arr) {
+										echo '<option value="' . $d_arr . '">' . $d_arr . '</option>';
+									}
+									?>
+									</select>
+									<!-- <span class="mini_alert red_txt red_alert_option"></span>
+								</div>
+								<!-- <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
+								<span class="mini_alert"></span>
+							</td> -->
+                        </tr>
+                        <!-- <tr> -->
+                        <!-- <th><span class="red_txt">*</span>Category</th> -->
+                        <!-- <td class="clearfix"> -->
+                        <!-- 	<div class="max_normal responsive_float clearfix"> -->
+                        <!-- 		<select name="category" id="category" class="select_others"> -->
+                        <!-- 			<option value="" selected hidden>Choose</option> -->
+                        <?php
+						/*$category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Surgeon(Military)", "Public Health Doctor", "Corporate Member", "Student", "Others");
+
+										foreach($category_arr as $a_arr) {
+											echo '<option value="'.$a_arr.'">'.$a_arr.'</option>';
+										}*/
+						?>
+                        <!-- </select> -->
+                        <!-- <input type="text" name="category_input" class="input_others en_check"> -->
+                        <!-- <span class="mini_alert red_txt red_alert_option"></span> -->
+                        <!-- </div> -->
+                        <!-- <span class="mini_alert">(Professor, Specialist, Fellow, Resident, Researcher, Military Medical Officer, Nurse,<br/>Nutritionist, Student, Pharmacist, Corporate Member, Others)</span> -->
+                        <!-- 		<span class="mini_alert"></span> -->
+                        <!-- 	</td> -->
+                        <!-- </tr> -->
+                        <!--2022-05-09 추가사항-->
+                        <!--
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>평점 신청</th>
+							<td class="clearfix">
+								<div class="label_wrap">
+									<input type="radio" class="radio" name="necessity1" id="necessity">
+									<label for="necessity">필요</label>	
+									<input checked="" type="radio" class="radio" name="necessity1" id="unnecessary">
+									<label for="unnecessary">불필요</label>	
+								</div>
+							</td>
+						</tr>
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>의사 면허번호</th>
+							<td>
+								<div class="max_long">
+									<input type="checkbox" class="checkbox input not_checkbox" id="licence_number" name="licence_number2" value="Not applicable"><label for="licence_number">Not applicable</label>
+									<input name="licence_number" type="text" maxlength="60" class="kor_check_number">
+									<span class="mini_alert red_txt red_alert">good</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>전문의 번호</th>
+							<td>
+								<div class="max_long">
+									<input type="checkbox" class="checkbox input not_checkbox" id="specialty_number" name="specialty_number2" value="Not applicable"><label for="specialty_number">Not applicable</label>
+									<input name="specialty_number" type="text" maxlength="60" class="kor_check_number">
+									<span class="mini_alert red_txt red_alert">good</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>영양사 면허번호</th>
+							<td>
+								<div class="max_long">
+									<input type="checkbox" class="checkbox input not_checkbox" id="nutritionist_number" name="nutritionist_number2" value="Not applicable"><label for="nutritionist_number">Not applicable</label>
+									<input name="nutritionist_number" type="text" maxlength="60" class="kor_check_number">
+									<span class="mini_alert red_txt red_alert">good</span>
+								</div>
+							</td>
+						</tr>
+						-->
+                        <tr style="display: none;">
+                            <th rowspan="2"><span class="red_txt">*</span>Mobile Phone Number</th>
+                            <td>
+                                <div class="max_normal phone">
+                                    <input class="numbers" name="nation_tel" type="text" maxlength="60" readonly>
+                                    <input name="phone" id="phone" type="text" maxlength="15">
+                                </div>
+                                <!-- <div> -->
+                                <!-- 	<span class="mini_alert red_txt red_alert"></span> -->
+                                <!-- 	<span class="mini_alert red_txt red_alert"></span> -->
+                                <!-- <div> -->
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="font_small brown_txt">Please enter your phone number including the country
+                                codes.<br />(Example: 82 1012341234)</td>
                         </tr>
                         <!--2022-05-09 추가사항-->
                         <tr>
-                            <th><span class="red_txt">*</span>휴대폰 번호</th>
+                            <th rowspan="2"><span class="red_txt">*</span>휴대폰 번호</th>
                             <td>
-                                <input class="tel_number tel_phone" name="telephone" type="text" maxlength="60">
-                                <input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
-                                <input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
+                                <div class="max_long">
+                                    <!-- <input class="tel_number tel_phone" name="tel_country_tel" type="hidden"> -->
+                                    <input class="tel_number tel_phone" name="telephone" type="text" maxlength="60">
+                                    <input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
+                                    <input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
+                                </div>
+                                <!-- <div> -->
+                                <!-- 	<span class="mini_alert red_txt red_alert"></span> -->
+                                <!-- 	<span class="mini_alert red_txt red_alert"></span> -->
+                                <!-- <div> -->
                             </td>
                         </tr>
+                        <tr style="display:none">
+                            <td class="font_small brown_txt">Please enter your telephone number including the country
+                                and area codes.<br />(Example: 82 2 12345678)</td>
+                        </tr>
+                        <tr style="display: none;">
+                            <th><span class="red_txt">*</span>Date of Birth</th>
+                            <td>
+                                <div class="max_long">
+                                    <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy"
+                                        id="datepicker" onKeyup="birthChk(this)" value="08-03-2023" />
+                                    <!-- <span class="mini_alert red_txt red_alert">good</span> -->
+                                </div>
+                            </td>
+                        </tr>
+                        <!--
+						<tr>
+							<th>Special Request for Food</th>
+							<td>
+								<div class="label_wrap">
+									<input checked value="None" type="radio" id="none" class="radio" name="food">
+									<label for="none">None</label>
+									<input value="Vegetarian" type="radio" id="vegetarian" class="radio" name="food">
+									<label for="vegetarian">Vegetarian</label>
+									<input value="Halal" type="radio" id="halal" class="radio" name="food">
+									<label for="halal">Halal</label>
+									<input value="Others" type="radio" id="Others" class="radio other_radio" name="food">
+									<label for="Others">
+										Others
+										<input name="short_input" type="text" class="short_input en_check" maxlength="60">
+									</label>
+								</div>
+							</td>
+						</tr>
+						-->
+                        <!-- <tr> -->
+                        <!-- 	<th scope="row"><span class="label require">회원정보 공개여부</span></th> -->
+                        <!-- 	<td> -->
+                        <!-- 		<input name="infoYn" id="infoYn1" value="Y" type="radio"  /> -->
+                        <!-- 		<label for="infoYn1">동의합니다.</label> -->
+                        <!-- 		<input name="infoYn" id="infoYn2" value="N" type="radio"  /> -->
+                        <!-- 		<label for="infoYn2">동의하지 않습니다.</label> -->
+
+                        <!-- 		<span class="cmt block">(회원공간을 통해 회원께만 회원님의 소속, 전화번호, 이메일 정보를 보여줍니다.)</span> -->
+                        <!-- 	</td> -->
+                        <!-- </tr> -->
+
+                        <!-- <tr> -->
+                        <!-- 	<th scope="row"><span class="label require">메일수신 동의여부</span></th> -->
+                        <!-- 	<td><input name="emailYn" id="emailYn1" value="Y" type="radio"  /> -->
+                        <!-- 		<label for="emailYn1">동의합니다.</label> -->
+                        <!-- 		<input name="emailYn" id="emailYn2" value="N" type="radio"  /> -->
+                        <!-- 		<label for="emailYn2">동의하지 않습니다.</label> -->
+
+                        <!-- 		<span class="cmt block">(동의하시면 학회에서 보내는 메일을 수신할 수 있습니다.)</span> -->
+                        <!-- 	</td> -->
+                        <!-- </tr> -->
                     </tbody>
                 </table>
             </div>
-
+            <!--
+			<div class="checkbox_wrap pc_only">
+				<ul>
+					<li>
+						<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
+						<label for="terms1">Terms & Conditions
+							<a href="javascript:;" class="term1_btn red_txt"> Details ></a>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" class="checkbox input required" data-name="terms 2" id="terms2" name="terms2" value="Y">
+						<label for="terms2"> Privacy Policy 
+							<a href="javascript:;" class="term2_btn red_txt"> Details ></a>
+						</label>
+					</li>
+				</ul>
+			</div>
+			-->
             <div class="mb_only">
                 <ul class="sign_list">
+                    <li style="display:none;">
+                        <p class="label"><span class="red_txt">*</span><?= $locale("country") ?></p>
+                        <div>
+                            <select id="mo_nation_no" name="mo_nation_no" class="required" value="25">
+                                <option value="25" data-nt="82" selected hidden>Choose</option>
+                                <?php
+								foreach ($nation_list as $n) {
+									if ($language == "ko") {
+										$nation = $n["nation_ko"];
+									} else {
+										$nation = $n["nation_en"];
+									}
+								?>
+                                <option data-nt="<?= $n['nation_tel']; ?>" value="<?= $n["idx"] ?>"
+                                    <?= $select_option ?>>
+                                    <?= $nation ?></option>
+                                <?php
+								}
+								?>
+                            </select>
+                            <!-- <span class="mini_alert red_txt mo_red_alert_option"></span> -->
+                        </div>
+                    </li>
                     <li class="korea_radio mo_korea_radio">
                         <p class="label"><span class="red_txt">*</span>대한비만학회(KSSO) 회원 여부</p>
                         <div class="label_wrap">
@@ -393,6 +841,7 @@ function remove_value() {
                         </div>
                     </li>
                     <li class="mo_ksola_signup">
+                        <!-- <button type="button" class="btn green_btn long_btn" onclick="javascript:window.open('https://www.lipid.or.kr/member/member_confirm.php')">한국지질동맥경화학회 회원정보로 간편 가입</button> -->
                         <p class="mb10">대한비만학회 회원 정보로 간편 가입</p>
                         <ul class="simple_signup mb10">
                             <li>
@@ -416,8 +865,7 @@ function remove_value() {
                                 </label>
                             </div>
                             <a href="https://www.kosso.or.kr/join/search_id.html" target="_blank"
-                                class="id_pw_find">KSSO 회원
-                                ID/PW 찾기</a>
+                                class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
                         </div>
                         <div>
                             <!-- <span class="mini_alert red_txt mo_red_api"></span> -->
@@ -430,29 +878,45 @@ function remove_value() {
                             <input type="text" name="mo_email" class="required" maxlength="50">
                             <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
                         </div>
-
+                        <p class="mini_alert">가입 이후에 수정하기 어렵습니다. ID를 정확히 입력했는지 확인해 주세요.</p>
                     </li>
                     <li>
-                        <p class="label"><span class="red_txt">*</span><?= $locale("password") ?></p>
+                        <p class="label"><span class="red_txt">*</span>비밀번호</p>
                         <div>
                             <input class="passwords" type="password" name="mo_password" class="required" maxlength="60">
                             <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
                         </div>
                     </li>
                     <li>
-                        <p class="label"><span class="red_txt">*</span>Password 확인</p>
+                        <p class="label"><span class="red_txt">*</span>비밀번호 재확인</p>
                         <div>
                             <input class="passwords" type="password" name="mo_password2" class="required"
                                 maxlength="60">
                             <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
                         </div>
                     </li>
-
+                    <li class="name_li" style="display:none;">
+                        <p class="label"><span class="red_txt">*</span><?= $locale("name") ?></p>
+                        <div class="clearfix">
+                            <div class="">
+                                <input name="mo_first_name" type="text" placeholder="First name" maxlength="60"
+                                    class="en_check">
+                                <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
+                            </div>
+                            <div class="">
+                                <input name="mo_last_name" type="text" placeholder="Last name" maxlength="60"
+                                    class="en_check">
+                                <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
+                            </div>
+                        </div>
+                        <!--
+						<p class="font_small brown_txt">Note.<br/>your name will appear on your name badge exactly as it is entered in these fields.<br/>It you wish your name to appear in a specific way, please contact the Secretariat via<br/>e-mail(secretariat@icola2022.org)</p> -->
+                    </li>
                     <li class="mo_korea_only">
                         <p class="label"><span class="red_txt">*</span>성명</p>
                         <div>
                             <ul class="half_ul">
-                                <li>
+                                <li style="display: none;">
                                     <input name="mo_last_name_kor" type="text" class="kor_check" placeholder="성">
                                 </li>
                                 <li>
@@ -462,7 +926,41 @@ function remove_value() {
                             <span class="mini_alert red_txt mo_red_alert">good</span>
                         </div>
                     </li>
-
+                    <li class="mo_only" style="display: none;">
+                        <p class="label"><span class="red_txt">*</span>Title</p>
+                        <div>
+                            <ul class="half_ul">
+                                <li>
+                                    <!--
+									<select name="mo_title" id="mo_title">
+										<option value="Professor">Professor</option>
+										<option value="Dr.">Dr.</option>
+										<option value="Mr.">Mr.</option>
+										<option value="Ms.">Ms.</option>
+										<option value="Others">Others</option>
+									</select>
+									-->
+                                    <select name="mo_title" id="mo_title" class="title_select">
+                                        <option value="0" selected>Professor</option>
+                                        <option value="1">Dr.</option>
+                                        <option value="2">Mr.</option>
+                                        <option value="3">Ms.</option>
+                                        <option value="4">Others</option>
+                                    </select>
+                                </li>
+                                <li class="hide_input">
+                                    <input type="text" id="mo_title_input" name="mo_title_input">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li style="display: none;">
+                        <p class="label"><span class="red_txt">*</span><?= $locale("affiliation") ?></p>
+                        <div>
+                            <input type="text" name="mo_affiliation" maxlength="100" class="en_check">
+                            <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
+                        </div>
+                    </li>
                     <li class="mo_korea_only">
                         <p class="label"><span class="red_txt">*</span>소속</p>
                         <div>
@@ -470,43 +968,155 @@ function remove_value() {
                             <span class="mini_alert red_txt mo_red_alert">good</span>
                         </div>
                     </li>
-
+                    <li style="display: none;">
+                        <p class="label"><span class="red_txt">*</span><?= $locale("department") ?></p>
+                        <div>
+                            <input type="text" name="mo_department" maxlength="100">
+                            <span class="mini_alert red_txt mo_red_alert">good</span>
+                        </div>
+                        <!--
+						<div>
+							<select name="mo_department" id="mo_department">
+								<option value="" selected hidden>Choose</option>
+								<option value="Cardiology">Cardiology</option>
+								<option value="Endocrinology">Endocrinology</option>
+								<option value="Internal Medicine">Internal Medicine</option>
+								<option value="Family Medicine">Family Medicine</option>
+								<option value="Nursing">Nursing</option>
+								<option value="Basic Science">Basic Science</option>
+								<option value="Pediatric">Pediatric</option>
+								<option value="Food & Nutrition">Food & Nutrition</option>
+								<option value="Neurology">Neurology</option>
+								<option value="Nephrology">Nephrology</option>
+								<option value="Pharmacology">Pharmacology</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="Preventive Medicine">Preventive Medicine</option>
+								<option value="Exercise Physiology">Exercise Physiology</option>
+								<option value="Clinical Pathology">Clinical Pathology</option>
+								<option value="Other Professiona">Other Professional</option>
+							</select>
+							<!-- <span class="mini_alert red_txt mo_red_alert_option"></span>
+						</div> -->
+                        <!-- <p class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric, Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine, Exercise Physiology, Clinical Pathology, Other Professional )</p> -->
+                    </li>
                     <li class="mo_korea_only">
                         <p class="label"><span class="red_txt">*</span>부서</p>
                         <div>
                             <input type="text" name="mo_department_kor" maxlength="100" class="kor_check">
                             <span class="mini_alert red_txt mo_red_alert">good</span>
                         </div>
-
+                        <!--
+						<div>
+							<select name="mo_department_kor" id="mo_department_kor">
+								<option value="" selected hidden>Choose</option>
+								<option value="Cardiology">Cardiology</option>
+								<option value="Endocrinology">Endocrinology</option>
+								<option value="Internal Medicine">Internal Medicine</option>
+								<option value="Family Medicine">Family Medicine</option>
+								<option value="Nursing">Nursing</option>
+								<option value="Basic Science">Basic Science</option>
+								<option value="Pediatric">Pediatric</option>
+								<option value="Food & Nutrition">Food & Nutrition</option>
+								<option value="Neurology">Neurology</option>
+								<option value="Nephrology">Nephrology</option>
+								<option value="Pharmacology">Pharmacology</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="Preventive Medicine">Preventive Medicine</option>
+								<option value="Exercise Physiology">Exercise Physiology</option>
+								<option value="Clinical Pathology">Clinical Pathology</option>
+								<option value="Other Professiona">Other Professional</option>
+							</select>
+							<!-- <span class="mini_alert red_txt mo_red_alert_option"></span>
+						</div>
+						<!-- <div>
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span> 
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span>
+						<!-- </div>
+						-->
                     </li>
-
-                    <li>
-                        <p class="label"> <span class="red_txt">*</span>휴대폰 번호</p>
+                    <li style="display: none;">
+                        <p class="label"><span class="red_txt">*</span>Mobile Phone Number</p>
                         <div class="phone_form clearfix">
-                            <input class="tel_number tel_phone" name="mo_tel_nation_tel" type="text" maxlength="60">
+                            <input class="numbers" name="mo_nation_tel" type="text">
+                            <input name="mo_phone" type="text">
+                        </div>
+
+                        <!-- <div> -->
+                        <!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+                        <!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+                        <!-- </div> -->
+                    </li>
+                    <li>
+                        <p class="label"><span class="red_txt">*</span>휴대폰 번호</p>
+                        <div class="phone_form clearfix">
+                            <input class="tel_number tel_phone" name="mo_telephone" type="text" maxlength="60">
                             <input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60">
                             <input class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60">
                         </div>
 
+                        <!-- <div> -->
+                        <!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+                        <!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+                        <!-- </div> -->
                     </li>
-
-
+                    <li style="display: none;">
+                        <p class="label"><span class="red_txt">*</span>Date of Birth</p>
+                        <div>
+                            <input pattern="^[0-9]+$" name="mo_date_of_birth" type="text" placeholder="dd-mm-yyyy"
+                                id="mb_datepicker" onKeyup="birthChk(this)" value="08-03-2023" />
+                            <!-- <span class="mini_alert red_txt mo_red_alert">good</span> -->
+                        </div>
+                    </li>
+                    <!--
+					<li>
+						<p class="label"><span class="red_txt"></span>Special Request for Food</p>
+						<div class="label_wrap">
+							<input checked value="None" type="radio" id="mb_none" class="radio" name="mo_food">
+							<label for="mb_none">None</label>
+							<input value="Vegetarian" type="radio" id="mb_vegetarian" class="radio" name="mo_food">
+							<label for="mb_vegetarian">Vegetarian</label>
+							<input value="Halal" type="radio" id="mb_halal" class="radio" name="mo_food">
+							<label for="mb_halal">Halal</label>
+							<input value="Others" type="radio" id="mo_others" class="radio" name="mo_food">
+							<label for="mo_others">Others
+								<input name="mo_short_input" type="text" class="short_input mo_other_radio en_check" maxlength="60">
+							</label>
+						</div>
+					</li>
+					-->
                 </ul>
             </div>
-
+            <!--
+			<div class="checkbox_wrap mb_only">
+				<ul>
+					<li>
+						<input type="checkbox" class="checkbox input required" data-name="terms 1" id="mo_terms1" name="mo_terms1" value="Y">
+						<label for="mo_terms1">Terms & Conditions
+							<a href="javascript:;" class="term1_btn red_txt"> Details ></a>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" class="checkbox input required" data-name="terms 2" id="mo_terms2" name="mo_terms2" value="Y">
+						<label for="mo_terms2"> Privacy Policy 
+							<a href="javascript:;" class="term2_btn red_txt"> Details ></a>
+						</label>
+					</li>
+				</ul>
+			</div>
+			-->
             <input type="hidden" name="ksola_member_check">
             <input type="hidden" name="ksola_member_type">
         </form>
         <div class="pc_only">
             <div class="pager_btn_wrap half">
-                <button id="submit" type="button" class="btn green_btn">Submit</button>
-                <button type="button" class="btn dark_gray_btn">Cancel</button>
+                <button id="submit" type="button" class="btn green_btn">회원가입</button>
+                <button type="button" class="btn dark_gray_btn">취소</button>
             </div>
         </div>
         <div class="mb_only">
             <div class="pager_btn_wrap half">
-                <button id="mo_submit" type="button" class="btn green_btn">Submit</button>
-                <button type="button" class="btn dark_gray_btn">Cancel</button>
+                <button id="mo_submit" type="button" class="btn green_btn">회원가입</button>
+                <button type="button" class="btn dark_gray_btn">취소</button>
             </div>
         </div>
     </div>
@@ -1011,25 +1621,39 @@ $(document).ready(function() {
 
 function name_check(name, mo) {
 
-    console.log(name);
+    //console.log(name);
 
-    if (mo === "mo") {
-        name = name.replace("mo_", "");
-        return false;
-    }
-    if (name === "short_input") {
-        alert("Invalid Others");
-        return false;
-    } else {
-        if (name == "name_kor") {
-            name = "name (KOR)";
-        } else if (name == "affiliation_kor") {
-            name = "affiliation (KOR)";
+    var first_name = $("input[name=" + name + "]").val();
+    var first_name_len = first_name.trim().length;
+    first_name = (typeof(first_name) != "undefined") ? first_name : null;
+
+    if (!first_name || first_name_len <= 0) {
+        $("input[name=" + name + "]").focus();
+        if (mo === "mo") {
+            name = name.replace("mo_", "");
         }
-        alert("Invalid " + name);
+        if (name === "short_input") {
+            alert("Invalid Others");
+        } else {
+            if (name == "first_name") {
+                name = "first name";
+            } else if (name == "last_name") {
+                name = "last name";
+            } else if (name == "name_kor") {
+                name = "name (KOR)";
+            } else if (name == "affiliation_kor") {
+                name = "affiliation (KOR)";
+            } else if (name == "licence_number") {
+                name = "licence number";
+            } else if (name == "nutritionist_number") {
+                name = "nutritionist number";
+            } else if (name == "specialty_number") {
+                name = "specialty number";
+            }
+            alert("Invalid " + name);
+        }
         return false;
     }
-
     return true;
 }
 
@@ -1064,22 +1688,114 @@ function pw_check(i, password, password2) {
     }
 }
 
+// 휴대폰번호
+//function phone_check(phone, nation_no){
+//	var regPhone_kor = /^01([0|1|6|7|8|9])-([0-9]{3,4})-([0-9]{4})$/;
+//	var regPhone_fore = /^[0-9]+$/;
+//	if(nation_no == 25){
+//		if (regPhone_kor.test(phone) == false) {
+//			alert("Please check phone-number format. \n ex) 010-0000-0000");
+//			return false;
+//		}
+//	}else{
+//		if (regPhone_fore.test(phone) == false) {
+//			alert("Please enter only numbers in the phone-number field.");
+//			return false;
+//		}
+//	}
+//	return true;
+//}
+
+
+//국가 선택시 자동 국가번호 삽입
+//function option_changes() {
+
+//	var value = $(this).val();
+//			
+//	if (value == 25){
+//		$(".red_alert").eq(0).html("");
+//		$(".red_alert").eq(1).html("");
+//		$(".red_alert").eq(2).html("");
+//		$(".red_alert").eq(3).html("");
+//		$(".red_alert").eq(4).html("");
+
+//		$(".korea_only").addClass("on");
+//		$(".korea_radio").addClass("on");
+//	}else {
+//		$(".korea_radio").removeClass("on");
+//		$(".korea_only").removeClass("on");
+//		$(".ksola_signup").removeClass("on");
+
+//		remove_value();
+//		$("#user2").prop('checked', true);
+//	}
+
+//	var nt = $("#nation_no option:selected").data("nt");
+//	$("input[name=nation_tel]").val(nt);
+//	$("input[name=tel_nation_tel]").val(nt);
+
+//	if(nt != 82) {
+//		$(".red_alert").eq(0).html("good");
+//		$(".red_alert").eq(1).html("good");
+//		$(".red_alert").eq(2).html("good");
+//		$(".red_alert").eq(3).html("good");
+//		$(".red_alert").eq(4).html("good");
+//	}
+//}
+//function mo_option_changes() {
+//	
+//	//var red_alert_option = $(".mo_red_alert_option");
+
+//	//red_alert_option.eq(i).html("");
+//	var nt = $("#mo_nation_no option:selected").data("nt");
+//	$("input[name=mo_nation_tel]").val(nt);
+//	$("input[name=mo_tel_nation_tel]").val(nt);
+
+//	if(nt != 82) {
+//		$(".mo_red_alert").eq(0).html("good");
+//		$(".mo_red_alert").eq(1).html("good");
+//		$(".mo_red_alert").eq(2).html("good");
+//		$(".mo_red_alert").eq(3).html("good");
+//		$(".mo_red_alert").eq(4).html("good");
+//	}
+
+//	//if(i== 0) {
+//	//	var nt = $("#mo_nation_no option:selected").data("nt");
+//	//	$("input[name=mo_nation_tel]").val(nt);
+//	//	//$(".mo_red_alert").eq(8).html("good");
+//	//	//$(".mo_red_alert").eq(8).css('display', 'none');
+//	//}
+//}
 
 
 $(document).on("click", "#mo_submit", function() {
 
     //var red_alert_option = $(".mo_red_alert_option");
 
-    var value_arr = ["ID(email)", "Password", "Verify Password", "Name(KOR)",
-        "Affiliation(KOR)", "Mobile Phone Number"
+    var value_arr = ["ID(email)", "Password", "Verify Password", "Frist_name", "Last_name", "Name(KOR)",
+        "Affiliation", "Affiliation(KOR)", "Mobile Phone Number", "Mobile Phone Number", "Date of Birth"
     ];
+    var option_arr = ["Country", "Department", "Title"];
 
     //var red_alert = document.getElementsByClassName("mo_red_alert");
 
     //국가 유효성
+    var nation_no = $("#mo_nation_no option:selected").val();
 
+    if (!nation_no) {
+        alert("Invalid " + option_arr[0]);
+        //red_alert_option.eq(0).html("check_"+option_arr[0]);
+        return;
+    }
 
-
+    //for(var i=0; i<red_alert.length-3; i++) {
+    //	
+    //	if(red_alert[i].innerHTML !== "good") {
+    //		red_alert[i].innerHTML = "enter_"+value_arr[i];
+    //		red_alert[i].style.display = "block";
+    //		return;
+    //	}
+    //}
 
     var check = name_check("mo_email", "mo");
 
@@ -1093,24 +1809,107 @@ $(document).on("click", "#mo_submit", function() {
 
     if (check == false) return;
 
-
-    check = name_check("mo_affiliation", "mo");
+    check = name_check("mo_first_name_kor", "mo");
     if (check == false) return;
+    // check = name_check("mo_last_name", "mo");
+    // if (check == false) return;
+
+    //if(red_alert[0].innerHTML !== "good") {
+    //	check = name_check("mo_name_kor", "mo");
+    //	if(check == false) return;
+    //}
+
+    // check = name_check("mo_affiliation", "mo");
+    // if (check == false) return;
+
+    //if(red_alert[1].innerHTML !== "good") {
+    //	check = name_check("mo_affiliation_kor", "mo");
+    //	if(check == false) return;
+    //}
 
     var department = $("input[name=mo_department]").val();
 
-    if (department == "" || department == null) {
-        alert("Invalid " + option_arr[1]);
+    // if (department == "" || department == null) {
+    //     alert("Invalid " + option_arr[1]);
+    //     return;
+    // }
+
+    //var category = $("#mo_category option:selected").val();
+    //var category_input = $("input[name=mo_category_input").val();
+
+    //if(!category) {
+    //	alert("Invalid "+option_arr[2]);
+    //	return;
+    //} else if(category =="Others"){
+    //	if(category_input == "" || category_input == null) {
+    //		alert("Invalid category others");
+    //		return;
+    //	}
+    //}
+
+    //2022-05-09 추가
+    var title = $("#mo_title option:selected").val();
+    var title_input = $("input[name=mo_title_input").val();
+
+    if (title == "" || title == null) {
+        alert("Invalid " + option_arr[2]);
         return;
+    } else if (title == "Others") {
+        if (title_input == "" || title_input == null) {
+            alert("Invalid title others");
+            return;
+        }
     }
+
+    //var degree = $("#mo_degree option:selected").val();
+    //var degree_input = $("input[name=mo_degree_input").val();
+
+    //if(degree == "" || degree== null) {
+    //	alert("Invalid "+option_arr[3]);
+    //	return;
+    //} else if(degree =="Others"){
+    //	if(degree_input == "" || degree_input == null) {
+    //		alert("Invalid degree others");
+    //		return;
+    //	}
+    //}
+
+
+    var licence_number = $("input[name=mo_licence_number]").val();
+    var licence_number2 = $("input[name=mo_licence_number2]").is(":checked");
+    var nutritionist_number = $("input[name=mo_nutritionist_number]").val();
+    var nutritionist_number2 = $("input[name=mo_nutritionist_number2]").is(":checked");
+    var specialty_number = $("input[name=mo_specialty_number]").val();
+    var specialty_number2 = $("input[name=mo_specialty_number2]").is(":checked");
+
+    //if(red_alert[2].innerHTML !== "good") {
+    //	if(licence_number == "" && licence_number2 == false) {
+    //		check = name_check("licence_number", "mo");
+    //		if(check == false) return;
+    //	}
+    //}
+
+    //if(red_alert[3].innerHTML !== "good") {
+    //	if(specialty_number == "" && specialty_number2 == false) {
+    //		check = name_check("specialty_number", "mo");
+    //		if(check == false) return;
+    //	}
+    //}
+
+    //if(red_alert[4].innerHTML !== "good") {
+    //	if(nutritionist_number == "" && nutritionist_number2 == false) {
+    //		check = name_check("nutritionist_number", "mo");
+    //		if(check == false) return;
+    //	}
+    //}
 
 
     check = name_check("mo_nation_tel", "mo");
     if (check == false) return;
-    check = name_check("mo_phone", "mo");
-    if (check == false) return;
+    // check = name_check("mo_phone", "mo");
+    // if (check == false) return;
 
-    var tel_nation_tel = $("input[name=mo_tel_nation_tel]").val();
+    var tel_nation_tel = $("input[name=mo_telephone]").val();
     var telephone1 = $("input[name=mo_telephone1]").val();
     var telephone2 = $("input[name=mo_telephone2]").val();
 
@@ -1127,35 +1926,74 @@ $(document).on("click", "#mo_submit", function() {
         }
     }
 
-
-
-    // kor 필수값 유효성검사
-    var first_name_kor = $("input[name=mo_first_name_kor]").val();
-    if (first_name_kor == "" || first_name_kor == null) {
-        alert("이름을 입력해주세요.");
+    var date_of_birth = $("input[name=mo_date_of_birth]").val();
+    if (date_of_birth == null || date_of_birth == "") {
+        alert("Invalid date of birth");
+        return;
+    }
+    var regex = /[^0123456789-]/g;
+    if (regex.test(date_of_birth)) {
+        alert("Please enter only numbers in the date_of_birth field");
+        return;
+    }
+    var regex2 = /^(\d{2})-(\d{2})-(\d{4})$/;
+    if (!regex2.test(date_of_birth)) {
+        alert("Please check date_of_birth format \nex 01-01-1999");
         return;
     }
 
-    var last_name_kor = $("input[name=mo_last_name_kor]").val();
-    if (last_name_kor == "" || last_name_kor == null) {
-        alert("성을 입력해주세요.");
-        return;
+    if (nation_no == 25) {
+
+        // kor 필수값 유효성검사
+        var first_name_kor = $("input[name=mo_first_name_kor]").val()
+        if (first_name_kor == "" || first_name_kor == null) {
+            alert("이름을 입력해주세요.");
+            return;
+        } else {
+            first_name_kor = $("input[name=mo_first_name_kor]").val().slice(1)
+        }
+
+        var last_name_kor = $("input[name=mo_first_name_kor]").val().slice(0, 1);
+        // if (last_name_kor == "" || last_name_kor == null) {
+        // 	alert("성을 입력해주세요.");
+        // 	return;
+        // }
+
+        var affiliation_kor = $("input[name=mo_affiliation_kor]").val();
+        if (affiliation_kor == "" || affiliation_kor == null) {
+            alert("소속을 입력해주세요.");
+            return;
+        }
+
+        var department_kor = $("input[name=mo_department_kor]").val();
+        if (department_kor == "" || department_kor == null) {
+            alert("부서를 입력해주세요.");
+            return;
+        }
     }
 
-    var affiliation_kor = $("input[name=mo_affiliation_kor]").val();
-    if (affiliation_kor == "" || affiliation_kor == null) {
-        alert("소속을 입력해주세요.");
-        return;
+    var phone = tel_nation_tel + telephone1 + telephone2;
+    //if(nation_no == 25){ // Republic of Korea
+    //	var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+    //	if (!regPhone.test(phone)) {
+    //		alert("휴대전화 번호를 올바르게 입력해주세요 \n예) 010-0000-0000");
+    //		return;
+    //	}
+    //}else{ // 해외 - 숫자만
+    //	var regPhone = /^[0-9]+$/;
+    //	if (!regPhone.test(phone)) {
+    //		alert("Please enter only digits for phone number field.");
+    //		return;
+    //	}
+    //}
+
+
+    if ($("input[name=mo_food]:checked").val() == "Others") {
+        var check = name_check("mo_short_input", "mo");
+        if (check == false) {
+            return;
+        }
     }
-
-    var department_kor = $("input[name=mo_department_kor]").val();
-    if (department_kor == "" || department_kor == null) {
-        alert("부서를 입력해주세요.");
-        return;
-    }
-
-
-    var phone = $("input[name=mo_phone]").val();
 
 
     //이용약관 동의
@@ -1190,14 +2028,14 @@ $(document).on("click", "#mo_submit", function() {
     var pw = $("input[name=mo_password]").val();
     var pw2 = $("input[name=mo_password2]").val();
 
-    var first_name = $("input[name=mo_first_name]").val();
-    var last_name = $("input[name=mo_last_name]").val();
+    var first_name = $("input[name=mo_first_name_kor]").val().slice(1)
+    var last_name = $("input[name=mo_first_name_kor]").val().slice(0, 1)
 
 
     var affiliation = $("input[name=mo_affiliation]").val();
 
-    var nation_tel = $("input[name=mo_nation_tel]").val();
-    var phone = $("input[name=mo_phone]").val();
+    var nation_tel = 82;
+    var phone = tel_nation_tel + telephone1 + telephone2;
 
     var food = $("input[name=mo_food]:checked").val();
 
@@ -1221,19 +2059,44 @@ $(document).on("click", "#mo_submit", function() {
         ksola_member_status = 0;
     }
 
+
+
     var data = {
         "flag": "signup",
         "ksola_member_status": ksola_member_status,
         "ksola_member_check": ksola_member_check,
+        "nation_no": nation_no,
         "email": email,
         "password": pw,
+        "first_name": first_name,
+        "last_name": last_name,
         "first_name_kor": first_name_kor,
         "last_name_kor": last_name_kor,
+        "affiliation": affiliation_kor,
+        "department": department_kor,
         "department_kor": department_kor,
+        //"category"				: category,
+        //"category_input"		: category_input,
+        "nation_tel": nation_tel,
         "phone": phone,
+        "date_of_birth": date_of_birth,
+        "food": food,
+        //"name_kor"				: name_kor,
         "affiliation_kor": affiliation_kor,
+        "licence_number": licence_number,
+        "specialty_number": specialty_number,
+        "nutritionist_number": nutritionist_number,
+        "licence_number2": licence_number3,
+        "specialty_number2": specialty_number3,
+        "nutritionist_number2": nutritionist_number3,
+        "short_input": short_input,
         "terms1": terms1,
+        //"terms2"				: terms2,
         "type": "INSERT",
+        "title": title,
+        "title_input": title_input,
+        //"degree"				: degree,
+        //"degree_input"			: degree_input,
         "tel_nation_tel": tel_nation_tel,
         "telephone1": telephone1,
         "telephone2": telephone2
@@ -1245,12 +2108,29 @@ $(document).on("click", "#mo_submit", function() {
 $(document).on("click", "#submit", function() {
     //var red_alert_option = $(".red_alert_option");
 
-    var value_arr = ["ID(email)", "Password", "Verify Password", "Name(KOR)",
-        "Affiliation(KOR)", "Mobile Phone Number"
+    var value_arr = ["ID(email)", "Password", "Verify Password", "First_name", "Last_name", "Name(KOR)",
+        "Affiliation", "Affiliation(KOR)", "Mobile Phone Number", "Mobile Phone Number", "Date of Birth"
     ];
+    var option_arr = ["Country", "Department", "Title"];
 
     var red_alert = document.getElementsByClassName("red_alert");
 
+    //국가 유효성
+    var nation_no = $("#nation_no option:selected").val();
+    if (!nation_no) {
+        alert("Invalid " + option_arr[0]);
+        //red_alert_option.eq(0).html("check_"+option_arr[0]);
+        return;
+    }
+
+    //for(var i=0; i<red_alert.length-3; i++) {
+    //	
+    //	if(red_alert[i].innerHTML !== "good") {
+    //		red_alert[i].innerHTML = "enter_"+value_arr[i];
+    //		red_alert[i].style.display = "block";
+    //		return;
+    //	}
+    //}
 
     var check = name_check("email");
 
@@ -1264,11 +2144,107 @@ $(document).on("click", "#submit", function() {
 
     if (check == false) return;
 
+    // check = name_check("first_name");
+    // if (check == false) return;
+    // check = name_check("last_name");
+    // if (check == false) return;
+
+    //if(red_alert[0].innerHTML !== "good") {
+    //	check = name_check("name_kor");
+    //	if(check == false) return;
+    //}
+
+    // check = name_check("affiliation");
+    // if (check == false) return;
+
+    //if(red_alert[1].innerHTML !== "good") {
+    //	check = name_check("affiliation_kor");
+    //	if(check == false) return;
+    //}
+
+    var department = $("input[name=department]").val();
+    // if (department == "" || department == null) {
+    //     alert("Invalid " + option_arr[1]);
+    //     //red_alert_option.eq(1).html("check_"+option_arr[1]);
+    //     return;
+    // }
+
+    //var category = $("#category option:selected").val();
+    //var category_input = $("input[name=category_input").val();
+
+    //if(category == "" || category == null) {
+    //	alert("Invalid "+option_arr[2]);
+    //	//red_alert_option.eq(2).html("check_"+option_arr[2]);
+    //	return;
+    //} else if(category =="Others"){
+    //	if(category_input == "" || category_input == null) {
+    //		alert("Invalid category others");
+    //		return;
+    //	}
+    //}
+
+    //2022-05-09 추가
+    //var title = $("#title option:selected").val();
+    var title = $("#title").val();
+    var title_input = $("#title_input").val();
+
+    if (title == "" || title == null) {
+        alert("Invalid " + option_arr[2]);
+        return;
+    } else if (title == "Others") {
+        if (title_input == "" || title_input == null) {
+            alert("Invalid title others");
+            return;
+        }
+    }
+
+    //var degree = $("#degree option:selected").val();
+    //var degree_input = $("input[name=degree_input").val();
+
+    //if(degree == "" || degree== null) {
+    //	alert("Invalid "+option_arr[3]);
+    //	return;
+    //} else if(degree =="Others"){
+    //	if(degree_input == "" || degree_input == null) {
+    //		alert("Invalid degree others");
+    //		return;
+    //	}
+    //}
+    /* 23.05.14 HUBDNC 해당 부분은 삭제 되었으므로 주석처리 하였습니다
+    var licence_number = $("input[name=licence_number]").val();
+    var licence_number2 = $("input[name=licence_number2]").is(":checked");
+    var nutritionist_number = $("input[name=nutritionist_number]").val();
+    var nutritionist_number2 = $("input[name=nutritionist_number2]").is(":checked");
+    var specialty_number = $("input[name=specialty_number]").val();
+    var specialty_number2 = $("input[name=specialty_number2]").is(":checked");
+    */
+
+    //if(red_alert[2].innerHTML !== "good") {
+    //	if(licence_number == "" && licence_number2 == false) {
+    //		check = name_check("licence_number");
+    //		if(check == false) return;
+    //	}
+    //}
+
+    //if(red_alert[3].innerHTML !== "good") {
+    //	if(specialty_number == "" && specialty_number2 == false) {
+    //		check = name_check("specialty_number");
+    //		if(check == false) return;
+    //	}
+    //}
+
+    //if(red_alert[4].innerHTML !== "good") {
+    //	if(nutritionist_number == "" && nutritionist_number2 == false) {
+    //		check = name_check("nutritionist_number");
+    //		if(check == false) return;
+    //	}
+    //}
+
     check = name_check("nation_tel");
     if (check == false) return;
 
-    check = name_check("phone");
-    if (check == false) return;
+    // check = name_check("phone");
+    // if (check == false) return;
 
     var tel_nation_tel = $("input[name=telephone]").val();
     var telephone1 = $("input[name=telephone1]").val();
@@ -1287,32 +2263,91 @@ $(document).on("click", "#submit", function() {
         }
     }
 
-
-    // kor 필수값 유효성검사
-    var first_name_kor = $("input[name=first_name_kor]").val();
-    if (first_name_kor == "" || first_name_kor == null) {
-        alert("이름을 입력해주세요.");
+    // 생년월일 유효성검사
+    var date_of_birth = $("input[name=date_of_birth]").val();
+    if (date_of_birth == null || date_of_birth == "") {
+        alert("Invalid date of birth");
+        return;
+    }
+    var regex = /[^0123456789-]/g;
+    if (regex.test(date_of_birth)) {
+        alert("Please enter only numbers in the date_of_birth field");
+        return;
+    }
+    var regex2 = /^(\d{2})-(\d{2})-(\d{4})$/;
+    if (!regex2.test(date_of_birth)) {
+        alert("Please check date_of_birth format \nex 01-01-1999");
         return;
     }
 
-    var last_name_kor = $("input[name=last_name_kor]").val();
-    if (last_name_kor == "" || last_name_kor == null) {
-        alert("성을 입력해주세요.");
-        return;
-    }
+    if (nation_no == 25) {
 
+        // kor 필수값 유효성검사
+        var first_name_kor = $("input[name=first_name_kor]").val();
+        if (first_name_kor == "" || first_name_kor == null) {
+            alert("이름을 입력해주세요.");
+            return;
+        } else {
+            first_name_kor = $("input[name=first_name_kor]").val().slice(1)
+        }
+
+        var last_name_kor = $("input[name=first_name_kor]").val().slice(0, 1)
+        // if (last_name_kor == "" || last_name_kor == null) {
+        //     alert("성을 입력해주세요.");
+        //     return;
+        // }
+
+        var affiliation_kor = $("input[name=affiliation_kor]").val();
+        if (affiliation_kor == "" || affiliation_kor == null) {
+            alert("소속을 입력해주세요.");
+            return;
+        }
+
+        var department_kor = $("input[name=department_kor]").val();
+        if (department_kor == "" || department_kor == null) {
+            alert("부서를 입력해주세요.");
+            return;
+        }
+
+    }
 
     // 2023-05-12 휴대폰제약사항
-    var phone = $("input[name=phone]").val();
+    var phone = tel_nation_tel + telephone1 + telephone2
+    //if(nation_no == 25){ // Republic of Korea
+    //	var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+    //	if (!regPhone.test(phone)) {
+    //		alert("휴대전화 번호를 올바르게 입력해주세요 \n예) 010-0000-0000");
+    //		return;
+    //	}
+    //}else{ // 해외 - 숫자만
+    //	var regPhone = /^[0-9]+$/;
+    //	if (!regPhone.test(phone)) {
+    //		alert("Please enter only digits for phone number field.");
+    //		return;
+    //	}
+    //}
+
+    if ($("input[name=food]:checked").val() == "Others") {
+        var check = name_check("short_input");
+        if (check == false) {
+            return;
+        }
+    }
+
     //이용약관 동의
     var terms1 = $("#terms1").is(":checked");
     //개인정보 동의
     //var terms2 = $("#terms2").is(":checked");
 
     if (terms1 == false) {
+        //alert("Please agree to Terms & Conditions.");
         alert("Please check the agreement of the using personal information.");
         return;
     }
+    //if(terms2 == false) {
+    //	alert("Please agree to Privacy Policy.");
+    //	return;
+    //}
 
     if (!confirm("Would you like to join?")) return;
 
@@ -1326,7 +2361,19 @@ $(document).on("click", "#submit", function() {
     var pw = $("input[name=password]").val();
     var pw2 = $("input[name=password2]").val();
 
+    var first_name = $("input[name=first_name_kor]").val().slice(1)
+    var last_name = $("input[name=first_name_kor]").val().slice(0, 1)
+
+    var affiliation = $("input[name=affiliation]").val();
+
     var nation_tel = $("input[name=nation_tel]").val();
+    var food = $("input[name=food]:checked").val();
+    /*
+    var licence_number3 = $("input[name=licence_number2]").val();
+    var specialty_number3 = $("input[name=specialty_number2]").val()
+    var nutritionist_number3 = $("input[name=nutritionist_number2]").val();
+    var short_input = $("input[name=short_input]").val();
+    */
 
     var ksola_member_check = $("input[name=ksola_member_check]").val();
     var ksola_member_type = $("input[name=ksola_member_type]").val();
@@ -1346,18 +2393,38 @@ $(document).on("click", "#submit", function() {
         "flag": "signup",
         "ksola_member_status": ksola_member_status,
         "ksola_member_check": ksola_member_check,
+        "nation_no": nation_no,
         "email": email,
         "password": pw,
+        "first_name": first_name,
+        "last_name": last_name,
         "first_name_kor": first_name_kor,
         "last_name_kor": last_name_kor,
-        "affiliation_kor": affiliation_kor,
+        "affiliation": affiliation_kor,
+        "department": department_kor,
         "department_kor": department_kor,
+        //"category"				: category,
+        //"category_input"		: category_input,
         "nation_tel": nation_tel,
         "phone": phone,
+        "date_of_birth": date_of_birth,
+        "food": food,
+        //"name_kor"				: name_kor,
+        "affiliation_kor": affiliation_kor,
+        //"licence_number"		: licence_number,
+        //"specialty_number"		: specialty_number,
+        //"nutritionist_number"	: nutritionist_number,
+        //"licence_number2"		: licence_number3,
+        //"specialty_number2"		: specialty_number3,
+        //"nutritionist_number2"	: nutritionist_number3,
+        //"short_input"			: short_input,
         "terms1": terms1,
+        //"terms2"				: terms2,
         "type": "INSERT",
         "title": title,
         "title_input": title_input,
+        //"degree"				: degree,
+        //"degree_input"			: degree_input,
         "tel_nation_tel": tel_nation_tel,
         "telephone1": telephone1,
         "telephone2": telephone2
@@ -1449,8 +2516,13 @@ function kor_api_check(name, value, mo) {
 
     if (!first_name || first_name_len <= 0) {
         alert("Invalid_" + name);
-
+        //$(".red_api").eq(0).html("format_"+name);
+        //$(".mo_red_api").eq(0).html("format_"+name);
     }
+    //else {
+    //	$(".red_api").eq(0).html("");
+    //	$(".mo_red_api").eq(0).html("");
+    //}
 }
 
 //한국 회원 인증시 api호출
@@ -1532,6 +2604,22 @@ function mo_kor_api() {
             $("input[name=ksola_member_check]").val(user_row.id);
 
 
+            //if(user_row.user_type == "평w회원" || user_row.user_type == "정회원"){
+            //	$("input[name=ksola_member_check]").val("Y");
+            //}else {
+            //	$("input[name=ksola_member_check]").val("N");
+            //}
+
+
+            /* 2023-05-10 HUBDNC  고객사 요청으로 주석처리 */
+            //$("input[name=mo_email]").val(kor_sign.email);
+            //$("input[name=mo_name_kor]").val(kor_sign.name);
+            //$("input[name=mo_first_name]").val(name_eng_arr[0]);
+            //$("input[name=mo_last_name]").val(name_eng_arr[1]);
+            //$("input[name=mo_phone]").val(kor_sign.phone);
+            //$("input[name=mo_nation_tel]").val("82");
+
+
 
             //select option에 비교해서 selected 처리
             var options = $('#mo_department').find('option').map(function() {
@@ -1543,9 +2631,20 @@ function mo_kor_api() {
                 }
             }
 
+            //var birthday_arr = kor_sign.birthday.split("-");
+
+            //$("input[name=mo_date_of_birth]").val(birthday_arr[2]+"-"+birthday_arr[1]+"-"+birthday_arr[0]);
             $("input[name=mo_licence_number]").val(kor_sign.license_number);
             $("input[name=mo_affiliation_kor]").val(kor_sign.office_name);
 
+            //for(var i=0; i<$(".mo_red_alert").length; i++) {
+            //	//한국 아이디 입력했을 때 입력 안 되는 값들은 제외
+            //	if(i==1 || i==2 || i==6) {
+            //		continue;
+            //	}
+            //	$(".mo_red_alert").eq(i).html("good");
+            //	$(".mo_red_alert").eq(i).css('display', 'none');
+            //}
         }
 
     }
@@ -1633,10 +2732,56 @@ function kor_api() {
             $("input[name=ksola_member_type]").val(user_row.user_type);
             $("input[name=ksola_member_check]").val(user_row.id);
 
+            //if(user_row.user_type == "평생회원"){
+            //	$("input[name=ksola_member_check]").val("Y");
+            //}else if(user_row.user_type == "정회원"){
+
+            //}else {
+
+            //}
+
+            //$("input[name=ksola_member_type]").val(user_row.user_type);
+            //if(user_row.user_type == "평생회원" || user_row.user_type == "정회원"){
+            //	$("input[name=ksola_member_check]").val("Y");
+            //}else {
+            //	$("input[name=ksola_member_check]").val("N");
+            //}
+
+            //alert($("input[name=ksola_member_check]").val()); 
+            //alert($("input[name=ksola_member_type]").val()); 
+
+            /* 2023-05-10 HUBDNC  고객사 요청으로 주석처리 */
+            //$("input[name=email]").val(kor_sign.email);
+            //$("input[name=name_kor]").val(kor_sign.name);
+            //$("input[name=first_name]").val(name_eng_arr[0]);
+            //$("input[name=last_name]").val(name_eng_arr[1]);
+            //$("input[name=phone]").val(kor_sign.phone);
+            //$("input[name=nation_tel]").val("82");
+
+            //select option에 비교해서 selected 처리
+            //var options = $('#department').find('option').map(function() {
+            //	  return $(this).val();
+            //}).get()
+            //for(var i=0; i<options.length; i++) {
+            //	if(options[i] == kor_sign.depart && options[i] !== '') {
+            //		$("#department option:eq("+i+")").attr("selected", "selected");
+            //	}
+            //}
+
+            //var birthday_arr = kor_sign.birthday.split("-");
+
+            //$("input[name=date_of_birth]").val(birthday_arr[2]+"-"+birthday_arr[1]+"-"+birthday_arr[0]);
             $("input[name=licence_number]").val(kor_sign.license_number);
             $("input[name=affiliation_kor]").val(kor_sign.office_name);
 
-
+            //for(var i=0; i<$(".red_alert").length; i++) {
+            //	//한국 아이디 입력했을 때 입력 안 되는 값들은 제외
+            //	if(i==1 || i==2 || i==6) {
+            //		continue;
+            //	}
+            //	$(".red_alert").eq(i).html("good");
+            //	$(".red_alert").eq(i).css('display', 'none');
+            //}
         }
 
     }
@@ -1668,7 +2813,6 @@ function email_check(email) {
                 //$(".red_alert").eq(0).css('display', 'none');
                 //$(".mo_red_alert").eq(0).html("good");
                 //$(".mo_red_alert").eq(0).css('display', 'none');
-                return true;
             } else if (res.code == 400) {
                 alert("used_email_msg");
                 $("input[name=email]").val("");
@@ -1687,13 +2831,23 @@ function email_check(email) {
 }
 
 $(document).ready(function() {
+    // 230518 HUBDNC AJY - Title 'Others' 선택시 입력창 노출 소스 중복으로 인한 주석 처리
+    //$(".title_select").change(function(){
+    //	var this_value = $(this).children("option:selected").attr("value");
+    //	if (this_value === "Others"){
+    //		$(".hide_input").addClass("on");
+    //	}else {
+    //		$(".hide_input").removeClass("on");
+    //	}
+    //	console.log(this_value)
+    //});
 
     $(function() {
         $("input[name=first_name_kor]").keyup(function(event) {
-            regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
-                alert("한글만 입력가능 합니다.");
+                alert("특수기호는 입력이 불가합니다.");
                 $(this).val(v.replace(regexp, ''));
             }
         });
@@ -1701,15 +2855,37 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=last_name_kor]").keyup(function(event) {
-            regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
-                alert("한글만 입력가능 합니다.");
+                alert("특수기호는 입력이 불가합니다.");
                 $(this).val(v.replace(regexp, ''));
             }
         });
     });
 
+    $(function() {
+        $("input[name=affiliation_kor]").keyup(function(event) {
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            v = $(this).val();
+            if (regexp.test(v)) {
+                alert("특수기호는 입력이 불가합니다.");
+                $(this).val(v.replace(regexp, ''));
+            }
+        });
+    });
+
+    $(function() {
+        $("input[name=department_kor]").keyup(function(event) {
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            //regexp = /^[가-힣\s]+$/;
+            v = $(this).val();
+            if (regexp.test(v)) {
+                alert("특수기호는 입력이 불가합니다.");
+                $(this).val(v.replace(regexp, ''));
+            }
+        });
+    });
 
     $(function() {
         $("input[name=phone], input[name=mo_phone]").keyup(function(event) {
@@ -1721,12 +2897,24 @@ $(document).ready(function() {
         });
     });
 
+    // 2023-05-12
+    //$(function(){
+    //   $("input[name=date_of_birth]").keyup(function (event) {
+    //        regexp = /[^0-9]/g;
+    //        v = $(this).val();
+    //        if (regexp.test(v)) {
+    //            alert("Invalid date of birth\nex) 10011970");
+    //            $(this).val(v.replace(regexp, ''));
+    //        }
+    //    });
+    //});
+
     $(function() {
         $("input[name=mo_first_name_kor]").keyup(function(event) {
-            regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
-                alert("한글만 입력가능 합니다.");
+                alert("특수기호는 입력이 불가합니다.");
                 $(this).val(v.replace(regexp, ''));
             }
         });
@@ -1734,14 +2922,127 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=mo_last_name_kor]").keyup(function(event) {
-            regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
-                alert("한글만 입력가능 합니다.");
+                alert("특수기호는 입력이 불가합니다.");
                 $(this).val(v.replace(regexp, ''));
             }
         });
     });
 
+    $(function() {
+        $("input[name=mo_affiliation_kor]").keyup(function(event) {
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            v = $(this).val();
+            if (regexp.test(v)) {
+                alert("특수기호는 입력이 불가합니다.");
+                $(this).val(v.replace(regexp, ''));
+            }
+        });
+    });
+
+    $(function() {
+        $("input[name=mo_department_kor]").keyup(function(event) {
+            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            v = $(this).val();
+            if (regexp.test(v)) {
+                alert("특수기호는 입력이 불가합니다.");
+                $(this).val(v.replace(regexp, ''));
+            }
+        });
+    });
+
+
+    //$(function(){
+    //   $("input[name=mo_phone]").keyup(function (event) {
+    //        regexp = /[^0-9]/g;
+    //        v = $(this).val();
+    //        if (regexp.test(v)) {
+    //            alert("Please check the phone number format.\nex) 82 1012341234");
+    //            $(this).val(v.replace(regexp, ''));
+    //        }
+    //    });
+    //});
+
+    //$(function(){
+    //   $("input[name=mo_date_of_birth]").keyup(function (event) {
+    //        regexp = /[^0-9]/g;
+    //        v = $(this).val();
+    //        if (regexp.test(v)) {
+    //            alert("Invalid date of birth\nex) 10011970");
+    //            $(this).val(v.replace(regexp, ''));
+    //        }
+    //    });
+    //});
+
+
+
 });
+
+function birthChk(input) {
+
+    var value = input.value.replace(/[^0-9]/g, "").substr(0, 8); // 입력된 값을 숫자만 남기고 모두 제거
+    if (value.length === 8) {
+        var regex = /^(\d{2})(\d{2})(\d{4})$/;
+        var formattedValue = value.replace(regex, "$1-$2-$3");
+        input.value = formattedValue;
+    } else {
+        input.value = value;
+    }
+
+}
+
+/*$(document).ready(function(){
+    $('select[name=nation_no]').val('25').trigger('change');
+    
+	//회원가입 이벤트
+	$(document).on("click", "#submit", function(){
+		var formData = $("form[name=signup_form]").serializeArray();
+
+		var process = inputCheck(formData, checkType);
+		var is_checked = process.status;
+		var data = process.data;
+
+		if(is_checked) {
+			$(".loading").show();
+			$("body").css("overflow-y","hidden");
+
+			$.ajax({
+				url : PATH+"ajax/client/ajax_member.php",
+				type : "POST",
+				data : {
+					flag : "signup",
+					data : data
+				},
+				dataType : "JSON",
+				success : function(res) {
+					if(res.code == 200) {
+						alert(locale(language.value)("complet_signup"))
+						window.location.replace(PATH);
+					} else if(res.code == 400) {
+						alert(locale(language.value)("error_signup"))
+						return false;
+					} else {
+						alert(locale(language.value)("reject_msg"))
+						return false;
+					}
+				},
+				complete:function(){
+					$(".loading").hide();
+					$("body").css("overflow-y","auto");
+				}
+			});
+		}
+	});
+
+	$('.term1_btn').on('click',function(){
+		$('.term1').show();
+		$('#terms1').attr("checked", true);
+	});
+	$('.term2_btn').on('click',function(){
+		$('.term2').show();
+		$('#terms2').attr("checked", true);
+	});
+});*/
 </script>

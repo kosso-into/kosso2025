@@ -8,12 +8,12 @@ $locale = locale($language);
     <div class="g_h_top">
         <div class="container">
             <div class="dday_wrap">
-                <div class="dday_top"><span>D-<?= number_format($d_days); ?></span></div>
+                <div class="dday_top"><span>D+<?= number_format($d_days); ?></span></div>
                 <div class="dday_bot">Today is <span><?= $today; ?></span></div>
             </div>
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
-            <div class="g_h_logo"><img src="/main/img/icon_logo_blue.svg" alt="" class="pointer"
-                    onClick="javascript:location.href='/main/index.php'"></div>
+            <div class="g_h_logo"><img src="/main/img/footer_logo_mini.jpg" alt="" class="pointer"
+                    onClick="javascript:location.href='/main/index.php'" style="height: 60px;"></div>
             <ul class="g_h_tool">
                 <!-- <li><a href="/main/index.php">Home</a></li> -->
                 <?php

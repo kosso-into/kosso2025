@@ -1,6 +1,6 @@
 <?php
 
-$root_path = '/var/www/icomes.or.kr/main';
+$root_path = '/var/www/kosso.org/main';
 
 include_once("{$root_path}/plugin/PHPMailer/PHPMailerAutoload.php");
 include_once("{$root_path}/plugin/PHPMailer/class.phpmailer.php");
@@ -38,7 +38,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 	if($_SERVER["HTTP_HOST"] == "43.200.170.254") {
 		$background_img_url = "http://".$_SERVER["HTTP_HOST"]."/main";
 	} else {
-		$background_img_url = "https://icomes.or.kr/";
+		$background_img_url = "https://kosso.org/";
 	}
 
 
@@ -433,7 +433,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 
 			//$content = "
 			//			<div style='width:549px;background-color:#fff;border:1px solid #000;'>
-			//				<img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
+			//				<img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
 			//				<h1 style='font-size:16px; font-weight:bold; text-align:center;'>Payment Confirmation</h1>
 			//				<div style='width:calc(100% - 80px); margin:24px auto 50px; background-color:#f8f8f8; padding:27px 35px 30px; border-top:2px solid #707070; box-sizing:border-box;'>
 			//					<p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
@@ -501,7 +501,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 			//						</tbody>
 			//					</table>
 			//					<p style='font-size:10px; color:#000 ;margin-top:19px;'>
-			//						You can also view in your account your payment status and receive the payment receipt by going to “My Page” from the <a href='https://icomes.or.kr/main/' style='font: inherit; font-weight: bold; color: #10BF99; '>“ICOMES 2022”</a> website
+			//						You can also view in your account your payment status and receive the payment receipt by going to “My Page” from the <a href='https://kosso.org/main/' style='font: inherit; font-weight: bold; color: #10BF99; '>“ICOMES 2022”</a> website
 			//						<br><br>
 			//						We express our gratitude to you for your interest in the ICOMES 2022 and look forward to seeing you in September in Seoul, Korea.
 			//						<br><br>
@@ -510,7 +510,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 			//						ICOMES 2022 Secretariat
 			//					</p>
 			//				</div>
-			//				<img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
+			//				<img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
 			//			</div>
 			//			";
 		}
@@ -584,12 +584,12 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 			//$str_now = strtotime($timenow);
 			//$str_target = strtotime($timetarget);
 			//if($str_now <= $str_target) {
-			//	$content_value = "Please visit our website(<a href='https://icomes.or.kr/main/' style='font: inherit; font-weight: bold; color: #10BF99; '>https://icomes.or.kr</a>) with your account to					submit the abstract and register.<br>
+			//	$content_value = "Please visit our website(<a href='https://kosso.org/main/' style='font: inherit; font-weight: bold; color: #10BF99; '>https://kosso.org</a>) with your account to					submit the abstract and register.<br>
 			//					If you Early-Bird and pay the registration fee by May 19th(Thu), you will receive a 30% OFF! <br>
 			//					Don’t miss out on early bird rates!<br>
 			//					Note the payment deadline of Jul 28(Thu) at 12pm(KST).<br><br>";
 			//} else {
-			//	$content_value = "Please visit our website(<a href='https://icomes.or.kr/main/' style='font: inherit; font-weight: bold; color: #10BF99; '>https://icomes.or.kr</a>) with your account to					submit the abstract and register.<br>
+			//	$content_value = "Please visit our website(<a href='https://kosso.org/main/' style='font: inherit; font-weight: bold; color: #10BF99; '>https://kosso.org</a>) with your account to					submit the abstract and register.<br>
 			//					If you Registration and pay the registration fee by Jul 28th(Thu), you will receive a 10% OFF! <br>
 			//					Don’t miss out on register rates!<br>
 			//					Note the payment deadline of Jul 28(Thu) at 12pm(KST).<br><br>";
@@ -739,9 +739,9 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 
 		if($mail_type == "visa_registration") {
 
-			$content = "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Letter of Invitation</h1><div style='width:calc(100% - 80px); margin:24px auto 100px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p><p style='font-size:10px; color:#000 ;margin-top:16px; margin-bottom:25px;'>On behalf of the ICOMES organizing committee, we cordially invite you as participant to “ICOMES 2022 International Conference” to be held at the Conrad Seoul Hotel, Seoul, Korea on September 1(Thu)-3(Sat), 2022. </p><p style='font-size:10px; color:#000; margin-bottom:25px;'>ICOMES has grown as a worldwide academic society with more than 1000 participants and eminent representative speakers in obesity every year since 2015 at its launch. ICOMES is an international academic conference that promotes cooperation among multidisciplinary study fields, providing in-depth lectures and symposiums on basic medicine and clinical medicine on obesity, metabolic syndrome, dyslipidemia, and other obesity-related diseases.<br/>The main theme of ICOMES 2022 is ‘The Next Normal - The Future of Obesity Care’. Your Presentation will be a great addition to our conference.</p><p style='font-size:10px; color:#000;'>For building instructive, insightful and interesting meeting, we would like you to take as a role of; </p><div style='padding:10px 0; margin-top:16px; border-top:1px solid #000; border-bottom:1px solid #000;'><div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Date</span><span style='vertical-align:middle; font-size:10px;'>September 1(Thu)~3(Sat)</span></div>
+			$content = "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Letter of Invitation</h1><div style='width:calc(100% - 80px); margin:24px auto 100px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p><p style='font-size:10px; color:#000 ;margin-top:16px; margin-bottom:25px;'>On behalf of the ICOMES organizing committee, we cordially invite you as participant to “ICOMES 2022 International Conference” to be held at the Conrad Seoul Hotel, Seoul, Korea on September 1(Thu)-3(Sat), 2022. </p><p style='font-size:10px; color:#000; margin-bottom:25px;'>ICOMES has grown as a worldwide academic society with more than 1000 participants and eminent representative speakers in obesity every year since 2015 at its launch. ICOMES is an international academic conference that promotes cooperation among multidisciplinary study fields, providing in-depth lectures and symposiums on basic medicine and clinical medicine on obesity, metabolic syndrome, dyslipidemia, and other obesity-related diseases.<br/>The main theme of ICOMES 2022 is ‘The Next Normal - The Future of Obesity Care’. Your Presentation will be a great addition to our conference.</p><p style='font-size:10px; color:#000;'>For building instructive, insightful and interesting meeting, we would like you to take as a role of; </p><div style='padding:10px 0; margin-top:16px; border-top:1px solid #000; border-bottom:1px solid #000;'><div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Date</span><span style='vertical-align:middle; font-size:10px;'>September 1(Thu)~3(Sat)</span></div>
 			<div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Venue</span><span style='vertical-align:middle; font-size:10px;'>Conrad Hotel Seoul, Korea</span></div></div><div style='font-size:10px; margin:14px 0 60px;'>
-			We invite you to ICOMES 2022 to create an informative, insightful and exciting<br/>meeting. <a href='mailto:icomes_registration@into-on.com' style='font-size:10px; font-weight:bold; color:#10BF99;'>(icomes_registration@into-on.com).</a></div><ul style='margin:0; padding:0; text-align:center; font-size:0;'><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top;'><p style='font-size:12px; font-weight:bold; margin:0;'>Kijin Kim</p><p style='font-size:8px;'>Chairman of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign01.png' alt=''></li><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top; margin-left:15%;'><p style='font-size:12px; font-weight:bold; margin:0;'>Chang-Beom Lee</p><p style='font-size:8px;'>President of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign02.png' style='margin-top:10px;' alt=''></li></ul></div><img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
+			We invite you to ICOMES 2022 to create an informative, insightful and exciting<br/>meeting. <a href='mailto:icomes_registration@into-on.com' style='font-size:10px; font-weight:bold; color:#10BF99;'>(icomes_registration@into-on.com).</a></div><ul style='margin:0; padding:0; text-align:center; font-size:0;'><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top;'><p style='font-size:12px; font-weight:bold; margin:0;'>Kijin Kim</p><p style='font-size:8px;'>Chairman of Korean Society<br/>for the Study of Obesity</p><img src='https://kosso.org/main/img/mail_sign01.png' alt=''></li><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top; margin-left:15%;'><p style='font-size:12px; font-weight:bold; margin:0;'>Chang-Beom Lee</p><p style='font-size:8px;'>President of Korean Society<br/>for the Study of Obesity</p><img src='https://kosso.org/main/img/mail_sign02.png' style='margin-top:10px;' alt=''></li></ul></div><img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
 		
 		}
 
@@ -756,14 +756,14 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 						"<div style='width:670px;background-color:#F8F8F8;border:1px solid #f2f2f2; padding: 0 40px;'><img src='".$background_img_url."/img/mail_header_2023.png' style='width:calc(100% + 80px);margin-left:-40px;'><div style='width:calc(100% + 80px);margin-left:-40px;margin-bottom:60px;background-color:#00666B;text-align:center;font-size: 21px; color: #FFF;padding: 10px 0;border-top:2px solid #707070;'>[ICOEMS 2023] Temporary Password</div>	<div><div><div style='margin-bottom:10px; background-color:#F8F8F8; padding:17px 34px; box-sizing:border-box;'><div><div style='margin-bottom:20px'><p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Member of : {$fname} <br><span style='font-size:14px;color:#170F00;font-weight:normal;'>You requested a temporary password at : {$time}</span></p></div><p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear , {$fname}</p><p style='font-size:14px;color:#170F00;margin-top:14px;'>You can log in to the ICOMES 2023 website using the ID & Temporary Password below and<br> modify your password on the personal information on my page.</p><table style='border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'><tbody><tr style='border-bottom:1px solid #000;'><th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>ID (Email Address)</th><td style='font-size:14px; padding:10px;'><a href='mailto:{$email}' class='link font_inherit'>{$email}</a></td></tr><tr style='border-bottom:1px solid #000;'><th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1;'>Temporary Password</th><td style='font-size:14px; padding:10px;'>{$tmp_password}</td></tr></tbody></table><p style='color:#f00;'>Click the 'Change to temporary password' button to check your changed log-in information.</p></div></div><!-- 23.04.25 수정된 버튼 마크업 --><p style='margin: 0 0 5px 34px'>Best regards,</p><p style='margin: 0 0 34px 34px'>Secretariat of ICOMES 2023</p><div style='text-align: center;'><a href='http://43.200.170.254/main/login.php' type='button' style='display:inline-block; padding:5px 20px 10px 20px; border-radius: 25px;border: 2px solid #174A77;outline: 2px solid #DFDFDF;background: linear-gradient(to top, #293380, #8CC5D1);font-size: 18px;font-weight: 500;color: #FFFFFF;cursor: pointer; text-decoration: none;'>Change to temporary password</a></div></div><img src='".$background_img_url."/img/mail_footer_2023.png' style='width:calc(100% + 80px); margin-top:60px; margin-left:-40px;'></div>
 						";
 
-			//$content = "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Temporary Password</h1><div style='width:calc(100% - 80px); margin:24px auto 50px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><div><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Member of : <span>{$fname}</span></p><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>You requested a temporary password at : <span>{$time}</span></p><p style='font-size:10px; color:#707070; margin:10px 0 0 0;'>(If you have never requested a temporary password, please delete the email.)</p></div><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Since our site does not have your password even if you are an administrator, Instead of giving you your password, we’re creating a new one and guiding you.</p><p style='font-size:12px; font-weight:bold; color:#FF3333; margin:25px 0 0 0;'>Check the password below to change.<br/>Click the “<span style='font:inherit; color:inherit; text-decoration:underline;'>Change to temporary password</span>” button.</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>When an authentication message is printed stating that the password has been changed,</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Please enter your member ID and changed password on the homepage and log in.</p><p style='font-size:10px; color:#707070;'>After logging in, please change to a new password from the Modify Information menu.</p><div style='padding:16px; border:1px solid #5DBC9B; border-radius:15px; margin-top:25px;'><ul style='padding:0; margin:0;'><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Member ID : {$to}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Temporary password :{$tmp_password}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li></ul></div><p style='font-size:12px; line-height:22px; color:#000; margin-top:20px; margin-bottom:0;'>Regards,<br/>ICOMES</p><a href='{$callback_url}' style='text-decoration:none;'><button type='button' style='display:block; margin:70px auto 0; font-size:16px; font-weight:bold; color:#FFEB00; background-color:#23BF99; padding:10px 58px 34px 58px; border-radius:30px; border:none;'>Change to temporary password<span style='margin-left:10px; font:inherit;'>&gt;</span></button></a></div><img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
+			//$content = "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Temporary Password</h1><div style='width:calc(100% - 80px); margin:24px auto 50px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><div><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Member of : <span>{$fname}</span></p><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>You requested a temporary password at : <span>{$time}</span></p><p style='font-size:10px; color:#707070; margin:10px 0 0 0;'>(If you have never requested a temporary password, please delete the email.)</p></div><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Since our site does not have your password even if you are an administrator, Instead of giving you your password, we’re creating a new one and guiding you.</p><p style='font-size:12px; font-weight:bold; color:#FF3333; margin:25px 0 0 0;'>Check the password below to change.<br/>Click the “<span style='font:inherit; color:inherit; text-decoration:underline;'>Change to temporary password</span>” button.</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>When an authentication message is printed stating that the password has been changed,</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Please enter your member ID and changed password on the homepage and log in.</p><p style='font-size:10px; color:#707070;'>After logging in, please change to a new password from the Modify Information menu.</p><div style='padding:16px; border:1px solid #5DBC9B; border-radius:15px; margin-top:25px;'><ul style='padding:0; margin:0;'><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Member ID : {$to}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Temporary password :{$tmp_password}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li></ul></div><p style='font-size:12px; line-height:22px; color:#000; margin-top:20px; margin-bottom:0;'>Regards,<br/>ICOMES</p><a href='{$callback_url}' style='text-decoration:none;'><button type='button' style='display:block; margin:70px auto 0; font-size:16px; font-weight:bold; color:#FFEB00; background-color:#23BF99; padding:10px 58px 34px 58px; border-radius:30px; border:none;'>Change to temporary password<span style='margin-left:10px; font:inherit;'>&gt;</span></button></a></div><img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
 
 
 			
 			//위에 작성된 거 들여쓰기 한 것. 들여쓰기 안 해야 br이 생성이 안 됨
 			//$content = "
 			//				<div style='width:549px;background-color:#fff;border:1px solid #000;'>
-			//					<img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
+			//					<img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
 			//					<h1 style='text-align:center; font-size:16px; font-weight:bold'>Temporary Password</h1>
 
 			//					<div style='width:calc(100% - 80px); margin:24px auto 50px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'>
@@ -796,7 +796,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 			//							<button type='button' style='display:block; margin:70px auto 0; font-size:16px; font-weight:bold; color:#FFEB00; background-color:#23BF99; padding:10px 58px; border-radius:30px; border:none;'>Change to temporary password<span style='margin-left:10px; font:inherit;'>&gt;</span></button>
 			//						</a>
 			//					</div>
-			//					<img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
+			//					<img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
 			//				</div>
 			//		";
 
@@ -804,7 +804,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 			//$content =	
 			//			"
 			//				<div style='width:670px;background-color:#fff;border:1px solid #ADF002;'>
-			//					<img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:60px;'>
+			//					<img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:60px;'>
 			//					<div style='margin-left:60px;margin-bottom:40px;'>
 			//						<p style='text-align:left;font-size:15px;color:#170F00;line-height:1.8;'>Member of {$fname}, <br>You requested a temporary password at {$time}</p>
 			//						<p style='text-align:left;font-size:12px;color:#AAAAAA;margin-top:22px;'>(If you have never requested a temporary password, please delete the email.)</p>
@@ -819,13 +819,13 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 			//						<p style='text-align:left;font-size:14px;color:#170F00;margin-top:51px;'>Regards, <br> ICOMES</p>
 			//					</div>
 			//					<a href='{$callback_url}' style='display:block;text-decoration:none;text-align:center;width:180px;max-width:180px;background:#fff;margin-left:60px;border:1px solid #585859;border-radius:30px;padding:14px 50px;background:#fff;cursor:pointer;color:#000;'>Change to temporary password</a>
-			//					<img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;margin-top:60px;'>
+			//					<img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;margin-top:60px;'>
 			//				</div>";
 
 			/*$content = 
 						"
 							<div style='width:549px;background-color:#fff;border:1px solid #000;'>
-								<img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
+								<img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
 								<h1 style='text-align:center; font-size:16px; font-weight:bold'>Temporary Password</h1>
 								<div style='width:calc(100% - 80px); margin:24px auto 100px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'>
 									<p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
@@ -835,7 +835,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 									<p style='font-size:12px; margin-top:34px; margin-bottom:0;'>ICOMES 2022 Secretariat</p>
 								</div>
 								<a href='http://54.180.86.106/main/login.php' style='cursor: pointer;' target='_blank'>
-									<img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
+									<img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
 								</a>
 							</div>
 						";*/
@@ -851,13 +851,13 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 
 			$content = "
 							<div style='width:549px;background-color:#fff;border:1px solid #000;'>
-								<img src='http://icomes.or.kr/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
+								<img src='http://kosso.org/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'>
 								<h1 style='font-size:16px; font-weight:bold; text-align:center;'>Abstract Successfully Submitted </h1>
 								<div style='width:calc(100% - 80px); margin:24px auto 0; background-color:#f8f8f8; padding:27px 35px 30px; border-top:2px solid #707070; box-sizing:border-box;'>
 									<p style='font-size:12px; line-height:20px; color:#000; margin:0;'>Thank you for your interest in ICOMES 2022! Your abstract submission has been received. Please read the following information carefully, mark your calendar with important dates and deadlines, and save this message.<br><br>Upon successful submission of your abstract, you will immediately see the following confirmation notice on your screen, followed by the same message via e‐ mail. If you did not receive the following message, your abstract was not successfully submitted. Please try again, or contact <a href='mailto:icomes_abstracts@into-on.com' style='font-weight:bold; color:#10BF99; text-decoration:underline;'>icomes_abstracts@into-on.com</a> for assistance if you are having difficulty. The deadline for abstract submissions is 16 July (submissions close at 11:59 p.m. Korea Standard Time). It is your responsibility to address questions about submissions before 16 July, so that if there is a problem, we can still help you make the submission on time. Be sure to print and/or save the confirmation of submission notices for reference in case of a problem or question.</p>
 								</div>
 								<p style='font-size:12px; font-weight:bold; color:#000; line-height:20px; padding:0 75px; margin:23px 0 72px;'>This is an automated message, Please do not reply. <br>**Please save this information for reference.</p>
-								<img src='http://icomes.or.kr/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
+								<img src='http://kosso.org/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
 							</div>
 			";
 		}
@@ -880,7 +880,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 	$mail->SMTPSecure = "ssl";
 	$mail->Host = "smtp.naver.com"; //네이버 맞는지?
 	$mail->Port = 465;
-	$mail->Username = ""; // admin@domain.com //ICOMES 측 이메일 확인받아야함 info@icomes.or.kr
+	$mail->Username = ""; // admin@domain.com //ICOMES 측 이메일 확인받아야함 info@kosso.org
 	$mail->Password = "";// 비밀번호 into2285
 	//$mail->SMTPDebug = 3;
 
@@ -892,9 +892,9 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
     //$mail->Body = $content;//허브디앤씨 작성 -> mail body가 plane text 인 경우
     $mail->MsgHTML($content);//인투온 작성 -> mail body가 html인 경우*/
 
-	$account['username'] = "info@icomes.or.kr"; // info@icomes.or.kr
+	$account['username'] = "info@kosso.org"; // info@kosso.org
 	$account['password'] = "into2285"; // into2285
-//https://icomes.or.kr/
+//https://kosso.org/
 	//$mail->CharSet = "EUC-KR";
 	$mail->Encoding = "base64";
 
@@ -905,7 +905,7 @@ function mailer($language, $mail_type, $fname, $to, $subject, $time, $tmp_passwo
 	$mail->Host = "smtp.gmail.com"; //네이버 맞는지?
 	$mail->Port = 465;
 	$mail->IsHTML(true);
-	$mail->Username = $account['username']; // admin@domain.com //ICOMES 측 이메일 확인받아야함 info@icomes.or.kr
+	$mail->Username = $account['username']; // admin@domain.com //ICOMES 측 이메일 확인받아야함 info@kosso.org
 	$mail->Password = $account['password'];// 비밀번호 into2285
 	//$mail->SMTPDebug = 3;
 
