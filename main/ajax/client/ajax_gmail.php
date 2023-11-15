@@ -204,8 +204,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			if ($nation_no == 25) {
 				$name_kor_cont = "<tr>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>성명</th>
-									<td style='font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;'>{$first_name_kor}</td>
-									<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$last_name_kor}</td>
+									<td style='font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;'>{$last_name_kor}{$first_name_kor}</td>
 								</tr>";
 				$affiliation_kor_cont = "<tr>
 											<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>소속</th>
@@ -219,69 +218,60 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			//<img src='".$background_img_url."/img/mail_header_2023.png' style='width:calc(100% + 80px);margin-left:-40px;'>
 			// 23.05.15 HUBDNC_LJH 이메일 템플릿 변경 
 			$rawMessageString .= "
-								<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
-									<tbody>
-										<tr>
-											<td colspan='3'>
-												<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:750px;'>
-											</td>
-										</tr>
-										<tr>
-											<td colspan='3'>
-												<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2023] Welcome to ICOMES 2023!</div>
-											</td>
-										</tr>
-										<tr>
-											<td width='74' style='width:74px;'></td>
-											<td>
-												<div>
-													<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
-													<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2023.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2023 website - MY PAGE’ to review, modify or update your personal information.</p>
-													<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-														<tbody>
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID (Email Address)</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$email}' class='link font_inherit'>{$email}</a></td>
-															</tr>
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Name</th>
-																<td style='font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;'>{$first_name}</td>
-																<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$last_name}</td>
-															</tr>
-															{$name_kor_cont}
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Affiliation</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$affiliation}</td>
-															</tr>
-															{$affiliation_kor_cont}
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$phone}</td>
-															</tr>
-														</tbody>	
-													</table>
-													<p>We express our gratitude to you for your interest in ICOMES 2023.</p>
-												</div>
-											</td>
-											<td width='74' style='width:74px;'></td>
-										</tr>
-										<tr>
-											<td width='74' style='width:74px;'></td>
-											<td style='padding-top:16px;'>
-												<p>Warmest regards,</p>
-												<div style='text-align: center;'>
-													<a href='https://www.icomes.or.kr/'><img src='https://www.icomes.or.kr/main/img/icomes_btn.png' alt=''></a>
-												</div>
-											</td>
-											<td width='74' style='width:74px;'></td>
-										</tr>
-										<tr>
-											<td colspan='3' style='padding-top:50px;'>
-												<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:750px;'>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+			<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
+			<tbody>
+				<tr>
+					<td colspan='3'>
+						<img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:750px;'>
+					</td>
+				</tr>
+				<tr>
+					<td colspan='3'>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 제 58차대한비만학회 춘계학술대회</div>
+					</td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<div>
+							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'>2024 춘계학술대회에 가입해 주셔서 감사합니다.<br>귀하의 프로필이 성공적으로 생성되었습니다.<br>아래에 입력한 정보를 검토해 주세요.<br>'웹사이트 - 마이 페이지'에 접속하여 개인 정보를 검토, 수정할 수 있습니다.</p>
+							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+								<tbody>
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID (Email Address)</th>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$email}' class='link font_inherit'>{$email}</a></td>
+									</tr>
+									{$name_kor_cont}
+									{$affiliation_kor_cont}
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$phone}</td>
+									</tr>
+								</tbody>	
+							</table>
+							<p>제 58차 대한비만학회 춘계학술대회에 대한 관심에 감사드립니다.</p>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td style='padding-top:16px;'>
+						<p>항상 행운을 빕니다.</p>
+						<div style='text-align: center;'>
+							<a href='https://kosso.org/'><img src='https://kosso.org/main/img/ksso_btn.png' alt=''></a>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td colspan='3' style='padding-top:50px;'>
+						<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:750px;'>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
 			";
 			//$rawMessageString.= "
@@ -1243,7 +1233,7 @@ if ($_POST["flag"] == "signup") {
 
 		$user_data = sql_fetch($select_user_query);
 
-		$subject = "[ICOMES 2023] Welcome to ICOMES 2023!";
+		$subject = "[KSSO 2024] 제 58차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
 		$callback_url = D9_DOMAIN . "/signup_certified.php?idx=" . $user_data["idx"];
 
 		$message = createMessage("en", "sign_up", "", $email, $subject, date("Y-m-d H:i:s"), "", $callback_url, 1);
