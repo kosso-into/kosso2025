@@ -1,7 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26.515" height="30.166" viewBox="0 0 26.515 30.166">
-  <g id="그룹_271" data-name="그룹 271" transform="translate(-1839.481 -1005.21)">
-    <path id="패스_1752" data-name="패스 1752" d="M1844.333,5884.756h26.515" transform="translate(-4.853 -4878.546)" fill="none" stroke="#000" stroke-width="2"/>
-    <path id="패스_1753" data-name="패스 1753" d="M1850.333,5899.594l9.107-9.107,9.107,9.107" transform="translate(-7.02 -4879.884)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
-    <line id="선_39" data-name="선 39" y2="22.997" transform="translate(1852.512 1011.38)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <defs>
+    <filter id="타원_22" x="0" y="0" width="82" height="82" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_1203" data-name="그룹 1203" transform="translate(-1818 -980)">
+    <g transform="matrix(1, 0, 0, 1, 1818, 980)" filter="url(#타원_22)">
+      <circle id="타원_22-2" data-name="타원 22" cx="29" cy="29" r="29" transform="translate(12 12)" fill="#ff9" opacity="0.7"/>
+    </g>
+    <path id="패스_1752" data-name="패스 1752" d="M1844.333,5884.756h26.515" transform="translate(1.89 -4874.805)" fill="none" stroke="#092d4f" stroke-width="2"/>
+    <path id="패스_1753" data-name="패스 1753" d="M1850.333,5899.594l9.107-9.107,9.107,9.107" transform="translate(-0.277 -4876.141)" fill="none" stroke="#092d4f" stroke-linecap="round" stroke-width="2"/>
+    <line id="선_39" data-name="선 39" y2="22.997" transform="translate(1859.254 1015.122)" fill="none" stroke="#092d4f" stroke-linecap="round" stroke-width="2"/>
   </g>
 </svg>

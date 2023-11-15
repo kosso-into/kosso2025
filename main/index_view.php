@@ -1,42 +1,42 @@
 <?php
-	// main
-	$img_col_name = check_device() ? "mo_" : "pc_";
-	$img_col_name .= $language."_img";
-	$banner_query =	"SELECT
+// main
+$img_col_name = check_device() ? "mo_" : "pc_";
+$img_col_name .= $language . "_img";
+$banner_query =    "SELECT
 						b.idx,
 						CONCAT(fi_img.path, '/', fi_img.save_name) AS fi_img_url
 					FROM banner AS b
 					LEFT JOIN `file` AS fi_img
-						ON fi_img.idx = b.".$img_col_name."
-					WHERE b.".$img_col_name." > 0";
-	$banner = get_data($banner_query);
-	$banner_cnt = count($banner);
+						ON fi_img.idx = b." . $img_col_name . "
+					WHERE b." . $img_col_name . " > 0";
+$banner = get_data($banner_query);
+$banner_cnt = count($banner);
 
-	// event
-	$info_query =	"SELECT
+// event
+$info_query =    "SELECT
 						ie.title AS event_title,
 						ie.period_event_start,
 						ie.period_event_end,
-						igv.name_".$language." AS venue_name
+						igv.name_" . $language . " AS venue_name
 					FROM info_event AS ie
 					,info_general_venue igv";
-	$info = sql_fetch($info_query);
+$info = sql_fetch($info_query);
 
-	//key date
-	$key_date_query =	"SELECT
+//key date
+$key_date_query =    "SELECT
 							`key_date`,
-							contents_".$language." AS contents
+							contents_" . $language . " AS contents
 						FROM key_date
 						WHERE `type` = 'poster'
 						#AND DATE(`key_date`) >= DATE(NOW())
 						AND DATE(`key_date`) <> '0000-00-00'
 						ORDER BY `key_date`
 						LIMIT 4";
-	$key_date = get_data($key_date_query);
-	$key_date_cnt = count($key_date);
+$key_date = get_data($key_date_query);
+$key_date_cnt = count($key_date);
 
-	//2021_06_23 HUBDNC_KMJ NOTICE 쿼리
-	$notice_list_query = "SELECT
+//2021_06_23 HUBDNC_KMJ NOTICE 쿼리
+$notice_list_query = "SELECT
 							idx,
 							title_en,
 							title_ko,
@@ -46,11 +46,11 @@
 						AND is_deleted = 'N'
 						ORDER BY register_date DESC
 						LIMIT 5";
-	$notice_list = get_data($notice_list_query) ?? [];
-	$total_notice = count($notice_list);
+$notice_list = get_data($notice_list_query) ?? [];
+$total_notice = count($notice_list);
 
-	//230519 HUBDNC_NYM Newsletter 쿼리
-	$newsletter_list_query = "	SELECT
+//230519 HUBDNC_NYM Newsletter 쿼리
+$newsletter_list_query = "	SELECT
 									idx,
 									title_en,
 									title_ko,
@@ -60,8 +60,8 @@
 								AND is_deleted = 'N'
 								ORDER BY register_date DESC
 								LIMIT 5";
-	$newsletter_list = get_data($newsletter_list_query) ?? [];	
-	$total_newsletter = count($newsletter_list) ?? 0;
+$newsletter_list = get_data($newsletter_list_query) ?? [];
+$total_newsletter = count($newsletter_list) ?? 0;
 ?>
 
 <style>
@@ -83,12 +83,12 @@ body {
 				<video src="https://player.vimeo.com/external/595050190.hd.mp4?s=f5a9471e806bff619dc115c9dfc5db80d5df87fb&profile_id=174" autoplay="autoplay" muted="muted" playsinline id="main_video_bg" loop></video>
 			</div>
 			<?php
-				foreach ($banner as $bn) {
-			?>
-			<div class="main_img_wrap"><img src="<?=$bn['fi_img_url']?>"></div>
+            foreach ($banner as $bn) {
+            ?>
+			<div class="main_img_wrap"><img src="<?= $bn['fi_img_url'] ?>"></div>
 			<?php
-				}
-			?>
+            }
+            ?>
 		</div>
 	</div>
 	-->
@@ -98,11 +98,11 @@ body {
         <!-- <video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f" autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video> -->
         <!-- </div> -->
         <div class="container">
-            <!-- <img src="/main/img/img_vsl_text.png" class="pc_only img_vsl_text" alt=""> -->
+            <img src="/main/img/img_vsl_text.png" class="pc_only img_vsl_text" alt="">
             <div class="mb_only img_vsl_text" style="">
-                <img src="/main/img/img_vsl_text_mb.svg" alt="">
-                <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
-                <p>CONRAD Seoul Hotel, Korea</p>
+                <img src="/main/img/img_vsl_text.png" alt="">
+                <!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
+                <p>CONRAD Seoul Hotel, Korea</p> -->
             </div>
             <!-- 상단 타이틀 -->
             <div class="txt_wrap">
@@ -114,7 +114,7 @@ body {
                 <!-- 		class="point_txt f_bold">ME</b>tabolic <b class="point_txt f_bold">S</b>yndrome hosted by KSSO</p> -->
                 <!-- <p class="e_place"> -->
                 <?php
-					/*$date_start = date_create($info['period_event_start']);
+                /*$date_start = date_create($info['period_event_start']);
 					$date_end = date_create($info['period_event_end']);
 
 					$format_start = "M d(D)";
@@ -129,7 +129,7 @@ body {
 
 					$date_text = date_format($date_start, $format_start) . "-" . date_format($date_end, $format_end);
 					$venue_text = $info['venue_name'];*/
-					?>
+                ?>
                 <!-- <?= $date_text ?>&nbsp;/&nbsp;<?= $venue_text ?> -->
                 <!-- SEP 7<span>(Thu)</span>-9<span>(Sat)</span>, 2023 / CONRAD Seoul Hotel, Korea -->
                 <!-- </p> -->
@@ -173,7 +173,7 @@ body {
                 </li>
                 <li>
                     <a href="">
-                        <h2>TBD</h2> 
+                        <h2>TBD</h2>
                         <h2>TBD</h2>
                         <i><img src="/main/img/img_trophy.svg" alt=""></i>
                     </a>
@@ -214,10 +214,12 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
+
                     <h5 class="title">TBD</h5>
                     <div class="career">TBD</div>
                 </li>
                 <!-- <li class="index_speaker2">
+
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
@@ -245,6 +247,7 @@ body {
                     <h5 class="title">Jae-Heon Kang</h5>
                     <div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
                 </li> -->
+
             </ul>
         </div>
     </div>
@@ -258,33 +261,33 @@ body {
                 <h3 class="title">Newsletter<a href="/main/board_newsletter.php" class="moreview_btn">+</a></h3>
                 <ul>
                     <?php
-					if ($total_newsletter > 0) {
-						foreach ($newsletter_list AS $newsletter) {
-				?>
+                    if ($total_newsletter > 0) {
+                        foreach ($newsletter_list as $newsletter) {
+                    ?>
                     <li><a href="/main/board_newsletter_detail.php?no=<?= $newsletter["idx"] ?>">
                             <p><?= $newsletter["title_en"] ?></p><span><?= $newsletter["date_ymd"] ?? "-" ?></span>
                         </a></li>
                     <?php
-						}
-					} else {
-				?>
+                        }
+                    } else {
+                        ?>
                     <li>
                         <div class='no_data'>Will be updated</div>
                     </li>
                     <?php
-					}
-				?>
+                    }
+                    ?>
                 </ul>
             </div>
             <!-- 2022년 버전에 공지사항 없어서 테스트 텍스트로 넣어놓음 -->
             <div class="noti_area">
                 <h3 class="title">Notice<a href="/main/board_notice.php" class="moreview_btn">+</a></h3>
                 <ul>
-                    <?php if(count($notice_list) > 0) { ?>
-                    <?php 
-							for($i = 0; $i < count($notice_list); $i++) { 
-								$notice = $notice_list[$i];
-						?>
+                    <?php if (count($notice_list) > 0) { ?>
+                    <?php
+                        for ($i = 0; $i < count($notice_list); $i++) {
+                            $notice = $notice_list[$i];
+                        ?>
                     <li><a href="/main/board_notice_detail.php?no=<?= $notice["idx"] ?>&i=<?= $total_notice - $i ?>">
                             <p><?= $notice["title_en"] ?? "" ?></p><span><?= $notice["date_ymd"] ?? "" ?></span>
                         </a></li>

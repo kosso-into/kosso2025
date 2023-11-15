@@ -15,7 +15,7 @@
 /* 22.03.15 ICoLA 2022 NEW Main - HUBDNC LJH2*/
 .container {max-width: 1200px;}
 .main_section.icola_main .container {position:relative; max-width: 1200px; padding: 90px 0 156px;}
-.section_bg {height: 100vh; width: 100%; padding-top: 117px; background-image:url("https://image.webeon.net/icomes/main.png"); background-position: center; background-size: cover; background-repeat: no-repeat;overflow-x: hidden;}
+.section_bg {height: 100vh; width: 100%; padding-top: 117px; background-image:url("../img/img_login_bg2.png"); background-position: center; background-size: cover; background-repeat: no-repeat;overflow-x: hidden;}
 /* .section_bg {min-height: 100vh; padding-top: 117px; background: center top 20px / cover no-repeat url("../img/main_bg2.png");} */
 /*.section_bg {height: 100vh; width: 100vw;padding-top: 126px; background-image:url("https://velog.velcdn.com/images/crystal025/post/d903e8b2-ff90-4f18-aa11-5003c7b08739/image.png"); background-position: center; background-size: cover; background-repeat: no-repeat;}*/
 /* 220614 메인페이지 sponsor slide 추가작업 - HUBDNCHYJ */
@@ -95,7 +95,7 @@ input[type="file"].file_input + .file_label {display: inline-block; line-height:
 /* header > fixed_btn */
 .dday_wrap {position: absolute; left: 13px; top: -11px;}
 /*.dday_top {padding: 0 26px; border-radius: 0 0 29px 29px; background-color: #00666B; text-align: center;}*/
-.dday_top {padding: 2px 26px; border-radius: 0 0 29px 29px; background-color: #0066CC; text-align: center; font-size: 34px;  box-shadow: 0 3px 3px rgb(0, 0, 0, 0.16);}
+.dday_top {padding: 2px 26px; border-radius: 0 0 29px 29px; background-color: #0499CC; text-align: center; font-size: 34px;  box-shadow: 0 3px 3px rgb(0, 0, 0, 0.16);}
 .dday_top span {font-size: 35px; font-weight: 900; color: #FFF;line-height: 1;}
 .dday_bot {margin-top: 7px; font-size: 14px; font-weight: 600; color: #000;}
 .dday_bot span {font-size: 15px; font-weight: 900; color: inherit;}

@@ -13,15 +13,13 @@
             ?>
             <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
             <li>
-                <a href="" target="_blank" class="type2 pink">
-                    <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
-                    초록집 <br />Download
+                <a href="" target="_blank">
+                    <img src="/main/img/icons/icon_download_abstract.svg" alt="">
                 </a>
             </li>
             <li>
-                <a href="" target="_blank" class="type2 violet">
-                    <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
-                    Program Book <br />Download
+                <a href="" target="_blank">
+                    <img src="/main/img/icons/icon_download_program.svg" alt="">
                 </a>
             </li>
             <?php
@@ -30,13 +28,12 @@
             <li>
 
                 <button type="button" class="not_yet">
-                    <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>등록
+                    <img src="/main/img/icons/tool_regist.svg" alt="">
                 </button>
             </li>
             <li>
                 <button type="button" class="not_yet">
-                    <i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>초록 접수
-
+                    <img src="/main/img/icons/tool_abstract.svg" alt="">
                 </button>
             </li>
             <?php
@@ -45,19 +42,20 @@
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-            <li><button type="button" onClick="alert('Need to login.')"><i><img src="/main/img/icons/tool_mypage.svg"
-                            alt=""></i>My page</button></li>
+            <li><button type="button" onClick="alert('Need to login.')"><img src="/main/img/icons/tool_mypage.svg"
+                        alt=""></button></li>
             <?php
             } else {
             ?>
-            <li><button type="button" onClick="location.href='/main/mypage.php'"><i><img
-                            src="/main/img/icons/tool_mypage.svg" alt=""></i>My Page</button></li>
+            <li><button type="button" onClick="location.href='/main/mypage.php'"><img
+                        src="/main/img/icons/tool_mypage.svg" alt=""></button></li>
             <?php
             }
             ?>
 
         </ul>
-        <button type="button" class="btn_top"><img src="/main/img/icons/icon_top_btn.svg" alt=""></button>
+        <button type="button" class="btn_top"><img class="icon_top_btn" src="/main/img/icons/icon_top_btn.svg"
+                alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
     <!--
