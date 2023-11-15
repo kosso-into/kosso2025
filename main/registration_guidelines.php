@@ -32,7 +32,7 @@ $price = get_data($sql_price);
 
 <section class="container registration">
     <div>
-        <h1 class="page_title">등록 접수 지침</h1>
+        <h1 class="page_title">등록 접수 가이드</h1>
         <div class="inner">
             <!--1. important dates start-->
             <h3 class="title">일정 안내</h3>
@@ -44,15 +44,15 @@ $price = get_data($sql_price);
                     </colgroup>
                     <tr>
                         <th>등록 접수<br class="br_mb_only">시작일</th>
-                        <td class="f_bold">Mid-May</td>
+                        <td class="f_bold">12월 초</td>
                     </tr>
                     <!-- <tr>
                         <th class="close_th">Early-bird Registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">June 29 (Thu)</td>
                     </tr> -->
                     <tr>
-                        <th class="close_th">사전 등록 접수<br class="br_mb_only">마감일</th>
-                        <td class="f_bold">August 24 (Thu)</td>
+                        <th>사전 등록 접수<br class="br_mb_only">마감일</th>
+                        <td class="f_bold">TBD</td>
                     </tr>
                 </table>
             </div>
@@ -103,18 +103,18 @@ $price = get_data($sql_price);
                     <table class="c_table2 detail_table center">
                         <thead>
                             <tr>
-                                <th rowspan=" 2">Category</th>
+                                <th rowspan=" 2">구분</th>
                                 <!-- <th colspan="2">Early-bird Registration</th> -->
-                                <th colspan="2">Pre-registration</th>
-                                <th colspan="2">On-site Registration</th>
+                                <th colspan="2">사전 등록 접수</th>
+                                <th colspan="2">현장 등록 접수</th>
                             </tr>
                             <tr>
                                 <!-- <th><?= $locale("member") ?></th>
                                     <th><?= $locale("non_member") ?></th> -->
-                                <th><?= $locale("member") ?></th>
-                                <th><?= $locale("non_member") ?></th>
-                                <th><?= $locale("member") ?></th>
-                                <th><?= $locale("non_member") ?></th>
+                                <th>대한비만학회 정회원</th>
+                                <th>대한비만학회 비회원</th>
+                                <th>대한비만학회 정회원</th>
+                                <th>대한비만학회 비회원</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -146,10 +146,10 @@ $price = get_data($sql_price);
                                 <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
                                 <!-- </td> -->
                                 <!-- <td>USD 160<br>KRW 160,000</td> -->
-                                <td>USD 160<br>KRW 160,000</td>
-                                <td>USD 190<br>KRW 190,000</td>
-                                <td>USD 200<br>KRW 200,000</td>
-                                <td>USD 230<br>KRW 230,000</td>
+                                <td>160,000원</td>
+                                <td>190,000원</td>
+                                <td>200,000원</td>
+                                <td>230,000원</td>
                             </tr>
                             <tr class="text_center">
                                 <td>
@@ -162,37 +162,30 @@ $price = get_data($sql_price);
                                 </td>
                                 <!-- <td>USD 65<br>KRW 65,000</td> -->
                                 <!-- <td>USD 95<br>KRW 95,000</td> -->
-                                <td>USD 85<br>KRW 85,000</td>
-                                <td>USD 115<br>KRW 115,000</td>
-                                <td>USD 120<br>KRW 120,000</td>
-                                <td>USD 150<br>KRW 150,000</td>
+                                <td> 85,000원</td>
+                                <td> 115,000원</td>
+                                <td> 120,000원</td>
+                                <td> 150,000원</td>
                             </tr>
                             <tr class="text_center">
                                 <td>Student
                                     <!--, Surgeon (Military),<br>Public Health Doctor-->
                                 </td>
-                                <td colspan="6">Free<br />*Student ID cards required</td>
+                                <td colspan="6">Free<br />*행사 당일 학생증 지참 필요</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="mt10">
                     <ul class="indent_ul">
-                        <li>• A registration confirmation will be sent to your registered email address once you have
-                            completed your registration with full payment. If you have not received it, please contact
-                            the congress secretariat.</li>
-                        <li>• For bank transfers, the automatically generated confirmation letter may indicate the
-                            payment status as 'unpaid.' If you need to confirm the payment completion, you can check the
-                            payment status on 'my page.' (Please be aware that it may take some time for the payment
-                            confirmation to be updated.)</li>
-                        <li>• Registration will not be considered complete until the full registration fee has been
-                            paid.</li>
-                        <li>• The online registration page is optimized for Google Chrome and Microsoft Edge. If you
-                            encounter any issues with online registration, please reach out to the congress secretariat
-                            for assistance.</li>
-                        <li>• If you would like to modify your registration information, please contact the congress
-                            secretariat at <a href="mailto:icomes@into-on.com"
-                                class="font_inherit link">icomes@into-on.com</a></li>
+                        <li>• 등록 완료 및 전액 결제 시 등록 확인이 등록된 이메일 주소로 전송됩니다. 만약 메일을 받지 못한 경우, 대회 사무국에 문의하십시오.</li>
+                        <li>• 계좌 이체의 경우 자동으로 생성된 확인 이메일에 지불 상태가 '미결제'으로 나올 수 있습니다. 결제 완료를 확인해야 하는 경우 '내 페이지'에서 결제 상태를
+                            확인할 수 있습니다. (결제 확인이 업데이트되기까지 몇 시간이 걸릴 수 있습니다.)</li>
+                        <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
+                        <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생하는 경우 대회 사무국에
+                            문의하십시오.</li>
+                        <li>• 등록 정보를 수정하고 싶은 경우, 사무국<a href="mailto:ksso@into-on.com"
+                                class="font_inherit link">(ksso@into-on.com)</a>으로 연락해 주세요.</li>
                     </ul>
                 </div>
             </div>
@@ -203,47 +196,44 @@ $price = get_data($sql_price);
 
 
             <!--3. Methods of Payment start-->
-            <h3 class="title">Methods of Payment</h3>
+            <h3 class="title">결제 방법</h3>
             <div class="details">
                 <!-- <a class="btn long_btn text_long" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Application for cancellation of registration and refund</a> -->
                 <div class="details payment_detail mt10">
                     <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                     <div>
                         <ul class="indent_ul">
-                            <li>• Credit Card : Master / VISA</li>
-                            <li>• Bank Transfer</li>
+                            <li style="font-weight: 700;">• 신용카드</li>
+                            <ul class="indent_ul">
+                                <li>• 사전등록 시 카드결제가 가능합니다.</li>
+                            </ul>
+                            <li style="font-weight: 700;">• 계좌이체</li>
+                            <ul class="indent_ul">
+                                <li>• 아래의 계좌로 입금하여 주십시오.</li>
+                                <li>• 입금자와 등록자의 성함이 다를 경우, 등록 확인이 불가하니 반드시 등록자의 성함으로 입금 부탁드립니다.</li>
+                                <li>• 등록 완료는 결제까지 완료된 상태이며, 사전등록 기간 내 미입금 시 등록이 취소될 수 있음을 안내해 드립니다.</li>
+                                <li>• 입금완료 및 등록 완료 확인까지 시일이 소요될 수 있으며, 빠른 확인이 필요하시면 사무국으로 연락 부탁드립니다.</li>
+                            </ul>
                         </ul>
                     </div>
                     <div class="table_wrap detail_table_common x_scroll">
                         <table class="c_table detail_table">
                             <colgroup>
-                                <col>
+                                <col style="width: 30%;">
                                 <col>
                             </colgroup>
                             <tbody>
                                 <tr>
-                                    <th>Name of Bank</th>
-                                    <td>Hana Bank</td>
+                                    <th>은행명</th>
+                                    <td>하나은행</td>
                                 </tr>
                                 <tr>
-                                    <th>Branch</th>
-                                    <td>HANA BANK, HEAD OFFICE</td>
-                                </tr>
-                                <tr>
-                                    <th>Bank Address</th>
-                                    <td>35, EULJI-RO, JUNG-GU, Seoul, Korea</td>
-                                </tr>
-                                <tr>
-                                    <th>Account Number</th>
+                                    <th>계좌 번호</th>
                                     <td>584-910003-16504</td>
                                 </tr>
                                 <tr>
-                                    <th>SWIFT CODE(BIC)</th>
-                                    <td>KOEXKRSE</td>
-                                </tr>
-                                <tr>
-                                    <th>Account Holder</th>
-                                    <td>대한비만학회 등록비 <br>(International Congress on Obesity and Metabolic Syndrome)</td>
+                                    <th>예금주</th>
+                                    <td>대한비만학회-등록비</td>
                                 </tr>
                                 <!--
 								<tr>
@@ -266,23 +256,19 @@ $price = get_data($sql_price);
 
 
             <!--3. Cancellation & Refund Policy start-->
-            <h3 class="title">Cancellation & Refund Policy</h3>
+            <h3 class="title">환불 및 취소 규정</h3>
             <a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long"
-                target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">Cancellation & Refund Form
-                Download</a>
+                target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">등록 취소 및 환불 신청서</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
                     <ul class="indent_ul">
-                        <li>• The cancellation of full payment registration and reimbursement will only be accepted in
-                            written form and must be submitted via email to the secretariat.<br>(<a
-                                href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>)</li>
-                        <li>• Prior to making a payment, it is possible to cancel registration through "My page -
-                            Registration". However, payment has already been processed, it is necessary to contact the
-                            secretariat for further assistance.</li>
-                        <li>• Please note that refunds will be processed after the conference. (*By October 1, 2023)
+                        <li>• 환불 및 등록 취소를 위하여 정해진 환불 신청서 양식을 작성하시어 사무국 이메일(<a href="mailto:ksso@into-on.com"
+                                class="font_inherit link">ksso@into-on.com</a>)으로 제출 부탁드립니다.<br></li>
+                        <li>• 결제 완료 전에는 '내 페이지 - 등록'을 통해 등록을 취소할 수 있습니다. 그러나 이미 결제가 처리된 경우, 추가 도움을 받기 위해 사무국에 문의해야 합니다.
                         </li>
-                        <li>• All bank service charges and administration fees will be deducted from the refund.</li>
+                        <li>• 환불은 춘계학술대회 이후에 처리될 예정입니다. </li>
+                        <li>• 은행 수수료 및 행정 수수료는 환불에서 차감될 것입니다.</li>
                     </ul>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
@@ -293,12 +279,12 @@ $price = get_data($sql_price);
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th>Before Pre-Registration Deadline</th>
-                                <td>Full Refund</td>
+                                <th>TBD</th>
+                                <td>전액 환불</td>
                             </tr>
                             <tr>
-                                <th>After Pre-Registration Deadline</th>
-                                <td>No Refund</td>
+                                <th>TBD</th>
+                                <td>환불 불가</td>
                             </tr>
                         </tbody>
                     </table>
@@ -424,8 +410,7 @@ $price = get_data($sql_price);
     <!-- 	<?= $locale("registration") ?> -->
     <!-- </button> -->
     <div class="centerT">
-        <a href="./registration.php" class="btn long_btn text_long online_registration_alert">Go to Online
-            Registration</a>
+        <a href="./registration.php" class="btn long_btn text_long ">온라인 사전등록</a>
     </div>
 
     <!-- 평점안내 팝업 / 시작 -->

@@ -103,42 +103,44 @@ $locale = locale($language);
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/registration_guidelines.php">Registration</a>
+                        <a href="/main/registration_guidelines.php">등록 접수</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/registration_guidelines.php">Registration Guidelines
+                            <li><a href="/main/registration_guidelines.php">등록 접수 안내
                                 </a></li>
-                            <li><a href="/main/registration.php" class="online_registration_alert">Online
-                                    Registration</a></li>
+                            <li><a href="/main/registration.php" class="online_registration_alert">온라인 등록 접수</a></li>
                             <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/sponsor.php">Sponsorship</a>
+                        <a href="/main/sponsor.php">후원/전시</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/sponsor.php">Sponsorship</a></li>
-                            <li><a href="/main/sponsor_exhibition.php">Exhibition</a></li>
+                            <li><a href="/main/sponsor.php">후원사</a></li>
+                            <li><a href="/main/comingsoon.php">전시 배치도</a></li>
+                            <!-- <li><a href="/main/sponsor_exhibition.php">전시 배치도</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/venue.php">Venue</a>
+                        <a href="/main/venue.php">행사장</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/venue.php">Conrad Seoul</a></li>
-                            <li><a href="/main/accommodation.php">Accommodation</a></li>
-                            <li><a href="/main/floor_plan.php">Floor Plan</a></li>
+                            <li><a href="/main/venue.php">오시는 길</a></li>
+                            <li><a href="/main/comingsoon.php">숙박</a></li>
+                            <li><a href="/main/comingsoon.php">행사장 배치도</a></li>
+                            <!-- <li><a href="/main/accommodation.php">숙박</a></li>
+                            <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
                             <!-- <li><a href="/main/venue.php">Transportation</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/board_notice.php">Information</a>
+                        <a href="/main/board_notice.php">공지사항</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/board_notice.php">Notice</a></li>
-                            <li><a href="/main/board_newsletter.php">Newsletter</a></li>
+                            <li><a href="/main/board_notice.php">공지사항</a></li>
+                            <li><a href="/main/board_newsletter.php">뉴스레터</a></li>
                             <!-- <li><a href="/main/accommodation.php">Accommodation</a></li> -->
                             <!-- <li><a href="/main/attraction_historic.php">Attractions in Seoul</a></li> -->
                             <!--/main/attraction_historic.php-->
-                            <li><a href="/main/useful_information.php">Useful Information</a></li>
+                            <!-- <li><a href="/main/useful_information.php">Useful Information</a></li> -->
                             <!--useful_information.php-->
-                            <li><a href="/main/visa.php">VISA & K-ETA</a></li>
+                            <!-- <li><a href="/main/visa.php">VISA & K-ETA</a></li> -->
                         </ul>
                     </li>
                 </ul>
@@ -237,38 +239,38 @@ $locale = locale($language);
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">
-                <a href="javascript:;"><span>Registration</span></a>
+                <a href="javascript:;"><span>등록 접수</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
-                    <li><a href="/main/registration_guidelines.php">Registration Guidelines</a></li>
-                    <li><a href="/main/registration.php">Online Registration</a></li>
+                    <li><a href="/main/registration_guidelines.php">등록 접수 안내</a></li>
+                    <li><a href="/main/registration.php">온라인 등록 접수</a></li>
                     <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">
-                <a href="javascript:;"><span>Sponsorship</span></a>
+                <a href="javascript:;"><span>후원/전시</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m5"]) ? "block" : "none") ?>">
-                    <li><a href="/main/sponsor.php">Sponsorship</a></li>
-                    <li><a href="/main/sponsor_exhibition.php">Exhibition</a></li>
+                    <li><a href="/main/sponsor.php">후원사</a></li>
+                    <li><a href="/main/sponsor_exhibition.php">전시 배치도</a></li>
                     <!-- <li><a href="application.php">Application</a></li> -->
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m7"]) ? "show" : "") ?>">
-                <a href="javascript:;"><span>Venue</span></a>
+                <a href="javascript:;"><span>행사장</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m7"]) ? "block" : "none") ?>">
-                    <li><a href="/main/venue.php">Conrad Seoul</a></li>
-                    <li><a href="/main/accommodation.php">Accommodation</a></li>
-                    <li><a href="/main/floor_plan.php">Floor Plan</a></li>
+                    <li><a href="/main/venue.php">오시는 길</a></li>
+                    <li><a href="/main/accommodation.php">숙박</a></li>
+                    <li><a href="/main/floor_plan.php">행사장 배치도</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m6"]) ? "show" : "") ?>">
-                <a href="javascript:;"><span>Information</span></a>
+                <a href="javascript:;"><span>공지사항</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m6"]) ? "block" : "none") ?>">
                     <!-- <li><a href="/main/accommodation.php">Accommodation</a></li> -->
                     <!-- <li><a href="/main/attraction_historic.php">Attractions in Seoul</a></li> -->
-                    <li><a href="/main/board_notice.php">Notice</a></li>
-                    <li><a href="/main/board_newsletter.php">Newsletter</a></li>
-                    <li><a href="/main/useful_information.php">Useful Information</a></li>
-                    <li><a href="/main/visa.php">VISA & K-ETA</a></li>
+                    <li><a href="/main/board_notice.php">공지사항</a></li>
+                    <li><a href="/main/board_newsletter.php">뉴스레터</a></li>
+                    <!-- <li><a href="/main/useful_information.php">Useful Information</a></li> -->
+                    <!-- <li><a href="/main/visa.php">VISA & K-ETA</a></li> -->
                 </ul>
             </li>
         </ul>
