@@ -32,10 +32,10 @@ $price = get_data($sql_price);
 
 <section class="container registration">
     <div>
-		<h1 class="page_title">Registration Guidelines</h1>
+        <h1 class="page_title">등록 접수 지침</h1>
         <div class="inner">
             <!--1. important dates start-->
-            <h3 class="title">Key Dates</h3>
+            <h3 class="title">일정 안내</h3>
             <div class="table_wrap detail_table_common details">
                 <table class="c_table detail_table">
                     <colgroup>
@@ -43,15 +43,15 @@ $price = get_data($sql_price);
                         <col>
                     </colgroup>
                     <tr>
-                        <th>Registration<br class="br_mb_only"> System Open</th>
+                        <th>등록 접수<br class="br_mb_only">시작일</th>
                         <td class="f_bold">Mid-May</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th class="close_th">Early-bird Registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">June 29 (Thu)</td>
-                    </tr>
+                    </tr> -->
                     <tr>
-                        <th class="close_th">Pre-registration<br class="br_mb_only"> Deadline</th>
+                        <th class="close_th">사전 등록 접수<br class="br_mb_only">마감일</th>
                         <td class="f_bold">August 24 (Thu)</td>
                     </tr>
                 </table>
@@ -95,194 +95,213 @@ $price = get_data($sql_price);
                     array_push($tb_arr[$i]['type_arr'], $pr['type_en']);
                 }
             ?>
-                <!--2. icomes-Air Registration start-->
-                <h3 class="title">Registration Fee</h3>
-                <div class="details icomes_air">
-					<div class="table_wrap x_scroll">
-						<!-- <img class="coming" src="./img/coming.png" /> -->
-						<table class="c_table2 detail_table center">
-							<thead>
-								<tr>
-									<th rowspan=" 2">Category</th>
-									<th colspan="2">Early-bird Registration</th>
-									<th colspan="2">Pre-registration</th>
-									<th colspan="2">On-site Registration</th>
-								</tr>
-								<tr>
-									<th><?= $locale("member") ?></th>
-									<th><?= $locale("non_member") ?></th>
-									<th><?= $locale("member") ?></th>
-									<th><?= $locale("non_member") ?></th>
-									<th><?= $locale("member") ?></th>
-									<th><?= $locale("non_member") ?></th>
-								</tr>
-							</thead>
-							<tbody>
-								<?php
-									// foreach ($tb_arr as $tb) {
-								?>
-									<!-- <tr> -->
-										<!-- <td><?= implode(', ', $tb['type_arr']) ?></td> -->
-									<?php
-									//	if ($tb[$off_mb_col] + $tb[$off_gu_col] + $tb[$on_mb_col] + $tb[$on_gu_col] <= 0) {
-									?>
-										<!-- <td colspan="2">free</td> -->
-									<?php
-										//} else {
-									?>
-										<!-- <td><?= $unit_upper . " " . number_format($tb[$off_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$off_gu_col]) ?></td> -->
-										<!-- <td><?= $unit_upper . " " . number_format($tb[$on_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$on_gu_col]) ?></td> -->
-									<?php
-										//}
-									?>
-									<!-- </tr> -->
-								<?php
-									//}
-								?>
-								<tr class="text_center">
-									<td>Certified M.D., Professor</td>
-									<td class="closed_td">USD 130<br/>KRW 130,000
+            <!--2. icomes-Air Registration start-->
+            <h3 class="title">등록 요금</h3>
+            <div class="details icomes_air">
+                <div class="table_wrap x_scroll">
+                    <!-- <img class="coming" src="./img/coming.png" /> -->
+                    <table class="c_table2 detail_table center">
+                        <thead>
+                            <tr>
+                                <th rowspan=" 2">Category</th>
+                                <!-- <th colspan="2">Early-bird Registration</th> -->
+                                <th colspan="2">Pre-registration</th>
+                                <th colspan="2">On-site Registration</th>
+                            </tr>
+                            <tr>
+                                <!-- <th><?= $locale("member") ?></th>
+                                    <th><?= $locale("non_member") ?></th> -->
+                                <th><?= $locale("member") ?></th>
+                                <th><?= $locale("non_member") ?></th>
+                                <th><?= $locale("member") ?></th>
+                                <th><?= $locale("non_member") ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                // foreach ($tb_arr as $tb) {
+                                ?>
+                            <!-- <tr> -->
+                            <!-- <td><?= implode(', ', $tb['type_arr']) ?></td> -->
+                            <?php
+                                //	if ($tb[$off_mb_col] + $tb[$off_gu_col] + $tb[$on_mb_col] + $tb[$on_gu_col] <= 0) {
+                                ?>
+                            <!-- <td colspan="2">free</td> -->
+                            <?php
+                                //} else {
+                                ?>
+                            <!-- <td><?= $unit_upper . " " . number_format($tb[$off_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$off_gu_col]) ?></td> -->
+                            <!-- <td><?= $unit_upper . " " . number_format($tb[$on_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$on_gu_col]) ?></td> -->
+                            <?php
+                                //}
+                                ?>
+                            <!-- </tr> -->
+                            <?php
+                                //}
+                                ?>
+                            <tr class="text_center">
+                                <td>Certified M.D., Professor</td>
+                                <!-- <td class="closed_td">USD 130<br />KRW 130,000 -->
 
-										<!-- <img src="./img/icons/icon_closed.png" alt=""> -->
-									</td>
-									<td>USD 160<br>KRW 160,000</td>
-									<td>USD 160<br>KRW 160,000</td>
-									<td>USD 190<br>KRW 190,000</td>
-									<td>USD 200<br>KRW 200,000</td>
-									<td>USD 230<br>KRW 230,000</td>
-								</tr>
-								<tr class="text_center">
-									<td>
-										Fellow, Resident, Researcher,<br>
-										Nutritionist, Pharmacist, Nurse,<br>
-										Exercise Specialist, Military<br>
-										Surgeon(군의관),<br>
-										Public Health Doctor,<br>
-										Corporate Member, Others
-									</td>
-									<td>USD 65<br>KRW 65,000</td>
-									<td>USD 95<br>KRW 95,000</td>
-									<td>USD 85<br>KRW 85,000</td>
-									<td>USD 115<br>KRW 115,000</td>
-									<td>USD 120<br>KRW 120,000</td>
-									<td>USD 150<br>KRW 150,000</td>
-								</tr>
-								<tr class="text_center">
-									<td>Student<!--, Surgeon (Military),<br>Public Health Doctor--></td>
-									<td colspan="6">Free<br/>*Student ID cards required</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="mt10">
-						<ul class="indent_ul">
-							<li>• A registration confirmation will be sent to your registered email address once you have completed your registration with full payment. If you have not received it, please contact the congress secretariat.</li>
-							<li>• For bank transfers, the automatically generated confirmation letter may indicate the payment status as 'unpaid.' If you need to confirm the payment completion, you can check the payment status on 'my page.' (Please be aware that it may take some time for the payment confirmation to be updated.)</li>
-							<li>• Registration will not be considered complete until the full registration fee has been paid.</li>
-							<li>• The online registration page is optimized for Google Chrome and Microsoft Edge. If you encounter any issues with online registration, please reach out to the congress secretariat for assistance.</li>
-							<li>• If you would like to modify your registration information, please contact the congress secretariat at <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a></li>
-						</ul>
-					</div>
+                                <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
+                                <!-- </td> -->
+                                <!-- <td>USD 160<br>KRW 160,000</td> -->
+                                <td>USD 160<br>KRW 160,000</td>
+                                <td>USD 190<br>KRW 190,000</td>
+                                <td>USD 200<br>KRW 200,000</td>
+                                <td>USD 230<br>KRW 230,000</td>
+                            </tr>
+                            <tr class="text_center">
+                                <td>
+                                    Fellow, Resident, Researcher,<br>
+                                    Nutritionist, Pharmacist, Nurse,<br>
+                                    Exercise Specialist, Military<br>
+                                    Surgeon(군의관),<br>
+                                    Public Health Doctor,<br>
+                                    Corporate Member, Others
+                                </td>
+                                <!-- <td>USD 65<br>KRW 65,000</td> -->
+                                <!-- <td>USD 95<br>KRW 95,000</td> -->
+                                <td>USD 85<br>KRW 85,000</td>
+                                <td>USD 115<br>KRW 115,000</td>
+                                <td>USD 120<br>KRW 120,000</td>
+                                <td>USD 150<br>KRW 150,000</td>
+                            </tr>
+                            <tr class="text_center">
+                                <td>Student
+                                    <!--, Surgeon (Military),<br>Public Health Doctor-->
+                                </td>
+                                <td colspan="6">Free<br />*Student ID cards required</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <!--2. icomes-Air Registration end-->
+                <div class="mt10">
+                    <ul class="indent_ul">
+                        <li>• A registration confirmation will be sent to your registered email address once you have
+                            completed your registration with full payment. If you have not received it, please contact
+                            the congress secretariat.</li>
+                        <li>• For bank transfers, the automatically generated confirmation letter may indicate the
+                            payment status as 'unpaid.' If you need to confirm the payment completion, you can check the
+                            payment status on 'my page.' (Please be aware that it may take some time for the payment
+                            confirmation to be updated.)</li>
+                        <li>• Registration will not be considered complete until the full registration fee has been
+                            paid.</li>
+                        <li>• The online registration page is optimized for Google Chrome and Microsoft Edge. If you
+                            encounter any issues with online registration, please reach out to the congress secretariat
+                            for assistance.</li>
+                        <li>• If you would like to modify your registration information, please contact the congress
+                            secretariat at <a href="mailto:icomes@into-on.com"
+                                class="font_inherit link">icomes@into-on.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--2. icomes-Air Registration end-->
             <?php
             }
             ?>
-			
+
 
             <!--3. Methods of Payment start-->
-			<h3 class="title">Methods of Payment</h3>
-			<div class="details">
-				<!-- <a class="btn long_btn text_long" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Application for cancellation of registration and refund</a> -->
-				<div class="details payment_detail mt10">
-					<!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
-					 <div>
-						<ul class="indent_ul">
-							<li>• Credit Card : Master / VISA</li>
-							<li>• Bank Transfer</li>
-						</ul>
-					</div>
-					<div class="table_wrap detail_table_common x_scroll">
-						<table class="c_table detail_table">
-							<colgroup>
-								<col>
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>Name of Bank</th>
-									<td>Hana Bank</td>
-								</tr>
-								<tr>
-									<th>Branch</th>
-									<td>HANA BANK, HEAD OFFICE</td>
-								</tr>
-								<tr>
-									<th>Bank Address</th>
-									<td>35, EULJI-RO, JUNG-GU, Seoul, Korea</td>
-								</tr>
-								<tr>
-									<th>Account Number</th>
-									<td>584-910003-16504</td>
-								</tr>
-								<tr>
-									<th>SWIFT CODE(BIC)</th>
-									<td>KOEXKRSE</td>
-								</tr>
-								<tr>
-									<th>Account Holder</th>
-									<td>대한비만학회 등록비 <br>(International Congress on Obesity and Metabolic Syndrome)</td>
-								</tr>
-								<!--
+            <h3 class="title">Methods of Payment</h3>
+            <div class="details">
+                <!-- <a class="btn long_btn text_long" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Application for cancellation of registration and refund</a> -->
+                <div class="details payment_detail mt10">
+                    <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
+                    <div>
+                        <ul class="indent_ul">
+                            <li>• Credit Card : Master / VISA</li>
+                            <li>• Bank Transfer</li>
+                        </ul>
+                    </div>
+                    <div class="table_wrap detail_table_common x_scroll">
+                        <table class="c_table detail_table">
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>Name of Bank</th>
+                                    <td>Hana Bank</td>
+                                </tr>
+                                <tr>
+                                    <th>Branch</th>
+                                    <td>HANA BANK, HEAD OFFICE</td>
+                                </tr>
+                                <tr>
+                                    <th>Bank Address</th>
+                                    <td>35, EULJI-RO, JUNG-GU, Seoul, Korea</td>
+                                </tr>
+                                <tr>
+                                    <th>Account Number</th>
+                                    <td>584-910003-16504</td>
+                                </tr>
+                                <tr>
+                                    <th>SWIFT CODE(BIC)</th>
+                                    <td>KOEXKRSE</td>
+                                </tr>
+                                <tr>
+                                    <th>Account Holder</th>
+                                    <td>대한비만학회 등록비 <br>(International Congress on Obesity and Metabolic Syndrome)</td>
+                                </tr>
+                                <!--
 								<tr>
 									<th>Address</th>
 									<td>Seoul, Mapo Gu, manrijaero 14 Renaissance Tower 1010</td>
 								</tr>
 								-->
-							</tbody>
-						</table>
-					</div>
-					<div class="m10">
-						<!-- <a 
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="m10">
+                        <!-- <a 
 						href="./download/ICOMES_2022_Application_for_cancellation_of_registration_and_refund.docx"
 							class="btn long_btn" target="_blank"> -->
-					</div>
-				</div>	
-			</div>
-            
+                    </div>
+                </div>
+            </div>
+
             <!--3. Methods of Payment end-->
-			
+
 
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">Cancellation & Refund Policy</h3>
-			<a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">Cancellation & Refund  Form Download</a>
+            <a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long"
+                target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">Cancellation & Refund Form
+                Download</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
                     <ul class="indent_ul">
-                        <li>• The cancellation of full payment registration and reimbursement will only be accepted in written form and must be submitted via email to the secretariat.<br>(<a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>)</li>
-                        <li>• Prior to making a payment, it is possible to cancel registration through "My page - Registration". However, payment has already been processed, it is necessary to contact the secretariat for further assistance.</li>
-                        <li>• Please note that refunds will be processed after the conference. (*By October 1, 2023)</li>
+                        <li>• The cancellation of full payment registration and reimbursement will only be accepted in
+                            written form and must be submitted via email to the secretariat.<br>(<a
+                                href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>)</li>
+                        <li>• Prior to making a payment, it is possible to cancel registration through "My page -
+                            Registration". However, payment has already been processed, it is necessary to contact the
+                            secretariat for further assistance.</li>
+                        <li>• Please note that refunds will be processed after the conference. (*By October 1, 2023)
+                        </li>
                         <li>• All bank service charges and administration fees will be deducted from the refund.</li>
                     </ul>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-					<table class="c_table detail_table">
-						<colgroup>
-							<col class="submission_col type2">
-							<col>
-						</colgroup>
-						<tbody>
-							<tr>
-								<th>Before Pre-Registration Deadline</th>
-								<td>Full Refund</td>
-							</tr>
-							<tr>
-								<th>After Pre-Registration Deadline</th>
-								<td>No Refund</td>
-							</tr>
+                    <table class="c_table detail_table">
+                        <colgroup>
+                            <col class="submission_col type2">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>Before Pre-Registration Deadline</th>
+                                <td>Full Refund</td>
+                            </tr>
+                            <tr>
+                                <th>After Pre-Registration Deadline</th>
+                                <td>No Refund</td>
+                            </tr>
                         </tbody>
-					</table>
+                    </table>
                 </div>
             </div>
             <!--3. Cancellation & Refund Policy end-->
@@ -404,9 +423,10 @@ $price = get_data($sql_price);
     <!-- <button type="button" class="fixed_btn" onclick="window.location.href='./registration.php';"> -->
     <!-- 	<?= $locale("registration") ?> -->
     <!-- </button> -->
-	<div class="centerT">
-		<a href="./registration.php" class="btn long_btn text_long online_registration_alert">Go to Online Registration</a>
-	</div>
+    <div class="centerT">
+        <a href="./registration.php" class="btn long_btn text_long online_registration_alert">Go to Online
+            Registration</a>
+    </div>
 
     <!-- 평점안내 팝업 / 시작 -->
     <div class="popup type2 pop_info rating_new_pop">
@@ -542,13 +562,13 @@ $price = get_data($sql_price);
 </section>
 
 <script>
-    $('.show_pop').on('click', function() {
-        //$('.pop_info').show();
-        alert("Coming soon.")
-    });
-    $(".rating_new_open").click(function() {
-        $(".rating_new_pop").show();
-    });
+$('.show_pop').on('click', function() {
+    //$('.pop_info').show();
+    alert("Coming soon.")
+});
+$(".rating_new_open").click(function() {
+    $(".rating_new_pop").show();
+});
 </script>
 
 <?php include_once('./include/footer.php'); ?>

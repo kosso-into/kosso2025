@@ -196,7 +196,7 @@ a.btn{line-height:50px; text-align: center;}
 .fixed_btn:hover{background:#ADF000;}
 .fixed_btn:after{content:'';display:block;z-index:-1;position:absolute;top:-5px;right:5px;width:110px;height:110px;border:1px solid #000;color:#000;border-radius:50%;}
 /* .green_btn {background-color:#10BF99; border-color:#10BF99; color:#fff;} */
-.green_btn {background-color:#0066CC; border-color:#0066CC; color:#fff;}
+.green_btn {background-color:#0499CC; border-color:#0499CC; color:#fff;}
 .blue_btn {background-color:#0066CC !important; border-color:#0066CC !important; color:#fff !important;}
 .yellow_btn {background-color:#FFEB00; border-color:#FFEB00; color:#000;}
 .gray_btn {background-color:#999999; border-color: #999999; color: #fff;}
