@@ -99,7 +99,7 @@ $locale = locale($language);
                             <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a></li>
                             <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
-                            <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
+                            <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
                         </ul>
                     </li>
                     <li>
@@ -233,7 +233,7 @@ $locale = locale($language);
                     <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a>
                     </li>
                     <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
-                    <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
+                    <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">
