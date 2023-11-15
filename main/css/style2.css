@@ -279,7 +279,7 @@ section.faq .select_box {width: 100%; text-align: right; margin-bottom: 27px;}
 .mini_alert.essential {display:inline-block;}
 div.phone:after {content:''; display:block; clear:both;}
 div.phone input, div.phone select {width:96px; float:left;}
-div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
+div.phone input:last-child {width:100%;}
 /*.label_wrap .radio + label {line-height:36px;}*/
 /*.label_wrap .radio + label:before, .label_wrap .radio + label:after {top:50%; transform:translateY(-50%);}*/
 .label_wrap label:not(:first-of-type) {margin-left:26px}
@@ -301,7 +301,7 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 .sign_list .half_form input {width:calc(50% - 5px);}
 .sign_list .half_form input:last-of-type {margin-left:10px;}
 .sign_list .phone_form input, .sign_list .phone_form select {width:100px;}
-.sign_list .phone_form input:last-of-type {width:calc(100% - 110px); margin-left:6px;}
+.sign_list .phone_form input:last-of-type {width:100%;}
 .sign_list label:not(:first-of-type) {margin-left:8px;}
 /*22.04.15 HUBDNC LJH2 추가*/
 .simple_signup {display: flex; align-items: flex-end;}
