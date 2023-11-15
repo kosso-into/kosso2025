@@ -123,7 +123,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 		$background_img_url = "https://icomes.or.kr";
 	}
 
-	$rawMessageString = "From: ICOMES2023<secretariat@kosso.org>\r\n";
+	$rawMessageString = "From: KSSO2024<secretariat@kosso.org>\r\n";
 	$rawMessageString .= "To: <{$to}>\r\n";
 	$rawMessageString .= 'Subject: =?utf-8?B?' . base64_encode($subject) . "?=\r\n";
 	$rawMessageString .= "MIME-Version: 1.0\r\n";
@@ -204,7 +204,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			if ($nation_no == 25) {
 				$name_kor_cont = "<tr>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>성명</th>
-									<td style='font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;'>{$last_name_kor}{$first_name_kor}</td>
+									<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$last_name_kor}{$first_name_kor}</td>
 								</tr>";
 				$affiliation_kor_cont = "<tr>
 											<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>소속</th>
@@ -227,14 +227,14 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				</tr>
 				<tr>
 					<td colspan='3'>
-						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 제 58차대한비만학회 춘계학술대회</div>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 제 58차 대한비만학회 춘계학술대회</div>
 					</td>
 				</tr>
 				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td>
 						<div>
-							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
+							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$last_name} {$first_name},</p>
 							<p style='font-size:14px;color:#170F00;margin-top:14px;'>2024 춘계학술대회에 가입해 주셔서 감사합니다.<br>귀하의 프로필이 성공적으로 생성되었습니다.<br>아래에 입력한 정보를 검토해 주세요.<br>'웹사이트 - 마이 페이지'에 접속하여 개인 정보를 검토, 수정할 수 있습니다.</p>
 							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 								<tbody>
@@ -376,61 +376,61 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 		if ($mail_type == "find_password") {
 			$rawMessageString .= "
-						<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
-							<tbody>
-								<tr>
-									<td colspan='3'>
-										<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
-									</td>
-								</tr>
-								<tr>
-									<td colspan='3'>
-										<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2023] Temporary Password</div>
-									</td>
-								</tr>
-								<tr>
-									<td width='74' style='width:74px;'></td>
-									<td>
-										<div>
-											<div style='margin-bottom:20px'>
-												<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Member of : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>You requested a temporary password at : {$time}</span></p>
-											</div>
-											<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
-											<p style='font-size:14px;color:#170F00;margin-top:14px;'>You can log in to the ICOMES 2023 website using the ID & Temporary Password below and modify your password on the personal information on my page.</p>
-											<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-												<tbody>
-													<tr>
-														<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID(Email Address)</th>
-														<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$to}' class='link font_inherit'>{$to}</a></td>
-													</tr>
-													<tr>
-														<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Temporary Password</th>
-														<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$tmp_password}</td>
-													</tr>
-												</tbody>	
-											</table>
-											<p style='color:#f00;'>Click the 'Change to temporary password' button to check your changed log-in information.</p>
-										</div>
-									</td>
-									<td width='74' style='width:74px;'></td>
-								</tr>
-								<tr>
-									<td width='74' style='width:74px;'></td>
-									<td>
-										<div style='text-align: center;'>
-											<a href='{$callback_url}'><img src='https://www.icomes.or.kr/main/img/icomes_pw_btn.png' alt=''></a>
-										</div>
-										<p>Best regards,</p>
-									</td>
-									<td width='74' style='width:74px;'></td>
-								</tr>
-								<tr>
-									<td colspan='3' style='padding-top:50px;'>
-										<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+			<table width='750' style='border:1px solid #000; padding: 0;'>
+			<tbody>
+				<tr>
+					<td colspan='3'>
+						<img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:100%; max-width:100%;'>
+					</td>
+				</tr>
+				<tr>
+					<td colspan='3'>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 임시 비밀번호</div>
+					</td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<div>
+							<div style='margin-bottom:20px'>
+								<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>성명 : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>임시 비밀번호 요청 시간 : {$time}</span></p>
+							</div>
+							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'>아래의 ID 및 임시 비밀번호를 사용하여 제 58차 대한비만학회 춘계학술대회 홈페이지에 로그인하고 '마이 페이지'에서 개인 정보를 수정하실 수 있습니다.</p>
+							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+								<tbody>
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID(Email Address)</th>
+										<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$to}' class='link font_inherit'>{$to}</a></td>
+									</tr>
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>임시 비밀번호</th>
+										<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$tmp_password}</td>
+									</tr>
+								</tbody>	
+							</table>
+							<p style='color:#f00;'>'임시 비밀번호로 변경' 버튼을 클릭하여 변경된 로그인 정보를 확인하세요.</p>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<div style='text-align: center;'>
+							<a href='{$callback_url}'><img src='https://www.kosso.org/main/img/ksso_pw_btn.png' alt=''></a>
+						</div>
+						<p>항상 행운을 빕니다.</p>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td colspan='3' style='padding-top:50px;'>
+						<img src='https://www.kosso.org/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		 ";
 			//$rawMessageString .= "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='{$background_img_url}/main/img/mail_header_2023.png' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Temporary Password</h1><div style='width:calc(100% - 80px); margin:24px auto 50px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><div><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Member of : <span>{$fname}</span></p><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>You requested a temporary password at : <span>{$time}</span></p><p style='font-size:10px; color:#707070; margin:10px 0 0 0;'>(If you have never requested a temporary password, please delete the email.)</p></div><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Since our site does not have your password even if you are an administrator, Instead of giving you your password, we’re creating a new one and guiding you.</p><p style='font-size:12px; font-weight:bold; color:#FF3333; margin:25px 0 0 0;'>Check the password below to change.<br/>Click the “<span style='font:inherit; color:inherit; text-decoration:underline;'>Change to temporary password</span>” button.</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>When an authentication message is printed stating that the password has been changed,</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Please enter your member ID and changed password on the homepage and log in.</p><p style='font-size:10px; color:#707070;'>After logging in, please change to a new password from the Modify Information menu.</p><div style='padding:16px; border:1px solid #5DBC9B; border-radius:15px; margin-top:25px;'><ul style='padding:0; margin:0;'><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Member ID : {$to}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Temporary password :{$tmp_password}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li></ul></div><p style='font-size:12px; line-height:22px; color:#000; margin-top:20px; margin-bottom:0;'>Regards,<br/>ICOMES</p><a href='{$callback_url}' style='text-decoration:none;'><button type='button' style='display:block; margin:70px auto 0; font-size:16px; font-weight:bold; color:#FFEB00; background-color:#23BF99; padding:10px 58px 34px 58px; border-radius:30px; border:none;'>Change to temporary password<span style='margin-left:10px; font:inherit;'>&gt;</span></button></a></div><img src='{$background_img_url}/main/img/icomes_mail_bottom.png' style='width:100%;'></div>";
 		}
@@ -1279,12 +1279,12 @@ if ($_POST["flag"] == "find_password") {
 
 		//$name = $language == "en" ? $check_user["first_name"]." ".$check_user["last_name"] : $check_user["last_name"].$check_user["first_name"];
 
-		$name = $check_user["first_name"] . " " . $check_user["last_name"];
+		$name = $check_user["last_name"] . $check_user["first_name"];
 
-		$subject = $locale("mail_find_password_subject");
+		$subject = "비밀번호 찾기 메일입니다.";
 		$callback_url = D9_DOMAIN . "/password_reset.php?e=" . $email . "&t=" . $random_token;
 
-		$message = createMessage($language, "find_password", $name, $email, "[ICOMES 2023]" . $subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
+		$message = createMessage($language, "find_password", $name, $email, "[KSSO 2024]" . $subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
 

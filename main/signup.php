@@ -124,7 +124,7 @@ $nation_list = get_data($nation_query);
     .mb_only input.tel_number,
     .mb_only input.tel_numbers.tel_phone,
     .mb_only input.tel_numbers.tel_phone2 {
-        width: calc(33% - 5px);
+        width: calc(32% - 5px);
     }
 
     /* .mb_only input.tel_numbers.tel_phone2 {
@@ -404,18 +404,18 @@ function remove_value() {
                                     <select id="nation_no" name="nation_no" class="required" value="25">
                                         <option value="25" data-nt="82" selected hidden>Choose</option>
                                         <?php
-										foreach ($nation_list as $n) {
-											if ($language == "ko") {
-												$nation = $n["nation_ko"];
-											} else {
-												$nation = $n["nation_en"];
-											}
-										?>
+                                        foreach ($nation_list as $n) {
+                                            if ($language == "ko") {
+                                                $nation = $n["nation_ko"];
+                                            } else {
+                                                $nation = $n["nation_en"];
+                                            }
+                                        ?>
                                         <option data-nt="<?= $n['nation_tel']; ?>" value="<?= $n["idx"] ?>"
                                             <?= $select_option ?>><?= $nation ?></option>
                                         <?php
-										}
-										?>
+                                        }
+                                        ?>
                                     </select>
                                     <!-- <span class="mini_alert red_txt red_alert_option"></span> -->
                                 </div>
@@ -590,12 +590,12 @@ function remove_value() {
 									<select name="department" id="department">
 										<option value="" selected hidden>Choose</option>
 									<?php
-									$department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
+                                    $department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
 
-									foreach ($department_arr as $d_arr) {
-										echo '<option value="' . $d_arr . '">' . $d_arr . '</option>';
-									}
-									?>
+                                    foreach ($department_arr as $d_arr) {
+                                        echo '<option value="' . $d_arr . '">' . $d_arr . '</option>';
+                                    }
+                                    ?>
 									</select>
 									<!-- <span class="mini_alert red_txt red_alert_option"></span>
 								</div>
@@ -618,12 +618,12 @@ function remove_value() {
 									<select name="department_kor" id="department_kor">
 										<option value="" selected hidden>Choose</option>
 									<?php
-									$department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
+                                    $department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
 
-									foreach ($department_arr as $d_arr) {
-										echo '<option value="' . $d_arr . '">' . $d_arr . '</option>';
-									}
-									?>
+                                    foreach ($department_arr as $d_arr) {
+                                        echo '<option value="' . $d_arr . '">' . $d_arr . '</option>';
+                                    }
+                                    ?>
 									</select>
 									<!-- <span class="mini_alert red_txt red_alert_option"></span>
 								</div>
@@ -638,12 +638,12 @@ function remove_value() {
                         <!-- 		<select name="category" id="category" class="select_others"> -->
                         <!-- 			<option value="" selected hidden>Choose</option> -->
                         <?php
-						/*$category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Surgeon(Military)", "Public Health Doctor", "Corporate Member", "Student", "Others");
+                        /*$category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Surgeon(Military)", "Public Health Doctor", "Corporate Member", "Student", "Others");
 
 										foreach($category_arr as $a_arr) {
 											echo '<option value="'.$a_arr.'">'.$a_arr.'</option>';
 										}*/
-						?>
+                        ?>
                         <!-- </select> -->
                         <!-- <input type="text" name="category_input" class="input_others en_check"> -->
                         <!-- <span class="mini_alert red_txt red_alert_option"></span> -->
@@ -814,19 +814,19 @@ function remove_value() {
                             <select id="mo_nation_no" name="mo_nation_no" class="required" value="25">
                                 <option value="25" data-nt="82" selected hidden>Choose</option>
                                 <?php
-								foreach ($nation_list as $n) {
-									if ($language == "ko") {
-										$nation = $n["nation_ko"];
-									} else {
-										$nation = $n["nation_en"];
-									}
-								?>
+                                foreach ($nation_list as $n) {
+                                    if ($language == "ko") {
+                                        $nation = $n["nation_ko"];
+                                    } else {
+                                        $nation = $n["nation_en"];
+                                    }
+                                ?>
                                 <option data-nt="<?= $n['nation_tel']; ?>" value="<?= $n["idx"] ?>"
                                     <?= $select_option ?>>
                                     <?= $nation ?></option>
                                 <?php
-								}
-								?>
+                                }
+                                ?>
                             </select>
                             <!-- <span class="mini_alert red_txt mo_red_alert_option"></span> -->
                         </div>
@@ -2014,7 +2014,7 @@ $(document).on("click", "#mo_submit", function() {
     //	return;
     //}
 
-    if (!confirm("Would you like to join?")) return;
+    if (!confirm("회원가입을 하시겠습니까?")) return;
 
     var ksola_member_status = "";
     if ($("#mo_user1").prop('checked') == true) {
@@ -2341,7 +2341,7 @@ $(document).on("click", "#submit", function() {
 
     if (terms1 == false) {
         //alert("Please agree to Terms & Conditions.");
-        alert("Please check the agreement of the using personal information.");
+        alert("개인정보 동의를 확인해주세요.");
         return;
     }
     //if(terms2 == false) {
@@ -2349,7 +2349,7 @@ $(document).on("click", "#submit", function() {
     //	return;
     //}
 
-    if (!confirm("Would you like to join?")) return;
+    if (!confirm("회원가입을 하시겠습니까?")) return;
 
     var ksola_member_status = 0;
     if ($("#user1").prop('checked') == true) {
@@ -2544,8 +2544,8 @@ function mo_kor_api() {
     }
 
     if (privacy == false) {
-        alert("Please agree to the collection of personal information.");
-        $(".mo_red_api").eq(0).html("Please agree to the collection of personal information.");
+        alert("개인정보 동의를 확인해주세요.");
+        $(".mo_red_api").eq(0).html("개인정보 동의를 확인해주세요.");
         return;
     }
 

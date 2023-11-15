@@ -72,7 +72,7 @@ $(document).ready(function(){
 		data["total_reg_fee"] = totalRegFee ? parseFloat(totalRegFee) : 0;
 
 		if(status == true) {
-			if(confirm(prevNo ? "Would you like to modify with the item you entered?" :locale(language.value)("confirm_msg"))) {
+			if(confirm(prevNo ? "입력한 항목으로 수정하시겠습니까?" :"입력한 항목으로 등록하시겠습니까?")) {
 				$.ajax({
 					url : PATH+"ajax/client/ajax_registration.php",
 					type : "POST",
@@ -240,7 +240,7 @@ function calc_fee(obj){
 					alert(locale(language.value)("error_registration"));
 					return false;
 				} else if(res.code == 401){
-					alert(locale(language.value)("already_registration"));
+					alert("이미 등록 접수를 하셨습니다.");
 					window.location.replace(PATH+"mypage_registration.php");
 					return false;
 				}
