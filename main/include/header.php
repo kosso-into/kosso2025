@@ -108,7 +108,8 @@ $locale = locale($language);
                             <li><a href="/main/registration_guidelines.php">등록 접수 안내
                                 </a></li>
                             <li><a href="/main/registration.php" class="online_registration_alert">온라인 등록 접수</a></li>
-                            <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
+                            <li><a href="/main/comingsoon.php">평점 안내</a></li>
+                            <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
                         </ul>
                     </li>
                     <li>
@@ -161,7 +162,7 @@ $locale = locale($language);
 
         $(".online_submission_alert").click(function(event) {
             event.preventDefault();
-            alert("The abstract submission has expired.\nAbstract submission is not available.");
+            alert("초록 접수 준비 중입니다.");
 
             let parent = event.target.parentElement.parentElement;
 
@@ -174,7 +175,7 @@ $locale = locale($language);
 
         $(".online_registration_alert").click(function(event) {
             event.preventDefault();
-            alert("The registration has expired.\nOnline registration is not available.");
+            alert("등록 접수 준비 중입니다.");
 
             let parent = event.target.parentElement.parentElement;
 
@@ -243,7 +244,8 @@ $locale = locale($language);
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
                     <li><a href="/main/registration_guidelines.php">등록 접수 안내</a></li>
                     <li><a href="/main/registration.php">온라인 등록 접수</a></li>
-                    <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
+                    <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
+                    <li><a href="/main/comingsoon.php">평점 안내</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">
@@ -258,8 +260,10 @@ $locale = locale($language);
                 <a href="javascript:;"><span>행사장</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m7"]) ? "block" : "none") ?>">
                     <li><a href="/main/venue.php">오시는 길</a></li>
-                    <li><a href="/main/accommodation.php">숙박</a></li>
-                    <li><a href="/main/floor_plan.php">행사장 배치도</a></li>
+                    <!-- <li><a href="/main/accommodation.php">숙박</a></li>
+                    <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
+                    <li><a href="/main/comingsoon.php">숙박</a></li>
+                    <li><a href="/main/comingsoon.php">행사장 배치도</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m6"]) ? "show" : "") ?>">

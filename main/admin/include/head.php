@@ -41,32 +41,34 @@
 ?>
 <!DOCTYPE HTML>
 <html lang="ko">
+
 <head>
-	<meta charset="utf-8">
-	<title>ICOMES - 관리자</title>
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<!--외부 라이브러리-->
-	<link href="dist/css/datepicker.css" rel="stylesheet" type="text/css">	
-	<link href="dist/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">	
-	<link href="dist/css/line-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<!--common/style.css-->
-	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/develop.css">
-	<!--외부 라이브러리-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="dist/js/datepicker.js"></script>	
-	<script src="dist/js/i18n/datepicker.kr.js"></script>
-	<script src="dist/js/jquery.dataTables.min.js"></script>
-	<script src="dist/js/dataTables.bootstrap4.min.js"></script>
-	<script src="dist/js/dataTables.buttons.min.js"></script>
-	<script src="dist/js/custom-table-datatable.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <meta charset="utf-8">
+    <title>KSSO - 관리자</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--외부 라이브러리-->
+    <link href="dist/css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/line-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--common/style.css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/develop.css">
+    <!--외부 라이브러리-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="dist/js/datepicker.js"></script>
+    <script src="dist/js/i18n/datepicker.kr.js"></script>
+    <script src="dist/js/jquery.dataTables.min.js"></script>
+    <script src="dist/js/dataTables.bootstrap4.min.js"></script>
+    <script src="dist/js/dataTables.buttons.min.js"></script>
+    <script src="dist/js/custom-table-datatable.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
+
 <body>
-<?php
+    <?php
 	$language = "ko";
 	$locale = locale($language);
     include_once($_SERVER['DOCUMENT_ROOT']."/main/common/locale.php");
