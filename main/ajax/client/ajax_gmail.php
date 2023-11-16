@@ -438,7 +438,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 		if ($mail_type == "payment") {
 			$name_title = $data["name_title"] ?? "";
 
-			$register_no = $data["idx"] ? "ICOMES2023-" . $data["idx"] : "-";
+			$register_no = $data["idx"] ? "KSSO2024-" . $data["idx"] : "-";
 			$register_date = $data["register_date"] ?? "-";
 
 			$licence_number = $data["licence_number"] ? $data["licence_number"] : "Not applicable";
@@ -475,11 +475,11 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$member_status = $data["member_status"] ?? "-";
 			$member_status = ($member_status == 1) ? "Yes" : "No";
 			*/
-			$member_status = $data["ksso_member_status"] ?? "-";
+			$member_status = $data["member_status"] ?? "-";
 			if ($member_status == 0) {
-				$member_status = "No";
+				$member_status = "비회원";
 			} else {
-				$member_status = "Yes";
+				$member_status = "정회원";
 			}
 
 			$nation_no = $data["nation_no"] ?? "";
@@ -541,35 +541,35 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			if ($welcome_reception_yn == "Y") {
 				$other_html .= "
 								<input type='checkbox' class='checkbox' id='other1'>
-								<label for='other1'><i></i>Welcome Reception – September 7(Thu)</label>
+								<label for='other1'><i></i>Welcome Reception – 3월 8일(금)</label>
 							   ";
 			}
 			if ($day2_breakfast_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
 								<input type='checkbox' class='checkbox' id='other2'>
-								<label for='other2'><i></i>Day 2 Breakfast Symposium – September 8(Fri)</label>
+								<label for='other2'><i></i>Day 2 Breakfast Symposium – 3월 8일(금)</label>
 							   ";
 			}
 			if ($day2_luncheon_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
 								<input type='checkbox' class='checkbox' id='other3'>
-								<label for='other3'><i></i>Day 2 Luncheon Symposium – September 8(Fri)</label>
+								<label for='other3'><i></i>Day 2 Luncheon Symposium – 3월 8일(금)</label>
 							   ";
 			}
 			if ($day3_breakfast_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
 								<input type='checkbox' class='checkbox' id='other4'>
-								<label for='other4'><i></i>Day 3 Breakfast Symposium – September 9(Sat)</label>
+								<label for='other4'><i></i>Day 3 Breakfast Symposium – 3월 9일(토)</label>
 							   ";
 			}
 			if ($day3_luncheon_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
 								<input type='checkbox' class='checkbox' id='other5'>
-								<label for='other5'><i></i>Day 3 Luncheon Symposium – September 9(Sat)</label>
+								<label for='other5'><i></i>Day 3 Luncheon Symposium – 3월 9일(토)</label>
 							   ";
 			}
 
@@ -595,9 +595,9 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$pay_type = $data["pay_type"] ?? "";
 			$pay_name = "-";
 
-			if ($pay_type == "card") $pay_name = "Credit Card";
-			else if ($pay_type == "bank") $pay_name = "Bank Transfer";
-			else if ($pay_type == "free") $pay_name = "Free";
+			if ($pay_type == "card") $pay_name = "신용카드";
+			else if ($pay_type == "bank") $pay_name = "계좌이체";
+			else if ($pay_type == "free") $pay_name = "무료 등록";
 			else $pay_name = "ETC";
 
 			$pay_date = $data["payment_date"] ?? "-";
@@ -608,164 +608,132 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			if ($pay_type == "card" || $pay_type == "free") {
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold' >Complete</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>결제 상태</th>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold' >등록 완료</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Date</th>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>결제일</th>
 									<td style='font-size:14px; padding:10px;'>{$pay_date}</td>
 								</tr>
 							";
 			} else {
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>Needed</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>결제 상태</th>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>결제 필요</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Bank Information</th>
-									<td style='font-size:14px; padding:10px;'>584-910003-16504, Hana Bank (하나은행)</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>계좌 정보</th>
+									<td style='font-size:14px; padding:10px;'>584-910003-16504, 하나은행, 대한비만학회-등록비</td>
 								</tr> 
 							";
 			}
 
 			$rawMessageString .= "
-									<table width='750' style='border:1px solid #000; padding: 0;'>
-										<tbody>
-											<tr>
-												<td colspan='3'>
-													<img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:100%; max-width:100%;'>
-												</td>
-											</tr>
-											<tr>
-												<td width='74' style='width:74px;'></td>
-												<td>
-													<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[ICOMES 2023] Completed Registration</div>
-												</td>
-												<td width='74' style='width:74px;'></td>
-											</tr>
-											<tr>
-												<td width='74' style='width:74px;'></td>
-												<td>
-													<div>
-														<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$name_title} {$fname},</p>
-														<p style='font-size:14px;color:#170F00;margin-top:14px;'>We express our gratitude for your registration for the International Congress on Obesity and MEtabolic Syndrome (ICOMES) 2023.	The registration details are presented below.<br/>Should you have any inquiries regarding your registration, kindly reach out to the ICOMES 2023 Secretariat for assistance.(<a href='mailto:icomes@into-on.com'>icomes@into-on.com</a>)</p>
-														<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-															<tbody>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration No.</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$register_no}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration Date</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$register_date}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Name</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$fname}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Country</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nation_en}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Affiliation</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$affiliation}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Phone Number</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$phone}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Member of KSSO</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$member_status}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Type of Participation</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$attendance_type}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Category</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>Professor</td>
-																</tr>
-																{$review_html}
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Others</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
-																		{$other_html}
-																	</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Where did you get the information about the conference?</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
-																		{$info_html}
-																	</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration fee</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$pay_current} {$pay_price}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-																	<td style='font-size:14px; padding:10px;'>{$pay_name}</td>
-																</tr>
-																{$pay_html}
-																<!-- 카드결제 (결제완료) -->
-																<!--
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-																	<td style='font-size:14px; padding:10px;'>Credit Card</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-																	<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold' >Complete</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Date</th>
-																	<td style='font-size:14px; padding:10px;'>YYYY-MM-DD HH:MM:SS</td>
-																</tr>
-																 -->
-																<!-- 계좌이체 (미결제) -->
-																<!--
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-																	<td style='font-size:14px; padding:10px;'>Bank Transfer</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-																	<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>Needed</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Bank Information</th>
-																	<td style='font-size:14px; padding:10px;'>584-910003-16504, Hana Bank (하나은행)</td>
-																</tr> 
-																 -->
-															</tbody>	
-														</table>
-														<p>We eagerly anticipate your presence in Seoul, Korea this coming September.</p>
-													</div>
-												</td>
-												<td width='74' style='width:74px;'></td>
-											</tr>
-											<tr>
-												<td width='74' style='width:74px;'></td>
-												<td>
-													<p>Warmest regards,</p>
-													<p>Secretariat of ICOMES 2023</p>
-													<br/>
-													<div style='text-align: center;'>
-														<a href='https://kosso.org/'><img src='https://www.kosso.org/main/img/ksso_pw_btn.png' alt=''></a>
-													</div>
-												</td>
-												<td width='74' style='width:74px;'></td>
-											</tr>
-											<tr>
-												<td colspan='3' style='padding-top:50px;'>
-													<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:100%; max-width:100%;'>
-												</td>
-											</tr>
-										</tbody>
-									</table>";
+			<table width='750' style='border:1px solid #000; padding: 0;'>
+			<tbody>
+			   
+				   <tr>
+					   <td colspan='3'>
+						   <img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:100%; max-width:100%;'>
+						</td>
+				   </tr>
+				   <tr>
+					   <td width='74' style='width:74px;'></td>
+						<td>
+							<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[KSSO 2024] 등록 접수 완료</div>
+						</td>
+						<td width='74' style='width:74px;'></td>
+					</tr>
+					<tr>
+						<td width='74' style='width:74px;'></td>
+						<td>
+							<div>
+								<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
+								<p style='font-size:14px;color:#170F00;margin-top:14px;'>제 58차 대한비만학회 춘계학술대회에 등록해주셔서 감사합니다. 등록 세부 정보는 아래에 기재되어 있습니다. 문의사항이 있으시면 사무국(<a href='mailto:ksso@into-on.com'>ksso@into-on.com</a>)으로 연락해 주시기 바랍니다.</p>
+								<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+									<tbody>
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration No.</th>
+											<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$register_no}</td>
+										</tr>
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration Date</th>
+											<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$register_date}</td>
+										</tr>
+									   <tr style='border-bottom:1px solid #000;'>
+										   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Name</th>
+										   <td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$fname}</td>
+									   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Affiliation</th>
+								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$affiliation}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Phone Number</th>
+								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$phone}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Member of KSSO</th>
+								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$member_status}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Type of Participation</th>
+								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$attendance_type}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Category</th>
+								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>Professor</td>
+							   </tr>
+							   {$review_html}
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Others</th>
+											<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
+												{$other_html}
+											</td>
+										</tr>
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Where did you get the information about the conference?</th>
+										   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
+											   {$info_html}
+										   </td>
+									   </tr>
+									   <tr style='border-bottom:1px solid #000;'>
+										   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration fee</th>
+										   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$pay_current} {$pay_price}</td>
+									   </tr>
+									   <tr style='border-bottom:1px solid #000;'>
+										   <th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
+										   <td style='font-size:14px; padding:10px;'>{$pay_name}</td>
+									   </tr>
+										{$pay_html}
+									
+									</tbody>	
+								</table>
+								<p>오는 3월, 서울에서 뵙기를 기대하고 있습니다</p>
+							</div>
+						</td>
+						<td width='74' style='width:74px;'></td>
+					</tr>
+					<tr>
+						<td width='74' style='width:74px;'></td>
+						<td>
+							<p>항상 행운을 빕니다.</p>
+							<br/>
+							<div style='text-align: center;'>
+								<a href='https://kosso.org/'><img src='https://www.kosso.org/main/img/ksso_btn.png' alt=''></a>
+							</div>
+						</td>
+						<td width='74' style='width:74px;'></td>
+					</tr>
+					<tr>
+						<td colspan='3' style='padding-top:50px;'>
+							<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:100%; max-width:100%;'>
+						</td>
+					</tr>
+				</tbody>
+			</table>		
+									";
 		}
 
 		if ($mail_type == "registration") {
@@ -1233,7 +1201,7 @@ if ($_POST["flag"] == "signup") {
 
 		$user_data = sql_fetch($select_user_query);
 
-		$subject = "[KSSO 2024] 제 58차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
+		$subject = "[KSSO 2024] 제 58 차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
 		$callback_url = D9_DOMAIN . "/signup_certified.php?idx=" . $user_data["idx"];
 
 		$message = createMessage("en", "sign_up", "", $email, $subject, date("Y-m-d H:i:s"), "", $callback_url, 1);
@@ -1324,7 +1292,7 @@ if ($_POST["flag"] == "find_password") {
 	$name = $_POST["name"] ?? null;
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
-	$message = createMessage("en", "payment", $name, $email, "[ICOMES] Payment Confirmation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
+	$message = createMessage("en", "payment", $name, $email, "[KSSO] 등록 결제 확인", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 } else if ($_POST["flag"] == "registration") {
@@ -1332,13 +1300,13 @@ if ($_POST["flag"] == "find_password") {
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
 	$registration_idx = $_POST["registration_idx"] ?? null;
-	$message = createMessage("en", "registration", $name, $email, "[ICOMES] Registration", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
+	$message = createMessage("en", "registration", $name, $email, "[KSSO] 등록 접수", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 
 	$invitation_check_yn = $_POST["invitation_check_yn"] ?? null;
 	if ($invitation_check_yn == "Y") {
-		$message = createMessage("en", "visa_registration", $name, $email, "[ICOMES] Registration Invitation", date("Y-m-d H:i:s"), "", "", 1);
+		$message = createMessage("en", "visa_registration", $name, $email, "[KSSO] 등록 초대", date("Y-m-d H:i:s"), "", "", 1);
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
 	}
@@ -1411,7 +1379,7 @@ if ($_POST["flag"] == "find_password") {
 		"nation_map"				=> $nation_map
 	];
 
-	$message = createMessage($language, "abstract", "", $email, "[ICOMES 2023]" . $subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
+	$message = createMessage($language, "abstract", "", $email, "[KSSO 2024]" . $subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 }
