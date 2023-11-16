@@ -20,7 +20,7 @@ if ($user_idx <= 0) {
 $nation_list = get_data($_nation_query);
 $select_user_registration_query = "
         SELECT
-            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.affiliation_kor,  reg.phone, reg.department, reg.member_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
+            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
 			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
 			reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
@@ -316,7 +316,7 @@ $score_detail = sql_fetch($score_sql);
 
                                                 <tr>
                                                     <th>소속</th>
-                                                    <td><?= $list["affiliation_kor"] ?? "-" ?></td>
+                                                    <td><?= $list["affiliation"] ?? "-" ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>휴대폰 번호</th>
