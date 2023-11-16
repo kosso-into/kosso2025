@@ -218,7 +218,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			//<img src='".$background_img_url."/img/mail_header_2023.png' style='width:calc(100% + 80px);margin-left:-40px;'>
 			// 23.05.15 HUBDNC_LJH 이메일 템플릿 변경 
 			$rawMessageString .= "
-			<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
+			<table width='750' style='border:1px solid #000; padding: 0;'>
 			<tbody>
 				<tr>
 					<td colspan='3'>
@@ -426,7 +426,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>
-						<img src='https://www.kosso.org/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
+						<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:100%; max-width:100%;'>
 					</td>
 				</tr>
 			</tbody>
@@ -630,11 +630,11 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			}
 
 			$rawMessageString .= "
-									<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
+									<table width='750' style='border:1px solid #000; padding: 0;'>
 										<tbody>
 											<tr>
 												<td colspan='3'>
-													<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
+													<img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:100%; max-width:100%;'>
 												</td>
 											</tr>
 											<tr>
@@ -754,14 +754,14 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 													<p>Secretariat of ICOMES 2023</p>
 													<br/>
 													<div style='text-align: center;'>
-														<a href='https://www.icomes.or.kr/'><img src='https://www.icomes.or.kr/main/img/icomes_btn.png' alt=''></a>
+														<a href='https://kosso.org/'><img src='https://www.kosso.org/main/img/ksso_pw_btn.png' alt=''></a>
 													</div>
 												</td>
 												<td width='74' style='width:74px;'></td>
 											</tr>
 											<tr>
 												<td colspan='3' style='padding-top:50px;'>
-													<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
+													<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:100%; max-width:100%;'>
 												</td>
 											</tr>
 										</tbody>
@@ -850,7 +850,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$rawMessageString .= "<table width='549' cellspacing='0' cellpadding='0' style='width: 549px !important; max-width:549px !important; margin: 0px auto; padding:0; border:1px solid;' >
 							<tr>
 								<td width='549' valign='top' style='width:549px; vertical-align:top; font-size:0; line-height:0;'>
-									<img src='{$background_img_url}/main/img/icomes_mail_top_2022.jpg' alt='2022 mailer' width='549' style='width: 549px; vertical-align: top; border: 0; display:block;'>
+									<img src='https://www.kosso.org/main/img/mail_header.png' alt='2022 mailer' width='549' style='width: 549px; vertical-align: top; border: 0; display:block;'>
 								</td>
 							</tr>
 							<tr>
@@ -971,7 +971,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 											</tr>
 											<tr>
 												<td width='549' valign='top' style='width:549px; vertical-align:top; font-size:0; line-height:0;'>
-													<img src='{$background_img_url}/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
+													<img src='https://kosso.org/main/img/mail_footer.png' style='width:100%;'>
 												</td>
 											</tr>
 										</tbody>
@@ -983,9 +983,9 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 		if ($mail_type == "visa_registration") {
 
-			$rawMessageString .= "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='{$background_img_url}/main/img/icomes_mail_top_2022.jpg' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Letter of Invitation</h1><div style='width:calc(100% - 80px); margin:24px auto 100px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p><p style='font-size:10px; color:#000 ;margin-top:16px; margin-bottom:25px;'>On behalf of the ICOMES organizing committee, we cordially invite you as participant to “ICOMES 2022 International Conference” to be held at the Conrad Seoul Hotel, Seoul, Korea on September 1(Thu)-3(Sat), 2022. </p><p style='font-size:10px; color:#000; margin-bottom:25px;'>ICOMES has grown as a worldwide academic society with more than 1000 participants and eminent representative speakers in obesity every year since 2015 at its launch. ICOMES is an international academic conference that promotes cooperation among multidisciplinary study fields, providing in-depth lectures and symposiums on basic medicine and clinical medicine on obesity, metabolic syndrome, dyslipidemia, and other obesity-related diseases.<br/>The main theme of ICOMES 2022 is ‘The Next Normal - The Future of Obesity Care’. Your Presentation will be a great addition to our conference.</p><p style='font-size:10px; color:#000;'>For building instructive, insightful and interesting meeting, we would like you to take as a role of; </p><div style='padding:10px 0; margin-top:16px; border-top:1px solid #000; border-bottom:1px solid #000;'><div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Date</span><span style='vertical-align:middle; font-size:10px;'>September 1(Thu)~3(Sat)</span></div>
+			$rawMessageString .= "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='https://www.kosso.org/main/img/mail_header.png' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Letter of Invitation</h1><div style='width:calc(100% - 80px); margin:24px auto 100px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p><p style='font-size:10px; color:#000 ;margin-top:16px; margin-bottom:25px;'>On behalf of the ICOMES organizing committee, we cordially invite you as participant to “ICOMES 2022 International Conference” to be held at the Conrad Seoul Hotel, Seoul, Korea on September 1(Thu)-3(Sat), 2022. </p><p style='font-size:10px; color:#000; margin-bottom:25px;'>ICOMES has grown as a worldwide academic society with more than 1000 participants and eminent representative speakers in obesity every year since 2015 at its launch. ICOMES is an international academic conference that promotes cooperation among multidisciplinary study fields, providing in-depth lectures and symposiums on basic medicine and clinical medicine on obesity, metabolic syndrome, dyslipidemia, and other obesity-related diseases.<br/>The main theme of ICOMES 2022 is ‘The Next Normal - The Future of Obesity Care’. Your Presentation will be a great addition to our conference.</p><p style='font-size:10px; color:#000;'>For building instructive, insightful and interesting meeting, we would like you to take as a role of; </p><div style='padding:10px 0; margin-top:16px; border-top:1px solid #000; border-bottom:1px solid #000;'><div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Date</span><span style='vertical-align:middle; font-size:10px;'>September 1(Thu)~3(Sat)</span></div>
 			<div><span style='vertical-align:middle; width:56px; height:18px; border-radius:14px; border:1px solid #5DBC9B; line-height:16px; display:inline-block; text-align:center; font-size:10px; font-weight:bold; margin-right:7px;'>Venue</span><span style='vertical-align:middle; font-size:10px;'>Conrad Hotel Seoul, Korea</span></div></div><div style='font-size:10px; margin:14px 0 60px;'>
-			We invite you to ICOMES 2022 to create an informative, insightful and exciting<br/>meeting. <a href='mailto:icomes_registration@into-on.com' style='font-size:10px; font-weight:bold; color:#10BF99;'>(icomes_registration@into-on.com).</a></div><ul style='margin:0; padding:0; text-align:center; font-size:0;'><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top;'><p style='font-size:12px; font-weight:bold; margin:0;'>Kijin Kim</p><p style='font-size:8px;'>Chairman of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign01.png' alt=''></li><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top; margin-left:15%;'><p style='font-size:12px; font-weight:bold; margin:0;'>Chang-Beom Lee</p><p style='font-size:8px;'>President of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign02.png' style='margin-top:10px;' alt=''></li></ul></div><img src='{$background_img_url}/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'></div>";
+			We invite you to ICOMES 2022 to create an informative, insightful and exciting<br/>meeting. <a href='mailto:icomes_registration@into-on.com' style='font-size:10px; font-weight:bold; color:#10BF99;'>(icomes_registration@into-on.com).</a></div><ul style='margin:0; padding:0; text-align:center; font-size:0;'><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top;'><p style='font-size:12px; font-weight:bold; margin:0;'>Kijin Kim</p><p style='font-size:8px;'>Chairman of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign01.png' alt=''></li><li style='text-align:center; list-style:none; display:inline-block; vertical-align:top; margin-left:15%;'><p style='font-size:12px; font-weight:bold; margin:0;'>Chang-Beom Lee</p><p style='font-size:8px;'>President of Korean Society<br/>for the Study of Obesity</p><img src='https://icomes.or.kr/main/img/mail_sign02.png' style='margin-top:10px;' alt=''></li></ul></div><img src='https://kosso.org/main/img/mail_footer.png' style='width:100%;'></div>";
 		}
 
 
@@ -1008,8 +1008,8 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			$url = $_SERVER['HTTP_HOST'] ?? "www.icomes.or.kr";
 
-			$rawMessageString .= '<div><table width="750" style="border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;">
-								<tr><td colspan="3"><img src="https://' . $url . '/main/img/mail_header_2023.png" width="750" style="width:100%; max-width:100%;"></td></tr>
+			$rawMessageString .= '<div><table width="750" style="border:1px solid #000;padding: 0;">
+								<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail_header.png" width="750" style="width:100%; max-width:100%;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td>
 								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[ICOMES 2023] Completed Abstract Submission</div></td><td width="74" style="width:74px;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear ' . $first_name . ' ' . $last_name . ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">Thank you for the online submission of your abstract to ICOMES 2023.<br>Your abstract has been successfully submitted as follows.</p>
@@ -1148,8 +1148,8 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										<p>Best regards,</p>
 										<p>Secretariat of ICOMES 2023</p><br/>
 										<div style="text-align: center;">
-											<a href="https://' . $url . '/">
-												<img src="https://' . $url . '/main/img/icomes_btn.png" alt="">
+											<a href="https://kosso.org/">
+												<img src="https://kosso.org/main/img/ksso_btn.png" alt="">
 											</a>
 										</div>	
 									</td>
@@ -1157,7 +1157,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 								</tr>
 								<tr>
 									<td style="padding-top:50px;" colspan="3">
-										<img src="https://' . $url . '/main/img/mail_footer_2023.png" width="750" style="width:100%; max-width:100%;">
+										<img src="https://kosso.org/main/img/mail_footer.png" width="750" style="width:100%; max-width:100%;">
 									</td>
 								</tr>
 								</table>

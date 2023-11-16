@@ -11,48 +11,51 @@
             <?php
             if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
             ?>
-                <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
-                <li>
-                    <a href="" target="_blank">
-                        <img src="/main/img/icons/icon_download_abstract.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                        <img src="/main/img/icons/icon_download_program.svg" alt="">
-                    </a>
-                </li>
+            <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
+            <li>
+                <a href="" target="_blank" class="type2 pink">
+                    <img src="/main/img/icons/icon_download_abstract.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank" class="type2 violet">
+                    <img src="/main/img/icons/icon_download_program.svg" alt="">
+                </a>
+            </li>
             <?php
             } else {
             ?>
-                <li>
+            <li>
 
-                    <button type="button" class="not_yet">
-                        <img src="/main/img/icons/tool_regist.svg" alt="">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="not_yet">
-                        <img src="/main/img/icons/tool_abstract.svg" alt="">
-                    </button>
-                </li>
+                <button type="button" class="not_yet">
+                    <img src="/main/img/icons/tool_regist.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <button type="button" class="not_yet">
+                    <img src="/main/img/icons/tool_abstract.svg" alt="">
+                </button>
+            </li>
             <?php
             }
             ?>
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-                <li><button type="button" onClick="alert('Need to login.')"><img src="/main/img/icons/tool_mypage.svg" alt=""></button></li>
+            <li><button type="button" onClick="alert('Need to login.')"><img src="/main/img/icons/tool_mypage.svg"
+                        alt=""></button></li>
             <?php
             } else {
             ?>
-                <li><button type="button" onClick="location.href='/main/mypage.php'"><img src="/main/img/icons/tool_mypage.svg" alt=""></button></li>
+            <li><button type="button" onClick="location.href='/main/mypage.php'"><img
+                        src="/main/img/icons/tool_mypage.svg" alt=""></button></li>
             <?php
             }
             ?>
 
         </ul>
-        <button type="button" class="btn_top"><img class="icon_top_btn" src="/main/img/icons/icon_top_btn.svg" alt=""></button>
+        <button type="button" class="btn_top"><img class="icon_top_btn" src="/main/img/icons/icon_top_btn.svg"
+                alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
     <!--
@@ -136,7 +139,8 @@
 
                         <li>T. 82-2-364-0886,0887</li>
                         <li>F. 82-2-364-0883</li>
-                        <li>E. <a href="mailto:webmaster@kosso.or.kr" class="font_inherit link">webmaster@kosso.or.kr</a></li>
+                        <li>E. <a href="mailto:webmaster@kosso.or.kr"
+                                class="font_inherit link">webmaster@kosso.or.kr</a></li>
 
                         <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">www.kosso.or.kr</a>
 
@@ -202,17 +206,17 @@
     </div>
 </div>
 <script>
-    $('.term3_btn').on('click', function() {
-        $('.term3').show();
+$('.term3_btn').on('click', function() {
+    $('.term3').show();
+})
+$('.term4_btn').on('click', function() {
+        $('.term4').show();
     })
-    $('.term4_btn').on('click', function() {
-            $('.term4').show();
-        })
 
-        <
-        !--$('.type2').on('click', function(event) {
-            event.preventDefault();
-            alert('Updates are planned.');
-            return false;
-        }) -- >
+    <
+    !--$('.type2').on('click', function(event) {
+        event.preventDefault();
+        alert('Updates are planned.');
+        return false;
+    }) -- >
 </script>
