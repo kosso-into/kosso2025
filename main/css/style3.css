@@ -573,7 +573,8 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	
 	/* header > fixed_btn */
 	.dday_wrap {display: none;}
-	
+	.g_h_bottom {padding: 0;}
+
 	/* main */
 	.section_bg  {background:url("/main/img/main_mb.png") no-repeat top 60px right /cover;}
 	/*.section_bg  {padding-top: 60px; background-position: center top 60px; border:1px solid;}*/
