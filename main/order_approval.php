@@ -1,6 +1,6 @@
 <head>
-  <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="0;URL='https://icomes.or.kr/main'" />
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0;URL='https://kosso.org/main'" />
 </head>
 <?php
     header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");

@@ -2,19 +2,19 @@
 include_once('./include/head.php');
 include_once('./include/header.php');
 
-$_POST = [];											// 해당페이지는 정식 API 가 아니기에 예외처리
-include_once('./ajax/client/ajax_registration.php');	// 요금관련 함수 호출을 위해 import (calcFee)
+$_POST = [];                                            // 해당페이지는 정식 API 가 아니기에 예외처리
+include_once('./ajax/client/ajax_registration.php');    // 요금관련 함수 호출을 위해 import (calcFee)
 
 $registrationNo = preg_replace("/[^0-9]*/s", "", $_GET["idx"] ?? "");
 $prev = NULL;
 
-if($registrationNo){
+if ($registrationNo) {
     $sql = "SELECT * FROM request_registration WHERE is_deleted = 'N' AND idx = {$registrationNo}";
     $prev = sql_fetch($sql);
 
     $registrationNo = $prev["idx"] ?? "";
 
-    if($registrationNo){
+    if ($registrationNo) {
         $register = $prev["register"] ?? 0;
         $category = $prev["member_type"] ?? "";
         $occupation = $prev["occupation_type"] ?? "";
@@ -25,19 +25,19 @@ if($registrationNo){
 }
 
 //경로 주의
-if ($_SERVER["HTTP_HOST"] == "www.icomes.or.kr") {
-    echo "<script>location.replace('https://icomes.or.kr/main/registration.php')</script>";
+if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
+    echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
 }
 
 
-$sql_during =	"SELECT
+$sql_during =    "SELECT
 						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2023-09-07 22:00:00', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 //!=="Y"
 if ($during_yn !== "Y") {
 
-    ?>
+?>
 
     <section class="submit_application container">
         <div class="inner">
@@ -55,7 +55,7 @@ if ($during_yn !== "Y") {
         </div>
     </section>
 
-    <?php
+<?php
 } else {
     $nation_query = "SELECT
 							*
@@ -77,7 +77,7 @@ if ($during_yn !== "Y") {
     $nation_tel = $_arr_phone[0];
     $phone = implode("-", array_splice($_arr_phone, 1));
 
-    $sql_price =	"SELECT
+    $sql_price =    "SELECT
 							type_en, idx
 						FROM info_event_price
 						WHERE is_deleted = 'N'
@@ -95,7 +95,7 @@ if ($during_yn !== "Y") {
 				";
     $member_data = sql_fetch($sql_info);
 
-    ?>
+?>
     <style>
         /*2022-04-14 ldh 추가*/
         .gray_btn {
@@ -106,8 +106,15 @@ if ($during_yn !== "Y") {
             font-size: 24px;
         }
 
-        .korea_only, .usd_only {display: none;}
-        .korea_only.on, .usd_only.on {display:revert;}
+        .korea_only,
+        .usd_only {
+            display: none;
+        }
+
+        .korea_only.on,
+        .usd_only.on {
+            display: revert;
+        }
     </style>
 
     <!-- <section class="container online_register submit_application"> -->
@@ -120,7 +127,8 @@ if ($during_yn !== "Y") {
             <div class="input_area">
                 <h3 class="title">
                     <?= $locale("participant_tit") ?>
-                    <p class="mt10"><span class="red_txt">*</span> In the "My Page - Account" section, users have the ability to edit their personal information.</p>
+                    <p class="mt10"><span class="red_txt">*</span> In the "My Page - Account" section, users have the
+                        ability to edit their personal information.</p>
                 </h3>
                 <div class="table_wrap detail_table_common x_scroll">
                     <table class="c_table detail_table">
@@ -129,67 +137,69 @@ if ($during_yn !== "Y") {
                             <col>
                         </colgroup>
                         <tbody>
-                        <tr>
-                            <th>ID(email)</th>
-                            <td><a href="mailto:<?= $member_data['email']?>" class="font_inherit link"><?= $member_data['email'] ?></a></td>
-                        </tr>
-                        <tr>
-                            <th>Name</th>
-                            <td><?= $member_data["first_name"]." ".$member_data["last_name"]?></td>
-                        </tr>
-                        <?php
-                        $name_kor_cont = "<tr> 
-												<th>성명</th>
-												<td>".$member_data['last_name_kor']."".$member_data['first_name_kor']."</td>
-											</tr>";
-                        if($member_data['nation_en'] == "Republic of Korea"){
-                            echo $name_kor_cont;
-                        }
-                        ?>
-                        <tr>
-                            <th>Country</th>
-                            <td id='country'><?= $member_data['nation_en']?></td>
-                        </tr>
-                        <tr>
-                            <th>Affiliation</th>
-                            <td><?= $member_data['department']?> of , <?= $member_data['affiliation']?></td>
-                        </tr>
-                        <tr>
-                            <th>Phone Number</th>
-                            <td><?= $member_data['phone']?></td>
-                        </tr>
-                        <?php if($member_data['nation_en'] == "Republic of Korea"){ ?>
                             <tr>
-                                <th>Member of KSSO</th>
-                                <td id='ksola_member_status'><?=$member_data['ksola_member_status'] == 0 ? 'Non-Member' : 'Member'?></td>
+                                <th>ID(email)</th>
+                                <td><a href="mailto:<?= $member_data['email'] ?>" class="font_inherit link"><?= $member_data['email'] ?></a></td>
                             </tr>
-                        <?php }?>
-                        <!-- <tr> -->
-                        <!-- 	<th>Member of KSSO</th> -->
-                        <!-- 	<td><?= $member_data['ksola_member_status'] == 0 ? 'Non-Member' : 'Member'?></td> -->
-                        <!-- </tr> -->
+                            <tr>
+                                <th>Name</th>
+                                <td><?= $member_data["first_name"] . " " . $member_data["last_name"] ?></td>
+                            </tr>
+                            <?php
+                            $name_kor_cont = "<tr> 
+												<th>성명</th>
+												<td>" . $member_data['last_name_kor'] . "" . $member_data['first_name_kor'] . "</td>
+											</tr>";
+                            if ($member_data['nation_en'] == "Republic of Korea") {
+                                echo $name_kor_cont;
+                            }
+                            ?>
+                            <tr>
+                                <th>Country</th>
+                                <td id='country'><?= $member_data['nation_en'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Affiliation</th>
+                                <td><?= $member_data['department'] ?> of , <?= $member_data['affiliation'] ?></td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td><?= $member_data['phone'] ?></td>
+                            </tr>
+                            <?php if ($member_data['nation_en'] == "Republic of Korea") { ?>
+                                <tr>
+                                    <th>Member of KSSO</th>
+                                    <td id='ksola_member_status'>
+                                        <?= $member_data['ksola_member_status'] == 0 ? 'Non-Member' : 'Member' ?></td>
+                                </tr>
+                            <?php } ?>
+                            <!-- <tr> -->
+                            <!-- 	<th>Member of KSSO</th> -->
+                            <!-- 	<td><?= $member_data['ksola_member_status'] == 0 ? 'Non-Member' : 'Member' ?></td> -->
+                            <!-- </tr> -->
                         </tbody>
                     </table>
                 </div>
                 <form name="registration_form" class="registration_form">
-                    <input type="hidden" name="prev_no" value="<?=$registrationNo?>"/>
-                    <input type="hidden" id="nation" name="nation" value="<?= $member_data['nation_en']?>">
+                    <input type="hidden" name="prev_no" value="<?= $registrationNo ?>" />
+                    <input type="hidden" id="nation" name="nation" value="<?= $member_data['nation_en'] ?>">
                     <!-- onsubmit="return false" -->
                     <ul class="basic_ul">
                         <li>
                             <p class="mb10"><span class="red_txt">*</span> All requested field(<span class="red_txt">*</span>) should be completed.</p>
-                            <p class="label"><?=$locale("register_online_question2_2023")?> <span class="red_txt">*</span></p>
-                            <select id="participation_type" name="participation_type" onChange="calc_fee(this)" <?=$prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : ""?>>
+                            <p class="label"><?= $locale("register_online_question2_2023") ?> <span class="red_txt">*</span>
+                            </p>
+                            <select id="participation_type" name="participation_type" onChange="calc_fee(this)" <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
                                 <option value="" selected hidden>Choose</option>
                                 <?php
                                 $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants");
 
                                 //								$idx = 0;
-                                foreach($participation_arr as $a_arr) {
+                                foreach ($participation_arr as $a_arr) {
                                     $selected = $prev["attendance_type"] == $a_arr ? "selected" : "";
 
-                                    echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
-//									$idx = $idx + 1;
+                                    echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
+                                    //									$idx = $idx + 1;
                                 }
                                 ?>
                             </select>
@@ -198,63 +208,64 @@ if ($during_yn !== "Y") {
                             <p class="label">Type of Occupation <span class="red_txt">*</span></p>
                             <ul class="half_ul">
                                 <li>
-                                    <select id="occupation" name="occupation" >
+                                    <select id="occupation" name="occupation">
                                         <option value="" selected hidden>Choose</option>
                                         <?php
                                         $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
 
-                                        foreach($occupation_arr as $a_arr) {
+                                        foreach ($occupation_arr as $a_arr) {
                                             $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
 
-                                            echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+                                            echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
                                         }
                                         ?>
                                     </select>
                                 </li>
                                 <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
-                                <li class="hide_input <?=$prev["occupation_type"] === "Others" ? "on" : ""?>">
-                                    <input type="hidden" name="occupation_prev_input" value="<?=$prev["occupation_other_type"] ?? ""?>"/>
-                                    <input type="text" id="occupation_input" name="occupation_input" value="<?=$prev["occupation_other_type"] ?? ""?>">
+                                <li class="hide_input <?= $prev["occupation_type"] === "Others" ? "on" : "" ?>">
+                                    <input type="hidden" name="occupation_prev_input" value="<?= $prev["occupation_other_type"] ?? "" ?>" />
+                                    <input type="text" id="occupation_input" name="occupation_input" value="<?= $prev["occupation_other_type"] ?? "" ?>">
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <p class="label"><?=$locale("register_online_question3_2023")?> <span class="red_txt">*</span></p>
+                            <p class="label"><?= $locale("register_online_question3_2023") ?> <span class="red_txt">*</span>
+                            </p>
                             <ul class="half_ul">
                                 <li>
-                                    <select id="category" name="category" onChange="calc_fee(this)" <?=$prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : ""?>>
+                                    <select id="category" name="category" onChange="calc_fee(this)" <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
                                         <option value="" selected hidden>Choose</option>
                                         <?php
                                         $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
 
-                                        foreach($category_arr as $a_arr) {
+                                        foreach ($category_arr as $a_arr) {
                                             $selected = $prev["member_type"] == $a_arr ? "selected" : "";
 
-                                            echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+                                            echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
                                         }
                                         ?>
                                     </select>
                                 </li>
                                 <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
-                                <li class="hide_input <?=$prev["member_type"] === "Others" ? "on" : ""?>">
-                                    <input type="hidden" name="title_prev_input" value="<?=$prev["member_other_type"] ?? ""?>"/>
-                                    <input type="text" id="title_input" name="title_input" value="<?=$prev["member_other_type"] ?? ""?>">
+                                <li class="hide_input <?= $prev["member_type"] === "Others" ? "on" : "" ?>">
+                                    <input type="hidden" name="title_prev_input" value="<?= $prev["member_other_type"] ?? "" ?>" />
+                                    <input type="text" id="title_input" name="title_input" value="<?= $prev["member_other_type"] ?? "" ?>">
                                 </li>
                             </ul>
                         </li>
 
-                        <?php if($member_data['nation_en'] == "Republic of Korea"){?>
+                        <?php if ($member_data['nation_en'] == "Republic of Korea") { ?>
                             <li id='chk_org'>
                                 <p class='label'>평점신청 <span class='red_txt'>*</span></p>
                                 <div>
                                     <div class='radio_wrap'>
                                         <ul class='flex'>
                                             <li>
-                                                <input type='radio' class='new_radio registration_check' id='radio1' name='review' value='1' <?=($prev["is_score"] == 1 ? "checked" : "")?>>
+                                                <input type='radio' class='new_radio registration_check' id='radio1' name='review' value='1' <?= ($prev["is_score"] == 1 ? "checked" : "") ?>>
                                                 <label for='radio1'><i></i>필요</label>
                                             </li>
                                             <li>
-                                                <input type='radio' class='new_radio registration_check' id='radio2' name='review' value='0' <?=($prev["is_score"] == 0 ? "checked" : "")?>>
+                                                <input type='radio' class='new_radio registration_check' id='radio2' name='review' value='0' <?= ($prev["is_score"] == 0 ? "checked" : "") ?>>
                                                 <label for='radio2'><i></i>불필요
                                                     <!-- <span class='is_scroe_txt red_txt'>(Overseas participants, please check '미신청').</span> -->
                                                 </label>
@@ -265,50 +276,50 @@ if ($during_yn !== "Y") {
                                 </div>
                             </li>
                             <!-- review_sub_list 클래스는 개발에서 show/hide 기능 대상 클래스로 사용하고 있습니다. -->
-                            <li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+                            <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                                 <p class="label">
                                     의사 면허번호 <span class="red_txt">*</span>
-                                    <input type="checkbox" id="app1" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["licence_number"] ? "checked" : ""?>>
+                                    <input type="checkbox" id="app1" class="checkbox" <?= $prev["is_score"] == 1  && !$prev["licence_number"] ? "checked" : "" ?>>
                                     <label for="app1">
-                                        <i></i> <?=$locale("not_applicable")?>
+                                        <i></i> <?= $locale("not_applicable") ?>
                                     </label>
                                 </p>
-                                <input type="text" name="licence_number" id="licence_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["licence_number"] ?? "" : ""?>">
+                                <input type="text" name="licence_number" id="licence_number" class="under_50 input_license" value="<?= $prev["is_score"] == 1 ? $prev["licence_number"] ?? "" : "" ?>">
                             </li>
-                            <li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+                            <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                                 <p class="label">
                                     전문의 번호 <span class="red_txt">*</span>
-                                    <input type="checkbox" id="app2" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["specialty_number"] ? "checked" : ""?>>
+                                    <input type="checkbox" id="app2" class="checkbox" <?= $prev["is_score"] == 1  && !$prev["specialty_number"] ? "checked" : "" ?>>
                                     <label for="app2">
-                                        <i></i> <?=$locale("not_applicable")?>
+                                        <i></i> <?= $locale("not_applicable") ?>
                                     </label>
                                 </p>
-                                <input type="text" name="specialty_number" id="specialty_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["specialty_number"] ?? "" : ""?>">
+                                <input type="text" name="specialty_number" id="specialty_number" class="under_50 input_license" value="<?= $prev["is_score"] == 1 ? $prev["specialty_number"] ?? "" : "" ?>">
                             </li>
-                            <li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+                            <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                                 <p class="label">
-                                    영양사 면허번호  <span class="red_txt">*</span>
-                                    <input type="checkbox" id="app3" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["nutritionist_number"] ? "checked" : ""?>>
+                                    영양사 면허번호 <span class="red_txt">*</span>
+                                    <input type="checkbox" id="app3" class="checkbox" <?= $prev["is_score"] == 1  && !$prev["nutritionist_number"] ? "checked" : "" ?>>
                                     <label for="app3">
-                                        <i></i> <?=$locale("not_applicable")?>
+                                        <i></i> <?= $locale("not_applicable") ?>
                                     </label>
                                 </p>
-                                <input type="text" name="nutritionist_number" id="nutritionist_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : ""?>">
+                                <input type="text" name="nutritionist_number" id="nutritionist_number" class="under_50 input_license" value="<?= $prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : "" ?>">
                             </li>
-                            <li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+                            <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                                 <p class="label">
-                                    임상영양사 자격번호  <span class="red_txt">*</span>
-                                    <input type="checkbox" id="app4" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["dietitian_number"] ? "checked" : ""?>>
+                                    임상영양사 자격번호 <span class="red_txt">*</span>
+                                    <input type="checkbox" id="app4" class="checkbox" <?= $prev["is_score"] == 1  && !$prev["dietitian_number"] ? "checked" : "" ?>>
                                     <label for="app4">
-                                        <i></i> <?=$locale("not_applicable")?>
+                                        <i></i> <?= $locale("not_applicable") ?>
                                     </label>
                                 </p>
-                                <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : ""?>">
+                                <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license" value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>">
                             </li>
-                        <?php }?>
+                        <?php } ?>
 
                         <li>
-                            <p class="label type2"><?=$locale("register_online_question5_2023")?> <span class="red_txt">*</span></p>
+                            <p class="label type2"><?= $locale("register_online_question5_2023") ?> <span class="red_txt">*</span></p>
                             <p class="mb10">Please confirm your attendance for all of the following events. </p>
                             <div class="table_wrap detail_table_common x_scroll">
                                 <table class="c_table detail_table" id=" othersList_table" name=" othersList_table">
@@ -317,60 +328,60 @@ if ($during_yn !== "Y") {
                                         <col>
                                     </colgroup>
                                     <tbody id="othersList">
-                                    <?php
-                                    $others_arr = array(
-                                        "Welcome Reception",
-                                        "Day 2 Breakfast Symposium",
-                                        "Day 2 Luncheon Symposium",
-                                        "Day 3 Breakfast Symposium",
-                                        "Day 3 Luncheon Symposium"
-                                    );
-                                    $other_date_arr = array(
-                                        "September 7(Thu)",
-                                        "September 8(Fri)",
-                                        "September 8(Fri)",
-                                        "September 9(Sat)",
-                                        "September 9(Sat)"
-                                    );
+                                        <?php
+                                        $others_arr = array(
+                                            "Welcome Reception",
+                                            "Day 2 Breakfast Symposium",
+                                            "Day 2 Luncheon Symposium",
+                                            "Day 3 Breakfast Symposium",
+                                            "Day 3 Luncheon Symposium"
+                                        );
+                                        $other_date_arr = array(
+                                            "September 7(Thu)",
+                                            "September 8(Fri)",
+                                            "September 8(Fri)",
+                                            "September 9(Sat)",
+                                            "September 9(Sat)"
+                                        );
 
-                                    $prev_data_arr = [];
-                                    if($prev["welcome_reception_yn"] == "Y"){
-                                        array_push($prev_data_arr ,1);
-                                    }
-                                    if($prev["day2_breakfast_yn"] == "Y"){
-                                        array_push($prev_data_arr ,2);
-                                    }
-                                    if($prev["day2_luncheon_yn"] == "Y"){
-                                        array_push($prev_data_arr ,3);
-                                    }
-                                    if($prev["day3_breakfast_yn"] == "Y"){
-                                        array_push($prev_data_arr ,4);
-                                    }
-                                    if($prev["day3_luncheon_yn"] == "Y"){
-                                        array_push($prev_data_arr ,5);
-                                    }
+                                        $prev_data_arr = [];
+                                        if ($prev["welcome_reception_yn"] == "Y") {
+                                            array_push($prev_data_arr, 1);
+                                        }
+                                        if ($prev["day2_breakfast_yn"] == "Y") {
+                                            array_push($prev_data_arr, 2);
+                                        }
+                                        if ($prev["day2_luncheon_yn"] == "Y") {
+                                            array_push($prev_data_arr, 3);
+                                        }
+                                        if ($prev["day3_breakfast_yn"] == "Y") {
+                                            array_push($prev_data_arr, 4);
+                                        }
+                                        if ($prev["day3_luncheon_yn"] == "Y") {
+                                            array_push($prev_data_arr, 5);
+                                        }
 
-                                    for($i = 1; $i <= count($others_arr); $i++) {
-                                        $valueType = "";
-                                        $content = $others_arr[$i-1];
+                                        for ($i = 1; $i <= count($others_arr); $i++) {
+                                            $valueType = "";
+                                            $content = $others_arr[$i - 1];
 
-                                        $is_yes = in_array($i, $prev_data_arr);
+                                            $is_yes = in_array($i, $prev_data_arr);
 
-                                        echo "<tr>
-													<th class='border_r_none'>".$others_arr[$i-1]."</th>
-													<th>".$other_date_arr[$i-1]."</th>
+                                            echo "<tr>
+													<th class='border_r_none'>" . $others_arr[$i - 1] . "</th>
+													<th>" . $other_date_arr[$i - 1] . "</th>
 													<td>
 														<div class='radio_wrap' id='focus_others' tabindex='0'>
 															<ul class='flex'>
 																<li>
-																	<input type='radio' id='yes".$i."' class='new_radio' name='others".$i."' value='".$others_arr[$i-1].$other_date_arr[$i-1]."' ".($is_yes ? "checked" : "").">
-																	<label for='yes".$i."'>
+																	<input type='radio' id='yes" . $i . "' class='new_radio' name='others" . $i . "' value='" . $others_arr[$i - 1] . $other_date_arr[$i - 1] . "' " . ($is_yes ? "checked" : "") . ">
+																	<label for='yes" . $i . "'>
 																		<i></i> Yes
 																	</label>
 																</li>
 																<li>
-																	<input type='radio' id='no".$i."' class='new_radio' name='others".$i."' value='no' ".($is_yes || !$prev ? "" : "checked").">
-																	<label for='no".$i."'>
+																	<input type='radio' id='no" . $i . "' class='new_radio' name='others" . $i . "' value='no' " . ($is_yes || !$prev ? "" : "checked") . ">
+																	<label for='no" . $i . "'>
 																		<i></i> No
 																	</label>
 																</li>
@@ -378,15 +389,15 @@ if ($during_yn !== "Y") {
 														</div>
 													</td>
 												</tr>";
-                                    }
-                                    ?>
+                                        }
+                                        ?>
                                     </tbody>
                                 </table>
                             </div>
                         </li>
                         <li>
                             <p class="label">
-                                <?=$locale("register_online_question6_2023")?> <span class="red_txt">*</span>
+                                <?= $locale("register_online_question6_2023") ?> <span class="red_txt">*</span>
                             </p>
                             <!-- info_check_list 클래스는 개발에서 checkbox의 box wrap을 감지하기 위한 수단으로 이용하고 있습니다. -->
                             <ul class="chk_list info_check_list">
@@ -406,30 +417,29 @@ if ($during_yn !== "Y") {
 
                                 $prev_list = explode("*", $prev["conference_info"] ?? "");
 
-                                for($i = 1; $i <= count($conference_info_arr); $i++) {
-                                    $content = $conference_info_arr[$i-1];
+                                for ($i = 1; $i <= count($conference_info_arr); $i++) {
+                                    $content = $conference_info_arr[$i - 1];
                                     $checked = "";
 
-                                    if($content && in_array($content, $prev_list)){
+                                    if ($content && in_array($content, $prev_list)) {
                                         $checked = "checked";
                                     }
 
                                     echo "
 										<li>
-											<input type='checkbox' class='checkbox' id='list".$i."' name='list' value='".$conference_info_arr[$i-1]."' ".$checked.">
-											<label for='list".$i."'>
-												<i></i>".$conference_info_arr[$i-1]."
+											<input type='checkbox' class='checkbox' id='list" . $i . "' name='list' value='" . $conference_info_arr[$i - 1] . "' " . $checked . ">
+											<label for='list" . $i . "'>
+												<i></i>" . $conference_info_arr[$i - 1] . "
 											</label>
 										</li>
 										";
-
                                 }
                                 ?>
                             </ul>
                         </li>
-                        <?php if($prev["status"] != 2 && $prev["status"] != 3){?>
+                        <?php if ($prev["status"] != 2 && $prev["status"] != 3) { ?>
                             <li>
-                                <p class="label type2"><?=$locale("register_online_question7_2023")?></p>
+                                <p class="label type2"><?= $locale("register_online_question7_2023") ?></p>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -437,86 +447,86 @@ if ($during_yn !== "Y") {
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                        <tr>
-                                            <th>Registration Fee</th>
-                                            <td class="regi_fee">
-                                                <!-- USD / KRW -->
-                                                <div class="fee_chk">
-                                                    <?php
-                                                    if ($member_data['nation_no'] == 25) {
-                                                        ?>
-                                                        <p class="korea_only on">KRW</p>
+                                            <tr>
+                                                <th>Registration Fee</th>
+                                                <td class="regi_fee">
+                                                    <!-- USD / KRW -->
+                                                    <div class="fee_chk">
                                                         <?php
-                                                    } else {
+                                                        if ($member_data['nation_no'] == 25) {
                                                         ?>
-                                                        <p class="usd_only on">USD</p>
+                                                            <p class="korea_only on">KRW</p>
                                                         <?php
-                                                    }
-                                                    ?>
-                                                </div>
-                                                <input type="text" id="reg_fee" name="reg_fee" placeholder="0" readonly value="<?=$prev["calc_fee"] || $prev["calc_fee"] == 0 ? number_format($prev["calc_fee"]) : ""?>">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Promotion Code</th>
-                                            <td>
-                                                <ul class="half_ul" style="min-width:300px;">
-                                                    <li>
-                                                        <input type="text" placeholder="Promotion code" name="promotion_code" value="<?=$prev["promotion_code"] ?? ""?>">
-                                                        <input type="hidden" name="promotion_confirm_code" value="<?=$prev["promotion_code"] ?? ""?>"/>
-                                                        <!--0628추가-->
-                                                        <input type="hidden" name="promotion_code_idx" value="<?=$prev["promotion_code_idx"] ?? ""?>"/>
-                                                    </li>
-                                                    <li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100"></li>
-                                                    <li class="flex_none">
-                                                        <button type="button" class="btn gray2_btn form_btn apply_btn">Apply</button>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="red_txt">Total Registration Fee</th>
-                                            <td><input type="text" id="total_reg_fee" name="total_reg_fee" placeholder="0" value="<?=$prev["price"] || $prev["price"] == 0 ? number_format($prev["price"]) : ""?>" readonly></td>
-                                        </tr>
-                                        <!-- payment_method_wrap 클래스는 개발에서 결제수단을 히든처리 및 이벤트 트리거로 이용하고 있습니다. -->
-                                        <tr class="payment_method_wrap">
-                                            <th>Payment Methods</th>
-                                            <td>
-                                                <div class="radio_wrap">
-                                                    <ul class="flex">
+                                                        } else {
+                                                        ?>
+                                                            <p class="usd_only on">USD</p>
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                    </div>
+                                                    <input type="text" id="reg_fee" name="reg_fee" placeholder="0" readonly value="<?= $prev["calc_fee"] || $prev["calc_fee"] == 0 ? number_format($prev["calc_fee"]) : "" ?>">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Promotion Code</th>
+                                                <td>
+                                                    <ul class="half_ul" style="min-width:300px;">
                                                         <li>
-                                                            <input type="radio" id="credit" class="new_radio" name="payment_method" value="credit" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] != 1 ? "checked" : ""?>>
-                                                            <label for="credit">
-                                                                <i></i>Credit card
-                                                            </label>
+                                                            <input type="text" placeholder="Promotion code" name="promotion_code" value="<?= $prev["promotion_code"] ?? "" ?>">
+                                                            <input type="hidden" name="promotion_confirm_code" value="<?= $prev["promotion_code"] ?? "" ?>" />
+                                                            <!--0628추가-->
+                                                            <input type="hidden" name="promotion_code_idx" value="<?= $prev["promotion_code_idx"] ?? "" ?>" />
                                                         </li>
-                                                        <li>
-                                                            <input type="radio" id="bank" class="new_radio" name="payment_method" value="bank" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] == 1 ? "checked" : ""?>>
-                                                            <label for="bank">
-                                                                <i></i>Bank transfer
-                                                            </label>
+                                                        <li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?= $prev["recommended_by"] ?? "" ?>" maxlength="100"></li>
+                                                        <li class="flex_none">
+                                                            <button type="button" class="btn gray2_btn form_btn apply_btn">Apply</button>
                                                         </li>
                                                     </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="red_txt">Total Registration Fee</th>
+                                                <td><input type="text" id="total_reg_fee" name="total_reg_fee" placeholder="0" value="<?= $prev["price"] || $prev["price"] == 0 ? number_format($prev["price"]) : "" ?>" readonly></td>
+                                            </tr>
+                                            <!-- payment_method_wrap 클래스는 개발에서 결제수단을 히든처리 및 이벤트 트리거로 이용하고 있습니다. -->
+                                            <tr class="payment_method_wrap">
+                                                <th>Payment Methods</th>
+                                                <td>
+                                                    <div class="radio_wrap">
+                                                        <ul class="flex">
+                                                            <li>
+                                                                <input type="radio" id="credit" class="new_radio" name="payment_method" value="credit" <?= isset($prev["payment_methods"]) && $prev["payment_methods"] != 1 ? "checked" : "" ?>>
+                                                                <label for="credit">
+                                                                    <i></i>Credit card
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="bank" class="new_radio" name="payment_method" value="bank" <?= isset($prev["payment_methods"]) && $prev["payment_methods"] == 1 ? "checked" : "" ?>>
+                                                                <label for="bank">
+                                                                    <i></i>Bank transfer
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </li>
-                        <?php }?>
+                        <?php } ?>
                     </ul>
 
                 </form>
                 <div class="btn_wrap gap">
                     <!-- 활성화 시, gray_btn 제거 & blue_btn 추가 -->
-                    <button type="button" class="btn online_btn <?=$registrationNo ? "" : "gray_btn"?> prev_btn pointer">
+                    <button type="button" class="btn online_btn <?= $registrationNo ? "" : "gray_btn" ?> prev_btn pointer">
                         <!-- <?= $locale("prev_btn") ?> -->
                         Previous
                     </button>
-                    <button type="button" class="btn online_btn <?=$registrationNo ? "blue_btn" : ""?> next_btn pointer">
+                    <button type="button" class="btn online_btn <?= $registrationNo ? "blue_btn" : "" ?> next_btn pointer">
                         <!-- <?= $locale("next_btn") ?> -->
-                        <?=$registrationNo ? "Modify" : "Submit"?>
+                        <?= $registrationNo ? "Modify" : "Submit" ?>
                     </button>
                 </div>
             </div>
@@ -544,41 +554,41 @@ if ($during_yn !== "Y") {
             });
 
             $('input[name=review]').on("change", function() {
-                if($('input[name=review]:checked').val() == '1'){
+                if ($('input[name=review]:checked').val() == '1') {
                     $(".review_sub_list").removeClass("hidden");
-                }else{
+                } else {
                     // init
                     $(".review_sub_list input[type=text]").val("");
                     $(".review_sub_list input[type=checkbox]").prop("checked", false);
 
-                    if(!$(".review_sub_list").hasClass("hidden")){
+                    if (!$(".review_sub_list").hasClass("hidden")) {
                         $(".review_sub_list").addClass("hidden");
                     }
                 }
             });
 
-            $(".review_sub_list input[type=checkbox]").on("change", function(){
+            $(".review_sub_list input[type=checkbox]").on("change", function() {
                 const checked = $(this).is(":checked");
 
-                if(checked){
+                if (checked) {
                     $(this).parent().next('input').val("");
                 }
             });
 
-            $(".input_license").on("keyup", function(){
+            $(".input_license").on("keyup", function() {
                 let v = $(this).val();
 
                 v = v.replace(/[^0-9]/gi, "").substring(0, 50);
 
-                if(v.length > 0){
+                if (v.length > 0) {
                     $(this).prev().find('input[type=checkbox]').prop("checked", false);
                 }
 
                 $(this).val(v);
             });
 
-            $(".next_btn").on("click", function (){
-                if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
+            $(".next_btn").on("click", function() {
+                if (!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
                     !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
                     !$("input[name=others5]").is(":checked")) {
                     $("#focus_others").focus();
@@ -587,67 +597,67 @@ if ($during_yn !== "Y") {
                 }
             });
 
-            $("select[name=category]").on("change", function(){
+            $("select[name=category]").on("change", function() {
                 const val = $(this).val();
                 const prevTitle = $("input[name=title_prev_input]").val() ?? "";
 
-                if(val == 'Others'){
-                    if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+                if (val == 'Others') {
+                    if (!$(this).parent("li").next('.hide_input').hasClass("on")) {
                         $(this).parent("li").next('.hide_input').addClass("on");
                     }
-                }else{
+                } else {
                     $(this).parent("li").next('.hide_input').removeClass("on");
                     $("input[name=title_input]").val(prevTitle);
                 }
             });
 
-            $("select[name=occupation]").on("change", function(){
+            $("select[name=occupation]").on("change", function() {
                 const val2 = $(this).val();
                 const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
 
-                if(val2 == 'Others'){
-                    if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+                if (val2 == 'Others') {
+                    if (!$(this).parent("li").next('.hide_input').hasClass("on")) {
                         $(this).parent("li").next('.hide_input').addClass("on");
                     }
-                }else{
+                } else {
                     $(this).parent("li").next('.hide_input').removeClass("on");
                     $("input[name=occupation_input]").val(prevTitle2);
                 }
             });
 
-            $("input[name=reg_fee], input[name=promotion_confirm_code]").on("change", function(){
-                const status =  $("input[name=promotion_confirm_code]").val() ?? "";
+            $("input[name=reg_fee], input[name=promotion_confirm_code]").on("change", function() {
+                const status = $("input[name=promotion_confirm_code]").val() ?? "";
                 let v = $("input[name=reg_fee]").val();
 
                 v = (v != "") ? parseFloat(v.replace(/[^0-9.]/gi, "")) : 0;
 
-                if(status !== ""){
-                    if(status == 0){
-                        v = v  - (v * 1.0);
-                    }else if(status == 1){
-                        v = v  - (v * 0.5);
-                    } else if(status == 2){
+                if (status !== "") {
+                    if (status == 0) {
+                        v = v - (v * 1.0);
+                    } else if (status == 1) {
+                        v = v - (v * 0.5);
+                    } else if (status == 2) {
                         v = v - (v * 0.3);
                     }
                 }
 
                 $("input[name=total_reg_fee]").val(comma(v));
 
-                if(v < 1){
-                    if(!$(".payment_method_wrap").hasClass("hidden")){
+                if (v < 1) {
+                    if (!$(".payment_method_wrap").hasClass("hidden")) {
                         $(".payment_method_wrap").addClass("hidden");
                     }
                     $(".payment_method_wrap li input[name=payment_method]:eq(0)").prop("checked", true);
                     // 0628 추가
                     // $(".online_btn.next_btn").addClass("green_btn")
-                }else{
+                } else {
                     $(".payment_method_wrap").removeClass("hidden");
                     $(".payment_method_wrap li input[name=payment_method]").prop("checked", false);
                 }
             })
         });
     </script>
-    <?php
+<?php
 }
 include_once('./include/footer.php');
 ?>

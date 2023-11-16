@@ -12,7 +12,8 @@
             if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
             ?>
             <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
-            <li>
+            <!-- [231116]다운로드 버튼 막기 -->
+            <!-- <li>
                 <a href="" target="_blank" class="type2 pink">
                     <img src="/main/img/icons/icon_download_abstract.svg" alt="">
                 </a>
@@ -21,6 +22,18 @@
                 <a href="" target="_blank" class="type2 violet">
                     <img src="/main/img/icons/icon_download_program.svg" alt="">
                 </a>
+            </li> -->
+
+            <li>
+
+                <button type="button" class="not_yet">
+                    <img src="/main/img/icons/tool_regist.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <button type="button" class="not_yet">
+                    <img src="/main/img/icons/tool_abstract.svg" alt="">
+                </button>
             </li>
             <?php
             } else {
