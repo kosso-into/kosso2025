@@ -20,14 +20,14 @@ if ($user_idx <= 0) {
 $nation_list = get_data($_nation_query);
 $select_user_registration_query = "
         SELECT
-            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.affiliation_kor,  reg.phone, reg.department, reg.member_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
+            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
 			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
 			reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
 			(
 				CASE
-					WHEN reg.ksso_member_status IS NULL OR reg.ksso_member_status = 0 THEN 'Non-member'
-					WHEN reg.ksso_member_status > 0 THEN 'Member'
+					WHEN reg.ksso_member_status IS NULL OR reg.ksso_member_status = 0 THEN '비회원'
+					WHEN reg.ksso_member_status > 0 THEN '회원'
 				END
 			) AS ksso_member_status,
             p.idx AS payment_idx, p.`type` AS payment_type, p.total_price_kr, p.total_price_us,
@@ -253,16 +253,16 @@ $score_detail = sql_fetch($score_sql);
 
                         // 결제정보
                         $payment_methods = $list["payment_methods"];
-                        $payment_methods = $payment_methods == 1 ? "bank" : "card";
+                        $payment_methods = $payment_methods == 1 ? "계좌이체" : "신용카드";
 
-                        if ($payment_methods == "card") {
+                        if ($payment_methods == "신용카드") {
                             if ($list["price"] == 0) {
                                 $payment_methods = "Free";
                             } else {
-                                $payment_methods = "Credit card";
+                                $payment_methods = "신용카드";
                             }
                         } else {
-                            $payment_methods = "Bank Transfer";
+                            $payment_methods = "계좌이체";
                         }
 
                     ?>
@@ -278,7 +278,7 @@ $score_detail = sql_fetch($score_sql);
 
 
                             <?php if ($list["status"] == 1) { ?>
-                                <td>Payment Needed</td>
+                                <td>결제 필요</td>
                                 <td>
                                     <?php if ($list["payment_methods"] == 1) { ?>
                                         <!--<a href="./online_registration.php" target="_blank" class="btn">Modify</a> 퍼블 ver-->
@@ -290,10 +290,10 @@ $score_detail = sql_fetch($score_sql);
                                                                                                                                                 ?>
                                         <!--">Payment</button>-->
                                     <?php } ?>
-                                    <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">Cancel</button>
+                                    <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">취소</button>
                                 </td>
                             <?php } else if ($list["status"] == 2 || $list["status"] == 3) { ?>
-                                <td>Complete</td>
+                                <td>등록 완료</td>
                                 <td>
                                     <button type="button" class="btn review_regi_open" data-idx="<?= $list["idx"] ?>">등록정보</button>
                                     <button type="button" class="btn registration_receipt_btn" data-idx="<?= $list["idx"] ?>">영수증</button>
@@ -316,7 +316,7 @@ $score_detail = sql_fetch($score_sql);
 
                                                 <tr>
                                                     <th>소속</th>
-                                                    <td><?= $list["affiliation_kor"] ?? "-" ?></td>
+                                                    <td><?= $list["affiliation"] ?? "-" ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>휴대폰 번호</th>
