@@ -95,101 +95,100 @@ $price = get_data($sql_price);
                     array_push($tb_arr[$i]['type_arr'], $pr['type_en']);
                 }
             ?>
-            <!--2. icomes-Air Registration start-->
-            <h3 class="title">등록 요금</h3>
-            <div class="details icomes_air">
-                <div class="table_wrap x_scroll">
-                    <!-- <img class="coming" src="./img/coming.png" /> -->
-                    <table class="c_table2 detail_table center">
-                        <thead>
-                            <tr>
-                                <th rowspan=" 2">구분</th>
-                                <!-- <th colspan="2">Early-bird Registration</th> -->
-                                <th colspan="2">사전 등록 접수</th>
-                                <th colspan="2">현장 등록 접수</th>
-                            </tr>
-                            <tr>
-                                <!-- <th><?= $locale("member") ?></th>
+                <!--2. icomes-Air Registration start-->
+                <h3 class="title">등록 요금</h3>
+                <div class="details icomes_air">
+                    <div class="table_wrap x_scroll">
+                        <!-- <img class="coming" src="./img/coming.png" /> -->
+                        <table class="c_table2 detail_table center">
+                            <thead>
+                                <tr>
+                                    <th rowspan=" 2">구분</th>
+                                    <!-- <th colspan="2">Early-bird Registration</th> -->
+                                    <th colspan="2">사전 등록 접수</th>
+                                    <th colspan="2">현장 등록 접수</th>
+                                </tr>
+                                <tr>
+                                    <!-- <th><?= $locale("member") ?></th>
                                     <th><?= $locale("non_member") ?></th> -->
-                                <th>대한비만학회 정회원</th>
-                                <th>대한비만학회 비회원</th>
-                                <th>대한비만학회 정회원</th>
-                                <th>대한비만학회 비회원</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
+                                    <th>대한비만학회 정회원</th>
+                                    <th>대한비만학회 비회원</th>
+                                    <th>대한비만학회 정회원</th>
+                                    <th>대한비만학회 비회원</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
                                 // foreach ($tb_arr as $tb) {
                                 ?>
-                            <!-- <tr> -->
-                            <!-- <td><?= implode(', ', $tb['type_arr']) ?></td> -->
-                            <?php
+                                <!-- <tr> -->
+                                <!-- <td><?= implode(', ', $tb['type_arr']) ?></td> -->
+                                <?php
                                 //	if ($tb[$off_mb_col] + $tb[$off_gu_col] + $tb[$on_mb_col] + $tb[$on_gu_col] <= 0) {
                                 ?>
-                            <!-- <td colspan="2">free</td> -->
-                            <?php
+                                <!-- <td colspan="2">free</td> -->
+                                <?php
                                 //} else {
                                 ?>
-                            <!-- <td><?= $unit_upper . " " . number_format($tb[$off_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$off_gu_col]) ?></td> -->
-                            <!-- <td><?= $unit_upper . " " . number_format($tb[$on_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$on_gu_col]) ?></td> -->
-                            <?php
+                                <!-- <td><?= $unit_upper . " " . number_format($tb[$off_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$off_gu_col]) ?></td> -->
+                                <!-- <td><?= $unit_upper . " " . number_format($tb[$on_mb_col]) . " / " . $unit_upper . " " . number_format($tb[$on_gu_col]) ?></td> -->
+                                <?php
                                 //}
                                 ?>
-                            <!-- </tr> -->
-                            <?php
+                                <!-- </tr> -->
+                                <?php
                                 //}
                                 ?>
-                            <tr class="text_center">
-                                <td>Certified M.D., Professor</td>
-                                <!-- <td class="closed_td">USD 130<br />KRW 130,000 -->
+                                <tr class="text_center">
+                                    <td>Certified M.D., Professor</td>
+                                    <!-- <td class="closed_td">USD 130<br />KRW 130,000 -->
 
-                                <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
-                                <!-- </td> -->
-                                <!-- <td>USD 160<br>KRW 160,000</td> -->
-                                <td>160,000원</td>
-                                <td>190,000원</td>
-                                <td>200,000원</td>
-                                <td>230,000원</td>
-                            </tr>
-                            <tr class="text_center">
-                                <td>
-                                    Fellow, Resident, Researcher,<br>
-                                    Nutritionist, Pharmacist, Nurse,<br>
-                                    Exercise Specialist, Military<br>
-                                    Surgeon(군의관),<br>
-                                    Public Health Doctor,<br>
-                                    Corporate Member, Others
-                                </td>
-                                <!-- <td>USD 65<br>KRW 65,000</td> -->
-                                <!-- <td>USD 95<br>KRW 95,000</td> -->
-                                <td> 85,000원</td>
-                                <td> 115,000원</td>
-                                <td> 120,000원</td>
-                                <td> 150,000원</td>
-                            </tr>
-                            <tr class="text_center">
-                                <td>Student
-                                    <!--, Surgeon (Military),<br>Public Health Doctor-->
-                                </td>
-                                <td colspan="6">Free<br />*행사 당일 학생증 지참 필요</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
+                                    <!-- </td> -->
+                                    <!-- <td>USD 160<br>KRW 160,000</td> -->
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                </tr>
+                                <tr class="text_center">
+                                    <td>
+                                        Fellow, Resident, Researcher,<br>
+                                        Nutritionist, Pharmacist, Nurse,<br>
+                                        Exercise Specialist, Military<br>
+                                        Surgeon(군의관),<br>
+                                        Public Health Doctor,<br>
+                                        Corporate Member, Others
+                                    </td>
+                                    <!-- <td>USD 65<br>KRW 65,000</td> -->
+                                    <!-- <td>USD 95<br>KRW 95,000</td> -->
+                                    <td> TBD </td>
+                                    <td> TBD</td>
+                                    <td> TBD</td>
+                                    <td> TBD</td>
+                                </tr>
+                                <tr class="text_center">
+                                    <td>Student
+                                        <!--, Surgeon (Military),<br>Public Health Doctor-->
+                                    </td>
+                                    <td colspan="6">Free<br />*행사 당일 학생증 지참 필요</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt10">
+                        <ul class="indent_ul">
+                            <li>• 등록 완료 및 전액 결제 시 등록 확인이 등록된 이메일 주소로 전송됩니다. 만약 메일을 받지 못한 경우, 대회 사무국에 문의하십시오.</li>
+                            <li>• 계좌 이체의 경우 자동으로 생성된 확인 이메일에 지불 상태가 '미결제'으로 나올 수 있습니다. 결제 완료를 확인해야 하는 경우 '내 페이지'에서 결제 상태를
+                                확인할 수 있습니다. (결제 확인이 업데이트되기까지 몇 시간이 걸릴 수 있습니다.)</li>
+                            <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
+                            <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생하는 경우 대회 사무국에
+                                문의하십시오.</li>
+                            <li>• 등록 정보를 수정하고 싶은 경우, 사무국<a href="mailto:ksso@into-on.com" class="font_inherit link">(ksso@into-on.com)</a>으로 연락해 주세요.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mt10">
-                    <ul class="indent_ul">
-                        <li>• 등록 완료 및 전액 결제 시 등록 확인이 등록된 이메일 주소로 전송됩니다. 만약 메일을 받지 못한 경우, 대회 사무국에 문의하십시오.</li>
-                        <li>• 계좌 이체의 경우 자동으로 생성된 확인 이메일에 지불 상태가 '미결제'으로 나올 수 있습니다. 결제 완료를 확인해야 하는 경우 '내 페이지'에서 결제 상태를
-                            확인할 수 있습니다. (결제 확인이 업데이트되기까지 몇 시간이 걸릴 수 있습니다.)</li>
-                        <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
-                        <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생하는 경우 대회 사무국에
-                            문의하십시오.</li>
-                        <li>• 등록 정보를 수정하고 싶은 경우, 사무국<a href="mailto:ksso@into-on.com"
-                                class="font_inherit link">(ksso@into-on.com)</a>으로 연락해 주세요.</li>
-                    </ul>
-                </div>
-            </div>
-            <!--2. icomes-Air Registration end-->
+                <!--2. icomes-Air Registration end-->
             <?php
             }
             ?>
@@ -257,14 +256,12 @@ $price = get_data($sql_price);
 
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">환불 및 취소 규정</h3>
-            <a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long"
-                target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">등록 취소 및 환불 신청서</a>
+            <a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">등록 취소 및 환불 신청서</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
                     <ul class="indent_ul">
-                        <li>• 환불 및 등록 취소를 위하여 정해진 환불 신청서 양식을 작성하시어 사무국 이메일(<a href="mailto:ksso@into-on.com"
-                                class="font_inherit link">ksso@into-on.com</a>)으로 제출 부탁드립니다.<br></li>
+                        <li>• 환불 및 등록 취소를 위하여 정해진 환불 신청서 양식을 작성하시어 사무국 이메일(<a href="mailto:ksso@into-on.com" class="font_inherit link">ksso@into-on.com</a>)으로 제출 부탁드립니다.<br></li>
                         <li>• 결제 완료 전에는 '내 페이지 - 등록'을 통해 등록을 취소할 수 있습니다. 그러나 이미 결제가 처리된 경우, 추가 도움을 받기 위해 사무국에 문의해야 합니다.
                         </li>
                         <li>• 환불은 춘계학술대회 이후에 처리될 예정입니다. </li>
@@ -547,13 +544,13 @@ $price = get_data($sql_price);
 </section>
 
 <script>
-$('.show_pop').on('click', function() {
-    //$('.pop_info').show();
-    alert("Coming soon.")
-});
-$(".rating_new_open").click(function() {
-    $(".rating_new_pop").show();
-});
+    $('.show_pop').on('click', function() {
+        //$('.pop_info').show();
+        alert("Coming soon.")
+    });
+    $(".rating_new_open").click(function() {
+        $(".rating_new_pop").show();
+    });
 </script>
 
 <?php include_once('./include/footer.php'); ?>
