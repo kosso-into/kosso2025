@@ -681,10 +681,6 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Type of Participation</th>
 								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$attendance_type}</td>
 							   </tr>
-							   <tr style='border-bottom:1px solid #000;'>
-								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Category</th>
-								   <td style='font-size:14px; padding:10px;border-left:1px solid #000;'>Professor</td>
-							   </tr>
 							   {$review_html}
 										<tr style='border-bottom:1px solid #000;'>
 											<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Others</th>

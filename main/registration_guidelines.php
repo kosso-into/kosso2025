@@ -52,7 +52,7 @@ $price = get_data($sql_price);
                     </tr> -->
                     <tr>
                         <th>사전 등록 접수<br class="br_mb_only">마감일</th>
-                        <td class="f_bold">TBD</td>
+                        <td class="f_bold">2월 24일(금)까지</td>
                     </tr>
                 </table>
             </div>
@@ -140,38 +140,39 @@ $price = get_data($sql_price);
                                 //}
                                 ?>
                             <tr class="text_center">
-                                <td>Certified M.D., Professor</td>
+                                <td>교수, 개원의, 봉직의, 교직의</td>
                                 <!-- <td class="closed_td">USD 130<br />KRW 130,000 -->
 
                                 <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
                                 <!-- </td> -->
                                 <!-- <td>USD 160<br>KRW 160,000</td> -->
-                                <td>TBD</td>
-                                <td>TBD</td>
+                                <td>50,000원</td>
+                                <td>80,000원</td>
                                 <td>TBD</td>
                                 <td>TBD</td>
                             </tr>
                             <tr class="text_center">
                                 <td>
-                                    Fellow, Resident, Researcher,<br>
-                                    Nutritionist, Pharmacist, Nurse,<br>
-                                    Exercise Specialist, Military<br>
-                                    Surgeon(군의관),<br>
-                                    Public Health Doctor,<br>
-                                    Corporate Member, Others
+                                    전임의, 수련의, 전공의, <br>
+                                    영양사, 운동사, 간호사, <br>
+                                    군의관, 공보의, 연구원, 기타<br>
+
+                                    <!--  Military
+                                    Pharmacist,
+                                    Corporate Member,  -->
                                 </td>
                                 <!-- <td>USD 65<br>KRW 65,000</td> -->
                                 <!-- <td>USD 95<br>KRW 95,000</td> -->
-                                <td> TBD </td>
-                                <td> TBD</td>
+                                <td>30,000원</td>
+                                <td>60,000원</td>
                                 <td> TBD</td>
                                 <td> TBD</td>
                             </tr>
                             <tr class="text_center">
-                                <td>Student
+                                <td>학생
                                     <!--, Surgeon (Military),<br>Public Health Doctor-->
                                 </td>
-                                <td colspan="6">Free<br />*행사 당일 학생증 지참 필요</td>
+                                <td colspan="6">무료등록<br />*행사 당일 학생증 지참 필요</td>
                             </tr>
                         </tbody>
                     </table>
@@ -257,7 +258,7 @@ $price = get_data($sql_price);
 
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">환불 및 취소 규정</h3>
-            <a href="./download/Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long"
+            <a href="./download/(KSSO)Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long"
                 target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">등록 취소 및 환불 신청서</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
@@ -279,11 +280,11 @@ $price = get_data($sql_price);
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th>TBD</th>
+                                <th>사전등록 기간 (2023년 2월 24일(금) 까지)</th>
                                 <td>전액 환불</td>
                             </tr>
                             <tr>
-                                <th>TBD</th>
+                                <th>사전등록 이후 (2023년 2월 25일(토) 부터)</th>
                                 <td>환불 불가</td>
                             </tr>
                         </tbody>
