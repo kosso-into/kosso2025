@@ -360,7 +360,7 @@ if ($during_yn !== "Y") {
                                             "Day 3 Luncheon Symposium"
                                         );
                                         $other_date_arr = array(
-                                            "3월 7일(목)",
+                                            "3월 8일(금)",
                                             "3월 8일(금)",
                                             "3월 8일(금)",
                                             "3월 9일(토)",
@@ -509,21 +509,30 @@ if ($during_yn !== "Y") {
                                                     <input type="text" id="reg_fee" name="reg_fee" placeholder="0" readonly value="<?= $prev["calc_fee"] || $prev["calc_fee"] == 0 ? number_format($prev["calc_fee"]) : "" ?>">
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <th>프로모션 코드</th>
-                                                <td>
-                                                    <ul class="half_ul" style="min-width:300px;">
-                                                        <li>
-                                                            <input type="text" placeholder="Promotion code" name="promotion_code" value="<?= $prev["promotion_code_number"] ?? "" ?>">
-                                                            <input type="hidden" name="promotion_confirm_code" value="<?= $prev["promotion_code"] ?? "" ?>" />
-                                                        </li>
-                                                        <li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?= $prev["recommended_by"] ?? "" ?>" maxlength="100" onkeyup="checkRegExp(this);" onchange="checkRegExp(this);"></li>
-                                                        <li class="flex_none">
-                                                            <button type="button" class="btn gray2_btn form_btn apply_btn">Apply</button>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
+                                            <!-- 프로모션 코드 
+                                        1117 학회팀 요청으로 주석-->
+                                            <!-- <tr>
+                                        <th>프로모션 코드</th>
+                                        <td>
+                                            <ul class="half_ul" style="min-width:300px;">
+                                                <li>
+                                                    <input type="text" placeholder="Promotion code"
+                                                        name="promotion_code"
+                                                        value="<?= $prev["promotion_code_number"] ?? "" ?>">
+                                                    <input type="hidden" name="promotion_confirm_code"
+                                                        value="<?= $prev["promotion_code"] ?? "" ?>" />
+                                                </li>
+                                                <li><input type="text" placeholder="Recommended by"
+                                                        name="recommended_by"
+                                                        value="<?= $prev["recommended_by"] ?? "" ?>" maxlength="100"
+                                                        onkeyup="checkRegExp(this);" onchange="checkRegExp(this);"></li>
+                                                <li class="flex_none">
+                                                    <button type="button"
+                                                        class="btn gray2_btn form_btn apply_btn">Apply</button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr> -->
                                             <tr>
                                                 <th class="red_txt">총 등록비</th>
                                                 <td><input type="text" id="total_reg_fee" name="total_reg_fee" placeholder="0" value="<?= $prev["price"] || $prev["price"] == 0 ? number_format($prev["price"]) : "" ?>" readonly></td>
