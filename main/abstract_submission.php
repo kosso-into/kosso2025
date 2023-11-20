@@ -21,6 +21,8 @@ $user_abstract_category = $user_info["abstract_category"] ?? "";
 $user_nation_no = $user_info["nation_no"] ?? "";
 $user_first_name = $user_info["first_name"] ?? "";
 $user_last_name = $user_info["last_name"] ?? "";
+$user_first_name = $user_last_name.$user_first_name;
+
 $user_first_name_kor = $user_info["first_name_kor"] ?? "";
 $user_last_name_kor = $user_info["last_name_kor"] ?? "";
 $user_email = $user_info["email"] ?? "";
@@ -37,7 +39,7 @@ if ($user_info_department && $user_info_institution) {
 }
 
 //연락처 쪼깨기
-$user_info["phone"] = isset($user_info["phone"]) ? str_replace("82-01", "82-1", $user_info["phone"]) : "-";
+$user_info["phone"] = isset($user_info["phone"]) ? str_replace("82-01", "82-01", $user_info["phone"]) : "-";
 $_arr_phone = explode("-", $user_info["phone"]);
 $user_nation_tel = $_arr_phone[0];
 $user_phone = implode("-", array_splice($_arr_phone, 1));
@@ -185,7 +187,7 @@ if (empty($abstract_idx)) {
 		$nation_no = $submit_data["nation_no"] ?? "";
 		$first_name = $submit_data["first_name"] ?? "";
 		$last_name = $submit_data["last_name"] ?? "";
-
+       
 		$affiliation_value = array();
 		$coauthor_nation_tel = array();
 
@@ -286,7 +288,7 @@ function other_change(value) {
 	$("#submit_btn").addClass("gray_btn");
 }*/
 $(document).ready(function() {
-    /**  효준 초록 접수 종류후 추적 해제
+    /**  효준 초록 접수 종류후 추석 해제
     alert("The abstract submission has expired.\nAbstract submission is not available.");
     window.history.back();
     window.location.href = "/main/index.php";
@@ -367,22 +369,26 @@ $(document).ready(function() {
         }
     });
 
-    $(document).on('change', '.nation', function() {
-        if ($(this).val() == "25") {
-            $("input[name=phone]").attr("placeholder", "10-0000-0000");
-        } else {
-            $("input[name=phone]").attr("placeholder", "");
-        }
-    });
 
-    $(document).on('change', '.add_co_nation', function() {
-        const num = $(this).closest(".abstract_form").data("num");
-        if ($(this).val() == "25") {
-            $("input[name=add_co_phone" + num + "]").attr("placeholder", "10-0000-0000");
-        } else {
-            $("input[name=add_co_phone" + num + "]").attr("placeholder", "");
-        }
-    });
+  
+    
+	$(document).on('change', '.nation', function() {
+		if($(this).val() == "25") {
+			$("input[name=phone]").attr("placeholder", "010-0000-0000");
+		} else {
+			$("input[name=phone]").attr("placeholder", "");
+		}
+	});
+
+	$(document).on('change', '.add_co_nation', function() {
+		const num = $(this).closest(".abstract_form").data("num");
+		if($(this).val() == "25") {
+			$("input[name=add_co_phone"+num+"]").attr("placeholder", "010-0000-0000");
+		} else {
+			$("input[name=add_co_phone"+num+"]").attr("placeholder", "");
+		}
+	});
+
 
     $(document).on('click', '.affiliation_add', function() {
         var instit = $(this).siblings('.institution').val();
@@ -537,14 +543,12 @@ $(document).ready(function() {
                 html += '</div>';
                 html += '</li>';
                 html += '<li>';
-                html += '<p class="label"><?= $locale("country") ?> <span class="red_txt">*</span></p>';
-                html += '<div>';
-                html +=
-                    '<select onchange="check_value()" class="required2 add_co_nation" name="add_co_nation_no' +
-                    i + '" data-count="' + i + '">';
-                html += '<option selected hidden>CHOOSE</option>';
+                html += '<div style="display:none;">';
+                html += '<select onchange="check_value()" class="required2 add_co_nation" name="add_co_nation_no' + i + '" data-count="' + i + '">';
+                html += '<option selected hidden>25</option>';
+
                 $.each(nation_list, function(idx, value) {
-                    html += '<option value=' + value["idx"] + '>' + value["nation_en"] +
+                    html += '<option value="25">' + value["nation_en"] +
                         '</option>';
                 });
                 html += '</select>';
@@ -553,12 +557,9 @@ $(document).ready(function() {
                 html += '<li>';
                 html += '<p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>';
                 html += '<div class="name_div clearfix2">';
-                html +=
-                    '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name' +
-                    i + '" value="" onchange="check_value()">';
-                html +=
-                    '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name' +
-                    i + '" value="" onchange="check_value()">';
+                html += '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name' + i + '" value="" onchange="check_value()">';
+              //  html += '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name' + i + '" value="" onchange="check_value()">';
+
                 html += '</div>';
                 html += '</li>';
                 html += '<li>';
@@ -594,10 +595,9 @@ $(document).ready(function() {
                 html += '<p class="label"><?= $locale("phone") ?> <span class="red_txt">*</span></p>';
                 html += '<div class="phone_div clearfix2">';
                 html += '<select class="required2" name="add_co_nation_tel' + i + '">';
-                html += '<option value="" selected></option>';
+                html += '<option value="82" selected>82</option>';
                 html += '</select>';
-                html += '<input class="required2 phone" type="text" name="add_co_phone' + i +
-                    '" value="" onchange="check_value()">';
+                html += '<input class="required2 phone" type="text" name="add_co_phone' + i + '" value="" onchange="check_value()" placeholder="010-0000-0000">';
                 html += '</div>';
                 html += '</li>';
                 html += '</ul>';
@@ -768,11 +768,11 @@ function inputCheck(formData) {
                 $("input[name=" + ok + "]").focus();
                 inputCheck = false;
                 return false;
-            } else if (ok == "last_name") {
-                alert(locale(language.value)("check_last_name"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
+            // } else if (ok == "last_name") {
+            //     alert(locale(language.value)("check_last_name"));
+            //     $("input[name=" + ok + "]").focus();
+            //     inputCheck = false;
+            //     return false;
             } else if (ok == "affiliation") {
                 alert(locale(language.value)("check_affiliation"));
                 $("input[name=" + ok + "]").focus();
@@ -901,9 +901,9 @@ function check_value() {
     var first_name_len = first_name.trim().length;
     first_name = (typeof(first_name) != "undefined") ? first_name : null;
 
-    var last_name = $("input[name=last_name]").val();
-    var last_name_len = last_name.trim().length;
-    last_name = (typeof(last_name) != "undefined") ? last_name : null;
+    // var last_name = $("input[name=last_name]").val();
+    // var last_name_len = last_name.trim().length;
+    // last_name = (typeof(last_name) != "undefined") ? last_name : null;
 
     //var city = $("input[name=city]").val();
     //var city_len = city.trim().length;
@@ -937,11 +937,11 @@ function check_value() {
         $("#submit_btn").addClass("gray_btn");
         return;
     }
-    if (!last_name) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
+    // if (!last_name) {
+    //     $("#submit_btn").removeClass("blue_btn");
+    //     $("#submit_btn").addClass("gray_btn");
+    //     return;
+    // }
     if (!affiliation_len < 0) {
         $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
@@ -963,32 +963,94 @@ function check_value() {
         $("#submit_btn").addClass("gray_btn");
         return;
     } else {
-        if ($("select[name=nation_no]").val() == 25) { // Republic of Korea
-            var regPhone = /^1([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
-            if (!regPhone.test(phone)) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                alert("Please enter your phone number correctly \nexample) 10-0000-0000");
-                return;
-            }
-        } else { // 해외 - 숫자만
-            var regPhone = /^[0-9]+$/;
-            if (!regPhone.test(phone)) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                alert("Please enter only digits for phone number field.");
-                return;
-            }
-        }
-    }
 
-    var form_list = $(".co_author_appended .abstract_form");
-    var is_valid = true;
-    if (form_list.length > 0) {
-        form_list.each(function(idx, obj) {
-            const form = $(obj);
-            const num = $(form).data("num");
+		if($("select[name=nation_no]").val() == 25) { // Republic of Korea
+			var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+			if (!regPhone.test(phone)) {
+				$("#submit_btn").removeClass("blue_btn");
+			    $("#submit_btn").addClass("gray_btn");
+				alert("Please enter your phone number correctly \nexample) 010-0000-0000");
+				return;
+			}
+		} else { // 해외 - 숫자만
+			var regPhone = /^[0-9]+$/;
+			if (!regPhone.test(phone)) {
+				$("#submit_btn").removeClass("blue_btn");
+			    $("#submit_btn").addClass("gray_btn");
+				alert("Please enter only digits for phone number field.");
+				return;
+			}
+		}
+	}
 
+	var form_list = $(".co_author_appended .abstract_form");
+	var is_valid = true;
+	if(form_list.length > 0) {
+		form_list.each(function (idx, obj) {
+			const form = $(obj);
+			const num = $(form).data("num");
+
+			var co_nation_no = form.find("select[name=add_co_nation_no"+num+"]").val();
+
+			var co_first_name = form.find("input[name=add_co_first_name"+num+"]").val();
+			co_first_name = (typeof(co_first_name) != "undefined") ? co_first_name : null;
+
+			var co_last_name = form.find("input[name=add_co_last_name"+num+"]").val();
+			co_last_name = (typeof(co_last_name) != "undefined") ? co_last_name : null;
+
+			var co_affiliation_len = form.find(".affiliation_wrap li").length;
+
+			var co_email = form.find("input[name=add_co_email"+num+"]").val();
+			co_email = (typeof(co_email) != "undefined") ? co_email : null;
+
+			var co_phone = form.find("input[name=add_co_phone"+num+"]").val();
+			co_phone = (typeof(co_phone) != "undefined") ? co_phone : null;
+
+			if (co_nation_no == "") {
+				$("#submit_btn").removeClass("blue_btn");
+				$("#submit_btn").addClass("gray_btn");
+				form.find("input[name=add_co_phone"+num+"]").attr("placeholder", "");
+				is_valid = false;
+				return;
+			} else {
+				if(co_nation_no == "25") {
+					form.find("input[name=add_co_phone"+num+"]").attr("placeholder", "010-0000-0000");
+				} else {
+					form.find("input[name=add_co_phone"+num+"]").attr("placeholder", "");
+				}
+			}
+			if (!co_first_name) {
+				$("#submit_btn").removeClass("blue_btn");
+				$("#submit_btn").addClass("gray_btn");
+				is_valid = false;
+				return;
+			}
+			// if (!co_last_name) {
+			// 	$("#submit_btn").removeClass("blue_btn");
+			// 	$("#submit_btn").addClass("gray_btn");
+			// 	is_valid = false;
+			// 	return;
+			// }
+			if (co_affiliation_len < 1) {
+				$("#submit_btn").removeClass("blue_btn");
+				$("#submit_btn").addClass("gray_btn");
+				is_valid = false;
+				return;
+			}
+			if (!co_email) {
+				$("#submit_btn").removeClass("blue_btn");
+				$("#submit_btn").addClass("gray_btn");
+				is_valid = false;
+				return;
+			}
+			if (!co_phone) {
+				$("#submit_btn").removeClass("blue_btn");
+				$("#submit_btn").addClass("gray_btn");
+				is_valid = false;
+				return;
+			}
+		});
+	}
             var co_nation_no = form.find("select[name=add_co_nation_no" + num + "]").val();
 
             var co_first_name = form.find("input[name=add_co_first_name" + num + "]").val();
@@ -1059,76 +1121,76 @@ function check_value() {
 
 // Same as sign-up information
 function setUserInformation(target) {
-    const form = target.closest(".abstract_form");
+	const form = target.closest(".abstract_form");
+    console.log(target);
 
-    if (target.prop("checked")) {
-        if (form.hasClass("co_abstract")) {
-            const num = form.data("num");
+	if(target.prop("checked")) {
+		if(form.hasClass("co_abstract")) {
+			const num = form.data("num");
 
-            form.find("select[name=add_co_nation_no" + num + "]").val($("input[name=user_nation_no]").val());
-            form.find("input[name=add_co_first_name" + num + "]").val($("input[name=user_first_name]").val());
-            form.find("input[name=add_co_last_name" + num + "]").val($("input[name=user_last_name]").val());
-            form.find("input[name=add_co_email" + num + "]").val($("input[name=user_email]").val());
-            form.find("input[name=add_co_phone" + num + "]").val($("input[name=user_phone]").val());
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].value = $("input[name=user_nation_tel]")
-                .val();
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].textContent = $(
-                "input[name=user_nation_tel]").val();
-            form.find("select[name=add_co_nation_tel" + num + "] option").click();
+			form.find("select[name=add_co_nation_no"+num+"]").val($("input[name=user_nation_no]").val());
+			form.find("input[name=add_co_first_name"+num+"]").val($("input[name=user_first_name]").val());
+			form.find("input[name=add_co_last_name"+num+"]").val($("input[name=user_last_name]").val());
+			form.find("input[name=add_co_email"+num+"]").val($("input[name=user_email]").val());
+			form.find("input[name=add_co_phone"+num+"]").val($("input[name=user_phone]").val());
+			form.find("select[name=add_co_nation_tel"+num+"] option")[0].value = $("input[name=user_nation_tel]").val();
+			form.find("select[name=add_co_nation_tel"+num+"] option")[0].textContent = $("input[name=user_nation_tel]").val();
+			form.find("select[name=add_co_nation_tel"+num+"] option").click();
 
-            form.find(".institution").val($("input[name=user_info_institution]").val());
-            form.find(".department").val($("input[name=user_info_department]").val());
-            form.find(".affiliation_wrap").empty();
-            form.find(".affiliation_add").click();
-        } else {
-            form.find("select[name=nation_no]").val($("input[name=user_nation_no]").val());
-            form.find("input[name=first_name]").val($("input[name=user_first_name]").val());
-            form.find("input[name=last_name]").val($("input[name=user_last_name]").val());
-            form.find("input[name=email]").val($("input[name=user_email]").val());
-            form.find("input[name=phone]").val($("input[name=user_phone]").val());
-            form.find("select[name=nation_tel] option")[0].value = $("input[name=user_nation_tel]").val();
-            form.find("select[name=nation_tel] option")[0].textContent = $("input[name=user_nation_tel]").val();
-            form.find("select[name=nation_tel] option").click();
+			form.find(".institution").val($("input[name=user_info_institution]").val());
+			form.find(".department").val($("input[name=user_info_department]").val());
+			form.find(".affiliation_wrap").empty();
+			form.find(".affiliation_add").click();
+		} else {
+			form.find("select[name=nation_no]").val($("input[name=user_nation_no]").val());
+			form.find("input[name=first_name]").val($("input[name=user_first_name]").val());
+			form.find("input[name=last_name]").val($("input[name=user_last_name]").val());
+			form.find("input[name=email]").val($("input[name=user_email]").val());
+			form.find("input[name=phone]").val($("input[name=user_phone]").val());
+			form.find("select[name=nation_tel] option")[0].value = $("input[name=user_nation_tel]").val();
+			form.find("select[name=nation_tel] option")[0].textContent = $("input[name=user_nation_tel]").val();
+			form.find("select[name=nation_tel] option").click();
 
-            form.find(".institution").val($("input[name=user_info_institution]").val());
-            form.find(".department").val($("input[name=user_info_department]").val());
-            form.find(".affiliation_wrap").empty();
-            form.find(".affiliation_add").click();
-        }
-    } else {
-        if (form.hasClass("co_abstract")) {
-            const num = form.data("num");
+			form.find(".institution").val($("input[name=user_info_institution]").val());
+			form.find(".department").val($("input[name=user_info_department]").val());
+			form.find(".affiliation_wrap").empty();
+			form.find(".affiliation_add").click();
+		}
+	} else {
+		if(form.hasClass("co_abstract")) {
+			const num = form.data("num");
 
-            form.find("select[name=add_co_nation_no" + num + "]").val("");
-            form.find("input[name=add_co_first_name" + num + "]").val("");
-            form.find("input[name=add_co_last_name" + num + "]").val("");
-            form.find("input[name=add_co_email" + num + "]").val("");
-            form.find("input[name=add_co_phone" + num + "]").val("");
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].value = "";
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].textContent = "";
+			form.find("select[name=add_co_nation_no"+num+"]").val("25");
+			form.find("input[name=add_co_first_name"+num+"]").val("");
+			form.find("input[name=add_co_last_name"+num+"]").val("");
+			form.find("input[name=add_co_email"+num+"]").val("");
+			form.find("input[name=add_co_phone"+num+"]").val("");
+			form.find("select[name=add_co_nation_tel"+num+"] option")[0].value = "82";
+			form.find("select[name=add_co_nation_tel"+num+"] option")[0].textContent = "82";
 
-            form.find(".institution").val("");
-            form.find(".department").val("");
-            form.find(".affiliation_wrap").empty();
-            form.find("input[name=add_co_affiliation" + num + "]").val("");
-        } else {
-            form.find("select[name=nation_no]").val("");
-            form.find("input[name=first_name]").val("");
-            form.find("input[name=last_name]").val("");
-            form.find("input[name=email]").val("");
-            form.find("input[name=phone]").val("");
-            form.find("select[name=nation_tel] option")[0].value = "";
-            form.find("select[name=nation_tel] option")[0].textContent = "";
-            form.find("select[name=nation_tel] option").click();
+			form.find(".institution").val("");
+			form.find(".department").val("");
+			form.find(".affiliation_wrap").empty();
+			form.find("input[name=add_co_affiliation"+num+"]").val("");
+		} else {
+			form.find("select[name=nation_no]").val("25");
+			form.find("input[name=first_name]").val("");
+			form.find("input[name=last_name]").val("");
+			form.find("input[name=email]").val("");
+			form.find("input[name=phone]").val("");
+			form.find("select[name=nation_tel] option")[0].value = "82";
+			form.find("select[name=nation_tel] option")[0].textContent = "82";
+			form.find("select[name=nation_tel] option").click();
 
-            form.find(".institution").val("");
-            form.find(".department").val("");
-            form.find(".affiliation_wrap").empty();
-            form.find("input[name=affiliation]").val("");
-        }
-    }
+			form.find(".institution").val("");
+			form.find(".department").val("");
+			form.find(".affiliation_wrap").empty();
+			form.find("input[name=affiliation]").val("");
+		}
+	}
+	
+	check_value();
 
-    check_value();
 }
 
 //핸드폰 유효성
@@ -1141,7 +1203,7 @@ $(document).on('change keyup', ".phone", function(key) {
 });
 $(document).ready(function() {
     $(document).on("keyup", ".en_keyup", function(key) {
-        var pattern_eng = /[^a-zA-Z\s]/gi;
+        var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var first_name = _this.val().replace(pattern_eng, '');
@@ -1165,8 +1227,10 @@ $(document).ready(function() {
             _this.val(first_name);
         }
     });
-    $(document).on("keyup", ".en_affiliation_keyup", function(key) {
-        var pattern_eng = /[^0-9||*-_@!#^&||a-zA-Z\s]/gi;
+
+	$(document).on("keyup", ".en_affiliation_keyup", function(key) {
+        var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+
         var _this = $(this);
         if (key.keyCode != 8) {
             var first_name = _this.val().replace(pattern_eng, '');
@@ -1190,17 +1254,19 @@ $(document).ready(function() {
 </script>
 
 <section class="submit_application abstract_online_submission container">
-    <input type="hidden" name="user_abstract_category" value="<?=$user_abstract_category?>" />
-    <input type="hidden" name="user_nation_no" value="<?=$user_nation_no?>" />
-    <input type="hidden" name="user_first_name" value="<?=$user_first_name?>" />
-    <input type="hidden" name="user_last_name" value="<?=$user_last_name?>" />
-    <input type="hidden" name="user_first_name" value="<?=$user_first_name?>" />
-    <input type="hidden" name="user_last_name" value="<?=$user_last_name?>" />
-    <input type="hidden" name="user_info_institution" value="<?=$user_info_institution?>" />
-    <input type="hidden" name="user_info_department" value="<?=$user_info_department?>" />
-    <input type="hidden" name="user_email" value="<?=$user_email?>" />
-    <input type="hidden" name="user_nation_tel" value="<?=$user_nation_tel?>" />
-    <input type="hidden" name="user_phone" value="<?=$user_phone?>" />
+	<input type="hidden" name="user_abstract_category" value="<?=$user_abstract_category?>" />
+	<input type="hidden" name="user_nation_no" value="<?=$user_nation_no?>" />
+	<input type="hidden" name="user_first_name" value="<?=$user_first_name?>" />
+	<input type="hidden" name="user_last_name" value="<?=$user_last_name?>" />
+	<input type="hidden" name="user_first_name" value="<?=$user_first_name?>" />
+	<input type="hidden" name="user_last_name" value="<?=$user_last_name?>" />
+
+	<input type="hidden" name="user_info_institution" value="<?=$user_info_institution?>" />
+	<input type="hidden" name="user_info_department" value="<?=$user_info_department?>" />
+	<input type="hidden" name="user_email" value="<?=$user_email?>" />
+	<input type="hidden" name="user_nation_tel" value="<?=$user_nation_tel?>" />
+	<input type="hidden" name="user_phone" value="<?=$user_phone?>" />
+
 
     <h1 class="page_title">Online Submission</h1>
     <div class="inner">
@@ -1266,11 +1332,11 @@ $(document).ready(function() {
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("country") ?> <span class="red_txt">*</span></p>
-                                <div>
-                                    <select class="required2 nation" name="nation_no" data-count="0"
-                                        onchange="check_value()">
-                                        <option value="" selected hidden>Choose </option>
+                                <p style="display:none" class="label"><?= $locale("country") ?> <span class="red_txt">*</span></p>
+                                <div style="display:none">
+                                    <select class="required2 nation" name="nation_no" data-count="0" onchange="check_value()">
+                                        <option value="25" selected hidden></option>
+
                                         <?php
                                             foreach ($nation_list as $list) {
                                                 $nation = $language == "en" ? $list["nation_en"] : $list["nation_ko"];
@@ -1284,11 +1350,11 @@ $(document).ready(function() {
                             <li>
                                 <p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>
                                 <div class="name_div clearfix2">
-                                    <input maxlength="60" placeholder="First name" class="required2 en_keyup"
-                                        type="text" name="first_name" value="<?= $first_name ?>"
-                                        onchange="check_value()">
-                                    <input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text"
-                                        name="last_name" value="<?= $last_name ?>" onchange="check_value()">
+                                    <input maxlength="60" placeholder="이름을 입력하세요" class="required2 en_keyup" type="text" name="first_name"
+                                        value="<?= $first_name ?>" onchange="check_value()">
+                                    <!-- <input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="last_name"
+                                        value="<?= $last_name ?>" onchange="check_value()"> -->
+
                                 </div>
                             </li>
                             <li>
@@ -1342,14 +1408,10 @@ $(document).ready(function() {
                                 <p class="label"><?= $locale("phone") ?> <span class="red_txt">*</span></p>
                                 <div class="phone_div clearfix2">
                                     <select class="required2" name="nation_tel">
-                                        <option
-                                            value="<?= isset($submit_phone) && $submit_phone != "" ? $submit_nation_tel : "" ?>"
-                                            selected>
-                                            <?= isset($submit_phone) && $submit_phone != "" ? $submit_nation_tel : "" ?>
-                                        </option>
+                                    <option value="82"selected>82</option>
                                     </select>
-                                    <input maxlength="60" class="required2 phone" type="text" name="phone"
-                                        value="<?= $submit_phone ?>" onchange="check_value()">
+                                    <input maxlength="60" class="required2 phone" type="text" name="phone" value="<?= $submit_phone ?>" onchange="check_value()" placeholder="010-0000-0001">
+
                                 </div>
                             </li>
                         </ul>
@@ -1380,7 +1442,7 @@ $(document).ready(function() {
             <!--coauthor append-->
             <input type="hidden" id="co_count" value="<?= ($data_count - 1) ?>" />
             <div class="co_author_appended">
-                <?php
+            <?php
                     if (isset($coauthor_submit_data)) {
                         for ($i = 0; $i < count($coauthor_submit_data); $i++) {
 							$coauthor = $coauthor_submit_data[$i];
@@ -1393,20 +1455,20 @@ $(document).ready(function() {
                             echo                '<div>';
                             echo                    '<ul class="author_chk_wrap">';
                             echo						'<li>';
-                            echo							'<input type="checkbox" class="checkbox" id="author_chk1_1_{$i}" onchange="setUserInformation($(this))">';
-                            echo							'<label for="author_chk1_1_{$i}">';
+                            echo							'<input type="checkbox" class="checkbox" id="author_chk1_1'.$i.'" onchange="setUserInformation($(this))">';
+                            echo							'<label for="author_chk1_1'.$i.'">';
                             echo								'<i></i>Same as sign-up information<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
 							echo						'<li>';
-                            echo							'<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_{$i}" name="add_co_presenting_author'.$i.'" value="Y" '.($coauthor["add_co_presenting_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
-                            echo							'<label for="author_chk1_2_{$i}">';
+                            echo							'<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2'.$i.'" name="add_co_presenting_author'.$i.'" value="Y" '.($coauthor["add_co_presenting_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
+                            echo							'<label for="author_chk1_2'.$i.'">';
                             echo								'<i></i>Presenting Author<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
 							echo						'<li>';
-                            echo							'<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_{$i}" name="add_co_corresponding_author'.$i.'" value="Y" '.($coauthor["add_co_corresponding_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
-                            echo							'<label for="author_chk1_3_{$i}">';
+                            echo							'<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3'.$i.'" name="add_co_corresponding_author'.$i.'" value="Y" '.($coauthor["add_co_corresponding_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
+                            echo							'<label for="author_chk1_3'.$i.'">';
                             echo								'<i></i>Corresponding Author<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
@@ -1415,9 +1477,9 @@ $(document).ready(function() {
                             echo            '</li>';
                             echo            '<li>';
                             echo                '<p class="label">' . $locale("country") . '<span class="red_txt">*</span></p>';
-                            echo                '<div>';
+                            echo                '<div style="display:none">';
                             echo                    '<select onchange="check_value()" class="required2 add_co_nation" name="add_co_nation_no'.$i.'" data-count="'.$i.'">';
-                            echo                        '<option hidden>CHOOSE</option>';
+                            echo                        '<option value="25" selected hidden></option>';
                             foreach ($nation_list as $list) {
                                 $nation = $language == "en" ? $list["nation_en"] : $list["nation_ko"];
                                 $selected = $coauthor["add_co_nation_no"] == $list["idx"] ? "selected" : "";
@@ -1430,7 +1492,7 @@ $(document).ready(function() {
                             echo                '<p class="label">' . $locale("name") . ' <span class="red_txt">*</span></p>';
                             echo                '<div class="name_div clearfix2">';
                             echo                    '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name'.$i.'" value="' . $coauthor["add_co_first_name"] . '" onchange="check_value()">';
-                            echo                    '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name'.$i.'" value="' . $coauthor["add_co_last_name"] . '" onchange="check_value()">';
+                            // echo                    '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name'.$i.'" value="' . $coauthor["add_co_last_name"] . '" onchange="check_value()">';
                             echo                '</div>';
                             echo            '</li>';
                             echo            '<li>';
@@ -1482,9 +1544,9 @@ $(document).ready(function() {
 								$co_nation_tel = $coauthor["add_co_nation_tel"];
 								$co_phone = $coauthor["add_co_phone"];
 							}
-                            echo                        '<option value="' . $co_nation_tel . '" selected>' . $co_nation_tel . '</option>';
+                            echo                        '<option value="82" selected>82</option>';
                             echo                    '</select>';
-                            echo                    '<input maxlength="60" class="required2 phone" type="text" name="add_co_phone' . $i . '" value="' . $co_phone . '" onchange="check_value()">';
+                            echo                    '<input maxlength="60" class="required2 phone" type="text" name="add_co_phone' . $i . '" value="' . $co_phone . '" onchange="check_value()" placeholder="010-0000-0000">';
                             echo                '</div>';
                             echo            '</li>';
                             echo        '</ul>';
