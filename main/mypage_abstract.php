@@ -162,8 +162,8 @@ foreach ($nation_list as $obj) {
 								<td><?= $submission["regist_date"] ?></td>
 								<td data-idx="<?= $submission["idx"] ?>">
 									<button type="button" class="btn review_regi_open">Review</button>
-									<!--								<button type="button" class="btn modify_btn">Modify</button>-->
-									<!--								<button type="button" class="btn delete_btn">Delete</button>-->
+									<button type="button" class="btn modify_btn">Modify</button>
+									<button type="button" class="btn delete_btn">Delete</button>
 								</td>
 							</tr>
 						<?php } ?>
@@ -174,7 +174,7 @@ foreach ($nation_list as $obj) {
 			</div>
 			<div class="centerT">
 				<!--				<button class="btn blue_btn long online_submission_alert">Make a new submission</button>-->
-				<button class="btn gray_btn long online_submission_alert">초록 접수</button>
+				<button class="btn gray_btn long online_submission_alert">추가 초록 접수</button>
 			</div>
 		</div>
 	</div>
