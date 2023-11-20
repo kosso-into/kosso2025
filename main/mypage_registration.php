@@ -117,9 +117,10 @@ $score_detail = sql_fetch($score_sql);
         <?php
         if ($currentDateTime >= $targetDateTime) {
         ?>
-            <div class="rightT">
+            <!-- 1117 대리님 확인 증명서 필요 X-->
+            <!-- <div class="rightT">
                 <button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button>
-            </div>
+            </div> -->
         <?php
         }
         ?>
@@ -201,7 +202,7 @@ $score_detail = sql_fetch($score_sql);
                         if ($welcome_reception_yn === "Y") {
                             $other_html .= "
 											<input type='checkbox' class='checkbox' id='other1' disabled>
-											<label for='other1'><i></i>Welcome Reception – 3월 7일(목)</label>
+											<label for='other1'><i></i>Welcome Reception – 3월 8일(금)</label>
 										   ";
                         }
                         if ($day2_breakfast_yn === "Y") {
