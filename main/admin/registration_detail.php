@@ -119,7 +119,7 @@ $nation_no =  isset($registration_detail["nation_no"]) ? $registration_detail["n
 $banquet_yn = isset($registration_detail["banquet_yn"]) ? $registration_detail["banquet_yn"] : "";
 
 $member_idx = isset($registration_detail["member_idx"]) ? $registration_detail["member_idx"] : "";
-$member_type = isset($registration_detail["member_type"]) ? $registration_detail["member_type"] : "";
+//$member_type = isset($registration_detail["member_type"]) ? $registration_detail["member_type"] : "";
 $occupation_type = isset($registration_detail["occupation_type"]) ? $registration_detail["occupation_type"] : "";
 $member_status = isset($registration_detail["ksso_member_status"]) ? $registration_detail["ksso_member_status"] : "";
 $member_email = isset($registration_detail["member_email"]) ? $registration_detail["member_email"] : "";
@@ -149,6 +149,54 @@ $refund_bank = isset($registration_detail["refund_bank"]) ? $registration_detail
 $refund_holder = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_holder"] : "";
 $refund_account = isset($registration_detail["refund_account"]) ? $registration_detail["refund_account"] : "";
 $refund_amount = $registration_detail["refund_amount"] ?? $payment_price;
+
+
+
+// 2024 member type 추가
+// Type of member 
+$member_type = $registration_detail["member_type"] ?? "-";
+switch ($member_type) {
+    case "Professor":
+        $member_type = "교수";
+        break;
+    case "Certified M.D.":
+        $member_type = "개원의";
+        break;
+    case "Public Health Doctor":
+        $member_type = "봉직의";
+        break;
+    case "Corporate Member":
+        $member_type = "교직의";
+        break;
+    case "Fellow":
+        $member_type = "전임의";
+        break;
+    case "Resident":
+        $member_type = "전공의";
+        break;
+    case "Nutritionist":
+        $member_type = "영양사";
+        break;
+    case "Exercise Specialist":
+        $member_type = "운동사";
+        break;
+    case "Nurse":
+        $member_type = "간호사";
+        break;
+    case "Researcher":
+        $member_type = "연구원";
+        break;
+    case "Student":
+        $member_type = "학생";
+        break;
+    case "Press":
+        $member_type = "기자";
+        break;   
+    case "Others":
+        $member_type = "기타";
+        break;   
+}
+
 
 // Special Request For Food
 $special_request = $registration_detail["special_request_food"] ?? "";
@@ -442,14 +490,14 @@ if ($attendance_type_no != 0) {
                             <div>
                                 Welcome Reception :
                                 <?= $registration_detail["welcome_reception_yn"] == "Y" ? "Yes" : "No" ?><br />
-                                Day 2 Breakfast Symposium :
+                                Satellite Symposium :
                                 <?= $registration_detail["day2_breakfast_yn"] == "Y" ? "Yes" : "No" ?><br />
-                                Day 2 Luncheon Symposium :
+                                Breakfast Symposium :
                                 <?= $registration_detail["day2_luncheon_yn"] == "Y" ? "Yes" : "No" ?><br />
-                                Day 3 Breakfast Symposium :
+                                Luncheon Symposium :
                                 <?= $registration_detail["day3_breakfast_yn"] == "Y" ? "Yes" : "No" ?><br />
-                                Day 3 Luncheon Symposium :
-                                <?= $registration_detail["day3_luncheon_yn"] == "Y" ? "Yes" : "No" ?><br />
+                                <!-- Day 3 Luncheon Symposium :
+                                <?= $registration_detail["day3_luncheon_yn"] == "Y" ? "Yes" : "No" ?><br /> -->
                             </div>
                         </td>
                     </tr>

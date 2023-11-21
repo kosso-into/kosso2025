@@ -4,7 +4,8 @@
     <div class="fixed_btn_wrap">
         <ul class="toolbar_wrap">
             <li>
-                <a href="/main/program_glance.php">
+                <a href="" class="not_yet">
+                <!-- <a href="/main/program_glance.php"> -->
                     <img src="/main/img/icons/tool_program.svg" alt="">
                 </a>
             </li>
