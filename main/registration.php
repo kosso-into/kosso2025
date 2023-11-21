@@ -230,6 +230,7 @@ if ($during_yn !== "Y") {
                 </table>
             </div>
             <form name="registration_form" class="registration_form">
+                <!--1121 수정 -->
                 <input type="hidden" name="prev_no" value="<?= $registrationNo ? $registrationNo : $member_idx ?>" />
                 <input type="hidden" id="nation" name="nation" value="<?= $member_data['nation_en'] ?>">
                 <!-- onsubmit="return false" -->
