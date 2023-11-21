@@ -79,18 +79,18 @@ if ($_POST["flag"] == "registration") {
 	$nation_no   = isset($user["nation_no"]) ? $user["nation_no"] : "";						// 국가번호
 	$last_name   = isset($user["last_name"]) ? $user["last_name"] : "";						// 성
 	$first_name  = isset($user["first_name"]) ? $user["first_name"] : "";					// 이름
-	$phone       = isset($user["phone"]) ? $user["phone"] : "";								// 휴대폰번호
+	$phone       = isset($user["telephone"]) ? $user["telephone"] : "";								// 휴대폰번호
 	$affiliation = isset($user["affiliation"]) ? $user["affiliation"] : "";					// 소속
 	$affiliation = htmlspecialchars($affiliation);
 	$department  = isset($user["department"]) ? $user["department"] : "";
 	$department  = htmlspecialchars($department);
 	$ksso_member_status = isset($user["ksola_member_status"]) || $user["ksola_member_status"] == 0 ? $user["ksola_member_status"] : "";
 
-	$welcome_reception_yn = $data["others1"] != "no" ? "Y" : "N";
-	$day2_breakfast_yn    = $data["others2"] != "no" ? "Y" : "N";
-	$day2_luncheon_yn     = $data["others3"] != "no" ? "Y" : "N";
-	$day3_breakfast_yn    = $data["others4"] != "no" ? "Y" : "N";
-	$day3_luncheon_yn     = $data["others5"] != "no" ? "Y" : "N";
+	$satellite_symposium_yn = $data["others1"] != "no" ? "Y" : "N";
+	$welcome_reception_yn    = $data["others2"] != "no" ? "Y" : "N";
+	$breakfast_symposium_yn     = $data["others3"] != "no" ? "Y" : "N";
+	$luncheon_symposium    = $data["others4"] != "no" ? "Y" : "N";
+	// $day3_luncheon_yn     = $data["others5"] != "no" ? "Y" : "N";
 	$promotion_code_number = isset($data["promotion_code"]) ? $data["promotion_code"] : "";                          // 프로모션코드 번호
 	$promotion_code       = isset($data["promotion_confirm_code"]) ? $data["promotion_confirm_code"] : "";			// 프로모션코드 할인율(0:100%, 1:50%, 2:30%)
 	$recommended_by       = isset($data["recommended_by"]) ? $data["recommended_by"] : "";							// 추천인
@@ -187,7 +187,7 @@ if ($_POST["flag"] == "registration") {
 		if ($registration_idx && ($payment_status != "0" && $payment_status != "4")) {
 			$res = [
 				code => 401,
-				msg => "already registration"
+				msg => "이미 등록된 회원입니다."
 			];
 			echo json_encode($res);
 			exit;
@@ -814,6 +814,8 @@ function calcFee($user_idx, $category, $country)
 				AND m.`status` = 'Y' 
 				AND m.idx = {$user_idx}
 			   ";
+
+
 	$member = sql_fetch($sql);
 
 	$member_idx = $member["idx"] ?? NULL;

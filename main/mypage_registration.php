@@ -282,14 +282,13 @@ $score_detail = sql_fetch($score_sql);
                                 <td>결제 필요</td>
                                 <td>
                                     <?php if ($list["payment_methods"] == 1) { ?>
-                                        <!--<a href="./online_registration.php" target="_blank" class="btn">Modify</a> 퍼블 ver-->
-                                        <!--										<a href="./registration.php?idx=--><?php //=$list["idx"]
-                                                                                                                        ?>
-                                        <!--" target="_blank" class="btn">Modify</a>-->
+                                        <!-- <a href="./online_registration.php" target="_blank" class="btn">수정하기</a> -->
+
                                     <?php } else { ?>
-                                        <!--										<button type="button" class="btn payment_btn" data-url="--><?php //=$payment_url
-                                                                                                                                                ?>
-                                        <!--">Payment</button>-->
+                                        <a href="./registration.php?idx=<?php echo $list["idx"]
+                                                                        ?>
+                                        " target="_blank" class="btn">수정하기</a>
+                                        <button type="button" class="btn payment_btn" data-url="<?php echo $payment_url ?>">결제하기</button>
                                     <?php } ?>
                                     <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">취소</button>
                                 </td>
@@ -321,7 +320,7 @@ $score_detail = sql_fetch($score_sql);
                                                 </tr>
                                                 <tr>
                                                     <th>휴대폰 번호</th>
-                                                    <td><?= substr($list["phone"], 3)  ?? "-" ?></td>
+                                                    <td><?= $list["phone"] ?? "-" ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>대한 비만학회 회원여부</th>
@@ -1066,6 +1065,7 @@ $score_detail = sql_fetch($score_sql);
 
     $(".payment_btn").on("click", function() {
         var paymentUrl = $(this).data("url");
+
         window.location.href = paymentUrl;
     });
 

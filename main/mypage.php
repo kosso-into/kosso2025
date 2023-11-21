@@ -118,6 +118,7 @@ $score_detail = sql_fetch($score_sql);
 		</ul>
 		<div>
 			<!-- 230824 다운로드 버튼 추가 -->
+			<!-- 231121 학회팀 요청으로 주석 
 			<?php
 			if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
 			?>
@@ -133,7 +134,7 @@ $score_detail = sql_fetch($score_sql);
 				</div>
 			<?php
 			}
-			?>
+			?>-->
 			<form class="table_wrap" name="modify_form">
 				<div class="pc_only">
 					<table class="table detail_table">
@@ -296,7 +297,7 @@ $score_detail = sql_fetch($score_sql);
 									</td>
 								</tr>
 							<?php } ?>
-							<tr>
+							<tr style="display:none;">
 								<th class="nowrap"><span class="red_txt">*</span>휴대폰 번호</th>
 								<td>
 									<div class="max_normal phone">
@@ -305,10 +306,10 @@ $score_detail = sql_fetch($score_sql);
 									</div>
 								</td>
 							</tr>
-							<tr style="display:none">
-								<th class="nowrap">Telephone Number</th>
+							<tr >
+								<th class="nowrap">휴대폰 번호</th>
 								<td class="flex">
-									<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>" readonly>
+									<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" value="<?= $_arr_telephone[0] ?>">
 									<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
 									<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
 								</td>

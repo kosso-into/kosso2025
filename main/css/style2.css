@@ -134,7 +134,7 @@ section.container.login.bg {border: 0px;}
 .dates_area li:nth-of-type(2) {background-image: url("../img/dates_area_2.png")}
 .dates_area li:nth-of-type(3) {background-image: url("../img/dates_area_3.png")}
 .dates_area li:nth-of-type(4) {background-image: url("../img/dates_area_4.png")}
-.dates_area li:last-child a {text-align:right;}
+/* .dates_area li:last-child a {text-align:right;} */
 .dates_area li:last-child a h2 {text-align:left; line-height:1.2;}
 .dates_area li a {width: 100%; height: 100%; padding: 21px 5px 25px; display: flex; justify-content: space-between; /*align-items: center;*/ flex-direction: column;}
 .dates_area li h2 {font-size: 30px; font-weight: 900; color: #FFFFFF;}
