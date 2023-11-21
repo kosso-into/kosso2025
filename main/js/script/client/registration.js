@@ -167,7 +167,7 @@ function regist_promotion_code(registration_idx,promotion_code, recommender) {
 		dataType: "JSON",
 		success: function (res) {
 			if (res.code == 200) {
-				//alert("A promotional code has been applied successfully.");
+				alert("A promotional code has been applied successfully.");
 			} else {
 				alert("regist promotion error.");
 				return;
@@ -234,7 +234,6 @@ function calc_fee(obj){
 			},
 			dataType : "JSON",
 			success : function(res){
-				
 				if(res.code == 200) {
 					$("input[name=reg_fee]").val(comma(res.data)).change();
 				} else if(res.code == 400){

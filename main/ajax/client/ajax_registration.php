@@ -1,8 +1,7 @@
 <?php include_once("../../common/common.php"); ?>
 <?php
 if ($_POST["flag"] == "registration") {
-	// CORS 이슈 대응
-	header('Access-Control-Allow-Origin: *');
+
 	//var_dump($_POST); exit;
 	//var_dump($_SESSION); exit;
 
@@ -80,18 +79,18 @@ if ($_POST["flag"] == "registration") {
 	$nation_no   = isset($user["nation_no"]) ? $user["nation_no"] : "";						// 국가번호
 	$last_name   = isset($user["last_name"]) ? $user["last_name"] : "";						// 성
 	$first_name  = isset($user["first_name"]) ? $user["first_name"] : "";					// 이름
-	$phone       = isset($user["telephone"]) ? $user["telephone"] : "";								// 휴대폰번호
+	$phone       = isset($user["phone"]) ? $user["phone"] : "";								// 휴대폰번호
 	$affiliation = isset($user["affiliation"]) ? $user["affiliation"] : "";					// 소속
 	$affiliation = htmlspecialchars($affiliation);
 	$department  = isset($user["department"]) ? $user["department"] : "";
 	$department  = htmlspecialchars($department);
 	$ksso_member_status = isset($user["ksola_member_status"]) || $user["ksola_member_status"] == 0 ? $user["ksola_member_status"] : "";
 
-	$satellite_symposium_yn = $data["others1"] != "no" ? "Y" : "N";
-	$welcome_reception_yn    = $data["others2"] != "no" ? "Y" : "N";
-	$breakfast_symposium_yn     = $data["others3"] != "no" ? "Y" : "N";
-	$luncheon_symposium    = $data["others4"] != "no" ? "Y" : "N";
-	// $day3_luncheon_yn     = $data["others5"] != "no" ? "Y" : "N";
+	$welcome_reception_yn = $data["others1"] != "no" ? "Y" : "N";
+	$day2_breakfast_yn    = $data["others2"] != "no" ? "Y" : "N";
+	$day2_luncheon_yn     = $data["others3"] != "no" ? "Y" : "N";
+	$day3_breakfast_yn    = $data["others4"] != "no" ? "Y" : "N";
+	$day3_luncheon_yn     = $data["others5"] != "no" ? "Y" : "N";
 	$promotion_code_number = isset($data["promotion_code"]) ? $data["promotion_code"] : "";                          // 프로모션코드 번호
 	$promotion_code       = isset($data["promotion_confirm_code"]) ? $data["promotion_confirm_code"] : "";			// 프로모션코드 할인율(0:100%, 1:50%, 2:30%)
 	$recommended_by       = isset($data["recommended_by"]) ? $data["recommended_by"] : "";							// 추천인
@@ -103,9 +102,6 @@ if ($_POST["flag"] == "registration") {
 
 	$price				  = isset($data["reg_fee"]) ? $data["reg_fee"] : "";										// 결제금액
 	$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
-
-
-	$bank		  = isset($data["bank"]) ? $data["bank"] . '('. $data["number"].')': "";				//계좌이체시 은행(계좌번호)
 
 	if (!$update_idx) {
 		if ($price == "" || $total_price == "") {
@@ -191,7 +187,7 @@ if ($_POST["flag"] == "registration") {
 		if ($registration_idx && ($payment_status != "0" && $payment_status != "4")) {
 			$res = [
 				code => 401,
-				msg => "이미 등록된 회원입니다."
+				msg => "already registration"
 			];
 			echo json_encode($res);
 			exit;
@@ -420,10 +416,10 @@ if ($_POST["flag"] == "registration") {
 						modifier = '{$user_idx}',
 						modify_date = NOW(),
 						welcome_reception_yn = '{$welcome_reception_yn}',
-						day2_breakfast_yn = '{$satellite_symposium_yn}',
-						day2_luncheon_yn = '{$breakfast_symposium_yn}',
-						day3_breakfast_yn = '{$luncheon_symposium}',
-						day3_luncheon_yn = 'N'
+						day2_breakfast_yn = '{$day2_breakfast_yn}',
+						day2_luncheon_yn = '{$day2_luncheon_yn}',
+						day3_breakfast_yn = '{$day3_breakfast_yn}',
+						day3_luncheon_yn = '{$day3_luncheon_yn}'
 						{$add_set}
 					WHERE idx = {$update_idx}
 					";
@@ -439,10 +435,10 @@ if ($_POST["flag"] == "registration") {
 						phone = '{$phone}',
 						register = '{$user_idx}',
 						welcome_reception_yn = '{$welcome_reception_yn}',
-						day2_breakfast_yn = '{$satellite_symposium_yn}',
-						day2_luncheon_yn = '{$breakfast_symposium_yn}',
-						day3_breakfast_yn = '{$luncheon_symposium}',
-						day3_luncheon_yn = 'N'
+						day2_breakfast_yn = '{$day2_breakfast_yn}',
+						day2_luncheon_yn = '{$day2_luncheon_yn}',
+						day3_breakfast_yn = '{$day3_breakfast_yn}',
+						day3_luncheon_yn = '{$day3_luncheon_yn}',
 						price = {$total_price}
 						{$add_set}
 					";
@@ -818,8 +814,6 @@ function calcFee($user_idx, $category, $country)
 				AND m.`status` = 'Y' 
 				AND m.idx = {$user_idx}
 			   ";
-
-
 	$member = sql_fetch($sql);
 
 	$member_idx = $member["idx"] ?? NULL;
