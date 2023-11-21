@@ -234,6 +234,7 @@ function calc_fee(obj){
 			},
 			dataType : "JSON",
 			success : function(res){
+				
 				if(res.code == 200) {
 					$("input[name=reg_fee]").val(comma(res.data)).change();
 				} else if(res.code == 400){
