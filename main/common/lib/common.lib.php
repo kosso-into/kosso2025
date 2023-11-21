@@ -2522,7 +2522,7 @@ function topNavigationList($expo_idx) {
 function phoneNumberTransform($nation_tel, $phone) {
 	if($nation_tel != "" && $phone != "") {
 			if(strpos($phone, "0") == 0) {			//연락처에 맨 앞자리가 0으로 시작할 경우 국가전화번호와 합치기 위해 앞부분 0 삭제 ex)010-1234-1234 => 10-1234-1234
-				$phone = substr($phone, 1); 	
+				//$phone = substr($phone, 1); 	    //함수 동작시 주석 삭제
 			}
 			$phone = $nation_tel."-".$phone;
 	}

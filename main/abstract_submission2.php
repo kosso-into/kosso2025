@@ -724,7 +724,7 @@ $(document).ready(function() {
     });
 
 	$(document).on("keyup", ".en_num_keyup", function(key) {
-        var pattern = /[^0-9||a-zA-Z\s\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
+        var pattern = /[ \[\]{}<>|`\"'\\]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var abstract_title = _this.val().replace(pattern, '');

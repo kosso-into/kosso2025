@@ -1137,7 +1137,7 @@ $(document).on('change keyup', ".phone", function(key) {
 });
 $(document).ready(function() {
     $(document).on("keyup", ".en_keyup", function(key) {
-        var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+        var pattern_eng = /[ \[\]{}?|`~!@#$%^&*_+=;:\"'\\]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var first_name = _this.val().replace(pattern_eng, '');
@@ -1162,7 +1162,7 @@ $(document).ready(function() {
         }
     });
 	$(document).on("keyup", ".en_affiliation_keyup", function(key) {
-        var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+        var pattern_eng = /[ \[\]?|`_+=\"'\\]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var first_name = _this.val().replace(pattern_eng, '');
