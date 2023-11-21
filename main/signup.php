@@ -2034,7 +2034,7 @@ $(document).on("click", "#mo_submit", function() {
 
     var affiliation = $("input[name=mo_affiliation]").val();
 
-    var nation_tel = 82;
+    var nation_tel = "010";
     var phone = tel_nation_tel + telephone1 + telephone2;
 
     var food = $("input[name=mo_food]:checked").val();
@@ -2366,7 +2366,7 @@ $(document).on("click", "#submit", function() {
 
     var affiliation = $("input[name=affiliation]").val();
 
-    var nation_tel = $("input[name=nation_tel]").val();
+    var nation_tel = $("input[name=telephone]").val();
     var food = $("input[name=food]:checked").val();
     /*
     var licence_number3 = $("input[name=licence_number2]").val();
@@ -2452,7 +2452,7 @@ function save(data) {
 
     function success(res) {
         gmailMail(data);
-        alert("Your Sign-up is complete.");
+        alert("회원가입이 완료되었습니다.");
         window.location.replace("login.php");
     }
 

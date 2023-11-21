@@ -250,6 +250,14 @@ section.container.organizing {padding-bottom: 190px;}
 .cancel_pop .table_wrap{margin-top:20px;}
 .submit_application .completed_box{text-align:center;}
 .submit_application .completed_box img{max-width:100%;margin:30px 0;}
+.submit_application .completed_box button{display: block; margin: 0 auto; width: 150px; height: 50px; background-color: #FFCC33; font-weight: 600;}
+.submit_application .completed_box h1 {font-size: 1.5rem; font-weight: 600;}
+
+@media screen and (max-width:600px) {
+	.submit_application .completed_box h1 {font-size: 1.2rem;}
+	.submit_application .completed_box p {font-size: 12px;}
+}
+
 .registration .details_title{font-weight: bold;}
 .registration .payment_wrap, .registration .info_wrap{width:50%;height:100%;}
 .registration .payment_wrap img{width: 100%;}

@@ -35,7 +35,7 @@ $price = get_data($sql_price);
         <h1 class="page_title">등록 접수 가이드</h1>
         <div class="inner">
             <!--1. important dates start-->
-            <h3 class="title">일정 안내</h3>
+            <h3 class="title">사전등록 기간</h3>
             <div class="table_wrap detail_table_common details">
                 <table class="c_table detail_table">
                     <colgroup>
@@ -96,7 +96,7 @@ $price = get_data($sql_price);
                 }
             ?>
             <!--2. icomes-Air Registration start-->
-            <h3 class="title">등록 요금</h3>
+            <h3 class="title">등록비</h3>
             <div class="details icomes_air">
                 <div class="table_wrap x_scroll">
                     <!-- <img class="coming" src="./img/coming.png" /> -->
@@ -179,14 +179,12 @@ $price = get_data($sql_price);
                 </div>
                 <div class="mt10">
                     <ul class="indent_ul">
-                        <li>• 등록 완료 및 전액 결제 시 등록 확인이 등록된 이메일 주소로 전송됩니다. 만약 메일을 받지 못한 경우, 대회 사무국에 문의하십시오.</li>
-                        <li>• 계좌 이체의 경우 자동으로 생성된 확인 이메일에 지불 상태가 '미결제'으로 나올 수 있습니다. 결제 완료를 확인해야 하는 경우 '내 페이지'에서 결제 상태를
-                            확인할 수 있습니다. (결제 확인이 업데이트되기까지 몇 시간이 걸릴 수 있습니다.)</li>
+                        <li>• 등록 완료 시, 등록 확인 메일이 발송 됩니다. (메일을 받지 못한 경우, 운영사무국으로 문의 부탁드립니다.)</li>
                         <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
-                        <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생하는 경우 대회 사무국에
-                            문의하십시오.</li>
-                        <li>• 등록 정보를 수정하고 싶은 경우, 사무국<a href="mailto:ksso@into-on.com"
-                                class="font_inherit link">(ksso@into-on.com)</a>으로 연락해 주세요.</li>
+                        <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
+                        <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생 할 경우, 운영사무국으로 문의
+                            부탁드립니다.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -264,12 +262,12 @@ $price = get_data($sql_price);
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
                     <ul class="indent_ul">
+                        <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생 할 경우, 운영사무국으로 문의
+                            부탁드립니다.
                         <li>• 환불 및 등록 취소를 위하여 정해진 환불 신청서 양식을 작성하시어 사무국 이메일(<a href="mailto:ksso@into-on.com"
-                                class="font_inherit link">ksso@into-on.com</a>)으로 제출 부탁드립니다.<br></li>
-                        <li>• 결제 완료 전에는 '내 페이지 - 등록'을 통해 등록을 취소할 수 있습니다. 그러나 이미 결제가 처리된 경우, 추가 도움을 받기 위해 사무국에 문의해야 합니다.
-                        </li>
-                        <li>• 환불은 춘계학술대회 이후에 처리될 예정입니다. </li>
-                        <li>• 은행 수수료 및 행정 수수료는 환불에서 차감될 것입니다.</li>
+                                class="font_inherit link">ksso@into-on.com</a>)으로 제출 부탁드립니다.</li>
+                        <li>• 계좌이체 환불 및 취소 : 환불 처리는 사전등록 기간 이후 처리될 예정이니 이점 유의하시기 바랍니다.</li>
+                        <li>• 카드 결제 환불 및 취소 : 결제하신 카드로 취소되며, 은행 및 카드사 사정에 따라 환불 완료까지 일정 기간(2일~5일) 소요됩니다.</li>
                     </ul>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">

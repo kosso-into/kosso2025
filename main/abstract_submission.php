@@ -48,7 +48,7 @@ $user_affiliation_value = $user_info_affiliation ?? "";
 
 if (empty($abstract_idx)) {
 ?>
-<!-- 테스트
+    <!-- 테스트
 <section class="submit_application abstract_online_submission container">
     <h1 class="page_title">Online Submission </h1>
     <div class="inner">
@@ -252,1012 +252,1011 @@ echo "<script>var type = 'abstract';</script>";
 
 ?>
 <style>
-/*ldh 추가*/
-.btns {
-    width: calc(100% - 32px);
-    height: 59px;
-    max-width: 675px;
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 auto;
-}
+    /*ldh 추가*/
+    .btns {
+        width: calc(100% - 32px);
+        height: 59px;
+        max-width: 675px;
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
 
-.btns span {
-    margin-left: 18px;
-    color: #fff;
-}
+    .btns span {
+        margin-left: 18px;
+        color: #fff;
+    }
 </style>
 <script src="./js/script/client/submission.js" defer></script>
 <script defer>
-function other_change(value) {
+    function other_change(value) {
 
-    var name = value.name;
-    var value = $('input[name=' + name + ']:checked').val();
+        var name = value.name;
+        var value = $('input[name=' + name + ']:checked').val();
 
-    if (value == '4') {
-        $("input[name=" + name + "]").parent().find(".other_input").show();
+        if (value == '4') {
+            $("input[name=" + name + "]").parent().find(".other_input").show();
 
-    } else {
-        $("input[name=" + name + "]").parents("ul").find(".other_input").hide();
+        } else {
+            $("input[name=" + name + "]").parents("ul").find(".other_input").hide();
+        }
     }
-}
 
-/*function change_select_box() {
-	$("#submit_btn").removeClass("blue_btn");
-	$("#submit_btn").addClass("gray_btn");
-}*/
-$(document).ready(function() {
-    /**  효준 초록 접수 종류후 추석 해제
-    alert("The abstract submission has expired.\nAbstract submission is not available.");
-    window.history.back();
-    window.location.href = "/main/index.php";
-    return; 
-    */
+    /*function change_select_box() {
+    	$("#submit_btn").removeClass("blue_btn");
+    	$("#submit_btn").addClass("gray_btn");
+    }*/
+    $(document).ready(function() {
+        /**  효준 초록 접수 종류후 추석 해제
+        alert("The abstract submission has expired.\nAbstract submission is not available.");
+        window.history.back();
+        window.location.href = "/main/index.php";
+        return; 
+        */
 
-    $(document).on("click", ".blue_btn", function() {
-        var idx = $(this).data("idx");
-        var data = {};
+        $(document).on("click", ".blue_btn", function() {
+            var idx = $(this).data("idx");
+            var data = {};
 
-        var formData = $("form[name=abstract_form]").serializeArray();
-        var process = inputCheck(formData);
-        var status = process.status;
-        data["main_data"] = process.data;
+            var formData = $("form[name=abstract_form]").serializeArray();
+            var process = inputCheck(formData);
+            var status = process.status;
+            data["main_data"] = process.data;
 
-        if (!status) return false; // 유효성 검증 후 실패 시 return false;
+            if (!status) return false; // 유효성 검증 후 실패 시 return false;
 
 
-        var form_list = $(".co_author_appended .abstract_form");
-        var co_form_cnt = form_list.length;
+            var form_list = $(".co_author_appended .abstract_form");
+            var co_form_cnt = form_list.length;
 
-        var co_data_arr = new Array();
-        var co_data_temp;
-        var co_data_chk;
-        var co_process;
-        var co_status;
-        var co_data;
+            var co_data_arr = new Array();
+            var co_data_temp;
+            var co_data_chk;
+            var co_process;
+            var co_status;
+            var co_data;
 
-        if (form_list.length > 0) {
-            co_data_temp = $("form[name=coauthor_abstract_form" + i + "]").serializeArray();
-            co_process = inputCheck(co_data_temp);
-            co_status = co_process.status;
-            if (!co_status) return false;
-            co_data = co_process.data;
-            co_data_arr[i] = co_data;
-        }
+            if (form_list.length > 0) {
+                co_data_temp = $("form[name=coauthor_abstract_form" + i + "]").serializeArray();
+                co_process = inputCheck(co_data_temp);
+                co_status = co_process.status;
+                if (!co_status) return false;
+                co_data = co_process.data;
+                co_data_arr[i] = co_data;
+            }
 
-        for (var i = 0; i < co_form_cnt; i++) {
-            co_data_temp = $("form[name=coauthor_abstract_form" + i + "]").serializeArray();
-            co_process = inputCheck(co_data_temp);
-            co_status = co_process.status;
-            if (!co_status) return false;
-            co_data = co_process.data;
-            co_data_arr[i] = co_data;
-        }
+            for (var i = 0; i < co_form_cnt; i++) {
+                co_data_temp = $("form[name=coauthor_abstract_form" + i + "]").serializeArray();
+                co_process = inputCheck(co_data_temp);
+                co_status = co_process.status;
+                if (!co_status) return false;
+                co_data = co_process.data;
+                co_data_arr[i] = co_data;
+            }
 
-        data["co_data"] = co_data_arr;
+            data["co_data"] = co_data_arr;
 
-        if (status) {
-            $.ajax({
-                url: PATH + "ajax/client/ajax_submission.php",
-                type: "POST",
-                data: {
-                    flag: "submission_step1",
-                    type: "abstract",
-                    data: data,
-                },
-                dataType: "JSON",
-                success: function(res) {
-                    if (res.code == 200) {
-                        $(window).off("beforeunload");
+            if (status) {
+                $.ajax({
+                    url: PATH + "ajax/client/ajax_submission.php",
+                    type: "POST",
+                    data: {
+                        flag: "submission_step1",
+                        type: "abstract",
+                        data: data,
+                    },
+                    dataType: "JSON",
+                    success: function(res) {
+                        if (res.code == 200) {
+                            $(window).off("beforeunload");
 
-                        if (idx != "") {
-                            window.location.href = "./abstract_submission2.php?idx=" + idx;
+                            if (idx != "") {
+                                window.location.href = "./abstract_submission2.php?idx=" + idx;
+                            } else {
+                                window.location.href = "./abstract_submission2.php";
+                            }
+
+                        } else if (res.code == 400) {
+                            alert(locale(language.value)("reject_msg"));
+                            return false;
                         } else {
-                            window.location.href = "./abstract_submission2.php";
+                            alert(locale(language.value)("retry_msg"));
+                            return false;
                         }
+                    }
+                });
+            }
+        });
 
-                    } else if (res.code == 400) {
-                        alert(locale(language.value)("reject_msg"));
-                        return false;
-                    } else {
-                        alert(locale(language.value)("retry_msg"));
-                        return false;
+
+
+
+        $(document).on('change', '.nation', function() {
+            if ($(this).val() == "25") {
+                $("input[name=phone]").attr("placeholder", "010-0000-0000");
+            } else {
+                $("input[name=phone]").attr("placeholder", "");
+            }
+        });
+
+        $(document).on('change', '.add_co_nation', function() {
+            const num = $(this).closest(".abstract_form").data("num");
+            if ($(this).val() == "25") {
+                $("input[name=add_co_phone" + num + "]").attr("placeholder", "010-0000-0000");
+            } else {
+                $("input[name=add_co_phone" + num + "]").attr("placeholder", "");
+            }
+        });
+
+
+        $(document).on('click', '.affiliation_add', function() {
+            var instit = $(this).siblings('.institution').val();
+            var depart = $(this).siblings('.department').val();
+            var affiliation_input = $(this).parent().next().find("input");
+
+            var form_name = this.form.name;
+            var affiliation_cnt = $("form[name=" + form_name + "]").find('.affiliation_wrap').find('li')
+                .length;
+
+            if (instit == '') {
+                alert('Please insert institution');
+            } else if (depart == '') {
+                alert('Please insert department');
+            } else if (affiliation_cnt > 9) {
+                alert('Affiliation cannot exceed 10');
+            } else {
+                const value = depart + ', ' + instit;
+                const items = $(this).parent().next('.affiliation_form').find(
+                    '.affiliation_wrap .affiliation_item');
+                for (var i = 0; i < items.length; i++) {
+                    if (items[i].innerHTML == value) {
+                        alert("Affiliation cannot be duplicated");
+                        return;
                     }
                 }
-            });
-        }
+
+                html = '';
+                html += '<li class="clearfix">';
+                html += '<div><p class="affiliation_item">' + value + '</p></div>';
+                html +=
+                    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
+                html += '</li>';
+
+                $(this).siblings('.institution').val('');
+                $(this).siblings('.department').val('');
+                $(this).parent().next('.affiliation_form').show();
+                $(this).parent().next('.affiliation_form').find('.affiliation_wrap').append(html);
+            }
+
+            var affiliation = $(this).parent().next().children();
+            var affiliation_value = "";
+
+            for (var i = 0; i < affiliation.eq(0).find("p").length; i++) {
+                affiliation_value += affiliation.eq(0).find("p:eq(" + i + ")").text() + "★";
+            }
+
+            affiliation_input.val(affiliation_value);
+
+            check_value();
+        });
+
+        $(document).on('click', '.affiliation_delete', function() {
+            var hidden_value = $(this).parent().parent().next()[0].value;
+
+            var hidden_values = hidden_value.split("★");
+            $(this).parent().parent().next()[0].value = "";
+
+            for (var i = 0; i < hidden_values.length - 2; i++) {
+                $(this).parent().parent().next()[0].value += hidden_values[i] + "★";
+            }
+
+            var parents = $(this).parents('.affiliation_form');
+            var num = parents.children('li').length;
+            var affiliation_input = parents.siblings("input");
+            $(this).parent('li').remove();
+            if (num == 1) {
+                parents.hide();
+            }
+
+            //소속 업데이트
+            var affiliation_list = [];
+            var affiliation = parents.children("li");
+            for (i = 0; i < num; i++) {
+                affiliation_list.push(affiliation.eq(i).find("p").text());
+            }
+            affiliation_input.val(affiliation_list);
+
+            check_value();
+        });
+
+        $('input[name=position]').on('click', function() {
+            var name = $(this).attr("name");
+            var value = $('input[name=' + name + ']:checked').val();
+
+            if (value == '4') {
+                $(this).parent().find(".other_input").show();
+            } else {
+                $(this).parents("ul").find(".other_input").hide();
+            }
+        });
+
+        $('input[name=co_position]').on('click', function() {
+            var name = $(this).attr("name");
+            var value = $('input[name=' + name + ']:checked').val();
+
+            if (value == '4') {
+                $(this).parent().find(".other_input").show();
+            } else {
+                $(this).parents("ul").find(".other_input").hide();
+            }
+        });
+
+
+        //국가 값
+        var nation_list = <?php echo json_encode($nation_list) ?>;
+
+        //co-author select on change event
+        $('.number_of_author').on('change', function() {
+            var num = parseInt($(this).val());
+            var current_count = $('.co_author_appended .abstract_form').length;
+
+            if (num == 0) {
+                $('.co_author_appended').empty();
+            } else if (current_count < num) {
+                var html = '';
+                for (i = current_count; i < num; i++) {
+                    html = '';
+
+                    html += '<form name="coauthor_abstract_form' + i +
+                        '" class="abstract_form co_abstract" data-num="' + i + '">';
+                    html += '<ul class="basic_ul">';
+                    html += '<li>';
+                    html += '<p class="label author_num">Author #' + (i + 2) + '</p>';
+                    html += '<div>';
+                    html += '<ul class="author_chk_wrap">';
+                    html += '<li>';
+                    html += '<input type="checkbox" class="checkbox" id="author_chk1_1_' + i +
+                        '" onchange="setUserInformation($(this))">';
+                    html += '<label for="author_chk1_1_' + i + '">';
+                    html += '<i></i>Same as sign-up information<span class="red_txt">*</span>';
+                    html += '</label>';
+                    html += '</li>';
+                    html += '<li>';
+                    html += '<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_' +
+                        i + '" name="add_co_presenting_author' + i +
+                        '" value="Y" onchange="check_value()">';
+                    html += '<label for="author_chk1_2_' + i + '">';
+                    html += '<i></i>Presenting Author<span class="red_txt">*</span>';
+                    html += '</label>';
+                    html += '</li>';
+                    html += '<li>';
+                    html +=
+                        '<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_' +
+                        i + '" name="add_co_corresponding_author' + i +
+                        '" value="Y" onchange="check_value()">';
+                    html += '<label for="author_chk1_3_' + i + '">';
+                    html += '<i></i>Corresponding Author<span class="red_txt">*</span>';
+                    html += '</label>';
+                    html += '</li>';
+                    html += '</ul>';
+                    html += '</div>';
+                    html += '</li>';
+                    html += '<li>';
+                    html += '<div style="display:none;">';
+                    html +=
+                        '<select onchange="check_value()" class="required2 add_co_nation" name="add_co_nation_no' +
+                        i + '" data-count="' + i + '">';
+                    html += '<option selected hidden>25</option>';
+
+                    $.each(nation_list, function(idx, value) {
+                        html += '<option value="25">' + value["nation_en"] +
+                            '</option>';
+                    });
+                    html += '</select>';
+                    html += '</div>';
+                    html += '</li>';
+                    html += '<li>';
+                    html += '<p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>';
+                    html += '<div class="name_div clearfix2">';
+                    html +=
+                        '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name' +
+                        i + '" value="" onchange="check_value()">';
+                    //  html += '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name' + i + '" value="" onchange="check_value()">';
+
+                    html += '</div>';
+                    html += '</li>';
+                    html += '<li>';
+                    html +=
+                        '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
+                    html += '<div>';
+                    html += '<div class="clearfix affiliation_input">';
+                    html +=
+                        '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
+                    html +=
+                        '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">';
+                    html +=
+                        '<button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>';
+                    html += '</div>';
+                    html += '<div class="clearfix affiliation_form">';
+                    html += '<ul class="affiliation_wrap affiliation_wrap_' + i + '">';
+                    html += '<li>';
+                    html += '</li>';
+                    html += '</ul>';
+                    html += '<input type="hidden" name="add_co_affiliation' + i +
+                        '" onchange="check_value()">';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</li>';
+                    html += '<li>';
+                    html += '<p class="label"><?= $locale("email") ?> <span class="red_txt">*</span></p>';
+                    html += '<div>';
+                    html += '<input maxlength="60" class="required2 email" type="text" name="add_co_email' +
+                        i + '" value="" onchange="check_value()">';
+                    html += '</div>';
+                    html += '</li>';
+                    html += '<li>';
+                    html += '<p class="label"><?= $locale("phone") ?> <span class="red_txt">*</span></p>';
+                    html += '<div class="phone_div clearfix2">';
+                    html += '<select class="required2" name="add_co_nation_tel' + i + '">';
+                    html += '<option value="82" selected>82</option>';
+                    html += '</select>';
+                    html += '<input class="required2 phone" type="text" name="add_co_phone' + i +
+                        '" value="" onchange="check_value()" placeholder="010-0000-0000">';
+                    html += '</div>';
+                    html += '</li>';
+                    html += '</ul>';
+                    html == '</form>';
+
+                    $('.co_author_appended').append(html);
+                }
+            } else if (current_count > num) {
+                for (i = current_count; i > num; i--) {
+                    console.log('i', i);
+
+                    $('.co_author_appended .section_title_wrap2').eq((i - 1)).remove();
+                    $('.co_author_appended .abstract_form').eq((i - 1)).remove();
+                }
+            }
+
+            check_value();
+        });
     });
 
+    //주저자와 공동저자가 동일 시 체크버튼 이벤트
+    function same_add_author() {
+        if ($("#same_withs").is(":checked")) {
+            var nation_no = $("select[name=nation_no]").val();
 
+            if (nation_no != "") {
+                $("select[name=co_nation_no]").children("option[value=" + nation_no + "]").prop("selected", true);
+                $("select[name=co_nation_tel1] option").val($("select[name=nation_tel] option").val()).text($(
+                    "select[name=nation_tel] option").val());
+            }
+            var position = $("input[name=position]:checked").val();
 
+            $("input[name=co_first_name]").val($("input[name=first_name]").val());
+            $("input[name=co_last_name]").val($("input[name=last_name]").val());
+            $("input[name=co_email").val($("input[name=email]").val());
+            $("input[name=co_phone]").val($("input[name=phone]").val());
+            if (position == "4") {
+                $("input[name=co_position][value=" + position + "]").prop("checked", true);
+                $("input[name=co_other_position]").val($("input[name=other_position]").val());
+                $("form[name=co_abstract_form] .other_input").show();
 
-    $(document).on('change', '.nation', function() {
-        if ($(this).val() == "25") {
-            $("input[name=phone]").attr("placeholder", "010-0000-0000");
+            } else {
+                $("input[name=co_position][value=" + position + "]").prop("checked", true);
+            }
+
+            if ($("input[name=affiliation]").val() != "") {
+
+                var affiliation_wrap_02 = document.getElementsByClassName("affiliation_wrap_02")[0];
+                while (affiliation_wrap_02.hasChildNodes()) {
+                    affiliation_wrap_02.removeChild(affiliation_wrap_02.firstChild);
+
+                }
+                $("input[name=co_affiliation]").val($("input[name=affiliation]").val());
+                $(".affiliation_wrap_02").append($(".affiliation_wrap_01").html()).show();
+            }
         } else {
+            var nation_no = $("select[name=nation_no]").val();
+
+            if (nation_no != "") {
+                $("select[name=co_nation_no]").children("option[value=" + nation_no + "]").prop("selected", false);
+                $("select[name=co_nation_no]").children("option[hidden]").prop("selected", true);
+            }
+
+            $("select[name=co_nation_tel1] option").val("").text("select");
+            $("input[name=co_first_name]").val("");
+            $("input[name=co_last_name]").val("");
+            $("input[name=co_affililation]").val("");
+            $("input[name=co_position]").prop("checked", false); //[value="+position+"]
+            $("input[name=co_other_postion]").val("");
+            $("input[name=co_other_position]").hide();
+            $("input[name=co_email]").val("");
+            $("input[name=co_phone]").val("");
+
+            $(".affiliation_wrap_02").empty();
+        }
+
+        check_value();
+    }
+
+    //주저자와 교신저자가 동일 시 체크버튼 이벤트
+    function add_author(i) {
+        if ($("#same_with" + i).is(":checked")) {
+            var nation_no = $("select[name=nation_no]").val();
+
+            if (nation_no != "") {
+                $("select[name=add_co_nation_no" + i + "]").children("option[value=" + nation_no + "]").prop("selected",
+                    true);
+                $("select[name=add_co_nation_tel" + i + "] option").val($("select[name=nation_tel] option").val()).text($(
+                    "select[name=nation_tel] option").val());
+            }
+            var position = $("input[name=position]:checked").val();
+
+            $("input[name=add_co_first_name" + i + "]").val($("input[name=first_name]").val());
+            $("input[name=add_co_last_name" + i + "]").val($("input[name=last_name]").val());
+            $("input[name=add_co_city" + i + "]").val($("input[name=city]").val());
+            $("input[name=add_co_state" + i + "]").val($("input[name=state]").val());
+            $("input[name=add_co_email" + i + "]").val($("input[name=email]").val());
+            $("input[name=add_co_phone" + i + "]").val($("input[name=phone]").val());
+            if (position == "4") {
+                $("input[name=add_co_position" + i + "][value=" + position + "]").prop("checked", true);
+                $("input[name=add_co_other_position" + i + "]").val($("input[name=other_position]").val());
+                $("form[name=coauthor_abstract_form" + i + "] .other_input").show();
+
+            } else {
+                $("input[name=add_co_position" + i + "][value=" + position + "]").prop("checked", true);
+            }
+
+            if ($("input[name=affiliation]").val() != "") {
+                var add_co_affiliation = document.getElementsByClassName("affiliation_wrap_" + i)[0];
+                while (add_co_affiliation.hasChildNodes()) {
+                    add_co_affiliation.removeChild(add_co_affiliation.firstChild);
+
+                }
+                $("input[name=add_co_affiliation" + i + "]").val($("input[name=affiliation]").val());
+                $(".affiliation_wrap_" + i).append($(".affiliation_wrap_01").html()).show();
+            }
+        } else {
+            var nation_no = $("select[name=nation_no]").val();
+
+            if (nation_no != "") {
+                $("select[name=add_co_nation_no" + i + "]").children("option[value=" + nation_no + "]").prop("selected",
+                    false);
+                $("select[name=add_co_nation_no" + i + "]").children("option[hidden]").prop("selected", true);
+            }
+
+            $("select[name=add_co_nation_tel" + i + "] option").val("").text("select");
+            $("input[name=add_co_first_name" + i + "]").val("");
+            $("input[name=add_co_last_name" + i + "]").val("");
+            $("input[name=add_co_city" + i + "]").val("");
+            $("input[name=add_co_state" + i + "]").val("");
+            $("input[name=add_co_affililation" + i + "]").val("");
+            $("input[name=add_co_position" + i + "]").prop("checked", false); //[value="+position+"]
+            $("form[name=coauthor_abstract_form" + i + "] .other_input").val("").hide();
+            $("input[name=add_co_email" + i + "]").val("");
+            $("input[name=add_co_phone" + i + "]").val("");
+
+            $(".affiliation_wrap_" + i).empty();
+        }
+
+        check_value();
+    }
+
+    function inputCheck(formData) {
+
+        var data = {};
+        var length_100 = ["email", "co_email"]
+        var length_50 = ["first_name", "last_name", "co_first_name", "co_last_name"];
+
+        var inputCheck = true;
+
+        $.each(formData, function(key, value) {
+            var ok = value["name"];
+            var ov = value["value"];
+
+            if (ov == "" || ov == null || ov == "undefinded") {
+                if (ok == "abstract_category") {
+                    alert(locale(language.value)("check_abstract_category"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok == "nation_no") {
+                    alert(locale(language.value)("check_nation"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok == "first_name") {
+                    alert(locale(language.value)("check_first_name"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                    // } else if (ok == "last_name") {
+                    //     alert(locale(language.value)("check_last_name"));
+                    //     $("input[name=" + ok + "]").focus();
+                    //     inputCheck = false;
+                    //     return false;
+                } else if (ok == "affiliation") {
+                    alert(locale(language.value)("check_affiliation"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok == "email") {
+                    alert(locale(language.value)("check_email"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok == "phone") {
+                    alert(locale(language.value)("check_phone"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok.includes("add_co_nation_no")) {
+                    alert(locale(language.value)("check_co_nation"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok.includes("add_co_first_name")) {
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok.includes("add_co_last_name")) {
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok.includes("add_co_email")) {
+                    alert(locale(language.value)("check_co_email"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok.includes("co_affiliation")) {
+                    alert(locale(language.value)("check_co_affiliation"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                } else if (ok.includes("add_co_phone")) {
+                    alert(locale(language.value)("check_co_phone"));
+                    $("input[name=" + ok + "]").focus();
+                    inputCheck = false;
+                    return false;
+                }
+            } else {
+                if ((length_50.indexOf(ok) + 1) && ov.length > 50) {
+                    alert(ok + locale(language.value)("under_50"));
+                    inputCheck = false;
+                    return false;
+                } else if ((length_100.indexOf(ok) + 1) && ov.length > 100) {
+                    alert(ok + locale(language.value)("under_100"));
+                    inputCheck = false;
+                    return false;
+                } else if (ok == "phone" && ov.length < 6) {
+                    alert(ok + locale(language.value)("over_6"));
+                    inputCheck = false;
+                    return false;
+                } else if (ok == "phone" && ov.length > 20) {
+                    alert(ok + locale(language.value)("under_20"));
+                    inputCheck = false;
+                    return false;
+                }
+            }
+
+            data[ok] = ov;
+        });
+
+        if ($(".presenting_author:checked").length != 1) {
+            alert("please check only one presenting_author");
+            return false;
+        }
+
+        if ($(".corresponding_author:checked").length != 1) {
+            alert("please check only one corresponding_author");
+            return false;
+        }
+
+        return {
+            data: data,
+            status: inputCheck
+        }
+    }
+
+    //체크 벨류
+    function check_value() {
+        let email_regex = new RegExp('[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}');
+
+        var affiliation_len = $(".affiliation_wrap li").length;;
+
+        if (affiliation_len < 0) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
+        }
+
+        var nation_no = $("select[name=nation_no]").val();
+
+        // position 유효성
+        var position_count = $('input.other_input').length;
+        var position_checked_count = $('input.radio.required2:checked').length;
+        var position_other_check_count = $('input.radio.required2[value=4]:checked').length;
+        var position_other_write_count = 0;
+        $('input.other_input').each(function() {
+            if ($(this).val()) {
+                position_other_write_count++;
+            }
+        });
+
+        // position 체크 안됨
+        if (position_count > position_checked_count) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
+        }
+
+        // position other 체크했지만 값 입력하지 않음
+        if (position_other_check_count > position_other_write_count) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
+        }
+
+        var abstract_category = $("select[name=abstract_category]").val();
+
+        var first_name = $("input[name=first_name]").val();
+        var first_name_len = first_name.trim().length;
+        first_name = (typeof(first_name) != "undefined") ? first_name : null;
+
+        // var last_name = $("input[name=last_name]").val();
+        // var last_name_len = last_name.trim().length;
+        // last_name = (typeof(last_name) != "undefined") ? last_name : null;
+
+        //var city = $("input[name=city]").val();
+        //var city_len = city.trim().length;
+        //city = (typeof(city) != "undefined") ? city : null;
+
+        var affiliation = $("input[name=affiliation]").val();
+        var affiliation_len = affiliation.trim().length;
+        affiliation = (typeof(affiliation) != "undefined") ? affiliation : null;
+
+        var email = $("input[name=email]").val();
+        var email_len = email.trim().length;
+        email = (typeof(email) != "undefined") ? email : null;
+
+        var phone = $("input[name=phone]").val();
+        var phone_len = phone.trim().length;
+        phone = (typeof(phone) != "undefined") ? phone : null;
+
+        if (nation_no == "") {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
             $("input[name=phone]").attr("placeholder", "");
+            return;
         }
-    });
-
-    $(document).on('change', '.add_co_nation', function() {
-        const num = $(this).closest(".abstract_form").data("num");
-        if ($(this).val() == "25") {
-            $("input[name=add_co_phone" + num + "]").attr("placeholder", "010-0000-0000");
-        } else {
-            $("input[name=add_co_phone" + num + "]").attr("placeholder", "");
+        if (abstract_category == "") {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
         }
-    });
+        if (!first_name) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
+        }
+        // if (!last_name) {
+        //     $("#submit_btn").removeClass("blue_btn");
+        //     $("#submit_btn").addClass("gray_btn");
+        //     return;
+        // }
+        if (!affiliation_len < 0) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
+        }
+        if (!email) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
+        } else if (!email_regex.test(email)) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            alert("Please check email adress field.");
+            return;
+        }
 
-
-    $(document).on('click', '.affiliation_add', function() {
-        var instit = $(this).siblings('.institution').val();
-        var depart = $(this).siblings('.department').val();
-        var affiliation_input = $(this).parent().next().find("input");
-
-        var form_name = this.form.name;
-        var affiliation_cnt = $("form[name=" + form_name + "]").find('.affiliation_wrap').find('li')
-            .length;
-
-        if (instit == '') {
-            alert('Please insert institution');
-        } else if (depart == '') {
-            alert('Please insert department');
-        } else if (affiliation_cnt > 9) {
-            alert('Affiliation cannot exceed 10');
+        if (!phone) {
+            $("#submit_btn").removeClass("blue_btn");
+            $("#submit_btn").addClass("gray_btn");
+            return;
         } else {
-            const value = depart + ', ' + instit;
-            const items = $(this).parent().next('.affiliation_form').find(
-                '.affiliation_wrap .affiliation_item');
-            for (var i = 0; i < items.length; i++) {
-                if (items[i].innerHTML == value) {
-                    alert("Affiliation cannot be duplicated");
+
+            if ($("select[name=nation_no]").val() == 25) { // Republic of Korea
+                var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+                if (!regPhone.test(phone)) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    alert("Please enter your phone number correctly \nexample) 010-0000-0000");
+                    return;
+                }
+            } else { // 해외 - 숫자만
+                var regPhone = /^[0-9]+$/;
+                if (!regPhone.test(phone)) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    alert("Please enter only digits for phone number field.");
                     return;
                 }
             }
-
-            html = '';
-            html += '<li class="clearfix">';
-            html += '<div><p class="affiliation_item">' + value + '</p></div>';
-            html +=
-                '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
-            html += '</li>';
-
-            $(this).siblings('.institution').val('');
-            $(this).siblings('.department').val('');
-            $(this).parent().next('.affiliation_form').show();
-            $(this).parent().next('.affiliation_form').find('.affiliation_wrap').append(html);
         }
 
-        var affiliation = $(this).parent().next().children();
-        var affiliation_value = "";
+        var form_list = $(".co_author_appended .abstract_form");
+        var is_valid = true;
 
-        for (var i = 0; i < affiliation.eq(0).find("p").length; i++) {
-            affiliation_value += affiliation.eq(0).find("p:eq(" + i + ")").text() + "★";
-        }
+        if (form_list.length > 0) {
+            form_list.each(function(idx, obj) {
+                const form = $(obj);
+                const num = $(form).data("num");
 
-        affiliation_input.val(affiliation_value);
+                var co_nation_no = form.find("select[name=add_co_nation_no" + num + "]").val();
 
-        check_value();
-    });
+                var co_first_name = form.find("input[name=add_co_first_name" + num + "]").val();
+                co_first_name = (typeof(co_first_name) != "undefined") ? co_first_name : null;
 
-    $(document).on('click', '.affiliation_delete', function() {
-        var hidden_value = $(this).parent().parent().next()[0].value;
+                var co_last_name = form.find("input[name=add_co_last_name" + num + "]").val();
+                co_last_name = (typeof(co_last_name) != "undefined") ? co_last_name : null;
 
-        var hidden_values = hidden_value.split("★");
-        $(this).parent().parent().next()[0].value = "";
+                var co_affiliation_len = form.find(".affiliation_wrap li").length;
 
-        for (var i = 0; i < hidden_values.length - 2; i++) {
-            $(this).parent().parent().next()[0].value += hidden_values[i] + "★";
-        }
+                var co_email = form.find("input[name=add_co_email" + num + "]").val();
+                co_email = (typeof(co_email) != "undefined") ? co_email : null;
 
-        var parents = $(this).parents('.affiliation_form');
-        var num = parents.children('li').length;
-        var affiliation_input = parents.siblings("input");
-        $(this).parent('li').remove();
-        if (num == 1) {
-            parents.hide();
-        }
+                var co_phone = form.find("input[name=add_co_phone" + num + "]").val();
+                co_phone = (typeof(co_phone) != "undefined") ? co_phone : null;
 
-        //소속 업데이트
-        var affiliation_list = [];
-        var affiliation = parents.children("li");
-        for (i = 0; i < num; i++) {
-            affiliation_list.push(affiliation.eq(i).find("p").text());
-        }
-        affiliation_input.val(affiliation_list);
-
-        check_value();
-    });
-
-    $('input[name=position]').on('click', function() {
-        var name = $(this).attr("name");
-        var value = $('input[name=' + name + ']:checked').val();
-
-        if (value == '4') {
-            $(this).parent().find(".other_input").show();
-        } else {
-            $(this).parents("ul").find(".other_input").hide();
-        }
-    });
-
-    $('input[name=co_position]').on('click', function() {
-        var name = $(this).attr("name");
-        var value = $('input[name=' + name + ']:checked').val();
-
-        if (value == '4') {
-            $(this).parent().find(".other_input").show();
-        } else {
-            $(this).parents("ul").find(".other_input").hide();
-        }
-    });
-
-
-    //국가 값
-    var nation_list = <?php echo json_encode($nation_list) ?>;
-
-    //co-author select on change event
-    $('.number_of_author').on('change', function() {
-        var num = parseInt($(this).val());
-        var current_count = $('.co_author_appended .abstract_form').length;
-
-        if (num == 0) {
-            $('.co_author_appended').empty();
-        } else if (current_count < num) {
-            var html = '';
-            for (i = current_count; i < num; i++) {
-                html = '';
-
-                html += '<form name="coauthor_abstract_form' + i +
-                    '" class="abstract_form co_abstract" data-num="' + i + '">';
-                html += '<ul class="basic_ul">';
-                html += '<li>';
-                html += '<p class="label author_num">Author #' + (i + 2) + '</p>';
-                html += '<div>';
-                html += '<ul class="author_chk_wrap">';
-                html += '<li>';
-                html += '<input type="checkbox" class="checkbox" id="author_chk1_1_' + i +
-                    '" onchange="setUserInformation($(this))">';
-                html += '<label for="author_chk1_1_' + i + '">';
-                html += '<i></i>Same as sign-up information<span class="red_txt">*</span>';
-                html += '</label>';
-                html += '</li>';
-                html += '<li>';
-                html += '<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_' +
-                    i + '" name="add_co_presenting_author' + i +
-                    '" value="Y" onchange="check_value()">';
-                html += '<label for="author_chk1_2_' + i + '">';
-                html += '<i></i>Presenting Author<span class="red_txt">*</span>';
-                html += '</label>';
-                html += '</li>';
-                html += '<li>';
-                html +=
-                    '<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_' +
-                    i + '" name="add_co_corresponding_author' + i +
-                    '" value="Y" onchange="check_value()">';
-                html += '<label for="author_chk1_3_' + i + '">';
-                html += '<i></i>Corresponding Author<span class="red_txt">*</span>';
-                html += '</label>';
-                html += '</li>';
-                html += '</ul>';
-                html += '</div>';
-                html += '</li>';
-                html += '<li>';
-                html += '<div style="display:none;">';
-                html +=
-                    '<select onchange="check_value()" class="required2 add_co_nation" name="add_co_nation_no' +
-                    i + '" data-count="' + i + '">';
-                html += '<option selected hidden>25</option>';
-
-                $.each(nation_list, function(idx, value) {
-                    html += '<option value="25">' + value["nation_en"] +
-                        '</option>';
-                });
-                html += '</select>';
-                html += '</div>';
-                html += '</li>';
-                html += '<li>';
-                html += '<p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>';
-                html += '<div class="name_div clearfix2">';
-                html +=
-                    '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name' +
-                    i + '" value="" onchange="check_value()">';
-                //  html += '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name' + i + '" value="" onchange="check_value()">';
-
-                html += '</div>';
-                html += '</li>';
-                html += '<li>';
-                html +=
-                    '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
-                html += '<div>';
-                html += '<div class="clearfix affiliation_input">';
-                html +=
-                    '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
-                html +=
-                    '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">';
-                html +=
-                    '<button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>';
-                html += '</div>';
-                html += '<div class="clearfix affiliation_form">';
-                html += '<ul class="affiliation_wrap affiliation_wrap_' + i + '">';
-                html += '<li>';
-                html += '</li>';
-                html += '</ul>';
-                html += '<input type="hidden" name="add_co_affiliation' + i +
-                    '" onchange="check_value()">';
-                html += '</div>';
-                html += '</div>';
-                html += '</li>';
-                html += '<li>';
-                html += '<p class="label"><?= $locale("email") ?> <span class="red_txt">*</span></p>';
-                html += '<div>';
-                html += '<input maxlength="60" class="required2 email" type="text" name="add_co_email' +
-                    i + '" value="" onchange="check_value()">';
-                html += '</div>';
-                html += '</li>';
-                html += '<li>';
-                html += '<p class="label"><?= $locale("phone") ?> <span class="red_txt">*</span></p>';
-                html += '<div class="phone_div clearfix2">';
-                html += '<select class="required2" name="add_co_nation_tel' + i + '">';
-                html += '<option value="82" selected>82</option>';
-                html += '</select>';
-                html += '<input class="required2 phone" type="text" name="add_co_phone' + i +
-                    '" value="" onchange="check_value()" placeholder="010-0000-0000">';
-                html += '</div>';
-                html += '</li>';
-                html += '</ul>';
-                html == '</form>';
-
-                $('.co_author_appended').append(html);
-            }
-        } else if (current_count > num) {
-            for (i = current_count; i > num; i--) {
-                console.log('i', i);
-
-                $('.co_author_appended .section_title_wrap2').eq((i - 1)).remove();
-                $('.co_author_appended .abstract_form').eq((i - 1)).remove();
-            }
-        }
-
-        check_value();
-    });
-});
-
-//주저자와 공동저자가 동일 시 체크버튼 이벤트
-function same_add_author() {
-    if ($("#same_withs").is(":checked")) {
-        var nation_no = $("select[name=nation_no]").val();
-
-        if (nation_no != "") {
-            $("select[name=co_nation_no]").children("option[value=" + nation_no + "]").prop("selected", true);
-            $("select[name=co_nation_tel1] option").val($("select[name=nation_tel] option").val()).text($(
-                "select[name=nation_tel] option").val());
-        }
-        var position = $("input[name=position]:checked").val();
-
-        $("input[name=co_first_name]").val($("input[name=first_name]").val());
-        $("input[name=co_last_name]").val($("input[name=last_name]").val());
-        $("input[name=co_email").val($("input[name=email]").val());
-        $("input[name=co_phone]").val($("input[name=phone]").val());
-        if (position == "4") {
-            $("input[name=co_position][value=" + position + "]").prop("checked", true);
-            $("input[name=co_other_position]").val($("input[name=other_position]").val());
-            $("form[name=co_abstract_form] .other_input").show();
-
-        } else {
-            $("input[name=co_position][value=" + position + "]").prop("checked", true);
-        }
-
-        if ($("input[name=affiliation]").val() != "") {
-
-            var affiliation_wrap_02 = document.getElementsByClassName("affiliation_wrap_02")[0];
-            while (affiliation_wrap_02.hasChildNodes()) {
-                affiliation_wrap_02.removeChild(affiliation_wrap_02.firstChild);
-
-            }
-            $("input[name=co_affiliation]").val($("input[name=affiliation]").val());
-            $(".affiliation_wrap_02").append($(".affiliation_wrap_01").html()).show();
-        }
-    } else {
-        var nation_no = $("select[name=nation_no]").val();
-
-        if (nation_no != "") {
-            $("select[name=co_nation_no]").children("option[value=" + nation_no + "]").prop("selected", false);
-            $("select[name=co_nation_no]").children("option[hidden]").prop("selected", true);
-        }
-
-        $("select[name=co_nation_tel1] option").val("").text("select");
-        $("input[name=co_first_name]").val("");
-        $("input[name=co_last_name]").val("");
-        $("input[name=co_affililation]").val("");
-        $("input[name=co_position]").prop("checked", false); //[value="+position+"]
-        $("input[name=co_other_postion]").val("");
-        $("input[name=co_other_position]").hide();
-        $("input[name=co_email]").val("");
-        $("input[name=co_phone]").val("");
-
-        $(".affiliation_wrap_02").empty();
-    }
-
-    check_value();
-}
-
-//주저자와 교신저자가 동일 시 체크버튼 이벤트
-function add_author(i) {
-    if ($("#same_with" + i).is(":checked")) {
-        var nation_no = $("select[name=nation_no]").val();
-
-        if (nation_no != "") {
-            $("select[name=add_co_nation_no" + i + "]").children("option[value=" + nation_no + "]").prop("selected",
-                true);
-            $("select[name=add_co_nation_tel" + i + "] option").val($("select[name=nation_tel] option").val()).text($(
-                "select[name=nation_tel] option").val());
-        }
-        var position = $("input[name=position]:checked").val();
-
-        $("input[name=add_co_first_name" + i + "]").val($("input[name=first_name]").val());
-        $("input[name=add_co_last_name" + i + "]").val($("input[name=last_name]").val());
-        $("input[name=add_co_city" + i + "]").val($("input[name=city]").val());
-        $("input[name=add_co_state" + i + "]").val($("input[name=state]").val());
-        $("input[name=add_co_email" + i + "]").val($("input[name=email]").val());
-        $("input[name=add_co_phone" + i + "]").val($("input[name=phone]").val());
-        if (position == "4") {
-            $("input[name=add_co_position" + i + "][value=" + position + "]").prop("checked", true);
-            $("input[name=add_co_other_position" + i + "]").val($("input[name=other_position]").val());
-            $("form[name=coauthor_abstract_form" + i + "] .other_input").show();
-
-        } else {
-            $("input[name=add_co_position" + i + "][value=" + position + "]").prop("checked", true);
-        }
-
-        if ($("input[name=affiliation]").val() != "") {
-            var add_co_affiliation = document.getElementsByClassName("affiliation_wrap_" + i)[0];
-            while (add_co_affiliation.hasChildNodes()) {
-                add_co_affiliation.removeChild(add_co_affiliation.firstChild);
-
-            }
-            $("input[name=add_co_affiliation" + i + "]").val($("input[name=affiliation]").val());
-            $(".affiliation_wrap_" + i).append($(".affiliation_wrap_01").html()).show();
-        }
-    } else {
-        var nation_no = $("select[name=nation_no]").val();
-
-        if (nation_no != "") {
-            $("select[name=add_co_nation_no" + i + "]").children("option[value=" + nation_no + "]").prop("selected",
-                false);
-            $("select[name=add_co_nation_no" + i + "]").children("option[hidden]").prop("selected", true);
-        }
-
-        $("select[name=add_co_nation_tel" + i + "] option").val("").text("select");
-        $("input[name=add_co_first_name" + i + "]").val("");
-        $("input[name=add_co_last_name" + i + "]").val("");
-        $("input[name=add_co_city" + i + "]").val("");
-        $("input[name=add_co_state" + i + "]").val("");
-        $("input[name=add_co_affililation" + i + "]").val("");
-        $("input[name=add_co_position" + i + "]").prop("checked", false); //[value="+position+"]
-        $("form[name=coauthor_abstract_form" + i + "] .other_input").val("").hide();
-        $("input[name=add_co_email" + i + "]").val("");
-        $("input[name=add_co_phone" + i + "]").val("");
-
-        $(".affiliation_wrap_" + i).empty();
-    }
-
-    check_value();
-}
-
-function inputCheck(formData) {
-
-    var data = {};
-    var length_100 = ["email", "co_email"]
-    var length_50 = ["first_name", "last_name", "co_first_name", "co_last_name"];
-
-    var inputCheck = true;
-
-    $.each(formData, function(key, value) {
-        var ok = value["name"];
-        var ov = value["value"];
-
-        if (ov == "" || ov == null || ov == "undefinded") {
-            if (ok == "abstract_category") {
-                alert(locale(language.value)("check_abstract_category"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok == "nation_no") {
-                alert(locale(language.value)("check_nation"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok == "first_name") {
-                alert(locale(language.value)("check_first_name"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-                // } else if (ok == "last_name") {
-                //     alert(locale(language.value)("check_last_name"));
-                //     $("input[name=" + ok + "]").focus();
-                //     inputCheck = false;
-                //     return false;
-            } else if (ok == "affiliation") {
-                alert(locale(language.value)("check_affiliation"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok == "email") {
-                alert(locale(language.value)("check_email"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok == "phone") {
-                alert(locale(language.value)("check_phone"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok.includes("add_co_nation_no")) {
-                alert(locale(language.value)("check_co_nation"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok.includes("add_co_first_name")) {
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok.includes("add_co_last_name")) {
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok.includes("add_co_email")) {
-                alert(locale(language.value)("check_co_email"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok.includes("co_affiliation")) {
-                alert(locale(language.value)("check_co_affiliation"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            } else if (ok.includes("add_co_phone")) {
-                alert(locale(language.value)("check_co_phone"));
-                $("input[name=" + ok + "]").focus();
-                inputCheck = false;
-                return false;
-            }
-        } else {
-            if ((length_50.indexOf(ok) + 1) && ov.length > 50) {
-                alert(ok + locale(language.value)("under_50"));
-                inputCheck = false;
-                return false;
-            } else if ((length_100.indexOf(ok) + 1) && ov.length > 100) {
-                alert(ok + locale(language.value)("under_100"));
-                inputCheck = false;
-                return false;
-            } else if (ok == "phone" && ov.length < 6) {
-                alert(ok + locale(language.value)("over_6"));
-                inputCheck = false;
-                return false;
-            } else if (ok == "phone" && ov.length > 20) {
-                alert(ok + locale(language.value)("under_20"));
-                inputCheck = false;
-                return false;
-            }
-        }
-
-        data[ok] = ov;
-    });
-
-    if ($(".presenting_author:checked").length != 1) {
-        alert("please check only one presenting_author");
-        return false;
-    }
-
-    if ($(".corresponding_author:checked").length != 1) {
-        alert("please check only one corresponding_author");
-        return false;
-    }
-
-    return {
-        data: data,
-        status: inputCheck
-    }
-}
-
-//체크 벨류
-function check_value() {
-    let email_regex = new RegExp('[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}');
-
-    var affiliation_len = $(".affiliation_wrap li").length;;
-
-    if (affiliation_len < 0) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
-
-    var nation_no = $("select[name=nation_no]").val();
-
-    // position 유효성
-    var position_count = $('input.other_input').length;
-    var position_checked_count = $('input.radio.required2:checked').length;
-    var position_other_check_count = $('input.radio.required2[value=4]:checked').length;
-    var position_other_write_count = 0;
-    $('input.other_input').each(function() {
-        if ($(this).val()) {
-            position_other_write_count++;
-        }
-    });
-
-    // position 체크 안됨
-    if (position_count > position_checked_count) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
-
-    // position other 체크했지만 값 입력하지 않음
-    if (position_other_check_count > position_other_write_count) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
-
-    var abstract_category = $("select[name=abstract_category]").val();
-
-    var first_name = $("input[name=first_name]").val();
-    var first_name_len = first_name.trim().length;
-    first_name = (typeof(first_name) != "undefined") ? first_name : null;
-
-    // var last_name = $("input[name=last_name]").val();
-    // var last_name_len = last_name.trim().length;
-    // last_name = (typeof(last_name) != "undefined") ? last_name : null;
-
-    //var city = $("input[name=city]").val();
-    //var city_len = city.trim().length;
-    //city = (typeof(city) != "undefined") ? city : null;
-
-    var affiliation = $("input[name=affiliation]").val();
-    var affiliation_len = affiliation.trim().length;
-    affiliation = (typeof(affiliation) != "undefined") ? affiliation : null;
-
-    var email = $("input[name=email]").val();
-    var email_len = email.trim().length;
-    email = (typeof(email) != "undefined") ? email : null;
-
-    var phone = $("input[name=phone]").val();
-    var phone_len = phone.trim().length;
-    phone = (typeof(phone) != "undefined") ? phone : null;
-
-    if (nation_no == "") {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        $("input[name=phone]").attr("placeholder", "");
-        return;
-    }
-    if (abstract_category == "") {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
-    if (!first_name) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
-    // if (!last_name) {
-    //     $("#submit_btn").removeClass("blue_btn");
-    //     $("#submit_btn").addClass("gray_btn");
-    //     return;
-    // }
-    if (!affiliation_len < 0) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    }
-    if (!email) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    } else if (!email_regex.test(email)) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        alert("Please check email adress field.");
-        return;
-    }
-
-    if (!phone) {
-        $("#submit_btn").removeClass("blue_btn");
-        $("#submit_btn").addClass("gray_btn");
-        return;
-    } else {
-
-        if ($("select[name=nation_no]").val() == 25) { // Republic of Korea
-            var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
-            if (!regPhone.test(phone)) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                alert("Please enter your phone number correctly \nexample) 010-0000-0000");
-                return;
-            }
-        } else { // 해외 - 숫자만
-            var regPhone = /^[0-9]+$/;
-            if (!regPhone.test(phone)) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                alert("Please enter only digits for phone number field.");
-                return;
-            }
-        }
-    }
-
-    var form_list = $(".co_author_appended .abstract_form");
-    var is_valid = true;
-
-    if (form_list.length > 0) {
-        form_list.each(function(idx, obj) {
-            const form = $(obj);
-            const num = $(form).data("num");
-
-            var co_nation_no = form.find("select[name=add_co_nation_no" + num + "]").val();
-
-            var co_first_name = form.find("input[name=add_co_first_name" + num + "]").val();
-            co_first_name = (typeof(co_first_name) != "undefined") ? co_first_name : null;
-
-            var co_last_name = form.find("input[name=add_co_last_name" + num + "]").val();
-            co_last_name = (typeof(co_last_name) != "undefined") ? co_last_name : null;
-
-            var co_affiliation_len = form.find(".affiliation_wrap li").length;
-
-            var co_email = form.find("input[name=add_co_email" + num + "]").val();
-            co_email = (typeof(co_email) != "undefined") ? co_email : null;
-
-            var co_phone = form.find("input[name=add_co_phone" + num + "]").val();
-            co_phone = (typeof(co_phone) != "undefined") ? co_phone : null;
-
-            if (co_nation_no == "") {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
-                is_valid = false;
-                return;
-            } else {
-                if (co_nation_no == "25") {
-                    form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "010-0000-0000");
-                } else {
+                if (co_nation_no == "") {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
                     form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
-                }
-            }
-            if (!co_first_name) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
-            }
-            // if (!co_last_name) {
-            // 	$("#submit_btn").removeClass("blue_btn");
-            // 	$("#submit_btn").addClass("gray_btn");
-            // 	is_valid = false;
-            // 	return;
-            // }
-            if (co_affiliation_len < 1) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
-            }
-            if (!co_email) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
-            }
-            if (!co_phone) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
-            }
-
-            var co_nation_no = form.find("select[name=add_co_nation_no" + num + "]").val();
-
-            var co_first_name = form.find("input[name=add_co_first_name" + num + "]").val();
-            co_first_name = (typeof(co_first_name) != "undefined") ? co_first_name : null;
-
-            var co_last_name = form.find("input[name=add_co_last_name" + num + "]").val();
-            co_last_name = (typeof(co_last_name) != "undefined") ? co_last_name : null;
-
-            var co_affiliation_len = form.find(".affiliation_wrap li").length;
-
-            var co_email = form.find("input[name=add_co_email" + num + "]").val();
-            co_email = (typeof(co_email) != "undefined") ? co_email : null;
-
-            var co_phone = form.find("input[name=add_co_phone" + num + "]").val();
-            co_phone = (typeof(co_phone) != "undefined") ? co_phone : null;
-
-            if (co_nation_no == "") {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
-                is_valid = false;
-                return;
-            } else {
-                if (co_nation_no == "25") {
-                    form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "10-0000-0000");
+                    is_valid = false;
+                    return;
                 } else {
-                    form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
+                    if (co_nation_no == "25") {
+                        form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "010-0000-0000");
+                    } else {
+                        form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
+                    }
                 }
+                if (!co_first_name) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+                // if (!co_last_name) {
+                // 	$("#submit_btn").removeClass("blue_btn");
+                // 	$("#submit_btn").addClass("gray_btn");
+                // 	is_valid = false;
+                // 	return;
+                // }
+                if (co_affiliation_len < 1) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+                if (!co_email) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+                if (!co_phone) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+
+                var co_nation_no = form.find("select[name=add_co_nation_no" + num + "]").val();
+
+                var co_first_name = form.find("input[name=add_co_first_name" + num + "]").val();
+                co_first_name = (typeof(co_first_name) != "undefined") ? co_first_name : null;
+
+                var co_last_name = form.find("input[name=add_co_last_name" + num + "]").val();
+                co_last_name = (typeof(co_last_name) != "undefined") ? co_last_name : null;
+
+                var co_affiliation_len = form.find(".affiliation_wrap li").length;
+
+                var co_email = form.find("input[name=add_co_email" + num + "]").val();
+                co_email = (typeof(co_email) != "undefined") ? co_email : null;
+
+                var co_phone = form.find("input[name=add_co_phone" + num + "]").val();
+                co_phone = (typeof(co_phone) != "undefined") ? co_phone : null;
+
+                if (co_nation_no == "") {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
+                    is_valid = false;
+                    return;
+                } else {
+                    if (co_nation_no == "25") {
+                        form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "10-0000-0000");
+                    } else {
+                        form.find("input[name=add_co_phone" + num + "]").attr("placeholder", "");
+                    }
+                }
+                if (!co_first_name) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+                // if (!co_last_name) {
+                //     $("#submit_btn").removeClass("blue_btn");
+                //     $("#submit_btn").addClass("gray_btn");
+                //     is_valid = false;
+                //     return;
+                // }
+                if (co_affiliation_len < 1) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+                if (!co_email) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+                if (!co_phone) {
+                    $("#submit_btn").removeClass("blue_btn");
+                    $("#submit_btn").addClass("gray_btn");
+                    is_valid = false;
+                    return;
+                }
+            });
+        }
+
+        if (is_valid) {
+            $("#submit_btn").removeClass("gray_btn");
+            $("#submit_btn").addClass("blue_btn");
+        }
+    }
+
+    // Same as sign-up information
+    function setUserInformation(target) {
+        const form = target.closest(".abstract_form");
+
+        if (target.prop("checked")) {
+            if (form.hasClass("co_abstract")) {
+                const num = form.data("num");
+
+                form.find("select[name=add_co_nation_no" + num + "]").val($("input[name=user_nation_no]").val());
+                form.find("input[name=add_co_first_name" + num + "]").val($("input[name=user_first_name]").val());
+                form.find("input[name=add_co_last_name" + num + "]").val($("input[name=user_last_name]").val());
+                form.find("input[name=add_co_email" + num + "]").val($("input[name=user_email]").val());
+                form.find("input[name=add_co_phone" + num + "]").val($("input[name=user_phone]").val());
+                form.find("select[name=add_co_nation_tel" + num + "] option")[0].value = $("input[name=user_nation_tel]")
+                    .val();
+                form.find("select[name=add_co_nation_tel" + num + "] option")[0].textContent = $(
+                    "input[name=user_nation_tel]").val();
+                form.find("select[name=add_co_nation_tel" + num + "] option").click();
+
+                form.find(".institution").val($("input[name=user_info_institution]").val());
+                form.find(".department").val($("input[name=user_info_department]").val());
+                form.find(".affiliation_wrap").empty();
+                form.find(".affiliation_add").click();
+            } else {
+                form.find("select[name=nation_no]").val($("input[name=user_nation_no]").val());
+                form.find("input[name=first_name]").val($("input[name=user_first_name]").val());
+                form.find("input[name=last_name]").val($("input[name=user_last_name]").val());
+                form.find("input[name=email]").val($("input[name=user_email]").val());
+                form.find("input[name=phone]").val($("input[name=user_phone]").val());
+                form.find("select[name=nation_tel] option")[0].value = $("input[name=user_nation_tel]").val();
+                form.find("select[name=nation_tel] option")[0].textContent = $("input[name=user_nation_tel]").val();
+                form.find("select[name=nation_tel] option").click();
+
+                form.find(".institution").val($("input[name=user_info_institution]").val());
+                form.find(".department").val($("input[name=user_info_department]").val());
+                form.find(".affiliation_wrap").empty();
+                form.find(".affiliation_add").click();
             }
-            if (!co_first_name) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
+        } else {
+            if (form.hasClass("co_abstract")) {
+                const num = form.data("num");
+
+                form.find("select[name=add_co_nation_no" + num + "]").val("25");
+                form.find("input[name=add_co_first_name" + num + "]").val("");
+                form.find("input[name=add_co_last_name" + num + "]").val("");
+                form.find("input[name=add_co_email" + num + "]").val("");
+                form.find("input[name=add_co_phone" + num + "]").val("");
+                form.find("select[name=add_co_nation_tel" + num + "] option")[0].value = "82";
+                form.find("select[name=add_co_nation_tel" + num + "] option")[0].textContent = "82";
+
+                form.find(".institution").val("");
+                form.find(".department").val("");
+                form.find(".affiliation_wrap").empty();
+                form.find("input[name=add_co_affiliation" + num + "]").val("");
+            } else {
+                form.find("select[name=nation_no]").val("25");
+                form.find("input[name=first_name]").val("");
+                form.find("input[name=last_name]").val("");
+                form.find("input[name=email]").val("");
+                form.find("input[name=phone]").val("");
+                form.find("select[name=nation_tel] option")[0].value = "82";
+                form.find("select[name=nation_tel] option")[0].textContent = "82";
+                form.find("select[name=nation_tel] option").click();
+
+                form.find(".institution").val("");
+                form.find(".department").val("");
+                form.find(".affiliation_wrap").empty();
+                form.find("input[name=affiliation]").val("");
             }
-            if (!co_last_name) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
+        }
+
+        check_value();
+
+    }
+
+    //핸드폰 유효성
+    $(document).on('change keyup', ".phone", function(key) {
+        var _this = $(this);
+        if (key.keyCode != 8) {
+            var phone = _this.val().replace(/[^0-9 || -]/gi, '');
+            _this.val(phone);
+        }
+    });
+    $(document).ready(function() {
+        $(document).on("keyup", ".en_keyup", function(key) {
+            var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            var _this = $(this);
+            if (key.keyCode != 8) {
+                var first_name = _this.val().replace(pattern_eng, '');
+                _this.val(first_name.trim());
             }
-            if (co_affiliation_len < 1) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
+        });
+
+        $(document).on("keyup", ".num_keyup", function(key) {
+            var pattern_eng = /[^0-9]/gi;
+            var _this = $(this);
+            if (key.keyCode != 8) {
+                var first_name = _this.val().replace(pattern_eng, '');
+                _this.val(first_name.trim());
             }
-            if (!co_email) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
-                return;
+        });
+        $(document).on("keyup", ".en_num_keyup", function(key) {
+            var pattern_eng = /[^0-9||a-zA-Z\s]/gi;
+            var _this = $(this);
+            if (key.keyCode != 8) {
+                var first_name = _this.val().replace(pattern_eng, '');
+                _this.val(first_name);
             }
-            if (!co_phone) {
-                $("#submit_btn").removeClass("blue_btn");
-                $("#submit_btn").addClass("gray_btn");
-                is_valid = false;
+        });
+
+        $(document).on("keyup", ".en_affiliation_keyup", function(key) {
+            var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+
+            var _this = $(this);
+            if (key.keyCode != 8) {
+                var first_name = _this.val().replace(pattern_eng, '');
+                _this.val(first_name);
+            }
+        });
+
+        $(document).on("change", ".email", function() {
+            var email = $(this).val().trim();
+            var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+            if (email.match(regExp) != null) {
+                $(this).val(email);
+            } else {
+                alert("Invalid email format.");
+                $(this).val("").focus();
                 return;
             }
         });
-    }
-
-    if (is_valid) {
-        $("#submit_btn").removeClass("gray_btn");
-        $("#submit_btn").addClass("blue_btn");
-    }
-}
-
-// Same as sign-up information
-function setUserInformation(target) {
-    const form = target.closest(".abstract_form");
-    console.log(target);
-
-    if (target.prop("checked")) {
-        if (form.hasClass("co_abstract")) {
-            const num = form.data("num");
-
-            form.find("select[name=add_co_nation_no" + num + "]").val($("input[name=user_nation_no]").val());
-            form.find("input[name=add_co_first_name" + num + "]").val($("input[name=user_first_name]").val());
-            form.find("input[name=add_co_last_name" + num + "]").val($("input[name=user_last_name]").val());
-            form.find("input[name=add_co_email" + num + "]").val($("input[name=user_email]").val());
-            form.find("input[name=add_co_phone" + num + "]").val($("input[name=user_phone]").val());
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].value = $("input[name=user_nation_tel]")
-                .val();
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].textContent = $(
-                "input[name=user_nation_tel]").val();
-            form.find("select[name=add_co_nation_tel" + num + "] option").click();
-
-            form.find(".institution").val($("input[name=user_info_institution]").val());
-            form.find(".department").val($("input[name=user_info_department]").val());
-            form.find(".affiliation_wrap").empty();
-            form.find(".affiliation_add").click();
-        } else {
-            form.find("select[name=nation_no]").val($("input[name=user_nation_no]").val());
-            form.find("input[name=first_name]").val($("input[name=user_first_name]").val());
-            form.find("input[name=last_name]").val($("input[name=user_last_name]").val());
-            form.find("input[name=email]").val($("input[name=user_email]").val());
-            form.find("input[name=phone]").val($("input[name=user_phone]").val());
-            form.find("select[name=nation_tel] option")[0].value = $("input[name=user_nation_tel]").val();
-            form.find("select[name=nation_tel] option")[0].textContent = $("input[name=user_nation_tel]").val();
-            form.find("select[name=nation_tel] option").click();
-
-            form.find(".institution").val($("input[name=user_info_institution]").val());
-            form.find(".department").val($("input[name=user_info_department]").val());
-            form.find(".affiliation_wrap").empty();
-            form.find(".affiliation_add").click();
-        }
-    } else {
-        if (form.hasClass("co_abstract")) {
-            const num = form.data("num");
-
-            form.find("select[name=add_co_nation_no" + num + "]").val("25");
-            form.find("input[name=add_co_first_name" + num + "]").val("");
-            form.find("input[name=add_co_last_name" + num + "]").val("");
-            form.find("input[name=add_co_email" + num + "]").val("");
-            form.find("input[name=add_co_phone" + num + "]").val("");
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].value = "82";
-            form.find("select[name=add_co_nation_tel" + num + "] option")[0].textContent = "82";
-
-            form.find(".institution").val("");
-            form.find(".department").val("");
-            form.find(".affiliation_wrap").empty();
-            form.find("input[name=add_co_affiliation" + num + "]").val("");
-        } else {
-            form.find("select[name=nation_no]").val("25");
-            form.find("input[name=first_name]").val("");
-            form.find("input[name=last_name]").val("");
-            form.find("input[name=email]").val("");
-            form.find("input[name=phone]").val("");
-            form.find("select[name=nation_tel] option")[0].value = "82";
-            form.find("select[name=nation_tel] option")[0].textContent = "82";
-            form.find("select[name=nation_tel] option").click();
-
-            form.find(".institution").val("");
-            form.find(".department").val("");
-            form.find(".affiliation_wrap").empty();
-            form.find("input[name=affiliation]").val("");
-        }
-    }
-
-    check_value();
-
-}
-
-//핸드폰 유효성
-$(document).on('change keyup', ".phone", function(key) {
-    var _this = $(this);
-    if (key.keyCode != 8) {
-        var phone = _this.val().replace(/[^0-9 || -]/gi, '');
-        _this.val(phone);
-    }
-});
-$(document).ready(function() {
-    $(document).on("keyup", ".en_keyup", function(key) {
-        var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
-        var _this = $(this);
-        if (key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
-            _this.val(first_name.trim());
-        }
     });
-
-    $(document).on("keyup", ".num_keyup", function(key) {
-        var pattern_eng = /[^0-9]/gi;
-        var _this = $(this);
-        if (key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
-            _this.val(first_name.trim());
-        }
-    });
-    $(document).on("keyup", ".en_num_keyup", function(key) {
-        var pattern_eng = /[^0-9||a-zA-Z\s]/gi;
-        var _this = $(this);
-        if (key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
-            _this.val(first_name);
-        }
-    });
-
-    $(document).on("keyup", ".en_affiliation_keyup", function(key) {
-        var pattern_eng = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
-
-        var _this = $(this);
-        if (key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
-            _this.val(first_name);
-        }
-    });
-
-    $(document).on("change", ".email", function() {
-        var email = $(this).val().trim();
-        var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-
-        if (email.match(regExp) != null) {
-            $(this).val(email);
-        } else {
-            alert("Invalid email format.");
-            $(this).val("").focus();
-            return;
-        }
-    });
-});
 </script>
 
 <section class="submit_application abstract_online_submission container">
@@ -1301,8 +1300,7 @@ $(document).ready(function() {
                         <div class="section_title_wrap2">
                             <h3 class="title">
                                 Author Information
-                                <p class="mini_alert essential"><span class="red_txt">*</span> All requested field(<span
-                                        class="red_txt">*</span>) should be completed.</p>
+                                <p class="mini_alert essential"><span class="red_txt">*</span> All requested field(<span class="red_txt">*</span>) should be completed.</p>
                             </h3>
                         </div>
                         <ul class="basic_ul">
@@ -1311,26 +1309,19 @@ $(document).ready(function() {
                                 <div>
                                     <ul class="author_chk_wrap">
                                         <li>
-                                            <input type="checkbox" class="checkbox" id="author_chk1_1"
-                                                onchange="setUserInformation($(this))">
+                                            <input type="checkbox" class="checkbox" id="author_chk1_1" onchange="setUserInformation($(this))">
                                             <label for="author_chk1_1">
                                                 <i></i>Same as sign-up information<span class="red_txt">*</span>
                                             </label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="checkbox presenting_author" id="author_chk1_2"
-                                                name="presenting_author" value="Y"
-                                                <?= $presenting_author == "Y" ? "checked" : "" ?>
-                                                onchange="check_value()">
+                                            <input type="checkbox" class="checkbox presenting_author" id="author_chk1_2" name="presenting_author" value="Y" <?= $presenting_author == "Y" ? "checked" : "" ?> onchange="check_value()">
                                             <label for="author_chk1_2">
                                                 <i></i>Presenting Author<span class="red_txt">*</span>
                                             </label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" class="checkbox corresponding_author"
-                                                id="author_chk1_3" name="corresponding_author" value="Y"
-                                                <?= $corresponding_author == "Y" ? "checked" : "" ?>
-                                                onchange="check_value()">
+                                            <input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3" name="corresponding_author" value="Y" <?= $corresponding_author == "Y" ? "checked" : "" ?> onchange="check_value()">
                                             <label for="author_chk1_3">
                                                 <i></i>Corresponding Author<span class="red_txt">*</span>
                                             </label>
@@ -1339,11 +1330,9 @@ $(document).ready(function() {
                                 </div>
                             </li>
                             <li>
-                                <p style="display:none" class="label"><?= $locale("country") ?> <span
-                                        class="red_txt">*</span></p>
+                                <p style="display:none" class="label"><?= $locale("country") ?> <span class="red_txt">*</span></p>
                                 <div style="display:none">
-                                    <select class="required2 nation" name="nation_no" data-count="0"
-                                        onchange="check_value()">
+                                    <select class="required2 nation" name="nation_no" data-count="0" onchange="check_value()">
                                         <option value="25" selected hidden></option>
 
                                         <?php
@@ -1359,29 +1348,23 @@ $(document).ready(function() {
                             <li>
                                 <p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>
                                 <div class="name_div clearfix2">
-                                    <input maxlength="60" placeholder="이름을 입력하세요" class="required2 en_keyup" type="text"
-                                        name="first_name" value="<?= $first_name ?>" onchange="check_value()">
+                                    <input maxlength="60" placeholder="이름을 입력하세요" class="required2 en_keyup" type="text" name="first_name" value="<?= $first_name ?>" onchange="check_value()">
                                     <!-- <input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="last_name"
                                         value="<?= $last_name ?>" onchange="check_value()"> -->
 
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span> <span
-                                        class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one
+                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span> <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one
                                             or more affiliations or departments.</b></span></p>
                                 <div>
                                     <div class="clearfix affiliation_input">
-                                        <input maxlength="300" type="text" class="institution en_affiliation_keyup"
-                                            placeholder="Institution">
-                                        <input maxlength="300" type="text" class="department en_affiliation_keyup"
-                                            placeholder="Department">
-                                        <button type="button"
-                                            class="btn gray2_btn form_btn affiliation_add">ADD</button>
+                                        <input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">
+                                        <input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">
+                                        <button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>
                                     </div>
                                     <div class="clearfix affiliation_form">
-                                        <ul class="affiliation_wrap affiliation_wrap_01"
-                                            style="<?= $affiliation != "" ? "display:block" : "" ?>">
+                                        <ul class="affiliation_wrap affiliation_wrap_01" style="<?= $affiliation != "" ? "display:block" : "" ?>">
                                             <?php
                                             if (count($affiliation) - 1 <= 0) {
                                                 if (!is_array($affiliation)) {
@@ -1401,16 +1384,14 @@ $(document).ready(function() {
                                             }
                                             ?>
                                         </ul>
-                                        <input type="hidden" name="affiliation" value="<?= $affiliation ?>"
-                                            onchange="check_value()">
+                                        <input type="hidden" name="affiliation" value="<?= $affiliation ?>" onchange="check_value()">
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <p class="label"><?= $locale("email") ?> <span class="red_txt">*</span></p>
                                 <div>
-                                    <input maxlength="60" class="required2 email" type="text" name="email"
-                                        value="<?= $email ?>" onchange="check_value()">
+                                    <input maxlength="60" class="required2 email" type="text" name="email" value="<?= $email ?>" onchange="check_value()">
                                 </div>
                             </li>
                             <li>
@@ -1419,9 +1400,7 @@ $(document).ready(function() {
                                     <select class="required2" name="nation_tel">
                                         <option value="82" selected>82</option>
                                     </select>
-                                    <input maxlength="60" class="required2 phone" type="text" name="phone"
-                                        value="<?= $submit_phone ?>" onchange="check_value()"
-                                        placeholder="010-0000-0001">
+                                    <input maxlength="60" class="required2 phone" type="text" name="phone" value="<?= $submit_phone ?>" onchange="check_value()" placeholder="010-0000-0001">
 
                                 </div>
                             </li>
@@ -1571,17 +1550,15 @@ $(document).ready(function() {
             <?php
             if (!empty($abstract_idx) || !empty($submit_data)) {
             ?>
-            <button type="button" id="submit_btn" class="btn btns blue_btn submit_btn"
-                data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?>
-                <!-- <span>&gt;</span> -->
-            </button>
+                <button type="button" id="submit_btn" class="btn btns blue_btn submit_btn" data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?>
+                    <!-- <span>&gt;</span> -->
+                </button>
             <?php
             } else {
             ?>
-            <button type="button" id="submit_btn" class="btn btns gray_btn submit_btn"
-                data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?>
-                <!-- <span>&gt;</span> -->
-            </button>
+                <button type="button" id="submit_btn" class="btn btns gray_btn submit_btn" data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?>
+                    <!-- <span>&gt;</span> -->
+                </button>
             <?php
             }
             ?>
