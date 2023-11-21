@@ -37,7 +37,7 @@
 			<li class="on"><a href="./board_notice.php">Notice</a></li>
 		</ul>
 	</div> -->
-	<h1 class="page_title">Notice</h1>
+	<h1 class="page_title">공지사항</h1>
 	<div class="inner">
 		<?php
 			if(count($list) > 0){
@@ -53,7 +53,7 @@
 					<thead>
 						<tr>
 							<?php
-								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["No", "Title", "Date", "Views"];
+								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["번호", "제목", "작성일", "조회수"];
 								foreach($table_title_arr as $th_text){
 							?>
 							<th><?=$th_text?></th>
@@ -116,7 +116,7 @@
 					<thead>
 						<tr>
 							<?php
-								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["No", "Title", "Date", "Views"];
+								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["번호", "제목", "작성일", "조회수"];
 								foreach($table_title_arr as $th_text){
 							?>
 							<th><?=$th_text?></th>

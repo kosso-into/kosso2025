@@ -14,9 +14,54 @@ if ($registrationNo) {
 
     $registrationNo = $prev["idx"] ?? "";
 
+// 2024 member type 추가
+// Type of member 
+$member_type = $prev["member_type"] ?? "-";
+switch ($member_type) {
+    case "Professor":
+        $member_type = "교수";
+        break;
+    case "Certified M.D.":
+        $member_type = "개원의";
+        break;
+    case "Public Health Doctor":
+        $member_type = "봉직의";
+        break;
+    case "Corporate Member":
+        $member_type = "교직의";
+        break;
+    case "Fellow":
+        $member_type = "전임의";
+        break;
+    case "Resident":
+        $member_type = "전공의";
+        break;
+    case "Nutritionist":
+        $member_type = "영양사";
+        break;
+    case "Exercise Specialist":
+        $member_type = "운동사";
+        break;
+    case "Nurse":
+        $member_type = "간호사";
+        break;
+    case "Researcher":
+        $member_type = "연구원";
+        break;
+    case "Student":
+        $member_type = "학생";
+        break;
+    case "Press":
+        $member_type = "기자";
+        break;   
+    case "Others":
+        $member_type = "기타";
+        break;   
+}
+
     if ($registrationNo) {
         $register = $prev["register"] ?? 0;
-        $category = $prev["member_type"] ?? "";
+        $category = $member_type ?? "";
         $occupation = $prev["occupation_type"] ?? "";
         $nation_no = $prev["nation_no"] ?? "";
 
@@ -255,7 +300,7 @@ if ($during_yn !== "Y") {
                                         $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
 
                                         foreach ($category_arr as $a_arr) {
-                                            $selected = $prev["member_type"] == $a_arr ? "selected" : "";
+                                            $selected = $member_type == $a_arr ? "selected" : "";
 
                                             //echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
                                         }
@@ -263,7 +308,7 @@ if ($during_yn !== "Y") {
                                 </select>
                             </li>
                             <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
-                            <li class="hide_input <?= $prev["member_type"] === "Others" ? "on" : "" ?>">
+                            <li class="hide_input <?= $member_type === "Others" ? "on" : "" ?>">
                                 <input type="hidden" name="title_prev_input"
                                     value="<?= $prev["member_other_type"] ?? "" ?>" />
                                 <input type="text" id="title_input" name="title_input"
@@ -492,7 +537,7 @@ if ($during_yn !== "Y") {
                                     <col>
                                 </colgroup>
                                 <tbody>
-                                    <tr>
+                                    <tr style="display:none;">
                                         <th>등록비</th>
                                         <td class="regi_fee">
                                             <!-- USD / KRW -->
@@ -567,6 +612,15 @@ if ($during_yn !== "Y") {
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr class="payment_method_wrap" id="bank_detail">
+                                        <th>이체 정보</th>
+                                        <td>
+                                            <div class="payment_bank">
+                                                <input name="bank" placeholder="은행명"/>
+                                                <input name="number" class="bank_number" placeholder="계좌번호"/>
+                                           </div>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -601,6 +655,7 @@ $(document).ready(function() {
     // return;
 
     $('.etc1').hide();
+    $('#bank_detail').hide();
 
     $(document).on("click", "#license_checkbox", function() {
         //console.log($(this).is(':checked'));
@@ -649,6 +704,15 @@ $(document).ready(function() {
         $(this).val(v);
     });
 
+
+    /**계좌 번호 
+     * 숫자와 - 허용
+     */
+    $(".bank_number").on("keyup", function() {
+        let value = $(this).val();
+        value = value.replace(/[^0-9-]/g, "");
+        $(this).val(value);
+    });
     /*
     $(".apply_btn").on("click", function(){
     	const promotionCode = $("input[name=promotion_code]").val();
@@ -682,7 +746,28 @@ $(document).ready(function() {
             alert("기타를 체크해주세요.");
             return false;
         }
+
+        /**1121 계좌 이체 선택시 
+         * 은행과 계좌번호 받는 코드(필수)
+         */
+        if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$(".bank_number").val() ){
+            alert("은행과 계좌번호를 입력해주세요.");
+            return false;
+        }
+        if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$("input[name=bank]").val() ){
+            alert("은행과 계좌번호를 입력해주세요.");
+            return false;
+        }
     });
+
+    $("#bank").on("click", function() {
+        $("#bank_detail").show();
+    });
+   
+    $("#credit").on("click", function() {
+        $("#bank_detail").hide();
+    });
+
 
     $("select[name=category]").on("change", function() {
         const val = $(this).val();

@@ -51,65 +51,14 @@ $payment_date = $data["payment_date_text"] ?? "-";
 ?>
 
 <div style="max-width:800px;">
-	<!-- 영수증 (PC) -->
+	<!-- 영수증 (PC) 
+		1121 수정 - 모바일 버전으로 통합 변경 -->
 	<?php
 	if (!$is_check_mobile) {
 	?>
-		<div style="max-width:100%; border:5px solid #004793">
-			<div style="padding-top:100px; position:relative;">
-				<div>
-					<img src="./img/receipt_logo.svg" alt="" style="width:180px; max-width:100%; max-height:80px; position:absolute; top:20px; left:15px;">
-					<h1 style="font-size:66px; font-weight:900; color:#000000; text-align:center;">영수증</h1>
-				</div>
-				<div style="padding:0 50px; margin-top:30px;">
-					<table style="border-collapse:collapse; border-spacing:0; width:100%;">
-						<tbody>
-							<tr>
-								<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-top:3px solid #000066; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
-									결제일</th>
-								<td style="padding:16px 20px; font-size:16px; color:#000000; border-top:3px solid #000066; border-bottom:1px solid #000066;">
-									<?= $payment_date ?></td>
-							</tr>
-							<tr>
-								<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
-									등록번호</th>
-								<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;">
-									<?= $register_no ?></td>
-							</tr>
-							<tr>
-								<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
-									성함</th>
-								<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;">
-									<?= $name ?></td>
-							</tr>
-							<tr>
-								<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
-									등록비</th>
-								<!--									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;">--><?php //= $total_price 
-																																											?>
-								<!--</td>-->
-								<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;">
-									<?= number_format($data['price']) ?></td>
-							</tr>
-							<tr>
-								<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:3px solid #000066; text-align:left;">
-									결제 방법</th>
-								<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:3px solid #000066;">
-									<?= $payment_method ?></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<img src="./img/receipt_bottom.png" alt="" style="width:100%; max-width:100%;">
-			</div>
-		</div>
-	<?php
-	} else {
-	?>
-		<!-- 영수증 (MB) -->
-		<div style="max-width:100%;">
+	<div style="max-width:100%;">
 			<div>
-				<img src="./img/receipt_top_mb.png" alt="" style="width:100%; max-width:100%;">
+				<img src="./img/receipt_header.png" alt="" style="width:100%; max-width:100%;">
 				<div style="padding:0 24px; margin-top:30px;">
 					<table style="border-collapse:collapse; border-spacing:0; width:100%;">
 						<tbody>
@@ -146,7 +95,53 @@ $payment_date = $data["payment_date_text"] ?? "-";
 						</tbody>
 					</table>
 				</div>
-				<img src="./img/receipt_bottom_mb.png" alt="" style="width:100%; max-width:100%;">
+				<img src="./img/receipt_footer.png" alt="" style="width:100%; max-width:100%;">
+			</div>
+		</div>
+	<?php
+	} else {
+	?>
+		<!-- 영수증 (MB) -->
+		<div style="max-width:100%;">
+			<div>
+				<img src="./img/receipt_header.png" alt="" style="width:100%; max-width:100%;">
+				<div style="padding:0 24px; margin-top:30px;">
+					<table style="border-collapse:collapse; border-spacing:0; width:100%;">
+						<tbody>
+							<tr>
+								<th width="135" style="width:135px; padding:12px; font-size:14px; font-weight:800; color:#000000; background-color:#F6F6F6; border-top:3px solid #000066; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
+									결제일</th>
+								<td style="padding:12px; font-size:14px; color:#000000; border-top:3px solid #000066; border-bottom:1px solid #000066;">
+									<?= $payment_date ?></td>
+							</tr>
+							<tr>
+								<th width="135" style="width:135px; padding:12px; font-size:14px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
+									등록번호</th>
+								<td style="padding:12px; font-size:14px; color:#000000; border-bottom:1px solid #000066;">
+									<?= $register_no ?></td>
+							</tr>
+							<tr>
+								<th width="135" style="width:135px; padding:12px; font-size:14px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
+									성함</th>
+								<td style="padding:12px; font-size:14px; color:#000000; border-bottom:1px solid #000066;">
+									<?= $name ?></td>
+							</tr>
+							<tr>
+								<th width="135" style="width:135px; padding:12px; font-size:14px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">
+									등록비</th>
+								<td style="padding:12px; font-size:14px; color:#000000; border-bottom:1px solid #000066;">
+									<?= $total_price ?></td>
+							</tr>
+							<tr>
+								<th width="135" style="width:135px; padding:12px; font-size:14px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #000066; border-bottom:3px solid #000066; text-align:left;">
+									결제 방법</th>
+								<td style="padding:12px; font-size:14px; color:#000000; border-bottom:3px solid #000066;">
+									<?= $payment_method ?></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<img src="./img/receipt_footer.png" alt="" style="width:100%; max-width:100%;">
 			</div>
 		</div>
 	<?php

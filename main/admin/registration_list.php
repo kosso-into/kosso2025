@@ -158,7 +158,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="10">참가자 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">평점신청(Korean Only)</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">기타</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
 $html .= '</tr>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">No</th>';
@@ -188,10 +188,10 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Promotion Code</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">추천인</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Welcome Reception</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 2 Breakfast</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Breakfast</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Satellite Symposium</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Breakfast Symposium</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Luncheon Symposium</th>';
+// $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">특이식단</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">개최 정보 습득 방법</th>';
 $html .= '</tr>';
@@ -298,7 +298,53 @@ foreach ($registration_list as $rk => $rl) {
 		$special_request_food = "-";
 	}
 
-	$is_exercise = ($rl['member_type'] == "Exercise Specialist") ? 'Y' : 'N';
+
+		// 2024 member type 추가
+		// Type of member 
+		$member_type = $rl["member_type"] ?? "-";
+		switch ($member_type) {
+			case "Professor":
+				$member_type = "교수";
+				break;
+			case "Certified M.D.":
+				$member_type = "개원의";
+				break;
+			case "Public Health Doctor":
+				$member_type = "봉직의";
+				break;
+			case "Corporate Member":
+				$member_type = "교직의";
+				break;
+			case "Fellow":
+				$member_type = "전임의";
+				break;
+			case "Resident":
+				$member_type = "전공의";
+				break;
+			case "Nutritionist":
+				$member_type = "영양사";
+				break;
+			case "Exercise Specialist":
+				$member_type = "운동사";
+				break;
+			case "Nurse":
+				$member_type = "간호사";
+				break;
+			case "Researcher":
+				$member_type = "연구원";
+				break;
+			case "Student":
+				$member_type = "학생";
+				break;
+			case "Press":
+				$member_type = "기자";
+				break;   
+			case "Others":
+				$member_type = "기타";
+				break;   
+		}
+
+$is_exercise = ($member_type == "Exercise Specialist") ? 'Y' : 'N';
 
 	$html .= '<tr class="tr_center">';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . ($rk + 1) . '</td>';
@@ -313,7 +359,7 @@ foreach ($registration_list as $rk => $rl) {
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["department"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["phone"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["attendance_type_text"] . '</td>';
-	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["member_type"] . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $member_type . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $licence_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $specialty_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $nutritionist_number . '</td>';
@@ -331,7 +377,7 @@ foreach ($registration_list as $rk => $rl) {
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day2_breakfast_yn"] . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day2_luncheon_yn"] . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_breakfast_yn"] . '</td>';
-	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_luncheon_yn"] . '</td>';
+	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_luncheon_yn"] . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $special_request_food . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $conference_info . '</td>';
 	$html .= '</tr>';
@@ -436,6 +482,52 @@ $count = count($registration_list);
 							} else {
 								$special_request_food = "-";
 							}
+							
+						// 2024 member type 추가
+						// Type of member 
+						$member_type = $list["member_type"] ?? "-";
+						switch ($member_type) {
+							case "Professor":
+								$member_type = "교수";
+								break;
+							case "Certified M.D.":
+								$member_type = "개원의";
+								break;
+							case "Public Health Doctor":
+								$member_type = "봉직의";
+								break;
+							case "Corporate Member":
+								$member_type = "교직의";
+								break;
+							case "Fellow":
+								$member_type = "전임의";
+								break;
+							case "Resident":
+								$member_type = "전공의";
+								break;
+							case "Nutritionist":
+								$member_type = "영양사";
+								break;
+							case "Exercise Specialist":
+								$member_type = "운동사";
+								break;
+							case "Nurse":
+								$member_type = "간호사";
+								break;
+							case "Researcher":
+								$member_type = "연구원";
+								break;
+							case "Student":
+								$member_type = "학생";
+								break;
+							case "Press":
+								$member_type = "기자";
+								break;   
+							case "Others":
+								$member_type = "기타";
+								break;   
+						}
+
 					?>
                     <tr class="tr_center">
                         <td><?= $register_no; ?></td>
@@ -445,7 +537,7 @@ $count = count($registration_list);
                         <td><a
                                 href="./member_detail.php?idx=<?= isset($list["member_idx"]) ? $list["member_idx"] : "" ?>"><?= isset($list["email"]) ? $list["email"] : "-" ?></a>
                         </td>
-                        <td><?= isset($list["member_type"]) ? $list["member_type"] : "-" ?></td>
+                        <td><?= isset($list["member_type"]) ? $member_type : "-" ?></td>
                         <td><?= isset($list["nation_ko"]) ? $list["nation_ko"] : "-" ?></td>
                         <td><?= $list["ksola_member_status"] ?></td>
                         <td><a

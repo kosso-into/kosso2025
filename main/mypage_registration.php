@@ -74,6 +74,51 @@ $score_sql = "SELECT
 
 $score_detail = sql_fetch($score_sql);
 
+// 2024 member type 추가
+// Type of member 
+$member_type = $list["member_type"] ?? "-";
+switch ($member_type) {
+    case "Professor":
+        $member_type = "교수";
+        break;
+    case "Certified M.D.":
+        $member_type = "개원의";
+        break;
+    case "Public Health Doctor":
+        $member_type = "봉직의";
+        break;
+    case "Corporate Member":
+        $member_type = "교직의";
+        break;
+    case "Fellow":
+        $member_type = "전임의";
+        break;
+    case "Resident":
+        $member_type = "전공의";
+        break;
+    case "Nutritionist":
+        $member_type = "영양사";
+        break;
+    case "Exercise Specialist":
+        $member_type = "운동사";
+        break;
+    case "Nurse":
+        $member_type = "간호사";
+        break;
+    case "Researcher":
+        $member_type = "연구원";
+        break;
+    case "Student":
+        $member_type = "학생";
+        break;
+    case "Press":
+        $member_type = "기자";
+        break;   
+    case "Others":
+        $member_type = "기타";
+        break;   
+}
+
 ?>
 <style>
     /*2022-05-11 ldh 추가*/
@@ -202,37 +247,31 @@ $score_detail = sql_fetch($score_sql);
                         if ($welcome_reception_yn === "Y") {
                             $other_html .= "
 											<input type='checkbox' class='checkbox' id='other1' disabled>
-											<label for='other1'><i></i>Welcome Reception – 3월 8일(금)</label>
+											<label for='other1'><i></i>Welcome Reception – 3월 8일(금) 18:30~19:40</label>
 										   ";
                         }
                         if ($day2_breakfast_yn === "Y") {
                             $other_html .= $other_html != "" ? "<br/>" : "";
                             $other_html .= "
 											<input type='checkbox' class='checkbox' id='other2' disabled>
-											<label for='other2'><i></i>Day 2 Breakfast Symposium – 3월 8일(금)</label>
+											<label for='other2'><i></i>Satellite Symposium – 3월 8일(금) 19:40~ </label>
 										   ";
                         }
                         if ($day2_luncheon_yn === "Y") {
                             $other_html .= $other_html != "" ? "<br/>" : "";
                             $other_html .= "
 											<input type='checkbox' class='checkbox' id='other3' disabled>
-											<label for='other3'><i></i>Day 2 Luncheon Symposium – 3월 8일(금)</label>
+											<label for='other3'><i></i>Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
 										   ";
                         }
                         if ($day3_breakfast_yn === "Y") {
                             $other_html .= $other_html != "" ? "<br/>" : "";
                             $other_html .= "
 											<input type='checkbox' class='checkbox' id='other4' disabled>
-											<label for='other4'><i></i>Day 3 Breakfast Symposium – 3월 9일(토)</label>
+											<label for='other4'><i></i>Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
 										   ";
                         }
-                        if ($day3_luncheon_yn === "Y") {
-                            $other_html .= $other_html != "" ? "<br/>" : "";
-                            $other_html .= "
-											<input type='checkbox' class='checkbox' id='other5' disabled>
-											<label for='other5'><i></i>Day 3 Luncheon Symposium – 3월 9일(토)</label>
-										   ";
-                        }
+                        
 
                         if ($other_html == "") $other_html = "-";
 
@@ -270,7 +309,7 @@ $score_detail = sql_fetch($score_sql);
 
                         <tr>
                             <td><?= $register_no ?? "-" ?></td>
-                            <td><?= $list["member_type"] ?></td>
+                            <td><?= $member_type ?></td>
                             <!--<td><?= $list["attendance_type"] ?></td>-->
                             <!--<td><?= $price ?></td>-->
                             <td><?= $list["is_korea"] == 1 ? "KRW" : "USD" ?>
@@ -332,7 +371,7 @@ $score_detail = sql_fetch($score_sql);
                                                 </tr>
                                                 <tr>
                                                     <th>참석 구분</th>
-                                                    <td><?= $list["member_type"] ?? "-" ?></td>
+                                                    <td><?= $member_type ?? "-" ?></td>
                                                 </tr>
                                                 <?php if ($list["is_korea"] == 1) { ?>
                                                     <tr>

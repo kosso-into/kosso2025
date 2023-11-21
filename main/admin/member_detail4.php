@@ -103,7 +103,56 @@
 							foreach($member_registration as $member_registration) {
 
 								$registration_idx = isset($member_registration["idx"]) ? $member_registration["idx"] : "";
-								$member_type = isset($member_registration["member_type"]) ? $member_registration["member_type"] : "";
+								//$member_type = isset($member_registration["member_type"]) ? $member_registration["member_type"] : "";
+
+								
+								// 2024 member type 추가
+								// Type of member 
+								$member_type = $member_registration["member_type"] ?? "-";
+								switch ($member_type) {
+									case "Professor":
+										$member_type = "교수";
+										break;
+									case "Certified M.D.":
+										$member_type = "개원의";
+										break;
+									case "Public Health Doctor":
+										$member_type = "봉직의";
+										break;
+									case "Corporate Member":
+										$member_type = "교직의";
+										break;
+									case "Fellow":
+										$member_type = "전임의";
+										break;
+									case "Resident":
+										$member_type = "전공의";
+										break;
+									case "Nutritionist":
+										$member_type = "영양사";
+										break;
+									case "Exercise Specialist":
+										$member_type = "운동사";
+										break;
+									case "Nurse":
+										$member_type = "간호사";
+										break;
+									case "Researcher":
+										$member_type = "연구원";
+										break;
+									case "Student":
+										$member_type = "학생";
+										break;
+									case "Press":
+										$member_type = "기자";
+										break;   
+									case "Others":
+										$member_type = "기타";
+										break;   
+								}
+
+
+
 								$registration_type = isset($member_registration["registration_type"]) ? $member_registration["registration_type"] : "";
 								$attendance_type_text = isset($member_registration["attendance_type_text"]) ? $member_registration["attendance_type_text"] : "";
 								$payment_price = isset($member_registration["total_price_us"]) ? "$ ".$member_registration["total_price_us"] : (isset($member_registration["total_price_kr"]) ? "￦ ".$member_registration["total_price_kr"] : "-");

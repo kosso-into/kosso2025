@@ -1,7 +1,8 @@
 <?php include_once("../../common/common.php"); ?>
 <?php
 if ($_POST["flag"] == "registration") {
-
+	// CORS 이슈 대응
+	header('Access-Control-Allow-Origin: *');
 	//var_dump($_POST); exit;
 	//var_dump($_SESSION); exit;
 
@@ -102,6 +103,9 @@ if ($_POST["flag"] == "registration") {
 
 	$price				  = isset($data["reg_fee"]) ? $data["reg_fee"] : "";										// 결제금액
 	$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
+
+
+	$bank		  = isset($data["bank"]) ? $data["bank"] . '('. $data["number"].')': "";				//계좌이체시 은행(계좌번호)
 
 	if (!$update_idx) {
 		if ($price == "" || $total_price == "") {
@@ -416,10 +420,10 @@ if ($_POST["flag"] == "registration") {
 						modifier = '{$user_idx}',
 						modify_date = NOW(),
 						welcome_reception_yn = '{$welcome_reception_yn}',
-						day2_breakfast_yn = '{$day2_breakfast_yn}',
-						day2_luncheon_yn = '{$day2_luncheon_yn}',
-						day3_breakfast_yn = '{$day3_breakfast_yn}',
-						day3_luncheon_yn = '{$day3_luncheon_yn}'
+						day2_breakfast_yn = '{$satellite_symposium_yn}',
+						day2_luncheon_yn = '{$breakfast_symposium_yn}',
+						day3_breakfast_yn = '{$luncheon_symposium}',
+						day3_luncheon_yn = 'N'
 						{$add_set}
 					WHERE idx = {$update_idx}
 					";
@@ -435,10 +439,10 @@ if ($_POST["flag"] == "registration") {
 						phone = '{$phone}',
 						register = '{$user_idx}',
 						welcome_reception_yn = '{$welcome_reception_yn}',
-						day2_breakfast_yn = '{$day2_breakfast_yn}',
-						day2_luncheon_yn = '{$day2_luncheon_yn}',
-						day3_breakfast_yn = '{$day3_breakfast_yn}',
-						day3_luncheon_yn = '{$day3_luncheon_yn}',
+						day2_breakfast_yn = '{$satellite_symposium_yn}',
+						day2_luncheon_yn = '{$breakfast_symposium_yn}',
+						day3_breakfast_yn = '{$luncheon_symposium}',
+						day3_luncheon_yn = 'N'
 						price = {$total_price}
 						{$add_set}
 					";

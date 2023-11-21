@@ -28,7 +28,7 @@
 ?>
 
 <section class="container board">
-	<h1 class="page_title">Newsletter</h1>
+	<h1 class="page_title">뉴스레터</h1>
 	<div class="inner">
 		<?php
 			if(count($list) > 0){
@@ -43,10 +43,10 @@
 					</colgroup>
 					<thead>
 						<tr>
-							<th>No</th>
-							<th>Title</th>
-							<th>Date</th>
-							<th>Views</th>
+							<th>번호</th>
+							<th>제목</th>
+							<th>작성일</th>
+							<th>조회수</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -99,7 +99,7 @@
 					<thead>
 						<tr>
 							<?php
-								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["No", "Title", "Date", "Views"];
+								$table_title_arr = ($language == "ko") ? ["번호", "제목", "작성일", "조회수"] : ["번호", "제목", "작성일", "조회수"];
 								foreach($table_title_arr as $th_text){
 							?>
 							<th><?=$th_text?></th>
