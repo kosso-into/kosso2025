@@ -713,8 +713,8 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	
 	/* 230509 HUBDNC AJY */
 	/* .steps_area.five_steps li p:first-of-type {width:70px; height:70px; line-height:70px; font-size:16px;}
-	.steps_area.five_steps li p:first-of-type:after {width:14px; height:14px; top:28px;}
-	.steps_area.five_steps li .sm_txt {font-size:14px; padding:0 6px;} */
+	.steps_area.five_steps li p:first-of-type:after {width:14px; height:14px; top:28px;} */
+	.steps_area.five_steps li .sm_txt {font-size:15px;}
 
 	/* 220331 HUBDNC LJH2 */
 	.promote_code input {width: 100%; margin-bottom: 10px;}
