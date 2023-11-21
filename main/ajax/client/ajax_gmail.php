@@ -1093,7 +1093,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">휴대폰 번호</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">(+' . $nation_tel . ')' . $phone . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . $phone . '</td>
 										</tr>
 										</tbody>	
 										</table>';

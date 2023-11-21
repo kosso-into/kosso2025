@@ -32,7 +32,7 @@ if ($registrationNo) {
 
 //경로 주의
 if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
-    echo "<script>location.replace('https:/kosso.org/main/registration.php')</script>";
+    echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
 }
 
 
@@ -93,7 +93,7 @@ if ($during_yn !== "Y") {
     $member_idx = $_SESSION["USER"]['idx'];
     $sql_info = "
 				SELECT
-					m.email, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.phone, m.ksola_member_status, m.nation_no, m.affiliation_kor, m.department_kor
+					m.email, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.phone, m.ksola_member_status, m.nation_no, m.affiliation_kor, m.department_kor, m.telephone
 				FROM member m
 				LEFT JOIN nation n
 				ON m.nation_no = n.idx
@@ -168,7 +168,7 @@ if ($during_yn !== "Y") {
                         </tr>
                         <tr>
                             <th>휴대폰 번호</th>
-                            <td><?= substr($member_data['phone'], 3) ?></td>
+                            <td><?= $member_data['telephone'] ?></td>
                         </tr>
                         <?php if ($member_data['nation_en'] === "Republic of Korea") { ?>
                         <tr>
@@ -195,39 +195,13 @@ if ($during_yn !== "Y") {
                         </p>
                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)"
                             <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
-                            <option value="" selected hidden>Choose</option>
-                            <?php
-                                $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
-
-                                foreach ($participation_arr as $a_arr) {
-                                    $attendance_type = "";
-                                    switch ($prev["attendance_type"]) {
-                                        case 0:
-                                            $attendance_type = "Committee";
-                                            break;
-                                        case 1:
-                                            $attendance_type = "Speaker";
-                                            break;
-                                        case 2:
-                                            $attendance_type = "Chairperson";
-                                            break;
-                                        case 3:
-                                            $attendance_type = "Panel";
-                                            break;
-                                        case 4:
-                                            $attendance_type = "Participants";
-                                            break;
-                                        case 5:
-                                            $attendance_type = "Sponsor";
-                                            break;
-                                    }
-
-                                    $selected = $attendance_type === $a_arr ? "selected" : "";
-
-                                    echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
-                                    //									$idx = $idx + 1;
-                                }
-                                ?>
+                            <option value="" selected hidden>필수 선택</option>
+                            <option value="Committee">임원</option>
+                                    <option value="Speaker">연자</option>
+                                    <option value="Chairperson">좌장</option>
+                                    <option value="Panel">패널</option>
+                                    <option value="Participants">일반참석자</option>
+                                    <option value="Sponsor">고객사</option>
                         </select>
                     </li>
                     <li style="display:none">
@@ -235,7 +209,7 @@ if ($during_yn !== "Y") {
                         <ul class="half_ul">
                             <li>
                                 <select id="occupation" name="occupation">
-                                    <option value="Medical" selected hidden>Choose</option>
+                                    <option value="Medical" selected hidden>필수 선택</option>
                                     <?php
                                         $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
 
@@ -263,14 +237,27 @@ if ($during_yn !== "Y") {
                             <li>
                                 <select id="category" name="category" onChange="calc_fee(this)"
                                     <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
-                                    <option value="" selected hidden>Choose</option>
+                                    <option value="" selected hidden>필수 선택</option>
+                                    <option value="Professor">교수</option>
+                                    <option value="Certified M.D.">개원의</option>
+                                    <option value="Public Health Doctor">봉직의</option>
+                                    <option value="Corporate Member">교직의</option>
+                                    <option value="Fellow">전임의</option>
+                                    <option value="Resident">전공의</option>
+                                    <option value="Nutritionist">영양사</option>
+                                    <option value="Exercise Specialist">운동사</option>
+                                    <option value="Nurse">간호사</option>
+                                    <option value="Researcher">연구원</option>
+                                    <option value="Student">학생</option>
+                                    <option value="Press">기자</option>
+                                    <option value="Others">기타</option>
                                     <?php
                                         $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
 
                                         foreach ($category_arr as $a_arr) {
                                             $selected = $prev["member_type"] == $a_arr ? "selected" : "";
 
-                                            echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
+                                            //echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
                                         }
                                         ?>
                                 </select>
@@ -371,35 +358,30 @@ if ($during_yn !== "Y") {
                                 <tbody id="othersList">
                                     <?php
                                         $others_arr = array(
+                                            "Satellite Symposium",
                                             "Welcome Reception",
-                                            "Day 2 Breakfast Symposium",
-                                            "Day 2 Luncheon Symposium",
-                                            "Day 3 Breakfast Symposium",
-                                            "Day 3 Luncheon Symposium"
+                                            "Breakfast Symposium",
+                                            "Luncheon Symposium"
                                         );
                                         $other_date_arr = array(
-                                            "3월 8일(금)",
-                                            "3월 8일(금)",
-                                            "3월 8일(금)",
-                                            "3월 9일(토)",
-                                            "3월 9일(토)"
+                                            "3월 8일(금) 18:30~19:40",
+                                            "3월 8일(금) 19:40~",
+                                            "3월 9일(토) 08:00~08:45",
+                                            "3월 9일(토) 12:00~13:00"
                                         );
 
                                         $prev_data_arr = [];
-                                        if ($prev["welcome_reception_yn"] == "Y") {
+                                        if ($prev["satellite_symposium_yn"] == "Y") {
                                             array_push($prev_data_arr, 1);
                                         }
-                                        if ($prev["day2_breakfast_yn"] == "Y") {
+                                        if ($prev["welcome_reception_yn"] == "Y") {
                                             array_push($prev_data_arr, 2);
                                         }
-                                        if ($prev["day2_luncheon_yn"] == "Y") {
+                                        if ($prev["breakfast_symposium_yn"] == "Y") {
                                             array_push($prev_data_arr, 3);
                                         }
-                                        if ($prev["day3_breakfast_yn"] == "Y") {
+                                        if ($prev["luncheon_symposium"] == "Y") {
                                             array_push($prev_data_arr, 4);
-                                        }
-                                        if ($prev["day3_luncheon_yn"] == "Y") {
-                                            array_push($prev_data_arr, 5);
                                         }
 
                                         for ($i = 1; $i <= count($others_arr); $i++) {
@@ -554,11 +536,11 @@ if ($during_yn !== "Y") {
                                                 </li>
                                             </ul>
                                         </td>
-                                    </tr> 
+                                    </tr> -->
                                             <tr>
                                                 <th class="red_txt">총 등록비</th>
                                                 <td><input type="text" id="total_reg_fee" name="total_reg_fee" placeholder="0" value="<?= $prev["price"] || $prev["price"] == 0 ? number_format($prev["price"]) : "" ?>" readonly></td>
-                                            </tr>-->
+                                            </tr>
                                     <!-- payment_method_wrap 클래스는 개발에서 결제수단을 히든처리 및 이벤트 트리거로 이용하고 있습니다. -->
                                     <tr class="payment_method_wrap">
                                         <th>결제 방법</th>
@@ -695,10 +677,9 @@ $(document).ready(function() {
 
     $(".next_btn").on("click", function() {
         if (!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
-            !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
-            !$("input[name=others5]").is(":checked")) {
+            !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked")) {
             $("#focus_others").focus();
-            alert("Please confirm the 'Others' section");
+            alert("기타를 체크해주세요.");
             return false;
         }
     });

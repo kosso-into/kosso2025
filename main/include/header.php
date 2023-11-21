@@ -9,7 +9,7 @@ $locale = locale($language);
         <div class="container">
             <div class="dday_wrap">
                 <div class="dday_top"><span>D-<?= number_format($d_days); ?></span></div>
-                <div class="dday_bot">Today is <span><?= $today; ?></span></div>
+                <div class="dday_bot">Today is <span><?= $today; ?>.</span></div>
             </div>
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
             <div class="g_h_logo"><img src="/main/img/icon_logo_kosso.png" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div>
@@ -69,7 +69,7 @@ $locale = locale($language);
                     <li>
                         <a href="/main/welcome.php">KSSO 2024</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/welcome.php">Welcome Message</a></li>
+                            <li><a href="/main/welcome.php">모시는 글</a></li>
                             <!--li><a href="/main/organizing_committee.php">Organization</a></li-->
                             <!--li><a href="/main/overview.php">Overview</a></li-->
                             <!-- <li><a href="/main/venue.php">Venue</a></li> -->
@@ -83,7 +83,7 @@ $locale = locale($language);
                             <li>
                                 <!-- <a href="/main/program_detail.php">Program in Detail</a> -->
                             </li>
-                            <li><a href="/main/comingsoon.php">Scientific Program</a></li>
+                            <li><a href="/main/comingsoon.php">Program details</a></li>
                             <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                         </ul>
                     </li>
@@ -107,7 +107,7 @@ $locale = locale($language);
                         <ul class="sub_nav">
                             <li><a href="/main/registration_guidelines.php">등록 접수 안내
                                 </a></li>
-                            <li><a href="/main/registration.php" class="online_registration_alert">온라인 등록 접수</a></li>
+                            <li><a href="/main/registration.php">온라인 등록 접수</a></li>
                             <li><a href="/main/comingsoon.php">평점 안내</a></li>
                             <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
                         </ul>
@@ -123,7 +123,8 @@ $locale = locale($language);
                     <li>
                         <a href="/main/venue.php">행사장</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/venue.php">오시는 길</a></li>
+                            <li><a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" target="_blank">오시는 길</a>
+                            </li>
                             <li><a href="/main/comingsoon.php">숙박</a></li>
                             <li><a href="/main/comingsoon.php">행사장 배치도</a></li>
                             <!-- <li><a href="/main/accommodation.php">숙박</a></li>
