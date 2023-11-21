@@ -564,7 +564,7 @@ table.center * {text-align:center;}
 /* .tab_green li a {font-size:20px; font-weight:400; color:#000000; padding:12px 58px 12px 22px; position:relative; top:50%; transform:translateY(-50%);} */
 .tab_green li a {font-size:20px; font-weight:400; color:#000000; padding:12px 58px 12px 22px; display:flex; align-items:center;}
 .tab_green li:last-child a {padding-right:22px;}
-.tab_green li.on {/* background-color:#0066CC; */ background-color:#CC3366; color:#FFFFFF; border-radius:36px; box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16); margin-right:0; z-index:3;}
+.tab_green li.on {/* background-color:#0066CC; */ background-color:#013366 ; color:#FFFFFF; border-radius:36px; box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16); margin-right:0; z-index:3;}
 .tab_green li.on:before {display: none;}
 .tab_green li.on a {padding:12px 22px; color:#FFFFFF;}
 .tab_green li.on + li {margin-left:-36px;}
@@ -703,6 +703,7 @@ section.container.sponsor {padding-top: 164px;}
 .purple_bg02 {background-color:#F9F2FF !important; color:#560D98 !important;}
 .pink_bg01 {background-color:#DF4086 !important; color:#fff !important;}
 .pink_bg02 {background-color:#FFF2F8 !important; color:#DF4086 !important;}
+.blue_bg01{background-color:#092D4F !important; color:#fff !important;} /*hyojun 추가*/
 .pop_gray_bg {background-color:#F4F4F4;}
 
 .pc_only {display: block;}

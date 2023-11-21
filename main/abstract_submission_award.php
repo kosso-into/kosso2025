@@ -6,112 +6,92 @@
     <h1 class="page_title">Awards & Grants</h1>
     <div class="inner">
         <ul class="tab_green long abstract_submission">
-            <li><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a href="./abstract_submission.php" class="online_submission_alert">Online Submission</a></li>
+            <li><a href="./abstract_submission_guideline.php">초록 접수 가이드</a></li>
+            <li><a href="./abstract_submission.php">초록 접수</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
             <li class="on"><a href="./abstract_submission_award.php">Awards & Grants</a></li>
         </ul>
 		<div class="section section1">
-			<div>
-				<div class="text_box">
-					<ul>
-						<li>The organizing committee of ICOMES 2023 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li>
-					</ul>
-				</div>
-			</div>
 			<!--Travel Grants start-->
 			<div>
 				<div class="section_title_wrap2">
+					<h3 class="title">시상 안내</h3>
+				</div>
+				<div class="mb20 text_box indent">
+					<ul>
+						<li>• 우수 구연/포스터 발표자를 선정하여 상장과 상금을 수여할 예정입니다.</li>
+					</ul>
+				</div>	
+				<ul class="award_list">
+                    <li>
+						<!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
+						<img src="./img/icons/icon_award01.png" alt="">
+						<p class="award_title">최우수 구연 상</p>
+						<!-- <p>4 persons</p> -->
+						<p class="point3_txt">상금 : 300,000원</p>
+					</li>
+					<li>
+						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+						<img src="./img/icons/icon_award02.png" alt="">
+						<p class="award_title">우수 구연 상</p>
+						<!-- <p>2 persons</p> -->
+						<p class="point3_txt">상금 : 200,000원</p>
+					</li>
+					<li>
+						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
+						<img src="./img/icons/icon_award01.png" alt="">
+						<p class="award_title">최우수 포스터 상</p>
+						<!-- <p>2 persons</p> -->
+						<p class="point3_txt">상금 : 200,000원</p>
+					</li>
+					<li>
+						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+						<img src="./img/icons/icon_award02.png" alt="">
+						<p class="award_title">우수 포스터 상</p>
+						<!-- <p>4 persons</p> -->
+						<p class="point3_txt">상금 : 100,000원</p>
+					</li>
+				</ul>
+			</div>
+            
+            
+            <div>
+				<div class="section_title_wrap2">
 					<h3 class="title">Travel Grants</h3>
 				</div>
-				<h4 class="title">Overseas</h4>
-				<div class="table_wrap detail_table_common x_scroll">
-					<table class="c_table detail_table">
-						<colgroup>
-							<col class="submission_col">
-							<col>
-						</colgroup>
-						<thead>
-							<tr>
-								<th class="text_center">Target</th>
-								<th class="text_center">Amount</th>
-								<th class="text_center">Remarks</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="text_center">Oral Presenter</td>
-								<td class="text_center">USD 700</td>
-								<td rowspan="2" class="text_center">On-site attendance and presentation are required.</td>
-							</tr>
-							<tr>
-								<td class="text_center">Guided Poster Presenter<br>Poster Exhibitior</td>
-								<td class="text_center border_r">USD 500</td>
-							</tr>
-							<!--<tr>
-								<td class="text_center">Oral Presenter</td>
-								<td class="text_center">USD 500</td>
-								<td class="text_center"></td>
-							</tr>
-							<tr>
-								<td class="text_center">Special Travel Grant</td>
-								<td class="text_center">USD 1,000</td>
-								<td class="text_center">Up to 10 persons<br/>*Selected by the organizing committee.</td>
-							</tr>
-							<tr>
-								<th>Sep 7(Thu) ~ 9 (Sat), 2023</th>
-								<td>ICOMES 2023</td>
-							</tr>-->
-						</tbody>
-					</table>
-                </div>
-				<p class="mt10 p_indent">• Only the presenter is eligible to apply for the travel grant (duplicate applications are not allowed).</p>
-				<p class="mt10 p_indent">• The Secretariat will notify you of the results via email after the evaluation process.</p>
-				<p class="mt10 p_indent">• Please ensure accurate information is provided in the application form. <br>The Secretariat may request additional documents if any missing information or errors are found.</p>
-			</div>
+			
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
-			<div>
+                
 				<div class="section_title_wrap2">
-					<h4 class="title">지방 참석자 여비 보조금 지원 (Domestic Only) <span>ICOMES 2023은 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
+					<h4 class="title">지방 참석자 여비 보조금 지원<span>대한비만학회는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
 				</div>
-				<div class="table_wrap detail_table_common x_scroll">
-					<table class="c_table detail_table">
-						<colgroup>
-							<col class="submission_col">
-							<col>
-						</colgroup>
-						<thead>
-							<tr>
-								<th class="text_center"></th>
-								<th class="text_center">MD</th>
-								<th class="text_center">Non-MD</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="text_center">지원 내용</td>
-								<td class="text_center">KRPIA/KPBMA 공정규약에 의거하여 지원</td>
-								<td class="text_center">300,000원 (기타소득세 제외 후 지급)</td>
-							</tr>
-							<tr>
-								<td class="text_center">지원자격</td>
-								<td class="text_center">두 가지 모두 충족 시<br>1. 대한비만학회 정회원 및 평생회원<br>2. 의사 면허 소지자</td>
-								<td class="text_center">영양사, 운동사 등</td>
-							</tr>
-							<tr>
-								<td class="text_center">지원범위</td>
-								<td class="text_center">학회 등록비, 왕복 교통비, 숙박비</td>
-								<td class="text_center"></td>
-							</tr>
-							<tr>
-								<td class="text_center">신청방식</td>
-								<td class="text_center">지원대상자 대한비만학회 개별 공지</td>
-								<td class="text_center">1. 지원 양식 다운로드 및 작성 <br>2. 이메일을 통한 양식 제출</td>
-							</tr>
-						</tbody>
-					</table>
+
+                <div class="table_wrap detail_table_common x_scroll">
+                    <table class="c_table detail_table">
+                        <colgroup>
+                            <col class="submission_col type2">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>신청 기간</th>
+                            <td>
+                                <div class="red_txt">TBD</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원 자격</th>
+                            <td>
+                                <p>1. 제58차 대한비만학회 춘계학술대회 <span style="font-weight:bold;">초록 채택자</span></p>
+                                <p>2. 지방 소속 현장 참석자 (서울/인천/경기 외 지역)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원 내용</th>
+                            <td>여비 보조금 <span class="red_txt">15만원</span></td>
+                        </tr>                       
+                    </table>
                 </div>
 				<!-- <p class="mt10 p_indent">• 지원금 신청과 기타 필요한 정보에 대한 안내는 초록 채택자에 한하여 별도로 사무국에서 이메일을 통해 연락드릴 예정입니다.</p> -->
 			</div>
@@ -119,111 +99,46 @@
 			<!--step start-->
 			<div>
 				<div class="section_title_wrap2">
-					<h4 class="title">Steps to Apply for Travel Grants</h4>
+					<h4 class="title">신청 방법 빛 선발 안내</h4>
 				</div>
 				<div class="steps_area five_steps">
 					<ul class="clearfix">
 						<li>
 							<p>Step 1</p>
-							<p class="sm_txt">Submit the abstract <br>through the website.</p>
+							<p class="sm_txt">초록 제출</p>
 						</li>
 						<li>
 							<p>Step 2</p>
-							<p class="sm_txt">Receive notification <br>of abstract selection.</p>
+							<p class="sm_txt">초록 채택</p>
 						</li>
 						<li>
 							<p>Step 3</p>
-							<p class="sm_txt">Attend and present at <br>ICOMES 2023 on-site.</p>
+							<p class="sm_txt">학회 참석</p>
 						</li>
 						<li>
 							<p>Step 4</p>
-							<p class="sm_txt">Complete the travel <br>grant application form <br>and apply via email <br><span class="red_t font_inherit">(Application period: <br>Sep 10th ~ Sep 16th)</span></p>
+							<p class="sm_txt">신청서 작성 후<br>운영사무국으로 제출<br>*증빙자료 제출 필요</p>
 						</li>
 						<li>
 							<p>Step 5</p>
-							<p class="sm_txt">Receive notification of <br>application results <br>(within seven days after the <br>application deadline).</p>
+							<p class="sm_txt">심사 후,<br>결과 개별 통지<br>(개별 이메일)</p>
 						</li>
 					</ul>
 				</div>
+                <p class="mt10">• 관련 문의 및 신청서 제출은 운영사무국 이메일( <a href="mailto:ksso@into-on.com" class="link">ksso@into-on.com</a> )로 부탁드립니다.</p>
 			</div>
 			<!--step end-->
 			<!-- download start -->
 			<div>
-				<div class="section_title_wrap2">
-					<h4 class="title">Download Application Form</h4>
-				</div>
-				<div class="download_wrap">
-					<a href="./download/ICOMES_2023_Travel_Grant_Application_Form.docx" class="btn long_btn type2 text_long" target="_blank">
-						<img src="./img/icons/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
-					</a>
-					<a href="./download/ICOMES_2023_Application_for_travel_subsidy(Non-MD).docx" class="btn long_btn type2 text_long" target="_blank">
-						<img src="./img/icons/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드 (Domestic)
+				<div class="download_wrap" style="text-align:center;">
+					<a href="" class="btn long_btn type2 text_long" target="_blank">
+						<img src="./img/icons/icon_download_white.svg" alt="">지방 참석자 여비 보조금 지원 양식 다운로드
 					</a>
 				</div>
-				<p class="mt10 p_indent">• MD 지방 참석자: 지원 양식 별도 없음. 초록채택자 공지 후 대한비만학회 개별 공지 예정</p>
 			</div>
 			<!-- download end -->
-			<!--Oral Presentation start-->
-			<div>
-				<div class="section_title_wrap2">
-					<h3 class="title">Awards</h3>
-				</div>
-				<div class="mb20 text_box indent">
-					<ul>
-						<li>• Outstanding oral and poster presentations will be recognized and awarded during the closing ceremony.</li>
-						<li>• The winners will be notified individually of the results, and their attendance at the ceremony is mandatory.</li>
-					</ul>
-				</div>	
-				<ul class="award_list">
-					<li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Oral Presentation </p>
-						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2024</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">Excellent Poster Presentation</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2024</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Poster Presentation</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2024</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">Excellent Oral Presentation</p>
-						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2024</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Poster Exhibition</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2024</p>
-					</li>
-				</ul>
-			</div>
-			
+			<!--Oral Presentation start-->			
 			<!--Oral Presentation end-->
-			<div>
-				<h3 class="title">Registration Support for Accepted Abstracts</h3>
-				<div class="text_box indent">
-					<ul>
-						<li>• Free registration for one person is offered for accepted abstracts.</li>
-						<li>• Registration fees will be fully refunded after the congress.</li>
-						<li>• On-site attendance is required.</li>
-					</ul>
-				</div>
-			</div>
 			<!--keydate start-->
 			<!-- <div> -->
 			<!-- 	<div> -->
@@ -549,7 +464,7 @@ $(document).ready(function() {
     });
 
 	$(".download_wrap .btn").click(function(){
-		alert("[ Note!! Application period: Sep 10th ~ Sep 20th ]")
+		alert("[ Note!! Application period: TBD ]")
 	});
 });
 </script>
