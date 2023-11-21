@@ -14,54 +14,9 @@ if ($registrationNo) {
 
     $registrationNo = $prev["idx"] ?? "";
 
-// 2024 member type 추가
-// Type of member 
-$member_type = $prev["member_type"] ?? "-";
-switch ($member_type) {
-    case "Professor":
-        $member_type = "교수";
-        break;
-    case "Certified M.D.":
-        $member_type = "개원의";
-        break;
-    case "Public Health Doctor":
-        $member_type = "봉직의";
-        break;
-    case "Corporate Member":
-        $member_type = "교직의";
-        break;
-    case "Fellow":
-        $member_type = "전임의";
-        break;
-    case "Resident":
-        $member_type = "전공의";
-        break;
-    case "Nutritionist":
-        $member_type = "영양사";
-        break;
-    case "Exercise Specialist":
-        $member_type = "운동사";
-        break;
-    case "Nurse":
-        $member_type = "간호사";
-        break;
-    case "Researcher":
-        $member_type = "연구원";
-        break;
-    case "Student":
-        $member_type = "학생";
-        break;
-    case "Press":
-        $member_type = "기자";
-        break;   
-    case "Others":
-        $member_type = "기타";
-        break;   
-}
-
     if ($registrationNo) {
         $register = $prev["register"] ?? 0;
-        $category = $member_type ?? "";
+        $category = $prev["member_type"] ?? "";
         $occupation = $prev["occupation_type"] ?? "";
         $nation_no = $prev["nation_no"] ?? "";
 
@@ -77,7 +32,7 @@ switch ($member_type) {
 
 //경로 주의
 if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
-    echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
+    echo "<script>location.replace('https:/kosso.org/main/registration.php')</script>";
 }
 
 
@@ -138,7 +93,7 @@ if ($during_yn !== "Y") {
     $member_idx = $_SESSION["USER"]['idx'];
     $sql_info = "
 				SELECT
-					m.email, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.phone, m.ksola_member_status, m.nation_no, m.affiliation_kor, m.department_kor, m.telephone
+					m.email, m.first_name, m.last_name, m.first_name_kor, m.last_name_kor, n.nation_en, m.affiliation, m.department, m.phone, m.ksola_member_status, m.nation_no, m.affiliation_kor, m.department_kor
 				FROM member m
 				LEFT JOIN nation n
 				ON m.nation_no = n.idx
@@ -213,7 +168,7 @@ if ($during_yn !== "Y") {
                         </tr>
                         <tr>
                             <th>휴대폰 번호</th>
-                            <td><?= $member_data['telephone'] ?></td>
+                            <td><?= substr($member_data['phone'], 3) ?></td>
                         </tr>
                         <?php if ($member_data['nation_en'] === "Republic of Korea") { ?>
                         <tr>
@@ -230,8 +185,7 @@ if ($during_yn !== "Y") {
                 </table>
             </div>
             <form name="registration_form" class="registration_form">
-                <!--1121 수정 -->
-                <input type="hidden" name="prev_no" value="<?= $registrationNo ? $registrationNo : $member_idx ?>" />
+                <input type="hidden" name="prev_no" value="<?= $registrationNo ?>" />
                 <input type="hidden" id="nation" name="nation" value="<?= $member_data['nation_en'] ?>">
                 <!-- onsubmit="return false" -->
                 <ul class="basic_ul">
@@ -241,13 +195,39 @@ if ($during_yn !== "Y") {
                         </p>
                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)"
                             <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
-                            <option value="" selected hidden>필수 선택</option>
-                            <option value="Committee">임원</option>
-                                    <option value="Speaker">연자</option>
-                                    <option value="Chairperson">좌장</option>
-                                    <option value="Panel">패널</option>
-                                    <option value="Participants">일반참석자</option>
-                                    <option value="Sponsor">고객사</option>
+                            <option value="" selected hidden>Choose</option>
+                            <?php
+                                $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
+
+                                foreach ($participation_arr as $a_arr) {
+                                    $attendance_type = "";
+                                    switch ($prev["attendance_type"]) {
+                                        case 0:
+                                            $attendance_type = "Committee";
+                                            break;
+                                        case 1:
+                                            $attendance_type = "Speaker";
+                                            break;
+                                        case 2:
+                                            $attendance_type = "Chairperson";
+                                            break;
+                                        case 3:
+                                            $attendance_type = "Panel";
+                                            break;
+                                        case 4:
+                                            $attendance_type = "Participants";
+                                            break;
+                                        case 5:
+                                            $attendance_type = "Sponsor";
+                                            break;
+                                    }
+
+                                    $selected = $attendance_type === $a_arr ? "selected" : "";
+
+                                    echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
+                                    //									$idx = $idx + 1;
+                                }
+                                ?>
                         </select>
                     </li>
                     <li style="display:none">
@@ -255,7 +235,7 @@ if ($during_yn !== "Y") {
                         <ul class="half_ul">
                             <li>
                                 <select id="occupation" name="occupation">
-                                    <option value="Medical" selected hidden>필수 선택</option>
+                                    <option value="Medical" selected hidden>Choose</option>
                                     <?php
                                         $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
 
@@ -283,33 +263,20 @@ if ($during_yn !== "Y") {
                             <li>
                                 <select id="category" name="category" onChange="calc_fee(this)"
                                     <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
-                                    <option value="" selected hidden>필수 선택</option>
-                                    <option value="Professor">교수</option>
-                                    <option value="Certified M.D.">개원의</option>
-                                    <option value="Public Health Doctor">봉직의</option>
-                                    <option value="Corporate Member">교직의</option>
-                                    <option value="Fellow">전임의</option>
-                                    <option value="Resident">전공의</option>
-                                    <option value="Nutritionist">영양사</option>
-                                    <option value="Exercise Specialist">운동사</option>
-                                    <option value="Nurse">간호사</option>
-                                    <option value="Researcher">연구원</option>
-                                    <option value="Student">학생</option>
-                                    <option value="Press">기자</option>
-                                    <option value="Others">기타</option>
+                                    <option value="" selected hidden>Choose</option>
                                     <?php
                                         $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
 
                                         foreach ($category_arr as $a_arr) {
-                                            $selected = $member_type == $a_arr ? "selected" : "";
+                                            $selected = $prev["member_type"] == $a_arr ? "selected" : "";
 
-                                            //echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
+                                            echo '<option value="' . $a_arr . '" ' . $selected . '>' . $a_arr . '</option>';
                                         }
                                         ?>
                                 </select>
                             </li>
                             <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
-                            <li class="hide_input <?= $member_type === "Others" ? "on" : "" ?>">
+                            <li class="hide_input <?= $prev["member_type"] === "Others" ? "on" : "" ?>">
                                 <input type="hidden" name="title_prev_input"
                                     value="<?= $prev["member_other_type"] ?? "" ?>" />
                                 <input type="text" id="title_input" name="title_input"
@@ -404,30 +371,35 @@ if ($during_yn !== "Y") {
                                 <tbody id="othersList">
                                     <?php
                                         $others_arr = array(
-                                            "Satellite Symposium",
                                             "Welcome Reception",
-                                            "Breakfast Symposium",
-                                            "Luncheon Symposium"
+                                            "Day 2 Breakfast Symposium",
+                                            "Day 2 Luncheon Symposium",
+                                            "Day 3 Breakfast Symposium",
+                                            "Day 3 Luncheon Symposium"
                                         );
                                         $other_date_arr = array(
-                                            "3월 8일(금) 18:30~19:40",
-                                            "3월 8일(금) 19:40~",
-                                            "3월 9일(토) 08:00~08:45",
-                                            "3월 9일(토) 12:00~13:00"
+                                            "3월 8일(금)",
+                                            "3월 8일(금)",
+                                            "3월 8일(금)",
+                                            "3월 9일(토)",
+                                            "3월 9일(토)"
                                         );
 
                                         $prev_data_arr = [];
-                                        if ($prev["satellite_symposium_yn"] == "Y") {
+                                        if ($prev["welcome_reception_yn"] == "Y") {
                                             array_push($prev_data_arr, 1);
                                         }
-                                        if ($prev["welcome_reception_yn"] == "Y") {
+                                        if ($prev["day2_breakfast_yn"] == "Y") {
                                             array_push($prev_data_arr, 2);
                                         }
-                                        if ($prev["breakfast_symposium_yn"] == "Y") {
+                                        if ($prev["day2_luncheon_yn"] == "Y") {
                                             array_push($prev_data_arr, 3);
                                         }
-                                        if ($prev["luncheon_symposium"] == "Y") {
+                                        if ($prev["day3_breakfast_yn"] == "Y") {
                                             array_push($prev_data_arr, 4);
+                                        }
+                                        if ($prev["day3_luncheon_yn"] == "Y") {
+                                            array_push($prev_data_arr, 5);
                                         }
 
                                         for ($i = 1; $i <= count($others_arr); $i++) {
@@ -538,7 +510,7 @@ if ($during_yn !== "Y") {
                                     <col>
                                 </colgroup>
                                 <tbody>
-                                    <tr style="display:none;">
+                                    <tr>
                                         <th>등록비</th>
                                         <td class="regi_fee">
                                             <!-- USD / KRW -->
@@ -582,11 +554,11 @@ if ($during_yn !== "Y") {
                                                 </li>
                                             </ul>
                                         </td>
-                                    </tr> -->
+                                    </tr> 
                                             <tr>
                                                 <th class="red_txt">총 등록비</th>
                                                 <td><input type="text" id="total_reg_fee" name="total_reg_fee" placeholder="0" value="<?= $prev["price"] || $prev["price"] == 0 ? number_format($prev["price"]) : "" ?>" readonly></td>
-                                            </tr>
+                                            </tr>-->
                                     <!-- payment_method_wrap 클래스는 개발에서 결제수단을 히든처리 및 이벤트 트리거로 이용하고 있습니다. -->
                                     <tr class="payment_method_wrap">
                                         <th>결제 방법</th>
@@ -611,15 +583,6 @@ if ($during_yn !== "Y") {
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="payment_method_wrap" id="bank_detail">
-                                        <th>이체 정보</th>
-                                        <td>
-                                            <div class="payment_bank">
-                                                <input name="bank" placeholder="은행명"/>
-                                                <input name="number" class="bank_number" placeholder="계좌번호"/>
-                                           </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -656,7 +619,6 @@ $(document).ready(function() {
     // return;
 
     $('.etc1').hide();
-    $('#bank_detail').hide();
 
     $(document).on("click", "#license_checkbox", function() {
         //console.log($(this).is(':checked'));
@@ -705,15 +667,6 @@ $(document).ready(function() {
         $(this).val(v);
     });
 
-
-    /**계좌 번호 
-     * 숫자와 - 허용
-     */
-    $(".bank_number").on("keyup", function() {
-        let value = $(this).val();
-        value = value.replace(/[^0-9-]/g, "");
-        $(this).val(value);
-    });
     /*
     $(".apply_btn").on("click", function(){
     	const promotionCode = $("input[name=promotion_code]").val();
@@ -742,33 +695,13 @@ $(document).ready(function() {
 
     $(".next_btn").on("click", function() {
         if (!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
-            !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked")) {
+            !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
+            !$("input[name=others5]").is(":checked")) {
             $("#focus_others").focus();
-            alert("기타를 체크해주세요.");
-            return false;
-        }
-
-        /**1121 계좌 이체 선택시 
-         * 은행과 계좌번호 받는 코드(필수)
-         */
-        if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$(".bank_number").val() ){
-            alert("은행과 계좌번호를 입력해주세요.");
-            return false;
-        }
-        if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$("input[name=bank]").val() ){
-            alert("은행과 계좌번호를 입력해주세요.");
+            alert("Please confirm the 'Others' section");
             return false;
         }
     });
-
-    $("#bank").on("click", function() {
-        $("#bank_detail").show();
-    });
-   
-    $("#credit").on("click", function() {
-        $("#bank_detail").hide();
-    });
-
 
     $("select[name=category]").on("change", function() {
         const val = $(this).val();
