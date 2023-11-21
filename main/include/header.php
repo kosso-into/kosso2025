@@ -106,8 +106,6 @@ $locale = locale($language);
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
 
-                            <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">발표 안내</a></li>
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
                         </ul>
@@ -262,7 +260,6 @@ $locale = locale($language);
                     <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
                     <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
-                    <li><a href="/main/comingsoon.php">발표 안내</a></li>
                     <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
                 </ul>
             </li>
