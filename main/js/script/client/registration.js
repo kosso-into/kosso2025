@@ -166,8 +166,9 @@ function regist_promotion_code(registration_idx,promotion_code, recommender) {
 		},
 		dataType: "JSON",
 		success: function (res) {
+			console.log(res)
 			if (res.code == 200) {
-				alert("A promotional code has been applied successfully.");
+				//alert("A promotional code has been applied successfully.");
 			} else {
 				alert("regist promotion error.");
 				return;
