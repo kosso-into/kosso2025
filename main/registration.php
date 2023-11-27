@@ -841,4 +841,5 @@ $(document).ready(function() {
 <?php
 }
 include_once('./include/footer.php');
+
 ?>
