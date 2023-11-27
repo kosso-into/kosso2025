@@ -203,22 +203,22 @@ switch ($member_type) {
                         $attendance_type = $list["attendance_type"] ?? "-";
                         switch ($attendance_type) {
                             case 0:
-                                $attendance_type = "Committee";
+                                $attendance_type = "임원";
                                 break;
                             case 1:
-                                $attendance_type = "Invited Speaker";
+                                $attendance_type = "연자";
                                 break;
                             case 2:
-                                $attendance_type = "Chairperson";
+                                $attendance_type = "좌장";
                                 break;
                             case 3:
-                                $attendance_type = "Panel";
+                                $attendance_type = "패널";
                                 break;
                             case 4:
-                                $attendance_type = "General Participants";
+                                $attendance_type = "일반참석자";
                                 break;
                             case 5:
-                                $attendance_type = "Sponsor";
+                                $attendance_type = "고객사";
                                 break;
                         }
 
