@@ -196,14 +196,40 @@ if ($during_yn !== "Y") {
                         </p>
                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)"
                             <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
-                            <option value="" selected hidden>Choose</option>
                             <option value="" selected hidden>필수 선택</option>
-                            <option value="Committee">임원</option>
-                                    <option value="Speaker">연자</option>
-                                    <option value="Chairperson">좌장</option>
-                                    <option value="Panel">패널</option>
-                                    <option value="Participants">일반참석자</option>
-                                    <option value="Sponsor">고객사</option>
+                            <?php
+								$participation_arr = array("임원", "연자", "좌장", "패널", "일반참석자", "고객사");
+                               
+								foreach($participation_arr as $index => $a_arr) {
+                                    $attendance_type = "";
+                                    switch($prev["attendance_type"]) {
+                                        case 0:
+                                            $attendance_type = "임원";
+                                            break;
+                                        case 1:
+                                            $attendance_type = "연자";
+                                            break;
+                                        case 2:
+                                            $attendance_type = "좌장";
+                                            break;
+                                        case 3:
+                                            $attendance_type = "패널";
+                                            break;
+                                        case 4:
+                                            $attendance_type = "일반참석자";
+                                            break;
+                                        case 5:
+                                            $attendance_type = "고객사";
+                                            break;
+                                    }
+                                  
+ 
+									$selected = $attendance_type === $a_arr ? "selected" : "";
+
+									echo '<option value="'.$index.'" '.$selected.'>'.$a_arr.'</option>';
+//									$idx = $idx + 1;
+								}
+							?>
                         </select>
                     </li>
                     <li style="display:none">
@@ -240,19 +266,53 @@ if ($during_yn !== "Y") {
                                 <select id="category" name="category" onChange="calc_fee(this)"
                                     <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
                                     <option value="" selected hidden>필수선택</option>
-                                    <option value="Professor">교수</option>
-                                    <option value="Certified M.D.">개원의</option>
-                                    <option value="Public Health Doctor">봉직의</option>
-                                    <option value="Corporate Member">교직의</option>
-                                    <option value="Fellow">전임의</option>
-                                    <option value="Resident">전공의</option>
-                                    <option value="Nutritionist">영양사</option>
-                                    <option value="Exercise Specialist">운동사</option>
-                                    <option value="Nurse">간호사</option>
-                                    <option value="Researcher">연구원</option>
-                                    <option value="Student">학생</option>
-                                    <option value="Press">기자</option>
-                                    <option value="Others">기타</option>
+                                    <?php
+                                        $participation_arr = array();
+
+                                        $participation_arr[0]['name'] = "교수";
+                                        $participation_arr[0]['value'] = "Professor";
+
+                                        $participation_arr[1]['name'] = "개원의";
+                                        $participation_arr[1]['value'] = "Certified M.D.";
+
+                                        $participation_arr[2]['name'] = "봉직의";
+                                        $participation_arr[2]['value'] = "Public Health Doctor";
+
+                                        $participation_arr[3]['name'] = "교직의";
+                                        $participation_arr[3]['value'] = "Corporate Member";
+
+                                        $participation_arr[4]['name'] = "전임의";
+                                        $participation_arr[4]['value'] = "Fellow";
+
+                                        $participation_arr[5]['name'] = "전공의";
+                                        $participation_arr[5]['value'] = "Resident";
+
+                                        $participation_arr[6]['name'] = "영양사";
+                                        $participation_arr[6]['value'] = "Nutritionist";
+
+                                        $participation_arr[7]['name'] = "운동사";
+                                        $participation_arr[7]['value'] = "Exercise Specialist";
+
+                                        $participation_arr[8]['name'] = "간호사";
+                                        $participation_arr[8]['value'] = "Nurse";
+
+                                        $participation_arr[9]['name'] = "연구원";
+                                        $participation_arr[9]['value'] = "Researcher";
+
+                                        $participation_arr[10]['name'] = "학생";
+                                        $participation_arr[10]['value'] = "Student";
+
+                                        $participation_arr[11]['name'] = "기자";
+                                        $participation_arr[11]['value'] = "Press";
+
+                                        $participation_arr[12]['name'] = "기타";
+                                        $participation_arr[12]['value'] = "Others";
+
+                                        foreach ($participation_arr as $a_arr) {
+                                            $selected =  $prev["member_type"] == $a_arr['value'] ? "selected" : "";
+                                            echo '<option value="'.$a_arr['value'].'" '.$selected.'>'.$a_arr['name'].'</option>';
+                                        }
+                                        ?>
                                 </select>
                             </li>
                             <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
@@ -364,16 +424,16 @@ if ($during_yn !== "Y") {
                                         );
 
                                         $prev_data_arr = [];
-                                        if ($prev["satellite_symposium_yn"] == "Y") {
+                                        if ($prev["day2_breakfast_yn"] == "Y") {
                                             array_push($prev_data_arr, 1);
                                         }
                                         if ($prev["welcome_reception_yn"] == "Y") {
                                             array_push($prev_data_arr, 2);
                                         }
-                                        if ($prev["breakfast_symposium_yn"] == "Y") {
+                                        if ($prev["day2_breakfast_yn"] == "Y") {
                                             array_push($prev_data_arr, 3);
                                         }
-                                        if ($prev["luncheon_symposium"] == "Y") {
+                                        if ($prev["day3_breakfast_yn"] == "Y") {
                                             array_push($prev_data_arr, 4);
                                         }
                                       
@@ -702,7 +762,7 @@ $(document).ready(function() {
         if (!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
             !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked")) {
             $("#focus_others").focus();
-            alert("Please confirm the 'Others' section");
+            alert("기타를 모두 체크해 주세요.");
             return false;
         }
            /**1121 계좌 이체 선택시 
@@ -781,4 +841,5 @@ $(document).ready(function() {
 <?php
 }
 include_once('./include/footer.php');
+
 ?>

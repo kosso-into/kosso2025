@@ -159,7 +159,7 @@ body {
                 </li>
                 <li>
                     <a href="">
-                        <h2><span>2024년 1월 2일(화)</span></h2>
+                        <h2><span>2024년 1월 9일(화)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
                         <p>초록 접수<br />마감</p>
                     </a>

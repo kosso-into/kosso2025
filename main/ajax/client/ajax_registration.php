@@ -34,28 +34,7 @@ if ($_POST["flag"] == "registration") {
 	}
 
 	//필수
-	$participation_type  = $data["participation_type"] ?? "";					// Type of Participation
-
-	switch ($participation_type) {
-		case "Committee":
-			$attendance_type = 0;
-			break;
-		case "Speaker":
-			$attendance_type = 1;
-			break;
-		case "Chairperson":
-			$attendance_type = 2;
-			break;
-		case "Panel":
-			$attendance_type = 3;
-			break;
-		case "Participants":
-			$attendance_type = 4;
-			break;
-		case "Sponsor":
-			$attendance_type = 5;
-			break;
-	}
+	$attendance_type  = $data["participation_type"] ?? "";					// Type of Participation
 
 	$category            = isset($data["category"]) ? $data["category"] : "";										// Category
 	$category_other      = isset($data["title_input"]) ? $data["title_input"] : "";
@@ -193,7 +172,7 @@ if ($_POST["flag"] == "registration") {
 		if ($registration_idx && ($payment_status != "0" && $payment_status != "4")) {
 			$res = [
 				code => 401,
-				msg => "already registration"
+				msg => "이미 등록된 회원입니다."
 			];
 			echo json_encode($res);
 			exit;
@@ -775,6 +754,8 @@ if ($_POST["flag"] == "registration") {
 	$user_idx = $_SESSION["USER"]["idx"];
 	$category = $_POST["category"];
 	$country = $_POST["country"] ?? "";
+
+
 
 	// 카테고리별 상품금액 조회
 	$calc_fee_query =	"

@@ -1,7 +1,7 @@
 var device = "";							// Agent Info
 var header_language = "";					// Default:Empty(=en)
 var language = new Object();
-language.value = "en";
+language.value = "ko";
 
 // Running agent checked function
 agentCheck();
@@ -20,9 +20,9 @@ function agentCheck(){
 function language_change(event, choice){
 	
 	if(event == "click"){
-		choice = (choice == "eng") ? "ko" : "en";		// 토글버튼 클릭시 값의 Reverse 효과필요
+		choice = (choice == "eng") ? "ko" : "ko";		// 토글버튼 클릭시 값의 Reverse 효과필요
 	}else{
-		choice = (choice == "kor") ? "ko" : "en";
+		choice = (choice == "kor") ? "ko" : "ko";
 	}
 
 	header_language = choice;

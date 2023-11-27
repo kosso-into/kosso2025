@@ -222,8 +222,8 @@ function calc_fee(obj){
 		}
 	}
 
-	if(participation_type == "Participants" || participation_type =="Sponsor"){
-		if(participation_type == "Sponsor"){
+	if(participation_type == "4" || participation_type =="5"){
+		if(participation_type == "5"){
 			category="Others";
 		}
 		$.ajax({
