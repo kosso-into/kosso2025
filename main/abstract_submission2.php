@@ -184,29 +184,29 @@ $abstract_idx = $_GET["idx"];
                     <li class="next">
                         <p>Step 1</p>
                         <!-- <p></p> -->
-                        <p class="sm_txt">Fill out author’s information</p>
+                        <p class="sm_txt">초록 저자 정보 입력.<br>(발표저자/교신저자)</p>
                         <!-- <p class="sm_txt"><?= $locale("abstract_online_tit1") ?></p> -->
                     </li>
                     <li class="on">
                         <p>Step 2</p>
-						<p class="sm_txt">Enter the abstract section, including the type of presentation, topic categories, and title.</p>
+						<p class="sm_txt">초록 파일 업로드<br>*발표 형식/카테고리 선택</p>
                         <!-- <p class="sm_txt"><?= $locale("abstract_submit_tit2") ?></p> -->
                     </li>
                     <li>
                         <p>Step 3</p>
-						<p class="sm_txt">Complete and confirm submission.</p>
+						<p class="sm_txt">제출 완료 및 확인</p>
                         <!-- <p class="sm_txt"><?= $locale("submit_completed_tit") ?></p> -->
                     </li>
                 </ul>
             </div>
             <div class="input_area">
 				<h3 class="title">
-					Author Information
-					<span class="mini_alert"><span class="red_txt">*</span> All requested field(<span class="red_txt">*</span>) should be completed.</span>
+					초록 정보
+					<span class="mini_alert"> 필수 입력 사항(<span class="red_txt">*</span>)</span>
 				</h3>
                 <ul class="basic_ul">
                     <li>
-                        <p class="label">Preferred Presentation Type <span class="red_txt">*</span></p>
+                        <p class="label">발표 형식<span class="red_txt">*</span></p>
                         <!-- <p class="label"><?= $locale("abstract_item_title") ?> *</p> -->
                         <div>
                             <select name="presentation_type" id="presentation_type">
@@ -215,7 +215,7 @@ $abstract_idx = $_GET["idx"];
 									if (!$presentation_type) {
 										echo '<option value="" hidden>Choose</option>';
 									}
-									$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
+									$presentation_type_arr = array("구연/포스터", "구연", "포스터");
 									foreach ($presentation_type_arr as $value) {
 										if ($presentation_type == $i_count) {
 											echo '<option value=' . ($i_count) . ' selected>' . $value . '</option>';
@@ -231,17 +231,17 @@ $abstract_idx = $_GET["idx"];
                             <ul class="flex">
                                 <li class="initials">
                                     <input type="checkbox" class="new_radio" id="presentation_type_yn" <?=$presentation_type_yn == 'Y' ? "checked" : "" ?>>
-                                    <label for="presentation_type_yn"><i></i>I agree to change the presentation type if requested by the Scientific Committee.</label>
+                                    <label for="presentation_type_yn"><i></i>최종 발표 형식은 심사를 통해 결정되며, 개별 공지될 예정임을 확인하였습니다.</label>
                                 </li>
                             </ul>
                         </div>
                     </li>
 					<li>
-                        <p class="label">Topic category <span class="red_txt">*</span></p>
+                        <p class="label">카테고리 <span class="red_txt">*</span></p>
                         <!-- <p class="label"><?= $locale("abstract_item_file") ?> *</p> -->
                         <div>
                             <select name="abstract_category" id="">
-                                <option value="" hidden>choose</option>
+                                <option value="" hidden>카테고리 선택</option>
                                 <?php
 									foreach ($category_list as $list) {
 										$selected = $abstract_category == $list["idx"] ? "selected" : "";
@@ -252,17 +252,17 @@ $abstract_idx = $_GET["idx"];
                         </div>
                     </li>
 					<li>
-                        <p class="label">Abstract Title <span class="red_txt">*</span></p>
+                        <p class="label">초록 제목 <span class="red_txt">*</span></p>
                         <div>
-                            <input type="text" placeholder="Please enter the abstract title" id="abstract_title" name="abstract_title" class="en_num_keyup" maxlength="200" value="<?= $abstract_title ?>">
+                            <input type="text" id="abstract_title" name="abstract_title" class="en_num_keyup" maxlength="200" value="<?= $abstract_title ?>">
                         </div>
                     </li>
                     <li>
-                        <p class="label">Abstract File <span class="red_txt">*</span></p>
+                        <p class="label">초록 업로드 <span class="red_txt">*</span></p>
                         <div>
                             <div class="file_input search_file clearfix">
                                 <input type="file" name="abstract_file" accept=".doc, .docx">
-                                <label class='label_form' data-js-label><?= $file_name != "" ? $file_name : $locale("abstract_item_file_placeholder") ?></label>
+                                <label class='label_form' data-js-label><?= $file_name != "" ? $file_name : "MS word 파일 형식(.docx)으로 업로드해 주십시오 " ?></label>
                                 <span class="btn floatR"><img src="./img/icons/icon_search_yellow.svg"
                                         alt="">Search</span>
                             </div>
@@ -272,9 +272,9 @@ $abstract_idx = $_GET["idx"];
 				<div class="btn_wrap submission_step2">
 					<!-- 활성화 시, gray_btn 제거 & blue_btn 추가 -->
 					<button type="button" class="btn gray_btn"
-                        onclick="window.location.href='./abstract_submission.php?session=Y<?= $abstract_idx ? "&idx=" . $abstract_idx : "" ?>';"><!-- <span>&lt;</span> --><?= $locale("prev_btn") ?></button>
+                        onclick="window.location.href='./abstract_submission.php?session=Y<?= $abstract_idx ? "&idx=" . $abstract_idx : "" ?>';"><!-- <span>&lt;</span> -->이전</button>
 					<button type="button" class="btn submit_button blue_btn on"
-                        data-idx="<?= $abstract_idx ?>"><?= $locale("submit_btn") ?><!-- <span>&gt;</span> --></button>
+                        data-idx="<?= $abstract_idx ?>">제출하기<!-- <span>&gt;</span> --></button>
 				</div>
             </div>
         </div>
@@ -631,7 +631,7 @@ $(document).ready(function() {
 		//console.log("idx : "+idx+" type : "+type);
 
 		if(!$("#presentation_type_yn:checked").length) {
-			alert("Please check your agreement to change the type of presentation.");
+			alert("안내 확인을 클릭해 주세요.");
 			return;
 		}
 			
@@ -798,13 +798,13 @@ function InputCheck(type, idx = '') {
 
     var abstract_category = $("select[name=abstract_category]").val();
     if (abstract_category == "" || abstract_category == null) {
-        alert("check Abstract category");
+        alert("카테고리를 선택해 주세요.");
         return;
     }
 
     var abstract_title = $("input[name=abstract_title]").val();
     if (abstract_title == "" || abstract_title == null) {
-        alert("check Abstract title");
+        alert("제목을 입력해 주세요.");
         return;
     }
 

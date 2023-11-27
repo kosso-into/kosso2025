@@ -32,7 +32,7 @@ if ($registrationNo) {
 
 //경로 주의
 if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
-    echo "<script>location.replace('https:/kosso.org/main/registration.php')</script>";
+    echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
 }
 
 

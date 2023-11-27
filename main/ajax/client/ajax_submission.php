@@ -766,7 +766,7 @@ function affiliationJson($affiliation) {
 }
 
 function createSubmissionCode($type) {
-    $year = date("Y");
+    $year = '2024';
 
     $type_no = $type == "abstract" ? 0 : 1;
     $type_name = $type == "abstract" ? "A" : "L";
@@ -783,11 +783,11 @@ function createSubmissionCode($type) {
 
     $code_number = $count+1;
 
-    while(strlen("".$code_number)< 6){
+    while(strlen("".$code_number)< 4){
         $code_number = "0".$code_number;
     }
     
-    $code = "ICOMES".$year."-".$type_name."-".$code_number;
+    $code = $type_name."-".$code_number;
     return $code;
 }
 ?>
