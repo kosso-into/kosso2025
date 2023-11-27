@@ -101,7 +101,7 @@ $locale = locale($language);
                                 <!-- <a href="/main/abstract_submission_guideline.php">Abstract Submission Guideline</a> -->
                             </li>
                             <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
-                            <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a></li>
+                            <li><a href="/main/abstract_submission.php">초록 접수</a></li>
                             <!-- <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->

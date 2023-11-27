@@ -396,17 +396,17 @@ $(document).ready(function() {
 		var affiliation_cnt = $("form[name="+form_name+"]").find('.affiliation_wrap').find('li').length;
 
         if (instit == '') {
-            alert('Please insert institution');
+            alert('기관을 입력해 주세요.');
         } else if (depart == '') {
-            alert('Please insert department');
+            alert('부서를 입력해 주세요');
         } else if (affiliation_cnt > 9) {
-			alert('Affiliation cannot exceed 10');	
+			alert('소속을 10개 이상 입력하실 수 없습니다.');	
         } else {
 			const value = depart + ', ' + instit;
 			const items = $(this).parent().next('.affiliation_form').find('.affiliation_wrap .affiliation_item');
 			for(var i = 0; i < items.length; i++) {
 				if(items[i].innerHTML == value) {
-					alert("Affiliation cannot be duplicated");
+					alert("중복된 소속을 입력하실 수 없습니다.");
 					return;
 				}
 			}
@@ -414,7 +414,7 @@ $(document).ready(function() {
             html = '';
             html += '<li class="clearfix">';
             html += '<div><p class="affiliation_item">' + value + '</p></div>';
-            html += '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
+            html += '<button type="button" class="btn gray2_btn form_btn affiliation_delete">삭제</button>';
             html += '</li>';
 
             $(this).siblings('.institution').val('');
@@ -505,7 +505,7 @@ $(document).ready(function() {
                 html += '<form name="coauthor_abstract_form' + i + '" class="abstract_form co_abstract" data-num="'+i+'">';
                 html += '<ul class="basic_ul">';
                 html += '<li>';
-                html += '<p class="label author_num">Author #' + (i + 2) + '</p>';
+                html += '<p class="label author_num">저자 정보 #' + (i + 2) + '</p>';
                 html += '<div>';
                 html += '<ul class="author_chk_wrap">';
 				html += '<li>';
@@ -542,20 +542,20 @@ $(document).ready(function() {
                 html += '</div>';
                 html += '</li>';
                 html += '<li>';
-                html += '<p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>';
+                html += '<p class="label">이름 <span class="red_txt">*</span></p>';
                 html += '<div class="name_div clearfix2">';
-                html += '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name' + i + '" value="" onchange="check_value()">';
+                html += '<input maxlength="60" placeholder="이름" class="required2 en_keyup" type="text" name="add_co_first_name' + i + '" value="" onchange="check_value()">';
                 //html += '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name' + i + '" value="" onchange="check_value()">';
                 html += '</div>';
                 html += '</li>';
                 html += '<li>';
                 html +=
-                    '<p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
+                    '<p class="label">소속 <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">1개 이상의 소속 입력을 원하실 경우, 작성하신 후 ＂추가＂버튼을 눌러 입력해 주십시오. </b></span></p>';
                 html += '<div>';
                 html += '<div class="clearfix affiliation_input">';
-                html += '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
-                html += '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">';
-                html += '<button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>';
+                html += '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="기관">';
+                html += '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="부서">';
+                html += '<button type="button" class="btn gray2_btn form_btn affiliation_add">추가</button>';
                 html += '</div>';
                 html += '<div class="clearfix affiliation_form">';
                 html += '<ul class="affiliation_wrap affiliation_wrap_' + i + '">';
@@ -743,7 +743,7 @@ function inputCheck(formData) {
                 inputCheck = false;
                 return false;
             } else if (ok == "first_name") {
-                alert(locale(language.value)("check_first_name"));
+                alert("이름을 확인해 주세요.");
                 $("input[name=" + ok + "]").focus();
                 inputCheck = false;
                 return false;
@@ -819,13 +819,23 @@ function inputCheck(formData) {
         data[ok] = ov;
     });
 
-	if($(".presenting_author:checked").length != 1) {
-		alert("please check only one presenting_author");
+    if($(".presenting_author:checked").length < 1) {
+		alert("presenting_author를 체크해 주세요.");
 		return false;
 	}
 
-	if($(".corresponding_author:checked").length != 1) {
-		alert("please check only one corresponding_author");
+    if($(".corresponding_author:checked").length < 1) {
+		alert("presenting_author를 체크해 주세요.");
+		return false;
+	}
+
+	if($(".presenting_author:checked").length > 1) {
+		alert("presenting_author를 하나만 체크해 주세요.");
+		return false;
+	}
+
+	if($(".corresponding_author:checked").length > 1) {
+		alert("corresponding_author를 하나만 체크해 주세요.");
 		return false;
 	}
 
@@ -928,27 +938,23 @@ function check_value() {
     //     return;
     // }
     if (!affiliation_len) {
-        console.log('7');
         $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
     
     if (!email) {
-        console.log('8');
         $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     } else if(!email_regex.test(email)) {
-        console.log('9');
 		$("#submit_btn").removeClass("blue_btn");
 		$("#submit_btn").addClass("gray_btn");
-		alert("Please check email adress field.");
+		alert("이메일을 확인해 주세요.");
 		return;
 	}
 
     if (!phone) {
-        console.log('10');
         $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
@@ -959,7 +965,7 @@ function check_value() {
                 console.log('11');
 				$("#submit_btn").removeClass("blue_btn");
 			    $("#submit_btn").addClass("gray_btn");
-				alert("Please enter your phone number correctly \nexample) 010-0000-0000");
+				alert("올바른 전화번호 양식을 부탁드립니다. \nexample) 010-0000-0000");
 				return;
 			}
 		} else { // 해외 - 숫자만
@@ -1177,7 +1183,7 @@ $(document).ready(function() {
         if (email.match(regExp) != null) {
             $(this).val(email);
         } else {
-            alert("Invalid email format.");
+            alert("형식에 맞지 않는 메일주소 입니다.");
             $(this).val("").focus();
             return;
         }
@@ -1198,22 +1204,22 @@ $(document).ready(function() {
 	<input type="hidden" name="user_nation_tel" value="<?=$user_nation_tel?>" />
 	<input type="hidden" name="user_phone" value="<?=$user_phone?>" />
 
-    <h1 class="page_title">Online Submission</h1>
+    <h1 class="page_title">초록 접수</h1>
     <div class="inner">
         <div>
             <div class="steps_area">
                 <ul class="clearfix">
                     <li class="on">
                         <p>Step 1</p>
-						<p class="sm_txt">Fill out author’s information</p>
+						<p class="sm_txt">초록 저자 정보 입력.<br>(발표저자/교신저자)</p>
                     </li>
                     <li>
                         <p>Step 2</p>
-                        <p class="sm_txt">Enter the abstract section, including the type of presentation, topic categories, and title.</p>
+                        <p class="sm_txt">초록 파일 업로드<br>*발표 형식/카테고리 선택</p>
                     </li>
                     <li>
                         <p>Step 3</p>
-                        <p class="sm_txt">Complete and confirm submission.</p>
+                        <p class="sm_txt">제출 완료 및 확인</p>
                     </li>
                 </ul>
             </div>
@@ -1222,13 +1228,13 @@ $(document).ready(function() {
                     <div>
                         <div class="section_title_wrap2">
                             <h3 class="title">
-								Author Information
-								<p class="mini_alert essential"><span class="red_txt">*</span> All requested field(<span class="red_txt">*</span>) should be completed.</p>
+								저자 정보
+								<p class="mini_alert essential"> 필수 입력 사항(<span class="red_txt">*</span>)</p>
 							</h3>
                         </div>
                         <ul class="basic_ul">
 							<li>
-                                <p class="label author_num">Author #1</p>
+                                <p class="label author_num">저자 정보 #1</p>
                                 <div>
 									<ul class="author_chk_wrap">
 										<li>
@@ -1268,21 +1274,21 @@ $(document).ready(function() {
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("name") ?> <span class="red_txt">*</span></p>
+                                <p class="label">이름 <span class="red_txt">*</span></p>
                                 <div class="name_div clearfix2">
-                                    <input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="first_name"
+                                    <input maxlength="60" placeholder="이름" class="required2 en_keyup" type="text" name="first_name"
                                         value="<?= $first_name ?>" onchange="check_value()">
                                     <!-- <input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="last_name"
                                         value="<?= $last_name ?>" onchange="check_value()"> -->
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("affiliation") ?> <span class="red_txt">*</span> <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>
+                                <p class="label">소속 <span class="red_txt">*</span> <span class="mb10"><b style="color:#c71b1b;"> 1개 이상의 소속 입력을 원하실 경우, 작성하신 후 ＂추가＂버튼을 눌러 입력해 주십시오. </b></span></p>
                                 <div>
                                     <div class="clearfix affiliation_input">
-                                        <input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">
-                                        <input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">
-                                        <button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>
+                                        <input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="기관">
+                                        <input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="부서">
+                                        <button type="button" class="btn gray2_btn form_btn affiliation_add">추가</button>
                                     </div>
                                     <div class="clearfix affiliation_form">
                                         <ul class="affiliation_wrap affiliation_wrap_01" style="<?= $affiliation != "" ? "display:block" : "" ?>">
@@ -1299,7 +1305,7 @@ $(document).ready(function() {
 													echo    '<div class="clearfix">';
 													echo        '<p class="affiliation_item">' . $affiliation_arr[$j] . '</p>';
 													echo    '</div>';
-													echo    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
+													echo    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">삭제</button>';
 													echo '</li>';
 												}
 											}
@@ -1331,13 +1337,13 @@ $(document).ready(function() {
                 </form>
 			</div>
             <div class="clearfix2 coauthor_wrap">
-                <p><?= $locale("check_co_author2") ?></p>
+                <p>*교신 저자 정보 추가 입력<br>- 채택 공지 등 관련 메일이 발송될 예정입니다.</p>
                 <div>
                     <select class="number_of_author">
                         <?php
                             for ($i = 0; $i <= 12; $i++) {
                                 if ($i == 0) {
-                                    echo "<option value='0' selected>Select</option>";
+                                    echo "<option value='0' selected>추가</option>";
                                 } else {
                                     if (($data_count - 2) == $i) {
                                         echo "<option value=" . $i . " selected>" . $i . "</option>";
@@ -1363,7 +1369,7 @@ $(document).ready(function() {
 							echo     '<input type="hidden" name="add_co_idx' . $i . '" value="'.$coauthor["add_co_idx"].'">';
                             echo        '<ul class="basic_ul">';
 							echo            '<li>';
-                            echo                '<p class="label author_num">' . 'Author #' . ($i + 2) . '</p>';
+                            echo                '<p class="label author_num">' . '저자 정보 #' . ($i + 2) . '</p>';
                             echo                '<div>';
                             echo                    '<ul class="author_chk_wrap">';
                             echo						'<li>';
@@ -1401,19 +1407,19 @@ $(document).ready(function() {
                             echo                '</div>';
                             echo            '</li>';
                             echo            '<li>';
-                            echo                '<p class="label">' . $locale("name") . ' <span class="red_txt">*</span></p>';
+                            echo                '<p class="label">이름 <span class="red_txt">*</span></p>';
                             echo                '<div class="name_div clearfix2">';
-                            echo                    '<input maxlength="60" placeholder="First name" class="required2 en_keyup" type="text" name="add_co_first_name'.$i.'" value="' . $coauthor["add_co_first_name"] . '" onchange="check_value()">';
+                            echo                    '<input maxlength="60" placeholder="이름" class="required2 en_keyup" type="text" name="add_co_first_name'.$i.'" value="' . $coauthor["add_co_first_name"] . '" onchange="check_value()">';
                            // echo                    '<input maxlength="60" placeholder="Last name" class="required2 en_keyup" type="text" name="add_co_last_name'.$i.'" value="' . $coauthor["add_co_last_name"] . '" onchange="check_value()">';
                             echo                '</div>';
                             echo            '</li>';
                             echo            '<li>';
-                            echo                '<p class="label">' . $locale("affiliation") . ' <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">Please click the "Add" button to add one or more affiliations or departments.</b></span></p>';
+                            echo                '<p class="label">소속 <span class="red_txt">*</span>  <span class="mb10"><b style="color:#c71b1b;">1개 이상의 소속 입력을 원하실 경우, 작성하신 후 ＂추가＂버튼을 눌러 입력해 주십시오.</b></span></p>';
                             echo                '<div>';
                             echo                    '<div class="clearfix affiliation_input">';
-                            echo                        '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="Institution">';
-                            echo                        '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="Department">';
-                            echo                        '<button type="button" class="btn gray2_btn form_btn affiliation_add">ADD</button>';
+                            echo                        '<input maxlength="300" type="text" class="institution en_affiliation_keyup" placeholder="기관">';
+                            echo                        '<input maxlength="300" type="text" class="department en_affiliation_keyup" placeholder="부서">';
+                            echo                        '<button type="button" class="btn gray2_btn form_btn affiliation_add">추가</button>';
                             echo                    '</div>';
                             echo                    '<div class="clearfix affiliation_form">';
                             echo                        '<ul class="affiliation_wrap affiliation_wrap_' . $i . '">';
@@ -1429,7 +1435,7 @@ $(document).ready(function() {
                                     echo    '<div class="clearfix">';
                                     echo        '<p class="affiliation_item">' . $coauthor_affiliation_arr[$j] . '</p>';
                                     echo    '</div>';
-                                    echo    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">Delete</button>';
+                                    echo    '<button type="button" class="btn gray2_btn form_btn affiliation_delete">삭제</button>';
                                     echo '</li>';
                                 }
                             }
