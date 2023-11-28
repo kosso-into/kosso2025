@@ -24,34 +24,44 @@
 					</ul>
 				</div>	
 				<ul class="award_list">
-                    <li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">최우수 구연 상</p>
-						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">상금 : 300,000원</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">우수 구연 상</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">상금 : 200,000원</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">최우수 포스터 상</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">상금 : 200,000원</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">우수 포스터 상</p>
-						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">상금 : 100,000원</p>
-					</li>
+                    <div class="award_wrap">
+                        <div class="award_text">구연 부문</div>
+                        <div class="award_inner">
+                        <li>
+                            <!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
+                            <img src="./img/icons/icon_award01.png" alt="">
+                            <p class="award_title">최우수 구연 상</p>
+                            <!-- <p>4 persons</p> -->
+                            <p class="point3_txt">상금 : 300,000원</p>
+                        </li>
+                        <li>
+                            <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+                            <img src="./img/icons/icon_award02.png" alt="">
+                            <p class="award_title">우수 구연 상</p>
+                            <!-- <p>2 persons</p> -->
+                            <p class="point3_txt">상금 : 200,000원</p>
+                        </li>
+                        </div>
+                    </div>
+                    <div class="award_wrap">
+                        <div class="award_text">포스터 부문</div>
+                        <div class="award_inner">
+                        <li>
+                            <!-- <img src="./img/icons/icon_award01.svg" alt="">-->
+                            <img src="./img/icons/icon_award01.png" alt="">
+                            <p class="award_title">최우수 포스터 상</p>
+                            <!-- <p>2 persons</p> -->
+                            <p class="point3_txt">상금 : 200,000원</p>
+                        </li>
+                        <li>
+                            <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+                            <img src="./img/icons/icon_award02.png" alt="">
+                            <p class="award_title">우수 포스터 상</p>
+                            <!-- <p>4 persons</p> -->
+                            <p class="point3_txt">상금 : 100,000원</p>
+                        </li>
+                        </div>
+                    </div>
 				</ul>
 			</div>
             

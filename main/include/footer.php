@@ -32,13 +32,12 @@
             } else {
             ?>
                 <li>
-
-                    <button type="button" class="not_yet">
+                    <button type="button" class="" onclick="goRegistration()">
                         <img src="/main/img/icons/tool_regist.svg" alt="">
                     </button>
                 </li>
                 <li>
-                    <button type="button" class="not_yet">
+                    <button type="button" class="" onclick="goAbstract()">
                         <img src="/main/img/icons/tool_abstract.svg" alt="">
                     </button>
                 </li>
@@ -215,10 +214,17 @@
             $('.term4').show();
         })
 
-        <
-        !--$('.type2').on('click', function(event) {
-            event.preventDefault();
-            alert('Updates are planned.');
-            return false;
-        }) -- >
+        function goRegistration(){
+            window.location.href = "/main/registration.php"
+        }
+
+        function goAbstract(){
+            window.location.href = "/main/abstract_submission.php"
+        }
+        
+        // <!--$('.type2').on('click', function(event) {
+        //     event.preventDefault();
+        //     alert('Updates are planned.');
+        //     return false;
+        // }) -->
 </script>
