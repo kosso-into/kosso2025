@@ -230,12 +230,12 @@
 					-->
 						<tr class="tr_center">
 							<th>ID(Email)</th>
-							<th>Country(Eng)</th>
+							<!-- <th>Country(Eng)</th> -->
 							<th>KSSO 회원 여부</th>
 							<th>성명(국문)</th>
-							<th>Affiliation(Institution)</th>
-							<th>Phone Number</th>
-							<th>Date of Sign-up</th>
+							<th>소속</th>
+							<th>휴대폰 번호</th>
+							<th>회원가입 날짜</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -247,7 +247,7 @@
 					?>
 						<tr class="tr_center">
 							<td><a href="./member_detail.php?idx=<?=$list["idx"]?>"><?=$list["email"]?></a></td>
-							<td><?=$list["nation_en"]?></td>
+							<!-- <td><?=$list["nation_en"]?></td> -->
 							<td><?=$list["ksola_member_status"]?></td>
 							<td><?=$list["last_name_kor"]."".$list["first_name_kor"]?></td> <!-- 국문 -->
 							<td><?=$list["affiliation"]?></td>

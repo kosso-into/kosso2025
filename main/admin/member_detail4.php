@@ -85,9 +85,9 @@
 					<thead>
 						<tr class="tr_center">
 							<th>결제상태</th>
-							<th>Member Type</th>
-							<th>참석유형</th>
-							<th>Registration Fee</th>
+							<th>참석구분</th>
+							<th>참가유형</th>
+							<th>등록요금</th>
 							<th>Online/Offline</th>
 							<th>평점신청여부</th>
 							<th>신청협회</th>
