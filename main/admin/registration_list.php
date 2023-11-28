@@ -50,19 +50,19 @@ $registration_list_query =  "
 										) AS registration_type_text,
 										(
 											CASE rr.attendance_type
-												WHEN '0' THEN 'Committee'
-												WHEN '1' THEN 'Speaker'
-												WHEN '2' THEN 'Chairperson'
-												WHEN '3' THEN 'Panel'
-												WHEN '4' THEN 'Participants'
-												WHEN '5' THEN 'Sponsor'
+												WHEN '0' THEN '임원'
+												WHEN '1' THEN '연자'
+												WHEN '2' THEN '좌장'
+												WHEN '3' THEN '패널'
+												WHEN '4' THEN '일반참석자'
+												WHEN '5' THEN '고객사'
 												ELSE '-'
 											END
 										) AS attendance_type_text,
 										(
 											CASE rr.is_score
-												WHEN '1' THEN 'Applied'
-												WHEN '0' THEN 'Not applied'
+												WHEN '1' THEN '평점 신청'
+												WHEN '0' THEN '평점 미신청'
 												ELSE '-'
 											END
 										) AS is_score_text,

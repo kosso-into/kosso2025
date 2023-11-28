@@ -96,7 +96,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                             <th>Password</th>
                             <td class="input_wrap"><input type="password" name="<?=$member_idx ? "" : "password"?>" id="password" class="width_30 passwords" placeholder="비밀번호"><input type="password"  name="<?=$member_idx ? "" : "re_password"?>" id="re_password" class="width_30 passwords" placeholder="비밀번호 확인"></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none">
                             <th>First Name</th>
                             <td><input type="text" name="first_name" value="<?=$first_name?>"></td>
                             <th>Last Name</th>
@@ -108,7 +108,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                             <th>성</th>
                             <td><input type="text"name="last_name_kor" value="<?=$last_name_kor?>"></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none">
                             <th>Title</th>
                             <td colspan="3">
                                 <ul class="half_ul">
@@ -156,8 +156,8 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                             </td>
                         </tr>
                         <tr>
-                            <th>Mobile Phone Number</th>
-                            <td>
+                            <th style="display:none">Mobile Phone Number</th>
+                            <td style="display:none">
                                 <ul class="half_ul">
                                     <li>
                                         <div class="max_normal">
@@ -170,10 +170,10 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                                 </ul>
                             </td>
                             <th>Telephone Number</th>
-                            <td>
+                            <td colspan="3">
                                 <ul class="half_ul">
                                     <li>
-                                        <input class="tel_number tel_phone" name="nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>" readonly>
+                                        <input class="tel_number tel_phone" name="nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>">
                                     </li>
                                     <li>
                                         <input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60" value="<?= $_arr_tel[1] ?>">
@@ -184,7 +184,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
+                        <tr style="display:none">
                             <th>affiliation</th>
                             <td><input type="text" name="affiliation" value="<?=$affiliation?>"></td>
                             <th>Department</th>
@@ -198,7 +198,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                         </tr>
                         <tr>
                             <th>대한비만학회 회원 여부</th>
-                            <td>
+                            <td colspan="3">
                                 <div id="ksola_member_status" class="<?= $is_hide ?>">
                                     <input <?= (!$ksola_member_status ? "" : "checked") ?> type="radio" class="new_radio" name="user" id="user1" value="1">
                                     <label for="user1"><i></i>회원</label>
@@ -207,8 +207,8 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                                 </div>
                                 <span class="<?= $is_hide == "" ? "hidden" : "" ?>"><?= $ksola_member_type ?></span>
                             </td>
-                            <th>생년월일</th>
-                            <td>
+                            <th style="display:none">생년월일</th>
+                            <td style="display:none">
                                 <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy" id="datepicker" value="<?= $date_of_birth ?>" onkeyup="birthChk(this)">
                             </td>
                         </tr>
@@ -595,10 +595,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                             alert("국문 이름(성)을 입력하지 않으셨습니다.");
                             inputCheck2 = false;
                             return false;
-                        } else if(ok == "phone") {
-                            alert("핸드폰 번호를 입력하지 않으셨습니다.");
-                            inputCheck2 = false;
-                            return false;
+                        
                         } else if(ok == "affiliation") {
                             alert("영문 소속을 입력하지 않으셨습니다.");
                             inputCheck2 = false;

@@ -59,26 +59,26 @@ $registration_detail_query =	"
 											) AS attendance_type_text,
 											(CASE
 											    WHEN rr.ksso_member_status = '2'
-												THEN 'Member'
+												THEN '회원'
 												WHEN rr.ksso_member_status = '1'
-												THEN 'Member'
+												THEN '회원'
 												WHEN rr.ksso_member_status = '0'
-												THEN 'Non-Member'
+												THEN '비회원'
 												ELSE '-'
 											END) AS member_status_text,
 											rr.is_score,
 											(CASE
 												WHEN rr.is_score = 1
-												THEN 'Applied'
+												THEN '평점신청'
 												WHEN rr.is_score = 0
-												THEN 'Not applied'
+												THEN '평점 미신청'
 												ELSE '-'
 											END) AS is_score_text,
 										    (
 											CASE
-												WHEN rr.payment_methods = '0' THEN 'Credit card'
-												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
-												WHEN rr.payment_methods = '2' THEN 'Onsite payment'
+												WHEN rr.payment_methods = '0' THEN '신용카드'
+												WHEN rr.payment_methods = '1' THEN '계좌이체'
+												WHEN rr.payment_methods = '2' THEN '현장 결제'
 												WHEN rr.payment_methods = '3' THEN 'Admin registration'
 											END
 										    ) AS payment_methods,
@@ -437,7 +437,7 @@ if ($attendance_type_no != 0) {
                     <tr>
                         <th>등록 유형</th>
                         <td><?= $registration_type_text ?></td>
-                        <th>Applied Review</th>
+                        <th>평점 신청 유무</th>
                         <td><?= $is_score_text ?></td>
                     </tr>
                     <tr>
