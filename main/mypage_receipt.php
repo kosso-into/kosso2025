@@ -160,6 +160,25 @@ $payment_date = $data["payment_date_text"] ?? "-";
 	}
 	?>
 </div>
+<div class="btn_wrap" style="width:100%; text-align:center;">
+    <button type="button" class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">저장</button>
+    <!-- <a class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">Save</a> -->
+</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script>
+    function CreatePDFfromHTML() {
+        const buttonBox = document.querySelector(".btn_wrap");
+        const button = document.querySelector(".update_btn");
 
+        buttonBox.removeChild(button)
+        let doc = new jsPDF('p', 'pt', 'a4');
+
+        doc.addHTML(document.body, function() {
+            doc.save('receipt.pdf');
+        });
+    }
+</script>
 </html>
