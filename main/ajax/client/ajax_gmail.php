@@ -1292,7 +1292,7 @@ if ($_POST["flag"] == "find_password") {
 
 		$name = $check_user["last_name"] . $check_user["first_name"];
 
-		$subject = "비밀번호 찾기 메일입니다.";
+		$subject = "비밀번호 찾기 메일";
 		$callback_url = D9_DOMAIN . "/password_reset.php?e=" . $email . "&t=" . $random_token;
 
 		$message = createMessage($language, "find_password", $name, $email, "[KSSO 2024]" . $subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
