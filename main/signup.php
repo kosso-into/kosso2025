@@ -1633,24 +1633,24 @@ function name_check(name, mo) {
             name = name.replace("mo_", "");
         }
         if (name === "short_input") {
-            alert("Invalid Others");
+            alert("잘못된 이름입니다.");
         } else {
             if (name == "first_name") {
-                name = "first name";
+                name = "이름입니다.";
             } else if (name == "last_name") {
-                name = "last name";
+                name = "이름입니다.";
             } else if (name == "name_kor") {
-                name = "name (KOR)";
+                name = "이름입니다.";
             } else if (name == "affiliation_kor") {
-                name = "affiliation (KOR)";
+                name = "소속입니다.";
             } else if (name == "licence_number") {
-                name = "licence number";
+                name = "면허번호입니다.";
             } else if (name == "nutritionist_number") {
-                name = "nutritionist number";
+                name = "영양사번호입니다.";
             } else if (name == "specialty_number") {
-                name = "specialty number";
+                name = "전문의번호입니다.";
             }
-            alert("Invalid " + name);
+            alert("잘못된 " + name);
         }
         return false;
     }
@@ -1669,20 +1669,20 @@ function pw_check(i, password, password2) {
     if (i == 1) {
         if (!pw1 || pw1_len <= 0) {
             $("input[name=" + password + "]").focus();
-            alert("Invalid passwrod");
+            alert("잘못된 비밀번호입니다.");
             return false;
         }
     } else {
         if (!pw2 || pw2_len <= 0) {
             $("input[name=" + password2 + "]").focus();
-            alert("Invalid passwrod");
+            alert("잘못된 비밀번호입니다.");
             return false;
         }
     }
     if (pw1_len > 0 && pw2_len > 0) {
         if (pw1 !== pw2) {
             $("input[name=" + password + "]").focus();
-            alert("inconsistency passwrod");
+            alert("비밀번호가 일치하지 않습니다.");
             return false;
         }
     }
@@ -1915,13 +1915,13 @@ $(document).on("click", "#mo_submit", function() {
 
     if (telephone1 != "") {
         if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
-            alert("Invalid telephone");
+            alert("잘못된 휴대폰 번호입니다.");
             return;
         }
     }
     if (telephone2 != "") {
         if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
-            alert("Invalid telephone");
+            alert("잘못된 휴대폰 번호입니다.");
             return;
         }
     }
@@ -2534,12 +2534,12 @@ function mo_kor_api() {
 
     if (!kor_id) {
         //$(".mo_red_api").eq(0).html("format_id");
-        alert("Invalid id");
+        alert("잘못된 id입니다");
         return;
     }
     if (!kor_pw) {
         //$(".mo_red_api").eq(0).html("Invalid_password");
-        alert("Invalid password");
+        alert("잘못된 비밀번호입니다.");
         return;
     }
 
@@ -2667,19 +2667,19 @@ function kor_api() {
     var privacy = $("#privacy").is(":checked");
 
     if (!kor_id) {
-        alert("Invalid id");
+        alert("id를 입력해주세요.");
         //$(".red_api").eq(0).html("format_id");
         return;
     }
     if (!kor_pw) {
-        alert("Invalid password");
+        alert("비밀번호를 입력해주세요.");
         //$(".red_api").eq(0).html("format_password");
         return;
     }
 
     if (privacy == false) {
-        alert("Please agree to the collection of personal information.");
-        $(".red_api").eq(0).html("Please agree to the collection of personal information.");
+        alert("제 3자 개인정보 수집에 동의를 해주세요.");
+        $(".red_api").eq(0).html("제 3자 개인정보 수집에 동의를 해주세요.");
         return;
     }
 
