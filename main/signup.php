@@ -1932,20 +1932,6 @@ $(document).on("click", "#mo_submit", function() {
     }
 
     if (nation_no == 25) {
-
-
-        if (telephone1 != "") {
-        if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
-            alert("잘못된 휴대폰 번호입니다.");
-            return;
-        }
-    }
-    if (telephone2 != "") {
-        if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
-            alert("잘못된 휴대폰 번호입니다.");
-            return;
-        }
-    }
         // kor 필수값 유효성검사
         var first_name_kor = $("input[name=mo_first_name_kor]").val()
         if (first_name_kor == "" || first_name_kor == null) {
@@ -1972,7 +1958,21 @@ $(document).on("click", "#mo_submit", function() {
             alert("부서를 입력해주세요.");
             return;
         }
+
+        
+       
+        if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
+            alert("잘못된 휴대폰 번호입니다.");
+            return;
+        }
+    
+
+        if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
+            alert("잘못된 휴대폰 번호입니다.");
+            return;
+        }
     }
+    
 
     var phone = tel_nation_tel + telephone1 + telephone2;
     //if(nation_no == 25){ // Republic of Korea
@@ -2311,18 +2311,18 @@ $(document).on("click", "#submit", function() {
             return;
         }
 
-        if (telephone1 != "") {
+
         if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
             alert("잘못된 휴대폰 번호입니다.");
             return;
         }
-    }
-    if (telephone2 != "") {
+    
+
         if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
             alert("잘못된 휴대폰번호입니다.");
             return;
         }
-    }
+    
 
     }
 
