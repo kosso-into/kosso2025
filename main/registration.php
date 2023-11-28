@@ -102,6 +102,18 @@ if ($during_yn !== "Y") {
     $member_data = sql_fetch($sql_info);
     $phone = substr($member_data['phone'], 0, 3). '-' .  substr($member_data['phone'], 3, 4). '-' .substr($member_data['phone'], 7);
 
+    $registration_info = "
+                        SELECT
+							*
+						FROM request_registration
+						WHERE request_registration.register = {$member_idx}
+    ";
+    $register_data = sql_fetch($registration_info);
+
+    if(count($register_data) > 0){
+        echo "<script>alert('등록된 회원입니다..'); window.location.replace(PATH+'mypage_registration.php');</script>";
+        exit;
+    }
 ?>
 <style>
 /*2022-04-14 ldh 추가*/
