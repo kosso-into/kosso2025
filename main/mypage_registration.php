@@ -141,7 +141,18 @@ $score_detail = sql_fetch($score_sql);
                     <?php
 
                     foreach ($registration_list as $list) {
-                        $register_no = $list["idx"] ? "KSSO2024-" . $list["idx"] : "-";
+                        //$register_no = $list["idx"] ? "KSSO2024-" . $list["idx"] : "-";
+
+                        if($list["idx"]< 10){
+                            $register_no = !empty($list["idx"]) ? "KSSO2024-000" .$list["idx"] : "-";
+                        }else if($list["idx"] >= 10 && $list["idx"] < 100){
+                            $register_no = !empty($list["idx"]) ? "KSSO2024-00" . $list["idx"] : "-";
+                        }else if($list["idx"] >= 100 &&$list["idx"] < 1000){
+                            $register_no = !empty($list["idx"]) ? "KSSO2024-0" . $list["idx"] : "-";
+                        }else if($list["idx"] >= 1000 ){
+                            $register_no = !empty($list["idx"]) ? "KSSO2024-" . $list["idx"] : "-";
+                        }
+                        
                         $payment_url = "./registration2.php?idx={$list['idx']}";
                         $popup_class = "revise_pop_btn";
                         $price = $list["total_price_kr"] != "" ? "￦ " . number_format($list["total_price_kr"]) : ($list["total_price_us"] != "" ? "$ " . number_format($list["total_price_us"]) : "-");

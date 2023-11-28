@@ -39,9 +39,9 @@ $registration_detail_query =	"
 											f.original_name as file_name, CONCAT(f.path,'/',f.save_name) AS file_path,
 											(
 												CASE rr.registration_type
-													#WHEN '2' THEN '온라인 + 현장'
-													WHEN '1' THEN '온라인'
-													WHEN '0' THEN '현장'
+													#WHEN '2' THEN '위원회'
+													WHEN '1' THEN '연설자'
+													WHEN '0' THEN '일반 참가자'
 													ELSE '-'
 												END
 											) AS registration_type_text,

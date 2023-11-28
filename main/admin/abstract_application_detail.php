@@ -18,9 +18,9 @@
 										n.nation_ko AS nation,
 										(
 											CASE ra.presentation_type
-												WHEN 0 THEN 'Oral Presentation'
-												WHEN 1 THEN 'Poster Exhibition'
-												WHEN 2 THEN 'Guided Poster Presentation'
+												WHEN 0 THEN '구연/포스터'
+												WHEN 1 THEN '구연'
+												WHEN 2 THEN '포스터'
 												ELSE ''
 											END
 										) AS presentation_type_text,
@@ -28,7 +28,7 @@
 									FROM request_abstract ra
 									LEFT JOIN(
 										SELECT
-											m.idx, m.email AS member_email, CONCAT(m.first_name,' ',m.last_name) AS member_name, 
+											m.idx, m.email AS member_email, CONCAT(m.last_name,m.first_name) AS member_name, 
 										    DATE(m.register_date) AS member_register_date, n.nation_ko AS member_nation,
                                             m.affiliation, m.department, m.phone
 										FROM member m
@@ -102,13 +102,13 @@
 						<tr>
 							<th>ID(Email)</th>
 							<td><a href="./member_detail.php?idx=<?=$author_detail["member_idx"]?>"><?=$author_detail["member_email"]?></a></td>
-							<th>Name / Country</th>
+							<th>성함 / 국적</th>
 							<td><?=$author_detail["member_name"]?> / <?=$author_detail["member_nation"]?></td>
 						</tr>
 						<tr>
 							<th>등록일</th>
 							<td><?=$author_detail["member_register_date"]?></td>
-							<th>Submission Code</th>
+							<th>초록 제출 코드</th>
 							<td><?=$author_detail["submission_code"]?></td>
 						</tr>
 					</tbody>
@@ -123,19 +123,19 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>Country</th>
+							<th>국적</th>
 							<td><?=$author_detail["member_nation"]?></td>
-							<th>Name</th>
+							<th>성함</th>
 							<td><?=$author_detail["member_name"]?></td>
 						</tr>
 						<tr>
-							<th>Presenting Author</th>
+							<th>발표 저자</th>
 							<td><?=$author_detail["presenting_author"] ?? "N"?></td>
 							<th>Corresponding Author</th>
 							<td><?=$author_detail["corresponding_author"] ?? "N"?></td>
 						</tr>
 						<tr>
-							<th>Affiliation</th>
+							<th>소속</th>
 							<td>
 							<?=
                                 $author_detail["member_affiliation"]
@@ -153,12 +153,12 @@
 							<td><?=$author_detail["member_email"]?></td>
 						</tr>
 						<tr>
-							<th>Phone Number</th>
+							<th>휴대폰 번호</th>
 							<td colspan="3"><?=$author_detail["member_phone"]?></td>
 						</tr>
 					</tbody>
 				</table>
-				<h2 class="sub_title">co-author 정보</h2>
+				<h2 class="sub_title">공동저자 정보</h2>
 				<?php
 					for($i=0; $i<count($abstract_detail); $i++) {
 				?>
@@ -171,19 +171,19 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>Country</th>
+							<th>국적</th>
 							<td><?=${"co_author_detail".$i}["nation"]?></td>
-							<th>Name</th>
+							<th>성함</th>
 							<td><?=${"co_author_detail".$i}["name"]?></td>
 						</tr>
 						<tr>
-							<th>Presenting Author</th>
+							<th>발표 저자</th>
 							<td><?=${"co_author_detail".$i}["presenting_author"] ?? "N"?></td>
 							<th>Corresponding Author</th>
 							<td><?=${"co_author_detail".$i}["corresponding_author"] ?? "N"?></td>
 						</tr>
 						<tr>
-							<th>Affiliation</th>
+							<th>소속</th>
 							<td>
 							<?php
 								//$co_aff = explode( '★', $abstract_detail[1]["affiliation"] );
@@ -209,13 +209,13 @@
 							<td><?=${"co_author_detail".$i}["email"]?></td>
 						</tr>
 						<tr>
-							<th>Phone Number</th>
+							<th>휴대폰 번호</th>
 							<td colspan="3"><?=${"co_author_detail".$i}["phone"]?></td>
 						</tr>
 					</tbody>
 				</table>
 				<?php }?>
-				<h2 class="sub_title">abstract 정보</h2>
+				<h2 class="sub_title">초록 제출 정보</h2>
 				<table>
 					<colgroup>
 						<col width="10%">
@@ -225,17 +225,17 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>Preferred Presentation Type</th>
+							<th>선호하는 프레젠테이션 유형</th>
 							<td><?=$author_detail["presentation_type_text"]?></td>
-							<th>Agree to change the presentation</th>
+							<th>프레젠테이션 변경에 동의</th>
 							<td><?=$author_detail["presentation_type_yn"] == "Y" ? "Yes" : "No"?></td>
 						</tr>
 						<tr>
 							<!-- <th>Abstract title</th>
 							<td><?=$author_detail["abstract_title"]?></td> -->
-							<th>Abstract category</th>
+							<th>초록 카테고리</th>
 							<td><?=$author_detail["category"]?></td>
-							<th>Abstract file</th>
+							<th>초록 파일</th>
 						<?php
 							$ext = strtolower(end(explode(".",$author_detail["file_name"])));
 							if($ext == "pdf") {
