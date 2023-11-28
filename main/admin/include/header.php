@@ -5,7 +5,7 @@
 		</ul>
 		<!-- 홍유진 수정 작업본 -->
 		<ul class="clearfix menu ">
-			<li><a href="http://access.kosso.org/access"><img src="./img/icon_qr.png" alt=""></a></li>
+			<!-- <li><a href="http://access.kosso.org/access"><img src="./img/icon_qr.png" alt=""></a></li> -->
 			<li>
 				<a href="javascript:;" class="setting_open"><img src="./img/icon_settings.png" alt=""></a>
 				<div class="setting_toggle">

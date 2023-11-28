@@ -93,7 +93,7 @@
                         <tr>
                             <th>지원 자격</th>
                             <td>
-                                <p>1. 제58차 대한비만학회 춘계학술대회 <span style="font-weight:bold;">초록 채택자</span></p>
+                                <p>1. 제59차 대한비만학회 춘계학술대회 <span style="font-weight:bold;">초록 채택자</span></p>
                                 <p>2. 지방 소속 현장 참석자 (서울/인천/경기 외 지역)</p>
                             </td>
                         </tr>

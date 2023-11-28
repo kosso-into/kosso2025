@@ -100,8 +100,8 @@
 	$html .= '<th>No</th>';
 	$html .= '<th>Date of Sign-up</th>';
 	$html .= '<th>ID(Email)</th>';
-	$html .= '<th>국내/국외</th>';
-	$html .= '<th>Country(ENG)</th>';
+	// $html .= '<th>국내/국외</th>';
+	// $html .= '<th>Country(ENG)</th>';
 	$html .= '<th>KSSO 회원 여부</th>';
 	$html .= '<th>성명(국문)</th>';
 	$html .= '<th>소속</th>';
@@ -140,8 +140,8 @@
 		$html .= '<td>'.($mk+1).'</td>';
 		$html .= '<td>'.$ml["regist_date"].'</td>';
 		$html .= '<td><a href="./member_detail.php?idx='.$ml["idx"].'">'.$ml["email"].'</a></td>';
-		$html .= '<td>'.$nation_type.'</td>';
-		$html .= '<td>'.$ml["nation_en"].'</td>';
+		// $html .= '<td>'.$nation_type.'</td>';
+		// $html .= '<td>'.$ml["nation_en"].'</td>';
 		$html .= '<td>'.$ml["ksola_member_status"].'</td>';
 		$html .= '<td>'.$name_kor.'</td>';
 		$html .= '<td>'.$ml["affiliation"].'</td>';
