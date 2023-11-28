@@ -28,9 +28,9 @@ $my_submission_list_query = "
                                         END) AS `type_name`,
                                         (CASE
                                             WHEN ra.is_presentation = '0'
-                                            THEN 'In Process'
+                                            THEN '접수 진행중'
                                             WHEN ra.is_presentation = '1'
-                                            THEN 'Completed'
+                                            THEN '접수 완료'
                                             ELSE '-'
                                         END) AS status,
 										lecture.original_name AS lecture_file_name, CONCAT(lecture.path,'/',lecture.save_name) AS lecture_path,
@@ -161,9 +161,9 @@ foreach ($nation_list as $obj) {
 								<td><?= $submission["status"] ?></td>
 								<td><?= $submission["regist_date"] ?></td>
 								<td data-idx="<?= $submission["idx"] ?>">
-									<button type="button" class="btn review_regi_open">Review</button>
-                  <button type="button" class="btn modify_btn">Modify</button>
-                  <button type="button" class="btn delete_btn">Delete</button>
+									<button type="button" class="btn review_regi_open">확인</button>
+                  <button type="button" class="btn modify_btn">수정</button>
+                  <button type="button" class="btn delete_btn">삭제</button>
 
 								</td>
 							</tr>
@@ -461,23 +461,23 @@ foreach ($nation_list as $obj) {
 	<div class="pop_contents">
 		<button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
 		<input type="hidden" name="registration_idx" value="">
-		<h3 class="pop_title">Review of Submission</h3>
+		<h3 class="pop_title">초록 제출 확인</h3>
 		<!-- Presenting Author -->
 		<div class="pop_title_wrap">
-			<h4 id="author_information">Author Information</h4>
-			<p id="presenting_author_title">Presenting Author</p>
+			<h4 id="author_information">저자 정보</h4>
+			<p id="presenting_author_title">발표 저자</p>
 		</div>
 		<div class="table_wrap x_scroll" id="presenting_author"></div>
 
 		<!-- Corresponding Author -->
 		<div class="pop_title_wrap">
-			<p id="corresponding_author_title">Corresponding Author</p>
+			<p id="corresponding_author_title">교신 저자</p>
 		</div>
 		<div class="table_wrap x_scroll" id="corresponding_author"></div>
 
 		<!-- Abstract Submission Status -->
 		<div class="pop_title_wrap">
-			<p>Abstract Submission Status</p>
+			<p>초록 정보</p>
 		</div>
 		<div class="table_wrap detail_table_common x_scroll mt10">
 			<table class="c_table detail_table fixed_table" style="min-width:400px;">
@@ -489,24 +489,24 @@ foreach ($nation_list as $obj) {
 				</colgroup>
 				<tbody>
 					<tr>
-						<th class="initial">Submission No.</th>
+						<th class="initial">접수 번호</th>
 						<td colspan="3" id="submission_code"></td>
 					</tr>
 					<tr>
-						<th class="initial">Type of Presentation</th>
+						<th class="initial">발표 형식</th>
 						<td colspan="3" id="presentation_type"></td>
 					</tr>
 					<tr>
-						<th class="initial">Topic Category</th>
+						<th class="initial">카테고리</th>
 						<td colspan="3"><span id="abstract_category"></span> <span id="abstract_category_text"><span>
 						</td>
 					</tr>
 					<tr>
-						<th>Abstract Title</th>
+						<th>초록 제목</th>
 						<td colspan="3" id="abstract_title"></td>
 					</tr>
 					<tr>
-						<th>Abstract File</th>
+						<th>초록 파일</th>
 						<td colspan="3">
 							<a href="javascript:;" class="link" id="file" download></a>
 						</td>
@@ -515,7 +515,7 @@ foreach ($nation_list as $obj) {
 			</table>
 		</div>
 		<div class="btn_wrap">
-			<button type="button" class="btn pop_close" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button>
+			<button type="button" class="btn pop_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
 		</div>
 	</div>
 </div>
@@ -775,13 +775,11 @@ foreach ($nation_list as $obj) {
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>Name</th>
-							<td><span id="first_name">${data.first_name}</span> <span id="last_name">${data.last_name}</span></td>
-							<th>Country</th>
-							<td id="nation">${nation_arr[data.nation_no]}</td>
+							<th>성함</th>
+							<td colspan="3"><span id="first_name">${data.first_name}</span> <span id="last_name">${data.last_name}</span></td>
 						</tr>
 						<tr>
-							<th>Affiliation</th>
+							<th>소속</th>
 							<td colspan="3" id="affiliation">${affiliation_arr.join("<br>")}</td>
 						</tr>
 						<tr>
@@ -789,8 +787,8 @@ foreach ($nation_list as $obj) {
 							<td colspan="3"><a href="mailto:${data.email}" class="link" id="email">${data.email}</a></td>
 						</tr>
 						<tr>
-							<th class="initial">Phone Number</th>
-							<td colspan="3"><span id="co_nation_tel">${nation_tel ? '(+'+nation_tel+')' : ''}</span><span id="phone">${phone}</span></td>
+							<th class="initial">휴대폰 번호</th>
+							<td colspan="3"><span id="co_nation_tel">${nation_tel ? '' : ''}</span><span id="phone">${phone}</span></td>
 						</tr>
 					</tbody>
 				</table>`;
