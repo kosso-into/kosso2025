@@ -132,7 +132,7 @@ section.container.login.bg {border: 0px;}
 .dates_area ul {display: flex; flex-wrap: wrap;/* min-height: 228px;*/}
 .dates_area li {width: 25%; background-image: url("../img/dates_area_1.png");background-position: center;background-size: cover; padding:0 20px; position:relative;}
 .dates_area li:nth-of-type(2) {background-image: url("../img/dates_area_2.png")}
-.dates_area li:nth-of-type(3) {background-image: url("../img/dates_area_3.png")}
+.dates_area li:nth-of-type(3) {background-image: url("../img/dates_area_4.png")}
 .dates_area li:nth-of-type(4) {background-image: url("../img/dates_area_4.png")}
 /* .dates_area li:last-child a {text-align:right;} */
 .dates_area li:last-child a h2 {text-align:left; line-height:1.2;}
