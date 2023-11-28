@@ -1913,18 +1913,7 @@ $(document).on("click", "#mo_submit", function() {
     var telephone1 = $("input[name=mo_telephone1]").val();
     var telephone2 = $("input[name=mo_telephone2]").val();
 
-    if (telephone1 != "") {
-        if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
-            alert("잘못된 휴대폰 번호입니다.");
-            return;
-        }
-    }
-    if (telephone2 != "") {
-        if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
-            alert("잘못된 휴대폰 번호입니다.");
-            return;
-        }
-    }
+
 
     var date_of_birth = $("input[name=mo_date_of_birth]").val();
     if (date_of_birth == null || date_of_birth == "") {
@@ -1944,6 +1933,19 @@ $(document).on("click", "#mo_submit", function() {
 
     if (nation_no == 25) {
 
+
+        if (telephone1 != "") {
+        if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
+            alert("잘못된 휴대폰 번호입니다.");
+            return;
+        }
+    }
+    if (telephone2 != "") {
+        if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
+            alert("잘못된 휴대폰 번호입니다.");
+            return;
+        }
+    }
         // kor 필수값 유효성검사
         var first_name_kor = $("input[name=mo_first_name_kor]").val()
         if (first_name_kor == "" || first_name_kor == null) {
@@ -2252,13 +2254,13 @@ $(document).on("click", "#submit", function() {
 
     if (telephone1 != "") {
         if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
-            alert("Invalid telephone");
+            alert("잘못된 휴대폰 번호입니다.");
             return;
         }
     }
     if (telephone2 != "") {
         if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
-            alert("Invalid telephone");
+            alert("잘못된 휴대폰번호입니다.");
             return;
         }
     }
@@ -2308,6 +2310,19 @@ $(document).on("click", "#submit", function() {
             alert("부서를 입력해주세요.");
             return;
         }
+
+        if (telephone1 != "") {
+        if (tel_nation_tel == null || tel_nation_tel == "" || telephone2 == null || telephone2 == "") {
+            alert("잘못된 휴대폰 번호입니다.");
+            return;
+        }
+    }
+    if (telephone2 != "") {
+        if (tel_nation_tel == null || tel_nation_tel == "" || telephone1 == null || telephone1 == "") {
+            alert("잘못된 휴대폰번호입니다.");
+            return;
+        }
+    }
 
     }
 
