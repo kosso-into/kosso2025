@@ -181,7 +181,6 @@ $price = get_data($sql_price);
                     <ul class="indent_ul">
                         <li>• 등록 완료 시, 등록 확인 메일이 발송 됩니다. (메일을 받지 못한 경우, 운영사무국으로 문의 부탁드립니다.)</li>
                         <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
-                        <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
                         <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생 할 경우, 운영사무국으로 문의
                             부탁드립니다.
                         </li>
@@ -262,8 +261,7 @@ $price = get_data($sql_price);
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
                     <ul class="indent_ul">
-                        <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생 할 경우, 운영사무국으로 문의
-                            부탁드립니다.
+                        <li>• 등록비 환불 및 등록 취소는 사전등록 기간 내에만 가능하며, 사전등록 마감일 이후에는 환불이 불가합니다.</li>
                         <li>• 환불 및 등록 취소를 위하여 정해진 환불 신청서 양식을 작성하시어 사무국 이메일(<a href="mailto:ksso@into-on.com"
                                 class="font_inherit link">ksso@into-on.com</a>)으로 제출 부탁드립니다.</li>
                         <li>• 계좌이체 환불 및 취소 : 환불 처리는 사전등록 기간 이후 처리될 예정이니 이점 유의하시기 바랍니다.</li>

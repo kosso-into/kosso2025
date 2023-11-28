@@ -103,18 +103,10 @@
 	$html .= '<th>국내/국외</th>';
 	$html .= '<th>Country(ENG)</th>';
 	$html .= '<th>KSSO 회원 여부</th>';
-	$html .= '<th>Name</th>';
-	$html .= '<th>First Name</th>';
-	$html .= '<th>Last Name</th>';
 	$html .= '<th>성명(국문)</th>';
-	$html .= '<th>Title</th>';
-	$html .= '<th>Affiliation(Institution)</th>';
 	$html .= '<th>소속</th>';
-	$html .= '<th>Affiliation(Department)</th>';
 	$html .= '<th>부서</th>';
-	$html .= '<th>Phone Number</th>';
 	$html .= '<th>Telephone Number</th>';
-	$html .= '<th>Date of Birth</th>';
 	$html .= '</tr>';
 	$html .= '</thead>';
 	$html .= '<tbody>';
@@ -151,18 +143,10 @@
 		$html .= '<td>'.$nation_type.'</td>';
 		$html .= '<td>'.$ml["nation_en"].'</td>';
 		$html .= '<td>'.$ml["ksola_member_status"].'</td>';
-		$html .= '<td>'.$ml["first_name"]." ".$ml["last_name"].'</td>';
-		$html .= '<td>'.$ml["first_name"].'</td>';
-		$html .= '<td>'.$ml["last_name"].'</td>';
 		$html .= '<td>'.$name_kor.'</td>';
-		$html .= '<td>'.$title_option_txt.'</td>';
 		$html .= '<td>'.$ml["affiliation"].'</td>';
-		$html .= '<td>'.$ml["affiliation_kor"].'</td>';
 		$html .= '<td>'.$ml["department"].'</td>';
-		$html .= '<td>'.$ml["department_kor"].'</td>';
-		$html .= '<td>'.$ml["phone"].'</td>';
 		$html .= '<td>'.$ml["telephone"].'</td>';
-		$html .= '<td>'.$ml["date_of_birth"].'</td>';
 		$html .= '</tr>';
 	}
 	$html .= '</tbody>';
@@ -248,9 +232,6 @@
 							<th>ID(Email)</th>
 							<th>Country(Eng)</th>
 							<th>KSSO 회원 여부</th>
-							<th>Name</th>
-							<th>First Name</th>
-							<th>Last Name</th>
 							<th>성명(국문)</th>
 							<th>Affiliation(Institution)</th>
 							<th>Phone Number</th>
@@ -268,12 +249,9 @@
 							<td><a href="./member_detail.php?idx=<?=$list["idx"]?>"><?=$list["email"]?></a></td>
 							<td><?=$list["nation_en"]?></td>
 							<td><?=$list["ksola_member_status"]?></td>
-							<td><?=$list["first_name"]." ".$list["last_name"]?></td>
-							<td><?=$list["first_name"]?></td>
-							<td><?=$list["last_name"]?></td>
 							<td><?=$list["last_name_kor"]."".$list["first_name_kor"]?></td> <!-- 국문 -->
 							<td><?=$list["affiliation"]?></td>
-							<td><?=$list["phone"]?></td>
+							<td><?=$list["telephone"]?></td>
 							<td><?=$list["regist_date"]?></td>
 						</tr>
 					<?php

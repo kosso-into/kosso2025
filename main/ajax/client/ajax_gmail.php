@@ -245,7 +245,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									{$name_kor_cont}
 									{$affiliation_kor_cont}
 									<tr>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>휴대폰 번호</th>
 										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$phone}</td>
 									</tr>
 								</tbody>	

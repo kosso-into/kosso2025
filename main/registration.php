@@ -75,7 +75,7 @@ if ($during_yn !== "Y") {
     if (!empty($_SESSION["USER"])) {
         $user_info = $_SESSION["USER"];
     } else {
-        echo "<script>alert('Need to login'); window.location.replace(PATH+'login.php');</script>";
+        echo "<script>alert('로그인을 해주세요.'); window.location.replace(PATH+'login.php');</script>";
         exit;
     }
 
@@ -223,7 +223,6 @@ if ($during_yn !== "Y") {
                                             break;
                                     }
                                   
- 
 									$selected = $attendance_type === $a_arr ? "selected" : "";
 
 									echo '<option value="'.$index.'" '.$selected.'>'.$a_arr.'</option>';
@@ -430,7 +429,7 @@ if ($during_yn !== "Y") {
                                         if ($prev["welcome_reception_yn"] == "Y") {
                                             array_push($prev_data_arr, 2);
                                         }
-                                        if ($prev["day2_breakfast_yn"] == "Y") {
+                                        if ($prev["day2_luncheon_yn"] == "Y") {
                                             array_push($prev_data_arr, 3);
                                         }
                                         if ($prev["day3_breakfast_yn"] == "Y") {
@@ -625,8 +624,17 @@ if ($during_yn !== "Y") {
                                         <th>이체 정보</th>
                                         <td>
                                             <div class="payment_bank">
-                                                <input name="bank" placeholder="은행명"/>
-                                                <input name="number" class="bank_number" placeholder="계좌번호"/>
+                                                <?php if(isset($prev["etc6"])){
+                                                    $bankNameArray = explode('(', $prev["etc6"]);
+                                                    $bankName = $bankNameArray[0];
+                                                    
+                                                    $bankNumArray = explode(")", $bankNameArray[1]);
+                                                    $bankNum = $bankNumArray[0];
+                                                }
+                                                ?>
+                                                
+                                                <input name="bank" placeholder="은행명" value="<?php echo isset($prev["etc6"]) ? $bankName : ""; ?>" />
+                                                <input name="number" class="bank_number" placeholder="계좌번호" value="<?php echo isset($prev["etc6"]) ? $bankNum : ""; ?>"/>
                                            </div>
                                         </td>
                                     </tr>
@@ -664,7 +672,14 @@ $(document).ready(function() {
     // return;
 
     $('.etc1').hide();
-    $('#bank_detail').hide();
+
+    $(document).ready( function() {
+        if ($('#bank').is(':checked') == true) {
+            $('#bank_detail').show();
+        } else {
+            $('#bank_detail').hide();
+        }
+    });
 
     $(document).on("click", "#license_checkbox", function() {
         //console.log($(this).is(':checked'));

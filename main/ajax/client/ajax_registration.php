@@ -220,6 +220,11 @@ if ($_POST["flag"] == "registration") {
 				$add_set .= ", promotion_code = NULL ";
 				$add_set .= ", recommended_by = NULL ";
 			}
+			if ($bank !== "" && $number !== "") {
+				$add_set .= ", etc6 = '{$transfer_info}'";
+			}else {
+				$add_set .= ", etc6 = NULL ";
+			}
 
 			$add_set .= "
 								, attendance_type = {$attendance_type}
