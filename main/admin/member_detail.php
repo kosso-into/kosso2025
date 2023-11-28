@@ -141,7 +141,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                                 -->
                             </td>
                         </tr>
-                        <tr>
+                        <tr style="display: none;">
                             <th>Country</th>
                             <td colspan="3">
                                 <select name="nation_no">
@@ -169,7 +169,7 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                                     </li>
                                 </ul>
                             </td>
-                            <th>Telephone Number</th>
+                            <th>휴대폰 번호</th>
                             <td colspan="3">
                                 <ul class="half_ul">
                                     <li>

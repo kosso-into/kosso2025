@@ -32,6 +32,7 @@ $registration_detail_query =	"
 											rr.day3_breakfast_yn,
 											rr.day3_luncheon_yn,
 											rr.special_request_food,
+                                            rr.etc6,
 											rr.price,
 											IFNULL(rr.status, '1') AS registration_status,
 											DATE(p.payment_date) AS payment_date, p.total_price_kr, p.total_price_us, p.refund_reason, DATE_FORMAT(p.refund_date, '%Y-%m-%d') AS refund_date, p.refund_bank, p.refund_holder, p.refund_account, p.refund_amount,
@@ -149,6 +150,8 @@ $refund_bank = isset($registration_detail["refund_bank"]) ? $registration_detail
 $refund_holder = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_holder"] : "";
 $refund_account = isset($registration_detail["refund_account"]) ? $registration_detail["refund_account"] : "";
 $refund_amount = $registration_detail["refund_amount"] ?? $payment_price;
+
+$payment_info = isset($registration_detail["etc6"]) ? $registration_detail["etc6"] : "";
 
 
 
@@ -747,6 +750,12 @@ if ($attendance_type_no != 0) {
                             <?php
 							}
 							?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>입금 계좌번호</th>
+                        <td colspan="3">
+                            <input type="text" name="etc6" value='<?php echo $payment_info; ?>'/>
                         </td>
                     </tr>
                 </tbody>
