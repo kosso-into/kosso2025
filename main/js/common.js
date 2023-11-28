@@ -1,5 +1,5 @@
 var device = "";							// Agent Info
-var header_language = "";					// Default:Empty(=en)
+var header_language = "ko";					// Default:Empty(=en)
 var language = new Object();
 language.value = "ko";
 

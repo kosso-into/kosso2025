@@ -34,7 +34,7 @@ $info = sql_fetch($sql_info);
         <div class="section section1">
             <div>
                 <div class="sponsor_grade">
-                    <p class="grade_title pink_bg01">초록접수기간: 2023년 12월 11일(월) ~ 2024년 1월 2일(화)</p>
+                    <p class="grade_title pink_bg01">초록접수기간: 2023년 12월 11일(월) ~ 2024년 1월 9일(화)</p>
                 </div>
 
                 <!-- <a href="./download/ICOMES_2022_Abstract_template.docx" class="btn long_btn" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a></div> -->
@@ -214,6 +214,7 @@ $info = sql_fetch($sql_info);
                             <td>
                                 <p>초록 접수 시, 선호하는 발표 형식 선택(구연 또는 포스터 전시)</p>
                                 <p>* 심사를 통해 최종 발표 형식이 지정 될 예정입니다.</p>
+                                <p>** 구연으로 접수 시, 수상 가능성이 높아집니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -228,7 +229,7 @@ $info = sql_fetch($sql_info);
                             <th>초록 구성</th>
                             <td>
                                 <p>• <span style="font-weight:bold">제목</span>: 30단어 내로 작성</p>
-                                <p>• <span style="font-weight:bold">본문</span>: 30단어 내로 작성</p>
+                                <p>• <span style="font-weight:bold">본문</span>: 300단어 내로 작성</p>
                                 <p>• <span style="font-weight:bold;">필수 요소</span>: Background, methods & materials, results, conclusions</p>
                                 <p>• <span style="font-weight:bold">선택사항</span>: Keywords</p>
 
@@ -239,7 +240,7 @@ $info = sql_fetch($sql_info);
                             <td>
                                 <p>• 1 figure in 1 abstract: 허용</p>
                                 <p>• 1 table in 1 abstract: 허용</p>
-                                <p>• 1 figure & 1 table in 1 abstract: <span style="font-weight:bold">불가</span></p>
+                                <p>• 1 figure & 1 table in 1 abstract: 불가</p>
                                 <p>* 첨부 이미지는 각각 50 단어로 계산합니다.</p>
                             </td>
                         </tr>

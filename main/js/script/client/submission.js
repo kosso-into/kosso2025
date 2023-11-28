@@ -93,7 +93,7 @@ $(document).ready(function(){
 			if($.inArray(ext, ['doc', 'docx']) == -1) {
 			  $(this).val("");
 			  $(".search_file label.label_form").text("Please attach the abstract file");
-			  alert('Please check the file extension');
+			  alert("올바르지 않은 파일 형식입니다.");
 			  return;
 			}
 		}

@@ -170,7 +170,7 @@ $abstract_idx = $_GET["idx"];
 </style>
 <section class="submit_application abstract_submission2 abstract_online_submission container">
     <div class="">
-        <h1 class="page_title">Online Submission</h1>
+        <h1 class="page_title">초록 접수</h1>
         <!-- <ul class="tab_green long">
 				<li><a href="./abstract_submission_guideline.php">Abstract Submission Guideline</a></li>
 				<li class="on"><a href="./abstract_submission.php">Online Submission</a></li>
@@ -696,7 +696,7 @@ $(document).ready(function() {
         //파일 용량 제한
         var file = $(this)[0].files[0];
         if (file.size > (10 * 1024 * 1024)) {
-            alert("You can only save files that are less than 10MB.");
+            alert("10MB 이하의 파일만 업로드 가능합니다..");
             $(this).val('');
             return false;
         }
