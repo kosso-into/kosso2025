@@ -459,7 +459,7 @@ if ($_POST["flag"] == "registration") {
 
 		$check_user = sql_fetch($check_user_query);
 
-		$name = $check_user["last_name"] . " " . $check_user["first_name"];
+		$name = $check_user["last_name"] . $check_user["first_name"];
 
 		// 2023-05-11 mailer 작업때문에 잠시 막아둠
 		//mailer("en", "registration", $name , $email, "[ICOMES] Registration Invitation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", "", $data, $registration_idx);
