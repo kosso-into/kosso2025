@@ -37,7 +37,7 @@ if ($e_date != "") {
 
 $registration_list_query =  "
 									SELECT
-										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.last_name,rr.first_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2,
+										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.last_name,rr.first_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, rr.
 										rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
 										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
@@ -50,19 +50,19 @@ $registration_list_query =  "
 										) AS registration_type_text,
 										(
 											CASE rr.attendance_type
-												WHEN '0' THEN 'Committee'
-												WHEN '1' THEN 'Speaker'
-												WHEN '2' THEN 'Chairperson'
-												WHEN '3' THEN 'Panel'
-												WHEN '4' THEN 'Participants'
-												WHEN '5' THEN 'Sponsor'
+												WHEN '0' THEN '임원'
+												WHEN '1' THEN '연자'
+												WHEN '2' THEN '좌장'
+												WHEN '3' THEN '패널'
+												WHEN '4' THEN '일반참석자'
+												WHEN '5' THEN '고객사'
 												ELSE '-'
 											END
 										) AS attendance_type_text,
 										(
 											CASE rr.is_score
-												WHEN '1' THEN 'Applied'
-												WHEN '0' THEN 'Not applied'
+												WHEN '1' THEN '평점 신청'
+												WHEN '0' THEN '평점 미신청'
 												ELSE '-'
 											END
 										) AS is_score_text,

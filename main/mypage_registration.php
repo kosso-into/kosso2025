@@ -74,50 +74,6 @@ $score_sql = "SELECT
 
 $score_detail = sql_fetch($score_sql);
 
-// 2024 member type 추가
-// Type of member 
-$member_type = $list["member_type"] ?? "-";
-switch ($member_type) {
-    case "Professor":
-        $member_type = "교수";
-        break;
-    case "Certified M.D.":
-        $member_type = "개원의";
-        break;
-    case "Public Health Doctor":
-        $member_type = "봉직의";
-        break;
-    case "Corporate Member":
-        $member_type = "교직의";
-        break;
-    case "Fellow":
-        $member_type = "전임의";
-        break;
-    case "Resident":
-        $member_type = "전공의";
-        break;
-    case "Nutritionist":
-        $member_type = "영양사";
-        break;
-    case "Exercise Specialist":
-        $member_type = "운동사";
-        break;
-    case "Nurse":
-        $member_type = "간호사";
-        break;
-    case "Researcher":
-        $member_type = "연구원";
-        break;
-    case "Student":
-        $member_type = "학생";
-        break;
-    case "Press":
-        $member_type = "기자";
-        break;   
-    case "Others":
-        $member_type = "기타";
-        break;   
-}
 
 ?>
 <style>
@@ -189,6 +145,50 @@ switch ($member_type) {
                         $payment_url = "./registration2.php?idx={$list['idx']}";
                         $popup_class = "revise_pop_btn";
                         $price = $list["total_price_kr"] != "" ? "￦ " . number_format($list["total_price_kr"]) : ($list["total_price_us"] != "" ? "$ " . number_format($list["total_price_us"]) : "-");
+                        // 2024 member type 추가
+                        // Type of member 
+                        $member_type = $list["member_type"] ?? "-";
+                        switch ($member_type) {
+                            case "Professor":
+                                $member_type = "교수";
+                                break;
+                            case "Certified M.D.":
+                                $member_type = "개원의";
+                                break;
+                            case "Public Health Doctor":
+                                $member_type = "봉직의";
+                                break;
+                            case "Corporate Member":
+                                $member_type = "교직의";
+                                break;
+                            case "Fellow":
+                                $member_type = "전임의";
+                                break;
+                            case "Resident":
+                                $member_type = "전공의";
+                                break;
+                            case "Nutritionist":
+                                $member_type = "영양사";
+                                break;
+                            case "Exercise Specialist":
+                                $member_type = "운동사";
+                                break;
+                            case "Nurse":
+                                $member_type = "간호사";
+                                break;
+                            case "Researcher":
+                                $member_type = "연구원";
+                                break;
+                            case "Student":
+                                $member_type = "학생";
+                                break;
+                            case "Press":
+                                $member_type = "기자";
+                                break;   
+                            case "Others":
+                                $member_type = "기타";
+                                break;   
+                        }
 
                         // if($list["status"] != ""){
                         // }else{
