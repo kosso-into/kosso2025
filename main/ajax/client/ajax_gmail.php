@@ -1244,10 +1244,10 @@ if ($_POST["flag"] == "signup") {
 
 		$user_data = sql_fetch($select_user_query);
 
-		$subject = "[KSSO 2024] 제 58 차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
+		//$subject = "[KSSO] 제 58 차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
 		$callback_url = D9_DOMAIN . "/signup_certified.php?idx=" . $user_data["idx"];
 
-		$message = createMessage("en", "sign_up", "", $email, $subject, date("Y-m-d H:i:s"), "", $callback_url, 1);
+		$message = createMessage("en", "sign_up", "", $email, "[KSSO]회원가입 안내 메일", date("Y-m-d H:i:s"), "", $callback_url, 1);
 		//var_dump($message); exit;
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
@@ -1292,10 +1292,10 @@ if ($_POST["flag"] == "find_password") {
 
 		$name = $check_user["last_name"] . $check_user["first_name"];
 
-		$subject = "비밀번호 찾기 메일";
+		//$subject = "비밀번호 찾기 메일";
 		$callback_url = D9_DOMAIN . "/password_reset.php?e=" . $email . "&t=" . $random_token;
 
-		$message = createMessage($language, "find_password", $name, $email, "[KSSO 2024]" . $subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
+		$message = createMessage($language, "find_password", $name, $email, "[KSSO] 비밀번호 찾기 메일", date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
 
@@ -1427,7 +1427,7 @@ if ($_POST["flag"] == "find_password") {
 	 */
 	//$subject = "초록 접수 메일 안내";
 
-	$message = createMessage($language, "abstract", "", $email, "[KSSO 2024]초록 접수 메일 안내", date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
+	$message = createMessage($language, "abstract", "", $email, "[KSSO]초록 접수 메일 안내", date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 }
