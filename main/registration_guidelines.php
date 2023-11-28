@@ -44,7 +44,7 @@ $price = get_data($sql_price);
                     </colgroup>
                     <tr>
                         <th>등록 접수<br class="br_mb_only">시작일</th>
-                        <td class="f_bold">12월 초</td>
+                        <td class="f_bold">12월 11일</td>
                     </tr>
                     <!-- <tr>
                         <th class="close_th">Early-bird Registration<br class="br_mb_only"> Deadline</th>
@@ -52,7 +52,7 @@ $price = get_data($sql_price);
                     </tr> -->
                     <tr>
                         <th>사전 등록 접수<br class="br_mb_only">마감일</th>
-                        <td class="f_bold">2월 24일(금)까지</td>
+                        <td class="f_bold">1월 11일(목)까지</td>
                     </tr>
                 </table>
             </div>
@@ -153,9 +153,9 @@ $price = get_data($sql_price);
                             </tr>
                             <tr class="text_center">
                                 <td>
-                                    전임의, 수련의, 전공의, <br>
-                                    영양사, 운동사, 간호사, <br>
-                                    군의관, 공보의, 연구원, 기타<br>
+                                    전임의, 전공의, 영양사,<br>
+                                    운동사, 간호사, 군의관,<br>
+                                    공보의, 연구원, 기타<br>
 
                                     <!--  Military
                                     Pharmacist,
@@ -276,11 +276,11 @@ $price = get_data($sql_price);
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th>사전등록 기간 (2023년 2월 24일(금) 까지)</th>
+                                <th>사전등록 기간 (2023년 1월 11일(목) 까지)</th>
                                 <td>전액 환불</td>
                             </tr>
                             <tr>
-                                <th>사전등록 이후 (2023년 2월 25일(토) 부터)</th>
+                                <th>사전등록 이후 (2023년 1월 12일(금) 부터)</th>
                                 <td>환불 불가</td>
                             </tr>
                         </tbody>
