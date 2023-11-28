@@ -78,7 +78,7 @@ var ko = {
 	check_abstract_file : "논문 파일을 첨부해주세요.",
 	check_oral_presentation : "연설여부를 선택해주세요.",
 	check_abstract_thumnail : "논문 썸네일을 선택해주세요.",
-	abstract_submit_ok : "논문 제출이 완료되었습니다.",
+	abstract_submit_ok : "초록 접수가 완료되었습니다.",
 	abstract_submit_error : "논문 제출에 실패하였습니다.",
 	under_25 : "논문 제목은 25자 이하로 작성해주세요.",
 	under_300 : "논문 설명은 300자 이하로 작성해주세요.",
