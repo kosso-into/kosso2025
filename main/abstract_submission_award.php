@@ -58,14 +58,14 @@
             
             <div>
 				<div class="section_title_wrap2">
-					<h3 class="title">Travel Grants</h3>
+					<h3 class="title">지방 참석자 여비 보조금 지원</h3>
 				</div>
 			
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
                 
 				<div class="section_title_wrap2">
-					<h4 class="title">지방 참석자 여비 보조금 지원<span>대한비만학회는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
+					<h4 class="title"><span>대한비만학회는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
 				</div>
 
                 <div class="table_wrap detail_table_common x_scroll">
