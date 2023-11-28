@@ -143,7 +143,7 @@
                         <li>F. 82-2-364-0883</li>
                         <li>E. <a href="mailto:webmaster@kosso.or.kr" class="font_inherit link">webmaster@kosso.or.kr</a></li>
 
-                        <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">www.kosso.or.kr</a>
+                        <li>W. <a href="https://www.kosso.or.kr" class="font_inherit link" target="_blank">www.kosso.or.kr</a>
 
                         </li>
                     </ul>
@@ -162,7 +162,7 @@
                 <div class="footer_r">
                     <!-- <p>Conference Secretariat</p> -->
 
-                    <p>제59차 대한비만학회 춘계학술대회 운영 사무국</p>
+                    <p>제 59차 대한비만학회 춘계학술대회 운영사무국</p>
                     <ul>
                         <li>[04315] 서울특별시 용산구 백범로 341, 금호리첸시아 A블럭 3층 308호</li>
                         <li>T. 82-2-2285-2582</li>
