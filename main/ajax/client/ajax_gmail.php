@@ -1023,7 +1023,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$rawMessageString .= '<div><table width="750" style="border:1px solid #000;padding: 0;">
 								<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail_header.png" width="750" style="width:100%; max-width:100%;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td>
-								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[KSSO 2023] 초록 제출이 완료되었습니다.</div></td><td width="74" style="width:74px;"></td></tr>
+								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[KSSO 2024] 초록 제출이 완료되었습니다.</div></td><td width="74" style="width:74px;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear ' . $first_name . ' ' . $last_name . ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">대한비만학회 춘계학술대회에 초록 제출 감사합니다.<br>귀하의 초록은 다음과 같이 성공적으로 제출되었습니다.</p>
 								<!-- Abstract Submission Status -->
 								<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 제출 상태</p>

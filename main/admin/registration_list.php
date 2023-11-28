@@ -41,9 +41,9 @@ $registration_list_query =  "
 										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
 											CASE rr.registration_type
-												#WHEN '2' THEN 'Online + Offline'
-												WHEN '1' THEN 'Online'
-												WHEN '0' THEN 'On-site'
+												#WHEN '2' THEN '위원회'
+												WHEN '1' THEN '연설자'
+												WHEN '0' THEN '일반 참가자'
 												ELSE '-'
 											END
 										) AS registration_type_text,
@@ -199,7 +199,17 @@ $html .= '<tbody>';
 
 foreach ($registration_list as $rk => $rl) {
 	$member_status = ($rl["member_status"] == 0) ? "N" : "Y";
-	$register_no = !empty($rl["registration_idx"]) ? "KSSO2024-" . $rl["registration_idx"] : "-";
+	
+	if($rl["registration_idx"]< 10){
+		$register_no = !empty($rl["registration_idx"]) ? "KSSO2024-000" . $rl["registration_idx"] : "-";
+	}else if($rl["registration_idx"] >= 10 && $rl["registration_idx"] < 100){
+		$register_no = !empty($rl["registration_idx"]) ? "KSSO2024-00" . $rl["registration_idx"] : "-";
+	}else if($rl["registration_idx"] >= 100 && $rl["registration_idx"] < 1000){
+		$register_no = !empty($rl["registration_idx"]) ? "KSSO2024-0" . $rl["registration_idx"] : "-";
+	}else if($rl["registration_idx"] >= 1000 ){
+		$register_no = !empty($rl["registration_idx"]) ? "KSSO2024-" . $rl["registration_idx"] : "-";
+	}
+	
 	$nation_type = ($rl["nation_no"] == 25) ? "국내" : "국외";
 
 	if (empty($rl["banquet_yn"])) {
