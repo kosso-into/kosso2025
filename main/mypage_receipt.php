@@ -42,7 +42,19 @@ if (!$data) {
 }
 
 // 변수 설정	
-$register_no = !empty($registration_idx) ? "KSSO2024-" . $registration_idx : "-";
+//$register_no = !empty($registration_idx) ? "KSSO2024-" . $registration_idx : "-";
+
+
+if($registration_idx < 10){
+	$register_no = !empty($registration_idx) ? "KSSO2024-000" .$registration_idx : "-";
+}else if($registration_idx >= 10 && $registration_idx < 100){
+	$register_no = !empty($registration_idx) ? "KSSO2024-00" . $registration_idx : "-";
+}else if($registration_idx >= 100 && $registration_idx < 1000){
+	$register_no = !empty($registration_idx) ? "KSSO2024-0" . $registration_idx : "-";
+}else if($registration_idx >= 1000 ){
+	$register_no = !empty($registration_idx) ? "KSSO2024-" . $registration_idx : "-";
+}
+
 $name = $data["last_name"] . $data["first_name"] ?? "-";
 $nation = $data["nation_en"] ?? "-";
 $total_price = ($data["nation_no"] == 25) ? "KRW " . $data["total_price_kr_text"] : "USD " . $data["total_price_us_text"];

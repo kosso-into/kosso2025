@@ -43,23 +43,23 @@
                                     c.title_en AS category,
                                     (
                                         CASE ra.presentation_type
-                                            WHEN 0 THEN 'Oral Presentation'
-                                            WHEN 1 THEN 'Poster Exhibition'
-                                            WHEN 2 THEN 'Guided Poster Presentation'
-                                            WHEN 3 THEN 'Any of Them'
+                                            WHEN 0 THEN '구연/포스터'
+                                            WHEN 1 THEN '구연'
+                                            WHEN 2 THEN '포스터'
+                                            WHEN 3 THEN '기타'
                                             ELSE ''
                                             END
                                         ) AS presentation_type_text,
                                     (SELECT IF(presenting_author='N' AND corresponding_author='N','Co_author',
                                     IF(presenting_author='Y','Presenting Author', IF(corresponding_author='Y' ,'Corresponding Author', NULL)))) AS author_type,
-                                    CONCAT(ra.first_name,' ',ra.last_name) AS ra_name, n.nation_en AS ra_country,
+                                    CONCAT(ra.last_name,ra.first_name) AS ra_name, n.nation_en AS ra_country,
                                     ra.affiliation AS 'ra_affiliation', ra.email AS ra_email, ra.phone AS ra_phone,
                                     ra.presenting_author, ra.corresponding_author,
                                     IFNULL(ra.parent_author, ra.idx) AS parent_author
                                 FROM request_abstract ra
                                          LEFT JOIN (
                                     SELECT
-                                        m.idx, m.email, CONCAT(m.first_name,' ',m.last_name) AS name, 
+                                        m.idx, m.email, CONCAT(m.last_name,m.first_name) AS name, 
                                         n.nation_ko AS nation_ko, n.nation_en AS nation_en, affiliation, department, is_deleted
                                     FROM member m
                                              JOIN nation n
@@ -126,30 +126,30 @@
 	$html .= '<thead>';
 	$html .= '<tr class="tr_center">';
 	$html .= '<th>NO</th>';
-	$html .= '<th>Date of Submission</th>';
-	$html .= '<th>Submission No.</th>';
+	$html .= '<th>초록 접수 날짜</th>';
+	$html .= '<th>초록 접수 번호</th>';
 	$html .= '<th>ID(Email)</th>';
-	$html .= '<th>Country</th>';
-	$html .= '<th>Name</th>';
-    $html .= '<th>Affiliation (Institution)</th>';
-    $html .= '<th>Affiliation (Department)</th>';
-	$html .= '<th>Preferred Presentation Type</th>';
-	$html .= '<th>Topic Category</th>';
-	$html .= '<th>Title</th>';
-	$html .= '<th>File</th>';
-	$html .= '<th>Presenting Author Name</th>';
-	$html .= '<th>Presenting Author Affiliation</th>';
-	$html .= '<th>Presenting Author E-mail</th>';
-	$html .= '<th>Corresponding Author Name</th>';
+	// $html .= '<th>Country</th>';
+	$html .= '<th>성함</th>';
+    $html .= '<th>소속</th>';
+    $html .= '<th>부서</th>';
+	$html .= '<th>선호하는 프레젠테이션 유형</th>';
+	$html .= '<th>주제 카테고리</th>';
+	$html .= '<th>제목</th>';
+	$html .= '<th>파일</th>';
+	$html .= '<th>발표 저자 성함</th>';
+	$html .= '<th>발표 저자 소속</th>';
+	$html .= '<th>발표저자 E-mail</th>';
+	$html .= '<th>Corresponding Author 성함</th>';
 	$html .= '<th>Corresponding Author E-mail</th>';
     for($i=1;$i<=$request_abstract_count;$i++){
-        $html .= '<th>Author No</th>';
-        $html .= '<th>Author Type</th>';
-        $html .= '<th>Name</th>';
-        $html .= '<th>Country</th>';
-        $html .= '<th>Affiliation (Department of Institution)</th>';
+        $html .= '<th>저자 No</th>';
+        $html .= '<th>저자 유형</th>';
+        $html .= '<th>성함</th>';
+        // $html .= '<th>Country</th>';
+        $html .= '<th>소속/부서</th>';
         $html .= '<th>E-mail</th>';
-        $html .= '<th>Phone Number</th>';
+        $html .= '<th>휴대폰 번호</th>';
     }
 	$html .= '</tr>';
 	$html .= '</thead>';
@@ -216,7 +216,7 @@
 		$html .= '<td>'.$al["register_date"].'</td>';
 		$html .= '<td>'.$al["submission_code"].'</td>';
 		$html .= '<td>'.$al["email"].'</td>';
-		$html .= '<td>'.$al["nation_en"].'</td>';
+		// $html .= '<td>'.$al["nation_en"].'</td>';
 		$html .= '<td>'.$al["name"].'</td>';
 		$html .= '<td>'.$al["affiliation"].'</td>';
 		$html .= '<td>'.$al["department"].'</td>';
@@ -234,7 +234,7 @@
         $html .= '<td>'.'1'.'</td>';
         $html .= '<td>'.$al["author_type"].'</td>';
         $html .= '<td>'.$al["ra_name"].'</td>';
-        $html .= '<td>'.$al["ra_country"].'</td>';
+        // $html .= '<td>'.$al["ra_country"].'</td>';
         $html .= '<td>'.str_replace('★','<br>',$al["ra_affiliation"]).'</td>';
         $html .= '<td>'.$al["ra_email"].'</td>';
         $html .= '<td>'.$al["ra_phone"].'</td>';
@@ -246,7 +246,7 @@
                 $html .= '<td>'.$ra_author_No.'</td>';
                 $html .= '<td>'.$ral["author_type"].'</td>';
                 $html .= '<td>'.$ral["ra_name"].'</td>';
-                $html .= '<td>'.$ral["ra_country"].'</td>';
+                // $html .= '<td>'.$ral["ra_country"].'</td>';
                 $html .= '<td>'.str_replace('★','<br>',$ral["ra_affiliation"]).'</td>';
                 $html .= '<td>'.$ral["ra_email"].'</td>';
                 $html .= '<td>'.$ral["ra_phone"].'</td>';
@@ -284,13 +284,13 @@
 								<td>
 									<input type="text" name="id" value="<?= $id; ?>">
 								</td>
-								<th>Name</th>
+								<th>성함</th>
 								<td class="select_wrap clearfix2">
 									<input type="text" name="name" data-type="string" value="<?= $name; ?>">
 								</td>
 							</tr>
 							<tr>
-								<th>Title</th>
+								<th>제목</th>
 								<td>
 									<input type="text" name="title" data-type="string" value="<?= $title; ?>">
 								</td>
@@ -314,7 +314,7 @@
 							<th>Title</th>
 							<th>파일명</th>
 							<th>카테고리</th>
-							<th>Preferred Presentation Type</th>
+							<th>선호하는 프레젠테이션 유형</th>
 							<!-- <th>oral</th>
 							<th>좋아요수 / 댓글수</th> -->
 							<th>등록일</th>
@@ -345,7 +345,7 @@
 							<!-- <td><?=$list["oral_presentation"] == 0 ? "No" : "Yes"?></td>
 							<td>13 / 32</td> -->
 							<td><?=$list["register_date"]?></td>
-							<td><a href="javascript:;" onclick="delete_submission('<?=$list["abstract_idx"]?>')">삭제</a></td>
+							<td><a href="javascript:;" onclick="delete_submission('<?php echo $list["abstract_idx"]; ?>')">삭제</a></td>
 						</tr>
 					<?php
 							}
