@@ -28,6 +28,24 @@ if ($registrationNo) {
         //$calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category, $nation_no) : 0;
         $prev["calc_fee"] = $calc_fee;
     }
+}else{
+
+    /**이미 등록한 회원 마이페이지로 이동하기
+     * idx를 가지고 오면 수정하기 가능
+     */
+    $member_idx = $_SESSION["USER"]['idx'];
+    $registration_info = "
+                        SELECT
+							*
+						FROM request_registration
+						WHERE request_registration.register = {$member_idx}
+    ";
+    $register_data = sql_fetch($registration_info);
+
+    if(count($register_data) > 0){
+        echo "<script>alert('등록된 회원입니다.'); window.location.replace(PATH+'mypage_registration.php');</script>";
+        exit;
+    }
 }
 
 //경로 주의
@@ -102,18 +120,6 @@ if ($during_yn !== "Y") {
     $member_data = sql_fetch($sql_info);
     $phone = substr($member_data['phone'], 0, 3). '-' .  substr($member_data['phone'], 3, 4). '-' .substr($member_data['phone'], 7);
 
-    $registration_info = "
-                        SELECT
-							*
-						FROM request_registration
-						WHERE request_registration.register = {$member_idx}
-    ";
-    $register_data = sql_fetch($registration_info);
-
-    if(count($register_data) > 0){
-        echo "<script>alert('등록된 회원입니다..'); window.location.replace(PATH+'mypage_registration.php');</script>";
-        exit;
-    }
 ?>
 <style>
 /*2022-04-14 ldh 추가*/

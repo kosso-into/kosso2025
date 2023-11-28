@@ -321,8 +321,9 @@ $score_detail = sql_fetch($score_sql);
                                 <td>결제 필요</td>
                                 <td>
                                     <?php if ($list["payment_methods"] == 1) { ?>
-                                        <!-- <a href="./online_registration.php" target="_blank" class="btn">수정하기</a> -->
-
+                                        <a href="./registration.php?idx=<?php echo $list["idx"]
+                                                                        ?>
+                                        " target="_blank" class="btn">수정하기</a>
                                     <?php } else { ?>
                                         <a href="./registration.php?idx=<?php echo $list["idx"]
                                                                         ?>
