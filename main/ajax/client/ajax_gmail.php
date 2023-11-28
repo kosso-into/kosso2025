@@ -227,7 +227,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				</tr>
 				<tr>
 					<td colspan='3'>
-						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 제 58차 대한비만학회 춘계학술대회</div>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 제 59차 대한비만학회 춘계학술대회</div>
 					</td>
 				</tr>
 				<tr>
@@ -250,7 +250,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									</tr>
 								</tbody>	
 							</table>
-							<p>제 58차 대한비만학회 춘계학술대회에 대한 관심에 감사드립니다.</p>
+							<p>제 59차 대한비만학회 춘계학술대회에 대한 관심에 감사드립니다.</p>
 						</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
@@ -396,7 +396,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 								<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>성명 : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>임시 비밀번호 요청 시간 : {$time}</span></p>
 							</div>
 							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
-							<p style='font-size:14px;color:#170F00;margin-top:14px;'>아래의 ID 및 임시 비밀번호를 사용하여 제 58차 대한비만학회 춘계학술대회 홈페이지에 로그인하고 '마이 페이지'에서 개인 정보를 수정하실 수 있습니다.</p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'>아래의 ID 및 임시 비밀번호를 사용하여 제 59차 대한비만학회 춘계학술대회 홈페이지에 로그인하고 '마이 페이지'에서 개인 정보를 수정하실 수 있습니다.</p>
 							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 								<tbody>
 									<tr>
@@ -710,7 +710,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 						<td>
 							<div>
 								<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
-								<p style='font-size:14px;color:#170F00;margin-top:14px;'>제 58차 대한비만학회 춘계학술대회에 등록해주셔서 감사합니다. 등록 세부 정보는 아래에 기재되어 있습니다. 문의사항이 있으시면 사무국(<a >ksso@into-on.com</a>)으로 연락해 주시기 바랍니다.</p>
+								<p style='font-size:14px;color:#170F00;margin-top:14px;'>제 59차 대한비만학회 춘계학술대회에 등록해주셔서 감사합니다. 등록 세부 정보는 아래에 기재되어 있습니다. 문의사항이 있으시면 사무국(<a >ksso@into-on.com</a>)으로 연락해 주시기 바랍니다.</p>
 								<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 									<tbody>
 										<tr style='border-bottom:1px solid #000;'>
@@ -1256,7 +1256,7 @@ if ($_POST["flag"] == "signup") {
 
 		$user_data = sql_fetch($select_user_query);
 
-		//$subject = "[KSSO] 제 58 차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
+		//$subject = "[KSSO] 제 59차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
 		$callback_url = D9_DOMAIN . "/signup_certified.php?idx=" . $user_data["idx"];
 
 		$message = createMessage("en", "sign_up", "", $email, "[KSSO]회원가입 안내 메일", date("Y-m-d H:i:s"), "", $callback_url, 1);

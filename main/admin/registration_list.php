@@ -154,7 +154,7 @@ $html = '<table id="datatable" class="list_table">';
 $html .= '<thead>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">등록 접수</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="10">참가자 정보</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">참가자 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">평점신청(Korean Only)</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
@@ -164,8 +164,8 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록 번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록일</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">ID(E-mail)</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">국내/국외</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">국적</th>';
+// $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">국내/국외</th>';
+// $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">국적</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">KSSO 회원 여부</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">성함</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">소속</th>';
@@ -209,7 +209,7 @@ foreach ($registration_list as $rk => $rl) {
 	}else if($rl["registration_idx"] >= 1000 ){
 		$register_no = !empty($rl["registration_idx"]) ? "KSSO2024-" . $rl["registration_idx"] : "-";
 	}
-	
+
 	$nation_type = ($rl["nation_no"] == 25) ? "국내" : "국외";
 
 	if (empty($rl["banquet_yn"])) {
@@ -360,8 +360,8 @@ $is_exercise = ($member_type == "Exercise Specialist") ? 'Y' : 'N';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $register_no . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["register_date"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["email"] . '</td>';
-	$html .= '<td style="border-style: solid; border-width:thin;">' . $nation_type . '</td>';
-	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["nation_en"] . '</td>';
+	// $html .= '<td style="border-style: solid; border-width:thin;">' . $nation_type . '</td>';
+	// $html .= '<td style="border-style: solid; border-width:thin;">' . $rl["nation_en"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["ksola_member_status"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["name"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["affiliation"] . '</td>';
@@ -403,8 +403,8 @@ $count = count($registration_list);
     <div class="container">
         <div class="title clearfix">
             <h1 class="font_title">Registration</h1>
-            <button type="button" class="btn floatR"
-                onclick="javascript:window.open('./member_list.php?for=offline');">네임택 보기</button>
+            <!-- <button type="button" class="btn floatR"
+                onclick="javascript:window.open('./member_list.php?for=offline');">네임택 보기</button> -->
             <button type="button" class="btn excel_download_btn"
                 onclick="javascript:fnExcelReport('Registration', html);">엑셀 다운로드</button>
         </div>
@@ -480,7 +480,19 @@ $count = count($registration_list);
 						echo "<tr><td class='no_data' colspan='8'>No Data</td></td>";
 					} else {
 						foreach ($registration_list as $list) {
-							$register_no = !empty($list["registration_idx"]) ? "KSSO2024-" . $list["registration_idx"] : "-";
+							//$register_no = !empty($list["registration_idx"]) ? "KSSO2024-" . $list["registration_idx"] : "-";
+
+							if($list["registration_idx"] < 10){
+								$register_no = !empty($list["registration_idx"]) ? "KSSO2024-000" . $list["registration_idx"] : "-";
+							}else if($list["registration_idx"] >= 10 && $list["registration_idx"] < 100){
+								$register_no = !empty($list["registration_idx"]) ? "KSSO2024-00" . $list["registration_idx"] : "-";
+							}else if($list["registration_idx"] >= 100 && $list["registration_idx"] < 1000){
+								$register_no = !empty($list["registration_idx"]) ? "KSSO2024-0" . $list["registration_idx"] : "-";
+							}else if($list["registration_idx"] >= 1000 ){
+								$register_no = !empty($list["registration_idx"]) ? "KSSO2024-" . $list["registration_idx"] : "-";
+							}
+	
+							
 							$special_request_food = "";
 							if ($list['special_request_food'] === '0') {
 								$special_request_food = "Not Applicable";

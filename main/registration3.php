@@ -25,7 +25,7 @@
     <div class="inner">
         <div class="section section1">
             <div class="completed_box">
-                <h1>제 58차 대한비만학회 춘계학술대회에<br>등록해 주셔서 감사합니다.</h1>
+                <h1>제 59차 대한비만학회 춘계학술대회에<br>등록해 주셔서 감사합니다.</h1>
                 <img src="./img/icons/post_complete.png">
                 <p>등록 및 결제 내용은 등록완료 메일을 확인해 주시기 바랍니다.</p>
                 <button onclick="location.href = '/main/index.php'">홈으로 가기</button>

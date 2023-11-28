@@ -646,12 +646,12 @@ if ($attendance_type_no != 0) {
                         <th>결제상태</th>
                         <td class="input_btn_wrap">
                             <select name="payment_status">
-                                <option value="1" <?= $registration_status == 1 ? "selected" : "" ?>>Holding</option>
-                                <option value="2" <?= $registration_status == 2 ? "selected" : "" ?>>Payment Received
+                                <option value="1" <?= $registration_status == 1 ? "selected" : "" ?>>결제 대기</option>
+                                <option value="2" <?= $registration_status == 2 ? "selected" : "" ?>>결제 완료
                                 </option>
-                                <option value="3" <?= $registration_status == 3 ? "selected" : "" ?>>Request Cancel
+                                <option value="3" <?= $registration_status == 3 ? "selected" : "" ?>>환불 대기
                                 </option>
-                                <option value="4" <?= $registration_status == 4 ? "selected" : "" ?>>Canceled</option>
+                                <option value="4" <?= $registration_status == 4 ? "selected" : "" ?>>환불 완료</option>
                             </select>
                             <div class="rs2_hidden">
                                 <select name="rs2_unit">
