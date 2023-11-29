@@ -851,12 +851,14 @@ $(document).ready(function() {
         /**1129 영양사 면허번호, 임상영양사 자격번호 받을 경우
          * 생년월일 받는 코드(필수)
         //  */
-        if($('#nutritionist_number').val() !== "" && $('#datepicker').val() === ""){
+        if($("#radio1").is(":checked") && $('#nutritionist_number').val() !== "" && $('#datepicker').val() === ""){
+ 
                 alert("생년월일을 입력해주세요.")
                 return false;
             }
         
-        if($('#dietitian_number').val()!== "" && ('#datepicker').val() === "" ){ 
+        if($("#radio1").is(":checked") && $('#dietitian_number').val() !== "" && ('#datepicker').val() === "" ){ 
+           
                 alert("생년월일을 입력해주세요.")
                 return false;
         }

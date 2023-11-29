@@ -81,12 +81,12 @@ if ($_POST["flag"] == "registration") {
 
 	$price				  = isset($data["reg_fee"]) ? $data["reg_fee"] : "";										// 결제금액
 	$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
-	$date_of_birth = isset($data["date_of_birth"]) ? $data["date_of_birth"] : "";
+	$date_of_birth =  isset($data["date_of_birth"]) ? $data["date_of_birth"] : "";
 	
-	// $bank				  = isset($data["bank"]) ? $data["bank"] : "";										// 계좌이체시 은행명
-	// $number		  = isset($data["number"]) ? $data["number"] : "";							// 계좌 이체시 계좌번호
+	$bank				  = isset($data["bank"]) ? $data["bank"] : "";										// 계좌이체시 은행명
+	$number		  = isset($data["number"]) ? $data["number"] : "";							// 계좌 이체시 계좌번호
 	
-	// $transfer_info		  = isset($data["number"]) ? $bank . '(' . 	$number	. ')' : "";	
+	$transfer_info		  = isset($data["number"]) ? $bank . '(' . 	$number	. ')' : "";	
 	
 	if (!$update_idx) {
 		if ($price == "" || $total_price == "") {
@@ -284,11 +284,11 @@ if ($_POST["flag"] == "registration") {
 		}else {
 			 	$add_set .= ", date_of_birth = NULL ";
 			 }
-		// if ($bank !== "" && $number !== "") {
-		// 	$add_set .= ", etc6 = '{$transfer_info}'";
-		// }else {
-		// 	$add_set .= ", etc6 = NULL ";
-		// }
+		if ($bank !== "" && $number !== "") {
+			$add_set .= ", etc6 = '{$transfer_info}'";
+		}else {
+			$add_set .= ", etc6 = NULL ";
+		}
 	}
 
 	// COMMON
@@ -370,11 +370,11 @@ if ($_POST["flag"] == "registration") {
 		$add_set .= ", passport_number = NULL ";
 	}
 
-	if ($date_of_birth !== "") {
-		$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-	} else {
-		$add_set .= ", date_of_birth = NULL ";
-	}
+	// if ($date_of_birth !== "") {
+	// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+	// } else {
+	// 	$add_set .= ", date_of_birth = NULL ";
+	// }
 
 	if ($date_of_issue !== "") {
 		$add_set .= ", date_of_issue = '{$date_of_issue}' ";
