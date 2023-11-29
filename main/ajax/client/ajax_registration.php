@@ -220,11 +220,11 @@ if ($_POST["flag"] == "registration") {
 				$add_set .= ", promotion_code = NULL ";
 				$add_set .= ", recommended_by = NULL ";
 			}
-			if ($bank !== "" && $number !== "") {
-				$add_set .= ", etc6 = '{$transfer_info}'";
-			}else {
-				$add_set .= ", etc6 = NULL ";
-			}
+			// if ($bank !== "" && $number !== "") {
+			// 	$add_set .= ", etc6 = '{$transfer_info}'";
+			// }else {
+			// 	$add_set .= ", etc6 = NULL ";
+			// }
 
 			$add_set .= "
 								, attendance_type = {$attendance_type}
@@ -278,11 +278,11 @@ if ($_POST["flag"] == "registration") {
 		if ($payment_method !== "") {
 			$add_set .= ", payment_methods = '{$payment_method}' ";
 		}
-		if ($bank !== "" && $number !== "") {
-			$add_set .= ", etc6 = '{$transfer_info}'";
-		}else {
-			$add_set .= ", etc6 = NULL ";
-		}
+		// if ($bank !== "" && $number !== "") {
+		// 	$add_set .= ", etc6 = '{$transfer_info}'";
+		// }else {
+		// 	$add_set .= ", etc6 = NULL ";
+		// }
 	}
 
 	// COMMON
@@ -611,7 +611,7 @@ if ($_POST["flag"] == "registration") {
 		// 이미 결제건은 취소가 불가능하고 환불요청으로 넘어가야됨.
 		$res = [
 			code => 402,
-			msg => "invalid request status"
+			msg => "결제하신 건은 취소가 불가능합니다. 환불요청 부탁드립니다."
 		];
 		echo json_encode($res);
 		exit;

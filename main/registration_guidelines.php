@@ -44,7 +44,7 @@ $price = get_data($sql_price);
                     </colgroup>
                     <tr>
                         <th>등록 접수<br class="br_mb_only">시작일</th>
-                        <td class="f_bold">12월 11일</td>
+                        <td class="f_bold">12월 11일 (월)</td>
                     </tr>
                     <!-- <tr>
                         <th class="close_th">Early-bird Registration<br class="br_mb_only"> Deadline</th>
@@ -52,7 +52,7 @@ $price = get_data($sql_price);
                     </tr> -->
                     <tr>
                         <th>사전 등록 접수<br class="br_mb_only">마감일</th>
-                        <td class="f_bold">1월 11일(목)까지</td>
+                        <td class="f_bold">1월 11일 (목)</td>
                     </tr>
                 </table>
             </div>
@@ -201,9 +201,10 @@ $price = get_data($sql_price);
                     <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                     <div>
                         <ul class="indent_ul">
-                            <li style="font-weight: 700;">• 신용카드</li>
+                            <li style="font-weight: 700;">• 신용카드<br></li>
                             <ul class="indent_ul">
                                 <li>• 사전등록 시 카드결제가 가능합니다.</li>
+                                <li><br></li>
                             </ul>
                             <li style="font-weight: 700;">• 계좌이체</li>
                             <ul class="indent_ul">
