@@ -81,7 +81,7 @@ if ($_POST["flag"] == "registration") {
 
 	$price				  = isset($data["reg_fee"]) ? $data["reg_fee"] : "";										// 결제금액
 	$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
-
+	$date_of_birth = isset($data["date_of_birth"]) ? $data["date_of_birth"] : "";
 	
 	// $bank				  = isset($data["bank"]) ? $data["bank"] : "";										// 계좌이체시 은행명
 	// $number		  = isset($data["number"]) ? $data["number"] : "";							// 계좌 이체시 계좌번호
@@ -140,7 +140,7 @@ if ($_POST["flag"] == "registration") {
 		//$address_detail = isset($data["address_detail"]) ? $data["address_detail"] : "";
 		//$address_detail = htmlspecialchars($address_detail);
 		//$passport_number = isset($data["passport_number"]) ? $data["passport_number"] : "";
-		//$date_of_birth = isset($data["date_of_birth"]) ? $data["date_of_birth"] : "";
+		
 		//$date_of_issue = isset($data["date_of_issue"]) ? $data["date_of_issue"] : "";
 		//$date_of_expiry = isset($data["date_of_expiry"]) ? $data["date_of_expiry"] : "";
 		//$length_of_visit = isset($data["length_of_visit"]) ? $data["length_of_visit"] : "";
@@ -278,6 +278,12 @@ if ($_POST["flag"] == "registration") {
 		if ($payment_method !== "") {
 			$add_set .= ", payment_methods = '{$payment_method}' ";
 		}
+
+		if ($date_of_birth !== "") {
+			$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+		}else {
+			 	$add_set .= ", date_of_birth = NULL ";
+			 }
 		// if ($bank !== "" && $number !== "") {
 		// 	$add_set .= ", etc6 = '{$transfer_info}'";
 		// }else {
