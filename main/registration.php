@@ -424,10 +424,6 @@ if ($during_yn !== "Y") {
                         <p class="label">
                         생년월일<span class="red_txt">*</span>
                         </p>
-                        <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license"
-                            value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>
-                            ">
-                            <span></span>
                             <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy"
                                         id="datepicker" onKeyup="birthChk(this)" />
                     </li>
@@ -575,7 +571,7 @@ if ($during_yn !== "Y") {
                         <div class="table_wrap detail_table_common x_scroll">
                             <table class="c_table detail_table">
                                 <colgroup>
-                                    <col class="col_th_s">
+                                    <col class="col_th_s" width="30%">
                                     <col>
                                 </colgroup>
                                 <tbody>
@@ -654,6 +650,17 @@ if ($during_yn !== "Y") {
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr class="payment_method_wrap" id="bank_detail" style="display: none;">
+                                        <th>이체 정보</th>
+                                        <td>
+                                            
+                                            <div class="payment_bank">
+                                                <div>은행명 : 하나은행</div>
+                                                <div>계좌 번호 : 584-910003-16504</div>
+                                                <div>예금주 : 대한비만학회-등록비</div>
+                                           </div>
+                                        </td>
+                                    </tr>
                                     <!-- <tr class="payment_method_wrap" id="bank_detail">
                                         <th>이체 정보</th>
                                         <td>
@@ -722,13 +729,13 @@ $(document).ready(function() {
 
     $('.etc1').hide();
 
-    $(document).ready( function() {
-        if ($('#bank').is(':checked') == true) {
-            $('#bank_detail').show();
-        } else {
-            $('#bank_detail').hide();
-        }
-    });
+    // $(document).ready( function() {
+    //     if ($('#bank').is(':checked') == true) {
+    //         $('#bank_detail').show();
+    //     } else {
+    //         $('#bank_detail').hide();
+    //     }
+    // });
 
     $(document).on("click", "#license_checkbox", function() {
         //console.log($(this).is(':checked'));
@@ -787,13 +794,13 @@ $(document).ready(function() {
     // });
 
 
-    // $("#bank").on("click", function() {
-    //     $("#bank_detail").show();
-    // });
+    $("#bank").on("click", function() {
+        $("#bank_detail").show();
+    });
    
-    // $("#credit").on("click", function() {
-    //     $("#bank_detail").hide();
-    // });
+    $("#credit").on("click", function() {
+        $("#bank_detail").hide();
+    });
 
 
     /*
@@ -840,6 +847,19 @@ $(document).ready(function() {
         //     alert("은행과 계좌번호를 입력해주세요.");
         //     return false;
         // }
+
+        /**1129 영양사 면허번호, 임상영양사 자격번호 받을 경우
+         * 생년월일 받는 코드(필수)
+        //  */
+        if($('#nutritionist_number').val() !== "" && $('#datepicker').val() === ""){
+                alert("생년월일을 입력해주세요.")
+                return false;
+            }
+        
+        if($('#dietitian_number').val()!== "" && ('#datepicker').val() === "" ){ 
+                alert("생년월일을 입력해주세요.")
+                return false;
+        }
     });
 
     $("select[name=category]").on("change", function() {

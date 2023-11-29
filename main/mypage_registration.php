@@ -755,7 +755,7 @@ $score_detail = sql_fetch($score_sql);
                 </table>
             </div>
             <div class="btn_wrap">
-                <button type="button" class="btn cancel_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">등록 취소</button>
+                <button type="button" class="btn cancel_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">취소 신청</button>
             </div>
         </div>
     </div>
@@ -1132,7 +1132,7 @@ $score_detail = sql_fetch($score_sql);
                 url: PATH + "ajax/client/ajax_registration.php",
                 type: "POST",
                 data: {
-                    flag: "cancel",
+                    flag: "refund",
                     idx: idx
                 },
                 dataType: "JSON",

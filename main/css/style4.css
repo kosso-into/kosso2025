@@ -278,9 +278,11 @@ section.container.organizing {padding-bottom: 190px;}
 .online_register .title {padding-left:0;}
 .want_invitation_wrap li:not(:first-of-type) {display: none;}
 .want_invitation_wrap.on li:not(:first-of-type) {display: block;}
-.payment_bank{width: 100%; display: flex; flex-direction: column;}
+.payment_bank{display: flex; flex-direction: column;}
 .payment_bank > input {border:1px solid #707070; padding: 0 10px;}
 .payment_bank > input:first-child{margin-bottom: 10px;}
+.payment_bank > div {padding: 4px;width: 50%;}
+
 
 
 /* 230502 HUBDNC LHJ 추가 */
