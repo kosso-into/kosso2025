@@ -83,10 +83,10 @@ if ($_POST["flag"] == "registration") {
 	$total_price		  = isset($data["total_reg_fee"]) ? $data["total_reg_fee"] : "";							// 최종 결제금액
 
 	
-	$bank				  = isset($data["bank"]) ? $data["bank"] : "";										// 계좌이체시 은행명
-	$number		  = isset($data["number"]) ? $data["number"] : "";							// 계좌 이체시 계좌번호
+	// $bank				  = isset($data["bank"]) ? $data["bank"] : "";										// 계좌이체시 은행명
+	// $number		  = isset($data["number"]) ? $data["number"] : "";							// 계좌 이체시 계좌번호
 	
-	$transfer_info		  = isset($data["number"]) ? $bank . '(' . 	$number	. ')' : "";	
+	// $transfer_info		  = isset($data["number"]) ? $bank . '(' . 	$number	. ')' : "";	
 	
 	if (!$update_idx) {
 		if ($price == "" || $total_price == "") {

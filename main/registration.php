@@ -42,10 +42,10 @@ if ($registrationNo) {
     ";
     $register_data = sql_fetch($registration_info);
 
-    if(count($register_data) > 0){
-        echo "<script>alert('등록된 회원입니다.'); window.location.replace(PATH+'mypage_registration.php');</script>";
-        exit;
-    }
+    // if(count($register_data) > 0){
+    //     echo "<script>alert('등록된 회원입니다.'); window.location.replace(PATH+'mypage_registration.php');</script>";
+    //     exit;
+    // }
 }
 
 //경로 주의
@@ -256,7 +256,7 @@ if ($during_yn !== "Y") {
                                 <select id="occupation" name="occupation">
                                     <option value="Medical" selected hidden>필수 선택</option>
                                     <?php
-                                        $occupation_arr = array("의료", "영양", "운동");
+                                        $occupation_arr = array("의료", "영양", "운동", "기타");
 
                                         foreach ($occupation_arr as $a_arr) {
                                             $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
@@ -267,7 +267,7 @@ if ($during_yn !== "Y") {
                                 </select>
                             </li>
                             <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
-                            <li class="hide_input <?= $prev["occupation_type"] === "Others" ? "on" : "" ?>">
+                            <li class="hide_input <?= $prev["occupation_type"] === "기타" ? "on" : "" ?>">
                                 <input type="hidden" name="occupation_prev_input"
                                     value="<?= $prev["occupation_other_type"] ?? "" ?>" />
                                 <input type="text" id="occupation_input" name="occupation_input"
@@ -430,7 +430,6 @@ if ($during_yn !== "Y") {
                             <span></span>
                             <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy"
                                         id="datepicker" onKeyup="birthChk(this)" />
-                            <input type="date" name="date_of_birth" style="border:1px solid #B2B2B2;padding:4px;" placeholder="생년월일"/>
                     </li>
                     <?php } ?>
                     <li>
