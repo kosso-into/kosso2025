@@ -343,7 +343,7 @@ $score_detail = sql_fetch($score_sql);
                                     <?php } ?>
                                     <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">취소</button>
                                 </td>
-                            <?php } else if ($list["status"] == 2 || $list["status"] == 3) { ?>
+                            <?php } else if ($list["status"] == 2) { ?>
                                 <td>등록 완료</td>
                                 <td>
                                     <button type="button" class="btn review_regi_open" data-idx="<?= $list["idx"] ?>">등록정보</button>
@@ -515,9 +515,14 @@ $score_detail = sql_fetch($score_sql);
                                         </table>
                                     </div>
                                 </td>
+                            <?php } else if( $list["status"] == 3){ ?>
+                                <td>환불 대기</td>
+                                <td>
+                                 <p>환불 대기 상태입니다. <br>운영사무국<a style="width:fit-content" href="mailto:ksso@into-on.com">(ksso@into-on.com)</a>으로 문의부탁드립니다.</p>
+                                </td>
                             <?php } else { ?>
+                                <td>환불 완료</td>
                                 <td>-</td>
-                                <td>canceled</td>
                             <?php } ?>
                         </tr>
                     <?php
