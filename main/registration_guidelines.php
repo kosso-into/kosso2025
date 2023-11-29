@@ -147,8 +147,8 @@ $price = get_data($sql_price);
                                 <!-- </td> -->
                                 <!-- <td>USD 160<br>KRW 160,000</td> -->
                                 <td>50,000원</td>
-                                <td>70,000원</td>
-                                <td>80,000윈</td>
+                                <td>80,000원</td>
+                                <td>70,000윈</td>
                                 <td>100,000윈</td>
                             </tr>
                             <tr class="text_center">
@@ -164,8 +164,8 @@ $price = get_data($sql_price);
                                 <!-- <td>USD 65<br>KRW 65,000</td> -->
                                 <!-- <td>USD 95<br>KRW 95,000</td> -->
                                 <td>30,000윈</td>
-                                <td>50,000윈</td>
                                 <td>60,000윈</td>
+                                <td>50,000윈</td>
                                 <td>80,000윈</td>
                             </tr>
                             <tr class="text_center">
