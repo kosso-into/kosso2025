@@ -2101,7 +2101,8 @@ $(document).on("click", "#mo_submit", function() {
         //"degree_input"			: degree_input,
         "tel_nation_tel": tel_nation_tel,
         "telephone1": telephone1,
-        "telephone2": telephone2
+        "telephone2": telephone2,
+        //"telephone" : tel_nation_tel + "-" + telephone1 + "-" + telephone2
     };
 
     save(data);

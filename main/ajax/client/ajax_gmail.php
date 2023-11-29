@@ -134,24 +134,27 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 	if ($language == "ko") {
 		if ($mail_type == "find_password") {
-			$rawMessageString .= "<div style='width:670px;background-color:#fff;border:1px solid #ADF002;'>
-								<img src='{$background_img_url}/main/img/mail_header_2023.png' style='width:100%;margin-bottom:60px;'>
-								<div style='margin-left:60px;margin-bottom:40px;'>
-									<p style='text-align:left;font-size:15px;color:#170F00;line-height:1.8;'>{$fname} 회원님은<br>{$time} 에 임시 비밀번호 요청을 하셨습니다.</p>
-									<p style='text-align:left;font-size:12px;color:#AAAAAA;margin-top:22px;'>(만약 임시 비밀번호를 요청하신 적이 없다면 해당 메일을 삭제해 주십시오.)</p>
-									<p style='text-align:left;font-size:12px;color:#170F00;margin-top:42px;line-height:1.8;'>저희 사이트는 관리자라도 회원님의 비밀번호를 알 수 없기 때문에,<br>
-									비밀번호를 알려드리는 대신 새로운 비밀번호를 생성하여 안내 해드리고 있습니다.<br>아래에서 변경될 비밀번호를 확인하신 후,</p>
-									<p style='font-size:13px;color:#FF0000;margin-top:17px;'>임시 비밀번호로 변경 버튼을 클릭하십시오.</p>
-									<p style='text-align:left;font-size:12px;color:#170F00;margin-top:42px;line-height:1.8;'>비밀번호가 변경되었다는 인증 메시지가 출력되면,<br>
-									홈페이지에서 회원아이디와 변경된 비밀번호를 입력하시고 로그인 하십시오.</p>
-									<p style='text-align:left;font-size:12px;color:#AAAAAA;margin-top:17px;'>로그인 후에는 정보수정 메뉴에서 새로운 비밀번호로 변경해 주십시오.</p>
-									<p style='text-align:left;font-size:13px;color:#170F00;margin-top:32px;'>회원아이디<span style='text-align:left;font-size:14px;color:#170F00;margin-left:5px;'>{$id}</span></p>
-									<p style='text-align:left;font-size:13px;color:#170F00;margin-top:11px;'>변경될 비밀번호<span style='text-align:left;font-size:14px;color:#170F00;margin-left:5px;'>{$tmp_password}</span></p>
-									<p style='text-align:left;font-size:14px;color:#170F00;margin-top:51px;'>ICOMES 드림</p>
-								</div>
-								<a href='{$callback_url}' style='display:block;text-decoration:none;text-align:center;width:180px;max-width:180px;background:#fff;margin-left:60px;border:1px solid #585859;border-radius:30px;padding:14px 50px;background:#fff;cursor:pointer;color:#000;'>임시 비밀번호로 변경</a>
-								<img src='{$background_img_url}/main/img/icomes_mail_bottom.png' style='width:100%;margin-top:60px;'>
-							</div>";
+			$rawMessageString .= "
+			<div style='width:670px;background-color:#fff;border:1px solid #ADF002;'>
+        <img src='https://www.kosso.org/main/img/mail/mail_header.png' style='width:100%;margin-bottom:60px;'alt='mail_header'>
+        <div style='margin-left:60px;margin-bottom:40px;'>
+            <p style='text-align:left;font-size:15px;color:#170F00;line-height:1.8;'>{$fname} 회원님은<br/>{$time} 에 임시 비밀번호 요청을 하셨습니다.</p>
+            <p style='text-align:left;font-size:12px;color:#AAAAAA;margin-top:22px;'>(만약 임시 비밀번호를 요청하신 적이 없다면 해당 메일을 삭제해 주십시오.)</p>
+            <p style='text-align:left;font-size:12px;color:#170F00;margin-top:42px;line-height:1.8;'>저희 사이트는 관리자라도 회원님의 비밀번호를 알 수 없기 때문에,<br/>
+            비밀번호를 알려드리는 대신 새로운 비밀번호를 생성하여 안내 해드리고 있습니다.<br/>아래에서 변경될 비밀번호를 확인하신 후,</p>
+            <p style='font-size:13px;color:#FF0000;margin-top:17px;'>임시 비밀번호로 변경 버튼을 클릭하십시오.</p>
+            <p style='text-align:left;font-size:12px;color:#170F00;margin-top:42px;line-height:1.8;'>비밀번호가 변경되었다는 인증 메시지가 출력되면,<br/>
+            홈페이지에서 회원아이디와 변경된 비밀번호를 입력하시고 로그인 하십시오.</p>
+            <p style='text-align:left;font-size:12px;color:#AAAAAA;margin-top:17px;'>로그인 후에는 정보수정 메뉴에서 새로운 비밀번호로 변경해 주십시오.</p>
+            <p style='text-align:left;font-size:13px;color:#170F00;margin-top:32px;'>회원아이디<span style='text-align:left;font-size:14px;color:#170F00;margin-left:5px;'>{$id}</span></p>
+            <p style='text-align:left;font-size:13px;color:#170F00;margin-top:11px;'>변경될 비밀번호<span style='text-align:left;font-size:14px;color:#170F00;margin-left:5px;'>{$tmp_password}</span></p>
+            <p style='text-align:left;font-size:14px;color:#170F00;margin-top:51px;'>ICOMES 드림</p>
+        </div>
+        <table align='center' cellspacing='0' cellpadding='0' width='100%'><tr><td align='center'><table border='0' class='mobile-button' cellspacing='0' cellpadding='0'<tr><td align='center' bgcolor='#ffcc33' style='background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 12px;box-shadow: 0px 5px 0px 0px #e0ba0d;' width='100%'><!--[if mso]>&nbsp;<![endif]--><a href='https://kosso.org/main/registration.php' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;'><span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;'>임시 비밀번호로 변경</span></a><!--[if mso]>&nbsp;<![endif]--></td></tr></table></td></tr></table>
+        <img src='https://www.kosso.org/main/img/mail/mail_footer.png' style='width:100%;margin-top:60px;' alt='mail_footer'>
+    </div>
+							
+							";
 		}
 	} else {
 		if ($mail_type == "sign_up") {
@@ -177,6 +180,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$affiliation = $data["affiliation"];
 			$affiliation_kor = $data["affiliation_kor"];
 			$phone = $data["phone"];
+			$telephone =substr($data['phone'], 0, 3). '-' .  substr($data['phone'], 3, 4). '-' .substr($data['phone'], 7);
 			$title = $data["title"] ?? NULL;
 
 			// 23.05.15 HUBDNC_NYM TITLE 변경 건으로 수정
@@ -222,12 +226,12 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			<tbody>
 				<tr>
 					<td colspan='3'>
-						<img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:750px;'>
+						<img src='https://www.kosso.org/main/img/mail/signup_header.jpg' width='750' style='width:750px;' alt='mail_header'>
 					</td>
 				</tr>
 				<tr>
 					<td colspan='3'>
-						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[KSSO 2024] 제 59차 대한비만학회 춘계학술대회</div>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #003466;padding: 20px 0;'>[KSSO 2024] 제 59차 대한비만학회 춘계학술대회</div>
 					</td>
 				</tr>
 				<tr>
@@ -235,7 +239,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					<td>
 						<div>
 							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$last_name}{$first_name},</p>
-							<p style='font-size:14px;color:#170F00;margin-top:14px;'>2024 춘계학술대회에 가입해 주셔서 감사합니다.<br>귀하의 프로필이 성공적으로 생성되었습니다.<br>아래에 입력한 정보를 검토해 주세요.<br>'웹사이트 - 마이 페이지'에 접속하여 개인 정보를 검토, 수정할 수 있습니다.</p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'>제 59차 대한비만학회 춘계학술대회의 홈페이지에 가입해 주셔서 감사합니다.<br/>아래의 등록 정보를 확인해 주세요.<br/>(등록 정보 수정을 원하실 경우, 홈페이지 – 마이페이지에서 수정 하실 수 있습니다.)</p>
 							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 								<tbody>
 									<tr>
@@ -246,11 +250,12 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									{$affiliation_kor_cont}
 									<tr>
 										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>휴대폰 번호</th>
-										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$phone}</td>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$telephone}</td>
 									</tr>
 								</tbody>	
 							</table>
-							<p>제 59차 대한비만학회 춘계학술대회에 대한 관심에 감사드립니다.</p>
+							<p>본 학술대회에 대한 관심에 감사드립니다. <br/>사전등록을 원하실 경우에는 <br/>아래의 사전등록 바로가기 버튼을 클릭 하시어 등록 부탁드립니다. 
+							<br/></p>
 						</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
@@ -258,21 +263,21 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td style='padding-top:16px;'>
-						<p>항상 행운을 빕니다.</p>
+						<p></p>
 						<div style='text-align: center;'>
-							<a href='https://kosso.org/'><img src='https://kosso.org/main/img/ksso_btn.png' alt=''></a>
+							<table align='center' cellspacing='0' cellpadding='0' width='100%'><tr><td align='center'><table border='0' class='mobile-button' cellspacing='0' cellpadding='0'<tr><td align='center' bgcolor='#ffcc33' style='background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 12px;box-shadow: 0px 5px 0px 0px #e0ba0d;' width='100%'><!--[if mso]>&nbsp;<![endif]--><a href='https://kosso.org/main/registration.php' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;'><span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;'>사전등록 바로가기</span></a><!--[if mso]>&nbsp;<![endif]--></td></tr></table></td></tr></table>
 						</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>
-						<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:750px;'>
+						<img src='https://www.kosso.org/main/img/mail/mail_footer.png' width='750' style='width:750px;' alt='mail_footer'>
 					</td>
 				</tr>
 			</tbody>
 		</table>
-
+	
 			";
 			//$rawMessageString.= "
 			//			<div style='width:670px;background-color:#F8F8F8;border:1px solid #f2f2f2; padding: 0 40px;'>
@@ -380,7 +385,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			<tbody>
 				<tr>
 					<td colspan='3'>
-						<img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:100%; max-width:100%;'>
+						<img src='https://www.kosso.org/main/img/mail/mail_header.png' width='750' style='width:100%; max-width:100%;' alt='mail_header'>
 					</td>
 				</tr>
 				<tr>
@@ -409,7 +414,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									</tr>
 								</tbody>	
 							</table>
-							<p style='color:#f00;'>'임시 비밀번호로 변경' 버튼을 클릭하여 변경된 로그인 정보를 확인하세요.</p>
+							<p style='color:#f00;font-weight: 700;'>'임시 비밀번호로 변경' 버튼을 클릭하여 변경된 로그인 정보를 확인하세요.</p>
 						</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
@@ -418,15 +423,15 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					<td width='74' style='width:74px;'></td>
 					<td>
 						<div style='text-align: center;'>
-							<a href='{$callback_url}'><img src='https://www.kosso.org/main/img/ksso_pw_btn.png' alt=''></a>
+							<table align='center' cellspacing='0' cellpadding='0' width='100%'><tr><td align='center'><table border='0' class='mobile-button' cellspacing='0' cellpadding='0'<tr><td align='center' bgcolor='#ffcc33' style='background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 16px;box-shadow: 0px 5px 0px 0px #e0ba0d;' width='100%'><!--[if mso]>&nbsp;<![endif]--><a href='{$callback_url}' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;'><span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;'>임시 비밀번호 변경</span></a><!--[if mso]>&nbsp;<![endif]--></td></tr></table></td></tr></table>
 						</div>
-						<p>항상 행운을 빕니다.</p>
+						<p></p>
 					</td>
 					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>
-						<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:100%; max-width:100%;'>
+						<img src='https://kosso.org/main/img/mail/mail_footer.png' width='750' style='width:100%; max-width:100%;' alt='mail_footer'>
 					</td>
 				</tr>
 			</tbody>
@@ -695,7 +700,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			   
 				   <tr>
 					   <td colspan='3'>
-						   <img src='https://www.kosso.org/main/img/mail_header.png' width='750' style='width:100%; max-width:100%;'>
+						   <img src='https://kosso.org/main/img/mail/registration_header.jpg' width='750' style='width:100%; max-width:100%;'alt='mail_header'>
 						</td>
 				   </tr>
 				   <tr>
@@ -777,18 +782,18 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 							<p>항상 행운을 빕니다.</p>
 							<br/>
 							<div style='text-align: center;'>
-								<a href='https://kosso.org/'><img src='https://www.kosso.org/main/img/ksso_btn.png' alt=''></a>
+								<table align='center' cellspacing='0' cellpadding='0' width='100%'><tr><td align='center'><table border='0' class='mobile-button' cellspacing='0' cellpadding='0'<tr><td align='center' bgcolor='#ffcc33' style='background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 16px;box-shadow: 0px 5px 0px 0px #e0ba0d;' width='100%'><!--[if mso]>&nbsp;<![endif]--><a href='https://kosso.org/main' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;'><span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;'>홈페이지 바로가기</span></a><!--[if mso]>&nbsp;<![endif]--></td></tr></table></td></tr></table>
 							</div>
 						</td>
 						<td width='74' style='width:74px;'></td>
 					</tr>
 					<tr>
 						<td colspan='3' style='padding-top:50px;'>
-							<img src='https://kosso.org/main/img/mail_footer.png' width='750' style='width:100%; max-width:100%;'>
+							<img src='https://kosso.org/main/img/mail/mail_footer.png' width='750' style='width:100%; max-width:100%;' alt='mail_footer'>
 						</td>
 					</tr>
 				</tbody>
-			</table>		
+			</table>
 									";
 		}
 
