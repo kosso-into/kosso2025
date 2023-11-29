@@ -147,9 +147,9 @@ $price = get_data($sql_price);
                                 <!-- </td> -->
                                 <!-- <td>USD 160<br>KRW 160,000</td> -->
                                 <td>50,000원</td>
-                                <td>80,000원</td>
-                                <td>TBD</td>
-                                <td>TBD</td>
+                                <td>70,000원</td>
+                                <td>80,000윈</td>
+                                <td>100,000윈</td>
                             </tr>
                             <tr class="text_center">
                                 <td>
@@ -163,16 +163,16 @@ $price = get_data($sql_price);
                                 </td>
                                 <!-- <td>USD 65<br>KRW 65,000</td> -->
                                 <!-- <td>USD 95<br>KRW 95,000</td> -->
-                                <td>30,000원</td>
-                                <td>60,000원</td>
-                                <td> TBD</td>
-                                <td> TBD</td>
+                                <td>30,000윈</td>
+                                <td>50,000윈</td>
+                                <td>60,000윈</td>
+                                <td>80,000윈</td>
                             </tr>
                             <tr class="text_center">
                                 <td>학생
                                     <!--, Surgeon (Military),<br>Public Health Doctor-->
                                 </td>
-                                <td colspan="6">무료등록<br />*행사 당일 학생증 지참 필요</td>
+                                <td colspan="6">30,000원<br />*행사 당일 학생증 지참 필요</td>
                             </tr>
                         </tbody>
                     </table>
