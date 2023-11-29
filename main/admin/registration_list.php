@@ -154,7 +154,7 @@ $html = '<table id="datatable" class="list_table">';
 $html .= '<thead>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">등록 접수</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">참가자 정보</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">참가자 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="4">평점신청(Korean Only)</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
@@ -172,6 +172,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">부서</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">휴대폰 번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">참가 유형</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">분야 구분</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">참석 구분</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">의사면허번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">전문의번호</th>';
@@ -368,6 +369,7 @@ $is_exercise = ($member_type == "Exercise Specialist") ? 'Y' : 'N';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["department"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["phone"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["attendance_type_text"] . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["occupation_type"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $member_type . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $licence_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $specialty_number . '</td>';
@@ -469,6 +471,7 @@ $count = count($registration_list);
                         <th>소속</th>
                         <th>휴대폰 번호</th>
                         <th>참가 유형</th>
+						<th>분야 구분</th>
                         <th>평점신청여부</th>
                         <th>특이식단</th>
                         <th>등록일</th>
@@ -567,6 +570,7 @@ $count = count($registration_list);
                         <td><?= $list["affiliation"] ?></td>
                         <td><?= $list["phone"] ?></td>
                         <td><?= isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-" ?></td>
+						<td><?= isset($list["occupation_type"]) ? $list["occupation_type"] : "-" ?></td>
                         <td><?= isset($list["is_score_text"]) ? $list["is_score_text"] : "-" ?></td>
                         <td><?= $special_request_food ?></td>
                         <td><?= isset($list["register_date"]) ? $list["register_date"] : "-" ?></td>

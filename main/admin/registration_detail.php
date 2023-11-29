@@ -465,6 +465,10 @@ if ($attendance_type_no != 0) {
                         <td colspan="3"><?= $attendance_type_text ?></td>
                     </tr>
                     <tr>
+                        <th>분야 구분</th>
+                        <td colspan="3"><?= $occupation_type ?></td>
+                    </tr>
+                    <tr>
                         <th>참석 유형</th>
                         <td colspan="3"><?= $member_type ?></td>
                     </tr>
