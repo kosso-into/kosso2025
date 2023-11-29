@@ -38,7 +38,7 @@ if ($registrationNo) {
                         SELECT
 							*
 						FROM request_registration
-						WHERE request_registration.register = {$member_idx}
+						WHERE request_registration.register = {$member_idx} AND is_deleted = 'N'
     ";
     $register_data = sql_fetch($registration_info);
 
@@ -249,14 +249,14 @@ if ($during_yn !== "Y") {
 							?>
                         </select>
                     </li>
-                    <li style="display:none">
-                        <p class="label">Type of Occupation <span class="red_txt">*</span></p>
+                    <li>
+                        <p class="label">분야 구분 <span class="red_txt">*</span></p>
                         <ul class="half_ul">
                             <li>
                                 <select id="occupation" name="occupation">
-                                    <option value="Medical" selected hidden>Choose</option>
+                                    <option value="Medical" selected hidden>필수 선택</option>
                                     <?php
-                                        $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
+                                        $occupation_arr = array("의료", "영양", "운동");
 
                                         foreach ($occupation_arr as $a_arr) {
                                             $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
@@ -282,7 +282,7 @@ if ($during_yn !== "Y") {
                             <li>
                                 <select id="category" name="category" onChange="calc_fee(this)"
                                     <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
-                                    <option value="" selected hidden>필수선택</option>
+                                    <option value="" selected hidden>필수 선택</option>
                                     <?php
                                         $participation_arr = array();
 
@@ -395,13 +395,16 @@ if ($during_yn !== "Y") {
                             영양사 면허번호 <span class="red_txt">*</span>
                             <input type="checkbox" id="app3" class="checkbox"
                                 <?= $prev["is_score"] == 1  && !$prev["nutritionist_number"] ? "checked" : "" ?>>
+                              
                             <label for="app3">
                                 <i></i> <?= $locale("not_applicable") ?>
                             </label>
                         </p>
                         <input type="text" name="nutritionist_number" id="nutritionist_number"
                             class="under_50 input_license"
-                            value="<?= $prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : "" ?>">
+                            value="<?= $prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : "" ?>
+                            ">
+                        
                     </li>
                     <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                         <p class="label">
@@ -413,7 +416,21 @@ if ($during_yn !== "Y") {
                             </label>
                         </p>
                         <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license"
-                            value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>">
+                            value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>
+                            ">
+                            
+                    </li>
+                    <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
+                        <p class="label">
+                        생년월일<span class="red_txt">*</span>
+                        </p>
+                        <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license"
+                            value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>
+                            ">
+                            <span></span>
+                            <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy"
+                                        id="datepicker" onKeyup="birthChk(this)" />
+                            <input type="date" name="date_of_birth" style="border:1px solid #B2B2B2;padding:4px;" placeholder="생년월일"/>
                     </li>
                     <?php } ?>
                     <li>
@@ -638,7 +655,7 @@ if ($during_yn !== "Y") {
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr class="payment_method_wrap" id="bank_detail">
+                                    <!-- <tr class="payment_method_wrap" id="bank_detail">
                                         <th>이체 정보</th>
                                         <td>
                                             <div class="payment_bank">
@@ -655,7 +672,7 @@ if ($during_yn !== "Y") {
                                                 <input name="number" class="bank_number" placeholder="계좌번호" value="<?php echo isset($prev["etc6"]) ? $bankNum : ""; ?>"/>
                                            </div>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -683,6 +700,21 @@ if ($during_yn !== "Y") {
 <!-- <script src="./js/script/client/registration.js"></script> -->
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
+
+
+function birthChk(input) {
+
+var value = input.value.replace(/[^0-9]/g, "").substr(0, 8); // 입력된 값을 숫자만 남기고 모두 제거
+if (value.length === 8) {
+    var regex = /^(\d{2})(\d{2})(\d{4})$/;
+    var formattedValue = value.replace(regex, "$1-$2-$3");
+    input.value = formattedValue;
+} else {
+    input.value = value;
+}
+
+}
+
 $(document).ready(function() {
     // alert("등록 접수 준비중입니다.");
     // window.history.back();
@@ -749,20 +781,20 @@ $(document).ready(function() {
      /**계좌 번호 
      * 숫자와 - 허용
      */
-    $(".bank_number").on("keyup", function() {
-        let value = $(this).val();
-        value = value.replace(/[^0-9-]/g, "");
-        $(this).val(value);
-    });
+    // $(".bank_number").on("keyup", function() {
+    //     let value = $(this).val();
+    //     value = value.replace(/[^0-9-]/g, "");
+    //     $(this).val(value);
+    // });
 
 
-    $("#bank").on("click", function() {
-        $("#bank_detail").show();
-    });
+    // $("#bank").on("click", function() {
+    //     $("#bank_detail").show();
+    // });
    
-    $("#credit").on("click", function() {
-        $("#bank_detail").hide();
-    });
+    // $("#credit").on("click", function() {
+    //     $("#bank_detail").hide();
+    // });
 
 
     /*
@@ -800,15 +832,15 @@ $(document).ready(function() {
         }
            /**1121 계좌 이체 선택시 
          * 은행과 계좌번호 받는 코드(필수)
-         */
-        if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$(".bank_number").val() ){
-            alert("은행과 계좌번호를 입력해주세요.");
-            return false;
-        }
-        if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$("input[name=bank]").val() ){
-            alert("은행과 계좌번호를 입력해주세요.");
-            return false;
-        }
+        //  */
+        // if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$(".bank_number").val() ){
+        //     alert("은행과 계좌번호를 입력해주세요.");
+        //     return false;
+        // }
+        // if(!$("#credit").is(":checked") && $("#bank").is(":checked") && !$("input[name=bank]").val() ){
+        //     alert("은행과 계좌번호를 입력해주세요.");
+        //     return false;
+        // }
     });
 
     $("select[name=category]").on("change", function() {

@@ -1137,6 +1137,7 @@ $score_detail = sql_fetch($score_sql);
                 },
                 dataType: "JSON",
                 success: function(res) {
+                    console.log(res)
                     if (res.code == 200) {
                         alert("사전등록 취소가 완료되었습니다.");
                         location.reload();
@@ -1147,7 +1148,7 @@ $score_detail = sql_fetch($score_sql);
                         alert(locale(language.value)("invalid_auth"));
                         return false;
                     } else if (res.code == 402) {
-                        alert(locale(language.value)("invalid_registration_status"));
+                        alert("결제하신 건은 취소가 불가능합니다. 환불요청 부탁드립니다.");
                         return false;
                     } else {
                         alert(locale(language.value)("reject_msg"));
