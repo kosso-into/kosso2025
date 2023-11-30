@@ -1501,13 +1501,31 @@ input[type='date']::before {
 
 .modal_container > .content_container > .content{
 	display: grid;
-	grid-template-columns: 2.5fr 1fr 1fr;
+	grid-template-columns: 0.6fr 1.5fr 1fr 1fr;
 	align-items: center;
 	border-top: 1px solid #ddd;
 	row-gap: 0.5rem;
 	/* justify-content: space-between; */
 	column-gap: 0.5rem;
 	padding: 0.5rem;
+}
+
+.modal_container > .content_container > .content > .content_time{
+	border-right: 1px solid #ddd;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+.modal_container > .content_container > .content_panel > .content_time{
+	border-right: 1px solid #ddd;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
 }
 
 .modal_container > .content_container > .content > .content_person{
@@ -1522,7 +1540,7 @@ input[type='date']::before {
 
 .modal_container > .content_container > .content_panel{
 	display: grid;
-	grid-template-columns: 2.5fr 1fr 1fr;
+	grid-template-columns: 0.6fr 1.5fr 1fr 1fr;
 	align-items: center;
 	border-top: 1px solid #ddd;
 	row-gap: 0.5rem;
@@ -1552,11 +1570,11 @@ input[type='date']::before {
 @media screen and (max-width:1080px) {
 	.detail_modal{
 		top: 15%;
-		width: 90vw
+		width: 90vw;
 	}
 	.modal_sub_header{
 		flex-direction: column;
-		row-gap: 2rem
+		row-gap: 2rem;
 	}
 	.modal_container > .content_container > .content{
 		width: 100%;

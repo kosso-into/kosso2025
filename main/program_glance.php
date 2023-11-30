@@ -602,7 +602,7 @@ section.app_version .inner {
 					<p>ROOM 1</p>
 				</div>
 				<div>
-					<p>CHAIR</p>
+					<p>Chair Persons</p>
 					<div>
 						<b>김종화</b>
 						<p>부천세종병원 내분비내과</p>
@@ -612,10 +612,10 @@ section.app_version .inner {
 				</div>
 			</div>
 		</div>
-		<div class="content_container">
-				
+		<div class="content_container">	
 				<div class="content">
-					<div class="content_time">[14:50-14:55] 개회사</div>
+					<div class="content_time">14:50-14:55</div>
+                    <div>개회사</div>
 					<div class="content_1  content_person">
 						<p>SPEAKER</p>
 						<p>김성수</p>
@@ -625,7 +625,8 @@ section.app_version .inner {
 				</div>
 
 				<div class="content">
-				<div class="content_time">[14:55-15:00] 환영사</div>
+				<div class="content_time">14:55-15:00</div>
+                <div>환영사</div>
 					<div class="content_1  content_person">
 						<p>SPEAKER</p>
 						<p>김성수</p>
@@ -635,7 +636,8 @@ section.app_version .inner {
 				</div>
 
 				<div class="content">
-				<div class="content_time">[15:00-15:20] 비만의 공중보건학적 관점의 문제점</div>
+				<div class="content_time">15:00-15:20</div>
+                <div>비만의 공중보건학적 관점의 문제점</div>
 					<div class="content_1  content_person">
 						<p>SPEAKER</p>
 						<p>김성수</p>
@@ -645,7 +647,8 @@ section.app_version .inner {
 				</div>
 
 				<div class="content">
-				<div class="content_time">[15:00-15:20] 비만의 공중보건학적 관점의 문제점</div>
+				<div class="content_time">15:00-15:20</div>
+                <div>비만의 공중보건학적 관점의 문제점</div>
 					<div class="content_1  content_person">
 						<p>SPEAKER</p>
 						<p>김성수</p>
@@ -655,7 +658,8 @@ section.app_version .inner {
 				</div>
 
 				<div class="content">
-				<div class="content_time">[15:20-15:40] 비만대사수술 현황과 개선 방안</div>
+				<div class="content_time">15:20-15:40</div>
+                <div>비만대사수술 현황과 개선 방안</div>
 					<div class="content_1 content_person">
 						<p>SPEAKER</p>
 						<p>김성수</p>
@@ -665,7 +669,8 @@ section.app_version .inner {
 				</div>
 
 				<div class="content">
-					<div class="content_time">[15:40-15:55] 정부의 비만 정책 방향</div>
+					<div class="content_time">15:40-15:55</div>
+                    <div>정부의 비만 정책 방향</div>
 					<div class="content_1 content_person">
 						<p>SPEAKER</p>
 						<p>김성수</p>
@@ -675,7 +680,8 @@ section.app_version .inner {
 				</div>
 
 				<div class="content_panel">
-				<div class="content_time">[15:55-16:20] Panel Discussion</div>
+				<div class="content_time">15:55-16:20</div>
+                <div>Panel Discussion</div>
 					<div>
 					<div class="content_1 content_person">
 						<p>SPEAKER</p>
