@@ -822,7 +822,7 @@ section.visa .table_vertical th {color: #000;}
 .m_nav_wrap {display: none;}
 
 br.br_530_only {display: none;}
-	
+.g_h_logo img{height: 60px;}
 @media screen and (max-width: 1200px){
 	.welcome_txt {text-align: left;}
 	.g_h_top {padding:18px 0;}
