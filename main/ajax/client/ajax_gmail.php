@@ -488,14 +488,14 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			//$register_no = $data["idx"] ? "KSSO2024-" . $data["idx"] : "-";
 
 
-			if( $data["idx"]< 10){
-				$register_no = !empty( $data["idx"]) ? "KSSO2024-000" .  $data["idx"] : "-";
-			}else if($data["idx"] >= 10 && $data["idx"] < 100){
-				$register_no = !empty($list["idx"]) ? "KSSO2024-00" .  $data["idx"] : "-";
-			}else if($data["idx"] >= 100 && $data["idx"] < 1000){
-				$register_no = !empty($data["idx"]) ? "KSSO2024-0" . $data["idx"] : "-";
-			}else if($data["idx"] >= 1000 ){
-				$register_no = !empty($data["idx"]) ? "KSSO2024-" . $data["idx"] : "-";
+			if(intval($data["idx"]) < 10){
+				$register_no = $data["idx"] ? "KSSO2024-000" .  $data["idx"] : "-";
+			}else if(intval($data["idx"]) >= 10 && intval($data["idx"]) < 100){
+				$register_no = $data["idx"] ? "KSSO2024-00" .  $data["idx"] : "-";
+			}else if(intval($data["idx"]) >= 100 && intval($data["idx"]) < 1000){
+				$register_no = $data["idx"] ? "KSSO2024-0" . $data["idx"] : "-";
+			}else if(intval($data["idx"]) >= 1000 ){
+				$register_no = $data["idx"] ? "KSSO2024-" . $data["idx"] : "-";
 			}
 
 			$register_date = $data["register_date"] ?? "-";
