@@ -1128,7 +1128,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 /* HUBDNCLHJ 작업*/
 @media screen and (max-width: 1199px) {
-	section.container .page_title {height: 105px;padding: 38px 0 48px;}
+	section.container .page_title {height: 105px; padding: 36px 0 48px !important;}
 } 
 
 @media screen and (max-width: 486px) {
