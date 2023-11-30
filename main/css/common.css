@@ -152,7 +152,7 @@ p.sub_section_title.main_theme{color: #000;font-weight: 600;letter-spacing: -0.5
 .tab_li {text-align:center; margin-bottom:50px;}
 .tab_li li{display:inline-block;}
 .tab_area2 .clearfix li, .tab_li li {margin-right:20px;border: 1px solid #707070}
-.tab_area2 .clearfix li.active, .tab_li li.on {background-color: #10BF99;border: 1px solid #10BF99;}
+.tab_area2 .clearfix li.active, .tab_li li.on {background-color: #0499CC;border: 1px solid #0499CC;}
 .tab_area2 .clearfix li.active a, .tab_li li.on a {color:#fff;}
 .tab_area2 .clearfix li a, .tab_li li a {color: #444444;font-size: 22px; font-weight:bold;}
 .tab_area2 .clearfix li a strong, .tab_li li a strong {font-weight: bold;color: #444444;font-size: 22px;}
