@@ -541,7 +541,8 @@ section.container.organizing {padding-bottom: 190px;}
 .program_first_col {width:115px;}
 .program_table{width:100%; /*min-width:1200px;*/ border-top:2px solid #707070; /*table-layout:fixed;*/}
 .program_table th, .program_table td{text-align:center; padding:11px 10px;}
-.program_table thead tr:first-child{border-top:2px solid #707070;}
+.program_table thead tr:first-child{border-top:1px solid #707070;}
+.program_table thead tr:first-child > th { background-color: #FFFF99;}
 .program_table thead tr{border-bottom:1px solid #999;}
 .program_table tbody td, .program_table tbody th{border-bottom:1px solid #999;}
 .program_table tr td:last-of-type, .program_table .no_right_border{border-right:0 !important;}
@@ -1267,7 +1268,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.pop_education .btn {min-width: 120px; padding: 0 20px; font-size: 18px;}
 
 	/* .program_table {transform: scale(0.7); transform-origin: 0 0;} */
-	.program_table {min-width:800px;}
+	.program_table {min-width:600px;}
 	.program_table th, .program_table td {padding:6px;}
 	.program_table thead th.font_big, .program_table thead th {font-size:10px}
 	.program_table tbody td {font-size:8px; line-height:10px;}
@@ -1370,3 +1371,171 @@ input[type='date']::before {
   input[type='date']:valid::before {
 	display: none;
   }
+
+
+ 
+ /** 
+ program modal - sujeong
+ **/ 
+.detail_modal{
+	width: calc(60vw - 0.5rem);
+	max-height: calc(100vh - 0.5rem);
+	overflow-y: scroll;
+	padding: 2rem;
+	position: absolute;
+	top:10%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	overflow-y: auto;
+	background-color: #FFF;
+	z-index: 999999999999999;
+}
+
+.detail_modal > table{
+	z-index: 99999999999;
+}
+
+.modal_background{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -125px;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index:9999999
+}
+.modal_header {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	row-gap: 1.5rem;
+	margin-bottom: 2rem;
+}   
+
+.modal_header > h1 {
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+	font-weight: 700;
+}
+
+.modal_header > h6 {
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+	color: rgba(75,85,99,1);
+	font-weight: 500;
+}
+
+.modal_sub_header{
+	display: flex;
+	column-gap: 3rem;
+	flex-direction: row;
+}
+
+.modal_sub_header >div:last-child{
+	display: flex;
+	flex-direction: row;
+	/* justify-content: space-between; */
+	column-gap: 1rem;
+}
+
+.modal_close{
+    font-size: 20px;
+    font-weight: 600;
+    float: right;
+}
+
+.modal_close > img {
+	width: 16px;
+	margin-left: 5px;
+}
+
+.modal_container > .content_container > .content{
+	display: grid;
+	grid-template-columns: 2.5fr 1fr 1fr;
+	align-items: center;
+	border-top: 1px solid #ddd;
+	row-gap: 0.5rem;
+	/* justify-content: space-between; */
+	column-gap: 0.5rem;
+	padding: 0.5rem;
+}
+
+.modal_container > .content_container > .content > .content_person{
+	background-color: rgba(243,244,246,1);
+	height: 100%;
+	column-gap: 0.5rem;
+	padding: 0.5rem;
+	flex-direction: column;
+	display: flex;
+	transition: all .2s ease-in-out;
+}
+
+.modal_container > .content_container > .content_panel{
+	display: grid;
+	grid-template-columns: 2.5fr 1fr 1fr;
+	align-items: center;
+	border-top: 1px solid #ddd;
+	row-gap: 0.5rem;
+	/* justify-content: space-between; */
+	column-gap: 0.5rem;
+	padding: 0.5rem;
+}
+
+.modal_container > .content_container > .content_panel > div > .content_person{
+	background-color: rgba(243,244,246,1);
+	height: 100%;
+	column-gap: 0.5rem;
+	padding: 0.5rem;
+	flex-direction: column;
+	display: flex;
+	transition: all .2s ease-in-out;
+	margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.detail_modal{
+		top: 15%;
+		width: 90vw
+	}
+}
+
+@media screen and (max-width:1080px) {
+	.detail_modal{
+		top: 15%;
+		width: 90vw
+	}
+	.modal_sub_header{
+		flex-direction: column;
+		row-gap: 2rem
+	}
+	.modal_container > .content_container > .content{
+		width: 100%;
+		grid-template-columns: inherit;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	.modal_container > .content_container > .content > .content_time{
+		width: 100%;
+	}
+	.modal_container > .content_container > .content > .content_person{
+		width: 100%;
+	}
+
+	.modal_container > .content_container > .content_panel{
+		width: 100%;
+		grid-template-columns: inherit;
+		grid-template-rows: 0.5fr 1fr 1fr;
+	}
+	.modal_container > .content_container > .content_panel > .content_time{
+		width: 100%;
+	}
+	.modal_container > .content_container > .content_panel > div > .content_person{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.detail_modal{
+		top: 20%;
+	}
+}
