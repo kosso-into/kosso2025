@@ -1037,33 +1037,33 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			$url = $_SERVER['HTTP_HOST'] ?? "www.kosso.org";
 
-			$rawMessageString .= '<div><table width="750" style="border:1px solid #000;padding: 0;">
-								<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail_header.png" width="750" style="width:100%; max-width:100%;"></td></tr>
-								<tr><td width="74" style="width:74px;"></td><td>
-								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[KSSO 2024] 초록 제출이 완료되었습니다.</div></td><td width="74" style="width:74px;"></td></tr>
-								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear ' . $first_name . ' ' . $last_name . ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">대한비만학회 춘계학술대회에 초록 제출 감사합니다.<br>귀하의 초록은 다음과 같이 성공적으로 제출되었습니다.</p>
-								<!-- Abstract Submission Status -->
-								<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 제출 상태</p>
-								<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 30px;">
-								<tbody>
-								<tr>
-									<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">초록 접수 번호</th>
-									<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;">' . $submission_code . '</td>
-								</tr>
-								<tr>
-									<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">발표 형식</th>
-									<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . ($presentation_type + 1) . '. ' . $presentation_type_arr[$presentation_type] . '</td>
-								</tr>
-								<tr>
-									<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">주제 카테고리</th>
-									<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . $poster_category_map[$abstract_category] . '</td>
-								</tr>
-								<tr>
-									<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">초록 제목</th>
-									<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000; white-space:nowrap;" colspan="2">' . $abstract_title . '</td>
-								</tr>
-								</tbody>
-								</table>';
+			$rawMessageString .= ' <div><table width="750" style="border:1px solid #000;padding: 0;">
+			<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail/abstract_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
+			<tr><td width="74" style="width:74px;"></td><td>
+			<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[KSSO 2024] 초록 제출이 완료되었습니다.</div></td><td width="74" style="width:74px;"></td></tr>
+			<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '    . $last_name .$first_name. ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">대한비만학회 춘계학술대회에 초록 제출 감사합니다.<br>귀하의 초록은 다음과 같이 성공적으로 제출되었습니다.</p>
+			<!-- Abstract Submission Status -->
+			<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 제출 상태</p>
+			<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 30px;">
+			<tbody>
+			<tr>
+				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">초록 접수 번호</th>
+				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;">' . $submission_code . '</td>
+			</tr>
+			<tr>
+				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">발표 형식</th>
+				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . ($presentation_type + 1) . '. ' . $presentation_type_arr[$presentation_type] . '</td>
+			</tr>
+			<tr>
+				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">주제 카테고리</th>
+				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . $poster_category_map[$abstract_category] . '</td>
+			</tr>
+			<tr>
+				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">초록 제목</th>
+				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000; white-space:nowrap;" colspan="2">' . $abstract_title . '</td>
+			</tr>
+			</tbody>
+			</table>';
 
 			if (count($presenting_author_data) > 0 || count($corresponding_submit_data) > 0) {
 				$rawMessageString .= '<p style="font-size:17px; font-weight:bold; color:#000; margin: 20px 0 10px;">초록 접수 상태</p>';
@@ -1165,31 +1165,31 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				}
 			}
 
-			$rawMessageString .=  '<p style="margin: 0 34px 10px 0">만약 초록 제출과 관련된 문의사항이 있으시면, 사무국으로 연락 부탁드립니다.(<a href="mailto:ksso@into-on.com">ksso@into-on.com</a>)</p>
-								</div>
-								</td>
-								<td width="74" style="width:74px;"></td>
-								</tr>
-								<tr>
-									<td width="74" style="width:74px;"></td>
-									<td>
-										<!-- 23.04.25 수정된 버튼 마크업 -->
-										<p>항상 행운을 빕니다.</p>
-										<div style="text-align: center;">
-											<a href="https://kosso.org/">
-												<img src="https://www.kosso.org/main/img/ksso_btn.png" alt="">
-											</a>
-										</div>	
-									</td>
-									<td width="74" style="width:74px;"></td>
-								</tr>
-								<tr>
-									<td style="padding-top:50px;" colspan="3">
-										<img src="https://www.kosso.org/main/img/mail_footer.png" width="750" style="width:100%; max-width:100%;">
-									</td>
-								</tr>
-								</table>
-								</div>';
+			$rawMessageString .=  '   <p style="margin: 0 34px 10px 0">만약 초록 제출과 관련된 문의사항이 있으시면, 사무국으로 연락 부탁드립니다.(<a href="mailto:ksso@into-on.com">ksso@into-on.com</a>)</p>
+			</div>
+			</td>
+			<td width="74" style="width:74px;"></td>
+			</tr>
+			<tr>
+				<td width="74" style="width:74px;"></td>
+				<td>
+					<!-- 23.04.25 수정된 버튼 마크업 -->
+				  
+					<div style="text-align: center;">
+						<table align="center" cellspacing="0" cellpadding="0" width="100%"><tr><td align="center"><table border="0" class="mobile-button" cellspacing="0" cellpadding="0"<tr><td align="center" bgcolor="#ffcc33" style="background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 16px;box-shadow: 0px 5px 0px 0px #e0ba0d;" width="100%"><!--[if mso]>&nbsp;<![endif]--><a href="https://kosso.org/main" target="_blank" style="font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;"><span style="font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;">홈페이지 바로가기</span></a><!--[if mso]>&nbsp;<![endif]--></td></tr></table></td></tr></table>
+					</div>	
+				</td>
+				<td width="74" style="width:74px;"></td>
+			</tr>
+			<tr>
+				<td style="padding-top:50px;" colspan="3">
+					<img src="https://www.kosso.org/main/img/mail/mail_footer.png" width="750" style="width:100%; max-width:100%;">
+				</td>
+			</tr>
+			</table>
+			</div>
+		
+								';
 		}
 	}
 
