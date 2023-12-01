@@ -569,9 +569,6 @@ foreach ($nation_list as $obj) {
 							<th><?= $locale("phone") ?> *</th>
 							<td>
 								<div class="phone_div clearfix2">
-									<select name="nation_tel">
-										<option selected disabled></option>
-									</select>
 									<input type="text" name="phone" placeholder="010-1234-1234" readonly>
 							</td>
 		</div>
@@ -773,7 +770,7 @@ foreach ($nation_list as $obj) {
 
 		const phone_arr = data.phone.split("-");
 		var nation_tel = phone_arr ? phone_arr[0] ?? "" : "";
-		var phone = phone_arr ? phone_arr[1] ?? "" : "";
+		var phone = data.phone
 
 		return `<table class="c_table detail_table fixed_table mt10 detail_table_common" style="min-width:400px;">
 					<colgroup>
@@ -797,7 +794,7 @@ foreach ($nation_list as $obj) {
 						</tr>
 						<tr>
 							<th class="initial">휴대폰 번호</th>
-							<td colspan="3"><span id="co_nation_tel">${nation_tel ? '' : ''}</span><span id="phone">${phone}</span></td>
+							<td colspan="3"><span id="phone">${phone}</span></td>
 						</tr>
 					</tbody>
 				</table>`;
