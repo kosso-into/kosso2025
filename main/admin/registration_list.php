@@ -155,7 +155,7 @@ $html .= '<thead>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">등록 접수</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">참가자 정보</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="4">평점신청(Korean Only)</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">평점신청</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
 $html .= '</tr>';
@@ -178,7 +178,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">전문의번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">영양사자격번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">임상영양사자격번호</th>';
-// $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">운동사 신청(Y/N)</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">생년월일</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제상태</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록비</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
@@ -354,7 +354,7 @@ foreach ($registration_list as $rk => $rl) {
 				break;   
 		}
 
-$is_exercise = ($member_type == "Exercise Specialist") ? 'Y' : 'N';
+$date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
 
 	$html .= '<tr class="tr_center">';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . ($rk + 1) . '</td>';
@@ -375,7 +375,7 @@ $is_exercise = ($member_type == "Exercise Specialist") ? 'Y' : 'N';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $specialty_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $nutritionist_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $dietitian_number . '</td>';
-	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $is_exercise . '</td>';
+	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' .$date_of_birth. '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["payment_status"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $price . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["register_date"] . '</td>';
