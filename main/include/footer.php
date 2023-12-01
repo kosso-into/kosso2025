@@ -13,8 +13,9 @@
             if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
             ?>
                 <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
-                <!-- [231116]다운로드 버튼 막기 -->
-                <li>
+                <!-- [231116]다운로드 버튼 막기 
+                     [231201] 학회팀 요청 주석-->
+                <!-- <li>
                     <a href="" class="type2 pink not_yet">
                         <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
                         Abstract Book <br />Download
@@ -25,12 +26,36 @@
                         <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
                         Program Book <br />Download
                     </a>
+                </li> -->
+                <li>
+                    <button type="button" class="" onclick="goAbstract()">
+                        <img src="/main/img/icons/tool_abstract.svg" alt="">
+                    </button>
                 </li>
-
 
             <?php
             } else {
             ?>
+                <!-- <li>
+                    <button type="button" class="" onclick="goRegistration()">
+                        <img src="/main/img/icons/tool_regist.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="" onclick="goAbstract()">
+                        <img src="/main/img/icons/tool_abstract.svg" alt="">
+                    </button>
+                </li> -->
+            <?php
+            }
+            ?>
+            <?php
+            if ($_SESSION["USER"]["idx"] == "") {
+            ?>
+            <!-- 1201 학회팀 요청으로 
+                 로그인 전 -> 프로그램, 사전등록, 초록접수
+                로그인 후 => 프로그램, 초록접수, 마이페이지
+            -->
                 <li>
                     <button type="button" class="" onclick="goRegistration()">
                         <img src="/main/img/icons/tool_regist.svg" alt="">
@@ -41,16 +66,17 @@
                         <img src="/main/img/icons/tool_abstract.svg" alt="">
                     </button>
                 </li>
-            <?php
-            }
-            ?>
-            <?php
-            if ($_SESSION["USER"]["idx"] == "") {
-            ?>
-                <li><button type="button" onClick="alert('Need to login.')"><img src="/main/img/icons/tool_mypage.svg" alt=""></button></li>
+                <li>
+                    <!-- <button type="button" onClick="alert('Need to login.')"><img src="/main/img/icons/tool_mypage.svg" alt=""></button> -->
+                </li>
             <?php
             } else {
             ?>
+                 <li>
+                    <button type="button" class="" onclick="goAbstract()">
+                        <img src="/main/img/icons/tool_abstract.svg" alt="">
+                    </button>
+                </li>
                 <li><button type="button" onClick="location.href='/main/mypage.php'"><img src="/main/img/icons/tool_mypage.svg" alt=""></button></li>
             <?php
             }
@@ -88,7 +114,9 @@
             <li><img src="./img/sponsor/logo23.png" alt=""></li>
         </ul>
     </div> -->
-    <div class="sponsor_logo-wrap container">
+
+    <!-- [231201] sujeong 학회팀 요청으로 후원사 주석 -->
+    <!-- <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
             <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
@@ -116,7 +144,7 @@
             <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
             <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
         </ul>
-    </div>
+    </div> -->
     <footer class="footer">
         <div class="container">
             <br>

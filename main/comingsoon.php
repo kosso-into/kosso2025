@@ -4,7 +4,7 @@
 <section class="coming sub_page">
 	<div class="container">
 		<div class="sub_banner">
-			<h5>Will be updated</h5>
+			<h5>준비 중입니다.</h5>
 		</div>
 	</div>
 

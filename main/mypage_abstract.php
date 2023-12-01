@@ -28,7 +28,7 @@ $my_submission_list_query = "
                                         END) AS `type_name`,
                                         (CASE
                                             WHEN ra.is_presentation = '0'
-                                            THEN '접수 진행중'
+                                            THEN '제출 완료'
                                             WHEN ra.is_presentation = '1'
                                             THEN '접수 완료'
                                             ELSE '-'
@@ -61,9 +61,9 @@ $paging_html = $paging_admin['html'];
 $start_row = $paging_admin['start_row'];
 $end_row = $paging_admin['end_row'];
 
-
+/** sujeong 초록 접수 마감 기한 -> 이후 수정 불가*/
 $sql_during =	"SELECT
-						IF(DATE(NOW()) >= '2022-09-12', 'Y', 'N') AS yn
+						IF(DATE(NOW()) <= '2024-01-09', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 
@@ -115,7 +115,7 @@ foreach ($nation_list as $obj) {
 	<h1 class="page_title">마이 페이지</h1>
 	<div class="inner">
 		<ul class="tab_green">
-			<li><a href="./mypage.php">계정 정보</a></li>
+			<li><a href="./mypage.php">개인 정보</a></li>
 			<li><a href="./mypage_registration.php">등록</a></li>
 			<li class="on"><a href="./mypage_abstract.php">초록</a></li>
 			<?php
@@ -156,14 +156,21 @@ foreach ($nation_list as $obj) {
 								<td><?= $total_count - $i ?></td>
 								<td><?= $submission["submission_code"] ?></td>
 								<td>
-									<a href="javascript:;" class="text_center underline"><?= $submission["title"] ?></a>
+									<a href="javascript:;" class="text_center"><?= $submission["title"] ?></a>
 								</td>
 								<td><?= $submission["status"] ?></td>
 								<td><?= $submission["regist_date"] ?></td>
 								<td data-idx="<?= $submission["idx"] ?>">
 									<button type="button" class="btn review_regi_open">확인</button>
-                  <button type="button" class="btn modify_btn">수정</button>
-                  <button type="button" class="btn delete_btn">삭제</button>
+
+									<!--sujeong 수정 초록 제출 기한 이후로는 불가능하도록 수정 -->
+									<!-- <?php echo $during_yn; ?> -->
+									<?php if($during_yn === "Y"){ ?>
+                  					<button type="button" class="btn modify_btn">수정</button>
+									<?php } else { ?>
+									<button type="button" class="btn" onclick="alert('초록 제출 마감이 마감되어, 수정이 어렵습니다. 문의 사항이 있으신 경우, 운영사무국으로 연락 부탁드립니다.')">수정</button>
+									<?php } ?>
+                  					<button type="button" class="btn delete_btn">삭제</button>
 
 								</td>
 							</tr>
@@ -462,18 +469,6 @@ foreach ($nation_list as $obj) {
 		<button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
 		<input type="hidden" name="registration_idx" value="">
 		<h3 class="pop_title">초록 제출 확인</h3>
-		<!-- Presenting Author -->
-		<div class="pop_title_wrap">
-			<h4 id="author_information">저자 정보</h4>
-			<p id="presenting_author_title">발표 저자</p>
-		</div>
-		<div class="table_wrap x_scroll" id="presenting_author"></div>
-
-		<!-- Corresponding Author -->
-		<div class="pop_title_wrap">
-			<p id="corresponding_author_title">교신 저자</p>
-		</div>
-		<div class="table_wrap x_scroll" id="corresponding_author"></div>
 
 		<!-- Abstract Submission Status -->
 		<div class="pop_title_wrap">
@@ -514,6 +509,20 @@ foreach ($nation_list as $obj) {
 				</tbody>
 			</table>
 		</div>
+
+		<!-- Presenting Author -->
+		<div class="pop_title_wrap">
+			<h4 id="author_information">저자 정보</h4>
+			<p id="presenting_author_title">발표 저자</p>
+		</div>
+		<div class="table_wrap x_scroll" id="presenting_author"></div>
+
+		<!-- Corresponding Author -->
+		<div class="pop_title_wrap">
+			<p id="corresponding_author_title">교신 저자</p>
+		</div>
+		<div class="table_wrap x_scroll" id="corresponding_author"></div>
+
 		<div class="btn_wrap">
 			<button type="button" class="btn pop_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
 		</div>
@@ -741,13 +750,13 @@ foreach ($nation_list as $obj) {
 
 		var presentation_type_text = "";
 		if (submit_data.presentation_type == 0) {
-			presentation_type_text = "Oral Presentation";
+			presentation_type_text = "구연/포스터";
 		} else if (submit_data.presentation_type == 1) {
-			presentation_type_text = "Poster Exhibition";
+			presentation_type_text = "구연";
 		} else if (submit_data.presentation_type == 2) {
-			presentation_type_text = "Guided Poster Presentation";
+			presentation_type_text = "포스터";
 		} else if (submit_data.presentation_type == 3) {
-			presentation_type_text = "Any of Them";
+			presentation_type_text = "기타";
 		}
 
 		$("#submission_code").text(submit_data.submission_code);

@@ -92,7 +92,7 @@ $score_detail = sql_fetch($score_sql);
     <h1 class="page_title">마이 페이지</h1>
     <div class="inner">
         <ul class="tab_green">
-            <li><a href="./mypage.php">계정 정보</a></li>
+            <li><a href="./mypage.php">개인 정보</a></li>
             <li class="on"><a href="./mypage_registration.php">등록</a></li>
             <li><a href="./mypage_abstract.php">초록</a></li>
             <?php
@@ -308,7 +308,7 @@ $score_detail = sql_fetch($score_sql);
 
                         if ($payment_methods == "신용카드") {
                             if ($list["price"] == 0) {
-                                $payment_methods = "Free";
+                                $payment_methods = "무료등록";
                             } else {
                                 $payment_methods = "신용카드";
                             }
@@ -323,13 +323,13 @@ $score_detail = sql_fetch($score_sql);
                             <td><?= $member_type ?></td>
                             <!--<td><?= $list["attendance_type"] ?></td>-->
                             <!--<td><?= $price ?></td>-->
-                            <td><?= $list["is_korea"] == 1 ? "KRW" : "USD" ?>
-                                <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-" ?></td>
+                            <td>
+                                <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원' : "-" ?></td>
                             <td><?= $payment_methods ?></td>
 
 
                             <?php if ($list["status"] == 1) { ?>
-                                <td>결제 필요</td>
+                                <td>결제 확인 중</td>
                                 <td>
                                     <?php if ($list["payment_methods"] == 1) { ?>
                                         <a href="./registration.php?idx=<?php echo $list["idx"]
@@ -516,12 +516,12 @@ $score_detail = sql_fetch($score_sql);
                                     </div>
                                 </td>
                             <?php } else if( $list["status"] == 3){ ?>
-                                <td>환불 대기</td>
+                                <td>취소 처리 중</td>
                                 <td>
-                                 <p>환불 대기 상태입니다. <br>운영사무국<a style="width:fit-content" href="mailto:ksso@into-on.com">(ksso@into-on.com)</a>으로 문의부탁드립니다.</p>
+                                 <p>관련 문의 사항이 있으신 경우 <br>운영사무국<a style="width:fit-content" href="mailto:ksso@into-on.com">(ksso@into-on.com)</a>으로 연락 부탁드립니다.</p>
                                 </td>
                             <?php } else { ?>
-                                <td>환불 완료</td>
+                                <td>취소 완료</td>
                                 <td>-</td>
                             <?php } ?>
                         </tr>
@@ -602,7 +602,7 @@ $score_detail = sql_fetch($score_sql);
         <div class="pop_contents">
             <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
             <input type="hidden" name="registration_idx" value="">
-            <h3 class="pop_title">등록 정보 다시 보기</h3>
+            <!-- <h3 class="pop_title">등록 정보 다시 보기</h3> -->
             <div class="pop_title_wrap">
                 <p>등록 정보</p>
             </div>
@@ -760,7 +760,8 @@ $score_detail = sql_fetch($score_sql);
                 </table>
             </div>
             <div class="btn_wrap">
-                <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">취소 신청</button>
+                <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">등록취소</button>
+                <button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
             </div>
         </div>
     </div>

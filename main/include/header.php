@@ -18,35 +18,35 @@ $locale = locale($language);
                 <?php
                 if ($_SESSION["USER"]["idx"] == "") {
                 ?>
-                    <li><a href="/main/login.php">Log in</a></li>
-                    <li><a href="/main/signup.php">Sign up</a></li>
+                    <li><a href="/main/login.php">로그인</a></li>
+                    <li><a href="/main/signup.php">회원가입</a></li>
                 <?php
                 } else {
                 ?>
-                    <li><a href="/main/mypage.php">My page</a></li>
-                    <li><a class="logout_btn" href="javascript:;">Logout</a></li>
+                    <li><a href="/main/mypage.php">마이 페이지</a></li>
+                    <li><a class="logout_btn" href="javascript:;">로그아웃</a></li>
                 <?php
                 }
                 ?>
                 <!-- <li><a href="https://www.lipid.or.kr/">Go to KSoLA</a></li> -->
-                <li><a href="https://www.kosso.or.kr/" target="_blank">KSSO</a></li>
+                <li><a href="https://www.kosso.or.kr/" target="_blank">대한비만학회</a></li>
             </ul>
             <div class="mb_g_h_tool">
                 <ul>
                     <?php
                     if ($_SESSION["USER"]["idx"] == "") {
                     ?>
-                        <li><a href="/main/login.php">Log in</a></li>
-                        <li><a href="/main/signup.php">Sign up</a></li>
+                        <li><a href="/main/login.php">로그인</a></li>
+                        <li><a href="/main/signup.php">회원가입</a></li>
                     <?php
                     } else {
                     ?>
-                        <li><a href="/main/mypage.php">My page</a></li>
-                        <li><a class="logout_btn" href="javascript:;">Logout</a></li>
+                        <li><a href="/main/mypage.php">마이 페이지</a></li>
+                        <li><a class="logout_btn" href="javascript:;">로그아웃</a></li>
                     <?php
                     }
                     ?>
-                    <li><a href="https://www.kosso.or.kr/eng/" target="_blank">KSSO</a></li>
+                    <li><a href="https://www.kosso.or.kr/eng/" target="_blank">대한비만학회</a></li>
                 </ul>
                 <div>
                     <button type="button" class="m_nav_btn"><img src="/main/img/icons/m_nav.png"></button>
@@ -67,11 +67,11 @@ $locale = locale($language);
             <div class="nav_wrap pc_only">
                 <ul class="depth01 clearfix">
                     <li>
-                        <a href="/main/comingsoon.php">KSSO 2024</a>
+                        <a href="/main/welcome.php">KSSO 2024</a>
                         <ul class="sub_nav">
                             
                          <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">모시는 글</a></li>
+                            <li><a href="/main/welcome.php">모시는 글</a></li>
                             <!-- <li><a href="/main/welcome.php">모시는 글</a></li> -->
                             <!--li><a href="/main/organizing_committee.php">Organization</a></li-->
                             <!--li><a href="/main/overview.php">Overview</a></li-->
@@ -86,9 +86,9 @@ $locale = locale($language);
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
                             <li>
-                                <!-- <a href="/main/program_detail.php">Program in Detail</a> -->
+                                <a href="/main/program_detail.php">Program in Detail</a>
                             </li>
-                            <li><a href="/main/comingsoon.php">Program details</a></li>
+                            <!-- <li><a href="/main/comingsoon.php">Program details</a></li> -->
                             <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                         </ul>
                     </li>
@@ -102,6 +102,8 @@ $locale = locale($language);
                             </li>
                             <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
                             <li><a href="/main/abstract_submission.php">초록 접수</a></li>
+                            <li><a href="/main/comingsoon.php">발표 안내</a></li>
+
                             <!-- <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
@@ -113,9 +115,9 @@ $locale = locale($language);
                     <li>
                         <a href="/main/registration_guidelines.php">등록 접수</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/registration_guidelines.php">등록 접수 안내
+                            <li><a href="/main/registration_guidelines.php">등록 안내
                                 </a></li>
-                            <li><a href="/main/registration.php">온라인 등록 접수</a></li>
+                            <li><a href="/main/registration.php">사전 등록</a></li>
 
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/comingsoon.php">평점 안내</a></li>
@@ -128,7 +130,7 @@ $locale = locale($language);
                             
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/comingsoon.php">후원사</a></li>
-                            <li><a href="/main/comingsoon.php">전시 배치도</a></li>
+                            <li><a href="/main/comingsoon.php">부스 배치도</a></li>
                             <!-- <li><a href="/main/sponsor.php">후원사</a></li> -->
                             <!-- <li><a href="/main/sponsor_exhibition.php">전시 배치도</a></li> -->
                         </ul>
@@ -140,7 +142,7 @@ $locale = locale($language);
                             </li>
 
                             <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">숙박</a></li>
+                            <!-- <li><a href="/main/comingsoon.php">숙박</a></li> -->
                             <li><a href="/main/comingsoon.php">행사장 배치도</a></li>
                             <!-- <li><a href="/main/accommodation.php">숙박</a></li>
                             <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
@@ -242,8 +244,8 @@ $locale = locale($language);
                 
                 <!-- 1121 커밍순 페이지로 변경 -->
                     <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
-                    <!-- <li><a href="/main/program_detail.php">Program in Detail</a></li> -->
-                    <li><a href="/main/comingsoon.php">Program details</a></li>
+                    <li><a href="/main/program_detail.php">Program in Detail</a></li>
+                    <!-- <li><a href="/main/comingsoon.php">Program details</a></li> -->
                     <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                 </ul>
             </li>
@@ -256,7 +258,7 @@ $locale = locale($language);
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
                     <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a>
                     </li>
-
+                    <li><a href="/main/comingsoon.php">발표 안내</a></li>
                     <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
                     <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
@@ -266,8 +268,8 @@ $locale = locale($language);
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">
                 <a href="javascript:;"><span>등록 접수</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
-                    <li><a href="/main/registration_guidelines.php">등록 접수 안내</a></li>
-                    <li><a href="/main/registration.php">온라인 등록 접수</a></li>
+                    <li><a href="/main/registration_guidelines.php">등록 안내</a></li>
+                    <li><a href="/main/registration.php">사전 등록</a></li>
                     
                     <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
@@ -282,7 +284,7 @@ $locale = locale($language);
                    
                     <!-- 1121 커밍순 페이지로 변경 -->
                      <li><a href="/main/comingsoon.php">후원사</a></li>
-                    <li><a href="/main/comingsoon.php">전시 배치도</a></li>
+                    <li><a href="/main/comingsoon.php">부스 배치도</a></li>
                     <!-- <li><a href="application.php">Application</a></li> -->
                 </ul>
             </li>
@@ -294,7 +296,7 @@ $locale = locale($language);
                      <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/accommodation.php">숙박</a></li>
                     <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
-                    <li><a href="/main/comingsoon.php">숙박</a></li>
+                    <!-- <li><a href="/main/comingsoon.php">숙박</a></li> -->
                     <li><a href="/main/comingsoon.php">행사장 배치도</a></li>
                 </ul>
             </li>

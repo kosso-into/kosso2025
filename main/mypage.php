@@ -112,7 +112,7 @@ $score_detail = sql_fetch($score_sql);
 	<h1 class="page_title">마이 페이지</h1>
 	<div class="inner">
 		<ul class="tab_green">
-			<li class="on"><a href="./mypage.php">계정 정보</a></li>
+			<li class="on"><a href="./mypage.php">개인 정보</a></li>
 			<li><a href="./mypage_registration.php">등록</a></li>
 			<li><a href="./mypage_abstract.php">초록</a></li>
 		</ul>
@@ -155,7 +155,7 @@ $score_detail = sql_fetch($score_sql);
 								<th class="nowrap">비밀번호</th>
 								<td>
 									<div class="max_normal">
-										<input class="passwords" type="password" id="password" name="password" placeholder="Password">
+										<input class="passwords" type="password" id="password" name="password" placeholder="비밀번호">
 									</div>
 								</td>
 							</tr>
@@ -163,7 +163,7 @@ $score_detail = sql_fetch($score_sql);
 								<th class="nowrap">비밀번호 재확인</th>
 								<td>
 									<div class="max_normal">
-										<input class="passwords" type="password" id="re_password" name="re_password" placeholder="Re-type password">
+										<input class="passwords" type="password" id="re_password" name="re_password" placeholder="비밀번호 재확인">
 									</div>
 								</td>
 							</tr>
@@ -339,13 +339,13 @@ $score_detail = sql_fetch($score_sql);
 						<li>
 							<p class="label">비밀번호</p>
 							<div>
-								<input class="passwords" type="password" id="mo_password" name="mo_password" placeholder="Password">
+								<input class="passwords" type="password" id="mo_password" name="mo_password" placeholder="비밀번호">
 							</div>
 						</li>
 						<li>
 							<p class="label">비밀번호 재확인</p>
 							<div>
-								<input class="passwords" type="password" id="mo_re_password" name="mo_re_password" placeholder="Re-type password">
+								<input class="passwords" type="password" id="mo_re_password" name="mo_re_password" placeholder="비밀번호 재확인">
 							</div>
 						</li>
 						<li style="display: none;">
@@ -475,7 +475,9 @@ $score_detail = sql_fetch($score_sql);
 							<p class="label"><span class="red_txt">*</span>휴대폰 번호</p>
 							<div class="phone_form clearfix">
 								<!-- <input class="numbers" name="mo_nation_tel" type="text" value="<?= $nation_tel ?>"> -->
-								<input name="mo_phone" type="text" value="<?= $phone ?>">
+								<input class="tel_number tel_phone" name="mo_tel_nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>">
+								<input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
+								<input style="width:115px" class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
 							</div>
 						</li>
 						<li style="display: none;">
@@ -549,12 +551,12 @@ $score_detail = sql_fetch($score_sql);
 
 		$("input[name=affiliation_kor], input[name=department_kor], input[name=mo_affiliation_kor], input[name=mo_department_kor]")
 			.on("keyup", function() {
-				const regexp = /[a-z0-9]|[ \[\]{}()<>?|`~$%+=,.;:\"'\\]/g;
-				v = $(this).val();
-				if (regexp.test(v)) {
-					alert("한글만 입력가능 합니다.");
-					$(this).val(v.replace(regexp, ''));
-				}
+				regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            v = $(this).val();
+            if (regexp.test(v)) {
+                alert("특수기호는 입력이 불가합니다.");
+                $(this).val(v.replace(regexp, ''));
+            }
 			});
 
 		$("input[name=phone], input[name=mo_phone]").keyup(function(event) {
@@ -602,9 +604,9 @@ $score_detail = sql_fetch($score_sql);
 
 			check = name_check("phone");
 			if (check == false) return;
-			var phone = $("input[name=phone]").val();
+			var phone = $("input[name=tel_nation_tel]").val() + $("input[name=telephone1]").val()  + $("input[name=telephone2]").val();
 			//var resultPhone = $("[name=nation_mobile] :selected").text().trim();
-			var resultPhone = nation_tel + '-' + phone;
+			var resultPhone = phone;
 
 			/*
 			check = name_check("telephone_num1");
@@ -771,9 +773,9 @@ $score_detail = sql_fetch($score_sql);
 
 			check = name_check("mo_phone");
 			if (check == false) return;
-			var phone = $("input[name=mo_phone]").val();
+			var phone = $("input[name=mo_tel_nation_tel]").val() + $("input[name=mo_telephone1]").val() + $("input[name=mo_telephone2]").val();
 			//var resultMobilePhone = $("[name=mo_nation_mobile] :selected").text().trim();
-			var resultMobilePhone = nation_tel + '-' + phone;
+			var resultMobilePhone = phone;
 			/*
 			check = name_check("mo_telephone_num1");
 			if(check == false) return;
@@ -1018,27 +1020,33 @@ $score_detail = sql_fetch($score_sql);
 		if (i == 1) {
 			if (!pw1 || pw1_len <= 0) {
 				$("input[name=" + password + "]").focus();
-				alert("Invalid passwrod");
+				alert("비밀번호를 확인해주세요.");
 				return false;
 			}
 		} else {
 			if (!pw2 || pw2_len <= 0) {
 				$("input[name=" + password2 + "]").focus();
-				alert("Invalid passwrod");
+				alert("비밀번호를 확인해주세요.");
 				return false;
 			}
 		}
 		if (pw1_len > 0 && pw2_len > 0) {
 			if (pw1 !== pw2) {
 				$("input[name=" + password + "]").focus();
-				alert("inconsistency passwrod");
+				alert("비밀번호가 일치하지 않습니다.");
 				return false;
 			}
 		}
 	}
 
 	function name_check(name, mo) {
-		var first_name = $("input[name=" + name + "]").val();
+		if(name !== "phone" && name !== "mo_phone"){
+			var first_name = $("input[name=" + name + "]").val();
+		}else if (name == "phone" && name !== "mo_phone"){
+			var first_name = $("input[name=tel_nation_tel]").val() + $("input[name=telephone1]").val()  + $("input[name=telephone2]").val();
+		}else if(name !== "phone" && name == "mo_phone"){
+			var first_name = $("input[name=mo_tel_nation_tel]").val() + $("input[name=mo_telephone1]").val() + $("input[name=mo_telephone2]").val();
+		}
 		console.log(first_name + name);
 		var first_name_len = first_name.trim().length;
 		first_name = (typeof(first_name) != "undefined") ? first_name : null;
@@ -1052,21 +1060,23 @@ $score_detail = sql_fetch($score_sql);
 				alert("Invalid Others");
 			} else {
 				if (name == "first_name") {
-					name = "first name";
+					name = "성함";
 				} else if (name == "last_name") {
-					name = "last name";
+					name = "성함";
 				} else if (name == "name_kor") {
-					name = "name (KOR)";
+					name = "성함";
 				} else if (name == "affiliation_kor") {
-					name = "affiliation (KOR)";
+					name = "소속";
 				} else if (name == "licence_number") {
 					name = "licence number";
 				} else if (name == "nutritionist_number") {
 					name = "nutritionist number";
 				} else if (name == "specialty_number") {
 					name = "specialty number";
+				} else if (name == "phone") {
+					name = "휴대폰 번호";
 				}
-				alert("Invalid " + name);
+				alert("잘못된 " + name+"입니다.");
 			}
 			return false;
 		}
