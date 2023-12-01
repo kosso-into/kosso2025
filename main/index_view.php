@@ -184,10 +184,11 @@ body {
 </section>
 
 <!-- Plenary Speakers -->
-<!-- 1차시 오픈 X
+
 <div class="speakers_wrap">
     <div class="container">
-        <h3 class="title">Plenary &amp; Keynote Speakers</h3>
+        <!-- <h3 class="title">Plenary &amp; Keynote Speakers</h3> -->
+        <h3 class="title">주요 세션 소개</h3>
         <div class="">
             <ul class="main_speaker2">
                 <li class="index_speaker5">
@@ -219,8 +220,7 @@ body {
                     <h5 class="title">TBD</h5>
                     <div class="career">TBD</div>
                 </li> 
-                1차시 오픈 X
-                -->
+            
 <!-- <li class="index_speaker2">
 
                     <div class="profile_circle">
@@ -251,21 +251,20 @@ body {
                     <div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
                 </li> -->
 
-<!-- 1차시 오픈 X
+
             </ul>
         </div>
     </div>
 </div> 
-1차시 오픈 X
--->
+
 <!-- Key dates & News,Notice -->
-<!-- 1차시 오픈 X
+
 <section>
     <div class="container">
-        <div class="noti_wrap"> -->
+        <div class="noti_wrap"> 
 <!-- 2022년 버전에 뉴스레터 없어서 테스트 텍스트로 넣어놓음 -->
-<!-- <div class="noti_area">
-                <h3 class="title">Newsletter<a href="/main/board_newsletter.php" class="moreview_btn">+</a></h3>
+<div class="noti_area">
+                <h3 class="title">뉴스레터<a href="/main/board_newsletter.php" class="moreview_btn">+</a></h3>
                 <ul>
                     <?php
                     if ($total_newsletter > 0) {
@@ -279,16 +278,16 @@ body {
                     } else {
                         ?>
                     <li>
-                        <div class='no_data'>Will be updated</div>
+                        <div class='no_data'>준비 중입니다.</div>
                     </li>
                     <?php
                     }
                     ?>
                 </ul>
-            </div> -->
+            </div> 
 <!-- 2022년 버전에 공지사항 없어서 테스트 텍스트로 넣어놓음 -->
-<!-- <div class="noti_area">
-                <h3 class="title">Notice<a href="/main/board_notice.php" class="moreview_btn">+</a></h3>
+ <div class="noti_area">
+                <h3 class="title">공지사항<a href="/main/board_notice.php" class="moreview_btn">+</a></h3>
                 <ul>
                     <?php if (count($notice_list) > 0) { ?>
                     <?php
@@ -301,14 +300,14 @@ body {
                     <?php } ?>
                     <?php } else { ?>
                     <li>
-                        <div class='no_data'>Will be updated</div>
+                        <div class='no_data'>준비 중입니다.</div>
                     </li>
                     <?php } ?>
                 </ul>
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!-- fixed_btn : register > 실제 등록 가능기간이기 전까지 주석처리 ()
 <button type="button" class="btn_fixed_triangle"><span>Register<br>Now</span></button>-->
 <!-- page loading bar 주석-->
