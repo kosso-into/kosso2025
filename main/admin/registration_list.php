@@ -104,7 +104,7 @@ $registration_list_query =  "
 										m.affiliation, m.department,
 										m.affiliation_kor, m.department_kor,
 										m.nation_no,
-										m.date_of_birth,
+										rr.date_of_birth,
 										rr.banquet_yn,
 										total_price_kr,
 										total_price_us,
