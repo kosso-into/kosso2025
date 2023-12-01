@@ -249,14 +249,15 @@ $abstract_idx = $_GET["idx"];
                             <select name="abstract_category" id="">
                                 <option value="" hidden>카테고리 선택</option>
                                 <?php
-									foreach ($category_list as $list) {
-										$selected = $abstract_category == $list["idx"] ? "selected" : "";
-										echo "<option value='" . $list["idx"] . "'" . $selected . ">" . $list["title_en"] . "</option>";
-									}
-									?>
+                                    foreach ($category_list as $index => $list) {
+                                        $selected = $abstract_category == $list["idx"] ? "selected" : "";
+                                        echo "<option value='" . $list["idx"] . "'" . $selected . ">" . ($index + 1) . ". " . $list["title_en"] . "</option>";
+                                    }
+                                    ?>
                             </select>
                         </div>
                     </li>
+                    <!--[231201] sujeoung /학회팀 요청/ 제목에 한글 제외-->
 					<li>
                         <p class="label">초록 제목 <span class="red_txt">*</span></p>
                         <div>
@@ -729,8 +730,9 @@ $(document).ready(function() {
 
     });
 
+    /**[231201] sujeong 수정 / 학회팀 요청 / 제목에 한글 방지 추가*/
 	$(document).on("keyup", ".en_num_keyup", function(key) {
-        var pattern = /[ \[\]{}<>|`\"'\\]/g;
+        var pattern = /[ \[\]{}<>|`\"'\\ㄱ-ㅎㅏ-ㅣ가-힣]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var abstract_title = _this.val().replace(pattern, '');

@@ -128,7 +128,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td colspan="4"> Will be updated </td>
+							<td colspan="4"> 준비 중입니다. </td>
 						</tr>
 					</tbody>
 				</table>

@@ -56,7 +56,7 @@ if($registration_idx < 10){
 
 $name = $data["last_name"] . $data["first_name"] ?? "-";
 $nation = $data["nation_en"] ?? "-";
-$total_price = ($data["nation_no"] == 25) ? "KRW " . $data["total_price_kr_text"] : "USD " . $data["total_price_us_text"];
+$total_price = ($data["nation_no"] == 25) ?   $data["total_price_kr_text"] . "원" : "USD " . $data["total_price_us_text"];
 $payment_method = $data["payment_method_txt"] ?? "-";
 $payment_date = $data["payment_date_text"] ?? "-";
 ?>
