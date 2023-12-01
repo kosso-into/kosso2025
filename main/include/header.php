@@ -86,9 +86,9 @@ $locale = locale($language);
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
                             <li>
-                                <a href="/main/program_detail.php">Program in Detail</a>
+                                <a href="/main/comingsoon.php">Program in Detail</a>
                             </li>
-                            <!-- <li><a href="/main/comingsoon.php">Program details</a></li> -->
+                            <!-- <li><a href="/main/program_detail.php">Program details</a></li> -->
                             <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                         </ul>
                     </li>
@@ -244,8 +244,8 @@ $locale = locale($language);
                 
                 <!-- 1121 커밍순 페이지로 변경 -->
                     <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
-                    <li><a href="/main/program_detail.php">Program in Detail</a></li>
-                    <!-- <li><a href="/main/comingsoon.php">Program details</a></li> -->
+                    <li><a href="/main/comingsoon.php">Program in Detail</a></li>
+                    <!-- <li><a href="/main/program_detail.php">Program details</a></li> -->
                     <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                 </ul>
             </li>
