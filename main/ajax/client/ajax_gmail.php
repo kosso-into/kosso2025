@@ -555,6 +555,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$nation_en = $nation["nation_en"] ?? "-";
 
 			$phone = $data["phone"] ?? "";
+			$phone = substr($data['phone'], 0, 3). '-' .  substr($data['phone'], 3, 4). '-' .substr($data['phone'], 7);
 			$member_type = $data["member_type"] ?? "";
 			$registration_type = $data["registration_type"] ?? "-";
 			$registration_type = ($registration_type == 0) ? "Yes" : "No";
@@ -814,7 +815,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
                                    </tr>
                                    <tr style='border-bottom:1px solid #000;'>
                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록비</th>
-                                       <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_current} {$pay_price}</td>
+                                       <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_price}원</td>
                                    </tr>
                                    <tr style='border-bottom:1px solid #000;'>
                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>결제 방법</th>
@@ -1109,7 +1110,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail/abstract_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
 			<tr><td width="74" style="width:74px;"></td><td>
 			<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;"></div></td><td width="74" style="width:74px;"></td></tr>
-			<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '    . $last_name .$first_name. ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">대한비만학회 춘계학술대회에 초록 제출 감사합니다.<br>귀하의 초록은 다음과 같이 성공적으로 제출되었습니다.</p>
+			<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '    . $last_name .$first_name. ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">아래의 초록 접수 내용을 확인해 주세요.</p>
 			<!-- Abstract Submission Status -->
 			<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 제출 상태</p>
 			<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 30px;">
@@ -1163,6 +1164,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					
 					//[231201] sujeong 추가 82- 제거
 					$phone = $obj["phone"];
+					$phone = substr($obj['phone'], 0, 3). '-' .  substr($obj['phone'], 3, 4). '-' .substr($obj['phone'], 7);
 					
 					$rawMessageString .= '<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 20px;">
 										<tbody>
@@ -1215,6 +1217,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					
 					//[231201] sujeong 추가 82- 제거
 					$phone = $obj["phone"];
+					$phone = substr($obj['phone'], 0, 3). '-' .  substr($obj['phone'], 3, 4). '-' .substr($obj['phone'], 7);
 
 					$rawMessageString .= '<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 20px;">
 										<tbody>
@@ -1241,10 +1244,15 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				}
 			}
 
-			$rawMessageString .=  '   <p style="margin: 0 34px 10px 0">만약 초록 제출과 관련된 문의사항이 있으시면, 사무국으로 연락 부탁드립니다.(<a href="mailto:ksso@into-on.com">ksso@into-on.com</a>)</p>
-			</div>
+			$rawMessageString .=  '    </div>
 			</td>
-			<td width="74" style="width:74px;"></td>
+			<td width="74" style="width:74px;">
+			</td>
+			</tr>
+			<tr>
+				<td style="padding-top:50px;" colspan="3">
+					<img src="https://www.kosso.org/main/img/mail/abstract_footer_01.png" alt="footer01" width="750" style="width:100%; max-width:100%;">
+				</td>
 			</tr>
 			<tr>
 				<td width="74" style="width:74px;"></td>
@@ -1271,13 +1279,11 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			</tr>
 			<tr>
 				<td style="padding-top:50px;" colspan="3">
-					<img src="https://www.kosso.org/main/img/mail/mail_footer.png" width="750" style="width:100%; max-width:100%;">
+					<img src="https://www.kosso.org/main/img/mail/abstract_footer_02.png" width="750" style="width:100%; max-width:100%;" alt="footer02">
 				</td>
 			</tr>
 			</table>
-			</div>
-		
-								';
+			</div>	';
 		}
 	}
 
