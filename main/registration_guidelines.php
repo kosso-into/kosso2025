@@ -32,7 +32,7 @@ $price = get_data($sql_price);
 
 <section class="container registration">
     <div>
-        <h1 class="page_title">등록 접수 가이드</h1>
+        <h1 class="page_title">등록 안내</h1>
         <div class="inner">
             <!--1. important dates start-->
             <h3 class="title">사전등록 기간</h3>

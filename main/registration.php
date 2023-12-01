@@ -144,7 +144,7 @@ if ($during_yn !== "Y") {
 
 <!-- <section class="container online_register submit_application"> -->
 <section class="container online_register abstract_online_submission">
-    <h1 class="page_title">온라인 사전등록</h1>
+    <h1 class="page_title">사전 등록</h1>
     <div class="inner">
         <!-- <div class="sub_banner"> -->
         <!--     <h1>Online Registration</h1> -->
