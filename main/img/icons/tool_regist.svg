@@ -4,9 +4,9 @@
       <rect id="사각형_388" data-name="사각형 388" width="32.53" height="30.055" fill="#ff9"/>
     </clipPath>
   </defs>
-  <g id="그룹_1204" data-name="그룹 1204" transform="translate(-1821 -229)">
+  <g id="그룹_1214" data-name="그룹 1214" transform="translate(-1821 -229)">
     <rect id="사각형_385" data-name="사각형 385" width="76" height="76" rx="13" transform="translate(1821 229)" fill="#013366"/>
-    <text id="등록" transform="translate(1859 291)" fill="#ff9" font-size="10" font-family="NanumGothicBold, NanumGothic"><tspan x="-9.4" y="0">등록</tspan></text>
+    <text id="사전등록" transform="translate(1840 291)" fill="#ff9" font-size="10" font-family="NanumGothicBold, NanumGothic"><tspan x="0" y="0">사전등록</tspan></text>
     <g id="그룹_253" data-name="그룹 253" transform="translate(1843 246.672)" clip-path="url(#clip-path)">
       <path id="패스_1783" data-name="패스 1783" d="M.7,29.411a.714.714,0,0,1-.268-.053A.7.7,0,0,1,0,28.709V2.292a.7.7,0,0,1,.7-.7H25.873a.7.7,0,1,1,0,1.4H1.4V27.014L6.468,21.95a.7.7,0,0,1,.5-.206H26.773V8.929a.7.7,0,1,1,1.4,0V22.446a.7.7,0,0,1-.7.7H7.255L1.2,29.206a.708.708,0,0,1-.5.205" transform="translate(0 0.643)" fill="#ff9"/>
       <path id="패스_1784" data-name="패스 1784" d="M10.233,19.145a.7.7,0,0,1-.687-.846L10.6,13.225a.694.694,0,0,1,.19-.354L23.455.205a.7.7,0,0,1,.993,0l4.02,4.021a.7.7,0,0,1,0,.993L15.8,17.884a.688.688,0,0,1-.354.19L10.375,19.13a.7.7,0,0,1-.142.015m1.7-5.429-.8,3.821,3.823-.8L26.978,4.722,23.951,1.7Zm3.377,3.67h0Z" transform="translate(3.856 -0.001)" fill="#ff9"/>
