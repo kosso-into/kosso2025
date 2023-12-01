@@ -102,6 +102,57 @@
                             <td>여비 보조금 <span class="red_txt">15만원</span></td>
                         </tr>                       
                     </table>
+
+                <!--[231201]sujeong 학회팀 요청 / 확정 나기 전까지는 주석 -->
+                  <!--  <table class="c_table detail_table">
+                        <colgroup>
+                            <col class="submission_col type2">
+                            <col width="40%">
+                            <col width="40%">
+                        </colgroup>
+                        <tr>
+                            <th></th>
+                            <th>MD</th>
+                            <th>Non-MD</th>
+                        </tr>
+                        <tr>
+                            <th>지원 내용</th>
+                            <td>
+                                <p>KPBMA 공정규약에 의거하여 지원</p>
+                            </td>
+                            <td>
+                                <p>150,000원(기타소득세 제외 후 지급)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원 자격</th>
+                            <td>
+                                <p>1. 대한비만학회 정회원 및 평생회원</p>
+                                <p>2. 의사 면허 소지자</p>
+                                <p>• 두 가지 모두 충족 시</p>
+                            </td>
+                            <td>
+                                <p>영양사, 운동사 등</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원범위</th>
+                            <td>
+                                <p>학회 등록비, 왕복 교통비, 숙박비</p>    
+                            </td>
+                            <td></td>
+                        </tr>   
+                        <tr>
+                            <th>선발방식</th>
+                            <td> 
+                                <p>지원대상자 대한비만학회 개별 공지</p>
+                            </td>
+                            <td>
+                                <p>1. 지원 양식 다운로드 및 작성</p>
+                                <p>2. 이메일을 통한 양식 제출</p>
+                            </td>
+                        </tr>                      
+                    </table> -->
                 </div>
 				<!-- <p class="mt10 p_indent">• 지원금 신청과 기타 필요한 정보에 대한 안내는 초록 채택자에 한하여 별도로 사무국에서 이메일을 통해 연락드릴 예정입니다.</p> -->
 			</div>

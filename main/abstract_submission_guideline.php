@@ -22,10 +22,10 @@ $info = sql_fetch($sql_info);
 
 ?>
 <section class="abstract_submission_guideline container">
-    <h1 class="page_title">초록 접수 안내</h1>
+    <h1 class="page_title">초록 안내</h1>
     <div class="inner">
         <ul class="tab_green long abstract_submission">
-            <li class="on"><a href="./abstract_submission_guideline.php">초록 접수 가이드</a></li>
+            <li class="on"><a href="./abstract_submission_guideline.php">초록 안내</a></li>
             <li><a href="./abstract_submission.php" class="">초록 접수</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
