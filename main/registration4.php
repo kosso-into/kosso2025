@@ -42,7 +42,7 @@
 		$nation_list = get_data($nation_list_query);
 
 		if(!empty($_SESSION["USER"])){
-			echo "<script>alert('Not Need to login'); window.location.replace(PATH+'index.php');</script>";
+			echo "<script>alert('Not 로그인이 필요합니다.'); window.location.replace(PATH+'index.php');</script>";
 			exit;
 		}
 		

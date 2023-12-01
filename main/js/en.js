@@ -105,7 +105,7 @@ var en = {
 	reject_msg : "Reject the request.",
 	language_success_msg : "Language Transformation Successful",
 	retry_msg : "Please try again.",
-	need_login : "need to login",
+	need_login : "로그인이 필요합니다.",
 	invalid_auth : "Invalid Auth",
 	
 	//유효성

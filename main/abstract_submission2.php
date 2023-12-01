@@ -104,11 +104,17 @@ $abstract_idx = $_GET["idx"];
 	$data_count = count($_SESSION["abstract"]);
 
 	//초기 작성 시 연락처 쪼깨기
-	if ($submit_data == "") {
-		$_arr_phone = explode("-", $user_info["phone"]);
-		$nation_tel = $_arr_phone[0];
-		$phone = implode("-", array_splice($_arr_phone, 1));
-	}
+    //[231201] sujeong 주석
+	// if ($submit_data == "") {
+	// 	$_arr_phone = explode("-", $user_info["phone"]);
+	// 	$nation_tel = $_arr_phone[0];
+	// 	$phone = implode("-", array_splice($_arr_phone, 1));
+	// }
+
+    //[231201] sujeong 주석 phone에 82- 제거
+    if ($submit_data == "") {
+        	$phone = $user_info["phone"];
+        }
 
 	//데이터(초기 세팅 및 이전으로 돌아왔을때 입력값 세팅)
 	$nation_no = !empty($submit_data) ? $submit_data["nation_no"] : $user_info["nation_no"];

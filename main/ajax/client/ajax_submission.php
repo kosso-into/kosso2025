@@ -129,7 +129,7 @@
         $nation_tel = isset($_POST["nation_tel"]) ? $_POST["nation_tel"] : "";
         $phone = isset($_POST["phone"]) ? $_POST["phone"] : "";
 
-        $phone = phoneNumberTransform($nation_tel, $phone);
+        //$phone = phoneNumberTransform($nation_tel, $phone);
 
         if($type == "update") {
             $submission_query = "
@@ -428,7 +428,7 @@
 		$nation_tel = str_replace('+', '', $nation_tel);
         $phone = isset($data["phone"]) ? $data["phone"] : "";
 
-        $phone = phoneNumberTransform($nation_tel, $phone);
+        //$phone = phoneNumberTransform($nation_tel, $phone);
         //$affiliation = affiliationJson($affiliation);
 
         $coauthor_affiliation = array();
@@ -470,7 +470,7 @@
 				
 				$coauthor_nation_tel = isset($coauthor_data[$i]["add_co_nation_tel".$i]) ? $coauthor_data[$i]["add_co_nation_tel".$i] : "";
 				$coauthor_phone[$i] = isset($coauthor_data[$i]["add_co_phone".$i]) ? $coauthor_data[$i]["add_co_phone".$i] : "";
-				$coauthor_phone[$i] = phoneNumberTransform($coauthor_nation_tel, $coauthor_phone[$i]);
+				//$coauthor_phone[$i] = phoneNumberTransform($coauthor_nation_tel, $coauthor_phone[$i]);
 				
             }
         }
@@ -609,7 +609,7 @@
 				$co_email = $co_data["add_co_email".$i] ?? "";
 				$co_nation_tel = $co_data["add_co_nation_tel".$i] ?? "";
 				$co_nation_tel = str_replace('+', '', $co_nation_tel);
-				$co_phone = phoneNumberTransform($co_nation_tel, $co_data["add_co_phone".$i] ?? "");
+				//$co_phone = phoneNumberTransform($co_nation_tel, $co_data["add_co_phone".$i] ?? "");
 
 				if($co_idx) {
                     $co_submission_query =  "

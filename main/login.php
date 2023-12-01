@@ -5,7 +5,7 @@
 
 // [22.04.25] 미로그인시 처리
 if ($_SESSION["USER"]) {
-	echo "<script>alert('You are already logged in.'); location.replace(PATH+'mypage.php');</script>";
+	echo "<script>alert('이미 로그인이 되었습니다.'); location.replace(PATH+'mypage.php');</script>";
 	exit;
 }
 ?>

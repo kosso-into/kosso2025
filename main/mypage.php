@@ -25,7 +25,7 @@ if ($user_info["telephone"]) {
 
 // [22.04.25] 미로그인시 처리
 if (!$user_info) {
-	echo "<script>alert('Need to login'); location.replace(PATH+'login.php');</script>";
+	echo "<script>alert('로그인이 필요합니다.'); location.replace(PATH+'login.php');</script>";
 	exit;
 }
 

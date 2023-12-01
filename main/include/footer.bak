@@ -12,7 +12,7 @@
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-            <li><button type="button" onClick="alert('Need to login.')"><i><img src="/main/img/icons/tool_mypage.svg"
+            <li><button type="button" onClick="alert('로그인이 필요합니다..')"><i><img src="/main/img/icons/tool_mypage.svg"
                             alt=""></i>My page</button></li>
             <?php
             } else {
