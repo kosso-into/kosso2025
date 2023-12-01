@@ -232,7 +232,7 @@ $info = sql_fetch($sql_info);
                             <th>초록 구성</th>
                             <td>
                                 <p>• <span style="font-weight:bold">제목</span>: 30단어 내로 작성</p>
-                                <p>• <span style="font-weight:bold">본문</span>: 300단어 내로 작성</p>
+                                <p>• <span style="font-weight:bold">본문</span>: 국문 800~1000자, 영문 300단어 이내로 작성</p>
                                 <p>• <span style="font-weight:bold;">필수 요소</span>: Background, methods & materials, results, conclusions</p>
                                 <p>• <span style="font-weight:bold">선택사항</span>: Keywords</p>
 
