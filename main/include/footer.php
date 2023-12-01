@@ -27,11 +27,11 @@
                         Program Book <br />Download
                     </a>
                 </li> -->
-                <li>
+                <!-- <li>
                     <button type="button" class="" onclick="goAbstract()">
                         <img src="/main/img/icons/tool_abstract.svg" alt="">
                     </button>
-                </li>
+                </li> -->
 
             <?php
             } else {

@@ -175,7 +175,7 @@ $locale = locale($language);
 <script>
     $(document).ready(function() {
         $(".not_yet").click(function() {
-            alert("Coming soon.")
+            alert("준비 중입니다.")
         });
 
         $(".online_submission_alert").click(function(event) {
