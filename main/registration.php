@@ -400,11 +400,9 @@ if ($during_yn !== "Y") {
                                 <i></i> <?= $locale("not_applicable") ?>
                             </label>
                         </p>
-                        <input type="text" name="nutritionist_number" id="nutritionist_number"
-                            class="under_50 input_license"
-                            value="<?= $prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : "" ?>
-                            ">
-                        
+                        <input type="text" name="nutritionist_number" id="nutritionist_number" class="under_50 input_license"
+                            value="<?= $prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : "" ?>">
+                      
                     </li>
                     <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                         <p class="label">
@@ -416,8 +414,7 @@ if ($during_yn !== "Y") {
                             </label>
                         </p>
                         <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license"
-                            value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>
-                            ">
+                            value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>">
                             
                     </li>
                     <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
