@@ -771,6 +771,7 @@ foreach ($nation_list as $obj) {
 		const phone_arr = data.phone.split("-");
 		var nation_tel = phone_arr ? phone_arr[0] ?? "" : "";
 		var phone = data.phone
+		var result_phone = phone.slice(0,3) + '-' + phone.slice(3,7)  + '-' + phone.slice(7) 
 
 		return `<table class="c_table detail_table fixed_table mt10 detail_table_common" style="min-width:400px;">
 					<colgroup>
@@ -794,7 +795,7 @@ foreach ($nation_list as $obj) {
 						</tr>
 						<tr>
 							<th class="initial">휴대폰 번호</th>
-							<td colspan="3"><span id="phone">${phone}</span></td>
+							<td colspan="3"><span id="phone">${result_phone}</span></td>
 						</tr>
 					</tbody>
 				</table>`;

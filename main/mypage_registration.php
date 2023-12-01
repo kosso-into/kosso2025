@@ -315,7 +315,7 @@ $score_detail = sql_fetch($score_sql);
                         } else {
                             $payment_methods = "계좌이체";
                         }
-
+                        $phone = substr($list['phone'], 0, 3). '-' .  substr($list['phone'], 3, 4). '-' .substr($list['phone'], 7);
                     ?>
 
                         <tr>
@@ -371,7 +371,7 @@ $score_detail = sql_fetch($score_sql);
                                                 </tr>
                                                 <tr>
                                                     <th>휴대폰 번호</th>
-                                                    <td><?= $list["phone"] ?? "-" ?></td>
+                                                    <td><?= $phone ?? "-" ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>대한 비만학회 회원여부</th>
