@@ -32,12 +32,11 @@ $sql = "SELECT
 				ON mb.nation_no = nt.idx
 			LEFT JOIN payment AS pa
 				ON pa.idx = rr.payment_no
-			WHERE rr.idx = {$registration_idx}
-			AND rr.register = {$user_idx};";
+			WHERE rr.idx = {$registration_idx}";
 $data = sql_fetch($sql);
 
 if (!$data) {
-	echo "<script>alert('Registration Not Found.');window.close();</script>";
+	echo "<script>alert('등록 정보를 찾을 수 없습니다.');window.close();</script>";
 	exit;
 }
 
@@ -160,7 +159,7 @@ $payment_date = $data["payment_date_text"] ?? "-";
 	}
 	?>
 </div>
-<div class="btn_wrap" style="width:100%; text-align:center;">
+<div class="btn_wrap" style="max-width:800px; text-align:center;">
     <button type="button" class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">저장</button>
     <!-- <a class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">Save</a> -->
 </div>

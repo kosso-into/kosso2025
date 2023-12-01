@@ -85,7 +85,7 @@ $(document).ready(function(){
 	//pc header hover action end
 
 	//popup
-	$('.pop_bg, .pop_close').on('click',function(){
+	$('.pop_bg, .pop_close, .review_close').on('click',function(){
 		$(this).parents('.popup').hide();
 	});
 
