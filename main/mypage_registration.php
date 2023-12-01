@@ -422,14 +422,14 @@ $score_detail = sql_fetch($score_sql);
                                                 <!-- Credit Card 선택 시 -->
                                                 <tr class="tr_bg">
                                                     <th>등록비</th>
-                                                    <td><?= $list["is_korea"] == 1 ? "KRW" : "USD" ?>
-                                                        <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-" ?>
+                                                    <td>
+                                                        <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원' : "-" ?>
                                                     </td>
                                                 </tr>
                                                 <tr class="tr_bg">
                                                     <th>최종 등록비</th>
-                                                    <td><?= $list["is_korea"] == 1 ? "KRW" : "USD" ?>
-                                                        <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-" ?>
+                                                    <td>
+                                                        <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원'  : "-" ?>
                                                     </td>
                                                 </tr>
                                                 <tr class="tr_bg">
