@@ -1155,11 +1155,15 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 							$affiliation_arr = $affiliation;
 						}
 					}
-
-					$_arr_phone = explode("-", $obj["phone"]);
-					$nation_tel = $_arr_phone[0];
-					$phone = implode("-", array_splice($_arr_phone, 1));
-
+				
+					//[231201] sujeong 주석
+					// $_arr_phone = explode("-", $obj["phone"]);
+					// $nation_tel = $_arr_phone[0];
+					// $phone = implode("-", array_splice($_arr_phone, 1));
+					
+					//[231201] sujeong 추가 82- 제거
+					$phone = $obj["phone"];
+					
 					$rawMessageString .= '<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 20px;">
 										<tbody>
 										<tr>
@@ -1204,9 +1208,13 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 						}
 					}
 
-					$_arr_phone = explode("-", $obj["phone"]);
-					$nation_tel = $_arr_phone[0];
-					$phone = implode("-", array_splice($_arr_phone, 1));
+					//[231201] sujeong 주석
+					// $_arr_phone = explode("-", $obj["phone"]);
+					// $nation_tel = $_arr_phone[0];
+					// $phone = implode("-", array_splice($_arr_phone, 1));
+					
+					//[231201] sujeong 추가 82- 제거
+					$phone = $obj["phone"];
 
 					$rawMessageString .= '<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 20px;">
 										<tbody>
@@ -1494,7 +1502,7 @@ if ($_POST["flag"] == "find_password") {
 	}
 
 	// toffic
-	$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
+	$presentation_type_arr = array("구연/포스터", "구연", "포스터", "기타");
 
 	// Position
 	$position_arr = array("Professor", "Physician", "Researcher", "Student", "Other");

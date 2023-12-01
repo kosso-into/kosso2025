@@ -39,10 +39,14 @@ if ($user_info_department && $user_info_institution) {
 }
 
 //연락처 쪼깨기
-$user_info["phone"] = isset($user_info["phone"]) ? str_replace("82-01", "82-01", $user_info["phone"]) : "-";
-$_arr_phone = explode("-", $user_info["phone"]);
-$user_nation_tel = $_arr_phone[0];
-$user_phone = implode("-", array_splice($_arr_phone, 1));
+//[231201] sujeong 주석
+// $user_info["phone"] = isset($user_info["phone"]) ? str_replace("82-01", "82-01", $user_info["phone"]) : "-";
+// $_arr_phone = explode("-", $user_info["phone"]);
+// $user_nation_tel = $_arr_phone[0];
+// $user_phone = implode("-", array_splice($_arr_phone, 1));
+
+//[231201] sujeong 휴대폰 번호 82- 제거 01012345678 출력
+$user_phone = isset($user_info["phone"]) ? $user_info["phone"] : "-";
 
 $user_affiliation_value = $user_info_affiliation ?? "";
 
