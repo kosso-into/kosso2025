@@ -104,7 +104,7 @@
 					break;
 				case "need_login" :			// 화면진입 유효성 - 미로그인
 				case "need_payment" :		// 화면진입 유효성 - 미결제 또는 오프라인만 참석인 경우
-					var msg = e.data.functionName == "need_login" ? "Need to login." : "Pre-registration has been closed.\nAttendees who have not registered in advance are not accessible.";
+					var msg = e.data.functionName == "need_login" ? "로그인이 필요합니다.." : "Pre-registration has been closed.\nAttendees who have not registered in advance are not accessible.";
 					if (need_first) {
 						alert(msg);
 						window.location.replace('/main/login.php?from=live');
@@ -122,7 +122,7 @@
 			var member_idx = document.cookie.match('(^|;) ?member_idx=([^;]*)(;|$)');
 			member_idx = member_idx ? member_idx[2] : null;
 			if(member_idx == null) {
-				alert("Need to login.");
+				alert("로그인이 필요합니다..");
 				window.location.replace('/main/login.php?from=live');
 			}
 		})

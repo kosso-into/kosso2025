@@ -1077,7 +1077,7 @@ function setUserInformation(target) {
 			form.find("input[name=add_co_first_name"+num+"]").val($("input[name=user_first_name]").val());
 			//form.find("input[name=add_co_last_name"+num+"]").val($("input[name=user_last_name]").val());
 			form.find("input[name=add_co_email"+num+"]").val($("input[name=user_email]").val());
-			form.find("input[name=add_co_phone"+num+"]").val($("input[name=user_nation_tel]").val());
+			form.find("input[name=add_co_phone"+num+"]").val($("input[name=user_phone]").val());
 			// form.find("select[name=add_co_nation_tel"+num+"] option")[0].value = $("input[name=user_nation_tel]").val();
 			// form.find("select[name=add_co_nation_tel"+num+"] option")[0].textContent = $("input[name=user_nation_tel]").val();
 			form.find("select[name=add_co_nation_tel"+num+"] option").click();
@@ -1092,7 +1092,7 @@ function setUserInformation(target) {
 			form.find("input[name=first_name]").val($("input[name=user_first_name]").val());
 			//form.find("input[name=last_name]").val($("input[name=user_last_name]").val());
 			form.find("input[name=email]").val($("input[name=user_email]").val());
-			form.find("input[name=phone]").val($("input[name=user_nation_tel]").val());
+			form.find("input[name=phone]").val($("input[name=user_phone]").val());
             // form.find("input[name=phone]").value = $("input[name=user_nation_tel]").val();
 			// form.find("select[name=nation_tel] option")[0].value = $("input[name=user_nation_tel]").val();
 			// form.find("select[name=nation_tel] option")[0].textContent = $("input[name=user_nation_tel]").val();

@@ -67,7 +67,7 @@
                     </button>
                 </li>
                 <li>
-                    <!-- <button type="button" onClick="alert('Need to login.')"><img src="/main/img/icons/tool_mypage.svg" alt=""></button> -->
+                    <!-- <button type="button" onClick="alert('로그인이 필요합니다..')"><img src="/main/img/icons/tool_mypage.svg" alt=""></button> -->
                 </li>
             <?php
             } else {

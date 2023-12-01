@@ -69,7 +69,7 @@ if ($during_yn !== "Y") {
     if (!empty($_SESSION["USER"])) {
         $user_info = $_SESSION["USER"];
     } else {
-        echo "<script>alert('Need to login'); window.location.replace(PATH+'login.php');</script>";
+        echo "<script>alert('로그인이 필요합니다.'); window.location.replace(PATH+'login.php');</script>";
         exit;
     }
 

@@ -83,7 +83,7 @@ function go_detail(){
 	var member_idx = document.cookie.match('(^|;) ?member_idx=([^;]*)(;|$)');
 	member_idx = member_idx ? member_idx[2] : null;
 	if(member_idx == null) {
-		alert("Need to login.");
+		alert("로그인이 필요합니다..");
 		window.parent.location.replace('/main/login.php?from=live');
 	} else {
 		$.ajax({
