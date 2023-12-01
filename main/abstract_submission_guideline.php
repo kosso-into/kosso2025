@@ -160,7 +160,7 @@ $info = sql_fetch($sql_info);
                 </div>
                 <div class="text_center btn_box mt25">
                     <!-- <a href="https://image.webeon.net/icomes/ICOMES%202023_Abstract%20template_ver1.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a> -->
-                    <a href="./download/Abstract_form.docx" class="btn long_btn" target="_blank" download><img
+                    <a href="./download/(KSSO)Abstract_form.docx" class="btn long_btn" target="_blank" download><img
                             src="./img/icons/icon_download_white.svg" alt="">초록 양식 다운로드</a>
                     <a href="./abstract_submission.php" class="btn long_btn yellow_btn">초록 접수 바로가기</a>
                 </div>
