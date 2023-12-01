@@ -115,7 +115,7 @@ foreach ($nation_list as $obj) {
 	<h1 class="page_title">마이 페이지</h1>
 	<div class="inner">
 		<ul class="tab_green">
-			<li><a href="./mypage.php">계정 정보</a></li>
+			<li><a href="./mypage.php">개인 정보</a></li>
 			<li><a href="./mypage_registration.php">등록</a></li>
 			<li class="on"><a href="./mypage_abstract.php">초록</a></li>
 			<?php
