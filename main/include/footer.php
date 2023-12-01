@@ -114,7 +114,9 @@
             <li><img src="./img/sponsor/logo23.png" alt=""></li>
         </ul>
     </div> -->
-    <div class="sponsor_logo-wrap container">
+
+    <!-- [231201] sujeong 학회팀 요청으로 후원사 주석 -->
+    <!-- <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
             <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
@@ -142,7 +144,7 @@
             <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
             <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
         </ul>
-    </div>
+    </div> -->
     <footer class="footer">
         <div class="container">
             <br>
