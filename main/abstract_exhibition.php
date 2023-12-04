@@ -108,7 +108,34 @@ $info = sql_fetch($sql_info);
 				   </table>
                 </div>
             </div>
-			<!-- <p class="mt10">* September 7th is closed for poster installation. </p> -->
+
+            	<!--설치 및 철거 시간n-->
+                <div>
+                <div class="section_title_wrap2">
+                    <h3 class="title">설치 및 철거 시간</h3>
+                </div>
+                <div class="table_wrap detail_table_common x_scroll">
+				   <table class="c_table detail_table">
+					   <colgroup>
+						   <col>
+						   <col>
+						   <col>
+					   </colgroup>
+					   <tr>	 
+						   <th class="f_bold text_center">설치</th>
+						   <th class="f_bold text_center">철거</th>
+					   </tr>
+					<tr>
+						<td class="text_center">TBD</td>
+						<td class="text_center" rowspan="2">TBD</td>
+					</tr>
+					<tr>
+						<td style="border-right: 1px solid #707070;" class="text_center">TBD</td>	
+					</tr>
+				   </table>
+                </div>
+            </div>
+			<p class="mt10">* 철거 시간 이후 부착되어 있는 포스터는 학회 임의로 철거됩니다.</p>
 			<!--Submission of Presentation Material-->
 			<div>
 				<div class="section_title_wrap2">
