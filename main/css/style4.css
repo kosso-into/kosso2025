@@ -858,7 +858,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.tablet_show, .tablet_only{display:block;}
     .form_section{padding: 250px 0 250px;}
 	.mobile_none {display:none;}
-	.program_table{min-width:1200px;}
+	  /* .program_table{min-width:1200px;}*/
 	section.container .page_title {padding: 36px 0 48px !important;}
 	
 	/*메인페이지 추가팝업*/
@@ -1160,7 +1160,8 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	/*.c_table th{border-right:10px solid #fff;}*/
 	.sub_page .section{padding-bottom:60px;}
 	.sub_banner h1:after{height:8px;}
-	.c_table th, .c_table td, .c_table2 th, .c_table2 td {font-size: 14px; padding:10px;}
+	.c_table th, .c_table td, .c_table2 th, .c_table2 td {font-size: 12px; padding:10px;}
+	.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td{font-size: 12px; padding:8px;}
 	.c_table.type2 th, .c_table.type2 td, .c_table2.type2 th, .c_table2.type2 td {font-size: 14px; padding:10px 2px;}
 	.c_table td p, .c_table2 td p{font-size: 14px;}
 	.input_table td{padding:0 4px;}
@@ -1241,11 +1242,11 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	/*program_detail*/
 	.tab_area2{margin-bottom:30px;}
 	.tab_area2 .clearfix li{margin-right:10px;width:calc(33.3333% - 7px);padding:10px 0;}
-	.tab_area2 .clearfix li:last-of=type{margin-right:0;}
+	.tab_area2 .clearfix li:last-of{margin-right:0;}
 	.tab_area2 .clearfix li a{display:block;width:100%;}	
 	.tab_area2 .clearfix li a strong{padding:0 16px;}
 	.tab_area2 .clearfix li:nth-of-type(2) a strong.date_tab{width: 95%; margin:0 auto;}
-	.toggle_contents_wrap2 a{}
+	/*.toggle_contents_wrap2 a{}*/
 	.toggle_contents_wrap2 .point{font-size:17px;}
 	.toggle_contents_wrap2 a p{font-size:15px;}
 	.toggle_contents_wrap2 .toggle_title p:first-of-type{width:calc(100% - 30px);word-break:keep-all;color:#585858;}
@@ -1604,9 +1605,18 @@ input[type='date']::before {
 	}
 }
 
+.regi_table{
+	min-width: 290px;
+}
+
+
 @media screen and (max-width:486px) {
 	#othersList_table th{
 		font-size: 12px;
    		padding: 4px;
 	}	
+
+	.regi_table th, .regi_table td {
+		white-space: inherit;
+	}
 }

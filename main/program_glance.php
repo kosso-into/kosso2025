@@ -112,8 +112,9 @@ section.app_version .inner {
                             <tr>
                                 <th style="background-color: #FFFF99;" colspan="4" class="font_big day_tbody day_1">
                                     <div class="dots_div">Day 1 - 2024<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />3<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />8 (금)</div>
+                                            class="dots_img" />03<img src="./img/icons/icon_dots.svg"
+                                            class="dots_img" />08<img src="./img/icons/icon_dots.svg"
+                                            class="dots_img" /> (금)</div>
                                 </th>
                             </tr>
                         </thead>
@@ -190,13 +191,14 @@ section.app_version .inner {
                         </tbody>
                         <!---------- DAY 2 ---------->
 
-                        
+
                         <thead>
                             <tr>
                                 <th colspan="4" class="font_big day_tbody day_2">
                                     <div class="dots_div">Day 2 - 2024<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />3<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />9 (토)</div>
+                                            class="dots_img" />03<img src="./img/icons/icon_dots.svg"
+                                            class="dots_img" />09<img src="./img/icons/icon_dots.svg"
+                                            class="dots_img" />(토)</div>
                                 </th>
                             </tr>
                         </thead>

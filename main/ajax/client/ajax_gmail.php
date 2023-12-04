@@ -537,7 +537,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$member_status = $data["member_status"] ?? "-";
 			$member_status = ($member_status == 1) ? "Yes" : "No";
 			*/
-			$member_status = $data["member_status"] ?? "-";
+			$member_status = $data["ksso_member_status"] ?? "-";
 			if ($member_status == 0) {
 				$member_status = "비회원";
 			} else {
