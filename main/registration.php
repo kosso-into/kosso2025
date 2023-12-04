@@ -429,7 +429,7 @@ if ($during_yn !== "Y") {
                         <p class="label type2">기타<span class="red_txt">*</span></p>
                         <p class="mb10">다음 행사에 대한 참석 여부를 확인해 주세요. </p>
                         <div class="table_wrap detail_table_common x_scroll">
-                            <table class="c_table detail_table" id=" othersList_table" name=" othersList_table">
+                            <table class="c_table detail_table" id="othersList_table" name=" othersList_table">
                                 <colgroup>
                                     <col class="submission_col">
                                     <col>
