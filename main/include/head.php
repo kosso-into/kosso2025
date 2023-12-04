@@ -13,7 +13,7 @@
 
 	<meta property="og:description" content="2024 KSSO hosted by KSSO">
 	<meta name="description" content="2024 KSSO hosted by KSSO">
-
+	<link rel="icon" href="../../favicon.ico">
 	<!-- datepicker -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 	<!-- slick -->
