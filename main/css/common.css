@@ -1078,12 +1078,12 @@ section.container.sponsor {padding-top: 164px;}
 .lime_td {background-color:#4CA737 !important; color:#FFFFFF !important;}
 
 /*사용자 APP header*/
-.app_header {position:fixed; top:0; left:0; width:100%; height:58px; background-color:#003EA5; z-index:35;}
+.app_header {position:fixed; top:0; left:0; width:100%; height:58px; background-color:#FFFF99; z-index:35;}
 .app_header img {width:100%;}
 .app_header.simple {background-color:transparent;}
 .app_header.simple .app_h_logo {display:none;}
 .app_header .hd_inner {padding:0 18px; height:100%; display:flex; align-items:center; justify-content:center; position:relative;}
-.app_header .app_h_logo {width:121px;}
+/* .app_header .app_h_logo {width:121px;} */
 .app_nav_btn {width:24px; position:absolute; left:17px;}
 .stamp_admin_close {display:none; width:20px; position:absolute; right:17px;}
 .stamp_admin_close.on {display:block;}
@@ -1099,15 +1099,15 @@ section.container.sponsor {padding-top: 164px;}
 .app_nav_top {height:59px; padding:19px 17px; display:flex; align-items:center; justify-content:flex-end; background-color:#FFFFFF;}
 .app_nav_top a {font-size:17px; font-weight:800; display:flex; align-items:center;}
 .app_nav_top img {width:15px; margin-right:4px;}
-.app_nav_bot {height:calc(100% - 60px); position:relative; background-color:#000066;}
+.app_nav_bot {height:calc(100% - 60px); position:relative; background-color:#ffff99;}
 .app_nav_menu {width:46%; height:100%; overflow-y:auto;}
-.app_nav_menu > li > a {display:block; padding:22px; font-size:16px; font-weight:bold; line-height:1.4; color:#FFFFFF; text-align:left;}
-.app_nav_menu > li.on > a {background-color:#2C65C4;}
+.app_nav_menu > li > a {display:block; padding:22px; font-size:16px; font-weight:bold; line-height:1.4; color:#000; text-align:left;}
+.app_nav_menu > li.on > a {background-color:#013366; color:#FFF;}
 .app_nav_menu > li.on .app_sub {display:block; font-size:17px; color:#FFFFFF;}
 .app_nav_menu .app_sub {display:none; width:54%; height:100%; overflow-y:auto; padding:10px 0; position:absolute; top:0; left:46%;}
 .app_nav_menu .app_sub li a {padding:12px 22px; display:block; font-size:16px; color:#000000;}
-.app_nav_menu .app_sub li a:hover, .app_nav_menu .app_sub li a:focus {font-weight:800; color:#000066;}
-.app_sub_bg {width:54%; height:100%; position:absolute; top:0; left:46%; background-color:#D2E7FC;}
+.app_nav_menu .app_sub li a:hover, .app_nav_menu .app_sub li a:focus {font-weight:800; color:#013366;}
+.app_sub_bg {width:54%; height:100%; position:absolute; top:0; left:46%; background-color:#fffff5;}
 
 /*사용자 APP footer*/
 .app_ft_dim {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:transparent; z-index:20;}

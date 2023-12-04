@@ -64,7 +64,7 @@
 
 /*App main*/
 .container.app_version.main { padding-bottom: /*120*/150px !important; margin-top: 0; padding-top: 60px !important; }
-.app_vsl {position:relative; max-width:1200px; margin:0 auto 30px; width:85%;}
+.app_vsl {position:relative; max-width:1200px; margin:12px auto 30px; width:85%;}
 .app_vsl .text {display:block; width:100%;}
 .app_index_menu {display:block; width:100%; margin:0 auto; display:flex; flex-wrap:wrap; justify-contents:space-between;}
 .app_index_menu:after {content:''; display:block; clear:both;}
