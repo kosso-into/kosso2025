@@ -10,22 +10,22 @@
 include_once('./main/include/head.php');
 ?>
 <img src="./main/img/underconst.gif" />
-<button class="hi" onclick="installPWA()">Install PWA</button>
+
 <script>
 	function installPWA() {
 console.log("hi")
 		if ('serviceWorker' in navigator && 'PushManager' in window) {
 
-			// 'beforeinstallprompt' ÀÌº¥Æ®¸¦ ±â´Ù¸³´Ï´Ù.
+			// 'beforeinstallprompt' ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½ï¿½Ï´ï¿½.
 		window.addEventListener('beforeinstallprompt', (event) => {
-        // 'beforeinstallprompt' ÀÌº¥Æ®¸¦ Ä³Ä¡ÇÏ¸é, ¹öÆ°À» È°¼ºÈ­ÇÏ°í ¼³Ä¡¸¦ À¯µµÇÕ´Ï´Ù.
+        // 'beforeinstallprompt' ï¿½Ìºï¿½Æ®ï¿½ï¿½ Ä³Ä¡ï¿½Ï¸ï¿½, ï¿½ï¿½Æ°ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½Ï°ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
 console.log("hello");
         event.preventDefault();
         const installButton = document.querySelector('.hi');
         installButton.style.display = 'block';
 
         installButton.addEventListener('click', () => {
-          // »ç¿ëÀÚ¿¡°Ô ¼³Ä¡¸¦ ¿äÃ»ÇÏ°í, ÀÌº¥Æ®¸¦ ¿Ï·áÇÕ´Ï´Ù.
+          // ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½Ï°ï¿½, ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½Õ´Ï´ï¿½.
           event.prompt();
           event.userChoice.then((choiceResult) => {
             if (choiceResult.outcome === 'accepted') {
