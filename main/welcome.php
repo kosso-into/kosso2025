@@ -48,7 +48,7 @@
 <!-- 			</div> -->
 <!-- 		</div> -->
     <div>
-		<h1 class="page_title">Welcome Message</h1>
+		<h1 class="page_title">모시는 글</h1>
         <div class="inner">
             <div>
 				<h3 class="title icon_none">회원 여러분 안녕하십니까?</h3>
