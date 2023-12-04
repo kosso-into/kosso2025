@@ -82,6 +82,7 @@ $(document).ready(function(){
 					},
 					dataType : "JSON",
 					success : function(res){
+						console.log(res)
 						if(res.code == 200) {
 							var registration_idx = res.registration_idx;
 							var reg_promotion_code = $("input[name=promotion_code]").val();
@@ -106,7 +107,7 @@ $(document).ready(function(){
 								});
 							}
 
-							window.location.replace(PATH+"registration2.php?idx="+res.registration_idx);
+							//window.location.replace(PATH+"registration2.php?idx="+res.registration_idx);
 						} else if(res.code == 400){
 							alert(locale(language.value)("error_registration"));
 							return false;
