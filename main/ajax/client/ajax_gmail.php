@@ -1170,9 +1170,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										<tbody>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">성함</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;">' . $first_name . ' ' . $last_name . '</td>
-											<th style="width:150px; text-align:left; border-left:1px solid #000; font-size:14px; padding:10px; border-bottom:1px solid #000;">국가</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;">' . $nation_map[$nation_no] . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;" colspan="3">' . $first_name . ' ' . $last_name . '</td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">소속</th>
@@ -1223,9 +1221,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										<tbody>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">성함</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;">' . $last_name . $first_name .'</td>
-											<th style="width:150px; text-align:left; border-left:1px solid #000; font-size:14px; padding:10px; border-bottom:1px solid #000;">국가</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;">' . $nation_map[$nation_no] . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;"colspan="3">' . $last_name . $first_name .'</td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">소속</th>

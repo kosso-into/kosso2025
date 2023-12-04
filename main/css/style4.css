@@ -847,6 +847,11 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 }
 
+/* HUBDNCLHJ 작업*/
+@media screen and (max-width: 1199px) {
+	section.container .page_title {height: 105px; padding: 36px 0 48px !important;}
+} 
+
 @media screen and (max-width: 1024px) {
     /* body{-webkit-text-size-adjust: 100%;} */
 	.pc_only{display:none;}
@@ -1127,10 +1132,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.speaker_list .profile_wrap {width:200px}
 }
 
-/* HUBDNCLHJ 작업*/
-@media screen and (max-width: 1199px) {
-	section.container .page_title {height: 105px; padding: 36px 0 48px !important;}
-} 
+
 
 @media screen and (max-width: 486px) {
 	.m_only{display:block;}
