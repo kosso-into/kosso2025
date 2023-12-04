@@ -58,6 +58,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- sujeong service-worker 추가 -->
+<link rel="manifest" href="../../manifest.json">
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('../../service-worker.js')
