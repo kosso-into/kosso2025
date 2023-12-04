@@ -5,8 +5,8 @@
 <!-- 사용자 App header -->
 <header class="app_header">
 	<div class="hd_inner">
-		<h1 class="app_h_logo"><a href="/main/app_index.php"><img src="/main/img/app_logo.svg" alt="ICOMES 로고"></a></h1>
-		<button type="button" class="app_nav_btn"><img src="/main/img/icons/icon_hamburger.svg" alt="메뉴"></button>
+		<h1 class="app_h_logo"><a href="/main/app_index.php"><img src="/main/img/footer_logo_mini.jpg" alt="ICOMES 로고"></a></h1>
+		<button type="button" class="app_nav_btn"><img src="/main/img/icons/icon_hamburger2.svg" alt="메뉴"></button>
 		<button type="button" class="stamp_admin_close"><img src="/main/img/icons/icon_x_wh.svg" alt="닫기"></button>
 	</div>
 </header>
@@ -16,32 +16,32 @@
 <div class="app_nav">
     <div class="nav_inner">
 		<div class="app_nav_top">
-			<a href="/main/app_setting.php" class="point_txt"><img src="/main/img/icons/icon_setting.svg" alt="설정">Setting</a>
+			<a href="/main/app_setting.php" class="point_txt"><img src="/main/img/icons/icon_setting.svg" alt="설정">설정</a>
 		</div>
 		<div class="app_nav_bot">
 			<div class="app_sub_bg"></div>
 			<ul class="app_nav_menu">
 				<li class="on">
-					<a href="javascript:;">ICOMES 2023</a>
+					<a href="javascript:;">KSSO 2024</a>
 					<ul class="app_sub">
-						<li><a href="/main/welcome.php">Welcome Message</a></li>
-						<li><a href="/main/organizing_committee.php">Organization</a></li>
+						<li><a href="/main/welcome.php">모시는 글</a></li>
+						<!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>
-						<li><a href="/main/venue.php">Venue</a></li>
+						<li><a href="/main/venue.php">Venue</a></li> -->
 					</ul>
 				</li>
 				<li>
 					<a href="/main/app_floor_plan.php">Floor Plan</a>
 				</li>
 				<li>
-					<a href="javascript:;">Program</a>
+					<a href="javascript:;">프로그램</a>
 					<ul class="app_sub">
 						<li><a href="/main/program_glance.php">Program at a Glance</a></li>
-						<li><a href="/main/app_program_detail.php">Scientific Program</a></li>
+						<li><a href="/main/app_program_detail.php">Program in Detail</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:;">Abstract</a>
+					<a href="javascript:;">초록</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
@@ -63,21 +63,22 @@
 					<a href="/main/app_invited_speakers.php">Invited Speakers</a>
 				</li>
 				<li>
-					<a href="javascript:;">Sponsorship</a>
+					<a href="javascript:;">후원/전시</a>
 					<ul class="app_sub">
-						<li><a href="/main/sponsor.php">Sponsorship</a></li>
-						<li><a href="/main/sponsor_exhibition.php">Exhibition</a></li>
+						<li><a href="/main/sponsor.php">후원사</a></li>
+						<li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="/main/registration_rating_guides.php">평점 안내<br/>(Korean Only)</a>
+					<a href="/main/registration_rating_guides.php">평점 안내</a>
 				</li>
 				<li>
-					<a href="/main/app_notice.php">Notice</a>
+					<a href="/main/app_notice.php">공지사항</a>
 				</li>
-				<li>
+				<!--[231204] sujeong / 설문조사 주석-->
+				<!-- <li>
 					<a href="/main/app_survey.php">Survey</a>
-				</li>
+				</li> -->
 				<!-- <li>
 					<a href="javascript:;">Stamp Tour</a>
 					<ul class="app_sub">
@@ -86,12 +87,12 @@
 						<li><a href="/main/app_tour_map.php">Tour Map</a></li>
 					</ul>
 				</li> -->
-				<li>
+				<!-- <li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>
 				</li>
 				<li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" download class="pdf_view">Abstract Book <br/>Download</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
     </div>

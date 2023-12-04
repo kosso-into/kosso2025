@@ -57,7 +57,7 @@ $total_notice = count($notice_list) ?? 0;
 							}
 						} else {
                     ?>
-							<li style="border-bottom:none;"><div class='no_data'>Will be updated</div></li>
+							<li style="border-bottom:none;"><div class='no_data'>준비 중입니다.</div></li>
 					<?php
 						}
 					?>

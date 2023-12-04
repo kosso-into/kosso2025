@@ -9,7 +9,7 @@
                     FROM member m
                     LEFT JOIN nation n ON m.nation_no = n.idx
                     LEFT JOIN (
-                        SELECT rr.idx, rr.register, @rownum:=@rownum+1 AS qr_num, CONCAT('ICOMES2023-',rr.idx) AS registration_no
+                        SELECT rr.idx, rr.register, @rownum:=@rownum+1 AS qr_num, CONCAT('KSSO2024-',rr.idx) AS registration_no
                         FROM request_registration rr, (SELECT @rownum:=0) TMP
                         WHERE status IN (2,5)
                         AND is_deleted = 'N'
@@ -36,8 +36,8 @@
                 <p class="app_qr_num">No. <?=$member_data['r_idx']?></p>
                 <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div>
                 <div class="app_txt_area">
-                    <strong class="app_qr_name"><?=$member_data['first_name']." ".$member_data['last_name']?></strong>
-                    <p class="app_qr_affiliation"><?=$member_data['affiliation']?> <span><?=$member_data['nation_en']?></span></p>
+                    <strong class="app_qr_name"><?=$member_data['last_name'].$member_data['first_name']?></strong>
+                    <p class="app_qr_affiliation"><?=$member_data['affiliation']?> </p>
                 </div>
             </div>
             <!-- 성함, 소속 2줄일 경우 확인을 위한 예시 마크업 -->

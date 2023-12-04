@@ -57,6 +57,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
+<!-- sujeong service-worker 추가 -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('../../service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.error('Service Worker registration failed:', error);
+      });
+  }
+</script>
+
 <body>
 	<?php
 	if (strpos($_SERVER["PHP_SELF"], "/main/") !== false) {

@@ -64,8 +64,13 @@ $initial_list = get_data($select_initial_query);
 								<li>
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
-											<img src="<?= $is_profile_img ?>" alt="profile_img">
-											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span></p>
+										<img src="/main/img/profile_empty.png" alt="profile_img">
+											<!-- <img src="<?= $is_profile_img ?>" alt="profile_img"> -->
+											<p>
+												TBD
+												<!-- [231204] sujeong / 주석 -->
+												<!-- <?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span> -->
+											</p>
 										</div>
 									</a>
 									<button type="button" class="favorite_btn on" value="<?=$isl['idx']?>"></button>
@@ -92,8 +97,10 @@ $initial_list = get_data($select_initial_query);
 								$favorite = "";
 							}
 
-							
-							$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
+							// [231204] sujeong / 주석 
+							// $is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
+
+							$is_profile_img = '/main/img/profile_empty.png';
 
 							if($isl['initial']==$ini['initial']){
                 ?>
@@ -101,7 +108,11 @@ $initial_list = get_data($select_initial_query);
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
-											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span></p>
+											<p>
+												TBD
+												<!-- [231204] sujeong / 주석 -->
+												<!-- <?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span> -->
+											</p>
 										</div>
 									</a>
 									<button type="button" class="favorite_btn <?=$favorite?>" value="<?=$isl['idx']?>"></button>
