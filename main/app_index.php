@@ -36,7 +36,7 @@
 	<div class="app_vsl">
 		<img src="./img/img_vsl_text.png" class="text" alt="" >
 	</div>
-	<button onclick="installPWA()">Install PWA</button>
+	
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li>
@@ -113,31 +113,7 @@
 		$(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "/main/img/icons/m_nav.png");
 	});
-
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
-	function installPWA() {
-		if ('serviceWorker' in navigator && 'PushManager' in window) {
-			// 'beforeinstallprompt' 이벤트를 기다립니다.
-		window.addEventListener('beforeinstallprompt', (event) => {
-        // 'beforeinstallprompt' 이벤트를 캐치하면, 버튼을 활성화하고 설치를 유도합니다.
-        event.preventDefault();
-        const installButton = document.querySelector('button');
-        installButton.style.display = 'block';
-
-        installButton.addEventListener('click', () => {
-          // 사용자에게 설치를 요청하고, 이벤트를 완료합니다.
-          event.prompt();
-          event.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-              console.log('User accepted the install prompt');
-            } else {
-              console.log('User dismissed the install prompt');
-            }
-          });
-        });
-      });
-    }
-  }
 
 </script>
 

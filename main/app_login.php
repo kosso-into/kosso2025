@@ -34,12 +34,14 @@
 				</ul>
 				<a href="./app_find_password.php" class="app_find_password">Find password</a>
 				<button type="button" class="btn app_login_btn">Log in</button>
+				
 			</div>
 		</div>
 	</div>
 </section>
 
 <script>
+
 $(document).ready(function(){
 //	var varUA = navigator.userAgent.toLowerCase();
 //	if ( varUA.indexOf('android') > -1) {
