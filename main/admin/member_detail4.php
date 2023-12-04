@@ -155,7 +155,7 @@
 
 								$registration_type = isset($member_registration["registration_type"]) ? $member_registration["registration_type"] : "";
 								$attendance_type_text = isset($member_registration["attendance_type_text"]) ? $member_registration["attendance_type_text"] : "";
-								$payment_price = isset($member_registration["total_price_us"]) ? "$ ".$member_registration["total_price_us"] : (isset($member_registration["total_price_kr"]) ? "￦ ".$member_registration["total_price_kr"] : "-");
+								$payment_price = isset($member_registration["total_price_us"]) ? "$ ".$member_registration["total_price_us"] : (isset($member_registration["total_price_kr"]) ? $member_registration["total_price_kr"]."원" : "-");
 								$is_score = isset($member_registration["is_score"]) ? $member_registration["is_score"] : "";
 								
 								//평점신청협회 DB에서 select (21.11.03)

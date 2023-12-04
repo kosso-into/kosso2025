@@ -354,7 +354,8 @@ foreach ($registration_list as $rk => $rl) {
 				break;   
 		}
 
-$date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
+	$date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
+	$phone = substr($rl['phone'], 0, 3). '-' .  substr($rl['phone'], 3, 4). '-' .substr($rl['phone'], 7);
 
 	$html .= '<tr class="tr_center">';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . ($rk + 1) . '</td>';
@@ -367,7 +368,7 @@ $date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["name"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["affiliation"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["department"] . '</td>';
-	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["phone"] . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $phone . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["attendance_type_text"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["occupation_type"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $member_type . '</td>';
@@ -551,7 +552,7 @@ $count = count($registration_list);
 								$member_type = "기타";
 								break;   
 						}
-
+						$phone_number = substr($list['phone'], 0, 3). '-' .  substr($list['phone'], 3, 4). '-' .substr($list['phone'], 7);
 					?>
                     <tr class="tr_center">
                         <td><?= $register_no; ?></td>
@@ -568,7 +569,7 @@ $count = count($registration_list);
                                 href="./registration_detail.php?idx=<?= isset($list["registration_idx"]) ? $list["registration_idx"] : "" ?>"><?= isset($list["name"]) ? $list["name"] : "-" ?></a>
                         </td>
                         <td><?= $list["affiliation"] ?></td>
-                        <td><?= $list["phone"] ?></td>
+                        <td><?= $phone_number ?></td>
                         <td><?= isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-" ?></td>
 						<td><?= isset($list["occupation_type"]) ? $list["occupation_type"] : "-" ?></td>
                         <td><?= isset($list["is_score_text"]) ? $list["is_score_text"] : "-" ?></td>
