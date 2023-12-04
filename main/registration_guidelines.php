@@ -100,7 +100,7 @@ $price = get_data($sql_price);
             <div class="details icomes_air">
                 <div class="table_wrap x_scroll">
                     <!-- <img class="coming" src="./img/coming.png" /> -->
-                    <table class="c_table2 detail_table center">
+                    <table class="c_table2 detail_table center regi_table">
                         <thead>
                             <tr>
                                 <th rowspan=" 2">구분</th>
@@ -216,7 +216,7 @@ $price = get_data($sql_price);
                         </ul>
                     </div>
                     <div class="table_wrap detail_table_common x_scroll">
-                        <table class="c_table detail_table">
+                        <table class="c_table detail_table regi_table">
                             <colgroup>
                                 <col style="width: 30%;">
                                 <col>
@@ -270,7 +270,7 @@ $price = get_data($sql_price);
                     </ul>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-                    <table class="c_table detail_table">
+                    <table class="c_table detail_table regi_table">
                         <colgroup>
                             <col class="submission_col type2">
                             <col>

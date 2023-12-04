@@ -553,7 +553,7 @@ if ($_POST["flag"] == "registration") {
 	//$academy_number = isset($_POST["academy_number"]) ? $_POST["academy_number"] : "";
 	$rating = isset($_POST["rating"]) ? $_POST["rating"] : "";
 
-	$member_status = isset($_POST["member_status"]) ? $_POST["member_status"] : "";
+	$member_status = isset($_POST["ksso_member_status"]) ? $_POST["ksso_member_status"] : "";
 	$etc2 = isset($_POST["etc2"]) ? $_POST["etc2"] : "";
 
 	$update_registration_query =	"
