@@ -192,7 +192,7 @@
 
                     <p>제 59차 대한비만학회 춘계학술대회 운영사무국</p>
                     <ul>
-                        <li>[04315] 서울특별시 용산구 백범로 341, 금호리첸시아 A블럭 3층 308호</li>
+                        <li>[04315] 서울특별시 용산구 백범로 341, 금호리첸시아 A블럭 4층</li>
                         <li>T. 82-2-2285-2582</li>
                         <li>F. 82-2-2285-2530</li>
                         <li>E. <a href="mailto:ksso@into-on.com" class="font_inherit link">ksso@into-on.com</a></li>

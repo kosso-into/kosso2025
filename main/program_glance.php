@@ -189,6 +189,8 @@ section.app_version .inner {
                             </tr>
                         </tbody>
                         <!---------- DAY 2 ---------->
+
+                        
                         <thead>
                             <tr>
                                 <th colspan="4" class="font_big day_tbody day_2">
