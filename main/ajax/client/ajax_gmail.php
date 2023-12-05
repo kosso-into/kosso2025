@@ -1173,7 +1173,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					
 					//[231201] sujeong 추가 82- 제거
 					$phone = $obj["phone"];
-					$phone = substr($obj['phone'], 0, 3). '-' .  substr($obj['phone'], 3, 4). '-' .substr($obj['phone'], 7);
+					// $phone = substr($obj['phone'], 0, 3). '-' .  substr($obj['phone'], 3, 4). '-' .substr($obj['phone'], 7);
 					
 					$rawMessageString .= '<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 20px;">
 										<tbody>
