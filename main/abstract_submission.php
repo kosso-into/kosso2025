@@ -963,7 +963,7 @@ function check_value() {
         $("#submit_btn").addClass("gray_btn");
         return;
     } else {
-		if($("select[name=nation_no]").val() == 25) { // Republic of Korea
+		// if($("select[name=nation_no]").val() == 25) { // Republic of Korea
 			var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
 			if (!regPhone.test(phone)) {
                 console.log('11');
@@ -972,16 +972,16 @@ function check_value() {
 				alert("올바른 전화번호 양식을 부탁드립니다. \nexample) 010-0000-0000");
 				return;
 			}
-		} else { // 해외 - 숫자만
-			var regPhone = /^[0-9]+$/;
-			if (!regPhone.test(phone)) {
-                console.log('12');
-				$("#submit_btn").removeClass("blue_btn");
-			    $("#submit_btn").addClass("gray_btn");
-				alert("Please enter only digits for phone number field.");
-				return;
-			}
-		}
+		// } else { // 해외 - 숫자만
+		// 	var regPhone = /^[0-9]+$/;
+		// 	if (!regPhone.test(phone)) {
+        //         console.log('12');
+		// 		$("#submit_btn").removeClass("blue_btn");
+		// 	    $("#submit_btn").addClass("gray_btn");
+		// 		alert("Please enter only digits for phone number field.");
+		// 		return;
+		// 	}
+		// }
 	}
 
 	var form_list = $(".co_author_appended .abstract_form");
@@ -1142,10 +1142,18 @@ function setUserInformation(target) {
 //핸드폰 유효성
 $(document).on('change keyup', ".phone", function(key) {
     var _this = $(this);
-    if (key.keyCode != 8) {
-        var phone = _this.val().replace(/[^0-9 || -]/gi, '');
-        _this.val(phone);
-    }
+    // if (key.keyCode != 8) {
+    //     var phone = _this.val().replace(/[^0-9 || -]/gi, '');
+    //     _this.val(phone);
+    // }
+    var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+			if (!regPhone.test(_this.val())) {
+                console.log('111');
+				$("#submit_btn").removeClass("blue_btn");
+			    $("#submit_btn").addClass("gray_btn");
+				alert("올바른 전화번호 양식을 부탁드립니다. \nexample) 010-0000-0000");
+				return;
+			}
 });
 $(document).ready(function() {
     $(document).on("keyup", ".en_keyup", function(key) {
