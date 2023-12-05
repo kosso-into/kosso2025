@@ -19,7 +19,6 @@ console.log("hi")
 			// 'beforeinstallprompt' �̺�Ʈ�� ��ٸ��ϴ�.
 		window.addEventListener('beforeinstallprompt', (event) => {
         // 'beforeinstallprompt' �̺�Ʈ�� ĳġ�ϸ�, ��ư�� Ȱ��ȭ�ϰ� ��ġ�� �����մϴ�.
-console.log("hello");
         event.preventDefault();
         const installButton = document.querySelector('.hi');
         installButton.style.display = 'block';
