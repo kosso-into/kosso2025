@@ -1171,7 +1171,7 @@ section.app_version .app_contents_box {width:calc(100% + 36px); margin-left: -18
 .app_loading.logo .app_main_box .logo_wrap img + img {margin-top: 24px;}
 
 /*app login*/
-.app_login .app_main_box {width:100%; overflow: hidden; position: relative; background: url("../img/app_login_bg2.jpg") no-repeat center / cover;}
+.app_login .app_main_box {width:100%; overflow: hidden; position: relative; background: url("../img/main_mb.png") no-repeat right / cover;}
 .app_login .app_main_box .app_login_box {min-width:21.88rem; padding:0 2.5rem; position: absolute; left: 50%; bottom: 3.13rem; transform:translateX(-50%);}
 .app_login .app_main_box .app_login_box > p {font-size: 0.69rem; color:#fff; font-weight: bold; margin-bottom: 12px; line-height: 1rem;}
 .app_login .app_main_box .app_login_box ul li {display:flex;}

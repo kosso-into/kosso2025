@@ -60,7 +60,7 @@
 <!-- sujeong service-worker 추가 
 	[231205]주석 추가
 -->
-<!--<link rel="manifest" href="../../manifest.json">
+<link rel="manifest" href="../../manifest.json">
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('../../service-worker.js')
@@ -71,7 +71,7 @@
         console.error('Service Worker registration failed:', error);
       });
   }
-</script>-->
+</script>
 
 <body>
 	<?php
