@@ -190,7 +190,7 @@ $abstract_idx = $_GET["idx"];
                     <li class="next">
                         <p>Step 1</p>
                         <!-- <p></p> -->
-                        <p class="sm_txt">초록 저자 정보 입력.<br>(발표저자/교신저자)</p>
+                        <p class="sm_txt">초록 저자 정보 입력<br>(발표저자/교신저자)</p>
                         <!-- <p class="sm_txt"><?= $locale("abstract_online_tit1") ?></p> -->
                     </li>
                     <li class="on">
@@ -259,7 +259,8 @@ $abstract_idx = $_GET["idx"];
                     </li>
                     <!--[231201] sujeoung /학회팀 요청/ 제목에 한글 제외-->
 					<li>
-                        <p class="label">초록 제목 <span class="red_txt">*</span></p>
+                        <p class="label">초록 제목 <span class="red_txt">*</span><span class="mb10"><b style="color:#c71b1b;">영문작성만 가능합니다. 
+</b></span></p>
                         <div>
                             <input type="text" id="abstract_title" name="abstract_title" class="en_num_keyup" maxlength="200" value="<?= $abstract_title ?>">
                         </div>
@@ -731,14 +732,14 @@ $(document).ready(function() {
     });
 
     /**[231201] sujeong 수정 / 학회팀 요청 / 제목에 한글 방지 추가*/
-	$(document).on("keyup", ".en_num_keyup", function(key) {
-        var pattern = /[ \[\]{}<>|`\"'\\ㄱ-ㅎㅏ-ㅣ가-힣]/g;
+    $(document).on("keyup", ".en_num_keyup", function(key) {
+        var pattern = /[\[\]{}<>|`\"'\\ㄱ-ㅎㅏ-ㅣ가-힣]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var abstract_title = _this.val().replace(pattern, '');
             _this.val(abstract_title);
         }
-    });
+});
 
 });
 

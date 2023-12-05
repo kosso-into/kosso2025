@@ -231,7 +231,7 @@ $info = sql_fetch($sql_info);
                         <tr>
                             <th>초록 구성</th>
                             <td>
-                                <p>• <span style="font-weight:bold">제목</span>: 30단어 내로 작성</p>
+                                <p>• <span style="font-weight:bold">제목</span>: 30단어 이내의 영문으로 작성</p>
                                 <p>• <span style="font-weight:bold">본문</span>: 국문 800~1000자, 영문 300단어 이내로 작성</p>
                                 <p>• <span style="font-weight:bold;">필수 요소</span>: Background, methods & materials, results, conclusions</p>
                                 <p>• <span style="font-weight:bold">선택사항</span>: Keywords</p>
@@ -244,7 +244,7 @@ $info = sql_fetch($sql_info);
                                 <p>• 1 figure in 1 abstract: 허용</p>
                                 <p>• 1 table in 1 abstract: 허용</p>
                                 <p>• 1 figure & 1 table in 1 abstract: 불가</p>
-                                <p>* 첨부 이미지는 각각 50 단어로 계산합니다.</p>
+                                <p>* 첨부 이미지는 50단어로 계산합니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -253,9 +253,7 @@ $info = sql_fetch($sql_info);
                         </tr>
                         <tr>
                             <th>초록 수정</th>
-                            <td>
-                                 접수된 초록은 접수 마감일 이전까지 마이페이지에서 조회 및 수정 제출 가능
-                            </td>
+                            <td>접수된 초록은 접수 마감일까지 마이페이지에서 조회 및 수정 제출 가능합니다.</td>
                         </tr>
                         <tr>
                             <th>초록 철회 및 문의</th>
