@@ -7,32 +7,27 @@ $is_check_mobile = ($_GET["type"] == "pc") ? false : true;
 $registration_idx = $_GET["idx"] ?? NULL;
 $user_idx = $member["idx"] ?? NULL;
 
-$sql = "SELECT
-				mb.nation_no,
-				mb.first_name, mb.last_name,
-				rr.affiliation, 
-				IFNULL(mb.licence_number, '-') AS licence_number_text,
-				pa.`type` AS payment_type,
-				nt.nation_en, 
-				(
-					CASE
-						WHEN rr.payment_methods = 0 THEN '신용카드'
-						WHEN rr.payment_methods = 1 THEN '계좌이체'
-					END
-				) AS payment_method_txt,
-				IFNULL(FORMAT(pa.total_price_kr, 0), 0) AS total_price_kr_text, 
-				IFNULL(FORMAT(pa.total_price_us, 0), 0) AS total_price_us_text,
-				DATE_FORMAT(pa.payment_date, '%Y-%m-%d') AS payment_date_text,
-				DATE_FORMAT(rr.register_date, '%Y.%m.%d') AS register_date_text,
-				rr.price
-			FROM request_registration AS rr
-			LEFT JOIN member AS mb
-				ON mb.idx = rr.register
-			LEFT JOIN nation AS nt
-				ON mb.nation_no = nt.idx
-			LEFT JOIN payment AS pa
-				ON pa.idx = rr.payment_no
-			WHERE rr.idx = {$registration_idx}";
+$sql = " SELECT
+			reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
+			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number, reg.date_of_birth, reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
+			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
+			(
+				CASE
+					WHEN reg.ksso_member_status IS NULL OR reg.ksso_member_status = 0 THEN '비회원'
+					WHEN reg.ksso_member_status > 0 THEN '회원'
+				END
+			) AS ksso_member_status,
+			p.idx AS payment_idx, p.`type` AS payment_type, p.total_price_kr, p.total_price_us,
+			p.etc2, DATE_FORMAT(p.register_date, '%Y-%m-%d %H:%i:%s') AS payment_register_date
+			FROM request_registration reg
+			LEFT JOIN payment p
+			ON reg.payment_no = p.idx
+			LEFT JOIN (
+			SELECT idx, nation_en, nation_tel FROM nation
+			)AS nation
+			ON reg.nation_no = nation.idx
+			WHERE reg.register = {$registration_idx}
+			AND reg.is_deleted = 'N'";
 $data = sql_fetch($sql);
 
 if (!$data) {

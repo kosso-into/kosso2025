@@ -831,22 +831,22 @@ function inputCheck(formData) {
     });
 
     if($(".presenting_author:checked").length < 1) {
-		alert("presenting_author를 체크해 주세요.");
+		alert("발표저자를 체크해 주세요.");
 		return false;
 	}
 
     if($(".corresponding_author:checked").length < 1) {
-		alert("presenting_author를 체크해 주세요.");
+		alert("교신저자를 체크해 주세요.");
 		return false;
 	}
 
 	if($(".presenting_author:checked").length > 1) {
-		alert("presenting_author를 하나만 체크해 주세요.");
+		alert("발표저자를 하나만 체크해 주세요.");
 		return false;
 	}
 
 	if($(".corresponding_author:checked").length > 1) {
-		alert("corresponding_author를 하나만 체크해 주세요.");
+		alert("교신저자를 하나만 체크해 주세요.");
 		return false;
 	}
 
