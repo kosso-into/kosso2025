@@ -46,7 +46,9 @@ if ($user_info_department && $user_info_institution) {
 // $user_phone = implode("-", array_splice($_arr_phone, 1));
 
 //[231201] sujeong 휴대폰 번호 82- 제거 01012345678 출력
-$user_phone = isset($user_info["phone"]) ? $user_info["phone"] : "-";
+$user_phone = isset($user_info["phone"]) ? substr($user_info['phone'], 0, 3). '-' .  substr($user_info['phone'], 3, 4). '-'.substr($user_info['phone'], 7): "-";
+
+
 
 $user_affiliation_value = $user_info_affiliation ?? "";
 
@@ -964,9 +966,8 @@ function check_value() {
         return;
     } else {
 		// if($("select[name=nation_no]").val() == 25) { // Republic of Korea
-			var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+			var regPhone = /^01([0|1|6|7|8|9])-([0-9]{3,4})-([0-9]{4})$/;
 			if (!regPhone.test(phone)) {
-                console.log('11');
 				$("#submit_btn").removeClass("blue_btn");
 			    $("#submit_btn").addClass("gray_btn");
 				alert("올바른 전화번호 양식을 부탁드립니다. \nexample) 010-0000-0000");
@@ -1058,11 +1059,12 @@ function check_value() {
 			}
 		});
 	}
-
-	if(is_valid) {
+    
+    if(is_valid) {
 		$("#submit_btn").removeClass("gray_btn");
 		$("#submit_btn").addClass("blue_btn");
 	}
+	
 }
 
 // Same as sign-up information
@@ -1140,21 +1142,14 @@ function setUserInformation(target) {
 }
 
 //핸드폰 유효성
-$(document).on('change keyup', ".phone", function(key) {
+$(document).on('input', ".phone", function(key) {
     var _this = $(this);
-    // if (key.keyCode != 8) {
-    //     var phone = _this.val().replace(/[^0-9 || -]/gi, '');
-    //     _this.val(phone);
-    // }
-    var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
-			if (!regPhone.test(_this.val())) {
-                console.log('111');
-				$("#submit_btn").removeClass("blue_btn");
-			    $("#submit_btn").addClass("gray_btn");
-				alert("올바른 전화번호 양식을 부탁드립니다. \nexample) 010-0000-0000");
-				return;
-			}
+    if (key.keyCode != 8) {
+        var phone = _this.val().replace(/[^0-9 || -]/gi, '');
+        _this.val(phone);
+    }
 });
+
 $(document).ready(function() {
     $(document).on("keyup", ".en_keyup", function(key) {
         var pattern_eng = /[ \[\]{}?|`~!@#$%^&*_+=;:\"'\\]/g;
