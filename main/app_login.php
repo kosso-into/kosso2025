@@ -42,28 +42,30 @@
 </section>
 
 <script>
-function installPWA() {
-console.log("hi")
-		if ('serviceWorker' in navigator && 'PushManager' in window) {
-		window.addEventListener('beforeinstallprompt', (event) => {
+    let installPrompt = null;
+	
+    window.addEventListener('beforeinstallprompt', (event) => {
         event.preventDefault();
+        installPrompt = event;
+    });
+    
+
         const installButton = document.querySelector('.hi');
-        installButton.style.display = 'block';
+        installButton.addEventListener('click',async () => {
+                if (!installPrompt) {
+                    return;
+                }
+                const result = await installPrompt.prompt();
+                console.log(`Install prompt was: ${result.outcome}`);
+                disableInAppInstallPrompt();
+                });
 
-        installButton.addEventListener('click', () => {
-          event.prompt();
-          event.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-              console.log('User accepted the install prompt');
-            } else {
-              console.log('User dismissed the install prompt');
-            }
-          });
-        });
-      });
-    }
-  }
 
+  
+  function disableInAppInstallPrompt() {
+                installPrompt = null;
+                installButton.setAttribute("hidden", "");
+                }
 $(document).ready(function(){
 //	var varUA = navigator.userAgent.toLowerCase();
 //	if ( varUA.indexOf('android') > -1) {
