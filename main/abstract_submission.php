@@ -1464,6 +1464,7 @@ $(document).ready(function() {
 								$co_arr_phone = explode("-", $coauthor["add_co_phone"]);
 								$co_nation_tel = isset($co_arr_phone[0]) ? '+'.$co_arr_phone[0] : "" ;
 								$co_phone = implode("-", array_splice($co_arr_phone, 1));
+                                $co_phone = $coauthor["add_co_phone"];
 							} else {
 								$co_nation_tel = $coauthor["add_co_nation_tel"];
 								$co_phone = $coauthor["add_co_phone"];

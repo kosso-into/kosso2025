@@ -609,7 +609,7 @@
 				$co_email = $co_data["add_co_email".$i] ?? "";
 				$co_nation_tel = $co_data["add_co_nation_tel".$i] ?? "";
 				$co_nation_tel = str_replace('+', '', $co_nation_tel);
-				//$co_phone = phoneNumberTransform($co_nation_tel, $co_data["add_co_phone".$i] ?? "");
+				$co_phone =  $co_data["add_co_phone".$i] ?? "";
 
 				if($co_idx) {
                     $co_submission_query =  "
