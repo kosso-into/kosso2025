@@ -580,7 +580,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	/*.section_bg  {padding-top: 60px; background-position: center top 60px; border:1px solid;}*/
 	.main_section.icola_main .container {padding: 116px 0;}
 	.main_section .main_btn_wrap {bottom:28px;}
-	.main_section .img_vsl_text {top:110px !important;}
+	.main_section .img_vsl_text {top:110px !important; width: 600px;}
 
 	/* main > top title */
 	.main_section .txt_wrap h1 {font-size: 50px; margin-bottom:20px;}
@@ -1073,7 +1073,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 }
 
 .main_section .section_bg{/* min-height:830px; */} /*230523 수정으로 인한 주석*/
-.main_section .img_vsl_text{top:90px;}
+.main_section .img_vsl_text{top:90px; width: 600px;}
 .main_section .dates_area{bottom:52px;}
 
 .exhibition .container_inner {margin-top:40px;}

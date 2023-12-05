@@ -107,7 +107,7 @@ $(document).ready(function(){
 								});
 							}
 
-							//window.location.replace(PATH+"registration2.php?idx="+res.registration_idx);
+							window.location.replace(PATH+"registration2.php?idx="+res.registration_idx);
 						} else if(res.code == 400){
 							alert(locale(language.value)("error_registration"));
 							return false;

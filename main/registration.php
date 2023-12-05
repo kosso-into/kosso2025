@@ -854,8 +854,7 @@ $(document).ready(function() {
                 return false;
             }
         
-        if($("#radio1").is(":checked") && $('#dietitian_number').val() !== "" && ('#datepicker').val() === "" ){ 
-           
+        if($("#radio1").is(":checked") && $('#dietitian_number').val() !== "" && $('#datepicker').val() === "" ){ 
                 alert("생년월일을 입력해주세요.")
                 return false;
         }
