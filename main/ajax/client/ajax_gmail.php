@@ -729,7 +729,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; border-bottom:1px solid #000;'>결제 상태</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;' >등록 완료</td>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;'>등록 완료</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; border-bottom:1px solid #000;'>결제일</th>
@@ -769,8 +769,8 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
                     <td width='74' style='width:74px;'></td>
                     <td>
                         <div>
-                            <p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
-                            <p style='font-size:14px;color:#170F00;margin-top:14px;'>제 59차 대한비만학회 춘계학술대회에 등록해주셔서 감사합니다. 등록 세부 정보는 아래에 기재되어 있습니다. 문의사항이 있으시면 사무국(<a >ksso@into-on.com</a>)으로 연락해 주시기 바랍니다.</p>
+                            <p style='font-size:15px; font-weight:bold; color:#000; margin:0;'></p>
+                            <p style='font-size:14px;color:#170F00;margin-top:14px;'></p>
                             <table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
                                 <tbody>
                                     <tr style='border-bottom:1px solid #000;'>
@@ -1119,9 +1119,9 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail/abstract_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
 			<tr><td width="74" style="width:74px;"></td><td>
 			<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;"></div></td><td width="74" style="width:74px;"></td></tr>
-			<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '    . $last_name .$first_name. ',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">아래의 초록 접수 내용을 확인해 주세요.</p>
+			<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;"></p><p style="font-size:14px;color:#170F00;margin-top:14px;"></p>
 			<!-- Abstract Submission Status -->
-			<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 제출 상태</p>
+			<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 정보</p>
 			<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 30px;">
 			<tbody>
 			<tr>
@@ -1133,7 +1133,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . ($presentation_type + 1) . '. ' . $presentation_type_arr[$presentation_type] . '</td>
 			</tr>
 			<tr>
-				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">주제 카테고리</th>
+				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">카테고리</th>
 				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . $poster_category_map[$abstract_category] . '</td>
 			</tr>
 			<tr>
@@ -1190,7 +1190,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3"><a >' . $email . '</a></td>
 										</tr>
 										<tr>
-											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">휴대폰 번호</th>
+											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">전화번호</th>
 											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . $phone . '</td>
 										</tr>
 										</tbody>	
@@ -1200,7 +1200,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			if (count($corresponding_submit_data) > 0) {
 				$rawMessageString .= '<!-- Abstract Submission Status > Corresponding Author -->
-			<p style="font-size:15px; font-weight:600; color:#000; margin:0;">Corresponding Author</p>';
+			<p style="font-size:15px; font-weight:600; color:#000; margin:0;">교신저자</p>';
 
 				foreach ($corresponding_submit_data as $obj) {
 					$nation_no			= $obj["nation_no"] ?? "";
@@ -1241,7 +1241,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3"><a>' . $email . '</a></td>
 										</tr>
 										<tr>
-											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">휴대폰 번호</th>
+											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">전화번호</th>
 											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . $phone . '</td>
 										</tr>
 										</tbody>	

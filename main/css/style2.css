@@ -421,7 +421,7 @@ div.phone input:last-child {width:100%;}
 .abstract_submission2 .file_input {}
 .author_chk_wrap {display:flex; gap:10px 20px; flex-wrap:wrap;}
 /*.author_chk_wrap > li {width:calc(50% - 10px);}*/
-.coauthor_wrap > p {font-size:28px; font-weight:bold;}
+.coauthor_wrap > p {font-size:21px; font-weight:bold;}
 
 /*program at a glance*/
 /* ▼ Tab 수정으로 인한 주석 - 230517 HUBDNC AJY */

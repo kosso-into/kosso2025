@@ -46,7 +46,7 @@ if ($user_info_department && $user_info_institution) {
 // $user_phone = implode("-", array_splice($_arr_phone, 1));
 
 //[231201] sujeong 휴대폰 번호 82- 제거 01012345678 출력
-$user_phone = isset($user_info["phone"]) ? substr($user_info['phone'], 0, 3). '-' .  substr($user_info['phone'], 3, 4). '-'.substr($user_info['phone'], 7): "-";
+$user_phone = isset($user_info["phone"]) ? $user_info["phone"] : "-";
 
 
 
@@ -273,6 +273,11 @@ if (empty($abstract_idx)) {
     margin-left: 18px;
     color: #fff;
 }
+
+input::placeholder {
+  color: #B2B2B2;
+}
+
 </style>
 <script src="./js/script/client/submission.js" defer></script>
 <script defer>
@@ -408,7 +413,7 @@ $(document).ready(function() {
         } else if (affiliation_cnt > 9) {
 			alert('소속을 10개 이상 입력하실 수 없습니다.');	
         } else {
-			const value = depart + ', ' + instit;
+			const value = instit + ', ' + depart;
 			const items = $(this).parent().next('.affiliation_form').find('.affiliation_wrap .affiliation_item');
 			for(var i = 0; i < items.length; i++) {
 				if(items[i].innerHTML == value) {
@@ -517,19 +522,19 @@ $(document).ready(function() {
 				html += '<li>';
 				html += '<input type="checkbox" class="checkbox" id="author_chk1_1_'+i+'" onchange="setUserInformation($(this))">';
 				html += '<label for="author_chk1_1_'+i+'">';
-				html += '<i></i>Same as sign-up information<span class="red_txt">*</span>';
+				html += '<i></i>제출자와 동일<span class="red_txt">*</span>';
 				html += '</label>';
                 html += '</li>';
 				html += '<li>';
 				html += '<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_'+i+'" name="add_co_presenting_author'+i+'" value="Y" onchange="check_value()">';
 				html += '<label for="author_chk1_2_'+i+'">';
-				html += '<i></i>Presenting Author<span class="red_txt">*</span>';
+				html += '<i></i>발표저자<span class="red_txt">*</span>';
 				html += '</label>';
                 html += '</li>';
 				html += '<li>';
 				html += '<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_'+i+'" name="add_co_corresponding_author'+i+'" value="Y" onchange="check_value()">';
 				html += '<label for="author_chk1_3_'+i+'">';
-				html += '<i></i>Corresponding Author<span class="red_txt">*</span>';
+				html += '<i></i>교신저자<span class="red_txt">*</span>';
 				html += '</label>';
                 html += '</li>';
                 html += '</ul>';
@@ -579,7 +584,7 @@ $(document).ready(function() {
                 html += '</div>';
                 html += '</li>';
                 html += '<li>';
-                html += '<p class="label"><?= $locale("phone") ?> <span class="red_txt">*</span></p>';
+                html += '<p class="label">전화번호 <span class="red_txt">*</span></p>';
                 html += '<div class="phone_div clearfix2">';
                 html += '<select class="required2" name="add_co_nation_tel' + i + '">';
                 html += '<option value="82" selected>82</option>';
@@ -966,7 +971,7 @@ function check_value() {
         return;
     } else {
 		// if($("select[name=nation_no]").val() == 25) { // Republic of Korea
-			var regPhone = /^01([0|1|6|7|8|9])-([0-9]{3,4})-([0-9]{4})$/;
+			var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
 			if (!regPhone.test(phone)) {
 				$("#submit_btn").removeClass("blue_btn");
 			    $("#submit_btn").addClass("gray_btn");
@@ -1220,7 +1225,7 @@ $(document).ready(function() {
                 <ul class="clearfix">
                     <li class="on">
                         <p>Step 1</p>
-						<p class="sm_txt">초록 저자 정보 입력.<br>(발표저자/교신저자)</p>
+						<p class="sm_txt">초록 저자 정보 입력<br>(발표저자/교신저자)</p>
                     </li>
                     <li>
                         <p>Step 2</p>
@@ -1249,19 +1254,19 @@ $(document).ready(function() {
 										<li>
 											<input type="checkbox" class="checkbox" id="author_chk1_1" onchange="setUserInformation($(this))">
 											<label for="author_chk1_1">
-												<i></i>Same as sign-up information<span class="red_txt">*</span>
+												<i></i>제출자와 동일<span class="red_txt">*</span>
 											</label>
 										</li>
 										<li>
 											<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2" name="presenting_author" value="Y" <?= $presenting_author == "Y" ? "checked" : "" ?> onchange="check_value()">
 											<label for="author_chk1_2">
-												<i></i>Presenting Author<span class="red_txt">*</span>
+												<i></i>발표저자<span class="red_txt">*</span>
 											</label>
 										</li>
 										<li>
 											<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3" name="corresponding_author" value="Y" <?= $corresponding_author == "Y" ? "checked" : "" ?> onchange="check_value()">
 											<label for="author_chk1_3">
-												<i></i>Corresponding Author<span class="red_txt">*</span>
+												<i></i>교신저자<span class="red_txt">*</span>
 											</label>
 										</li>
 									</ul>
@@ -1332,7 +1337,7 @@ $(document).ready(function() {
                                 </div>
                             </li>
                             <li>
-                                <p class="label"><?= $locale("phone") ?> <span class="red_txt">*</span></p>
+                                <p class="label">전화번호 <span class="red_txt">*</span></p>
                                 <div class="phone_div clearfix2">
                                     <select class="required2" name="nation_tel">
                                         <option value="82" selected>82</option>        
@@ -1384,19 +1389,19 @@ $(document).ready(function() {
                             echo						'<li>';
                             echo							'<input type="checkbox" class="checkbox" id="author_chk1_1_'.$i.'" onchange="setUserInformation($(this))">';
                             echo							'<label for="author_chk1_1_'.$i.'">';
-                            echo								'<i></i>Same as sign-up information<span class="red_txt">*</span>';
+                            echo								'<i></i>제출자와 동일<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
 							echo						'<li>';
                             echo							'<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_'.$i.'" name="add_co_presenting_author'.$i.'" value="Y" '.($coauthor["add_co_presenting_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
                             echo							'<label for="author_chk1_2_'.$i.'">';
-                            echo								'<i></i>Presenting Author<span class="red_txt">*</span>';
+                            echo								'<i></i>발표저자<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
 							echo						'<li>';
                             echo							'<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_'.$i.'" name="add_co_corresponding_author'.$i.'" value="Y" '.($coauthor["add_co_corresponding_author"] == 'Y' ? "checked" : "").' onchange="check_value()">';
                             echo							'<label for="author_chk1_3_'.$i.'">';
-                            echo								'<i></i>Corresponding Author<span class="red_txt">*</span>';
+                            echo								'<i></i>교신저자<span class="red_txt">*</span>';
                             echo							'</label>';
                             echo						'</li>';
                             echo                    '</ul>';
@@ -1460,7 +1465,7 @@ $(document).ready(function() {
                             echo                '</div>';
                             echo            '</li>';
                             echo            '<li>';
-                            echo                '<p class="label">' . $locale("phone") . ' <span class="red_txt">*</span></p>';
+                            echo                '<p class="label">' .'전화번호'. ' <span class="red_txt">*</span></p>';
                             echo                '<div class="phone_div clearfix2">';
                             echo                    '<select class="required2" name="add_co_nation_tel' . $i . '">';
 							if(!isset($coauthor["add_co_nation_tel"])) {
@@ -1488,12 +1493,12 @@ $(document).ready(function() {
             <?php
                 if (!empty($abstract_idx) || !empty($submit_data)) {
             ?>
-            <button type="button" id="submit_btn" class="btn btns blue_btn submit_btn" data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?><!-- <span>&gt;</span> --></button>
+            <button type="button" id="submit_btn" class="btn btns blue_btn submit_btn" data-idx=<?= $abstract_idx ?>>다음<!-- <span>&gt;</span> --></button>
             <?php
                 } else {
             ?>
             <button type="button" id="submit_btn" class="btn btns gray_btn submit_btn"
-                data-idx=<?= $abstract_idx ?>><?= $locale("next_btn") ?><!-- <span>&gt;</span> --></button>
+                data-idx=<?= $abstract_idx ?>>다음<!-- <span>&gt;</span> --></button>
             <?php
                 }
             ?>
