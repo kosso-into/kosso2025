@@ -212,41 +212,33 @@ if ($during_yn !== "Y") {
                         <p class="mb10"><span class="red_txt">*</span> 는 필수 입력입니다.</p>
                         <p class="label">참가 유형<span class="red_txt">*</span>
                         </p>
-                        <select id="participation_type" name="participation_type" onChange="calc_fee(this)"
+                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)"
                             <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
                             <option value="" selected hidden>필수 선택</option>
                             <?php
-								$participation_arr = array("임원", "연자", "좌장", "패널", "일반참석자", "고객사");
-                               
-								foreach($participation_arr as $index => $a_arr) {
-                                    $attendance_type = "";
-                                    switch($prev["attendance_type"]) {
-                                        case 0:
-                                            $attendance_type = "임원";
-                                            break;
-                                        case 1:
-                                            $attendance_type = "연자";
-                                            break;
-                                        case 2:
-                                            $attendance_type = "좌장";
-                                            break;
-                                        case 3:
-                                            $attendance_type = "패널";
-                                            break;
-                                        case 4:
-                                            $attendance_type = "일반참석자";
-                                            break;
-                                        case 5:
-                                            $attendance_type = "고객사";
-                                            break;
-                                    }
-                                  
-									$selected = $attendance_type === $a_arr ? "selected" : "";
+								        $attendance_arr = array();
 
-									echo '<option value="'.$index.'" '.$selected.'>'.$a_arr.'</option>';
-//									$idx = $idx + 1;
-								}
-							?>
+                                        $attendance_arr[0]['name'] = "일반참석자";
+                                        $attendance_arr[0]['value'] = "4";
+
+                                        $attendance_arr[1]['name'] = "임원";
+                                        $attendance_arr[1]['value'] = "0";
+
+                                        $attendance_arr[2]['name'] = "좌장";
+                                        $attendance_arr[2]['value'] = "2";
+
+                                        $attendance_arr[3]['name'] = "연자";
+                                        $attendance_arr[3]['value'] = "1";
+
+                                        $attendance_arr[4]['name'] = "패널";
+                                        $attendance_arr[4]['value'] = "3";
+                                                                       
+                                    foreach ($attendance_arr as $a_arr) {
+                                        $selected =  $prev["attendance_type"] == $a_arr['value'] ? "selected" : "";
+                                        echo '<option value="'.$a_arr['value'].'" '.$selected.'>'.$a_arr['name'].'</option>';
+                                    }
+								
+							?> 
                         </select>
                     </li>
                     <li>
@@ -256,7 +248,7 @@ if ($during_yn !== "Y") {
                                 <select id="occupation" name="occupation">
                                     <option value="Medical" selected hidden>필수 선택</option>
                                     <?php
-                                        $occupation_arr = array("의료", "영양", "운동", "기타");
+                                        $occupation_arr = array("의료", "영양", "운동", "기타", "전시(부스)");
 
                                         foreach ($occupation_arr as $a_arr) {
                                             $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
@@ -280,7 +272,7 @@ if ($during_yn !== "Y") {
                         </p>
                         <ul class="half_ul">
                             <li>
-                                <select id="category" name="category" onChange="calc_fee(this)"
+                               <select id="category" name="category" onChange="calc_fee(this)"
                                     <?= $prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : "" ?>>
                                     <option value="" selected hidden>필수 선택</option>
                                     <?php
@@ -300,30 +292,36 @@ if ($during_yn !== "Y") {
 
                                         $participation_arr[4]['name'] = "전임의";
                                         $participation_arr[4]['value'] = "Fellow";
+                                        
+                                        $participation_arr[5]['name'] = "수련의";
+                                        $participation_arr[5]['value'] = "Intern";
 
-                                        $participation_arr[5]['name'] = "전공의";
-                                        $participation_arr[5]['value'] = "Resident";
+                                        $participation_arr[6]['name'] = "전공의";
+                                        $participation_arr[6]['value'] = "Resident";
 
-                                        $participation_arr[6]['name'] = "영양사";
-                                        $participation_arr[6]['value'] = "Nutritionist";
+                                        $participation_arr[7]['name'] = "영양사";
+                                        $participation_arr[7]['value'] = "Nutritionist";
 
-                                        $participation_arr[7]['name'] = "운동사";
-                                        $participation_arr[7]['value'] = "Exercise Specialist";
+                                        $participation_arr[8]['name'] = "운동사";
+                                        $participation_arr[8]['value'] = "Exercise Specialist";
 
-                                        $participation_arr[8]['name'] = "간호사";
-                                        $participation_arr[8]['value'] = "Nurse";
+                                        $participation_arr[9]['name'] = "간호사";
+                                        $participation_arr[9]['value'] = "Nurse";
 
-                                        $participation_arr[9]['name'] = "연구원";
-                                        $participation_arr[9]['value'] = "Researcher";
+                                        $participation_arr[10]['name'] = "군의관";
+                                        $participation_arr[10]['value'] = "Military Surgeon(군의관)";
 
-                                        $participation_arr[10]['name'] = "학생";
-                                        $participation_arr[10]['value'] = "Student";
+                                        $participation_arr[11]['name'] = "공보의";
+                                        $participation_arr[11]['value'] = "Pharmacist";
 
-                                        $participation_arr[11]['name'] = "기자";
-                                        $participation_arr[11]['value'] = "Press";
+                                        $participation_arr[12]['name'] = "연구원";
+                                        $participation_arr[12]['value'] = "Researcher";
 
-                                        $participation_arr[12]['name'] = "기타";
-                                        $participation_arr[12]['value'] = "Others";
+                                        $participation_arr[13]['name'] = "학생";
+                                        $participation_arr[13]['value'] = "Student";
+
+                                        $participation_arr[14]['name'] = "기타";
+                                        $participation_arr[14]['value'] = "Others";
 
                                         foreach ($participation_arr as $a_arr) {
                                             $selected =  $prev["member_type"] == $a_arr['value'] ? "selected" : "";
@@ -417,12 +415,14 @@ if ($during_yn !== "Y") {
                             value="<?= $prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : "" ?>">
                             
                     </li>
-                    <li class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
+                    <li id="date_of_birth" class="review_sub_list <?= ($prev["is_score"] == 1 ? "" : "hidden") ?>">
                         <p class="label">
                         생년월일<span class="red_txt">*</span>
                         </p>
                             <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy"
-                                        id="datepicker" onKeyup="birthChk(this)" />
+                                        id="datepicker" onKeyup="birthChk(this)" 
+                                        value="<?= $prev["is_score"] == 1 ? $prev["date_of_birth"] ?? "" : "" ?>"
+                                        />
                     </li>
                     <?php } ?>
                     <li>
@@ -725,7 +725,7 @@ $(document).ready(function() {
     // return;
 
     $('.etc1').hide();
-
+    $("#date_of_birth").hide();
     // $(document).ready( function() {
     //     if ($('#bank').is(':checked') == true) {
     //         $('#bank_detail').show();
@@ -861,6 +861,23 @@ $(document).ready(function() {
         }
     });
 
+    /**[231205] sujeong / 영양사 면허번호 또는 임상영양사 자격번호 입력시 생년월일 보이도록 */
+    $('#nutritionist_number').on("input", ()=>{
+        $("#date_of_birth").show();
+    })
+
+    $('#dietitian_number').on("input", ()=>{
+        $("#date_of_birth").show();
+    })
+
+    if($('#nutritionist_number').val() !== ""){
+        $("#date_of_birth").show();
+    }
+    
+    if($('#dietitian_number').val() !== ""){
+        $("#date_of_birth").show();
+    }
+
     $("select[name=category]").on("change", function() {
         const val = $(this).val();
         const prevTitle = $("input[name=title_prev_input]").val() ?? "";
@@ -879,7 +896,7 @@ $(document).ready(function() {
         const val2 = $(this).val();
         const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
 
-        if (val2 === 'Others') {
+        if (val2 === '기타') {
             if (!$(this).parent("li").next('.hide_input').hasClass("on")) {
                 $(this).parent("li").next('.hide_input').addClass("on");
             }

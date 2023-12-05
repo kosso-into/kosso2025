@@ -608,7 +608,16 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				break;   
 			case "Others":
 				$member_type = "기타";
-				break;   
+				break;
+			case "Intern":
+				$member_type = "수련의";
+				break;  
+			case "Military Surgeon(군의관)":
+				$member_type = "군의관";
+				break;
+			case "Pharmacist":
+				$member_type = "공보의";
+				break;      
 		}
 
 
