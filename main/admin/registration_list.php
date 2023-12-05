@@ -351,7 +351,16 @@ foreach ($registration_list as $rk => $rl) {
 				break;   
 			case "Others":
 				$member_type = "기타";
-				break;   
+				break; 
+			case "Intern":
+				$member_type = "수련의";
+				break;  
+			case "Military Surgeon(군의관)":
+				$member_type = "군의관";
+				break;
+			case "Pharmacist":
+				$member_type = "공보의";
+				break;      
 		}
 
 	$date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
@@ -550,7 +559,16 @@ $count = count($registration_list);
 								break;   
 							case "Others":
 								$member_type = "기타";
-								break;   
+								break;
+							case "Intern":
+								$member_type = "수련의";
+								break;  
+							case "Military Surgeon(군의관)":
+								$member_type = "군의관";
+								break;
+							case "Pharmacist":
+								$member_type = "공보의";
+								break;       
 						}
 						$phone_number = substr($list['phone'], 0, 3). '-' .  substr($list['phone'], 3, 4). '-' .substr($list['phone'], 7);
 					?>

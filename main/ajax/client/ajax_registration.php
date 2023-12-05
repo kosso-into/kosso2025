@@ -256,7 +256,7 @@ if ($_POST["flag"] == "registration") {
 		if ($occupation !== "") {
 			$add_set .= ", occupation_type = '{$occupation}' ";
 
-			if ($occupation == 'Others') {
+			if ($occupation == '기타') {
 				$add_set .= $occupation_other != "" ? ", occupation_other_type = '{$occupation_other}' " : ", occupation_other_type = NULL ";
 			} else {
 				$add_set .= ", occupation_other_type = NULL ";
