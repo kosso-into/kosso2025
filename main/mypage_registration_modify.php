@@ -189,6 +189,9 @@ switch ($attendance_type) {
 		font-weight: bold;
 		color: #10BF99;
 	}
+	label {
+		margin-right: 10px;
+	}
 </style>
 
 <section class="container form_section mypage">
@@ -219,7 +222,7 @@ switch ($attendance_type) {
 			}
 			?>-->
 			<form class="table_wrap" name="modify_form">
-				<div class="pc_only">
+				<div class="x_scroll">
 					<table class="table detail_table">
 						<colgroup>
 							<col class="col_th">
@@ -364,7 +367,7 @@ switch ($attendance_type) {
 								<th>생년월일</th>
 								<td>
 									<div class="max_normal ">
-										<input type="text" name="date_of_birth" value="<?= $data['date_of_birth'] ?>"
+										<input id="datepicker" type="text" name="date_of_birth" value="<?= $data['date_of_birth'] ?>"
 										onKeyup="birthChk(this)">
 									</div>
 								</td>
@@ -538,44 +541,11 @@ switch ($attendance_type) {
 <script src="./js/script/client/member.js"></script>
 <script>
 
-		// $('.book').on('click', function(event) {
-		// 		event.preventDefault();
-		// 		alert('Updates are planned.');
-		// 		return false;
-		// 	});
-
-		$(".korean_only").on("click", function() {
-			var url = "./pre_registration_korean_only.php";
-			window.open(url, "Registration Receipt", "width=793, height=2000, top=30, left=30");
-		});
-
-		$("input[name=first_name_kor], input[name=mo_first_name_kor]")
-			.on("keyup", function() {
-				const regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
-				v = $(this).val();
-				if (regexp.test(v)) {
-					alert("한글만 입력가능 합니다.");
-					$(this).val(v.replace(regexp, ''));
-				}
-			});
-
-		$("input[name=affiliation_kor], input[name=department_kor], input[name=mo_affiliation_kor], input[name=mo_department_kor]")
-			.on("keyup", function() {
-				regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
-            v = $(this).val();
-            if (regexp.test(v)) {
-                alert("특수기호는 입력이 불가합니다.");
-                $(this).val(v.replace(regexp, ''));
-            }
-			});
-
-		$("input[name=phone], input[name=mo_phone]").keyup(function(event) {
-			const regexp = /[^0-9]/g;
-			v = $(this).val();
-			if (regexp.test(v)) {
-				$(this).val(v.replace(regexp, ''));
-			}
-		});
+	$(".review").addClass("hidden");
+	
+	window.onload = ()=>{
+		checkIsScore();
+	}
 
 		$('input[name=review]').on("change", function() {
         if ($('input[name=review]:checked').val() == '1') {
@@ -608,6 +578,7 @@ switch ($attendance_type) {
         $("#date_of_birth").show();
     }
 
+	/**유입 경로 체크시 다른 체크 풀기 */
 	$("input[name=list]").on("change", function() {
         const checked = $(this).is(":checked");
         if (checked) {
@@ -642,6 +613,23 @@ $(document).on("click", "#pc_submit", function() {
 
 		let conference_info_arr = [];
 
+		const anyChecked = $("input[name='list']:checked").length > 0;
+
+        if (!anyChecked) {
+            alert("유입경로를 선택하세요.");
+			return;
+        }
+
+		if($("#radio1").is(":checked") && nutritionist_number !== "" && $('#datepicker').val() === ""){
+			alert("생년월일을 입력해주세요.")
+			return;
+			}
+
+		if($("#radio1").is(":checked") && dietitian_number !== "" && $('#datepicker').val() === "" ){ 
+			alert("생년월일을 입력해주세요.")
+			return;
+		}
+
 		/**is_score */
 		if($("#radio1").is(":checked") && !$("#radio2").is(":checked")){
 			 review = "1";
@@ -659,7 +647,7 @@ $(document).on("click", "#pc_submit", function() {
 		}
 		/**others 2 */
 		if($("#yes2").is(":checked") && !$("#no2").is(":checked")){
-			 others2 = "Welcome+Reception3월 8일(금) 19:40~";
+			 others2 = "Welcome Reception3월 8일(금) 19:40~";
 		}
 		else if(!$("#yes2").is(":checked") && $("#no2").is(":checked")){
 			 others2 = "no";
@@ -668,7 +656,7 @@ $(document).on("click", "#pc_submit", function() {
 		if($("#yes3").is(":checked") && !$("#no3").is(":checked")){
 			 others3 = "Breakfast Symposium3월 9일(토) 08:00~08:45";
 		}
-		else if($("#yes3").is(":checked") && !$("#no3").is(":checked")){
+		else if(!$("#yes3").is(":checked") && $("#no3").is(":checked")){
 			 others3 = "no";
 		}
 		/**others 4 */
@@ -748,15 +736,7 @@ $(document).on("click", "#pc_submit", function() {
 			};
 
 		
-		if($("#radio1").is(":checked") && $('#nutritionist_number').val() !== "" && $('#datepicker').val() === ""){
-			alert("생년월일을 입력해주세요.")
-			return false;
-			}
 
-		if($("#radio1").is(":checked") && $('#dietitian_number').val() !== "" && $('#datepicker').val() === "" ){ 
-			alert("생년월일을 입력해주세요.")
-			return false;
-		}
 			if (confirm("계정 정보를 수정하시겠습니까?")) {
 				$.ajax({
 					url: PATH + "ajax/client/ajax_registration.php",
@@ -782,6 +762,14 @@ $(document).on("click", "#pc_submit", function() {
 			}
 		});
 
+	function checkIsScore(){
+		if($("#radio1").is(":checked")){
+			$(".review").removeClass("hidden");
+		}
+		if($("#radio2").is(":checked")){
+			$(".review").addClass("hidden");
+		}
+	}
 
 	function birthChk(input) {
 

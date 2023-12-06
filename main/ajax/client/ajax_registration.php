@@ -204,7 +204,6 @@ if ($_POST["flag"] == "registration") {
 				$add_set .= ", member_type = NULL ";
 				$add_set .= ", member_other_type = NULL ";
 			}
-
 			if ($data["promotion_confirm_code"] != '') {
 				if ($promotion_code_number != "") {
 					$add_set .= ", promotion_code_number = '{$promotion_code_number}' ";
@@ -287,11 +286,11 @@ if ($_POST["flag"] == "registration") {
 			$add_set .= ", payment_methods = '{$payment_method}' ";
 		}
 
-		if ($date_of_birth !== "") {
-			$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-		}else {
-			 	$add_set .= ", date_of_birth = NULL ";
-			 }
+		// if ($date_of_birth !== "") {
+		// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+		// }else {
+		// 	 	$add_set .= ", date_of_birth = NULL ";
+		// 	 }
 		if ($bank !== "" && $number !== "") {
 			$add_set .= ", etc6 = '{$transfer_info}'";
 		}else {
@@ -378,11 +377,11 @@ if ($_POST["flag"] == "registration") {
 		$add_set .= ", passport_number = NULL ";
 	}
 
-	// if ($date_of_birth !== "") {
-	// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-	// } else {
-	// 	$add_set .= ", date_of_birth = NULL ";
-	// }
+	if ($date_of_birth !== "") {
+		$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+	} else {
+		$add_set .= ", date_of_birth = NULL ";
+	}
 
 	if ($date_of_issue !== "") {
 		$add_set .= ", date_of_issue = '{$date_of_issue}' ";
