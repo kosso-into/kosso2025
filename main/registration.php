@@ -152,7 +152,7 @@ if ($during_yn !== "Y") {
         <div class="input_area">
             <h3 class="title">
                 참가자 정보
-                <p class="mt10"><span class="red_txt">*</span> '마이 페이지 - 계정 정보'에서 개인 정보를 수정할 수 있습니다</p>
+                <p class="mt10"><span class="red_txt">*</span> '마이 페이지 - 개인 정보'에서 개인 정보를 수정할 수 있습니다</p>
             </h3>
             <div class="table_wrap detail_table_common x_scroll">
                 <table class="c_table detail_table">
@@ -419,7 +419,7 @@ if ($during_yn !== "Y") {
                         <p class="label">
                         생년월일<span class="red_txt">*</span>
                         </p>
-                            <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="dd-mm-yyyy"
+                            <input name="date_of_birth" pattern="^[0-9]+$" type="text" placeholder="yyyy-mm-dd"
                                         id="datepicker" onKeyup="birthChk(this)" 
                                         value="<?= $prev["is_score"] == 1 ? $prev["date_of_birth"] ?? "" : "" ?>"
                                         />
@@ -690,7 +690,6 @@ if ($during_yn !== "Y") {
                     이전으로
                 </button>
                 <button type="button" class="btn online_btn <?= $registrationNo ? "green_btn" : "" ?> next_btn pointer">
-                    <!-- <?= $locale("next_btn") ?> -->
                     <?= $registrationNo ? "수정" : "접수" ?>
                 </button>
             </div>
@@ -709,13 +708,12 @@ function birthChk(input) {
 
 var value = input.value.replace(/[^0-9]/g, "").substr(0, 8); // 입력된 값을 숫자만 남기고 모두 제거
 if (value.length === 8) {
-    var regex = /^(\d{2})(\d{2})(\d{4})$/;
+    var regex = /^(\d{4})(\d{2})(\d{2})$/;
     var formattedValue = value.replace(regex, "$1-$2-$3");
     input.value = formattedValue;
 } else {
     input.value = value;
 }
-
 }
 
 $(document).ready(function() {

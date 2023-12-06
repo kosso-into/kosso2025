@@ -46,11 +46,12 @@ $only_sql = " SELECT
 				SELECT idx, nation_en, nation_tel FROM nation
 				)AS nation
 				ON reg.nation_no = nation.idx
-				WHERE reg.register = {$registration_idx}
+				WHERE reg.register = {$user_idx}
 				AND reg.is_deleted = 'N'";
 
 $data = sql_fetch($only_sql);
 
+$registration_idx = $data['idx'];
 
 if($registration_idx < 10){
 	$register_no = !empty($registration_idx) ? "KSSO2024-000" .$registration_idx : "-";
@@ -65,6 +66,80 @@ if($registration_idx < 10){
 if (!$data) {
 	echo "<script>alert('등록 정보를 찾을 수 없습니다.');location.replace(PATH+'mypage.php');</script>";
 	exit;
+}
+
+$member_type = $data["member_type"] ?? "-";
+switch ($member_type) {
+	case "Professor":
+		$member_type = "교수";
+		break;
+	case "Certified M.D.":
+		$member_type = "개원의";
+		break;
+	case "Public Health Doctor":
+		$member_type = "봉직의";
+		break;
+	case "Corporate Member":
+		$member_type = "교직의";
+		break;
+	case "Fellow":
+		$member_type = "전임의";
+		break;
+	case "Resident":
+		$member_type = "전공의";
+		break;
+	case "Nutritionist":
+		$member_type = "영양사";
+		break;
+	case "Exercise Specialist":
+		$member_type = "운동사";
+		break;
+	case "Nurse":
+		$member_type = "간호사";
+		break;
+	case "Researcher":
+		$member_type = "연구원";
+		break;
+	case "Student":
+		$member_type = "학생";
+		break;
+	case "Press":
+		$member_type = "기자";
+		break;   
+	case "Others":
+		$member_type = "기타";
+		break;   
+	case "Intern":
+		$member_type = "수련의";
+		break;  
+	case "Military Surgeon(군의관)":
+		$member_type = "군의관";
+		break;
+	case "Pharmacist":
+		$member_type = "공보의";
+		break;      
+}
+
+$attendance_type = $data["attendance_type"] ?? "-";
+switch ($attendance_type) {
+	case 0:
+		$attendance_type = "임원";
+		break;
+	case 1:
+		$attendance_type = "연자";
+		break;
+	case 2:
+		$attendance_type = "좌장";
+		break;
+	case 3:
+		$attendance_type = "패널";
+		break;
+	case 4:
+		$attendance_type = "일반참석자";
+		break;
+	case 5:
+		$attendance_type = "고객사";
+		break;
 }
 ?>
 <style>
@@ -155,7 +230,7 @@ if (!$data) {
 								<th>등록번호</th>
 								<td>
 									<div class="max_normal">
-										<input type="text" name="email" value="<?= $register_no  ?>" readonly>
+										<input type="text" name="register_no" value="<?= $register_no  ?>" readonly>
 									</div>
 								</td>
 							</tr>
@@ -163,35 +238,15 @@ if (!$data) {
 								<th>성함</th>
 								<td>
 									<div class="max_normal">
-										<input type="text" name="email" value="<?= $register_no  ?>" readonly>
+										<input type="text" name="name" value="<?= $data['last_name'] . $data['first_name'];  ?>" readonly>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th class="nowrap">비밀번호 재확인</th>
+								<th>소속</th>
 								<td>
 									<div class="max_normal">
-										<input class="passwords" type="password" id="re_password" name="re_password" placeholder="비밀번호 재확인">
-									</div>
-								</td>
-							</tr>
-							<tr style="display: none;" name="country_tr" id="country_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("country") ?></th>
-								<td>
-									<div class="max_normal">
-										<select name="nation_no" class="required" id="nation_no" onChange="country_chk(this)">
-											<option value="" selected hidden>Choose </option>
-											<?php
-											foreach ($nation_list as $list) {
-												$nation = $language == "en" ? $list["nation_en"] : $list["nation_ko"];
-												if ($user_info["nation_no"] == $list["idx"]) {
-													echo "<option value='" . $list["idx"] . "' selected>" . $nation . "</option>";
-												} else {
-													echo "<option value='" . $list["idx"] . "'>" . $nation . "</option>";
-												}
-											}
-											?>
-										</select>
+										<input type="text" name="affiliation" value="<?= $data['affiliation']   ?>" readonly>
 									</div>
 								</td>
 							</tr>
@@ -219,114 +274,250 @@ if (!$data) {
 							<?php
 							}
 							?>
-							<tr style="display:none" id='name_tr' name="name_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("name") ?></th>
+
+							<tr>
+								<th>참가 유형</th>
 								<td>
 									<div class="max_normal">
-										<ul class="half_ul">
-											<li><input type="text" name="first_name" class="required" value="<?= $user_info["last_name"] . $user_info["first_name"] ?>" placeholder="First Name">
+										<input type="text" name="name" value="<?= $attendance_type  ?>" readonly>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>분야 구분</th>
+								<td>
+									<div class="max_normal">
+										<input type="text" name="name" value="<?= $data['occupation_type']   ?>" readonly>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>참석 구분</th>
+								<td>
+									<div class="max_normal">
+										<input type="text" name="member_type" value="<?= $member_type;  ?>" readonly>
+									</div>
+								</td>
+							</tr>
+							<?php
+							if ($data["is_score"] == "0" || $data["is_score"] == "1") {
+									$is_score = "checked";
+									$is_score2 = "";
+								} else {
+									$is_score = "";
+									$is_score2 = "checked";
+								}
+								?>
+							<tr>
+								<th>평점 신청</th>
+								<td>
+									<div class='radio_wrap'>
+										<ul class='flex'>
+											<li>
+												<input type='radio' class='new_radio registration_check' id='radio1'
+													name='review' value='1' <?= ($data["is_score"] == 1 ? "checked" : "") ?>>
+												<label for='radio1'><i></i>필요</label>
 											</li>
-											<!-- <li><input type="text" name="last_name" class="required"
-                                                    value="<?= $user_info["last_name"] ?>" placeholder="Last Name"></li> -->
+											<li>
+												<input type='radio' class='new_radio registration_check' id='radio2'
+													name='review' value='0' <?= ($data["is_score"] == 0 ? "checked" : "") ?>>
+												<label for='radio2'><i></i>불필요
+												</label>
+											</li>
 										</ul>
 									</div>
 								</td>
 							</tr>
-							<?php if ($user_info['nation_no'] == "25") { ?>
-								<tr class="korea_only" name="name_tr_kor" id="name_tr_kor">
-									<th><span class="red_txt">*</span>성명</th>
-									<td>
-										<div class="max_normal">
-											<ul class="half_ul">
-												<li><input name="first_name_kor" type="text" placeholder="이름" maxlength="60" value="<?= $user_info["last_name_kor"] . $user_info["first_name_kor"] ?>">
-												</li>
-												<!-- <li><input name="last_name_kor" type="text" placeholder="성" maxlength="60"
-                                                    value="<?= $user_info["last_name_kor"] ?>"></li> -->
-											</ul>
-										</div>
-									</td>
-								</tr>
-							<?php } ?>
-							<tr style="display: none;">
-								<th class="nowrap"><span class="red_txt">*</span>Title</th>
-								<td class="title_td clearfix">
-									<div class="max_normal">
-										<select name="title" class="required" id="title">
-											<option value="0" <?= (($user_info["title_option"] == 0) ? 'selected' : ''); ?>>Professor
-											</option>
-											<option value="1" <?= (($user_info["title_option"] == 1) ? 'selected' : ''); ?>>Dr.
-											</option>
-											<option value="2" <?= (($user_info["title_option"] == 2) ? 'selected' : ''); ?>>Mr.
-											</option>
-											<option value="3" <?= (($user_info["title_option"] == 3) ? 'selected' : ''); ?>>Ms.
-											</option>
-											<option value="4" <?= (($user_info["title_option"] == 4) ? 'selected' : ''); ?>>Others
-											</option>
-										</select>
-									</div>
-									<div class="max_normal <?= (($user_info["title_option"] == 4) ? 'hide_input on' : 'hide_input'); ?>">
-										<input type="text" id="title_input" name="title_input" value="<?= (($user_info["title_option"] == 4) ? $user_info["title"] : ""); ?>">
+							<tr class="review">
+								<th>의사 면허번호</th>
+								<td>
+									<div class="max_normal review">
+										<input type="text" name="licence_number" value="<?= $data['licence_number']   ?>" >
 									</div>
 								</td>
 							</tr>
-							<tr style="display: none;" name="affiliation_tr" id="affiliation_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("affiliation") ?></th>
+							<tr class="review">
+								<th>전문의 번호</th>
+								<td>
+									<div class="max_normal ">
+										<input type="text" name="specialty_number" value="<?= $data['specialty_number']   ?>" >
+									</div>
+								</td>
+							</tr>
+							<tr class="review">
+								<th>영양사 면허번호</th>
+								<td>
+									<div class="max_normal ">
+										<input type="text" name="nutritionist_number" value="<?= $data['nutritionist_number']   ?>" >
+									</div>
+								</td>
+							</tr>
+							<tr class="review">
+								<th>임상영양사 자격번호</th>
+								<td>
+									<div class="max_normal ">
+										<input type="text" name="dietitian_number" value="<?= $data['dietitian_number']   ?>" >
+									</div>
+								</td>
+							</tr>
+							<tr class="review">
+								<th>생년월일</th>
+								<td>
+									<div class="max_normal ">
+										<input type="text" name="date_of_birth" value="<?= $data['date_of_birth'] ?>"
+										onKeyup="birthChk(this)">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>기타</th>
 								<td>
 									<div class="max_normal">
-										<input type="text" name="affiliation" value="<?= $user_info['affiliation'] ?>">
+									<table class="c_table detail_table" id="othersList_table" name=" othersList_table">
+                                <colgroup>
+                                    <col class="submission_col">
+                                    <col>
+                                </colgroup>
+                                <tbody id="othersList">
+                                    <?php
+                                        $others_arr = array(
+                                            "Satellite Symposium",
+                                            "Welcome Reception",
+                                            "Breakfast Symposium",
+                                            "Luncheon Symposium"
+                                        );
+                                        $other_date_arr = array(
+                                            "3월 8일(금) 18:30~19:40",
+                                            "3월 8일(금) 19:40~",
+                                            "3월 9일(토) 08:00~08:45",
+                                            "3월 9일(토) 12:00~13:00"
+                                        );
+
+                                        $prev_data_arr = [];
+                                        if ($data["day2_breakfast_yn"] == "Y") {
+                                            array_push($prev_data_arr, 1);
+                                        }
+                                        if ($data["welcome_reception_yn"] == "Y") {
+                                            array_push($prev_data_arr, 2);
+                                        }
+                                        if ($data["day2_luncheon_yn"] == "Y") {
+                                            array_push($prev_data_arr, 3);
+                                        }
+                                        if ($data["day3_breakfast_yn"] == "Y") {
+                                            array_push($prev_data_arr, 4);
+                                        }
+                                      
+
+                                        for ($i = 1; $i <= count($others_arr); $i++) {
+                                            $valueType = "";
+                                            $content = $others_arr[$i - 1];
+
+                                            $is_yes = in_array($i, $prev_data_arr);
+
+                                            echo "<tr style='border:none;'>
+													<th style='background-color:#FFF;border:none;' class='border_r_none'>" . $others_arr[$i - 1] . "</th>
+													<th style='background-color:#FFF;border:none;'>" . $other_date_arr[$i - 1] . "</th>
+													<td style='background-color:#FFF;border:none;'>
+														<div class='radio_wrap' id='focus_others' tabindex='0'>
+															<ul class='flex'>
+																<li>
+																	<input type='radio' id='yes" . $i . "' class='new_radio' name='others" . $i . "' value='" . $others_arr[$i - 1] . $other_date_arr[$i - 1] . "' " . ($is_yes ? "checked" : "") . ">
+																	<label for='yes" . $i . "'>
+																		<i></i> Yes
+																	</label>
+																</li>
+																<li>
+																<input type='radio' id='no" . $i . "' class='new_radio' name='others" . $i . "' value='" . $others_arr[$i - 1] . $other_date_arr[$i - 1] . "' " . ($is_yes ? "" : "checked") . ">
+																	<label for='no" . $i . "'>
+																		<i></i> No
+																	</label>
+																</li>
+															</ul>
+														</div>
+													</td>
+												</tr>";
+                                        }
+                                        ?>
+                                			</tbody>
+                            			</table>
 									</div>
 								</td>
 							</tr>
-							<?php if ($user_info['nation_no'] == "25") { ?>
-								<tr class="korea_only" id="affiliation_tr_kor" name="affiliation_tr_kor">
-									<th><span class="red_txt">*</span>소속</th>
-									<td>
-										<div class="max_normal">
-											<input type="text" name="affiliation_kor" value="<?= $user_info['affiliation_kor'] ?>">
-										</div>
-									</td>
-								</tr>
-							<?php } ?>
-							<tr style="display:none" id="department_tr" name="department_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("department") ?></th>
+
+							<tr>
+								<th>특이식단</th>
 								<td>
-									<div class="max_normal">
-										<input type="text" name="department" value="<?= $user_info["department"] ?>">
+									<div class="max_normal ">
+									<ul class="chk_list info_check_list flex_center type2">
+                            <!-- <?= $prev["special_request_food"] === '0' ? "selected" : "" ?> -->
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request1" name='special_request'
+                                    value="0" <?= $data["special_request_food"] === '0' ? "checked" : "" ?> />
+                                <label for="special_request1"><i></i>해당 없음</label>
+                            </li>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request2" name='special_request'
+                                    value="1" <?= $data["special_request_food"] === '1' ? "checked" : "" ?> />
+                                <label for="special_request2"><i></i>Vegetarian</label>
+                            </li>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request3" name='special_request'
+                                    value="2" <?= $data["special_request_food"] === '2' ? "checked" : "" ?> />
+                                <label for="special_request3"><i></i>Halal</label>
+                            </li>
+                        </ul>
 									</div>
 								</td>
 							</tr>
-							<?php if ($user_info['nation_no'] == "25") { ?>
-								<tr class="korea_only" id="department_tr_kor" name="department_tr_kor">
-									<th><span class="red_txt">*</span>부서</th>
-									<td>
-										<div class="max_normal">
-											<input type="text" name="department_kor" value="<?= $user_info["department_kor"] ?>">
-										</div>
-									</td>
-								</tr>
-							<?php } ?>
-							<tr style="display:none;">
-								<th class="nowrap"><span class="red_txt">*</span>휴대폰 번호</th>
+							<tr>
+								<th>유입경로</th>
 								<td>
-									<div class="max_normal phone">
-										<!-- <input class="numbers" name="nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>" readonly> -->
-										<input name="phone" id="phone" type="text" maxlength="15" value="<?= $phone ?>">
+									<div class="max_normal ">
+									<ul class="chk_list info_check_list">
+                            <?php
+                                $conference_info_arr = array(
+                                    "대한비만학회 홈페이지",
+                                    "대한비만학회 홍보 이메일",
+                                    "관련 학회의 광고 이메일 또는 게시판",
+                                    "제휴 회사/기관에 관한 정보",
+                                    "발표자, 모더레이터 및 토론 참가자로 초청",
+                                    "교수님의 추천",
+                                    "지인의 추천",
+                                    "제약회사",
+                                    "의료 커뮤니티 (MEDI:GATE, Dr.Ville 등)",
+                                    "의학 뉴스 및 저널"
+                                );
+
+                                $prev_list = explode("*", $data["conference_info"] ?? "");
+
+                                for ($i = 1; $i <= count($conference_info_arr); $i++) {
+                                    $content = $conference_info_arr[$i - 1];
+                                    $checked = "";
+
+                                    if ($content && in_array($content, $prev_list)) {
+                                        $checked = "checked";
+                                    }
+
+                                    echo "
+										<li>
+											<input type='checkbox' class='checkbox' id='list" . $i . "' name='list' value='" . $conference_info_arr[$i - 1] . "' " . $checked . ">
+											<label for='list" . $i . "'>
+												<i></i>" . $conference_info_arr[$i - 1] . "
+											</label>
+										</li>
+										";
+                                }
+                                ?>
+
+                        </ul>
 									</div>
 								</td>
 							</tr>
-							<tr >
-								<th class="nowrap">휴대폰 번호</th>
-								<td class="flex">
-									<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" value="<?= $_arr_telephone[0] ?>">
-									<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
-									<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
-								</td>
-							</tr>
-							<tr style="display: none;">
-								<th><span class="red_txt">*</span>Date of Birth</th>
+							<tr>
+								<th>등록비</th>
 								<td>
-									<div class="max_normal">
-										<input maxlength="10" name="date_of_birth" type="text" onKeyup="birthChk(this)" placeholder="DD-MM-YYYY" id="datepicker" value="<?= $user_info["date_of_birth"] ?>">
+									<div class="max_normal ">
+									<input type="text" name="fee" value="<?= number_format($data['price']) ,'원'?>" readonly>
 									</div>
 								</td>
 							</tr>
@@ -336,177 +527,7 @@ if (!$data) {
 						<button type="button" class="btn green_btn long_btn submit_btn" id="pc_submit">수정</button>
 					</div>
 				</div>
-				<div class="mb_only">
-					<ul class="sign_list">
-						<li>
-							<p class="label"><?= $locale("id") ?></p>
-							<div>
-								<input type="text" name="mo_email" value="<?= $user_info["email"] ?>" readonly>
-							</div>
-						</li>
-						<li>
-							<p class="label">비밀번호</p>
-							<div>
-								<input class="passwords" type="password" id="mo_password" name="mo_password" placeholder="비밀번호">
-							</div>
-						</li>
-						<li>
-							<p class="label">비밀번호 재확인</p>
-							<div>
-								<input class="passwords" type="password" id="mo_re_password" name="mo_re_password" placeholder="비밀번호 재확인">
-							</div>
-						</li>
-						<li style="display: none;">
-							<p class="label"><span class="red_txt">*</span><?= $locale("country") ?></p>
-							<div><select name="mo_nation_no" id="mo_nation_no" class="required" onChange="country_chk(this)">
-									<option value="" selected hidden>Choose </option>
-									<?php
-									foreach ($nation_list as $list) {
-										$nation = $language == "en" ? $list["nation_en"] : $list["nation_ko"];
-										if ($user_info["nation_no"] == $list["idx"]) {
-											echo "<option value='" . $list["idx"] . "' selected>" . $nation . "</option>";
-										} else {
-											echo "<option value='" . $list["idx"] . "'>" . $nation . "</option>";
-										}
-									}
-									?>
-								</select>
-							</div>
-						</li>
-						<?php
-						if ($user_info["nation_no"] == "25") {
-						?>
-							<li id="ksola_li">
-								<p class="label">대한비만학회 회원 여부</p>
-								<div>
-									<input type="checkbox" class="checkbox" id="mo_membership_status1" disabled <?= $mem_chk ?>>
-									<label for="membership_status1"><i></i>회원</label>
-									<input type="checkbox" class="checkbox" id="mo_membership_status2" disabled <?= $mem_chk2 ?>>
-									<label for="membership_status2"><i></i>비회원</label>
-								</div>
-							</li>
-						<?php
-						}
-						?>
-						<li style="display: none;">
-							<p class="label"><span class="red_txt">*</span><?= $locale("name") ?></p>
-							<div>
-								<ul class="half_ul">
-									<li>
-										<input type="text" name="mo_first_name" class="required" value="<?= $user_info["first_name"] ?>" placeholder="First Name">
-									</li>
-									<li>
-										<input type="text" name="mo_last_name" class="required" value="<?= $user_info["last_name"] ?>" placeholder="Last Name">
-									</li>
-								</ul>
-							</div>
-						</li>
-						<?php
-						if ($user_info['nation_no'] == "25") {
-						?>
-							<li class="mo_korea_only">
-								<p class="label"><span class="red_txt">*</span>성명</p>
-								<div>
-									<ul class="half_ul">
-										<li>
-											<input name="mo_first_name_kor" type="text" placeholder="이름" value="<?= $user_info["last_name_kor"] . $user_info["first_name_kor"] ?>" maxlength="60">
-										</li>
-										<!-- <li>
-											<input name="mo_last_name_kor" type="text" placeholder="성" value="<?= $user_info["last_name_kor"] ?>" maxlength="60">
-										</li> -->
-									</ul>
-								</div>
-							</li>
-						<?php
-						}
-						?>
-						<li style="display: none;">
-							<p class="label"><span class="red_txt">*</span>Title</p>
-							<div>
-								<ul class="half_ul">
-									<li>
-										<select name="mo_title" class="required" id="mo_title">
-											<option value="0" <?= (($user_info["title_option"] == 0) ? 'selected' : ''); ?>>Professor
-											</option>
-											<option value="1" <?= (($user_info["title_option"] == 1) ? 'selected' : ''); ?>>Dr.
-											</option>
-											<option value="2" <?= (($user_info["title_option"] == 2) ? 'selected' : ''); ?>>Mr.
-											</option>
-											<option value="3" <?= (($user_info["title_option"] == 3) ? 'selected' : ''); ?>>Ms.
-											</option>
-											<option value="4" <?= (($user_info["title_option"] == 4) ? 'selected' : ''); ?>>Others
-											</option>
-										</select>
-									</li>
-									<li class="<?= (($user_info["title_option"] == 4) ? 'hide_input on' : 'hide_input'); ?>">
-										<input type="text" id="mo_title_input" name="mo_title_input" value="<?= (($user_info["title_option"] == 4) ? $user_info["title"] : ""); ?>">
-									</li>
-							</div>
-						</li>
-						<li style="display: none;">
-							<p class="label"><span class="red_txt">*</span><?= $locale("affiliation") ?></p>
-							<div>
-								<input type="text" name="mo_affiliation" value="<?= $user_info["affiliation"] ?>">
-							</div>
-						</li>
-						<?php
-						if ($user_info['nation_no'] == "25") {
-						?>
-							<li class="mo_korea_only">
-								<p class="label"><span class="red_txt">*</span>소속</p>
-								<div>
-									<input type="text" name="mo_affiliation_kor" value="<?= $user_info['affiliation_kor'] ?>">
-								</div>
-							</li>
-						<?php
-						}
-						?>
-						<li style="display: none;">
-							<p class="label"><span class="red_txt">*</span><?= $locale("department") ?></p>
-							<div>
-								<input type="text" name="mo_department" value="<?= $user_info["department"] ?>">
-							</div>
-						</li>
-						<?php
-						if ($user_info['nation_no'] == "25") {
-						?>
-							<li class="mo_korea_only">
-								<p class="label"><span class="red_txt">*</span>부서</p>
-								<div>
-									<input type="text" name="mo_department_kor" value="<?= $user_info['department_kor'] ?>">
-								</div>
-							</li>
-						<?php
-						}
-						?>
-						<li>
-							<p class="label"><span class="red_txt">*</span>휴대폰 번호</p>
-							<div class="phone_form clearfix">
-								<!-- <input class="numbers" name="mo_nation_tel" type="text" value="<?= $nation_tel ?>"> -->
-								<input class="tel_number tel_phone" name="mo_tel_nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>">
-								<input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
-								<input style="width:115px" class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
-							</div>
-						</li>
-						<li style="display: none;">
-							<p class="label">Telephone Number</p>
-							<div class="phone_form clearfix flex">
-								<input class="tel_number tel_phone" name="mo_tel_nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>">
-								<input class="tel_numbers tel_phone" name="mo_telephone1" type="text" maxlength="60" value="<?= $_arr_telephone[1] ?>">
-								<input class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60" value="<?= $_arr_telephone[2] ?>">
-							</div>
-						</li>
-						<li style="display: none;">
-							<p class="label"><span class="red_txt">*</span>Date of Birth</p>
-							<div>
-								<input maxlength="10" name="mo_date_of_birth" type="text" placeholder="YYYY-MM-DD" id="mb_datepicker" onKeyup="birthChk(this)" value="<?= $user_info["date_of_birth"] ?>">
-							</div>
-						</li>
-					</ul>
-					<div class="btn_wrap">
-						<button type="button" class="btn green_btn long_btn submit_btn" id="mo_submit">수정</button>
-					</div>
-				</div>
+				
 				<input type="hidden" name="ksola_member_check">
 			</form>
 			<input type="hidden" name="nation_tel" value="<?= $nation_tel ?>">
@@ -516,31 +537,12 @@ if (!$data) {
 </section>
 <script src="./js/script/client/member.js"></script>
 <script>
-	$(document).ready(function() {
+
 		// $('.book').on('click', function(event) {
 		// 		event.preventDefault();
 		// 		alert('Updates are planned.');
 		// 		return false;
 		// 	});
-
-
-		//비밀번호 입력 시 비밀번호 필수값으로 전환
-		$("#password, #re_password").on("change", function() {
-			$(this).attr("name", $(this).attr("id"));
-			$("#password, #re_password").addClass("required");
-		});
-
-		// Title 변경 시
-		$("select[name=title], select[name=mo_title]").on("change", function() {
-			var _target_val = parseInt($(this).val());
-			if (_target_val == 4) {
-				$("[name=title_input], [name=mo_title_input]").show();
-				$("[name=title_input], [name=mo_title_input]").parent().addClass("on");
-			} else {
-				$("[name=title_input], [name=mo_title_input]").hide();
-				$("[name=title_input], [name=mo_title_input]").parent().removeClass("on");
-			}
-		});
 
 		$(".korean_only").on("click", function() {
 			var url = "./pre_registration_korean_only.php";
@@ -575,527 +577,217 @@ if (!$data) {
 			}
 		});
 
-		$(document).on("click", "#pc_submit", function() {
-			//var formData = $("form[name=modify_form]").serializeArray();
-			var nation_no = document.getElementById("nation_no").value;
-			var nation_tel = $("input[name=nation_tel]").val();
+		$('input[name=review]').on("change", function() {
+        if ($('input[name=review]:checked').val() == '1') {
+            $(".review").removeClass("hidden");
+        } else {
+            // init
+            $(".review_sub_list input[type=text]").val("");
+            $(".review_sub_list input[type=checkbox]").prop("checked", false);
 
-			var pw = $("input[name=password]").val();
-			var pw2 = $("input[name=re_password]").val();
+            if (!$(".review").hasClass("hidden")) {
+                $(".review").addClass("hidden");
+            }
+        }
+    });
 
-			if (pw || pw2) {
-				check = pw_check(1, "password", "re_password");
-				if (check == false) return;
-				check = pw_check(2, "password", "re_password");
-				if (check == false) return;
-			}
 
-			var first_name = $("input[name=first_name_kor]").val().slice(1);
-			var last_name = $("input[name=first_name_kor]").val().slice(0, 1);
+	$('#nutritionist_number').on("input", ()=>{
+        $("#date_of_birth").show();
+    })
 
-			// check = name_check("first_name");
-			// if (check == false) return;
-			// check = name_check("last_name");
-			// if (check == false) return;
+    $('#dietitian_number').on("input", ()=>{
+        $("#date_of_birth").show();
+    })
 
-			var country = $("#nation_no option:selected").text();
+    if($('#nutritionist_number').val() !== ""){
+        $("#date_of_birth").show();
+    }
+    
+    if($('#dietitian_number').val() !== ""){
+        $("#date_of_birth").show();
+    }
 
-			var title = $("#title option:selected").val();
+	$("input[name=list]").on("change", function() {
+        const checked = $(this).is(":checked");
+        if (checked) {
+			$("input[name='list']").not(this).prop("checked", false);
+        }
+    });
 
-			check = name_check("affiliation");
-			if (check == false) return;
-			var affiliation = $("input[name=affiliation]").val();
+$(document).on("click", "#pc_submit", function() {
+		const licence_number = $('input[name=licence_number]').val();
+		const specialty_number = $('input[name=specialty_number]').val();
+		const nutritionist_number = $('input[name=nutritionist_number]').val();
+		const dietitian_number = $('input[name=dietitian_number]').val();
 
-			check = name_check("department");
-			if (check == false) return;
-			var department = $("input[name=department]").val();
+		const date_of_birth = $('input[name=date_of_birth]').val();
 
-			check = name_check("phone");
-			if (check == false) return;
-			var phone = $("input[name=tel_nation_tel]").val() + $("input[name=telephone1]").val()  + $("input[name=telephone2]").val();
-			//var resultPhone = $("[name=nation_mobile] :selected").text().trim();
-			var resultPhone = phone;
+		const prev_no = <?php echo $data['idx']; ?>;
+		const nation = "Republic of Korea";
+		const participation_type = <?php echo $data['attendance_type']; ?>;
+		const occupation =  '<?php echo $data['occupation_type']; ?>';
+		const category =  '<?php echo $data['member_type']; ?>';
+		const reg_fee = <?php echo $data['price']; ?>;
+		const total_reg_fee = <?php echo $data['price']; ?>;
 
-			/*
-			check = name_check("telephone_num1");
-			if(check == false) return;
-			*/
-			var tele1 = $("input[name=telephone1]").val();
-			/*
-			check = name_check("telephone_num2");
-			if(check == false) return;
-			*/
-			var tele2 = $("input[name=telephone2]").val();
+		let review = "";
 
-			//var resultTel = $("[name=nation_tel] :selected").text().trim();
-			//var resultTel = nation_tel+'-'+tele1+'-'+tele2;
-			// TelePhone
-			var resultTel = "";
+		let others1 = "";
+		let others2 = "";
+		let others3 = "";
+		let others4 = "";
 
-			// if (!tele1 && tele2) {
-			// 	check = name_check("telephone1");
-			// 	if (check == false) return;
-			// } else if (tele1 && !tele2) {
-			// 	check = name_check("telephone2");
-			// 	if (check == false) return;
-			// }
+		let special_request = "";
 
-			if (tele1 && tele2) {
-				resultTel = nation_tel + '-' + tele1 + '-' + tele2;
-			} else {
-				resultTel = "";
-			}
-			console.log(resultTel);
-			var date_of_birth = $("input[name=date_of_birth]").val();
-			if (date_of_birth == null || date_of_birth == "") {
-				alert("Invalid date of birth");
-				return;
-			}
-			var regex = /[^0123456789-]/g;
-			if (regex.test(date_of_birth)) {
-				alert("Please enter only numbers in the date_of_birth field");
-				return;
-			}
-			var regex2 = /^(\d{2})-(\d{2})-(\d{4})$/;
-			if (!regex2.test(date_of_birth)) {
-				alert("Please check date_of_birth format \nex 01-01-1999");
-				return;
-			}
+		let conference_info_arr = [];
 
-			// kor
-			if (nation_no == "25") {
-				var first_name_kor = $("input[name=first_name_kor]").val().slice(1)
-				var last_name_kor = $("input[name=first_name_kor]").val().slice(0, 1)
-				check = name_check("first_name_kor");
-				if (check == false) return;
-				// check = name_check("last_name_kor");
-				// if (check == false) return;
+		/**is_score */
+		if($("#radio1").is(":checked") && !$("#radio2").is(":checked")){
+			 review = "1";
+		}
+		else if(!$("#radio1").is(":checked") && $("#radio2").is(":checked")){
+			 review = "0";
+		}
 
-				var affiliation_kor = $("input[name=affiliation_kor]").val();
-				check = name_check("affiliation_kor");
-				if (check == false) return;
+		/**others 1 */
+		if($("#yes1").is(":checked") && !$("#no1").is(":checked")){
+			 others1 = "Satellite Symposium3월 8일(금) 18:30~19:40";
+		}
+		else if(!$("#yes1").is(":checked") && $("#no1").is(":checked")){
+			 others1 = "no";
+		}
+		/**others 2 */
+		if($("#yes2").is(":checked") && !$("#no2").is(":checked")){
+			 others2 = "Welcome+Reception3월 8일(금) 19:40~";
+		}
+		else if(!$("#yes2").is(":checked") && $("#no2").is(":checked")){
+			 others2 = "no";
+		}
+		/**others 3 */
+		if($("#yes3").is(":checked") && !$("#no3").is(":checked")){
+			 others3 = "Breakfast Symposium3월 9일(토) 08:00~08:45";
+		}
+		else if($("#yes3").is(":checked") && !$("#no3").is(":checked")){
+			 others3 = "no";
+		}
+		/**others 4 */
+		if($("#yes4").is(":checked") && !$("#no4").is(":checked")){
+			 others4 = "Luncheon Symposium3월 9일(토) 12:00~13:00";
+		}
+		else if(!$("#yes4").is(":checked") && $("#no4").is(":checked")){
+			 others4 = "no";
+		}
 
-				var department_kor = $("input[name=department_kor]").val();
-				check = name_check("department_kor");
-				if (check == false) return;
-			}
-			var titleInput = $("[name=title_input]").val();
-			if ((title == 4) && titleInput == "") {
-				alert("Invalid title others");
-				return;
-			}
-			var email = $("[name=email]").val();
+		/**특이식단 */
+		/** 해당 없음 */
+		if($("#special_request1").is(":checked") && !$("#special_request2").is(":checked") && !$("#special_request3").is(":checked") ){
+			 special_request = "0";
+		}
+		// Vegetarian
+		else if(!$("#special_request1").is(":checked") && $("#special_request2").is(":checked") && !$("#special_request3").is(":checked") ){
+			 special_request = "1";
+		}
+		// halal
+		else if(!$("#special_request1").is(":checked") && !$("#special_request2").is(":checked") && $("#special_request3").is(":checked") ){
+			 special_request = "2";
+		}
+
+		//유입경로
+		if($("#list1").is(":checked")){
+			conference_info_arr = ["대한비만학회 홈페이지"];
+		}
+		else if($("#list2").is(":checked")){
+			conference_info_arr = ["대한비만학회 홍보 이메일"];
+		}
+		else if($("#list3").is(":checked")){
+			conference_info_arr = ["관련 학회의 광고 이메일 또는 게시판"];
+		}
+		else if($("#list4").is(":checked")){
+			conference_info_arr = ["제휴 회사/기관에 관한 정보"];
+		}
+		else if($("#list5").is(":checked")){
+			conference_info_arr = ["발표자, 모더레이터 및 토론 참가자로 초청"];
+		}
+		else if($("#list6").is(":checked")){
+			conference_info_arr = ["교수님의 추천"];
+		}
+		else if($("#list7").is(":checked")){
+			conference_info_arr = ["지인의 추천"];
+		}
+		else if($("#list8").is(":checked")){
+			conference_info_arr = ["제약회사"];
+		}
+		else if($("#list9").is(":checked")){
+			conference_info_arr = ["의료 커뮤니티 (MEDI:GATE, Dr.Ville 등)"];
+		}
+		else if($("#list10").is(":checked")){
+			conference_info_arr = ["의학 뉴스 및 저널"];
+		}
 
 			var formData = {
-				"email": email,
-				"nation_no": nation_no,
-				"first_name": first_name,
-				"last_name": last_name,
-				"affiliation": affiliation,
-				"department": department,
-				"nation_tel": nation_tel,
-				"phone": resultPhone,
+				"licence_number": licence_number,
+				"specialty_number": specialty_number,
+				"nutritionist_number": nutritionist_number,
+				"dietitian_number": dietitian_number,
 				"date_of_birth": date_of_birth,
-				"title": title,
-				"title_input": titleInput,
-				"telephone": resultTel
+				"prev_no": prev_no,
+				"nation": nation,
+				"participation_type": participation_type,
+				"occupation": occupation,
+				"category": category,
+				"reg_fee": reg_fee,
+				"total_reg_fee": total_reg_fee,
+				"review": review,
+				"others1": others1,
+				"others2": others2,
+				"others3": others3,
+				"others4": others4,
+				"special_request": special_request,
+				conference_info_arr:conference_info_arr
 			};
 
-			if (pw && pw2) {
-				formData['password'] = pw;
-			}
-
-			if (nation_no == "25") {
-				formData['first_name_kor'] = first_name_kor;
-				formData['last_name_kor'] = last_name_kor;
-				formData['department_kor'] = department_kor;
-				formData['affiliation_kor'] = affiliation_kor;
-			}
-			/*
-		var process = inputCheck(formData, checkType);
-		var data = process.data;
-
-		var status = process.status;
 		
-        if(status) {
-		*/
-			console.log(formData);
-			if (confirm("계정 정보를 수정하시겠습니까?")) {
-				$.ajax({
-					url: PATH + "ajax/client/ajax_member.php",
-					type: "POST",
-					data: {
-						flag: "update",
-						data: formData
-					},
-					dataType: "JSON",
-					success: function(res) {
-						if (res.code == 200) {
-							alert("수정 완료되었습니다.");
-							location.reload();
-						} else if (res.code == 400) {
-							alert(locale(language.value)("error_account_modify"));
-							return false;
-						} else {
-							alert(locale(language.value)("reject_msg"))
-							return false;
-						}
-					}
-				});
-			}
-			/*}*/
-		});
-		$(document).on("click", "#mo_submit", function() {
-			var nation_no = document.getElementById("nation_no").value;
-			var nation_tel = $("input[name=nation_tel]").val();
-
-			var pw = $("input[name=mo_password]").val();
-			var pw2 = $("input[name=mo_re_password]").val();
-
-			if (pw || pw2) {
-				check = pw_check(1, "mo_password", "mo_re_password");
-				if (check == false) return;
-				check = pw_check(2, "mo_password", "mo_re_password");
-				if (check == false) return;
+		if($("#radio1").is(":checked") && $('#nutritionist_number').val() !== "" && $('#datepicker').val() === ""){
+			alert("생년월일을 입력해주세요.")
+			return false;
 			}
 
-			var first_name = $("input[name=mo_first_name_kor]").val().slice(1)
-			var last_name = $("input[name=mo_first_name_kor]").val().slice(0, 1)
-
-			// check = name_check("mo_first_name");
-			// if (check == false) return;
-			// check = name_check("mo_last_name");
-			// if (check == false) return;
-
-			var country = $("#mo_nation_no option:selected").text();
-
-			var title = $("#mo_title option:selected").val();
-
-			check = name_check("mo_affiliation");
-			if (check == false) return;
-			var affiliation = $("input[name=mo_affiliation]").val();
-
-			check = name_check("mo_department");
-			if (check == false) return;
-			var department = $("input[name=mo_department]").val();
-
-			check = name_check("mo_phone");
-			if (check == false) return;
-			var phone = $("input[name=mo_tel_nation_tel]").val() + $("input[name=mo_telephone1]").val() + $("input[name=mo_telephone2]").val();
-			//var resultMobilePhone = $("[name=mo_nation_mobile] :selected").text().trim();
-			var resultMobilePhone = phone;
-			/*
-			check = name_check("mo_telephone_num1");
-			if(check == false) return;
-			*/
-			var tele1 = $("input[name=mo_telephone1]").val();
-			/*
-			check = name_check("mo_telephone_num2");
-			if(check == false) return;
-			*/
-			var tele2 = $("input[name=mo_telephone2]").val();
-			//var resultMobileTel = $("[name=mo_nation_tel] :selected").text().trim();
-			// TelePhone
-			var resultMobileTel = "";
-
-			// if (!tele1 && tele2) {
-			//     check = name_check("telephone1");
-			//     if (check == false) return;
-			// } else if (tele1 && !tele2) {
-			//     check = name_check("telephone2");
-			//     if (check == false) return;
-			// }
-
-			if (tele1 && tele2) {
-				resultMobileTel = nation_tel + '-' + tele1 + '-' + tele2;
-			} else {
-				resultMobileTel = "";
-			}
-
-			var date_of_birth = $("input[name=mo_date_of_birth]").val();
-			if (date_of_birth == null || date_of_birth == "") {
-				alert("Invalid date of birth");
-				return;
-			}
-
-			var regex = /[^0123456789-]/g;
-			if (regex.test(date_of_birth)) {
-				alert("Please enter only numbers in the date_of_birth field");
-				return;
-			}
-
-			var regex2 = /^(\d{2})-(\d{2})-(\d{4})$/;
-			if (!regex2.test(date_of_birth)) {
-				alert("Please check date_of_birth format \nex 01-01-1999");
-				return;
-			}
-
-			// kor
-			if (nation_no == "25") {
-				var first_name_kor = $("input[name=mo_first_name_kor]").val().slice(1)
-				var last_name_kor = $("input[name=mo_first_name_kor]").val().slice(0, 1)
-				check = name_check("mo_first_name_kor");
-				if (check == false) return;
-				// check = name_check("mo_last_name_kor");
-				// if (check == false) return;
-
-				var affiliation_kor = $("input[name=mo_affiliation_kor]").val();
-				check = name_check("mo_affiliation_kor");
-				if (check == false) return;
-
-				var department_kor = $("input[name=mo_department_kor]").val();
-				check = name_check("mo_department_kor");
-				if (check == false) return;
-			}
-			var titleInput = $("[name=title_input]").val();
-			if ((title == 4) && titleInput == "") {
-				alert("Invalid title others");
-				return;
-			}
-			var email = $("[name=email]").val();
-
-			var formData = {
-				"email": email,
-				"nation_no": nation_no,
-				"first_name": first_name,
-				"last_name": last_name,
-				"affiliation": affiliation,
-				"department": department,
-				"nation_tel": nation_tel,
-				"phone": resultMobilePhone,
-				"date_of_birth": date_of_birth,
-				"title": title,
-				"title_input": titleInput,
-				"telephone": resultMobileTel
-			};
-
-			if (pw && pw2) {
-				formData['password'] = pw;
-			}
-
-			if (nation_no == "25") {
-				formData['first_name_kor'] = first_name_kor;
-				formData['last_name_kor'] = last_name_kor;
-				formData['department_kor'] = department_kor;
-				formData['affiliation_kor'] = affiliation_kor;
-			}
-
-			/*
-		var process = inputCheck(formData,checkType);
-		var data = process.data;
-
-		var status = process.status;
-        if(status) {
-		*/
-			if (confirm("계정 정보를 수정하시겠습니까?")) {
-				$.ajax({
-					url: PATH + "ajax/client/ajax_member.php",
-					type: "POST",
-					data: {
-						flag: "update",
-						data: formData
-					},
-					dataType: "JSON",
-					success: function(res) {
-						if (res.code == 200) {
-							alert("수정 완료되었습니다.");
-							location.reload();
-						} else if (res.code == 400) {
-							alert(locale(language.value)("error_account_modify"));
-							return false;
-						} else {
-							alert(locale(language.value)("reject_msg"))
-							return false;
-						}
-					}
-				});
-			}
-			//}
-		});
-
-
-		//$(document).on("click", ".submit_btn", function(){
-
-		//	var formData = $("form[name=modify_form]").serializeArray();
-
-		//	var process = inputCheck(formData,checkType);
-		//	var data = process.data;
-
-		//	var status = process.status;
-		//    if(status) {
-
-		//        if(confirm(locale(language.value)("account_modify_msg"))) {
-		//            $.ajax({
-		//                url : PATH+"ajax/client/ajax_member.php",
-		//                type : "POST",
-		//                data : {
-		//                    flag : "update",
-		//                    data : data
-		//                },
-		//                dataType : "JSON",
-		//                success : function(res){
-		//                    if(res.code == 200) {
-		//                        alert(locale(language.value)("complet_account_modify"));
-		//                        location.reload();
-		//                    } else if(res.code == 400) {
-		//                        alert(locale(language.value)("error_account_modify"));
-		//                        return false;
-		//                    } else {
-		//                        alert(locale(language.value)("reject_msg"))
-		//                        return false;
-		//                    }
-		//                }
-		//            });
-		//	    }
-		//    }
-		//});
-	});
-
-	function country_chk(obj) {
-
-		if (obj.value == "25") {
-			var html = '';
-			html += '<tr class="korea_only" id="name_tr_kor" name="name_tr_kor">';
-			html += '<th><span class="red_txt">*</span>성명</th>';
-			html += '<td>';
-			html += '<div class="max_normal">';
-			html += '<ul class="half_ul">';
-			html +=
-				'<li><input name="first_name_kor" type="text" placeholder="이름" maxlength="60" value="<?= $user_info["first_name_kor"] ?>"></li>';
-			html +=
-				'<li><input name="last_name_kor" type="text" placeholder="성" maxlength="60" value="<?= $user_info["last_name_kor"] ?>"></li>';
-			html += '</ul>';
-			html += '</div>';
-			html += '</td>';
-			html += '</tr>';
-			//var target = document.getElementById("name_tr");
-			$("#name_tr").after(html);
-
-			html = '<tr id="ksola_tr" name="ksola_tr">';
-			html += '<th class="nowrap">대한비만학회 회원 여부</th>';
-			html += '<td>';
-			html += '<div class="max_normal">';
-			html += '<input type="checkbox" class="checkbox" id="membership_status1" disabled <?= $mem_chk ?>> ';
-			html += '<label for="membership_status1"><i></i>회원</label> ';
-			html += '<input type="checkbox" class="checkbox" id="membership_status2" disabled <?= $mem_chk2 ?>> ';
-			html += '<label for="membership_status2"><i></i>비회원</label> ';
-			html += '</div> ';
-			html += '</td> ';
-			html += '</tr> ';
-			$("#country_tr").after(html);
-
-			html = '<tr class="korea_only" name="affiliation_tr_kor" id="affiliation_tr_kor">';
-			html += '<th><span class="red_txt">*</span>소속</th>';
-			html += '<td>';
-			html += '<div class="max_normal">';
-			html += '<input type="text" name="affiliation_kor" value="<?= $user_info["affiliation_kor"] ?>">';
-			html += '</div>';
-			html += '</td>';
-			html += '</tr>';
-			$("#affiliation_tr").after(html);
-
-			html = '<tr class="korea_only" name="department_tr_kor" id="department_tr_kor">';
-			html += '<th><span class="red_txt">*</span>부서</th>';
-			html += '<td>';
-			html += '<div class="max_normal">';
-			html += '<input type="text" name="department_kor" value="<?= $user_info["department_kor"] ?>">';
-			html += '</div>';
-			html += '</td>';
-			html += '</tr>';
-			$("#department_tr").after(html);
-			$(".mo_korea_only").show();
-			$("#ksola_li").show();
-		} else {
-			$(".mo_korea_only").hide();
-			$("#ksola_li").hide();
-			$("#name_tr_kor").remove();
-			$("#ksola_tr").remove();
-			$("#affiliation_tr_kor").remove();
-			$("#department_tr_kor").remove();
-		}
-	}
-
-
-	function pw_check(i, password, password2) {
-		var pw1 = $("input[name=" + password + "]").val();
-		var pw1_len = pw1.trim().length;
-		pw1 = (typeof(pw1) != "undefined") ? pw1 : null;
-
-		var pw2 = $("input[name=" + password2 + "]").val();
-		var pw2_len = pw2.trim().length;
-		pw2 = (typeof(pw2) != "undefined") ? pw2 : null;
-
-		if (i == 1) {
-			if (!pw1 || pw1_len <= 0) {
-				$("input[name=" + password + "]").focus();
-				alert("비밀번호를 확인해주세요.");
-				return false;
-			}
-		} else {
-			if (!pw2 || pw2_len <= 0) {
-				$("input[name=" + password2 + "]").focus();
-				alert("비밀번호를 확인해주세요.");
-				return false;
-			}
-		}
-		if (pw1_len > 0 && pw2_len > 0) {
-			if (pw1 !== pw2) {
-				$("input[name=" + password + "]").focus();
-				alert("비밀번호가 일치하지 않습니다.");
-				return false;
-			}
-		}
-	}
-
-	function name_check(name, mo) {
-		if(name !== "phone" && name !== "mo_phone"){
-			var first_name = $("input[name=" + name + "]").val();
-		}else if (name == "phone" && name !== "mo_phone"){
-			var first_name = $("input[name=tel_nation_tel]").val() + $("input[name=telephone1]").val()  + $("input[name=telephone2]").val();
-		}else if(name !== "phone" && name == "mo_phone"){
-			var first_name = $("input[name=mo_tel_nation_tel]").val() + $("input[name=mo_telephone1]").val() + $("input[name=mo_telephone2]").val();
-		}
-		console.log(first_name + name);
-		var first_name_len = first_name.trim().length;
-		first_name = (typeof(first_name) != "undefined") ? first_name : null;
-
-		if (!first_name || first_name_len <= 0) {
-			$("input[name=" + name + "]").focus();
-			if (mo === "mo") {
-				name = name.replace("mo_", "");
-			}
-			if (name === "short_input") {
-				alert("Invalid Others");
-			} else {
-				if (name == "first_name") {
-					name = "성함";
-				} else if (name == "last_name") {
-					name = "성함";
-				} else if (name == "name_kor") {
-					name = "성함";
-				} else if (name == "affiliation_kor") {
-					name = "소속";
-				} else if (name == "licence_number") {
-					name = "licence number";
-				} else if (name == "nutritionist_number") {
-					name = "nutritionist number";
-				} else if (name == "specialty_number") {
-					name = "specialty number";
-				} else if (name == "phone") {
-					name = "휴대폰 번호";
-				}
-				alert("잘못된 " + name+"입니다.");
-			}
+		if($("#radio1").is(":checked") && $('#dietitian_number').val() !== "" && $('#datepicker').val() === "" ){ 
+			alert("생년월일을 입력해주세요.")
 			return false;
 		}
-		return true;
-	}
+			if (confirm("계정 정보를 수정하시겠습니까?")) {
+				$.ajax({
+					url: PATH + "ajax/client/ajax_registration.php",
+					type: "POST",
+					data: {
+						flag: "registration",
+						data: formData
+					},
+					dataType: "JSON",
+					success: function(res) {
+						if (res.code == 200) {
+							alert("수정 완료되었습니다.");
+							location.reload();
+						} else if (res.code == 400) {
+							alert(locale(language.value)("error_account_modify"));
+							return false;
+						} else {
+							alert(locale(language.value)("reject_msg"))
+							return false;
+						}
+					}
+				});
+			}
+		});
+
 
 	function birthChk(input) {
 
 		var value = input.value.replace(/[^0-9]/g, "").substr(0, 8); // 입력된 값을 숫자만 남기고 모두 제거
 		if (value.length === 8) {
-			var regex = /^(\d{2})(\d{2})(\d{4})$/;
+			var regex = /^(\d{4})(\d{2})(\d{2})$/;
 			var formattedValue = value.replace(regex, "$1-$2-$3");
 			input.value = formattedValue;
 		} else {

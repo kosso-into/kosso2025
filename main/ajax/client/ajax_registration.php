@@ -11,15 +11,23 @@ if ($_POST["flag"] == "registration") {
 
 	// 수정시, 수정권한이 있는지 체크
 	if ($update_idx) {
+		// $sql = "
+		// 			SELECT 
+		// 				idx, `status`
+		// 			FROM request_registration 
+		// 			WHERE is_deleted = 'N'
+		// 			AND (NOT status = 2 AND NOT status = 3)
+		// 			AND register = {$user_idx}
+		// 			AND idx = {$update_idx}
+		// 		  ";
 		$sql = "
-					SELECT 
-						idx, `status`
-					FROM request_registration 
-					WHERE is_deleted = 'N'
-					AND (NOT status = 2 AND NOT status = 3)
-					AND register = {$user_idx}
-					AND idx = {$update_idx}
-				  ";
+				  SELECT 
+					  idx, `status`
+				  FROM request_registration 
+				  WHERE is_deleted = 'N'
+				  AND register = {$user_idx}
+				  AND idx = {$update_idx}
+				";
 
 		$prev = sql_fetch($sql);
 
