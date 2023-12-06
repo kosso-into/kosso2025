@@ -639,7 +639,7 @@ $(document).ready(function() {
 		//console.log("idx : "+idx+" type : "+type);
 
 		if(!$("#presentation_type_yn:checked").length) {
-			alert("안내 확인을 클릭해 주세요.");
+			alert("동의 여부를 선택해주십시오.");
 			return;
 		}
 			

@@ -6,7 +6,7 @@
     <h1 class="page_title">Awards & Grants</h1>
     <div class="inner">
         <ul class="tab_green long abstract_submission">
-            <li><a href="./abstract_submission_guideline.php">초록 접수 가이드</a></li>
+            <li><a href="./abstract_submission_guideline.php">초록 안내</a></li>
             <li><a href="./abstract_submission.php">초록 접수</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
@@ -25,24 +25,24 @@
 				</div>	
 				<ul class="award_list">
                     <div class="award_wrap">
-                        <div class="award_text">구연 부문</div>
                         <div class="award_inner">
                         <li>
                             <!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
-                            <img src="./img/icons/icon_award01.png" alt="">
-                            <p class="award_title">최우수 구연 상</p>
+                            <img src="./img/icons/ksso_award_1.png" alt="">
+                            <!-- <p class="award_title">최우수 구연 상</p> -->
                             <!-- <p>4 persons</p> -->
-                            <p class="point3_txt">상금 : 300,000원</p>
+                            <!-- <p class="point3_txt">상금 : 300,000원</p> -->
                         </li>
                         <li>
                             <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-                            <img src="./img/icons/icon_award02.png" alt="">
-                            <p class="award_title">우수 구연 상</p>
+                            <img src="./img/icons/ksso_award_2.png" alt="">
+                            <!-- <p class="award_title">우수 구연 상</p> -->
                             <!-- <p>2 persons</p> -->
-                            <p class="point3_txt">상금 : 200,000원</p>
+                            <!-- <p class="point3_txt">상금 : 200,000원</p> -->
                         </li>
                         </div>
                     </div>
+                    <?php /*
                     <div class="award_wrap">
                         <div class="award_text">포스터 부문</div>
                         <div class="award_inner">
@@ -62,6 +62,7 @@
                         </li>
                         </div>
                     </div>
+                    */ ?>
 				</ul>
 			</div>
             
@@ -70,89 +71,56 @@
 				<div class="section_title_wrap2">
 					<h3 class="title">지방 참석자 여비 보조금 지원</h3>
 				</div>
+				<div class="section_title_wrap2">
+					<h4 class="title"><span style="margin-top:0px">대한비만학회는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
+				</div>
 			
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
-                
-				<div class="section_title_wrap2">
-					<h4 class="title"><span>대한비만학회는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
-				</div>
+                  <div class="table_wrap detail_table_common x_scroll">
+					<table class="c_table detail_table">
+						<colgroup>
+							<col class="submission_col">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th class="text_center"></th>
+								<th class="text_center">의사 지원</th>
+								<th class="text_center">비의사 지원</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text_center font_b">지원 내용</td>
+								<td class="text_center">
+                                    <div>두 가지 조건 모두 충족 시</div>
+                                    <div>1. 대한비만학회 정회원 및 평생회원</div>
+                                    <div>2. 의사 면허 소지자</div>
 
-                <div class="table_wrap detail_table_common x_scroll">
-                    <table class="c_table detail_table">
-                        <colgroup>
-                            <col class="submission_col type2">
-                            <col>
-                        </colgroup>
-                        <tr>
-                            <th>신청 기간</th>
-                            <td>
-                                <div class="red_txt">TBD</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>지원 자격</th>
-                            <td>
-                                <p>1. 제59차 대한비만학회 춘계학술대회 <span style="font-weight:bold;">초록 채택자</span></p>
-                                <p>2. 지방 소속 현장 참석자 (서울/인천/경기 외 지역)</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>지원 내용</th>
-                            <td>여비 보조금 <span class="red_txt">15만원</span></td>
-                        </tr>                       
-                    </table>
-
-                <!--[231201]sujeong 학회팀 요청 / 확정 나기 전까지는 주석 -->
-                  <!--  <table class="c_table detail_table">
-                        <colgroup>
-                            <col class="submission_col type2">
-                            <col width="40%">
-                            <col width="40%">
-                        </colgroup>
-                        <tr>
-                            <th></th>
-                            <th>MD</th>
-                            <th>Non-MD</th>
-                        </tr>
-                        <tr>
-                            <th>지원 내용</th>
-                            <td>
-                                <p>KPBMA 공정규약에 의거하여 지원</p>
-                            </td>
-                            <td>
-                                <p>150,000원(기타소득세 제외 후 지급)</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>지원 자격</th>
-                            <td>
-                                <p>1. 대한비만학회 정회원 및 평생회원</p>
-                                <p>2. 의사 면허 소지자</p>
-                                <p>• 두 가지 모두 충족 시</p>
-                            </td>
-                            <td>
-                                <p>영양사, 운동사 등</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>지원범위</th>
-                            <td>
-                                <p>학회 등록비, 왕복 교통비, 숙박비</p>    
-                            </td>
-                            <td></td>
-                        </tr>   
-                        <tr>
-                            <th>선발방식</th>
-                            <td> 
-                                <p>지원대상자 대한비만학회 개별 공지</p>
-                            </td>
-                            <td>
-                                <p>1. 지원 양식 다운로드 및 작성</p>
-                                <p>2. 이메일을 통한 양식 제출</p>
-                            </td>
-                        </tr>                      
-                    </table> -->
+                                </td>
+								<td class="text_center">영양사, 운동사 등</td>
+							</tr>
+							<tr>
+								<td class="text_center font_b">지원범위</td>
+								<td class="text_center">학회 등록비, 왕복 교통비, 숙박비 등</td>
+								<td class="text_center">150,000원(기타 소득세 제외 후 지급)</td>
+							</tr>
+							<tr>
+								<td class="text_center font_b">신청양식</td>
+								<td class="text_center">지원대상자 대한비만학회 개별 공지</td>
+								<td class="text_center">
+                                    <div>1. 지원양식 다운로드 및 작성</div>
+                                    <div>2. 이메일을 통한 양식 제출</div>                            
+                                </td>
+							</tr>
+							<tr>
+								<td class="text_center font_b">지원절차</td>
+								<td class="text_center">KRPIA/KPBMA 공정규약에 의거하여 지원</td>
+								<td class="text_center">초록채택 및 기간 내 신청서 제출 필수</td>
+							</tr>
+						</tbody>
+					</table>
                 </div>
 				<!-- <p class="mt10 p_indent">• 지원금 신청과 기타 필요한 정보에 대한 안내는 초록 채택자에 한하여 별도로 사무국에서 이메일을 통해 연락드릴 예정입니다.</p> -->
 			</div>
