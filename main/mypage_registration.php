@@ -432,7 +432,7 @@ $score_detail = sql_fetch($score_sql);
                                                     <td><?= $special_request_food ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <th>개최 정보 습득 방법</th>
+                                                    <th>유입 경로</th>
                                                     <td><?= $info_html ?></td>
                                                 </tr>
                                                 <!-- Credit Card 선택 시 -->
@@ -777,6 +777,7 @@ $score_detail = sql_fetch($score_sql);
             </div>
             <div class="btn_wrap">
                 <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">등록취소</button>
+                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.open('/main/mypage_registration_modify.php')">등록수정</button>
                 <button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
             </div>
         </div>

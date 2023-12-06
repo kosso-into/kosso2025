@@ -11,15 +11,23 @@ if ($_POST["flag"] == "registration") {
 
 	// 수정시, 수정권한이 있는지 체크
 	if ($update_idx) {
+		// $sql = "
+		// 			SELECT 
+		// 				idx, `status`
+		// 			FROM request_registration 
+		// 			WHERE is_deleted = 'N'
+		// 			AND (NOT status = 2 AND NOT status = 3)
+		// 			AND register = {$user_idx}
+		// 			AND idx = {$update_idx}
+		// 		  ";
 		$sql = "
-					SELECT 
-						idx, `status`
-					FROM request_registration 
-					WHERE is_deleted = 'N'
-					AND (NOT status = 2 AND NOT status = 3)
-					AND register = {$user_idx}
-					AND idx = {$update_idx}
-				  ";
+				  SELECT 
+					  idx, `status`
+				  FROM request_registration 
+				  WHERE is_deleted = 'N'
+				  AND register = {$user_idx}
+				  AND idx = {$update_idx}
+				";
 
 		$prev = sql_fetch($sql);
 
@@ -196,7 +204,6 @@ if ($_POST["flag"] == "registration") {
 				$add_set .= ", member_type = NULL ";
 				$add_set .= ", member_other_type = NULL ";
 			}
-
 			if ($data["promotion_confirm_code"] != '') {
 				if ($promotion_code_number != "") {
 					$add_set .= ", promotion_code_number = '{$promotion_code_number}' ";
@@ -279,11 +286,11 @@ if ($_POST["flag"] == "registration") {
 			$add_set .= ", payment_methods = '{$payment_method}' ";
 		}
 
-		if ($date_of_birth !== "") {
-			$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-		}else {
-			 	$add_set .= ", date_of_birth = NULL ";
-			 }
+		// if ($date_of_birth !== "") {
+		// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+		// }else {
+		// 	 	$add_set .= ", date_of_birth = NULL ";
+		// 	 }
 		if ($bank !== "" && $number !== "") {
 			$add_set .= ", etc6 = '{$transfer_info}'";
 		}else {
@@ -370,11 +377,11 @@ if ($_POST["flag"] == "registration") {
 		$add_set .= ", passport_number = NULL ";
 	}
 
-	// if ($date_of_birth !== "") {
-	// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-	// } else {
-	// 	$add_set .= ", date_of_birth = NULL ";
-	// }
+	if ($date_of_birth !== "") {
+		$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+	} else {
+		$add_set .= ", date_of_birth = NULL ";
+	}
 
 	if ($date_of_issue !== "") {
 		$add_set .= ", date_of_issue = '{$date_of_issue}' ";

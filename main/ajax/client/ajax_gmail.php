@@ -660,29 +660,25 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			if ($welcome_reception_yn == "Y") {
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other1'>
-								<label for='other1'><i></i>Welcome Reception – 3월 8일(금) 19:40~</label>
+								<label for='other1'><i></i>- Welcome Reception – 3월 8일(금) 19:40~</label>
 							   ";
 			}
 			if ($day2_breakfast_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other2'>
-								<label for='other2'><i></i>Satellite Symposium – 3월 8일(금) 18:30~19:40</label>
+								<label for='other2'><i></i>- Satellite Symposium – 3월 8일(금) 18:30~19:40</label>
 							   ";
 			}
 			if ($day2_luncheon_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other3'>
-								<label for='other3'><i></i>Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
+								<label for='other3'><i></i>- Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
 							   ";
 			}
 			if ($day3_breakfast_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other4'>
-								<label for='other4'><i></i>Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
+								<label for='other4'><i></i>- Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
 							   ";
 			}
 			// if ($day3_luncheon_yn == "Y") {
@@ -703,8 +699,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				if ($info[$a]) {
 					$info_html .= $info_html != "" ? "<br/>" : "";
 					$info_html .= "
-									<input type='checkbox' class='checkbox' id='conference" . $a . "'>
-									<label for='conference" . $a . "'><i></i>" . $info[$a] . "</label>
+									<label for='conference" . $a . "'><i></i>"."- " . $info[$a] . "</label>
 								  ";
 				}
 			}
@@ -740,7 +735,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>결제 상태</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;'>결제 필요</td>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;'>결제 대기</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>계좌 정보</th>
@@ -750,7 +745,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			}
 
 			$rawMessageString .= "
-			<table width='750' style='border:1px solid #000; padding: 0;'>
+			<table width='750' style='border:1px solid #000; padding: 0; background-color:#FFF'>
         <tbody>
            
                <tr>
@@ -778,7 +773,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
                                         <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$register_no}</td>
                                     </tr>
                                     <tr style='border-bottom:1px solid #000;'>
-                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록 결제일</th>
+                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록일</th>
                                         <td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;border-bottom:1px solid #000;'>{$register_date}</td>
                                     </tr>
                                    <tr style='border-bottom:1px solid #000;'>
@@ -794,7 +789,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
                                <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$phone}</td>
                            </tr>
                            <tr style='border-bottom:1px solid #000;'>
-                               <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>대한내분비학회 회원 여부</th>
+                               <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>대한비만학회 회원 여부</th>
                                <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_status}</td>
                            </tr>
                            <tr style='border-bottom:1px solid #000;'>
@@ -817,7 +812,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
                                         </td>
                                     </tr>
                                     <tr style='border-bottom:1px solid #000;'>
-                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>개최 정보 습득 방법</th>
+                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>개최 정보 유입 경로</th>
                                        <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
                                            {$info_html}
                                        </td>
@@ -1115,7 +1110,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			$url = $_SERVER['HTTP_HOST'] ?? "www.kosso.org";
 
-			$rawMessageString .= ' <div><table width="750" style="border:1px solid #000;padding: 0;">
+			$rawMessageString .= ' <div style="background-color:#FFF"><table width="750" style="border:1px solid #000;padding: 0;">
 			<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail/abstract_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
 			<tr><td width="74" style="width:74px;"></td><td>
 			<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;"></div></td><td width="74" style="width:74px;"></td></tr>
@@ -1149,7 +1144,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			if (count($presenting_author_data) > 0) {
 				$rawMessageString .= '<!-- Abstract Submission Status > Presenting Author -->
-								<p style="font-size:15px; font-weight:600; color:#000; margin:0;">발표자</p>';
+								<p style="font-size:15px; font-weight:600; color:#000; margin:0;">발표저자</p>';
 
 				foreach ($presenting_author_data as $obj) {
 					$nation_no			= $obj["nation_no"] ?? "";
@@ -1451,7 +1446,7 @@ if ($_POST["flag"] == "find_password") {
 	$name = $_POST["name"] ?? null;
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
-	$message = createMessage("en", "payment", $name, $email, "[제 59차 대한내분비학회 춘계학술대회] 사전등록이 완료되었습니다.", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
+	$message = createMessage("en", "payment", $name, $email, "[제 59차 대한비만학회 춘계학술대회] 사전등록이 완료되었습니다.", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 } else if ($_POST["flag"] == "registration") {
