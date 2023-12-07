@@ -34,38 +34,13 @@
 				</ul>
 				<a href="./app_find_password.php" class="app_find_password">Find password</a>
 				<button type="button" class="btn app_login_btn">Log in</button>
-				<button type="button" class="hi">install</button>
-
 			</div>
 		</div>
 	</div>
 </section>
 
 <script>
-    let installPrompt = null;
-	
-    window.addEventListener('beforeinstallprompt', (event) => {
-        event.preventDefault();
-        installPrompt = event;
-    });
-    
 
-        const installButton = document.querySelector('.hi');
-        installButton.addEventListener('click',async () => {
-                if (!installPrompt) {
-                    return;
-                }
-                const result = await installPrompt.prompt();
-                console.log(`Install prompt was: ${result.outcome}`);
-                disableInAppInstallPrompt();
-                });
-
-
-  
-  function disableInAppInstallPrompt() {
-                installPrompt = null;
-                installButton.setAttribute("hidden", "");
-                }
 $(document).ready(function(){
 //	var varUA = navigator.userAgent.toLowerCase();
 //	if ( varUA.indexOf('android') > -1) {

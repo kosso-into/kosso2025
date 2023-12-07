@@ -342,11 +342,11 @@ $score_detail = sql_fetch($score_sql);
                                     <?php if ($list["payment_methods"] == 1) { ?>
                                         <a href="./registration.php?idx=<?php echo $list["idx"]
                                                                         ?>
-                                        " target="_blank" class="btn">수정하기</a>
+                                        " class="btn">수정하기</a>
                                     <?php } else { ?>
                                         <a href="./registration.php?idx=<?php echo $list["idx"]
                                                                         ?>
-                                        " target="_blank" class="btn">수정하기</a>
+                                        " class="btn">수정하기</a>
                                         <button type="button" class="btn payment_btn" data-url="<?php echo $payment_url ?>">결제하기</button>
                                     <?php } ?>
                                     <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">취소</button>
