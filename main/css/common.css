@@ -699,9 +699,10 @@ section.container.sponsor {padding-top: 164px;}
 .green_bg02 {background-color:#1B8B9A !important; color:#fff !important;}
 .green_bg03 {background-color:#3DB2C1 !important; color:#fff !important;}
 .green_bg04 {background-color:#EAFDFF !important;}
-.green_bg06 {background-color:#99cc99 !important; color:#fff !important;border-radius: 50px;}/*sujeong 추가*/
+.green_bg06 {background-color:#99cc99 !important; color:#fff !important; border-radius: 50px;}/*sujeong 추가*/
 .purple_bg01 {background-color:#560D98 !important; color:#fff !important;}
 .purple_bg02 {background-color:#F9F2FF !important; color:#560D98 !important;}
+.purple_bg03 {background-color: #CC99CC !important; color:#fff !important; border-radius: 50px;}/*sujeong 추가*/
 .pink_bg01 {background-color:#DF4086 !important; color:#fff !important;}
 .pink_bg02 {background-color:#FFF2F8 !important; color:#DF4086 !important;}
 .blue_bg01{background-color:#092D4F !important; color:#fff !important;} /*hyojun 추가*/

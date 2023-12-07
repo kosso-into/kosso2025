@@ -34,7 +34,7 @@ $info = sql_fetch($sql_info);
         <div class="section section1">
             <div>
                 <div class="sponsor_grade">
-                    <p class="grade_title green_bg06">초록접수기간: 2023년 12월 11일(월) ~ 2024년 1월 9일(화)</p>
+                    <p class="grade_title purple_bg03">초록접수기간: 2023년 12월 11일(월) ~ 2024년 1월 9일(화)</p>
                 </div>
 
                 <!-- <a href="./download/ICOMES_2022_Abstract_template.docx" class="btn long_btn" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a></div> -->
