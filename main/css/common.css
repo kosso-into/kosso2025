@@ -911,6 +911,7 @@ section.container.sponsor {padding-top: 164px;}
 	.long_btn {font-size: 14px; height: 30px;}
 	a.long_btn {line-height: 30px; padding: 0 15px;}
 	.btn {min-width: 120px; height: 52px; font-size: 18px; padding: 0 20px;}
+	.reg2_btn{margin-bottom: 10px;}
 	.pager_btn_wrap {margin-top: 100px;}
 	.pager_btn_wrap .btn {max-width: none; height: 40px; font-size: 16px;}
 	/*.pager_btn_wrap.half button + button {margin-left: 25px;}*/
