@@ -911,6 +911,7 @@ section.container.sponsor {padding-top: 164px;}
 	.long_btn {font-size: 14px; height: 30px;}
 	a.long_btn {line-height: 30px; padding: 0 15px;}
 	.btn {min-width: 120px; height: 52px; font-size: 18px; padding: 0 20px;}
+	.reg2_btn{margin-bottom: 10px;}
 	.pager_btn_wrap {margin-top: 100px;}
 	.pager_btn_wrap .btn {max-width: none; height: 40px; font-size: 16px;}
 	/*.pager_btn_wrap.half button + button {margin-left: 25px;}*/
@@ -936,7 +937,7 @@ section.container.sponsor {padding-top: 164px;}
 	/*tab_green - 230517 HUBDNC AJY 수정*/
 	/* .tab_green li {margin-right:-28px;} */
 	.tab_green li a { font-size:12px; padding:10px 35px 10px 18px;}
-	.tab_green li.on a {padding: 12px 2px;}
+	.tab_green li.on a {padding: 12px 12px;}
 	/* .tab_green li:first-child {border-radius:28px 0 0 28px;} */
 	/* .tab_green li:last-child {border-radius:0 28px 28px 0;} */
 	/* .tab_green li.on {border-radius:28px;} */
