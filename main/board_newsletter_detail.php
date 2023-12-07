@@ -59,7 +59,7 @@
 			<li class="on"><a href="./board_notice.php">Notice</a></li>
 		</ul>
 	</div> -->
-	<h1 class="page_title">Newsletter</h1>
+	<h1 class="page_title">뉴스레터</h1>
 	<div class="inner">
 		<!-- 내용 -->
 		<table class="board_table">
