@@ -151,21 +151,21 @@ body {
         <div class="dates_area">
             <ul>
                 <li>
-                    <a href="">
+                    <a style="cursor: default;">
                         <h2><span>2023년 12월 11일(월)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
                         <p>등록/초록 접수<br />오픈</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/main/abstract_submission.php">
                         <h2><span>2024년 1월 9일(화)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
                         <p>초록 접수<br />마감</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/main/registration.php">
                         <h2><span>2024년 1월 11일(목)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
                         <p>사전 등록 접수 <br />마감</p>

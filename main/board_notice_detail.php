@@ -50,7 +50,7 @@
 ?>
 
 <section class="container board_detail">
-	<h1 class="page_title">Notice</h1>
+	<h1 class="page_title">공지사항</h1>
 	<div class="inner">
 		<!-- 내용 -->
 		<table class="board_table">
