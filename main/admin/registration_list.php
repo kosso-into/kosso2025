@@ -574,7 +574,11 @@ $count = count($registration_list);
 					?>
                     <tr class="tr_center">
                         <td><?= $register_no; ?></td>
-                        <td class="<?= $list["payment_status"] == "결제대기" ? "red_color" : "blue_color" ?>">
+                        <?php if($list["payment_status"] == "환불대기") {?>
+						<td class="green_color">
+						<?php } else{ ?>
+							<td class="<?= $list["payment_status"] == "결제대기" ? "red_color" : "blue_color" ?>">
+						<?php	} ?>
                             <?= isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td>
                         <td><?= isset($list["payment_methods"]) ? $list["payment_methods"] : "-" ?></td>
                         <td><a
