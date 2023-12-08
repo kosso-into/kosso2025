@@ -125,7 +125,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                 <!-- <div class="img_wrap" style="background: center / cover no-repeat url('<?= $info['fi_img_url'] ?>')">
 						<img src="<?= $info['fi_img_url'] ?>" alt="hotel img">
 					 </div> -->
-                <div class="img_wrap">
+                <div class="img_wrap" style="margin: 0;">
                     <img src="./img/grandwalkerhillseoul.jpg" alt="conrad seoul">
                 </div>
                 <ul class="app_overview_ul app_venue_info">
@@ -149,14 +149,14 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
         </div>
         <!-- 지도 -->
         <div class="section section2">
-            <h3 class="title">Location</h3>
+            <h3 class="title">지도</h3>
             <div class="map_area" id="map"></div>
         </div>
         <?php
         if (empty($session_user) && $session_app_type == 'N') {
         ?>
             <!-- 교통편 START / 웹 뷰 -->
-            <div class="section section3">
+           <!--  <div class="section section3">
                 <ul class="contact_list">
                     <li>
                         <div class="details_info_wrap">
@@ -325,7 +325,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         <?php
         }
         ?>

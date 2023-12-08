@@ -35,6 +35,13 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 .venue .sub_banner {padding-bottom: 92px;}
 .venue .section1 .img_wrap{/*width:100%;*/height:345px;}
 .venue_flex_box {display: flex;align-items: center;justify-content: space-between;}
+@media screen and (max-width:1080px) {
+	.venue_flex_box{flex-direction: column;}
+}
+@media screen and (max-width:486px) {
+	.venue_flex_box{display: block;}
+	.venue .long_btn{font-size: 14px;height: 40px;line-height: 40px;max-width: 350px;}
+}
 .venue .img_wrap img{width: 100%;height: 100%; object-fit:cover;}
 .venue .img_wrap2{width:100%;height:100%;padding: 0 10%;}
 .venue .img_wrap2 img{width: 100%;}
@@ -44,7 +51,7 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 .venue .info_wrap li {display:flex; align-items:baseline;}
 .venue .info_wrap p:first-of-type{font-size: 30px; font-weight: bold; color: #000000; margin-right: 10px;}
 .venue .info_wrap p:last-of-type{font-size: 24px; font-weight: 400; color: #666666;}
-.venue .link {font-size: inherit; color:#00f; text-decoration:underline;}
+.venue .link {font-size: inherit; color:#00f;}
 .venue .info_wrap .btn_wrap {padding-top: 50px; display:flex;}
 .venue .info_wrap .btn {font-size: 24px; height: 59px; padding: 0 30px;}
 .venue .info_wrap a:first-child .btn {margin-right: 20px;}
@@ -73,7 +80,7 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 .app_venue_info {margin-top:10px;}
 .app_venue_info li > div:first-of-type {padding-top:16px;}
 .app_venue_info li > div:last-of-type {padding-bottom:16px;}
-.app_venue_info li > div {padding: 8px 16px;}
+.app_venue_info li > div {padding: 8px 16px; overflow: auto;}
 .app_venue_info li > div > p:first-of-type {min-width:100px;}
 
 /*organizing*/

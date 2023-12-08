@@ -253,7 +253,7 @@ $locale = locale($language);
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m3"]) ? "block" : "none") ?>">
                     <!-- <li><a href="poster_abstract_submission.php">Submission Guideline</a></li> -->
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
-                    <li><a href="/main/abstract_submission_guideline.php">초록접수 안내</a></li>
+                    <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
                     <li><a href="/main/abstract_submission.php">초록 접수</a>
                     </li>
@@ -289,7 +289,7 @@ $locale = locale($language);
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m7"]) ? "show" : "") ?>">
                 <a href="javascript:;"><span>행사장</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m7"]) ? "block" : "none") ?>">
-                    <li><a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" target="_blank">오시는 길</a></li>
+                    <li><a href="/main/venue.php">오시는 길</a></li>
 
                      <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/accommodation.php">숙박</a></li>

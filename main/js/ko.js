@@ -65,7 +65,7 @@ var ko = {
 	check_co_city : "공동저자 도시를 입력해주세요.",
 	check_co_first_name : "공동저자의 이름을 입력해주세요.",
 	check_co_last_name : "공동저자의 이름(성)을 입력해주세요.",
-	check_co_affiliation : "공동저자의 소속을 입력해주세요.",
+	check_co_affiliation : "공동저자의 소속을 추가해주세요.",
 	check_co_email : "공동저자의 이메일을 입력해주세요.",
 	check_co_phone : "공동저자의 핸드폰 번호를 입력해주세요.",
 	check_co_position : "공동저자의 구분을 선택해주세요.",
