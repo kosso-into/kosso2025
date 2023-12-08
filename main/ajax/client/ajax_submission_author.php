@@ -22,7 +22,7 @@ $corresponding_author_data = get_data($submit_data_query." WHERE (ra.idx=".$abst
 
 //[231208] sujeong 추가
 // co_author
-$co_author_data =  get_data($submit_data_query." WHERE (ra.idx=".$abstract_idx." OR parent_author=".$abstract_idx.") AND corresponding_author='N'  AND corresponding_author='N'") ?? [];
+$co_author_data =  get_data($submit_data_query." WHERE (ra.idx=".$abstract_idx." OR parent_author=".$abstract_idx.") AND presenting_author='N'  AND corresponding_author='N'") ?? [];
 
 $result = array(
 	"submit_data" => $submit_data, 

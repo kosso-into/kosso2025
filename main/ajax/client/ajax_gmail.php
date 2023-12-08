@@ -246,16 +246,9 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					</td>
 				</tr>
 				<tr>
-					<td colspan='3'>
-						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #003466;padding: 20px 0;'></div>
-					</td>
-				</tr>
-				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td>
 						<div>
-							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'></p>
-							<p style='font-size:14px;color:#170F00;margin-top:14px;'></p>
 							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 								<tbody>
 									<tr>
@@ -682,25 +675,25 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			if ($welcome_reception_yn == "Y") {
 				$other_html .= "
-								<label for='other1'><i></i>- Welcome Reception – 3월 8일(금) 19:40~</label>
+								<label for='other1'><i></i>• Welcome Reception – 3월 8일(금) 19:40~</label>
 							   ";
 			}
 			if ($day2_breakfast_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other2'><i></i>- Satellite Symposium – 3월 8일(금) 18:30~19:40</label>
+								<label for='other2'><i></i>• Satellite Symposium – 3월 8일(금) 18:30~19:40</label>
 							   ";
 			}
 			if ($day2_luncheon_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other3'><i></i>- Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
+								<label for='other3'><i></i>• Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
 							   ";
 			}
 			if ($day3_breakfast_yn == "Y") {
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other4'><i></i>- Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
+								<label for='other4'><i></i>• Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
 							   ";
 			}
 			// if ($day3_luncheon_yn == "Y") {
@@ -721,7 +714,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				if ($info[$a]) {
 					$info_html .= $info_html != "" ? "<br/>" : "";
 					$info_html .= "
-									<label for='conference" . $a . "'><i></i>"."- " . $info[$a] . "</label>
+									<label for='conference" . $a . "'><i></i>"."• " . $info[$a] . "</label>
 								  ";
 				}
 			}
@@ -1135,8 +1128,6 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			$rawMessageString .= ' <div style="background-color:#FFF"><table width="750" style="border:1px solid #000;padding: 0;">
 			<tr><td colspan="3"><img src="https://www.kosso.org/main/img/mail/abstract_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
-			<tr><td width="74" style="width:74px;"></td><td>
-			<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;"></div></td><td width="74" style="width:74px;"></td></tr>
 			<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;"></p><p style="font-size:14px;color:#170F00;margin-top:14px;"></p>
 			<!-- Abstract Submission Status -->
 			<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">초록 정보</p>
