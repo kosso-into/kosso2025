@@ -731,6 +731,11 @@ $(document).ready(function() {
     //         $('#bank_detail').hide();
     //     }
     // });
+    if($('#bank').is(':checked') == true){
+        $("#bank_detail").show();
+    }else{
+        $("#bank_detail").hide();
+    }
 
     $(document).on("click", "#license_checkbox", function() {
         //console.log($(this).is(':checked'));
@@ -830,6 +835,14 @@ $(document).ready(function() {
             $("#focus_others").focus();
             alert("기타를 모두 체크해 주세요.");
             return false;
+        }
+
+        if($("#radio1").is(":checked")){
+            if($("input[name=licence_number]").val() === "" && $("input[name=specialty_number]").val() === ""  && $("input[name=nutritionist_number]").val() === ""  && $("input[name=dietitian_number]").val() === ""){
+            $("input[name=licence_number]").focus();
+            alert("면허번호를 입력해 주세요.");
+            return false;
+            }
         }
            /**1121 계좌 이체 선택시 
          * 은행과 계좌번호 받는 코드(필수)

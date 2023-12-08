@@ -178,7 +178,7 @@ $price = get_data($sql_price);
                 </div>
                 <div class="mt10">
                     <ul class="indent_ul">
-                        <li>• 등록 완료 시, 등록 확인 메일이 발송 됩니다. (메일을 받지 못한 경우, 운영사무국으로 문의 부탁드립니다.)</li>
+                        <li>• 등록 완료 시, 등록 확인 메일이 발송 됩니다. (메일을 받지 못한 경우, 운영 사무국(<a href="mailto:ksso@into-on.com" class="font_inherit link">ksso@into-on.com</a>)으로 문의 부탁드립니다.)</li>
                         <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
                         <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생 할 경우, 운영사무국으로 문의
                             부탁드립니다.
@@ -210,7 +210,7 @@ $price = get_data($sql_price);
                                 <li>• 아래의 계좌로 입금하여 주십시오.</li>
                                 <li>• 입금자와 등록자의 성함이 다를 경우, 등록 확인이 불가하니 반드시 등록자의 성함으로 입금 부탁드립니다.</li>
                                 <li>• 등록 완료는 결제까지 완료된 상태이며, 사전등록 기간 내 미입금 시 등록이 취소될 수 있음을 안내해 드립니다.</li>
-                                <li>• 입금완료 및 등록 완료 확인까지 시일이 소요될 수 있으며, 빠른 확인이 필요하시면 사무국으로 연락 부탁드립니다.</li>
+                                <li>• 입금완료 및 등록 완료 확인까지 시일이 소요될 수 있으며, 빠른 확인이 필요하시면 사무국(<a href="mailto:ksso@into-on.com" class="font_inherit link">ksso@into-on.com</a>)으로 연락 부탁드립니다.</li>
                             </ul>
                         </ul>
                     </div>

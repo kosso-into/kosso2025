@@ -160,7 +160,10 @@
 			<!-- download start -->
 			<div>
 				<div class="download_wrap" style="text-align:center;">
-					<a href="" class="btn long_btn type2 text_long" target="_blank">
+                
+                    <!-- [231208] sujeong 주석/다운로드 버튼 클릭할 경우 준비중입니다 alert -->
+					<!-- <a href="" class="btn long_btn type2 text_long" target="_blank"> -->
+					<a class="btn long_btn type2 text_long">
 						<img src="./img/icons/icon_download_white.svg" alt="">지방 참석자 여비 보조금 지원 양식 다운로드
 					</a>
 				</div>
@@ -493,7 +496,8 @@ $(document).ready(function() {
     });
 
 	$(".download_wrap .btn").click(function(){
-		alert("[ Note!! Application period: TBD ]")
+		alert("준비 중입니다.");
+        return;
 	});
 });
 </script>

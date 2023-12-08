@@ -1537,14 +1537,19 @@ input[type='date']::before {
 }
 
 .modal_container > .content_container > .content{
+	/* display: grid;
+	grid-template-columns: 0.3fr 1.5fr 1fr;
+	align-items: center;
+	border-top: 1px solid #ddd;
+	padding: 0.5rem;
+	row-gap: 0.5rem;
+	column-gap: 0.5rem; */
 	display: grid;
 	grid-template-columns: 0.6fr 1.5fr 1fr;
-	align-items: center;
-	border-top: 1px solid #013366;
-	row-gap: 0.5rem;
-	/* justify-content: space-between; */
-	column-gap: 0.5rem;
-	padding: 0.5rem;
+	grid-auto-rows: 90px;
+	grid-gap: 0rem;
+	grid-template-areas: 
+	'a b c';
 }
 
 .modal_container > .content_container > .content > .content_time{
@@ -1562,7 +1567,8 @@ input[type='date']::before {
 }
 
 .modal_container > .content_container > .content > .content_person{
-	background-color: #FFCC33;
+	/* background-color: #FFCC33; */
+	background-color:#d7bee2;
 	height: 100%;
 	column-gap: 0.5rem;
 	padding: 0.5rem;
@@ -1572,26 +1578,13 @@ input[type='date']::before {
 	word-break: keep-all;
 }
 
-.modal_container > .content_container > .content_panel{
+.modal_container > .content_container > .content > div{
 	display: grid;
-	grid-template-columns: 0.6fr 1.5fr 1fr 1fr;
+	justify-content: center;
 	align-items: center;
-	border-top: 1px solid #013366;
-	row-gap: 0.5rem;
-	/* justify-content: space-between; */
-	column-gap: 0.5rem;
-	padding: 0.5rem;
-}
-
-.modal_container > .content_container > .content_panel > div > .content_person{
-	background-color: #FFCC33;
-	height: 100%;
-	column-gap: 0.5rem;
-	padding: 0.5rem;
-	flex-direction: column;
-	display: flex;
-	transition: all .2s ease-in-out;
-	margin-bottom: 0.5rem;
+	border-top: 1px solid #a6a6a6;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1629,19 +1622,6 @@ input[type='date']::before {
 		/* margin-top: 0.5rem; */
 		align-items: start;
 		justify-content: center;
-	}
-
-	.modal_container > .content_container > .content_panel{
-		width: 100%;
-		grid-template-columns: inherit;
-		grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
-	}
-	.modal_container > .content_container > .content_panel > .content_time{
-		width: 100%;
-		border: none;
-	}
-	.modal_container > .content_container > .content_panel > div > .content_person{
-		width: 100%;
 	}
 }
 

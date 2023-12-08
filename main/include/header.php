@@ -225,11 +225,11 @@ $locale = locale($language);
     <div class="m_nav">
         <ul class="m_nav_ul">
             <li class="m_nav_li">
-                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>모시는 글</span></a>
+                <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>초대의 글</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m1"]) ? "block" : "none") ?>">
                     
                  <!-- 1121 커밍순 페이지로 변경 -->
-                    <li><a href="/main/comingsoon.php">모시는 글</a></li>
+                    <li><a href="/main/comingsoon.php">초대의 글</a></li>
                     <!-- <li><a href="/main/welcome.php">모시는 글</a></li> -->
                     <!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
                     <li><a href="/main/overview.php">Overview</a></li>
