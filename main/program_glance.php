@@ -416,9 +416,9 @@ section.app_version .inner {
 			<h6 class="modal_subtitle"></h6>
 			<div class="modal_sub_header">
 				<div>
-					<b class="modal_title_day"></b>
+                    <b class="modal_title_day"></b>
 					<p class="modal_title_time"></p>
-					<p></p>
+					<p class="modal_title_room"></p>
 				</div>
 				<div>
 					<p class="program_modal_chair">Chair Person</p>
@@ -467,6 +467,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
         },
         dataType: "JSON",
         success: function (res) {
+            console.log(res.data)
             if (res.code == 200) {
                 show_modal(res.data) 
             } else {
@@ -501,6 +502,7 @@ function writeModal(data){
     const modalSubTitle = document.querySelector(".modal_subtitle");
     const modalTitleDay = document.querySelector(".modal_title_day");
     const modalTitleTime = document.querySelector(".modal_title_time");
+    const modalTitleRoom = document.querySelector(".modal_title_room");
     const modalChairPerson = document.querySelector(".program_modal_person");
     const contentsWrap =  document.querySelector(".content_container");
 
@@ -508,12 +510,14 @@ function writeModal(data){
     let subTitle = "";
     let titleDay = "";
     let titleTime = "";
+    let titleRoom = "";
     let chairperson = "";
 
     data.map((t, i)=>{
         const contents = document.createElement("div")
-        title = t.program_name;
-        // subTitle = t.
+        title = t.title;
+        subTitle = t.program_name;
+        titleRoom = t.program_place_name;
         const startDay = t.start_time.split(" ")[0];
         const startTime = t.start_time.split(" ")[1];
         const speakerName = t.speaker?.split("(")[0];
@@ -567,6 +571,7 @@ function writeModal(data){
     modalSubTitle.innerText = subTitle;
     modalTitleDay.innerText = titleDay;
     modalTitleTime.innerText = titleTime;
+    modalTitleRoom.innerText = titleRoom
     modalChairPerson.innerText = chairperson;
 }
 
