@@ -69,7 +69,7 @@ $payment_date = $data["payment_date_text"] ?? "-";
 	?>
 	<div style="max-width:100%;">
 			<div>
-				<img src="./img/receipt_header.png" alt="" style="width:100%; max-width:100%;">
+				<img src="./img/receipt_header.jpg" alt="" style="width:100%; max-width:100%;">
 				<div style="padding:0 24px; margin-top:30px;">
 					<table style="border-collapse:collapse; border-spacing:0; width:100%;">
 						<tbody>
@@ -106,7 +106,7 @@ $payment_date = $data["payment_date_text"] ?? "-";
 						</tbody>
 					</table>
 				</div>
-				<img src="./img/receipt_footer.png" alt="" style="width:100%; max-width:100%;">
+				<img src="./img/receipt_footer.jpg" alt="" style="width:100%; max-width:100%;">
 			</div>
 		</div>
 	<?php
@@ -115,7 +115,7 @@ $payment_date = $data["payment_date_text"] ?? "-";
 		<!-- 영수증 (MB) -->
 		<div style="max-width:100%;">
 			<div>
-				<img src="./img/receipt_header.png" alt="" style="width:100%; max-width:100%;">
+				<img src="./img/receipt_header.jpg" alt="" style="width:100%; max-width:100%;">
 				<div style="padding:0 24px; margin-top:30px;">
 					<table style="border-collapse:collapse; border-spacing:0; width:100%;">
 						<tbody>
@@ -152,7 +152,7 @@ $payment_date = $data["payment_date_text"] ?? "-";
 						</tbody>
 					</table>
 				</div>
-				<img src="./img/receipt_footer.png" alt="" style="width:100%; max-width:100%;">
+				<img src="./img/receipt_footer.jpg" alt="" style="width:100%; max-width:100%;">
 			</div>
 		</div>
 	<?php

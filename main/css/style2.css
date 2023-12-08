@@ -186,7 +186,7 @@ section.container.login.bg {border: 0px;}
 .main_speaker2 .index_speaker7 .profile_wrap {background-image: url("../img/profile_empty.png");}/*네번째*/
 .main_speaker2 .index_speaker8 .profile_wrap {background-image: url("../img/img_speakers08.jpg");}
 
-.main_speaker2 .title {display: block; font-size: 20px; font-weight: bold; color: #000000; letter-spacing: -1px; padding-bottom:0; margin-bottom:10px;}
+.main_speaker2 .title {display: block; font-size: 20px; font-weight: bold; color: #000000; letter-spacing: 0px; padding-bottom:0; margin-bottom:10px;}
 .main_speaker2 .career {font-size: 16px; font-weight: 400; color: #000000; line-height:22px;}
 /*.main_speaker2 .slick-arrow {margin-top: 0; transform: translateY(-50%);}*/
 /*.main_speaker2 .slick-prev {background-image: url("../img/icons/slick_arrow_left.svg");}*/

@@ -76,24 +76,6 @@ $current_date->format('Y-m-d');
 $intvl = $current_date->diff($d_day);
 $d_days = $intvl->days + 1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $sql_info =    "SELECT
 					CONCAT(fi_img.path, '/', fi_img.save_name) AS fi_img_url,
 					igv.name_" . $language . " AS `name`,
@@ -139,7 +121,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
     <div class="inner">
         <!-- 호텔 이름과 주소, 연락처 -->
         <div class="section section1">
-            <div>
+            <div class="venue_flex_box">
                 <!-- <div class="img_wrap" style="background: center / cover no-repeat url('<?= $info['fi_img_url'] ?>')">
 						<img src="<?= $info['fi_img_url'] ?>" alt="hotel img">
 					 </div> -->
@@ -348,6 +330,9 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
         }
         ?>
         <!-- 교통편 / end -->
+        <div class="text_center btn_box mt25">
+                    <a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" class="btn long_btn yellow_btn" target="_blank">교통수단 확인하기</a>
+                </div>
     </div>
 </section>
 

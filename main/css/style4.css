@@ -33,7 +33,8 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 
 /*venue*/ /* 220325 HUBDNC LJH2 수정*/
 .venue .sub_banner {padding-bottom: 92px;}
-.venue .section1 .img_wrap{width:100%;height:640px;}
+.venue .section1 .img_wrap{/*width:100%;*/height:345px;}
+.venue_flex_box {display: flex;align-items: center;justify-content: space-between;}
 .venue .img_wrap img{width: 100%;height: 100%; object-fit:cover;}
 .venue .img_wrap2{width:100%;height:100%;padding: 0 10%;}
 .venue .img_wrap2 img{width: 100%;}
@@ -528,7 +529,7 @@ section.container.organizing {padding-bottom: 190px;}
 .m_nav_li > a.show > span{background: #013366; color:#FFF!important;}
 
 .m_nav_li {width: 40%;/*background:#000066;*/}
-.m_sub_nav a{font-size:18px;padding:12px 0; color:#000; letter-spacing:-0.36px;}
+.m_sub_nav a{font-size:18px;padding:12px 0; color:#000; letter-spacing:0px;}
 .m_sub_nav a:hover, .m_sub_nav a:focus {font-weight: 800; color:#000066;}
 .m_sub_nav{width:100%;/*border:1px solid #ADF002;border-radius:20px;*/position: absolute;left:48%;top:103px; text-align:left;}
 .n_nav_close{width:34px;position:absolute;top:20px;right:24px;}
@@ -607,7 +608,7 @@ section.container.organizing {padding-bottom: 190px;}
 .long_btn.type2 {font-size: 18px; border-radius: 99px; height: auto; }
 section.container .page_title {background-image:url('../img/sub_header.png'); width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 48px 0;color: #FFF; background-size:cover;}
 .inner {padding-top:50px;}
-h3.title:before {content:'';display: inline-block;  width: 9px;height: 9px; background: transparent; border:6px solid #0499CC; margin-bottom: 2px; border-radius:50%; margin-right: 10px; vertical-align: middle;}
+h3.title:before {content:'';display: inline-block;  width: 6px;height: 6px; background: transparent; border:5px solid #f9c015; margin-bottom: 2px; margin-right: 10px; vertical-align: middle;}
 h3.title.icon_none {padding-left:0;}
 h3.title.icon_none:before {display:none;}
 section.container.login .page_title {color:#fff; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
@@ -1546,7 +1547,7 @@ input[type='date']::before {
 	column-gap: 0.5rem; */
 	display: grid;
 	grid-template-columns: 0.3fr 1.5fr 1fr;
-	grid-auto-rows: 90px;
+	grid-auto-rows: minmax(90px, auto);
 	grid-gap: 0rem;
 	grid-template-areas: 
 	'a b c';

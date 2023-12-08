@@ -157,7 +157,10 @@
 										break;
 									case "Pharmacist":
 										$member_type = "공보의";
-										break;      
+										break;			     
+									case "Booth":
+										$member_type = "전시(부스)";
+										break;         
 								}
 
 

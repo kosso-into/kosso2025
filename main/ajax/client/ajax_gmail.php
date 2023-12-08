@@ -247,15 +247,15 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				</tr>
 				<tr>
 					<td colspan='3'>
-						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #003466;padding: 20px 0;'>[KSSO 2024] 제 59차 대한비만학회 춘계학술대회</div>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #003466;padding: 20px 0;'></div>
 					</td>
 				</tr>
 				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td>
 						<div>
-							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$last_name}{$first_name},</p>
-							<p style='font-size:14px;color:#170F00;margin-top:14px;'>제 59차 대한비만학회 춘계학술대회의 홈페이지에 가입해 주셔서 감사합니다.<br/>아래의 등록 정보를 확인해 주세요.<br/>(등록 정보 수정을 원하실 경우, 홈페이지 – 마이페이지에서 수정 하실 수 있습니다.)</p>
+							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'></p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'></p>
 							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 								<tbody>
 									<tr>
@@ -270,16 +270,15 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 									</tr>
 								</tbody>	
 							</table>
-							<p>본 학술대회에 대한 관심에 감사드립니다. <br/>사전등록을 원하실 경우에는 <br/>아래의 사전등록 바로가기 버튼을 클릭 하시어 등록 부탁드립니다. 
-							<br/></p>
+							<p>사전등록을 원하실 경우에는 <br/>아래의 사전등록 바로가기 버튼을 클릭 하시어 등록 부탁드립니다.<br/>(등록 정보 수정을 원하실 경우,<br/>홈페이지 – 마이페이지에서 수정 하실 수 있습니다.) </p>
 						</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td width='74' style='width:74px;'></td>
-					<td style='padding-top:16px;'>
-					<div style='text-align: center;'>
+					<td>
+					<div style='text-align: center;padding-top:50px;'>
 						<table align='center' cellspacing='0' cellpadding='0' width='100%'>
 							<tr>
 								<td align='center'>
@@ -297,7 +296,17 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 						</table>
 						</div>
 					</td>
-					<td width='74' style='width:74px;'></td>
+					<td  width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td  width='74' style='width:74px;'></td>
+					<td style='padding-top:50px;'>
+						<p>
+							본 메일은 발신전용으로 회신이 불가합니다.<br>
+							관련 문의사항에 대해서는 사무국( <a href='mailto:ksso@into-on.com'>ksso@into-on.com</a>)으로 연락 주시기 바랍니다. 
+						</p>
+						</td>
+						<td  width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>
@@ -451,7 +460,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td>
-						<div style='text-align: center;'>
+						<div style='text-align: center;padding-top:50px;'>
 						<table align='center' cellspacing='0' cellpadding='0' width='100%'>
 							<tr>
 								<td align='center'>
@@ -470,6 +479,16 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 					</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td  width='74' style='width:74px;'></td>
+					<td style='padding-top:50px;'>
+						<p>
+							본 메일은 발신전용으로 회신이 불가합니다.<br>
+							관련 문의사항에 대해서는 사무국( <a href='mailto:ksso@into-on.com'>ksso@into-on.com</a>)으로 연락 주시기 바랍니다. 
+						</p>
+						</td>
+						<td  width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>
@@ -617,7 +636,10 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				break;
 			case "Pharmacist":
 				$member_type = "공보의";
-				break;      
+				break;     
+			case "Booth":
+				$member_type = "전시(부스)";
+				break;        
 		}
 
 
@@ -626,26 +648,26 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			if ($nation_tel == 82) {
 				$review_html = "
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>평점신청</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score}</td>
-								</tr>
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>의사 면허번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$licence_number}</td>
-								</tr>
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>전문의 번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$specialty_number}</td>
-								</tr>
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>영양사 면허번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$nutritionist_number}</td>
-								</tr>
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>임상영양사 번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$dietitian_number}</td>
-								</tr>
+				<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>평점신청</th>
+				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score}</td>
+			</tr>
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>의사 면허번호</th>
+				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$licence_number}</td>
+			</tr>
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>전문의 번호</th>
+				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$specialty_number}</td>
+			</tr>
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>영양사 면허번호</th>
+				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$nutritionist_number}</td>
+			</tr>
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>임상영양사 번호</th>
+				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$dietitian_number}</td>
+			</tr>
 							   ";
 			}
 
@@ -722,152 +744,153 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			if ($pay_type == "card" || $pay_type == "free") {
 				$pay_html = "
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; border-bottom:1px solid #000;'>결제 상태</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;'>등록 완료</td>
-								</tr>
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; border-bottom:1px solid #000;'>결제일</th>
-									<td style='font-size:14px; padding:10px;border-bottom:1px solid #000;'>{$pay_date}</td>
-								</tr>
+				<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; border-bottom:1px solid #000;'>결제 상태</th>
+				<td colspan='2' style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-left:1px solid #000;border-bottom:1px solid #000;'>등록 완료</td>
+			</tr>
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; border-bottom:1px solid #000;'>결제일</th>
+				<td colspan='2' style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_date}</td>
+			</tr>
 							";
 			} else {
 				$pay_html = "
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>결제 상태</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;'>결제 대기</td>
-								</tr>
-								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>계좌 정보</th>
-									<td style='font-size:14px; padding:10px;border-bottom:1px solid #000;'>584-910003-16504, 하나은행, 대한비만학회-등록비</td>
-								</tr> 
+				<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>결제 상태</th>
+				<td colspan='2' style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-left:1px solid #000;border-bottom:1px solid #000;'>결제 대기</td>
+			</tr>
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>계좌 정보</th>
+				<td colspan='2' style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>584-910003-16504, 하나은행, 대한비만학회-등록비</td>
+			</tr> 
 							";
 			}
 
 			$rawMessageString .= "
 			<table width='750' style='border:1px solid #000; padding: 0; background-color:#FFF'>
-        <tbody>
-           
-               <tr>
-                   <td colspan='3'>
-                       <img src='https://kosso.org/main/img/mail/registration_header.jpg' width='750' style='width:100%; max-width:100%;'alt='mail_header'>
-                    </td>
-               </tr>
-               <tr>
-                   <td width='74' style='width:74px;'></td>
-                    <td>
-                        <div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'></div>
-                    </td>
-                    <td width='74' style='width:74px;'></td>
-                </tr>
-                <tr>
-                    <td width='74' style='width:74px;'></td>
-                    <td>
-                        <div>
-                            <p style='font-size:15px; font-weight:bold; color:#000; margin:0;'></p>
-                            <p style='font-size:14px;color:#170F00;margin-top:14px;'></p>
-                            <table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-                                <tbody>
-                                    <tr style='border-bottom:1px solid #000;'>
-                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록번호</th>
-                                        <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$register_no}</td>
-                                    </tr>
-                                    <tr style='border-bottom:1px solid #000;'>
-                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록일</th>
-                                        <td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;border-bottom:1px solid #000;'>{$register_date}</td>
-                                    </tr>
-                                   <tr style='border-bottom:1px solid #000;'>
-                                       <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>성함</th>
-                                       <td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;border-bottom:1px solid #000;'>{$fname}</td>
-                                   </tr>
-                           <tr style='border-bottom:1px solid #000;'>
-                               <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>소속</th>
-                               <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$affiliation}</td>
-                           </tr>
-                           <tr style='border-bottom:1px solid #000;'>
-                               <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>휴대폰 번호</th>
-                               <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$phone}</td>
-                           </tr>
-                           <tr style='border-bottom:1px solid #000;'>
-                               <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>대한비만학회 회원 여부</th>
-                               <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_status}</td>
-                           </tr>
-                           <tr style='border-bottom:1px solid #000;'>
-                               <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>참가 유형</th>
-                               <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$attendance_type}</td>
-                           </tr>
-                           <tr style='border-bottom:1px solid #000;'>
-                            <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>분야 구분</th>
-                            <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$occupation_type}</td>
-                        </tr>
-                        <tr style='border-bottom:1px solid #000;'>
-                            <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>참석 구분</th>
-                            <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_type}</td>
-                        </tr>
-                           {$review_html}
-                                    <tr style='border-bottom:1px solid #000;'>
-                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>기타</th>
-                                        <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
-                                            {$other_html}
-                                        </td>
-                                    </tr>
-                                    <tr style='border-bottom:1px solid #000;'>
-                                        <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>개최 정보 유입 경로</th>
-                                       <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
-                                           {$info_html}
-                                       </td>
-                                   </tr>
-                                   <tr style='border-bottom:1px solid #000;'>
-                                       <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록비</th>
-                                       <td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_price}원</td>
-                                   </tr>
-                                   <tr style='border-bottom:1px solid #000;'>
-                                       <th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>결제 방법</th>
-                                       <td style='font-size:14px; padding:10px;border-bottom:1px solid #000;'>{$pay_name}</td>
-                                   </tr>
-                                    {$pay_html}
-                                
-                                </tbody>	
-                            </table>
-                            <p>홈페이지 ‘마이페이지’에서 등록 내용 확인 및 수정이 가능 합니다.</p>
-                        </div>
-                    </td>
-                    <td width='74' style='width:74px;'></td>
-                </tr>
-                <tr>
-                    <td width='74' style='width:74px;'></td>
-                    <td>
-                        <!-- <p>항상 행운을 빕니다.</p> -->
-                        <br/>
-                        <div style='text-align: center;'>
-                            <table align='center' cellspacing='0' cellpadding='0' width='100%'>
-                                <tr>
-                                    <td align='center'>
-                                        <table border='0' class='mobile-button' cellspacing='0' cellpadding='0'>
-                                            <tr>
-                                                <td align='center' bgcolor='#ffcc33' style='background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 16px;box-shadow: 0px 5px 0px 0px #e0ba0d;' width='100%'><!--[if mso]>&nbsp;<![endif]-->
-                                                    <a href='https://kosso.org/main' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;'>
-                                                        <span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;'>홈페이지 바로가기</span>
-                                                    </a><!--[if mso]>&nbsp;<![endif]-->
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td width='74' style='width:74px;'></td>
-                </tr>
-                <tr>
-                    <td colspan='3' style='padding-top:50px;'>
-                        <img src='https://kosso.org/main/img/mail/mail_footer.png' width='750' style='width:100%; max-width:100%;' alt='mail_footer'>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-									";
+			<tbody>
+			   
+				   <tr>
+					   <td colspan='3'>
+						   <img src='https://kosso.org/main/img/mail/registration_header.jpg' width='750' style='width:100%; max-width:100%;'alt='mail_header'>
+						</td>
+				   </tr>
+					<tr>
+						<td width='74' style='width:74px;'></td>
+						<td>
+							<div>
+								<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'></p>
+								<p style='font-size:14px;color:#170F00;margin-top:14px;'></p>
+								<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+									<tbody>
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록번호</th>
+											<td colspan='2' style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$register_no}</td>
+										</tr>
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록일</th>
+											<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$register_date}</td>
+										</tr>
+									   <tr style='border-bottom:1px solid #000;'>
+										   <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>성함</th>
+										   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$fname}</td>
+									   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>소속</th>
+								   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$affiliation}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>휴대폰 번호</th>
+								   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$phone}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>대한비만학회 회원 여부</th>
+								   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_status}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								   <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>참가 유형</th>
+								   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$attendance_type}</td>
+							   </tr>
+							   <tr style='border-bottom:1px solid #000;'>
+								<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>분야 구분</th>
+								<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$occupation_type}</td>
+							</tr>
+							<tr style='border-bottom:1px solid #000;'>
+								<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>참석 구분</th>
+								<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_type}</td>
+							</tr>
+							   {$review_html}
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>기타</th>
+											<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
+												{$other_html}
+											</td>
+										</tr>
+										<tr style='border-bottom:1px solid #000;'>
+											<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>개최 정보 유입 경로</th>
+										   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
+											   {$info_html}
+										   </td>
+									   </tr>
+									   <tr style='border-bottom:1px solid #000;'>
+										   <th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>등록비</th>
+										   <td  colspan='2' style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_price}원</td>
+									   </tr>
+									   <tr style='border-bottom:1px solid #000;'>
+										   <th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>결제 방법</th>
+										   <td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_name}</td>
+									   </tr>
+										{$pay_html}
+									
+									</tbody>	
+								</table>
+								<p>홈페이지 ‘마이페이지’에서 등록 내용 확인 및 수정이 가능 합니다.</p>
+							</div>
+						</td>
+						<td width='74' style='width:74px;'></td>
+					</tr>
+					<tr>
+						<td width='74' style='width:74px;'></td>
+						<td>
+							<!-- <p>항상 행운을 빕니다.</p> -->
+							<div style='text-align: center; padding-top:30px;'>
+								<table align='center' cellspacing='0' cellpadding='0' width='100%'>
+									<tr>
+										<td align='center'>
+											<table border='0' class='mobile-button' cellspacing='0' cellpadding='0'>
+												<tr>
+													<td align='center' bgcolor='#ffcc33' style='background-color: #ffcc33; margin: auto; max-width: 600px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 4px 16px;box-shadow: 0px 5px 0px 0px #e0ba0d;' width='100%'><!--[if mso]>&nbsp;<![endif]-->
+														<a href='https://kosso.org/main' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #ffcc33; text-decoration: none; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: inline-block;'>
+															<span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center;'>홈페이지 바로가기</span>
+														</a><!--[if mso]>&nbsp;<![endif]-->
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td width='74' style='width:74px;'></td>
+					</tr>
+					<tr>
+						<td  width='74' style='width:74px;'></td>
+						<td style='padding-top:50px;'>
+							<p>
+								본 메일은 발신전용으로 회신이 불가합니다.<br>
+								관련 문의사항에 대해서는 사무국( <a href='mailto:ksso@into-on.com'>ksso@into-on.com</a>)으로 연락 주시기 바랍니다. 
+							</p>
+							</td>
+							<td  width='74' style='width:74px;'></td>
+					</tr>
+					<tr>
+						<td colspan='3' style='padding-top:50px;'>
+							<img src='https://kosso.org/main/img/mail/mail_footer.png' width='750' style='width:100%; max-width:100%;' alt='mail_footer'>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+";
 		}
 
 		if ($mail_type == "registration") {
@@ -1257,7 +1280,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			<tr>
 				<td width="74" style="width:74px;"></td>
 				<td>
-				<div style="text-align: center;">
+				<div style="text-align: center;padding-top:50px;">
 				<table align="center" cellspacing="0" cellpadding="0" width="100%">
 					<tr>
 						<td align="center">
@@ -1277,6 +1300,16 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				</td>
 				<td width="74" style="width:74px;"></td>
 			</tr>
+			<tr>
+					<td  width="74" style="width:74px;"></td>
+					<td style="padding-top:50px;">
+						<p>
+							본 메일은 발신전용으로 회신이 불가합니다.<br>
+							관련 문의사항에 대해서는 사무국( <a href="mailto:ksso@into-on.com">ksso@into-on.com</a>)으로 연락 주시기 바랍니다. 
+						</p>
+						</td>
+						<td  width="74" style="width:74px;"></td>
+				</tr>
 			<tr>
 				<td style="padding-top:50px;" colspan="3">
 					<img src="https://www.kosso.org/main/img/mail/abstract_footer_02.png" width="750" style="width:100%; max-width:100%;" alt="footer02">
@@ -1358,7 +1391,7 @@ if ($_POST["flag"] == "signup") {
 		//$subject = "[KSSO] 제 59차 대한비만학회 춘계학술대회 회원가입을 축하드립니다!";
 		$callback_url = D9_DOMAIN . "/signup_certified.php?idx=" . $user_data["idx"];
 
-		$message = createMessage("en", "sign_up", "", $email, "[KSSO]회원가입 안내 메일", date("Y-m-d H:i:s"), "", $callback_url, 1);
+		$message = createMessage("en", "sign_up", "", $email, "[제 59차 대한비만학회 춘계학술대회]회원가입 안내 메일", date("Y-m-d H:i:s"), "", $callback_url, 1);
 		//var_dump($message); exit;
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
@@ -1406,7 +1439,7 @@ if ($_POST["flag"] == "find_password") {
 		//$subject = "비밀번호 찾기 메일";
 		$callback_url = D9_DOMAIN . "/password_reset.php?e=" . $email . "&t=" . $random_token;
 
-		$message = createMessage($language, "find_password", $name, $email, "[KSSO] 비밀번호 찾기 메일", date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
+		$message = createMessage($language, "find_password", $name, $email, "[제 59차 대한비만학회 춘계학술대회] 비밀번호 찾기 메일", date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
 
@@ -1454,13 +1487,13 @@ if ($_POST["flag"] == "find_password") {
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
 	$registration_idx = $_POST["registration_idx"] ?? null;
-	$message = createMessage("en", "registration", $name, $email, "[KSSO] 등록 접수", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
+	$message = createMessage("en", "registration", $name, $email, "[제 59차 대한비만학회 춘계학술대회] 등록 접수", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 
 	$invitation_check_yn = $_POST["invitation_check_yn"] ?? null;
 	if ($invitation_check_yn == "Y") {
-		$message = createMessage("en", "visa_registration", $name, $email, "[KSSO] 등록 초대", date("Y-m-d H:i:s"), "", "", 1);
+		$message = createMessage("en", "visa_registration", $name, $email, "[제 59차 대한비만학회 춘계학술대회] 등록 초대", date("Y-m-d H:i:s"), "", "", 1);
 		createDraft($service, "secretariat@kosso.org", $message);
 		sendMessage($service, "secretariat@kosso.org", $message);
 	}

@@ -120,7 +120,7 @@ $locale = locale($language);
                             <li><a href="/main/registration.php">사전 등록</a></li>
 
                             <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">평점 안내</a></li>
+                            <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                             <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
                         </ul>
                     </li>
@@ -129,16 +129,16 @@ $locale = locale($language);
                         <ul class="sub_nav">
                             
                             <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">후원사</a></li>
+                            <!-- <li><a href="/main/comingsoon.php">후원사</a></li> -->
                             <li><a href="/main/comingsoon.php">부스 배치도</a></li>
                             <!-- <li><a href="/main/sponsor.php">후원사</a></li> -->
                             <!-- <li><a href="/main/sponsor_exhibition.php">전시 배치도</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" target="_blank">행사장</a>
+                        <a href="/main/venue.php">행사장</a>
                         <ul class="sub_nav">
-                            <li><a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" target="_blank">오시는 길</a>
+                            <li><a href="/main/venue.php">오시는 길</a>
                             </li>
 
                             <!-- 1121 커밍순 페이지로 변경 -->
@@ -271,7 +271,7 @@ $locale = locale($language);
                     
                     <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
-                    <li><a href="/main/comingsoon.php">평점 안내</a></li>
+                    <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">
@@ -281,7 +281,7 @@ $locale = locale($language);
                     <!-- <li><a href="application.php">Application</a></li> -->
                    
                     <!-- 1121 커밍순 페이지로 변경 -->
-                     <li><a href="/main/comingsoon.php">후원사</a></li>
+                     <!-- <li><a href="/main/comingsoon.php">후원사</a></li> -->
                     <li><a href="/main/comingsoon.php">부스 배치도</a></li>
                     <!-- <li><a href="application.php">Application</a></li> -->
                 </ul>

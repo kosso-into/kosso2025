@@ -733,7 +733,7 @@ $(document).ready(function() {
 
     /**[231201] sujeong 수정 / 학회팀 요청 / 제목에 한글 방지 추가*/
     $(document).on("keyup", ".en_num_keyup", function(key) {
-        var pattern = /[\[\]{}<>|`\"'\\ㄱ-ㅎㅏ-ㅣ가-힣]/g;
+        var pattern = /[\[\]{}<>|;`\"'\\ㄱ-ㅎㅏ-ㅣ가-힣]/g;
         var _this = $(this);
         if (key.keyCode != 8) {
             var abstract_title = _this.val().replace(pattern, '');
