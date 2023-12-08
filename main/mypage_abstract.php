@@ -523,6 +523,12 @@ foreach ($nation_list as $obj) {
 		</div>
 		<div class="table_wrap x_scroll" id="corresponding_author"></div>
 
+		<!-- 공동저자 -->
+		<div class="pop_title_wrap">
+			<p id="co_author_title">공동 저자</p>
+		</div>
+		<div class="table_wrap x_scroll" id="co_author"></div>
+
 		<div class="btn_wrap">
 			<button type="button" class="btn pop_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
 		</div>
@@ -714,10 +720,11 @@ foreach ($nation_list as $obj) {
 	});
 
 	function setReviewPop(data) {
+		console.log(data)
 		const submit_data = data.submit_data ?? [];
 		const presenting_author_data = data.presenting_author_data ?? [];
 		const corresponding_author_data = data.corresponding_author_data ?? [];
-
+		const co_author_data = data?.co_author_data;
 		$("#presenting_author").empty();
 		$("#corresponding_author").empty();
 
@@ -740,8 +747,17 @@ foreach ($nation_list as $obj) {
 			$("#corresponding_author_title").hide();
 		} else {
 			$("#corresponding_author_title").show();
-			corresponding_author_data.forEach(function(data, idx) {
+			corresponding_author_data.map((data)=> {
 				$("#corresponding_author").append(bindAuthor(data));
+			});
+		}
+
+		if (co_author_data.length < 1) {
+			$("#co_author_title").hide();
+		} else {
+			$("#co_author_title").show();
+			co_author_data.forEach(function(data, idx) {
+				$("#co_author").append(bindAuthor(data));
 			});
 		}
 

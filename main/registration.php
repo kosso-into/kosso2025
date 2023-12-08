@@ -325,8 +325,11 @@ if ($during_yn !== "Y") {
                                         $participation_arr[13]['name'] = "학생";
                                         $participation_arr[13]['value'] = "Student";
 
-                                        $participation_arr[14]['name'] = "기타";
-                                        $participation_arr[14]['value'] = "Others";
+                                        $participation_arr[14]['name'] = "전시(부스)";
+                                        $participation_arr[14]['value'] = "Booth";
+
+                                        $participation_arr[15]['name'] = "기타";
+                                        $participation_arr[15]['value'] = "Others";
 
                                         foreach ($participation_arr as $a_arr) {
                                             $selected =  $prev["member_type"] == $a_arr['value'] ? "selected" : "";
@@ -503,12 +506,12 @@ if ($during_yn !== "Y") {
                             </table>
                         </div>
                     </li>
-                    <li>
+                    <li style="display:none;">
                         <p class="label">특이 식단 <span class="red_txt">*</span></p>
                         <ul class="chk_list info_check_list flex_center type2">
                             <!-- <?= $prev["special_request_food"] === '0' ? "selected" : "" ?> -->
                             <li>
-                                <input type="radio" class='checkbox' id="special_request1" name='special_request'
+                                <input type="radio" class='checkbox' id="special_request1" name='special_request' checked
                                     value="0" <?= $prev["special_request_food"] === '0' ? "checked" : "" ?> />
                                 <label for="special_request1"><i></i>해당 없음</label>
                             </li>
@@ -878,11 +881,19 @@ $(document).ready(function() {
 
     /**[231205] sujeong / 영양사 면허번호 또는 임상영양사 자격번호 입력시 생년월일 보이도록 */
     $('#nutritionist_number').on("input", ()=>{
-        $("#date_of_birth").show();
+        if($('#nutritionist_number').val() !== ""){
+            $("#date_of_birth").show();
+        }else{
+            $("#date_of_birth").hide();
+        }
     })
 
     $('#dietitian_number').on("input", ()=>{
-        $("#date_of_birth").show();
+        if($('#dietitian_number').val() !== ""){
+            $("#date_of_birth").show();
+        }else{
+            $("#date_of_birth").hide();
+        }
     })
 
     if($('#nutritionist_number').val() !== ""){

@@ -117,7 +117,10 @@ switch ($member_type) {
 		break;
 	case "Pharmacist":
 		$member_type = "공보의";
-		break;      
+		break;     
+	case "Booth":
+		$member_type = "전시(부스)";
+		break;   
 }
 
 $attendance_type = $data["attendance_type"] ?? "-";
@@ -447,14 +450,14 @@ switch ($attendance_type) {
 								</td>
 							</tr>
 
-							<tr>
+							<tr style="display: none;">
 								<th>특이식단</th>
 								<td>
 									<div class="max_normal ">
 									<ul class="chk_list info_check_list flex_center type2">
-                            <!-- <?= $prev["special_request_food"] === '0' ? "selected" : "" ?> -->
+                         
                             <li>
-                                <input type="radio" class='checkbox' id="special_request1" name='special_request'
+                                <input type="radio" class='checkbox' id="special_request1" name='special_request' checked
                                     value="0" <?= $data["special_request_food"] === '0' ? "checked" : "" ?> />
                                 <label for="special_request1"><i></i>해당 없음</label>
                             </li>

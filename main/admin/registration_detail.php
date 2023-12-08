@@ -205,7 +205,10 @@ switch ($member_type) {
         break;
     case "Pharmacist":
         $member_type = "공보의";
-        break;    
+        break;            
+	case "Booth":
+		$member_type = "전시(부스)";
+		break;    
 }
 
 
@@ -516,10 +519,10 @@ if ($attendance_type_no != 0) {
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th>특이식단</th>
                         <td colspan="3"><?= $special_request_food ?></td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <th>Register Path</th>
                         <td colspan="3">

@@ -19,7 +19,7 @@ if ($registrationNo) {
         $category = $prev["member_type"] ?? "";
         $occupation = $prev["occupation_type"] ?? "";
 
-        $calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category) : 0;
+        $calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category, "Republic of Korea") : 0;
         $prev["calc_fee"] = $calc_fee;
     }
 }

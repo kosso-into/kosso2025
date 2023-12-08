@@ -157,7 +157,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">참가자 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">평점신청</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">기타</th>';
 $html .= '</tr>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">No</th>';
@@ -192,7 +192,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Breakfast Symposium</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Luncheon Symposium</th>';
 // $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">특이식단</th>';
+// $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">특이식단</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">개최 정보 습득 방법</th>';
 $html .= '</tr>';
 $html .= '</thead>';
@@ -360,7 +360,10 @@ foreach ($registration_list as $rk => $rl) {
 				break;
 			case "Pharmacist":
 				$member_type = "공보의";
-				break;      
+				break; 
+			case "Booth":
+				$member_type = "전시(부스)";
+				break;        
 		}
 
 	$date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
@@ -399,7 +402,7 @@ foreach ($registration_list as $rk => $rl) {
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day2_luncheon_yn"] . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_breakfast_yn"] . '</td>';
 	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_luncheon_yn"] . '</td>';
-	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $special_request_food . '</td>';
+	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $special_request_food . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $conference_info . '</td>';
 	$html .= '</tr>';
 }
@@ -483,7 +486,7 @@ $count = count($registration_list);
                         <th>참가 유형</th>
 						<th>분야 구분</th>
                         <th>평점신청여부</th>
-                        <th>특이식단</th>
+                        <!-- <th>특이식단</th> -->
                         <th>등록일</th>
                     </tr>
                 </thead>
@@ -595,7 +598,7 @@ $count = count($registration_list);
                         <td><?= isset($list["attendance_type_text"]) ? $list["attendance_type_text"] : "-" ?></td>
 						<td><?= isset($list["occupation_type"]) ? $list["occupation_type"] : "-" ?></td>
                         <td><?= isset($list["is_score_text"]) ? $list["is_score_text"] : "-" ?></td>
-                        <td><?= $special_request_food ?></td>
+                        <!-- <td><?= $special_request_food ?></td> -->
                         <td><?= isset($list["register_date"]) ? $list["register_date"] : "-" ?></td>
                     </tr>
                     <?php

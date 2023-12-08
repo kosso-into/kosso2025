@@ -68,32 +68,32 @@
 					<tbody>
 						<tr>
 							<td>대한의사협회</td>
-							<td>최대 1평점</td>
-							<td>최대 6평점</td>
+							<td>최대 1평점<span class="red_txt bold">(예정)</span></td>
+							<td>최대 6평점<span class="red_txt bold">(예정)</span></td>
 							
 						</tr>
 						<tr>
 							<td>내과전공의 외부학술회의(학술대회)</td>
 							<td>없음</td>
-							<td>최대 2평점 <br/><span class="font_small">* 오전,오후 각 1점 산정</span></td>
+							<td>최대 2평점<span class="red_txt bold">(예정)</span> <br/><span class="font_small">* 오전,오후 각 1점 산정</span></td>
 						</tr>
 						<tr>
 							<td>대한비만학회(비만전문인정의) *별도 신청 없음</td>
 							<!-- <td>대한비만학회(비만전문인정의) <br/><span class="font_small">*별도 신청 없음</span></td> -->
-							<td>최대 1평점</td>
-							<td>최대 6평점</td>
+							<td>최대 1평점<span class="red_txt bold">(예정)</span></td>
+							<td>최대 6평점<span class="red_txt bold">(예정)</span></td>
 							
 						</tr>
 						<tr>
 							<td>한국영양교육평가원 임상영양사 전문연수교육(CPD)</td>
 							<td>없음</td>
-                            <td>5평점</td>
+                            <td>5평점<span class="red_txt bold">(예정)</span></td>
 						</tr>
 						</tr>
 						<tr>
 							<td>대한운동사협회</td>
 							<td>없음</td>
-							<td>25평점</td>
+							<td>25평점<span class="red_txt bold">(예정)</span></td>
 						</tr>
 					</tbody>
 				</table>

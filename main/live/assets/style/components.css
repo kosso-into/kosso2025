@@ -5742,7 +5742,7 @@ a.editable-empty:focus {
   font-size: 28px;
   font-weight: normal;
   font-style: normal;
-  letter-spacing: -0.015em;
+  letter-spacing: 0em;
 }
 .daterange-custom-display b {
   display: inline-block;
@@ -10795,7 +10795,7 @@ pre.line-numbers > code {
   font-size: 100%;
   left: -50px;
   width: 36px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   border-right: 1px solid #999;
   -webkit-user-select: none;
   -moz-user-select: none;

@@ -206,6 +206,9 @@ $score_detail = sql_fetch($score_sql);
                                 break;
                             case "Pharmacist":
                                 $member_type = "공보의";
+                                break;        
+                            case "Booth":
+                                $member_type = "전시(부스)";
                                 break;      
                         }
 
@@ -265,29 +268,25 @@ $score_detail = sql_fetch($score_sql);
 
                         if ($welcome_reception_yn === "Y") {
                             $other_html .= "
-											<input type='checkbox' class='checkbox' id='other1' disabled>
-											<label for='other1'><i></i>Welcome Reception – 3월 8일(금) 18:30~19:40</label>
+											<label for='other1'><i></i>• Welcome Reception – 3월 8일(금) 18:30~19:40</label>
 										   ";
                         }
                         if ($day2_breakfast_yn === "Y") {
                             $other_html .= $other_html != "" ? "<br/>" : "";
                             $other_html .= "
-											<input type='checkbox' class='checkbox' id='other2' disabled>
-											<label for='other2'><i></i>Satellite Symposium – 3월 8일(금) 19:40~ </label>
+											<label for='other2'><i></i>• Satellite Symposium – 3월 8일(금) 19:40~ </label>
 										   ";
                         }
                         if ($day2_luncheon_yn === "Y") {
                             $other_html .= $other_html != "" ? "<br/>" : "";
                             $other_html .= "
-											<input type='checkbox' class='checkbox' id='other3' disabled>
-											<label for='other3'><i></i>Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
+											<label for='other3'><i></i>• Breakfast Symposium – 3월 9일(토) 08:00~08:45</label>
 										   ";
                         }
                         if ($day3_breakfast_yn === "Y") {
                             $other_html .= $other_html != "" ? "<br/>" : "";
                             $other_html .= "
-											<input type='checkbox' class='checkbox' id='other4' disabled>
-											<label for='other4'><i></i>Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
+											<label for='other4'><i></i>• Luncheon Symposium – 3월 9일(토) 12:00~13:00</label>
 										   ";
                         }
                         
@@ -302,8 +301,7 @@ $score_detail = sql_fetch($score_sql);
                             if ($info[$a]) {
                                 $info_html .= $info_html != "" ? "<br/>" : "";
                                 $info_html .= "
-												<input type='checkbox' class='checkbox' id='conference" . $a . "' disabled>
-												<label for='conference" . $a . "'><i></i>" . $info[$a] . "</label>
+												<label for='conference" . $a . "'><i></i>" ."• " .$info[$a] . "</label>
 											  ";
                             }
                         }
@@ -342,14 +340,14 @@ $score_detail = sql_fetch($score_sql);
                                     <?php if ($list["payment_methods"] == 1) { ?>
                                         <a href="./registration.php?idx=<?php echo $list["idx"]
                                                                         ?>
-                                        " class="btn">수정하기</a>
+                                        " class="btn">정보수정</a>
                                     <?php } else { ?>
                                         <a href="./registration.php?idx=<?php echo $list["idx"]
                                                                         ?>
-                                        " class="btn">수정하기</a>
-                                        <button type="button" class="btn payment_btn" data-url="<?php echo $payment_url ?>">결제하기</button>
+                                        " class="btn">정보수정</a>
+                                        <button type="button" class="btn payment_btn" data-url="<?php echo $payment_url ?>">등록결제</button>
                                     <?php } ?>
-                                    <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">취소</button>
+                                    <button type="button" class="btn cancel_btn" data-idx="<?= $list["idx"] ?>">등록취소</button>
                                 </td>
                             <?php } else if ($list["status"] == 2) { ?>
                                 <td>등록 완료</td>
@@ -427,10 +425,10 @@ $score_detail = sql_fetch($score_sql);
                                                     <th>기타</th>
                                                     <td><?= $other_html ?></td>
                                                 </tr>
-                                                <tr>
+                                                <!-- <tr>
                                                     <th>특이식단</th>
                                                     <td><?= $special_request_food ?></td>
-                                                </tr>
+                                                </tr> -->
                                                 <tr>
                                                     <th>유입 경로</th>
                                                     <td><?= $info_html ?></td>
@@ -442,7 +440,7 @@ $score_detail = sql_fetch($score_sql);
                                                         <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원' : "-" ?>
                                                     </td>
                                                 </tr>
-                                                <tr class="tr_bg">
+                                                <tr class="tr_bg" style="display: none;">
                                                     <th>최종 등록비</th>
                                                     <td>
                                                         <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원'  : "-" ?>
@@ -451,7 +449,6 @@ $score_detail = sql_fetch($score_sql);
                                                 <tr class="tr_bg">
                                                     <th>결제 방법</th>
                                                     <td>
-                                                        <input type="checkbox" disabled class="checkbox">
                                                         <label for="">
                                                             <i></i>
                                                             <?= $payment_methods ?>
@@ -776,8 +773,8 @@ $score_detail = sql_fetch($score_sql);
                 </table>
             </div>
             <div class="btn_wrap">
-                <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">등록취소</button>
-                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.open('/main/mypage_registration_modify.php')">등록수정</button>
+                <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">환불요청</button>
+                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.open('/main/mypage_registration_modify.php')">정보수정</button>
                 <button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
             </div>
         </div>

@@ -28,7 +28,7 @@
 		article, aside, canvas, details, embed,
 		figure, figcaption, footer, header, hgroup,
 		menu, nav, output, ruby, section, summary,
-		time, mark, audio, video, button, input, br ,textarea { -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */margin:0;padding:0;border:0;box-sizing:border-box; color:#444; line-height:1.2; letter-spacing:-0.36px; box-sizing:border-box; color:#fff; font-family:"Noto Sans KR", sans-serif;}
+		time, mark, audio, video, button, input, br ,textarea { -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */margin:0;padding:0;border:0;box-sizing:border-box; color:#444; line-height:1.2; letter-spacing:0px; box-sizing:border-box; color:#fff; font-family:"Noto Sans KR", sans-serif;}
 		/* HTML5 display-role reset for older browsers */
 		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
 		a {display: inline-block;text-decoration:none;color:inherit;}

@@ -456,7 +456,12 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
 
     modalTd.forEach((td)=>{
         td.addEventListener("click", (e)=>{
-            const id = e.target.dataset.id;
+            let id = e.target.dataset.id;
+
+            /** td 내부 선택할 경우 */
+            if(!id){
+                id = e.target.parentElement.dataset.id;
+            }
     
     $.ajax({
         url: PATH + "ajax/client/ajax_program_modal.php",
@@ -467,7 +472,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
         },
         dataType: "JSON",
         success: function (res) {
-            console.log(res.data)
+            // console.log(res.data)
             if (res.code == 200) {
                 show_modal(res.data) 
             } else {

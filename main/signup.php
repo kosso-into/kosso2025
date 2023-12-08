@@ -474,7 +474,7 @@ function remove_value() {
                                     <input type="text" name="email" class="required" maxlength="50">
                                     <!-- <span class="mini_alert red_txt red_alert"></span> -->
                                 </div>
-                                <span class="mini_alert brown_txt">가입 이후에 수정하기 어렵습니다. ID를 정확히 입력했는지 확인해 주세요.</span>
+                                <span class="mini_alert brown_txt">가입 이후 수정이 불가능합니다. ID를 정확히 입력했는지 확인 부탁드립니다.</span>
                             </td>
                         </tr>
                         <tr>
@@ -2357,6 +2357,7 @@ $(document).on("click", "#submit", function() {
 
     if (terms1 == false) {
         //alert("Please agree to Terms & Conditions.");
+        $("html, body").animate({scrollTop: 0}, 400)
         alert("개인정보 동의를 확인해주세요.");
         return;
     }
@@ -2860,7 +2861,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=first_name_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            const regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
@@ -2871,7 +2872,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=last_name_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+           const regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
@@ -2882,7 +2883,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=affiliation_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            var regexp = /[\[\]{}<>|;`\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
@@ -2893,7 +2894,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=department_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            var regexp = /[\[\]{}<>|;`\"'\\]/g;
             //regexp = /^[가-힣\s]+$/;
             v = $(this).val();
             if (regexp.test(v)) {
@@ -2905,7 +2906,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=phone], input[name=mo_phone]").keyup(function(event) {
-            regexp = /[^0-9]/g;
+           const regexp = /[^0-9]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 $(this).val(v.replace(regexp, ''));
@@ -2927,7 +2928,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=mo_first_name_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+           const regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
@@ -2938,7 +2939,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=mo_last_name_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            var regexp = /[\[\]{}<>|;`\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
@@ -2949,7 +2950,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=mo_affiliation_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            var regexp = /[\[\]{}<>|;`\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
@@ -2960,7 +2961,7 @@ $(document).ready(function() {
 
     $(function() {
         $("input[name=mo_department_kor]").keyup(function(event) {
-            regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
+            var regexp = /[\[\]{}<>|;`\"'\\]/g;
             v = $(this).val();
             if (regexp.test(v)) {
                 alert("특수기호는 입력이 불가합니다.");
