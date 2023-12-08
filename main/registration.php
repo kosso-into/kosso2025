@@ -38,14 +38,19 @@ if ($registrationNo) {
                         SELECT
 							*
 						FROM request_registration
-						WHERE request_registration.register = {$member_idx} AND is_deleted = 'N'
+						WHERE request_registration.register = {$member_idx} AND is_deleted = 'N' 
     ";
-    $register_data = sql_fetch($registration_info);
+    $register_data = get_data($registration_info);
 
-    // if(count($register_data) > 0){
-    //     echo "<script>alert('등록된 회원입니다.'); window.location.replace(PATH+'mypage_registration.php');</script>";
-    //     exit;
-    // }
+    if(count($register_data) > 0){
+        foreach($register_data as $data){
+            if($data['status'] != 0 && $data['status'] != 4){
+                echo "<script>alert('등록된 회원입니다.'); window.location.replace(PATH+'mypage_registration.php');</script>";
+                // echo "<script>console.log(".$data['status'] .")</script>";
+                exit;
+            }
+        }
+    }
 }
 
 //경로 주의
