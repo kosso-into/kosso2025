@@ -292,14 +292,14 @@ foreach ($registration_list as $rk => $rl) {
 		*/
 	$conference_info = ($rl['conference_info'] != '-') ? str_replace('*', ',', $rl['conference_info']) : '-';
 
-	$licence_number = $rl['licence_number'] ?? 'Not applicable';
-	$specialty_number = $rl['specialty_number'] ?? 'Not applicable';
-	$nutritionist_number = $rl['nutritionist_number'] ?? 'Not applicable';
-	$dietitian_number = $rl['dietitian_number'] ?? 'Not applicable';
+	$licence_number = $rl['licence_number'] ?? '해당없음';
+	$specialty_number = $rl['specialty_number'] ?? '해당없음';
+	$nutritionist_number = $rl['nutritionist_number'] ?? '해당없음';
+	$dietitian_number = $rl['dietitian_number'] ?? '해당없음';
 
 	$special_request_food = "";
 	if ($rl['special_request_food'] === '0') {
-		$special_request_food = "Not Applicable";
+		$special_request_food = "해당없음";
 	} else if ($rl['special_request_food'] === '1') {
 		$special_request_food = "Vegetarian";
 	} else if ($rl['special_request_food'] === '2') {
@@ -511,7 +511,7 @@ $count = count($registration_list);
 							
 							$special_request_food = "";
 							if ($list['special_request_food'] === '0') {
-								$special_request_food = "Not Applicable";
+								$special_request_food = "해당없음";
 							} else if ($list['special_request_food'] === '1') {
 								$special_request_food = "Vegetarian";
 							} else if ($list['special_request_food'] === '2') {

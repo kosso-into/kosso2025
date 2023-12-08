@@ -639,6 +639,8 @@ $(document).ready(function() {
 		//console.log("idx : "+idx+" type : "+type);
 
 		if(!$("#presentation_type_yn:checked").length) {
+            $("#presentation_type_yn").eq(0).focus();
+            document.getElementById("presentation_type_yn").nextSibling.nextSibling.style.color = "#c71b1b";
 			alert("동의 여부를 선택해주십시오.");
 			return;
 		}

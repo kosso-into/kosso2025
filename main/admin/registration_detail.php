@@ -216,7 +216,7 @@ switch ($member_type) {
 $special_request = $registration_detail["special_request_food"] ?? "";
 $special_request_food = "";
 if ($special_request === '0') {
-	$special_request_food = "Not Applicable";
+	$special_request_food = "해당없음";
 } else if ($special_request === '1') {
 	$special_request_food = "Vegetarian";
 } else if ($special_request === '2') {

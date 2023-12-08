@@ -512,10 +512,10 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 			$register_date = $data["register_date"] ?? "-";
 
-			$licence_number = $data["licence_number"] ? $data["licence_number"] : "Not applicable";
-			$specialty_number = $data["specialty_number"] ? $data["specialty_number"] : "Not applicable";
-			$nutritionist_number = $data["nutritionist_number"] ? $data["nutritionist_number"] : "Not applicable";
-			$dietitian_number = $data["dietitian_number"] ? $data["dietitian_number"] : "Not applicable";
+			$licence_number = $data["licence_number"] ? $data["licence_number"] : "해당없음";
+			$specialty_number = $data["specialty_number"] ? $data["specialty_number"] : "해당없음";
+			$nutritionist_number = $data["nutritionist_number"] ? $data["nutritionist_number"] : "해당없음";
+			$dietitian_number = $data["dietitian_number"] ? $data["dietitian_number"] : "해당없음";
 
 			$attendance_type = $data["attendance_type"] ?? "-";
 			switch ($attendance_type) {
@@ -661,7 +661,11 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>임상영양사 번호</th>
 				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$dietitian_number}</td>
 			</tr>
-							   ";
+			<tr style='border-bottom:1px solid #000;'>
+				<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>생년월일</th>
+				<td colspan='2'  style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$dietitian_number}</td>
+			</tr>
+			";
 			}
 
 			// Others

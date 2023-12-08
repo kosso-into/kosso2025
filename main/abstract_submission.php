@@ -184,7 +184,7 @@ if (empty($abstract_idx)) {
 		} else if (isset($submit_data["phone"])) {
 			$_arr_phone = explode("-", $submit_data["phone"]);
 			$nation_tel = "+".$_arr_phone[0];
-			$phone = implode("-", array_splice($_arr_phone, 1));
+			$phone = $submit_data["phone"];
 		}
 
 		$abstract_category = $submit_data["abstract_category"] ?? "";

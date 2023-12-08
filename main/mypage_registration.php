@@ -255,7 +255,7 @@ $score_detail = sql_fetch($score_sql);
                         $special_request = $list["special_request_food"] ?? "";
                         $special_request_food = "";
                         if ($special_request === '0') {
-                            $special_request_food = "Not Applicable";
+                            $special_request_food = "해당없음";
                         } else if ($special_request === '1') {
                             $special_request_food = "Vegetarian";
                         } else if ($special_request === '2') {
@@ -402,19 +402,19 @@ $score_detail = sql_fetch($score_sql);
                                                     </tr>
                                                     <tr>
                                                         <th>의사 면허번호</th>
-                                                        <td><?= $list["licence_number"] ?? "Not applicable" ?></td>
+                                                        <td><?= $list["licence_number"] ?? "해당없음" ?></td>
                                                     </tr>
                                                     <tr>
                                                         <th>전문의 번호</th>
-                                                        <td><?= $list["specialty_number"] ?? "Not applicable" ?></td>
+                                                        <td><?= $list["specialty_number"] ?? "해당없음" ?></td>
                                                     </tr>
                                                     <tr>
                                                         <th>영양사 면허번호</th>
-                                                        <td><?= $list["nutritionist_number"] ?? "Not applicable" ?></td>
+                                                        <td><?= $list["nutritionist_number"] ?? "해당없음" ?></td>
                                                     </tr>
                                                     <tr>
                                                         <th>임상영양사 면허번호</th>
-                                                        <td><?= $list["dietitian_number"] ?? "Not applicable" ?></td>
+                                                        <td><?= $list["dietitian_number"] ?? "해당없음" ?></td>
                                                     </tr>
                                                     <tr>
                                                         <th>생년월일</th>
