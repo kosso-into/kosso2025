@@ -128,18 +128,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                 <div class="img_wrap" style="margin: 0;">
                     <img src="./img/grandwalkerhillseoul.jpg" alt="conrad seoul">
                 </div>
-                <div class="yellow_bg venue_wrap">
-                    <h6>제 59차 대한비만학회 춘계학술대회</h6>
-                    <h1>그랜드 워커힐 서울</h1>
-                    <h6>3월 8일(금) ~ 9일(토)</h6>
-                </div>
-              
-            </div>
-        </div>
-
-        <div class="section section1">
-        <h3 class="title">그랜드 워커힐 서울</h3>
-        <ul class="app_overview_ul app_venue_info">
+                <ul class="app_overview_ul app_venue_info">
                     <li>
                         <p>그랜드 워커힐 서울</p>
                         <div class="flex_top">
@@ -156,8 +145,8 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                         </div>
                     </li>
                 </ul>
-                </div>
-
+            </div>
+        </div>
         <!-- 지도 -->
         <div class="section section2">
             <h3 class="title">지도</h3>
