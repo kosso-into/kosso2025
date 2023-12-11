@@ -114,7 +114,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
     if (!empty($session_app_type) && $session_app_type == 'N') {
         // Web일때
     ?>
-        <h1 class="page_title">그랜드 워커힐 서울</h1>
+        <h1 class="page_title">오시는 길</h1>
     <?php
     }
     ?>
@@ -331,7 +331,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
         ?>
         <!-- 교통편 / end -->
         <div class="text_center btn_box mt25">
-                    <a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" class="btn long_btn yellow_btn" target="_blank">교통수단 확인하기</a>
+                    <a href="https://www.walkerhill.com/grandwalkerhillseoul/Map" class="btn long_btn yellow_btn" target="_blank">호텔 안내 바로가기</a>
                 </div>
     </div>
 </section>
