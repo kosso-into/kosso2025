@@ -35,12 +35,22 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 .venue .sub_banner {padding-bottom: 92px;}
 .venue .section1 .img_wrap{/*width:100%;*/height:345px;}
 .venue_flex_box {display: flex;align-items: center;justify-content: space-between;}
+.venue_flex_box .venue_wrap{width: 50%; height: 345px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.venue_flex_box .venue_wrap h1 {font-size: 48px; font-weight: 800;}
+.venue_flex_box .venue_wrap h6 {font-size: 24px; font-weight: 700;margin: 10px 0;}
 @media screen and (max-width:1080px) {
 	.venue_flex_box{flex-direction: column;}
+	.venue_flex_box .venue_wrap{width: 64%;}
+}
+@media screen and (max-width: 1024px){
+	.venue_flex_box .venue_wrap{width: 100%;}
 }
 @media screen and (max-width:486px) {
 	.venue_flex_box{display: block;}
 	.venue .long_btn{font-size: 14px;height: 40px;line-height: 40px;max-width: 350px;}
+	.venue_flex_box .venue_wrap{height: 200px;}
+	.venue_flex_box .venue_wrap h1 {font-size: 32px;}
+	.venue_flex_box .venue_wrap h6 {font-size: 16px;}
 }
 .venue .img_wrap img{width: 100%;height: 100%; object-fit:cover;}
 .venue .img_wrap2{width:100%;height:100%;padding: 0 10%;}
