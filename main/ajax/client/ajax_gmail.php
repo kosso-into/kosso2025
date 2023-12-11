@@ -1139,7 +1139,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			<tbody>
 			<tr>
 				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">초록 접수 번호</th>
-				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;">' . $submission_code . '</td>
+				<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . $submission_code . '</td>
 			</tr>
 			<tr>
 				<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">발표 형식</th>
@@ -1192,19 +1192,19 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										<tbody>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">성함</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;" colspan="3">' . $first_name . ' ' . $last_name . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2">' . $first_name . ' ' . $last_name . '</td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">소속</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . (implode("<br>", $affiliation_arr)) . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2">' . (implode("<br>", $affiliation_arr)) . '</td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">E-mail</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3"><a >' . $email . '</a></td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2"><a >' . $email . '</a></td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">전화번호</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . $phone . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2">' . $phone . '</td>
 										</tr>
 										</tbody>	
 										</table>';
@@ -1243,19 +1243,19 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 										<tbody>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">성함</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;"colspan="3">' . $last_name . $first_name .'</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">' . $last_name . $first_name .'</td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">소속</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . (implode("<br>", $affiliation_arr)) . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2">' . (implode("<br>", $affiliation_arr)) . '</td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">E-mail</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3"><a>' . $email . '</a></td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2"><a>' . $email . '</a></td>
 										</tr>
 										<tr>
 											<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">전화번호</th>
-											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="3">' . $phone . '</td>
+											<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;"  colspan="2">' . $phone . '</td>
 										</tr>
 										</tbody>	
 										</table>';
@@ -1306,7 +1306,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 						<td  width="74" style="width:74px;"></td>
 				</tr>
 			<tr>
-				<td style="padding-top:50px;" colspan="3">
+				<td style="padding-top:30px;" colspan="3">
 					<img src="https://www.kosso.org/main/img/mail/abstract_footer_02.png" width="750" style="width:100%; max-width:100%;" alt="footer02">
 				</td>
 			</tr>
