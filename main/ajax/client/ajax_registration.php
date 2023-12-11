@@ -484,7 +484,7 @@ if ($_POST["flag"] == "registration") {
 										licence_number, specialty_number, nutritionist_number, dietitian_number, academy_number, register_path,
 										welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
 										conference_info, price, payment_no,
-										DATE_FORMAT(register_date, '%m-%d-%Y %h:%i:%s') AS register_date
+										DATE_FORMAT(register_date, '%Y-%m-%d %h:%i:%s') AS register_date
 									FROM request_registration
 									WHERE idx= {$registration_idx}";
 
