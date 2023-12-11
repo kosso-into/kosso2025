@@ -126,7 +126,7 @@ section.app_version .inner {
                         <tbody name="day" class="day_tbody day_1">
                             <tr>
                                 <td>
-                                    <div class="colons_div">14:50 - 16:20</div>
+                                    <div class="colons_div">14:50-16:20</div>
                                 </td>
                                 <td class="purple_bg pointer modal" name="pre_congress_symposium_1" data-id="1">
                                     Pre-congress<br />Symposium 1<p>
@@ -150,7 +150,7 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">16:30 - 18:05</div>
+                                    <div class="colons_div">16:30-18:05</div>
                                 </td>
                                 <td class="purple_bg pointer modal" name="pre_congress_symposium_2" data-id="2">
                                     Pre-congress<br />Symposium 2<p>
@@ -407,6 +407,7 @@ section.app_version .inner {
 
 </section>
 
+<!-- program modal -->
 <div class="modal_background" style="display: none;"></div>
 <div class="detail_modal" style="display: none;">
 	<div class="modal_container">
@@ -431,7 +432,7 @@ section.app_version .inner {
 		</div>
 	</div>
 </div>
-
+<!-- //program modal -->
 
 <!-- HUBDNCHYJ : App 일때만 노출되는 팝업 입니다. -->
 <?php
@@ -483,6 +484,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
         })
     })
 
+//모달 보여주기
 function show_modal(data) {
     const detailModal = document.querySelector(".detail_modal");
     const background = document.querySelector(".modal_background");
@@ -491,6 +493,7 @@ function show_modal(data) {
     writeModal(data)
 }
 
+//모달 창 닫기
 function modal_close() {
     const detailModal = document.querySelector(".detail_modal")
     const background = document.querySelector(".modal_background")
@@ -502,6 +505,7 @@ function modal_close() {
 
 }
 
+//모달 안 내용 채우기
 function writeModal(data){
     const modalTitle = document.querySelector(".modal_title");
     const modalSubTitle = document.querySelector(".modal_subtitle");
