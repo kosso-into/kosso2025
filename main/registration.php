@@ -868,12 +868,13 @@ $(document).ready(function() {
          * 생년월일 받는 코드(필수)
         //  */
         if($("#radio1").is(":checked") && $('#nutritionist_number').val() !== "" && $('#datepicker').val() === ""){
- 
+                $('#datepicker').focus()
                 alert("생년월일을 입력해주세요.")
                 return false;
             }
         
         if($("#radio1").is(":checked") && $('#dietitian_number').val() !== "" && $('#datepicker').val() === "" ){ 
+                $('#datepicker').focus()
                 alert("생년월일을 입력해주세요.")
                 return false;
         }

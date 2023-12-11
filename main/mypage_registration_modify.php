@@ -624,11 +624,13 @@ $(document).on("click", "#pc_submit", function() {
         }
 
 		if($("#radio1").is(":checked") && nutritionist_number !== "" && $('#datepicker').val() === ""){
+			$('#datepicker').focus()
 			alert("생년월일을 입력해주세요.")
 			return;
-			}
+		}
 
 		if($("#radio1").is(":checked") && dietitian_number !== "" && $('#datepicker').val() === "" ){ 
+			$('#datepicker').focus()
 			alert("생년월일을 입력해주세요.")
 			return;
 		}

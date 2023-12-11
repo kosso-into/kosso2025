@@ -39,16 +39,13 @@
 	<script src="/main/js/jquery.zoomooz.min.js"></script>
 	<script src="/main/js/locale.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y16N5RM5E5"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKQQVTCGXJ"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
+		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-Y16N5RM5E5');
+		gtag('config', 'G-ZKQQVTCGXJ');
 	</script>
 </head>
 
