@@ -72,7 +72,7 @@
 					<h3 class="title">지방 참석자 여비 보조금 지원</h3>
 				</div>
 				<div class="section_title_wrap2">
-					<h4 class="title"><span style="margin-top:0px">대한비만학회는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
+					<h4 class="title"><span style="margin-top:0px" style="display: inline;">대한비만학회는 <span class="underline"style="display: inline;">서울/인천/경기 제외 <span class="bold"style="display: inline;">지방 소속 초록 채택자</span></span>를 위하여 여비 보조금을 지원합니다.</span></h4>
 				</div>
 			
 			<!--Travel Grants end-->
@@ -92,32 +92,48 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text_center font_b">지원 내용</td>
+								<td class="text_center font_b">지원 자격</td>
 								<td class="text_center">
                                     <div>두 가지 조건 모두 충족 시</div>
                                     <div>1. 대한비만학회 정회원 및 평생회원</div>
                                     <div>2. 의사 면허 소지자</div>
 
                                 </td>
-								<td class="text_center">영양사, 운동사 등</td>
+								<td class="text_center">영양사, 운동사 등 비의사 직군</td>
 							</tr>
 							<tr>
 								<td class="text_center font_b">지원범위</td>
 								<td class="text_center">학회 등록비, 왕복 교통비, 숙박비 등</td>
 								<td class="text_center">150,000원(기타 소득세 제외 후 지급)</td>
 							</tr>
-							<tr>
-								<td class="text_center font_b">신청양식</td>
-								<td class="text_center">지원대상자 대한비만학회 개별 공지</td>
+                            <tr>
+								<td class="text_center font_b">지원방법</td>
+								<td class="text_center">지원 대상자 대한비만학회 개별 공지</td>
 								<td class="text_center">
                                     <div>1. 지원양식 다운로드 및 작성</div>
-                                    <div>2. 이메일을 통한 양식 제출</div>                            
+                                    <div>2. 이메일을 통한 양식 제출</div> 
                                 </td>
 							</tr>
 							<tr>
-								<td class="text_center font_b">지원절차</td>
+								<td class="text_center font_b">지원양식</td>
+								<td class="text_center">-</td>
+								<td class="text_center">
+                                    <a href="/main/download/(KSSO)Application_for_travel_subsidy(Non-MD).docx" class="btn long_btn type2 text_long" target="_blank">
+						                <img src="./img/icons/icon_download_white.svg" alt="">지방 참석자 여비 보조금 지원 양식 다운로드
+					                </a>                          
+                                </td>
+							</tr>
+							<tr>
+								<td class="text_center font_b">지원 절차 및 선발 안내</td>
 								<td class="text_center">KRPIA/KPBMA 공정규약에 의거하여 지원</td>
-								<td class="text_center">초록채택 및 기간 내 신청서 제출 필수</td>
+								<td class="text_center">
+                                    <div>• 학술대회 현장 참석</div>
+                                    <div>• 초록채택 및 기간 내 신청서 제출 필수<br>(증빙자료 포함 제출 필요)</div> 
+                                    <div>• 심사 후, 결과 개별 통지(이메일)</div>
+                                </td>
+							</tr>
+                            <tr>
+								<td colspan="3" class="text_center">관련 문의 및 비의사 지원 신청서 제출은 운영사무국 이메일(<a href="mailto:ksso@into-on.com" class="link font_inherit">ksso@into-on.com</a>)으로 부탁드립니다.</td>
 							</tr>
 						</tbody>
 					</table>
@@ -126,7 +142,8 @@
 			</div>
 			<!--Contact for Abstract end-->
 			<!--step start-->
-			<div>
+            <!--[231212] 학회팀 요청으로 주석-->
+			<!-- <div>
 				<div class="section_title_wrap2">
 					<h4 class="title">신청 방법 빛 선발 안내</h4>
 				</div>
@@ -155,7 +172,7 @@
 					</ul>
 				</div>
                 <p class="mt10">• 관련 문의 및 신청서 제출은 운영사무국 이메일( <a href="mailto:ksso@into-on.com" class="link">ksso@into-on.com</a> )로 부탁드립니다.</p>
-			</div>
+			</div> -->
 			<!--step end-->
 			<!-- download start -->
 			<div>
@@ -163,9 +180,9 @@
                 
                     <!-- [231208] sujeong 주석/다운로드 버튼 클릭할 경우 준비중입니다 alert -->
 					<!-- <a href="" class="btn long_btn type2 text_long" target="_blank"> -->
-					<a class="btn long_btn type2 text_long">
+					<!-- <a class="btn long_btn type2 text_long">
 						<img src="./img/icons/icon_download_white.svg" alt="">지방 참석자 여비 보조금 지원 양식 다운로드
-					</a>
+					</a> -->
 				</div>
 			</div>
 			<!-- download end -->
