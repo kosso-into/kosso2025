@@ -28,7 +28,7 @@ $sql_during =	"SELECT
 $during_yn = sql_fetch($sql_during)['yn'];
 
 $only_sql = " SELECT
-				reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
+				reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score, reg.etc4,
 				reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number, reg.date_of_birth, reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
 				reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
 				(
@@ -376,6 +376,26 @@ switch ($attendance_type) {
 								</td>
 							</tr>
 							<tr>
+								<th>운동사 평점 신청</th>
+								<td>
+									<div class='radio_wrap'>
+										<ul class='flex'>
+											<li>
+												<input type='radio' class='new_radio registration_check' id='radio3'
+													name='etc4' value='1' <?= ($data["etc4"] == 1 ? "checked" : "") ?>>
+												<label for='radio3'><i></i>필요</label>
+											</li>
+											<li>
+												<input type='radio' class='new_radio registration_check' id='radio4'
+													name='etc4' value='0' <?= ($data["etc4"] == 0 ? "checked" : "") ?>>
+												<label for='radio4'><i></i>불필요
+												</label>
+											</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
 								<th>기타</th>
 								<td>
 									<div class="max_normal">
@@ -606,6 +626,7 @@ $(document).on("click", "#pc_submit", function() {
 		const total_reg_fee = <?php echo $data['price']; ?>;
 
 		let review = "";
+		let etc4 = "";
 
 		let others1 = "";
 		let others2 = "";
@@ -637,9 +658,17 @@ $(document).on("click", "#pc_submit", function() {
 
 		/**is_score */
 		if($("#radio1").is(":checked") && !$("#radio2").is(":checked")){
-			 review = "1";
+			 etc4 = "1";
 		}
 		else if(!$("#radio1").is(":checked") && $("#radio2").is(":checked")){
+			 etc4 = "0";
+		}
+
+		/**is_score */
+		if($("#radio3").is(":checked") && !$("#radio4").is(":checked")){
+			review = "1";
+		}
+		else if(!$("#radio3").is(":checked") && $("#radio4").is(":checked")){
 			 review = "0";
 		}
 
@@ -732,6 +761,7 @@ $(document).on("click", "#pc_submit", function() {
 				"reg_fee": reg_fee,
 				"total_reg_fee": total_reg_fee,
 				"review": review,
+				"etc4":etc4,
 				"others1": others1,
 				"others2": others2,
 				"others3": others3,
