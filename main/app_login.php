@@ -73,6 +73,13 @@ $(document).ready(function(){
         }
     }
 
+
+    /**
+     * ViewController.swift 204 줄에서 호출
+     * device -> IOS 로 고정
+     * deviceToken -> token 값
+     */
+    
     getDeviceTokenCallback = (device, deviceToken) => {
         icomes_device = device;
         icomes_token = deviceToken;
@@ -110,7 +117,8 @@ $(document).ready(function(){
                     if (from != "") {
                         href_path += "/"+from
                     }
-
+                    
+                    //쿠키에 멤버 idx와 만료일자 저장
                     var toDate = new Date();
                     toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
                     toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));

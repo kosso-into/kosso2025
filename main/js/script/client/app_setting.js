@@ -40,6 +40,11 @@ $(document).ready(function() {
         }
     }
 
+  
+    /**
+     * ViewController.swift 217 줄에서 호출
+     * res -> 알람 설정값 / true or false 
+     */
     checkNotiPermissionCallback = async (res) => {
         await getIsAlarm()
 
@@ -61,6 +66,10 @@ $(document).ready(function() {
 
     }
 
+    /**
+     * ViewController.swift 183 줄에서 호출
+     * res -> 알람 설정값 / true or false 
+     */
     moveSettingPageDone = (res) => {
         const result = JSON.parse(res);
 
