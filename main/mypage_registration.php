@@ -92,8 +92,8 @@ $score_detail = sql_fetch($score_sql);
     <div class="inner">
         <ul class="tab_green">
             <li><a href="./mypage.php">개인 정보</a></li>
-            <li class="on"><a href="./mypage_registration.php">등록</a></li>
-            <li><a href="./mypage_abstract.php">초록</a></li>
+            <li class="on"><a href="./mypage_registration.php">등록 정보</a></li>
+            <li><a href="./mypage_abstract.php">초록 정보</a></li>
             <?php
             //if($during_yn == 'N') {
             ?>
@@ -619,14 +619,14 @@ $score_detail = sql_fetch($score_sql);
         <div class="pop_contents">
             <button type="button" class="pop_close"><img src="./img/icons/pop_close.png"></button>
             <input type="hidden" name="registration_idx" value="">
-            <!-- <h3 class="pop_title">등록 정보 다시 보기</h3> -->
+            <h3 class="pop_title">등록 정보</h3>
             <div class="pop_title_wrap">
-                <p>등록 정보</p>
+                <!-- <h4>등록 정보</h4> -->
             </div>
             <div class="table_wrap detail_table_common x_scroll mt10">
                 <table class="c_table detail_table fixed_table" style="min-width:400px;">
                     <colgroup>
-                        <col width="190px">
+                        <col width="230px">
                         <col>
                     </colgroup>
                     <tbody>

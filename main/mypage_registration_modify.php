@@ -226,7 +226,7 @@ switch ($attendance_type) {
 			?>-->
 			<form class="table_wrap" name="modify_form">
 				<div class="x_scroll">
-					<table class="table detail_table">
+					<table class="table detail_table abstract_table">
 						<colgroup>
 							<col class="col_th">
 							<col width="*">
@@ -498,7 +498,7 @@ switch ($attendance_type) {
 							<tr>
 								<th>유입경로</th>
 								<td>
-									<div class="max_normal ">
+									<div>
 									<ul class="chk_list info_check_list">
                             <?php
                                 $conference_info_arr = array(

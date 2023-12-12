@@ -1279,7 +1279,9 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.news_list li{width:calc(50% - 5px);margin-right:10px;}
 	.news_list li:nth-of-type(4n), .news_list li:nth-of-type(5n){margin-right:10px;}
 	.news_list li:nth-of-type(2n){margin-right:0;}
-	.board td{font-size:14px;}
+	.board td, .board th{font-size:12px; padding: 0 4px;}
+	.table_vertical td.notice_title{padding: 0 4px;}
+	.table_vertical td.notice_title .alert_new {font-size: 10px; margin-right: 4px;}
 	.board td a{width:100%;max-width:200px;overflow:hidden;text-overflow:ellipsis;/* white-space:pre; */font-size:14px;}
 
 	/*invited speaker*/
@@ -1691,7 +1693,7 @@ input[type='date']::before {
 
 	.abstract_table th, .abstract_table td{
 		white-space: inherit;
-		padding: 5px 0 4px 16px !important
+		padding: 4px !important
 	}
 }
 
@@ -1707,7 +1709,7 @@ input[type='date']::before {
 	.abstract_table tr:first-child th {
 	  border-top: 1px solid #ddd;
 	}
-	.abstract_table td p {
+	.abstract_table td p, .abstract_table td label, .abstract_table td input[type="text"] {
 		font-size: 12px;
 	}
 
@@ -1722,14 +1724,15 @@ input[type='date']::before {
 	}
 	.table--block tr {
 		display:block;
-		margin-bottom:10px;
-		border-top:none;
+		margin-bottom: 1rem;
+		border-top:2px solid #CECECE;
+		border-bottom: none !important;
 	}
 	.table--block th, .table--block td {
 		display:block;
 		position:relative;
-	    padding-top: 0.75rem;
-   		padding-left: 39%;
+	    padding-top: 0.3rem;
+   		padding-left: 25%;
 		border-width:0 0 1px 0;
 		font-size: 12px;
 	}
@@ -1739,7 +1742,7 @@ input[type='date']::before {
 		position:absolute;
 		left:0;
 		top:0;
-		width:30%;
+		width:20%;
 		padding: 7px;
 		background: #f4f4f4;
 		color: #666666;
@@ -1763,13 +1766,14 @@ input[type='date']::before {
 	}
 	.mr-table tr {
 		display:block;
-		margin-bottom:10px;
-		border-top:none;
+		margin-bottom: 1rem;
+		border-top:2px solid #CECECE;
+		border-bottom: none !important;
 	}
 	.mr-table th, .mr-table td {
 		display:block;
 		position:relative;
-		padding-top: 4%;
+		padding-top: 0.3rem;
 		padding-left: 36%;
 		border-width:0 0 1px 0;
 		font-size: 12px;
