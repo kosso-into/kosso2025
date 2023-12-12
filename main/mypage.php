@@ -113,8 +113,8 @@ $score_detail = sql_fetch($score_sql);
 	<div class="inner">
 		<ul class="tab_green">
 			<li class="on"><a href="./mypage.php">개인 정보</a></li>
-			<li><a href="./mypage_registration.php">등록</a></li>
-			<li><a href="./mypage_abstract.php">초록</a></li>
+			<li><a href="./mypage_registration.php">등록 정보</a></li>
+			<li><a href="./mypage_abstract.php">초록 정보</a></li>
 		</ul>
 		<div>
 			<!-- 230824 다운로드 버튼 추가 -->

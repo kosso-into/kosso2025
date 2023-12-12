@@ -1,5 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');*/
 @import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sriracha&display=swap');
 @import url("https://use.typekit.net/uwj4our.css");
 @font-face {
@@ -729,7 +730,7 @@ section.container.sponsor {padding-top: 164px;}
 @media screen and (max-width: 1200px){
 	/*sponsor*/
 	.grade_wrap {padding:12px 15px 17px !important;}
-	.sponsor_grade .grade_title {font-size: 16px; padding: 0.625rem 0;}
+	.sponsor_grade .grade_title {font-size: 16px; padding: 0.625rem;}
 	.grade_wrap li {height: 67px; padding: 8px 12px !important;}
 	.grade_wrap.length_5 li {height: 67px;}
 	.grade_wrap li.small {padding: 16px !important;}
@@ -938,7 +939,7 @@ section.container.sponsor {padding-top: 164px;}
 
 	/*tab_green - 230517 HUBDNC AJY 수정*/
 	/* .tab_green li {margin-right:-28px;} */
-	.tab_green li a { font-size:12px; padding:10px 35px 10px 18px;}
+	.tab_green li a { font-size:12px; padding:10px 50px 10px 20px;}
 	.tab_green li.on a {padding: 12px 12px;}
 	/* .tab_green li:first-child {border-radius:28px 0 0 28px;} */
 	/* .tab_green li:last-child {border-radius:0 28px 28px 0;} */
@@ -1408,7 +1409,7 @@ a.lilly {background-image: url("../img/sponsor/logo25.png");}
 .pop_dim {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(29,29,29,0.5); cursor: pointer;}
 .pop_cont {width: calc(100% - 32px); max-width: 510px; max-height: 90vh; padding: 20px 24px 24px; border: 1px solid #EBEBEB; border-radius: 8px; background-color: #FFFFFF; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 .pop_cont.transparent {background-color:transparent; border:none;}
-.pop_title {width:calc(100% - 30px); position: relative; font-size: 18px; font-weight: bold; text-align: left; padding-right: 20px; margin-bottom: 30px;}
+.pop_title {width:calc(100% - 30px); position: relative; font-size: 18px; font-weight: bold; text-align: left; padding-right: 20px; /*margin-bottom: 30px;*/}
 .pop_title .pop_close {position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; background: center / auto no-repeat url('/bodychannel/img/icon/pop_close.svg')}
 
 /*스템프 전체 완료 시 노출되는 팝업*/
