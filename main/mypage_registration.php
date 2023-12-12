@@ -20,7 +20,7 @@ if ($user_idx <= 0) {
 $nation_list = get_data($_nation_query);
 $select_user_registration_query = "
         SELECT
-            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
+            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score, reg.etc4,
 			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number, reg.date_of_birth, reg.conference_info, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
 			(
@@ -395,11 +395,11 @@ $score_detail = sql_fetch($score_sql);
                                                     <th>참석 구분</th>
                                                     <td><?= $member_type ?? "-" ?></td>
                                                 </tr>
-                                                <?php if ($list["is_korea"] == 1) { ?>
-                                                    <tr>
-                                                        <th>평점신청</th>
-                                                        <td><?= $list["is_score"] == 1 ? "필요" : "불필요" ?></td>
-                                                    </tr>
+                                                <tr>
+                                                    <th>평점신청</th>
+                                                    <td><?= $list["is_score"] == 1 ? "필요" : "불필요" ?></td>
+                                                </tr>
+                                                <?php if ($list["is_score"] == 1) { ?>
                                                     <tr>
                                                         <th>의사 면허번호</th>
                                                         <td><?= $list["licence_number"] ?? "해당없음" ?></td>
@@ -420,7 +420,11 @@ $score_detail = sql_fetch($score_sql);
                                                         <th>생년월일</th>
                                                         <td><?= $list["date_of_birth"] ?? "-" ?></td>
                                                     </tr>
-                                                <?php } ?>
+                                                    <?php } ?>
+                                                    <tr>
+                                                        <th>운동사 평점 신청</th>
+                                                        <td><?= $list["etc4"] == 1 ? "필요" : "불필요" ?></td>
+                                                    </tr>
                                                 <tr>
                                                     <th>기타</th>
                                                     <td><?= $other_html ?></td>

@@ -60,11 +60,18 @@ $registration_list_query =  "
 										) AS attendance_type_text,
 										(
 											CASE rr.is_score
-												WHEN '1' THEN '평점 신청'
-												WHEN '0' THEN '평점 미신청'
+												WHEN '1' THEN '신청'
+												WHEN '0' THEN '미신청'
 												ELSE '-'
 											END
 										) AS is_score_text,
+										(
+											CASE rr.etc4
+												WHEN '1' THEN '신청'
+												WHEN '0' THEN '미신청'
+												ELSE '-'
+											END
+										) AS etc4_text,
 										(
 											CASE
 												WHEN rr.status = '0'
@@ -155,7 +162,7 @@ $html .= '<thead>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">등록 접수</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">참가자 정보</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">평점신청</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">평점신청</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">기타</th>';
 $html .= '</tr>';
@@ -174,11 +181,13 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">참가 유형</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">분야 구분</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">참석 구분</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">평점 신청 여부</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">의사면허번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">전문의번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">영양사자격번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">임상영양사자격번호</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">생년월일</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">운동사 평점 신청 여부</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제상태</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록비</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
@@ -384,11 +393,13 @@ foreach ($registration_list as $rk => $rl) {
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["attendance_type_text"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["occupation_type"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $member_type . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["is_score_text"] . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $licence_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $specialty_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $nutritionist_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $dietitian_number . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' .$date_of_birth. '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["etc4_text"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["payment_status"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $price . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["register_date"] . '</td>';
@@ -478,7 +489,7 @@ $count = count($registration_list);
                         <th>결제방법</th>
                         <th>ID(Email)</th>
                         <th>참석 유형</th>
-                        <th>국적</th>
+                        <!-- <th>국적</th> -->
                         <th>KSSO 회원여부</th>
                         <th>성함</th>
                         <th>소속</th>
@@ -588,7 +599,7 @@ $count = count($registration_list);
                                 href="./member_detail.php?idx=<?= isset($list["member_idx"]) ? $list["member_idx"] : "" ?>"><?= isset($list["email"]) ? $list["email"] : "-" ?></a>
                         </td>
                         <td><?= isset($list["member_type"]) ? $member_type : "-" ?></td>
-                        <td><?= isset($list["nation_ko"]) ? $list["nation_ko"] : "-" ?></td>
+                        <!-- <td><?= isset($list["nation_ko"]) ? $list["nation_ko"] : "-" ?></td> -->
                         <td><?= $list["ksola_member_status"] ?></td>
                         <td><a
                                 href="./registration_detail.php?idx=<?= isset($list["registration_idx"]) ? $list["registration_idx"] : "" ?>"><?= isset($list["name"]) ? $list["name"] : "-" ?></a>
