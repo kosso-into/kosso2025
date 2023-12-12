@@ -20,7 +20,7 @@
 
 /* 220323 HUBDNC LJH2 수정 */
 section.container.overview {padding-bottom: 200px; /*326px;*/}
-.detail_table th, .detail_table td, .overview td {padding: 12px 20px; /*20px 40px;*/ font-size: 16px; /*18px;*/}
+.detail_table th, .detail_table td, .overview td {padding: 12px 20px; /*20px 40px;*/ font-size: 17px; /*18px;*/}
 .detail_table th {background-color: #F4F4F4; font-weight: bold;}
 .detail_table td b {font-weight: 900; display: block; color:#000;}
 .overview .sub_banner:nth-of-type(3) {margin: 158px 0 100px;}
@@ -281,7 +281,7 @@ section.container.organizing {padding-bottom: 190px;}
 .registration .payment_wrap img{width: 100%;}
 /* 220406 HUBDNC LJH2 추가 */
 .registration .title + .details {margin-bottom: 100px;}
-.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {font-size:14px;}
+.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {font-size:17px;}
 .registration .btn_wrap {text-align: center; margin-top: 40px;}
 .rating_guide_pop .btn {font-size: 20px; padding: 0 30px; border-radius: 0;}
 .details_bg {border-top: 2px solid #707070; background-color: #F4F4F4; padding: 30px;}
@@ -1656,6 +1656,22 @@ input[type='date']::before {
 	min-width: 290px;
 }
 
+.bg_table th {
+	 background-color: #F4F4F4;
+}
+
+.bg_yellow_table th {
+ 	background-color: #FFFF99 !important;
+}
+
+.no_bold td, .no_bold td button{
+	font-weight: 500 !important;
+}
+
+.font_big_ul > li{
+	font-weight: 700;
+    font-size: 22px;
+}
 
 @media screen and (max-width:486px) {
 	#othersList_table th{
@@ -1665,7 +1681,7 @@ input[type='date']::before {
 
 	.regi_table th, .regi_table td {
 		white-space: inherit;
-		padding: 4px 0 !important;
+		padding: 8px 4px !important;
 	}
 
 	.modal_sub_header > div:last-child{
@@ -1680,7 +1696,9 @@ input[type='date']::before {
 }
 
 @media only screen and (max-width:486px) {
-
+	.font_big_ul > li{
+		font-size: 16px;
+	}
 	.abstract_table th,  .abstract_table td {
 	  width: 100%;
 	  display: block;
@@ -1691,5 +1709,105 @@ input[type='date']::before {
 	}
 	.abstract_table td p {
 		font-size: 12px;
+	}
+
+	.responsive_table th, .responsive_table td{
+		white-space: inherit;
+		padding: 0.75em;
+	}
+
+	/** my page - abstract */
+	.table--block thead {
+		display:none;
+	}
+	.table--block tr {
+		display:block;
+		margin-bottom:10px;
+		border-top:none;
+	}
+	.table--block th, .table--block td {
+		display:block;
+		position:relative;
+	    padding-top: 0.75rem;
+   		padding-left: 39%;
+		border-width:0 0 1px 0;
+		font-size: 12px;
+	}
+
+	.table--block td:before {
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:30%;
+		padding: 7px;
+		background: #f4f4f4;
+		color: #666666;
+		font-size: 12px;
+	}
+
+	.table--block td:nth-child(6) > button{
+		min-width: 50px;
+		width: 55px;
+	}
+	.table--block td:nth-child(1):before {content:'No';}
+	.table--block td:nth-child(2):before {content:'접수번호';}
+	.table--block td:nth-child(3):before {content:'제목';}
+	.table--block td:nth-child(4):before {content:'접수상태';}
+	.table--block td:nth-child(5):before {content:'접수일';}
+	.table--block td:nth-child(6):before {content:'수정/삭제';}
+
+	/** my page - registration **/
+	.mr-table thead {
+		display:none;
+	}
+	.mr-table tr {
+		display:block;
+		margin-bottom:10px;
+		border-top:none;
+	}
+	.mr-table th, .mr-table td {
+		display:block;
+		position:relative;
+		padding-top: 4%;
+		padding-left: 36%;
+		border-width:0 0 1px 0;
+		font-size: 12px;
+	}
+
+	.mr-table td:before {
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:30%;
+		padding: 7px;
+		background: #f4f4f4;
+		color: #666666;
+		font-size: 12px;
+	}
+
+	.mr-table td:nth-child(6) > button{
+		min-width: 50px;
+		width: 72px;
+	}
+
+	.mr-table td:nth-child(6) > a{
+		min-width: 50px;
+		width: 75px;
+	}
+	.mr-table td:nth-child(1):before {content:'등록번호';}
+	.mr-table td:nth-child(2):before {content:'참석구분';}
+	.mr-table td:nth-child(3):before {content:'등록비';}
+	.mr-table td:nth-child(4):before {content:'등록방법';}
+	.mr-table td:nth-child(5):before {content:'등록상태';}
+	.mr-table td:nth-child(6):before {content:'관리';}
+
+	.title_small{
+		letter-spacing: -1.75px;
+	}
+
+	.indent_ul{
+		padding: 0;
 	}
 	}

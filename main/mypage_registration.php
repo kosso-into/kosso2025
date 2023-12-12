@@ -125,7 +125,7 @@ $score_detail = sql_fetch($score_sql);
         }
         ?>
         <div class="table_wrap x_scroll">
-            <table class="table_vertical registration_table">
+            <table class="table_vertical registration_table mr-table no_bold">
                 <thead>
                     <tr class="centerT">
                         <th>등록번호</th>
