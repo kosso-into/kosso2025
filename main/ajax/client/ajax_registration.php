@@ -55,7 +55,7 @@ if ($_POST["flag"] == "registration") {
 	$specialty_number    = $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
 	$nutritionist_number = $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
 	$dietitian_number    = $data["dietitian_number"] != "" ? $data["dietitian_number"] : "";                        // 임상영양사자격번호
-
+	$etc4 =  isset($data["etc4"]) ? $data["etc4"] : "";											// [231212]운동사 평점신청
 	// 0509
 	$user_idx	 = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : "";
 
@@ -334,6 +334,13 @@ if ($_POST["flag"] == "registration") {
 	} else {
 		$add_set .= ", academy_number = NULL ";
 	}
+	//[231212] 운동사 평점 신청
+	if ($etc4 !== "") {
+		$add_set .= ", etc4 = {$etc4} ";
+	} else {
+		$add_set .= ", etc4 = NULL ";
+	}
+
 
 	if ($register_path !== "") {
 		$add_set .= ", register_path = '{$register_path}' ";

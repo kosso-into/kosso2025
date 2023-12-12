@@ -495,12 +495,12 @@ function kor_api() {
     var privacy = $("#privacy").is(":checked");
 
     if(!kor_id) {
-        alert("Invalid id");
+        alert("ID를 확인해주세요.");
         //$(".red_api").eq(0).html("format_id");
         return;
     }
     if(!kor_pw) {
-        alert("Invalid password");
+        alert("비밀번호를 확인해주세요.");
         //$(".red_api").eq(0).html("format_password");
         return;
     }

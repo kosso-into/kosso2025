@@ -433,6 +433,29 @@ if ($during_yn !== "Y") {
                                         />
                     </li>
                     <?php } ?>
+
+                    <li id='chk_org'>
+                        <p class='label'>운동사 평점신청 <span class='red_txt'>*</span></p>
+                        <div>
+                            <div class='radio_wrap'>
+                                <ul class='flex'>
+                                    <li>
+                                        <input type='radio' class='new_radio registration_check' id='radio3'
+                                            name='etc4' value='1' <?= ($prev["etc4"] == 1 ? "checked" : "") ?>>
+                                        <label for='radio3'><i></i>필요</label>
+                                    </li>
+                                    <li>
+                                        <input type='radio' class='new_radio registration_check' id='radio4'
+                                            name='etc4' value='0' <?= ($prev["etc4"] == 0 ? "checked" : "") ?>>
+                                        <label for='radio4'><i></i>불필요
+                                            <!-- <span class='is_scroe_txt red_txt'>(Overseas participants, please check '미신청').</span> -->
+                                        </label>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li>
                         <p class="label type2">기타<span class="red_txt">*</span></p>
                         <p class="mb10">다음 행사에 대한 참석 여부를 확인해 주세요. </p>

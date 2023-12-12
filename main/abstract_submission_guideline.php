@@ -204,7 +204,7 @@ $info = sql_fetch($sql_info);
                     </h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-                    <table class="c_table detail_table">
+                    <table class="c_table detail_table abstract_table">
                         <colgroup>
                             <col class="submission_col type2">
                             <col>
