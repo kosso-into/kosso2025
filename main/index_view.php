@@ -184,7 +184,7 @@ body {
 </section>
 
 <!-- Plenary Speakers -->
-
+<?php /* hyojun 231211 닫아달라는 요청
 <div class="speakers_wrap">
     <div class="container">
         <!-- <h3 class="title">Plenary &amp; Keynote Speakers</h3> -->
@@ -256,7 +256,7 @@ body {
         </div>
     </div>
 </div> 
-
+*/?>
 <!-- Key dates & News,Notice -->
 
 <section>
