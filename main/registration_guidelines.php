@@ -100,7 +100,7 @@ $price = get_data($sql_price);
             <div class="details icomes_air">
                 <div class="table_wrap x_scroll">
                     <!-- <img class="coming" src="./img/coming.png" /> -->
-                    <table class="c_table2 detail_table center regi_table">
+                    <table class="c_table2 detail_table center regi_table table--min table--horizontal">
                         <thead>
                             <tr>
                                 <th rowspan=" 2">구분</th>

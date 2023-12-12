@@ -1660,15 +1660,36 @@ input[type='date']::before {
 @media screen and (max-width:486px) {
 	#othersList_table th{
 		font-size: 12px;
-   		padding: 4px;
+   		padding: 4px 0;
 	}	
 
 	.regi_table th, .regi_table td {
 		white-space: inherit;
+		padding: 4px 0 !important;
 	}
 
 	.modal_sub_header > div:last-child{
 		display: flex;
 		flex-direction: column;
 	}
+
+	.abstract_table th, .abstract_table td{
+		white-space: inherit;
+		padding: 5px 0 4px 16px !important
+	}
 }
+
+@media only screen and (max-width:486px) {
+
+	.abstract_table th,  .abstract_table td {
+	  width: 100%;
+	  display: block;
+	  border-top: none;
+	}
+	.abstract_table tr:first-child th {
+	  border-top: 1px solid #ddd;
+	}
+	.abstract_table td p {
+		font-size: 12px;
+	}
+	}
