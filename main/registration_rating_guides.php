@@ -56,7 +56,12 @@
 		<h3 class="title">제공 평점 <!--<span class="red_txt font_inherit">(예정)</span>--></h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
-				<table class="c_table2 detail_table center">
+				<table class="c_table2 detail_table center responsive_table">
+					<colgroup>
+						<col width = "40%">
+						<col width = "30%">
+						<col width = "30%">
+					</colgroup>
 					<thead>
 						<tr>
 							<th>구분</th>
@@ -78,7 +83,7 @@
 							<td>최대 2평점<span class="red_txt bold">(예정)</span> <br/><span class="font_small">* 오전,오후 각 1점 산정</span></td>
 						</tr>
 						<tr>
-							<td>대한비만학회(비만전문인정의) *별도 신청 없음</td>
+							<td>대한비만학회(비만전문인정의) <br>*별도 신청 없음</td>
 							<!-- <td>대한비만학회(비만전문인정의) <br/><span class="font_small">*별도 신청 없음</span></td> -->
 							<td>최대 1평점<span class="red_txt bold">(예정)</span></td>
 							<td>최대 6평점<span class="red_txt bold">(예정)</span></td>
@@ -102,7 +107,7 @@
 		<!-- 2. 제공 평점 end -->
 
 		<!-- 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 start -->
-		<h3 class="title">이수 시간에 따른 부분 평점 및 주의사항 안내</h3>
+		<h3 class="title title_small">이수 시간에 따른 부분 평점 및 주의사항 안내</h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
 				<table class="c_table2 detail_table center">

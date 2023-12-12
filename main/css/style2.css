@@ -26,7 +26,7 @@ header .btn{padding:0 12px;height:38px;line-height:36px;font-size:17px;margin-to
 /*header .top{padding:48px 0 30px;}*/
 header .depth01{/*display:flex;flex-direction:row;justify-content:space-between;border-top:1px solid #F7F7F7;*/}
 header .depth01>li{width: 16.6%;}
-header .depth01>li>a{font-weight:bold;/*padding:30px 0;*/line-height:38px;width:100%;display:block;text-align:center; position:relative; z-index:10;}
+header .depth01>li>a{font-weight:bold;/*padding:30px 0;*/line-height:38px;width:100%;display:block;text-align:center; position:relative; z-index:10;font-size: 18px;}
 /*header .depth01>li:hover>a span{color:#ADF002 !important;}*/
 header .depth01>li>a span{font-size:20px;font-weight:600;color:#fff;}
 /*header .depth01 li a img{margin-left:10px;}*/
@@ -1171,7 +1171,7 @@ br.br_530_only {display: none;}
 	.eng .pre_title_big span {font-size: 5.8vw;}
 	.submission_col {width:180px;}
 	.submission_col.type2 {width:200px;}
-
+	.submission_col.type3 {width:230px;}
 	/*invited_speaker2*/
 	.invited_speaker .speaker_list .top_wrap {background: linear-gradient(-45deg, #F8F8F8 40%, #efefef 40%);}
 

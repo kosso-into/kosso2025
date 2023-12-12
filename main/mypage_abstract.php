@@ -139,7 +139,7 @@ foreach ($nation_list as $obj) {
 		</ul>
 		<div class="section section1">
 			<div class="table_wrap x_scroll">
-				<table class="table_vertical registration_table">
+				<table class="table_vertical registration_table table--block no_bold">
 					<thead>
 						<tr class="centerT">
 							<th>No.</th>
@@ -472,10 +472,10 @@ foreach ($nation_list as $obj) {
 
 		<!-- Abstract Submission Status -->
 		<div class="pop_title_wrap">
-			<p>초록 정보</p>
+		<h4 id="author_information">초록 정보</h4>
 		</div>
 		<div class="table_wrap detail_table_common x_scroll mt10">
-			<table class="c_table detail_table fixed_table" style="min-width:400px;">
+			<table class="c_table bg_yellow_table fixed_table" style="min-width:400px;">
 				<colgroup>
 					<col>
 					<col>
@@ -513,19 +513,19 @@ foreach ($nation_list as $obj) {
 		<!-- Presenting Author -->
 		<div class="pop_title_wrap">
 			<h4 id="author_information">저자 정보</h4>
-			<p id="presenting_author_title">발표 저자</p>
+			<p id="presenting_author_title"  style="font-weight: 500;">- 발표 저자</p>
 		</div>
 		<div class="table_wrap x_scroll" id="presenting_author"></div>
 
 		<!-- Corresponding Author -->
 		<div class="pop_title_wrap">
-			<p id="corresponding_author_title">교신 저자</p>
+			<p id="corresponding_author_title" style="font-weight: 500;">- 교신 저자</p>
 		</div>
 		<div class="table_wrap x_scroll" id="corresponding_author"></div>
 
 		<!-- 공동저자 -->
 		<div class="pop_title_wrap">
-			<p id="co_author_title">공동 저자</p>
+			<p id="co_author_title"  style="font-weight: 500;">- 공동 저자</p>
 		</div>
 		<div class="table_wrap x_scroll" id="co_author"></div>
 
@@ -543,7 +543,7 @@ foreach ($nation_list as $obj) {
 		<h3 class="pop_title">Participant Information</h3>
 		<div class="table_wrap form_table">
 			<form name="registration_form">
-				<table class="c_table2 detail_table">
+				<table class="c_table2 bg_table">
 					<tbody>
 						<tr>
 							<th><?= $locale("id") ?> *</th>
@@ -789,7 +789,7 @@ foreach ($nation_list as $obj) {
 		var phone = data.phone
 		// var result_phone = phone.slice(0,3) + '-' + phone.slice(3,7)  + '-' + phone.slice(7) 
 
-		return `<table class="c_table detail_table fixed_table mt10 detail_table_common" style="min-width:400px;">
+		return `<table class="c_table bg_table fixed_table mt10 detail_table_common" style="min-width:400px;">
 					<colgroup>
 						<col>
 						<col>

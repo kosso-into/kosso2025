@@ -100,7 +100,7 @@ $price = get_data($sql_price);
             <div class="details icomes_air">
                 <div class="table_wrap x_scroll">
                     <!-- <img class="coming" src="./img/coming.png" /> -->
-                    <table class="c_table2 detail_table center regi_table table--min table--horizontal">
+                    <table class="c_table2 detail_table center regi_table">
                         <thead>
                             <tr>
                                 <th rowspan=" 2">구분</th>
@@ -199,13 +199,13 @@ $price = get_data($sql_price);
                 <div class="details payment_detail mt10">
                     <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                     <div>
-                        <ul class="indent_ul">
-                            <li style="font-weight: 700;">• 신용카드<br></li>
+                        <ul class="indent_ul font_big_ul">
+                            <li>• 신용카드<br></li>
                             <ul class="indent_ul">
                                 <li>• 사전등록 시 카드결제가 가능합니다.</li>
                                 <li><br></li>
                             </ul>
-                            <li style="font-weight: 700;">• 계좌이체</li>
+                            <li>• 계좌이체</li>
                             <ul class="indent_ul">
                                 <li>• 아래의 계좌로 입금하여 주십시오.</li>
                                 <li>• 입금자와 등록자의 성함이 다를 경우, 등록 확인이 불가하니 반드시 등록자의 성함으로 입금 부탁드립니다.</li>
@@ -271,7 +271,7 @@ $price = get_data($sql_price);
                 <div class="table_wrap detail_table_common x_scroll">
                     <table class="c_table detail_table regi_table">
                         <colgroup>
-                            <col class="submission_col type2">
+                            <col class="submission_col type3">
                             <col>
                         </colgroup>
                         <tbody>

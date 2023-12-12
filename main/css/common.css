@@ -57,7 +57,7 @@ html {-webkit-touch-callout:none; -webkit-user-select:text; -webkit-tap-highligh
 /*reset end*/
 
 /*font_size & color & family*/
-*{font-family: 'Nanum Gothic', sans-serif; font-size:16px; box-sizing:border-box; color:#585858; /*IOS 폰트사이즈*/-webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */ -ms-text-size-adjust : none;  /* IE */ -moz-text-size-adjust : none;  /* 파이어폭스 */ -o-text-size-adjust : none;  /* 오페라 구버전 */}
+*{font-family: 'Nanum Gothic', sans-serif; font-size:18px; box-sizing:border-box; color:#585858; /*IOS 폰트사이즈*/-webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */ -ms-text-size-adjust : none;  /* IE */ -moz-text-size-adjust : none;  /* 파이어폭스 */ -o-text-size-adjust : none;  /* 오페라 구버전 */}
 .point_txt{color:#000066 !important;} /*초록색*/
 .point2_txt{color:#F6A400 !important;} /*노랑색*/
 .point3_txt{color:#3366CC !important;} /*파란색*/
