@@ -71,14 +71,14 @@
 				<div class="section_title_wrap2">
 					<h3 class="title">지방 참석자 여비 보조금 지원</h3>
 				</div>
-				<div class="section_title_wrap2">
-					<h4 class="title"><span style="margin-top:0px" style="display: inline;">대한비만학회는 <span class="underline"style="display: inline;">서울/인천/경기 제외 <span class="bold"style="display: inline;">지방 소속 초록 채택자</span></span>를 위하여 여비 보조금을 지원합니다.</span></h4>
+				<div class="section_title_wrap2 award_title_wrap">
+					<h4 class="title"><span style="margin-top:0px" style="display: inline;">대한비만학회는 <span class="underline"style="display: inline;">서울/인천/경기 제외</span> <span class="bold"style="display: inline;">지방 소속 초록 채택자</span>를 위하여 여비 보조금을 지원합니다.</span></h4>
 				</div>
 			
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
                   <div class="table_wrap detail_table_common x_scroll">
-					<table class="c_table detail_table">
+					<table class="c_table detail_table award_table">
 						<colgroup>
 							<col class="submission_col">
 							<col width="40%">
