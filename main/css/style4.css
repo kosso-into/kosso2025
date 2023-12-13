@@ -1718,6 +1718,10 @@ input[type='date']::before {
 		padding: 0.75em;
 	}
 
+	.responsive_table th, .responsive_table td span{
+		font-size: 12px;
+	}
+
 	/** my page - abstract */
 	.table--block thead {
 		display:none;
