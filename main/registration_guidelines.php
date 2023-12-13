@@ -256,7 +256,7 @@ $price = get_data($sql_price);
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">환불 및 취소 규정</h3>
             <a href="./download/(KSSO)Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long"
-                target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">등록 취소 및 환불 신청서</a>
+                target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">등록 취소 및 환불 신청서</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
