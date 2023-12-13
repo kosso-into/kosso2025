@@ -119,7 +119,7 @@
 								<td class="text_center font_b">지원양식</td>
 								<td class="text_center">-</td>
 								<td class="text_center">
-                                    <a href="/main/download/(KSSO)Application_for_travel_subsidy(Non-MD).docx" class="btn long_btn type2 text_long" target="_blank" style="font-size:14px;">
+                                    <a href="/main/download/(KSSO)Application_for_travel_subsidy(Non-MD).docx" class="btn long_btn type2 text_long" target="_blank" style="font-size:14px;" download>
 						                <img src="./img/icons/icon_download_white.svg" alt="" style="width: 14px;">지방 참석자 여비 보조금 지원 양식 다운로드
 					                </a>                          
                                 </td>
