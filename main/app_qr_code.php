@@ -20,6 +20,17 @@
                     AND is_deleted = 'N'
                     ";
     $member_data = sql_fetch($sql_info);
+
+    //[231213]sujeong 추가
+    if($member_data["r_idx"]< 10){
+        $register_no = !empty($member_data["r_idx"]) ? "KSSO2024-000" .$member_data["r_idx"] : "-";
+    }else if($member_data["r_idx"] >= 10 && $member_data["r_idx"] < 100){
+        $register_no = !empty($member_data["r_idx"]) ? "KSSO2024-00" . $member_data["r_idx"] : "-";
+    }else if($member_data["r_idx"] >= 100 && $member_data["r_idx"] < 1000){
+        $register_no = !empty($member_data["r_idx"]) ? "KSSO2024-0" . $member_data["r_idx"] : "-";
+    }else if($member_data["r_idx"] >= 1000 ){
+        $register_no = !empty($member_data["ir_idxdx"]) ? "KSSO2024-" . $member_data["r_idx"] : "-";
+    }
 ?>
 
 <!-- HUBDNCLHJ : app qr_code 페이지 -->
@@ -34,7 +45,8 @@
 		<div class="contents_box">
 			<div class="contents_wrap">
                 <p class="app_qr_num">No. <?=$member_data['r_idx']?></p>
-                <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div>
+                <!-- <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div> -->
+                <div class="app_qr_area" id="qrcode" data-encrypt="<?=$register_no?>"></div>
                 <div class="app_txt_area">
                     <strong class="app_qr_name"><?=$member_data['last_name'].$member_data['first_name']?></strong>
                     <p class="app_qr_affiliation"><?=$member_data['affiliation']?> </p>
