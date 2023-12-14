@@ -747,12 +747,23 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 /** sujeong 수정 **/
 .program_detail .tab_li{display: flex;align-items: center;justify-content: center;flex-wrap: wrap;}
-.program_detail .tab_li li {padding: 6px 16px 8px; margin-right:4px; margin-bottom:8px; height: 50px;display: flex;align-items: center;justify-content: center;}
+.program_detail .tab_li li {padding: 6px 16px 8px; margin-right:4px; margin-bottom:8px; height: 50px;display: flex;align-items: center;justify-content: center; width: 220px;}
 .program_detail .tab_li li a {font-size:16px;}
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:1200px) {
+	.program_detail .tab_li li {width: 17%;}
+}
+
+@media screen and (max-width:800px) {
 	.program_detail .tab_li li a {font-size:12px;}
+}
+
+@media screen and (max-width:440px) {
 	.program_detail .tab_li li {width: 146px;}
+}
+
+@media screen and (max-width:400px) {
+	.program_detail .tab_li li {width: 130px;}
 }
 
 /**sujeong 추가*/

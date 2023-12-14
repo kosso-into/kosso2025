@@ -778,7 +778,7 @@ $score_detail = sql_fetch($score_sql);
             </div>
             <div class="btn_wrap">
                 <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">환불요청</button>
-                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.open('/main/mypage_registration_modify.php')">정보수정</button>
+                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.location.href ='/main/mypage_registration_modify.php'">정보수정</button>
                 <button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
             </div>
         </div>

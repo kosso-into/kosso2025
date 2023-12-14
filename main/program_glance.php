@@ -132,21 +132,22 @@ section.app_version .inner {
                                     Pre-congress<br />Symposium 1<p>
                                         <!-- 적절한 비만관리를 위한 정책적 논의 -->
                                     </p>
+                                    <input type="hidden" name="category" value="pre_congress_symposium">
                                 </td>
-                                <td></td>
-								<td></td>
-                                <td></td>
-								<td class="no_right_border"></td>
+                                <td class="light_gray_bg"></td>
+								<td class="light_gray_bg"></td>
+                                <td class="light_gray_bg"></td>
+								<td class="no_right_border light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">16:20-16:30</div>
                                 </td>
                                 <td class="light_gray_bg">Break</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-								<td class="no_right_border"></td>
+                                <td class="light_gray_bg"></td>
+                                <td class="light_gray_bg"></td>
+                                <td class="light_gray_bg"></td>
+								<td class="no_right_border light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -157,19 +158,20 @@ section.app_version .inner {
                                         <!-- Obesity in Asia-Pacific – Is It Different from Restv of the World? -->
                                     </p>
                                         <input type="hidden" name="e" value="room2">
+                                        <input type="hidden" name="category" value="pre_congress_symposium">
                                     </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-								<td class="no_right_border"></td>
+                                    <td class="light_gray_bg"></td>
+                                    <td class="light_gray_bg"></td>
+                                    <td class="light_gray_bg"></td>
+								<td class="no_right_border light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">18:05-18:30</div>
                                 </td>
                                 <td colspan="3" class="light_gray_bg">Break</td>
-                                <td></td>
-                                <td class="no_right_border"></td>
+                                <td class="light_gray_bg"></td>
+                                <td class="no_right_border light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -178,19 +180,20 @@ section.app_version .inner {
                                 <td class="sky_bg pointer modal" name="satellite_symposium_1" data-id="3">
                                     Satellite<br />Symposium 1
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="satellite_symposium">
                                 </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-								<td class="no_right_border"></td>
+                                <td class="light_gray_bg"></td>
+                                <td class="light_gray_bg"></td>
+                                <td class="light_gray_bg"></td>
+								<td class="no_right_border light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">19:00-19:10</div>
                                 </td>
                                 <td colspan="3" class="light_gray_bg">Break</td>
-                                <td></td>
-                                <td class="no_right_border"></td>
+                                <td class="light_gray_bg"></td>
+                                <td class="no_right_border light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -199,11 +202,12 @@ section.app_version .inner {
                                 <td class="sky_bg pointer modal" name="satellite_symposium_2" data-id="4">
                                     Satellite<br />Symposium 2
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="satellite_symposium">
                                 </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-								<td class="no_right_border"></td>
+                                <td class="light_gray_bg"></td> 
+                                <td class="light_gray_bg"></td> 
+                                <td class="light_gray_bg"></td>
+								<td class="no_right_border light_gray_bg"></td>
                             </tr>
                            
                         </tbody>
@@ -228,16 +232,19 @@ section.app_version .inner {
                                 <td class="sky_bg pointer modal" name="breakfast_symposium_1" data-id="5">
                                     Breakfast<br />Symposium 1
                                     <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="breakfast_symposium">
                                 </td>
                                 <td class="sky_bg pointer modal" name="breakfast_symposium_2" data-id="6">
                                     Breakfast<br />Symposium 2
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="breakfast_symposium">
                                 </td>
-                                <td class="sky_bg pointer modal" name="breakfast_symposium_2" data-id="7">
+                                <td class="sky_bg pointer modal" name="breakfast_symposium_3" data-id="7">
                                     Breakfast<br />Symposium 3
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="breakfast_symposium">
                                 </td>
-								<td></td>
+								<td class="light_gray_bg"></td>
                                 <td rowspan="14" class="no_right_border light_orange_bg" >POSTER EXHIBITION</td>
                             </tr>
                             <tr>
@@ -245,7 +252,7 @@ section.app_version .inner {
                                     <div class="colons_div">08:25-08:30</div>
                                 </td>
                                 <td colspan="3" class="yellow_bg pointer">Opening</td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -254,147 +261,165 @@ section.app_version .inner {
                                 <td class="green_bg pointer modal" name="symposium_1" data-id="6">
                                     Symposium 1(임상) <p>Treatment of obesity</p>
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_2" data-id="7">
                                     Symposium 2(기초) <p>Integrative physiology and molecular mechanisms of obesity</p>
                                     <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_3" data-id="8">
                                     Symposium 3(영양) <p>Postprandial glycemic response and Continuous Glucose Monitoring</p>
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="light_orange_bg">Oral presentation 1</td>
+                                <td class="light_orange_bg" name="oral_presentation_2">Oral presentation 1</td>
+                                <input type="hidden" name="category" value="oral_presentation">
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">10:00-10:10</div>
                                 </td>
                                 <td colspan="3" class="light_gray_bg">Break</td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
 	                        </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">10:10-11:40</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_5" data-id="9">
+                                <td class="green_bg pointer modal" name="symposium_4" data-id="9">
                                     Symposium 4(임상) <p>Environmental, genetics and obesity</p>
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_6" data-id="10">
+                                <td class="green_bg pointer modal" name="symposium_5" data-id="10">
                                     Symposium 5(기초) <p>Gut microbiome</p>
                                     <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_7" data-id="11">
+                                <td class="green_bg pointer modal" name="symposium_6" data-id="11">
                                     Symposium 6(영양) <p></p>
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">11:40-12:40</div>
                                 </td>
-                                <td colspan="3" class="sky_bg pointer modal" name="keynote_lecture_1" data-id="12">
+                                <td colspan="3" class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="12">
                                     Luncheon Lecture 1, 2
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="luncheon_symposium">
                                 </td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">12:40-13:20</div>
                                 </td>
-                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture_2" data-id="13">
+                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture_1" data-id="13">
                                     Plenary Lecture
                                     <!-- <p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable
                                         Isotope Tracers: More than 50 Years of Experience</p>
                                     <p>Robert R. Wolfe <br />(University of Arkansas for Medical Sciences, USA)</p> -->
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="plenary_lecture">
                                 </td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
                                 <td colspan="3" class="light_orange_bg pointer modal" data-id="14">문석학술상</td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">13:50-14:00</div>
                                 </td>
                                 <td colspan="3" class="light_gray_bg">Break</td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">14:00-15:30</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_5" data-id="15">
+                                <td class="green_bg pointer modal" name="symposium_7" data-id="15">
                                     Symposium 7(임상) <p>New Antiobesity Drug</p>
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_6" data-id="16">
+                                <td class="green_bg pointer modal" name="symposium_8" data-id="16">
                                     Symposium 8(비만대사수술) <p>Metabolic Surgery</p>
                                     <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_7" data-id="17">
+                                <td class="green_bg pointer modal" name="symposium_9" data-id="17">
                                     Symposium 9(소아) <p>Obesity treatment in adolescent</p>
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="light_orange_bg">Oral presentation 2</td>
+                                <td class="light_orange_bg" name="oral_presentation_2">Oral presentation 2</td>
+                                    <input type="hidden" name="category" value="oral_presentation">
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">15:30-15:40</div>
                                 </td>
                                 <td colspan="3" class="light_gray_bg">Break</td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">15:40-16:10</div>
                                 </td>
-                                <td class="pink_bg pointer modal" name="luncheon_symposium_1" data-id="18">
+                                <td class="pink_bg pointer modal" name="keynote_lecture_1" data-id="18">
                                     Keynote lecture 1 
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="keynote_lecture">
                                 </td>
-                                <td class="pink_bg pointer modal" name="luncheon_symposium_2" data-id="19">
+                                <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="19">
                                     Keynote lecture 2
                                     <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="keynote_lecture">
                                 </td>
                                 <td class="light_orange_bg pointer modal" name="luncheon_symposium_3" data-id="20">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
                                 </td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                            
                             <tr>
                                 <td>
                                     <div class="colons_div">16:10-17:40</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_9" data-id="21">
+                                <td class="green_bg pointer modal" name="symposium_10" data-id="21">
                                     Symposium 10(임상) <p>Cormobidity of obesity</p>
                                     <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_10" data-id="22">
+                                <td class="green_bg pointer modal" name="symposium_11" data-id="22">
                                     Symposium 11(빅데이터) <p>Big Data in Obesity Research<br>+Digital Therapeutics in Obesity Management</p>
                                     <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_11" data-id="23">
+                                <td class="green_bg pointer modal" name="symposium_12" data-id="23">
                                     Symposium 12(운동, 행동) <p>Exercise, Obesity, and Metabolic Dysfunction</p>
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div">17:40-18:00</div>
                                 </td>
                                 <td colspan="3" class="light_gray_bg">Award & Closing</td>
-                                <td></td>
+                                <td class="light_gray_bg"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -453,9 +478,10 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
 <input type="hidden" name="session_app_type" value="<?= $session_app_type ?>">
 <script>
     /** program_modal */
-    const modalTd = document.querySelectorAll(".modal")
-
-    modalTd.forEach((td)=>{
+    
+    function clickProgramTd (){
+        const modalTd = document.querySelectorAll(".modal")
+        modalTd.forEach((td)=>{
         td.addEventListener("click", (e)=>{
             let id = e.target.dataset.id;
 
@@ -465,7 +491,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
             }
     
     $.ajax({
-        url: PATH + "ajax/client/ajax_program_modal.php",
+        url: PATH + "ajax/client/ajax_program_detail.php",
         type: "POST",
         data: {
             flag: "modal",
@@ -483,6 +509,8 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
     });
         })
     })
+    }
+   
 
 //모달 보여주기
 function show_modal(data) {
@@ -606,11 +634,12 @@ $(document).ready(function() {
     /* td 클릭 시 페이지 이동 */
     $("td.pointer").click(function() {
         var e = $(this).find("input[name=e]").val();
+        var category = $(this).find("input[name=category]").val();
         var day = $(this).parents("tbody[name=day]").attr("class");
         var target = $(this)
         var this_name = $(this).attr("name");
 
-        //table_location(event, target, e, day, this_name);
+        table_location(event, target, e, day, category, this_name);
     });
 
     /* tab 클릭 시 랜더링 변경 */
@@ -735,14 +764,16 @@ $(document).ready(function() {
 
 
 
-function table_location(event, _this, e, day, this_name) {
+function table_location(event, _this, e, day, category, this_name) {
     var session_app_type = $("[name=session_app_type]").val();
 
-    // if (session_app_type != "" && session_app_type == 'N') {
-    //     window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
-    // } else {
-    //     window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
-    // }
+    if (session_app_type != "" && session_app_type == 'N') {
+        clickProgramTd ();
+         //window.location.href = "./program_detail_sujeong.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
+        //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+    } else {
+        window.location.href = "./app_program_detail.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
+    }
 }
 </script>
 
