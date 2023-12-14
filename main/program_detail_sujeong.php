@@ -26,16 +26,12 @@ echo '<script type="text/javascript">
 					  if ("' . $day . '" === "") {
 						$(".tab_green li:first-child").addClass("on");
 					  }else{
-					  $(".tab_green li:nth-child(' . $d_num . ')").addClass("on");
-					  $(".tab_green + .tab_wrap > .tab_cont").removeClass("on");
-					  $(".tab_green + .tab_wrap > .tab_cont:nth-child(' . $d_num . ')").addClass("on");
-                      }
-                      //작은탭
-                      if("' . $day . '" !== ""){
-                          $(".tab_green + .tab_wrap .tab_cont .tab_li li").removeClass("on");
-                          $(".tab_green + .tab_wrap .tab_cont .tab_li li:nth-child(' . $e_num . ')").addClass("on");
-                          $(".tab_green + .tab_wrap .tab_cont .tab_cont").removeClass("on");
-                          $(".tab_green + .tab_wrap .tab_cont .tab_cont:nth-child(' . $e_num . ')").addClass("on");
+                         $(".tab_li li").removeClass("on")
+                         $("#'.$category.'").addClass("on")
+                         var index = $("#'.$category.'").index();
+
+					     $(".tab_wrap > .tab_cont").removeClass("on");
+					     $(".tab_wrap > .tab_cont").eq(index).addClass("on");
                       }
 
 					  window.onkeydown = function() {
@@ -68,16 +64,16 @@ echo '<script type="text/javascript">
     <div class="inner">
         <!-- <ul class="tab_green long centerT detail_program"> -->
         <ul class="tab_li">
-            <li id="tab1" class="on"><a href="javascript:;">Plenary Lecture</a></li>
-            <li id="tab2"><a href="javascript:;">Keynote Lecture</a></li>
-            <li id="tab3"><a href="javascript:;">Breakfast Symposium</a></li>
-            <li id="tab3"><a href="javascript:;">Luncheon Lecture</a></li>
-            <li id="tab3"><a href="javascript:;">Symposium</a></li>
-            <li id="tab3"><a href="javascript:;">Oral Presentation</a></li>
-            <li id="tab3"><a href="javascript:;">Satellite Symposium</a></li>
-            <li id="tab3"><a href="javascript:;">Pre-congress Symposium</a></li>
-            <li id="tab3"><a href="javascript:;">문석학술상</a></li>
-            <li id="tab3"><a href="javascript:;">젊은연구자상</a></li>
+            <li id="plenary_lecture" class="on"><a href="javascript:;">Plenary Lecture</a></li>
+            <li id="keynote_lecture"><a href="javascript:;">Keynote Lecture</a></li>
+            <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
+            <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
+            <li id="symposium"><a href="javascript:;">Symposium</a></li>
+            <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
+            <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
+            <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
+            <li id="special_lecture_1"><a href="javascript:;">문석학술상</a></li>
+            <li id="special_lecture_2"><a href="javascript:;">젊은연구자상</a></li>
         </ul>
         <div class="tab_wrap">
             

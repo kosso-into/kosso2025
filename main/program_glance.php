@@ -273,8 +273,10 @@ section.app_version .inner {
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="light_orange_bg" name="oral_presentation_2">Oral presentation 1</td>
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_1">Oral presentation 1
                                 <input type="hidden" name="category" value="oral_presentation">
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <td>
@@ -333,7 +335,10 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
-                                <td colspan="3" class="light_orange_bg pointer modal" data-id="14">문석학술상</td>
+                                <td colspan="3" class="light_orange_bg pointer modal" data-id="14">문석학술상
+                                <input type="hidden" name="category" value="special_lecture_1">
+                                </td>
+                               
                                 <td class="light_gray_bg"></td>
                             </tr>
                             <tr>
@@ -362,8 +367,10 @@ section.app_version .inner {
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="light_orange_bg" name="oral_presentation_2">Oral presentation 2</td>
-                                    <input type="hidden" name="category" value="oral_presentation">
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_2">Oral presentation 2
+                                 <input type="hidden" name="category" value="oral_presentation">
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <td>
@@ -389,6 +396,7 @@ section.app_version .inner {
                                 <td class="light_orange_bg pointer modal" name="luncheon_symposium_3" data-id="20">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="special_lecture_2">
                                 </td>
                                 <td class="light_gray_bg"></td>
                             </tr>
@@ -768,8 +776,8 @@ function table_location(event, _this, e, day, category, this_name) {
     var session_app_type = $("[name=session_app_type]").val();
 
     if (session_app_type != "" && session_app_type == 'N') {
-        clickProgramTd ();
-         //window.location.href = "./program_detail_sujeong.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
+        clickProgramTd();
+        //window.location.href = "./program_detail_sujeong.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
         //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
     } else {
         window.location.href = "./app_program_detail.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
