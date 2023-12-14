@@ -237,7 +237,7 @@
         // $html .= '<td>'.$al["ra_country"].'</td>';
         $html .= '<td>'.str_replace('★','<br>',$al["ra_affiliation"]).'</td>';
         $html .= '<td>'.$al["ra_email"].'</td>';
-        $html .= '<td>'.$al["ra_phone"].'</td>';
+        $html .= '<td>'. strval($al["ra_phone"]).'</td>';
 
         $ra_author_No=2;
 
@@ -249,7 +249,7 @@
                 // $html .= '<td>'.$ral["ra_country"].'</td>';
                 $html .= '<td>'.str_replace('★','<br>',$ral["ra_affiliation"]).'</td>';
                 $html .= '<td>'.$ral["ra_email"].'</td>';
-                $html .= '<td>'.$ral["ra_phone"].'</td>';
+                $html .= '<td>'. strval($ral["ra_phone"]).'</td>';
                 ++$ra_author_No;
             }
         }
