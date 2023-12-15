@@ -28,15 +28,16 @@
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 1]</li>
-						<li class="floor_pop_title">September 7 (Thu)</li>
-						<li>- Pre-congress Symposium 1</li>
+						<li class="floor_pop_title">3월 8일 (금)</li>
+						<li>- Pre-congress Symposium 1,2</li>
 						<li>- Satellite Symposium 1,2</li>
-						<li class="floor_pop_title">September 8 (Fri)</li>
-						<li>- Plenary Lecture 1,2</li>
-						<li>- Keynote Lecture 1</li>
-						<li>- Symposium 1,5,9</li>
-						<li>- Luncheon Symposium 1</li>
+						<li class="floor_pop_title">3월 9일 (토)</li>
+						<li>- Breakfast Symposium 1</li>
 						<li>- Opening Address</li>
+						<li>- Symposium 1,4,7,10</li>
+						<li>- Luncheon Symposium 1</li>
+						<li>- Plenary Lecture</li>
+						<li>- Keynote Lecture 1</li>
 						<li class="floor_pop_title">September 9 (Sat)</li>
                         <li>- Plenary Lecture 3,4</li>
                         <li>- Keynote Lecture 2,3,4</li>

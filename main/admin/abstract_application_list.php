@@ -240,10 +240,10 @@
         $html .= '<td>'.$al["ra_email"].'</td>';
 
 		//[231215]sujoeng - 휴대전화 조건식 
-		if(!strpos($ra_phone, '-') && strlen($ra_phone) == 11){ //01012345678 형식일 때
+		if(!strpos($ra_phone, '-') && strlen($ra_phone) == 11 && substr($ra_phone, 0, 3) == 010){  //01012345678 형식일 때 -> 010-1234-5678
 			$phone = substr($ra_phone, 0, 3). '-' .  substr($ra_phone, 3, 4). '-' .substr($ra_phone, 7);
 			$html .= '<td>' . $phone . '</td>';
-		}else if(!strpos($ra_phone, '-') && strlen($ra_phone) == 10){ //0212345678 형식일 때
+		}else if(!strpos($ra_phone, '-') && strlen($ra_phone) == 10 && substr($ra_phone, 0, 3) == 02){ //0212345678 형식일 때 -> 02-1234-5678
 			$phone = substr($ra_phone, 0, 2). '-' .  substr($ra_phone, 2, 4). '-' .substr($ra_phone, 6);
 			$html .= '<td>' . $phone . '</td>';
 		}else{
@@ -264,10 +264,10 @@
                 $html .= '<td>'.$ral["ra_email"].'</td>';
 				
 				//[231215]sujoeng - 휴대전화 조건식 
-				if(!strpos($ra_phone, '-') && strlen($ra_phone) == 11){ //01012345678 형식일 때
+				if(!strpos($ra_phone, '-') && strlen($ra_phone) == 11 && substr($ra_phone, 0, 3) == 010){ //01012345678 형식일 때 -> 010-1234-5678
 					$phone = substr($ra_phone, 0, 3). '-' .  substr($ra_phone, 3, 4). '-' .substr($ra_phone, 7);
 					$html .= '<td>' . $phone . '</td>';
-				}else if(!strpos($ra_phone, '-') && strlen($ra_phone) == 10){ //0212345678 형식일 때
+				}else if(!strpos($ra_phone, '-') && strlen($ra_phone) == 10 && substr($ra_phone, 0, 3) == 02){ //0212345678 형식일 때 -> 02-1234-5678
 					$phone = substr($ra_phone, 0, 2). '-' .  substr($ra_phone, 2, 4). '-' .substr($ra_phone, 6);
 					$html .= '<td>' . $phone . '</td>';
 				}else{
