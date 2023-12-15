@@ -55,12 +55,27 @@ else if($_POST["flag"]==="detail"){
 
     $push_list = get_data($select_query);
 
+    // 그룹화할 배열 초기화
+    $groupedData = [];
+
+    foreach ($push_list as $item) {
+        // program_idx를 그룹화의 기준으로 사용
+        $programIdx = $item['idx'];
+
+        // 그룹이 없다면 초기화
+        if (!isset($groupedData[$programIdx])) {
+            $groupedData[$programIdx] = [];
+        }
+
+        // 데이터 추가
+        $groupedData[$programIdx][] = $item;
+    }
 
 if(!empty($push_list)){
     $res = [
         'code' => 200,
         'msg' => "success",
-        'data' => $push_list 
+        'data' => $groupedData 
     ];
     echo json_encode($res);
     exit;
