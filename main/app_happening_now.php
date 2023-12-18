@@ -1,16 +1,15 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
 <?php
-$today = "2024-03-08";
-$todayTime = "2024-03-08 16:00:00";
-//$today = date("Y-m-d");
+//$today = "2024-03-08";
+$today = date("Y-m-d");
 
 $select_program_query = "
                             SELECT p.idx, program_name, program_tag_name, chairpersons, program_place_idx, pp.program_place_name ,program_date, 
                                    date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time,
 								   DATE_FORMAT(p.start_time, '%Y-%m-%d %H:%i') as program_start_time, DATE_FORMAT(p.end_time, '%H:%i') as program_end_time,
                                    (CASE
-                                       WHEN program_date = '2023-09-07' THEN 'day_1'
+                                       WHEN program_date = '2024-03-08' THEN 'day_1'
                                        WHEN program_date = '2023-09-08' THEN 'day_2'
                                        WHEN program_date = '2023-09-09' THEN 'day_3'
                                        ELSE ''
