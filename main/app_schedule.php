@@ -100,7 +100,7 @@ foreach($program_list as $pl){
 	</div>
 	<div class="contents_box">
 		<div class="sponsor_grade schedule_area">
-			<a href="javascript:;" class="grade_title green_bg">Day 1 / September 7(Thu)</a>
+			<a href="javascript:;" class="grade_title green_bg">Day 1 / 3월 8일(금)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){
@@ -197,7 +197,7 @@ foreach($program_list as $pl){
                 }
                 ?>
 			</ul>
-			<a href="javascript:;" class="grade_title purple_bg">Day 2 / September 8(Fri)</a>
+			<a href="javascript:;" class="grade_title purple_bg">Day 2 / 3월 9일(토)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){
@@ -294,7 +294,7 @@ foreach($program_list as $pl){
                 }
                 ?>
 			</ul>
-			<a href="javascript:;" class="grade_title pink_bg">Day 3 / September 9(Sat)</a>
+			<!-- <a href="javascript:;" class="grade_title pink_bg">Day 3 / September 9(Sat)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){
@@ -389,7 +389,7 @@ foreach($program_list as $pl){
                     }
                 }
                 ?>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
     <!-- 아래 program_alarm_pop 팝업에서 처리 -->

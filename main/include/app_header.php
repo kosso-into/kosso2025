@@ -24,14 +24,14 @@
 				<li class="on">
 					<a href="javascript:;">KSSO 2024</a>
 					<ul class="app_sub">
-						<li><a href="/main/welcome.php">모시는 글</a></li>
+						<li><a href="/main/welcome.php">초대의 글</a></li>
 						<!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>
 						<li><a href="/main/venue.php">Venue</a></li> -->
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_floor_plan.php">Floor Plan</a>
+					<a href="/main/app_floor_plan.php">행사장 배치도</a>
 				</li>
 				<li>
 					<a href="javascript:;">프로그램</a>
@@ -46,21 +46,21 @@
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=8">Symposium</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=7">Best Article in JOMES</a></li>
+						<!-- <li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li> -->
+						<!-- <li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li> -->
+						<!-- <li><a href="/main/app_abstract.php?category_idx=7">Best Article in JOMES</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=10">Pre-congress Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=11">Breakfast Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=12">Luncheon Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=13">Satellite Symposium</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=14">Sponsored Session</a></li>
+						<!-- <li><a href="/main/app_abstract.php?category_idx=14">Sponsored Session</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=16">Oral Presentation</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=17">Guided Poster Presentation</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=18">Poster Exhibition</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_invited_speakers.php">Invited Speakers</a>
+					<a href="/main/app_invited_speakers.php">초청 연자</a>
 				</li>
 				<li>
 					<a href="javascript:;">후원/전시</a>

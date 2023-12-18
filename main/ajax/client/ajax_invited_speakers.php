@@ -75,9 +75,9 @@ if($_POST["flag"] == "favorite"){
     $keywords = $_POST["keywords"];
 
     $row_sql = "";
-
+    //검색하기 
     if($keywords != ""){
-        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%' OR nation LIKE '%{$keywords}%' OR CONCAT(first_name,' ',last_name) LIKE '%{$keywords}%') ";
+        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%' OR nation LIKE '%{$keywords}%' OR CONCAT(first_name,' ',last_name) LIKE '%{$keywords}%')";
     }
 
     $select_keywords_query = "

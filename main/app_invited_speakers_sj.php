@@ -43,7 +43,7 @@ $select_invited_speaker_query = "
 				AND member_idx = '{$member_idx}'
 				) fisp ON isp.idx=fisp.invited_speaker_idx
 				WHERE isp.is_deleted = 'N'
-				ORDER BY initial ASC;
+				ORDER BY binary(first_name) ASC;
                                 ";
 
 $invited_speaker_list = get_data($select_invited_speaker_query);
@@ -72,7 +72,7 @@ SELECT DISTINCT
 			END AS initial
 			FROM invited_speaker
 			WHERE is_deleted='N'
-			ORDER BY initial ASC;
+			ORDER BY binary(initial) ASC;
 ";
 						
 $initial_list = get_data($select_initial_query);
@@ -82,7 +82,7 @@ $initial_list = get_data($select_initial_query);
 <section class="container app_version app_invited_speakers">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			Invited Speakers
+			초청 연자
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
@@ -91,7 +91,7 @@ $initial_list = get_data($select_initial_query);
 			<div class="app_search_area fix_cont">
 				<!-- <p class="f_bold">Please enter keywords</span></p> -->
 				<div class="search_input">
-					<input id="keywords" type="text" placeholder="Please enter keywords" oninput="selectKeywords();">
+					<input id="keywords" type="text" placeholder="검색하기" oninput="selectKeywords();">
 					<button type="button" class="search_icon"></button>
 				</div>
 			</div>
