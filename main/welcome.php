@@ -35,7 +35,7 @@
 				<li class="on"><a href="./welcome.php">초대의 글</a></li>
 				<!-- <li><a href="./organizing_committee.php">Organization</a></li> -->
 				<!-- <li><a href="./app_overview.php">Overview</a></li> -->
-				<!-- <li><a href="./venue.php">Venue</a></li> -->
+				<li><a href="./venue.php">오시는 길</a></li>
 			</ul>
 		</div>
 <?php

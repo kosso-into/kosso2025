@@ -13,7 +13,7 @@ window.onpageshow = function(event) {
             $(`.program li[value='${date}']`).addClass('on');
             $(`#option_room option[value='${option_room}']`).prop("selected", true);
             $(`#option_category option[value='${option_category}']`).prop("selected", true);
-
+            // console.log(data)
             createHTMLList(data.list, data.active);
 			setRoom(true);
         }else{
@@ -104,6 +104,7 @@ $(document).ready(function (){
 
 // [함수] 페이지 초기설정
 function init(){
+    
     let day = parseInt($("input[name=day]").val() ?? "");
         day = isNaN(day) ? 0 : day
     let e_num = parseInt($("input[name=e_num]").val() ?? "");
@@ -129,6 +130,7 @@ function init(){
 }
 
 function setRoom(init = false) {
+   
     const init_room = $("input[name=init_room]").val();
     var date = $(".program > .on").val();
     var _options = $(".select_day_program select option");
@@ -153,6 +155,7 @@ function setRoom(init = false) {
 
 // [함수] 스케줄 리스트 조회
 function selectProgram(){
+    
     if(preventSelectProgram) return;
 
     let date = $('.program > .on').val();
@@ -164,7 +167,7 @@ function selectProgram(){
         option_room : option_room,
         option_category : option_category
     };
-
+  
     $(".program_detail_ul li").detach();
     $(".program_detail_ul").append(`<li class="loading_list"><img src="/main/img/icons/loading.gif"></li>`);
 
@@ -183,6 +186,7 @@ function selectProgram(){
                 history.replaceState({list:program_list, date, option_room, option_category, active: null},'', `#list`);
 
                 createHTMLList(program_list);
+
             } else if(res.code == 400) {
                 alert(res.msg);
                 return;
@@ -206,6 +210,7 @@ function createHTMLList(program_list, active){
 
     let index = 0;
     Object.values(program_list).forEach(pl=>{
+     
         let contents_html = "";
         let abstract_html = "";
         let chairpersons_html = "";
@@ -217,9 +222,9 @@ function createHTMLList(program_list, active){
         Object.values(pl.contents).forEach(cl=>{
             let speaker_info_html = "";
             let speaker_html = "";
-
+            
             if(cl.speaker_idx!=null){
-                speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
+                speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">연자 정보</a>';
                 speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
             } else {
                 if(cl.speaker!=null){
@@ -248,7 +253,7 @@ function createHTMLList(program_list, active){
             if(pl.path==null){
                 pl.path = 'javascript:void(0)';
             }
-            abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
+            abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">초록보기</a>'
         }
 
         if(pl.chairpersons!=null){
@@ -262,7 +267,7 @@ function createHTMLList(program_list, active){
         }
 
         if(pl.preview!=null){
-            preview_html = ' <button class="preview_btn">Preview</button>';
+            preview_html = ' <button class="preview_btn">미리보기</button>';
             detail_text_html += '<div class="detail_text">'+pl.preview+'</div>';
         }
 
@@ -347,11 +352,11 @@ function Schedule(e){
                         $('.program_alarm_pop').hide();
                         is_push = 'insert';
                         setAlarm(program_idx, is_push);
-                        AlarmMessage('Add alarm complete');
+                        AlarmMessage('알람 추가가 완료되었습니다.');
                     });
                     $(".is_alarm_n").click(function(event) {
                         $('.program_alarm_pop').hide();
-                        AlarmMessage('Complete');
+                        AlarmMessage('완료되었습니다.');
                     });
                 }
             } else {

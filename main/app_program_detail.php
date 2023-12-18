@@ -34,10 +34,6 @@ switch ($e){
     break;
     case "room5" : case "Room5" : $option_room = "5";
     break;
-    case "room6" : case "Room6" : $option_room = "6";
-    break;
-    case "room7" : case "Room7" : $option_room = "7";
-    break;
     case "Room1~3" : $option_room = "8";
     break;
 }
@@ -204,19 +200,19 @@ echo '<script type="text/javascript">
     <input type="hidden" name="init_room" value="<?=$option_room?>"/>
 	<div class="app_title_box">
 		<h2 class="app_title">
-			PROGRAM
+			프로그램
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 		<ul class="app_menu_tab langth_2">
 			<li><a href="./program_glance.php">Program at a Glance</a></li>
-			<li class="on"><a href="./app_program_detail.php">Scientific Program</a></li>
+			<li class="on"><a href="./app_program_detail.php">Program Details</a></li>
 		</ul>
 	</div>
     <form name="select_form">
 	<ul class="app_tab program center_t fix_cont">
-		<li value="1"><a href="javascript:;">Sep.7(Thu)</a></li>
-		<li value="2"><a href="javascript:;">Sep.8(Fri)</a></li>
-		<li value="3"><a href="javascript:;">Sep.9(Sat)</a></li>
+		<li value="1"><a href="javascript:;">3월 8일(금)</a></li>
+		<li value="2"><a href="javascript:;">3월 9일(토)</a></li>
+		<!-- <li value="3"><a href="javascript:;">Sep.9(Sat)</a></li> -->
         <input type="hidden" name="program_date">
 	</ul>
     <div class="inner">
@@ -225,8 +221,8 @@ echo '<script type="text/javascript">
                 <ul class="app_sort_form app_half_ul fix_cont_sub select_day_program">
 					<li>
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
-							<option value="" hidden>Select Room</option>
-							<option value="" class="day1 day2 day3">All</option>
+							<option value="" hidden>룸 선택</option>
+							<option value="" class="day1 day2">All</option>
 <!--                            --><?php
 //                                foreach($place_list as $place){
 //									//$is_place_arr_type = (!empty($room_list) && in_array($place['program_place_name'], $room_list)) ? 1 : 0;
@@ -238,18 +234,18 @@ echo '<script type="text/javascript">
 //									//}
 //								}
 //                            ?>
-                            <option value="1" class="day1 day2 day3">Room1</option>
-                            <option value="2" class="day1 day2 day3">Room2</option>
-                            <option value="3" class="day1 day2 day3">Room3</option>
-                            <option value="4" class="day2 day3">Room4</option>
-                            <option value="5" class="day2 day3">Room5</option>
-                            <option value="6" class="day2">Room6</option>
-                            <option value="7" class="day2 day3">Room7</option>
+                            <option value="1" class="day1 day2">Room1</option>
+                            <option value="2" class="day1 day2">Room2</option>
+                            <option value="3" class="day1 day2">Room3</option>
+                            <option value="4" class="day2">Room4</option>
+                            <option value="5" class="day2">Room5</option>
+                            <!-- <option value="6" class="day2">Room6</option>
+                            <option value="7" class="day2 day3">Room7</option> -->
 						</select>
 					</li>
 					<li>
 						<select name="option_category" id="option_category" class="" onchange="selectProgram();">
-                            <option value="" hidden>Select Category</option>
+                            <option value="" hidden>카테고리 선택</option>
                             <option value="" class="day1 day2 day3">All</option>
 <!--                            --><?php
 //                                foreach($category_list as $category){
@@ -258,23 +254,23 @@ echo '<script type="text/javascript">
 <!--                            --><?php
 //								}
 //                            ?>
-                            <option value="5" class="day2 day3">Pleanary Lecture</option>
-                            <option value="6" class="day2 day3">Keynote Lecture</option>
-                            <option value="8" class="day2 day3">Symposium</option>
-                            <option value="15" class="day2">Joint Symposium</option>
-                            <option value="9" class="day2">Obesity Treatment Guidelines Symposium</option>
-                            <option value="7" class="day3">Best Articles in JOMES</option>
+                            <option value="5" class="day2">Pleanary Lecture</option>
+                            <option value="6" class="day2">Keynote Lecture</option>
+                            <option value="8" class="day2">Symposium</option>
+                            <!-- <option value="15" class="day2">Joint Symposium</option> -->
+                            <!-- <option value="9" class="day2">Obesity Treatment Guidelines Symposium</option> -->
+                            <!-- <option value="7" class="day3">Best Articles in JOMES</option> -->
                             <option value="10" class="day1">Pre-congress Symposium</option>
-                            <option value="11" class="day2 day3">Breakfast Symposium</option>
-                            <option value="12" class="day2 day3">Luncheon Symposium</option>
+                            <option value="11" class="day2">Breakfast Symposium</option>
+                            <option value="12" class="day2">Luncheon Symposium</option>
                             <option value="13" class="day1">Satellite Symposium</option>
-                            <option value="14" class="day2 day3">Sponsored Session</option>
-                            <option value="16" class="day2 day3">Oral Presentation</option>
-                            <option value="17" class="day2 day3">Guided Poster Presentation</option>
+                            <!-- <option value="14" class="day2 day3">Sponsored Session</option> -->
+                            <option value="16" class="day2">Oral Presentation</option>
+                            <option value="17" class="day2">Guided Poster Presentation</option>
                             <option value="1" class="day2">Opening Address</option>
-                            <option value="2" class="day3">Closing & Award Ceremony</option>
+                            <option value="2" class="day2">Closing & Award Ceremony</option>
                             <option value="3" class="day1">Welcome Cocktail Party</option>
-                            <option value="4" class="day2">Congress Banquet</option>
+                            <!-- <option value="4" class="day2">Congress Banquet</option> -->
 						</select>
 					</li>
 				</ul>
@@ -297,9 +293,9 @@ echo '<script type="text/javascript">
 	<div class="pop_bg"></div>	
 	<div class="pop_contents">
 		<ul class="list_style_none">
-			<li>Do you want to set an alarm 10 minutes before the start?</li>
-			<li class="is_alarm_y">Yes</li>
-			<li class="is_alarm_n">No</li>
+			<li>10분 전 알람을 설정하시겠습니까?</li>
+			<li class="is_alarm_y">동의</li>
+			<li class="is_alarm_n">미동의</li>
 		</ul>
 	</div>
 </div>
