@@ -19,10 +19,10 @@
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
 	<div class="app_title_box">
-		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+		<h2 class="app_title">후원사<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<ul class="app_menu_tab langth_2">
-			<li><a href="./sponsor.php">Sponsorship</a></li>
-			<li class="on"><a href="./sponsor_exhibition.php">Exhibition</a></li>
+			<li><a href="./sponsor.php">후원사</a></li>
+			<li class="on"><a href="./sponsor_exhibition.php">부스배치도</a></li>
 		</ul>
 	</div>
 <?php
@@ -33,7 +33,7 @@
 	if (!empty($session_app_type) && $session_app_type == 'N') {
 		// Web일때
 ?>
-    <h1 class="page_title">Exhibition</h1>
+    <h1 class="page_title">부스배치도</h1>
 	
 	<div class="container_inner">
 		<div class="contents_box exhibition">

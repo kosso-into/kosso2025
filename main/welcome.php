@@ -32,7 +32,7 @@
 		<div class="app_title_box">
 			<h2 class="app_title">KSSO 2024<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 			<ul class="app_menu_tab">
-				<li class="on"><a href="./welcome.php">모시는 글</a></li>
+				<li class="on"><a href="./welcome.php">초대의 글</a></li>
 				<!-- <li><a href="./organizing_committee.php">Organization</a></li> -->
 				<!-- <li><a href="./app_overview.php">Overview</a></li> -->
 				<!-- <li><a href="./venue.php">Venue</a></li> -->
@@ -48,7 +48,7 @@
 <!-- 			</div> -->
 <!-- 		</div> -->
     <div>
-		<h1 class="page_title">모시는 글</h1>
+		<h1 class="page_title">초대의 글</h1>
         <div class="inner">
             <div>
 				<h3 class="title icon_none">회원 여러분 안녕하십니까?</h3>

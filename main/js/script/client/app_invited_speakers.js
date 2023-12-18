@@ -69,7 +69,7 @@ function selectKeywords(){
 				if (keywords_list.length <= 0) {
 					_html += '<div>'+
 								'<ul class="speakers_list">'+
-									'<li style="border-bottom:none;"><div class="no_data">No Data</div></li>' +
+									'<li style="border-bottom:none;"><div class="no_data">결과가 없습니다.</div></li>' +
 								'</ul>'+
 							'</div>';
 				} else {
