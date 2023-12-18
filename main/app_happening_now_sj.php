@@ -2,7 +2,7 @@
 <?php include_once('./include/app_header.php');?>
 <?php
 $today = "2024-03-08";
-$todayTime = "2024-03-08 18:00:00";
+$todayTime = "2024-03-08 18:10:34";
 //$today = date("Y-m-d");
 //$todayTime = date("Y-m-d H:i:s");
 
