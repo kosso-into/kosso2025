@@ -27,12 +27,12 @@ section.app_version .inner {
         // mobile일때
     ?>
     <div class="app_title_box">
-        <h2 class="app_title">Program<button type="button" class="app_title_prev"
+        <h2 class="app_title">프로그램<button type="button" class="app_title_prev"
                 onclick="javascript:window.location.href='./app_index.php';"><img
                     src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
         <ul class="app_menu_tab langth_2">
             <li class="on"><a href="./program_glance.php">Program at a Glance</a></li>
-            <li><a href="./app_program_detail.php">Scientific Program</a></li>
+            <li><a href="./app_program_detail.php">Program Details</a></li>
         </ul>
     </div>
     <?php
@@ -50,10 +50,10 @@ section.app_version .inner {
     ?>
     <div class="app_tab_wrap fix_cont">
         <ul class="app_tab program glance">
-            <li class="row2 all_days on"><a href="javascript:;">All Days</a></li>
-            <li><a href="javascript:;">Sep.7(Thu)</a></li>
-            <li><a href="javascript:;">Sep.8(Fri)</a></li>
-            <li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li>
+            <li class="row2 all_days on"><a href="javascript:;">3월 8~9일</a></li>
+            <li><a href="javascript:;">3월 8일(금)</a></li>
+            <li><a href="javascript:;">3월 9일(토)</a></li>
+            <!-- <li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li> -->
         </ul>
     </div>
     <?php
@@ -477,7 +477,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
     <div class="pop_bg"></div>
     <div class="pop_contents transparent center_t">
         <img src="./img/icons/icon_resize.png" alt="">
-        <p class="white_t center_t">Touch on a session to check the details. <br />Use your fingers to zoom in/out</p>
+        <p class="white_t center_t">손가락을 사용하여 확대/축소합니다. <br />세션을 눌러 세부 정보를 확인합니다.</p>
     </div>
 </div>
 <?php

@@ -1,12 +1,14 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
 <?php
-//$today= "2023-09-09";
-$today=date("Y-m-d");
+$today = "2024-03-08";
+$todayTime = "2024-03-08 16:00:00";
+//$today = date("Y-m-d");
 
 $select_program_query = "
                             SELECT p.idx, program_name, program_tag_name, chairpersons, program_place_idx, pp.program_place_name ,program_date, 
                                    date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time,
+								   DATE_FORMAT(p.start_time, '%Y-%m-%d %H:%i') as program_start_time, DATE_FORMAT(p.end_time, '%H:%i') as program_end_time,
                                    (CASE
                                        WHEN program_date = '2023-09-07' THEN 'day_1'
                                        WHEN program_date = '2023-09-08' THEN 'day_2'
@@ -28,7 +30,7 @@ $program_list = get_data($select_program_query);
 <section class="container app_version app_happening app_scientific">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			HAPPENING NOW
+			오늘 프로그램
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
@@ -69,7 +71,7 @@ $program_list = get_data($select_program_query);
 			<!-- 진행중인 세션 없을 시 화면 -->
 			<div class="no_data">
 				<img src="/main/img/icons/icon_alarm_clock2.svg" alt="">
-				<p>To be<br>announced</p>
+				<p>진행 중인 세션이<br>없습니다.</p>
 			</div>
             <?php
             }

@@ -20,15 +20,15 @@ $select_program_query = "
                             SELECT p.idx, isp.idx, first_name, last_name, contents_title, program_name,program_tag_name,p.chairpersons, p.preview, pp.program_place_name, program_category_idx, p.program_date,
                                    date_format(p.start_time, '%H:%i') as start_time, date_format(p.end_time, '%H:%i') as end_time,
                                    (CASE
-                                       WHEN program_date = '2023-09-07' THEN 'day_1'
+                                       WHEN program_date = '2024-03-08' THEN 'day_1'
                                        WHEN program_date = '2023-09-08' THEN 'day_2'
                                        WHEN program_date = '2023-09-09' THEN 'day_3'
                                        ELSE ''
                                        END
                                    ) as day,
                                    (CASE
-                                       WHEN program_date = '2023-09-07' THEN 'Sep.7(Thu)'
-                                       WHEN program_date = '2023-09-08' THEN 'Sep.8(Fri)'
+                                       WHEN program_date = '2024-03-08' THEN '03.08.(금)'
+                                       WHEN program_date = '2023-09-08' THEN '03.09.(토)'
                                        WHEN program_date = '2023-09-09' THEN 'Sep.9(Sat)'
                                        ELSE ''
                                        END
@@ -54,7 +54,7 @@ $program_list = get_data($select_program_query);
 <section class="container app_version app_scientific app_invited_speakers_detail">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			Invited Speakers
+			초청 연자
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>

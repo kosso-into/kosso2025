@@ -116,7 +116,7 @@ foreach($program_list as $pl){
                             <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                             ?>
-                            <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">Abstract</a>
+                            <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">초록보기</a>
                             <?php
                             }
                             ?>
@@ -141,7 +141,7 @@ foreach($program_list as $pl){
                             <?php
                             if($program['preview']!=null || $program['preview']!=""){
                                 ?>
-                                <button class="preview_btn">Preview</button>
+                                <button class="preview_btn">미리보기</button>
                                 <?php
                             }
                             ?>
@@ -181,7 +181,7 @@ foreach($program_list as $pl){
                                         <?php
                                         if($contents['speaker_idx']!==null){
                                             ?>
-                                            <a href="/main/app_invited_speakers_detail.php?idx=<?=$contents['speaker_idx']?>" class="invited_tag">Speakers info</a>
+                                            <a href="/main/app_invited_speakers_detail.php?idx=<?=$contents['speaker_idx']?>" class="invited_tag">연자 정보</a>
                                             <?php
                                         }
                                         ?>
@@ -213,7 +213,7 @@ foreach($program_list as $pl){
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     ?>
-                                    <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">Abstract</a>
+                                    <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">초록보기</a>
                                     <?php
                                 }
                                 ?>
@@ -238,7 +238,7 @@ foreach($program_list as $pl){
                                 <?php
                                 if($program['preview']!=null || $program['preview']!=""){
                                     ?>
-                                    <button class="preview_btn">Preview</button>
+                                    <button class="preview_btn">미리보기</button>
                                     <?php
                                 }
                                 ?>
@@ -278,7 +278,7 @@ foreach($program_list as $pl){
                                             <?php
                                             if($contents['speaker_idx']!=null){
                                                 ?>
-                                                <a href="/main/app_invited_speakers_detail.php?idx=<?=$contents['speaker_idx']?>" class="invited_tag">Speakers info</a>
+                                                <a href="/main/app_invited_speakers_detail.php?idx=<?=$contents['speaker_idx']?>" class="invited_tag">연자 정보</a>
                                                 <?php
                                             }
                                             ?>
