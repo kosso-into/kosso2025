@@ -32,6 +32,7 @@ $select_initial_query = "
                             WHERE is_deleted='N'
                             ORDER BY initial ASC;
                         ";
+						
 $initial_list = get_data($select_initial_query);
 ?>
 
@@ -54,7 +55,7 @@ $initial_list = get_data($select_initial_query);
 			</div>
 			<div class="speakers_area">
 				<!-- My Favorite -->			
-				<p class="category favorite_list_type">My Favorite</p>
+				<p class="category favorite_list_type">즐겨찾기</p>
 				<ul class="speakers_list ajax_favorite_list">
                     <?php
                         foreach ($invited_speaker_list as $isl){
@@ -65,11 +66,10 @@ $initial_list = get_data($select_initial_query);
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
 										<img src="/main/img/profile_empty.png" alt="profile_img">
-											<!-- <img src="<?= $is_profile_img ?>" alt="profile_img"> -->
+											<img src="<?= $is_profile_img ?>" alt="profile_img">
 											<p>
-												TBD
 												<!-- [231204] sujeong / 주석 -->
-												<!-- <?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span> -->
+												<?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span>
 											</p>
 										</div>
 									</a>
@@ -98,9 +98,9 @@ $initial_list = get_data($select_initial_query);
 							}
 
 							// [231204] sujeong / 주석 
-							// $is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
+							 $is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
 
-							$is_profile_img = '/main/img/profile_empty.png';
+							//$is_profile_img = '/main/img/profile_empty.png';
 
 							if($isl['initial']==$ini['initial']){
                 ?>
@@ -109,9 +109,9 @@ $initial_list = get_data($select_initial_query);
 										<div class="speakers_info">
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
 											<p>
-												TBD
+												<!-- TBD -->
 												<!-- [231204] sujeong / 주석 -->
-												<!-- <?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span> -->
+												<?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span>
 											</p>
 										</div>
 									</a>
