@@ -38,8 +38,7 @@
                 <?php
 				foreach ($list as $li) {
 					$i = 0;
-					echo "<li><div class='img_wrap' data-index='" . $i . "'><img src='https://kosso.org" . $li['path'] . "' width='100%' height='100%'></div></li>";
-					$slider_inner .= "<li><div class='img_wrap'><img src='" . $url . "' width='100%' height='100%'></div></li>";
+					echo "<li onclick='goDetail(" . $li['idx'] . ")'><div class='img_wrap' data-index='" . $i . "'><img src='https://kosso.org" . $li['path'] . "' width='100%' height='100%'/><div class='newsletter_footer'>" . ($i + 1) . "차 뉴스레터</div></div></li>";
 
 					$i++;
 				}
@@ -86,40 +85,62 @@
 			}
 		?>
 
-		<div class="pagination">
-			<ul class="clearfix">
-				<?php 
-					$total_page = ($total_count % 10 != 0) ? intval($total_count/10) + 1 : intval($total_count/10);
-					
-					$pagination_raw = 10;
-					$pagination_total_page = ($total_page % $pagination_raw != 0) ? intval($total_page/$pagination_raw) + 1 : intval($total_page/$pagination_raw);
-					$pagination_current_page = ($current_page % $pagination_raw == 0) ? intval($current_page/$pagination_raw) - 1 : intval($current_page/$pagination_raw) + 1;
-					$pagination_current_page = ($pagination_current_page > 1) ? $pagination_current_page : 1; 
-
-					$url = "?page=";
-
-					// 이전페이지
-					if($pagination_current_page > 1){
-						echo "<li><a href='./board_newsletter.php".($url.($pagination_raw * ($pagination_current_page - 1)))."'><img src='./img/icons/arrows_left.png'></a></li>";
-					}
-
-					$max = $pagination_raw > $total_page ? $total_page : $pagination_raw;
-					for($a = 0; $a < $max; $a++){
-						$page = ($pagination_raw * ($pagination_current_page - 1)) + 1 + $a;
-						$on = ($current_page == $page) ? "on" : "";
-
-						echo "<li class='".$on."'><a href='./board_newsletter.php".($url.$page)."'>".$page."</a></li>";
-					}
-
-					// 다음페이지
-					if($pagination_total_page > $current_page){
-						echo "<li><a href='./board_newsletter.php".($url.($page+1))."'><img src='./img/icons/arrows_right.png'></a></li>";
-					}
-				?>
-			</ul>
-		</div>
 	</div>
 
 </section>
+<script>
+	//$('.year_slider_wrap ul').slick({
+	//	dots: false,
+	//	infinite: true,
+	//	slidesToShow: 6,
+	//	slidesToScroll: 1,
+	//	responsive: [
+	//		{
+	//			breakpoint: 1100,
+	//			settings: {
+	//				slidesToShow: 5
+	//			}
+	//		},
+	//		{
+	//			breakpoint: 780,
+	//			settings: {
+	//				slidesToShow: 3
+	//			}
+	//		},
+	//		{
+	//			breakpoint: 486,
+	//			settings: {
+	//				slidesToShow: 2
+	//			}
+	//		}
+	//	]
+	//});
 
+	// var _slider = $('.pop_slider');
+	// $('.photo_list .img_wrap').on('click', function() {
+	// 	if (!_slider.hasClass('slick-slider')) {
+	// 		_slider.slick({
+	// 			dots: false,
+	// 			infinite: true,
+	// 			slidesToShow: 1
+	// 		});
+	// 	}
+	// 	_slider.slick('goTo', ($(this).data('index')));
+	// 	$('.more_img_pop').show();
+	// });
+
+	height_resize();
+	$(window).resize(function() {
+		height_resize();
+	});
+
+	function height_resize() {
+		var width = $(".photo_list li").width();
+		$(".photo_list li .img_wrap").height(width);
+	}
+
+	function goDetail(id){
+		window.location.href = `/main/board_newsletter_detail.php?no=${id}`
+	}
+</script>
 <?php include_once('./include/footer.php');?>
