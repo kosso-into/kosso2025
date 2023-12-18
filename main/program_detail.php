@@ -74,32 +74,18 @@ echo '<script type="text/javascript">
             <div class="tab_cont on">
                 <!-- <img class="coming" src="./img/coming.png" /> -->
                 <ul class="tab_li">
-                    <li id="tab1" class="on"><a href="javascript:;">Plenary Lecture</a></li>
-                    <li id="tab2"><a href="javascript:;">Keynote Lecture</a></li>
-                    <li id="tab3"><a href="javascript:;">Breakfast Symposium</a></li>
-                    <li id="tab3"><a href="javascript:;">Luncheon Lecture</a></li>
-                    <li id="tab3"><a href="javascript:;">Symposium</a></li>
-                    <li id="tab3"><a href="javascript:;">Oral Presentation</a></li>
-                    <li id="tab3"><a href="javascript:;">Satellite Symposium</a></li>
+                    <li id="plenary_lecture" class="on"><a href="javascript:;">Plenary Lecture</a></li>
+                    <li id="keynote_lecture"><a href="javascript:;">Keynote Lecture</a></li>
+                    <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
+                    <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
+                    <li id="symposium"><a href="javascript:;">Symposium</a></li>
+                    <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
+                    <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
+                    <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
+                    <li id="special_lecture_1"><a href="javascript:;">문석학술상</a></li>
+                    <li id="special_lecture_2"><a href="javascript:;">젊은연구자상</a></li>
                 </ul>
-                <!-- <div class="program_category">
-                  <div class="sub_category">
-                    <div id="tab1" class="on">Plenary Lecture</div>
-                    <div id="tab2">Keynote Lecture</div>
-                  </div>
-                  
-                  <div class="sub_category"> 
-                    <div id="tab3">Symposium</div>
-                    <div id="tab4">Satellite Symposium</div>
-                  </div>
-
-                  <div class="sub_category">
-                    <div id="tab5">Breakfast Symposium</div>
-                    <div id="tab6">Luncheon Lecture</div>
-                  </div>
-
-                  <div id="tab7">All Categories</div>
-                </div> -->
+               
                 <div class="tab_wrap">
 
                 <!-- Plenary lecture -->
@@ -150,7 +136,7 @@ echo '<script type="text/javascript">
 
                 <!-- Luncheon Lecture -->
 
-                <div class="tab_cont">
+                    <div class="tab_cont">
                          <div style="margin: 0 auto;width: 300px;font-size: 48px;font-weight: 600;">
                             준비 중입니다.
                         </div>
@@ -162,6 +148,26 @@ echo '<script type="text/javascript">
                             준비 중입니다.
                         </div>
                     </div>
+
+                    <div class="tab_cont">
+                         <div style="margin: 0 auto;width: 300px;font-size: 48px;font-weight: 600;">
+                            준비 중입니다.
+                        </div>
+                    </div>
+                  
+
+                    <div class="tab_cont">
+                         <div style="margin: 0 auto;width: 300px;font-size: 48px;font-weight: 600;">
+                            준비 중입니다.
+                        </div>
+                    </div>
+                    
+                    <div class="tab_cont">
+                         <div style="margin: 0 auto;width: 300px;font-size: 48px;font-weight: 600;">
+                            준비 중입니다.
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <!-- </div> -->

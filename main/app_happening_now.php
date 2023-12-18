@@ -1,8 +1,8 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
 <?php
-//$today = "2024-03-08";
-$today = date("Y-m-d");
+$today = "2024-03-08";
+//$today = date("Y-m-d");
 
 $select_program_query = "
                             SELECT p.idx, program_name, program_tag_name, chairpersons, program_place_idx, pp.program_place_name ,program_date, 
