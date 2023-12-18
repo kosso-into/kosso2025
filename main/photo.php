@@ -21,6 +21,7 @@ $sql_years =	"
 					";
 $years = explode(',', sql_fetch($sql_years)['years']);
 ?>
+
 <section class="container photo">
 	<h1 class="page_title">Photo Gallery</h1>
 	<div class="inner">
