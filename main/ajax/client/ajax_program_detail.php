@@ -50,7 +50,8 @@ else if($_POST["flag"]==="detail"){
         LEFT JOIN program_contents pc ON p.idx = pc.program_idx
         LEFT JOIN invited_speaker isp ON isp.idx = pc.speaker_idx
         LEFT JOIN program_place pp ON pp.idx = p.program_place_idx
-        WHERE ppc.idx = {$category_idx};
+        WHERE ppc.idx = {$category_idx}
+        ORDER BY contents_start_time;
                 ";
 
     $push_list = get_data($select_query);
