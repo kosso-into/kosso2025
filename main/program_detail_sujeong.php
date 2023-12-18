@@ -94,7 +94,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -160,7 +160,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -221,7 +221,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -292,7 +292,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -343,7 +343,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 2</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -394,7 +394,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -453,7 +453,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -504,7 +504,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -564,7 +564,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 1 : Treatment of obesity</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -640,7 +640,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 2 :Integrative physiology and molecular mechanisms of obesity</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -715,7 +715,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 3 : Postprandial glycemic response and Continuous Glucose Monitoring</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -790,7 +790,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 4 : Environmental, genetics and obesity</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -865,7 +865,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 5 : Gut microbiome</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -940,7 +940,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 6 : TBD</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1015,7 +1015,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 7 : New Antiobesity Drug</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1090,7 +1090,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 8 : Metabolic Surgery</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1165,7 +1165,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1240,7 +1240,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 10 : Cormobidity of obesity</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1315,7 +1315,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1390,7 +1390,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 12 : Exercise, Obesity, and Metabolic Dysfunction</p>
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1475,7 +1475,7 @@ echo '<script type="text/javascript">
                                                         <span class="bold">TBD</span> (TBD)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1557,7 +1557,7 @@ echo '<script type="text/javascript">
                                                             class="bold">TBD</span> (TBD)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1643,7 +1643,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1693,7 +1693,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1750,7 +1750,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1811,7 +1811,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1882,7 +1882,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">문석학술상</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1947,7 +1947,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">젊은연구자상</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>

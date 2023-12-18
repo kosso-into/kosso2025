@@ -69,17 +69,33 @@ function writeOneLecture(data, id, name){
 
     dataList[0].map((data)=>{
         const contents = document.createElement("tr");
-        //console.log(data)
-        contents.innerHTML = `
-                <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                <td class="bold">
-                    ${data.contents_title}
-                </td>
-                <td class="text_r">
-                    <p class="bold">${data.speaker}</p>(TBD)
-                </td>
+        const speakerName = data.speaker?.split("(")[0];
+        const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
 
-    `
+        if(data.speaker){
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
+
+`
+        }else{
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }
+        
         if(id === 5){
             plenaryWrap.append(contents);
         }else if(id === 19 && name === "special_lecture_1"){
@@ -127,19 +143,34 @@ function writeTwoLecture(data, id){
     pre2Wrap.innerHTML = "";
 
     dataList[0].map((data)=>{
-
         const contents = document.createElement("tr");
+        const speakerName = data.speaker?.split("(")[0];
+        const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
         //console.log(data)
-        contents.innerHTML = `
-                <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                <td class="bold">
-                    ${data.contents_title}
-                </td>
-                <td class="text_r">
-                    <p class="bold">${data.speaker}</p>(TBD)
-                </td>
+     
+        if(data.speaker){
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
 
-    `
+`
+        }else{
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }
         if(id === 6){
             keyNote1Wrap.append(contents);
         }else if(id === 12){
@@ -155,17 +186,33 @@ function writeTwoLecture(data, id){
 
     dataList[1].map((data)=>{
         const contents = document.createElement("tr");
+        const speakerName = data.speaker?.split("(")[0];
+        const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
         //console.log(data)
-        contents.innerHTML = `
-                <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                <td class="bold">
-                    ${data.contents_title}
-                </td>
-                <td class="text_r">
-                    <p class="bold">${data.speaker}</p>(TBD)
-                </td>
+  
+        if(data.speaker){
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
 
-    `
+`
+        }else{
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }
         if(id === 6){
             keyNote2Wrap.append(contents);
         }else if(id === 12){
@@ -195,49 +242,97 @@ function writeThreeLecture(data, id){
     
         dataList[0].map((data)=>{
             const contents = document.createElement("tr");
+            const speakerName = data.speaker?.split("(")[0];
+            const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
             //console.log(data)
+         
+        if(data.speaker){
             contents.innerHTML = `
-                    <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                    <td class="bold">
-                        ${data.contents_title}
-                    </td>
-                    <td class="text_r">
-                        <p class="bold">${data.speaker}</p>(TBD)
-                    </td>
-    
-        `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
+
+`
+        }else{
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }
         Breakfast1Wrap.append(contents);
         })
 
         dataList[1].map((data)=>{
             const contents = document.createElement("tr");
+            const speakerName = data.speaker?.split("(")[0];
+            const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
             //console.log(data)
+           
+        if(data.speaker){
             contents.innerHTML = `
-                    <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                    <td class="bold">
-                        ${data.contents_title}
-                    </td>
-                    <td class="text_r">
-                        <p class="bold">${data.speaker}</p>(TBD)
-                    </td>
-    
-        `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
+
+`
+        }else{
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }
         Breakfast2Wrap.append(contents);
         })
 
         dataList[2].map((data)=>{
             const contents = document.createElement("tr");
+            const speakerName = data.speaker?.split("(")[0];
+            const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
             //console.log(data)
+           
+        if(data.speaker){
             contents.innerHTML = `
-                    <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                    <td class="bold">
-                        ${data.contents_title}
-                    </td>
-                    <td class="text_r">
-                        <p class="bold">${data.speaker}</p>(TBD)
-                    </td>
-    
-        `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
+
+`
+        }else{
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }
         Breakfast3Wrap.append(contents);
         })
 }
@@ -275,19 +370,46 @@ function writeSympoLecutre(data, id){
 
         const numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
         numList.map((num, i)=>{
-            dataList[i].map((data)=>{
+            dataList[i].map((data, j)=>{
                 const contents = document.createElement("tr");
+                const speakerName = data.speaker?.split("(")[0];
+                const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
                 //console.log(data)
-                contents.innerHTML = `
-                        <td>${data.contents_start_time}-${data.contents_end_time}</td>
-                        <td class="bold">
-                            ${data.contents_title}
-                        </td>
-                        <td class="text_r">
-                            <p class="bold">${data.speaker}</p>(TBD)
-                        </td>
-        
-            `
+            
+        if(data.speaker && j !== 3){
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${speakerName}</p>(${speakerOrg})
+            </td>
+
+`
+        }else if(!data.speaker && j !== 3){
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold"></p>
+            </td>
+
+`
+        }else if(j === 3){
+            contents.innerHTML = `
+            <td>${data.contents_start_time}-${data.contents_end_time}</td>
+            <td class="bold">
+                ${data.contents_title}
+            </td>
+            <td class="text_r">
+                <p class="bold">${data.speaker}</p>
+            </td>
+
+`
+        }
             eval(`symposium${num}Wrap`).append(contents);        
             })
         })

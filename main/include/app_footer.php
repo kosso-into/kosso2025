@@ -64,7 +64,7 @@ $schedule = sql_fetch($select_schedule_query);
 				<a href="/main/app_index.php"><img src="/main/img/icons/icon_ft_home.svg" alt=""><span>HOME</span></a>
 			</li>
 			<li>
-				<a href="/main/program_glance.php"><img src="/main/img/icons/icon_ft_program.svg" alt=""><span>PROGRAM</span></a>
+				<a href="/main/program_glance.php"><img src="/main/img/icons/icon_ft_program.svg" alt=""><span>프로그램</span></a>
 			</li>
 			<li class="round_menu">
 				<a href="/main/app_qr_code.php">
@@ -75,7 +75,7 @@ $schedule = sql_fetch($select_schedule_query);
 				</a>
 			</li>
 			<li>
-				<a href="/main/app_abstract.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>ABSTRACT</span></a>
+				<a href="/main/app_abstract.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>초록</span></a>
 			</li>
 			<li>
 				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY SCHEDULE</span></a>

@@ -60,7 +60,7 @@
 			<li>
 				<a href="/main/app_invited_speakers.php">
 					<img src="./img/icons/app_menu04.svg" alt="">
-					<span>INVITED<br/>SPEAKERS</span>
+					<span>초청 연자</span>
 				</a>
 			</li>
 			<li>

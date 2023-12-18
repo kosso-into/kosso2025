@@ -2,7 +2,6 @@
 <?php include_once('./include/header.php'); ?>
 <script src="./js/script/client/program_detail.js?v=0.5"></script>
 
-
 <?php
 
 $type = $_GET['type'];
@@ -97,7 +96,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Plenary Lecture</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -151,7 +150,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -202,7 +201,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -260,7 +259,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -307,7 +306,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Breakfast Symposium 2</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -354,7 +353,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -409,7 +408,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -456,7 +455,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Luncheon Lecture 2</p>
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -512,7 +511,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -561,7 +560,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -608,7 +607,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -655,7 +654,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -702,7 +701,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -749,7 +748,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -796,7 +795,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -843,7 +842,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -890,7 +889,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -937,7 +936,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -984,7 +983,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1031,7 +1030,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1088,7 +1087,7 @@ echo '<script type="text/javascript">
                                                         <span class="bold">TBD</span> (TBD)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1138,7 +1137,7 @@ echo '<script type="text/javascript">
                                                             class="bold">TBD</span> (TBD)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1192,7 +1191,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <p class="font_20 bold">2024.03.08.</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1238,7 +1237,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
                                                     <p class="font_20 bold">2024.03.08.</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1291,7 +1290,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
                                                     <p class="font_20 bold">2024.03.08.</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1342,7 +1341,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
                                                     <p class="font_20 bold">2024.03.08.</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1400,7 +1399,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">문석학술상</p>
                                                     <p class="font_20 bold">2024.03.09.</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1454,7 +1453,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">젊은연구자상</p>
                                                     <p class="font_20 bold">2024.03.09.</p>
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>

@@ -32,8 +32,8 @@
 						<input type="password" name="password" placeholder="Password">
 					</li>
 				</ul>
-				<a href="./app_find_password.php" class="app_find_password">Find password</a>
-				<button type="button" class="btn app_login_btn">Log in</button>
+				<a href="./app_find_password.php" class="app_find_password">비밀번호 찾기</a>
+				<button type="button" class="btn app_login_btn">로그인</button>
 			</div>
 		</div>
 	</div>
