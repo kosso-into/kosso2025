@@ -88,9 +88,9 @@
 							<th>참석구분</th>
 							<th>참가유형</th>
 							<th>등록요금</th>
-							<th>Online/Offline</th>
+							<!-- <th>Online/Offline</th> -->
 							<th>평점신청여부</th>
-							<th>신청협회</th>
+							<!-- <th>신청협회</th> -->
 							<th>등록일</th>
 						</tr>
 					</thead>
@@ -199,9 +199,9 @@
 							<td><?=$member_type?></td>
 							<td><?=$attendance_type_text?></td>
 							<td><?=$payment_price?></td>
-							<td>On-site</td>
+							<!-- <td>On-site</td> -->
 							<td><?=$is_score?></td>
-							<td>-</td>
+							<!-- <td>-</td> -->
 							<td><?=$register_date?></td>
 						</tr>
 					<?php
