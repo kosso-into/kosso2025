@@ -98,15 +98,15 @@ $info = sql_fetch($sql_info);
                         </tr>
 						<tr>
 							<td class="text_center">날짜 / 시간</td>
-							<td class="text_center">3월 8일</td>
+							<td class="text_center">3월 9일(토)<br>08:00 - 10:00</td>
 							<!-- <td class="text_center">3월 8일</td> -->
-							<td class="text_center">3월 9일</td>
+							<td class="text_center">3월 9일(토)<br>14:00 - 15:30</td>
 							<!-- <td class="text_center">3월 9일</td> -->
 						</tr>
 						<tr>
 							<td class="text_center">장소</td>
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
+							<td class="text_center">Room 4</td>
+							<td class="text_center">Room 4</td>
 							<!-- <td class="text_center">TBD</td>
 							<td class="text_center">TBD</td> -->
 						</tr>

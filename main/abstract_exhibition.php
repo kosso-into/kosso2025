@@ -84,28 +84,21 @@ $info = sql_fetch($sql_info);
                     <h3 class="title">포스터전시 일정</h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-				   <table class="c_table detail_table">
-					   <colgroup>
-						   <col>
-						   <col>
-						   <col>
-					   </colgroup>
-					   <tr>
-						   <th></th>
-						   <th class="f_bold text_center">3월 8일(금)</th>
-						   <th class="f_bold text_center">3월 9일(토)</th>
-					   </tr>
-					<tr>
-						<td class="text_center">장소</td>
-						<td class="text_center">TBD</td>
-						<td class="text_center">TBD</td>
-					</tr>
-					<tr>
-						<td class="text_center">시간</td>
-						<td class="text_center">TBD</td>
-						<td class="text_center">TBD</td>
-					</tr>
-				   </table>
+				<table class="c_table detail_table">
+                        <colgroup>
+                            <col class="submission_col">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>포스터 전시 장소</th>
+                            <td class="f_bold">Room 5</td>
+                        </tr>
+                        <tr>
+                            <th>포스터 전시 시간</th>
+							<td class="f_bold">3월 9일(토) 07:00 - 17:40</td>
+                        </tr>
+                        
+                    </table>
                 </div>
             </div>
 
@@ -144,7 +137,7 @@ $info = sql_fetch($sql_info);
 				<div class="text_box indent">
 					<ul>
 						<li>• 반드시 본인의 포스터 판넬에 본인의 포스터를 부착하여야 합니다.</li>
-						<li>• 포스터 채택자는 정해진 포스터 사이즈에 맞추어 제작하여 직접 인쇄 및 현장에서 부착하여야 합니다. (학회에서 인쇄 및 부착 진행하지 않습니다.)</li>
+						<li>• 포스터 채택자는 정해진 포스터 사이즈에 맞추어 제작하여 직접 인쇄 및 현장에서 부착하여야 합니다. <br>(학회에서 인쇄 및 부착 진행하지 않습니다.)</li>
 						<li>• 포스터 게시는 학회 종료 시까지 반드시 유지하여야 합니다. 게시가 누락되는 일이 없도록 협조해 주십시오.</li>
 						<li class="f_bold">• 부착 및 철거 시간을 반드시 엄수해 주십시오. 심사 시작 이후 포스터 부착 시 포스터 심사에서 제외될 수 있습니다.</li>
 					</ul>

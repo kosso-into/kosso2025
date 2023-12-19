@@ -3,6 +3,8 @@ include_once('./include/head.php');
 // HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 
 $session_user = $_SESSION['USER'] ?? NULL;
 $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+$session_user = $_SESSION['USER'] ?? NULL;
+//$session_app_type = 'Y';
 
 if (!empty($session_user) && $session_app_type == 'Y') {
     include_once('./include/app_header.php');
@@ -197,7 +199,7 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">18:30-19:00</div>
+                                    <div class="colons_div">19:10-19:40</div>
                                 </td>
                                 <td class="sky_bg pointer modal" name="satellite_symposium_2" data-id="4">
                                     Satellite<br />Symposium 2
@@ -477,7 +479,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
     <div class="pop_bg"></div>
     <div class="pop_contents transparent center_t">
         <img src="./img/icons/icon_resize.png" alt="">
-        <p class="white_t center_t">손가락을 사용하여 확대/축소합니다. <br />세션을 눌러 세부 정보를 확인합니다.</p>
+        <p class="white_t center_t">손가락을 사용하여 확대/축소 가능합니다. <br />세션을 눌러 세부 정보를 확인 가능합니다.</p>
     </div>
 </div>
 <?php
