@@ -205,14 +205,14 @@
 			<button type="button" class="pop_close"></button>
 		</div>
 		<div class="pop_inner center_t">
-			<p class="pop_inner_title">title</p>
+			<p class="pop_inner_title">제목</p>
 			<div class="text_area">
 				<textarea name="notice_title" id="notice_title" cols="30" rows="10" disabled></textarea>
 			</div>
 
 			<ul class="flex app_date_ul">
 				<li class="flex">
-					<span>Date</span>
+					<span>날짜</span>
 					<input type="text" class="" data-language="en" data-date-format="yyyy-mm-dd" name="s_date" value="<?=$today?>" data-type="date" disabled/>
 				</li>
 			<!-- 23-06-12 예약발송 제외하기로 함 -->
@@ -223,10 +223,10 @@
 				</li> -->
 			</ul> 
 		</div>
-		<p class="center_t bold">Would you like to proceed with the app push?</p>
+		<p class="center_t bold">앱 푸시를 진행하시겠습니까?</p>
 		<div class="btn_wrap center_t">
-			<button type="button" class="btn pop_close">No</button>
-			<button type="button" class="btn pop_close push_y">Yes</button>
+			<button type="button" class="btn pop_close">아니요</button>
+			<button type="button" class="btn pop_close push_y">네</button>
 		</div>
 	</div>
 </div>

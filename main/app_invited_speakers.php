@@ -65,7 +65,7 @@ $initial_list = get_data($select_initial_query);
 								<li>
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
-										<img src="/main/img/profile_empty.png" alt="profile_img">
+										<!-- <img src="/main/img/profile_empty.png" alt="profile_img"> -->
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
 											<p>
 												<!-- [231204] sujeong / 주석 -->

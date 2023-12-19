@@ -2,6 +2,7 @@
 <?php
     $session_user = $_SESSION['USER'] ?? NULL;
     $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+	//$session_app_type = 'Y';
 
     if(!empty($session_user) && $session_app_type == 'Y') {
         include_once('./include/app_header.php');
@@ -19,7 +20,7 @@
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
 	<div class="app_title_box">
-		<h2 class="app_title">후원사<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+		<h2 class="app_title">부스배치도<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<ul class="app_menu_tab langth_2">
 			<li><a href="./sponsor.php">후원사</a></li>
 			<li class="on"><a href="./sponsor_exhibition.php">부스배치도</a></li>
@@ -48,7 +49,7 @@
 						<thead>
 							<tr>
 								<th>Booth No.</th>
-								<th>Company Name</th>
+								<th>이름</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -277,9 +278,9 @@
 	<div class="container_inner">
 		<div class="contents_box">
 			<ul class="app_tab min_tab fix_cont">
-				<li class="on"><a href="javascript:;">3F</a></li>
-				<li><a href="javascript:;">5F</a></li>
-				<li><a href="javascript:;">6F</a></li>
+				<li class="on"><a href="javascript:;">B2</a></li>
+				<li><a href="javascript:;" style="padding: 7px 18px;">B1</a></li>
+				<!-- <li><a href="javascript:;">6F</a></li> -->
 			</ul>
 			<div class="app_contents_wrap type2">
 				<div class="floor floor_3 on">
@@ -295,8 +296,8 @@
 							</colgroup>
 							<thead>
 								<tr>
-									<th>Booth No.</th>
-									<th>Company Name</th>
+									<th>부스</th>
+									<th>이름</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -365,8 +366,8 @@
 							</colgroup>
 							<thead>
 								<tr>
-									<th>Booth No.</th>
-									<th>Company Name</th>
+									<th>부스</th>
+									<th>이름</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -447,8 +448,8 @@
 							</colgroup>
 							<thead>
 								<tr>
-									<th>Booth No.</th>
-									<th>Company Name</th>
+									<th>부스</th>
+									<th>이름</th>
 								</tr>
 							</thead>
 							<tbody>

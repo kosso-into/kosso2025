@@ -44,7 +44,9 @@
 	<div class="container_inner inner">
 		<div class="contents_box">
 			<div class="contents_wrap">
-                <p class="app_qr_num">No. <?=$member_data['r_idx']?></p>
+                <?php echo '<p class="app_qr_num">' . $member_data['r_idx'] . '</p>'; ?>
+                <!-- <?php print_r($member_data) ?> -->
+                <!-- <p class="app_qr_num">No. <?=$member_data['r_idx']?></p> -->
                 <!-- <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div> -->
                 <div class="app_qr_area" id="qrcode" data-encrypt="<?=$register_no?>"></div>
                 <div class="app_txt_area">

@@ -86,7 +86,8 @@ $info = sql_fetch($sql_info);
                 <div class="table_wrap detail_table_common x_scroll">
                      <table class="c_table">
                         <colgroup>
-                            <col class="submission_col">
+                            <col>
+                            <col>
                             <col>
                         </colgroup>
                         <tr>

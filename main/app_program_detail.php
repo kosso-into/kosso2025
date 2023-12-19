@@ -94,10 +94,10 @@ echo '<script type="text/javascript">
             $row_sql .= " AND program_place_idx IN ($option_room) ";
         }
     }
-
+    //program_place idx 8 => room 1~3
     $select_place_sql = " SELECT idx, program_place_name FROM program_place WHERE idx!=8";
     $place_list = get_data($select_place_sql);
-
+    //program_Category idx 18 => poster exhibition
     $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
     $category_list = get_data($select_category_sql);
     $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
