@@ -90,9 +90,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>12:40-13:20</td>
+                                                <td>
+                                                    ROOM 1, 2, 3
+                                                    <br>12:40-13:20
+                                                </td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
@@ -156,9 +160,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:40-12:40</td>
+                                                <td> ROOM 1
+                                                    <br>11:40-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
@@ -217,9 +223,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    ROOM 2
+                                                    <br>11:40-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
@@ -288,9 +297,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20</td>
+                                                <td>
+                                                    ROOM 1
+                                                    <br>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -339,9 +351,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20</td>
+                                                <td>
+                                                    ROOM 2
+                                                    <br>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 2</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -390,9 +405,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>07:30-08:20</td>
+                                                <td>
+                                                    ROOM 3
+                                                    <br>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -448,9 +466,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    ROOM 1, 2, 3
+                                                <br>11:40-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
@@ -500,9 +521,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
-                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    ROOM 1, 2, 3
+                                                <br>11:40-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -562,6 +586,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 1 : Treatment of obesity</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -638,6 +663,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 2 :Integrative physiology and molecular mechanisms of obesity</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -713,6 +739,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 3 : Postprandial glycemic response and Continuous Glucose Monitoring</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -788,6 +815,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 4 : Environmental, genetics and obesity</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -863,6 +891,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 5 : Gut microbiome</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -938,6 +967,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 6 : TBD</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -1013,6 +1043,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 7 : New Antiobesity Drug</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -1088,6 +1119,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 8 : Metabolic Surgery</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>
@@ -1163,6 +1195,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent</p>
+                                                    <p class="font_20 bold">2024.03.09.</p> 
                                                     <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
                                                             class="bold">TBD</span> (TBD)</p>
                                                     <button class="btn gray2_btn program_detail_btn">미리보기</button>

@@ -286,11 +286,11 @@ if ($_POST["flag"] == "registration") {
 		// }else {
 		// 	 	$add_set .= ", date_of_birth = NULL ";
 		// 	 }
-		if ($bank !== "" && $number !== "") {
-			$add_set .= ", etc6 = '{$transfer_info}'";
-		}else {
-			$add_set .= ", etc6 = NULL ";
-		}
+		// if ($bank !== "" && $number !== "") {
+		// 	$add_set .= ", etc6 = '{$transfer_info}'";
+		// }else {
+		// 	$add_set .= ", etc6 = NULL ";
+		// }
 	}
 
 	// COMMON

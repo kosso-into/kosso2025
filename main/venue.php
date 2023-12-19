@@ -3,6 +3,7 @@ include_once('./include/head.php');
 
 $session_user = $_SESSION['USER'] ?? NULL;
 $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+// $session_app_type = 'Y';
 
 //230714 HUBDNC 앱 로그인 시 파라미터 추가 된 부분
 if (!empty($session_user) && $session_app_type == 'Y') {

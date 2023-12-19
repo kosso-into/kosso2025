@@ -37,7 +37,7 @@ if ($e_date != "") {
 
 $registration_list_query =  "
 									SELECT
-										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.last_name,rr.first_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
+										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.last_name,rr.first_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,rr.etc6,
 										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
 											CASE rr.registration_type
@@ -164,7 +164,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">참가자 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">평점신청</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">기타</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
 $html .= '</tr>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">No</th>';
@@ -203,6 +203,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 // $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
 // $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">특이식단</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">개최 정보 습득 방법</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">메모</th>';
 $html .= '</tr>';
 $html .= '</thead>';
 $html .= '<tbody>';
@@ -415,6 +416,7 @@ foreach ($registration_list as $rk => $rl) {
 	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_luncheon_yn"] . '</td>';
 	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $special_request_food . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $conference_info . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["etc6"] . '</td>';
 	$html .= '</tr>';
 }
 $html .= '</tbody>';
