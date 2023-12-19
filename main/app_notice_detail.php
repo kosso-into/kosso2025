@@ -18,7 +18,7 @@ $notice = sql_fetch($select_notice_detail_query);
 <section class="container app_version">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			NOTICE
+			공지사항
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_notice.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>

@@ -333,9 +333,9 @@
 						<tr class="tr_center">
 							<th>논문번호</th>
 							<th>ID(Email)</th>
-							<th>Country</th>
-							<th>Name</th>
-							<th>Title</th>
+							<!-- <th>Country</th> -->
+							<th>성함</th>
+							<th>제목</th>
 							<th>파일명</th>
 							<th>카테고리</th>
 							<th>선호하는 프레젠테이션 유형</th>
@@ -356,7 +356,7 @@
 						<tr class="tr_center">
 							<td><?=$list["submission_code"]?></td>
 							<td><a href="./member_detail.php?idx=<?=$list["member_idx"]?>"><?=$list["email"]?></a></td>
-							<td><?=$list["nation_ko"]?></td>
+							<!-- <td><?=$list["nation_ko"]?></td> -->
 							<td><?=$list["name"]?></td>
 							<td><a href="./abstract_application_detail.php?idx=<?=$list["abstract_idx"]?>"><?=$list["abstract_title"]?></a></td>
 						<?php if($ext === "pdf") { ?>
@@ -369,7 +369,7 @@
 							<!-- <td><?=$list["oral_presentation"] == 0 ? "No" : "Yes"?></td>
 							<td>13 / 32</td> -->
 							<td><?=$list["register_date"]?></td>
-							<td><a href="javascript:;" onclick="delete_submission('<?php echo $list["abstract_idx"]; ?>')">삭제</a></td>
+							<td><a href="javascript:;" onclick="delete_submission(<?php echo $list['abstract_idx']; ?>)">삭제</a></td>
 						</tr>
 					<?php
 							}

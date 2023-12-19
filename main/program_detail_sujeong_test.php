@@ -1231,8 +1231,8 @@ echo '<script type="text/javascript">
                                         <tbody>
                                             <tr class="sky_bg">
                                                 <td>
-                                                    ROOM 2
-                                                    <br>18:30-19:00</td>
+                                                    ROOM 1
+                                                    <br>19:10-19:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
                                                     <p class="font_20 bold">2024.03.08.</p>

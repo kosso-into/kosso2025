@@ -549,14 +549,6 @@ if ($attendance_type_no != 0) {
 							?>
                         </td>
                     </tr>
-                    <tr>
-                        <th>메모</th>
-                        <td colspan="3">
-                            <input style="width:80%" type="text" name="etc6" placeholder="메모"
-                                    value="<?= $registration_detail["etc6"] ?>">
-                            <button type="button" class="btn submit" data-type="update_memo">저장</button>
-                        </td>
-                    </tr> 
                 </tbody>
             </table>
             <?php
@@ -736,6 +728,7 @@ if ($attendance_type_no != 0) {
                             </div>
                         </td>
                     </tr>
+                    
                 </tbody>
             </table>
             <table>
@@ -780,6 +773,14 @@ if ($attendance_type_no != 0) {
 							?>
                         </td>
                     </tr>
+                    <tr>
+                        <th>메모</th>
+                        <td colspan="3">
+                            <input style="width:80%" type="text" name="etc6" placeholder="메모"
+                                    value="<?= $registration_detail["etc6"] ?>">
+                            <button type="button" class="btn submit" data-type="update_memo">저장</button>
+                        </td>
+                    </tr> 
                     <!-- <tr>
                         <th>입금 계좌번호</th>
                         <td colspan="3">

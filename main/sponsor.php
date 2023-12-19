@@ -2,6 +2,7 @@
 <?php 
     $session_user = $_SESSION['USER'] ?? NULL;
     $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+    //$session_app_type = 'Y';
 
     if(!empty($session_user) && $session_app_type == 'Y') {
         include_once('./include/app_header.php');
@@ -26,12 +27,12 @@
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
     <div class="app_title_box">
-        <h2 class="app_title">Sponsorship<button type="button" class="app_title_prev"
+        <h2 class="app_title">후원사<button type="button" class="app_title_prev"
                 onclick="javascript:window.location.href='./app_index.php';"><img
                     src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
         <ul class="app_menu_tab langth_2">
-            <li class="on"><a href="./sponsor.php">Sponsorship</a></li>
-            <li><a href="./sponsor_exhibition.php">Exhibition</a></li>
+            <li class="on"><a href="./sponsor.php">후원사</a></li>
+            <li><a href="./sponsor_exhibition.php">부스배치도</a></li>
         </ul>
     </div>
     <?php
@@ -146,6 +147,7 @@
 <?php
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
+<!-- 스탬프 투어 뉴스레터 -->
 <div class="popup app_pop" style="display:block;">
     <div class="pop_bg"></div>
     <div class="pop_contents">

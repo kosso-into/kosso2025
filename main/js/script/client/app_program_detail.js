@@ -153,6 +153,8 @@ function setRoom(init = false) {
     selectProgram();
 }
 
+
+
 // [함수] 스케줄 리스트 조회
 function selectProgram(){
     

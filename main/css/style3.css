@@ -1076,7 +1076,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .main_section .img_vsl_text{top:90px; width: 600px;}
 .main_section .dates_area{bottom:52px;}
 
-.exhibition .container_inner {margin-top:40px;}
+.exhibition .container_inner {margin-top:4px;}
 .contents_box.exhibition .clearfix2:not(:first-child) {margin-top:90px;}
 .contents_box.exhibition .clearfix2 > * {width:calc(49% - 20px);}
 .contents_box.exhibition .clearfix2 > img {width:calc(51% - 20px);}

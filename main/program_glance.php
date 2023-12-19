@@ -4,7 +4,7 @@ include_once('./include/head.php');
 $session_user = $_SESSION['USER'] ?? NULL;
 $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 $session_user = $_SESSION['USER'] ?? NULL;
-//$session_app_type = 'Y';
+// $session_app_type = 'Y';
 
 if (!empty($session_user) && $session_app_type == 'Y') {
     include_once('./include/app_header.php');
@@ -108,7 +108,7 @@ section.app_version .inner {
                         </colgroup>
                         <thead>
                             <tr>
-                                <th class="font_big" style="background-color: #F4F4F4;">Time/Location</th>
+                                <th class="font_big" style="background-color: #F4F4F4;">시간/장소</th>
                                 <th style="background-color: #F4F4F4;">Room 1<br> </th>
                                 <th style="background-color: #F4F4F4;">Room 2</th>
                                 <th style="background-color: #F4F4F4;">Room 3</th>
@@ -125,7 +125,7 @@ section.app_version .inner {
                             </tr>
                         </thead>
                         <!---------- DAY 1 ---------->
-                        <tbody name="day" class="day_tbody day_1">
+                        <tbody name="day" class="day_tbody day_1"  id="day_1">
                             <tr>
                                 <td>
                                     <div class="colons_div">14:50-16:20</div>
@@ -226,7 +226,7 @@ section.app_version .inner {
                                 </th>
                             </tr>
                         </thead>
-                        <tbody name="day" class="day_tbody day_2">
+                        <tbody name="day" class="day_tbody day_2" id="day_2">
                             <tr>
                                 <td>
                                     <div class="colons_div">07:30-08:20</div>
@@ -650,7 +650,7 @@ $(document).ready(function() {
     $("td.pointer").click(function() {
         var e = $(this).find("input[name=e]").val();
         var category = $(this).find("input[name=category]").val();
-        var day = $(this).parents("tbody[name=day]").attr("class");
+        var day = $(this).parents("tbody[name=day]").attr("id");
         var target = $(this)
         var this_name = $(this).attr("name");
 
