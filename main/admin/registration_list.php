@@ -163,8 +163,8 @@ $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">등록 접수</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">참가자 정보</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">평점신청</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">결제 정보</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">기타</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">결제 정보</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">기타</th>';
 $html .= '</tr>';
 $html .= '<tr class="tr_center">';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">No</th>';
@@ -193,6 +193,7 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제 방식</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제금액</th>';
+$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">메모</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">할인율</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Promotion Code</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">추천인</th>';
@@ -203,7 +204,6 @@ $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width
 // $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
 // $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">특이식단</th>';
 $html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">개최 정보 습득 방법</th>';
-$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">메모</th>';
 $html .= '</tr>';
 $html .= '</thead>';
 $html .= '<tbody>';
@@ -406,6 +406,7 @@ foreach ($registration_list as $rk => $rl) {
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["register_date"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["payment_methods"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $price . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["etc6"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["discount_rate"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["promotion_code_number"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["recommended_by"] . '</td>';
@@ -416,7 +417,6 @@ foreach ($registration_list as $rk => $rl) {
 	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $rl["day3_luncheon_yn"] . '</td>';
 	// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">' . $special_request_food . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $conference_info . '</td>';
-	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["etc6"] . '</td>';
 	$html .= '</tr>';
 }
 $html .= '</tbody>';
