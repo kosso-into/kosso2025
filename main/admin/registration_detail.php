@@ -33,6 +33,7 @@ $registration_detail_query =	"
 											rr.day3_luncheon_yn,
 											rr.special_request_food,
 											rr.price,
+                                            rr.etc6,
 											IFNULL(rr.status, '1') AS registration_status,
 											DATE(p.payment_date) AS payment_date, p.total_price_kr, p.total_price_us, p.refund_reason, DATE_FORMAT(p.refund_date, '%Y-%m-%d') AS refund_date, p.refund_bank, p.refund_holder, p.refund_account, p.refund_amount,
 											n.nation_ko AS registration_nation, rr.register_path, rr.conference_info, rr.etc1,
@@ -255,7 +256,7 @@ $price = isset($registration_detail["price"]) ? $registration_detail["price"] : 
 //2022-05-12 추가
 $select_registration_query =	"
 										SELECT
-											r.*, n.nation_ko, nation_en, f.original_name as file_name, CONCAT(f.path,'/',f.save_name) AS file_path, 
+											r.*, n.nation_ko, nation_en, f.original_name as file_name, CONCAT(f.path,'/',f.save_name) AS file_path, r.date_of_birth,
 											iep.off_member_usd, iep.off_guest_usd, iep.on_member_usd, iep.on_guest_usd, 
 											iep.off_member_krw, iep.off_guest_krw, iep.on_member_krw, iep.on_guest_krw
 										FROM request_registration r
@@ -503,7 +504,11 @@ if ($attendance_type_no != 0) {
                         <td><?= $dietitian_number ?></td>
                     </tr>
                     <tr>
-                        <th>Others</th>
+                        <th>생년월일</th>
+                        <td colspan="3"><?= $registration_detail["date_of_birth"] ?></td>
+                    </tr>
+                    <tr>
+                        <th>기타</th>
                         <td colspan="3">
                             <div>
                                 Welcome Reception :
@@ -524,7 +529,7 @@ if ($attendance_type_no != 0) {
                         <td colspan="3"><?= $special_request_food ?></td>
                     </tr> -->
                     <tr>
-                        <th>Register Path</th>
+                        <th>유입경로</th>
                         <td colspan="3">
                             <?php
 							echo $register_path;
@@ -544,6 +549,14 @@ if ($attendance_type_no != 0) {
 							?>
                         </td>
                     </tr>
+                    <tr>
+                        <th>메모</th>
+                        <td colspan="3">
+                            <input style="width:80%" type="text" name="etc6" placeholder="메모"
+                                    value="<?= $registration_detail["etc6"] ?>">
+                            <button type="button" class="btn submit" data-type="update_memo">저장</button>
+                        </td>
+                    </tr> 
                 </tbody>
             </table>
             <?php
@@ -854,6 +867,9 @@ $(document).ready(function() {
                 return false;
             }
             data["refund_amount"] = refund_amount;
+        }
+        else if (submit_type === "update_memo") {
+            data["etc6"] = $("input[name=etc6]").val();
         }
 
         if (confirm("입력하신 내용으로 저장하시겠습니까?")) {
