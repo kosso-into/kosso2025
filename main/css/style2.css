@@ -764,6 +764,10 @@ section.visa .table_vertical th {color: #000;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td {padding:14px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td:last-child {padding:14px 100px 14px 20px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td:last-child p:not(:first-child) {margin-top:4px; padding-left: 106px; text-indent: -106px;}
+.program_detail_ul .font_16 {font-size:0.7rem; /*margin-bottom:10px;*/}
+.program_detail_ul .font_pink {color: #ff5500; /*margin-bottom:10px;*/}
+.program_detail_ul .font_blue {color: #0499CC; /*margin-bottom:10px;*/}
+.program_detail_ul .font_green {color: #639e53; /*margin-bottom:10px;*/}
 .program_detail_ul .font_20 {font-size:20px; /*margin-bottom:10px;*/}
 .program_detail_ul .font_20.mb0 {margin-bottom:0px;}
 .program_detail_ul .pink_bg + tr td.program_detail_td {background-color:#FFF7F8;}

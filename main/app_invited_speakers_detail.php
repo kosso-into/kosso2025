@@ -21,14 +21,14 @@ $select_program_query = "
                                    date_format(p.start_time, '%H:%i') as start_time, date_format(p.end_time, '%H:%i') as end_time,
                                    (CASE
                                        WHEN program_date = '2024-03-08' THEN 'day_1'
-                                       WHEN program_date = '2023-09-08' THEN 'day_2'
+                                       WHEN program_date = '2024-03-09' THEN 'day_2'
                                        WHEN program_date = '2023-09-09' THEN 'day_3'
                                        ELSE ''
                                        END
                                    ) as day,
                                    (CASE
                                        WHEN program_date = '2024-03-08' THEN '03.08.(금)'
-                                       WHEN program_date = '2023-09-08' THEN '03.09.(토)'
+                                       WHEN program_date = '2024-03-09' THEN '03.09.(토)'
                                        WHEN program_date = '2023-09-09' THEN 'Sep.9(Sat)'
                                        ELSE ''
                                        END

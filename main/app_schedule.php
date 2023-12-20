@@ -109,7 +109,7 @@ foreach($program_list as $pl){
                     } else {
                         $schedule="";
                     }
-                    if($program['program_date']==='2023-09-07'){
+                    if($program['program_date']==='2024-03-08'){
                     ?>
                     <li name="">
                         <div class="main">
@@ -206,7 +206,7 @@ foreach($program_list as $pl){
                     } else {
                         $schedule="";
                     }
-                    if($program['program_date']==='2023-09-08'){
+                    if($program['program_date']==='2024-03-09'){
                         ?>
                         <li name="">
                             <div class="main">
