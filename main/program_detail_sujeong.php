@@ -628,7 +628,7 @@ echo '<script type="text/javascript">
                                             <tr class="pink_bg">
                                                 <td>14:50-16:20</td>
                                                 <td> 
-                                                    <p class="font_16 font_pink">2024.03.08. ROOM 1</p>
+                                                    <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -690,7 +690,7 @@ echo '<script type="text/javascript">
                                             <tr class="pink_bg">
                                                 <td>16:30-18:05</td>
                                                 <td>
-                                                    <p class="font_16 font_pink">2024.03.08. ROOM 1</p>
+                                                    <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
                                                     <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1078,7 +1078,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 2 :Integrative physiology and molecular mechanisms of obesity</p>
+                                                    <p class="font_20 bold">Symposium 2 : Integrative physiology and molecular mechanisms of obesity</p>
                                                     <!-- <p><span class="bold">Chairpersons : 유순집</span> (TBD), <br><span
                                                             class="bold">김기우</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1707,7 +1707,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>18:30-19:00</td>
                                                 <td>
-                                                    <p class="font_16 font_blue">2024.03.08. ROOM 1</p>
+                                                    <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1758,7 +1758,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>19:10-19:40</td>
                                                 <td>
-                                                    <p class="font_16 font_blue">2024.03.08. ROOM 1</p>
+                                                    <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
                                                     <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1934,7 +1934,7 @@ echo '<script type="text/javascript">
                                             <tr class="sky_bg">
                                                 <td>07:30-08:20</td>
                                                 <td>
-                                                    <p class="font_16 font_blue">2024.03.09. ROOM 3</p>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
                                                     <!-- <p><span class="bold">Chairperson : 김경수</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
