@@ -29,7 +29,7 @@ window.onpageshow = function(event) {
 }
 
 $(document).ready(function (){
-
+    
     // Room Select Tab 초기화 / 클릭 스크립트 수정
     $(".app_tab li").click(function(){
 //							$(".sort_select").each(function(){
@@ -104,7 +104,7 @@ $(document).ready(function (){
 
 // [함수] 페이지 초기설정
 function init(){
-    
+   
     let day = parseInt($("input[name=day]").val() ?? "");
         day = isNaN(day) ? 0 : day
     let e_num = parseInt($("input[name=e_num]").val() ?? "");
@@ -184,7 +184,7 @@ function selectProgram(){
         success : function(res){
             if(res.code == 200) {
                 let program_list = res.result;
-
+            
                 history.replaceState({list:program_list, date, option_room, option_category, active: null},'', `#list`);
 
                 createHTMLList(program_list);
@@ -224,7 +224,7 @@ function createHTMLList(program_list, active){
         Object.values(pl.contents).forEach(cl=>{
             let speaker_info_html = "";
             let speaker_html = "";
-            
+            //console.log(cl.speaker_idx)
             if(cl.speaker_idx!=null){
                 speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">연자 정보</a>';
                 speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';

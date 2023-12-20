@@ -90,15 +90,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
+                                                <td>12:40-13:20</td>
                                                 <td>
-                                                    ROOM 1, 2, 3
-                                                    <br>12:40-13:20
-                                                </td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p>
                                                     <p class="font_20 bold">Plenary Lecture</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -121,16 +118,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
-                                                                        title
+                                                                        TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">이관우</p>(아주의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -160,13 +157,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td> ROOM 1
-                                                    <br>11:40-12:40</td>
+                                                <td>11:40-12:40</td>
                                                 <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 이규래</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 이규래</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -193,15 +189,15 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김경곤</p>
-                                                                        (TBD)
+                                                                        (가천의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -223,14 +219,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
+                                                <td>11:40-12:40</td>
                                                 <td>
-                                                    ROOM 2
-                                                    <br>11:40-12:40</td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 이문규</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 이문규</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -256,14 +250,14 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김은미</p>(TBD)
+                                                                        <p class="bold">김은미</p>(강북삼성병원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         Q&A
                                                                     </td>
@@ -297,13 +291,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>07:30-08:20</td>
                                                 <td>
-                                                    ROOM 1
-                                                    <br>07:30-08:20</td>
-                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 오승준</span> (TBD)</p>
+                                                    <!-- <p><span class="bold">Chairperson : 오승준</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -328,7 +320,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -351,13 +343,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>07:30-08:20</td>
                                                 <td>
-                                                    ROOM 2
-                                                    <br>07:30-08:20</td>
-                                                <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 김용성</span> (TBD)</p>
+                                                    <p class="font_16 font_blue">2024.03.09. ROOM 2</p>
+                                                    <p class="font_20 bold">Breakfast Symposium 2</p> 
+                                                    <!-- <p><span class="bold">Chairperson : 김용성</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -382,7 +372,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p> (TBD)
                                                                     </td>
@@ -405,13 +395,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>07:30-08:20</td>
                                                 <td>
-                                                    ROOM 3
-                                                    <br>07:30-08:20</td>
-                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 김경수</span> (TBD)</p>
+                                                    <!-- <p><span class="bold">Chairperson : 김경수</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -436,7 +424,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -466,13 +454,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>11:40-12:40</td>
                                                 <td>
-                                                    ROOM 1, 2, 3
-                                                <br>11:40-12:40</td>
-                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
@@ -498,7 +484,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>11:40-12:40</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -521,13 +507,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>11:40-12:40</td>
                                                 <td>
-                                                    ROOM 1, 2, 3
-                                                <br>11:40-12:40</td>
-                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.09. ROOM 2</p>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -552,7 +536,59 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>11:40-12:40</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="luncheon_symposium_3">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.09. ROOM 3</p>
+                                                    <p class="font_20 bold">Luncheon Symposium 2</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>11:40-12:40</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -583,15 +619,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>08:30-10:00</td>
                                                 <td>
-                                                    ROOM 1
-                                                <br>08:30-10:00</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Symposium 1 : Treatment of obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
-                                                            class="bold">강지현</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
+                                                            class="bold">강지현</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -615,28 +649,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손장원</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -663,15 +697,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>08:30-10:00</td>
                                                 <td>
-                                                    ROOM 2
-                                                <br>08:30-10:00</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 2</p>
                                                     <p class="font_20 bold">Symposium 2 :Integrative physiology and molecular mechanisms of obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 유순집</span> (TBD), <br><span
-                                                            class="bold">김기우</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 유순집</span> (TBD), <br><span
+                                                            class="bold">김기우</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -693,28 +725,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold"> Reduction of SPARC protects mice against NLRP3 inflammasome activation and obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">유승진</p>(한림의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold"> The N-degron pathway mediates lipophagy: The chemical modulation of lipophagy in obesity and NAFLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">박주원</p>(이화여대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">HMBA ameliorates obesity by MYH9- and ACTG1-dependent regulation of hypothalamic neuropeptides </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은경</p>(DGIST)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -741,15 +773,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>08:30-10:00</td>
                                                 <td>
-                                                    ROOM 3
-                                                <br>08:30-10:00</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">Symposium 3 : Postprandial glycemic response and Continuous Glucose Monitoring</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 김은미</span> (TBD), <br><span
-                                                            class="bold">임정현</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 김은미</span> (TBD), <br><span
+                                                            class="bold">임정현</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -771,34 +801,34 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Estimation of Ultra-processed Food Intake among Korean adults</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">박소현</p>(한림대)
+                                                                        <p class="bold">박소현</p>(한림대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Ultra-processed foods intakes and obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">심지선</p>(연세대)
+                                                                        <p class="bold">심지선</p>(연세대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Ultra-processed foods intake and all-cause and cardiovascular mortality</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이상아</p>(강원대)
+                                                                        <p class="bold">이상아</p>(강원대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"><p class="bold">임현정</p>(경희대),<br>
-                                                                        <p class="bold">권유진</p>(연세의대 용인세브란스)
+                                                                        <p class="bold"><p class="bold">임현정</p>(경희대학교 의학영양학과),<br>
+                                                                        <p class="bold">권유진</p>(용인세브란스 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -819,15 +849,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>10:10-11:40</td>
                                                 <td>
-                                                    ROOM 1
-                                                <br>10:10-11:40</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Symposium 4 : Environmental, genetics and obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 박혜순</span> (TBD), <br><span
-                                                            class="bold">김대중</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 박혜순</span> (TBD), <br><span
+                                                            class="bold">김대중</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -849,28 +877,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -897,15 +925,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>10:10-11:40</td>
                                                 <td>
-                                                    ROOM 2
-                                                <br>10:10-11:40</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 2</p>
                                                     <p class="font_20 bold">Symposium 5 : Gut microbiome</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 김상용</span> (TBD), <br><span
-                                                            class="bold">손장원</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 김상용</span> (TBD), <br><span
+                                                            class="bold">손장원</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -927,28 +953,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이봉기</p>(부경대)
+                                                                        <p class="bold">이봉기</p>(부경대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허진영</p>(서강대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김주연</p>(한양대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -975,15 +1001,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>10:10-11:40</td>
                                                 <td>
-                                                    ROOM 3
-                                                <br>10:10-11:40</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">Symposium 6 : TBD</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 이관우</span> (TBD), <br><span
-                                                            class="bold">강준구</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 이관우</span> (TBD), <br><span
+                                                            class="bold">강준구</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1005,34 +1029,34 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Circadian rhythm, obesity, and intermittent fasting</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">권오빈</p>(서울의대)
+                                                                        <p class="bold">권오빈</p>(서울대학교 의학과 생화학교실)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Chrononutrition and TRE's Effect on Metabolic Health</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">송윤주</p>(가톨릭대)
+                                                                        <p class="bold">송윤주</p>(가톨릭대학교 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Time-Restricted Eating-Integrating the What with the When</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이연희</p>(아주대병원)
+                                                                        <p class="bold">이연희</p>(아주대학교병원 영양팀)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">권혁태</p>(서울의대),<br>
-                                                                        <p class="bold">송수진</p>(한남대)
+                                                                        <p class="bold">권혁태</p>(서울의대 가정의학과),<br>
+                                                                        <p class="bold">송수진</p>(한남대학교 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1053,15 +1077,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>14:00-15:30</td>
                                                 <td>
-                                                    ROOM 1
-                                                <br>14:00-15:30</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Symposium 7 : New Antiobesity Drug</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
-                                                            class="bold">권혁태</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
+                                                            class="bold">권혁태</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1083,34 +1105,34 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Once-weekly Semaglutide and</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">남가은</p>(고려의대)
+                                                                        <p class="bold">남가은</p>(고려의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Tirzepatide</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">배재현</p>(고려의대)
+                                                                        <p class="bold">배재현</p>(고려의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Daily oral GLP-1 receptor agonists</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">노은</p>(한림의대)
+                                                                        <p class="bold">노은</p>(한림의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이승환</p>(가톨릭의대),<br>
-                                                                        <p class="bold">조윤정</p>(대구가톨릭의대)
+                                                                        <p class="bold">이승환</p>(가톨릭의대 내분비내과),<br>
+                                                                        <p class="bold">조윤정</p>(대구가톨릭의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1131,15 +1153,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>14:00-15:30</td>
                                                 <td>
-                                                    ROOM 2
-                                                <br>14:00-15:30</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 2</p>
                                                     <p class="font_20 bold">Symposium 8 : Metabolic Surgery</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 한상문</span> (TBD), <br><span
-                                                            class="bold">김경곤</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 한상문</span> (TBD), <br><span
+                                                            class="bold">김경곤</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1161,28 +1181,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1209,15 +1229,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>14:00-15:30</td>
                                                 <td>
-                                                    ROOM 3
-                                                <br>14:00-15:30</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
-                                                            class="bold">홍용희</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
+                                                            class="bold">홍용희</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1239,28 +1257,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1287,15 +1305,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>16:10-17:40</td>
                                                 <td>
-                                                    ROOM 1
-                                                <br>16:10-17:40</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 1</p>
                                                     <p class="font_20 bold">Symposium 10 : Cormobidity of obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 김선미</span> (TBD), <br><span
-                                                            class="bold">황유철</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 김선미</span> (TBD), <br><span
+                                                            class="bold">황유철</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1317,28 +1333,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1365,15 +1381,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>16:10-17:40</td>
                                                 <td>
-                                                    ROOM 2
-                                                <br>16:10-17:40</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 2</p>
                                                     <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 강재헌</span> (TBD), <br><span
-                                                            class="bold">이상열</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 강재헌</span> (TBD), <br><span
+                                                            class="bold">이상열</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1395,28 +1409,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1443,15 +1457,13 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="green_bg">
+                                                <td>16:10-17:40</td>
                                                 <td>
-                                                    ROOM 3
-                                                <br>16:10-17:40</td>
-                                                <td>
+                                                    <p class="font_16 font_green">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">Symposium 12 : Exercise, Obesity, and Metabolic Dysfunction</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : 신윤아</span> (TBD), <br><span
-                                                            class="bold">김종희</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairpersons : 신윤아</span> (TBD), <br><span
+                                                            class="bold">김종희</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1473,34 +1485,34 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Potential restorative effects of exercise for peripheral skeletal neuropathy and bone loss in a high-fat diet-induced type II diabetes model</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이승용</p>(인천대)
+                                                                        <p class="bold">이승용</p>(인천대학교 체육교육과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Regular exercise can how effectively transform our cardiovascular and brain health?</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">하민성</p>(서울시립대)
+                                                                        <p class="bold">하민성</p>(서울시립대학교 스포츠과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and Essential Amino Acids</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김일영</p>(가천의대)
+                                                                        <p class="bold">김일영</p>(가천대학과 의예과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이민철</p>(차의대),<br>
-                                                                        <p class="bold">문효열</p>(서울대)
+                                                                        <p class="bold">이민철</p>(차의과학대학교 스포츠의학과),<br>
+                                                                        <p class="bold">문효열</p>(서울대학교 체육교육과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1528,16 +1540,14 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
+                                                <td>08:30-10:00</td>
                                                 <td>
-                                                    ROOM 4
-                                                <br>08:30-10:00</td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 4</p>
                                                     <p class="font_20 bold">Oral Presentation 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p>
+                                                    <!-- <p>
                                                         <span class="bold">Chairpersons : 정창희</span> (TBD), <br>
                                                         <span class="bold">고혜진</span> (TBD)
-                                                    </p>
+                                                    </p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
@@ -1561,36 +1571,36 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -1613,16 +1623,14 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
+                                                <td>14:00-15:30</td>
                                                 <td>
-                                                    ROOM4
-                                                    <br>14:00-15:30</td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 4</p>
                                                     <p class="font_20 bold">Oral Presentation 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p>
+                                                    <!-- <p>
                                                         <span class="bold">Chairpersons : 박정환</span> (TBD), <br><span
                                                             class="bold">남가은</span> (TBD)
-                                                    </p>
+                                                    </p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
@@ -1646,36 +1654,36 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -1706,13 +1714,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>18:30-19:00</td>
                                                 <td>
-                                                    ROOM 1
-                                                    <br>18:30-19:00</td>
-                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.08. ROOM 1</p>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.08.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1735,8 +1741,8 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td>18:30-19:00</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -1759,13 +1765,11 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="sky_bg">
+                                                <td>19:10-19:40</td>
                                                 <td>
-                                                    ROOM 1
-                                                    <br>19:10-19:40</td>
-                                                <td>
+                                                    <p class="font_16 font_blue">2024.03.08. ROOM 1</p>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.08.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1788,8 +1792,8 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td>19:10-19:40</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
@@ -1819,14 +1823,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>14:50-16:20</td>
-                                                <td>
+                                                <td>14:50-16:20</td>
+                                                <td> 
+                                                    <p class="font_16 font_pink">2024.03.08. ROOM 1</p>
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.08.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1853,15 +1855,15 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>
                                                                         (TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1883,14 +1885,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
+                                                <td>16:30-18:05</td>
                                                 <td>
-                                                    ROOM1
-                                                    <br>16:30-18:05</td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.08. ROOM 1</p>
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.08.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1916,14 +1916,14 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
-                                                                    <td class="bold">title</td>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
                                                                         Q&A
                                                                     </td>
@@ -1956,15 +1956,13 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="pink_bg">
+                                            <tr class="light_orange_bg">
+                                                <td>12:40-13:20</td>
                                                 <td>
-                                                    ROOM 3
-                                                    <br>12:40-13:20</td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">문석학술상</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : 박철영</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 박철영</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1987,16 +1985,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
-                                                                        title
+                                                                        TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -2024,15 +2022,13 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="pink_bg">
+                                            <tr class="light_orange_bg">
+                                                <td>15:40-16:10</td>
                                                 <td>
-                                                    ROOM 3
-                                                    <br>15:40-16:10</td>
-                                                <td>
+                                                    <p class="font_16 font_pink">2024.03.09. ROOM 3</p>
                                                     <p class="font_20 bold">젊은연구자상</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -2055,16 +2051,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">
-                                                                        title
+                                                                        TBD
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>time</td>
+                                                                    <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>

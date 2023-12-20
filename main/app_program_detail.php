@@ -69,16 +69,16 @@ echo '<script type="text/javascript">
     $row_sql = "";
 
     switch ($day){
-        case "day_tbody day_1" : case "day_1" : $day = "2023-09-07";
+        case "day_tbody day_1" : case "day_1" : $day = "2024-03-08";
             break;
-        case "day_tbody day_2" : case "day_2" : $day = "2023-09-08";
+        case "day_tbody day_2" : case "day_2" : $day = "2024-03-09";
             break;
         case "day_tbody day_3" : case "day_3" : $day = "2023-09-09";
             break;
     }
 
     if($_GET===[]){
-        $row_sql .= " AND program_date = '2023-09-07' ";
+        $row_sql .= " AND program_date = '2024-03-08' ";
     }
 
     if($day != ""){
@@ -235,8 +235,8 @@ echo '<script type="text/javascript">
 //								}
 //                            ?>
                             <option value="1" class="day1 day2">Room1</option>
-                            <option value="2" class="day1 day2">Room2</option>
-                            <option value="3" class="day1 day2">Room3</option>
+                            <option value="2" class="day2">Room2</option>
+                            <option value="3" class="day2">Room3</option>
                             <option value="4" class="day2">Room4</option>
                             <option value="5" class="day2">Room5</option>
                             <!-- <option value="6" class="day2">Room6</option>

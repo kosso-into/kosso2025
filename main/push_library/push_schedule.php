@@ -33,7 +33,7 @@
 		exit;
 	}
 
-	$title   = "ICOMES2023";
+	$title   = "KSSO2024";
 	$url     = '/main/app_schedule.php';
 	$message = '';
 
@@ -51,7 +51,7 @@
 	foreach ($push_list AS $pl) {
 		if ($pl['token'] !== '' && $pl['type'] !== '') {
 
-			$message = $pl['program_name'] . ' will start in 10minute';
+			$message = $pl['program_name'] . '이 10분 뒤 시작합니다.';
 
 			$data = [
 				"title" => $title,
