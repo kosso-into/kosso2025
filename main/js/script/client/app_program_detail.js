@@ -184,7 +184,7 @@ function selectProgram(){
         success : function(res){
             if(res.code == 200) {
                 let program_list = res.result;
-            
+                console.log(res)
                 history.replaceState({list:program_list, date, option_room, option_category, active: null},'', `#list`);
 
                 createHTMLList(program_list);
@@ -220,11 +220,11 @@ function createHTMLList(program_list, active){
         let detail_text_html = "";
 
         let isActvie = active && active == index;
-
+        console.log(pl.contents)
         Object.values(pl.contents).forEach(cl=>{
             let speaker_info_html = "";
             let speaker_html = "";
-            //console.log(cl.speaker_idx)
+            console.log(cl.speaker_idx)
             if(cl.speaker_idx!=null){
                 speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">연자 정보</a>';
                 speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
@@ -341,7 +341,7 @@ function Schedule(e){
             if (res.code == 200) {
                 // Scientific Program 내 스케줄 버튼 토글
                 if(e.target.classList.contains('on')){
-                    AlarmMessage('Cancel');
+                    AlarmMessage('취소했습니다.');
                     e.target.classList.remove('on');
                     is_push = 'delete';
                     setAlarm(program_idx, is_push);
@@ -358,7 +358,7 @@ function Schedule(e){
                     });
                     $(".is_alarm_n").click(function(event) {
                         $('.program_alarm_pop').hide();
-                        AlarmMessage('완료되었습니다.');
+                        AlarmMessage('완료했습니다.');
                     });
                 }
             } else {

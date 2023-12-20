@@ -67,10 +67,10 @@ function writeOneLecture(data, id, name){
     special1Wrap.innerHTML = "";
     special2Wrap.innerHTML = "";
 
-    dataList[0].map((data)=>{
+    dataList.map((data)=>{
         const contents = document.createElement("tr");
         const speakerName = data.speaker?.split("(")[0];
-        const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+        const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
 
         if(data.speaker){
             contents.innerHTML = `
@@ -145,7 +145,7 @@ function writeTwoLecture(data, id){
     dataList[0].map((data)=>{
         const contents = document.createElement("tr");
         const speakerName = data.speaker?.split("(")[0];
-        const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+        const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
         //console.log(data)
      
         if(data.speaker){
@@ -187,7 +187,7 @@ function writeTwoLecture(data, id){
     dataList[1].map((data)=>{
         const contents = document.createElement("tr");
         const speakerName = data.speaker?.split("(")[0];
-        const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+        const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
         //console.log(data)
   
         if(data.speaker){
@@ -243,7 +243,7 @@ function writeThreeLecture(data, id){
         dataList[0].map((data)=>{
             const contents = document.createElement("tr");
             const speakerName = data.speaker?.split("(")[0];
-            const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+            const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
             //console.log(data)
          
         if(data.speaker){
@@ -275,7 +275,7 @@ function writeThreeLecture(data, id){
         dataList[1].map((data)=>{
             const contents = document.createElement("tr");
             const speakerName = data.speaker?.split("(")[0];
-            const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+            const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
             //console.log(data)
            
         if(data.speaker){
@@ -307,7 +307,7 @@ function writeThreeLecture(data, id){
         dataList[2].map((data)=>{
             const contents = document.createElement("tr");
             const speakerName = data.speaker?.split("(")[0];
-            const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+            const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
             //console.log(data)
            
         if(data.speaker){
@@ -373,9 +373,9 @@ function writeSympoLecutre(data, id){
             dataList[i].map((data, j)=>{
                 const contents = document.createElement("tr");
                 const speakerName = data.speaker?.split("(")[0];
-                const speakerOrg = data.speaker?.split("(")[1].split(")")[0];
+                const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
                 //console.log(data)
-            
+            //j = 3 -> panel
         if(data.speaker && j !== 3){
             contents.innerHTML = `
             <td>${data.contents_start_time}-${data.contents_end_time}</td>
