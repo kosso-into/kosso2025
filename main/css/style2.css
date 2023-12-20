@@ -777,6 +777,11 @@ section.visa .table_vertical th {color: #000;}
 .program_detail_ul .sky_bg + tr td.program_detail_td {background-color:#F3FAFF;}
 .program_detail_ul .purple_bg + tr td.program_detail_td {background-color:#F4F3FF;}
 .program_detail_ul .green_bg + tr td.program_detail_td {background-color:#F3FCEA;}
+
+@media screen and (max-width:486px) {
+	.program_detail_ul .font_16 {font-size:0.6rem; /*margin-bottom:10px;*/}
+	.program_detail_ul .program_header p{margin-left: 0;}
+}
 /*히든처리*/
 /*
 .program_detail_ul .pink_bg + tr td.program_detail_td {display: none;}

@@ -184,7 +184,7 @@ function selectProgram(){
         success : function(res){
             if(res.code == 200) {
                 let program_list = res.result;
-                console.log(res)
+                // console.log(res)
                 history.replaceState({list:program_list, date, option_room, option_category, active: null},'', `#list`);
 
                 createHTMLList(program_list);
@@ -220,14 +220,14 @@ function createHTMLList(program_list, active){
         let detail_text_html = "";
 
         let isActvie = active && active == index;
-        console.log(pl.contents)
+            
         Object.values(pl.contents).forEach(cl=>{
             let speaker_info_html = "";
             let speaker_html = "";
-            console.log(cl.speaker_idx)
+
             if(cl.speaker_idx!=null){
                 speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">연자 정보</a>';
-                speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
+                speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+'</span>'+'('+cl.affiliation+')'+'</p>';
             } else {
                 if(cl.speaker!=null){
                     speaker_html += '<p class="chairperson">'+'<span class="">'+cl.speaker+'</span>'+'</p>';

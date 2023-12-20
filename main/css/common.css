@@ -149,12 +149,32 @@ p.sub_section_title.main_theme{color: #000;font-weight: 600;letter-spacing: 0px;
 .tab_area2{margin-bottom:50px;}
 .tab_area2 .clearfix{display:inline-block;}
 .tab_area2{text-align:center;width: 100%;}
-.tab_area2 li, .tab_li li{/*width:calc(33.3333% - 13.4px)*/;height: 100%;background-color: #fff;padding: 6px 25px 8px;border-radius: 30px;color: #fff;}
+.tab_area2 li, .tab_li li{/*width:calc(33.3333% - 13.4px)*/height: 100%;background-color: #fff;padding: 6px 25px 8px;border-radius:30px;color: #fff;}
 .tab_li {text-align:center; margin-bottom:50px;}
 .tab_li li{display:inline-block;}
 .tab_area2 .clearfix li, .tab_li li {margin-right:20px;border: 1px solid #707070}
-.tab_area2 .clearfix li.active, .tab_li li.on {background-color: #0499CC;border: 1px solid #0499CC;}
-.tab_area2 .clearfix li.active a, .tab_li li.on a {color:#fff;}
+/* .tab_area2 .clearfix li.active, .tab_li li.on {background-color: #0499CC;border: 1px solid #0499CC;} */
+.tab_li li:nth-child(1).on{background-color: rgba(255,160,171,0.3);border: 1px solid rgba(255,160,171,0.3);}
+.tab_li li:nth-child(2).on{background-color: rgba(255,160,171,0.3);border: 1px solid rgba(255,160,171,0.3);}
+.tab_li li:nth-child(3).on{background-color: #FFEDD5;border: 1px solid #FFEDD5;}
+.tab_li li:nth-child(4).on{background-color: #FFEDD5;border: 1px solid #FFEDD5;}
+.tab_li li:nth-child(5).on{background-color: #FFEDD5;border: 1px solid #FFEDD5;}
+.tab_li li:nth-child(6).on{background-color: rgba(255,160,171,0.3);border: 1px solid rgba(255,160,171,0.3);}
+.tab_li li:nth-child(7).on{background-color: #D8F5BB;border: 1px solid #D8F5BB;}
+.tab_li li:nth-child(8).on{background-color: #E0F3FF;border: 1px solid #E0F3FF;}
+.tab_li li:nth-child(9).on{background-color: #E0F3FF;border: 1px solid #E0F3FF;}
+.tab_li li:nth-child(10).on{background-color: #E0F3FF;border: 1px solid #E0F3FF;}
+/* .tab_area2 .clearfix li.active a, .tab_li li.on a {color:#fff;} */
+.tab_li li:nth-child(1).on a{color:#ff5500;}
+.tab_li li:nth-child(2).on a{color:#ff5500;}
+.tab_li li:nth-child(3).on a{color:#ff5500;}
+.tab_li li:nth-child(4).on a{color:#ff5500;}
+.tab_li li:nth-child(5).on a{color:#ff5500;}
+.tab_li li:nth-child(6).on a{color:#ff5500;}
+.tab_li li:nth-child(7).on a{color:#639e53;}
+.tab_li li:nth-child(8).on a{color:#0499CC;}
+.tab_li li:nth-child(9).on a{color:#0499CC;}
+.tab_li li:nth-child(10).on a{color:#0499CC;}
 .tab_area2 .clearfix li a, .tab_li li a {color: #444444;font-size: 22px; font-weight:bold;}
 .tab_area2 .clearfix li a strong, .tab_li li a strong {font-weight: bold;color: #444444;font-size: 22px;}
 .tab_area2 .clearfix li:last-of-type, .tab_li li:last-of-type {margin-right:0;}
