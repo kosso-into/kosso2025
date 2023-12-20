@@ -55,7 +55,7 @@
 						<li><a href="/main/app_abstract.php?category_idx=13">Satellite Symposium</a></li>
 						<!-- <li><a href="/main/app_abstract.php?category_idx=14">Sponsored Session</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=16">Oral Presentation</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=17">Guided Poster Presentation</a></li>
+						<!-- <li><a href="/main/app_abstract.php?category_idx=17">Guided Poster Presentation</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=18">Poster Exhibition</a></li>
 					</ul>
 				</li>

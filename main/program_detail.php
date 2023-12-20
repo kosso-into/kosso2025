@@ -76,14 +76,14 @@ echo '<script type="text/javascript">
                 <ul class="tab_li">
                     <li id="plenary_lecture" class="on"><a href="javascript:;">Plenary Lecture</a></li>
                     <li id="keynote_lecture"><a href="javascript:;">Keynote Lecture</a></li>
-                    <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
-                    <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
-                    <li id="symposium"><a href="javascript:;">Symposium</a></li>
-                    <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
-                    <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
-                    <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
                     <li id="special_lecture_1"><a href="javascript:;">문석학술상</a></li>
                     <li id="special_lecture_2"><a href="javascript:;">젊은연구자상</a></li>
+                    <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
+                    <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
+                    <li id="symposium"><a href="javascript:;">Symposium</a></li>
+                    <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
+                    <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
+                    <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
                 </ul>
                
                 <div class="tab_wrap">

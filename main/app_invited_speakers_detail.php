@@ -13,8 +13,15 @@ $select_invited_speaker_query = "
 
 $invited_speaker = sql_fetch($select_invited_speaker_query);
 
-$is_profile_img = ($invited_speaker['image_path'] ?? '/main/img/profile_empty.png');
+	
+// [231204] sujeong 
+if(!isset($invited_speaker['image_path'])){
+	$is_profile_img = $invited_speaker['image_path'];
+}else{
+	$is_profile_img = '/main/img/profile_empty.png';
+}
 
+// $is_profile_img = ($invited_speaker['image_path'] ?? '/main/img/profile_empty.png');
 
 $select_program_query = "
                             SELECT p.idx, isp.idx, first_name, last_name, contents_title, program_name,program_tag_name,p.chairpersons, p.preview, pp.program_place_name, program_category_idx, p.program_date,
@@ -64,7 +71,7 @@ $program_list = get_data($select_program_query);
 				<div class="speakers_detail">
 					<img src="<?= $is_profile_img ?>" alt="profile img">
 					<div class="detail_box">
-						<p><?=$invited_speaker['first_name']?> <?=$invited_speaker['last_name']?><span><?=$invited_speaker['affiliation']?><br><?=$invited_speaker['nation']?></span></p>
+						<p><?=$invited_speaker['first_name']?> <?=$invited_speaker['last_name']?><span><?=$invited_speaker['affiliation']?></span></p>
 						<?php
 							if (!empty($invited_speaker['cv_path'])) {
 						?>

@@ -185,9 +185,8 @@ body {
 
 <!-- Plenary Speakers -->
 <?php /* hyojun 231211 닫아달라는 요청
-<div class="speakers_wrap">
+ <div class="speakers_wrap">
     <div class="container">
-        <!-- <h3 class="title">Plenary &amp; Keynote Speakers</h3> -->
         <h3 class="title">주요 세션 소개</h3>
         <div class="">
             <ul class="main_speaker2">
@@ -195,63 +194,23 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
-                    <h5 class="title">TBD</h5>
-                    <div class="career">TBD</div>
+                    <h5 class="title">이관우</h5>
+                    <div class="career">아주의대</div>
                 </li>
                 <li class="index_speaker1">
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
-                    <h5 class="title">TBD</h5>
-                    <div class="career">TBD</div>
+                    <h5 class="title">김경곤</h5>
+                    <div class="career">가천의대</div>
                 </li>
                 <li class="index_speaker6">
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
-                    <h5 class="title">TBD</h5>
-                    <div class="career">TBD</div>
-                </li>
-                <li class="index_speaker7">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-
-                    <h5 class="title">TBD</h5>
-                    <div class="career">TBD</div>
-                </li> 
-            
-<!-- <li class="index_speaker2">
-
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <h5 class="title">Matthias Blüher</h5>
-                    <div class="career">University of Leipzig,<br>Germany</div>
-                </li>
-                <li class="index_speaker8">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <h5 class="title">Jae Myoung Suh</h5>
-                    <div class="career">KAIST,<br>Republic of Korea</div>
-                </li>
-                <li class="index_speaker3">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <h5 class="title">Zachary Knight</h5>
-                    <div class="career">University of California,<br>San Francisco, USA</div>
-                </li>
-                <li class="index_speaker4">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <h5 class="title">Jae-Heon Kang</h5>
-                    <div class="career">Sungkyunkwan University,<br>Republic of Korea</div>
+                    <h5 class="title">김은미</h5>
+                    <div class="career">강북삼성병원</div>
                 </li> -->
-
-
             </ul>
         </div>
     </div>

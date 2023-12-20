@@ -77,7 +77,7 @@ function selectKeywords(){
 						_kewords_num = kl.data.length;
 									
 						for (var k=0; k < _kewords_num; k++) {
-							console.log(k);
+							// console.log(k);
 							let check_favorite = "";
 							if (kl.data[k]['favorite_check'] == 'Y') {
 								check_favorite = 'on';

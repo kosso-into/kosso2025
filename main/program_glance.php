@@ -566,16 +566,17 @@ function writeModal(data){
     let chairperson = "";
 
     data.map((t, i)=>{
+        console.log(t)
         const contents = document.createElement("div")
         title = t.title;
         subTitle = t.program_name;
         titleRoom = t.program_place_name;
-        const startDay = t.start_time.split(" ")[0];
-        const startTime = t.start_time.split(" ")[1];
+        const startDay = t.start_time?.split(" ")[0];
+        const startTime = t.start_time?.split(" ")[1];
         const speakerName = t.speaker?.split("(")[0];
-        const speakerOrg = t.speaker?.split("(")[1].split(")")[0];
+        const speakerOrg = t.speaker?.split("(")[1]?.split(")")[0];
 
-        titleDay = `${startDay.split("-")[0]}년 ${startDay.split("-")[1]}월 ${startDay.split("-")[2]}일`;
+        titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
         titleTime = startTime + '-' + t.end_time;
         chairperson = t.chairpersons;
         contents.className = "content";
