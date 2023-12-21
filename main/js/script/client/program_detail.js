@@ -33,7 +33,7 @@ function writeProgramDetail(data, id, name){
             writeThreeLecture(data, id)
             break;
         case 12: //luncheon_lecture
-            writeTwoLecture(data, id)
+            writeThreeLecture(data, id)
             break;
         case 8: //symposium
             writeSympoLecutre(data,id)
@@ -114,9 +114,6 @@ function writeTwoLecture(data, id){
 
     const keyNote1Wrap = document.querySelector("#keynote_lecture_1");
     const keyNote2Wrap = document.querySelector("#keynote_lecture_2");
-
-    const Luncheon1Wrap = document.querySelector("#luncheon_symposium_1");
-    const Luncheon2Wrap = document.querySelector("#luncheon_symposium_2");
 
     const oral1Wrap = document.querySelector("#oral_presentation_1");
     const oral2Wrap = document.querySelector("#oral_presentation_2");
@@ -215,8 +212,6 @@ function writeTwoLecture(data, id){
         }
         if(id === 6){
             keyNote2Wrap.append(contents);
-        }else if(id === 12){
-            Luncheon2Wrap.append(contents);
         }else if(id === 16){
             oral2Wrap.append(contents);
         }else if(id === 13){
@@ -235,6 +230,11 @@ function writeThreeLecture(data, id){
         const Breakfast1Wrap = document.querySelector("#breakfast_symposium_1");
         const Breakfast2Wrap = document.querySelector("#breakfast_symposium_2");
         const Breakfast3Wrap = document.querySelector("#breakfast_symposium_3");
+        
+        const Luncheon1Wrap = document.querySelector("#luncheon_symposium_1");
+        const Luncheon2Wrap = document.querySelector("#luncheon_symposium_2");
+        const Luncheon3Wrap = document.querySelector("#luncheon_symposium_3");
+
     
         Breakfast1Wrap.innerHTML = "";
         Breakfast2Wrap.innerHTML = "";
@@ -269,7 +269,12 @@ function writeThreeLecture(data, id){
 
 `
         }
-        Breakfast1Wrap.append(contents);
+        if(id === 11){
+            Breakfast1Wrap.append(contents);
+        }
+        else if(id === 12){
+            Luncheon1Wrap.append(contents);
+        }
         })
 
         dataList[1].map((data)=>{

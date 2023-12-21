@@ -65,14 +65,14 @@ echo '<script type="text/javascript">
         <ul class="tab_li">
             <li id="plenary_lecture" class="on"><a href="javascript:;">Plenary Lecture</a></li>
             <li id="keynote_lecture"><a href="javascript:;">Keynote Lecture</a></li>
-            <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
-            <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
-            <li id="symposium"><a href="javascript:;">Symposium</a></li>
-            <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
-            <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
-            <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
             <li id="special_lecture_1"><a href="javascript:;">문석학술상</a></li>
             <li id="special_lecture_2"><a href="javascript:;">젊은연구자상</a></li>
+            <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
+            <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
+            <li id="symposium"><a href="javascript:;">Symposium</a></li>
+            <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
+            <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
+            <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
         </ul>
         <div class="tab_wrap">
             
@@ -80,7 +80,12 @@ echo '<script type="text/javascript">
             
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
+                            
                             <li name="plenary_lecture_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 1, 2, 3</span>
+                                </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -89,14 +94,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
+                                                <td>12:40-13:20</td>
                                                 <td>
-                                                    ROOM 1, 2, 3
-                                                    <br>12:40-13:20</td>
-                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p> -->
                                                     <p class="font_20 bold">Plenary Lecture</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -112,13 +115,14 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody id="plenary_lecture_1">
                                                             </tbody>
+                                                        </table>
                                                         </table>
                                                     </div>
                                                 </td>
@@ -136,6 +140,10 @@ echo '<script type="text/javascript">
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
                             <li name="keynote_lecture_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 1</span>
+                                </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -144,13 +152,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td> ROOM 1
-                                                    <br>11:40-12:40</td>
+                                                <td>11:40-12:40</td>
                                                 <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 이규래</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -170,7 +177,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -186,6 +193,10 @@ echo '<script type="text/javascript">
                                 </div>
                             </li>
                             <li name="keynote_lecture_2">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 2</span>
+                                </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -194,14 +205,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
+                                                <td>11:40-12:40</td>
                                                 <td>
-                                                    ROOM 2
-                                                    <br>11:40-12:40</td>
-                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : 이문규</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -220,7 +229,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -238,836 +247,16 @@ echo '<script type="text/javascript">
                         </ul>
                     </div>
 
-
-            <!-- Breakfast Symposium -->
-
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                        <li name="breakfast_symposium_1">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>07:30-08:20</td>
-                                                <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Breakfast Symposium 1 Detail)</li>
-                                                        <li>(Breakfast Symposium 1 Detail)</li>
-                                                        <li>(Breakfast Symposium 1 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="breakfast_symposium_1">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        
+            <!-- 문석학술상 -->
+            
+            <div class="tab_cont">
+                <ul class="program_detail_ul">
+                        <li name="special_lecture_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 3</span>
                                 </div>
-                            </li>
-                            <li name="breakfast_symposium_2">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM 2
-                                                    <br>07:30-08:20</td>
-                                                <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Breakfast Symposium 2 Detail)</li>
-                                                        <li>(Breakfast Symposium 2 Detail)</li>
-                                                        <li>(Breakfast Symposium 2 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="breakfast_symposium_2">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="breakfast_symposium_3">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM 3
-                                                    <br>07:30-08:20</td>
-                                                <td>
-                                                    <p class="font_20 bold">Breakfast Symposium 3</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Breakfast Symposium 3 Detail)</li>
-                                                        <li>(Breakfast Symposium 3 Detail)</li>
-                                                        <li>(Breakfast Symposium 3 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="breakfast_symposium_3"> 
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-            <!-- Luncheon Lecture -->
-
-               <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                            <li name="luncheon_symposium_1">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM 1, 2, 3
-                                                <br>11:40-12:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Luncheon Lecture 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Luncheon Symposium 1 Detail)</li>
-                                                        <li>(Luncheon Symposium 1 Detail)</li>
-                                                        <li>(Luncheon Symposium 1 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="luncheon_symposium_1">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="luncheon_symposium_2">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM1, 2, 3
-                                                    <br>11:40-12:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Luncheon Lecture 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Luncheon Symposium 2 Detail)</li>
-                                                        <li>(Luncheon Symposium 2 Detail)</li>
-                                                        <li>(Luncheon Symposium 2 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="luncheon_symposium_2">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                </div>
-           
-            <!-- Symposium -->
-
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
-
-                            <li name="symposium_1">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>08:30-10:00</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 1 : Treatment of obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 1 Detail)</li>
-                                                        <li>(Symposium 1 Detail)</li>
-                                                        <li>(Symposium 1 Detail)</li>
-                                                    </ul>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_1">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_2">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM2
-                                                    <br>08:30-10:00</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 2 :Integrative physiology and molecular mechanisms of obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 2 Detail)</li>
-                                                        <li>(Symposium 2 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_2">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_3">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 3
-                                                    <br>08:30-10:00</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 3 : Postprandial glycemic response and Continuous Glucose Monitoring</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 3 Detail)</li>
-                                                        <li>(Symposium 3 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_3">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_4">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>10:10-11:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 4 : Environmental, genetics and obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 4 Detail)</li>
-                                                        <li>(Symposium 4 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_4">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_5">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 2
-                                                    <br>10:10-11:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 5 : Gut microbiome</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 4 Detail)</li>
-                                                        <li>(Symposium 4 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_5">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_6">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 3
-                                                    <br>10:10-11:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 6 : TBD</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 6 Detail)</li>
-                                                        <li>(Symposium 6 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_6">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_7">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>14:00-15:30</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 7 : New Antiobesity Drug</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 7 Detail)</li>
-                                                        <li>(Symposium 7 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_7">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_8">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 2
-                                                    <br>14:00-15:30</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 8 : Metabolic Surgery</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 8 Detail)</li>
-                                                        <li>(Symposium 8 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_8">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_9">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 3
-                                                    <br>14:00-15:30</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 9 Detail)</li>
-                                                        <li>(Symposium 9 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_9">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_10">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>16:10-17:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 10 : Cormobidity of obesity</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 10 Detail)</li>
-                                                        <li>(Symposium 10 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_10">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_11">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 2
-                                                    <br>16:10-17:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 10 Detail)</li>
-                                                        <li>(Symposium 10 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_11">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="symposium_12">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="green_bg">
-                                                <td>
-                                                    ROOM 3
-                                                    <br>16:10-17:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Symposium 12 : Exercise, Obesity, and Metabolic Dysfunction</p>
-                                                    <p class="font_20 bold">2024.03.09.</p> 
-                                                    <p><span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 12 Detail)</li>
-                                                        <li>(Symposium 12 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="symposium_12">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-            <!-- Oral Presentation -->
-
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                        <li name="oral_presentation_1">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -1076,16 +265,126 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
+                                                <td>12:40-13:20</td>
                                                 <td>
-                                                    ROOM 4
-                                                    <br>08:30-10:00</td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">문석학술상</p>
+                                                    <!-- <p><span class="bold">Chairperson : 박철영</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="special_lecture_detail_1">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </li>
+                </ul>
+            </div>
+     
+                 <!-- 젊은연구자상-->
+            
+                    <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                            <li name="special_lecture_2">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 1, 2, 3</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_orange_bg">
+                                                <td>15:40-16:10</td>
                                                 <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">젊은연구자상</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="special_lecture_detail_2">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                                <!-- Oral Presentation -->
+
+                    <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                        <li name="oral_presentation_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 4</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_orange_bg">
+                                                <td>08:30-10:00</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 1</p>
-                                                    <p class="font_20 bold">2024.03.09.</p>
-                                                    <p>
-                                                        <span class="bold">Chairpersons : TBD</span> (TBD), <br>
-                                                        <span class="bold">TBD</span> (TBD)
-                                                    </p>
+                                                    <!-- <p>
+                                                        <span class="bold">Chairpersons : 정창희</span> (TBD), <br>
+                                                        <span class="bold">고혜진</span> (TBD)
+                                                    </p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
@@ -1102,7 +401,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -1126,16 +425,14 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
+                                                <td>14:00-15:30</td>
                                                 <td>
-                                                    ROOM 4
-                                                    <br>14:00-15:30</td>
-                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 2</p>
-                                                    <p class="font_20 bold">2024.03.09.</p>
-                                                    <p>
-                                                        <span class="bold">Chairpersons : TBD</span> (TBD), <br><span
-                                                            class="bold">TBD</span> (TBD)
-                                                    </p>
+                                                    <!-- <p>
+                                                        <span class="bold">Chairpersons : 박정환</span> (TBD), <br><span
+                                                            class="bold">남가은</span> (TBD)
+                                                    </p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
@@ -1152,7 +449,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -1171,110 +468,15 @@ echo '<script type="text/javascript">
                     </div>
                   
 
-            <!-- Satellite Symposium -->
-
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                            <li name="satellite_symposium_1">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>18:30-19:00</td>
-                                                <td>
-                                                    <p class="font_20 bold">Satellite Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.08.</p>
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Satellite Symposium 1 Detail)</li>
-                                                        <li>(Satellite Symposium 1 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="satellite_symposium_1">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="satellite_symposium_2">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>19:10-19:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.08.</p>
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Satellite Symposium 2 Detail)</li>
-                                                        <li>(Satellite Symposium 2 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody id="satellite_symposium_2">
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
             <!-- Pre-congress Symposium -->
 
-                    <div class="tab_cont">
+            <div class="tab_cont">
                         <ul class="program_detail_ul">
                             <li name="pre_congress_symposium_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 8일(금)</p>
+                                    <span class="font_16 bold">ROOM 1</span>
+                                </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -1283,14 +485,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>
-                                                    ROOM 1
-                                                    <br>14:50-16:20</td>
-                                                <td>
+                                                <td>14:50-16:20</td>
+                                                <td> 
+                                                    <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
-                                                    <p class="font_20 bold">2024.03.08.</p>
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1310,7 +510,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -1334,14 +534,12 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
+                                                <td>16:30-18:05</td>
                                                 <td>
-                                                    ROOM 1
-                                                    <br>16:30-18:05</td>
-                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
-                                                    <p class="font_20 bold">2024.03.08.</p>
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1360,7 +558,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                        <<table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -1378,12 +576,16 @@ echo '<script type="text/javascript">
                         </ul>
                     </div>
 
-            
-            <!-- 문석학술상 -->
-            
+                   
+            <!-- Symposium -->
+
             <div class="tab_cont">
-                <ul class="program_detail_ul">
-                        <li name="special_lecture_1">
+                        <ul class="program_detail_ul">
+                            <li name="symposium_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 1</span>
+                                </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -1391,36 +593,36 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="pink_bg">
+                                            <tr class="green_bg">
+                                                <td>08:30-10:00</td>
                                                 <td>
-                                                    ROOM 3
-                                                    <br>12:40-13:20</td>
-                                                <td>
-                                                    <p class="font_20 bold">문석학술상</p>
-                                                    <p class="font_20 bold">2024.03.09.</p>
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Symposium 1 : Treatment of obesity</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
+                                                            class="bold">강지현</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <p class="bold">Organizer : 문준성, 박경희</p>
                                                     <ul>
-                                                        <li>(Plenary Lecture Detail)</li>
-                                                        <li>(Plenary Lecture Detail)</li>
-                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Symposium 1 Detail)</li>
+                                                        <li>(Symposium 1 Detail)</li>
+                                                        <li>(Symposium 1 Detail)</li>
+                                                    </ul>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
                                                             </colgroup>
-                                                            <tbody id="special_lecture_detail_1">
+                                                            <tbody id="symposium_1">
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -1429,15 +631,8 @@ echo '<script type="text/javascript">
                                         </tbody>
                                     </table>
                                 </div>
-                        </li>
-                </ul>
-            </div>
-     
-                 <!-- 젊은연구자상-->
-            
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                            <li name="special_lecture_2">
+                            </li>
+                            <li name="symposium_4">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -1445,36 +640,499 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="pink_bg">
+                                            <tr class="green_bg">
+                                                <td>10:10-11:40</td>
                                                 <td>
-                                                    ROOM 3
-                                                    <br>15:40-16:10</td>
-                                                <td>
-                                                    <p class="font_20 bold">젊은연구자상</p>
-                                                    <p class="font_20 bold">2024.03.09.</p>
-                                                    <p><span class="bold">Chairperson : TBD</span> (TBD)</p>
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Symposium 4 : Environmental, genetics and obesity</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 박혜순</span> (TBD), <br><span
+                                                            class="bold">김대중</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                <p class="bold">Organizer: 배재현, 조윤정</p>
                                                     <ul>
-                                                        <li>(Plenary Lecture Detail)</li>
-                                                        <li>(Plenary Lecture Detail)</li>
-                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Symposium 4 Detail)</li>
+                                                        <li>(Symposium 4 Detail)</li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <table class="c_table detail_table padding_0">
+                                                    <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
                                                             </colgroup>
-                                                            <tbody id="special_lecture_detail_2">
+                                                            <tbody id="symposium_4">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="symposium_7">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>14:00-15:30</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Symposium 7 : New Antiobesity Drug</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
+                                                            class="bold">권혁태</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 이승환, 남가은</p>
+                                                    <ul>
+                                                        <li>(Symposium 7 Detail)</li>
+                                                        <li>(Symposium 7 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_7">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="symposium_10">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>16:10-17:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Symposium 10 : Cormobidity of obesity</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 김선미</span> (TBD), <br><span
+                                                            class="bold">황유철</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 윤지완, 오범조</p>
+                                                    <ul>
+                                                        <li>(Symposium 10 Detail)</li>
+                                                        <li>(Symposium 10 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_10">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                                
+                            <li name="symposium_2">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 2</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>08:30-10:00</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
+                                                    <p class="font_20 bold">Symposium 2 : Integrative physiology and molecular mechanisms of obesity</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 유순집</span> (TBD), <br><span
+                                                            class="bold">김기우</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Symposium 2 Detail)</li>
+                                                        <li>(Symposium 2 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_2">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="symposium_5">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>10:10-11:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
+                                                    <p class="font_20 bold">Symposium 5 : Gut microbiome</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 김상용</span> (TBD), <br><span
+                                                            class="bold">손장원</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Symposium 5 Detail)</li>
+                                                        <li>(Symposium 5 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_5">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                                                        
+                            <li name="symposium_8">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>14:00-15:30</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
+                                                    <p class="font_20 bold">Symposium 8 : Metabolic Surgery</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 한상문</span> (TBD), <br><span
+                                                            class="bold">김경곤</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 한상문</p>
+                                                    <ul>
+                                                        <li>(Symposium 8 Detail)</li>
+                                                        <li>(Symposium 8 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_8">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                           
+                            <li name="symposium_11">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>16:10-17:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
+                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 강재헌</span> (TBD), <br><span
+                                                            class="bold">이상열</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 이상열, 한경도</p>
+                                                    <ul>
+                                                        <li>(Symposium 10 Detail)</li>
+                                                        <li>(Symposium 10 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_10">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li name="symposium_3">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 3</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>08:30-10:00</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Symposium 3 : Postprandial glycemic response and Continuous Glucose Monitoring</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 김은미</span> (TBD), <br><span
+                                                            class="bold">임정현</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 임현정, 김오연, 송수진</p>
+                                                    <ul>
+                                                        <li>(Symposium 3 Detail)</li>
+                                                        <li>(Symposium 3 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_3">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                         
+                            <li name="symposium_6">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>10:10-11:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Symposium 6 : TBD</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 이관우</span> (TBD), <br><span
+                                                            class="bold">강준구</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 임현정, 김오연, 송수진</p>
+                                                    <ul>
+                                                        <li>(Symposium 6 Detail)</li>
+                                                        <li>(Symposium 6 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_6">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li name="symposium_9">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>14:00-15:30</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
+                                                            class="bold">홍용희</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 홍용희</p>
+                                                    <ul>
+                                                        <li>(Symposium 9 Detail)</li>
+                                                        <li>(Symposium 9 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_9">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li name="symposium_12">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>16:10-17:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Symposium 12 : Exercise, Obesity, and Metabolic Dysfunction</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 신윤아</span> (TBD), <br><span
+                                                            class="bold">김종희</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                <p class="bold">Organizer: 이세원, 이민철, 김일영</p>
+                                                    <ul>
+                                                        <li>(Symposium 12 Detail)</li>
+                                                        <li>(Symposium 12 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="symposium_12">
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -1488,9 +1146,420 @@ echo '<script type="text/javascript">
                     </div>
 
 
+            <!-- Satellite Symposium -->
+
+                    <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                            <li name="satellite_symposium_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 8일(금)</p>
+                                    <span class="font_16 bold">ROOM 1</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>18:30-19:00</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Satellite Symposium 1</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Satellite Symposium 1 Detail)</li>
+                                                        <li>(Satellite Symposium 1 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="satellite_symposium_1">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="satellite_symposium_2">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>19:10-19:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Satellite Symposium 2</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Satellite Symposium 2 Detail)</li>
+                                                        <li>(Satellite Symposium 2 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="satellite_symposium_2">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+            <!-- Breakfast Symposium -->
+
+                    <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                        <li name="breakfast_symposium_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 1</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>07:30-08:20</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Breakfast Symposium 1</p>
+                                                    <!-- <p><span class="bold">Chairperson : 오승준</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Breakfast Symposium 1 Detail)</li>
+                                                        <li>(Breakfast Symposium 1 Detail)</li>
+                                                        <li>(Breakfast Symposium 1 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="breakfast_symposium_1"> 
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="breakfast_symposium_2">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 2</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>07:30-08:20</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 2</p> -->
+                                                    <p class="font_20 bold">Breakfast Symposium 2</p> 
+                                                    <!-- <p><span class="bold">Chairperson : 김용성</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Breakfast Symposium 2 Detail)</li>
+                                                        <li>(Breakfast Symposium 2 Detail)</li>
+                                                        <li>(Breakfast Symposium 2 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="breakfast_symposium_2"> 
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="breakfast_symposium_3">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 3</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>07:30-08:20</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Breakfast Symposium 3</p>
+                                                    <!-- <p><span class="bold">Chairperson : 김경수</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Breakfast Symposium 3 Detail)</li>
+                                                        <li>(Breakfast Symposium 3 Detail)</li>
+                                                        <li>(Breakfast Symposium 3 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="breakfast_symposium_3"> 
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+            <!-- Luncheon Lecture -->
+
+               <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                            <li name="luncheon_symposium_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 1</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 1</p> -->
+                                                    <p class="font_20 bold">Luncheon Symposium 1</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Luncheon Symposium 1 Detail)</li>
+                                                        <li>(Luncheon Symposium 1 Detail)</li>
+                                                        <li>(Luncheon Symposium 1 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="luncheon_symposium_1">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="luncheon_symposium_2">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 2</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 2</p> -->
+                                                    <p class="font_20 bold">Luncheon Symposium 2</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="luncheon_symposium_2">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="luncheon_symposium_3">
+                                <div class="program_header">
+                                    <p class="font_16 bold">3월 9일(토)</p>
+                                    <span class="font_16 bold">ROOM 3</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="sky_bg">
+                                                <td>11:40-12:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_blue">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Luncheon Symposium 3</p>
+                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                        <li>(Luncheon Symposium 2 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                    <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody id="luncheon_symposium_3">
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+
             <!-- </div> -->
         </div>
 </section>
+
 
 <script>
 $(document).ready(function() {
