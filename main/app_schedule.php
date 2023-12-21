@@ -163,7 +163,7 @@ foreach($program_list as $pl){
                                         if($contents['speaker_idx']!==null){
                                     ?>
                                     <p class="chairperson">
-                                        <span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>, <?=$contents['nation']?>)
+                                        <span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>)
                                     </p>
                                     <?php
                                     } else {
@@ -260,7 +260,7 @@ foreach($program_list as $pl){
                                             if($contents['speaker_idx']!==null){
                                         ?>
                                         <p class="chairperson">
-                                            <span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>, <?=$contents['nation']?>)
+                                            <span class="bold"><?=$contents['first_name']?> <?=$contents['last_name']?></span> (<?=$contents['affiliation']?>)
                                         </p>
                                         <?php
                                         } else {

@@ -323,7 +323,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">12:40-13:20</div>
                                 </td>
-                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture_1" data-id="19">
+                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture_1" data-id="20">
                                     Plenary Lecture
                                     <!-- <p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable
                                         Isotope Tracers: More than 50 Years of Experience</p>
@@ -337,7 +337,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
-                                <td colspan="3" class="light_orange_bg pointer modal" data-id="20">문석학술상
+                                <td colspan="3" class="light_orange_bg pointer modal" data-id="21">문석학술상
                                     <input type="hidden" name="category" value="special_lecture_1">
                                 </td>
                                
@@ -354,22 +354,22 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">14:00-15:30</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_7" data-id="21">
+                                <td class="green_bg pointer modal" name="symposium_7" data-id="22">
                                     Symposium 7(임상) <p>New Antiobesity Drug</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_8" data-id="22">
+                                <td class="green_bg pointer modal" name="symposium_8" data-id="23">
                                     Symposium 8(비만대사수술) <p>Metabolic Surgery</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_9" data-id="23">
+                                <td class="green_bg pointer modal" name="symposium_9" data-id="24">
                                     Symposium 9(소아) <p>Obesity treatment in adolescent</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="24">Oral presentation 2
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="25">Oral presentation 2
                                     <input type="hidden" name="category" value="oral_presentation">
                                 </td>
                                 
@@ -385,17 +385,17 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">15:40-16:10</div>
                                 </td>
-                                <td class="pink_bg pointer modal" name="keynote_lecture_1" data-id="25">
+                                <td class="pink_bg pointer modal" name="keynote_lecture_1" data-id="26">
                                     Keynote lecture 1 
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="keynote_lecture">
                                 </td>
-                                <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="26">
+                                <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="27">
                                     Keynote lecture 2
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="keynote_lecture">
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="luncheon_symposium_3" data-id="27">
+                                <td class="light_orange_bg pointer modal" name="luncheon_symposium_3" data-id="28">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="special_lecture_2">
@@ -407,17 +407,17 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">16:10-17:40</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_10" data-id="28">
+                                <td class="green_bg pointer modal" name="symposium_10" data-id="29">
                                     Symposium 10(임상) <p>Cormobidity of obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_11" data-id="29">
+                                <td class="green_bg pointer modal" name="symposium_11" data-id="30">
                                     Symposium 11(빅데이터) <p>Big Data in Obesity Research<br>+Digital Therapeutics in Obesity Management</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_12" data-id="30">
+                                <td class="green_bg pointer modal" name="symposium_12" data-id="31">
                                     Symposium 12(운동, 행동) <p>Exercise, Obesity, and Metabolic Dysfunction</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
@@ -487,6 +487,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
 ?>
 <input type="hidden" name="session_app_type" value="<?= $session_app_type ?>">
 <script>
+
     /** program_modal */
     
     function clickProgramTd (){
@@ -544,7 +545,6 @@ function modal_close() {
     detailModal.style.display = "none";
     background.style.display = "none";
     contentsWrap.innerHTML = "";
-
 }
 
 //모달 안 내용 채우기
@@ -566,7 +566,7 @@ function writeModal(data){
     let chairperson = "";
 
     data.map((t, i)=>{
-        console.log(t)
+ 
         const contents = document.createElement("div")
         title = t.title;
         subTitle = t.program_name;
@@ -591,7 +591,7 @@ function writeModal(data){
                                         <div>${t.contents_title}</div>
                                         <div class="content_1 content_person">
                                             <b>${speakerName}</b>
-                                            <p>${speakerOrg}</p>
+                                            <p>${speakerOrg ? speakerOrg : 'TBD'}</p>
                                         </div>
                                     `
             }

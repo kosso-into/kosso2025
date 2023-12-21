@@ -11,8 +11,8 @@ section.container.login.bg {margin-top: 0 !important;}
 
 <section class="container login_form form_layout find_password login bg style_2023">
     <!-- <a href="./index.php" class="logo"><img src="./img/logo.png"></a> -->
-    <h1 class="page_title">Find Password
-        <p class="red_txt">Please enter your email.</p>
+    <h1 class="page_title">비밀번호 찾기
+        <p class="red_txt">등록하신 이메일을 입력해 주세요.</p>
     </h1>
     <div>
         <form name="find_password_form" onsubmit="return false;">
@@ -21,8 +21,8 @@ section.container.login.bg {margin-top: 0 !important;}
                     <input type="text" name="email" placeholder="<?= $locale("id") ?>">
                 </li>
             </ul>
-            <button type="button" class="btn submit_btn gray_line_btn"><?= $locale("get_temporary_password_btn") ?></button>
-            <button type="button" class="btn login_btn main_btn"><?= $locale("login") ?></button>
+            <button type="button" class="btn submit_btn gray_line_btn">임시 비밀번호 받기</button>
+            <button type="button" class="btn login_btn main_btn">로그인</button>
         </form>
     </div>
 </section>

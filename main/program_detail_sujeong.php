@@ -775,7 +775,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <p class="bold">Organizer : 문준성, 박경희</p>
                                                     <ul>
                                                         <li>(Symposium 1 Detail)</li>
                                                         <li>(Symposium 1 Detail)</li>
@@ -853,7 +853,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 배재현, 조윤정</p>
                                                     <ul>
                                                         <li>(Symposium 4 Detail)</li>
                                                         <li>(Symposium 4 Detail)</li>
@@ -929,7 +929,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 이승환, 남가은</p>
                                                     <ul>
                                                         <li>(Symposium 7 Detail)</li>
                                                         <li>(Symposium 7 Detail)</li>
@@ -1005,7 +1005,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 윤지완, 오범조</p>
                                                     <ul>
                                                         <li>(Symposium 10 Detail)</li>
                                                         <li>(Symposium 10 Detail)</li>
@@ -1129,7 +1129,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">송도경</p>(이화여대)<br>
+                                                                        <p class="bold">송도경</p>(이화여대),<br>
                                                                         <p class="bold">김형석</p>(충남의대)
                                                                     </td>
                                                                 </tr>
@@ -1239,7 +1239,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 한상문</p>
                                                     <ul>
                                                         <li>(Symposium 8 Detail)</li>
                                                         <li>(Symposium 8 Detail)</li>
@@ -1316,7 +1316,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 이상열, 한경도</p>
                                                     <ul>
                                                         <li>(Symposium 10 Detail)</li>
                                                         <li>(Symposium 10 Detail)</li>
@@ -1397,7 +1397,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 임현정, 김오연, 송수진</p>
                                                     <ul>
                                                         <li>(Symposium 3 Detail)</li>
                                                         <li>(Symposium 3 Detail)</li>
@@ -1474,7 +1474,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 임현정, 김오연, 송수진</p>
                                                     <ul>
                                                         <li>(Symposium 6 Detail)</li>
                                                         <li>(Symposium 6 Detail)</li>
@@ -1551,7 +1551,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 홍용희</p>
                                                     <ul>
                                                         <li>(Symposium 9 Detail)</li>
                                                         <li>(Symposium 9 Detail)</li>
@@ -1628,7 +1628,7 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                <p class="bold">Organizer: 이세원, 이민철, 김일영</p>
                                                     <ul>
                                                         <li>(Symposium 12 Detail)</li>
                                                         <li>(Symposium 12 Detail)</li>

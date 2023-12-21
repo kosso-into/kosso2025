@@ -11,7 +11,7 @@
 				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
-		<p class="app_setting_desc">제 59차 대한비만학회 춘계학술대회 이벤트 정보와 실시간 정보를 모바일 앱 푸시로 받을 수 있습니다.</p>
+		<p class="app_setting_desc">제 59차 대한비만학회 춘계학술대회 <br>이벤트 정보와 실시간 정보를 모바일 앱 푸시로 <br>받을 수 있습니다.</p>
 	</div>
 	<div class="container_inner">
 		<div class="contents_box">

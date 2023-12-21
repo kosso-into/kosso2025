@@ -10,13 +10,13 @@
 <script src="./js/script/client/app_login.js"></script>
 <style>
 	html, body {overflow:hidden; background: #000f32 url("../img/app_login_bg2.jpg") no-repeat center bottom /cover;}
-	.app_main_box {min-height:700px;}
+	.app_main_box {min-height:700px;height: 100vh;}
 </style>
 
 <!-- HUBDNCLHJ : app login 페이지 -->
 <section class="container app_main app_login app_version">
 	<div class="app_main_inner">
-		<div class="app_main_box">
+		<div class="app_main_box" style="height: auto;">
 			<div class="app_main_txt">
 				<img src="./img/img_vsl_text.png" alt="">
 				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>

@@ -14,7 +14,7 @@ if($category_idx!==''){
 
 $select_category_sql = " SELECT idx, title 
                          FROM program_category 
-                         WHERE idx IN(5,6,8,10,11,12,13,16,18,19)
+                         WHERE idx IN(5,6,8,10,11,12,13,16,18)
                          ORDER BY sort_num ASC;
                          ";
 $category_list = get_data($select_category_sql);
@@ -40,7 +40,7 @@ $abstract_list = get_data($select_abstract_query);
 				<ul class="app_sort_form app_half_ul fix_cont">
 					<li>
 						<select name="" id="abstract_category" onchange="selectAbstract()">
-							<option value="" hidden>Select Category</option>
+							<option value="" hidden>카테고리 선택</option>
 							<option value="">All</option>
                             <?php
                             foreach ($category_list as $category){
