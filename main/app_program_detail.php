@@ -217,7 +217,7 @@ echo '<script type="text/javascript">
 	</ul>
     <div class="inner">
         <div class="tab_wrap">
-            <div class="tab_cont on">
+            <div class="tab_cont on" >
                 <ul class="app_sort_form app_half_ul fix_cont_sub select_day_program">
 					<li>
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
@@ -309,6 +309,7 @@ echo '<script type="text/javascript">
 </div>
 
 <script>
+  
     $(document).ready(function() {
 		$(".main .right_tag, .preview_btn").click(function(event) {
             event.stopPropagation();
