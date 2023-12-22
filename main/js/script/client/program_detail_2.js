@@ -182,7 +182,7 @@ function findTrClass(id){
     // 8 =>"green_bg"
 
     switch(id){
-        case 5 :  case 6 :  case 10 :
+        case 5 :  case 6 : 
         return "pink_bg";
         break;
 
@@ -196,6 +196,10 @@ function findTrClass(id){
 
         case 8 : 
             return "green_bg";
+            break;
+
+        case 10 :
+            return "purple_bg";
             break;
     }
 }
