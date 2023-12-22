@@ -63,6 +63,7 @@
 				<li class="news"><a href="./board_list.php?t=0">Newsletter</a></li>
 				<li class="notice"><a href="./board_list.php?t=1">Notice</a></li>
 				<li class="faq"><a href="./board_category_list.php">FAQ</a></li>
+				<li class="faq"><a href="./edit_program.php">프로그램 수정하기</a></li>
 			</ul>
 		</li>
         <li class="main_nav"><a href="./app_notice.php"><i class="la la-clipboard"></i>App Notice 관리</a></li>
