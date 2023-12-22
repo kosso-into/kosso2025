@@ -261,17 +261,17 @@ section.app_version .inner {
                                     <div class="colons_div">08:30-10:00</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_1" data-id="10">
-                                    Symposium 1(임상) <p>Treatment of obesity</p>
+                                    Symposium 1 <p>Treatment of obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_2" data-id="11">
-                                    Symposium 2(기초) <p>Integrative physiology and molecular mechanisms of obesity</p>
+                                    Symposium 2 <p>Integrative physiology and molecular mechanisms of obesity</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_3" data-id="12">
-                                    Symposium 3(영양) <p>Postprandial glycemic response and Continuous Glucose Monitoring</p>
+                                    Symposium 3 <p>Postprandial glycemic response and Continuous Glucose Monitoring</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
@@ -292,17 +292,17 @@ section.app_version .inner {
                                     <div class="colons_div">10:10-11:40</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_4" data-id="14">
-                                    Symposium 4(임상) <p>Environmental, genetics and obesity</p>
+                                    Symposium 4 <p>Environmental, genetics and obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_5" data-id="15">
-                                    Symposium 5(기초) <p>Gut microbiome</p>
+                                    Symposium 5 <p>Gut microbiome</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_6" data-id="16">
-                                    Symposium 6(영양) <p></p>
+                                    Symposium 6 <p></p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
@@ -355,17 +355,17 @@ section.app_version .inner {
                                     <div class="colons_div">14:00-15:30</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_7" data-id="22">
-                                    Symposium 7(임상) <p>New Antiobesity Drug</p>
+                                    Symposium 7 <p>New Antiobesity Drug</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_8" data-id="23">
-                                    Symposium 8(비만대사수술) <p>Metabolic Surgery</p>
+                                    Symposium 8 <p>Metabolic Surgery</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_9" data-id="24">
-                                    Symposium 9(소아) <p>Obesity treatment in adolescent</p>
+                                    Symposium 9 <p>Obesity treatment in adolescent</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
@@ -408,17 +408,17 @@ section.app_version .inner {
                                     <div class="colons_div">16:10-17:40</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_10" data-id="29">
-                                    Symposium 10(임상) <p>Cormobidity of obesity</p>
+                                    Symposium 10<p>Cormobidity of obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_11" data-id="30">
-                                    Symposium 11(빅데이터) <p>Big Data in Obesity Research<br>+Digital Therapeutics in Obesity Management</p>
+                                    Symposium 11 <p>Big Data in Obesity Research<br>+Digital Therapeutics in Obesity Management</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_12" data-id="31">
-                                    Symposium 12(운동, 행동) <p>Exercise, Obesity, and Metabolic Dysfunction</p>
+                                    Symposium 12 <p>Exercise, Obesity, and Metabolic Dysfunction</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
