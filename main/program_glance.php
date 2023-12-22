@@ -4,7 +4,7 @@ include_once('./include/head.php');
 $session_user = $_SESSION['USER'] ?? NULL;
 $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 $session_user = $_SESSION['USER'] ?? NULL;
-// $session_app_type = 'Y';
+//$session_app_type = 'Y';
 
 if (!empty($session_user) && $session_app_type == 'Y') {
     include_once('./include/app_header.php');
@@ -171,7 +171,9 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">18:05-18:30</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td class="light_gray_bg">Break</td>
+                                <td></td>
+								<td></td>
                                 <td class="light_gray_bg"></td>
                                 <td class="no_right_border light_gray_bg"></td>
                             </tr>
@@ -193,7 +195,9 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">19:00-19:10</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td class="light_gray_bg">Break</td>
+                                <td></td>
+								<td></td>
                                 <td class="light_gray_bg"></td>
                                 <td class="no_right_border light_gray_bg"></td>
                             </tr>
