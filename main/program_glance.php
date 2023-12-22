@@ -487,7 +487,9 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
 ?>
 <input type="hidden" name="session_app_type" value="<?= $session_app_type ?>">
 <script>
-
+    //위로 당기기 방지
+    document.addEventListener('touchstart', ()=>{}, {passive: true});
+    
     /** program_modal */
     
     function clickProgramTd (){

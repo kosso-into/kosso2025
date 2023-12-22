@@ -76,7 +76,7 @@ echo '<script type="text/javascript">
         </ul>
         <div class="tab_wrap">
             
-            <!-- Plenary lecture -->
+            <!-- Program detail -->
             
             <div class="on">
                 <ul class="program_detail_ul">

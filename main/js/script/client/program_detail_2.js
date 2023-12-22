@@ -1,4 +1,4 @@
-// DB 자동화 할 수 있다!!
+
 function getDetail(id, name){
     $.ajax({
         url: PATH + "ajax/client/ajax_program_detail.php",
@@ -9,10 +9,8 @@ function getDetail(id, name){
         },
         dataType: "JSON",
         success: function (res) {
-            // console.log(res)
             if (res.code == 200) {
                 editArray(res.data, id, name)
-                //writeProgram(res.data, id, name)
             } else {
                 return;
             }
@@ -31,7 +29,6 @@ function editArray(data, id){
       const value = data[key]
       writeProgramView(key, Object.values(value), id)
     }
-  
   }
 
 function writeProgramView(room, dataList, id){ 
@@ -176,13 +173,14 @@ function toggleTr(event){
 
 function findTrClass(id){
 
-    //5, 6, 10 => "pink_bg";
+    //5, 6 => "pink_bg";
     //16, 19, 20 => "light_orange_bg";
     //11, 12, 13 => "sky_bg"
-    // 8 =>"green_bg"
+    //8 =>"green_bg"
+    //10 => "purple_bg";
 
     switch(id){
-        case 5 :  case 6 :  case 10 :
+        case 5 :  case 6 : 
         return "pink_bg";
         break;
 
@@ -196,6 +194,10 @@ function findTrClass(id){
 
         case 8 : 
             return "green_bg";
+            break;
+
+        case 10 :
+            return "purple_bg";
             break;
     }
 }
