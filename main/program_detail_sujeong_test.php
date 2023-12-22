@@ -78,10 +78,9 @@ echo '<script type="text/javascript">
             
             <!-- Plenary lecture -->
             
-                    <div class="tab_cont on">
-                        <ul class="program_detail_ul">
-                            
-                            <li name="plenary_lecture_1">
+            <div class="tab_cont on">
+                <ul class="program_detail_ul">
+                        <li name="special_lecture_1">
                                 <div class="program_header">
                                     <p class="font_16 bold">3월 9일(토)</p>
                                     <span class="font_16 bold">ROOM 1, 2, 3</span>
@@ -98,7 +97,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p> -->
                                                     <p class="font_20 bold">Plenary Lecture</p>
-                                                    <!-- <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p> -->
+                                                    <!-- <p><span class="bold">Chairperson : 박철영</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -123,17 +122,15 @@ echo '<script type="text/javascript">
                                                             <tbody id="plenary_lecture_1">
                                                             </tbody>
                                                         </table>
-                                                        </table>
                                                     </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-
+                        </li>
+                </ul>
+            </div>
 
             <!-- Keynote lecture -->
 
@@ -558,7 +555,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
-                                                        <<table class="c_table detail_table padding_0">
+                                                        <table class="c_table detail_table padding_0">
                                                             <colgroup>
                                                                 <col class="col_date">
                                                                 <col>
@@ -944,7 +941,7 @@ echo '<script type="text/javascript">
                                                                 <col class="col_date">
                                                                 <col>
                                                             </colgroup>
-                                                            <tbody id="symposium_10">
+                                                            <tbody id="symposium_11">
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -1675,7 +1672,7 @@ $(document).ready(function() {
                 name:"special_lecture_1",
             },
             {
-                id:19,
+                id:20,
                 name:"special_lecture_2",
             }
         ];

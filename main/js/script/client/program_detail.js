@@ -1,4 +1,4 @@
-"use-strict"
+
 function getDetail(id, name){
     $.ajax({
         url: PATH + "ajax/client/ajax_program_detail.php",
@@ -9,7 +9,7 @@ function getDetail(id, name){
         },
         dataType: "JSON",
         success: function (res) {
-            // console.log(res.data)
+            // console.log(res)
             if (res.code == 200) {
                 writeProgramDetail(res.data, id, name)
             } else {
@@ -21,7 +21,7 @@ function getDetail(id, name){
 
 
 function writeProgramDetail(data, id, name){
-
+    // console.log(id)
     switch(id){
         case 5: //plenary_lecture
             writeOneLecture(data, id, name)
@@ -55,7 +55,7 @@ function writeProgramDetail(data, id, name){
 
 //프로그램 표가 하나일 경우
 function writeOneLecture(data, id, name){
-    // console.log(Object.values(data))
+    //console.log(Object.values(data))
     const dataList = Object.values(data);
 
     const plenaryWrap = document.querySelector("#plenary_lecture_1");
@@ -67,7 +67,7 @@ function writeOneLecture(data, id, name){
     special1Wrap.innerHTML = "";
     special2Wrap.innerHTML = "";
 
-    dataList.map((data)=>{
+    dataList[0].map((data)=>{
         const contents = document.createElement("tr");
         const speakerName = data.speaker?.split("(")[0];
         const speakerOrg = data.speaker?.split("(")[1]?.split(")")[0];
@@ -79,7 +79,7 @@ function writeOneLecture(data, id, name){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -98,9 +98,9 @@ function writeOneLecture(data, id, name){
         
         if(id === 5){
             plenaryWrap.append(contents);
-        }else if(id === 19 && name === "special_lecture_1"){
+        }else if(id === 19){
             special1Wrap.append(contents);
-        }else if(id === 19 && name === "special_lecture_2"){
+        }else if(id === 20){
             special2Wrap.append(contents);
         }
      
@@ -127,9 +127,6 @@ function writeTwoLecture(data, id){
     keyNote1Wrap.innerHTML = "";
     keyNote2Wrap.innerHTML = "";
 
-    Luncheon1Wrap.innerHTML = "";
-    Luncheon2Wrap.innerHTML = "";
-
     oral1Wrap.innerHTML = "";
     oral2Wrap.innerHTML = "";
 
@@ -138,7 +135,7 @@ function writeTwoLecture(data, id){
 
     pre1Wrap.innerHTML = "";
     pre2Wrap.innerHTML = "";
-
+    // console.log(dataList)
     dataList[0].map((data)=>{
         const contents = document.createElement("tr");
         const speakerName = data.speaker?.split("(")[0];
@@ -152,7 +149,7 @@ function writeTwoLecture(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -170,8 +167,6 @@ function writeTwoLecture(data, id){
         }
         if(id === 6){
             keyNote1Wrap.append(contents);
-        }else if(id === 12){
-            Luncheon1Wrap.append(contents);
         }else if(id === 16){
             oral1Wrap.append(contents);
         }else if(id === 13){
@@ -194,7 +189,7 @@ function writeTwoLecture(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -235,10 +230,13 @@ function writeThreeLecture(data, id){
         const Luncheon2Wrap = document.querySelector("#luncheon_symposium_2");
         const Luncheon3Wrap = document.querySelector("#luncheon_symposium_3");
 
-    
         Breakfast1Wrap.innerHTML = "";
         Breakfast2Wrap.innerHTML = "";
         Breakfast3Wrap.innerHTML = "";
+
+        Luncheon1Wrap.innerHTML = "";
+        Luncheon2Wrap.innerHTML = "";
+        Luncheon3Wrap.innerHTML = "";
     
         dataList[0].map((data)=>{
             const contents = document.createElement("tr");
@@ -253,7 +251,7 @@ function writeThreeLecture(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -290,7 +288,7 @@ function writeThreeLecture(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -306,7 +304,12 @@ function writeThreeLecture(data, id){
 
 `
         }
-        Breakfast2Wrap.append(contents);
+        if(id === 11){
+            Breakfast2Wrap.append(contents);
+        }
+        else if(id === 12){
+            Luncheon2Wrap.append(contents);
+        }
         })
 
         dataList[2].map((data)=>{
@@ -322,7 +325,7 @@ function writeThreeLecture(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -338,7 +341,12 @@ function writeThreeLecture(data, id){
 
 `
         }
-        Breakfast3Wrap.append(contents);
+        if(id === 11){
+            Breakfast3Wrap.append(contents);
+        }
+        else if(id === 12){
+            Luncheon3Wrap.append(contents);
+        }
         })
 }
 
@@ -388,7 +396,7 @@ function writeSympoLecutre(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${speakerName}</p>(${speakerOrg})
+                <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
             </td>
 
 `
@@ -410,7 +418,7 @@ function writeSympoLecutre(data, id){
                 ${data.contents_title}
             </td>
             <td class="text_r">
-                <p class="bold">${data.speaker}</p>
+                <p style="white-space:pre;">${data.speaker}</p>
             </td>
 
 `
