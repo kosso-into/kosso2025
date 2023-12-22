@@ -3,7 +3,7 @@
 <?php 
 
     $program_query = "	SELECT * 
-                        FROM program_contents";
+                        FROM program";
     $program_list = get_data($program_query);
 
 ?>
@@ -22,120 +22,29 @@
                 <div class="y_scroll">
                 <div class="contwrap">
                     <table>
+                        <colgroup>
+                            <col width="18%">
+                            <col width="26%">
+                            <col width="26%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col>
+                        </colgroup>
                         <tr>
                             <th>프로그램 이름</th>
-                            <th>제목</th>
-                            <th>연자이름(소속)</th>
+                            <th>좌장</th>
+                            <th>미리보기 내용</th>
                             <th>시작시간</th>
                             <th>끝나는 시간</th>
                             <th></th>
                         </tr>
                         <?php 
                 foreach($program_list as $program){
-                    $program_name = "";
-                    
-                    if($program['program_idx'] == "1"){
-                        $program_name = "Pre-congress Symposium 1";
-                    }
-                    else if($program['program_idx'] == 2){
-                        $program_name = "Pre-congress Symposium 2";
-                    }
-                    else if($program['program_idx'] == 3){
-                        $program_name = "Satellite Symposium 1";
-                    }
-                    else if($program['program_idx'] == 4){
-                        $program_name = "Satellite Symposium 2";
-                    }
-                    else if($program['program_idx'] == 5){
-                        $program_name = "Welcome Cocktail Party";
-                    }
-                    else if($program['program_idx'] == 6){
-                        $program_name = "Breakfast Symposium 1";
-                    }
-                    else if($program['program_idx'] == 7){
-                        $program_name = "Breakfast Symposium 2";
-                    }
-                    else if($program['program_idx'] == 8){
-                        $program_name = "Breakfast Symposium 3";
-                    }
-                    else if($program['program_idx'] == 9){
-                        $program_name = "Opening Address";
-                    }
-                    else if($program['program_idx'] == 10){
-                        $program_name = "Symposium 1";
-                    }
-                    else if($program['program_idx'] == 11){
-                        $program_name = "Symposium 2";
-                    }
-                    else if($program['program_idx'] == 12){
-                        $program_name = "Symposium 3";
-                    }
-                    else if($program['program_idx'] == 14){
-                        $program_name = "Symposium 4";
-                    }
-                    else if($program['program_idx'] == 15){
-                        $program_name = "Symposium 5";
-                    }
-                    else if($program['program_idx'] == 16){
-                        $program_name = "Symposium 6";
-                    }
-                    else if($program['program_idx'] == 22){
-                        $program_name = "Symposium 7";
-                    }
-                    else if($program['program_idx'] == 23){
-                        $program_name = "Symposium 8";
-                    }
-                    else if($program['program_idx'] == 24){
-                        $program_name = "Symposium 9";
-                    }
-                    else if($program['program_idx'] == 29){
-                        $program_name = "Symposium 10";
-                    }
-                    else if($program['program_idx'] == 30){
-                        $program_name = "Symposium 11";
-                    }
-                    else if($program['program_idx'] == 31){
-                        $program_name = "Symposium 12";
-                    }
-                    else if($program['program_idx'] == 13){
-                        $program_name = "Oral Presentation 1";
-                    }
-                    else if($program['program_idx'] == 17){
-                        $program_name = "Luncheon Lecture 1";
-                    }
-                    else if($program['program_idx'] == 18){
-                        $program_name = "Luncheon Lecture 2";
-                    }
-                    else if($program['program_idx'] == 19){
-                        $program_name = "Luncheon Lecture 3";
-                    }
-                    else if($program['program_idx'] == 20){
-                        $program_name = "Plenary Lecture";
-                    }
-                    else if($program['program_idx'] == 21){
-                        $program_name = "문석학술상";
-                    }
-                    else if($program['program_idx'] == 25){
-                        $program_name = "Oral Presentation 2";
-                    }
-                    else if($program['program_idx'] == 26){
-                        $program_name = "Keynote Lecture 1";
-                    }
-                    else if($program['program_idx'] == 27){
-                        $program_name = "Keynote Lecture 2";
-                    }   
-                    else if($program['program_idx'] == 28){
-                        $program_name = "젊은연구자상";
-                    }  
-                    else if($program['program_idx'] == 32){
-                        $program_name = "Award & Closing";
-                    }
-
                     ?>
                         <tr>
-                            <td><?php echo $program_name; ?></td>
-                            <td><input type="text" name="contents_title" value="<?php echo $program['contents_title'] ?>"/></td>
-                            <td><input type="text" name="contents_speaker" value="<?php echo $program['speaker'] ?>"/></td>
+                            <td style="cursor: pointer;" onclick="goDetail(<?php echo $program['idx']?>)"><?php echo $program['program_name']; ?></td>
+                            <td><input type="text" name="chairpersons" value="<?php echo $program['chairpersons'] ?>"/></td>
+                            <td><input type="text" name="preview" value="<?php echo $program['preview'] ?>"/></td>
                             <td><?php echo $program['start_time'] ?></td>
                             <td><?php echo $program['end_time'] ?></td>
                             <td><button class="btn save_btn" data-id="<?php echo $program['idx'] ?>">저장</button></td>
@@ -156,24 +65,19 @@
              const row = e.target.closest('tr');
     
             // 행에서 input 요소들을 찾아서 값을 가져옴
-            const contentsTitle = row.querySelector('input[name="contents_title"]').value;
-            const contentsSpeaker = row.querySelector('input[name="contents_speaker"]').value;
+            const chairpersons = row.querySelector('input[name="chairpersons"]').value;
+            const preview = row.querySelector('input[name="preview"]').value;
             const id = e.target.dataset.id;
-            const data = {
-               idx:id, 
-               title:contentsTitle, 
-               speaker:contentsSpeaker
-            }
-            console.log(id, contentsTitle, contentsSpeaker);
-            if(contentsTitle && contentsSpeaker){
+
+            if(chairpersons){
                 $.ajax({
                     url:"../ajax/admin/ajax_update_program.php",
                     type: "POST",
                     data: {
                         flag: "modify_program",
                         idx:id, 
-                        title:contentsTitle, 
-                        speaker:contentsSpeaker
+                        chairpersons:chairpersons, 
+                        preview:preview
                     },
                     dataType: "JSON",
                     success: function (res) {
@@ -190,5 +94,9 @@
             }
         })
     })
+
+    function goDetail(id){
+        window.location.href = `/main/admin/edit_program_detail.php?idx=${id}`;
+    }
 </script>
 <?php include_once('./include/footer.php');?>

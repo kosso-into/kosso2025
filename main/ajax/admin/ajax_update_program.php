@@ -7,21 +7,37 @@
 		$_POST[$key] = htmlspecialchars($value, ENT_QUOTES);
 	}
 
-	// 수정(+생성)
+	
 	if ($flag === "modify_program") {
 
 			// 수정
-			$sql =	"UPDATE program_contents
+			$sql =	"UPDATE program
 					SET
-                        contents_title		= '".$_POST['title']."',
-						speaker				= '".$_POST['speaker']."'
+                        chairpersons		= '".$_POST['chairpersons']."',
+						preview				= '".$_POST['preview']."'
 					WHERE idx = '".$_POST['idx']."'";
 			if (!sql_query($sql)) {
-				return_value(500, "Lecture 수정 중 오류가 발생했습니다.\n관리자에게 문의하세요.");
+				return_value(500, "수정 중 오류가 발생했습니다.\n관리자에게 문의하세요.");
 			}
 
 		return_value(200, "완료되었습니다.", array("idx"=>$abstract_idx));
 	}
+
+    
+	else if ($flag === "modify_program_detail") {
+
+        // 수정
+        $sql =	"UPDATE program_contents
+                SET
+                    contents_title		= '".$_POST['title']."',
+                    speaker				= '".$_POST['speaker']."'
+                WHERE idx = '".$_POST['idx']."'";
+        if (!sql_query($sql)) {
+            return_value(500, "수정 중 오류가 발생했습니다.\n관리자에게 문의하세요.");
+        }
+
+    return_value(200, "완료되었습니다.", array("idx"=>$abstract_idx));
+}
 
 
 
