@@ -192,7 +192,7 @@ echo '<script type="text/javascript">
     }
 ?>
 
-<section class="container app_version app_scientific app_program_detail">
+<section class="container app_version app_scientific app_program_detail" >
     <input type="hidden" name="scroll_target" value="<?=$name?>"/>
     <input type="hidden" name="day" value="<?=$day?>"/>
     <input type="hidden" name="e_num" value="<?=$e_num?>"/>
