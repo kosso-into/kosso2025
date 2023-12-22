@@ -45,19 +45,50 @@ function writeProgramView(room, dataList, id){
 
     dataList.map((data) => {
         let programTr = "";
-    //console.log(data)
-
-        data.map((t)=>{
-            programTr += `
+        // console.log(data)
+        
+        /** program tr 만들기 */
+        data.map((t, i)=>{
+            const speakerName = t.speaker?.split("(")[0];
+            const speakerOrg = t.speaker?.split("(")[1]?.split(")")[0];
+            //symposium && 패널토의
+            if(id === 8 && i === 3){
+                programTr += `
                 <tr>
                     <td>${t.contents_start_time}-${t.contents_end_time}</td>
                     <td class="bold">${t.contents_title}</td>
                     <td class="text_r">
-                        <p class="bold">${t.speaker}</p>(TBD)
+                    <p style="white-space:pre;">${t.speaker}</p>
                     </td>
                 </tr>
             `
+            }else{
+                programTr += `
+                    <tr>
+                        <td>${t.contents_start_time}-${t.contents_end_time}</td>
+                        <td class="bold">${t.contents_title}</td>
+                        <td class="text_r">
+                            <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
+                        </td>
+                    </tr>
+                `
+            }
         })
+
+        const programChairperson = data[0].chairpersons;
+        let chairpersonHtml = "";
+        if(programChairperson.includes(",")){
+            chairpersonHtml = `
+            <p><span class="bold">Chairperson : ${programChairperson.split(",")[0].split("(")[0]}</span>(${programChairperson.split(",")[0].split("(")[1]?.split(")")[0]}),
+                <span class="bold">${programChairperson.split(",")[1].split("(")[0]}</span>(${programChairperson.split(",")[1].split("(")[1]?.split(")")[0]})
+            </p> 
+            `
+        }else{
+            chairpersonHtml = `
+                <p><span class="bold">Chairperson : ${programChairperson.split("(")[0]}</span>(${programChairperson.split("(")[1]?.split(")")[0]})</p> 
+            `
+        }
+
         inner += ` 
                     <div class="table_wrap detail_table_common x_scroll">
                         <table class="c_table detail_table">
@@ -70,7 +101,7 @@ function writeProgramView(room, dataList, id){
                                     <td>${data[0].start_time.split(' ')[1]} - ${data[0].end_time}</td>
                                     <td>
                                         <p class="font_20 bold">${data[0].program_name}</p>
-                                        <p><span class="bold">Chairperson : ${data[0].chairpersons}</span></p> 
+                                        ${chairpersonHtml}
                                         ${data[0].preview ? '<button class="btn gray2_btn program_detail_btn" onclick="preview(event)">미리보기</button>' : ''}
                                     </td>
                                 </tr>
