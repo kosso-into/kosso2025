@@ -72,8 +72,9 @@ $abstract_list = get_data($select_abstract_query);
     $(".pdf_viewer").click(function(event){
         event.preventDefault();
         let path = event.target.href;
-        //window.open(path)
-        openPDF(path);
+        //[231226] sujeong 주석
+        window.open(path)
+        //openPDF(path);
     });
 </script>
 <?php
