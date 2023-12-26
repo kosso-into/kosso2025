@@ -89,7 +89,7 @@ echo '<script type="text/javascript">
         if($option_room == 1 || $option_room == 2 || $option_room == 3){
             $row_sql .= " AND program_place_idx IN ($option_room, 8) ";
         } else if($option_room == 8){
-            $row_sql .= "AND p.program_place_idx = 8";
+            $row_sql .= "";
         } else {
             $row_sql .= " AND program_place_idx IN ($option_room) ";
         }
