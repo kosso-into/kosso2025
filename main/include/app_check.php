@@ -23,7 +23,7 @@ if (empty($_SESSION["USER"])) {
 <script>
     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
         try{
-            window.AndroidScript.getDeviceToken();
+            window.AndroidScript.getDeviceToken();     //AndroidBridge.kt 30 줄에서 호출
         } catch (err){
             alert(err);
         }
@@ -34,7 +34,7 @@ if (empty($_SESSION["USER"])) {
             console.log(err);
         }
     }
-
+    //AndroidBridge.kt 30 줄에서 호출
     getDeviceTokenCallback = (device, deviceToken) => {
 
         $.ajax({

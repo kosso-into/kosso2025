@@ -399,7 +399,7 @@ section.app_version .inner {
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="keynote_lecture">
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="luncheon_symposium_3" data-id="28">
+                                <td class="light_orange_bg pointer modal" name="special_lecture_2" data-id="28">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="special_lecture_2">
@@ -787,9 +787,9 @@ function table_location(event, _this, e, day, category, this_name) {
     var session_app_type = $("[name=session_app_type]").val();
 
     if (session_app_type != "" && session_app_type == 'N') {
-        clickProgramTd();
+        //clickProgramTd();
         //window.location.href = "./program_detail_sujeong.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
-        //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+        window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
     } else {
         window.location.href = "./app_program_detail.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
     }

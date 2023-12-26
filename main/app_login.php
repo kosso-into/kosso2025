@@ -61,7 +61,7 @@ $(document).ready(function(){
 
     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
         try{
-            window.AndroidScript.getDeviceToken();
+            window.AndroidScript.getDeviceToken(); // AndroidBridge.kt 30 줄에서 호출
         } catch (err){
             alert(err);
         }
@@ -77,6 +77,12 @@ $(document).ready(function(){
     /**
      * ViewController.swift 204 줄에서 호출
      * device -> IOS 로 고정
+     * deviceToken -> token 값
+     */
+    
+    /**
+     * AndroidBridge.kt 30 줄에서 호출
+     * device -> AOS 로 고정
      * deviceToken -> token 값
      */
     
@@ -126,7 +132,7 @@ $(document).ready(function(){
                     document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() + ";";
 
                     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-                        window.AndroidScript.login(res.idx);
+                        window.AndroidScript.login(res.idx); //AndroidBridge.kt 35 줄에서 호출 -> local db에 저장
                     } else if (window.webkit && window.webkit.messageHandlers!=null) {
                         try{
                             window.webkit.messageHandlers.login.postMessage(res.idx);

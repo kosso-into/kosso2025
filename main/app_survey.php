@@ -25,7 +25,7 @@
 					</a>
 				</div> -->
 				<div class="survey_box box_bottom">
-					<a href="https://forms.gle/zfJbNAyNxggE7NxX9/" target="_blank">
+					<a href="/main/app_survey_test.php">
 						<img src="./img/icons/icon_survey_kr.svg" alt="">
 						<p class="center_t">
 							<span class="bold">KSSO 2024</span><br/>
