@@ -598,7 +598,7 @@ function writeModal(data){
                                         </div>
                                     `
             }
-                /**speaker가 여러 명일 경우 */
+            /**speaker가 여러 명일 경우 */
             else{
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
@@ -619,7 +619,6 @@ function writeModal(data){
                                     </div>
                                 `
         }
-        //console.log(contents)
         contentsWrap.append(contents)
     })
 

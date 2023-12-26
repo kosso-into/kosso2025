@@ -21,6 +21,7 @@
 /* 220323 HUBDNC LJH2 수정 */
 section.container.overview {padding-bottom: 200px; /*326px;*/}
 .detail_table th, .detail_table td, .overview td {padding: 12px 20px; /*20px 40px;*/ font-size: 17px; /*18px;*/}
+.detail_table td > div{font-size: 17px;}
 .detail_table th {background-color: #F4F4F4; font-weight: bold;}
 .detail_table td b {font-weight: 900; display: block; color:#000;}
 .overview .sub_banner:nth-of-type(3) {margin: 158px 0 100px;}
@@ -1622,6 +1623,12 @@ input[type='date']::before {
 	border-top: 1px solid #a6a6a6;
 	font-size: 0.9rem;
 	font-weight: bold;
+}
+
+.modal_container > .content_container > .content > div:nth-child(2){
+	padding: 0 12px;
+	text-align: left;
+	justify-content: left;
 }
 
 @media screen and (max-width: 1200px) {
