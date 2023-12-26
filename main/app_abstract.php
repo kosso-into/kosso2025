@@ -57,7 +57,11 @@ $abstract_list = get_data($select_abstract_query);
                         foreach ($abstract_list as $abstract){
                     ?>
 					<li class="pdf">
+                        <?php if($abstract['path']){?>
                         <a href="<?=$abstract['path'] ?? 'javascript:void(0)'?>" class="pdf_viewer"><?=$abstract['name']?></a>
+                        <?php }else{?>
+                        <a href="/main/download/abstract/TBD.pdf" class="pdf_viewer"><?=$abstract['name']?></a>
+                        <?php } ?>
                     </li>
                     <?php
                     }
