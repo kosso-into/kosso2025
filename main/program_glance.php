@@ -327,7 +327,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">12:40-13:20</div>
                                 </td>
-                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture_1" data-id="20">
+                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture" data-id="20">
                                     Plenary Lecture
                                     <!-- <p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable
                                         Isotope Tracers: More than 50 Years of Experience</p>
@@ -341,7 +341,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
-                                <td colspan="3" class="light_orange_bg pointer modal" data-id="21">문석학술상
+                                <td colspan="3" class="light_orange_bg pointer modal" name="special_lecture_1" data-id="21">문석학술상
                                     <input type="hidden" name="category" value="special_lecture_1">
                                 </td>
                                
@@ -598,7 +598,7 @@ function writeModal(data){
                                         </div>
                                     `
             }
-                /**speaker가 여러 명일 경우 */
+            /**speaker가 여러 명일 경우 */
             else{
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
@@ -619,7 +619,6 @@ function writeModal(data){
                                     </div>
                                 `
         }
-        //console.log(contents)
         contentsWrap.append(contents)
     })
 
@@ -787,9 +786,9 @@ function table_location(event, _this, e, day, category, this_name) {
     var session_app_type = $("[name=session_app_type]").val();
 
     if (session_app_type != "" && session_app_type == 'N') {
-        //clickProgramTd();
+        clickProgramTd();
         //window.location.href = "./program_detail_sujeong.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
-        window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+        //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
     } else {
         window.location.href = "./app_program_detail.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
     }

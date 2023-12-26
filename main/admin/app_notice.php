@@ -54,7 +54,7 @@
 				<?php
                     if($admin_permission["auth_board_notice"] > 1){
 				?>
-					<h1 class="font_title">Notice</h1>
+					<h1 class="font_title">APP 공지사항</h1>
 <!-- 					<button type="button" class="btn floatR">엑셀 다운로드</button> -->
 				<?php
                 }
