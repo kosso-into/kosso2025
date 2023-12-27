@@ -158,8 +158,8 @@ $program_list = get_data($select_program_query);
 		$(".pdf_view").click(function(event){
             event.preventDefault();
             let path = event.target.href;
-            window.open(path)
-			//openPDF(path);
+            //window.open(path)
+			openPDF(path);
         });
 
 	});
