@@ -158,7 +158,8 @@ $program_list = get_data($select_program_query);
 		$(".pdf_view").click(function(event){
             event.preventDefault();
             let path = event.target.href;
-            openPDF(path);
+            window.open(path)
+			//openPDF(path);
         });
 
 	});
@@ -167,10 +168,10 @@ $program_list = get_data($select_program_query);
 		// let path = e.target.href;
 
 		if (typeof (window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-			window.AndroidScript.openPDF(path);
+			window.AndroidScript.openPDF(path); //aos
 		} else if (window.webkit && window.webkit.messageHandlers != null) {
 			try {
-				window.webkit.messageHandlers.openPDF.postMessage(path);
+				window.webkit.messageHandlers.openPDF.postMessage(path); //ios
 			} catch (err) {
 				console.log(err);
 			}

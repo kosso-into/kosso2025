@@ -65,7 +65,7 @@ $info = sql_fetch($sql_info);
                         </tr>
                         <tr>
                             <th>초록 접수 마감</th>
-                            <td><span class="font_inherit red_t f_bold">1월 9일(화)</span></td>
+                            <td><span class="font_inherit red_t f_bold">1월 18일(목)</span></td>
                         </tr>
                         <tr>
                             <th>초록 채택 안내</th>
