@@ -115,8 +115,13 @@ foreach($program_list as $pl){
                         <div class="main">
                             <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
+                                    if($program['path']){
+                                        $program_path = $program['path'];
+                                    }else{
+                                        $program_path = 'https://kosso.org/main/img/invited_speaker/TBD.pdf';
+                                    }
                             ?>
-                            <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">초록보기</a>
+                            <a href="<?=$program_path?>" class="right_tag">초록보기</a>
                             <?php
                             }
                             ?>
