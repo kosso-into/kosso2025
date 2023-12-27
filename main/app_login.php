@@ -29,7 +29,7 @@
 						<input type="text" name="email" placeholder="ID(email)">
 					</li>
 					<li>
-						<input type="password" name="password" placeholder="Password">
+						<input type="password" name="password" placeholder="비밀번호">
 					</li>
 				</ul>
 				<a href="./app_find_password.php" class="app_find_password">비밀번호 찾기</a>

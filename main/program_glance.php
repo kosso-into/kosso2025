@@ -99,17 +99,17 @@ section.app_version .inner {
                 <div class="program_table_wrap">
                     <table class="program_table main-table">
                         <colgroup>
-                            <col class="program_first_col" width="8%">
-                            <col width="18%">
-							<col width="18%">
-							<col width="18%">
-                            <col width="18%">
-							<col width="18%">
+                            <col width="10%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
                         </colgroup>
                         <thead>
                             <tr>
                                 <th class="font_big" style="background-color: #F4F4F4;">시간/장소</th>
-                                <th style="background-color: #F4F4F4;">Room 1<br> </th>
+                                <th style="background-color: #F4F4F4;">Room 1</th>
                                 <th style="background-color: #F4F4F4;">Room 2</th>
                                 <th style="background-color: #F4F4F4;">Room 3</th>
                                 <th style="background-color: #F4F4F4;">Room 4</th>
@@ -138,8 +138,8 @@ section.app_version .inner {
                                 </td>
                                 <td></td>
 								<td></td>
-                                <td class="light_gray_bg"></td>
-								<td class="no_right_border light_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -148,8 +148,8 @@ section.app_version .inner {
                                 <td class="light_gray_bg">Break</td>
                                 <td></td>
                                 <td></td>
-                                <td class="light_gray_bg"></td>
-								<td class="no_right_border light_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -164,8 +164,8 @@ section.app_version .inner {
                                     </td>
                                     <td></td>
                                     <td></td>
-                                    <td class="light_gray_bg"></td>
-								<td class="no_right_border light_gray_bg"></td>
+                                    <td class="dark_gray_bg"></td>
+								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -174,8 +174,8 @@ section.app_version .inner {
                                 <td class="light_gray_bg">Break</td>
                                 <td></td>
 								<td></td>
-                                <td class="light_gray_bg"></td>
-                                <td class="no_right_border light_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
+                                <td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -188,8 +188,8 @@ section.app_version .inner {
                                 </td>
                                 <td></td>
                                 <td></td>
-                                <td class="light_gray_bg"></td>
-								<td class="no_right_border light_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -198,8 +198,8 @@ section.app_version .inner {
                                 <td class="light_gray_bg">Break</td>
                                 <td></td>
 								<td></td>
-                                <td class="light_gray_bg"></td>
-                                <td class="no_right_border light_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
+                                <td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -212,8 +212,8 @@ section.app_version .inner {
                                 </td>
                                 <td></td> 
                                 <td></td>
-                                <td class="light_gray_bg"></td>
-								<td class="no_right_border light_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                            
                         </tbody>

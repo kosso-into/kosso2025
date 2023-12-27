@@ -75,7 +75,7 @@ function selectKeywords(){
 				} else {
 					Object.values(keywords_list).forEach(kl=>{
 						_kewords_num = kl.data.length;
-						console.log(kl)
+						
 						for (var k=0; k < _kewords_num; k++) {
 							// console.log(k);
 							let check_favorite = "";
