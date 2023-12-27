@@ -586,7 +586,7 @@ $(document).ready(function() {
                 html += '<li>';
                 html += '<p class="label">전화번호 <span class="red_txt">*</span></p>';
                 html += '<div class="phone_div clearfix2">';
-                html += '<select class="required2" name="add_co_nation_tel' + i + '">';
+                html += '<select style="display:none;" class="required2" name="add_co_nation_tel' + i + '">';
                 html += '<option value="82" selected>82</option>';
                 html += '</select>';
                 html += '<input class="required2 phone" type="text" name="add_co_phone' + i + '" value="" placeholder="010-0000-0000" onchange="check_value()">';
@@ -1339,7 +1339,7 @@ $(document).ready(function() {
                             <li>
                                 <p class="label">전화번호 <span class="red_txt">*</span></p>
                                 <div class="phone_div clearfix2">
-                                    <select class="required2" name="nation_tel">
+                                    <select style="display:none;" class="required2" name="nation_tel">
                                         <option value="82" selected>82</option>        
                                         <!-- <option value="<?= isset($submit_phone) && $submit_phone != "" ? $submit_nation_tel : "" ?>" selected><?= isset($submit_phone) && $submit_phone != "" ? $submit_nation_tel : "" ?></option> -->
                                     </select>
@@ -1467,7 +1467,7 @@ $(document).ready(function() {
                             echo            '<li>';
                             echo                '<p class="label">' .'전화번호'. ' <span class="red_txt">*</span></p>';
                             echo                '<div class="phone_div clearfix2">';
-                            echo                    '<select class="required2" name="add_co_nation_tel' . $i . '">';
+                            echo                    '<select style="display:none;" class="required2" name="add_co_nation_tel' . $i . '">';
 							if(!isset($coauthor["add_co_nation_tel"])) {
 								$co_arr_phone = explode("-", $coauthor["add_co_phone"]);
 								$co_nation_tel = isset($co_arr_phone[0]) ? '+'.$co_arr_phone[0] : "" ;

@@ -104,7 +104,7 @@ $initial_list = get_data($select_initial_query);
                             if($isl['favorite_check']==='Y'){
 								
 							// [231204] sujeong 
-							if(!isset($isl['image_path'])){
+							if(isset($isl['image_path'])){
 								$is_profile_img = $isl['image_path'];
 							}else{
 								$is_profile_img = '/main/img/profile_empty.png';
@@ -147,7 +147,7 @@ $initial_list = get_data($select_initial_query);
 							}
 
 							// [231204] sujeong 
-							if(!isset($isl['image_path'])){
+							if(isset($isl['image_path'])){
 								$is_profile_img = $isl['image_path'];
 							}else{
 								$is_profile_img = '/main/img/profile_empty.png';

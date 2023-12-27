@@ -214,7 +214,7 @@ section.container.organizing {padding-bottom: 190px;}
 .affiliation_div {width:calc(100% - 105px);}
 .abstract_online_submission .name_div > input {width:calc(50% - 5px);}
 .abstract_online_submission .phone_div > select {width:100px; margin-right:10px;}
-.abstract_online_submission .phone_div > input {width:calc(100% - 110px);}
+.abstract_online_submission .phone_div > input {width:calc(100%);}
 /* .basic_ul .affiliation_input input {width:calc(50% - 97px);} */
 .basic_ul .affiliation_input input {width:calc(50% - 60px);}
 .basic_ul .affiliation_input input:first-of-type {margin-right:10px;}
