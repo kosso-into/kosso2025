@@ -110,8 +110,8 @@
                 alert('Updates are planned.')
                 return false;
             } else {
-                window.open(path)
-				//openPDF(path);
+                //window.open(path)
+				openPDF(path);
             }
         });
 
