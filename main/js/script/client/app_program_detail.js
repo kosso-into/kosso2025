@@ -253,7 +253,7 @@ function createHTMLList(program_list, active){
 
         if(abstract_category_list.includes(pl.program_category_idx)){
             if(pl.path==null){
-                pl.path = 'javascript:void(0)';
+                pl.path = 'https://kosso.org/main/img/invited_speaker/TBD.pdf';
             }
             abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">초록보기</a>'
         }
