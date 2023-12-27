@@ -77,11 +77,29 @@ if($_POST["flag"] == "favorite"){
     $row_sql = "";
     //검색하기 
     if($keywords != ""){
-        $row_sql .= " AND(last_name LIKE '%{$keywords}%' OR first_name LIKE '%{$keywords}%' OR nation LIKE '%{$keywords}%' OR CONCAT(first_name,' ',last_name) LIKE '%{$keywords}%')";
+        $row_sql .= " AND first_name LIKE '%{$keywords}%'";
     }
 
     $select_keywords_query = "
-                                SELECT DISTINCT LEFT(first_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, nation, affiliation,
+                                SELECT DISTINCT CASE
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '가' AND '낗' THEN 'ㄱ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '나' AND '닣' THEN 'ㄴ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '다' AND '딯' THEN 'ㄷ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '라' AND '맇' THEN 'ㄹ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '마' AND '밓' THEN 'ㅁ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '바' AND '삫' THEN 'ㅂ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '사' AND '앃' THEN 'ㅅ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '아' AND '잏' THEN 'ㅇ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '자' AND '찧' THEN 'ㅈ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '차' AND '칳' THEN 'ㅊ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '카' AND '킿' THEN 'ㅋ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '타' AND '팋' THEN 'ㅌ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '파' AND '핗' THEN 'ㅍ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '하' AND '힣' THEN 'ㅎ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'A' AND 'Z' THEN 'A-Z'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'a' AND 'z' THEN 'A-Z'
+                                ELSE NULL
+                                END AS initial, isp.idx, program_contents_idx, last_name, first_name, nation, affiliation,
                                     (CASE
                                          WHEN fisp.idx IS NULL THEN 'N'
                                          ELSE 'Y'
@@ -102,7 +120,25 @@ if($_POST["flag"] == "favorite"){
     $keywords_list = get_data($select_keywords_query);
 
 	$select_initial_query = "
-                            SELECT DISTINCT LEFT(first_name, 1) AS initial
+                            SELECT DISTINCT CASE
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '가' AND '낗' THEN 'ㄱ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '나' AND '닣' THEN 'ㄴ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '다' AND '딯' THEN 'ㄷ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '라' AND '맇' THEN 'ㄹ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '마' AND '밓' THEN 'ㅁ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '바' AND '삫' THEN 'ㅂ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '사' AND '앃' THEN 'ㅅ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '아' AND '잏' THEN 'ㅇ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '자' AND '찧' THEN 'ㅈ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '차' AND '칳' THEN 'ㅊ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '카' AND '킿' THEN 'ㅋ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '타' AND '팋' THEN 'ㅌ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '파' AND '핗' THEN 'ㅍ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '하' AND '힣' THEN 'ㅎ'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'A' AND 'Z' THEN 'A-Z'
+                                WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'a' AND 'z' THEN 'A-Z'
+                                ELSE NULL
+                            END AS initial
                             FROM invited_speaker
                             WHERE is_deleted='N'
 							{$row_sql}

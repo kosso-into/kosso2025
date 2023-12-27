@@ -75,7 +75,7 @@ function selectKeywords(){
 				} else {
 					Object.values(keywords_list).forEach(kl=>{
 						_kewords_num = kl.data.length;
-									
+						console.log(kl)
 						for (var k=0; k < _kewords_num; k++) {
 							// console.log(k);
 							let check_favorite = "";
@@ -86,7 +86,7 @@ function selectKeywords(){
 							}
 
 
-							let is_img_path = ((kl.data[k]['image_path'] != null) ? kl.data[k]['image_path'] : '/main/img/profile_empty.png');
+							let is_img_path = ((kl.data[k]['image_path']) ? kl.data[k]['image_path'] : '/main/img/profile_empty.png');
 						
 							if (k == 0) {
 								_html += '<p class="category">'+kl.initial+'</p>';
@@ -100,7 +100,7 @@ function selectKeywords(){
 												'<a href="./app_invited_speakers_detail.php?idx=' + kl.data[k]['idx'] + '">' +
 												'<div class="speakers_info">' +
 												'<img src="' + is_img_path + '" alt="">' +
-												'<p>' + kl.data[k]['first_name'] + ' ' + kl.data[k]['last_name'] + '<span class="sub">'+kl.data[k]['affiliation']+', '+kl.data[k]['nation']+'</span>' + '</p>' +
+												'<p>' + kl.data[k]['first_name'] + ' ' + kl.data[k]['last_name'] + '<span class="sub">'+kl.data[k]['affiliation']+'</span>' + '</p>' +
 												'</div>' +
 												'</a>' +
 												'<button type="button" class="favorite_btn ' + check_favorite + '" value="' + kl.data[k]['idx'] + '">' + '</button>' +
