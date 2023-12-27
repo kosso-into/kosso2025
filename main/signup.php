@@ -119,7 +119,7 @@ $nation_list = get_data($nation_query);
     width: calc(100% - 220px);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
     .mb_only input.tel_number,
     .mb_only input.tel_numbers.tel_phone,
@@ -131,6 +131,12 @@ $nation_list = get_data($nation_query);
         width: 100%;
         margin: 10px 0 0;
     } */
+}
+
+@media screen and (max-width:768px) {
+    label{
+        font-size: 14px;
+    }
 }
 </style>
 <script>
@@ -877,7 +883,7 @@ function remove_value() {
                             <input type="text" name="mo_email" class="required" maxlength="50">
                             <!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
                         </div>
-                        <p class="mini_alert">가입 이후에 수정하기 어렵습니다. ID를 정확히 입력했는지 확인해 주세요.</p>
+                        <p class="mini_alert brown_txt">가입 이후 수정이 불가능합니다. ID를 정확히 입력했는지 확인 부탁드립니다.</p>
                     </li>
                     <li>
                         <p class="label"><span class="red_txt">*</span>비밀번호</p>

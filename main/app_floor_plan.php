@@ -120,16 +120,16 @@
 			</div>
 			<div class="floor_area">
 				<img src="./img/img_app_floor_6.png" alt="">
-				<div class="a_wrap floor_6_1">
+				<!--<div class="a_wrap floor_6_1">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <!-- <li class="floor_pop_title">[Room 6]</li>
+                         <li class="floor_pop_title">[Room 6]</li>
                         <li class="floor_pop_title">September 8 (Fri)</li>
                         <li>- Joint Symposium KSSO-EASO</li>
                         <li>- Joint Symposium KSSO-AOASO</li>
-                        <li>- Congress Banquet <span class="red_t">*</span>Invited Only</li> -->
+                        <li>- Congress Banquet <span class="red_t">*</span>Invited Only</li> 
 					</ul>
-				</div>
+				</div>-->
 				<div class="a_wrap floor_6_2">
 					<!-- <a href="javascript:;"></a>
                     <ul class="pop_text">

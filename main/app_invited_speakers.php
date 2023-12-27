@@ -103,18 +103,18 @@ $initial_list = get_data($select_initial_query);
                         foreach ($invited_speaker_list as $isl){
                             if($isl['favorite_check']==='Y'){
 								
-							// [231204] sujeong 
-							if(!isset($isl['image_path'])){
+							// [231227] sujeong 
+							if($isl['image_path']){
 								$is_profile_img = $isl['image_path'];
 							}else{
-								$is_profile_img = '/main/img/profile_empty.png';
+								$is_profile_img =  '/main/img/profile_empty.png';
 							}
 
                     ?>
 								<li>
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
-										<img src="/main/img/profile_empty.png" alt="profile_img">
+										<!-- <img src="/main/img/profile_empty.png" alt="profile_img"> -->
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
 											<p>
 												<!-- [231204] sujeong / 주석 -->
@@ -146,14 +146,13 @@ $initial_list = get_data($select_initial_query);
 								$favorite = "";
 							}
 
-							// [231204] sujeong 
-							if(!isset($isl['image_path'])){
+							// [231227] sujeong 
+							if($isl['image_path']){
 								$is_profile_img = $isl['image_path'];
 							}else{
-								$is_profile_img = '/main/img/profile_empty.png';
+								$is_profile_img =  '/main/img/profile_empty.png';
 							}
-
-							//$is_profile_img = '/main/img/profile_empty.png';
+							//$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
 
 							if($isl['initial']==$ini['initial']){
                 ?>

@@ -17,6 +17,7 @@ $is_modify = ($auth >= 2);
 
 $registration_detail_query =	"
 										SELECT
+                                            m.ksso_id,
 											rr.attendance_type,
 											rr.nation_no,
 											rr.banquet_yn,
@@ -91,7 +92,7 @@ $registration_detail_query =	"
 										FROM request_registration rr
 										LEFT JOIN (
 											SELECT
-												m.idx AS member_idx, m.email AS member_email, CONCAT(m.last_name,m.first_name) AS member_name, n.nation_ko AS member_nation
+												m.idx AS member_idx, m.email AS member_email, CONCAT(m.last_name,m.first_name) AS member_name, n.nation_ko AS member_nation, m.ksola_member_check AS ksso_id
 											FROM member m
 											JOIN nation n
 												ON m.nation_no = n.idx
@@ -149,6 +150,7 @@ $refund_date = isset($registration_detail["refund_date"]) ? $registration_detail
 $refund_bank = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_bank"] : "";
 $refund_holder = isset($registration_detail["refund_bank"]) ? $registration_detail["refund_holder"] : "";
 $refund_account = isset($registration_detail["refund_account"]) ? $registration_detail["refund_account"] : "";
+$member_check = isset($registration_detail["ksso_id"]) ? $registration_detail["ksso_id"] : "";
 $refund_amount = $registration_detail["refund_amount"] ?? $payment_price;
 
 // $payment_info = isset($registration_detail["etc6"]) ? $registration_detail["etc6"] : "";
@@ -459,7 +461,7 @@ if ($attendance_type_no != 0) {
                         <th>KSSO 회원 유무</th>
                         <td><?= $member_status_text ?></td>
                         <th>KSSO 학회 번호</th>
-                        <td><?= $academy_number ?></td>
+                        <td><?= $member_check ?></td>
                     </tr>
                     <tr>
                         <th>ID(Email)</th>

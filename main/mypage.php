@@ -168,7 +168,7 @@ $score_detail = sql_fetch($score_sql);
 								</td>
 							</tr>
 							<tr style="display: none;" name="country_tr" id="country_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("country") ?></th>
+								<th class="nowrap"><?= $locale("country") ?></th>
 								<td>
 									<div class="max_normal">
 										<select name="nation_no" class="required" id="nation_no" onChange="country_chk(this)">
@@ -212,7 +212,7 @@ $score_detail = sql_fetch($score_sql);
 							}
 							?>
 							<tr style="display:none" id='name_tr' name="name_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("name") ?></th>
+								<th class="nowrap"><?= $locale("name") ?></th>
 								<td>
 									<div class="max_normal">
 										<ul class="half_ul">
@@ -226,7 +226,7 @@ $score_detail = sql_fetch($score_sql);
 							</tr>
 							<?php if ($user_info['nation_no'] == "25") { ?>
 								<tr class="korea_only" name="name_tr_kor" id="name_tr_kor">
-									<th><span class="red_txt">*</span>성명</th>
+									<th>성명</th>
 									<td>
 										<div class="max_normal">
 											<ul class="half_ul">
@@ -240,7 +240,7 @@ $score_detail = sql_fetch($score_sql);
 								</tr>
 							<?php } ?>
 							<tr style="display: none;">
-								<th class="nowrap"><span class="red_txt">*</span>Title</th>
+								<th class="nowrap">Title</th>
 								<td class="title_td clearfix">
 									<div class="max_normal">
 										<select name="title" class="required" id="title">
@@ -262,7 +262,7 @@ $score_detail = sql_fetch($score_sql);
 								</td>
 							</tr>
 							<tr style="display: none;" name="affiliation_tr" id="affiliation_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("affiliation") ?></th>
+								<th class="nowrap"><?= $locale("affiliation") ?></th>
 								<td>
 									<div class="max_normal">
 										<input type="text" name="affiliation" value="<?= $user_info['affiliation'] ?>">
@@ -271,7 +271,7 @@ $score_detail = sql_fetch($score_sql);
 							</tr>
 							<?php if ($user_info['nation_no'] == "25") { ?>
 								<tr class="korea_only" id="affiliation_tr_kor" name="affiliation_tr_kor">
-									<th><span class="red_txt">*</span>소속</th>
+									<th>소속</th>
 									<td>
 										<div class="max_normal">
 											<input type="text" name="affiliation_kor" value="<?= $user_info['affiliation_kor'] ?>">
@@ -280,7 +280,7 @@ $score_detail = sql_fetch($score_sql);
 								</tr>
 							<?php } ?>
 							<tr style="display:none" id="department_tr" name="department_tr">
-								<th class="nowrap"><span class="red_txt">*</span><?= $locale("department") ?></th>
+								<th class="nowrap"><?= $locale("department") ?></th>
 								<td>
 									<div class="max_normal">
 										<input type="text" name="department" value="<?= $user_info["department"] ?>">
@@ -289,7 +289,7 @@ $score_detail = sql_fetch($score_sql);
 							</tr>
 							<?php if ($user_info['nation_no'] == "25") { ?>
 								<tr class="korea_only" id="department_tr_kor" name="department_tr_kor">
-									<th><span class="red_txt">*</span>부서</th>
+									<th>부서</th>
 									<td>
 										<div class="max_normal">
 											<input type="text" name="department_kor" value="<?= $user_info["department_kor"] ?>">
@@ -298,7 +298,7 @@ $score_detail = sql_fetch($score_sql);
 								</tr>
 							<?php } ?>
 							<tr style="display:none;">
-								<th class="nowrap"><span class="red_txt">*</span>휴대폰 번호</th>
+								<th class="nowrap">휴대폰 번호</th>
 								<td>
 									<div class="max_normal phone">
 										<!-- <input class="numbers" name="nation_tel" type="text" maxlength="60" value="<?= $nation_tel ?>" readonly> -->
