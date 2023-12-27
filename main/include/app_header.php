@@ -76,9 +76,9 @@
 					<a href="/main/app_notice.php">공지사항</a>
 				</li>
 				<!--[231204] sujeong / 설문조사 주석-->
-				<!-- <li>
-					<a href="/main/app_survey.php">Survey</a>
-				</li> -->
+				<li>
+					<a href="/main/app_survey.php">설문조사</a>
+				</li>
 				<!-- <li>
 					<a href="javascript:;">Stamp Tour</a>
 					<ul class="app_sub">
@@ -87,12 +87,15 @@
 						<li><a href="/main/app_tour_map.php">Tour Map</a></li>
 					</ul>
 				</li> -->
-				<!-- <li>
-					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>
+				<li>
+					<!--[231227] sujeong / 프로그램북/초록집 다운로드 url 변경 -->
+					<!-- <a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a> -->
+					<a href="https://kosso.org/main/img/invited_speaker/TBD.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a>
 				</li>
 				<li>
-					<a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" download class="pdf_view">Abstract Book <br/>Download</a>
-				</li> -->
+					<!-- <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" download class="pdf_view">초록집 <br/>다운로드</a> -->
+					<a href="https://kosso.org/main/img/invited_speaker/TBD.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
+				</li>
 			</ul>
 		</div>
     </div>
@@ -107,7 +110,8 @@
                 alert('Updates are planned.')
                 return false;
             } else {
-                openPDF(path);
+                window.open(path)
+				//openPDF(path);
             }
         });
 
