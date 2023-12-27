@@ -1566,7 +1566,7 @@ if ($_POST["flag"] == "find_password") {
 	 */
 	//$subject = "초록 접수 메일 안내";
 
-	$message = createMessage($language, "abstract", "", $email, "[KSSO]초록 접수 메일 안내", date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
+	$message = createMessage($language, "abstract", "", $email, "[제 59차 대한비만학회 춘계학술대회]초록 접수 메일 안내", date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
 	createDraft($service, "secretariat@kosso.org", $message);
 	sendMessage($service, "secretariat@kosso.org", $message);
 }
