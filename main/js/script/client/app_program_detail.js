@@ -256,11 +256,12 @@ function createHTMLList(program_list, active){
             if(pl.path !== ""){
                 abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">초록보기</a>'
             }else{
-                abstract_html += '<a href="TBD" class="right_tag" onclick="openPDF(event)">초록보기</a>'
+                //[231228] sujeong / path가 없으면 초록보기 버튼을 없애기 
+                abstract_html += ''
             }
         }
 
-        if(pl.chairpersons!=null){
+        if(pl.chairpersons!= ""){
             var chairperson = "";
             if((pl.chairpersons.split(',').length-1)>=2){
                 chairperson = "Chairpersons: ";
@@ -270,7 +271,7 @@ function createHTMLList(program_list, active){
             chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
         }
 
-        if(pl.preview!=null){
+        if(pl.preview!=""){
             preview_html = ' <button class="preview_btn">미리보기</button>';
             detail_text_html += '<div class="detail_text">'+pl.preview+'</div>';
         }
@@ -375,10 +376,6 @@ function openPDF(e){
     e.preventDefault();
     let path = e.target.href;
    
-    if(path === 'https://kosso.org/main/TBD'){
-        alert('준비 중입니다.');
-        return false;
-    } else{
         if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
             window.AndroidScript.openPDF(path);
         } else if(window.webkit && window.webkit.messageHandlers!=null) {
@@ -388,7 +385,6 @@ function openPDF(e){
                 console.log(err);
             }
         }
-    }
 }
 
 function setAlarm(program_idx, is_push){
