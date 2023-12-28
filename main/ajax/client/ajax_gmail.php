@@ -549,6 +549,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 			$member_status = $data["member_status"] ?? "-";
 			$member_status = ($member_status == 1) ? "Yes" : "No";
 			*/
+			//[231228] hyojun / if 문 동작 X 삼항연산자로 변경
 			$member_status = $data["ksso_member_status"] ?? "-";
             $member_status = ($member_status == 1) ? "정회원" : "비회원";
 			// if ($member_status == 0) {

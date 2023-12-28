@@ -494,10 +494,8 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
 <script>
     /** program_modal */
     
-    function clickProgramTd (){
-        const modalTd = document.querySelectorAll(".modal")
-        modalTd.forEach((td)=>{
-        td.addEventListener("click", (e)=>{
+    function clickProgramTd(e){
+        
             let id = e.target.dataset.id;
 
             /** td 내부 선택할 경우 */
@@ -522,9 +520,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
             }
         }
     });
-        })
-    })
-    }
+        }
    
 
 //모달 보여주기
@@ -796,7 +792,7 @@ function table_location(event, _this, e, day, category, this_name) {
     var session_app_type = $("[name=session_app_type]").val();
 
     if (session_app_type != "" && session_app_type == 'N') {
-        clickProgramTd();
+        clickProgramTd(event);
         //window.location.href = "./program_detail_sujeong.php?day=" + day +"&category=" + category + "&e=" + e + "&name=" + this_name;
         //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
     } else {
