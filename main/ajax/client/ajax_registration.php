@@ -453,7 +453,7 @@ if ($_POST["flag"] == "registration") {
 						{$add_set}
 					";
 	}
-
+   
 	$res = sql_query($sql);
 	if ($res) {
 		//사전등록
