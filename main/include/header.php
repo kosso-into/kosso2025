@@ -80,7 +80,7 @@ $locale = locale($language);
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/comingsoon.php">프로그램</a>
+                        <a href="/main/program_glance.php">프로그램</a>
                         <ul class="sub_nav">
 
                             <!-- 1121 커밍순 페이지로 변경 -->
