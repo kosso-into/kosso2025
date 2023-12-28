@@ -36,8 +36,8 @@ $locale = locale($language);
                     <?php
                     if ($_SESSION["USER"]["idx"] == "") {
                     ?>
-                        <!-- <li><a href="/main/login.php">로그인</a></li>
-                        <li><a href="/main/signup.php">회원가입</a></li> -->
+                        <li><a href="/main/login.php">로그인</a></li>
+                        <li><a href="/main/signup.php">회원가입</a></li>  
                     <?php
                     } else {
                     ?>

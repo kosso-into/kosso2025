@@ -605,6 +605,7 @@ function writeModal(data){
                                         </div>
                                     `
             }
+              /**[231228] sujeong /학회팀 요청, 패널토의 경우 패널 공개 X */
             else if(t.contents_title === "패널토의"){
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
