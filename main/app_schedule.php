@@ -115,13 +115,11 @@ foreach($program_list as $pl){
                         <div class="main">
                             <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
-                                    if($program['path'] != ""){
-                                        $program_path = $program['path'];
-                                    }else{
-                                        $program_path = 'TBD';
-                                    }
-                            ?>
-                            <a href="<?=$program_path?>" class="right_tag">초록보기</a>
+                                    if($program['path'] != ""){ ?>
+                                        <a href="<?= $program_path ?>" class="right_tag">초록보기</a>
+                                    <?php }else{ ?>
+                                        <!-- [231228] sujeong / path가 없으면 초록보기 버튼을 없애기 -->
+                                    <?php  }?>
                             <?php
                             }
                             ?>
@@ -217,13 +215,11 @@ foreach($program_list as $pl){
                             <div class="main">
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
-                                    if($program['path'] != ""){
-                                        $program_path = $program['path'];
-                                    }else{
-                                        $program_path = 'TBD';
-                                    }
-                                    ?>
-                                    <a href="<?= $program_path ?>" class="right_tag">초록보기</a>
+                                    if($program['path'] != ""){ ?>
+                                        <a href="<?= $program_path ?>" class="right_tag">초록보기</a>
+                                    <?php }else{ ?>
+                                        <!-- [231228] sujeong / path가 없으면 초록보기 버튼을 없애기 -->
+                                    <?php  }?>
                                     <?php
                                 }
                                 ?>
@@ -479,11 +475,7 @@ foreach($program_list as $pl){
         }
 
         function openPDF(path){
-            console.log(path)
-            if(path === 'https://kosso.org/main/TBD'){
-                alert('준비 중입니다.');
-                return false;
-            } else{
+
                 if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
                     window.AndroidScript.openPDF(path);
                 } else if(window.webkit && window.webkit.messageHandlers!=null) {
@@ -494,7 +486,7 @@ foreach($program_list as $pl){
                     }
                 }
             }
-        }
+        
 
         function setAlarm(program_idx){
             $.ajax({
