@@ -252,10 +252,11 @@ function createHTMLList(program_list, active){
         }
 
         if(abstract_category_list.includes(pl.program_category_idx)){
-            if(pl.path==null){
-                 abstract_html += '<a href="TBD" class="right_tag" onclick="openPDF(event)">초록보기</a>'
-            }else{
+       
+            if(pl.path !== ""){
                 abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">초록보기</a>'
+            }else{
+                abstract_html += '<a href="TBD" class="right_tag" onclick="openPDF(event)">초록보기</a>'
             }
         }
 
@@ -373,8 +374,8 @@ function Schedule(e){
 function openPDF(e){
     e.preventDefault();
     let path = e.target.href;
-
-    if(path === 'TBD'){
+   
+    if(path === 'https://kosso.org/main/TBD'){
         alert('준비 중입니다.');
         return false;
     } else{
