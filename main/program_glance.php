@@ -460,7 +460,8 @@ section.app_version .inner {
 					<p class="modal_title_time"></p>
 					<p class="modal_title_room"></p>
 				</div>
-				<div>
+                <!-- [231228]sujeong / chairperson 학회팀 요청 주석 -->
+				<div style="display: none;">
 					<p class="program_modal_chair">Chair Person</p>
 					<div class="program_modal_person">
 					</div>
