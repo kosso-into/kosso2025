@@ -115,7 +115,7 @@ foreach($program_list as $pl){
                         <div class="main">
                             <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
-                                    if($program['path']){
+                                    if($program['path'] != ""){
                                         $program_path = $program['path'];
                                     }else{
                                         $program_path = 'TBD';
@@ -217,8 +217,13 @@ foreach($program_list as $pl){
                             <div class="main">
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
+                                    if($program['path'] != ""){
+                                        $program_path = $program['path'];
+                                    }else{
+                                        $program_path = 'TBD';
+                                    }
                                     ?>
-                                    <a href="<?=$program['path'] ?? 'TBD'?>" class="right_tag">초록보기</a>
+                                    <a href="<?= $program_path ?>" class="right_tag">초록보기</a>
                                     <?php
                                 }
                                 ?>
@@ -474,7 +479,8 @@ foreach($program_list as $pl){
         }
 
         function openPDF(path){
-            if(path === 'TBD'){
+            console.log(path)
+            if(path === 'https://kosso.org/main/TBD'){
                 alert('준비 중입니다.');
                 return false;
             } else{
