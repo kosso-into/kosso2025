@@ -820,8 +820,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">윤지완</p>(서울의대 강남센터 내분비),<br>
-                                                                        <p class="bold">이경애</p>(전북의대 내분비내과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -896,8 +895,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">양예슬</p>(서울의대 내분비내과),<br>
-                                                                        <p class="bold">서원윤</p>(충남의대 가정의학과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -972,8 +970,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이승환</p>(가톨릭의대 내분비내과),<br>
-                                                                        <p class="bold">조윤정</p>(대구가톨릭의대 가정의학과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1048,8 +1045,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이창현</p>(서울행복내과),<br>
-                                                                        <p class="bold">김진욱</p>(을지의대 가정의학과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1129,8 +1125,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">송도경</p>(이화여대),<br>
-                                                                        <p class="bold">김형석</p>(충남의대)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1205,8 +1200,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이현승</p>(충남의대),<br>
-                                                                        <p class="bold">김민수</p>(KIST)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1282,7 +1276,6 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD),<br>
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
@@ -1359,8 +1352,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">구혜연</p>(서울의대 가정의학과),<br>
-                                                                        <p class="bold">류영상</p>(조선의대 내분비내과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1440,8 +1432,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"><p class="bold">임현정</p>(경희대학교 의학영양학과),<br>
-                                                                        <p class="bold">권유진</p>(용인세브란스 가정의학과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1517,8 +1508,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">권혁태</p>(서울의대 가정의학과),<br>
-                                                                        <p class="bold">송수진</p>(한남대학교 식품영양학과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1594,8 +1584,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">한병덕</p>(고려의대 가정의학과),<br>
-                                                                        <p class="bold">양아람</p>(성균관의대 소아청소년과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1671,8 +1660,7 @@ echo '<script type="text/javascript">
                                                                         패널토의
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이민철</p>(차의과학대학교 스포츠의학과),<br>
-                                                                        <p class="bold">문효열</p>(서울대학교 체육교육과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

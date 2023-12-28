@@ -589,7 +589,7 @@ function writeModal(data){
         if(t.speaker){
 
              /**speaker가 한 명일 경우 */
-            if(!t.speaker?.includes(",")){
+            if(!t.speaker?.includes(",") && t.contents_title !== "패널토의"){
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
@@ -600,12 +600,21 @@ function writeModal(data){
                                     `
             }
             /**speaker가 여러 명일 경우 */
-            else{
+            else if(t.speaker?.includes(",") && t.contents_title !== "패널토의"){
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
                                         <div class="content_1 content_person">
                                             <p>${t.speaker}</p>
+                                        </div>
+                                    `
+            }
+            else if(t.contents_title === "패널토의"){
+                contents.innerHTML =  `
+                                        <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
+                                        <div>${t.contents_title}</div>
+                                        <div class="content_1 content_person">
+                                            <p>TBD</p>
                                         </div>
                                     `
             }
