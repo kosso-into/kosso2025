@@ -84,9 +84,9 @@ $locale = locale($language);
                         <ul class="sub_nav">
 
                             <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
+                            <li><a href="/main/program_glance.php">Program at a Glance</a></li>
                             <li>
-                                <a href="/main/comingsoon.php">Program in Detail</a>
+                                <a href="/main/program_detail.php">Program in Detail</a>
                             </li>
                             <!-- <li><a href="/main/program_detail.php">Program details</a></li> -->
                             <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
@@ -243,8 +243,8 @@ $locale = locale($language);
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m2"]) ? "block" : "none") ?>">
                 
                 <!-- 1121 커밍순 페이지로 변경 -->
-                    <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
-                    <li><a href="/main/comingsoon.php">Program in Detail</a></li>
+                    <li><a href="/main/program_glance.php">Program at a Glance</a></li>
+                    <li><a href="/main/program_detail.php">Program in Detail</a></li>
                     <!-- <li><a href="/main/program_detail.php">Program details</a></li> -->
                     <!-- <li><a href="/main/invited_speaker.php">Invited Speakers</a></li> -->
                 </ul>
