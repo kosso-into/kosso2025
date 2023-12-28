@@ -253,9 +253,10 @@ function createHTMLList(program_list, active){
 
         if(abstract_category_list.includes(pl.program_category_idx)){
             if(pl.path==null){
-                pl.path = 'https://kosso.org/main/img/invited_speaker/TBD.pdf';
+                 abstract_html += '<a href="TBD" class="right_tag" onclick="openPDF(event)">초록보기</a>'
+            }else{
+                abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">초록보기</a>'
             }
-            abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">초록보기</a>'
         }
 
         if(pl.chairpersons!=null){
@@ -371,10 +372,10 @@ function Schedule(e){
 
 function openPDF(e){
     e.preventDefault();
-    let path=e.target.href;
+    let path = e.target.href;
 
-    if(path === 'javascript:void(0)'){
-        alert('Updates are planned.');
+    if(path === 'TBD'){
+        alert('준비 중입니다.');
         return false;
     } else{
         if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
