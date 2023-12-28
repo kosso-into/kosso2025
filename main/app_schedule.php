@@ -118,7 +118,7 @@ foreach($program_list as $pl){
                                     if($program['path']){
                                         $program_path = $program['path'];
                                     }else{
-                                        $program_path = 'https://kosso.org/main/img/invited_speaker/TBD.pdf';
+                                        $program_path = 'TBD';
                                     }
                             ?>
                             <a href="<?=$program_path?>" class="right_tag">초록보기</a>
@@ -218,7 +218,7 @@ foreach($program_list as $pl){
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     ?>
-                                    <a href="<?=$program['path'] ?? 'javascript:void(0)'?>" class="right_tag">초록보기</a>
+                                    <a href="<?=$program['path'] ?? 'TBD'?>" class="right_tag">초록보기</a>
                                     <?php
                                 }
                                 ?>
@@ -474,13 +474,18 @@ foreach($program_list as $pl){
         }
 
         function openPDF(path){
-            if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-                window.AndroidScript.openPDF(path);
-            } else if(window.webkit && window.webkit.messageHandlers!=null) {
-                try{
-                    window.webkit.messageHandlers.openPDF.postMessage(path);
-                } catch (err){
-                    console.log(err);
+            if(path === 'TBD'){
+                alert('준비 중입니다.');
+                return false;
+            } else{
+                if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+                    window.AndroidScript.openPDF(path);
+                } else if(window.webkit && window.webkit.messageHandlers!=null) {
+                    try{
+                        window.webkit.messageHandlers.openPDF.postMessage(path);
+                    } catch (err){
+                        console.log(err);
+                    }
                 }
             }
         }
