@@ -166,7 +166,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:40-12:40</td>
+                                                <td>15:40-16:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
@@ -232,7 +232,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="pink_bg">
-                                                <td>11:40-12:40</td>
+                                                <td>15:40-16:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
@@ -308,7 +308,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>12:40-13:20</td>
+                                                <td>13:20-13:50</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">문석학술상</p>
@@ -368,7 +368,7 @@ echo '<script type="text/javascript">
                             <li name="special_lecture_2">
                                 <div class="program_header">
                                     <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1, 2, 3</span>
+                                    <span class="font_16 bold">ROOM 3</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
