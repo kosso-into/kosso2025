@@ -270,12 +270,12 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_2" data-id="11">
-                                    Symposium 2 <p>Integrative physiology and molecular mechanisms of obesity</p>
+                                    Symposium 2 <p>Targeting Molecular Pathways in Obesity: Insights from Recent Research</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_3" data-id="12">
-                                    Symposium 3 <p>Postprandial glycemic response and Continuous Glucose Monitoring</p>
+                                    Symposium 3 <p>Ultra-processed foods and cardiometabolic Health</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
@@ -296,17 +296,17 @@ section.app_version .inner {
                                     <div class="colons_div">10:10-11:40</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_4" data-id="14">
-                                    Symposium 4 <p>Environmental, genetics and obesity</p>
+                                    Symposium 4 <p>Exploring the interplay of environment, genetics, and obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_5" data-id="15">
-                                    Symposium 5 <p>Gut microbiome</p>
+                                    Symposium 5 <p>Diverse Pathways in regulation of Obesity and related diseases </p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_6" data-id="16">
-                                    Symposium 6 <p></p>
+                                    Symposium 6 <p>Time Restricted Eating: what we know & where the field is going</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
@@ -359,7 +359,7 @@ section.app_version .inner {
                                     <div class="colons_div">14:00-15:30</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_7" data-id="22">
-                                    Symposium 7 <p>New Antiobesity Drug</p>
+                                    Symposium 7 <p>New anti-obesity drugs</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
@@ -417,12 +417,13 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_11" data-id="30">
-                                    Symposium 11 <p>Big Data in Obesity Research<br>+Digital Therapeutics in Obesity Management</p>
+                                    Symposium 11 <p>Big Data in Obesity Research<br>
+                                    +Digital Therapeutics in Obesity Management</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_12" data-id="31">
-                                    Symposium 12 <p>Exercise, Obesity, and Metabolic Dysfunction</p>
+                                    Symposium 12 <p>Effects of Exercise and Nutrition on Obesity-related Cardiometabolic Dysfunction</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                 </td>
