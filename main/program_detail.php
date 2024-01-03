@@ -797,7 +797,7 @@ echo '<script type="text/javascript">
                                                                     <td>08:30-08:55</td>
                                                                     <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">손장원</p>(TBD)
+                                                                        <p class="bold">손장원</p>(가톨릭의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -945,24 +945,37 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
-                                                                    <td class="bold">Once-weekly Semaglutide and</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                    <!-- [240103] sujeong/ 학회팀 요청 sympo 7 주석 -->
+                                                                    <!-- <td class="bold">Once-weekly Semaglutide and Tirzepatide</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">남가은</p>(고려의대 가정의학과)
-                                                                    </td>
+                                                                    </td> -->
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">Tirzepatide</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                    <!-- <td class="bold">Tirzepatide</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">배재현</p>(고려의대 내분비내과)
-                                                                    </td>
+                                                                    </td> -->
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
-                                                                    <td class="bold">Daily oral GLP-1 receptor agonists</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                    <!-- <td class="bold">Daily oral GLP-1 receptor agonists</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">노은</p>(한림의대 내분비내과)
-                                                                    </td>
+                                                                    </td> -->
                                                                 </tr>
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
@@ -1027,9 +1040,9 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
-                                                                    <td class="bold">비만과 다낭성난소증후군 (PCOS)</td>
+                                                                    <td class="bold">비만과 다낭성난소증후군(PCOS)</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김진주</p>(서울의대)
+                                                                        <p class="bold">김진주</p>(서울대병원 헬스케어시스템)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1609,7 +1622,7 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 12 : Exercise, Obesity, and Metabolic Dysfunction</p>
+                                                    <p class="font_20 bold">Symposium 12 : Effects of Exercise and Nutrition on Obesity-related Cardiometabolic Dysfunction</p>
                                                     <!-- <p><span class="bold">Chairpersons : 신윤아</span> (TBD), <br><span
                                                             class="bold">김종희</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
