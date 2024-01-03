@@ -227,7 +227,7 @@ function createHTMLList(program_list, active){
 
             if(cl.speaker_idx!=null){
                 speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">연자 정보</a>';
-                speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+'</span>'+'('+cl.affiliation+')'+'</p>';
+                speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+'</span>('+cl.affiliation+')</p>';
             } else {
                 if(cl.speaker!=null){
                     speaker_html += '<p class="chairperson">'+'<span class="">'+cl.speaker+'</span>'+'</p>';

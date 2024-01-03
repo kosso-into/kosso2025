@@ -58,7 +58,7 @@
 .app_scientific .detail_text li {font-size: 12px; border-bottom: none;}
 .app_scientific .detail_text ul + p {margin-top: 12px;} 
 .app_scientific .detail_text li:not(last-child) {margin-bottom: 4px;}
-.app_scientific .detail .chairperson {padding-bottom:10px; display:flex; align-items:center; flex-wrap: wrap; gap:2px 8px;}
+.app_scientific .detail .chairperson {padding-bottom:10px; display:flex; align-items:center; flex-wrap: wrap; /* gap:2px 8px;*/}
 .app_scientific .preview_btn {position:absolute; bottom:7px; right:9px; border-radius:3px; color:#fff; background:#999 url('../img/icons/icon_plus_white.svg') no-repeat left  4px center /7px; padding:4px 7px 4px 14px; font-size:11px; transition: all 0.4s;}
 .app_scientific.app_program_detail .app_sort_form.app_half_ul {gap:0;}
 

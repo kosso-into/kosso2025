@@ -100,11 +100,11 @@ section.app_version .inner {
                     <table class="program_table main-table">
                         <colgroup>
                             <col width="10%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
+                            <col width="18.5%"/>
+                            <col width="18.5%"/>
+                            <col width="18.5%"/>
+                            <col width="18.5%"/>
+                            <col/>
                         </colgroup>
                         <thead>
                             <tr>
@@ -312,6 +312,7 @@ section.app_version .inner {
                                 </td>
                                 <td></td>
                             </tr>
+                             <!-- [240103] sujeong / luncheon room 2개 버전 -->
                             <tr>
                                 <td>
                                     <div class="colons_div">11:40-12:40</div>
@@ -323,6 +324,28 @@ section.app_version .inner {
                                 </td>
                                 <td></td>
                             </tr>
+                            <!-- [240103] sujeong / luncheon room 3개 버전 -->
+                            <!-- <tr>
+                                <td>
+                                    <div class="colons_div">11:40-12:40</div>
+                                </td>
+                                <td class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="17">
+                                    Luncheon Lecture 1
+                                    <input type="hidden" name="e" value="room1">
+                                    <input type="hidden" name="category" value="luncheon_symposium">
+                                </td>
+                                <td class="sky_bg pointer modal" name="luncheon_symposium_2" data-id="18">
+                                    Luncheon Lecture 2
+                                    <input type="hidden" name="e" value="room2">
+                                    <input type="hidden" name="category" value="luncheon_symposium">
+                                </td>
+                                <td class="sky_bg pointer modal" name="luncheon_symposium_3" data-id="19">
+                                    Luncheon Lecture 3
+                                    <input type="hidden" name="e" value="room3">
+                                    <input type="hidden" name="category" value="luncheon_symposium">
+                                </td>
+                                <td></td>
+                            </tr> -->
                             <tr>
                                 <td>
                                     <div class="colons_div">12:40-13:20</div>
