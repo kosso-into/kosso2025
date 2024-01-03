@@ -61,7 +61,7 @@ $schedule = sql_fetch($select_schedule_query);
 	<div class="ft_inner">
 		<ul class="ft_menu">
 			<li>
-				<a href="/main/app_index.php"><img src="/main/img/icons/icon_ft_home.svg" alt=""><span>HOME</span></a>
+				<a href="/main/app_index.php"><img src="/main/img/icons/icon_ft_home.svg" alt=""><span>홈</span></a>
 			</li>
 			<li>
 				<a href="/main/program_glance.php"><img src="/main/img/icons/icon_ft_program.svg" alt=""><span>프로그램</span></a>
@@ -71,14 +71,14 @@ $schedule = sql_fetch($select_schedule_query);
 					<div class="qr_blue">
 						<img src="/main/img/icons/icon_ft_qr.svg" alt="">
 					</div>
-					<span>QR CODE</span>
+					<span>QR 코드</span>
 				</a>
 			</li>
 			<li>
-				<a href="/main/app_abstract.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>초록</span></a>
+				<a href="/main/app_abstract.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>초록보기</span></a>
 			</li>
 			<li>
-				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY SCHEDULE</span></a>
+				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>즐겨찾기</span></a>
 			</li>
 		</ul>
 	</div>

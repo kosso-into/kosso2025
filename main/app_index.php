@@ -54,20 +54,20 @@
 			<li>
 				<a href="/main/app_abstract.php">
 					<img src="./img/icons/app_menu03.svg" alt="">
-					<span>초록</span>
+					<span>초록보기</span>
 				</a>
 			</li>
 			<li>
 				<a href="/main/app_invited_speakers.php">
 					<img src="./img/icons/app_menu04.svg" alt="">
-					<span>초청 연자</span>
+					<span>연자 소개</span>
 				</a>
 			</li>
 			<li>
 				<a>
 				<a href="/main/app_happening_now.php">
 					<img src="./img/icons/app_menu05.svg" alt="">
-					<span>HAPPENING<br/>NOW</span>
+					<span>진행세션</span>
 				</a>
 			</li>
 			<li>
@@ -79,7 +79,7 @@
 			<li>
 				<a href="/main/sponsor.php">
 					<img src="./img/icons/app_menu07.svg" alt="">
-					<span>후원사</span>
+					<span>고객사</span>
 				</a>
 			</li>
 			<li>
