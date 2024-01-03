@@ -41,7 +41,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:;">초록</a>
+					<a href="javascript:;">초록 보기</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
@@ -60,12 +60,12 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_invited_speakers.php">초청 연자</a>
+					<a href="/main/app_invited_speakers.php">연자 소개</a>
 				</li>
 				<li>
 					<a href="javascript:;">후원/전시</a>
 					<ul class="app_sub">
-						<li><a href="/main/sponsor.php">후원사</a></li>
+						<li><a href="/main/sponsor.php">고객사</a></li>
 						<li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
 					</ul>
 				</li>
