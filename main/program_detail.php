@@ -85,7 +85,7 @@ echo '<script type="text/javascript">
                             <li name="plenary_lecture_1">
                                 <div class="program_header">
                                     <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1, 2, 3</span>
+                                    <span class="font_16 bold">ROOM 1~3</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -298,7 +298,7 @@ echo '<script type="text/javascript">
                         <li name="special_lecture_1">
                                 <div class="program_header">
                                     <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 3</span>
+                                    <span class="font_16 bold">ROOM 1~3</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -795,10 +795,15 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>08:30-08:55</td>
-                                                                    <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                    <!-- [240103] sujoeng / 학회팀 요청 주석 -->
+                                                                    <!-- <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손장원</p>(가톨릭의대)
-                                                                    </td>
+                                                                    </td> -->
                                                                 </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>

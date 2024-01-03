@@ -1363,7 +1363,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	/* .program_table {transform: scale(0.7); transform-origin: 0 0;} */
 	.program_table {min-width:600px;}
 	.program_table th, .program_table td {padding:6px;}
-	.program_table thead th.font_big, .program_table thead th {font-size:10px}
+	.program_table thead th.font_big, .program_table thead th {font-size:10px;padding: 8px;}
 	.program_table tbody td {font-size:8px; line-height:10px;}
 	.program_table tbody td p {font-size:6px;}
 }

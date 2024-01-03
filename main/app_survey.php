@@ -28,7 +28,7 @@
 					<a href="/main/app_survey_test.php">
 						<img src="./img/icons/icon_survey_kr.svg" alt="">
 						<p class="center_t">
-							<span class="bold">KSSO 2024</span><br/>
+							<span class="bold">제 59차 대한비만학회 <br/>춘계학술대회</span><br/>
 							만족도 및<br/>피드백 설문조사
 						</p>
 						<button href="javascript:;" class="lang">한국어</button>
