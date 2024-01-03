@@ -889,7 +889,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
-                                                                    <td class="bold">Atypical antipsychotics and appetite regulation strategies</td>
+                                                                    <td class="bold">Novel strategies to combat obesity associated with the use of atypical antipsychotics</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손종우</p>(KAIST)
                                                                     </td>
@@ -966,7 +966,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
-                                                                    <!-- <td class="bold">Tirzepatide</td>
+                                                                    <!-- <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">배재현</p>(고려의대 내분비내과)
                                                                     </td> -->
@@ -1118,21 +1118,21 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>08:30-08:55</td>
-                                                                    <td class="bold">Reduction of SPARC protects mice against NLRP3 inflammasome activation and obesity</td>
+                                                                    <td class="bold">Reduction of Adipokine SPARC Protects Against Obesity by Integration of Immune-metabolic Response</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">유승진</p>(한림의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">The N-degron pathway mediates lipophagy: The chemical modulation of lipophagy in obesity and NAFLD</td>
+                                                                    <td class="bold">Therapeutic Strategy for Obesity Based on p62-mediated Lipophagy</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">박주원</p>(이화여대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">HMBA ameliorates obesity by MYH9- and ACTG1-dependent regulation of hypothalamic neuropeptides</td>
+                                                                    <td class="bold">HMBA Ameliorates Diet-induced Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은경</p>(DGIST)
                                                                     </td>
@@ -1200,14 +1200,14 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">ANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
+                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허진영</p>(서강대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
-                                                                    <td class="bold">How diets regulate MASH Development. Casp2-S1P: The new hepatic lipid regulator</td>
+                                                                    <td class="bold">How Diets Regulate MASH Development. Casp2-S1P: The New Hepatic Lipid Regulator</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김주연</p>(한양대)
                                                                     </td>
@@ -1432,14 +1432,14 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">Ultra-processed foods intakes and obesity</td>
+                                                                    <td class="bold">Ultra-processed food consumption and obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">심지선</p>(연세대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">Ultra-processed foods intake and all-cause and cardiovascular mortality</td>
+                                                                    <td class="bold">Serum Metabolomic Signatures of Ultra-processed Food Consumption and Cancer-related hormones</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이상아</p>(강원대학교)
                                                                     </td>
@@ -1501,7 +1501,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
-                                                                    <td class="bold">Circadian rhythm, obesity, and intermittent fasting</td>
+                                                                    <td class="bold">Circadian Rhythm, Obesity, and Intermittent Fasting</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">권오빈</p>(서울대학교 의학과 생화학교실)
                                                                     </td>
@@ -1660,7 +1660,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
-                                                                    <td class="bold">Regular exercise can how effectively transform our cardiovascular and brain health?</td>
+                                                                    <td class="bold">How Effectively Can Regular Exercise Improve Our Cardiovascular and Brain Health?</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">하민성</p>(서울시립대학교 스포츠과학과)
                                                                     </td>
