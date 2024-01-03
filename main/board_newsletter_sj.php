@@ -36,11 +36,9 @@
 		<div>
             <ul class="clearfix photo_list">
                 <?php
-				foreach ($list as $li) {
-					$i = 0;
+				foreach ($list as $i => $li) {
 					echo "<li onclick='goDetail(" . $li['idx'] . ")'><div class='img_wrap' data-index='" . $i . "'><img src='https://kosso.org" . $li['path'] . "' width='100%' height='100%'/><div class='newsletter_footer'>" . ($i + 1) . "차 뉴스레터</div></div></li>";
 
-					$i++;
 				}
 				?>
 			</ul>
