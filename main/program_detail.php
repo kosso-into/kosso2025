@@ -123,16 +123,16 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>12:40-13:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                    Obesity and Insulin Resistance
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이관우</p>(아주의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>13:10-13:20</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -198,15 +198,15 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>15:40-16:00</td>
+                                                                    <td class="bold">Serotonin and Metabolism</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김경곤</p>
                                                                         (가천의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:00-16:10</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -263,14 +263,14 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>15:40-16:00</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은미</p>(강북삼성병원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:00-16:10</td>
                                                                     <td class="bold">
                                                                         Q&A
                                                                     </td>
@@ -335,7 +335,7 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td></td>
                                                                     <td class="bold">
                                                                         TBD
@@ -348,7 +348,7 @@ echo '<script type="text/javascript">
                                                                     <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -405,7 +405,7 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td></td>
                                                                     <td class="bold">
                                                                         TBD
@@ -418,7 +418,7 @@ echo '<script type="text/javascript">
                                                                     <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -478,7 +478,7 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td></td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
@@ -512,7 +512,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -561,7 +561,7 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td></td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
@@ -595,7 +595,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -657,7 +657,7 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td></td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
@@ -669,7 +669,7 @@ echo '<script type="text/javascript">
                                                                     <td></td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -718,7 +718,7 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td></td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
@@ -733,7 +733,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -794,28 +794,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>08:30-08:55</td>
                                                                     <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손장원</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>08:55-09:20</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>09:45-10:00</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -844,7 +844,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 4 : Environmental, genetics and obesity</p>
+                                                    <p class="font_20 bold">Symposium 4 : Exploring the interplay of environment, genetics, and obesity</p>
                                                     <!-- <p><span class="bold">Chairpersons : 박혜순</span> (TBD), <br><span
                                                             class="bold">김대중</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -869,28 +869,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:10-10:35</td>
+                                                                    <td class="bold">Circadian rhythms, sleep, and obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">이다영</p>(고려의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:35-11:00</td>
+                                                                    <td class="bold">The impact of air pollution on metabolic diseases</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김현진</p>(국립암센터)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>11:00-11:25</td>
+                                                                    <td class="bold">Atypical antipsychotics and appetite regulation strategies</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">손종우</p>(KAIST)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>11:25-11:40</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -919,7 +919,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 7 : New Antiobesity Drug</p>
+                                                    <p class="font_20 bold">Symposium 7 : New anti-obesity drugs</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
                                                             class="bold">권혁태</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -944,28 +944,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">Once-weekly Semaglutide and</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">남가은</p>(고려의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">Tirzepatide</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">배재현</p>(고려의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">Daily oral GLP-1 receptor agonists</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">노은</p>(한림의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>15:15-15:30</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1019,28 +1019,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:35-17:00</td>
+                                                                    <td class="bold">비만과 다낭성난소증후군 (PCOS)</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">김진주</p>(서울의대)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:00-17:25</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
+                                                                    <td>17:25-17:40</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1074,7 +1074,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 2 : Integrative physiology and molecular mechanisms of obesity</p>
+                                                    <p class="font_20 bold">Symposium 2 : Targeting Molecular Pathways in Obesity: Insights from Recent Research</p>
                                                     <!-- <p><span class="bold">Chairpersons : 유순집</span> (TBD), <br><span
                                                             class="bold">김기우</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1099,28 +1099,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold"> Reduction of SPARC protects mice against NLRP3 inflammasome activation and obesity</td>
+                                                                    <td>08:30-08:55</td>
+                                                                    <td class="bold">Reduction of SPARC protects mice against NLRP3 inflammasome activation and obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">유승진</p>(한림의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold"> The N-degron pathway mediates lipophagy: The chemical modulation of lipophagy in obesity and NAFLD</td>
+                                                                    <td>08:55-09:20</td>
+                                                                    <td class="bold">The N-degron pathway mediates lipophagy: The chemical modulation of lipophagy in obesity and NAFLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">박주원</p>(이화여대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">HMBA ameliorates obesity by MYH9- and ACTG1-dependent regulation of hypothalamic neuropeptides </td>
+                                                                    <td>09:20-09:45</td>
+                                                                    <td class="bold">HMBA ameliorates obesity by MYH9- and ACTG1-dependent regulation of hypothalamic neuropeptides</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은경</p>(DGIST)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>09:45-10:00</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1149,7 +1149,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 5 : Gut microbiome</p>
+                                                    <p class="font_20 bold">Symposium 5 : Diverse Pathways in regulation of Obesity and related diseases</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김상용</span> (TBD), <br><span
                                                             class="bold">손장원</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1174,28 +1174,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:10-10:35</td>
+                                                                    <td class="bold">The Significance of Ascorbic Acid in Regulating Thermogenesis and Energy Metabolism</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이봉기</p>(부경대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:35-11:00</td>
+                                                                    <td class="bold">ANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허진영</p>(서강대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>11:00-11:25</td>
+                                                                    <td class="bold">How diets regulate MASH Development. Casp2-S1P: The new hepatic lipid regulator</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김주연</p>(한양대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>11:25-11:40</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1250,28 +1250,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>15:15-15:30</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1326,28 +1326,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:35-17:00</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>17:00-17:25</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>17:25-17:40</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1381,7 +1381,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 3 : Postprandial glycemic response and Continuous Glucose Monitoring</p>
+                                                    <p class="font_20 bold">Symposium 3 : Ultra-processed foods and cardiometabolic Health</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김은미</span> (TBD), <br><span
                                                             class="bold">임정현</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1406,28 +1406,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>08:30-08:55</td>
                                                                     <td class="bold">Estimation of Ultra-processed Food Intake among Korean adults</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">박소현</p>(한림대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>08:55-09:20</td>
                                                                     <td class="bold">Ultra-processed foods intakes and obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">심지선</p>(연세대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>09:20-09:45</td>
                                                                     <td class="bold">Ultra-processed foods intake and all-cause and cardiovascular mortality</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이상아</p>(강원대학교)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>09:45-10:00</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1457,7 +1457,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 6 : TBD</p>
+                                                    <p class="font_20 bold">Symposium 6 : Time Restricted Eating: what we know & where the field is going</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이관우</span> (TBD), <br><span
                                                             class="bold">강준구</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1482,28 +1482,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>10:10-10:35</td>
                                                                     <td class="bold">Circadian rhythm, obesity, and intermittent fasting</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">권오빈</p>(서울대학교 의학과 생화학교실)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>10:35-11:00</td>
                                                                     <td class="bold">Chrononutrition and TRE's Effect on Metabolic Health</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">송윤주</p>(가톨릭대학교 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>11:00-11:25</td>
                                                                     <td class="bold">Time-Restricted Eating-Integrating the What with the When</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이연희</p>(아주대학교병원 영양팀)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>11:25-11:40</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1558,28 +1558,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:00-14:25</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:25-14:50</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>14:50-15:15</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>15:15-15:30</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
@@ -1634,28 +1634,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:10-16:35</td>
                                                                     <td class="bold">Potential restorative effects of exercise for peripheral skeletal neuropathy and bone loss in a high-fat diet-induced type II diabetes model</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이승용</p>(인천대학교 체육교육과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>16:35-17:00</td>
                                                                     <td class="bold">Regular exercise can how effectively transform our cardiovascular and brain health?</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">하민성</p>(서울시립대학교 스포츠과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>17:00-17:25</td>
                                                                     <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and Essential Amino Acids</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김일영</p>(가천대학과 의예과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>17:25-17:40</td>
                                                                     <td class="bold">
                                                                         패널토의
                                                                     </td>
