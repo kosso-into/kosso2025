@@ -184,7 +184,7 @@ body {
 </section>
 
 <!-- Plenary Speakers -->
-<?php /* hyojun 231211 닫아달라는 요청
+
  <div class="speakers_wrap">
     <div class="container">
         <h3 class="title">주요 세션 소개</h3>
@@ -210,12 +210,12 @@ body {
                     </div>
                     <h5 class="title">김은미</h5>
                     <div class="career">강북삼성병원</div>
-                </li> -->
+                </li> 
             </ul>
         </div>
     </div>
 </div> 
-*/?>
+
 <!-- Key dates & News,Notice -->
 
 <section>
