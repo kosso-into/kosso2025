@@ -1472,7 +1472,86 @@ if ($_POST["flag"] == "find_password") {
 		echo $tw->getMessage();
 		exit;
 	}
-} else if ($_POST["flag"] == "payment") {
+}
+//[240104] sujeong / app 비밀번호 찾기 -> 학회팀 요청으로 등록 완료된 사람만 가능하도록
+if ($_POST["flag"] == "find_password") {
+
+	try {
+		$email = isset($_POST["email"]) ? $_POST["email"] : "";
+
+		$check_user_query =	"SELECT
+									idx, email, first_name, last_name
+								FROM request_registration
+								WHERE email =  '{$email}'
+								AND is_deleted = 'N' 
+								AND request_registration.status = 2
+							";
+
+		$check_user = sql_fetch($check_user_query);
+
+		if (!$check_user) {
+			$res = [
+				code => 401,
+				msg => "does not exist email"
+			];
+			echo json_encode($res);
+			exit;
+		}
+
+		$temporary_password = "";
+		$random_token = generator_token();		// 비밀번호 찾기시 사용되는 토큰
+
+		for ($i = 0; $i < 6; $i++) {
+			$temporary_password .= mt_rand(1, 9);
+		}
+
+		//$name = $language == "en" ? $check_user["first_name"]." ".$check_user["last_name"] : $check_user["last_name"].$check_user["first_name"];
+
+		$name = $check_user["last_name"] . $check_user["first_name"];
+
+		//$subject = "비밀번호 찾기 메일";
+		$callback_url = D9_DOMAIN . "/password_reset.php?e=" . $email . "&t=" . $random_token;
+
+		$message = createMessage($language, "find_password", $name, $email, "[제 59차 대한비만학회 춘계학술대회] 비밀번호 찾기 메일", date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
+		createDraft($service, "secretariat@kosso.org", $message);
+		sendMessage($service, "secretariat@kosso.org", $message);
+
+		$hash_temporary_password = password_hash($temporary_password, PASSWORD_DEFAULT);
+
+		$update_temporary_password_query =	"
+												UPDATE member
+												SET
+													temporary_password = '{$hash_temporary_password}',
+													temporary_password_token = '{$random_token}'
+												WHERE email = '{$email}'
+												AND is_deleted = 'N'
+											";
+
+		$update_temporary_password = sql_query($update_temporary_password_query);
+
+		if ($update_temporary_password) {
+			$res = [
+				code => 200,
+				msg => "success"
+			];
+			echo json_encode($res);
+			exit;
+		} else {
+			$res = [
+				code => 400,
+				msg => "update query error"
+			];
+			echo json_encode($res);
+			exit;
+		}
+	} catch (\throwable $tw) {
+		echo $tw->getMessage();
+		exit;
+	}
+} 
+
+
+else if ($_POST["flag"] == "payment") {
 	$name = $_POST["name"] ?? null;
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
