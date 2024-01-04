@@ -1474,7 +1474,7 @@ if ($_POST["flag"] == "find_password") {
 	}
 }
 //[240104] sujeong / app 비밀번호 찾기 -> 학회팀 요청으로 등록 완료된 사람만 가능하도록
-if ($_POST["flag"] == "find_password") {
+if ($_POST["flag"] == "app_find_password") {
 
 	try {
 		$email = isset($_POST["email"]) ? $_POST["email"] : "";
