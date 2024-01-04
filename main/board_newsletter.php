@@ -23,7 +23,7 @@
 
 	$total_count = count(get_data($sql));
 
-	$sql .= " ORDER BY b.register_date";
+	$sql .= " ORDER BY b.register_date desc";
 	$list = get_data($sql);
 ?>
 

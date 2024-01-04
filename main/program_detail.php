@@ -767,7 +767,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 1 : Treatment of obesity</p>
+                                                    <p class="font_20 bold">Symposium 1 : Treatment of obesity (TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
                                                             class="bold">강지현</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -784,7 +784,8 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- [240104] sujeong / 학회팀 요청, symposium 1, 7, 8, 9, 11 주석  -->
+                                            <!-- <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -798,13 +799,13 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
-                                                                    </td>
+                                                                    </td> -->
                                                                     <!-- [240103] sujoeng / 학회팀 요청 주석 -->
                                                                     <!-- <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손장원</p>(가톨릭의대)
                                                                     </td> -->
-                                                                </tr>
+                                                                <!-- </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
                                                                     <td class="bold">TBD</td>
@@ -832,7 +833,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -924,7 +925,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 7 : New anti-obesity drugs</p>
+                                                    <p class="font_20 bold">Symposium 7 : New anti-obesity drugs(TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
                                                             class="bold">권혁태</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -939,7 +940,7 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -953,35 +954,35 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
-                                                                    </td>
+                                                                    </td> -->
                                                                     <!-- [240103] sujeong/ 학회팀 요청 sympo 7 주석 -->
                                                                     <!-- <td class="bold">Once-weekly Semaglutide and Tirzepatide</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">남가은</p>(고려의대 가정의학과)
                                                                     </td> -->
-                                                                </tr>
+                                                                <!-- </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
-                                                                    </td>
+                                                                    </td> -->
                                                                     <!-- <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">배재현</p>(고려의대 내분비내과)
                                                                     </td> -->
-                                                                </tr>
+                                                                <!-- </tr>
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
-                                                                    </td>
+                                                                    </td> -->
                                                                     <!-- <td class="bold">Daily oral GLP-1 receptor agonists</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">노은</p>(한림의대 내분비내과)
                                                                     </td> -->
-                                                                </tr>
+                                                                <!-- </tr>
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
@@ -995,7 +996,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -1243,7 +1244,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 8 : Metabolic Surgery</p>
+                                                    <p class="font_20 bold">Symposium 8 : Metabolic Surgery(TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 한상문</span> (TBD), <br><span
                                                             class="bold">김경곤</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1258,7 +1259,7 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -1301,7 +1302,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -1319,7 +1320,7 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management</p>
+                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management(TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 강재헌</span> (TBD), <br><span
                                                             class="bold">이상열</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1334,7 +1335,7 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -1377,7 +1378,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -1551,7 +1552,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent</p>
+                                                    <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent(TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
                                                             class="bold">홍용희</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1566,7 +1567,7 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -1609,7 +1610,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
