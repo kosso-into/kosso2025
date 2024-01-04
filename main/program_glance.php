@@ -136,6 +136,7 @@ section.app_version .inner {
                                     </p>
                                     <input type="hidden" name="category" value="pre_congress_symposium">
                                 </td>
+                                <!--[240104] sujeong / 학회팀 요청 회색처리 -->
                                 <td class="dark_gray_bg"></td>
 								<td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
