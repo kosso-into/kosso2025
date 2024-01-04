@@ -136,8 +136,8 @@ section.app_version .inner {
                                     </p>
                                     <input type="hidden" name="category" value="pre_congress_symposium">
                                 </td>
-                                <td></td>
-								<td></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -146,8 +146,8 @@ section.app_version .inner {
                                     <div class="colons_div">16:20-16:30</div>
                                 </td>
                                 <td class="light_gray_bg">Break</td>
-                                <td></td>
-                                <td></td>
+                                <td class="dark_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -162,8 +162,8 @@ section.app_version .inner {
                                         <input type="hidden" name="e" value="room2">
                                         <input type="hidden" name="category" value="pre_congress_symposium">
                                     </td>
-                                    <td></td>
-                                    <td></td>
+                                    <td class="dark_gray_bg"></td>
+                                    <td class="dark_gray_bg"></td>
                                     <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -172,8 +172,8 @@ section.app_version .inner {
                                     <div class="colons_div">18:05-18:30</div>
                                 </td>
                                 <td class="light_gray_bg">Break</td>
-                                <td></td>
-								<td></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
                                 <td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -186,8 +186,8 @@ section.app_version .inner {
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="satellite_symposium">
                                 </td>
-                                <td></td>
-                                <td></td>
+                                <td class="dark_gray_bg"></td>
+                                <td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -196,8 +196,8 @@ section.app_version .inner {
                                     <div class="colons_div">19:00-19:10</div>
                                 </td>
                                 <td class="light_gray_bg">Break</td>
-                                <td></td>
-								<td></td>
+                                <td class="dark_gray_bg"></td>
+								<td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
                                 <td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -210,8 +210,8 @@ section.app_version .inner {
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="satellite_symposium">
                                 </td>
-                                <td></td> 
-                                <td></td>
+                                <td class="dark_gray_bg"></td> 
+                                <td class="dark_gray_bg"></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
