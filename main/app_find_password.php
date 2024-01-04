@@ -77,7 +77,7 @@ section.container.login.bg {margin-top: 0 !important;}
                 url: PATH + "ajax/client/ajax_gmail.php",
                 type: "POST",
                 data: {
-                    flag: "find_password",
+                    flag: "app_find_password",
                     email: email
                 },
                 dataType: "JSON",
