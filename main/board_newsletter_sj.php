@@ -23,7 +23,7 @@
 
 	$total_count = count(get_data($sql));
 
-	$sql .= " ORDER BY b.register_date DESC LIMIT {$start}, 10 ";
+	$sql .= " ORDER BY b.register_date";
 	$list = get_data($sql);
 ?>
 
@@ -37,7 +37,7 @@
             <ul class="clearfix photo_list">
                 <?php
 				foreach ($list as $i => $li) {
-					echo "<li onclick='goDetail(" . $li['idx'] . ")'><div class='img_wrap' data-index='" . $i . "'><img src='https://kosso.org" . $li['path'] . "' width='100%' height='100%'/><div class='newsletter_footer'>" . ($i + 1) . "차 뉴스레터</div></div></li>";
+					echo "<li onclick='goDetail(" . $li['idx'] . ")'><div class='img_wrap' data-index='" . $i . "'><img src='https://kosso.org" . $li['path'] . "' width='100%' height='100%'/></div></li>";
 
 				}
 				?>
