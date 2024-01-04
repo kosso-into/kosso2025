@@ -184,7 +184,7 @@ body {
 </section>
 
 <!-- Plenary Speakers -->
-
+<!-- [240104] sujeong / 학회팀 요청 공개 -->
  <div class="speakers_wrap">
     <div class="container">
         <h3 class="title">주요 세션 소개</h3>
@@ -194,6 +194,7 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
+                    <div class="title">Plenary Lecture</div>
                     <h5 class="title">이관우</h5>
                     <div class="career">아주의대</div>
                 </li>
@@ -201,6 +202,7 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
+                    <div class="title">Keynote Lecture 1</div>
                     <h5 class="title">김경곤</h5>
                     <div class="career">가천의대</div>
                 </li>
@@ -208,6 +210,7 @@ body {
                     <div class="profile_circle">
                         <div class="profile_wrap"></div>
                     </div>
+                    <div class="title">Keynote Lecture 2</div>
                     <h5 class="title">김은미</h5>
                     <div class="career">강북삼성병원</div>
                 </li> 

@@ -110,7 +110,7 @@ section.container.organizing {padding-bottom: 190px;}
 .year_slider_wrap .slick-slider{margin:0 -10px;}
 .year_slider_wrap .slick-slide{margin-right:10px;margin-left:10px;}
 .photo .year_slider_wrap li.on:before{display:none;}
-.photo_list li{width:calc(24% - 16px);margin-right:20px;margin-bottom:20px;}
+.photo_list li{width:calc(19% - 16px);margin-right:20px;margin-bottom:20px;}
 .photo_list li:nth-of-type(5n){margin-right:0;}
 .photo_list .img_wrap{cursor:pointer; overflow:hidden; position:relative;}
 .photo_list .img_wrap img{width:auto; height:100%; position:absolute; left:50%; transform:translateX(-50%); transition: all 0.2s linear; overflow: hidden;}
