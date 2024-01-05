@@ -464,7 +464,7 @@ foreach($program_list as $pl){
                     if(e.target.classList.contains('on')){
                         e.target.classList.remove('on');
                         setAlarm(program_idx)
-                        AlarmMessage('Remove alarm complete');
+                        AlarmMessage('알람이 제거되었습니다.');
                         setTimeout(() => window.location.reload(), 500);
                     } else {
                         alert("schedule error.");

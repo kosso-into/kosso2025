@@ -27,10 +27,14 @@ class Push
 
         $url    = 'https://fcm.googleapis.com/v1/projects/ksso2024-12250/messages:send';
 
+        $instance = new self(); // Create an instance
+        $instance->initializeToken(); // Initialize the token
+        
         $headers = array(
-            'Authorization: Bearer '. $this->token,
+            'Authorization: Bearer '. $instance->token,
             'Content-Type: application/json'
         );
+        
         //안드로이드 유저
         if($device === 'android'){
             $data['title'] = $title;
@@ -43,15 +47,8 @@ class Push
             );
 
             $message_json = array('message'=>$fields);
-
-            //[240105] sujeong / 기존에 보내던 방식 주석
-            // $fields = array(
-            //     'registration_ids'  => $to_list,
-            //     'data' => $data,
-            //     'notification'      => array('title'=> $title,'body'=> $message,'sound'=>'default')
-            // );
-
             self::sendAsync($url, $headers, $message_json);
+
         //아이폰 유저
         } else {
             for($a = 0; $a < count($to_list); $a++) {
@@ -65,16 +62,7 @@ class Push
                 );
 
             $message_json = array('message'=>$fields);
-                // $fields = array(
-                //     "to"                => $to_list[$a],
-                //     "content-available" => true,
-                //     "mutable_content"   => true,
-                //     "priority"          => "high",
-                //     "data"              => array('data'=>$data,"media_type"=>"image"),
-                //     "notification"      => array('title'=>$title,'body'=>$message,'sound'=>'default','body_loc_key'=>$body_key,'body_loc_args'=>$body_args)
-                // );
-
-                self::sendAsync($url, $headers, $message_json);
+            self::sendAsync($url, $headers, $message_json);
             }
         }
     }

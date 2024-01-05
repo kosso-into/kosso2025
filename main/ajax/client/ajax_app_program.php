@@ -1,5 +1,5 @@
 <?php include_once("../../common/common.php");?>
-<?php include_once('../../push_library/push.php'); ?>
+
 <?php
 if($_POST["flag"] == "select") {
     $member_idx = $_SESSION["USER"]["idx"];

@@ -1368,6 +1368,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.program_table thead th.font_big, .program_table thead th {font-size:10px;padding: 8px;}
 	.program_table tbody td {font-size:8px; line-height:10px;}
 	.program_table tbody td .more_btn{font-size: 7px;}
+	.program_table tbody td .more_btn .more_img{width: 11px;}
 	.program_table tbody td p {font-size:6px;}
 }
 
