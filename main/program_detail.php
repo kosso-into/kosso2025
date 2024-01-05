@@ -264,7 +264,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>15:40-16:00</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The Keys to Successful Nutrition Therapy for Persons with Obesity or Overweight</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은미</p>(강북삼성병원)
                                                                     </td>

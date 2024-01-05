@@ -33,15 +33,17 @@
 		exit;
 	}
 
-	$title   = "KSSO2024";
+
+	$title   = "제59차 대한비만학회 춘계학술대회";
 	$url     = '/main/app_schedule.php';
 	$message = '';
 
-	//$data = [
-	//    "title"    => $title,
-	//    "msg"      => $message,
-	//    "link_url" => $url,
-	//];
+	$data = [
+	   "title"    => $title,
+	   "msg"      => $message,
+	   "link_url" => $url,
+	];
+	
 
 	$ios_token_list[] = [];
 	$ios_token_list_history[] = [];
@@ -66,7 +68,9 @@
 				$ios_token_list = array_values(array_filter($ios_token_list));
 				Push::fcmMultiPushV2($title, $message, "ios", $ios_token_list, $data);
 				$ios_token_list = [];
-			} else if (!in_array($pl["token"], $android_token_list_history) && $pl['is_alarm'] == 'Y') {
+			} 
+			//안드로이드 발송
+			else if (!in_array($pl["token"], $android_token_list_history) && $pl['is_alarm'] == 'Y') {
 				$android_token_list[] = $pl["token"];
 				$android_token_list_history[] = $pl["token"];
 
@@ -103,3 +107,4 @@
 //    }
 
 ?>
+
