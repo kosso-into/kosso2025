@@ -1,89 +1,122 @@
 <?php
 
+require_once ('../plugin/google-api-php-client-main/vendor/autoload.php');
+
 class Push
+
 {
+    private $token;
+
+    public function __construct()
+    {
+        $this->initializeToken(); // 생성자에서 $token 초기화
+    }
+
+    private function initializeToken()
+    {
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=./key.json');
+        $scope = 'https://www.googleapis.com/auth/firebase.messaging';
+        $client = new Google_Client();
+        $client->useApplicationDefaultCredentials();
+        $client->setScopes($scope);
+        $auth_key = $client->fetchAccessTokenWithAssertion();
+        $this->token = $auth_key['access_token'];
+    }
 
     static function fcmMultiPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
 
-        $url    = 'https://fcm.googleapis.com/fcm/send';
-
-        //Release
-        $apiKey = 'AAAAOFisJcs:APA91bFNWr79zZanpCGByw0p6eLWXc-anZK_WitbuM1nZ4k8gcXm3JLfxXQQBg5LNpyyivQlrg1fOzQ_vduwQi0L5xkRPuZsGOVLuTw1auqc6uTe9U2Ha6rqXiJ-uO3QVjAfp9dlmSq0';
+        $url    = 'https://fcm.googleapis.com/v1/projects/ksso2024-12250/messages:send';
 
         $headers = array(
-            'Authorization: key='.$apiKey,
+            'Authorization: Bearer '. $this->token,
             'Content-Type: application/json'
         );
-
+        //안드로이드 유저
         if($device === 'android'){
             $data['title'] = $title;
             $data['body']  = $message;
             $data['sound'] = 'default';
 
             $fields = array(
-                'registration_ids'  => $to_list,
-                'data' => $data,
-                'notification'      => array('title'=> $title,'body'=> $message,'sound'=>'default')
+                'token'  => $to_list,
+                'notification'      => array('title'=> $title,'body'=> $message)
             );
 
-            self::sendAsync($url, $headers, $fields);
+            $message_json = array('message'=>$fields);
 
+            //[240105] sujeong / 기존에 보내던 방식 주석
+            // $fields = array(
+            //     'registration_ids'  => $to_list,
+            //     'data' => $data,
+            //     'notification'      => array('title'=> $title,'body'=> $message,'sound'=>'default')
+            // );
+
+            self::sendAsync($url, $headers, $message_json);
+        //아이폰 유저
         } else {
             for($a = 0; $a < count($to_list); $a++) {
+                $data['title'] = $title;
+                $data['body']  = $message;
+                $data['sound'] = 'default';
+
                 $fields = array(
-                    "to"                => $to_list[$a],
-                    "content-available" => true,
-                    "mutable_content"   => true,
-                    "priority"          => "high",
-                    "data"              => array('data'=>$data,"media_type"=>"image"),
-                    "notification"      => array('title'=>$title,'body'=>$message,'sound'=>'default','body_loc_key'=>$body_key,'body_loc_args'=>$body_args)
+                    'token'  => $to_list,
+                    'notification'      => array('title'=> $title,'body'=> $message)
                 );
 
-                self::sendAsync($url, $headers, $fields);
+            $message_json = array('message'=>$fields);
+                // $fields = array(
+                //     "to"                => $to_list[$a],
+                //     "content-available" => true,
+                //     "mutable_content"   => true,
+                //     "priority"          => "high",
+                //     "data"              => array('data'=>$data,"media_type"=>"image"),
+                //     "notification"      => array('title'=>$title,'body'=>$message,'sound'=>'default','body_loc_key'=>$body_key,'body_loc_args'=>$body_args)
+                // );
+
+                self::sendAsync($url, $headers, $message_json);
             }
         }
     }
 
-    static function fcmPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
+    //[240105] sujeong 사용 X 함수
+//     static function fcmPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
 
-        $url    = 'https://fcm.googleapis.com/fcm/send';
+//         $url    = 'https://fcm.googleapis.com/v1/projects/ksso2024-12250/messages:send';
 
-        //Release
-        $apiKey = 'AAAAOFisJcs:APA91bFNWr79zZanpCGByw0p6eLWXc-anZK_WitbuM1nZ4k8gcXm3JLfxXQQBg5LNpyyivQlrg1fOzQ_vduwQi0L5xkRPuZsGOVLuTw1auqc6uTe9U2Ha6rqXiJ-uO3QVjAfp9dlmSq0';
+//         $headers = array(
+//             'Authorization: Bearer='.$this->token,
+//             'Content-Type: application/json'
+//         );
 
-        $headers = array(
-            'Authorization: key='.$apiKey,
-            'Content-Type: application/json'
-        );
+//         if($device =='android'){
 
-        if($device =='android'){
+//             $data['title'] = $title;
+//             $data['body']  = $message;
+//             $data['sound'] = 'default';
 
-            $data['title'] = $title;
-            $data['body']  = $message;
-            $data['sound'] = 'default';
+//             $fields = array(
+//                 'to'  => $to_list,
+//                 'data'=> $data,
+//                 'notification' => array('title'=> $title,'body'=> $message,'sound'=>'default')
+//             );
 
-            $fields = array(
-                'to'  => $to_list,
-                'data'=> $data,
-                'notification' => array('title'=> $title,'body'=> $message,'sound'=>'default')
-            );
+//             self::sendAsync($url, $headers, $fields);
 
-            self::sendAsync($url, $headers, $fields);
-
-        }else{
-            // for($a = 0; $a < count($to_list); $a++){
-            $fields = array(
-                "to"                => $to_list,
-                "content-available" => true,
-                "mutable_content"   => true,
-                "priority"          => "high",
-                "data"              => array('data'=>$data,"media_type"=>"image"),
-                "notification"      => array('title'=>$title,'body'=>$message,'sound'=>'default','body_loc_key'=>$body_key,'body_loc_args'=>$body_args)
-            );
-            self::sendAsync($url, $headers, $fields);
-// }
-        }
-    }
+//         }else{
+//             // for($a = 0; $a < count($to_list); $a++){
+//             $fields = array(
+//                 "to"                => $to_list,
+//                 "content-available" => true,
+//                 "mutable_content"   => true,
+//                 "priority"          => "high",
+//                 "data"              => array('data'=>$data,"media_type"=>"image"),
+//                 "notification"      => array('title'=>$title,'body'=>$message,'sound'=>'default','body_loc_key'=>$body_key,'body_loc_args'=>$body_args)
+//             );
+//             self::sendAsync($url, $headers, $fields);
+// // }
+//         }
+//     }
 
     static function sendAsync($url, $headers, $fields){
         // Open connection
@@ -114,5 +147,4 @@ class Push
         curl_multi_remove_handle($mh, $ch);
         curl_multi_close($mh);
     }
-
 }

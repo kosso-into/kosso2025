@@ -563,11 +563,13 @@ section.container.organizing {padding-bottom: 190px;}
 /*program_glance*/
 .program_first_col {width:115px;}
 .program_table{width:100%; /*min-width:1200px;*/ border-top:2px solid #707070; /*table-layout:fixed;*/}
-.program_table th, .program_table td{text-align:center; padding:11px 10px;}
+.program_table th, .program_table td{text-align:center; padding:16px 10px;}
 .program_table thead tr:first-child{border-top:1px solid #707070;}
 .program_table thead tr:first-child > th { background-color: #FFFF99;}
 .program_table thead tr{border-bottom:1px solid #999;}
 .program_table tbody td, .program_table tbody th{border-bottom:1px solid #999;}
+.program_table tbody td .more_btn {font-size: 0.64rem;line-height: 0.75rem;color: #595959;position: absolute;top: 0;right: 0;padding-right: 5px; padding-top: 4px;}
+.program_table tbody td .more_btn .more_img{width: 16px; margin: 0;}
 .program_table .no_right_border{border-right:0 !important;}
 .left_border{border-left:1px solid #999;}
 .program_table thead th{color:#000;font-size:12px;font-weight:bold;background:#F4F4F4;border-right:1px solid #999;padding:10px; /*width:10%;*/}
@@ -1365,6 +1367,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.program_table th, .program_table td {padding:6px;}
 	.program_table thead th.font_big, .program_table thead th {font-size:10px;padding: 8px;}
 	.program_table tbody td {font-size:8px; line-height:10px;}
+	.program_table tbody td .more_btn{font-size: 7px;}
 	.program_table tbody td p {font-size:6px;}
 }
 
@@ -1848,3 +1851,4 @@ input[type='date']::before {
 		padding: 0;
 	}
 	}
+
