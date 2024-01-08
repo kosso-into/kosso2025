@@ -64,7 +64,7 @@ if($_POST["flag"]==="pin"){
         exit;
     }
 
-    $title = "제59차";
+    $title = "제59차 대한비만학회 춘계학술대회";
     $url = '/main/app_notice_detail.php?idx='.$notice_idx;
     $message = $push_message;
 

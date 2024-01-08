@@ -94,7 +94,7 @@ foreach($program_list as $pl){
 <section class="container app_version app_scientific">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			MY SCHEDULE
+			즐겨찾기
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>

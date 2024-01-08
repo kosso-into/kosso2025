@@ -145,13 +145,13 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">16:20-16:30</div>
+                                    <div class="colons_div break_time">16:20-16:30</div>
                                 </td>
-                                <td class="light_gray_bg">Break</td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-								<td class="no_right_border dark_gray_bg"></td>
+                                <td class="light_gray_bg break_time">Break</td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+								<td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -172,13 +172,13 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">18:05-18:30</div>
+                                    <div class="colons_div break_time">18:05-18:30</div>
                                 </td>
-                                <td class="light_gray_bg">Break</td>
-                                <td class="dark_gray_bg"></td>
-								<td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="no_right_border dark_gray_bg"></td>
+                                <td class="light_gray_bg break_time">Break</td>
+                                <td class="dark_gray_bg break_time"></td>
+								<td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -197,13 +197,13 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">19:00-19:10</div>
+                                    <div class="colons_div break_time">19:00-19:10</div>
                                 </td>
-                                <td class="light_gray_bg">Break</td>
-                                <td class="dark_gray_bg"></td>
-								<td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="no_right_border dark_gray_bg"></td>
+                                <td class="light_gray_bg break_time">Break</td>
+                                <td class="dark_gray_bg break_time"></td>
+								<td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -298,9 +298,9 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">10:00-10:10</div>
+                                    <div class="colons_div break_time">10:00-10:10</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td colspan="3" class="light_gray_bg break_time">Break</td>
                                 <td></td>
 	                        </tr>
                             <tr>
@@ -392,9 +392,9 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">13:50-14:00</div>
+                                    <div class="colons_div break_time">13:50-14:00</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td colspan="3" class="light_gray_bg break_time">Break</td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -427,9 +427,9 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">15:30-15:40</div>
+                                    <div class="colons_div break_time">15:30-15:40</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td colspan="3" class="light_gray_bg break_time">Break</td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -486,7 +486,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">17:40-18:00</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Award & Closing</td>
+                                <td colspan="3" class="yellow_bg">Award & Closing</td>
                                 <td></td>
                             </tr>
                         </tbody>
