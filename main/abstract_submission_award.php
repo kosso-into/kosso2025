@@ -78,7 +78,7 @@
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
                   <div class="table_wrap detail_table_common x_scroll">
-					<table class="c_table detail_table award_table">
+					<!-- <table class="c_table detail_table award_table">
 						<colgroup>
 							<col class="submission_col">
 							<col width="40%">
@@ -137,7 +137,58 @@
 								<td colspan="3" class="text_center">관련 문의 및 비의사 지원 신청서 제출은 운영사무국 이메일(<a href="mailto:ksso@into-on.com" class="link font_inherit">ksso@into-on.com</a>)으로 부탁드립니다.</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> -->
+                    <!-- [240109] sujeong / 학회팀 요청으로 표 수정 -->
+                    <table class="c_table detail_table abstract_table">
+                        <colgroup>
+                            <col class="submission_col type2">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>지원자격</th>
+                            <td>
+                                <p>• 초록 채택자</p>
+                                <p>• <span class="underline bold">서울/인천/경기 지역 제외</span> 지방 참석자</p>
+                                <br/>
+                                <p><span class="bold">* 상기 <span class="underline">두 가지 조건 모두 충족</span> 시 신청이 가능합니다.</span></p>
+                                <p><span class="bold">** 의사/비의사 직군 모두 신청이 가능합니다.</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원범위</th>
+                            <td><span class="bold">150,000원</span>(기타 소득세 제외 후 지급)</td>
+                        </tr>
+                        <tr>
+                            <th>지원방법</th>
+                            <td> 
+                                <p>1. 지원양식 다운로드 및 작성</p>
+                                <p>2. 이메일을 통한 양식 제출</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원양식</th>
+                            <td>
+                            <a href="/main/download/(KSSO)Application_for_travel_subsidy.docx" class="btn long_btn type2 text_long" target="_blank" style="font-size:14px;" download>
+						                <img src="./img/icons/icon_download_white.svg" alt="" style="width: 14px;">지방 참석자 여비 보조금 지원 양식 다운로드
+					                </a>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지원 절차 및 선발 안내</th>
+                            <td>
+                                <p>• 초록 제출 및 채택</p>
+                                <p>• 학술대회 현장 참석</p>
+                                <p>• 기간 내 신청서 제출(증빙자료 포함 제출 필요)</p>
+                                <br/>
+                                <p><span class="bold">* 공정한 심사를 거쳐 결과를 이메일을 통해 별도 안내 드릴 예정입니다.</span></p>
+                            </td>
+                        </tr>
+                       <tr>
+                        <td colspan="2" class="text_center">
+                            <p>관련 문의는 운영사무국(<a href="mailto:ksso@into-on.com" class="link font_inherit">ksso@into-on.com</a>)으로 연락 부탁드립니다.</p>
+                        </td>
+                       </tr>
+                    </table>
                 </div>
 				<!-- <p class="mt10 p_indent">• 지원금 신청과 기타 필요한 정보에 대한 안내는 초록 채택자에 한하여 별도로 사무국에서 이메일을 통해 연락드릴 예정입니다.</p> -->
 			</div>

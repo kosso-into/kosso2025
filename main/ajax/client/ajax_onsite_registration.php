@@ -278,7 +278,7 @@ switch ($participation_type) {
                             nick_name = '{$nick_name}',
                             email = '{$email}',
                             member = '{$ksso_member_status_text}',
-                            phone = '{$phone}',
+                            phone = '{$telephone}',
                             org = '{$affiliation}',
                             org_nametag = '{$affiliation}',
                             department = '{$department}',
@@ -294,7 +294,8 @@ switch ($participation_type) {
                             breakfast_yn = '{$day2_luncheon_yn}',
                             luncheon_yn = '{$day3_breakfast_yn}',
                             date_of_birth = '{$date_of_birth}',
-                            onsite_reg = '1'
+                            onsite_reg = '1',
+                            deposit = '결제대기'
                     ";
 
     if(!empty($licence_number)){

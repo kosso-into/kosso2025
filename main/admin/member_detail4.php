@@ -26,6 +26,8 @@
 													THEN '환불대기'
 													WHEN rr.status = '4'
 													THEN '환불완료'
+													WHEN rr.status = '5'
+													THEN '현장등록'
 													ELSE '-'
 											END) AS registration_status,
                                             (CASE

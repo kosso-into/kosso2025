@@ -515,6 +515,7 @@ td.pc_only {display:table-cell;}
 .registration_table a.btn {font-size:14px; color:#585858; text-align:center;}
 
 .detail_table_common p {font:inherit; line-height:1.4;}
+.detail_table_common p span{font:inherit; line-height:1.4;}
 .detail_table_common p.mt10 {margin-top:10px;}
 table.center * {text-align:center;}
 
