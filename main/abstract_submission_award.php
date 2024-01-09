@@ -156,7 +156,7 @@
                         </tr>
                         <tr>
                             <th>지원범위</th>
-                            <td><span class="bold">150,000원</span>(기타 소득세 제외 후 지급)</td>
+                            <td><p><span class="bold">150,000원</span>(기타 소득세 제외 후 지급)</p></td>
                         </tr>
                         <tr>
                             <th>지원방법</th>
