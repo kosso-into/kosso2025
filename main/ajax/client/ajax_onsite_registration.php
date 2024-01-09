@@ -59,6 +59,7 @@ if($_POST["flag"] === "onsite") {
                                     affiliation = '{$affiliation}',
                                     department = '{$department}',
                                     phone = '{$phone}', 
+                                    telephone = '{$telephone}', 
                                     terms_access = 'Y',
                                     terms_access_date = NOW(),
                                     privacy_access = 'Y',
