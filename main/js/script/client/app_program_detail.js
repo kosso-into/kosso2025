@@ -357,7 +357,7 @@ function Schedule(e){
                         $('.program_alarm_pop').hide();
                         is_push = 'insert';
                         setAlarm(program_idx, is_push);
-                        AlarmMessage('알람 추가가 완료되었습니다.');
+                        AlarmMessage('알람을 추가했습니다.');
                     });
                     $(".is_alarm_n").click(function(event) {
                         $('.program_alarm_pop').hide();

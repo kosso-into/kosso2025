@@ -100,21 +100,21 @@ $price = get_data($sql_price);
             <div class="details icomes_air">
                 <div class="table_wrap x_scroll">
                     <!-- <img class="coming" src="./img/coming.png" /> -->
-                    <table class="c_table2 detail_table center regi_table">
+                    <table class="c_table2 center regi_table">
                         <thead>
                             <tr>
-                                <th rowspan=" 2">구분</th>
+                                <th rowspan=" 2" class="bold">구분</th>
                                 <!-- <th colspan="2">Early-bird Registration</th> -->
-                                <th colspan="2">사전 등록 접수</th>
-                                <th colspan="2">현장 등록 접수</th>
+                                <th colspan="2" class="bold">사전 등록 접수</th>
+                                <th colspan="2" class="bold">현장 등록 접수</th>
                             </tr>
                             <tr>
                                 <!-- <th><?= $locale("member") ?></th>
                                     <th><?= $locale("non_member") ?></th> -->
-                                <th>대한비만학회 정회원</th>
-                                <th>대한비만학회 비회원</th>
-                                <th>대한비만학회 정회원</th>
-                                <th>대한비만학회 비회원</th>
+                                <th class="bold">대한비만학회 정회원</th>
+                                <th class="bold">대한비만학회 비회원</th>
+                                <th class="bold">대한비만학회 정회원</th>
+                                <th class="bold">대한비만학회 비회원</th>
                             </tr>
                         </thead>
                         <tbody>

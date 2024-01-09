@@ -5,33 +5,22 @@ require_once ('../plugin/google-api-php-client-main/vendor/autoload.php');
 class Push
 
 {
-    private $token;
 
-    public function __construct()
-    {
-        $this->initializeToken(); // 생성자에서 $token 초기화
-    }
+    static function fcmMultiPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
 
-    private function initializeToken()
-    {
+        $url    = 'https://fcm.googleapis.com/v1/projects/ksso2024-12250/messages:send';
+
         putenv('GOOGLE_APPLICATION_CREDENTIALS=./key.json');
         $scope = 'https://www.googleapis.com/auth/firebase.messaging';
         $client = new Google_Client();
         $client->useApplicationDefaultCredentials();
         $client->setScopes($scope);
         $auth_key = $client->fetchAccessTokenWithAssertion();
-        $this->token = $auth_key['access_token'];
-    }
+        // echo $auth_key['access_token'];
+        $token = $auth_key['access_token'];
 
-    static function fcmMultiPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
-
-        $url    = 'https://fcm.googleapis.com/v1/projects/ksso2024-12250/messages:send';
-
-        $instance = new self(); // Create an instance
-        $instance->initializeToken(); // Initialize the token
-        
         $headers = array(
-            'Authorization: Bearer '. $instance->token,
+            'Authorization: Bearer '.  $token,
             'Content-Type: application/json'
         );
         

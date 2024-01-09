@@ -145,13 +145,13 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">16:20-16:30</div>
+                                    <div class="colons_div break_time">16:20-16:30</div>
                                 </td>
-                                <td class="light_gray_bg">Break</td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-								<td class="no_right_border dark_gray_bg"></td>
+                                <td class="light_gray_bg break_time">Break</td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+								<td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -172,13 +172,13 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">18:05-18:30</div>
+                                    <div class="colons_div break_time">18:05-18:30</div>
                                 </td>
-                                <td class="light_gray_bg">Break</td>
-                                <td class="dark_gray_bg"></td>
-								<td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="no_right_border dark_gray_bg"></td>
+                                <td class="light_gray_bg break_time">Break</td>
+                                <td class="dark_gray_bg break_time"></td>
+								<td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -197,13 +197,13 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">19:00-19:10</div>
+                                    <div class="colons_div break_time">19:00-19:10</div>
                                 </td>
-                                <td class="light_gray_bg">Break</td>
-                                <td class="dark_gray_bg"></td>
-								<td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="no_right_border dark_gray_bg"></td>
+                                <td class="light_gray_bg break_time">Break</td>
+                                <td class="dark_gray_bg break_time"></td>
+								<td class="dark_gray_bg break_time"></td>
+                                <td class="dark_gray_bg break_time"></td>
+                                <td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -273,7 +273,7 @@ section.app_version .inner {
                                     <div class="colons_div">08:30-10:00</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_1" data-id="10">
-                                    Symposium 1 <p>Treatment of obesity</p>
+                                    Symposium 1 <p>Treatment of Obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="10"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -285,7 +285,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="11"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_3" data-id="12">
-                                    Symposium 3 <p>Ultra-processed foods and cardiometabolic Health</p>
+                                    Symposium 3 <p>Ultra-processed Foods and Cardiometabolic Health</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="12"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -298,9 +298,9 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">10:00-10:10</div>
+                                    <div class="colons_div break_time">10:00-10:10</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td colspan="3" class="light_gray_bg break_time">Break</td>
                                 <td></td>
 	                        </tr>
                             <tr>
@@ -308,19 +308,19 @@ section.app_version .inner {
                                     <div class="colons_div">10:10-11:40</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_4" data-id="14">
-                                    Symposium 4 <p>Exploring the interplay of environment, genetics, and obesity</p>
+                                    Symposium 4 <p>Exploring the Interplay of Environment, Genetics, and Obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="14"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_5" data-id="15">
-                                    Symposium 5 <p>Diverse Pathways in regulation of Obesity and related diseases </p>
+                                    Symposium 5 <p>Diverse Pathways in Regulation of Obesity and Related Diseases</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="15"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_6" data-id="16">
-                                    Symposium 6 <p>Time Restricted Eating: what we know & where the field is going</p>
+                                    Symposium 6 <p>Time Restricted Eating: What We Know & Where the Field is Going</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="16"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -392,9 +392,9 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">13:50-14:00</div>
+                                    <div class="colons_div break_time">13:50-14:00</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td colspan="3" class="light_gray_bg break_time">Break</td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -402,7 +402,7 @@ section.app_version .inner {
                                     <div class="colons_div">14:00-15:30</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_7" data-id="22">
-                                    Symposium 7 <p>New anti-obesity drugs</p>
+                                    Symposium 7 <p>New Anti-obesity Drugs</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="22"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -414,7 +414,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="23"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_9" data-id="24">
-                                    Symposium 9 <p>Obesity treatment in adolescent</p>
+                                    Symposium 9 <p>Obesity Treatment in Adolescent</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="24"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -427,9 +427,9 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">15:30-15:40</div>
+                                    <div class="colons_div break_time">15:30-15:40</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Break</td>
+                                <td colspan="3" class="light_gray_bg break_time">Break</td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -462,7 +462,7 @@ section.app_version .inner {
                                     <div class="colons_div">16:10-17:40</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_10" data-id="29">
-                                    Symposium 10<p>Cormobidity of obesity</p>
+                                    Symposium 10<p>Cormobidity of Obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -486,7 +486,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">17:40-18:00</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg">Award & Closing</td>
+                                <td colspan="3" class="yellow_bg">Award & Closing</td>
                                 <td></td>
                             </tr>
                         </tbody>
