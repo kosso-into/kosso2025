@@ -1,10 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/header.php'); ?>
 
-
-
 <?php
-
 $type = $_GET['type'];
 $e = $_GET['e'];
 $day = $_GET['day'];
@@ -128,7 +125,7 @@ echo '<script type="text/javascript">
                                                                     Obesity and Insulin Resistance
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이관우</p>(아주의대)
+                                                                        <p class="bold">이관우</p>(아주의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -202,7 +199,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">Serotonin and Metabolism</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김경곤</p>
-                                                                        (가천의대)
+                                                                        (가천의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -266,7 +263,7 @@ echo '<script type="text/javascript">
                                                                     <td>15:40-16:00</td>
                                                                     <td class="bold">The Keys to Successful Nutrition Therapy for Persons with Obesity or Overweight</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김은미</p>(강북삼성병원)
+                                                                        <p class="bold">김은미</p>(강북삼성병원 영양팀)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -767,7 +764,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 1 : Treatment of obesity (TBD)</p>
+                                                    <p class="font_20 bold">Symposium 1 : Treatment of Obesity (TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
                                                             class="bold">강지현</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -850,7 +847,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 4 : Exploring the interplay of environment, genetics, and obesity</p>
+                                                    <p class="font_20 bold">Symposium 4 : Exploring the Interplay of Environment, Genetics, and Obesity</p>
                                                     <!-- <p><span class="bold">Chairpersons : 박혜순</span> (TBD), <br><span
                                                             class="bold">김대중</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -876,21 +873,21 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
-                                                                    <td class="bold">Circadian rhythms, sleep, and obesity</td>
+                                                                    <td class="bold">Circadian Rhythms, Sleep, and Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이다영</p>(고려의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">The impact of air pollution on metabolic diseases</td>
+                                                                    <td class="bold">The Impact of Air Pollution on Metabolic Diseases</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김현진</p>(국립암센터)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
-                                                                    <td class="bold">Novel strategies to combat obesity associated with the use of atypical antipsychotics</td>
+                                                                    <td class="bold">Novel Strategies to Combat Obesity Associated with the Use of Atypical Antipsychotics</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손종우</p>(KAIST)
                                                                     </td>
@@ -1013,7 +1010,7 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 10 : Cormobidity of obesity</p>
+                                                    <p class="font_20 bold">Symposium 10 : Cormobidity of Obesity</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김선미</span> (TBD), <br><span
                                                             class="bold">황유철</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1168,7 +1165,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 5 : Diverse Pathways in regulation of Obesity and related diseases</p>
+                                                    <p class="font_20 bold">Symposium 5 : Diverse Pathways in Regulation of Obesity and Related Diseases</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김상용</span> (TBD), <br><span
                                                             class="bold">손장원</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1196,7 +1193,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">The Significance of Ascorbic Acid in Regulating Thermogenesis and Energy Metabolism</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이봉기</p>(부경대학교)
+                                                                        <p class="bold">이봉기</p>(부경대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1320,7 +1317,8 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management(TBD)</p>
+                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research
++Digital Therapeutics in Obesity Management(TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 강재헌</span> (TBD), <br><span
                                                             class="bold">이상열</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1400,7 +1398,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 3 : Ultra-processed foods and cardiometabolic Health</p>
+                                                    <p class="font_20 bold">Symposium 3 : Ultra-processed Foods and Cardiometabolic Health</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김은미</span> (TBD), <br><span
                                                             class="bold">임정현</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1428,21 +1426,21 @@ echo '<script type="text/javascript">
                                                                     <td>08:30-08:55</td>
                                                                     <td class="bold">Estimation of Ultra-processed Food Intake among Korean adults</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">박소현</p>(한림대학교)
+                                                                        <p class="bold">박소현</p>(한림대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">Ultra-processed food consumption and obesity</td>
+                                                                    <td class="bold">Ultra-processed Food Consumption and Obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">심지선</p>(연세대학교)
+                                                                        <p class="bold">심지선</p>(연세대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">Serum Metabolomic Signatures of Ultra-processed Food Consumption and Cancer-related hormones</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이상아</p>(강원대학교)
+                                                                        <p class="bold">이상아</p>(강원대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1476,7 +1474,7 @@ echo '<script type="text/javascript">
                                                 <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 6 : Time Restricted Eating: what we know & where the field is going</p>
+                                                    <p class="font_20 bold">Symposium 6 : Time Restricted Eating: What We Know & Where the Field is Going</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이관우</span> (TBD), <br><span
                                                             class="bold">강준구</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1504,21 +1502,21 @@ echo '<script type="text/javascript">
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">Circadian Rhythm, Obesity, and Intermittent Fasting</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">권오빈</p>(서울대학교 의학과 생화학교실)
+                                                                        <p class="bold">권오빈</p>(서울의대 생화학교실)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
                                                                     <td class="bold">Chrononutrition and TRE's Effect on Metabolic Health</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">송윤주</p>(가톨릭대학교 식품영양학과)
+                                                                        <p class="bold">송윤주</p>(가톨릭대 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
                                                                     <td class="bold">Time-Restricted Eating-Integrating the What with the When</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이연희</p>(아주대학교병원 영양팀)
+                                                                        <p class="bold">이연희</p>(아주대병원 영양팀)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1654,23 +1652,23 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">Potential restorative effects of exercise for peripheral skeletal neuropathy and bone loss in a high-fat diet-induced type II diabetes model</td>
+                                                                    <td class="bold">Potential Restorative Effects of Exercise for Peripheral Skeletal Neuropathy and Bone Loss in a High-fat Diet-induced Type II Diabetes Model</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이승용</p>(인천대학교 체육교육과)
+                                                                        <p class="bold">이승용</p>(인천대 체육교육과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
                                                                     <td class="bold">How Effectively Can Regular Exercise Improve Our Cardiovascular and Brain Health?</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">하민성</p>(서울시립대학교 스포츠과학과)
+                                                                        <p class="bold">하민성</p>(서울시립대 스포츠과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and Essential Amino Acids</td>
+                                                                    <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and  Essential Amino Acids</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김일영</p>(가천대학과 의예과)
+                                                                        <p class="bold">김일영</p>(가천의대 의예과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
