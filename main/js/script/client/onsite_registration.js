@@ -243,7 +243,8 @@ function onsite_submit(){
     var department = $("input[name=department]").val();
     var nation_tel = 82;
     var phone = $("input[name=telephone]").val() +  $("input[name=telephone1]").val() +  $("input[name=telephone2]").val();
-    
+    var telephone = $("input[name=telephone]").val() + '-' + $("input[name=telephone1]").val() + '-' + $("input[name=telephone2]").val();
+
     var participation_type = $('#participation_type > option:selected').val();
     var occupation = $('#occupation > option:selected').val();
     var occupation_other_type = $("input[name=occupation_input]").val();
@@ -295,6 +296,7 @@ function onsite_submit(){
         affiliation : affiliation,
         department : department,
         phone : phone,
+        telephone : telephone,
         date_of_birth : date_of_birth,
         participation_type : participation_type,
         occupation : occupation,

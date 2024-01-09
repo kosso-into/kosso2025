@@ -59,6 +59,7 @@ if($_POST["flag"] === "onsite") {
                                     affiliation = '{$affiliation}',
                                     department = '{$department}',
                                     phone = '{$phone}', 
+                                    telephone = '{$telephone}', 
                                     terms_access = 'Y',
                                     terms_access_date = NOW(),
                                     privacy_access = 'Y',
@@ -90,6 +91,7 @@ if($_POST["flag"] === "onsite") {
                                             status = 5,
                                             attendance_type = '{$attendance_type}',
                                             is_score = '{$is_score}',
+                                            etc4 = '{$etc4}',
                                             ksso_member_status = '{$ksso_member_status}',
                                             email = '{$email}',
                                             nation_no = '{$nation_no}',
@@ -181,10 +183,10 @@ if($_POST["flag"] === "onsite") {
     $etc4_text="";
     switch($etc4) {
         case 0 :
-            $is_score_text = "미신청";
+            $etc4_text = "미신청";
             break;
         case 1 :
-            $is_score_text = "신청";
+            $etc4_text = "신청";
             break;
     }
 
