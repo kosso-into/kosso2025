@@ -677,6 +677,7 @@ if ($attendance_type_no != 0) {
                                 <option value="3" <?= $registration_status == 3 ? "selected" : "" ?>>환불 대기
                                 </option>
                                 <option value="4" <?= $registration_status == 4 ? "selected" : "" ?>>환불 완료</option>
+                                <option value="5" <?= $registration_status == 5 ? "selected" : "" ?>>현장 결제</option>
                             </select>
                             <div class="rs2_hidden">
                                 <select name="rs2_unit">
@@ -694,7 +695,7 @@ if ($attendance_type_no != 0) {
 							?>
                         </td>
                         <?php
-						if ($registration_status == 1) {
+						if ($registration_status == 1 || $registration_status == 5 ) {
 						?>
                         <th>결제 예정금액</th>
                         <td>
@@ -802,13 +803,17 @@ $(document).ready(function() {
     const reg_status = "<?= $registration_status ?>";
     $("select[name=payment_status]").on("change", function() {
         var _this_status = $(this).val();
-
+        
         if (reg_status == 1 && _this_status == 2) {
             $('.rs2_hidden').css('display', 'inline-block');
         } else {
             $('.rs2_hidden').hide();
         }
-
+        if (reg_status == 5 && _this_status == 2) {
+            $('.rs2_hidden').css('display', 'inline-block');
+        } else {
+            $('.rs2_hidden').hide();
+        }
         if (_this_status == 3 || _this_status == 4) {
             $(".refund").attr("disabled", false);
         } else {
@@ -839,6 +844,16 @@ $(document).ready(function() {
             data["payment_status"] = $("select[name=payment_status]").val();
 
             if (reg_status == 1 && data["payment_status"] == 2) {
+                // 금액
+                if (!$("input[name=rs2_price]").val()) {
+                    alert("결제금액이 입력되지 않았습니다.");
+                    return false;
+                } else {
+                    data["payment_unit"] = $("select[name=rs2_unit]").val();
+                    data["payment_price"] = $("input[name=rs2_price]").val().replace(/[^0-9]/g, "");
+                }
+            }
+            if (reg_status == 5 && data["payment_status"] == 2) {
                 // 금액
                 if (!$("input[name=rs2_price]").val()) {
                     alert("결제금액이 입력되지 않았습니다.");

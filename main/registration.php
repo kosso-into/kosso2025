@@ -58,9 +58,9 @@ if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
     echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
 }
 
-
+//[240109] sujeong / 1차 등록 마감()01/11
 $sql_during =    "SELECT
-						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-02-24 23:59:59', 'Y', 'N') AS yn
+						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-01-11 23:59:59', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 //!=="Y"
@@ -71,13 +71,13 @@ if ($during_yn !== "Y") {
 <section class="submit_application container">
     <div class="inner">
         <div class="sub_banner">
-            <h1>Online Registration</h1>
+            <h1>사전등록</h1>
         </div>
         <section class="coming">
             <img class="coming" src="./img/coming.png" />
             <div class="container">
                 <div class="sub_banner">
-                    <h5>Pre-Registration<br>has been closed</h5>
+                    <h5>사전등록이 종료되었습니다.</h5>
                 </div>
             </div>
         </section>
