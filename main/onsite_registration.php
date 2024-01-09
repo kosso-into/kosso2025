@@ -66,7 +66,7 @@
 		<div class="section_div">
 			<h3 class="title">개인정보<span class="mini_alert"><span class="red_txt">*</span>는 필수 입력입니다.</span></h3>
 			<div class="table_wrap detail_table_common x_scroll">
-				<table class="table detail_table">
+				<table class="table detail_table abstract_table">
 					<colgroup>
 						<col class="col_th"/>
 						<col width="*"/>
@@ -181,7 +181,7 @@
 		<div class="section_div">
 			<h3 class="title">등록정보<span class="mini_alert"><span class="red_txt">*</span>는 필수 입력입니다.</span></h3>
 			<div class="table_wrap detail_table_common x_scroll">
-				<table class="table detail_table">
+				<table class="table detail_table abstract_table">
 					<colgroup>
 						<col class="col_th"/>
 						<col width="*"/>
