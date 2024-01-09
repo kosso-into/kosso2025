@@ -22,6 +22,7 @@ if($_POST["flag"] === "onsite") {
     $department = $data["department"] ?? "";
     $department_kor = $data["department"] ?? "";
     $phone = $data["phone"] ?? "";
+    $telephone = $data["telephone"] ?? "";
     $date_of_birth = $data["date_of_birth"] ?? "";
 
     // registration
