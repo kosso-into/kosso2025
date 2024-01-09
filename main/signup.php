@@ -602,9 +602,9 @@ function remove_value() {
                                     }
                                     ?>
 									</select>
-									<!-- <span class="mini_alert red_txt red_alert_option"></span>
+								 <span class="mini_alert red_txt red_alert_option"></span>
 								</div>
-								<!-- <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
+							 <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
 								<span class="mini_alert"></span>
 							</td> -->
                         </tr>
@@ -630,9 +630,9 @@ function remove_value() {
                                     }
                                     ?>
 									</select>
-									<!-- <span class="mini_alert red_txt red_alert_option"></span>
+								 <span class="mini_alert red_txt red_alert_option"></span>
 								</div>
-								<!-- <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
+								 <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
 								<span class="mini_alert"></span>
 							</td> -->
                         </tr>

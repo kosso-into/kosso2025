@@ -532,12 +532,195 @@ $score_detail = sql_fetch($score_sql);
                                         </table>
                                     </div>
                                 </td>
+                            <?php } 
+                            else if ($list["status"] == 5) { ?>
+                                <td>현장등록 완료</td>
+                                <td>
+                                    <button type="button" class="btn review_regi_open" data-idx="<?= $list["idx"] ?>">등록정보</button>
+                                    <!--<button type="button" class="btn payment_receipt_btn" data-tid="'.$list['payment_obj']['tid'].'">Payment Receipt</button>-->
+                                    <div class="review_data hidden">
+                                        <table class="detail_table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>등록 번호</th>
+                                                    <td><?= $register_no ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>등록 날짜</th>
+                                                    <td><?= $list["register_date2"] ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>성함</th>
+                                                    <td><?= $list["last_name"] . $list["first_name"]  ?></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>소속</th>
+                                                    <td><?= $list["affiliation"] ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>휴대폰 번호</th>
+                                                    <td><?= $phone ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>대한 비만학회 회원여부</th>
+                                                    <td><?= $list["ksso_member_status"] ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>참가 유형</th>
+                                                    <td><?= $attendance_type ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>분야 구분</th>
+                                                    <td><?= $list["occupation_type"] ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>참석 구분</th>
+                                                    <td><?= $member_type ?? "-" ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>평점신청</th>
+                                                    <td><?= $list["is_score"] == 1 ? "필요" : "불필요" ?></td>
+                                                </tr>
+                                                <?php if ($list["is_score"] == 1) { ?>
+                                                    <tr>
+                                                        <th>의사 면허번호</th>
+                                                        <td><?= $list["licence_number"] ?? "해당없음" ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>전문의 번호</th>
+                                                        <td><?= $list["specialty_number"] ?? "해당없음" ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>영양사 면허번호</th>
+                                                        <td><?= $list["nutritionist_number"] ?? "해당없음" ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>임상영양사 면허번호</th>
+                                                        <td><?= $list["dietitian_number"] ?? "해당없음" ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>생년월일</th>
+                                                        <td><?= $list["date_of_birth"] ?? "-" ?></td>
+                                                    </tr>
+                                                    <?php } ?>
+                                                    <tr>
+                                                        <th>운동사 평점 신청</th>
+                                                        <td><?= $list["etc4"] == 1 ? "필요" : "불필요" ?></td>
+                                                    </tr>
+                                                <tr>
+                                                    <th>기타</th>
+                                                    <td><?= $other_html ?></td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <th>특이식단</th>
+                                                    <td><?= $special_request_food ?></td>
+                                                </tr> -->
+                                                <tr>
+                                                    <th>유입 경로</th>
+                                                    <td><?= $info_html ?></td>
+                                                </tr>
+                                                <!-- Credit Card 선택 시 -->
+                                                <tr class="tr_bg">
+                                                    <th>등록비</th>
+                                                    <td>
+                                                        <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원' : "-" ?>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_bg" style="display: none;">
+                                                    <th>최종 등록비</th>
+                                                    <td>
+                                                        <?= $list["price"] || $list["price"] == 0 ? number_format($list["price"]).'원'  : "-" ?>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr_bg">
+                                                    <th>결제 방법</th>
+                                                    <td>
+                                                        <label for="">
+                                                            <i></i>
+                                                            <?= $payment_methods ?>
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <!-- 이전 개발 -->
+                                                <!-- 
+												<tr class="tr_bg">
+													<th>Payment Date</th>
+													<td><?= $list["payment_register_date"] ?? "-" ?></td>
+												</tr>
+												-->
+                                                <!-- Credit Card 선택 시 퍼블ver -->
+                                                <!--
+												<tr class="tr_bg">
+													<th>Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Total Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Payment Method</th>
+													<td>
+														<input type="checkbox" disabled class="checkbox">
+														<label for="">
+															<i></i>
+															Credit Card 
+														</label>
+													</td>
+												</tr>
+												-->
+                                                <!-- Bank transfer 선택 시 -->
+                                                <!--
+												<tr class="tr_bg">
+													<th>Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Total Registration fee</th>
+													<td>KRW 84,000</td>
+												</tr>
+												<tr class="tr_bg">
+													<th>Payment Method</th>
+													<td>
+														<input type="checkbox" disabled class="checkbox">
+														<label for="">
+															<i></i>
+															Bank Transfer
+														</label>
+													</td>
+												</tr>
+												<tr>
+													<th>Name of Bank</th>
+													<td>KEB Hana Bank</td>
+												</tr>
+												<tr>
+													<th>Branch</th>
+													<td>HANA BANK, HEAD OFFICE (35, EULJI-RO, JUNG-GU, Seoul, Korea)</td>
+												</tr>
+												<tr>
+													<th>Account Number</th>
+													<td>584-910003-16504</td>
+												</tr>
+												<tr>
+													<th>SWIFT CODE(BIC)</th>
+													<td>KOEXKRSE</td>
+												</tr>
+												<tr>
+													<th>Account Holder</th>
+													<td>대한비만학회 등록비<br>(International Congress on Obesity and Metabolic Syndrome)</td>
+												</tr>
+												-->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
                             <?php } else if( $list["status"] == 3){ ?>
                                 <td>취소 처리 중</td>
                                 <td>
                                  <p>관련 문의 사항이 있으신 경우 <br>운영사무국<a style="width:fit-content" href="mailto:ksso@into-on.com">(ksso@into-on.com)</a>으로 연락 부탁드립니다.</p>
                                 </td>
-                            <?php } else { ?>
+                            <?php } else{ ?>
                                 <td>취소 완료</td>
                                 <td>-</td>
                             <?php } ?>
