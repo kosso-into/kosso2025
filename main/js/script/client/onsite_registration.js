@@ -1,4 +1,23 @@
 $(document).ready(function(){
+    $(".review_sub_list").addClass("hidden");
+
+    
+    //[240109] sujeong 평점신청시에만 면허번호 칸 보이도록
+    //평점신청
+    $('input[name=review]').on("change", function() {
+        if ($('input[name=review]:checked').val() == '1') {
+            $(".review_sub_list").removeClass("hidden");
+        } else {
+            // init
+            $(".review_sub_list input[type=text]").val("");
+            $(".review_sub_list input[type=checkbox]").prop("checked", false);
+
+            if (!$(".review_sub_list").hasClass("hidden")) {
+                $(".review_sub_list").addClass("hidden");
+            }
+        }
+    });
+
     //이메일 중복 검증
     $("input[name=email]").on("change", function(){
         var email = $(this).val();
@@ -39,38 +58,29 @@ $(document).ready(function(){
 
     //이름 유효성
     $("input[name=first_name], input[name=mo_first_name]").on("change keyup", function(key){
-        var pattern_eng = /[^a-zA-Z\s]/gi;
+        const regexp = /[ \[\]{}()<>?|`~!@#$%^&*_+=,.;:\"'\\]/g;
         var _this = $(this);
         if(key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
-            _this.val(first_name);
-        }
-    });
-
-    $("input[name=last_name], input[name=mo_last_name]").on("change keyup", function(key){
-        var pattern_eng = /[^a-zA-Z\s]/gi;
-        var _this = $(this);
-        if(key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
+            var first_name = _this.val().replace(regexp, '');
             _this.val(first_name);
         }
     });
 
     //소속 유효성
     $("input[name=affiliation], input[name=mo_affiliation]").on("change keyup", function(key){
-        var pattern_eng = /[^a-zA-Z||*-_@!#^&||0-9\s]/gi;
+        var regexp = /[\[\]{}<>|;`\"'\\]/g;
         var _this = $(this);
         if(key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
+            var first_name = _this.val().replace(regexp, '');
             _this.val(first_name);
         }
     });
 
     $("input[name=department], input[name=mo_department]").on("change keyup", function(key){
-        var pattern_eng = /[^a-zA-Z||*-_@!#^&||0-9\s]/gi;
+        var regexp = /[\[\]{}<>|;`\"'\\]/g;
         var _this = $(this);
         if(key.keyCode != 8) {
-            var first_name = _this.val().replace(pattern_eng, '');
+            var first_name = _this.val().replace(regexp, '');
             _this.val(first_name);
         }
     });
@@ -121,7 +131,7 @@ function birthChk(input) {
 
     var value = input.value.replace(/[^0-9]/g, "").substr(0,8); // 입력된 값을 숫자만 남기고 모두 제거
     if (value.length === 8) {
-        var regex = /^(\d{2})(\d{2})(\d{4})$/;
+        var regex = /^(\d{4})(\d{2})(\d{2})$/;
         var formattedValue = value.replace(regex, "$1-$2-$3");
         input.value = formattedValue;
     }else{
@@ -129,6 +139,7 @@ function birthChk(input) {
     }
 
 }
+
 
 // 요금계산(프로모션 적용X)
 function calc_fee(){
@@ -148,6 +159,8 @@ function calc_fee(){
 
     var category = document.getElementById("category").value;
     var participation_type = document.getElementById("participation_type").value;
+    console.log("category", category)
+    console.log("participation",participation_type)
 
     if(category == ""){
         return;
@@ -156,12 +169,12 @@ function calc_fee(){
         return;
     }
 
-    var country =  $("select[name=nation_no]").val();
+    var country =  25;
 
-    if(participation_type == "Participants" || participation_type =="Sponsor"){
-        if(participation_type == "Sponsor"){
-            category="Others";
-        }
+    if(participation_type == 4){
+        // if(participation_type == "Sponsor"){
+        //     category="Others";
+        // }
 
         var ksso_member_type = $("input[name=ksso_member_type]").val();
         var ksso_member_status = 0;
@@ -213,7 +226,7 @@ function remove_value() {
 
 function submit(){
     if(requiredCheck()!=false){
-        if(confirm("Would you like to proceed with on-site registration?")){
+        if(confirm("기입하신 정보로 현장등록을 하시겠습니까?")){
             onsite_submit();
         } else {
             return;
@@ -221,21 +234,16 @@ function submit(){
     }
 }
 function onsite_submit(){
-    var nation_no = $('#nation_no > option:selected').val();
+    var nation_no = 25;
     var email = $("input[name=email]").val();
     var password = $("input[name=password]").val();
-    var first_name = $("input[name=first_name]").val();
-    var first_name_kor = $("input[name=first_name_kor]").val();
-    var last_name = $("input[name=last_name]").val();
-    var last_name_kor = $("input[name=last_name_kor]").val();
+    var first_name = $("input[name=first_name]").val().slice(1);
+    var last_name = $("input[name=first_name]").val().slice(0, 1);
     var affiliation = $("input[name=affiliation]").val();
-    var affiliation_kor = $("input[name=affiliation_kor]").val();
     var department = $("input[name=department]").val();
-    var department_kor = $("input[name=department_kor]").val();
-    var nation_tel = $("input[name=nation_tel]").val();
-    var phone = nation_tel+"-"+$("input[name=phone]").val();
-    var date_of_birth = $("input[name=date_of_birth]").val();
-
+    var nation_tel = 82;
+    var phone = $("input[name=telephone]").val() +  $("input[name=telephone1]").val() +  $("input[name=telephone2]").val();
+    
     var participation_type = $('#participation_type > option:selected').val();
     var occupation = $('#occupation > option:selected').val();
     var occupation_other_type = $("input[name=occupation_input]").val();
@@ -245,14 +253,14 @@ function onsite_submit(){
     var licence_number = $("input[name=licence_number]").val();
     var nutritionist_number = $("input[name=nutritionist_number]").val();
     var dietitian_number = $("input[name=dietitian_number]").val();
+    var specialty_number = $("input[name=specialty_number]").val();
+    var date_of_birth = $("input[name=date_of_birth]").val();
 
-    var welcome_reception_yn = $("input:checkbox[id='others1']:checked").val()
-    var day2_breakfast_yn = $("input:checkbox[id='others2']:checked").val()
+    var welcome_reception_yn = $("input:checkbox[id='others2']:checked").val()
+    var day2_breakfast_yn = $("input:checkbox[id='others1']:checked").val()
     var day2_luncheon_yn = $("input:checkbox[id='others3']:checked").val()
     var day3_breakfast_yn = $("input:checkbox[id='others4']:checked").val()
-    var day3_luncheon_yn = $("input:checkbox[id='others5']:checked").val()
-
-    var special_request = $("input[name='special_request']:checked").val()
+    var day3_luncheon_yn = 'N'
 
     const conference_info_arr=[];
     var info = $("input[name='list']:checked");
@@ -261,7 +269,7 @@ function onsite_submit(){
     });
 
     var price = $("input[name=reg_fee]").val();
-
+    var etc4 = $('input[name=review3]:checked').val();
     // ksso api 연동 id
     var ksso_member_check = $("input[name=ksso_member_check]").val();
     // ksso 회원 유형
@@ -283,13 +291,9 @@ function onsite_submit(){
         email : email,
         password : password,
         first_name : first_name,
-        first_name_kor, first_name_kor,
         last_name : last_name,
-        last_name_kor : last_name_kor,
         affiliation : affiliation,
-        affiliation_kor : affiliation_kor,
         department : department,
-        department_kor : department_kor,
         phone : phone,
         date_of_birth : date_of_birth,
         participation_type : participation_type,
@@ -298,15 +302,16 @@ function onsite_submit(){
         member_type : member_type,
         member_other_type : member_other_type,
         is_score : is_score,
+        etc4:etc4,
         licence_number : licence_number,
         nutritionist_number : nutritionist_number,
+        specialty_number : specialty_number,
         dietitian_number : dietitian_number,
         welcome_reception_yn : welcome_reception_yn,
         day2_breakfast_yn : day2_breakfast_yn,
         day2_luncheon_yn : day2_luncheon_yn,
         day3_breakfast_yn : day3_breakfast_yn,
         day3_luncheon_yn : day3_luncheon_yn,
-        special_request : special_request,
         conference_info_arr : conference_info_arr,
         price : price
     };
@@ -322,11 +327,11 @@ function onsite_submit(){
         success : function(res){
             if(res.code == 200) {
                 console.log(res);
-                alert("On-site registration has been completed.\n" +
-                    "Please pay your registration fee at the registration desk.");
+                alert("현장등록이 완료되었습니다.\n" +
+                    "등록데스크에 방문하여 등록비를 결제해주세요.");
                 window.location.replace(PATH+"onsite_registration.php");
             } else {
-                alert("onsite registration error.");
+                alert("현장등록에 실패하셨습니다.");
                 return;
             }
         }
@@ -337,110 +342,92 @@ function onsite_submit(){
 function requiredCheck(){
     // Terms
     if(!$('#terms1').is(':checked')) {
-        alert("Please check the Terms section.");
-        return false;
-    // Country
-    } else if(!$('#nation_no > option:selected').val()) {
-        alert("Please check the Country section.");
+        alert("개인정보 수집 및 이용에 동의해주세요.");
+        $("html, body").animate({scrollTop: 0}, 400);
+        $("#terms").addClass("red_txt");
         return false;
     // Email
     } else if(!$("input[name=email]").val()) {
-        alert("Please check the Email section.");
+        alert("이메일을 확인해주세요.");
+        $("input[name=email]").focus()
         return false;
     // Password
     } else if(!$("input[name=password]").val()) {
-        alert("Please check the Password section.");
+        alert("비밀번호를 확인해주세요.");
+        $("input[name=password]").focus()
         return false;
     // Password match
     } else if($("input[name=password]").val()!=$("input[name=password2]").val()) {
-        alert("Please check the Password section.\n" +
-            "Password do not match.");
+        alert("비밀번호를 확인해주세요.\n" +
+            "비밀번호가 서로 일치하지 않습니다.");
+        $("input[name=password2]").focus()
         return false;
-    // Verify password
-    } else if(!$("input[name=password2]").val()) {
-        alert("Please check the Verify Password section.");
-        return false;
+
     // Fisrt name
     } else if(!$("input[name=first_name]").val()) {
-        alert("Please check the Name section.");
-        return false;
-    // Last name
-    } else if(!$("input[name=last_name]").val()) {
-        alert("Please check the Name section.");
-        return false;
+        alert("성명을 확인해주세요.");
+        $("input[name=first_name]").focus()
+        return false; 
     // Affiliation
     } else if(!$("input[name=affiliation]").val()) {
-        alert("Please check the Affiliation(Institute) section.");
+        alert("소속을 확인해주세요.");
+        $("input[name=affiliation]").focus()
         return false;
     // Department
     } else if(!$("input[name=department]").val()) {
-        alert("Please check the Department section.");
+        alert("부서를 확인해주세요.");
+        $("input[name=department]").focus()
         return false;
     // Phone
-    } else if(!$("input[name=phone]").val()) {
-        alert("Please check the Mobile Phone Number section.");
-        return false;
-    // Date of birth
-    } else if(!$("input[name=date_of_birth]").val()) {
-        alert("Please check the Date of Birth section.");
+    } else if(!$("input[name=telephone]").val() || !$("input[name=telephone1]").val() ||!$("input[name=telephone2]").val()) {
+        alert("휴대폰 번호를 확인해주세요");
+        $("input[name=telephone]").focus()
         return false;
     // Paticipation type
     } else if(!$('#participation_type > option:selected').val()) {
-        alert("Please check the Type of Participation section.");
+        alert("참가 유형을 확인해주세요.");
+        $("#participation_type").focus()
         return false;
     // Occupation type
     } else if(!$('#occupation > option:selected').val()) {
-        alert("Please check the Type of Occupation section.");
+        alert("분야 구분을 확인해주세요.");
+        $("#occupation").focus()
         return false;
     // Category
     } else if(!$('#category > option:selected').val()) {
-        alert("Please check the Category section.");
+        alert("참석 구분을 확인해주세요.");
+        $("#category").focus()
         return false;
     // Others
     } else if(others_check()==false){
+        $("input[name=others]").focus()
         return false;
-    // Special Request for Food
-    } else if(!$('input:radio[name=special_request]').is(':checked')){
-        alert("Please check the Special Request for Food section.");
-        return false;
+
     // Information
     } else if(info_check()==false){
+        $("input[name=list]").focus()
         return false;
-    // Country = Repulic of Korea 한국일때 추가 입력값
-    } else if($('#nation_no > option:selected').val() == '25'){
-        // KSSO Member
-        if(!$('input:radio[name=user]').is(':checked')){
-            alert("Please check the KSSO Member section");
-            return
-        // 이름
-        } else if(!$("input[name=first_name_kor]").val()) {
-            alert("Please check the Name_kor section.");
+    }else if($('input[name=review]:checked').val() == 1){
+        if(!$("input[name=licence_number]").val() && !$("input[name=specialty_number]").val() && !$("input[name=nutritionist_number]").val() && !$("input[name=dietitian_number]").val()){
+            alert("면허번호를 입력해주세요.");
+            $("input[name=licence_number]").focus()
             return false;
-        // 성
-        } else if(!$("input[name=last_name_kor]").val()) {
-            alert("Please check the Name_kor section.");
-            return false;
-        // 소속
-        } else if(!$("input[name=affiliation_kor]").val()) {
-            alert("Please check the Affiliation_kor section.");
-            return false;
-        // 부서
-        } else if(!$("input[name=department_kor]").val()) {
-            alert("Please check the Department_kor section.");
-            return false;
-        // 평점 신청
-        } else if(!$('input:radio[name=review]').is(':checked')) {
-            alert("Please check the Review section.");
-            return false;
+        }else if($("input[name=nutritionist_number]").val() || $("input[name=dietitian_number]").val()){
+            // Date of birth
+            if(!$("input[name=date_of_birth]").val()) {
+                alert("생년월일을 입력해주세요.");
+                return false;
+            }
         }
     }
+    
 }
 
 // Others 리스트 체크
 function others_check(){
     var list_others = document.querySelectorAll('input[name="others"]:checked').length;
     if(list_others==0){
-        alert("Please check the Others section");
+        alert("기타를 확인해주세요.");
         return false;
     }
 }
@@ -450,7 +437,7 @@ function others_check(){
 function info_check(){
     var list_info = document.querySelectorAll('input[name="list"]:checked').length;
     if(list_info==0){
-        alert("Please check the Information section");
+        alert("유입 경로를 확인해주세요.");
         return false;
     }
 }
