@@ -58,7 +58,7 @@ if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
     echo "<script>location.replace('https://kosso.org/main/registration.php')</script>";
 }
 
-//[240109] sujeong / 1차 등록 마감()01/11
+//[240110] sujeong / 등록 마감 02/23 오전 9시
 $sql_during =    "SELECT
 						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-02-23 09:00:00', 'Y', 'N') AS yn
 					FROM info_event";
