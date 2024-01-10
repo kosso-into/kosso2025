@@ -128,7 +128,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
                     <img src="./img/grandwalkerhillseoul.jpg" alt="conrad seoul">
                 </div>
                 <div class="yellow_bg venue_wrap">
-                    <h6>제 59차 대한비만학회 춘계학술대회</h6>
+                    <h6>제59차 대한비만학회 춘계학술대회</h6>
                     <h1>그랜드 워커힐 서울</h1>
                     <h6>3월 8일(금) ~ 9일(토)</h6>
                 </div>
