@@ -1,7 +1,8 @@
 <?php
 include_once('./include/head.php');
 
-// abstract
+// TODO
+// 필요한 DB -> 초록 심사자
 $sql_abstract =    "SELECT
 						*
 					FROM request_abstract

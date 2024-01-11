@@ -1,7 +1,8 @@
 <?php
 include_once('./include/head.php');
 
-// abstract
+// TODO
+// 필요한 DB -> 초록 심사자, 초록
 $sql_abstract =    "SELECT
 						*
 					FROM request_abstract
@@ -31,7 +32,8 @@ $abstract = get_data($sql_abstract);
 </style>
 <script src="https://cdn.tailwindcss.com"></script>
 <div class="w-full h-screen flex items-center justify-center flex-col px-10">
-    <div>
+    <h1 class="font-semibold text-2xl font-sans">포스터구연발표(Poster oral seesion) 채점표</h1>
+    <div class="mt-10">
         <table class="border border-solid">
             <tr class="border border-solid">
                 <td class="border border-solid py-2 px-4" colspan="3">심사위원정보</td>
@@ -65,7 +67,7 @@ $abstract = get_data($sql_abstract);
                 <td class="border border-solid py-2 px-4">신수정</td>
                 <td class="border border-solid py-2 px-4">인투온</td>
                 <td class="border border-solid py-2 px-4">대한민국</td>
-                <td class="border border-solid py-2 px-4"><a href="/main/download/abstract/TBD.pdf" target="_blank" class="link underline">title</a></td>
+                <td class="border border-solid py-2 px-4"><p onclick="openAbstract()" class="link underline">title</p></td>
                 <td class="border border-solid py-2 px-4"><button class="rating button" data-id="PP2-5">채점하기</button></td>
             </tr>
             <tr>
@@ -182,7 +184,7 @@ $abstract = get_data($sql_abstract);
                         <option value="Y">O</option>
                     </select>
                 </td>
-                <td class="border border-solid py-2 px-4" id="sum"></td>
+                <td class="border border-solid py-2 px-4" id="sum">4</td>
                 <td class="border border-solid py-2 px-4"><button id="completed" class="button">채점 완료</button></td>
             </tr>
         </table>
@@ -277,5 +279,9 @@ $abstract = get_data($sql_abstract);
         }else if(value5 === "Y"){
             sumTd.innerText = 0;
         }
+   }
+
+   function openAbstract(){
+        window.open("https://kosso.org/main/download/abstract/TBD.pdf",'ChildWindow', 'width=400,height=300')
    }
 </script>
