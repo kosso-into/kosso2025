@@ -1,5 +1,4 @@
 <?php
-include_once('./include/head.php');
 
 // TODO
 // 필요한 DB -> 초록 심사자

@@ -695,7 +695,7 @@ if ($attendance_type_no != 0) {
 							?>
                         </td>
                         <?php
-						if ($registration_status == 1 || $registration_status == 5 ) {
+						if ($registration_status == 1 ) {
 						?>
                         <th>결제 예정금액</th>
                         <td>
@@ -809,11 +809,7 @@ $(document).ready(function() {
         } else {
             $('.rs2_hidden').hide();
         }
-        if (reg_status == 5 && _this_status == 2) {
-            $('.rs2_hidden').css('display', 'inline-block');
-        } else {
-            $('.rs2_hidden').hide();
-        }
+       
         if (_this_status == 3 || _this_status == 4) {
             $(".refund").attr("disabled", false);
         } else {
