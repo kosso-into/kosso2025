@@ -166,7 +166,7 @@ body {
                 </li>
                 <li>
                     <a href="/main/registration.php">
-                        <h2><span>2024년 1월 11일(목)</span></h2>
+                        <h2><span>2024년 2월 22일(목)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
                         <p>사전 등록 접수 <br />마감</p>
                     </a>

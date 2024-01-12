@@ -51,6 +51,10 @@ $price = get_data($sql_price);
                         <td class="f_bold">June 29 (Thu)</td>
                     </tr> -->
                     <tr>
+                        <th  class="close_th">1차 사전 등록 접수<br class="br_mb_only">마감일</th>
+                        <td class="f_bold">1월 11일 (목)</td>
+                    </tr>
+                    <tr>
                         <th>사전 등록 접수<br class="br_mb_only">마감일</th>
                         <td class="f_bold">1월 11일 (목)</td>
                     </tr>
