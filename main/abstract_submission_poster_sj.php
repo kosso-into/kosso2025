@@ -24,10 +24,10 @@ $info = sql_fetch($sql_info);
 <section class="abstract_submission_guideline container abstract_presentation_guideline">
     <h1 class="page_title">발표 안내</h1>
     <div class="inner">
-    <ul class="tab_green long presentation">
+        <ul class="tab_green long presentation">
             <li><a href="./abstract_submission_oral.php">구연 발표</a></li>
-            <li><a href="./abstract_submission_poster_sj.php">포스터 구연</a></li>
-            <li class="on"><a href="./abstract_exhibition.php">포스터 전시</a></li>
+            <li class="on"><a href="./abstract_submission_poster_sj.php">포스터 구연</a></li>
+            <li><a href="./abstract_exhibition.php">포스터 전시</a></li>
         </ul>
         <div class="section section1">
             <?php
@@ -40,17 +40,17 @@ $info = sql_fetch($sql_info);
                     <h3 class="title">채택된 초록 목록</h3>
                 </div>
                 <div class="list_accepted_abstract_btn">
-                    <button type="button"  class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
+                <button type="button"  class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
 					<button type="button" class="not_yet"><img src="./img/icons/download_w.svg" />포스터 구연</button>
 					<button type="button"class="not_yet" ><img src="./img/icons/download_w.svg" />포스터 전시</button>
-              	<!--  <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')" class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
-				 <button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
-					<button type="button"class="not_yet" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />포스터 전시</button> -->
+					<!-- <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')"><img src="./img/icons/download_w.svg" />구연 발표</button>
+					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />포스터 구연</button>
+					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />포스터 전시</button> -->
                 </div>
             </div>
             <!--keydate-->
             <div>
-                <div class="section_title_wrap2">
+            <div class="section_title_wrap2">
                     <h3 class="title">주요 날짜</h3>
                 </div>
                 <div class="table_wrap detail_table_common">
@@ -78,10 +78,10 @@ $info = sql_fetch($sql_info);
                     </table>
                 </div>
             </div>
-			<!--Schedule of Poster Exhibition-->
+			<!--session information-->
             <div>
                 <div class="section_title_wrap2">
-                    <h3 class="title">포스터전시 일정</h3>
+                    <h3 class="title">세션 정보</h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
 				<table class="c_table detail_table">
@@ -90,65 +90,53 @@ $info = sql_fetch($sql_info);
                             <col>
                         </colgroup>
                         <tr>
-                            <th>포스터 전시 장소</th>
-                            <td class="f_bold">Room 5</td>
+                            <th>진행 장소</th>
+                            <td class="f_bold">VISTA HALL</td>
                         </tr>
                         <tr>
-                            <th>포스터 전시 시간</th>
-							<td class="f_bold">3월 9일(토) 07:00 - 17:40</td>
+                            <th>진행 시간</th>
+							<td class="f_bold">3월 9일(토) 12:10-12:40</td>
                         </tr>
                         
                     </table>
                 </div>
             </div>
-
-            	<!--설치 및 철거 시간n-->
-                <div>
-                <div class="section_title_wrap2">
-                    <h3 class="title">설치 및 철거 시간</h3>
-                </div>
-                <div class="table_wrap detail_table_common x_scroll">
-				   <table class="c_table detail_table">
-					   <colgroup>
-						   <col>
-						   <col>
-						   <col>
-					   </colgroup>
-					   <tr>	 
-						   <th class="f_bold text_center">설치</th>
-						   <th class="f_bold text_center">철거</th>
-					   </tr>
-					<tr>
-						<td class="text_center">TBD</td>
-						<td class="text_center" rowspan="2">TBD</td>
-					</tr>
-					<tr>
-						<td style="border-right: 1px solid #707070;" class="text_center">TBD</td>	
-					</tr>
-				   </table>
-                </div>
-            </div>
-			<p class="mt10">* 철거 시간 이후 부착되어 있는 포스터는 학회 임의로 철거됩니다.</p>
-			<!--Submission of Presentation Material-->
+			<!--Language & Length of Presentation-->
 			<div>
 				<div class="section_title_wrap2">
-					<h3 class="title">전시 안내</h3>
+					<h3 class="title">발표 시간</h3>
 				</div>
 				<div class="text_box indent">
 					<ul>
-						<li>• 반드시 본인의 포스터 판넬에 본인의 포스터를 부착하여야 합니다.</li>
-						<li>• 포스터 채택자는 정해진 포스터 사이즈에 맞추어 제작하여 직접 인쇄 및 현장에서 부착하여야 합니다. <br>(학회에서 인쇄 및 부착 진행하지 않습니다.)</li>
-						<li>• 포스터 게시는 학회 종료 시까지 반드시 유지하여야 합니다. 게시가 누락되는 일이 없도록 협조해 주십시오.</li>
-						<li class="f_bold">• 부착 및 철거 시간을 반드시 엄수해 주십시오. 심사 시작 이후 포스터 부착 시 포스터 심사에서 제외될 수 있습니다.</li>
+						<li>• 발표 인원은 3명입니다.</li>
+						<li>• 각 발표자에게 5분의 시간이 주어집니다</li>
 					</ul>
 				</div>
-				<!-- <div class="text_center btn_box mt25">
-					<a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Poster Form Download</a>
-                
-					<a href="javascript:;" class="btn long_btn type2" target="_blank" download="">
+			</div>
+			<!--Submission of Presentation Material-->
+			<div>
+				<div class="section_title_wrap2">
+					<h3 class="title">발표 자료 제출</h3>
+				</div>
+				<div class="text_box indent">
+					<ul>
+						<li>• 제59차 대한비만학회 춘계학술대회 사무국은 발표자를 대신하여 포스터 인쇄 및 전시를 담당합니다.</li>
+						
+                        <!-- [240112] sujeong / 마감날짜 몰라서 주석 -->
+                        <!-- <li>• 모든 포스터 발표자는 PPT, PDF 형식을 포함한 최종 발표 자료를 <span class="f_bold italic">August 24 (Thu)</span>까지 운영사무국 <a href="mailto:ksso@into-on.com" class="parentheses">(<span class="font_inherit link">ksso@into-on.com</span>)</a>으로 제출해야 합니다.</li> -->
+                        <li>• 모든 포스터 발표자는 PPT, PDF 형식을 포함한 최종 발표 자료를 운영사무국<a href="mailto:ksso@into-on.com" class="parentheses">(<span class="font_inherit link">ksso@into-on.com</span>)</a>으로 제출해야 합니다.</li>
+						<li class="f_bold">• 아래의 지정 포스터 양식을 다운로드 하시기 바랍니다.</li>
+						<li>• 발표자가 지정된 마감일까지 포스터를 제출하지 않을 경우 접수된 초록이 자동 철회되는 등의 처벌을 받을 수 있습니다. 따라서 발표자는 이 점을 염두에 두고 적시에 포스터를 제출할 것을 강력히 권장합니다.</li>
+					</ul>
+				</div>
+				<div class="text_center btn_box mt25">
+					<a class="btn long_btn not_yet"><img src="./img/icons/icon_download_white.svg" alt="">포스터 양식 다운로드</a>
+                    <!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Poster Form Download</a> -->
+					<!--
+                    <a href="javascript:;" class="btn long_btn type2" target="_blank" download="">
 						Poster Form Download<img src="./img/icons/icon_download_yellow.svg" alt="">
-					</a> 
-                </div> -->
+					</a> -->
+                </div>
 			</div>
 			<!--Poster Panel-->
 			<div class="poster_panel">
@@ -169,6 +157,7 @@ $info = sql_fetch($sql_info);
         </div>
     </div>
 </section>
+
 
 
 <?php include_once('./include/footer.php'); ?>

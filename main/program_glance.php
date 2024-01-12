@@ -325,7 +325,10 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="16"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td></td>
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="25">Oral presentation 2
+                                    <input type="hidden" name="category" value="oral_presentation">
+                                    <button class="more_btn" data-id="25"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                </td>
                             </tr>
                              <!-- [240103] sujeong / luncheon room 2개 버전 -->
                             <!-- <tr>
@@ -419,10 +422,7 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="24"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="25">Oral presentation 2
-                                    <input type="hidden" name="category" value="oral_presentation">
-                                    <button class="more_btn" data-id="25"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
-                                </td>
+                            <td></td>
                                 
                             </tr>
                             <tr>

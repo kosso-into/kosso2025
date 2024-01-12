@@ -1435,7 +1435,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .registration_rating_guides .title + .details:last-of-type {margin-bottom:0;}
 
 .list_accepted_abstract_btn:after {content:''; display:block; clear:both;}
-.list_accepted_abstract_btn button {float:left; width:calc(48% - 5.5px); height:50px; background-color:#0499CC; border-radius:999px; color:#fff; font-weight:500;font-size: 20px}
+.list_accepted_abstract_btn button {float:left; width:calc(33.33% - 5.5px); height:50px; background-color:#0499CC; border-radius:999px; color:#fff; font-weight:500;font-size: 20px}
 .list_accepted_abstract_btn button:not(:first-child) {margin-left:8px;}
 .list_accepted_abstract_btn img {width:15px; margin-right:8px;}
 

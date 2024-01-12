@@ -528,7 +528,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>14:00-15:30</td>
+                                                <td>10:10-11:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 2</p>

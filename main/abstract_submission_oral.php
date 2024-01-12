@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long presentation">
             <li class="on"><a href="./abstract_submission_oral.php">구연 발표</a></li>
-            <!-- <li><a href="./abstract_submission_poster.php">Guided Poster Presentation</a></li> -->
+            <li><a href="./abstract_submission_poster_sj.php">포스터 구연</a></li>
             <li><a href="./abstract_exhibition.php">포스터 전시</a></li>
         </ul>
         <div class="section section1">
@@ -40,8 +40,8 @@ $info = sql_fetch($sql_info);
                     <h3 class="title">채택된 초록 목록</h3>
                 </div>
                 <div class="list_accepted_abstract_btn">
-                <button type="button"  class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
-					<!-- <button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button> -->
+                    <button type="button"  class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
+					<button type="button" class="not_yet"><img src="./img/icons/download_w.svg" />포스터 구연</button>
 					<button type="button"class="not_yet" ><img src="./img/icons/download_w.svg" />포스터 전시</button>
               	<!--  <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')" class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
 				 <button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
