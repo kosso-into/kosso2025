@@ -292,8 +292,9 @@ if ($during_yn !== "Y") {
                                         $participation_arr[2]['name'] = "봉직의";
                                         $participation_arr[2]['value'] = "Public Health Doctor";
 
-                                        $participation_arr[3]['name'] = "교직의";
-                                        $participation_arr[3]['value'] = "Corporate Member";
+                                        //[240112] sujeong / 학회팀 요청 주석
+                                        // $participation_arr[3]['name'] = "교직의";
+                                        // $participation_arr[3]['value'] = "Corporate Member";
 
                                         $participation_arr[4]['name'] = "전임의";
                                         $participation_arr[4]['value'] = "Fellow";

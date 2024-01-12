@@ -144,7 +144,7 @@ $price = get_data($sql_price);
                                 //}
                                 ?>
                             <tr class="text_center">
-                                <td>교수, 개원의, 봉직의, 교직의</td>
+                                <td>교수, 개원의, 봉직의</td>
                                 <!-- <td class="closed_td">USD 130<br />KRW 130,000 -->
 
                                 <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
