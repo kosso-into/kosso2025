@@ -43,20 +43,20 @@ $price = get_data($sql_price);
                         <col>
                     </colgroup>
                     <tr>
-                        <th>등록 접수<br class="br_mb_only">시작일</th>
-                        <td class="f_bold">12월 11일 (월)</td>
+                        <th class="close_th">1차 사전 <br class="br_mb_only">등록 및 마감일</th>
+                        <td class="f_bold">12월 11일 (월) ~ 1월 11일 (목)</td>
                     </tr>
                     <!-- <tr>
                         <th class="close_th">Early-bird Registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">June 29 (Thu)</td>
                     </tr> -->
                     <tr>
-                        <th  class="close_th">1차 사전 등록 접수<br class="br_mb_only">마감일</th>
-                        <td class="f_bold">1월 11일 (목)</td>
+                        <th >2차 사전 등록 <br class="br_mb_only">연장일</th>
+                        <td class="f_bold">1월 12일 (금)</td>
                     </tr>
                     <tr>
-                        <th>사전 등록 접수<br class="br_mb_only">마감일</th>
-                        <td class="f_bold">1월 11일 (목)</td>
+                        <th>2차 사전 등록 <br class="br_mb_only">마감일</th>
+                        <td class="f_bold">2월 22일 (목)</td>
                     </tr>
                 </table>
             </div>
