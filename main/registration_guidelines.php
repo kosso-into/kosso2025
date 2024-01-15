@@ -50,10 +50,10 @@ $price = get_data($sql_price);
                         <th class="close_th">Early-bird Registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">June 29 (Thu)</td>
                     </tr> -->
-                    <tr>
+                    <!-- <tr>
                         <th >2차 사전 등록 <br class="br_mb_only">연장일</th>
                         <td class="f_bold">1월 12일 (금)</td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <th>2차 사전 등록 <br class="br_mb_only">마감일</th>
                         <td class="f_bold">2월 22일 (목)</td>

@@ -1412,7 +1412,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 .coming{
 	display: block;
-	width: 500px;
+	width: 600px;
 	margin: 50px auto;
 	max-width:100%;
 }
@@ -1583,15 +1583,8 @@ input[type='date']::before {
 }
 
 .modal_container > .content_container > .content{
-	/* display: grid;
-	grid-template-columns: 0.3fr 1.5fr 1fr;
-	align-items: center;
-	border-top: 1px solid #ddd;
-	padding: 0.5rem;
-	row-gap: 0.5rem;
-	column-gap: 0.5rem; */
 	display: grid;
-	grid-template-columns: 0.3fr 1.5fr 1fr;
+	grid-template-columns: 0.3fr 1.5fr 0.7fr;
 	grid-auto-rows: minmax(90px, auto);
 	grid-gap: 0rem;
 	grid-template-areas: 

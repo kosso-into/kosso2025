@@ -69,7 +69,7 @@ html {-webkit-touch-callout:none; -webkit-user-select:text; -webkit-tap-highligh
 .brown_txt{color:#921004 !important;}
 .blue_txt{color:#00666B !important;}
 .font_small{font-size:13px !important;}
-.font_light{font-weight: 400;}
+.font_light{font-weight: 400 !important;}
 .f_bold{font-weight: bold !important;}
 .pre{white-space:pre-line;}
 .initial{white-space:initial !important;}
