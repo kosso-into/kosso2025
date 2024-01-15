@@ -55,17 +55,18 @@ function writeProgramView(room, dataList, id){
                     <td>${t.contents_start_time}-${t.contents_end_time}</td>
                     <td class="bold">${t.contents_title}</td>
                     <td class="text_r">
-                    <p style="white-space:pre;">${t.speaker}</p>
+                        <p style="white-space:pre;">${t.speaker}</p>
                     </td>
                 </tr>
             `
+            //speaker가 없을 경우 undefined 출력 방지 위해 삼항연산자 사용
             }else{
                 programTr += `
                     <tr>
                         <td>${t.contents_start_time}-${t.contents_end_time}</td>
                         <td class="bold">${t.contents_title}</td>
                         <td class="text_r">
-                            <p class="bold">${speakerName}</p>(${speakerOrg ? speakerOrg : "TBD"})
+                            <p class="bold">${speakerName}</p>${speakerOrg ? `(${speakerOrg})` : ""}
                         </td>
                     </tr>
                 `
@@ -74,12 +75,14 @@ function writeProgramView(room, dataList, id){
 
         const programChairperson = data[0].chairpersons;
         let chairpersonHtml = "";
+        //좌장이 2명일 경우
         if(programChairperson.includes(",")){
             chairpersonHtml = `
             <p><span class="bold">Chairperson : ${programChairperson.split(",")[0].split("(")[0]}</span>(${programChairperson.split(",")[0].split("(")[1]?.split(")")[0]}),
                 <span class="bold">${programChairperson.split(",")[1].split("(")[0]}</span>(${programChairperson.split(",")[1].split("(")[1]?.split(")")[0]})
             </p> 
             `
+            //좌장이 1명일 경우
         }else{
             chairpersonHtml = `
                 <p><span class="bold">Chairperson : ${programChairperson.split("(")[0]}</span>(${programChairperson.split("(")[1]?.split(")")[0]})</p> 
@@ -104,9 +107,8 @@ function writeProgramView(room, dataList, id){
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="program_detail_td">
-                                        <p class="bold">Organizer : TBD (TBD)</p>
                                         <ul>
-                                            <li>${data[0].preview}</li>
+                                            <li style="white-space: pre-line;">${data[0].preview}</li>
                                         </ul>
                                     </td>
                                 </tr>

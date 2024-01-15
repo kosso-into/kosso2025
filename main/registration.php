@@ -64,20 +64,20 @@ $sql_during =    "SELECT
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 //!=="Y"
-if ($during_yn !== "Y") {
+if ($during_yn != "Y") {
 
 ?>
 
 <section class="submit_application container">
     <div class="inner">
-        <div class="sub_banner">
+        <!-- <div class="sub_banner">
             <h1>사전등록</h1>
-        </div>
+        </div> -->
         <section class="coming">
-            <img class="coming" src="./img/coming.png" />
+            <!-- <img class="coming" src="./img/coming.png" /> -->
             <div class="container">
                 <div class="sub_banner">
-                    <h5>사전등록이 종료되었습니다.</h5>
+                    <h5>사전등록이 <br/>종료되었습니다.</h5>
                 </div>
             </div>
         </section>
