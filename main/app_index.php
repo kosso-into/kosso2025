@@ -77,7 +77,8 @@
 				</a>
 			</li>
 			<li>
-				<a href="/main/sponsor.php">
+				<a>
+				<!-- <a href="/main/sponsor.php"> -->
 					<img src="./img/icons/app_menu07.svg" alt="">
 					<span>고객사</span>
 				</a>
