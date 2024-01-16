@@ -73,7 +73,7 @@
 			<li>
 				<a href="/main/app_floor_plan.php">
 					<img src="./img/icons/app_menu06.svg" alt="">
-					<span>부스 배치도</span>
+					<span>행사장 안내</span>
 				</a>
 			</li>
 			<li>
@@ -97,7 +97,7 @@
 			<li>
 				<a href="https://www.jomes.org/" target="_blank">
 					<img src="./img/icons/app_menu09_1.svg" alt="">
-					<span>JOMES</span>
+					<span>대한비만학회</span>
 				</a>
 			</li>
 		</ul>

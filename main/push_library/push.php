@@ -1,6 +1,7 @@
 <?php
-
-require_once ('../plugin/google-api-php-client-main/vendor/autoload.php');
+error_reporting( E_ALL );
+ini_set( "display_errors", 1 );
+require_once ('/var/www/kosso.org/main/plugin/google-api-php-client-main/vendor/autoload.php');
 
 class Push
 
@@ -10,13 +11,13 @@ class Push
 
         $url    = 'https://fcm.googleapis.com/v1/projects/ksso2024-12250/messages:send';
 
-        putenv('GOOGLE_APPLICATION_CREDENTIALS=./key.json');
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=/var/www/kosso.org/main/push_library/key.json');
         $scope = 'https://www.googleapis.com/auth/firebase.messaging';
         $client = new Google_Client();
         $client->useApplicationDefaultCredentials();
         $client->setScopes($scope);
         $auth_key = $client->fetchAccessTokenWithAssertion();
-        // echo $auth_key['access_token'];
+        //echo $auth_key['access_token'];
         $token = $auth_key['access_token'];
 
         $headers = array(
@@ -26,9 +27,9 @@ class Push
         
         //안드로이드 유저
         if($device === 'android'){
-            $data['title'] = $title;
-            $data['body']  = $message;
-            $data['sound'] = 'default';
+            // $data['title'] = $title;
+            // $data['body']  = $message;
+            // $data['sound'] = 'default';
 
             $fields = array(
                 'token'  => $to_list,
@@ -41,12 +42,12 @@ class Push
         //아이폰 유저
         } else {
             for($a = 0; $a < count($to_list); $a++) {
-                $data['title'] = $title;
-                $data['body']  = $message;
-                $data['sound'] = 'default';
+                // $data['title'] = $title;
+                // $data['body']  = $message;
+                // $data['sound'] = 'default';
 
                 $fields = array(
-                    'token'  => $to_list,
+                    'token'  => $to_list[$a],
                     'notification'      => array('title'=> $title,'body'=> $message)
                 );
 
