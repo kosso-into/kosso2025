@@ -97,7 +97,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p> -->
                                                     <p class="font_20 bold">Plenary Lecture</p>
                                                     <!-- <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -166,7 +166,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : 이규래</span> (TBD)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -226,7 +226,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <!-- <p><span class="bold">Chairperson : 이문규</span> (TBD)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
                                                 </td>
                                             </tr>
                                             <tr>
