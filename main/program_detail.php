@@ -81,8 +81,8 @@ echo '<script type="text/javascript">
                             
                             <li name="plenary_lecture_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1~3</span>
+                                    <p class="font_16 bold">ROOM 1~3</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -102,11 +102,9 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : TBD (TBD)</p>
                                                     <ul>
-                                                        <li>(Plenary Lecture Detail)</li>
-                                                        <li>(Plenary Lecture Detail)</li>
-                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>금번 Plenary Lecture에서 이관우 교수는 지속 연구로 진행해오고 있는 비만, 인슐린 저항성의 발병 원인 규명, 항비만 물질 및 인슐린 저항성 억제제 관련된 연구를 주제로 강연할 예정입니다. 임상 연구로는 비만 환자의 효과적인 비만 치료에 대한 다기관 임상 연구 중심으로, 기초 연구로는 근육세포 및 혈관 세포에서 지방 독성 기작을 분자 세포생물학적으로 밝히고 병증을 억제하는 그동안의 연구결과를 중심으로, 실제로 성공적인 항비만 물질, 인슐린 저항성 억제제, 그리고 인슐린 저항성과 연관된 근감소증에 대하여 시행해온 연구 결과들을 바탕으로 강의할 예정입니다. 
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -152,8 +150,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <li name="keynote_lecture_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1</span>
+                                    <p class="font_16 bold">ROOM 1</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -173,15 +171,9 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD)</p>
                                                     <ul>
-                                                        <li>(Keynote Lecture 1 Detail)</li>
-                                                        <li>(Keynote Lecture 1 Detail)</li>
-                                                        <li>
-                                                            <span class="font_inherit bold">• 참고자료</span><br />
-                                                            1.TBD<br />
-                                                            2.TBD
-                                                        </li>
+                                                        <li>최근 비만 치료는 비록 여러 가지 장 호르몬에 기반을 둔 펩타이드들에 대다수 사람들의 관심이 모아지고 있지만, 오래전부터 비만 치료에 세로토닌은 중추적인 역할을 해 왔고 세로토닌을 기반으로 한 약제들이 비만 치료에 사용되었던 적도 있었습니다. 본 세션에서는 체내에서 세로토닌의 다양한 역할을 에너지 대사 측면에서 살펴보고 세로토닌의 대사질환 치료제로서의 가능성을 살펴보고자 합니다.
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -218,8 +210,8 @@ echo '<script type="text/javascript">
                             </li>
                             <li name="keynote_lecture_2">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 2</span>
+                                    <p class="font_16 bold">ROOM 2</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -239,14 +231,9 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
                                                     <ul>
-                                                        <li>(Keynote Lecture 2 Detail)</li>
-                                                        <li>
-                                                            <span class="font_inherit bold">• 참고자료</span><br />
-                                                            1.TBD<br />
-                                                            2.TBD
-                                                        </li>
+                                                        <li>성공적인 비만치료를 위해서는 다양한 치료적 접근이 필요하며, 영양치료는 비만치료에서 핵심적인 부분을 차지하고 있습니다. 영양치료와 관련하여 다양한 방법들이 시도되고 있고, 이와 관련된 연구 결과들이 보고되고 있습니다. 비만치료의 성공률이 높지 않은 현실에서, 성공적인 영양치료를 위해 고려해야 할 사항들을 살펴보고자 합니다.
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -294,8 +281,8 @@ echo '<script type="text/javascript">
                 <ul class="program_detail_ul">
                         <li name="special_lecture_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1~3</span>
+                                    <p class="font_16 bold">ROOM 1~3</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -364,8 +351,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <li name="special_lecture_2">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 3</span>
+                                    <p class="font_16 bold">ROOM 3</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -434,8 +421,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                         <li name="oral_presentation_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 4</span>
+                                    <p class="font_16 bold">ROOM 4</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -612,8 +599,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <li name="pre_congress_symposium_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 8일(금)</p>
-                                    <span class="font_16 bold">ROOM 1</span>
+                                    <p class="font_16 bold">ROOM 1</p>
+                                    <span class="font_16 bold">3월 8일(금)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -750,8 +737,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <li name="symposium_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1</span>
+                                    <p class="font_16 bold">ROOM 1</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -764,7 +751,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 1 : Treatment of Obesity (TBD)</p>
+                                                    <p class="font_20 bold">Symposium 1 : Treatment of Obesity</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
                                                             class="bold">강지현</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -782,7 +769,7 @@ echo '<script type="text/javascript">
                                                 </td>
                                             </tr>
                                             <!-- [240104] sujeong / 학회팀 요청, symposium 1, 7, 8, 9, 11 주석  -->
-                                            <!-- <tr>
+                                           <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -792,35 +779,31 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>08:30-08:55</td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td> -->
+                                                                    <td>08:30-08:55</td> 
                                                                     <!-- [240103] sujoeng / 학회팀 요청 주석 -->
-                                                                    <!-- <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
+                                                                  <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손장원</p>(가톨릭의대)
-                                                                    </td> -->
-                                                                <!-- </tr>
+                                                                    </td> 
+                                                               </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The Long and Winding Road: How long does it maintain the pharmacotherapy?</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김진화</p>(조선의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The beneficial effect of SGLT2i and Phentermine-Topiramate FDC combination therapy</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">홍준화</p>(을지의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:45-10:00</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -830,7 +813,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr> -->
+                                            </tr> 
                                         </tbody>
                                     </table>
                                 </div>
@@ -895,7 +878,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:25-11:40</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -922,7 +905,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 7 : New anti-obesity drugs(TBD)</p>
+                                                    <p class="font_20 bold">Symposium 7 : New Anti-obesity Drugs</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
                                                             class="bold">권혁태</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -937,7 +920,7 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <!-- <tr>
+                                            <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -947,43 +930,31 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>14:00-14:25</td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td> -->
+                                                                    <td>14:00-14:25</td> 
                                                                     <!-- [240103] sujeong/ 학회팀 요청 sympo 7 주석 -->
-                                                                    <!-- <td class="bold">Once-weekly Semaglutide and Tirzepatide</td>
+                                                                   <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">남가은</p>(고려의대 가정의학과)
-                                                                    </td> -->
-                                                                <!-- </tr>
+                                                                        <p class="bold">남가은</p>(고려의대)
+                                                                    </td>
+                                                               </tr>
                                                                 <tr>
-                                                                    <td>14:25-14:50</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>14:25-14:50</td> 
+                                                                   <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td> -->
-                                                                    <!-- <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">배재현</p>(고려의대 내분비내과)
-                                                                    </td> -->
-                                                                <!-- </tr>
+                                                                        <p class="bold">배재현</p>(고려의대)
+                                                                    </td> 
+                                                             </tr>
                                                                 <tr>
-                                                                    <td>14:50-15:15</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>14:50-15:15</td> 
+                                                                  <td class="bold">Daily Oral GLP-1 Receptor Agonists</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td> -->
-                                                                    <!-- <td class="bold">Daily oral GLP-1 receptor agonists</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">노은</p>(한림의대 내분비내과)
-                                                                    </td> -->
-                                                                <!-- </tr>
+                                                                        <p class="bold">노은</p>(한림의대)
+                                                                    </td>
+                                                              </tr>
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -993,7 +964,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr> -->
+                                            </tr> 
                                         </tbody>
                                     </table>
                                 </div>
@@ -1036,16 +1007,16 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Obesity as Disruptor of the Female Fertility</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">정선화</p>(압구정 두번째봄 산부인과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
-                                                                    <td class="bold">비만과 다낭성난소증후군(PCOS)</td>
+                                                                    <td class="bold">Obesity and Polycystic Ovary Syndrome</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김진주</p>(서울대병원 헬스케어시스템)
+                                                                        <p class="bold">김진주</p>(서울대병원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1058,7 +1029,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:25-17:40</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1076,8 +1047,8 @@ echo '<script type="text/javascript">
                                 
                             <li name="symposium_2">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 2</span>
+                                    <p class="font_16 bold">ROOM 2</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1138,7 +1109,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:00</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1213,7 +1184,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:25-11:40</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1289,7 +1260,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1366,7 +1337,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:25-17:40</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1384,8 +1355,8 @@ echo '<script type="text/javascript">
 
                             <li name="symposium_3">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 3</span>
+                                    <p class="font_16 bold">ROOM 3</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1424,7 +1395,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>08:30-08:55</td>
-                                                                    <td class="bold">Estimation of Ultra-processed Food Intake among Korean adults</td>
+                                                                    <td class="bold">Estimation of Ultra-processed Food Intake among Korean Adults</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">박소현</p>(한림대)
                                                                     </td>
@@ -1446,7 +1417,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:00</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1502,27 +1473,27 @@ echo '<script type="text/javascript">
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">Circadian Rhythm, Obesity, and Intermittent Fasting</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">권오빈</p>(서울의대 생화학교실)
+                                                                        <p class="bold">권오빈</p>(서울의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
                                                                     <td class="bold">Chrononutrition and TRE's Effect on Metabolic Health</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">송윤주</p>(가톨릭대 식품영양학과)
+                                                                        <p class="bold">송윤주</p>(가톨릭대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
                                                                     <td class="bold">Time-Restricted Eating-Integrating the What with the When</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이연희</p>(아주대병원 영양팀)
+                                                                        <p class="bold">이연희</p>(아주대학교병원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:25-11:40</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1550,7 +1521,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 9 : Obesity treatment in adolescent(TBD)</p>
+                                                    <p class="font_20 bold">Symposium 9: Obesity Treatment in Adolescent (TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
                                                             class="bold">홍용희</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1598,7 +1569,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1654,27 +1625,27 @@ echo '<script type="text/javascript">
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">Potential Restorative Effects of Exercise for Peripheral Skeletal Neuropathy and Bone Loss in a High-fat Diet-induced Type II Diabetes Model</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이승용</p>(인천대 체육교육과)
+                                                                        <p class="bold">이승용</p>(인천대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
                                                                     <td class="bold">How Effectively Can Regular Exercise Improve Our Cardiovascular and Brain Health?</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">하민성</p>(서울시립대 스포츠과학과)
+                                                                        <p class="bold">하민성</p>(서울시립대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
                                                                     <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and  Essential Amino Acids</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김일영</p>(가천의대 의예과)
+                                                                        <p class="bold">김일영</p>(가천의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:25-17:40</td>
                                                                     <td class="bold">
-                                                                        패널토의
+                                                                        Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1699,8 +1670,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <li name="satellite_symposium_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 8일(금)</p>
-                                    <span class="font_16 bold">ROOM 1</span>
+                                    <p class="font_16 bold">ROOM 1</p>
+                                    <span class="font_16 bold">3월 8일(금)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1814,8 +1785,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                         <li name="breakfast_symposium_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1</span>
+                                    <p class="font_16 bold">ROOM 1</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1870,8 +1841,8 @@ echo '<script type="text/javascript">
                             </li>
                             <li name="breakfast_symposium_2">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 2</span>
+                                    <p class="font_16 bold">ROOM 2</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1926,8 +1897,8 @@ echo '<script type="text/javascript">
                             </li>
                             <li name="breakfast_symposium_3">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 3</span>
+                                    <p class="font_16 bold">ROOM 3</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1989,8 +1960,8 @@ echo '<script type="text/javascript">
                         <ul class="program_detail_ul">
                             <li name="luncheon_symposium_1">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 1</span>
+                                    <p class="font_16 bold">ROOM 1</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -2046,8 +2017,8 @@ echo '<script type="text/javascript">
                             </li>
                             <li name="luncheon_symposium_2">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 2</span>
+                                    <p class="font_16 bold">ROOM 2</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -2102,8 +2073,8 @@ echo '<script type="text/javascript">
                             </li>
                             <li name="luncheon_symposium_3">
                                 <div class="program_header">
-                                    <p class="font_16 bold">3월 9일(토)</p>
-                                    <span class="font_16 bold">ROOM 3</span>
+                                    <p class="font_16 bold">ROOM 3</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
                                 </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">

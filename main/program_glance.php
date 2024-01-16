@@ -514,6 +514,7 @@ section.app_version .inner {
 					<p class="modal_title_time"></p>
 					<p class="modal_title_room"></p>
 				</div>
+
                 <!-- [231228]sujeong / chairperson 학회팀 요청 주석 -->
 				<div style="display: none;">
 					<p class="program_modal_chair">Chair Person</p>
@@ -521,6 +522,7 @@ section.app_version .inner {
 					</div>
 				</div>
 			</div>
+            <p class="modal_preview"></p>
 		</div>
 		<div class="content_container">	
 		</div>
@@ -555,7 +557,7 @@ if (!empty($session_app_type) && $session_app_type == 'Y') {
             if(!id){
                 id = e.target.parentElement.dataset.id;
             }
-            console.log(id)
+     
     
     $.ajax({
         url: PATH + "ajax/client/ajax_program_detail.php",
@@ -611,6 +613,7 @@ function writeModal(data){
     const modalTitleRoom = document.querySelector(".modal_title_room");
     const modalChairPerson = document.querySelector(".program_modal_person");
     const contentsWrap =  document.querySelector(".content_container");
+    const modalPreview = document.querySelector(".modal_preview")
 
     let title = "";
     let subTitle = "";
@@ -618,13 +621,17 @@ function writeModal(data){
     let titleTime = "";
     let titleRoom = "";
     let chairperson = "";
+    let preview = "";
 
     data.map((t, i)=>{
- 
+   
         const contents = document.createElement("div")
         title = t.title;
         subTitle = t.program_name;
         titleRoom = t.program_place_name;
+        if(t.preview !== ""){
+            preview = t.preview;
+        }
         const startDay = t.start_time?.split(" ")[0];
         const startTime = t.start_time?.split(" ")[1];
         const speakerName = t.speaker?.split("(")[0];
@@ -689,6 +696,7 @@ function writeModal(data){
     modalTitleTime.innerText = titleTime;
     modalTitleRoom.innerText = titleRoom
     modalChairPerson.innerText = chairperson;
+    modalPreview.innerText = preview;
 }
 
 $(document).ready(function() {
@@ -767,7 +775,7 @@ $(document).ready(function() {
             //alert(table_Height)
             //alert(table_font_size)
             //alert(table_font_size_p)
-            console.log(height_array[i]);
+            //console.log(height_array[i]);
 
         });
     });
