@@ -97,7 +97,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p> -->
                                                     <p class="font_20 bold">Plenary Lecture</p>
                                                     <!-- <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p> -->
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -166,7 +166,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : 이규래</span> (TBD)</p> -->
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -226,7 +226,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <!-- <p><span class="bold">Chairperson : 이문규</span> (TBD)</p> -->
-                                                    <button class="btn gray2_btn program_detail_btn">미리보기</button>
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -781,21 +781,21 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-08:55</td> 
                                                                     <!-- [240103] sujoeng / 학회팀 요청 주석 -->
-                                                                  <td class="bold">Novel (non-approved) incretin-based therapies under investigation</td>
+                                                                  <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손장원</p>(가톨릭의대)
                                                                     </td> 
                                                                </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">The Long and Winding Road: How long does it maintain the pharmacotherapy?</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김진화</p>(조선의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">The beneficial effect of SGLT2i and Phentermine-Topiramate FDC combination therapy</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">홍준화</p>(을지의대)
                                                                     </td>
