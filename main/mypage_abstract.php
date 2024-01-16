@@ -63,7 +63,7 @@ $end_row = $paging_admin['end_row'];
 
 /** sujeong 초록 접수 마감 기한 -> 이후 수정 불가*/
 $sql_during =	"SELECT
-						IF(DATE(NOW()) <= '2024-01-09', 'Y', 'N') AS yn
+						IF(DATE(NOW()) <= '2024-03-08', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 
