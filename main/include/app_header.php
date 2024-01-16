@@ -32,7 +32,8 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_floor_plan.php">행사장 배치도</a>
+					<!-- <a href="/main/app_floor_plan.php">행사장 배치도</a> -->
+					<a>행사장 배치도</a>
 				</li>
 				<li>
 					<a href="javascript:;">프로그램</a>

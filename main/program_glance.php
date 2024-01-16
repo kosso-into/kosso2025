@@ -99,11 +99,11 @@ section.app_version .inner {
                 <div class="program_table_wrap">
                     <table class="program_table main-table">
                         <colgroup>
-                            <col width="10%"/>
-                            <col width="18.5%"/>
-                            <col width="18.5%"/>
-                            <col width="18.5%"/>
-                            <col width="18.5%"/>
+                            <col width="12%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
                             <col/>
                         </colgroup>
                         <thead>
