@@ -63,7 +63,7 @@ $end_row = $paging_admin['end_row'];
 
 /** sujeong 초록 접수 마감 기한 -> 이후 수정 불가*/
 $sql_during =	"SELECT
-						IF(DATE(NOW()) <= '2024-03-08', 'Y', 'N') AS yn
+						IF(DATE(NOW()) <= '2024-02-13', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 
@@ -168,7 +168,7 @@ foreach ($nation_list as $obj) {
 									<?php if($during_yn === "Y"){ ?>
                   					<button type="button" class="btn modify_btn">수정</button>
 									<?php } else { ?>
-									<button type="button" class="btn" onclick="alert('초록 제출 마감이 마감되어, 수정이 어렵습니다. 문의 사항이 있으신 경우, 운영사무국으로 연락 부탁드립니다.')">수정</button>
+									<button type="button" class="btn" onclick="alert('초록 제출 마감되어, 수정이 어렵습니다. 문의 사항이 있으신 경우, 운영사무국으로 연락 부탁드립니다.')">수정</button>
 									<?php } ?>
                   					<button type="button" class="btn delete_btn">삭제</button>
 

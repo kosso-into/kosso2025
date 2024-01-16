@@ -8,7 +8,7 @@
 
 
 	$sql_during =	"SELECT
-						IF(NOW() BETWEEN '2022-08-31 14:00:00' AND '2024-03-08 23:59:59', 'Y', 'N') AS yn
+						IF(NOW() BETWEEN '2022-08-31 14:00:00' AND '2024-02-23 09:00:00', 'Y', 'N') AS yn
 					FROM DUAL";
 
 	/*$sql_during =	"SELECT
