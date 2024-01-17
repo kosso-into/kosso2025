@@ -15,7 +15,7 @@
 .not_ready {font-size: 32px; font-weight: 400; color: #666666; line-height: 316px; text-align: center; background-color: #F4F4F4; margin-bottom: 48px;}
 
 /* layout */
-section.container.welcome {padding-bottom: 90px;}
+section.container.welcome {padding-bottom: 0px;}
 section.container.app_version.welcome {padding: 0 0 90px;}
 
 /* header*/
