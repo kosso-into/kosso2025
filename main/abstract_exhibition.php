@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
     <ul class="tab_green long presentation">
             <li><a href="./abstract_submission_oral.php">구연 발표</a></li>
-            <li><a href="./abstract_submission_poster_sj.php">포스터 구연</a></li>
+            <li><a href="./abstract_submission_poster_sj.php">포스터 구연발표</a></li>
             <li class="on"><a href="./abstract_exhibition.php">포스터 전시</a></li>
         </ul>
         <div class="section section1">
@@ -35,21 +35,20 @@ $info = sql_fetch($sql_info);
                 $weekday = ["일", "월", "화", "수", "목", "금", "토"];
             ?>
             <!--List of Accepted Abstract-->
-            <div>
+            <!-- [240117] sujeong 학회팀 요청 주석 -->
+            <!-- <div>
                 <div class="section_title_wrap2">
                     <h3 class="title">채택된 초록 목록</h3>
                 </div>
                 <div class="list_accepted_abstract_btn">
-                    <button type="button"  class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
-					<button type="button" class="not_yet"><img src="./img/icons/download_w.svg" />포스터 구연</button>
-					<button type="button"class="not_yet" ><img src="./img/icons/download_w.svg" />포스터 전시</button>
-              	<!--  <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')" class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
+              	 <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')" class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
 				 <button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
-					<button type="button"class="not_yet" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />포스터 전시</button> -->
+					<button type="button"class="not_yet" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />포스터 전시</button>
                 </div>
-            </div>
+            </div> -->
             <!--keydate-->
-            <div>
+            <!-- [240117] sujeong 학회팀 요청 삭제 -->
+            <!-- <div>
                 <div class="section_title_wrap2">
                     <h3 class="title">주요 날짜</h3>
                 </div>
@@ -77,58 +76,38 @@ $info = sql_fetch($sql_info);
                         </tr>
                     </table>
                 </div>
-            </div>
+            </div> -->
 			<!--Schedule of Poster Exhibition-->
             <div>
                 <div class="section_title_wrap2">
-                    <h3 class="title">포스터전시 일정</h3>
+                    <h3 class="title">세션 안내</h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
 				<table class="c_table detail_table">
                         <colgroup>
-                            <col class="submission_col">
+                            <col>
                             <col>
                         </colgroup>
                         <tr>
-                            <th>포스터 전시 장소</th>
-                            <td class="f_bold">Room 5</td>
+                            <th class="text_center">구분</th>
+                            <th class="text_center">Poster Exhibition</th>
                         </tr>
                         <tr>
-                            <th>포스터 전시 시간</th>
-							<td class="f_bold">3월 9일(토) 07:00 - 17:40</td>
+                            <td class="text_center">날짜</td>
+                            <td class="text_center">3월 9일(토)</td>
                         </tr>
-                        
+                        <tr>
+                            <td class="text_center">시간</td>
+							<td class="text_center">07:30-18:00</td>
+                        </tr>
+                        <tr>
+                            <td class="text_center">장소</td>
+							<td class="text_center">Room5 포스터존(그랜드홀, B1)</td>
+                        </tr>
                     </table>
                 </div>
             </div>
 
-            	<!--설치 및 철거 시간n-->
-                <div>
-                <div class="section_title_wrap2">
-                    <h3 class="title">설치 및 철거 시간</h3>
-                </div>
-                <div class="table_wrap detail_table_common x_scroll">
-				   <table class="c_table detail_table">
-					   <colgroup>
-						   <col>
-						   <col>
-						   <col>
-					   </colgroup>
-					   <tr>	 
-						   <th class="f_bold text_center">설치</th>
-						   <th class="f_bold text_center">철거</th>
-					   </tr>
-					<tr>
-						<td class="text_center">TBD</td>
-						<td class="text_center" rowspan="2">TBD</td>
-					</tr>
-					<tr>
-						<td style="border-right: 1px solid #707070;" class="text_center">TBD</td>	
-					</tr>
-				   </table>
-                </div>
-            </div>
-			<p class="mt10">* 철거 시간 이후 부착되어 있는 포스터는 학회 임의로 철거됩니다.</p>
 			<!--Submission of Presentation Material-->
 			<div>
 				<div class="section_title_wrap2">
@@ -136,10 +115,10 @@ $info = sql_fetch($sql_info);
 				</div>
 				<div class="text_box indent">
 					<ul>
-						<li>• 반드시 본인의 포스터 판넬에 본인의 포스터를 부착하여야 합니다.</li>
-						<li>• 포스터 채택자는 정해진 포스터 사이즈에 맞추어 제작하여 직접 인쇄 및 현장에서 부착하여야 합니다. <br>(학회에서 인쇄 및 부착 진행하지 않습니다.)</li>
+						<li>• 부착 전 포스터 번호를 꼭 확인하신 후, 배정된 판넬에 부착하여 주십시오.</li>
+						<li>• 포스터는 정해진 사이즈에 맞추어 직접 제작 및 현장 부착을 하여야 합니다.<br>(학회에서 인쇄 및 부착 진행하지 않습니다.)</li>
 						<li>• 포스터 게시는 학회 종료 시까지 반드시 유지하여야 합니다. 게시가 누락되는 일이 없도록 협조해 주십시오.</li>
-						<li class="f_bold">• 부착 및 철거 시간을 반드시 엄수해 주십시오. 심사 시작 이후 포스터 부착 시 포스터 심사에서 제외될 수 있습니다.</li>
+						<li class="f_bold">• 부착 및 철거 시간을 반드시 지켜주십시오. 시간을 지키지 않은 경우, 심사에서 제외될 수 있습니다. </li>
 					</ul>
 				</div>
 				<!-- <div class="text_center btn_box mt25">
@@ -150,6 +129,39 @@ $info = sql_fetch($sql_info);
 					</a> 
                 </div> -->
 			</div>
+            
+            	<!--설치 및 철거 시간n-->
+                <div>
+            <div class="section_title_wrap2">
+                    <h3 class="title">설치 및 철거 시간</h3>
+                </div>
+                <div class="table_wrap detail_table_common x_scroll">
+				   <table class="c_table">
+					   <colgroup>
+						   <col>
+						   <col>
+						   <col>
+					   </colgroup>
+					   <tr>
+                            <th></th>	 
+						   <th class="f_bold text_center">설치</th>
+						   <th class="f_bold text_center">철거</th>
+					   </tr>
+					<tr>
+                        <td class="text_center" >날짜 / 시간</td>
+						<td class="text_center">3월 9일(토)<br>07:30 - 10:00</td>
+						<td class="text_center">3월 9일(토)<br>16:30 - 18:00</td>
+					</tr>
+                    <tr>
+                        <td class="text_center" >장소</td>
+						<td class="text_center" colspan="2">비스타홀2 통로 포스터존(B2)</td>
+					</tr>
+					<tr>
+						<td class="text_center" colspan="3">3월 9일 18:00이후 부착되어 있는 포스터는 임의로 철거됩니다</td>	
+					</tr>
+				   </table>
+                </div>
+                </div>
 			<!--Poster Panel-->
 			<div class="poster_panel">
 				<div class="section_title_wrap2">
@@ -158,8 +170,8 @@ $info = sql_fetch($sql_info);
 				<div class="text_box indent">
 					<img src="./img/poster_panel.png" alt="Poster Panel">
 					<ul>
-						<li>• 포스터 판넬 사이즈: W100 x H250 cm</li>
-						<li>• 포스터 사이즈: A0 (W84.1 x H118.9 cm)</li>
+						<li>• 포스터 판넬 사이즈(cm): W100 x H250</li>
+						<li>• <span class="bold">포스터 사이즈(cm): A0</span>(W84.1 x H118.9)</li>
 					</ul>
 				</div>
 			</div>

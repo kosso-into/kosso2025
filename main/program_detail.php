@@ -838,10 +838,9 @@ echo '<script type="text/javascript">
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 배재현, 조윤정</p>
+                                                <p class="bold">Organizer: 배재현(고려의대), 조윤정(대구가톨릭의대)</p>
                                                     <ul>
-                                                        <li>(Symposium 4 Detail)</li>
-                                                        <li>(Symposium 4 Detail)</li>
+                                                        <li>비만은 다양한 요인들이 상호작용하여 발생하고 진행하는 복잡한 질환입니다. 본 세션에서는 환경, 유전 그리고 비만 간의 관계에 중점을 두어 살펴보고자 합니다. 먼저 고려의대의 이다영 교수는 하루 주기와 수면이 비만에 미치는 영향에 대해 발표할 것입니다. 국립암센터의 김현진 박사는 환경오염과 대사 질환의 관련성에 대해 고찰할 예정이며, 마지막으로 KAIST의 손종우 교수는 항정신병약물이 체중 변화에 미치는 영향과 이에 대한 치료 전략에 대해 발표할 것입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>

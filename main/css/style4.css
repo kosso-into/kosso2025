@@ -1917,5 +1917,7 @@ input[type='date']::before {
 	}
 	.welcome_img_wrap{
 		width: 100%;
+		height: auto;
+		margin: 0;
 	}
 }

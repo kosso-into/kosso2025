@@ -42,7 +42,7 @@
 			<li>
 				<a href="/main/welcome.php">
 					<img src="./img/icons/app_menu01.svg" alt="">
-					<span>KSSO 2024</span>
+					<span>춘계학술대회</span>
 				</a>
 			</li>
 			<li>
@@ -96,7 +96,7 @@
 				</a>
 			</li> -->
 			<li>
-				<a href="https://www.jomes.org/" target="_blank">
+				<a href="/main/app_site.php">
 					<img src="./img/icons/app_menu09_1.svg" alt="">
 					<span>대한비만학회</span>
 				</a>

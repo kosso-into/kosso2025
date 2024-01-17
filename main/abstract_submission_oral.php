@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long presentation">
             <li class="on"><a href="./abstract_submission_oral.php">구연 발표</a></li>
-            <li><a href="./abstract_submission_poster_sj.php">포스터 구연</a></li>
+            <li><a href="./abstract_submission_poster_sj.php">포스터 구연발표</a></li>
             <li><a href="./abstract_exhibition.php">포스터 전시</a></li>
         </ul>
         <div class="section section1">
@@ -35,21 +35,20 @@ $info = sql_fetch($sql_info);
                 $weekday = ["일", "월", "화", "수", "목", "금", "토"];
             ?>
             <!--List of Accepted Abstract-->
-            <div>
+            <!-- [240117] sujeong 학회팀 요청 주석 -->
+            <!-- <div>
                 <div class="section_title_wrap2">
                     <h3 class="title">채택된 초록 목록</h3>
                 </div>
                 <div class="list_accepted_abstract_btn">
-                    <button type="button"  class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
-					<button type="button" class="not_yet"><img src="./img/icons/download_w.svg" />포스터 구연</button>
-					<button type="button"class="not_yet" ><img src="./img/icons/download_w.svg" />포스터 전시</button>
-              	<!--  <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')" class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
+              	 <button type="button" onClick="javascript:window.open('./download/Oral Presentation_0830.pdf')" class="not_yet"><img src="./img/icons/download_w.svg" />구연 발표</button>
 				 <button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
-					<button type="button"class="not_yet" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />포스터 전시</button> -->
+					<button type="button"class="not_yet" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />포스터 전시</button>
                 </div>
-            </div>
+            </div> -->
             <!--keydate-->
-            <div>
+             <!-- [240117] sujeong 학회팀 요청 삭제 -->
+            <!-- <div>
                 <div class="section_title_wrap2">
                     <h3 class="title">주요 날짜</h3>
                 </div>
@@ -77,11 +76,11 @@ $info = sql_fetch($sql_info);
                         </tr>
                     </table>
                 </div>
-            </div>
+            </div> -->
 			<!--session information-->
             <div>
                 <div class="section_title_wrap2">
-                    <h3 class="title">세션 정보</h3>
+                    <h3 class="title">구연발표 안내</h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
                      <table class="c_table">
@@ -91,25 +90,22 @@ $info = sql_fetch($sql_info);
                             <col>
                         </colgroup>
                         <tr>
-                            <th class="centerT f_bold text_center"></th>
+                            <th class="centerT f_bold text_center">구분</th>
                             <th class="centerT f_bold">Oral Presentation 1</th>
                             <th class="centerT f_bold">Oral Presentation 2</th>
-                            <!-- <th class="centerT f_bold">Oral Presentation 3</th>
-                            <th class="centerT f_bold">Oral Presentation 4</th> -->
+                        </tr>
+                        <tr>
+                            <td class="text_center">날짜</td>
+                            <td class="text_center" colspan="2">3월 9일(토)</td>
                         </tr>
 						<tr>
-							<td class="text_center">날짜 / 시간</td>
-							<td class="text_center">3월 9일(토)<br>08:00 - 10:00</td>
-							<!-- <td class="text_center">3월 8일</td> -->
-							<td class="text_center">3월 9일(토)<br>14:00 - 15:30</td>
-							<!-- <td class="text_center">3월 9일</td> -->
+							<td class="text_center">시간</td>
+							<td class="text_center">3월 9일(토)<br>08:30 - 10:00</td>
+							<td class="text_center">3월 9일(토)<br>10:10 - 11:40</td>
 						</tr>
 						<tr>
 							<td class="text_center">장소</td>
-							<td class="text_center">Room 4</td>
-							<td class="text_center">Room 4</td>
-							<!-- <td class="text_center">TBD</td>
-							<td class="text_center">TBD</td> -->
+							<td class="text_center" colspan="2">Room 4<br>(그랜드홀 4, B1)</td>
 						</tr>
                     </table>
                 </div>
@@ -129,39 +125,33 @@ $info = sql_fetch($sql_info);
 			<!--Preview Room-->
 			<div>
 				<div class="section_title_wrap2">
-					<h3 class="title">프리뷰 룸</h3>
+					<h3 class="title">프리뷰 룸 안내</h3>
 					<p>
                     세션에 앞서 모든 발표자는 반드시 프리뷰 룸을 방문하여 프레젠테이션 파일을 확인하고 업로드해야 합니다.
 					</p>
 				</div>
 				<div class="table_wrap detail_table_common">
-                       <table class="c_table detail_table">
+                       <table class="c_table">
                            <colgroup>
                                <col>
                                <col>
                                <col>
                            </colgroup>
                            <tr>
-                               <th></th>
-<!--                                <th class="f_bold text_center">Sep. 7 (Thu)</th> -->
+                               <th class="text_center">구분</th>
                                <th class="f_bold text_center">3월 8일(금)</th>
                                <th class="f_bold text_center">3월 9일(토)</th>
                            </tr>
+                           <tr>
+							<td class="text_center">운영 시간</td>
+							<td class="text_center">14:00-19:00</td>
+							<td class="text_center">07:00-17:00</td>
+						</tr>
 						<tr>
 							<td class="text_center">위치</td>
-<!-- 							<td class="text_center">Dressing Room, 3F</td> -->
-
-                            <td class="text_center">TBD</td></td>
-							<td class="text_center">TBD</td>
-							<!-- <td class="text_center">Park Studio, 5F</td>
-							<td class="text_center">Park Studio, 5F</td> -->
+                            <td class="text_center" colspan="2">아이다홀 2(B1)</td>
 						</tr>
-						<tr>
-							<td class="text_center">운영 시간</td>
-<!-- 							<td class="text_center">14:00 - 19:00</td> -->
-							<td class="text_center">TBD</td>
-							<td class="text_center">TBD</td>
-						</tr>
+						
                        </table>
                    </div>
 			</div>
@@ -172,12 +162,13 @@ $info = sql_fetch($sql_info);
 				</div>
 				<div class="text_box indent">
 					<ul>
-						<li>• 각 발표 당 7분 발표 및 3분 토의, 총 10분의 시간이 주어집니다.</li>
-						<li>• 발표 자료는 16:9 비율의 파워포인트 슬라이드로 작성하시어 PPT, PDF 파일 2종을 사무국 이메일 <a href="mailto:ksso@into-on.com" class="parentheses">(<span class="font_inherit link">ksso@into-on.com</span>)</a> 로 제출해 주십시오.</li>
-						<li>• 맥북 사용자라면 애플 어댑터(연결 케이블)를 지참해 주시기 바랍니다.</li>
-						<li>• 세션 시작 1시간 전, 등록 데스크에서 등록 절차 완료 후 프리뷰룸에 반드시 방문하여 최종 발표 자료를 확인해 주십시오.</li>
-                        <li>• 자료에 동영상이나 음성 파일이 있다면 작동이 안 될 경우를 대비해 각 파일을 추가로 지참해 주시기 바랍니다.</li>
-						 <li>• MS에서 제공하지 않는 폰트를 사용하는 경우, 폰트 파일을 파일에 저장해 주세요.</li>
+						<li>• 발표는 한국어로 진행됩니다.</li>
+						<li>• 각 발표는 <span class="bold">10분</span>의 시간이 주어집니다.(7분 발표 후, 3분 질의응답 진행)</li>
+						<li>• 발표 자료는 16:9 비율의 파워포인트 슬라이드로 작성하시어 PPT와 PDF 파일 2종을 사무국(<a class="link" href="mailto:ksso@into-opn.com">ksso@into-on.com
+</a>)으로 제출해 주시기를 요청드립니다.</li>
+						<li>• 세션 시작 1시간 전, 등록 데스크에서 등록 절차 완료 후 프리뷰 룸에 반드시 방문하여 최종 발표 자료를 확인해 주십시오.</li>
+                        <!-- <li>• 자료에 동영상이나 음성 파일이 있다면 작동이 안 될 경우를 대비해 각 파일을 추가로 지참해 주시기 바랍니다.</li>
+						 <li>• MS에서 제공하지 않는 폰트를 사용하는 경우, 폰트 파일을 파일에 저장해 주세요.</li> -->
 						<!--<li>• If you have videos or voice files in your materials, please bring each file additionally in case it does not work.</li>
 						<li>• If you use fonts that are not offered by MS, please save the font file in the file.</li>
 						<li>• If you are a MacBook user, please bring Apple adapters (connecting cables).</li>
