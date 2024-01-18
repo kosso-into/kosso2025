@@ -273,7 +273,7 @@ section.app_version .inner {
                                     <div class="colons_div">08:30-10:00</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_1" data-id="10">
-                                    Symposium 1 <p>Treatment of Obesity</p>
+                                    Symposium 1 <p>Treatment of Obesity <br>- Here and Now</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="10"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -417,7 +417,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="23"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_9" data-id="24">
-                                    Symposium 9 <p>Obesity Treatment in Adolescent</p>
+                                    Symposium 9 <p>Obesogens & Obesogenic Environment in Pediatric Obesity</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="24"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -462,7 +462,7 @@ section.app_version .inner {
                                     <div class="colons_div">16:10-17:40</div>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_10" data-id="29">
-                                    Symposium 10<p>Cormobidity of Obesity</p>
+                                    Symposium 10<p>Focus on Women's Health</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>

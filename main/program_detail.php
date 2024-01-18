@@ -751,7 +751,7 @@ echo '<script type="text/javascript">
                                                 <td>08:30-10:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 1 : Treatment of Obesity</p>
+                                                    <p class="font_20 bold">Symposium 1 : Treatment of Obesity - Here and Now</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
                                                             class="bold">강지현</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -980,7 +980,7 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 10 : Cormobidity of Obesity</p>
+                                                    <p class="font_20 bold">Symposium 10 : Focus on Women's Health</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김선미</span> (TBD), <br><span
                                                             class="bold">황유철</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1520,7 +1520,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 9: Obesity Treatment in Adolescent (TBD)</p>
+                                                    <p class="font_20 bold">Symposium 9: Obesogens & Obesogenic environment in pediatric obesity (TBD)</p>
                                                     <!-- <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
                                                             class="bold">홍용희</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
