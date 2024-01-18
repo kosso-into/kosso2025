@@ -23,29 +23,8 @@ class Push
         $headers = array(
             'Authorization: Bearer '.  $token,
             'Content-Type: application/json'
-        );
-        
-        //안드로이드 유저
-        if($device === 'android'){
-            // $data['title'] = $title;
-            // $data['body']  = $message;
-            // $data['sound'] = 'default';
-
-            $fields = array(
-                'token'  => $to_list,
-                'notification'      => array('title'=> $title,'body'=> $message)
-            );
-
-            $message_json = array('message'=>$fields);
-            self::sendAsync($url, $headers, $message_json);
-
-        //아이폰 유저
-        } else {
+        );     
             for($a = 0; $a < count($to_list); $a++) {
-                // $data['title'] = $title;
-                // $data['body']  = $message;
-                // $data['sound'] = 'default';
-
                 $fields = array(
                     'token'  => $to_list[$a],
                     'notification'      => array('title'=> $title,'body'=> $message)
@@ -54,7 +33,6 @@ class Push
             $message_json = array('message'=>$fields);
             self::sendAsync($url, $headers, $message_json);
             }
-        }
     }
 
     //[240105] sujeong 사용 X 함수

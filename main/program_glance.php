@@ -138,8 +138,8 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="pre_congress_symposium">
                                 </td>
                                 <!--[240104] sujeong / 학회팀 요청 회색처리 -->
-                                <td class="dark_gray_bg"></td>
-								<td class="dark_gray_bg"></td>
+                                <td></td>
+								<td></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -147,9 +147,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div break_time">16:20-16:30</div>
                                 </td>
-                                <td class="light_gray_bg break_time">Break</td>
-                                <td class="dark_gray_bg break_time"></td>
-                                <td class="dark_gray_bg break_time"></td>
+                                <td class="light_gray_bg break_time" colspan="3">Break</td>
                                 <td class="dark_gray_bg break_time"></td>
 								<td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
@@ -165,8 +163,8 @@ section.app_version .inner {
                                         <input type="hidden" name="e" value="room2">
                                         <input type="hidden" name="category" value="pre_congress_symposium">
                                     </td>
-                                    <td class="dark_gray_bg"></td>
-                                    <td class="dark_gray_bg"></td>
+                                    <td></td>
+                                    <td></td>
                                     <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -174,9 +172,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div break_time">18:05-18:30</div>
                                 </td>
-                                <td class="light_gray_bg break_time">Break</td>
-                                <td class="dark_gray_bg break_time"></td>
-								<td class="dark_gray_bg break_time"></td>
+                                <td class="light_gray_bg break_time" colspan="3">Break</td>
                                 <td class="dark_gray_bg break_time"></td>
                                 <td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
@@ -190,8 +186,8 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="satellite_symposium">
                                     <button class="more_btn" data-id="3"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="dark_gray_bg"></td>
-                                <td class="dark_gray_bg"></td>
+                                <td></td>
+                                <td></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -199,9 +195,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div break_time">19:00-19:10</div>
                                 </td>
-                                <td class="light_gray_bg break_time">Break</td>
-                                <td class="dark_gray_bg break_time"></td>
-								<td class="dark_gray_bg break_time"></td>
+                                <td class="light_gray_bg break_time" colspan="3">Break</td>
                                 <td class="dark_gray_bg break_time"></td>
                                 <td class="no_right_border dark_gray_bg break_time"></td>
                             </tr>
@@ -215,8 +209,8 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="satellite_symposium">
                                     <button class="more_btn" data-id="4"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="dark_gray_bg"></td> 
-                                <td class="dark_gray_bg"></td>
+                                <td></td> 
+                                <td></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -372,7 +366,7 @@ section.app_version .inner {
                                     <div class="colons_div">12:40-13:20</div>
                                 </td>
                                 <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture" data-id="20">
-                                    Plenary Lecture
+                                    Plenary Lecture<p>Obesity and Insulin Resistance</p>
                                     <!-- <p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable
                                         Isotope Tracers: More than 50 Years of Experience</p>
                                     <p>Robert R. Wolfe <br />(University of Arkansas for Medical Sciences, USA)</p> -->
@@ -437,13 +431,13 @@ section.app_version .inner {
                                     <div class="colons_div">15:40-16:10</div>
                                 </td>
                                 <td class="pink_bg pointer modal" name="keynote_lecture_1" data-id="26">
-                                    Keynote lecture 1 
+                                    Keynote lecture 1<p>Serotonin and Metabolism</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="keynote_lecture">
                                     <button class="more_btn" data-id="26"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="27">
-                                    Keynote lecture 2
+                                    Keynote lecture 2<p>The Keys to Successful Nutrition Therapy for Persons with Obesity or Overweight</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="keynote_lecture">
                                     <button class="more_btn" data-id="27"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -517,7 +511,7 @@ section.app_version .inner {
 
                 <!-- [231228]sujeong / chairperson 학회팀 요청 주석 -->
 				<div style="display: none;">
-					<p class="program_modal_chair">Chair Person</p>
+					<p class="program_modal_chair">Chairperson</p>
 					<div class="program_modal_person">
 					</div>
 				</div>

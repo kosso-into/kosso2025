@@ -78,7 +78,7 @@ function writeProgramView(room, dataList, id){
         //좌장이 2명일 경우
         if(programChairperson.includes(",")){
             chairpersonHtml = `
-            <p><span class="bold">Chairperson : ${programChairperson.split(",")[0].split("(")[0]}</span>(${programChairperson.split(",")[0].split("(")[1]?.split(")")[0]}),
+            <p><span class="bold">Chairpersons : ${programChairperson.split(",")[0].split("(")[0]}</span>(${programChairperson.split(",")[0].split("(")[1]?.split(")")[0]}),
                 <span class="bold">${programChairperson.split(",")[1].split("(")[0]}</span>(${programChairperson.split(",")[1].split("(")[1]?.split(")")[0]})
             </p> 
             `
@@ -102,7 +102,7 @@ function writeProgramView(room, dataList, id){
                                     <td>
                                         <p class="font_20 bold">${data[0].program_name}</p>
                                         ${chairpersonHtml}
-                                        ${data[0].preview ? '<button class="btn gray2_btn program_detail_btn" onclick="preview(event)">미리보기</button>' : ''}
+                                        ${data[0].preview ? '<button class="btn gray2_btn program_detail_btn" onclick="preview(event)">세션소개</button>' : ''}
                                     </td>
                                 </tr>
                                 <tr>
@@ -140,8 +140,8 @@ function writeProgramView(room, dataList, id){
          const contents = document.createElement("li")    
          contents.innerHTML += `
                 <div class="program_header">
-                    <p class="font_16 bold">${day}</p>
-                    <span class="font_16 bold">${room}</span>
+                    <p class="font_16 bold">${room}</p>
+                    <span class="font_16 bold">${day}</span>
                 </div>
                 ${inner}
          `
