@@ -67,11 +67,11 @@ $locale = locale($language);
             <div class="nav_wrap pc_only">
                 <ul class="depth01 clearfix">
                     <li>
-                        <a href="/main/comingsoon.php">초대의 글</a>
+                        <a href="/main/welcome.php">초대의 글</a>
                         <ul class="sub_nav">
                             
                          <!-- 1121 커밍순 페이지로 변경 -->
-                            <li><a href="/main/comingsoon.php">초대의 글</a></li>
+                            <li><a href="/main/welcome.php">초대의 글</a></li>
                             <!-- <li><a href="/main/welcome.php">모시는 글</a></li> -->
                             <!--li><a href="/main/organizing_committee.php">Organization</a></li-->
                             <!--li><a href="/main/overview.php">Overview</a></li-->
@@ -230,7 +230,7 @@ $locale = locale($language);
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m1"]) ? "block" : "none") ?>">
                     
                  <!-- 1121 커밍순 페이지로 변경 -->
-                    <li><a href="/main/comingsoon.php">초대의 글</a></li>
+                    <li><a href="/main/welcome.php">초대의 글</a></li>
                     <!-- <li><a href="/main/welcome.php">모시는 글</a></li> -->
                     <!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
                     <li><a href="/main/overview.php">Overview</a></li>

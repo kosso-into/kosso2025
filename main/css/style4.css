@@ -1538,7 +1538,7 @@ input[type='date']::before {
 	flex-direction: column;
 	justify-content: flex-start;
 	row-gap: 0.5rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }   
 
 .modal_header > h1 {
@@ -1638,6 +1638,10 @@ input[type='date']::before {
 	justify-content: left;
 }
 
+.modal_container .modal_preview{
+	line-height: 1.6;
+}
+
 @media screen and (max-width: 1200px) {
 	.detail_modal{
 		width: 90vw
@@ -1679,6 +1683,9 @@ input[type='date']::before {
 		/* margin-top: 0.5rem; */
 		align-items: start;
 		justify-content: center;
+	}
+	.modal_container .modal_preview{
+		font-size: 0.9rem;
 	}
 }
 
@@ -1848,6 +1855,7 @@ input[type='date']::before {
 	}
 	}
 
+/*[240118] sujeong / welcome page*/
 .welcome_header{
 	transform: translateY(-15px);
 	width: 100%;
