@@ -19,7 +19,7 @@ if ($id != "") {
 }
 
 if ($name != "") {
-	$where .= " AND CONCAT(rr.first_name ,rr.last_name) LIKE '%" . $name . "%' ";
+	$where .= " AND CONCAT(rr.first_name, rr.last_name) LIKE '%" . $name . "%' ";
 }
 
 if ($attendance_type != "") {

@@ -180,6 +180,7 @@ $info = sql_fetch($sql_info);
 				</div>
 				<div class="text_box indent">
 					<img src="./img/poster_panel.png" alt="Poster Panel">
+                    <!-- <img src="./img/a0.png" alt="Poster Panel"> -->
 					<ul>
 						<li>• 포스터 판넬 사이즈(cm): W100 x H250</li>
 						<li>• <span class="bold">포스터 사이즈(cm): A0</span>(W84.1 x H118.9)</li>
