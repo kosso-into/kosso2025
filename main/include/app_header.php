@@ -24,8 +24,7 @@
 				<li class="on">
 					<a href="javascript:;">KSSO 2024</a>
 					<ul class="app_sub">
-						<!-- <li><a href="/main/welcome.php">초대의 글</a></li> -->
-						<li><a>초대의 글</a></li>
+						<li><a href="/main/welcome.php">초대의 글</a></li>
 						<!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>-->
 						<li><a href="/main/venue.php">오시는 길</a></li> 

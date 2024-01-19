@@ -69,8 +69,6 @@ $locale = locale($language);
                     <li>
                         <a href="/main/welcome.php">초대의 글</a>
                         <ul class="sub_nav">
-                            
-                         <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/welcome.php">초대의 글</a></li>
                             <!-- <li><a href="/main/welcome.php">모시는 글</a></li> -->
                             <!--li><a href="/main/organizing_committee.php">Organization</a></li-->
@@ -82,8 +80,6 @@ $locale = locale($language);
                     <li>
                         <a href="/main/program_glance.php">프로그램</a>
                         <ul class="sub_nav">
-
-                            <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/program_glance.php">Program at a Glance</a></li>
                             <li>
                                 <a href="/main/program_detail.php">Program in Detail</a>

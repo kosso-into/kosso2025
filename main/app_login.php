@@ -26,10 +26,10 @@
 				<!-- <p>* Please log in using the same ID you used to register on the ICOMES 2023 website.</p> -->
 				<ul>
 					<li>
-						<input type="text" name="email" placeholder="ID(email)">
+						<input id="email" type="text" name="email" placeholder="ID(email)">
 					</li>
 					<li>
-						<input type="password" name="password" placeholder="비밀번호">
+						<input id="password" type="password" name="password" placeholder="비밀번호">
 					</li>
 				</ul>
 				<a href="./app_find_password.php" class="app_find_password">비밀번호 찾기</a>
@@ -46,6 +46,27 @@ $(document).ready(function(){
 //	if ( varUA.indexOf('android') > -1) {
 //		alert("Please update the app.")
 //	}
+
+//[230118] sujeong / android 키보드 이벤트
+ // 처음 시작시 화면의 사이즈 값을 가진다.
+ var originalSize = jQuery(window).width() + jQuery(window).height();
+     
+     // 창의 사이즈 변화가 일어났을 경우 실행된다.
+     jQuery(window).resize(function() {
+        
+       // 처음 사이즈와 현재 사이즈가 변경된 경우
+       // 키보드가 올라온 경우
+       if(jQuery(window).width() + jQuery(window).height() != originalSize) {
+        $('.app_main_txt').hide();
+       }
+      
+       // 처음 사이즈와 현재 사이즈가 동일한 경우
+       // 키보드가 다시 내려간 경우
+       else {
+        $('.app_main_txt').show();
+       }
+     });
+
 
     let icomes_device = null;
     let icomes_token = null;
