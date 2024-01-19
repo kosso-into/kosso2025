@@ -1730,6 +1730,10 @@ input[type='date']::before {
 		white-space: inherit;
 		padding: 4px !important
 	}
+
+	.program_table tbody td .more_btn .more_img{
+		display: none;
+	}
 }
 
 @media only screen and (max-width:486px) {
