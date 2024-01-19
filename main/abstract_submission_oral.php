@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long presentation">
             <li class="on"><a href="./abstract_submission_oral.php">구연 발표</a></li>
-            <li><a href="./abstract_submission_poster_sj.php">포스터 구연발표</a></li>
+            <li><a href="./abstract_submission_poster.php">포스터 구연발표</a></li>
             <li><a href="./abstract_exhibition.php">포스터 전시</a></li>
         </ul>
         <div class="section section1">

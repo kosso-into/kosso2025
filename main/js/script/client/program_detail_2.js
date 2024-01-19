@@ -83,10 +83,13 @@ function writeProgramView(room, dataList, id){
             </p> 
             `
             //좌장이 1명일 경우
-        }else{
+        }else if(!programChairperson.includes(",") && programChairperson){
             chairpersonHtml = `
                 <p><span class="bold">Chairperson : ${programChairperson.split("(")[0]}</span>(${programChairperson.split("(")[1]?.split(")")[0]})</p> 
             `
+            //좌장이 없는 경우
+        }else if(!programChairperson){
+            chairpersonHtml = '';
         }
 
         inner += ` 
