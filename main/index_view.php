@@ -159,7 +159,8 @@ body {
                 </li>
                 <li>
                     <a href="/main/abstract_submission.php">
-                        <h2><span>2024년 2월 12일(월)</span></h2>
+                        <!-- [240119]sujeong / 학회팀 요청 날짜-->
+                        <h2><span>2024년 2월 1일(목)</span></h2>
                         <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
                         <p>초록 접수<br />마감</p>
                     </a>
