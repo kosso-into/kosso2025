@@ -351,7 +351,7 @@ if ($during_yn != "Y") {
 
                     <?php if ($member_data['nation_en'] == "Republic of Korea") { ?>
                     <li id='chk_org'>
-                        <p class='label'>평점신청 <span class='red_txt'>*</span></p>
+                        <p class='label'>평점신청(의사, 영양사) <span class='red_txt'>*</span></p>
                         <div>
                             <div class='radio_wrap'>
                                 <ul class='flex'>
