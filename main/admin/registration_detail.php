@@ -24,7 +24,7 @@ $registration_detail_query =	"
 											rr.member_type,
 											rr.occupation_type,
 											rr.ksso_member_status,
-											m.member_idx, m.member_email, m.member_name, m.member_nation,
+											m.member_idx, m.member_email, m.member_name, m.member_nation, rr.last_name, rr.first_name,
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.last_name,rr.first_name) AS registration_name, rr.phone,
 											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number, 
 											rr.welcome_reception_yn,
@@ -126,6 +126,10 @@ $occupation_type = isset($registration_detail["occupation_type"]) ? $registratio
 $member_status = isset($registration_detail["ksso_member_status"]) ? $registration_detail["ksso_member_status"] : "";
 $member_email = isset($registration_detail["member_email"]) ? $registration_detail["member_email"] : "";
 $member_name = isset($registration_detail["member_name"]) ? $registration_detail["member_name"] : "";
+//[240122] sujeong 등록자 이름
+$member_first_name = isset($registration_detail["first_name"]) ? $registration_detail["first_name"] : "";
+$member_last_name = isset($registration_detail["last_name"]) ? $registration_detail["last_name"] : "";
+
 $member_nation = isset($registration_detail["member_nation"]) ? $registration_detail["member_nation"] : "";
 $attendance_type = isset($registration_detail["attendance_type"]) ? $registration_detail["attendance_type"] : "";
 //$registration_type = isset($registration_detail["registration_type"]) ? $registration_detail["registration_type"] : "";
@@ -433,8 +437,20 @@ if ($attendance_type_no != 0) {
                     <tr>
                         <th>ID(Email)</th>
                         <td><a href="./member_detail.php?idx=<?= $member_idx ?>"><?= $member_email ?></a></td>
-                        <th>성함 / 국적</th>
-                        <td><?= $member_name ?> / <?= $member_nation ?></td>
+                        <th>국적</th>
+                        <td><?= $member_nation ?></td>
+                    </tr>
+                    <tr>
+                    <th>이름</th>
+                            <td><input type="text" name="first_name" value="<?=$member_first_name?>"></td>
+                            <th>성</th>
+                            <td><input type="text"name="last_name" value="<?=$member_last_name?>">
+                            <button id="update_name" type="button" class="btn" data-type="member_name">저장</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ID(Email)</th>
+                        <td colspan="3"><?= $member_name ?> / <?= $member_nation ?></td>
                     </tr>
                     <tr>
                         <th>등록일</th>
@@ -915,6 +931,58 @@ $(document).ready(function() {
             });
         }
     });
+
+
+    //[240122] sujeong 이름 수정 추가
+    $("#update_name").on("click", function() {
+        var data = {};
+        var submit_type = $(this).data("type");
+
+        var registration_idx = $("input[name=registration_idx]").val();
+        var refund_amount = $("input[name=refund_amount]").val();
+
+        if (submit_type == "member_name") {
+            if (!$("input[name=last_name]").val()) {
+                alert("등록자 성함의 성을 입력해주세요.");
+                return false;
+            }else{
+                data["last_name"] =  $("input[name=last_name]").val();
+            }
+            if (!$("input[name=first_name]").val()) {
+                alert("등록자 성함의 이름을 입력해주세요.");
+                return false;
+            }else{
+                data["first_name"] =  $("input[name=first_name]").val();
+            }
+        }
+        if (confirm("입력하신 내용으로 저장하시겠습니까?")) {
+            $.ajax({
+                url: "../ajax/admin/ajax_registration.php",
+                type: "POST",
+                data: {
+                    flag: "update_name",
+                    idx: registration_idx,
+                    data: data
+                },
+                dataType: "JSON",
+                success: function(res) {
+                    if (res.code == 200) {
+                        alert("저장이 완료되었습니다.");
+                        window.location.reload();
+                    } else if (res.code == 400) {
+                        alert("저장에 실패하였습니다.");
+                        return false;
+                    } else if (res.code == 401) {
+                        alert("결제정보가 존재하지 않아 환불정보 입력에 실패하였습니다.");
+                        return false;
+                    } else {
+                        alert("일시적으로 요청이 거절되었습니다. 잠시 후 다시 시도해주세요.");
+                        return false;
+                    }
+                }
+            });
+        }
+    })
 
 });
 </script>

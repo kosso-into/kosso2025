@@ -126,10 +126,18 @@ $info = sql_fetch($sql_info);
 				</div>
 				<div class="text_box indent">
 					<ul>
-						<li>• 부착 전 포스터 번호를 꼭 확인하신 후, 배정된 판넬에 부착하여 주십시오.</li>
-                        <li>• 포스터는 정해진 사이즈에 맞추어 직접 제작 및 현장 부착을 하여야 합니다.</li>
-						<li>• 포스터 게시는 학회 종료 시까지 반드시 유지하여야 합니다. 게시가 누락되는 일이 없도록 협조해 주십시오.</li>
-						<li class="f_bold">• 부착 및 철거 시간을 반드시 지켜주십시오. 시간을 지키지 않은 경우, 심사에서 제외될 수 있습니다. </li>
+						<li>• 포스터 인쇄 및 부착은 <span class="bold">학회에서 진행</span>합니다.</li>
+                        <li>• 포스터 작성을 위한 양식을 다운로드하신 후, 가이드에 맞춰 작성하여 주십시오.</li>
+						<li>• 포스터 전시를 위한 최종 파일은 PPT와 PDF 파일 2종으로 제출하여 주시기 바랍니다.
+                            <br/>- 파일명 : [초록접수번호] 초록 제목
+                            <br/>- 제출기한: <span class="bold red_txt">2024년 2월 25일(일)</span>
+                            <br/>- 제출처(운영사무국): <a href="mailto:ksso@into-on.com" class="link underline">ksso@into-on.com</a>
+                        </li>
+						<li>• 포스터를 기한 내에 제출하지 않은 경우, 해당 초록은 철회됩니다. </li>
+						<li>• 포스터 게시는 학회 종료 시까지 유지하여야 합니다.
+                            <br/>※ 포스터 철거 가능 시간: 3월 9일(토) 17:30-18:30
+                        </li>
+						<li>• 3월 9일 18:30 이후 부착되어 있는 포스터는 임의로 철거 및 폐기됩니다.</li>
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
@@ -142,7 +150,7 @@ $info = sql_fetch($sql_info);
                 </div>
 			</div>
             <!--설치 및 철거 시간 -->
-            <div>
+            <!-- <div>
             <div class="section_title_wrap2">
                     <h3 class="title">설치 및 철거 시간</h3>
                 </div>
@@ -172,7 +180,7 @@ $info = sql_fetch($sql_info);
 					</tr>
 				   </table>
                 </div>
-                </div>
+                </div> -->
 			<!--Poster Panel-->
 			<div class="poster_panel">
 				<div class="section_title_wrap2">

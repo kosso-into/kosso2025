@@ -938,7 +938,7 @@ echo '<script type="text/javascript">
                                                                </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td> 
-                                                                   <td class="bold">TBD</td>
+                                                                   <td class="bold">GIPR/GLP-1R co-agonists</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">배재현</p>(고려의대)
                                                                     </td> 
@@ -1535,7 +1535,7 @@ echo '<script type="text/javascript">
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <!-- <tr>
+                                            <tr>
                                                 <td colspan="2" class="on">
                                                     <div>
                                                         <table class="c_table detail_table padding_0">
@@ -1553,9 +1553,9 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Causal links Between Chemical Exposures and Obesity in Childhood and Adolescence</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김신혜</p>(상계백병원 소아청소년과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1578,7 +1578,7 @@ echo '<script type="text/javascript">
                                                         </table>
                                                     </div>
                                                 </td>
-                                            </tr> -->
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>

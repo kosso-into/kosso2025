@@ -106,6 +106,42 @@
         echo json_encode($res);
         exit;
     }
+ //[240122] sujeong 이름 수정 추가
+   else if($flag == "update_name"){
+        $registration_idx = isset($_POST["idx"]) ? $_POST["idx"] : "";
+        $data = isset($_POST["data"]) ? $_POST["data"] : "";
+
+        $first_name = isset($data["first_name"]) ? $data["first_name"] : "";
+        $last_name = isset($data["last_name"]) ? $data["last_name"] : "";
+   
+
+        $update_registration_query =  "
+                                            UPDATE request_registration
+                                            SET
+                                            first_name =  '{$first_name}',
+                                            last_name =  '{$last_name}'
+                                            WHERE idx = '{$idx}'
+                                        ";
+
+ 
+        $registration_update = sql_query($update_registration_query);
+
+        if(!$registration_update) {
+            $res = [
+                code => 400,
+                msg => "update registration query error"
+            ];
+            echo json_encode($res);
+            exit;
+        }
+
+        $res = [
+            code => 200,
+            msg => "success"
+        ];
+        echo json_encode($res);
+        exit;
+    }
 
 
 ?>
