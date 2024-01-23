@@ -21,6 +21,9 @@ $sql_info = "SELECT
 $info = sql_fetch($sql_info);
 
 ?>
+<style>
+    .c_table th, .c_table td, .text_box {font-size: 18px!important;}
+</style>
 <section class="abstract_submission_guideline container abstract_presentation_guideline">
     <h1 class="page_title">발표 안내</h1>
     <div class="inner">
