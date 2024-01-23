@@ -21,6 +21,9 @@ $sql_info = "SELECT
 $info = sql_fetch($sql_info);
 
 ?>
+<style>
+    .detail_table th, .detail_table td, .text_box {font-size: 18px!important;}
+</style>
 <section class="abstract_submission_guideline container abstract_presentation_guideline">
     <h1 class="page_title">발표 안내</h1>
     <div class="inner">
@@ -115,7 +118,7 @@ $info = sql_fetch($sql_info);
 				<div class="text_box indent">
 					<ul>
 						<li>• 발표는 한국어로 진행됩니다.</li>
-						<li>• 각 발표는 5분의 시간이 주어집니다.(질의응답 포함)</li>
+						<li>• 각 발표는 5분의 시간이 주어집니다.(3분 발표 후, 2분 질의응답 진행)</li>
 					</ul>
 				</div>
 			</div>
