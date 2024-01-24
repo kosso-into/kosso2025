@@ -597,6 +597,7 @@ section.container.organizing {padding-bottom: 190px;}
 .green_bg {background-color:#D8F5BB !important;}
 .purple_bg {background-color:rgba(181,178,255,0.3) !important;}
 .blue_bg {background-color:#00b0f0 !important;}
+.navy_bg{background-color:#013366!important; color: #fff!important;}
 .dark_gray_bg{background-color:#dcdcdc;}
 .light_orange_bg {background-color:#FFEDD5 !important;}
 /*230705 HUBDNC AJY 추가*/
@@ -604,6 +605,15 @@ section.container.organizing {padding-bottom: 190px;}
 .dots_img {width:auto; height:1.75px; margin:0 1px 2px;}
 .colons_div {font:inherit; display:flex; align-items:center; justify-content:center;}
 .colons_img {width:auto !important; height:6px; margin:0 1px !important;}
+.program_day_div{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+    font-weight: 700;
+	color: #fff;
+}
 
 /*invited speaker*/
 .invited .inner {padding-top: 0; border:1px solid transparent;}
@@ -1372,6 +1382,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.program_table tbody td .more_btn{font-size: 7px;}
 	.program_table tbody td .more_btn .more_img{width: 11px;}
 	.program_table tbody td p {font-size:6px;}
+	.program_day_div{height: 25px;font-size: 0.7rem;}
 }
 
 @media screen and (max-width: 400px) {
@@ -1933,3 +1944,4 @@ input[type='date']::before {
 		margin: 0;
 	}
 }
+

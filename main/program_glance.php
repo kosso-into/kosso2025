@@ -107,45 +107,54 @@ section.app_version .inner {
                             <col/>
                         </colgroup>
                         <thead>
-                            <tr>
+                            <!-- <tr>
                                 <th class="font_big" style="background-color: #F4F4F4;">시간/장소</th>
                                 <th style="background-color: #F4F4F4;">Room 1</th>
                                 <th style="background-color: #F4F4F4;">Room 2</th>
                                 <th style="background-color: #F4F4F4;">Room 3</th>
                                 <th style="background-color: #F4F4F4;">Room 4</th>
                                 <th style="background-color: #F4F4F4;">Room 5</th>
+                            </tr> -->
+                            <tr>
+                                <th style="background-color: #333f4f;" colspan="6" class="font_big day_tbody day_1">
+                                    <div class="dots_div program_day_div">Day 1. 2024년 3월 8일 (금)</div>
+                                </th>
                             </tr>
                             <tr>
-                                <th style="background-color: #FFFF99;" colspan="6" class="font_big day_tbody day_1">
-                                    <div class="dots_div">Day 1 - 2024<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />03<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />08<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" /> (금)</div>
-                                </th>
+                               <th class="font_big day_tbody day_1 navy_bg" rowspan="2">시간/장소</th>
+                               <th class="font_big day_tbody day_1 navy_bg" colspan="3">VISTA Hall(B2)</th>
+                               <th class="font_big day_tbody day_1" colspan="2">Grand Hall (B1)</th>
+                            </tr>
+                            <tr>
+                               <th class="font_big day_tbody day_1 navy_bg">Room 1</th>
+                               <th class="font_big day_tbody day_1 navy_bg">Room 2</th>
+                               <th class="font_big day_tbody day_1 navy_bg">Room 3</th>
+                               <th class="font_big day_tbody day_1">Room 4</th>
+                               <th class="font_big day_tbody day_1">Room 5</th>
                             </tr>
                         </thead>
                         <!---------- DAY 1 ---------->
                         <tbody name="day" class="day_tbody day_1"  id="day_1">
                             <tr>
                                 <td>
-                                    <div class="colons_div">14:50-16:20</div>
+                                    <div class="colons_div">15:00-16:30</div>
                                 </td>
-                                <td class="purple_bg pointer modal" name="pre_congress_symposium_1" data-id="1">
-                                    Pre-congress<br />Symposium 1<p>
-                                        <!-- 적절한 비만관리를 위한 정책적 논의 -->
+                                <td class="purple_bg">
+                                Scientific Session 1
+                                <!-- <p>
                                         <button class="more_btn" data-id="1"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </p>
-                                    <input type="hidden" name="category" value="pre_congress_symposium">
+                                    <input type="hidden" name="category" value="pre_congress_symposium"> -->
                                 </td>
                                 <!--[240104] sujeong / 학회팀 요청 회색처리 -->
                                 <td></td>
-								<td></td>
+								<td class="purple_bg">Committee Session 1</td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div break_time">16:20-16:30</div>
+                                    <div class="colons_div break_time">16:30-16:40</div>
                                 </td>
                                 <td class="light_gray_bg break_time" colspan="3">Break</td>
                                 <td class="dark_gray_bg break_time"></td>
@@ -153,24 +162,24 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">16:30-18:05</div>
+                                    <div class="colons_div">16:40-18:10</div>
                                 </td>
-                                <td class="purple_bg pointer modal" name="pre_congress_symposium_2" data-id="2">
-                                    Pre-congress<br />Symposium 2<p>
+                                <td class="purple_bg pointer">
+                                Scientific Session 2<p>
                                         <!-- Obesity in Asia-Pacific – Is It Different from Restv of the World? -->
-                                        <button class="more_btn" data-id="2"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                        <!-- <button class="more_btn" data-id="2"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button> -->
                                     </p>
                                         <input type="hidden" name="e" value="room2">
                                         <input type="hidden" name="category" value="pre_congress_symposium">
                                     </td>
-                                    <td></td>
-                                    <td></td>
+                                    <td class="purple_bg pointer">Committee Session 3</td>
+                                    <td class="purple_bg pointer">Committee Session 2</td>
                                     <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div break_time">18:05-18:30</div>
+                                    <div class="colons_div break_time">18:10-18:30</div>
                                 </td>
                                 <td class="light_gray_bg break_time" colspan="3">Break</td>
                                 <td class="dark_gray_bg break_time"></td>
@@ -178,20 +187,20 @@ section.app_version .inner {
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="colons_div">18:30-19:00</div>
+                                    <div class="colons_div">18:30-19:40</div>
                                 </td>
-                                <td class="sky_bg pointer modal" name="satellite_symposium_1" data-id="3">
-                                    Satellite<br />Symposium 1
-                                    <input type="hidden" name="e" value="room1">
+                                <td class="sky_bg pointer modal">
+                                    Satellite<br />Symposium
+                                    <!-- <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="satellite_symposium">
-                                    <button class="more_btn" data-id="3"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="3"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button> -->
                                 </td>
                                 <td></td>
                                 <td></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td>
                                     <div class="colons_div break_time">19:00-19:10</div>
                                 </td>
@@ -213,20 +222,29 @@ section.app_version .inner {
                                 <td></td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
-                            </tr>
+                            </tr> -->
                            
                         </tbody>
                         <!---------- DAY 2 ---------->
 
 
                         <thead>
-                            <tr>
-                                <th colspan="6" class="font_big day_tbody day_2">
-                                    <div class="dots_div">Day 2 - 2024<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />03<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />09<img src="./img/icons/icon_dots.svg"
-                                            class="dots_img" />(토)</div>
+                        <tr>
+                                <th style="background-color: #333f4f;" colspan="6" class="font_big day_tbody day_2">
+                                    <div class="dots_div program_day_div">Day 2. 2024년 3월 9일 (토)</div>
                                 </th>
+                            </tr>
+                            <tr>
+                               <th class="font_big day_tbody day_2 navy_bg" rowspan="2">시간/장소</th>
+                               <th class="font_big day_tbody day_2 navy_bg" colspan="3">VISTA Hall(B2)</th>
+                               <th class="font_big day_tbody day_2" colspan="2">Grand Hall (B1)</th>
+                            </tr>
+                            <tr>
+                               <th class="font_big day_tbody day_2 navy_bg">Room 1</th>
+                               <th class="font_big day_tbody day_2 navy_bg">Room 2</th>
+                               <th class="font_big day_tbody day_2 navy_bg">Room 3</th>
+                               <th class="font_big day_tbody day_2">Room 4</th>
+                               <th class="font_big day_tbody day_2">Room 5</th>
                             </tr>
                         </thead>
                         <tbody name="day" class="day_tbody day_2" id="day_2">
@@ -284,7 +302,7 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="12"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="oral_presentation_1" data-id="13">Oral presentation 1
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_1" data-id="13">Oral Presentation 1
                                     <input type="hidden" name="category" value="oral_presentation">
                                     <button class="more_btn" data-id="13"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
@@ -319,7 +337,7 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="16"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="25">Oral presentation 2
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="25">Oral Presentation 2
                                     <input type="hidden" name="category" value="oral_presentation">
                                     <button class="more_btn" data-id="25"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
@@ -359,7 +377,13 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="luncheon_symposium">
                                     <button class="more_btn" data-id="19"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td></td>
+                                <td class="light_orange_bg">
+                                Guided Poster Presentation
+                                <br/>
+                                12:15-12:30
+                                <br/>
+                                * 장소: VISTA 통로 포스터존*
+                                </td>
                             </tr>
                             <tr>
                                 <td>
