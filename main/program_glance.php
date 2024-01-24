@@ -356,27 +356,30 @@ section.app_version .inner {
                             </tr> -->
                             <!-- [240103] sujeong / luncheon room 3개 버전 -->
                             <tr>
-                                <td>
+                                <td rowspan="2">
                                     <div class="colons_div">11:40-12:40</div>
                                 </td>
-                                <td class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="17">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="17">
                                     Luncheon Lecture 1
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="luncheon_symposium">
                                     <button class="more_btn" data-id="17"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="sky_bg pointer modal" name="luncheon_symposium_2" data-id="18">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_2" data-id="18">
                                     Luncheon Lecture 2
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="luncheon_symposium">
                                     <button class="more_btn" data-id="18"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="sky_bg pointer modal" name="luncheon_symposium_3" data-id="19">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_3" data-id="19">
                                     Luncheon Lecture 3
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="luncheon_symposium">
                                     <button class="more_btn" data-id="19"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td class="light_orange_bg">
                                 Guided Poster Presentation
                                 <br/>
