@@ -606,7 +606,7 @@ section.container.organizing {padding-bottom: 190px;}
 .colons_div {font:inherit; display:flex; align-items:center; justify-content:center;}
 .colons_img {width:auto !important; height:6px; margin:0 1px !important;}
 .program_day_div{
-	height: 40px;
+	height: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1381,7 +1381,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.program_table tbody td .more_btn{font-size: 7px;}
 	.program_table tbody td .more_btn .more_img{width: 11px;}
 	.program_table tbody td p {font-size:6px;}
-	.program_day_div{height: 25px;font-size: 0.7rem;}
+	.program_day_div{height: 16px;font-size: 0.7rem;}
 }
 
 @media screen and (max-width: 400px) {
