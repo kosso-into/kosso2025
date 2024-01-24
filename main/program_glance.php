@@ -123,14 +123,14 @@ section.app_version .inner {
                             <tr>
                                <th class="font_big day_tbody day_1 navy_bg" rowspan="2">시간/장소</th>
                                <th class="font_big day_tbody day_1 navy_bg" colspan="3">VISTA Hall(B2)</th>
-                               <th class="font_big day_tbody day_1" colspan="2">Grand Hall (B1)</th>
+                               <th class="font_big day_tbody day_1 navy_bg" colspan="2">Grand Hall (B1)</th>
                             </tr>
                             <tr>
                                <th class="font_big day_tbody day_1 navy_bg">Room 1</th>
                                <th class="font_big day_tbody day_1 navy_bg">Room 2</th>
                                <th class="font_big day_tbody day_1 navy_bg">Room 3</th>
-                               <th class="font_big day_tbody day_1">Room 4</th>
-                               <th class="font_big day_tbody day_1">Room 5</th>
+                               <th class="font_big day_tbody day_1 navy_bg">Room 4</th>
+                               <th class="font_big day_tbody day_1 navy_bg">Room 5</th>
                             </tr>
                         </thead>
                         <!---------- DAY 1 ---------->
@@ -237,14 +237,14 @@ section.app_version .inner {
                             <tr>
                                <th class="font_big day_tbody day_2 navy_bg" rowspan="2">시간/장소</th>
                                <th class="font_big day_tbody day_2 navy_bg" colspan="3">VISTA Hall(B2)</th>
-                               <th class="font_big day_tbody day_2" colspan="2">Grand Hall (B1)</th>
+                               <th class="font_big day_tbody day_2 navy_bg" colspan="2">Grand Hall (B1)</th>
                             </tr>
                             <tr>
                                <th class="font_big day_tbody day_2 navy_bg">Room 1</th>
                                <th class="font_big day_tbody day_2 navy_bg">Room 2</th>
                                <th class="font_big day_tbody day_2 navy_bg">Room 3</th>
-                               <th class="font_big day_tbody day_2">Room 4</th>
-                               <th class="font_big day_tbody day_2">Room 5</th>
+                               <th class="font_big day_tbody day_2 navy_bg">Room 4</th>
+                               <th class="font_big day_tbody day_2 navy_bg">Room 5</th>
                             </tr>
                         </thead>
                         <tbody name="day" class="day_tbody day_2" id="day_2">
@@ -271,7 +271,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="8"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
-                                <td rowspan="14" class="no_right_border light_orange_bg">POSTER EXHIBITION</td>
+                                <td rowspan="14" class="no_right_border light_orange_bg">Poster Exhibition</td>
                             </tr>
                             <tr>
                                 <td>
