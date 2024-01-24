@@ -116,7 +116,7 @@ section.app_version .inner {
                                 <th style="background-color: #F4F4F4;">Room 5</th>
                             </tr> -->
                             <tr>
-                                <th style="background-color: #333f4f;" colspan="6" class="font_big day_tbody day_1">
+                                <th style="background-color: #F4F4F4;" colspan="6" class="font_big day_tbody day_1">
                                     <div class="dots_div program_day_div">Day 1. 2024년 3월 8일 (금)</div>
                                 </th>
                             </tr>
@@ -230,7 +230,7 @@ section.app_version .inner {
 
                         <thead>
                         <tr>
-                                <th style="background-color: #333f4f;" colspan="6" class="font_big day_tbody day_2">
+                                <th style="background-color: #F4F4F4;" colspan="6" class="font_big day_tbody day_2">
                                     <div class="dots_div program_day_div">Day 2. 2024년 3월 9일 (토)</div>
                                 </th>
                             </tr>
