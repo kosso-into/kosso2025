@@ -11,7 +11,7 @@
 
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="2024 KSSO">
-	<meta property="og:image" content="/main/img/poster2024.png" />
+	<meta property="og:image" content="/main/img/poster2024_2.png" />
 
 	<meta property="og:description" content="2024 KSSO hosted by KSSO">
 	<meta name="description" content="2024 KSSO hosted by KSSO">

@@ -25,7 +25,8 @@
 .app_version.app_scientific {width:100%; /*margin-left:0; margin-right:0;*/ border:none; padding-bottom:100px !important;}
 .app_version.app_scientific .inner {padding-top:0 !important; margin-bottom: 0;}
 .app_version.app_scientific .app_tab {width:100%; margin-left:0; max-width:1236px;}
-.app_version.app_scientific .app_title_box {width:100%; /* margin-left:0; */ max-width:1236px; margin:0 auto; left:50%; transform:translateX(-50%);border: 1px solid transparent;}
+.app_version.app_scientific .app_title_box {width:100%; /* margin-left:0; */ max-width:1236px; margin:0 auto; left:50%; transform:translateX(-50%);border: 1px solid 
+	#59BCC4;}
 .app_scientific .app_sort_form {border-top:1.5px solid #989898;}
 .app_scientific .program_detail_ul li {border-bottom:1px solid #989898;}
 .app_scientific .program_detail_ul li:not(:first-child) {margin-top:0;}
