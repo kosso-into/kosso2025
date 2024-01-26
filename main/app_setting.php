@@ -8,7 +8,7 @@
 		<h2 class="app_title">
 			설정
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';">
-				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
+				<img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
 		<p class="app_setting_desc">제 59차 대한비만학회 춘계학술대회 <br>이벤트 정보와 실시간 정보를 모바일 앱 푸시로 <br>받을 수 있습니다.</p>

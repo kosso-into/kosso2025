@@ -83,7 +83,7 @@ $initial_list = get_data($select_initial_query);
 	<div class="app_title_box">
 		<h2 class="app_title">
 			초청 연자
-			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="container_inner">
@@ -91,8 +91,11 @@ $initial_list = get_data($select_initial_query);
 			<div class="app_search_area fix_cont">
 				<!-- <p class="f_bold">Please enter keywords</span></p> -->
 				<div class="search_input">
-					<input id="keywords" type="text" placeholder="검색하기" oninput="selectKeywords();">
-					<button type="button" class="search_icon"></button>
+					<p>Please enter keywords</p>
+					<div>
+						<input id="keywords" type="text" placeholder="Search" oninput="selectKeywords();">
+						<button type="button" class="search_icon"></button>
+					</div>
 				</div>
 			</div>
 			<div class="speakers_area">

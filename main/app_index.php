@@ -23,69 +23,69 @@
 ?>
 
 <style>
-	html {background: url("./img/main_mb.png") no-repeat right /cover}
+	html {background: url("./img/2024_app_bg.png") no-repeat center /cover}
 	html, body {min-height:100%;}
-	.rolling_wrap {display:block;}
-	body{
+	.rolling_wrap {display:block; z-index: 999;}
+	/* body{
 		background-color: rgba(0, 0, 0, 0.1);
-	}
+	} */
 </style>
 
 <!-- HUBDNCLHJ : app loading 페이지 -->
 <section class="container app_version main">
 	<div class="app_vsl">
-		<img src="./img/img_vsl_text.png" class="text" alt="" >
+		<img src="./img/img_vsl_text.svg" class="text" alt="" >
 	</div>
 	
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li>
 				<a href="/main/welcome.php">
-					<img src="./img/icons/app_menu01.svg" alt="">
+					<img src="./img/icons/2024_app_menu01.svg" alt="">
 					<span>춘계학술대회</span>
 				</a>
 			</li>
 			<li>
 				<a href="/main/program_glance.php">
-					<img src="./img/icons/app_menu02.svg" alt="">
+					<img src="./img/icons/2024_app_menu02.svg" alt="">
 					<span>프로그램</span>
 				</a>
 			</li>
 			<li>
 				<a href="/main/app_abstract.php">
-					<img src="./img/icons/app_menu03.svg" alt="">
+					<img src="./img/icons/2024_app_menu03.svg" alt="">
 					<span>초록보기</span>
 				</a>
 			</li>
 			<li>
 				<a href="/main/app_invited_speakers.php">
-					<img src="./img/icons/app_menu04.svg" alt="">
+					<img src="./img/icons/2024_app_menu04.svg" alt="">
 					<span>연자 소개</span>
 				</a>
 			</li>
 			<li>
 				<a>
 				<a href="/main/app_happening_now.php">
-					<img src="./img/icons/app_menu05.svg" alt="">
+					<img src="./img/icons/2024_app_menu05.svg" alt="">
 					<span>진행세션</span>
 				</a>
 			</li>
 			<li>
 				<a href="/main/app_floor_plan.php">
-					<img src="./img/icons/app_menu06.svg" alt="">
+					<img src="./img/icons/2024_app_menu06.svg" alt="">
 					<span>행사장 안내</span>
 				</a>
 			</li>
 			<li>
 				<a>
 				<!-- <a href="/main/sponsor.php"> -->
-					<img src="./img/icons/app_menu07.svg" alt="">
+					<img src="./img/icons/2024_app_menu07.svg" alt="">
 					<span>고객사</span>
 				</a>
 			</li>
 			<li>
 				<a href="/main/app_notice.php">
-					<img src="./img/icons/app_menu08.svg" alt="">
+					<img src="./img/icons/2024_app_menu08.svg" alt="">
 					<span>공지사항</span>
 				</a>
 			</li>
@@ -97,7 +97,7 @@
 			</li> -->
 			<li>
 				<a href="/main/app_site.php">
-					<img src="./img/icons/app_menu09_1.svg" alt="">
+					<img src="./img/icons/2024_app_menu09.svg" alt="">
 					<span>대한비만학회</span>
 				</a>
 			</li>

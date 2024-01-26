@@ -18,7 +18,7 @@
 	<div class="app_main_inner">
 		<div class="app_main_box" style="height: auto;">
 			<div class="app_main_txt">
-				<img src="./img/img_vsl_text.png" alt="">
+				<img src="./img/2024_mb_text.png" alt="">
 				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
 				<p>CONRAD Seoul Hotel, Korea</p> -->
 			</div>

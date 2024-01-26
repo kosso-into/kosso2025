@@ -65,9 +65,9 @@ $total_newsletter = count($newsletter_list) ?? 0;
 ?>
 
 <style>
-body {
+/* body {
     background-color: rgba(234, 234, 234, 0.45);
-}
+} */
 
 .index_sponsor_wrap {
     display: block;
@@ -93,14 +93,15 @@ body {
 	</div>
 	-->
     <div class="section_bg">
+
         <!-- <div class="video_wrap"> -->
         <!-- <div class="dim"></div> -->
         <!-- <video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f" autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video> -->
         <!-- </div> -->
         <div class="container">
-            <img src="/main/img/img_vsl_text.png" class="pc_only img_vsl_text" alt="">
+            <img src="/main/img/main_txt.png" class="pc_only img_vsl_text" alt="">
             <div class="mb_only img_vsl_text" style="">
-                <img src="/main/img/img_vsl_text.png" alt="">
+                <img src="/main/img/2024_mb_text.png" alt="">
                 <!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
                 <p>CONRAD Seoul Hotel, Korea</p> -->
             </div>
@@ -151,27 +152,31 @@ body {
         <div class="dates_area">
             <ul>
                 <li>
-                    <a style="cursor: default;">
-                        <h2><span>2023년 12월 11일(월)</span></h2>
-                        <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
-                        <p>등록/초록 접수<br />오픈</p>
-                    </a>
-                </li>
-                <li>
                     <a href="/main/abstract_submission.php">
-                        <!-- [240119]sujeong / 학회팀 요청 날짜-->
-                        <h2><span>2024년 2월 1일(목)</span></h2>
-                        <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
+                        <!-- <img src="./img/2024_dates_area_1.png"/> -->
+                        <h2>2024년 2월 1일<span>(목)</span></h2>
                         <p>초록 접수<br />마감</p>
+                        <!-- <h2><span>2023년 12월 11일(월)</span></h2> -->
+                        <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
+                        <!-- <p>등록/초록 접수<br />오픈</p> -->
                     </a>
                 </li>
                 <li>
                     <a href="/main/registration.php">
+                        <!-- <img src="./img/2024_dates_area_2.png"/> -->
+                        <!-- [240119]sujeong / 학회팀 요청 날짜-->
                         <h2><span>2024년 2월 22일(목)</span></h2>
-                        <!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
+                        <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
                         <p>사전 등록 접수 <br />마감</p>
                     </a>
                 </li>
+                <!-- <li>
+                    <a href="/main/registration.php">
+                        <h2><span>2024년 2월 22일(목)</span></h2>
+                      <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> 
+                        
+                    </a>
+                </li> -->
                 <!-- <li>
                     <a href="">
                         <h2>TBD</h2>
@@ -182,40 +187,60 @@ body {
             </ul>
         </div>
     </div>
+
 </section>
 
 <!-- Plenary Speakers -->
 <!-- [240104] sujeong / 학회팀 요청 공개 -->
  <div class="speakers_wrap">
     <div class="container">
-        <h3 class="title">주요 세션 소개</h3>
-        <div class="">
-            <ul class="main_speaker2">
-                <li class="index_speaker5">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <div class="title">Plenary Lecture</div>
-                    <h5 class="title">이관우</h5>
-                    <div class="career">아주의대</div>
-                </li>
-                <li class="index_speaker1">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <div class="title">Keynote Lecture 1</div>
-                    <h5 class="title">김경곤</h5>
-                    <div class="career">가천의대</div>
-                </li>
-                <li class="index_speaker6">
-                    <div class="profile_circle">
-                        <div class="profile_wrap"></div>
-                    </div>
-                    <div class="title">Keynote Lecture 2</div>
-                    <h5 class="title">김은미</h5>
-                    <div class="career">강북삼성병원</div>
-                </li> 
-            </ul>
+        <h3 class="title" style="color:#fff">주요 세션 소개</h3>
+        <div class="main_speaker_container">
+            <div class="main_speaker_wrap">
+                <div class="main_speaker_header speaker_1">Plenary Lecture</div>
+                <div>
+                    <img src="/main/img/2024_img_speakers01.png"/>
+                </div>
+                <div class="main_speaker_box speaker_1_box">
+                    <h3><span class="bold">이관우</span>(아주의대)</h3>
+                </div>
+                <div class="main_speaker_box speaker_1_box">
+                    <h6>3월 9일(토) 12:40 - 13:20<br/><span class="bold">Room 1</span></h6>
+                </div>
+                <div class="main_speaker_box speaker_1_box">
+                    <p>Obesity and<br/>Insulin Resistance</p>
+                </div>
+            </div>
+            <div class="main_speaker_wrap">
+                <div class="main_speaker_header">Keynote Lecture 1</div>
+                <div>
+                    <img src="/main/img/2024_img_speakers02.png"/>
+                </div>
+                <div class="main_speaker_box">
+                    <h3><span class="bold">김경곤</span>(가천의대)</h3>
+                </div>
+                <div class="main_speaker_box">
+                    <h6>3월 9일(토) 15:40 - 16:10<br/><span class="bold">Room 1</span></h6>
+                </div>
+                <div class="main_speaker_box">
+                    <p>Serotonin and<br/>Metabolism</p>
+                </div>
+            </div>
+            <div class="main_speaker_wrap">
+                <div class="main_speaker_header">Keynote Lecture 2</div>
+                <div>
+                    <img src="/main/img/2024_img_speakers03.png"/>
+                </div>
+                <div class="main_speaker_box">
+                    <h3><span class="bold">김은미</span>(강북삼성병원)</h3>
+                </div>
+                <div class="main_speaker_box">
+                    <h6>3월 9일(토) 15:40 - 16:10<br/><span class="bold">Room 2</span></h6>
+                </div>
+                <div class="main_speaker_box">
+                    <p>The Keys to Successful<br/>Nutrition Therapy for<br/>Persons with Obesity or<br/>Overweight</p>
+                </div>
+            </div>
         </div>
     </div>
 </div> 
