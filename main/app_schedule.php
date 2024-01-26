@@ -95,7 +95,7 @@ foreach($program_list as $pl){
 	<div class="app_title_box">
 		<h2 class="app_title">
 			즐겨찾기
-			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="contents_box">
@@ -200,7 +200,7 @@ foreach($program_list as $pl){
                 }
                 ?>
 			</ul>
-			<a href="javascript:;" class="grade_title purple_bg">Day 2 / 3월 9일(토)</a>
+			<a href="javascript:;" class="grade_title orange_bg">Day 2 / 3월 9일(토)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){

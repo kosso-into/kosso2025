@@ -8,7 +8,7 @@
 		<h2 class="app_title">
 			Sponsorship
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='javascript:;';">
-				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
+				<img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
 		<ul class="app_menu_tab langth_2">

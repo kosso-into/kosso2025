@@ -25,7 +25,7 @@
     if(!empty($session_user) && $session_app_type == 'N') {
 ?>
 	<div class="app_title_box">
-		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button></h2>
 		<ul class="app_menu_tab langth_2">
 			<li class="on"><a href="./sponsor.php">Sponsorship</a></li>
 			<li><a href="./sponsor_exhibition.php">Exhibition</a></li>

@@ -536,19 +536,19 @@ section.container.organizing {padding-bottom: 190px;}
 .m_nav_btn img{height:100%;}
 .m_nav_wrap{position:fixed;text-align:center;left:-100%;top:0;width:100%;height:100%;background:rgba(88,88,88,0.9);z-index:99999;transition:left 0.3s;}
 .m_nav_wrap.opened{left:0;}
-.m_nav_ul a, .m_nav_ul a span{color:#000;}
+.m_nav_ul a, .m_nav_ul a span{color:#FFF;}
 .m_sub_nav{display:none;}
-.m_nav{width:100%;display: block; background: linear-gradient(-90deg, #fffff5 60%, #ffff99 60%); height: 100vh; overflow: hidden;}
+.m_nav{width:100%;display: block; background: linear-gradient(-90deg, #E6F5FC 60%, #13467B 60%); height: 100vh; overflow: hidden;}
 .m_nav_ul {width: 100%; padding-top: 30px;}
 .m_nav_ul>li>a{display:block;width:100%;padding:24px 22px;/*border-bottom:1px solid #F7F7F7;*/}
 .m_nav_ul>li>a span{font-size:18px;font-weight:bold; white-space:nowrap;}
 .m_nav_ul > li:first-child > a span{font-weight:800;}
 .m_nav_wrap .toggle_wrap{margin-top:30px;margin-left:10px;}
 /*.m_nav_li a.show img{transform:rotate(180deg);}*/
-.m_nav_li:hover > a{background: #013366; color:#FFF!important;}
-.m_nav_li > a.show {background: #013366; color:#FFF!important;}
-.m_nav_li:hover > a > span{background: #013366; color:#FFF!important;}
-.m_nav_li > a.show > span{background: #013366; color:#FFF!important;}
+.m_nav_li:hover > a{background: #59BCC4; color:#FFF!important;}
+.m_nav_li > a.show {background: #59BCC4;color:#FFF!important;}
+.m_nav_li:hover > a > span{background: #59BCC4; color:#FFF!important;}
+.m_nav_li > a.show > span{background: #59BCC4; color:#FFF!important;}
 
 .m_nav_li {width: 40%;/*background:#000066;*/}
 .m_sub_nav a{font-size:18px;padding:12px 0; color:#000; letter-spacing:0px;}
@@ -597,7 +597,7 @@ section.container.organizing {padding-bottom: 190px;}
 .green_bg {background-color:#D8F5BB !important;}
 .purple_bg {background-color:rgba(181,178,255,0.3) !important;}
 .blue_bg {background-color:#00b0f0 !important;}
-.navy_bg{background-color:#013366!important; color: #fff!important;}
+.navy_bg{background-color:#13467B !important; color: #fff!important;}
 .dark_gray_bg{background-color:#dcdcdc;}
 .light_orange_bg {background-color:#FFEDD5 !important;}
 /*230705 HUBDNC AJY 추가*/
@@ -642,9 +642,9 @@ section.container.organizing {padding-bottom: 190px;}
 /* 230511 HUBDNCLHJ ******* 작업 */
 .long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; background-color: #0499CC; width: 100%; max-width: 400px;}
 .long_btn.type2 {font-size: 18px; border-radius: 99px; height: auto; }
-section.container .page_title {background-image:url('../img/sub_header.png'); width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 48px 0;color: #FFF; background-size:cover;}
+section.container .page_title {background-image:url('../img/2024_sub_header.png'); width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 48px 0;color: #FFF; background-size:cover;background-position: center;}
 .inner {padding-top:50px;}
-h3.title:before {content:'';display: inline-block;  width: 6px;height: 6px; background: transparent; border:5px solid #f9c015; margin-bottom: 2px; margin-right: 10px; vertical-align: middle;}
+h3.title:before {content:'';display: inline-block;  width: 9px;height: 9px; background: transparent; border:7px solid #0499CC; margin-bottom: 2px; margin-right: 10px; vertical-align: middle;border-radius: 50%;}
 h3.title.icon_none {padding-left:0;}
 h3.title.icon_none:before {display:none;}
 section.container.login .page_title {color:#fff; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
@@ -1463,7 +1463,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	23.06.13 APP CSS
 ==========================*/
 /* program detail */
-.invited_tag {font-size:11px; border-radius:8px; color:#fff; /* margin-left:8px; */ line-height:15px; padding:2px 6px 2px 24px; background:#336666 url("../img/icons/icon_invited_btn.svg") no-repeat center left 6px /12px;}
+.invited_tag {font-size:11px; border-radius:8px; color:#000; /* margin-left:8px; */ line-height:15px; padding:2px 6px 2px 24px; background:#F2B90F url("../img/icons/2024_icon_invited_btn.svg") no-repeat center left 6px /12px;}
 
 
 .indent_ul{
@@ -1944,3 +1944,85 @@ input[type='date']::before {
 	}
 }
 
+/* index_view 주요 세션 소개 */
+.main_speaker_container{
+	width: 100%;
+	display: flex;
+	align-items: start;
+	justify-content: space-around;
+}
+
+.main_speaker_container > .main_speaker_wrap{
+	width: 220px;
+}
+.main_speaker_container > .main_speaker_wrap img{
+	width: 100%;
+}
+.main_speaker_container > .main_speaker_wrap > .main_speaker_header{
+	width: 215px;
+	height: 29px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-size: 19px;
+	font-weight: 700;
+	background-color: #59BCC4;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+.main_speaker_container > .main_speaker_wrap > .speaker_1{
+	background-color: #007CBB;
+}
+.main_speaker_container > .main_speaker_wrap > .main_speaker_box{
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #59BCC4;
+	padding: 8px 0;
+}
+.main_speaker_container > .main_speaker_wrap > .main_speaker_box:last-child{
+	border-bottom: 0;
+}
+
+.main_speaker_container > .main_speaker_wrap > .speaker_1_box{
+	border-bottom: 1px solid #007CBB;
+}
+.main_speaker_container > .main_speaker_wrap > .main_speaker_box > h3, .main_speaker_container > .main_speaker_wrap > .main_speaker_box > h3 > span{
+	font-size: 23px;
+	line-height: 1.8;
+	color: #FFF;
+}
+
+.main_speaker_container > .main_speaker_wrap > .main_speaker_box > h6, .main_speaker_container > .main_speaker_wrap > .main_speaker_box > h6 > span {
+	color: #FFF;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+.main_speaker_container > .main_speaker_wrap > .main_speaker_box > p{
+	font-size: 18px;
+	font-weight: 600;
+	color: #59BCC4;
+	line-height: 1.4;
+}
+
+.main_speaker_container > .main_speaker_wrap > .speaker_1_box > p{
+	color: #007CBB;
+}
+
+@media screen and (max-width:750px) {
+	.main_speaker_container{
+		flex-direction: column;
+		justify-content: center;
+    	align-items: center;
+		gap: 40px;
+	}
+}
+
+.ft_inner > .app_footer_img{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+}

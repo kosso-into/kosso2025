@@ -30,7 +30,7 @@ $program_list = get_data($select_program_query);
 	<div class="app_title_box">
 		<h2 class="app_title">
 			오늘 프로그램
-			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="contents_box">
@@ -69,7 +69,7 @@ $program_list = get_data($select_program_query);
 			</ul>
 			<!-- 진행중인 세션 없을 시 화면 -->
 			<div class="no_data">
-				<img src="/main/img/icons/icon_alarm_clock2.svg" alt="">
+				<img src="/main/img/icons/2024_icon_alarm_clock2.svg" alt="">
 				<p>진행 중인 세션이<br>없습니다.</p>
 			</div>
             <?php

@@ -96,7 +96,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p> -->
                                                     <p class="font_20 bold">Plenary Lecture</p>
-                                                    <!-- <p><span class="bold">Chairperson : 최영길/김광원</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김광원</span>(가천의대)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -165,7 +165,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : 이규래</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 이규래</span> (가천의대)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -225,7 +225,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : 이문규</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김영설</span> (경희의대)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -296,7 +296,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">문석학술상</p>
-                                                    <!-- <p><span class="bold">Chairperson : 박철영</span> (TBD)</p> -->
+                                                    <!-- <p><span class="bold">좌장 : 박철영</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -366,7 +366,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">젊은연구자상</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -437,7 +437,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 1</p>
                                                     <!-- <p>
-                                                        <span class="bold">Chairpersons : 정창희</span> (TBD), <br>
+                                                        <span class="bold">좌장s : 정창희</span> (TBD), <br>
                                                         <span class="bold">고혜진</span> (TBD)
                                                     </p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
@@ -520,7 +520,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 2</p>
                                                     <!-- <p>
-                                                        <span class="bold">Chairpersons : 박정환</span> (TBD), <br><span
+                                                        <span class="bold">좌장s : 박정환</span> (TBD), <br><span
                                                             class="bold">남가은</span> (TBD)
                                                     </p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
@@ -614,7 +614,7 @@ echo '<script type="text/javascript">
                                                 <td> 
                                                     <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Pre-congress Symposium 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -676,7 +676,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Pre-congress Symposium 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -752,8 +752,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Symposium 1 : Treatment of Obesity - Here and Now</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 이창범</span> (TBD), <br><span
-                                                            class="bold">강지현</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김두만</span> (한림의대),<span
+                                                            class="bold">강지현</span> (건양의대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -806,7 +806,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">박정환</span>(한양의대),<br/>
+                                                                        <span class="bold">고혜진</span>(경북의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -831,16 +832,16 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Symposium 4 : Exploring the Interplay of Environment, Genetics, and Obesity</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 박혜순</span> (TBD), <br><span
-                                                            class="bold">김대중</span> (TBD)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <p><span class="bold">좌장 : 박혜순</span> (울산의대),<span
+                                                            class="bold">김대중</span> (아주의대)</p> 
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 배재현(고려의대), 조윤정(대구가톨릭의대)</p>
+                                                <!-- <p class="bold">Organizer: 배재현(고려의대), 조윤정(대구가톨릭의대)</p> -->
                                                     <ul>
-                                                        <li>비만은 다양한 요인들이 상호작용하여 발생하고 진행하는 복잡한 질환입니다. 본 세션에서는 환경, 유전 그리고 비만 간의 관계에 중점을 두어 살펴보고자 합니다. 먼저 고려의대의 이다영 교수는 하루 주기와 수면이 비만에 미치는 영향에 대해 발표할 것입니다. 국립암센터의 김현진 박사는 환경오염과 대사 질환의 관련성에 대해 고찰할 예정이며, 마지막으로 KAIST의 손종우 교수는 항정신병약물이 체중 변화에 미치는 영향과 이에 대한 치료 전략에 대해 발표할 것입니다.</li>
+                                                        <li>비만은 다양한 요인들이 상호작용하여 발생하고 진행하는 복잡한 질환입니다. 본 세션에서는 환경, 유전, 그리고 비만 간의 관계에 중점을 두어 살펴보고자 합니다. 먼저 고려의대의 이다영 교수는 하루 주기와 수면이 비만에 미치는 영향에 대해 발표할 것입니다. 국립암센터의 김현진 박사는 환경오염과 대사 질환의 관련성에 대해 고찰할 예정이며, 마지막으로 KAIST의 손종우 교수는 항정신병약물이 체중 변화에 미치는 영향과 이에 대한 치료 전략에 대해 발표할 것입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -880,7 +881,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">조윤정</span>(대구가톨릭의대),<br/>
+                                                                        <span class="bold">배재현</span>(고려의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -905,8 +907,9 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Symposium 7 : New Anti-obesity Drugs</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 김성수</span> (TBD), <br><span
-                                                            class="bold">권혁태</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김성수</span> (충남의대)
+                                                    <!-- , <br><span class="bold">권혁태</span> (TBD) -->
+                                                </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -956,7 +959,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">이승환</span>(가톨릭의대),<br/>
+                                                                        <span class="bold">김휘승</span>(중앙의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -981,8 +985,9 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Symposium 10 : Focus on Women's Health</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 김선미</span> (TBD), <br><span
-                                                            class="bold">황유철</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 이창현</span> (서울행복내과)
+                                                    <!-- , <br><span class="bold">황유철</span> (TBD) -->
+                                                </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1008,21 +1013,22 @@ echo '<script type="text/javascript">
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">Obesity as Disruptor of the Female Fertility</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">정선화</p>(압구정 두번째봄 산부인과)
+                                                                        <p class="bold">정선화</p>(두번째봄 산부인과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
                                                                     <td class="bold">Obesity and Polycystic Ovary Syndrome</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김진주</p>(서울대병원)
+                                                                        <p class="bold">김진주</p>(서울의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Childhood Obesity and Central Precocious Puberty
+</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">양아람</p>(성균관의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1031,7 +1037,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">오범조</span>(서울의대),<br/>
+                                                                        <span class="bold">이경애</span>(전북의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1061,8 +1068,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Symposium 2 : Targeting Molecular Pathways in Obesity: Insights from Recent Research</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 유순집</span> (TBD), <br><span
-                                                            class="bold">김기우</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : TBD</span> (TBD), <span
+                                                            class="bold">김기우</span> (연세치대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1111,7 +1118,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">송도경</span>(이화여대),<br>
+                                                                        <span class="bold">김형석</span>(충남의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1136,8 +1144,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Symposium 5 : Diverse Pathways in Regulation of Obesity and Related Diseases</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 김상용</span> (TBD), <br><span
-                                                            class="bold">손장원</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김상용</span> (조선의대), <span
+                                                            class="bold">조계원</span> (순천향의생명연구원)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1186,7 +1194,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">이현승</span>(충남의대),<br/>
+                                                                        <span class="bold">김민수</span>(KIST)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1212,8 +1221,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Symposium 8 : Metabolic Surgery(TBD)</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 한상문</span> (TBD), <br><span
-                                                            class="bold">김경곤</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 한상문</span> (서울의료원), <span
+                                                            class="bold">서영성</span> (계명의대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1289,8 +1298,8 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research
 +Digital Therapeutics in Obesity Management(TBD)</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 강재헌</span> (TBD), <br><span
-                                                            class="bold">이상열</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 강재헌</span> (성균관의대), <span
+                                                            class="bold">한경도</span> (숭실대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1369,8 +1378,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 3 : Ultra-processed Foods and Cardiometabolic Health</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 김은미</span> (TBD), <br><span
-                                                            class="bold">임정현</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 이기영</span> (가천의대), <span
+                                                            class="bold">김오연</span> (동아대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1403,7 +1412,7 @@ echo '<script type="text/javascript">
                                                                     <td>08:55-09:20</td>
                                                                     <td class="bold">Ultra-processed Food Consumption and Obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">심지선</p>(연세대)
+                                                                        <p class="bold">심지선</p>(연세의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1419,7 +1428,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">임현정</span>(경희대),<br>
+                                                                        <span class="bold">권유진</span>(연세의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1445,8 +1455,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 6 : Time Restricted Eating: What We Know & Where the Field is Going</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 이관우</span> (TBD), <br><span
-                                                            class="bold">강준구</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 임정현</span> (서울대병원), <span
+                                                            class="bold">김성훈</span> (미즈메디병원)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1477,7 +1487,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">Chrononutrition and TRE's Effect on Metabolic Health</td>
+                                                                    <td class="bold">Chrononutrition and Time-Restricted Eating's Effect on Metabolic Health</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">송윤주</p>(가톨릭대)
                                                                     </td>
@@ -1486,7 +1496,7 @@ echo '<script type="text/javascript">
                                                                     <td>11:00-11:25</td>
                                                                     <td class="bold">Time-Restricted Eating-Integrating the What with the When</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이연희</p>(아주대학교병원)
+                                                                        <p class="bold">이연희</p>(아주대병원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1495,7 +1505,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">권혁태</span>(서울의대),<br>
+                                                                        <span class="bold">송수진</span>(한남대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1521,8 +1532,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 9: Obesogens & Obesogenic environment in pediatric obesity (TBD)</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 이기형 or 정소정 </span> (TBD), <br><span
-                                                            class="bold">홍용희</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 이기형</span> (고려의대), <span
+                                                            class="bold">정소정</span> (건국의대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1546,16 +1557,16 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Causal links Between Chemical Exposures and Obesity in Childhood and Adolescence</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김신혜</p>(인제의대)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">Causal links Between Chemical Exposures and Obesity in Childhood and Adolescence</td>
+                                                                    <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김신혜</p>(상계백병원 소아청소년과)
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1571,7 +1582,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">홍용희</span>(순천향의대),<br>
+                                                                        <span class="bold">김재현</span>(서울의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1597,17 +1609,17 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 12 : Effects of Exercise and Nutrition on Obesity-related Cardiometabolic Dysfunction</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 신윤아</span> (TBD), <br><span
-                                                            class="bold">김종희</span> (TBD)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <p><span class="bold">좌장 : 신윤아</span> (단국대), <span
+                                                            class="bold">이세원</span> (인천대)</p>
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 이세원, 이민철, 김일영</p>
+                                                <!-- <p class="bold">Organizer: 이세원, 이민철, 김일영</p> -->
                                                     <ul>
-                                                        <li>(Symposium 12 Detail)</li>
-                                                        <li>(Symposium 12 Detail)</li>
+                                                        <li>비만은 다양한 대사 및 심혈관계 질환과 밀접한 관련이 있습니다. 이를 극복하기 위해 운동과 영양이 중요한 역할을 하며 많은 연구들이 수행되고 있습니다. 본 세션에서는 기전 및 임상 연구 등을 바탕으로 비만을 포함한 대사 및 심•뇌혈관계 질환에 대한 운동의 역할에 대한 최신 지견을 논의할 예정입니다. 
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1647,7 +1659,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <span class="bold">이민철</span>(차의대),<br/>
+                                                                        <span class="bold">문효열</span>(서울대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1683,8 +1696,9 @@ echo '<script type="text/javascript">
                                                 <td>18:30-19:00</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Satellite Symposium 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <p class="font_20 bold">Satellite Symposium</p>
+                                                    <p><span class="bold">좌장 : 김종화</span> (부천세종병원),
+                                                    <span class="bold">김정환</span> (을지의대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1708,57 +1722,6 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:30-19:00</td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="satellite_symposium_2">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="sky_bg">
-                                                <td>19:10-19:40</td>
-                                                <td>
-                                                    <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Satellite Symposium 2 Detail)</li>
-                                                        <li>(Satellite Symposium 2 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>19:10-19:40</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
@@ -1799,7 +1762,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Breakfast Symposium 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : 오승준</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 오승준</span> (경희의대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1824,9 +1787,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Effectiveness and Safety of SGLT2i+DPP4i FDC combination therapy in HbA1c and Weight on T2DM patients</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">류영상</p>(조선의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1855,7 +1818,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Breakfast Symposium 2</p> 
-                                                    <!-- <p><span class="bold">Chairperson : 김용성</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김용성</span> (대자인병원)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1911,7 +1874,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
-                                                    <!-- <p><span class="bold">Chairperson : 김경수</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김경수</span> (가톨릭의대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1974,7 +1937,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 이문규</span> (을지의대)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>
@@ -2000,9 +1963,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>11:40-12:40</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The Past, Present and Future of Obesity Treatment Paradigm - GLP-1 Heritage</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">권혁상</p>(가톨릭의대)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2031,7 +1994,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 유형준</span> (CM병원)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -2086,8 +2049,8 @@ echo '<script type="text/javascript">
                                                 <td>11:40-12:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Luncheon Symposium 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : TBD</span> (TBD)</p> -->
+                                                    <p class="font_20 bold">Luncheon Symposium 3</p>
+                                                    <p><span class="bold">좌장 : 신현호</span> (아산충무병원)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
