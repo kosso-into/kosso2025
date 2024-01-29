@@ -801,7 +801,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">박정환</span>(한양의대),<br/>
+                                                                        <span class="bold">박정환</span>(한양의대)<br/>
                                                                         <span class="bold">고혜진</span>(경북의대)
                                                                     </td>
                                                                 </tr>
@@ -876,7 +876,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">조윤정</span>(대구가톨릭의대),<br/>
+                                                                        <span class="bold">조윤정</span>(대구가톨릭의대)<br/>
                                                                         <span class="bold">배재현</span>(고려의대)
                                                                     </td>
                                                                 </tr>
@@ -954,7 +954,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이승환</span>(가톨릭의대),<br/>
+                                                                        <span class="bold">이승환</span>(가톨릭의대)<br/>
                                                                         <span class="bold">김휘승</span>(중앙의대)
                                                                     </td>
                                                                 </tr>
@@ -1031,7 +1031,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">오범조</span>(서울의대),<br/>
+                                                                        <span class="bold">오범조</span>(서울의대)<br/>
                                                                         <span class="bold">이경애</span>(전북의대)
                                                                     </td>
                                                                 </tr>
@@ -1112,7 +1112,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">송도경</span>(이화여대),<br>
+                                                                        <span class="bold">송도경</span>(이화여대)<br>
                                                                         <span class="bold">김형석</span>(충남의대)
                                                                     </td>
                                                                 </tr>
@@ -1188,7 +1188,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이현승</span>(충남의대),<br/>
+                                                                        <span class="bold">이현승</span>(충남의대)<br/>
                                                                         <span class="bold">김민수</span>(KIST)
                                                                     </td>
                                                                 </tr>
@@ -1421,7 +1421,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">임현정</span>(경희대),<br>
+                                                                        <span class="bold">임현정</span>(경희대)<br>
                                                                         <span class="bold">권유진</span>(연세의대)
                                                                     </td>
                                                                 </tr>
@@ -1498,7 +1498,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">권혁태</span>(서울의대),<br>
+                                                                        <span class="bold">권혁태</span>(서울의대)<br>
                                                                         <span class="bold">송수진</span>(한남대)
                                                                     </td>
                                                                 </tr>
@@ -1575,7 +1575,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">홍용희</span>(순천향의대),<br>
+                                                                        <span class="bold">홍용희</span>(순천향의대)<br>
                                                                         <span class="bold">김재현</span>(서울의대)
                                                                     </td>
                                                                 </tr>
@@ -1651,7 +1651,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이민철</span>(차의대),<br/>
+                                                                        <span class="bold">이민철</span>(차의대)<br/>
                                                                         <span class="bold">문효열</span>(서울대)
                                                                     </td>
                                                                 </tr>
