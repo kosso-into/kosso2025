@@ -63,11 +63,11 @@ echo '<script type="text/javascript">
         <ul class="tab_li">
             <li id="plenary_lecture" class="on"><a href="javascript:;">Plenary Lecture</a></li>
             <li id="keynote_lecture"><a href="javascript:;">Keynote Lecture</a></li>
-            <li id="special_lecture_1"><a href="javascript:;">문석학술상</a></li>
-            <li id="special_lecture_2"><a href="javascript:;">젊은연구자상</a></li>
-            <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
-            <li id="pre_congress_symposium"><a href="javascript:;">Pre-congress Symposium</a></li>
+            <li id="special_lecture_1"><a href="javascript:;">Award Lecture</a></li>
+            <li id="special_lecture_2"><a href="javascript:;">Scientific Session</a></li>
+            <li id="pre_congress_symposium"><a href="javascript:;">Committee Session</a></li>
             <li id="symposium"><a href="javascript:;">Symposium</a></li>
+            <li id="oral_presentation"><a href="javascript:;">Oral Presentation</a></li>
             <li id="satellite_symposium"><a href="javascript:;">Satellite Symposium</a></li>
             <li id="breakfast_symposium"><a href="javascript:;">Breakfast Symposium</a></li>
             <li id="luncheon_symposium"><a href="javascript:;">Luncheon Lecture</a></li>
@@ -103,8 +103,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
                                                     <ul>
-                                                        <li>금번 Plenary Lecture에서 이관우 교수는 지속 연구로 진행해오고 있는 비만, 인슐린 저항성의 발병 원인 규명, 항비만 물질 및 인슐린 저항성 억제제 관련된 연구를 주제로 강연할 예정입니다. 임상 연구로는 비만 환자의 효과적인 비만 치료에 대한 다기관 임상 연구 중심으로, 기초 연구로는 근육세포 및 혈관 세포에서 지방 독성 기작을 분자 세포생물학적으로 밝히고 병증을 억제하는 그동안의 연구결과를 중심으로, 실제로 성공적인 항비만 물질, 인슐린 저항성 억제제, 그리고 인슐린 저항성과 연관된 근감소증에 대하여 시행해온 연구 결과들을 바탕으로 강의할 예정입니다. 
-</li>
+                                                        <li>금번 Plenary Lecture에서 이관우 교수는 지속 연구로 진행해오고 있는 비만, 인슐린 저항성의 발병 원인 규명, 항비만 물질 및 인슐린 저항성 억제제 관련된 연구를 주제로 강연할 예정입니다. 임상 연구로는 비만 환자의 효과적인 비만 치료에 대한 다기관 임상 연구 중심으로, 기초 연구로는 근육세포 및 혈관 세포에서 지방 독성 기작을 분자 세포생물학적으로 밝히고 병증을 억제하는 그동안의 연구결과를 중심으로, 실제로 성공적인 항비만 물질, 인슐린 저항성 억제제, 그리고 인슐린 저항성과 연관된 근감소증에 대하여 시행해온 연구 결과들을 바탕으로 강의할 예정입니다. </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -172,8 +171,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
                                                     <ul>
-                                                        <li>최근 비만 치료는 비록 여러 가지 장 호르몬에 기반을 둔 펩타이드들에 대다수 사람들의 관심이 모아지고 있지만, 오래전부터 비만 치료에 세로토닌은 중추적인 역할을 해 왔고 세로토닌을 기반으로 한 약제들이 비만 치료에 사용되었던 적도 있었습니다. 본 세션에서는 체내에서 세로토닌의 다양한 역할을 에너지 대사 측면에서 살펴보고 세로토닌의 대사질환 치료제로서의 가능성을 살펴보고자 합니다.
-</li>
+                                                        <li>최근 비만 치료는 비록 여러 가지 장 호르몬에 기반을 둔 펩타이드들에 대다수 사람들의 관심이 모아지고 있지만, 오래전부터 비만 치료에 세로토닌은 중추적인 역할을 해 왔고 세로토닌을 기반으로 한 약제들이 비만 치료에 사용되었던 적도 있었습니다. 본 세션에서는 체내에서 세로토닌의 다양한 역할을 에너지 대사 측면에서 살펴보고 세로토닌의 대사질환 치료제로서의 가능성을 살펴보고자 합니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -232,8 +230,7 @@ echo '<script type="text/javascript">
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
                                                     <ul>
-                                                        <li>성공적인 비만치료를 위해서는 다양한 치료적 접근이 필요하며, 영양치료는 비만치료에서 핵심적인 부분을 차지하고 있습니다. 영양치료와 관련하여 다양한 방법들이 시도되고 있고, 이와 관련된 연구 결과들이 보고되고 있습니다. 비만치료의 성공률이 높지 않은 현실에서, 성공적인 영양치료를 위해 고려해야 할 사항들을 살펴보고자 합니다.
-</li>
+                                                        <li>성공적인 비만치료를 위해서는 다양한 치료적 접근이 필요하며, 영양치료는 비만치료에서 핵심적인 부분을 차지하고 있습니다. 영양치료와 관련하여 다양한 방법들이 시도되고 있고, 이와 관련된 연구 결과들이 보고되고 있습니다. 비만치료의 성공률이 높지 않은 현실에서, 성공적인 영양치료를 위해 고려해야 할 사항들을 살펴보고자 합니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -275,7 +272,7 @@ echo '<script type="text/javascript">
                     </div>
 
                         
-            <!-- 문석학술상 -->
+            <!-- Award Lecture -->
             
             <div class="tab_cont">
                 <ul class="program_detail_ul">
@@ -342,13 +339,6 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                         </li>
-                </ul>
-            </div>
-     
-                 <!-- 젊은연구자상-->
-            
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
                             <li name="special_lecture_2">
                                 <div class="program_header">
                                     <p class="font_16 bold">ROOM 3</p>
@@ -413,191 +403,13 @@ echo '<script type="text/javascript">
                                 </div>
                             </li>
                         </ul>
-                    </div>
-
-                                <!-- Oral Presentation -->
-
+            </div>
+     
+                 <!-- Scientific Session -->
+            
                     <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                        <li name="oral_presentation_1">
-                                <div class="program_header">
-                                    <p class="font_16 bold">ROOM 4</p>
-                                    <span class="font_16 bold">3월 9일(토)</span>
-                                </div>
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_orange_bg">
-                                                <td>08:30-10:00</td>
-                                                <td>
-                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
-                                                    <p class="font_20 bold">Oral Presentation 1</p>
-                                                    <!-- <p>
-                                                        <span class="bold">좌장s : 정창희</span> (TBD), <br>
-                                                        <span class="bold">고혜진</span> (TBD)
-                                                    </p> -->
-                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Oral Presentation 1 Detail)</li>
-                                                        <li>(Oral Presentation 1 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr> -->
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                            <li name="oral_presentation_2">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_orange_bg">
-                                                <td>10:10-11:40</td>
-                                                <td>
-                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
-                                                    <p class="font_20 bold">Oral Presentation 2</p>
-                                                    <!-- <p>
-                                                        <span class="bold">좌장s : 박정환</span> (TBD), <br><span
-                                                            class="bold">남가은</span> (TBD)
-                                                    </p> -->
-                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Oral Presentation 1 Detail)</li>
-                                                        <li>(Oral Presentation 1 Detail)</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="on">
-                                                    <div>
-                                                        <table class="c_table detail_table padding_0">
-                                                            <colgroup>
-                                                                <col class="col_date">
-                                                                <col>
-                                                            </colgroup>
-                                                            <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
-                                                                    </td>
-                                                                </tr> -->
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                  
-
-            <!-- Pre-congress Symposium -->
-
-            <div class="tab_cont">
-                        <ul class="program_detail_ul">
-                            <li name="pre_congress_symposium_1">
+                    <ul class="program_detail_ul">
+                        <li name="special_lecture_1">
                                 <div class="program_header">
                                     <p class="font_16 bold">ROOM 1</p>
                                     <span class="font_16 bold">3월 8일(금)</span>
@@ -609,26 +421,22 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="purple_bg">
-                                                <td>14:50-16:20</td>
-                                                <td> 
-                                                    <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Pre-congress Symposium 1</p>
-                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                            <tr class="light_orange_bg">
+                                                <td>15:00-16:30</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Scientific Sesstion 1</p>
+                                                    <!-- <p><span class="bold">좌장 : 박철영</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD)</p>
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
                                                     <ul>
-                                                        <li>(Keynote Lecture 1 Detail)</li>
-                                                        <li>(Keynote Lecture 1 Detail)</li>
-                                                        <li>
-                                                            <span class="font_inherit bold">• 참고자료</span><br />
-                                                            1.TBD<br />
-                                                            2.TBD
-                                                        </li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -643,10 +451,70 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <!-- <tr>
                                                                     <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>
-                                                                        (TBD)
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr> -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </li>
+                            <li name="special_lecture_2">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_orange_bg">
+                                                <td>16:40-18:10</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Scientific Sesstion 2</p>
+                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -663,7 +531,18 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="pre_congress_symposium_2">
+                        </ul>
+                    </div>
+
+                     <!-- Committee Session -->
+            
+                     <div class="tab_cont">
+                     <ul class="program_detail_ul">
+                        <li name="special_lecture_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">ROOM 3</p>
+                                    <span class="font_16 bold">3월 8일(금)</span>
+                                </div>
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -671,25 +550,22 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="purple_bg">
-                                                <td>16:30-18:05</td>
+                                            <tr class="light_orange_bg">
+                                                <td>15:00-16:30</td>
                                                 <td>
-                                                    <!-- <p class="font_16 font_pink">2024.03.08. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Pre-congress Symposium 2</p>
-                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Committee Sesstion 1</p>
+                                                    <!-- <p><span class="bold">좌장 : 박철영</span> (TBD)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
                                                     <ul>
-                                                        <li>(Keynote Lecture 2 Detail)</li>
-                                                        <li>
-                                                            <span class="font_inherit bold">• 참고자료</span><br />
-                                                            1.TBD<br />
-                                                            2.TBD
-                                                        </li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -704,19 +580,139 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <!-- <tr>
                                                                     <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td></td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr> -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </li>
+                            <li name="special_lecture_2">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_orange_bg">
+                                                <td>16:40-18:10</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Committee Sesstion 2</p>
+                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                                    <td></td>
                                                                     <td class="bold">
-                                                                        Q&A
+                                                                        TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">TBD</p>(TBD)
                                                                     </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr> -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="special_lecture_2">
+                            <div class="program_header">
+                                    <p class="font_16 bold">ROOM 2</p>
+                                    <span class="font_16 bold">3월 8일(금)</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_orange_bg">
+                                                <td>16:40-18:10</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Committee Sesstion 3</p>
+                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                        <li>(Plenary Lecture Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
                                                                 </tr> -->
                                                             </tbody>
                                                         </table>
@@ -730,10 +726,8 @@ echo '<script type="text/javascript">
                         </ul>
                     </div>
 
-                   
-            <!-- Symposium -->
-
-            <div class="tab_cont">
+                    <!-- Symposium -->
+                    <div class="tab_cont">
                         <ul class="program_detail_ul">
                             <li name="symposium_1">
                                 <div class="program_header">
@@ -1025,8 +1019,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">Childhood Obesity and Central Precocious Puberty
-</td>
+                                                                    <td class="bold">Childhood Obesity and Central Precocious Puberty</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">양아람</p>(성균관의대)
                                                                     </td>
@@ -1296,8 +1289,7 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research
-+Digital Therapeutics in Obesity Management(TBD)</p>
+                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management(TBD)</p>
                                                     <p><span class="bold">좌장 : 강재헌</span> (성균관의대), <span
                                                             class="bold">한경도</span> (숭실대)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
@@ -1618,8 +1610,7 @@ echo '<script type="text/javascript">
                                                 <td colspan="2" class="program_detail_td">
                                                 <!-- <p class="bold">Organizer: 이세원, 이민철, 김일영</p> -->
                                                     <ul>
-                                                        <li>비만은 다양한 대사 및 심혈관계 질환과 밀접한 관련이 있습니다. 이를 극복하기 위해 운동과 영양이 중요한 역할을 하며 많은 연구들이 수행되고 있습니다. 본 세션에서는 기전 및 임상 연구 등을 바탕으로 비만을 포함한 대사 및 심•뇌혈관계 질환에 대한 운동의 역할에 대한 최신 지견을 논의할 예정입니다. 
-</li>
+                                                        <li>비만은 다양한 대사 및 심혈관계 질환과 밀접한 관련이 있습니다. 이를 극복하기 위해 운동과 영양이 중요한 역할을 하며 많은 연구들이 수행되고 있습니다. 본 세션에서는 기전 및 임상 연구 등을 바탕으로 비만을 포함한 대사 및 심•뇌혈관계 질환에 대한 운동의 역할에 대한 최신 지견을 논의할 예정입니다. </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1675,8 +1666,185 @@ echo '<script type="text/javascript">
                         </ul>
                     </div>
 
+                    <!-- Oral Presentation -->
 
-            <!-- Satellite Symposium -->
+                    <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                        <li name="oral_presentation_1">
+                                <div class="program_header">
+                                    <p class="font_16 bold">ROOM 4</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="purple_bg">
+                                                <td>08:30-10:00</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
+                                                    <p class="font_20 bold">Oral Presentation 1</p>
+                                                    <!-- <p>
+                                                        <span class="bold">좌장s : 정창희</span> (TBD), <br>
+                                                        <span class="bold">고혜진</span> (TBD)
+                                                    </p> -->
+                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Oral Presentation 1 Detail)</li>
+                                                        <li>(Oral Presentation 1 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr> -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="oral_presentation_2">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="purple_bg">
+                                                <td>10:10-11:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
+                                                    <p class="font_20 bold">Oral Presentation 2</p>
+                                                    <!-- <p>
+                                                        <span class="bold">좌장s : 박정환</span> (TBD), <br><span
+                                                            class="bold">남가은</span> (TBD)
+                                                    </p> -->
+                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
+                                                    <ul>
+                                                        <li>(Oral Presentation 1 Detail)</li>
+                                                        <li>(Oral Presentation 1 Detail)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr> -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+           
+                    <!-- Satellite Symposium -->
 
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
@@ -1740,8 +1908,7 @@ echo '<script type="text/javascript">
                     </div>
 
 
-
-            <!-- Breakfast Symposium -->
+              <!-- Breakfast Symposium -->
 
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
