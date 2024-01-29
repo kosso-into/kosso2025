@@ -93,13 +93,18 @@
 						<tr>
 							<td>한국영양교육평가원 임상영양사 전문연수교육(CPD)</td>
 							<td>없음</td>
-                            <td>5평점</td>
+                            <td>5평점<span class="red_txt bold">(예정)</span></td>
 						</tr>
 						</tr>
 						<tr>
 							<td>대한운동사협회</td>
 							<td>없음</td>
 							<td>35평점</td>
+						</tr>
+						<tr>
+							<td>대한내과학회 분과전문의 자격갱신</td>
+							<td>최대 1평점</td>
+							<td>최대 1평점</td>
 						</tr>
 					</tbody>
 				</table>
