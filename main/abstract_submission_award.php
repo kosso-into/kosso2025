@@ -27,19 +27,9 @@
                     <div class="award_wrap">
                         <div class="award_inner">
                         <li>
-                            <!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
-                            <img src="./img/icons/ksso_award_1.png" alt="">
-                            <!-- <p class="award_title">최우수 구연 상</p> -->
-                            <!-- <p>4 persons</p> -->
-                            <!-- <p class="point3_txt">상금 : 300,000원</p> -->
+                            <img src="/main/img/KSSO_awards.png"/>
                         </li>
-                        <li>
-                            <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-                            <img src="./img/icons/ksso_award_2.png" alt="">
-                            <!-- <p class="award_title">우수 구연 상</p> -->
-                            <!-- <p>2 persons</p> -->
-                            <!-- <p class="point3_txt">상금 : 200,000원</p> -->
-                        </li>
+                      
                         </div>
                     </div>
                     <?php /*
