@@ -252,23 +252,23 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">07:30-08:20</div>
                                 </td>
-                                <td class="sky_bg pointer modal" name="breakfast_symposium_1" data-id="6">
+                                <td class="sky_bg pointer modal" name="breakfast_symposium_1" data-id="8">
                                     Breakfast<br />Symposium 1
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="breakfast_symposium">
-                                    <button class="more_btn" data-id="6"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="8"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="sky_bg pointer modal" name="breakfast_symposium_2" data-id="7">
+                                <td class="sky_bg pointer modal" name="breakfast_symposium_2" data-id="9">
                                     Breakfast<br />Symposium 2
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="breakfast_symposium">
-                                    <button class="more_btn" data-id="7"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="9"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="sky_bg pointer modal" name="breakfast_symposium_3" data-id="8">
+                                <td class="sky_bg pointer modal" name="breakfast_symposium_3" data-id="10">
                                     Breakfast<br />Symposium 3
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="breakfast_symposium">
-                                    <button class="more_btn" data-id="8"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="10"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
                                 <td rowspan="14" class="no_right_border light_orange_bg">Poster Exhibition</td>
@@ -284,27 +284,27 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">08:30-10:00</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_1" data-id="10">
+                                <td class="green_bg pointer modal" name="symposium_1" data-id="12">
                                     Symposium 1 <p>Treatment of Obesity <br>- Here and Now</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="10"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="12"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_2" data-id="11">
+                                <td class="green_bg pointer modal" name="symposium_2" data-id="13">
                                     Symposium 2 <p>Targeting Molecular Pathways in Obesity: Insights from Recent Research</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="11"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="13"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_3" data-id="12">
+                                <td class="green_bg pointer modal" name="symposium_3" data-id="14">
                                     Symposium 3 <p>Ultra-processed Foods and Cardiometabolic Health</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="12"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="14"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="oral_presentation_1" data-id="13">Oral Presentation 1
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_1" data-id="15">Oral Presentation 1
                                     <input type="hidden" name="category" value="oral_presentation">
-                                    <button class="more_btn" data-id="13"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="15"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 
                             </tr>
@@ -319,27 +319,27 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">10:10-11:40</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_4" data-id="14">
+                                <td class="green_bg pointer modal" name="symposium_4" data-id="16">
                                     Symposium 4 <p>Exploring the Interplay of Environment, Genetics, and Obesity</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="14"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="16"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_5" data-id="15">
+                                <td class="green_bg pointer modal" name="symposium_5" data-id="17">
                                     Symposium 5 <p>Diverse Pathways in Regulation of Obesity and Related Diseases</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="15"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="17"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_6" data-id="16">
+                                <td class="green_bg pointer modal" name="symposium_6" data-id="18">
                                     Symposium 6 <p>Time Restricted Eating: What We Know & Where the Field is Going</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="16"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="18"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="25">Oral Presentation 2
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="27">Oral Presentation 2
                                     <input type="hidden" name="category" value="oral_presentation">
-                                    <button class="more_btn" data-id="25"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="27"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                             </tr>
                              <!-- [240103] sujeong / luncheon room 2개 버전 -->
@@ -359,23 +359,23 @@ section.app_version .inner {
                                 <td rowspan="2">
                                     <div class="colons_div">11:40-12:40</div>
                                 </td>
-                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="17">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="19">
                                     Luncheon Lecture 1
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="luncheon_symposium">
-                                    <button class="more_btn" data-id="17"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="19"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_2" data-id="18">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_2" data-id="20">
                                     Luncheon Lecture 2
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="luncheon_symposium">
-                                    <button class="more_btn" data-id="18"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="20"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_3" data-id="19">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_3" data-id="21">
                                     Luncheon Lecture 3
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="luncheon_symposium">
-                                    <button class="more_btn" data-id="19"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="21"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
                             </tr>
@@ -392,14 +392,14 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">12:40-13:20</div>
                                 </td>
-                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture" data-id="20">
+                                <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture" data-id="22">
                                     Plenary Lecture<p>Obesity and Insulin Resistance</p>
                                     <!-- <p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable
                                         Isotope Tracers: More than 50 Years of Experience</p>
                                     <p>Robert R. Wolfe <br />(University of Arkansas for Medical Sciences, USA)</p> -->
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="plenary_lecture">
-                                    <button class="more_btn" data-id="20"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="22"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
                             </tr>
@@ -407,9 +407,9 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
-                                <td colspan="3" class="light_orange_bg pointer modal" name="special_lecture_1" data-id="21">문석학술상
+                                <td colspan="3" class="light_orange_bg pointer modal" name="special_lecture_1" data-id="23">문석학술상
                                     <input type="hidden" name="category" value="special_lecture_1">
-                                    <button class="more_btn" data-id="21"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="23"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                
                                 <td></td>
@@ -425,23 +425,23 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">14:00-15:30</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_7" data-id="22">
+                                <td class="green_bg pointer modal" name="symposium_7" data-id="24">
                                     Symposium 7 <p>New Anti-obesity Drugs</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="22"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="24"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_8" data-id="23">
+                                <td class="green_bg pointer modal" name="symposium_8" data-id="25">
                                     Symposium 8 <p>Metabolic Surgery</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="23"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="25"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_9" data-id="24">
+                                <td class="green_bg pointer modal" name="symposium_9" data-id="26">
                                     Symposium 9 <p>Obesogens & Obesogenic Environment in Pediatric Obesity</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="24"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="26"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                             <td></td>
                                 
@@ -457,23 +457,23 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">15:40-16:10</div>
                                 </td>
-                                <td class="pink_bg pointer modal" name="keynote_lecture_1" data-id="26">
+                                <td class="pink_bg pointer modal" name="keynote_lecture_1" data-id="28">
                                     Keynote lecture 1<p>Serotonin and Metabolism</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="keynote_lecture">
-                                    <button class="more_btn" data-id="26"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="28"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="27">
+                                <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="29">
                                     Keynote lecture 2<p>The Keys to Successful Nutrition Therapy for Persons with Obesity or Overweight</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="keynote_lecture">
-                                    <button class="more_btn" data-id="27"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="special_lecture_2" data-id="28">
+                                <td class="light_orange_bg pointer modal" name="special_lecture_2" data-id="30">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="special_lecture_2">
-                                    <button class="more_btn" data-id="28"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="30"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
                             </tr>
@@ -482,24 +482,24 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">16:10-17:40</div>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_10" data-id="29">
+                                <td class="green_bg pointer modal" name="symposium_10" data-id="31">
                                     Symposium 10<p>Focus on Women's Health</p>
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="31"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_11" data-id="30">
+                                <td class="green_bg pointer modal" name="symposium_11" data-id="32">
                                     Symposium 11 <p>Big Data in Obesity Research<br>
                                     +Digital Therapeutics in Obesity Management</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="30"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="32"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="green_bg pointer modal" name="symposium_12" data-id="31">
+                                <td class="green_bg pointer modal" name="symposium_12" data-id="33">
                                     Symposium 12 <p>Effects of Exercise and Nutrition on Obesity-related Cardiometabolic Dysfunction</p>
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="31"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
+                                    <button class="more_btn" data-id="33"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
                             </tr>
