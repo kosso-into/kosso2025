@@ -519,8 +519,8 @@ section.app_version .inner {
 				</div>
 
                 <!-- [231228]sujeong / chairperson 학회팀 요청 주석 -->
-				<div style="display: none;">
-					<p class="program_modal_chair">Chairperson</p>
+				<div>
+					<p class="program_modal_chair">좌장 : </p>
 					<div class="program_modal_person">
 					</div>
 				</div>
@@ -649,7 +649,7 @@ function writeModal(data){
         if(t.speaker){
 
              /**speaker가 한 명일 경우 */
-            if(!t.speaker?.includes(",") && t.contents_title !== "패널토의"){
+            if(!t.speaker?.includes(",")){
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
@@ -660,22 +660,12 @@ function writeModal(data){
                                     `
             }
             /**speaker가 여러 명일 경우 */
-            else if(t.speaker?.includes(",") && t.contents_title !== "패널토의"){
+            else if(t.speaker?.includes(",")){
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
                                         <div class="content_1 content_person">
                                             <p>${t.speaker}</p>
-                                        </div>
-                                    `
-            }
-              /**[231228] sujeong /학회팀 요청, 패널토의 경우 패널 공개 X */
-            else if(t.contents_title === "패널토의"){
-                contents.innerHTML =  `
-                                        <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
-                                        <div>${t.contents_title}</div>
-                                        <div class="content_1 content_person">
-                                            <p>TBD</p>
                                         </div>
                                     `
             }

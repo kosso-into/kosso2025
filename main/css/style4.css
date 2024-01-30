@@ -1533,7 +1533,7 @@ input[type='date']::before {
 .detail_modal .program_modal_chair{
 	font-size: 16px;
 	color: #990000;
-    font-style: italic;
+    line-height: 1.5;
     font-weight: 600;
 }
 
@@ -1581,7 +1581,7 @@ input[type='date']::before {
 
 .modal_sub_header > div:last-child {
 	display: grid;
-	grid-template-columns: 100px 1fr;
+	grid-template-columns: 48px 1fr;
 }
 
 
