@@ -93,7 +93,7 @@
 						<tr>
 							<td>한국영양교육평가원 임상영양사 전문연수교육(CPD)</td>
 							<td>없음</td>
-                            <td>5평점<span class="red_txt bold">(예정)</span></td>
+                            <td>5평점</td>
 						</tr>
 						</tr>
 						<tr>

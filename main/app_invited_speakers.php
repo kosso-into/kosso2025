@@ -66,8 +66,6 @@ SELECT DISTINCT
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '타' AND '팋' THEN 'ㅌ'
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '파' AND '핗' THEN 'ㅍ'
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '하' AND '힣' THEN 'ㅎ'
-				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'A' AND 'Z' THEN 'A-Z'
-				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'a' AND 'z' THEN 'A-Z'
 			ELSE NULL
 			END AS initial
 			FROM invited_speaker
