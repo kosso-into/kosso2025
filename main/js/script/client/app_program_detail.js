@@ -264,9 +264,9 @@ function createHTMLList(program_list, active){
         if(pl.chairpersons!= ""){
             var chairperson = "";
             if((pl.chairpersons.split(',').length-1)>=2){
-                chairperson = "Chairpersons: ";
+                chairperson = "좌장: ";
             } else {
-                chairperson = "Chairperson: "
+                chairperson = "좌장: "
             }
             chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
         }

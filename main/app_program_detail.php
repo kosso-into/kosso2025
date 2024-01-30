@@ -260,7 +260,8 @@ echo '<script type="text/javascript">
                             <!-- <option value="15" class="day2">Joint Symposium</option> -->
                             <!-- <option value="9" class="day2">Obesity Treatment Guidelines Symposium</option> -->
                             <!-- <option value="7" class="day3">Best Articles in JOMES</option> -->
-                            <option value="10" class="day1">Pre-congress Symposium</option>
+                            <option value="4" class="day1">Scientific Session</option>
+                            <option value="10" class="day1">Committee Session</option>
                             <option value="11" class="day2">Breakfast Symposium</option>
                             <option value="12" class="day2">Luncheon Symposium</option>
                             <option value="13" class="day1">Satellite Symposium</option>
