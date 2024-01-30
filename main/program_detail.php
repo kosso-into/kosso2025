@@ -551,7 +551,7 @@ echo '<script type="text/javascript">
                                                                     Paradigm Shift in Obesity Therapeutics : Where We Are and Where to Go?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">신민정</p>(고려대 바이오시스템의과학부/㈜메디엔진)
+                                                                        <p class="bold">신민정</p>(고려대 바이오시스템의과학부/<br/>㈜메디엔진)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
