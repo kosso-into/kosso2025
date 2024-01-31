@@ -22,8 +22,7 @@ $select_invited_speaker_query = "
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '타' AND '팋' THEN 'ㅌ'
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '파' AND '핗' THEN 'ㅍ'
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '하' AND '힣' THEN 'ㅎ'
-				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'A' AND 'Z' THEN 'A-Z'
-				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN 'a' AND 'z' THEN 'A-Z'
+				WHEN LEFT(first_name, 1) = 'J' THEN 'J'
 				ELSE NULL
 				END AS initial,
 				isp.idx,
@@ -66,18 +65,24 @@ SELECT DISTINCT
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '타' AND '팋' THEN 'ㅌ'
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '파' AND '핗' THEN 'ㅍ'
 				WHEN CAST(LEFT(first_name, 1) AS CHAR CHARACTER SET utf8mb4) BETWEEN '하' AND '힣' THEN 'ㅎ'
+				WHEN LEFT(first_name, 1) = 'J' THEN 'J'
 			ELSE NULL
 			END AS initial
 			FROM invited_speaker
 			WHERE is_deleted='N'
-			ORDER BY binary(initial) ASC;
+			ORDER BY
+				CASE 
+					WHEN initial BETWEEN 'ㄱ' AND 'ㅎ' THEN 1
+					ELSE 2
+				END,
+				binary(initial) ASC;
 ";
 						
 $initial_list = get_data($select_initial_query);
 ?>
 
 <!-- App - Invited Speakers 페이지 -->
-<section class="container app_version app_invited_speakers">
+<section class="container app_version app_invited_speakers" style="padding-bottom: 50px;">
 	<div class="app_title_box">
 		<h2 class="app_title">
 			초청 연자

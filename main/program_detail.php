@@ -224,7 +224,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
-                                                    <p><span class="bold">좌장 : 김영설</span>(경희의대 내분비대사내과)</p>
+                                                    <p><span class="bold">좌장 : 김영설</span>(경희의대 내분비내과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -530,7 +530,7 @@ echo '<script type="text/javascript">
                                                             <tr>
                                                                     <td>16:40-17:05</td>
                                                                     <td class="bold">
-                                                                    TBD
+                                                                    Differentiated Metabolic Effects of DA-1726, a Balanced GLP1R/GCGR Dual Agonist
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">채유나</p>(동아ST)
@@ -539,7 +539,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:05-17:30</td>
                                                                     <td class="bold">
-                                                                    TBD
+                                                                    PG-102, Next Generation GLP-1/GLP-2 Dual Agonist for the Treatment of Metabolic Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김종균</p>(프로젠)
@@ -817,14 +817,14 @@ echo '<script type="text/javascript">
                                                                </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">The Long and Winding Road: How long does it maintain the pharmacotherapy?</td>
+                                                                    <td class="bold">The Long and Winding Road: How Long does it Maintain the Pharmacotherapy?</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김진화</p>(조선의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">The beneficial effect of SGLT2i and Phentermine-topiramate FDC Combination Therapy</td>
+                                                                    <td class="bold">The Beneficial Effect of SGLT2i and Phentermine-topiramate FDC Combination Therapy</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">홍준화</p>(을지의대 내분비내과)
                                                                     </td>
@@ -1126,7 +1126,7 @@ of Immune-metabolic Response</td>
                                                                     <td>08:55-09:20</td>
                                                                     <td class="bold">Therapeutic Strategy for Obesity Based on p62-mediated Lipophagy</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">박주원</p>(이화여대)
+                                                                        <p class="bold">박주원</p>(이화의대 생화학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1194,21 +1194,21 @@ of Immune-metabolic Response</td>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">The Significance of Ascorbic Acid in Regulating Thermogenesis and Energy Metabolism</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이봉기</p>(부경대)
+                                                                        <p class="bold">이봉기</p>(부경대 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
                                                                     <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">허진영</p>(서강대)
+                                                                        <p class="bold">허진영</p>(서강대 생명과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
                                                                     <td class="bold">How Diets Regulate MASH Development. Casp2-S1P: The New Hepatic Lipid Regulator</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김주연</p>(한양대)
+                                                                        <p class="bold">김주연</p>(한양대 의약생명과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1217,7 +1217,7 @@ of Immune-metabolic Response</td>
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이현승</span>(충남의대)<br/>
+                                                                        <span class="bold">이현승</span>(충남의대 내분비대사내과)<br/>
                                                                         <span class="bold">김민수</span>(KIST)
                                                                     </td>
                                                                 </tr>
@@ -1268,7 +1268,7 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
-                                                                    <td class="bold">Pre and post-operative management of hypertension and cardiovascular disease</td>
+                                                                    <td class="bold">Pre and Post-operative Management of Hypertension and Cardiovascular Disease</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김경희</p>(세종병원 심장내과)
                                                                     </td>
@@ -1358,7 +1358,7 @@ of Immune-metabolic Response</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">Obesity research using data from the National Health Insurance Service</td>
+                                                                    <td class="bold">Obesity Research using Data from the National Health Insurance Service</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">정진형</p>(성균관의대)
                                                                     </td>
@@ -1426,21 +1426,21 @@ of Immune-metabolic Response</td>
                                                                     <td>08:30-08:55</td>
                                                                     <td class="bold">Estimation of Ultra-processed Food Intake among Korean Adults</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">박소현</p>(한림대)
+                                                                        <p class="bold">박소현</p>(한림대 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
                                                                     <td class="bold">Ultra-processed Food Consumption and Obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">심지선</p>(연세대)
+                                                                        <p class="bold">심지선</p>(연세의대 예방의학교실)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">Serum Metabolomic Signatures of Ultra-processed Food Consumption and Cancer-related Hormones</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이상아</p>(강원대)
+                                                                        <p class="bold">이상아</p>(강원의대 예방의학교실)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1913,14 +1913,14 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:30-19:00</td>
-                                                                    <td class="bold">Statin for Primary Prevention in elderly Patients</td>
+                                                                    <td class="bold">Statin for Primary Prevention in Elderly Patients</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이상열</p>(경희의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>19:00-19:30</td>
-                                                                    <td class="bold">Empagliflozin, Expanding horizons for the treatment of CRM</td>
+                                                                    <td class="bold">Empagliflozin, Expanding Horizons for the Treatment of CRM</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">양여리</p>(가톨릭의대 내분비내과)
                                                                     </td>

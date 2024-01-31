@@ -1615,19 +1615,19 @@ input[type='date']::before {
 }
 
 .modal_container > .content_container > .content > .content_person > b{
-	color: #000;
+	color: #fff;
 	font-weight: 700;
 	line-height: 2;
 	font-size: 16px;
 }
 .modal_container > .content_container > .content > .content_person > p{
-	color: #000;
+	color: #fff;
 	font-size: 14px;
 }
 
 .modal_container > .content_container > .content > .content_person{
 	/* background-color: #FFCC33; */
-	background-color:#d7bee2;
+	background-color:#047CBB;
 	height: 100%;
 	column-gap: 0.5rem;
 	padding: 0.5rem;
