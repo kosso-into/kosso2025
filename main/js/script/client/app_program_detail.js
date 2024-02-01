@@ -272,7 +272,7 @@ function createHTMLList(program_list, active){
         }
 
         if(pl.preview!=""){
-            preview_html = ' <button class="preview_btn">미리보기</button>';
+            preview_html = ' <button class="preview_btn">세션소개</button>';
             detail_text_html += '<div class="detail_text">'+pl.preview+'</div>';
         }
 
