@@ -71,10 +71,14 @@
 				</a>
 			</li>
 			<li>
-				<a href="/main/app_floor_plan.php">
+				<a>
 					<img src="./img/icons/2024_app_menu06.svg" alt="">
 					<span>행사장 안내</span>
 				</a>
+				<!-- <a href="/main/app_floor_plan.php">
+					<img src="./img/icons/2024_app_menu06.svg" alt="">
+					<span>행사장 안내</span>
+				</a> -->
 			</li>
 			<li>
 				<a>
