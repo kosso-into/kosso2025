@@ -1206,7 +1206,7 @@ of Immune-metabolic Response</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
-                                                                    <td class="bold">How Diets Regulate MASH Development. Casp2-S1P: The New Hepatic Lipid Regulator</td>
+                                                                    <td class="bold">How Diet regulates NASH progression. Casp2PIDDosome: A New Regulator of Hepatic Lipid       Metabolism</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김주연</p>(한양대 의약생명과학과)
                                                                     </td>
@@ -1913,7 +1913,7 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:30-19:00</td>
-                                                                    <td class="bold">Statin for Primary Prevention in Elderly Patients</td>
+                                                                    <td class="bold">Treatment of Dyslipidemia in Elderly patients</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이상열</p>(경희의대 내분비대사내과)
                                                                     </td>
