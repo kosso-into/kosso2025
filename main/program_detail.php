@@ -102,9 +102,12 @@ echo '<script type="text/javascript">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <ul>
-                                                        <li>금번 Plenary Lecture에서 이관우 교수는 지속 연구로 진행해오고 있는 비만, 인슐린 저항성의 발병 원인 규명, 항비만 물질 및 인슐린 저항성 억제제 관련된 연구를 주제로 강연할 예정입니다. 임상 연구로는 비만 환자의 효과적인 비만 치료에 대한 다기관 임상 연구 중심으로, 기초 연구로는 근육세포 및 혈관 세포에서 지방 독성 기작을 분자 세포생물학적으로 밝히고 병증을 억제하는 그동안의 연구결과를 중심으로, 실제로 성공적인 항비만 물질, 인슐린 저항성 억제제, 그리고 인슐린 저항성과 연관된 근감소증에 대하여 시행해온 연구 결과들을 바탕으로 강의할 예정입니다. </li>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 이관우 (아주의대)</p>
+                                                    </li>
+                                                        <li>금번 Plenary Lecture에서 이관우 교수는 지속 연구로 진행해오고 있는 비만, 인슐린 저항성의 발병 원인 규명, 항비만 물질 및 인슐린 저항성 억제제 관련된 연구를 주제로 강연할 예정입니다. 임상 연구로는 비만 환자의 효과적인 비만 치료에 대한 다기관 임상 연구 중심으로, 기초 연구로는 근육세포 및 혈관 세포에서 지방 독성 기작을 분자 세포생물학적으로 밝히고 병증을 억제하는 그동안의 연구결과를 중심으로, 실제로 성공적인 항비만 물질, 인슐린 저항성 억제제, 그리고 인슐린 저항성과 연관된 근감소증에 대하여 시행해온 연구 결과들을 바탕으로 강의할 예정입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -170,8 +173,11 @@ echo '<script type="text/javascript">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <ul>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 김경곤 (가천의대)</p>
+                                                    </li>
                                                         <li>최근 비만 치료는 비록 여러 가지 장 호르몬에 기반을 둔 펩타이드들에 대다수 사람들의 관심이 모아지고 있지만, 오래전부터 비만 치료에 세로토닌은 중추적인 역할을 해 왔고 세로토닌을 기반으로 한 약제들이 비만 치료에 사용되었던 적도 있었습니다. 본 세션에서는 체내에서 세로토닌의 다양한 역할을 에너지 대사 측면에서 살펴보고 세로토닌의 대사질환 치료제로서의 가능성을 살펴보고자 합니다.</li>
                                                     </ul>
                                                 </td>
@@ -229,8 +235,11 @@ echo '<script type="text/javascript">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <ul>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 김은미 (감북삼성병원)</p>
+                                                    </li>
                                                         <li>성공적인 비만치료를 위해서는 다양한 치료적 접근이 필요하며, 영양치료는 비만치료에서 핵심적인 부분을 차지하고 있습니다. 영양치료와 관련하여 다양한 방법들이 시도되고 있고, 이와 관련된 연구 결과들이 보고되고 있습니다. 비만치료의 성공률이 높지 않은 현실에서, 성공적인 영양치료를 위해 고려해야 할 사항들을 살펴보고자 합니다.</li>
                                                     </ul>
                                                 </td>
@@ -866,9 +875,11 @@ echo '<script type="text/javascript">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <!-- <p class="bold">Organizer: 배재현(고려의대), 조윤정(대구가톨릭의대)</p> -->
-                                                    <ul>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 배재현 (고려의대), 조윤정 (대구가톨릭의대)</p>
+                                                    </li>
                                                         <li>비만은 다양한 요인들이 상호작용하여 발생하고 진행하는 복잡한 질환입니다. 본 세션에서는 환경, 유전, 그리고 비만 간의 관계에 중점을 두어 살펴보고자 합니다. 먼저 고려의대의 이다영 교수는 하루 주기와 수면이 비만에 미치는 영향에 대해 발표할 것입니다. 국립암센터의 김현진 박사는 환경오염과 대사 질환의 관련성에 대해 고찰할 예정이며, 마지막으로 KAIST의 손종우 교수는 항정신병약물이 체중 변화에 미치는 영향과 이에 대한 치료 전략에 대해 발표할 것입니다.</li>
                                                     </ul>
                                                 </td>
@@ -1093,15 +1104,16 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Symposium 2 : Targeting Molecular Pathways in Obesity: Insights from Recent Research</p>
                                                     <p><span class="bold">좌장 : 황유철</span>(경희의대 내분비대사내과), <span class="bold">김기우</span>(연세치대 구강생물학교실)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 2 Detail)</li>
-                                                        <li>(Symposium 2 Detail)</li>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 권오빈 (서울의대)</p>
+                                                    </li>
+                                                        <li>과학과 기술의 발전을 바탕으로, 기존 비만 치료제의 작용 메커니즘 범위를 넘어 새로운 메커니즘을 타깃으로 비만을 예방하고 치료하는 연구가 활발히 진행되고 있습니다. 본 세션에서는 최근 새로운 분자 메커니즘을 타깃으로 비만 극복의 가능성을 보여주는 기초연구들을 소개하고, 향후 비만 연구의 발전 방향을 모색합니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1169,15 +1181,16 @@ of Immune-metabolic Response</td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Symposium 5 : Diverse Pathways in Regulation of Obesity and Related Diseases</p>
                                                     <p><span class="bold">좌장 : 김상용</span>(조선의대 내분비대사내과), <span class="bold">조계원</span>(순천향의생명연구원)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: TBD (TBD), TBD (TBD)</p>
-                                                    <ul>
-                                                        <li>(Symposium 4 Detail)</li>
-                                                        <li>(Symposium 4 Detail)</li>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 김기우 (연세치대)</p>
+                                                    </li>
+                                                        <li>비만 관련 신호전달 체계의 이해는 비만조절에 필수적인 하나의 영역입니다.  본 세션에서는 부경대 이봉기 교수님의 아스코빅산과 에너지 대사조절, 서강대 허진영 교수님과 한양대 김주연 교수님의 MAFLD 및 MASH의 분자조절경로에 초점을 맞춘 강의를 통해 비만 관련 신호전달의 중요성을 강조하고자 합니다. 또한, 세션을 통해 비만 관련 신호전달 체계 및 비만조절의 새로운 통찰을 제공할 것으로 기대합니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1401,15 +1414,16 @@ of Immune-metabolic Response</td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 3 : Ultra-processed Foods and Cardiometabolic Health</p>
                                                     <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비대사내과), <span class="bold">김오연</span>(동아대 식품영양학과)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 임현정, 김오연, 송수진</p>
-                                                    <ul>
-                                                        <li>(Symposium 3 Detail)</li>
-                                                        <li>(Symposium 3 Detail)</li>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 임현정 (경희대), 김오연 (동아대), 송수진 (한남대)</p>
+                                                    </li>
+                                                        <li>본 세션은 건강과의 관련성으로 최근 관심이 높아지고 있는 ‘초가공식품-감미료, 방부제, 색소 등의 식품 첨가물을 포함하고 가공과 변형이 많이 된 식품’을 주제로 합니다. 첫 번째 연자인 박소현 교수(한림대)는 초가공식품의 정의 및 한국인의 섭취량을 설명하고, 두번째 연자인 심지선 교수(연세의대)는 초가공식품 섭취와 비만과의 연관성에 대하여 강의할 예정입니다. 마지막 연자인 이상아 교수(강원대)는 초가공식품 섭취와 암 관련 호르몬 대사에 대한 연구결과를 공유할 예정입니다. </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1477,15 +1491,16 @@ of Immune-metabolic Response</td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 6 : Time Restricted Eating: What We Know & Where the Field is Going</p>
                                                     <p><span class="bold">좌장 : 김성훈</span>(미즈메디병원 내분비내과), <span class="bold">임정현</span>(서울대병원 급식영양과)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 임현정, 김오연, 송수진</p>
-                                                    <ul>
-                                                        <li>(Symposium 6 Detail)</li>
-                                                        <li>(Symposium 6 Detail)</li>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 임현정 (경희대), 김오연 (동아대), 송수진 (한남대)</p>
+                                                    </li>
+                                                        <li>본 세션에서는 체중 감량을 위한 식사 방법으로 많은 주목을 받고 있는 간헐적 단식 또는 시간제한식사를 주제로 하여 그 개념 및 기전, 대사에 미치는 영향, 활용 방안 등을 다루고자 합니다. 첫번째 연자인 권오빈 교수(서울의대)는 간헐적 단식과 비만의 신경학적 기전에 대해 강연할 예정입니다. 두번째 연자인 송윤주 교수(가톨릭대)는 시간제한식사와 대사질환에 미치는 영향을 소개할 예정입니다. 마지막 연자인 이연희 임상영양사(아주대병원)는 시간제한식사의 바람직한 적용 방안에 대해 강연할 예정입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1633,10 +1648,12 @@ of Immune-metabolic Response</td>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="program_detail_td">
-                                                <!-- <p class="bold">Organizer: 이세원, 이민철, 김일영</p> -->
-                                                    <ul>
-                                                        <li>비만은 다양한 대사 및 심혈관계 질환과 밀접한 관련이 있습니다. 이를 극복하기 위해 운동과 영양이 중요한 역할을 하며 많은 연구들이 수행되고 있습니다. 본 세션에서는 기전 및 임상 연구 등을 바탕으로 비만을 포함한 대사 및 심•뇌혈관계 질환에 대한 운동의 역할에 대한 최신 지견을 논의할 예정입니다. </li>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : 이세원 (인천대), 이민철 (차의대), 김일영 (가천의대)</p>
+                                                    </li>
+                                                        <li>비만은 다양한 대사 및 심혈관계 질환과 밀접한 관련이 있습니다. 이를 극복하기 위해 운동과 영양이 중요한 역할을 하며 많은 연구들이 수행되고 있습니다. 본 세션에서는 기전 및 임상 연구 등을 바탕으로 비만을 포함한 대사 및 심•뇌혈관계 질환에 대한 운동의 역할에 대한 최신 지견을 논의할 예정입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -2016,7 +2033,7 @@ of Immune-metabolic Response</td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 2</p> -->
                                                     <p class="font_20 bold">Breakfast Symposium 2</p> 
                                                     <p><span class="bold">좌장 : 김용성</span>(대자인병원 내분비내과)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">세션소개</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
