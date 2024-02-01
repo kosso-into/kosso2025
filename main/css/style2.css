@@ -441,8 +441,8 @@ div.phone input:last-child {width:100%;}
 .program_detail_td.on {display:table-cell;}
 .program_detail_btn {position:absolute; top:50%; right:20px; transform:translateY(-50%); height: 32px; font-size: 14px; padding: 0 14px;}
 /* .program_detail_ul .program_detail_td ul {margin-top:12px;} */
-.program_detail_ul .program_detail_td li {line-height: 1.6;padding: 8px;font-size: 16px;}
-.program_detail_ul .program_detail_td li:not(:first-child) {margin-top:8px;}
+.program_detail_ul .program_detail_td li {line-height: 1.6;padding:4px 8px;font-size: 16px;}
+.program_detail_ul .program_detail_td li:not(:first-child) {margin-top:0px;}
 
 /*Abstract Submission*/
 .abstract_form .radio:checked + label, .abstract_form .radio:not(:checked) + label {font-size:18px; padding-left:42px;}
