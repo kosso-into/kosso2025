@@ -229,7 +229,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
             <div class="main_speaker_wrap">
                 <div class="main_speaker_header">Keynote Lecture 2</div>
                 <div>
-                    <img src="/main/img/2024_img_speakers03.png"/>
+                    <img src="/main/img/2024_img_speakers03_v_2.png"/>
                 </div>
                 <div class="main_speaker_box">
                     <h3><span class="bold">김은미</span>(강북삼성병원)</h3>
