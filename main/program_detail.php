@@ -1021,7 +1021,7 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Symposium 10 : Focus on Women's Health</p>
+                                                    <p class="font_20 bold">Symposium 10 : Obesity in Women and Children</p>
                                                     <p><span class="bold">좌장 : 권혁태</span>(서울의대 가정의학과), <span class="bold">이창현</span>(서울행복내과)
                                                 </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
