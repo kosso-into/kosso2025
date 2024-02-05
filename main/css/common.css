@@ -637,7 +637,7 @@ table.center * {text-align:center;}
 
 /*sponsor*/
 section.container.sponsor {padding-top: 164px;}
-.sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: bold;}
+.sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: 900; border-radius: 20px;}
 .grade_wrap {padding-left: 0 !important; padding-right:0 !important;}
 .grade_wrap li {height: 130px;}
 .grade_wrap.length_5 li {height: 103px;}
@@ -1085,12 +1085,12 @@ section.container.sponsor {padding-top: 164px;}
 
 /*app grade_title bg color*/
 .grade_title.pink_bg {background-color: #BC3478 !important;}
-.grade_title.purple_bg {background-color: #7030A0 !important;}
-.grade_title.gold_bg {background-color: #CCA13F !important;}
+.grade_title.purple_bg {background: linear-gradient(180deg, #7468ad 50%, #665c99 50%) !important;}
+.grade_title.gold_bg {background: linear-gradient(180deg, #deb01f 50%, #d1a61d 50%) !important;}
 .grade_title.green_bg {background-color: #AED49F !important;}
-.grade_title.green_bg05 {background-color:#20B7B7 !important;}
-.grade_title.silver_bg {background-color:#AAA9A9 !important;}
-.grade_title.bronze_bg {background-color:#583C26 !important;}
+.grade_title.green_bg05 {background: linear-gradient(180deg, #00b3c4 50%, #00a1b0 50%) !important;}
+.grade_title.silver_bg {background: linear-gradient(180deg, #cad7e1 50%, #becbd4 50%) !important;}
+.grade_title.bronze_bg {background: linear-gradient(180deg, #c69c8d 50%, #b79083 50%) !important;}
 .grade_title.orange_bg{background-color:#FFCC99 !important;}
 
 /*app td color*/
@@ -1323,6 +1323,7 @@ a.jw_pharm {background-image: url("../img/2024sponsor/logo25.png");}
 .stamp_control {padding:10px 16px; background-color:#D9D9D9;} /*임시 스타일*/
 .refresh_btn img {max-width:24px;} /*임시 스타일*/
 .grade_wrap.length_1 li {width:100%; padding: 4px 18px !important;}
+.grade_wrap.length_2 li {width:calc(50% - 0.44rem);}
 .grade_wrap.length_3 li {width:calc(33.3% - 0.44rem);}
 .grade_wrap.length_4 li {width:calc(25% - 0.44rem);}
 .grade_wrap.length_5 {gap:0.44rem 0;}
