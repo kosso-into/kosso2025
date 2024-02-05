@@ -221,6 +221,7 @@ $abstract_idx = $_GET["idx"];
 									if (!$presentation_type) {
 										echo '<option value="" hidden>Choose</option>';
 									}
+                                    
 									$presentation_type_arr = array("구연/포스터", "구연", "포스터");
 									foreach ($presentation_type_arr as $value) {
 										if ($presentation_type == $i_count) {

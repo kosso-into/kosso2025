@@ -116,35 +116,36 @@
     </div> -->
 
     <!-- [231201] sujeong 학회팀 요청으로 후원사 주석 -->
-    <!-- <div class="sponsor_logo-wrap container">
+    <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
-            <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
+            <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
+            <li><a href="https://www.hanmipharm.com/ehanmi/handler/Home-Start" class="hanmi_pharm">Hanmi Pharm</a></li>
+            <li><a href="http://www.ckdpharm.com/en/home" class="chong_kun_dang">Chong Kun Dang</a></li>
             <li><a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a></li>
             <li><a href="http://eng.yuhan.co.kr/Main/" class="yuhan">YUHAN</a></li>
             <li><a href="http://en.donga-st.com/Main.da" class="dong_a">Dong-A ST</a></li>
-            <li><a href="https://www.msd.com/" class="msd">MSD</a></li>
             <li><a href="https://www.inno-n.com/eng" class="inno_n">inno N</a></li>
-            <li><a href="https://www.hanmipharm.com/ehanmi/handler/Home-Start" class="hanmi_pharm">Hanmi Pharm</a></li>
-            <li><a href="http://www.ckdpharm.com/en/home" class="chong_kun_dang">Chong Kun Dang</a></li>
-            <li><a href="https://m.daewoong.co.kr/en/main/index" class="daewoong">DAEWOONG</a></li>
+            <li><a href="https://m.daewoong.co.kr/kr/main/index" class="daewoong_1">DAEWOONG</a></li>
+            <li><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
             <li><a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a></li>
             <li><a href="https://www.lgchem.com/main/index" class="lg_chem">LG Chem</a></li>
             <li><a href="https://www.celltrionph.com/en-us/home/index" class="celltrion">CELLTRION</a></li>
-            <li><a href="https://www.gccorp.com/eng/index" class="gc_biopharma">GC Niopharma</a></li>
             <li><a href="https://www.sanofi.com/en/our-company" class="sanofi">sanofi</a></li>
-            <li><a href="http://ajupharm.co.kr/en/index.html" class="aju_pharm">AJU PHARM</a></li>
+            <li><a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a></li>
             <li><a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a></li>
+            <li><a href="https://www.gccorp.com/eng/index" class="gc_biopharma">GC Niopharma</a></li>
+            <li><a href="http://ajupharm.co.kr/en/index.html" class="aju_pharm">AJU PHARM</a></li>
             <li><a href="https://www.daiichisankyo.com/" class="daiichi_sankyo">Daiichi Sankyo</a></li>
             <li><a href="https://www.organon.com/" class="organon">ORGANON</a></li>
             <li><a href="https://www.boehringer-ingelheim.com/" class="boehringer">Boehringer INgelheim</a></li>
-            <li><a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a></li>
             <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a></li>
+            <li><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
+            <li><a href="https://daewoongbio.co.kr/daewoongbiokr/main/main.web" class="daewoong_2">DAEWOONG</a></li>
             <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a></li>
-            <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
-            <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
+            <!-- <li><a href="https://www.msd.com/" class="msd">MSD</a></li> -->
         </ul>
-    </div> -->
+    </div>
     <footer class="footer">
         <div class="container">
             <br>
