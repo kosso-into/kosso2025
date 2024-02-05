@@ -155,7 +155,7 @@
                         <a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a>
                     </li>
                     <li>
-                        <a href="https://m.daewoong.co.kr/en/main/index" class="daewoong_2">DAEWOONG</a>
+                        <a href="https://daewoongbio.co.kr/daewoongbiokr/main/main.web" class="daewoong_2">DAEWOONG</a>
                     </li>
                     <li>
                         <a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a>
