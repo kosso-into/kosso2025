@@ -79,6 +79,7 @@
                 <li class="small">
                     <a href="http://en.donga-st.com/Main.da" class="dong_a">Dong-A ST</a>
                 </li>
+                <!--[240205] sujoeng 배열 맞추기 위해 PC -> 3 / 4 -->
                 <div class="length_4 pc_only">
                     <li class="small">
                         <a href="https://www.inno-n.com/eng" class="inno_n">inno N</a>
@@ -93,6 +94,7 @@
                         <a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a>
                     </li>
                 </div>
+                  <!--[240205] sujoeng 배열 맞추기 위해 mobile -> 2 -->
                     <li class="small mb_only">
                         <a href="https://www.inno-n.com/eng" class="inno_n">inno N</a>
                     </li>
