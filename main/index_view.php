@@ -154,7 +154,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
                 <li>
                     <a href="/main/abstract_submission.php">
                         <!-- <img src="./img/2024_dates_area_1.png"/> -->
-                        <h2>2024년 2월 1일<span>(목)</span></h2>
+                        <h2>2024년 2월 12일<span>(월)</span></h2>
                         <p>초록 접수<br />마감</p>
                         <!-- <h2><span>2023년 12월 11일(월)</span></h2> -->
                         <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->

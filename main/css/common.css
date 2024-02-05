@@ -1290,31 +1290,32 @@ h2.app_title {width: 100%; font-size: 16px; background: #59BCC4; text-align: cen
 .grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
 .grade_wrap li.small {padding: 30px;}
 .grade_wrap li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
-a.alvogen {background-image: url("../img/sponsor/logo01.png"); /*transform:scale(0.8);*/ }
-a.novo_nordisk {background-image: url("../img/sponsor/logo02_1.png");}
-a.daewoong {background-image: url("../img/sponsor/logo03.png");}
-a.yuhan {background-image: url("../img/sponsor/logo04.png");}
-a.chong_kun_dang {background-image: url("../img/sponsor/logo05_1.png");}
-a.handok {background-image: url("../img/sponsor/logo06.png");}
-a.dong_a {background-image: url("../img/sponsor/logo07.png");}
-a.hanmi_pharm {background-image: url("../img/sponsor/logo08_2.png");}
-a.astra_zeneca {background-image: url("../img/sponsor/logo09.png");}
-a.inno_n {background-image: url("../img/sponsor/logo10_1.png");}
-a.msd {background-image: url("../img/sponsor/logo11.png");}
-a.celltrion {background-image: url("../img/sponsor/logo12.png");}
-a.lg_chem {background-image: url("../img/sponsor/logo13.png");}
-a.sanofi {background-image: url("../img/sponsor/logo14_1.png");}
-a.organon {background-image: url("../img/sponsor/logo15.png");}
-a.dalimbiotech {background-image: url("../img/sponsor/logo16.png");}
-a.kwangdong {background-image: url("../img/sponsor/logo17_1.png");}
-a.daiichi_sankyo {background-image: url("../img/sponsor/logo18.png");}
-a.boehringer {background-image: url("../img/sponsor/logo19_1.png");}
-a.aju_pharm {background-image: url("../img/sponsor/logo20.png");}
-a.boryung {background-image: url("../img/sponsor/logo21.png");}
-a.jw_pharm {background-image: url("../img/sponsor/logo22_1.png");}
-a.gc_biopharma {background-image: url("../img/sponsor/logo23_1.png");}
-a.daewon {background-image: url("../img/sponsor/logo24.png");}
-a.lilly {background-image: url("../img/sponsor/logo25.png");}
+a.novo_nordisk {background-image: url("../img/2024sponsor/logo01.png");}
+a.alvogen {background-image: url("../img/2024sponsor/logo02.png"); /*transform:scale(0.8);*/ }
+a.hanmi_pharm {background-image: url("../img/2024sponsor/logo03.png");}
+a.chong_kun_dang {background-image: url("../img/2024sponsor/logo04.png");}
+a.handok {background-image: url("../img/2024sponsor/logo05.png");}
+a.yuhan {background-image: url("../img/2024sponsor/logo06.png");}
+a.dong_a {background-image: url("../img/2024sponsor/logo07.png");}
+a.inno_n {background-image: url("../img/2024sponsor/logo08.png");}
+a.daewoong_1 {background-image: url("../img/2024sponsor/logo09.png");}
+a.lilly {background-image: url("../img/2024sponsor/logo10.png");}
+a.astra_zeneca {background-image: url("../img/2024sponsor/logo11.png");}
+a.lg_chem {background-image: url("../img/2024sponsor/logo12.png");}
+a.celltrion {background-image: url("../img/2024sponsor/logo13.png");}
+a.sanofi {background-image: url("../img/2024sponsor/logo14.png");}
+a.boryung {background-image: url("../img/2024sponsor/logo15.png");}
+a.kwangdong {background-image: url("../img/2024sponsor/logo16.png");}
+a.gc_biopharma {background-image: url("../img/2024sponsor/logo17.png");}
+a.aju_pharm {background-image: url("../img/2024sponsor/logo18.png");}
+a.daiichi_sankyo {background-image: url("../img/2024sponsor/logo19.png");}
+a.organon {background-image: url("../img/2024sponsor/logo20.png");}
+a.boehringer {background-image: url("../img/2024sponsor/logo21.png");}
+a.dalimbiotech {background-image: url("../img/2024sponsor/logo22.png");}
+a.daewon {background-image: url("../img/2024sponsor/logo23.png");}
+a.daewoong_2 {background-image: url("../img/2024sponsor/logo24.png");}
+a.jw_pharm {background-image: url("../img/2024sponsor/logo25.png");}
+/* a.msd {background-image: url("../img/2024sponsor/logo11.png");} */
 
 /*app STAMP TOUR > My Stamp*/
 .container.app_my_stamp .container_inner {padding-bottom: 40px;}

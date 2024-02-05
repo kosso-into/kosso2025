@@ -1522,7 +1522,7 @@ of Immune-metabolic Response</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">Chrononutrition and TRE's Effect on Metabolic Health</td>
+                                                                    <td class="bold">Chrononutrition and Time-Restricted Eatings Effect on Metabolic Health</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">송윤주</p>(가톨릭대 식품영양학과)
                                                                     </td>
@@ -1930,7 +1930,7 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:30-19:00</td>
-                                                                    <td class="bold">Treatment of Dyslipidemia in Elderly patients</td>
+                                                                    <td class="bold">Statin for Primary Prevention in Elderly Patients</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이상열</p>(경희의대 내분비대사내과)
                                                                     </td>
