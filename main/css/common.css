@@ -640,6 +640,7 @@ section.container.sponsor {padding-top: 164px;}
 .sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: 900; border-radius: 20px;}
 .grade_wrap {padding-left: 0 !important; padding-right:0 !important;}
 .grade_wrap li {height: 130px;}
+.grade_wrap .grade_diamond {height: 150px;}
 .grade_wrap.length_5 li {height: 103px;}
 
 
@@ -754,6 +755,7 @@ section.container.sponsor {padding-top: 164px;}
 	.grade_wrap {padding:12px 15px 17px !important;}
 	.sponsor_grade .grade_title {font-size: 16px; padding: 0.625rem;}
 	.grade_wrap li {height: 67px; padding: 8px 12px !important;}
+	.grade_wrap .grade_diamond {height: 80px; padding: 8px 12px !important;}
 	.grade_wrap.length_5 li {height: 67px;}
 	.grade_wrap li.small {padding: 16px !important;}
 	.grade_wrap li a.daewon, .grade_wrap li a.lilly {transform:scale(0.6)}
@@ -797,6 +799,7 @@ section.container.sponsor {padding-top: 164px;}
 	/*sponsor*/
 	.grade_wrap.length_5 {gap:0.88rem 0 !important;}
 	.grade_wrap.length_3 li, .grade_wrap.length_4 li, .grade_wrap.length_5 li {width:calc(50% - 0.44rem) !important;}
+	.grade_wrap .length_3 li, .grade_wrap .length_4 li, .grade_wrap .length_5 li {width:calc(50% - 0.44rem) !important;}
 	.grade_wrap .location, .grade_wrap.length_5 .location {padding: 18px 0 !important;}
 
 	/*table(thead+tbody/gray)*/
@@ -1287,10 +1290,23 @@ h2.app_title {width: 100%; font-size: 16px; background: #59BCC4; text-align: cen
 
 /*sponsor*/
 .grade_wrap {display:flex; flex-wrap:wrap; gap:0.88rem 0; padding: 1.5rem 0.75rem 2.19rem; justify-content:space-between;}
+.no_padding_bottom{padding:1.5rem 0.75rem 0.88rem;}
+.no_padding_top {padding: 0 0.75rem 2.19rem;}
 .grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
 .grade_wrap li.small {padding: 30px;}
 .grade_wrap li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
+
+.grade_wrap div {width:100%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;gap: 0.88rem 0;} 
+.grade_wrap div li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
+.grade_wrap div li.small {padding: 30px;}
+.grade_wrap div li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
+
+@media screen and (max-width: 1024px){
+	.grade_wrap div.pc_only {display: none;}
+}
+
 a.novo_nordisk {background-image: url("../img/2024sponsor/logo01.png");}
+a.novo_nordisk_page {background-image: url("../img/sponsor/logo02_1_1.png");}
 a.alvogen {background-image: url("../img/2024sponsor/logo02.png"); /*transform:scale(0.8);*/ }
 a.hanmi_pharm {background-image: url("../img/2024sponsor/logo03.png");}
 a.chong_kun_dang {background-image: url("../img/2024sponsor/logo04.png");}
@@ -1325,9 +1341,11 @@ a.jw_pharm {background-image: url("../img/2024sponsor/logo25.png");}
 .grade_wrap.length_1 li {width:100%; padding: 4px 18px !important;}
 .grade_wrap.length_2 li {width:calc(50% - 0.44rem);}
 .grade_wrap.length_3 li {width:calc(33.3% - 0.44rem);}
+.grade_wrap .length_3 li {width:calc(33.3% - 0.44rem);}
 .grade_wrap.length_4 li {width:calc(25% - 0.44rem);}
+.grade_wrap .length_4 li {width:calc(25% - 0.44rem);}
 .grade_wrap.length_5 {gap:0.44rem 0;}
-.grade_wrap.length_5 li {width:calc(20% - 0.44rem);}
+.grade_wrap .length_5 li {width:calc(20% - 0.44rem);}
 .qr_code_fixed {position:fixed; left: 0; bottom: 65px; width:100%; text-align: center; background: #CC3366; border-radius:24px 24px 0 0;}
 .qr_code_fixed > a {width:100%; padding: 10px 0;}
 .qr_code_fixed .qr_code_fixed_txt {color:#fff; font-weight: bold; margin-bottom: 4px;}
