@@ -2233,7 +2233,7 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>11:40-12:40</td>
-                                                                    <td class="bold">What’s New in T2D? Dapa+Sita Combination!</td>
+                                                                    <td class="bold">What’s new in Type 2 Diabetes? Dapa + Sita combination!</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">정창희</p>(울산의대 내분비내과)
                                                                     </td>
