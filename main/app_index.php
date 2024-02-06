@@ -25,7 +25,7 @@
 <style>
 	html {background: url("./img/2024_app_bg.png") no-repeat center /cover}
 	html, body {min-height:100%;}
-	.rolling_wrap {display:block; z-index: 999;}
+	.rolling_wrap {display:block; z-index: -999;}
 	/* body{
 		background-color: rgba(0, 0, 0, 0.1);
 	} */

@@ -59,7 +59,7 @@ $schedule = sql_fetch($select_schedule_query);
 		</div>
 	</div>
 	<div class="ft_inner">
-		<img class="app_footer_img" src="/main/img/icons/app_footer.svg"/>
+		<img class="app_footer_img" src="/main/img/icons/2024_app_footer.svg"/>
 		<ul class="ft_menu">
 			<li>
 				<a href="/main/app_index.php">
