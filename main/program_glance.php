@@ -201,6 +201,18 @@ section.app_version .inner {
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <div class="colons_div">19:30-21:00</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="yellow_bg">
+                                Welcome Reception
+                                </td>
+                                <td class="dark_gray_bg"></td>
+								<td class="no_right_border dark_gray_bg"></td>
+                            </tr>
                         </tbody>
                         <!---------- DAY 2 ---------->
 

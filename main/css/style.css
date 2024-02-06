@@ -74,9 +74,9 @@
 .app_index_menu li img {width:150px;}
 .app_index_menu li span {display:block; font-size:16px; font-weight:bold; color:#000066; text-align:center; margin-top:5px;}
 
-.site_ul > li { height: 5rem;}
-.site_ul > li > a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: flex-start; padding-left: 1rem;}
-
+.site_ul > li {margin-bottom: 2.8rem;}
+.site_ul > li > a {width: 100%; height: 100%; display: flex; align-items: center; justify-content: flex-start;}
+.site_ul > li > a > img {width: 100%;}
 /*schedule*/
 .schedule_area .grade_title {position:relative;}
 .schedule_area .grade_title:after {content:''; display:block; width:10px; height:6px; background:url("../img/icons/icon_arrow_up.svg") no-repeat center /cover; position:absolute; top:50%; right:8px; transform:translateY(-50%);}
