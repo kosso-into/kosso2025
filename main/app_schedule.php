@@ -116,7 +116,7 @@ foreach($program_list as $pl){
                             <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     if($program['path'] != ""){ ?>
-                                        <a href="<?= $program_path ?>" class="right_tag">초록보기</a>
+                                        <a href="<?= $program['path'] ?>" class="right_tag">초록보기</a>
                                     <?php }else{ ?>
                                         <!-- [231228] sujeong / path가 없으면 초록보기 버튼을 없애기 -->
                                     <?php  }?>
@@ -216,7 +216,7 @@ foreach($program_list as $pl){
                                 <?php
                                 if(in_array($program['program_category_idx'], $abstract_category_list, true)){
                                     if($program['path'] != ""){ ?>
-                                        <a href="<?= $program_path ?>" class="right_tag">초록보기</a>
+                                        <a href="<?= $program['path'] ?>" class="right_tag">초록보기</a>
                                     <?php }else{ ?>
                                         <!-- [231228] sujeong / path가 없으면 초록보기 버튼을 없애기 -->
                                     <?php  }?>
