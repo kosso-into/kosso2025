@@ -1357,7 +1357,7 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Big Data-Based Research on Obesity and Sarcopenia in the Elderly</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김선영</p>(경희의대 가정의학과)
                                                                     </td>
