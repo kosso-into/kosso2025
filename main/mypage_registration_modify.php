@@ -47,8 +47,10 @@ $only_sql = " SELECT
 				)AS nation
 				ON reg.nation_no = nation.idx
 				WHERE reg.register = {$user_idx}
-				AND reg.is_deleted = 'N'";
+				AND reg.is_deleted = 'N'
+                AND reg.status != 4";
 
+//AND reg.status != 4 추가
 $data = sql_fetch($only_sql);
 
 $registration_idx = $data['idx'];
@@ -143,6 +145,10 @@ switch ($attendance_type) {
 	case 5:
 		$attendance_type = "고객사";
 		break;
+    case 6:
+        $attendance_type = "기자";
+        break;
+
 }
 ?>
 <style>

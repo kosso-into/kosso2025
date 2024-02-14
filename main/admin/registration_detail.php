@@ -23,6 +23,8 @@ $registration_detail_query =	"
 											rr.banquet_yn,
 											rr.member_type,
 											rr.occupation_type,
+                                            rr.member_other_type,
+                                            rr.occupation_other_type,
 											rr.ksso_member_status,
 											m.member_idx, m.member_email, m.member_name, m.member_nation, rr.last_name, rr.first_name,
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.last_name,rr.first_name) AS registration_name, rr.phone,
@@ -55,7 +57,7 @@ $registration_detail_query =	"
 													WHEN '3' THEN '패널'
 													WHEN '4' THEN '일반참석자'
 													WHEN '5' THEN '고객사'
-													WHEN '6' THEN '기타'
+													WHEN '6' THEN '기자'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
@@ -123,9 +125,12 @@ $banquet_yn = isset($registration_detail["banquet_yn"]) ? $registration_detail["
 $member_idx = isset($registration_detail["member_idx"]) ? $registration_detail["member_idx"] : "";
 //$member_type = isset($registration_detail["member_type"]) ? $registration_detail["member_type"] : "";
 $occupation_type = isset($registration_detail["occupation_type"]) ? $registration_detail["occupation_type"] : "";
+$occupation_other_type = isset($registration_detail["occupation_other_type"]) ? $registration_detail["occupation_other_type"] : "";
 $member_status = isset($registration_detail["ksso_member_status"]) ? $registration_detail["ksso_member_status"] : "";
+$member_other_type = isset($registration_detail["member_other_type"]) ? $registration_detail["member_other_type"] : "";
 $member_email = isset($registration_detail["member_email"]) ? $registration_detail["member_email"] : "";
 $member_name = isset($registration_detail["member_name"]) ? $registration_detail["member_name"] : "";
+
 //[240122] sujeong 등록자 이름
 $member_first_name = isset($registration_detail["first_name"]) ? $registration_detail["first_name"] : "";
 $member_last_name = isset($registration_detail["last_name"]) ? $registration_detail["last_name"] : "";
@@ -497,11 +502,11 @@ if ($attendance_type_no != 0) {
                     </tr>
                     <tr>
                         <th>분야 구분</th>
-                        <td colspan="3"><?= $occupation_type ?></td>
+                        <td colspan="3"><?= $occupation_type == "기타" ? $occupation_type . "(" . $occupation_other_type . ")" : $occupation_type ?></td>
                     </tr>
                     <tr>
                         <th>참석 유형</th>
-                        <td colspan="3"><?= $member_type ?></td>
+                        <td colspan="3"><?= $member_type == "기타" ? $member_type . "(" . $member_other_type . ")" : $member_type ?></td>
                     </tr>
                     <tr>
                         <th>소속</th>

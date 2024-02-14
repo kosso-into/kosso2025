@@ -55,6 +55,7 @@ $registration_list_query =  "
 												WHEN '3' THEN '패널'
 												WHEN '4' THEN '일반참석자'
 												WHEN '5' THEN '고객사'
+                                                WHEN '6' THEN '기자'
 												ELSE '-'
 											END
 										) AS attendance_type_text,
@@ -298,7 +299,11 @@ foreach ($registration_list as $rk => $rl) {
 	} else {
 		$special_request_food = "-";
 	}
-
+    $occupation_type = $rl['occupation_type'] ?? '-';
+    $occupation_other_type = $rl['occupation_other_type'] ?? '-';
+    $occupation_type = $occupation_type == "기타" ? $occupation_type . "(" . $occupation_other_type . ")" : $occupation_type;
+    
+    $member_other_type = $rl['member_other_type'] ?? '-';
 
 		// 2024 member type 추가
 		// Type of member 
@@ -357,6 +362,9 @@ foreach ($registration_list as $rk => $rl) {
 				break;        
 		}
 
+    $member_type = $member_type == "기타" ? $member_type . "(" . $member_other_type . ")" : $member_type;
+
+
 	$date_of_birth = $rl["date_of_birth"] ? $rl["date_of_birth"]  : "-";
 	$phone = substr($rl['phone'], 0, 3). '-' .  substr($rl['phone'], 3, 4). '-' .substr($rl['phone'], 7);
 
@@ -373,7 +381,7 @@ foreach ($registration_list as $rk => $rl) {
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["department"] . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $phone . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["attendance_type_text"] . '</td>';
-	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["occupation_type"] . '</td>';
+	$html .= '<td style="border-style: solid; border-width:thin;">' . $occupation_type . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $member_type . '</td>';
 	$html .= '<td style="border-style: solid; border-width:thin;">' . $rl["is_score_text"] . '</td>';
 	$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">' . $licence_number . '</td>';
