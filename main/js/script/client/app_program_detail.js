@@ -262,12 +262,13 @@ function createHTMLList(program_list, active){
         }
 
         if(pl.chairpersons!= ""){
-            var chairperson = "";
-            if((pl.chairpersons.split(',').length-1)>=2){
-                chairperson = "좌장: ";
-            } else {
-                chairperson = "좌장: "
-            }
+            //[240214] sujeong 기존코드 -> chairperson, chairpersons 구분
+            // var chairperson = "";
+            // if((pl.chairpersons.split(',').length-1)>=2){
+            //     chairperson = "좌장: ";
+            // } else {
+            //     chairperson = "좌장: "
+            // }
             chairpersons_html += '<p class="chairperson"><span class="bold">좌장: </span>'+pl.chairpersons+'</p>'
         }
 
