@@ -27,12 +27,7 @@
 						<li><a href="/main/welcome.php">초대의 글</a></li>
 						<!-- <li><a href="/main/organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>-->
-						<li><a href="/main/venue.php">오시는 길</a></li> 
 					</ul>
-				</li>
-				<li>
-					<!-- <a href="/main/app_floor_plan.php">행사장 배치도</a> -->
-					<a>행사장 배치도</a>
 				</li>
 				<li>
 					<a href="javascript:;">프로그램</a>
@@ -64,11 +59,16 @@
 					<a href="/main/app_invited_speakers.php">연자 소개</a>
 				</li>
 				<li>
-					<a href="javascript:;">후원/전시</a>
+					<a href="javascript:;">행사장</a>
 					<ul class="app_sub">
 						<!-- <li><a href="/main/sponsor.php">고객사</a></li>
 						<li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li> -->
-						<li><a>고객사</a></li>
+						<li><a href="/main/venue.php">오시는 길</a></li> 
+						<!-- <li><a>고객사</a></li> -->
+						<li>
+						<!-- <a href="/main/app_floor_plan.php">행사장 배치도</a> -->
+						<a>층별안내</a>
+						</li>
 						<li><a>부스 배치도</a></li>
 					</ul>
 				</li>
@@ -90,11 +90,11 @@
 						<li><a href="/main/app_tour_map.php">Tour Map</a></li>
 					</ul>
 				</li> -->
-				<li>
-					<!--[231227] sujeong / 프로그램북/초록집 다운로드 url 변경 -->
-					<!-- <a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a> -->
+				<!-- <li>
+					[231227] sujeong / 프로그램북/초록집 다운로드 url 변경 
+					 <a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a> 
 					<a href="http://18ca921aa745b41a.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a>
-				</li>
+				</li> -->
 				<li>
 					<!-- <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" download class="pdf_view">초록집 <br/>다운로드</a> -->
 					<a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
