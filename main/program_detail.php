@@ -255,7 +255,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>15:40-16:00</td>
-                                                                    <td class="bold">The Keys to Successful Nutrition Therapy for Persons with Obesity or Overweight</td>
+                                                                    <td class="bold">The Keys to Successful Nutrition Therapy for Patients with Obesity and Overweight</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은미</p>(강북삼성병원 영양팀)
                                                                     </td>
@@ -539,7 +539,7 @@ echo '<script type="text/javascript">
                                                             <tr>
                                                                     <td>16:40-17:05</td>
                                                                     <td class="bold">
-                                                                    Differentiated Metabolic Effects of DA-1726, a Balanced GLP1R/GCGR Dual Agonist
+                                                                    Development of DA-1726, a Novel Balanced GLP1R/GCGR Dual Agonist
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">채유나</p>(동아ST)
@@ -1128,8 +1128,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>08:30-08:55</td>
-                                                                    <td class="bold">Reduction of Adipokine SPARC Protects Against Obesity by Integration 
-of Immune-metabolic Response</td>
+                                                                    <td class="bold">Reduction of Adipokine SPARC Protects Against Obesity by Integration of Immune-metabolic Response</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">유승진</p>(한림의대 약리학교실)
                                                                     </td>
@@ -1706,6 +1705,163 @@ of Immune-metabolic Response</td>
                                     </table>
                                 </div>
                             </li>
+                            <li name="symposium_13">
+                                <div class="program_header">
+                                    <p class="font_16 bold">ROOM 4</p>
+                                    <span class="font_16 bold">3월 9일(토)</span>
+                                </div>
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>14:00-15:30</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Symposium 13 : Need for Comprehensive Education for Obesity </p>
+                                                    <p><span class="bold">좌장 : TBD</span>(TBD), <span class="bold">TBD</span>(TBD)</p>
+                                                    <!--button class="btn gray2_btn program_detail_btn">세션소개</button-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : TBD</p>
+                                                    </li>
+                                                        <li>TBD</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>14:00-14:25</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">이정화</p>(강동경희대병원)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>14:25-14:50</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">장연정</p>(신촌세브란스병원)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>14:50-15:15</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">이수지</p>(강북삼성병원)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>15:15-15:30</td>
+                                                                    <td class="bold">
+                                                                        Panel Discussion
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <span class="bold">김선영</span>(삼성서울병원)<br/>
+                                                                        <span class="bold">배경은</span>(순천향대학교 서울병원)<br/>
+                                                                        <span class="bold">박정환</span>(한양의대 내분비대사내과)<br/>
+                                                                        <span class="bold">김상용</span>(조선의대 내분비대사내과)
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="symposium_14">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="green_bg">
+                                                <td>16:10-17:40</td>
+                                                <td>
+                                                    <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
+                                                    <p class="font_20 bold">Symposium 14 : Comprehensive Education Course for Co-Medical Staff</p>
+                                                    <p><span class="bold">좌장 : TBD</span>(TBD), <span class="bold">TBD</span>(TBD)</p>
+                                                    <!--button class="btn gray2_btn program_detail_btn">세션소개</button-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            <td colspan="2" class="program_detail_td">
+                                                <ul>
+                                                    <li>
+                                                        <p class="bold">오거나이저 : TBD</p>
+                                                    </li>
+                                                        <li>TBD</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16:10-16:35</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">김승희</p>(원광의대 가정의학과 )
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:35-17:00</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비내과 )
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:00-17:25</td>
+                                                                    <td class="bold">TBD</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">강서영</p>(을지의대 가정의학과 )
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:25-17:40</td>
+                                                                    <td class="bold">
+                                                                        Panel Discussion
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <span class="bold">TBD</span>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
@@ -2113,9 +2269,9 @@ of Immune-metabolic Response</td>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The Roles of High Dose Cobalamin in T2DM and Obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김선우</p>(다림바이오텍)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

@@ -17,6 +17,7 @@
 				<li><a href="https://www.jomes.org/main.html" target="_blank"><img src="./img/2024_site_02.png"/></a></li>
 				<li><a href="https://youtube.com/@allobesity" target="_blank"><img src="./img/2024_site_03.png"/></a></li>
 				<li><a href="https://www.instagram.com/ksso_official/" target="_blank"><img src="./img/2024_site_04.png"/></a></li>
+				<!-- <li><img onclick="openUrl(5)" src="./img/2024_site_05.png"/></li> -->
 				<li><a href="https://www.kosso.or.kr/board/view.html?num=1884&start=0&code=notice_list&comm=&key=&keyword=%BE%DB&left=&left_comm=" target="_blank"><img src="./img/2024_site_05.png"/></a></li>
 			</ul>
 		</div>
@@ -24,6 +25,15 @@
 </section>
 
 <script>
+
+	function openUrl(num){
+		let url = "";
+		if(num === 5){
+			url = "https://www.kosso.or.kr/board/view.html?num=1884&start=0&code=notice_list&comm=&key=&keyword=%BE%DB&left=&left_comm="
+		}
+		//window.location.href = url;
+		window.open(url)
+	}
 	
 </script>
 

@@ -430,7 +430,12 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="26"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                            <td></td>
+                                <td class="green_bg pointer modal" name="symposium_13" data-id="">
+                                    Symposium 13 <p>Need for Comprehensive Education for Obesity</p>
+                                    <input type="hidden" name="e" value="room4">
+                                    <input type="hidden" name="category" value="symposium">
+                                    <!--button class="more_btn" data-id="27"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button-->
+                                </td>
                                 
                             </tr>
                             <tr>
@@ -495,7 +500,12 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="33"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td></td>
+                                <td class="green_bg pointer modal" name="symposium_14" data-id="">
+                                    Symposium 14 <p>Comprehensive Education Course for Co-Medical Staff</p>
+                                    <input type="hidden" name="e" value="room4">
+                                    <input type="hidden" name="category" value="symposium">
+                                    <!--button class="more_btn" data-id=""><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button-->
+                                </td>
                             </tr>
                             <tr>
                                 <td>

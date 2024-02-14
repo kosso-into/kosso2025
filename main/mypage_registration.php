@@ -242,6 +242,9 @@ $score_detail = sql_fetch($score_sql);
                             case 5:
                                 $attendance_type = "고객사";
                                 break;
+                            case 6:
+                                $attendance_type = "기자";
+                                break;
                         }
 
                         // Others
