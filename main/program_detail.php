@@ -1280,7 +1280,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
-                                                                    <td class="bold">Pre and Post-operative Management of Hypertension and Cardiovascular Disease</td>
+                                                                    <td class="bold">Preoperative and Postoperative Cardiovascular Management in Metabolic Surgery for Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김경희</p>(세종병원 심장내과)
                                                                     </td>
@@ -1363,7 +1363,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
-                                                                    <td class="bold">Obesity Fact Sheet for 2023</td>
+                                                                    <td class="bold">Obesity Fact Sheet 2023</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">정수민</p>(서울의대 가정의학과)
                                                                     </td>
