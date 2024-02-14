@@ -169,13 +169,14 @@
 <?php
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
-<!-- 스탬프 투어 뉴스레터 -->
-<div class="popup app_pop" style="display:block;">
+<!-- 스탬프 투어 뉴스레터 
+[240214] sujeong / 스탬프 투어 뉴스레터 주석 -->
+<!-- <div class="popup app_pop" style="display:block;">
     <div class="pop_bg"></div>
     <div class="pop_contents">
         <img src="/main/img/app_pop_stamp_tour_event.png" alt="">
     </div>
-</div>
+</div> -->
 <?php
     } 
 ?>
