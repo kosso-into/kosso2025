@@ -81,8 +81,7 @@
 				</a> -->
 			</li>
 			<li>
-				<a>
-				<!-- <a href="/main/sponsor.php"> -->
+				<a href="/main/sponsor.php">
 					<img src="./img/icons/2024_app_menu07.svg" alt="">
 					<span>고객사</span>
 				</a>
