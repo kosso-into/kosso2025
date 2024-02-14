@@ -32,7 +32,8 @@
                     src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button></h2>
         <ul class="app_menu_tab langth_2">
             <li class="on"><a href="./sponsor.php">후원사</a></li>
-            <li><a href="./sponsor_exhibition.php">부스배치도</a></li>
+            <!-- [240214]sujeong / 부스배치도 주석 -->
+            <!-- <li><a href="./sponsor_exhibition.php">부스배치도</a></li> -->
         </ul>
     </div>
     <?php
