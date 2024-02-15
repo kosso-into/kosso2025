@@ -66,8 +66,7 @@
 						<li><a href="/main/venue.php">오시는 길</a></li> 
 						<!-- <li><a>고객사</a></li> -->
 						<li>
-						<!-- <a href="/main/app_floor_plan.php">행사장 배치도</a> -->
-						<a>층별안내</a>
+						<a href="/main/app_floor_plan.php">층별 안내</a>
 						</li>
 						<li><a>부스 배치도</a></li>
 					</ul>
