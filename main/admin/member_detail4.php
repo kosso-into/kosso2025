@@ -54,6 +54,9 @@
 													WHEN '2' THEN '좌장'
 													WHEN '3' THEN '패널'
 													WHEN '4' THEN '일반참석자'
+													WHEN '5' THEN '고객사'
+													WHEN '6' THEN '기자'
+													WHEN '7' THEN '기자'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
