@@ -27,7 +27,7 @@
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
     <div class="app_title_box">
-        <h2 class="app_title">후원사<button type="button" class="app_title_prev"
+        <h2 class="app_title">고객사<button type="button" class="app_title_prev"
                 onclick="javascript:window.location.href='./app_index.php';"><img
                     src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button></h2>
         <!-- [240214]sujeong / 부스배치도 주석 -->

@@ -45,7 +45,7 @@
 	}
 </style>
 
-<img src="./img/img_onsite_registration.png" class="w100" alt="">
+<img src="./img/img_onsite_registration.jpg" class="w100" alt="">
 <section class="container window_open onsite_register">
 	<div class="">
 		<div class="term_wrap">

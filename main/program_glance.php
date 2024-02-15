@@ -149,7 +149,11 @@ section.app_version .inner {
                                 </td>
                                 <!--[240104] sujeong / 학회팀 요청 회색처리 -->
                                 <td></td>
-								<td class="purple_bg">Committee Session 1</td>
+								<td class="purple_bg pointer" name="committee_session_1">
+                                    Committee Session 1
+                                        <input type="hidden" name="e" value="room3">
+                                        <input type="hidden" name="category" value="committee_session_1">
+                                </td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -173,8 +177,16 @@ section.app_version .inner {
                                         <input type="hidden" name="e" value="room1">
                                         <input type="hidden" name="category" value="scientific_session_2">
                                     </td>
-                                    <td class="purple_bg pointer">Committee Session 3</td>
-                                    <td class="purple_bg pointer">Committee Session 2</td>
+                                    <td class="purple_bg pointer" name="committee_session_3">
+                                        Committee Session 3
+                                        <input type="hidden" name="e" value="room2">
+                                        <input type="hidden" name="category" value="committee_session_3">
+                                    </td>
+                                    <td class="purple_bg pointer" name="committee_session_2">
+                                        Committee Session 2
+                                        <input type="hidden" name="e" value="room3">
+                                        <input type="hidden" name="category" value="committee_session_2">
+                                    </td>
                                     <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
@@ -343,19 +355,19 @@ section.app_version .inner {
                                 <td rowspan="2">
                                     <div class="colons_div">11:40-12:40</div>
                                 </td>
-                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_1" data-id="19">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_lecture_1" data-id="19">
                                     Luncheon Lecture 1
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="luncheon_symposium">
                                     <button class="more_btn" data-id="19"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_2" data-id="20">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_lecture_2" data-id="20">
                                     Luncheon Lecture 2
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="luncheon_symposium">
                                     <button class="more_btn" data-id="20"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_symposium_3" data-id="21">
+                                <td rowspan="2" class="sky_bg pointer modal" name="luncheon_lecture_3" data-id="21">
                                     Luncheon Lecture 3
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="luncheon_symposium">
@@ -364,12 +376,14 @@ section.app_version .inner {
                                 <td></td>
                             </tr>
                             <tr>
-                                <td class="light_orange_bg">
-                                Guided Poster Presentation
-                                <br/>
-                                12:15-12:30
-                                <br/>
-                                * 장소: VISTA 통로 포스터존*
+                                <td class="light_orange_bg pointer" name="guided_poster_presentation">
+                                    Guided Poster Presentation
+                                    <br/>
+                                    12:15-12:30
+                                    <br/>
+                                    * 장소: VISTA 통로 포스터존*
+                                    <input type="hidden" name="e" value="room4">
+                                    <input type="hidden" name="category" value="guided_poster_presentation">
                                 </td>
                             </tr>
                             <tr>
@@ -542,8 +556,7 @@ section.app_version .inner {
                 <!-- [231228]sujeong / chairperson 학회팀 요청 주석 -->
 				<div>
 					<p class="program_modal_chair">좌장 : </p>
-					<div class="program_modal_person">
-					</div>
+					<p class="program_modal_person"></p>
 				</div>
 			</div>
             <p class="modal_preview"></p>
@@ -709,7 +722,7 @@ function writeModal(data){
     modalTitleDay.innerText = titleDay;
     modalTitleTime.innerText = titleTime;
     modalTitleRoom.innerText = titleRoom
-    modalChairPerson.innerText = chairperson;
+    modalChairPerson.innerHTML = chairperson;
     modalPreview.innerText = preview;
 }
 
