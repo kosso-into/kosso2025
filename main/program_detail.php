@@ -793,16 +793,16 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Symposium 1 : Treatment of Obesity - Here and Now</p>
                                                     <p><span class="bold">좌장 : 김두만</span>(한림의대 내분비내과),<span class="bold">강지현</span>(건양의대 가정의학과)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : 문준성, 박경희</p>
                                                     <ul>
-                                                        <li>(Symposium 1 Detail)</li>
-                                                        <li>(Symposium 1 Detail)</li>
-                                                        <li>(Symposium 1 Detail)</li>
+                                                        <li>
+                                                            <p class="bold">오거나이저 : 문준성 (영남의대), 박경희 (한림의대)</p>
+                                                        </li>
+                                                        <li>비만 치료제의 발전은 현재 진행형입니다. 이 세션에서는 새로운 비만 치료제들의 명암을 살펴보고, 이미 사용 중인 약제의 조합을 통한 비만치료의 다양한 전략을 살펴볼 예정입니다. 가톨릭의대 손장원 교수는 현재 임상 중이거나 임상 예정인 새로운 인크레틴 기반 약제들을 소개하고, 조선의대 김진화 교수는 항비만약제의 치료를 언제까지 지속해야 할지에 대한 궁금증을 명쾌하게 해결해 줄 것입니다. 마지막으로 을지의대 홍준화 교수는 SGLT2 억제제와 Phetermine-topiramate 의 조합이 비만치료에 얼마나 효과적일지에 대한 데이터를 제시할 예정입니다.</li>
                                                     </ul>
                                                     </ul>
                                                 </td>
@@ -948,15 +948,16 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 7 : New Anti-obesity Drugs</p>
                                                     <p><span class="bold">좌장 : 유순집</span>(가톨릭의대 내분비내과), <span class="bold">김성수</span>(충남의대 가정의학과)
                                                 </p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 이승환, 남가은</p>
                                                     <ul>
-                                                        <li>(Symposium 7 Detail)</li>
-                                                        <li>(Symposium 7 Detail)</li>
+                                                        <li>
+                                                            <p class="bold">오거나이저: 이승환 (가톨릭의대), 남가은 (고려의대)</p>
+                                                        </li>
+                                                        <li>비만은 중대한 만성질환을 동반하고 합병증을 유발하는 질환입니다. 그동안 다양한 비만치료제가 사용되어 왔으나 효과나 부작용 측면에서 unmet need가 있고, 여전히 비만 유병률은 증가 추세로 현재 전 세계 성인의 절반이 비만에 해당됩니다. 이에 최근 개발된 더욱 강력한 비만치료제들은 최고의 혁신기술 및 과학 성과로 선정될 정도로 화두입니다. 이번 세션에서는 Semaglutide 및 GIP/GLP1 receptor co-agonist 주사제와 경구 GLP1 receptor agonist의 기전과 효능 및 안전성에 대한 최신지견을 제공할 것입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1024,15 +1025,16 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Symposium 10 : Obesity in Women and Children</p>
                                                     <p><span class="bold">좌장 : 권혁태</span>(서울의대 가정의학과), <span class="bold">이창현</span>(서울행복내과)
                                                 </p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 윤지완, 오범조</p>
                                                     <ul>
-                                                        <li>(Symposium 10 Detail)</li>
-                                                        <li>(Symposium 10 Detail)</li>
+                                                        <li>
+                                                            <p class="bold">오거나이저: 윤지완 (서울의대), 오범조 (서울의대)</p>
+                                                        </li>
+                                                        <li>심포지엄 10은 여성 비만과 소아비만에 초점을 맞춘 강의로 구성되어 있습니다. 첫 번째 강의에서는 여성 비만이 불임에 미치는 영향과 그 원인에 대해 다루며, 미국생식의학회와 세계 보건기구의 통계를 바탕으로 여성 불임의 사회적 중요성에 대해 살펴볼 예정입니다. 두 번째 강의에서는 PCOS와 비만 간의 관계에 대한 최근 연구 결과를 살펴보며, 비만이 PCOS의 원인과 증상을 악화시키는 메커니즘에 대해 알아볼 예정입니다. 세 번째 강의는 소아비만이 성장과 사춘기 발현에 미치는 영향에 대한 폭넓은 이해와 실용적인 지식을 제공할 것입니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1331,17 +1333,22 @@ echo '<script type="text/javascript">
                                                 <td>16:10-17:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research+Digital Therapeutics in Obesity Management</p>
+                                                    <p class="font_20 bold">Symposium 11 : Big Data in Obesity Research</p>
                                                     <p><span class="bold">좌장 : 강재헌</span>(성균관의대 가정의학과), <span class="bold">한경도</span>(숭실대 정보통계보험수리학과)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 이상열, 한경도</p>
                                                     <ul>
-                                                        <li>(Symposium 10 Detail)</li>
-                                                        <li>(Symposium 10 Detail)</li>
+                                                        <li>
+                                                            <p class="bold">오거나이저: 이상열 (경희의대), 한경도 (숭실대)</p>
+                                                        </li>
+                                                        <li>이 심포지엄은 'Big Data in Obesity Research'라는 테마 아래, 비만에 대한 빅데이터 연구자들을 위해 마련되었습니다. 이 세션은 비만이라는 복합적인 문제를 다각도에서 분석하고, 최신 빅데이터 기술을 통해 새로운 통찰력을 얻을 수 있는 기회를 제공합니다.</li>
+                                                        <li>첫 번째 연사인 김선영 교수님(경희의대)은 '비만과 노인 근감소증에 대한 빅데이터 기반 연구'를 주제로, 노인 인구에서 비만과 근감소증 사이의 상호작용을 탐구하는 최신 연구 결과를 공유할 예정입니다. 이 연구는 고령화 사회에서 점점 중요해지는 건강 문제에 대한 깊은 이해를 도울 것입니다.</li>
+                                                        <li>두 번째 연사인 정수민 교수님(서울의대)은 'Obesity Fact Sheet 2023'을 통해 최근 비만 관련 통계와 동향을 분석하고, 이를 바탕으로 한 정책 제안 및 예방 전략에 대해 논의합니다. 이 세션은 비만 문제에 대한 국가적 차원의 접근과 해결책 모색에 중점을 둡니다.</li>
+                                                        <li>마지막으로 정진형 박사님(성균관의대)은 'Obesity research using data from the National Health Insurance Service'를 소개하며, 보건의료빅데이터를 이용하는 방법을 통해 비만 연구 인사이트에 대해 설명할 예정입니다. 이 세션은 국민건강보험공단 데이터베이스 및 마이데이터를 고려한 기관별 연계자료를 통하여 비만 연구 방법론을 설명함으로써, 보다 실질적이고 효과적인 비만 관리 전략을 제시합니다.</li>
+                                                        <li>이 심포지엄은 비만 연구의 최전선에서 활동하는 연구자들의 귀중한 인사이트를 공유하고, 비만 문제에 대한 심도 있는 논의를 촉진하기 위해 기획되었습니다. 다학제적 연구자들이 한자리에 모여 최신 연구 동향을 공유하고, 비만 문제를 해결하기 위한 새로운 아이디어와 전략을 모색하는 이번 세션에 여러분을 초대합니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1565,17 +1572,18 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 9: Obesogens & Obesogenic environment in pediatric obesity</p>
+                                                    <p class="font_20 bold">Symposium 9:Obesogens & Obesogenic Environment in Pediatric Obesity</p>
                                                     <p><span class="bold">좌장 : 이기형</span>(고려의대 소아청소년과), <span class="bold">정소정</span>(건국의대 소아청소년과)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer: 홍용희</p>
                                                     <ul>
-                                                        <li>(Symposium 9 Detail)</li>
-                                                        <li>(Symposium 9 Detail)</li>
+                                                        <li>
+                                                            <p class="bold">오거나이저: 김재현 (서울의대), 홍용희 (순천향의대)</p>
+                                                        </li>
+                                                        <li>소아청소년 비만은 성인보다 외부 환경의 영향을 많이 받습니다. 아이들이 스스로 조절할 수 없는 요인들이 많습니다. 본 세션에서는, 먼저 우리도 모르는 사이 노출되고 있는 내분비계교란물질과 소아청소년 비만과의 연관성에 대해서 살펴봅니다. 두번째 강의에서는 질병관리청에서 바라보는 소아청소년 비만과 나아가야 할 방향, 만성질환 정책을 소개합니다. 마지막 강의에서는 소아청소년이 가장 많은 시간을 보내는 학교의 비만 유발 환경에 대해서, 그리고 교육부 정책이 아이들의 건강한 환경에 어떻게 영향을 미치는지에 대해 살펴보고자 합니다.</li>
                                                     </ul>
                                                 </td>
                                             </tr>

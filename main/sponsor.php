@@ -30,11 +30,11 @@
         <h2 class="app_title">후원사<button type="button" class="app_title_prev"
                 onclick="javascript:window.location.href='./app_index.php';"><img
                     src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button></h2>
-        <ul class="app_menu_tab langth_2">
+        <!-- [240214]sujeong / 부스배치도 주석 -->
+        <!-- <ul class="app_menu_tab langth_2">
             <li class="on"><a href="./sponsor.php">후원사</a></li>
-            <!-- [240214]sujeong / 부스배치도 주석 -->
-            <!-- <li><a href="./sponsor_exhibition.php">부스배치도</a></li> -->
-        </ul>
+            <li><a href="./sponsor_exhibition.php">부스배치도</a></li>
+        </ul> -->
     </div>
     <?php
     } 
