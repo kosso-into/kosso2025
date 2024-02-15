@@ -31,12 +31,13 @@
 ?>
 		<div class="app_title_box">
 			<h2 class="app_title">춘계학술대회<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button></h2>
-			<ul class="app_menu_tab">
+			<!-- [240215] sujeong / APP 메뉴 수정으로 삭제 -->
+			<!-- <ul class="app_menu_tab">
 				<li class="on"><a href="./welcome.php">초대의 글</a></li>
-				<!-- <li><a href="./organizing_committee.php">Organization</a></li> -->
-				<!-- <li><a href="./app_overview.php">Overview</a></li> -->
+				 <li><a href="./organizing_committee.php">Organization</a></li>
+				<li><a href="./app_overview.php">Overview</a></li> -
 				<li><a href="./venue.php">오시는 길</a></li>
-			</ul>
+			</ul> -->
 		</div>
 <?php
 	} 
