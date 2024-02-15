@@ -488,8 +488,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="31"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="green_bg pointer modal" name="symposium_11" data-id="32">
-                                    Symposium 11 <p>Big Data in Obesity Research<br>
-                                    +Digital Therapeutics in Obesity Management</p>
+                                    Symposium 11 <p>Big Data in Obesity Research</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="32"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>

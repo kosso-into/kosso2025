@@ -113,7 +113,7 @@
 		<!-- 2. 제공 평점 end -->
 
 		<!-- 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 start -->
-		<h3 class="title title_small">이수 시간에 따른 부분 대한의사협회/대한비만학회 평점 및 주의사항</h3>
+		<h3 class="title title_small">이수 시간에 따른 대한의사협회/대한비만학회 부분 평점 및 주의사항 </h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
 				<table class="c_table2 detail_table center">
