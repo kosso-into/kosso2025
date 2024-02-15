@@ -267,6 +267,12 @@ switch ($participation_type) {
 	case 5:
 		$attendance_type_text = "고객사";
 		break;
+    case 6:
+        $attendance_type = "기자";
+        break;
+    case 7:
+        $attendance_type = "심사";
+        break;
 }
     $time = date("Y-m-d");
     $nick_name = $first_name .  $last_name;
