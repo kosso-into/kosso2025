@@ -395,7 +395,7 @@ echo '<script type="text/javascript">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">남가은</p>(고려의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
