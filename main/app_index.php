@@ -64,21 +64,16 @@
 				</a>
 			</li>
 			<li>
-				<a>
 				<a href="/main/app_happening_now.php">
 					<img src="./img/icons/2024_app_menu05.svg" alt="">
 					<span>진행세션</span>
 				</a>
 			</li>
 			<li>
-				<a>
+				<a href="/main/app_floor_plan.php">
 					<img src="./img/icons/2024_app_menu06.svg" alt="">
 					<span>행사장 안내</span>
 				</a>
-				<!-- <a href="/main/app_floor_plan.php">
-					<img src="./img/icons/2024_app_menu06.svg" alt="">
-					<span>행사장 안내</span>
-				</a> -->
 			</li>
 			<li>
 				<a href="/main/sponsor.php">

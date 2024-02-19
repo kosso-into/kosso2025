@@ -1388,8 +1388,15 @@ a.jw_pharm {background-image: url("../img/2024sponsor/logo25.png");}
 .pop_text .floor_pop_title {margin-bottom: 4px; font-weight: bold; font-size: 16px;}
 .pop_text li + .floor_pop_title {margin-top: 12px;}
 .floor_area img {width:100%;}
-.floor_area .a_wrap {position:absolute; top:6%; right:0; font-size:0; width:74.5%;}
-.floor_area .a_wrap > a, .floor_area .a_wrap > div {display:inline-block; border:1px solid transparent; width:33.33%; padding-top:33%; box-sizing:border-box;}
+/* .floor_area .a_wrap {position:absolute; top:6%; right:0; font-size:0; width:74.5%;} */
+.floor_area .floor_b2{position:absolute; top: 45%; left: 22%; font-size:0; width:39.5%;}
+.floor_area .floor_b1{position:absolute; top:19%; left: 52%; font-size:0; width: 42.5%; height: 46%; /* background-color: pink;*/}
+.floor_area .a_wrap  a, .floor_area .a_wrap > div {display:inline-block; border:1px solid transparent; width:33.33%; padding-top:33%; box-sizing:border-box;}
+.floor_area .floor_b2 a.room1{padding-top:44%; width: 35.33%;}
+.floor_area .floor_b2 a.room2{padding-top:33%; width: 29.33%; position: absolute; }
+.floor_area .floor_b2 a.room3{padding-top:33%; width: 35.33%; position: absolute; right: 0; }
+.floor_area .floor_b1 a.room4{display: block; width: 19.33%; padding-top: 18%;position: relative;left: 18%;}
+.floor_area .floor_b1 a.room5{display: block; width: 37.33%; padding-top: 52%;}
 .floor_area .a_wrap.right_bottom {width:8%; top:auto; bottom:15.5%;}
 .floor_area .a_wrap.right_bottom a {width:100%; padding-top:128%;}
 .floor_area .a_wrap.center_bottom {width:9.3%; height: 4%; top:74.1%; bottom:19.5%; left:54.3%;}

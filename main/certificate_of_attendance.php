@@ -42,7 +42,7 @@ $nation_en=sql_fetch($sql)["nation_en"];
         </div>
     </div>
     <div style="text-align:center; margin:41px 0 47px;">
-        <p style="font-family: 'Open Sans', sans-serif; font-size:47px; line-height:64px; font-weight:700; letter-spacing:-0.35; color:#000000; margin:0;"><!--성명--><?=$first_name?> <?=$last_name?></p>
+        <p style="font-family: 'Open Sans', sans-serif; font-size:47px; line-height:64px; font-weight:700; letter-spacing:-0.35; color:#000000; margin:0;"><!--성명--><?=$last_name?><?=$first_name?></p>
         <p style="font-family: 'Open Sans', sans-serif; font-size:27px; line-height:37px; font-weight:700; letter-spacing:-0.405; color:#000000; margin:11px 0 40px;"><!--소속--><?=$affiliation?>,<br/><!--국가--><?=$nation_en?></p>
         <p style="font-family: 'Montserrat', sans-serif; font-size:18px; line-height:28px; font-weight:600; letter-spacing:-0.72; color:#000000; margin:0;">
             The Korea Society for the Study of Obesity (KSSO) is delighted to present this Certificate to you, <br/>

@@ -45,13 +45,13 @@
 						<!-- <li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li> -->
 						<!-- <li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li> -->
 						<!-- <li><a href="/main/app_abstract.php?category_idx=7">Best Article in JOMES</a></li> -->
-						<li><a href="/main/app_abstract.php?category_idx=10">Pre-congress Symposium</a></li>
+						<!-- <li><a href="/main/app_abstract.php?category_idx=10">Pre-congress Symposium</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=11">Breakfast Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=12">Luncheon Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=13">Satellite Symposium</a></li>
 						<!-- <li><a href="/main/app_abstract.php?category_idx=14">Sponsored Session</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=16">Oral Presentation</a></li>
-						<!-- <li><a href="/main/app_abstract.php?category_idx=17">Guided Poster Presentation</a></li> -->
+						<li><a href="/main/app_abstract.php?category_idx=17">Guided Poster Presentation</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=18">Poster Exhibition</a></li>
 					</ul>
 				</li>
@@ -66,7 +66,7 @@
 						<li><a href="/main/venue.php">오시는 길</a></li> 
 						<!-- <li><a>고객사</a></li> -->
 						<li>
-						<a href="/main/app_floor_plan.php">층별 안내</a>
+							<a href="/main/app_floor_plan.php">층별 안내</a>
 						</li>
 						<li><a>부스 배치도</a></li>
 					</ul>
