@@ -475,7 +475,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:50-16:15</td>
                                                                     <td class="bold">
-                                                                    New Anti-Obesity Medication
+                                                                    New Anti-Obesity Medications: Shaping the Future of Obesity Care with GLP-1RA
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Julie Broe Honore</p>(노보노디스크)
@@ -596,7 +596,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 1</p>
-                                                    <p><span class="bold">좌장 : 김종화</span> (부천세종병원 내분비대사내과)</p>
+                                                    <p><span class="bold">좌장 : 김성래</span>(가톨릭의대 내분비내과),<span class="bold">김종화</span>(부천세종병원 내분비대사내과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -622,16 +622,16 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:00-15:15</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        최신 비만 역학 및 비만도와 질병부담, 비만 진료 급여기준 제언
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">허연</p>(을지의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        비만도와 사회경제적 비용
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이선미</p>(국민건강보험공단 건강보험연구원 센터장)
@@ -640,20 +640,31 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:30-15:45</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                        의료형평성(의료취약계층)과 비만
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김원석</p>(을지의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:45-16:30</td>
+                                                                    <td>15:45-16:00</td>
+                                                                    <td class="bold">
+                                                                        일차의료 만성질환관리 사업 현황 및 일차의료 비만관리 방향
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">남가은</p>(대한비만학회 보험법제위원회 이사)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:00-16:30</td>
                                                                     <td class="bold">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <span class="bold">이진한</span>(동아일보)<br/>
-                                                                        <span class="bold">신영석</span>(한국보건사회연구원)
+                                                                        <span class="bold">신영석</span>(한국보건사회연구원)<br/>
+                                                                        <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
+                                                                        <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -678,7 +689,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 2</p>
-                                                    <p><span class="bold">좌장 : 김성래</span> (가톨릭의대 내분비내과)</p>
+                                                    <p><span class="bold">좌장 : 한상호</span>(동아의대 가정의학과),<span class="bold">권혁태</span>(서울의대 가정의학과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -780,7 +791,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:40-17:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                     비만관련 건강기능식품
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">전언주</p>(대구가톨릭의대 내분비대사내과)
@@ -789,7 +800,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:10-17:40</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                    비만의 약물치료
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">강서영</p>(을지의대 가정의학과)
@@ -798,7 +809,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:40-18:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                    비만의 수술치료
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김종원</p>(중앙의대 외과)
@@ -1257,7 +1268,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
+                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MASLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허진영</p>(서강대 생명과학과)
                                                                     </td>
@@ -1813,7 +1824,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
-                                                                    <td class="bold">Obesity  Patient Education Case Review 2</td>
+                                                                    <td class="bold">Education Case of the Patient with Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이수지</p>(강북삼성병원 당뇨병전문센터)
                                                                     </td>
