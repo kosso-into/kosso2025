@@ -663,18 +663,18 @@ $(document).on("click", "#pc_submit", function() {
 		}
 
 		/**is_score */
-		if($("#radio1").is(":checked") && !$("#radio2").is(":checked")){
+		if($("#radio3").is(":checked") && !$("#radio4").is(":checked")){
 			 etc4 = "1";
 		}
-		else if(!$("#radio1").is(":checked") && $("#radio2").is(":checked")){
+		else if(!$("#radio3").is(":checked") && $("#radio4").is(":checked")){
 			 etc4 = "0";
 		}
 
 		/**is_score */
-		if($("#radio3").is(":checked") && !$("#radio4").is(":checked")){
+		if($("#radio1").is(":checked") && !$("#radio2").is(":checked")){
 			review = "1";
 		}
-		else if(!$("#radio3").is(":checked") && $("#radio4").is(":checked")){
+		else if(!$("#radio1").is(":checked") && $("#radio2").is(":checked")){
 			 review = "0";
 		}
 

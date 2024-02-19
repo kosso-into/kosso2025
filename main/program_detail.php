@@ -1213,7 +1213,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
+                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MASLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허진영</p>(서강대 생명과학과)
                                                                     </td>
