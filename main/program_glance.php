@@ -140,7 +140,7 @@ section.app_version .inner {
                                     <div class="colons_div">15:00-16:30</div>
                                 </td>
                                 <td class="purple_bg pointer" name="scientific_session_1" data-id="1">
-                                Scientific Session 1
+                                Scientific Session 1 <p>Innovative technologies and therapies in obesity and type 2 diabetes management </p>
                                     <p>
                                         <button class="more_btn" data-id="1"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </p>
@@ -170,7 +170,7 @@ section.app_version .inner {
                                     <div class="colons_div">16:40-18:10</div>
                                 </td>
                                 <td class="purple_bg pointer" name="scientific_session_2" data-id="2">
-                                Scientific Session 2
+                                Scientific Session 2 <p>Next in line: Investigational anti-obesity medications</p>
                                     <p>
                                         <button class="more_btn" data-id="2"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </p>

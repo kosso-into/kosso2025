@@ -208,8 +208,8 @@
                                         $attendance_arr[3]['name'] = "연자";
                                         $attendance_arr[3]['value'] = "1";
 
-                                        $attendance_arr[4]['name'] = "패널";
-                                        $attendance_arr[4]['value'] = "3";
+                                        $attendance_arr[4]['name'] = "기자";
+                                        $attendance_arr[4]['value'] = "6";
                                                                        
                                     foreach ($attendance_arr as $a_arr) {
                                         $selected =  $prev["attendance_type"] == $a_arr['value'] ? "selected" : "";
@@ -376,7 +376,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>운동사 평점신청</th>
+							<th><span class="red_txt">* </span>운동사 평점신청</th>
 							<td>
 								<div class="label_wrap">
 									<input type="radio" class="new_radio" name="review3" id="review3" value="1">
