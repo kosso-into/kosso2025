@@ -157,7 +157,7 @@ if($_POST["flag"] === "onsite") {
     $registration_idx = $users_registration['idx'];
     $nation_eng = $users_registration['nation_en'];
     $registration_no = 'KSSO2024-0'.$registration_idx;
-    $name_kor = $first_name_kor.$last_name_kor;
+    $name_kor = $last_name_kor.$first_name_kor;
 
     $ksso_member_status_text="";
     switch($ksso_member_status) {

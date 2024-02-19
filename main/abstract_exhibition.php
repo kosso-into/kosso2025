@@ -132,13 +132,14 @@ $info = sql_fetch($sql_info);
 						<li>• 3월 9일 18:30 이후 부착되어 있는 포스터는 임의로 철거 및 폐기됩니다.</li>
 					</ul>
 				</div>
-				<!-- <div class="text_center btn_box mt25">
-					<a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Poster Form Download</a>
+				<div class="text_center btn_box mt25">
+                <a href="./download/2024_KSSO_Poster_template.pptx" class="btn long_btn"><img src="./img/icons/icon_download_white.svg" alt="">포스터 양식 다운로드</a>
+					<!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Poster Form Download</a>
                 
 					<a href="javascript:;" class="btn long_btn type2" target="_blank" download="">
 						Poster Form Download<img src="./img/icons/icon_download_yellow.svg" alt="">
-					</a> 
-                </div> -->
+					</a>  -->
+                </div>
 			</div>
             
             	<!--설치 및 철거 시간n-->

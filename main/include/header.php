@@ -97,7 +97,7 @@ $locale = locale($language);
                                 <!-- <a href="/main/abstract_submission_guideline.php">Abstract Submission Guideline</a> -->
                             </li>
                             <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
-                            <li><a href="/main/abstract_submission.php" class="">초록 접수</a></li>
+                            <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a></li>
                             <!-- <li><a href="/main/comingsoon.php">발표 안내</a></li> -->
 
                             <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
@@ -252,7 +252,7 @@ $locale = locale($language);
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
                     <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
-                    <li><a href="/main/abstract_submission.php" class="">초록 접수</a>
+                    <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a>
                     </li>
                     <!-- <li><a href="/main/comingsoon.php">발표 안내</a></li> -->
                     <!-- 1121 커밍순 페이지로 변경 -->

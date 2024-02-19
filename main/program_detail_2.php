@@ -326,20 +326,20 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
+                                                                <tr>
+                                                                    <td>13:20-13:45</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">임수</p>(서울의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
+                                                                    <td>13:45-13:50</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
-                                                                </tr> -->
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -389,8 +389,8 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
+                                                                <tr>
+                                                                    <td>15:40-16:10</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
@@ -398,11 +398,6 @@ echo '<script type="text/javascript">
                                                                         <p class="bold">TBD</p>(TBD)
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">Q&A</td>
-                                                                    <td class="text_r"></td>
-                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -480,7 +475,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:50-16:15</td>
                                                                     <td class="bold">
-                                                                    New Anti-obesity Medication
+                                                                    New Anti-Obesity Medication
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Julie Broe Honore</p>(노보노디스크)
@@ -539,7 +534,7 @@ echo '<script type="text/javascript">
                                                             <tr>
                                                                     <td>16:40-17:05</td>
                                                                     <td class="bold">
-                                                                    Development of DA-1726, a Novel Balanced GLP1R/GCGR Dual Agonist
+                                                                    Development of DA-1726, a Novel Balanced GLP1R/GCGR Dual Agonist 
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">채유나</p>(동아ST)
@@ -601,7 +596,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 1</p>
-                                                    <!-- <p><span class="bold">좌장 : 박철영</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김종화</span> (부천세종병원 내분비대사내과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -624,8 +619,8 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
+                                                                <tr>
+                                                                    <td>15:00-15:15</td>
                                                                     <td class="bold">
                                                                         TBD
                                                                     </td>
@@ -634,10 +629,31 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">Q&A</td>
-                                                                    <td class="text_r"></td>
-                                                                </tr> -->
+                                                                    <td>15:15-15:30</td>
+                                                                    <td class="bold">비만도와 사회경제적 비용</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">이선미</p>(국민건강보험공단 건강보험연구원 센터장)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>15:30-15:45</td>
+                                                                    <td class="bold">
+                                                                        TBD
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">TBD</p>(TBD)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>15:45-16:30</td>
+                                                                    <td class="bold">
+                                                                    Panel Discussion
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <span class="bold">이진한</span>(동아일보)<br/>
+                                                                        <span class="bold">신영석</span>(한국보건사회연구원)
+                                                                    </td>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -660,7 +676,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 2</p>
-                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : 김성래</span> (가톨릭의대 내분비내과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -683,20 +699,33 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
+                                                                <tr>
+                                                                    <td>16:40-17:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                    높은 비만율이 지역 건강에 미치는 영향
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">조윤정</p>(대구가톨릭의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">Q&A</td>
-                                                                    <td class="text_r"></td>
-                                                                </tr> -->
+                                                                    <td>17:10-17:40</td>
+                                                                    <td class="bold">
+                                                                    강원특별자치도에서의 건강코호트 연구
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">이정은</p>(서울대 식품영양학과)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:40-18:10</td>
+                                                                    <td class="bold">
+                                                                    강원특별자치도의 만성질환관리와 향후 방향
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">김동현</p>(한림의대 사회의학교실)
+                                                                    </td>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -723,7 +752,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 3</p>
-                                                    <!-- <p><span class="bold">좌장 : TBD</span> (TBD)</p> -->
+                                                    <p><span class="bold">좌장 : TBD</span> (TBD)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -746,20 +775,33 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
+                                                                <tr>
+                                                                    <td>16:40-17:10</td>
                                                                     <td class="bold">
-                                                                        TBD
+                                                                    약물치료
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">Q&A</td>
-                                                                    <td class="text_r"></td>
-                                                                </tr> -->
+                                                                    <td>17:10-17:40</td>
+                                                                    <td class="bold">
+                                                                    건강기능식품파트
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">강서영</p>(을지의대 가정의학과)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:40-18:10</td>
+                                                                    <td class="bold">
+                                                                    수술치료 (외과파트)
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">김종원</p>(중앙의대 외과)
+                                                                    </td>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -826,7 +868,7 @@ echo '<script type="text/javascript">
                                                                </tr>
                                                                 <tr>
                                                                     <td>08:55-09:20</td>
-                                                                    <td class="bold">The Long and Winding Road: How Long does it Maintain the Pharmacotherapy?</td>
+                                                                    <td class="bold">The Long and Winding Road: How long does it Maintain the Pharmacotherapy?</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김진화</p>(조선의대 내분비대사내과)
                                                                     </td>
@@ -909,7 +951,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
-                                                                    <td class="bold">Novel Strategies to Combat Obesity Associated with the Use of Atypical Antipsychotics</td>
+                                                                    <td class="bold">Novel Strategies to Combat Obesity Associated with The Use of Atypical Antipsychotics</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">손종우</p>(KAIST 생명과학과)
                                                                     </td>
@@ -1049,9 +1091,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">Obesity as Disruptor of The Female Fertility</td>
+                                                                    <td class="bold">Obesity as Disruptor of the Female Fertility</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">정선화</p>(두번째봄 산부인과)
+                                                                        <p class="bold">정선화</p>(두번째봄산부인과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1144,7 +1186,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">HMBA Ameliorates Diet-induced Obesity</td>
+                                                                    <td class="bold">HMBA Ameliorates Diet-Induced Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은경</p>(DGIST 뇌과학과)
                                                                     </td>
@@ -1213,14 +1255,14 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-11:00</td>
-                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MASLD</td>
+                                                                    <td class="bold">TANK-Binding Kinase 1 Serves as a Key Regulator of Hepatocyte Fitness in MAFLD</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허진영</p>(서강대 생명과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:25</td>
-                                                                    <td class="bold">How Diet regulates NASH progression. Casp2PIDDosome: A New Regulator of Hepatic Lipid       Metabolism</td>
+                                                                    <td class="bold">How Diet regulates NASH Progression. Casp2PIDDosome: A New Regulator of Hepatic Lipid Metabolism</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김주연</p>(한양대 의약생명과학과)
                                                                     </td>
@@ -1363,7 +1405,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">Big Data-Based Research on Obesity and Sarcopenia in the Elderly</td>
+                                                                    <td class="bold">Big Data-Based Research on Obesity and Sarcopenia In the Elderly</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김선영</p>(경희의대 가정의학과)
                                                                     </td>
@@ -1377,7 +1419,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">Obesity Research using Data from the National Health Insurance Service</td>
+                                                                    <td class="bold">Obesity Research Using Data from the National Health Insurance Service</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">정진형</p>(성균관의대)
                                                                     </td>
@@ -1605,7 +1647,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Pediatric Obesity ; KDCA's Perspective</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">방은옥</p>(질병관리청 만성질환예방과)
                                                                     </td>
@@ -1675,7 +1717,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">Potential Restorative Effects of Exercise for Peripheral Skeletal Neuropathy and Bone Loss in a High-fat Diet-induced Type II Diabetes Model</td>
+                                                                    <td class="bold">Potential Restorative Effects of Exercise for Peripheral Skeletal Neuropathy and Bone Loss in a High-Fat Diet-Induced Type II Diabetes Model</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이승용</p>(인천대 체육교육과)
                                                                     </td>
@@ -1689,7 +1731,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and Essential Amino Acids</td>
+                                                                    <td class="bold">Exploring In Vivo Metabolic Fluxes Behind Insulin Resistance: Therapeutic Role of Exercise and  Essential Amino Acids</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김일영</p>(가천의대 의예과)
                                                                     </td>
@@ -1730,7 +1772,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 13 : Need for Comprehensive Education for Obesity </p>
-                                                    <p><span class="bold">좌장 : TBD</span>(TBD), <span class="bold">TBD</span>(TBD)</p>
+                                                    <p><span class="bold">좌장 : 박태선</span>(전북의대 내분비내과), <span class="bold">구민정</span>(서울대병원 당뇨교육실)</p>
                                                     <!--button class="btn gray2_btn program_detail_btn">세션소개</button-->
                                                 </td>
                                             </tr>
@@ -1755,23 +1797,23 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">The State of Obesity Patient Education and the Nurse's Role</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이정화</p>(강동경희대병원)
+                                                                        <p class="bold">이정화</p>(강동경희대병원 당뇨병교육실)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Obesity  Patient Education Case Review 1</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">장연정</p>(신촌세브란스병원)
+                                                                        <p class="bold">장연정</p>(신촌세브란스병원 간호과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Obesity  Patient Education Case Review 2</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이수지</p>(강북삼성병원)
+                                                                        <p class="bold">이수지</p>(강북삼성병원 당뇨병전문센터)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1780,7 +1822,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">김선영</span>(삼성서울병원)<br/>
+                                                                        <span class="bold">김선영</span>(삼성서울병원 당뇨교육실)<br/>
                                                                         <span class="bold">배경은</span>(순천향대학교 서울병원)<br/>
                                                                         <span class="bold">박정환</span>(한양의대 내분비대사내과)<br/>
                                                                         <span class="bold">김상용</span>(조선의대 내분비대사내과)
@@ -1808,7 +1850,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 14 : Comprehensive Education Course for Co-Medical Staff</p>
-                                                    <p><span class="bold">좌장 : TBD</span>(TBD), <span class="bold">TBD</span>(TBD)</p>
+                                                    <p><span class="bold">좌장 : 강지현</span>(건양의대 가정의학과), <span class="bold">신은총</span>(고대안암병원)</p>
                                                     <!--button class="btn gray2_btn program_detail_btn">세션소개</button-->
                                                 </td>
                                             </tr>
@@ -1833,23 +1875,23 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Understanding the Diagnosis of Obesity </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김승희</p>(원광의대 가정의학과 )
+                                                                        <p class="bold">김승희</p>(원광의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비내과 )
+                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">강서영</p>(을지의대 가정의학과 )
+                                                                        <p class="bold">강서영</p>(을지의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2397,7 +2439,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>11:40-12:40</td>
-                                                                    <td class="bold">What’s new in Type 2 Diabetes? Dapa + Sita combination!</td>
+                                                                    <td class="bold">What’s New in Type 2 Diabetes? Dapa + Sita Combination!</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">정창희</p>(울산의대 내분비내과)
                                                                     </td>
