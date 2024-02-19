@@ -1,3 +1,4 @@
+
 <?php
 include_once('./include/head.php');
 include_once('./include/header.php');
@@ -193,6 +194,3 @@ $info = sql_fetch($sql_info);
         </div>
     </div>
 </section>
-
-
-<?php include_once('./include/footer.php'); ?>
