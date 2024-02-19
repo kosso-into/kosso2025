@@ -144,7 +144,7 @@ $info = sql_fetch($sql_info);
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-					<!-- <a class="btn long_btn not_yet"><img src="./img/icons/icon_download_white.svg" alt="">포스터 양식 다운로드</a> -->
+					<a href="./download/2024_KSSO_Poster_template.pptx" class="btn long_btn"><img src="./img/icons/icon_download_white.svg" alt="">포스터 양식 다운로드</a>
                     <!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Poster Form Download</a> -->
 					<!--
                     <a href="javascript:;" class="btn long_btn type2" target="_blank" download="">

@@ -184,7 +184,8 @@ foreach ($nation_list as $obj) {
 				<!--				<button class="btn blue_btn long online_submission_alert">Make a new submission</button>-->
 
                 <!-- 초록마감 후 online_submission_alert 클래스 추가 --> 
-				<button class="btn gray_btn long" onclick="javascript:window.location.href='./abstract_submission.php';">초록 추가 접수</button>
+				<button class="btn gray_btn long online_submission_alert">초록 추가 접수</button>
+				<!-- <button class="btn gray_btn long" onclick="javascript:window.location.href='./abstract_submission.php';">초록 추가 접수</button> -->
                 <!-- <button class="btn gray_btn long online_submission_alert">초록 추가 접수</button> -->
 			</div>
 		</div>
