@@ -1232,7 +1232,7 @@ p.app_setting_desc {padding: 1rem; background: #f2f2f2; border-bottom: 1px solid
 
 /*app 메뉴 탭 (파랑)*/
 /* .app_title_box {width: calc(100% + 36px); margin-left:-18px;} */
-.app_title_box {position:fixed; top:58px; z-index:20; width:100%; max-width:1236px; margin-left:-18px;}
+.app_title_box {position:fixed; top:58px; z-index:20; width:100%; max-width:1236px;}
 .app_title_box .app_title {text-transform:uppercase;}
 .container.app_version .page_title {position:static; width:100vw;}
 h2.app_title {width: 100%; font-size: 16px; background: #59BCC4; text-align: center; color:#fff; padding: 12px 0 10px; font-weight: bold; position:relative;}

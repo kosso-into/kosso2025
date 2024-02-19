@@ -44,8 +44,8 @@
 						<li><a href="/main/app_abstract.php?category_idx=8">Symposium</a></li>
 						<!-- <li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li> -->
 						<!-- <li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li> -->
-						<!-- <li><a href="/main/app_abstract.php?category_idx=7">Best Article in JOMES</a></li> -->
-						<!-- <li><a href="/main/app_abstract.php?category_idx=10">Pre-congress Symposium</a></li> -->
+						<li><a href="/main/app_abstract.php?category_idx=4">Scientific Session</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=10">Committee Session</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=11">Breakfast Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=12">Luncheon Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=13">Satellite Symposium</a></li>
