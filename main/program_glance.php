@@ -149,10 +149,11 @@ section.app_version .inner {
                                 </td>
                                 <!--[240104] sujeong / 학회팀 요청 회색처리 -->
                                 <td></td>
-								<td class="purple_bg pointer" name="committee_session_1">
+								<td class="purple_bg pointer modal" name="committee_session_1" data-id="3">
                                     Committee Session 1
                                         <input type="hidden" name="e" value="room3">
                                         <input type="hidden" name="category" value="committee_session_1">
+                                        <button class="more_btn" data-id="3"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
@@ -169,23 +170,25 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">16:40-18:10</div>
                                 </td>
-                                <td class="purple_bg pointer" name="scientific_session_2" data-id="2">
+                                <td class="purple_bg pointer modal" name="scientific_session_2" data-id="2">
                                 Scientific Session 2 <p>Next in line: Investigational anti-obesity medications</p>
                                     <p>
                                         <button class="more_btn" data-id="2"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </p>
-                                        <input type="hidden" name="e" value="room1">
+                                        <input type="hidden" name="e" value="room1"  data-id="2">
                                         <input type="hidden" name="category" value="scientific_session_2">
                                     </td>
-                                    <td class="purple_bg pointer" name="committee_session_3">
+                                    <td class="purple_bg pointer modal" name="committee_session_3"  data-id="5">
                                         Committee Session 3
                                         <input type="hidden" name="e" value="room2">
                                         <input type="hidden" name="category" value="committee_session_3">
+                                        <button class="more_btn" data-id="5"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </td>
-                                    <td class="purple_bg pointer" name="committee_session_2">
+                                    <td class="purple_bg pointer modal" name="committee_session_2"  data-id="4">
                                         Committee Session 2
                                         <input type="hidden" name="e" value="room3">
                                         <input type="hidden" name="category" value="committee_session_2">
+                                        <button class="more_btn" data-id="4"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </td>
                                     <td class="dark_gray_bg"></td>
 								<td class="no_right_border dark_gray_bg"></td>
@@ -405,8 +408,10 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
-                                <td colspan="3" class="light_orange_bg">문석학술상
+                                <td colspan="3" class="light_orange_bg pointer" name="special_lecture_1" data-id="23">문석학술상
+                                    <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="special_lecture_1">
+                                    <button class="more_btn" data-id="23"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                  <!-- [240130] sujeong / 문석학술상 modal close -->
                                 <!-- <td colspan="3" class="light_orange_bg pointer modal" name="special_lecture_1" data-id="23">문석학술상
@@ -475,10 +480,11 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="keynote_lecture">
                                     <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg">
+                                <td class="light_orange_bg pointer modal" name="special_lecture_2" data-id="30">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="special_lecture_2">
+                                    <button class="more_btn" data-id="30"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
 
                                   <!-- [240130] sujeong /  젊은연구자상 modal close -->
