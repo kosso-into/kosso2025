@@ -9,7 +9,7 @@ $sql_during =    "SELECT
 $during_yn = sql_fetch($sql_during)['yn'];
 
 $currentDateTime = new DateTime(); // 현재 시간을 가져옴
-$targetDateTime = new DateTime('2024-03-09 18:00:00');
+$targetDateTime = new DateTime('2024-03-09 18:00:00'); //참가 수료증 보이는 날짜
 
 // [22.04.25] 미로그인시 처리
 if ($user_idx <= 0) {
@@ -118,9 +118,9 @@ $score_detail = sql_fetch($score_sql);
         if ($currentDateTime >= $targetDateTime) {
         ?>
             <!-- 1117 대리님 확인 증명서 필요 X-->
-            <!-- <div class="rightT">
+            <div class="rightT">
                 <button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button>
-            </div> -->
+            </div>
         <?php
         }
         ?>
