@@ -495,8 +495,8 @@ function kor_api() {
     }
 
     if(privacy == false) {
-        alert("Please agree to the collection of personal information.");
-        $(".red_api").eq(0).html("Please agree to the collection of personal information.");
+        alert("제3자 개인정보 수집에 동의해주세요.");
+        $(".red_api").eq(0).html("제3자 개인정보 수집에 동의해주세요.");
         return;
     }
 

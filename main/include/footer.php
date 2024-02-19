@@ -62,7 +62,7 @@
                     </button>
                 </li>
                 <li>
-                    <button type="button" class="" onclick="goAbstract()">
+                    <button type="button" class="online_submission_alert">
                         <img src="/main/img/icons/2024_tool_abstract.svg" alt="">
                     </button>
                 </li>
@@ -73,7 +73,7 @@
             } else {
             ?>
                  <li>
-                    <button type="button" class="" onclick="goAbstract()">
+                    <button type="button" class="online_submission_alert">
                         <img src="/main/img/icons/2024_tool_abstract.svg" alt="">
                     </button>
                 </li>

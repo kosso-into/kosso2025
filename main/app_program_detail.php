@@ -267,7 +267,7 @@ echo '<script type="text/javascript">
                             <option value="13" class="day1">Satellite Symposium</option>
                             <!-- <option value="14" class="day2 day3">Sponsored Session</option> -->
                             <option value="16" class="day2">Oral Presentation</option>
-                            <!-- <option value="17" class="day2">Guided Poster Presentation</option> -->
+                            <option value="17" class="day2">Guided Poster Presentation</option>
                             <option value="1" class="day2">Opening Address</option>
                             <option value="2" class="day2">Closing & Award Ceremony</option>
                             <option value="3" class="day1">Welcome Cocktail Party</option>
