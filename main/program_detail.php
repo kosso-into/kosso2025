@@ -1855,7 +1855,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <span class="bold">김상용</span>(조선의대 내분비대사내과)<br/>
                                                                         <span class="bold">박정환</span>(한양의대 내분비대사내과)<br/>
-                                                                        <span class="bold">배경은</span>(순천향대학교 서울병원)<br/>
+                                                                        <span class="bold">배경은</span>(순천향대 서울병원)<br/>
                                                                         <span class="bold">김선영</span>(삼성서울병원 당뇨교육실)
                                                                     </td>
                                                                 </tr>
