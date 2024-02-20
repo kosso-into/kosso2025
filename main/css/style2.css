@@ -763,6 +763,7 @@ section.visa .table_vertical th {color: #000;}
 .program_detail_ul .detail_table_common {margin-top:10px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:last-child > td {padding:0; border-bottom:none;}
 .program_detail_ul .detail_table th, .program_detail_ul .detail_table td, .overview td {padding:10px 20px;}
+.text_r{padding:10px 0px !important;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child {cursor:pointer;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td {padding:14px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td:last-child {padding:14px 100px 14px 20px;}
