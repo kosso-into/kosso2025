@@ -595,8 +595,8 @@ echo '<script type="text/javascript">
                                                 <td>15:00-16:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Committee Session 1</p>
-                                                    <p><span class="bold">좌장 : 김성래</span>(가톨릭의대 내분비내과),<span class="bold">김종화</span>(부천세종병원 내분비대사내과)</p>
+                                                    <p class="font_20 bold">Committee Session 1 : 비만 진료 급여화를 위한 건강보험정책 심포지움</p>
+                                                    <p><span class="bold">좌장 : 김성래</span>(대한비만학회 회장),<span class="bold">김종화</span>(대한비만학회 윤리위원회 이사)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -619,6 +619,24 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
+                                                                <tr>
+                                                                    <td>14:50-14:55</td>
+                                                                    <td class="bold">
+                                                                        환영사(개회사)
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">박철영</p>(대한비만학회 이사장)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>14:55-15:00</td>
+                                                                    <td class="bold">
+                                                                        축사
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">신형영</p>(보건복지위원회 국회의원(더불어민주당))
+                                                                    </td>
+                                                                </tr>
                                                                 <tr>
                                                                     <td>15:00-15:15</td>
                                                                     <td class="bold">

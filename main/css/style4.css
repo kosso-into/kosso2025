@@ -765,11 +765,12 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .program_detail table td {white-space:normal;}
 /** sujeong 수정 **/
 .program_detail table td span {font-size: 17px;}
+
 .program_detail .tab_li{display: flex;align-items: center;justify-content: center;flex-wrap: wrap;}
 .program_detail .tab_li li {padding: 6px 16px 8px; margin-right:4px; margin-bottom:8px; height: 50px;display: flex;align-items: center;justify-content: center; width: 220px;}
 .program_detail .tab_li li a {font-size:16px;}
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1024px) {
 	.program_detail table td span {font-size: 14px;}
 }
 

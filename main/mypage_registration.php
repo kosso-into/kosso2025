@@ -124,6 +124,7 @@ $score_detail = sql_fetch($score_sql);
         <?php
         }
         ?>
+
         <div class="table_wrap x_scroll">
             <table class="table_vertical registration_table mr-table no_bold">
                 <thead>
@@ -1335,7 +1336,7 @@ $score_detail = sql_fetch($score_sql);
 
     $(".certificate_btn").on("click", function() {
         var url = "./certificate_of_attendance.php";
-        window.open(url, "Certificate of attendance", "width=1150, height=900, top=30, left=200");
+        window.open(url, "Certificate of attendance", "width=792, height=1150, top=30, left=200");
     });
 
     $(".cancel_btn").on("click", function() {

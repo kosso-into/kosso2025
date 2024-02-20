@@ -145,11 +145,6 @@ $price = get_data($sql_price);
                                 ?>
                             <tr class="text_center">
                                 <td>교수, 개원의, 봉직의</td>
-                                <!-- <td class="closed_td">USD 130<br />KRW 130,000 -->
-
-                                <!-- <img src="./img/icons/icon_closed.png" alt=""> -->
-                                <!-- </td> -->
-                                <!-- <td>USD 160<br>KRW 160,000</td> -->
                                 <td>50,000원</td>
                                 <td>80,000원</td>
                                 <td>70,000윈</td>
@@ -157,25 +152,22 @@ $price = get_data($sql_price);
                             </tr>
                             <tr class="text_center">
                                 <td>
-                                    전임의, 수련의, 전공의,<br>
+                                    전임의, 수련의,<br>
                                     영양사, 운동사, 간호사,<br> 
                                     군의관, 공보의, 연구원, 기타<br>
-                                    <!--  Military
-                                    Pharmacist,
-                                    Corporate Member,  -->
                                 </td>
-                                <!-- <td>USD 65<br>KRW 65,000</td> -->
-                                <!-- <td>USD 95<br>KRW 95,000</td> -->
                                 <td>30,000윈</td>
                                 <td>60,000윈</td>
                                 <td>50,000윈</td>
                                 <td>80,000윈</td>
                             </tr>
                             <tr class="text_center">
-                                <td>학생
-                                    <!--, Surgeon (Military),<br>Public Health Doctor-->
-                                </td>
+                                <td>학생</td>
                                 <td colspan="6">30,000원<br />*행사 당일 학생증 지참 필요</td>
+                            </tr>
+                            <tr class="text_center">
+                                <td>전공의</td>
+                                <td colspan="6">무료<br />*행사 당일 소속 병원 의료원증 지참 필요</td>
                             </tr>
                         </tbody>
                     </table>
