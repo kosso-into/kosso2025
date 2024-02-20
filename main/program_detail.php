@@ -595,7 +595,7 @@ echo '<script type="text/javascript">
                                                 <td>15:00-16:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Committee Session 1 : 비만 진료 급여화를 위한 건강보험정책 심포지움</p>
+                                                    <p class="font_20 bold">Committee Session 1 : 비만 진료 급여화를 위한 건강보험정책 심포지엄</p>
                                                     <p><span class="bold">좌장 : 김성래</span>(대한비만학회 회장),<span class="bold">김종화</span>(대한비만학회 윤리위원회 이사)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -634,7 +634,7 @@ echo '<script type="text/javascript">
                                                                         축사
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">신형영</p>(보건복지위원회 국회의원(더불어민주당))
+                                                                        <p class="bold">신형영</p>(보건복지위원회 국회의원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -679,7 +679,7 @@ echo '<script type="text/javascript">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이진한</span>(동아일보)<br/>
+                                                                        <span class="bold">이진한</span>(동아일보 기자)<br/>
                                                                         <span class="bold">신영석</span>(한국보건사회연구원)<br/>
                                                                         <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
                                                                         <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)

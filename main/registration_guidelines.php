@@ -152,7 +152,7 @@ $price = get_data($sql_price);
                             </tr>
                             <tr class="text_center">
                                 <td>
-                                    전임의, 수련의,<br>
+                                    전임의, 수련의, 전공의,<br>
                                     영양사, 운동사, 간호사,<br> 
                                     군의관, 공보의, 연구원, 기타<br>
                                 </td>
@@ -165,10 +165,11 @@ $price = get_data($sql_price);
                                 <td>학생</td>
                                 <td colspan="6">30,000원<br />*행사 당일 학생증 지참 필요</td>
                             </tr>
-                            <tr class="text_center">
+                            <!-- [240220] sujeong / 학회팀 요청, 전공의 무료 추가 -->
+                            <!-- <tr class="text_center">
                                 <td>전공의</td>
                                 <td colspan="6">무료<br />*행사 당일 소속 병원 의료원증 지참 필요</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
