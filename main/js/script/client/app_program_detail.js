@@ -234,16 +234,27 @@ function createHTMLList(program_list, active){
                 }
             }
 
-            contents_html += `
-                                <div>
-                                    <p class="title">${cl.contents_title}</p>
-                                    ${speaker_html}
-                                    <div class="info">
-                                        <span class="time">${cl.start_time}-${cl.end_time}</span>
-                                        ${speaker_info_html}
-                                    </div>
-                                </div>
-                             `
+            //[240220] sujeong / Oral Presentation & Guided Poster Presentation 심사위원 시간 가리기
+            if(cl.contents_title !== "심사위원"){
+                contents_html += `
+                <div>
+                    <p class="title">${cl.contents_title}</p>
+                    ${speaker_html}
+                    <div class="info">
+                        <span class="time">${cl.start_time}-${cl.end_time}</span>
+                        ${speaker_info_html}
+                    </div>
+                </div>
+             `
+            }else if(cl.contents_title === "심사위원"){
+                contents_html += `
+                <div>
+                    <p class="title">${cl.contents_title}</p>
+                    ${speaker_html}
+                </div>
+             `
+            }
+           
         })
 
         var schedule = "";

@@ -152,7 +152,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
         <div class="dates_area">
             <ul>
                 <li>
-                    <a href="/main/abstract_submission.php">
+                    <a href="/main/abstract_submission.php" class="online_submission_alert">
                         <!-- <img src="./img/2024_dates_area_1.png"/> -->
                         <h2>2024년 2월 12일<span>(월)</span></h2>
                         <p>초록 접수<br />마감</p>
