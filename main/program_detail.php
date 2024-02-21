@@ -679,7 +679,7 @@ echo '<script type="text/javascript">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이진한</span>(동아일보 기자)<br/>
+                                                                        <span class="bold">이진한</span>(동아일보)<br/>
                                                                         <span class="bold">신영석</span>(한국보건사회연구원)<br/>
                                                                         <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
                                                                         <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)
@@ -812,7 +812,7 @@ echo '<script type="text/javascript">
                                                                      비만관련 건강기능식품
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비대사내과)
+                                                                        <p class="bold">강서영</p>(을지의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -821,7 +821,7 @@ echo '<script type="text/javascript">
                                                                     비만의 약물치료
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">강서영</p>(을지의대 가정의학과)
+                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1452,7 +1452,7 @@ echo '<script type="text/javascript">
                                                                     <td>17:00-17:25</td>
                                                                     <td class="bold">Obesity Research Using Data from the National Health Insurance Service</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">정진형</p>(성균관의대)
+                                                                        <p class="bold">정진형</p>(성균관대 의학연구소)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1968,7 +1968,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 1</p>
                                                     <p>
-                                                        <span class="bold">좌장 : 정창희</span>(울산의대 내분비내과), <span class="bold">이윤희</span>(서울대 약대)
+                                                        <span class="bold">좌장 : 정창희</span>(울산의대 내분비내과), <span class="bold">이윤희</span>(서울대 약학대)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
@@ -2031,7 +2031,8 @@ echo '<script type="text/javascript">
                                                                     <td></td>
                                                                     <td class="bold">심사자</td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">조윤경</span>(울산의대 내분비내과)  
+                                                                        <span class="bold">홍상모</span>(한양의대 내분비내과)<br/>
+                                                                        <span class="bold">조윤경</span>(울산의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
