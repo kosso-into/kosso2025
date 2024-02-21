@@ -1218,6 +1218,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.award_title_wrap{padding: 0;}
 	.c_table td span,  .c_table td a, .c_table td label {font-size: 12px;} 
 	.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td{font-size: 12px; padding:8px;}
+	.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td span{font-size: 12px; padding:8px;}
 	.c_table.type2 th, .c_table.type2 td, .c_table2.type2 th, .c_table2.type2 td {font-size: 14px; padding:10px 2px;}
 	.c_table td p, .c_table2 td p{font-size: 14px;}
 	.input_table td{padding:0 4px;}

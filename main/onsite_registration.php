@@ -208,8 +208,11 @@
                                         $attendance_arr[3]['name'] = "연자";
                                         $attendance_arr[3]['value'] = "1";
 
-                                        $attendance_arr[4]['name'] = "기자";
-                                        $attendance_arr[4]['value'] = "6";
+										$attendance_arr[4]['name'] = "패널";
+                                        $attendance_arr[4]['value'] = "3";
+
+                                        $attendance_arr[5]['name'] = "기자";
+                                        $attendance_arr[5]['value'] = "6";
                                                                        
                                     foreach ($attendance_arr as $a_arr) {
                                         $selected =  $prev["attendance_type"] == $a_arr['value'] ? "selected" : "";

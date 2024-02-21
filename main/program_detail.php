@@ -555,7 +555,7 @@ echo '<script type="text/javascript">
                                                                     Paradigm Shift in Obesity Therapeutics : Where We Are and Where to Go?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">신민정</p>(고려대 바이오시스템의과학부/<br/>㈜메디엔진)
+                                                                        <p class="bold">신민정</p>(고려대 바이오시스템의과학부/<br class="mb_only"/>㈜메디엔진)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -634,7 +634,7 @@ echo '<script type="text/javascript">
                                                                         축사
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">신형영</p>(보건복지위원회 국회의원)
+                                                                        <p class="bold">신현영</p>(보건복지위원회 국회의원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1928,10 +1928,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:25-17:40</td>
                                                                     <td class="bold">
-                                                                        Panel Discussion
+                                                                        Q&A 
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">TBD</span>(TBD)
+                                                                        <span class="bold"></span>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
