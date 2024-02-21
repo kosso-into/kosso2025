@@ -152,7 +152,7 @@ $price = get_data($sql_price);
                             </tr>
                             <tr class="text_center">
                                 <td>
-                                    전임의, 수련의, 전공의,<br>
+                                    전임의, 수련의,<br>
                                     영양사, 운동사, 간호사,<br> 
                                     군의관, 공보의, 연구원, 기타<br>
                                 </td>
@@ -163,13 +163,20 @@ $price = get_data($sql_price);
                             </tr>
                             <tr class="text_center">
                                 <td>학생</td>
-                                <td colspan="6">30,000원<br />*행사 당일 학생증 지참 필요</td>
+                                <td colspan="6">30,000원<br /><span class="bold">*행사 당일 학생증 지참 필요</span></td>
                             </tr>
                             <!-- [240220] sujeong / 학회팀 요청, 전공의 무료 추가 -->
-                            <!-- <tr class="text_center">
+                            <tr class="text_center">
                                 <td>전공의</td>
-                                <td colspan="6">무료<br />*행사 당일 소속 병원 의료원증 지참 필요</td>
-                            </tr> -->
+                                <td colspan="2">무료<br /><span class="bold">*행사 당일 소속 병원 ID카드 지참 필요</span></td>
+                                <td>50,000윈</td>
+                                <td>80,000윈</td>
+                            </tr>
+                            <tr class="text_center">
+                                <td>의대생</td>
+                                <td colspan="2">무료<br /><span class="bold">*행사 당일 학생증 지참 필요</span></td>
+                                <td colspan="2">30,000원<br /><span class="bold">*행사 당일 학생증 지참 필요</span></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -178,8 +185,8 @@ $price = get_data($sql_price);
                         <li>• 등록 완료 시, 등록 확인 메일이 발송 됩니다. (메일을 받지 못한 경우, 운영 사무국(<a href="mailto:ksso@into-on.com" class="font_inherit link">ksso@into-on.com</a>)으로 문의 부탁드립니다.)</li>
                         <li>• 전체 등록비가 지불되기 전까지 등록은 완료로 간주되지 않습니다.</li>
                         <li>• 온라인 등록 페이지는 Google Chrome 및 Microsoft Edge에 최적화되어 있습니다. 온라인 등록에 문제가 발생 할 경우, 운영사무국으로 문의
-                            부탁드립니다.
-                        </li>
+                            부탁드립니다.</li>
+                        <li>• 전공의 및 의대생으로 사전에 등록 및 결제하신 등록비는 학술대회 종료 후, 환불해 드릴 예정입니다.</li>
                     </ul>
                 </div>
             </div>

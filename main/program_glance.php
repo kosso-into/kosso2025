@@ -81,11 +81,12 @@ section.app_version .inner {
                 if (!empty($session_app_type) && $session_app_type == 'N') {
                     // pc일때
                 ?>
+                <!-- [240221] sujeong / 주석 풀기!  -->
 				<!--231130 sujeong 다운로드 주석-->
                 <!-- <div class="rightT mb20">
                     <button 
 					 onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')" 
-                        class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a
+                        class="btn sky_blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a
                         Glance Download</a>
                 </div> -->
                 <!-- [240105] sujeong 다운로드 버튼 학회팀 요청 주석-->
@@ -382,10 +383,10 @@ section.app_version .inner {
                                 <td class="light_orange_bg pointer" name="guided_poster_presentation">
                                     Guided Poster Presentation
                                     <br/>
-                                    12:15-12:30
+                                    12:15-12:35
                                     <br/>
                                     * 장소: VISTA 통로 포스터존*
-                                    <input type="hidden" name="e" value="room4">
+                                    <input type="hidden" name="e" value="VISTA Hall 통로">
                                     <input type="hidden" name="category" value="guided_poster_presentation">
                                 </td>
                             </tr>

@@ -149,6 +149,12 @@ switch ($attendance_type) {
     case 6:
         $attendance_type = "기자";
         break;
+	case 7:
+		$attendance_type = "심사";
+		break;
+	case 8:
+		$attendance_type = "전공의 및 의대생";
+		break;
 
 }
 ?>

@@ -249,6 +249,9 @@ $score_detail = sql_fetch($score_sql);
                             case 7:
                                 $attendance_type = "심사";
                                 break;
+                            case 8:
+                                $attendance_type = "전공의 및 의대생";
+                                break;
                         }
 
                         // Others
