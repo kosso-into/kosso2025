@@ -213,7 +213,7 @@
 
                                         $attendance_arr[5]['name'] = "기자";
                                         $attendance_arr[5]['value'] = "6";
-                                                                       
+										                                
                                     foreach ($attendance_arr as $a_arr) {
                                         $selected =  $prev["attendance_type"] == $a_arr['value'] ? "selected" : "";
                                         echo '<option value="'.$a_arr['value'].'" '.$selected.'>'.$a_arr['name'].'</option>';
@@ -423,7 +423,6 @@
 								</ul>
 							</td>
 						</tr>
-                      
 						<tr>
 							<th><span class="red_txt">*</span>개최 정보는 어디에서 얻었나요?</th>
 							<td>
@@ -464,6 +463,17 @@
                                         }
                                     ?>
 								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="red_txt">* </span>결제 방법</th>
+							<td>
+								<div class="label_wrap">
+									<input checked="" type="radio" class="new_radio" name="payment_methods" id="card" value="0">
+									<label for="card"><i></i>신용카드</label>
+									<input type="radio" class="new_radio" name="payment_methods" id="bank" value="1">
+									<label for="bank"><i></i>계좌이체</label>
+								</div>
 							</td>
 						</tr>
 					</tbody>

@@ -287,6 +287,7 @@ section.container.organizing {padding-bottom: 190px;}
 /* 220406 HUBDNC LJH2 추가 */
 .registration .title + .details {margin-bottom: 100px;}
 .registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {font-size:17px;}
+.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td span {font-size:17px;}
 .registration .btn_wrap {text-align: center; margin-top: 40px;}
 .rating_guide_pop .btn {font-size: 20px; padding: 0 30px; border-radius: 0;}
 .details_bg {border-top: 2px solid #707070; background-color: #F4F4F4; padding: 30px;}
@@ -588,7 +589,7 @@ section.container.organizing {padding-bottom: 190px;}
 .scroll_table {/* position:relative; */max-width:100%;overflow:hidden; margin-bottom:20px;}
 .program_table_wrap {width:100%; overflow-x: auto; overflow-y: hidden;}
 .light_orange_bg {background-color:#FDEADB !important;}
-.orange_bg {background-color:#ffc000 !important;}
+.orange_bg {background-color:#f8cbad !important;}
 .yellow_bg {background-color:rgba(255,235,0,0.3) !important;}
 .pink_bg {background-color:rgba(255,160,171,0.3) !important;}
 .gray_bg {background-color:#F4F4F4 !important;}

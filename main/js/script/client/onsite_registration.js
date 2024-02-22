@@ -271,6 +271,9 @@ function onsite_submit(){
 
     var price = $("input[name=reg_fee]").val();
     var etc4 = $('input[name=review3]:checked').val();
+
+    const payment_methods =  $('input[name=payment_methods]:checked').val();
+
     // ksso api 연동 id
     var ksso_member_check = $("input[name=ksso_member_check]").val();
     // ksso 회원 유형
@@ -315,6 +318,7 @@ function onsite_submit(){
         day3_breakfast_yn : day3_breakfast_yn,
         day3_luncheon_yn : day3_luncheon_yn,
         conference_info_arr : conference_info_arr,
+        payment_methods : payment_methods,
         price : price
     };
 

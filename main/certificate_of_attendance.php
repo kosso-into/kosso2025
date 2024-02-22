@@ -35,7 +35,7 @@ $nation_en=sql_fetch($sql)["nation_en"];
 </style>
 <body style="width:792px; height:1121px; margin:0; padding:0; border:0;">
 <div style="width:100%; height:100%; box-sizing:border-box; padding:71px 50px 66px; margin:0; position:relative;" id="pdfDiv">
-    <img src="./img/2024_certificate_of_attendance.png" alt="" style="width:100%; height:100%; position:absolute; left:0; top:0; z-index:-1;">
+    <img src="./img/2024_certificate_of_attendance_2.png" alt="" style="width:100%; height:100%; position:absolute; left:0; top:0; z-index:-1;">
 
     <div style="text-align:center; margin:290px 0 47px;">
         <p style="font-family: 'ChosunKm', sans-serif; font-size:66px; line-height:64px; letter-spacing: 30px; color:#000000; margin: 0 0 0 30px;"><!--성명--><?=$last_name?><?=$first_name?></p>

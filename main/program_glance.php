@@ -151,7 +151,7 @@ section.app_version .inner {
                                 <!--[240104] sujeong / 학회팀 요청 회색처리 -->
                                 <td></td>
 								<td class="purple_bg pointer modal" name="committee_session_1" data-id="3">
-                                    Committee Session 1
+                                        Committee Session 1 <p>비만 진료 급여화를 위한 건강보험정책 심포지엄</p>
                                         <input type="hidden" name="e" value="room3">
                                         <input type="hidden" name="category" value="committee_session_1">
                                         <button class="more_btn" data-id="3"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -180,13 +180,13 @@ section.app_version .inner {
                                         <input type="hidden" name="category" value="scientific_session_2">
                                     </td>
                                     <td class="purple_bg pointer modal" name="committee_session_3"  data-id="5">
-                                        Committee Session 3
+                                        Committee Session 3 <p>진료지침위원회 세미나</p>
                                         <input type="hidden" name="e" value="room2">
                                         <input type="hidden" name="category" value="committee_session_3">
                                         <button class="more_btn" data-id="5"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </td>
                                     <td class="purple_bg pointer modal" name="committee_session_2"  data-id="4">
-                                        Committee Session 2
+                                        Committee Session 2 <p>지방자치시대, 건강한 지역주민을 만들기 위한 방안은?</p>
                                         <input type="hidden" name="e" value="room3">
                                         <input type="hidden" name="category" value="committee_session_2">
                                         <button class="more_btn" data-id="4"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -396,9 +396,6 @@ section.app_version .inner {
                                 </td>
                                 <td colspan="3" class="pink_bg pointer modal" name="plenary_lecture" data-id="22">
                                     Plenary Lecture<p>Obesity and Insulin Resistance</p>
-                                    <!-- <p class="bold">Understanding Human Metabolic Dysregulation in Vivo Using Stable
-                                        Isotope Tracers: More than 50 Years of Experience</p>
-                                    <p>Robert R. Wolfe <br />(University of Arkansas for Medical Sciences, USA)</p> -->
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="plenary_lecture">
                                     <button class="more_btn" data-id="22"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -532,6 +529,7 @@ section.app_version .inner {
                                     <div class="colons_div">17:40-18:00</div>
                                 </td>
                                 <td colspan="3" class="yellow_bg">Award & Closing</td>
+                                <td></td>
                                 <td></td>
                             </tr>
                         </tbody>
