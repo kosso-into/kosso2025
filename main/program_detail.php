@@ -230,7 +230,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
-                                                    <p><span class="bold">좌장 : 김영설</span>(경희의대 내분비내과)</p>
+                                                    <p><span class="bold">좌장 : 김영설</span>(경희의대 내분비대사내과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -592,7 +592,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>15:00-16:30</td>
+                                                <td>14:50-16:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 1 : 비만 진료 급여화를 위한 건강보험정책 심포지엄</p>
@@ -643,7 +643,7 @@ echo '<script type="text/javascript">
                                                                         최신 비만 역학 및 비만도와 질병부담, 비만 진료 급여기준 제언
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">허연</p>(을지의대 가정의학과)
+                                                                        <p class="bold">허연</p>(을지의대 가정의학과 교수)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -661,7 +661,7 @@ echo '<script type="text/javascript">
                                                                         의료형평성(의료취약계층)과 비만
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김원석</p>(을지의대 가정의학과)
+                                                                        <p class="bold">김원석</p>(을지의대 가정의학과 교수)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -679,8 +679,8 @@ echo '<script type="text/javascript">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이진한</span>(동아일보)<br/>
-                                                                        <span class="bold">신영석</span>(한국보건사회연구원)<br/>
+                                                                        <span class="bold">이진한</span>(동아일보 기자)<br/>
+                                                                        <span class="bold">신영석</span>(한국보건사회연구원 명예연구위원)<br/>
                                                                         <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
                                                                         <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)
                                                                     </td>
@@ -706,8 +706,8 @@ echo '<script type="text/javascript">
                                                 <td>16:40-18:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Committee Session 2</p>
-                                                    <p><span class="bold">좌장 : 김성래</span> (가톨릭의대 내분비내과)</p>
+                                                    <p class="font_20 bold">Committee Session 2 : 지방자치시대, 건강한 지역주민을 만들기 위한 방안은?</p>
+                                                    <p><span class="bold">좌장 : 김성래</span>(가톨릭의대 내분비내과),<span class="bold">오한진</span>(을지의대 가정의학과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -731,30 +731,76 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:40-17:10</td>
+                                                                    <td>16:40-16:45</td>
                                                                     <td class="bold">
-                                                                    높은 비만율이 지역 건강에 미치는 영향
+                                                                        개회사
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">박정환</p>(대한비만학회 대외협력정책이사)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:45-16:50</td>
+                                                                    <td class="bold">
+                                                                        격려사
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">김진태</p>(강원특별자치도지사)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:50-16:55</td>
+                                                                    <td class="bold">
+                                                                        환영사
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">김광훈</p>(대한당뇨병연합 대표이사)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:55-17:00</td>
+                                                                    <td class="bold">
+                                                                        환영사
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">박철영</p>(대한비만학회 이사장)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:00-17:15</td>
+                                                                    <td class="bold">
+                                                                        높은 비만율이 지역 건강에 미치는 영향
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">조윤정</p>(대구가톨릭의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:10-17:40</td>
+                                                                    <td>17:15-17:30</td>
                                                                     <td class="bold">
-                                                                    강원특별자치도에서의 건강코호트 연구
+                                                                        강원특별자치도에서의 건강코호트 연구
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이정은</p>(서울대 식품영양학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:40-18:10</td>
+                                                                    <td>17:30-17:45</td>
                                                                     <td class="bold">
-                                                                    강원특별자치도의 만성질환관리와 향후 방향
+                                                                        강원특별자치도의 만성질환관리와 향후 방향
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김동현</p>(한림의대 사회의학교실)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:45-18:10</td>
+                                                                    <td class="bold">
+                                                                        Panel Discussion
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <span class="bold">김대중</span>(아주의대 내분비대사내과)<br/>
+                                                                        <span class="bold">박은주</span>(강원특별자치도 보건식품안전과장)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -782,7 +828,7 @@ echo '<script type="text/javascript">
                                                 <td>16:40-18:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Committee Session 3</p>
+                                                    <p class="font_20 bold">Committee Session 3 : 진료지침위원회 세미나</p>
                                                     <p><span class="bold">좌장 : 한상호</span>(동아의대 가정의학과),<span class="bold">권혁태</span>(서울의대 가정의학과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -1492,7 +1538,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 3 : Ultra-processed Foods and Cardiometabolic Health</p>
-                                                    <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비대사내과), <span class="bold">김오연</span>(동아대 식품영양학과)</p>
+                                                    <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비내과), <span class="bold">김오연</span>(동아대 식품영양학과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -1803,7 +1849,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 13 : Need for Comprehensive Education for Obesity </p>
-                                                    <p><span class="bold">좌장 : 박태선</span>(전북의대 내분비내과), <span class="bold">구민정</span>(서울대병원 당뇨교육실)</p>
+                                                    <p><span class="bold">좌장 : 박태선</span>(전북의대 내분비대사내과), <span class="bold">구민정</span>(서울대병원 당뇨교육실)</p>
                                                     <!--button class="btn gray2_btn program_detail_btn">세션소개</button-->
                                                 </td>
                                             </tr>
@@ -1915,7 +1961,7 @@ echo '<script type="text/javascript">
                                                                     <td>16:35-17:00</td>
                                                                     <td class="bold">TBD</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비내과)
+                                                                        <p class="bold">전언주</p>(대구가톨릭의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2031,7 +2077,7 @@ echo '<script type="text/javascript">
                                                                     <td></td>
                                                                     <td class="bold">심사자</td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">홍상모</span>(한양의대 내분비내과)<br/>
+                                                                        <span class="bold">홍상모</span>(한양의대 내분비대사내과)<br/>
                                                                         <span class="bold">조윤경</span>(울산의대 내분비내과)
                                                                     </td>
                                                                 </tr>
@@ -2159,7 +2205,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.08. ROOM 1</p> -->
                                                     <p class="font_20 bold">Satellite Symposium</p>
-                                                    <p><span class="bold">좌장 : 김종화</span>(부천세종병원 내분비대사내과),<span class="bold">김정환</span>(을지의대 가정의학과)</p>
+                                                    <p><span class="bold">좌장 : 김종화</span>(부천세종병원 내분비내과),<span class="bold">김정환</span>(을지의대 가정의학과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -2404,7 +2450,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 1</p> -->
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
-                                                    <p><span class="bold">좌장 : 이문규</span>(을지의대 내분비대사내과)</p>
+                                                    <p><span class="bold">좌장 : 이문규</span>(을지의대 내분비내과)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
                                                 </td>

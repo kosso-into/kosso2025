@@ -47,6 +47,7 @@ if($_POST["flag"] === "onsite") {
 
     $conference_info = implode("*", $data["conference_info_arr"]);
     $price = $data["price"] ?? "";
+    $payment_methods = $data["payment_methods"] ?? "";
     $fee= str_replace(",","",$price);
 
     $insert_member_query =	"
@@ -112,7 +113,7 @@ if($_POST["flag"] === "onsite") {
                                             day3_breakfast_yn = '{$day3_breakfast_yn}',
                                             day3_luncheon_yn = 'N',
                                             special_request_food = 'N',
-                                            payment_methods = 2,
+                                            payment_methods = '{$payment_methods}',
                                             price = '{$fee}'
                                     ";
 
@@ -275,7 +276,19 @@ switch ($participation_type) {
         break;
 }
     $time = date("Y-m-d");
-    $nick_name = $first_name .  $last_name;
+    $nick_name =  $last_name.$first_name;
+
+    $deposit_method = "";
+
+    switch($payment_methods) {
+        case 0 :
+            $deposit_method = "신용카드";
+            break;
+        case 1 :
+            $deposit_method = "계좌이체";
+            break;
+    }
+
     $insert_reg_user_sql = "
                         INSERT reg1.users
                         SET
@@ -301,7 +314,8 @@ switch ($participation_type) {
                             luncheon_yn = '{$day3_breakfast_yn}',
                             date_of_birth = '{$date_of_birth}',
                             onsite_reg = '1',
-                            deposit = '결제대기'
+                            deposit = '결제대기',
+                            deposit_method = '{$deposit_method}'
                     ";
 
     if(!empty($licence_number)){
