@@ -78,7 +78,6 @@ echo '<script type="text/javascript">
             
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-                            
                             <li name="plenary_lecture_1">
                                 <div class="program_header">
                                     <p class="font_16 bold">ROOM 1~3</p>
@@ -706,8 +705,8 @@ echo '<script type="text/javascript">
                                                 <td>16:40-18:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Committee Session 2 : 지방자치시대, 건강한 지역주민을 만들기 위한 방안은?</p>
-                                                    <p><span class="bold">좌장 : 김성래</span>(가톨릭의대 내분비내과),<span class="bold">오한진</span>(을지의대 가정의학과)</p>
+                                                    <p class="font_20 bold">Committee Session 2 : 지방자치시대, 건강한 지역주민을 만들기 위한 방안은?<br/>(부제:건강한 강원특별자치도를 만들기 위한 방안은?)</p>
+                                                    <p><span class="bold">좌장 : 김성래</span>(대한비만학회 회장),<span class="bold">오한진</span>(을지의대 가정의학과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1275,7 +1274,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <span class="bold">송도경</span>(이화의대 내분비내과)<br>
-                                                                        <span class="bold">김형석</span>(충남의대)
+                                                                        <span class="bold">김형석</span>(충남의대 생화학교실)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
