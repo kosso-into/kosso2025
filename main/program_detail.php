@@ -687,9 +687,9 @@ echo '<script type="text/javascript">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">이진한</span>(동아일보 기자)<br/>
-                                                                        <span class="bold">신영석</span>(한국보건사회연구원 명예연구위원)<br/>
                                                                         <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
+                                                                        <span class="bold">신영석</span>(한국보건사회연구원 명예연구위원)<br/>
+                                                                        <span class="bold">이진한</span>(동아일보 기자)<br/>
                                                                         <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)
                                                                     </td>
                                                                 </tr>
@@ -1571,9 +1571,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>08:30-08:55</td>
-                                                                    <td class="bold">Estimation of Ultra-processed Food Intake among Korean Adults</td>
+                                                                    <td class="bold">Estimation of Ultra-processed Food Intake Among Korean Adults</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">박소현</p>(한림대 식품영양학과)
+                                                                        <p class="bold">정수경</p>(충남대병원 의생명연구원)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1974,7 +1974,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Comprehensive summary of non-psychotrophic obesity medications for educating patients with obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">강서영</p>(을지의대 가정의학과)
                                                                     </td>
