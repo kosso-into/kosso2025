@@ -99,7 +99,8 @@ $payment_date = $data["payment_date_text"] ?? "-";
 							</tr>
 							<tr>
 								<th width="135" style="width:135px; padding:12px; font-size:14px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #000066; border-bottom:3px solid #000066; text-align:left;">
-									결제 방법</th>
+									결제방법</th>
+                                    <!--띄워쓰기 삭제 pdf파일 깨짐-->
 								<td style="padding:12px; font-size:14px; color:#000000; border-bottom:3px solid #000066;">
 									<?= $payment_method ?></td>
 							</tr>

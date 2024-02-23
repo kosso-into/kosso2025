@@ -21,7 +21,7 @@
 	}
 
 	if($name != ""){
-		$where .= " AND CONCAT(m.first_name, ' ', m.last_name) LIKE '%".$name."%' ";
+		$where .= " AND CONCAT(m.last_name, m.first_name) LIKE '%".$name."%' ";
 	}
 
 	if($phone != ""){

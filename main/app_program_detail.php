@@ -235,8 +235,8 @@ echo '<script type="text/javascript">
 //								}
 //                            ?>
                             <option value="1" class="day1 day2">Room1</option>
-                            <option value="2" class="day2">Room2</option>
-                            <option value="3" class="day2">Room3</option>
+                            <option value="2" class="day1 day2">Room2</option>
+                            <option value="3" class="day1 day2">Room3</option>
                             <option value="4" class="day2">Room4</option>
                             <option value="5" class="day2">Room5</option>
                             <!-- <option value="6" class="day2">Room6</option>
