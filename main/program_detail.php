@@ -591,7 +591,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="purple_bg">
-                                                <td>14:50-16:30</td>
+                                                <td>14:45-16:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 1 : 비만 진료 급여화를 위한 건강보험정책 심포지엄</p>
@@ -619,9 +619,18 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
+                                                                    <td>14:45-14:50</td>
+                                                                    <td class="bold">
+                                                                        개회사
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">남가은</p>(대한비만학회 보험법제위원회 이사)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
                                                                     <td>14:50-14:55</td>
                                                                     <td class="bold">
-                                                                        환영사(개회사)
+                                                                        환영사
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">박철영</p>(대한비만학회 이사장)

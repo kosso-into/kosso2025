@@ -55,7 +55,7 @@ $price = get_data($sql_price);
                         <td class="f_bold">1월 12일 (금)</td>
                     </tr> -->
                     <tr>
-                        <th>2차 사전 등록 <br class="br_mb_only">마감일</th>
+                        <th class="close_th">2차 사전 등록 <br class="br_mb_only">마감일</th>
                         <td class="f_bold">2월 22일 (목)</td>
                     </tr>
                 </table>
@@ -411,7 +411,7 @@ $price = get_data($sql_price);
     <!-- 	<?= $locale("registration") ?> -->
     <!-- </button> -->
     <div class="centerT">
-        <a href="./registration.php" class="btn long_btn text_long ">온라인 사전등록</a>
+        <a href="./registration.php" class="btn long_btn text_long online_registration_alert">온라인 사전등록</a>
     </div>
 
     <!-- 평점안내 팝업 / 시작 -->
