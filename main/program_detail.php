@@ -2037,41 +2037,48 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                <tr>
+                                                                    <td>08:30-08:40</td>
+                                                                    <td class="bold">Hypothalamic astrocyte NAD + salvage pathway mediates the coupling of dietary fat overconsumption</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">박재우</p>(울산의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>08:40-08:50</td>
+                                                                    <td class="bold">GLP-1 Increases Cognitive Satiation via Hypothalamic Circuits in Mice and Humans</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김규식</p>(서울의대 의과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>08:50-09:00</td>
+                                                                    <td class="bold">Long-term Combination Treatment Involving Intermittent Hypoxic Exposure and Exercise Training has an Additional Effect on Improving Body Composition and Glucose Tolerance in High-fat Diet-fedObeseMice</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">장인권</p>(건국대 스포츠의과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>09:00-09:10</td>
+                                                                    <td class="bold">Behavioral and Molecular Phenotype of Seeking and Consummatory Behaviors</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">이영희</p>(서울의대 의과학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>09:10-09:20</td>
+                                                                    <td class="bold">Differential Regulatory Effects of Exercise and Hypocaloric Diet on Adipose Thermogenesis and Inflammation in Obese Mice</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">Vivi</p>(순천향대 의생명융합학과)
                                                                     </td>
-                                                                </tr> -->
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>09:20-09:30</td>
+                                                                    <td class="bold">Acute Effects of Resistance Exercise Type and Intensity on Circulating Myokine Levels in Young Normal Weight Obese Women</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">지민제</p>(인천대 체육학과)
+                                                                    </td>
+                                                                </tr>
                                                                 <tr>
                                                                     <td></td>
                                                                     <td class="bold">심사자</td>
@@ -2127,41 +2134,48 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                <tr>
+                                                                    <td>10:10-10:20</td>
+                                                                    <td class="bold">A Study on the Improvement for Children and Adolescents Obesity Prevention and Management Projects in South Korea</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">박수진</p>(경기도공공보건의료지원단 공공의료정책팀)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:20-10:30</td>
+                                                                    <td class="bold">Efficacy and safety of once weekly semaglutide 2.4 mg for weight management in a predominantly Asian population with overweight or obesity in the STEP 7 randomised clinical trial</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">김범택</p>(아주대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:30-10:40</td>
+                                                                    <td class="bold">Machine learning-based prediction model for cardiovascular disease in patients with diabetes: Derivation and validation in two independent Korean cohorts</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">박재유</p>(경희대 디지털헬스센터)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:40-10:50</td>
+                                                                    <td class="bold">Body Weight Variability and Risk of Suicide Mortality: A Nationwide Population-based Study</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">이정민</p>(가톨릭의대 내분비내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td></td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td>10:50-11:00</td>
+                                                                    <td class="bold">Association between Dairy-rich Dietary Pattern and Metabolic Dysfunction-associated Steatotic Liver Disease: Findings from the Korean Genome and Epidemiology Study</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(TBD)
+                                                                        <p class="bold">이종희</p>(연세의대 가정의학과)
                                                                     </td>
-                                                                </tr> -->
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:00-11:10</td>
+                                                                    <td class="bold">Association Between Body Cell Mass Index, Health-Related Quality of Life, and Psychosocial Stress Among Middle-Aged and Older Adults in Korea: The Korean Genome and Epidemiology Study Cohort</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">조신영</p>(서울의대 가정의학과)
+                                                                    </td>
+                                                                </tr>
                                                                 <tr>
                                                                     <td></td>
                                                                     <td class="bold">심사자</td>

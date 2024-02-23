@@ -307,14 +307,14 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="14"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg">Oral Presentation 1
+                                <!-- <td class="light_orange_bg">Oral Presentation 1
                                     <input type="hidden" name="category" value="oral_presentation">
-                                </td>
+                                </td> -->
                                 <!-- [240130] sujeong / oral modal close -->
-                                <!-- <td class="light_orange_bg pointer modal" name="oral_presentation_1" data-id="15">Oral Presentation 1
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_1" data-id="15">Oral Presentation 1
                                     <input type="hidden" name="category" value="oral_presentation">
                                     <button class="more_btn" data-id="15"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
-                                </td> -->
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -345,14 +345,14 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="symposium">
                                     <button class="more_btn" data-id="18"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg">Oral Presentation 2
+                                <!-- <td class="light_orange_bg">Oral Presentation 2
                                     <input type="hidden" name="category" value="oral_presentation">
-                                </td>
+                                </td> -->
                                 <!-- [240130] sujeong / oral modal close -->
-                                <!-- <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="27">Oral Presentation 2
+                                <td class="light_orange_bg pointer modal" name="oral_presentation_2" data-id="27">Oral Presentation 2
                                     <input type="hidden" name="category" value="oral_presentation">
                                     <button class="more_btn" data-id="27"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
-                                </td> -->
+                                </td>
                             </tr>
                             <!-- [240103] sujeong / luncheon room 3개 버전 -->
                             <tr>
@@ -380,7 +380,7 @@ section.app_version .inner {
                                 <td></td>
                             </tr>
                             <tr>
-                                <td class="light_orange_bg pointer" name="guided_poster_presentation">
+                                <td class="light_orange_bg pointer" name="guided_poster_presentation" data-id="37">
                                     Guided Poster Presentation
                                     <br/>
                                     12:15-12:35
@@ -388,6 +388,7 @@ section.app_version .inner {
                                     * 장소: VISTA 통로 포스터존*
                                     <input type="hidden" name="e" value="VISTA Hall 통로">
                                     <input type="hidden" name="category" value="guided_poster_presentation">
+                                    <button class="more_btn" data-id="37"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -451,7 +452,7 @@ section.app_version .inner {
                                     Symposium 13 <p>Need for Comprehensive Education for Obesity</p>
                                     <input type="hidden" name="e" value="room4">
                                     <input type="hidden" name="category" value="symposium">
-                                    <button class="more_btn" data-id="35"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button
+                                    <button class="more_btn" data-id="35"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 
                             </tr>
@@ -700,13 +701,27 @@ function writeModal(data){
             }
             /**speaker가 여러 명일 경우 */
             else if(t.speaker?.includes(",")){
-                contents.innerHTML =  `
+                /***240222 hyojun수정 심사위원일경우 시간 X***/
+                if(t.contents_title =="심사위원")
+                {
+                    contents.innerHTML =  `
+                                        <div class="content_time"></div>
+                                        <div>${t.contents_title}</div>
+                                        <div class="content_1 content_person">
+                                            <p>${t.speaker}</p>
+                                        </div>
+                                    `
+                }
+                else
+                {
+                    contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
                                         <div class="content_1 content_person">
                                             <p>${t.speaker}</p>
                                         </div>
                                     `
+                }
             }
         }
          /**speaker가 없을 경우 */
