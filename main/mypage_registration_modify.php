@@ -580,11 +580,11 @@ switch ($attendance_type) {
 	$(".review").addClass("hidden");
 	
 	window.onload = ()=>{
-		// alert("사전 등록 접수가 마감되었습니다.");
-		// window.history.back();
-		// window.location.href = "/main/index.php";
-		// return;
-		checkIsScore();
+		alert("사전 등록 접수가 마감되었습니다.");
+		window.history.back();
+		window.location.href = "/main/index.php";
+		return;
+		//checkIsScore();
 	}
 
 		$('input[name=review]').on("change", function() {
