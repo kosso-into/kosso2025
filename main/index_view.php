@@ -156,7 +156,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
                         <!-- <img src="./img/2024_dates_area_1.png"/> -->
                         <h2>2024년 2월 12일<span>(월)</span></h2>
                         <p>초록 접수<br />마감</p>
-                        <!-- <h2><span>2023년 12월 11일(월)</span></h2> -->
+                        <!-- <h2><span>2023년 12월 11일(월)</span></h2> --> 
                         <!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
                         <!-- <p>등록/초록 접수<br />오픈</p> -->
                     </a>
