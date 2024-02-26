@@ -429,7 +429,7 @@ echo '<script type="text/javascript">
                                                 <td>15:00-16:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Scientific Session 1:  Innovative technologies and therapies in obesity and type 2 diabetes management (or in metabolic health?)</p>
+                                                    <p class="font_20 bold">Scientific Session 1:  Innovative technologies and therapies in obesity and type 2 diabetes management</p>
                                                     <p><span class="bold">좌장 : 이창범</span>(한양의대 내분비대사내과),<span class="bold">이상열</span>(경희의대 내분비대사내과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -474,8 +474,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:50-16:15</td>
                                                                     <td class="bold">
-                                                                    New Anti-Obesity Medications: Shaping the Future of Obesity Care with GLP-1RA
-                                                                    </td>
+                                                                    New Anti-Obesity Medications: Shaping the Future of Obesity Care with GLP-1RA</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Julie Broe Honore</p>(노보노디스크)
                                                                     </td>
@@ -687,7 +686,7 @@ echo '<script type="text/javascript">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
+                                                                        <span class="bold">김은미</span>(강북삼성병원 영양팀 교수)<br/>
                                                                         <span class="bold">신영석</span>(한국보건사회연구원 명예연구위원)<br/>
                                                                         <span class="bold">이진한</span>(동아일보 기자)<br/>
                                                                         <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)
@@ -810,7 +809,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <span class="bold">강류교</span>(전국보건교사회 회장)<br/>
                                                                         <span class="bold">박은주</span>(강원특별자치도 보건식품안전과장)<br/>
-                                                                        <span class="bold">김대중</span>(아주의대 내분비대사내과)
+                                                                        <span class="bold">김대중</span>(아주의대 내분비대사내과 교수)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
