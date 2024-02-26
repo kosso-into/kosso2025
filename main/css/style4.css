@@ -1535,9 +1535,8 @@ input[type='date']::before {
 }
 
 .detail_modal .program_modal_chair{
-	font-size: 16px;
-	color: #990000;
-    line-height: 1.5;
+	font-size: 18px;
+	color: #CC3366;
     font-weight: 600;
 }
 
@@ -1560,9 +1559,9 @@ input[type='date']::before {
 }   
 
 .modal_header > h1 {
-	font-size: 1.875rem;
-    line-height: 1.25rem;
-	font-weight: 700;
+	font-size: 1.5rem;
+    line-height: 2.25rem;
+	font-weight: 600;
 }
 
 .modal_header > h6 {
@@ -1593,6 +1592,7 @@ input[type='date']::before {
     font-size: 20px;
     font-weight: 600;
     float: right;
+	transform: translateY(-20px);
 }
 
 .modal_close > img {
@@ -1602,11 +1602,10 @@ input[type='date']::before {
 
 .modal_container > .content_container > .content{
 	display: grid;
-	grid-template-columns: 0.3fr 1.5fr 0.7fr;
+	grid-template-columns: 0.3fr 1.5fr 1fr;
 	grid-auto-rows: minmax(90px, auto);
 	grid-gap: 0rem;
-	grid-template-areas: 
-	'a b c';
+	grid-template-areas: 'a b c';
 }
 
 .modal_container > .content_container > .content > .content_time{
@@ -1627,6 +1626,7 @@ input[type='date']::before {
 .modal_container > .content_container > .content > .content_person > p{
 	color: #fff;
 	font-size: 14px;
+	line-height: 1.6;
 }
 
 .modal_container > .content_container > .content > .content_person{
@@ -1651,7 +1651,7 @@ input[type='date']::before {
 }
 
 .modal_container > .content_container > .content > div:nth-child(2){
-	padding: 0 12px;
+	padding: 12px;
 	text-align: left;
 	justify-content: left;
 }

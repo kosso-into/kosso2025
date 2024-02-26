@@ -545,21 +545,18 @@ section.app_version .inner {
 </section>
 
 <!-- program modal -->
-<div class="modal_background" style="display: none;"></div>
+<div class="modal_background" onclick="modal_close()" style="display: none;"></div>
 <div class="detail_modal" style="display: none;">
+    <button class="modal_close" onclick="modal_close()">close<img src="./img/icons/icon_x.png" /></button>
 	<div class="modal_container">
-		<button class="modal_close" onclick="modal_close()">close<img src="./img/icons/icon_x.png" /></button>
 		<div class="modal_header">
 			<h1 class="modal_title"></h1>
-			<h6 class="modal_subtitle"></h6>
 			<div class="modal_sub_header">
 				<div>
                     <b class="modal_title_day"></b>
 					<p class="modal_title_time"></p>
 					<p class="modal_title_room"></p>
 				</div>
-
-                <!-- [231228]sujeong / chairperson 학회팀 요청 주석 -->
 				<div>
 					<p class="program_modal_chair">좌장 : </p>
 					<p class="program_modal_person"></p>
@@ -650,7 +647,6 @@ function modal_close() {
 function writeModal(data){
     
     const modalTitle = document.querySelector(".modal_title");
-    const modalSubTitle = document.querySelector(".modal_subtitle");
     const modalTitleDay = document.querySelector(".modal_title_day");
     const modalTitleTime = document.querySelector(".modal_title_time");
     const modalTitleRoom = document.querySelector(".modal_title_room");
@@ -663,8 +659,9 @@ function writeModal(data){
     let titleDay = "";
     let titleTime = "";
     let titleRoom = "";
-    let chairperson = "";
+    let chairpersonHtml = "";
     let preview = "";
+
 
     data.map((t, i)=>{
    
@@ -682,12 +679,29 @@ function writeModal(data){
 
         titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
         titleTime = startTime + '-' + t.end_time;
-        chairperson = t.chairpersons;
         contents.className = "content";
+
+        //좌장 한 명일 경우
+        if(!t.chairpersons?.includes(",")){
+            const chairperson = t.chairpersons.split("(")[0];
+            const chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
+
+            chairpersonHtml = `<span class="bold">${chairperson}</span>(${chairperson_org})`;
+        }
+        //좌장 두 명일 경우
+        else if(t.chairpersons?.includes(",")){
+            const first_chairperson = t.chairpersons.split("(")[0];
+            const first_chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
+
+            const second_chairperson = t.chairpersons.split("(")[1].split(",")[1];
+            const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
+
+            chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
+        }
+
 
         /**speaker가 있을 경우 */
         if(t.speaker){
-
              /**speaker가 한 명일 경우 */
             if(!t.speaker?.includes(",")){
                 contents.innerHTML =  `
@@ -737,12 +751,12 @@ function writeModal(data){
         contentsWrap.append(contents)
     })
 
-    modalTitle.innerText = title;
-    modalSubTitle.innerText = subTitle;
+    modalTitle.innerText = subTitle;
+    // modalSubTitle.innerText = subTitle;
     modalTitleDay.innerText = titleDay;
     modalTitleTime.innerText = titleTime;
     modalTitleRoom.innerText = titleRoom
-    modalChairPerson.innerHTML = chairperson;
+    modalChairPerson.innerHTML = chairpersonHtml;
     modalPreview.innerText = preview;
 }
 

@@ -289,6 +289,15 @@ switch ($participation_type) {
             break;
     }
 
+    
+    if(!empty($member_other_type)){
+        $member_type_text = "기타(".$member_other_type.")";
+    } 
+    
+    if(!empty($occupation_other_type)){
+        $occupation = "기타(".$occupation_other_type.")";
+    }
+
     $insert_reg_user_sql = "
                         INSERT reg1.users
                         SET
