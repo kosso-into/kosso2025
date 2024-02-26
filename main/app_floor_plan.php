@@ -68,7 +68,7 @@
                         <li>- Breakfast Symposium 3</li>
                         <li>- Opening Address</li>
                         <li>- Symposium 3,6,9,12</li>
-                        <li>- Luncheon Symposium 2</li>
+                        <li>- Luncheon Symposium 3</li>
                         <li>- Plenary Lecture</li>
                         <li>- 문석학술상</li>
                         <li>- 젊은연구자상</li>
