@@ -57,8 +57,8 @@
                 로그인 후 => 프로그램, 초록접수, 마이페이지
             -->
                 <li>
-                    <button type="button" class="online_registration_alert">
-                    <!-- <button type="button" onclick="goRegistration()"> -->
+                    <!-- <button type="button" class="online_registration_alert"> -->
+                    <button type="button" onclick="goRegistration()">
                         <img src="/main/img/icons/2024_tool_regist.svg" alt="">
                     </button>
                 </li>
