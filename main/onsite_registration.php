@@ -243,7 +243,7 @@
                                         </select>
                                     </li>
                                     <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
-                                    <li class="hide_input <?=$prev["occupation_type"] === "기타" ? "on" : ""?>">
+                                    <li class="hide_input <?= $prev["occupation_type"] === "기타" ? "on" : "" ?>">
                                         <input type="hidden" name="occupation_prev_input" value="<?=$prev["occupation_other_type"] ?? ""?>"/>
                                         <input type="text" id="occupation_input" name="occupation_input" value="<?=$prev["occupation_other_type"] ?? ""?>">
                                     </li>
@@ -306,8 +306,11 @@
                                         $participation_arr[14]['name'] = "전시(부스)";
                                         $participation_arr[14]['value'] = "Booth";
 
-                                        $participation_arr[15]['name'] = "기타";
-                                        $participation_arr[15]['value'] = "Others";
+										$participation_arr[15]['name'] = "기자";
+                                        $participation_arr[15]['value'] = "Press";
+
+                                        $participation_arr[16]['name'] = "기타";
+                                        $participation_arr[16]['value'] = "Others";
 
                                         foreach ($participation_arr as $a_arr) {
                                             $selected =  $prev["member_type"] == $a_arr['value'] ? "selected" : "";
@@ -389,7 +392,8 @@
 								</div>
 							</td>
 						</tr>
-						<tr>
+						<!-- [240226] sujeong/ 학회팀 요청 주석 -->
+						<!-- <tr>
 							<th><span class="red_txt">*</span> 기타</th>
 							<td>
 								<ul class="radio_list">
@@ -422,7 +426,7 @@
                                     ?>
 								</ul>
 							</td>
-						</tr>
+						</tr> -->
 						<tr>
 							<th><span class="red_txt">*</span>개최 정보는 어디에서 얻었나요?</th>
 							<td>
@@ -566,7 +570,7 @@
             const val2 = $(this).val();
             const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
 
-            if(val2 == 'Others'){
+            if(val2 == '기타'){
                 if(!$(this).parent("li").next('.hide_input').hasClass("on")){
                     $(this).parent("li").next('.hide_input').addClass("on");
                 }

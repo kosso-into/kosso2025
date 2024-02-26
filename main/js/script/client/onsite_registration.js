@@ -159,8 +159,8 @@ function calc_fee(){
 
     var category = document.getElementById("category").value;
     var participation_type = document.getElementById("participation_type").value;
-    console.log("category", category)
-    console.log("participation",participation_type)
+    //console.log("category", category)
+    //console.log("participation",participation_type)
 
     if(category == ""){
         return;
@@ -257,11 +257,16 @@ function onsite_submit(){
     var specialty_number = $("input[name=specialty_number]").val();
     var date_of_birth = $("input[name=date_of_birth]").val();
 
-    var welcome_reception_yn = $("input:checkbox[id='others2']:checked").val()
-    var day2_breakfast_yn = $("input:checkbox[id='others1']:checked").val()
-    var day2_luncheon_yn = $("input:checkbox[id='others3']:checked").val()
-    var day3_breakfast_yn = $("input:checkbox[id='others4']:checked").val()
-    var day3_luncheon_yn = 'N'
+    var welcome_reception_yn = 'N';
+    var day2_breakfast_yn = 'N';
+    var day2_luncheon_yn = 'N';
+    var day3_breakfast_yn = 'N';
+
+    var day3_luncheon_yn = 'N';
+    // var welcome_reception_yn = $("input:checkbox[id='others2']:checked").val()
+    // var day2_breakfast_yn = $("input:checkbox[id='others1']:checked").val()
+    // var day2_luncheon_yn = $("input:checkbox[id='others3']:checked").val()
+    // var day3_breakfast_yn = $("input:checkbox[id='others4']:checked").val()
 
     const conference_info_arr=[];
     var info = $("input[name='list']:checked");
@@ -405,9 +410,9 @@ function requiredCheck(){
         $("#category").focus()
         return false;
     // Others
-    } else if(others_check()==false){
-        $("input[name=others]").focus()
-        return false;
+    // } else if(others_check()==false){
+    //     $("input[name=others]").focus()
+    //     return false;
 
     // Information
     } else if(info_check()==false){
@@ -430,13 +435,13 @@ function requiredCheck(){
 }
 
 // Others 리스트 체크
-function others_check(){
-    var list_others = document.querySelectorAll('input[name="others"]:checked').length;
-    if(list_others==0){
-        alert("기타를 확인해주세요.");
-        return false;
-    }
-}
+// function others_check(){
+//     var list_others = document.querySelectorAll('input[name="others"]:checked').length;
+//     if(list_others==0){
+//         alert("기타를 확인해주세요.");
+//         return false;
+//     }
+// }
 
 
 // information 리스트 체크
