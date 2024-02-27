@@ -297,7 +297,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="light_orange_bg">
+                                            <tr class="orange_bg">
                                                 <td>13:20-13:50</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
@@ -360,7 +360,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="light_orange_bg">
+                                            <tr class="orange_bg">
                                                 <td>15:40-16:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
