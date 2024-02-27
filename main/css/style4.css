@@ -1575,10 +1575,11 @@ input[type='date']::before {
 	margin-bottom: 1rem;
 }   
 
-.modal_header > h1 {
+.modal_header > h3 {
 	font-size: 1.5rem;
     line-height: 2.25rem;
 	font-weight: 600;
+	letter-spacing: -0.5px;
 }
 
 .modal_header > h6 {

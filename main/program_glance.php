@@ -690,10 +690,10 @@ function writeModal(data){
             const first_chairperson = t.chairpersons.split("(")[0];
             const first_chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
 
-            const second_chairperson = t.chairpersons.split("(")[1].split(",")[1];
+            const second_chairperson = t.chairpersons.split("(")[1].split(", ")[1];
             const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
 
-            chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
+            chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
         }
 
 
