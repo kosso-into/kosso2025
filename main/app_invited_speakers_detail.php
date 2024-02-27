@@ -104,7 +104,8 @@ $program_list = get_data($select_program_query);
                                 <?php
                                     if($program['chairpersons']!==null){
                                 ?>
-								<p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p>
+								<!-- <p class="chairperson"><span class="bold"><?=$chairperson?> </span> <?=$program['chairpersons']?></p> -->
+								<p class="chairperson"><span class="bold">좌장 : </span> <?=$program['chairpersons']?></p>
                                 <?php
                                 }
                                 ?>
