@@ -156,7 +156,7 @@ p.sub_section_title.main_theme{color: #000;font-weight: 600;letter-spacing: 0px;
 /* .tab_area2 .clearfix li.active, .tab_li li.on {background-color: #0499CC;border: 1px solid #0499CC;} */
 .tab_li li:nth-child(1).on{background-color: rgba(255,160,171,0.3);border: 1px solid rgba(255,160,171,0.3);}
 .tab_li li:nth-child(2).on{background-color: rgba(255,160,171,0.3);border: 1px solid rgba(255,160,171,0.3);}
-.tab_li li:nth-child(3).on{background-color: #FFEDD5;border: 1px solid #FFEDD5;}
+.tab_li li:nth-child(3).on{background-color: #f8cbad;border: 1px solid #f8cbad;}
 .tab_li li:nth-child(4).on{background-color: #F4F3FF;border: 1px solid #F4F3FF;}
 .tab_li li:nth-child(5).on{background-color: #F4F3FF;border: 1px solid #F4F3FF;}
 .tab_li li:nth-child(6).on{background-color: #D8F5BB;border: 1px solid #D8F5BB;}

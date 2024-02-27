@@ -83,12 +83,12 @@ section.app_version .inner {
                 ?>
                 <!-- [240221] sujeong / 주석 풀기!  -->
 				<!--231130 sujeong 다운로드 주석-->
-                <!-- <div class="rightT mb20">
+                <div class="rightT mb20">
                     <button 
-					 onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')" 
+					 onclick="javascript:window.open('./download/2024_ksso_program_at_a_glance.pdf')" 
                         class="btn sky_blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a
                         Glance Download</a>
-                </div> -->
+                </div>
                 <!-- [240105] sujeong 다운로드 버튼 학회팀 요청 주석-->
 				<!-- <div class="rightT mb20">
                     <button class="btn blue_btn nowrap not_yet"><img src="./img/icons/icon_download_white.svg" alt="">Program at a
@@ -276,7 +276,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="10"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td></td>
-                                <td rowspan="14" class="no_right_border light_orange_bg">Poster Exhibition</td>
+                                <td rowspan="15" class="no_right_border light_orange_bg">Poster Exhibition</td>
                             </tr>
                             <tr>
                                 <td>
@@ -320,8 +320,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div break_time">10:00-10:10</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg break_time">Break</td>
-                                <td></td>
+                                <td colspan="4" class="light_gray_bg break_time">Break</td>
 	                        </tr>
                             <tr>
                                 <td>
@@ -407,7 +406,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div">13:20-13:50</div>
                                 </td>
-                                <td colspan="3" class="light_orange_bg pointer" name="special_lecture_1" data-id="23">문석학술상
+                                <td colspan="3" class="orange_bg pointer" name="special_lecture_1" data-id="23">문석학술상
                                     <input type="hidden" name="e" value="room1">
                                     <input type="hidden" name="category" value="special_lecture_1">
                                     <button class="more_btn" data-id="23"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
@@ -423,8 +422,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div break_time">13:50-14:00</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg break_time">Break</td>
-                                <td></td>
+                                <td colspan="4" class="light_gray_bg break_time">Break</td>
                             </tr>
                             <tr>
                                 <td>
@@ -460,8 +458,7 @@ section.app_version .inner {
                                 <td>
                                     <div class="colons_div break_time">15:30-15:40</div>
                                 </td>
-                                <td colspan="3" class="light_gray_bg break_time">Break</td>
-                                <td></td>
+                                <td colspan="4" class="light_gray_bg break_time">Break</td>
                             </tr>
                             <tr>
                                 <td>
@@ -479,7 +476,7 @@ section.app_version .inner {
                                     <input type="hidden" name="category" value="keynote_lecture">
                                     <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="light_orange_bg pointer modal" name="special_lecture_2" data-id="30">
+                                <td class="orange_bg pointer modal" name="special_lecture_2" data-id="30">
                                     젊은연구자상
                                     <input type="hidden" name="e" value="room3">
                                     <input type="hidden" name="category" value="special_lecture_2">
@@ -530,7 +527,6 @@ section.app_version .inner {
                                     <div class="colons_div">17:40-18:00</div>
                                 </td>
                                 <td colspan="3" class="yellow_bg">Award & Closing</td>
-                                <td></td>
                                 <td></td>
                             </tr>
                         </tbody>
