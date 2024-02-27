@@ -752,11 +752,10 @@ echo '<script type="text/javascript">
                                                                         격려사
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이경희</p>(강원특별자치도 보건복지국장)
+                                                                        <p class="bold">이경희</p>(강원특별자치도 복지보건국장)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:50-16:55</td>
                                                                     <td class="bold">
                                                                         환영사
                                                                     </td>
