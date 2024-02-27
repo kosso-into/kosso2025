@@ -1523,7 +1523,24 @@ input[type='date']::before {
 	z-index: 999999999999999;
 	box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);  
 	animation: fadeInUp 1s;
+	border-radius: 4px;
 }
+
+.detail_modal::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.detail_modal::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #047CBB; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.detail_modal::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
 
 .detail_modal > table{
 	z-index: 99999999999;
@@ -1639,6 +1656,10 @@ input[type='date']::before {
 	display: flex;
 	transition: all .2s ease-in-out;
 	word-break: keep-all;
+}
+
+.modal_container > .content_container > .content > .content_person:hover{
+	background-color:#0499CC;
 }
 
 .modal_container > .content_container > .content > div{

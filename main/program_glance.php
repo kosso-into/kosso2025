@@ -543,10 +543,10 @@ section.app_version .inner {
 <!-- program modal -->
 <div class="modal_background" onclick="modal_close()" style="display: none;"></div>
 <div class="detail_modal" style="display: none;">
-    <button class="modal_close" onclick="modal_close()">close<img src="./img/icons/icon_x.png" /></button>
+    <button class="modal_close" onclick="modal_close()"><img src="./img/icons/icon_x.png" /></button>
 	<div class="modal_container">
 		<div class="modal_header">
-			<h1 class="modal_title"></h1>
+			<h3 class="modal_title title"></h3>
 			<div class="modal_sub_header">
 				<div>
                     <b class="modal_title_day"></b>
