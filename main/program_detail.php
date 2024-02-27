@@ -647,7 +647,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:00-15:15</td>
                                                                     <td class="bold">
-                                                                        최신 연구결과에 따른 비만 진료 급여기준 제언
+                                                                        최신 비만 역학 및 비만도와 질병부담, 비만 진료 급여기준 제언
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허연</p>(을지의대 가정의학과 교수)
@@ -665,7 +665,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:30-15:45</td>
                                                                     <td class="bold">
-                                                                        건강취약계층 비만과 건강형평성 
+                                                                        의료형평성(의료취약계층)과 비만 
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김원석</p>(을지의대 가정의학과 교수)
@@ -752,8 +752,7 @@ echo '<script type="text/javascript">
                                                                         격려사
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">TBD</p>(강원특별자치도 보건복지국장)
-                                                                        <!-- <p class="bold">이경희</p>(강원특별자치도 보건복지국장) -->
+                                                                        <p class="bold">이경희</p>(강원특별자치도 보건복지국장)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -795,7 +794,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:30-17:45</td>
                                                                     <td class="bold">
-                                                                        강원특별자치도의 만성질환관리와 향후 방향
+                                                                        지역사회 기반 만성질환 관리 방향
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김동현</p>(한림의대 사회의학교실 교수)
@@ -2167,9 +2166,9 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:40-10:50</td>
-                                                                    <td class="bold">Body Weight Variability and Risk of Suicide Mortality: A Nationwide Population-based Study</td>
+                                                                    <td class="bold">Efficacy and Safety of the Naltrexone and Bupropion Combination in Obese Population: Post-marketing Surveillance of the Naltrexone and Bupropion Combination</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">이정민</p>(가톨릭의대 내분비내과)
+                                                                        <p class="bold">류영상</p>(조선의대 내분비대사내과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
