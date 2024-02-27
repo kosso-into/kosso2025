@@ -2153,7 +2153,7 @@ echo '<script type="text/javascript">
                                                                     <td>10:20-10:30</td>
                                                                     <td class="bold">Efficacy and safety of once weekly semaglutide 2.4 mg for weight management in a predominantly Asian population with overweight or obesity in the STEP 7 randomised clinical trial</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">김범택</p>(아주대 가정의학과)
+                                                                        <p class="bold">김범택</p>(아주의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

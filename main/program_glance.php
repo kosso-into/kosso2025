@@ -549,7 +549,7 @@ section.app_version .inner {
 			<h3 class="modal_title title"></h3>
 			<div class="modal_sub_header">
 				<div>
-                    <b class="modal_title_day"></b>
+                    <p class="modal_title_day"></p>
 					<p class="modal_title_time"></p>
 					<p class="modal_title_room"></p>
 				</div>
@@ -673,8 +673,9 @@ function writeModal(data){
         const speakerName = t.speaker?.split("(")[0];
         const speakerOrg = t.speaker?.split("(")[1]?.split(")")[0];
 
-        titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
-        titleTime = startTime + '-' + t.end_time;
+        titleDay = `• ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
+        // titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
+        titleTime = "• " + startTime + '~' + t.end_time;
         contents.className = "content";
 
         //좌장 한 명일 경우
@@ -701,7 +702,7 @@ function writeModal(data){
              /**speaker가 한 명일 경우 */
             if(!t.speaker?.includes(",")){
                 contents.innerHTML =  `
-                                        <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
+                                        <div class="content_time">${t.contents_start_time} - ${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
                                         <div class="content_1 content_person">
                                             <b>${speakerName}</b>
@@ -751,7 +752,7 @@ function writeModal(data){
     // modalSubTitle.innerText = subTitle;
     modalTitleDay.innerText = titleDay;
     modalTitleTime.innerText = titleTime;
-    modalTitleRoom.innerText = titleRoom
+    modalTitleRoom.innerText = "• "+ titleRoom;
     modalChairPerson.innerHTML = chairpersonHtml;
     modalPreview.innerText = preview;
 }
