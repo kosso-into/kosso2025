@@ -383,7 +383,7 @@ section.app_version .inner {
                                 <td class="light_orange_bg pointer" name="guided_poster_presentation" data-id="37">
                                     Guided Poster Presentation
                                     <br/>
-                                    12:15-12:35
+                                    12:15-12:30
                                     <br/>
                                     * 장소: VISTA 통로 포스터존*
                                     <input type="hidden" name="e" value="VISTA Hall 통로">
