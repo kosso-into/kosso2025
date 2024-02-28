@@ -763,10 +763,10 @@ if (value.length === 8) {
 }
 
 $(document).ready(function() {
-    // alert("사전 등록 접수가 마감되었습니다.");
-    // window.history.back();
-    // window.location.href = "/main/index.php";
-    // return;
+    alert("사전 등록 접수가 마감되었습니다.");
+    window.history.back();
+    window.location.href = "/main/index.php";
+    return;
 
     $('.etc1').hide();
     $("#date_of_birth").hide();
