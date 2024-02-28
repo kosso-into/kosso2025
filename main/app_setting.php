@@ -11,7 +11,7 @@
 				<img src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
-		<p class="app_setting_desc">제 59차 대한비만학회 춘계학술대회 <br>이벤트 정보와 실시간 정보를 모바일 앱 푸시로 <br>받을 수 있습니다.</p>
+		<p class="app_setting_desc">제59차 대한비만학회 춘계학술대회 이벤트 정보와 실시간 정보를 모바일 앱 푸시로 받을 수 있습니다.</p>
 	</div>
 	<div class="container_inner">
 		<div class="contents_box">
@@ -24,7 +24,7 @@
 					</label>
 				</div>
 			</div>
-			<p class="app_setting_desc">iOS 사용자의 경우, <br>아이폰 > 설정 > 알림 > KSSO 2024 에서 <br>알림 권한을 'ON'으로 변경할 수 있습니다.</p>
+			<p class="app_setting_desc">iOS 사용자의 경우, 아이폰 > 설정 > 알림 > KSSO 2024 에서 알림 권한을 'ON'으로 변경할 수 있습니다.</p>
 		</div>
 	</div>
 	<button class="btn app_logout_btn">로그아웃</button>

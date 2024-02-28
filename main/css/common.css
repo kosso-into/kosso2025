@@ -1382,8 +1382,8 @@ a.jw_pharm {background-image: url("../img/2024sponsor/logo25.png");}
 .floor_area a {border:1px solid red; width:33.33%; padding-top:33%;}
 
 /*floor plan*/
-.floor_area {position:relative; padding: 2rem 0;}
-.floor_area:last-child {padding-bottom: 3rem; padding-top: 0;}
+.floor_area {position:relative; padding: 5rem 0;}
+.floor_area:last-child {padding-bottom: 5rem; padding-top: 0;}
 /* .floor_area + .floor_area {margin-top:22px;} */
 .pop_text li {font-size: 14px;}
 .pop_text li + li {margin-top: 2px;}
@@ -1391,12 +1391,12 @@ a.jw_pharm {background-image: url("../img/2024sponsor/logo25.png");}
 .pop_text li + .floor_pop_title {margin-top: 12px;}
 .floor_area img {width:100%;}
 /* .floor_area .a_wrap {position:absolute; top:6%; right:0; font-size:0; width:74.5%;} */
-.floor_area .floor_b2{position:absolute; top: 45%; left: 22%; font-size:0; width:39.5%;}
-.floor_area .floor_b1{position:absolute; top:16%; left: 52%; font-size:0; width: 42.5%; height: 46%; /* background-color: pink;*/}
+.floor_area .floor_b2{position:absolute; top: 43.5%; left: 14.5%; font-size:0; width: 50.5%;}
+.floor_area .floor_b1{position:absolute; top:12%; left: 52.5%; font-size:0; width: 52.5%; height: 46%;}
 .floor_area .a_wrap  a, .floor_area .a_wrap > div {display:inline-block; border:1px solid transparent; width:33.33%; padding-top:33%; box-sizing:border-box;}
-.floor_area .floor_b2 a.room1{padding-top:44%; width: 35.33%;}
-.floor_area .floor_b2 a.room2{padding-top:33%; width: 29.33%; position: absolute; }
-.floor_area .floor_b2 a.room3{padding-top:33%; width: 35.33%; position: absolute; right: 0; }
+.floor_area .floor_b2 a.room1{padding-top: 40%; width: 35.33%;}
+.floor_area .floor_b2 a.room2{padding-top:26%; width: 29.33%; position: absolute;}
+.floor_area .floor_b2 a.room3{padding-top:26%; width: 35.33%; position: absolute; right: 0;}
 .floor_area .floor_b1 a.room4{display: block; width: 19.33%; padding-top: 18%;position: relative;left: 18%;}
 .floor_area .floor_b1 a.room5{display: block; width: 37.33%; padding-top: 52%;}
 .floor_area .a_wrap.right_bottom {width:8%; top:auto; bottom:15.5%;}

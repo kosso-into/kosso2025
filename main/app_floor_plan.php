@@ -25,7 +25,7 @@
 			</div>
 		-->
 			<div class="floor_area">
-				<img src="./img/2024_floor_plan_v2_02.png" alt="">
+				<img src="./img/2024_floor_plan_v3_02.jpg" alt="">
 				<div class="a_wrap floor_b2">
 					<a href="javascript:;" class="room1"></a>
 					<ul class="pop_text">
@@ -95,7 +95,7 @@
 				</div> -->
 			</div>
 			<div class="floor_area">
-				<img src="./img/2024_floor_plan_v2_01.png" alt="">
+				<img src="./img/2024_floor_plan_v3_01.jpg" alt="">
 				<div class="a_wrap floor_b1">
 					<!-- <div class="inner_a_wrap">
 						<a href="javascript:;"></a>
