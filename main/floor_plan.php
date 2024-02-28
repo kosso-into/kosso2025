@@ -45,7 +45,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
         </div> -->
         <div class="section section1">
             <div class="img_wrap">
-                <img class="floor_map" src="./img/2024_floor_plan_v3.jpg"/>            
+                <img class="floor_map" src="./img/2024_floor_plan_v4.jpg"/>            
             </div>
         </div>
     </div>
