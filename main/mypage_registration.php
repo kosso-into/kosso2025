@@ -348,10 +348,10 @@ $score_detail = sql_fetch($score_sql);
                                 <td>결제 확인 중</td>
                                 <td>
                                     <?php if ($list["payment_methods"] == 1) { ?>
-                                        <button type="button" class="btn"><a class="online_registration_alert" href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
+                                        <button type="button" class="btn"><a href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
                                     <?php } else { ?>
-                                        <button type="button" class="btn"><a class="online_registration_alert" href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
-                                        <button type="button" class="btn online_registration_alert" data-url="<?php echo $payment_url ?>">등록결제</button> 
+                                        <button type="button" class="btn"><a href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
+                                        <button type="button" class="btn payment_btn"ㄴ data-url="<?php echo $payment_url ?>">등록결제</button> 
                                         <!-- <button type="button" class="btn payment_btn online_registration_alert" data-url="<?php echo $payment_url ?>">등록결제</button> -->
                                     <?php } ?>
                                     
@@ -969,7 +969,8 @@ $score_detail = sql_fetch($score_sql);
             </div>
             <div class="btn_wrap">
                 <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">환불요청</button>
-                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.location.href ='/main/mypage_registration_modify.php'">정보수정</button>
+                <button type="button" class="btn online_registration_alert" style="position:static; width:auto; height:auto; padding:8px 30px;">정보수정</button>
+                <!-- <button type="button" class="btn online_registration_alert" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.location.href ='/main/mypage_registration_modify.php'">정보수정</button> -->
                 <button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">닫기</button>
             </div>
         </div>

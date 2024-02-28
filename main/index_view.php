@@ -163,8 +163,8 @@ $total_newsletter = count($newsletter_list) ?? 0;
                 </li>
                 <li>
                     <!-- [240224] sujeong / 학회팀 요청 close -->
-                    <!-- <a href="/main/registration.php"> -->
-                    <a href="/main/registration.php" class="online_registration_alert">
+                    <a href="/main/registration.php">
+                    <!-- <a href="/main/registration.php" class="online_registration_alert"> -->
                         <!-- <img src="./img/2024_dates_area_2.png"/> -->
                         <!-- [240119]sujeong / 학회팀 요청 날짜-->
                         <h2><span>2024년 2월 22일(목)</span></h2>
