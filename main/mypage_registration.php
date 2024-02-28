@@ -348,10 +348,10 @@ $score_detail = sql_fetch($score_sql);
                                 <td>결제 확인 중</td>
                                 <td>
                                     <?php if ($list["payment_methods"] == 1) { ?>
-                                        <button type="button" class="btn"><a href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
+                                        <button type="button" class="btn"><a class="online_registration_alert" href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
                                     <?php } else { ?>
-                                        <button type="button" class="btn"><a href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
-                                        <button type="button" class="btn payment_btn"ㄴ data-url="<?php echo $payment_url ?>">등록결제</button> 
+                                        <button type="button" class="btn"><a class="online_registration_alert" href="./registration.php?idx=<?php echo $list["idx"]?>" >정보수정</a></button>
+                                        <button type="button" class="btn online_registration_alert" data-url="<?php echo $payment_url ?>">등록결제</button> 
                                         <!-- <button type="button" class="btn payment_btn online_registration_alert" data-url="<?php echo $payment_url ?>">등록결제</button> -->
                                     <?php } ?>
                                     
