@@ -113,8 +113,8 @@ $locale = locale($language);
                         <ul class="sub_nav">
                             <li><a href="/main/registration_guidelines.php">등록 안내
                                 </a></li>
-                            <!-- <li><a href="/main/registration.php">사전 등록</a></li> -->
-                            <li><a href="/main/registration.php" class="online_registration_alert">사전 등록</a></li>
+                            <li><a href="/main/registration.php">사전 등록</a></li>
+                            <!-- <li><a href="/main/registration.php" class="online_registration_alert">사전 등록</a></li> -->
 
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
@@ -265,8 +265,8 @@ $locale = locale($language);
                 <a href="javascript:;"><span>등록</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
                     <li><a href="/main/registration_guidelines.php">등록 안내</a></li>
-                    <!-- <li><a href="/main/registration.php">사전 등록</a></li> -->
-                    <li><a href="/main/registration.php" class="online_registration_alert">사전 등록</a></li>
+                    <li><a href="/main/registration.php">사전 등록</a></li>
+                    <!-- <li><a href="/main/registration.php" class="online_registration_alert">사전 등록</a></li> -->
                     
                     <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->

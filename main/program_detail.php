@@ -686,7 +686,7 @@ echo '<script type="text/javascript">
                                                                     Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">김은미</span>(강북삼성병원 영양팀 교수)<br/>
+                                                                        <span class="bold">김은미</span>(강북삼성병원 영양팀)<br/>
                                                                         <span class="bold">신영석</span>(한국보건사회연구원 명예연구위원)<br/>
                                                                         <span class="bold">이진한</span>(동아일보 기자)<br/>
                                                                         <span class="bold">이창현</span>(대한비만학회 개원위원회 이사)
@@ -756,6 +756,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
+                                                                    <td>16:50-16:55</td>
                                                                     <td class="bold">
                                                                         환영사
                                                                     </td>
