@@ -480,7 +480,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="bank_info" style="display: none;">
+						<tr class="bank_info">
 							<th>이체 정보</th>
 							<td>
 								<p>• 은행명 : 하나은행</p>
