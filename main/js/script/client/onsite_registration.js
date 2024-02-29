@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".review_sub_list").addClass("hidden");
-
+    $(".bank_info").addClass("hidden");
     
     //[240109] sujeong 평점신청시에만 면허번호 칸 보이도록
     //평점신청
