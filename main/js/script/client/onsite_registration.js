@@ -18,6 +18,16 @@ $(document).ready(function(){
         }
     });
 
+    //[240229] sujeong / 계좌이체 선택시 밑에 계좌이체 보이도록
+    //계좌이체
+    $('input[name=payment_methods]').on("change", function() {
+        if ($('input[name=payment_methods]:checked').val() == '1') {
+            $(".bank_info").removeClass("hidden");
+        } else {
+            $(".bank_info").addClass("hidden");
+        }
+    });
+
     //이메일 중복 검증
     $("input[name=email]").on("change", function(){
         var email = $(this).val();

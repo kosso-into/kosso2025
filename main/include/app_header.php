@@ -95,7 +95,6 @@
 					<a href="http://18ca921aa745b41a.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a>
 				</li> -->
 				<li>
-					<!-- <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" download class="pdf_view">초록집 <br/>다운로드</a> -->
 					<a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
 				</li>
 			</ul>

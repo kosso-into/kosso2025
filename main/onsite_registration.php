@@ -113,7 +113,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span> ID(email)</th>
+							<th><span class="red_txt">* </span>ID(email)</th>
 							<td>
 								<div class="max_long responsive_float">
 									<input type="text" name="email" class="required" maxlength="50">
@@ -122,7 +122,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>비밀번호</th>
+							<th><span class="red_txt">* </span>비밀번호</th>
 							<td>
 								<div class="max_long">
 									<input class="passwords" type="password" name="password" class="required" placeholder="비밀번호" maxlength="60">
@@ -130,7 +130,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>비밀번호 재확인</th>
+							<th><span class="red_txt">* </span>비밀번호 재확인</th>
 							<td>
 								<div class="max_long">
 									<input class="passwords" type="password" name="password2" class="required" placeholder="비밀번호 재확인" maxlength="60">
@@ -139,7 +139,7 @@
 						</tr>
 						<!-- Name -->
 						<tr>
-							<th><span class="red_txt">*</span> 성명</th>
+							<th><span class="red_txt">* </span>성명</th>
 							<td class="clearfix">
 								<div class="max_long">
 									<input name="first_name" type="text" placeholder="성명" maxlength="60">
@@ -147,7 +147,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>소속</th>
+							<th><span class="red_txt">* </span>소속</th>
 							<td>
 								<div class="max_long">
 									<input type="text" name="affiliation" maxlength="100">
@@ -156,7 +156,7 @@
 						</tr>
 						<!-- Department -->
 						<tr>
-							<th><span class="red_txt">*</span>부서</th>
+							<th><span class="red_txt">* </span>부서</th>
 							<td>
 								<div class="max_long">
 									<input type="text" name="department" maxlength="100">
@@ -164,7 +164,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>휴대폰 번호</th>
+							<th><span class="red_txt">* </span>휴대폰 번호</th>
 							<td>
 								<div class="max_long">
                                     <input class="tel_number tel_phone" name="telephone" type="text" maxlength="60">
@@ -188,7 +188,7 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th><span class="red_txt">*</span>참가 유형</th>
+							<th><span class="red_txt">* </span>참가 유형</th>
 							<td>
 								<div class="max_normal">
 									<select id="participation_type" name="participation_type" class="required" onChange="calc_fee()">
@@ -225,7 +225,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>분야 구분</th>
+							<th><span class="red_txt">* </span>분야 구분</th>
 							<td>
 								<ul class="max_normal flex_hide">
                                     <li>
@@ -251,7 +251,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span>참석 구분</th>
+							<th><span class="red_txt">* </span>참석 구분</th>
 							<td>
 								<ul class="max_normal flex_hide">
                                     <li>
@@ -328,7 +328,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="red_txt">*</span> 평점 신청</th>
+							<th><span class="red_txt">* </span> 평점 신청</th>
 							<td>
 								<div class="label_wrap">
 									<input type="radio" class="new_radio" name="review" id="review1" value="1">
@@ -428,7 +428,7 @@
 							</td>
 						</tr> -->
 						<tr>
-							<th><span class="red_txt">*</span>개최 정보는 어디에서 얻었나요?</th>
+							<th><span class="red_txt">* </span>개최 정보는 어디에서 얻었나요?</th>
 							<td>
 								<ul class="radio_list">
                                     <?php
@@ -478,6 +478,14 @@
 									<input type="radio" class="new_radio" name="payment_methods" id="bank" value="1">
 									<label for="bank"><i></i>계좌이체</label>
 								</div>
+							</td>
+						</tr>
+						<tr class="bank_info" style="display: none;">
+							<th>이체 정보</th>
+							<td>
+								<p>• 은행명 : 하나은행</p>
+								<p>• 계좌 번호 : 584-910003-16504</p>
+								<p>• 예금주 : 대한비만학회-등록비</p>
 							</td>
 						</tr>
 					</tbody>

@@ -19,11 +19,8 @@
 		<div class="app_main_box" style="height: auto;">
 			<div class="app_main_txt">
 				<img src="./img/2024_mb_text.svg" alt="">
-				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
-				<p>CONRAD Seoul Hotel, Korea</p> -->
 			</div>
 			<div class="app_login_box">
-				<!-- <p>* Please log in using the same ID you used to register on the ICOMES 2023 website.</p> -->
 				<ul>
 					<li>
 						<input id="email" type="text" name="email" placeholder="ID(email)">
@@ -145,7 +142,7 @@ $(document).ready(function(){
                         href_path += "/"+from
                     }
                     
-                    //쿠키에 멤버 idx와 만료일자 저장
+                    //쿠키에 멤버 idx와 만료일자 저장(만료시간 -> 9시간)
                     var toDate = new Date();
                     toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
                     toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
