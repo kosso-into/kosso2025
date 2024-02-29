@@ -2064,7 +2064,7 @@ input[type='date']::before {
 /* 현장등록 페이지 */
 .onsite_main_img{
 	display: block;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 	width: 100%;
 	margin: 0 auto;
 }
