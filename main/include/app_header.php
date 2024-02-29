@@ -42,7 +42,7 @@
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=8">Symposium</a></li>
-						<!-- <li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li> -->
+						<li><a href="/main/app_abstract.php?category_idx=19">Award Lecture</a></li>
 						<!-- <li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li> -->
 						<li><a href="/main/app_abstract.php?category_idx=4">Scientific Session</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=10">Committee Session</a></li>
