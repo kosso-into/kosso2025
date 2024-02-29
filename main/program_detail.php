@@ -1699,7 +1699,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Symposium 9:Obesogens & Obesogenic Environment in Pediatric Obesity</p>
+                                                    <p class="font_20 bold">Symposium 9 : Obesogens & Obesogenic Environment in Pediatric Obesity</p>
                                                     <p><span class="bold">좌장 : 이기형</span>(고려의대 소아청소년과), <span class="bold">정소정</span>(건국의대 소아청소년과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
@@ -1750,8 +1750,9 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
+                                                                        <span class="bold">김재현</span>(서울의대 소아청소년과)<br>
                                                                         <span class="bold">홍용희</span>(순천향의대 소아청소년과)<br>
-                                                                        <span class="bold">김재현</span>(서울의대 소아청소년과)
+                                                                        <span class="bold">김진욱</span>(히포크라타의원)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

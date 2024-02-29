@@ -305,34 +305,23 @@ $total_newsletter = count($newsletter_list) ?? 0;
     <video id="vid_auto" preload="auto" muted="muted" volume="0" playsinline autoplay onended="myFunction()"></video>
 </div>
 <!-- 2023 팝업 -->
-<!--
-<div class="popup pop_2023" style="display:block;">
+<!---->
+<div class="popup pop_2023" style="display:none;">
 	<div class="pop_bg"></div>
 	<div class="pop_contents">
-		<img src="/main/img/pop_2023_bg.png" class="bg" alt="">
-		<img src="/main/img/pop_2023_line.png" class="line" alt="">
-		<div class="pop_text_box">
-			<h1>
-				<p>See you on the next</p>
-				<p>ICoLA 2023</p>
-				<p>Seoul, Korea</p>
-			</h1>
-			<div class="btns">
-				<button>September 14(Thu) - 16(Sat), 2023</button>
-			</div>
-		</div>
-		<div class="close_area clearfix2">
+		<img src="/main/img/2024_ksso_pop_240228.png" class="bg" alt="">
+		<div class="close_area">
 			<div>
 				<input type="checkbox" id="today_check" class="checkbox input required">
-				<label for="today_check">Do not open this window for 24 hours.</label>
+				<label for="today_check">오늘 다시 열지 않음</label>
 			</div>
-			<a href="javascript:;" class="">Close <img src="/main/img/main_pop_close.png" alt=""></a>
+			<a href="javascript:;" class="pop_close">Close <img src="/main/img/main_pop_close.png" alt=""></a>
 		</div>	
 	</div>
 </div>
--->
 
-<!-- ICOMES 2023 Main 팝업
+
+<!-- ICOMES 2023 Main 팝업 
 <div class="popup last_breaking_pop">
     <div class="pop_bg"></div>
     <div class="pop_contents">
@@ -342,7 +331,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
         </div>
     </div>
 </div>
- -->
+-->
 
 <!-- 2023/08/16 팝업 -->
 <!-- <div class="popup notification_pop" style="display:block;">
@@ -406,7 +395,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
 </div> -->
 
 
-<!-- <script>
+<script>
     // 쿠키 가져오기
     var getCookie = function (cname) {
         var name = cname + "=";
@@ -431,19 +420,18 @@ $total_newsletter = count($newsletter_list) ?? 0;
         if($("#today_check").is(":checked") == true){
             setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
         }
-        $(".notification_pop").hide();
+        $(".pop_2023").hide();
     }
     
     $(document).ready(function(){
         var cookiedata = document.cookie;
         if(cookiedata.indexOf("close=Y")<0){
-            $(".notification_pop").show();
+            $(".pop_2023").show();
         }else{
-            $(".notification_pop").hide();
+            $(".pop_2023").hide();
         }
-        $(".notification_pop .pop_close").click(function(){
+        $(".pop_2023 .pop_close").click(function(){
             couponClose();
         });
     });
 </script>
- -->

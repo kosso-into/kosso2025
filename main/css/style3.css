@@ -440,8 +440,8 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .popup.pop_2023 .pop_contents {padding:0; position:relative; max-width:650px;}
 .popup.pop_2023 .pop_contents img.bg {width:100%;}
 .popup.pop_2023 .pop_contents img.line {width:100%; position:absolute; top:0; left:0;}
-.popup.pop_2023 .close_area {position:relative; bottom:auto; left:auto; background-color:#3C3C3B;}
-.popup.pop_2023 .close_area * {color:#fff;}
+.popup.pop_2023 .close_area {position:relative; bottom:auto; left:auto; background-color:#FFF;}
+.popup.pop_2023 .close_area * {color:#000;}
 .popup.pop_2023 .pop_text_box {position:absolute; top:60px; width:100%;}
 .popup.pop_2023 .pop_text_box p {text-align:center; font-family:"Montserrat", sans-serif; font-weight:bold; font-size:22px; line-height:26px; font-style:italic;}
 .popup.pop_2023 .pop_text_box p:nth-of-type(2) {font-size:60px; line-height:72px; font-style:normal;}
