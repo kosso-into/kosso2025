@@ -378,8 +378,8 @@ td.pc_only {display:table-cell;}
 .popup.bottom .pop_contents .tags {display: none; text-align: center; min-width:125px; line-height:28px; border-radius:28px; background-color:#000066; color:#fff; padding:0 24px; font-size:12px; position:absolute; top:-50px; left:50%; transform:translateX(-50%);}
 .popup.bottom .pop_contents .tags .on {display:inline-block;}
 .term1.popup .pop_contents, .term2.popup .pop_contents{max-width:900px;}
-.pop_contents .pop_close{position:absolute;right:30px;top:30px;width:30px;height:30px;}
-.pop_contents .pop_close img{width:100%;}
+/* .pop_contents .pop_close{position:absolute;right:30px;top:30px;width:30px;height:30px;} */
+.pop_contents .pop_close img{width:14px;}
 .pop_title{line-height:30px; font-size:18px;font-weight:normal;padding-bottom:20px;font-weight: bold;color: #000;}
 .pop_title img{margin-right:10px;}
 .pop_contents .pop_close_w{top:-40px;right:0;}
