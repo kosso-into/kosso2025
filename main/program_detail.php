@@ -714,7 +714,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 2 : 지방자치시대, 건강한 지역주민을 만들기 위한 방안은?<br/>(부제:건강한 강원특별자치도를 만들기 위한 방안은?)</p>
-                                                    <p><span class="bold">좌장 : 김성래</span>(대한비만학회 회장),<span class="bold">오한진</span>(을지의대 가정의학과)</p>
+                                                    <p><span class="bold">좌장 : 김성래</span>(대한비만학회 회장),<span class="bold">오한진</span>(대한당뇨병연합 이사)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
@@ -1585,7 +1585,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
-                                                                    <td class="bold">Serum Metabolomic Signatures of Ultra-processed Food Consumption and Cancer-related Hormones</td>
+                                                                    <td class="bold">Ultra-processed food related metabolites and selected Disease Biomarkers in the UK Biobank</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이상아</p>(강원의대 예방의학교실)
                                                                     </td>
@@ -1936,7 +1936,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 14 : Comprehensive Education Course for Co-Medical Staff</p>
-                                                    <p><span class="bold">좌장 : 강지현</span>(건양의대 가정의학과), <span class="bold">신은총</span>(고대안암병원)</p>
+                                                    <p><span class="bold">좌장 : 강지현</span>(건양의대 가정의학과), <span class="bold">신은총</span>(고려대안암병원 간호분과)</p>
                                                     <!--button class="btn gray2_btn program_detail_btn">세션소개</button-->
                                                 </td>
                                             </tr>
@@ -1968,7 +1968,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:35-17:00</td>
-                                                                    <td class="bold">TBD</td>
+                                                                    <td class="bold">Guide to Psychotropic Anti-Obesity Drugs for Educating Obese Patients</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">전언주</p>(대구가톨릭의대 내분비대사내과)
                                                                     </td>
