@@ -59,6 +59,7 @@
 													WHEN '7' THEN '기자'
 													WHEN '8' THEN '전공의 및 의대생'
 													WHEN '9' THEN '학회'
+													WHEN '10' THEN '외부초청'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
