@@ -213,7 +213,7 @@
 
                                         $attendance_arr[5]['name'] = "기자";
                                         $attendance_arr[5]['value'] = "6";
-										                                
+                              
                                     foreach ($attendance_arr as $a_arr) {
                                         $selected =  $prev["attendance_type"] == $a_arr['value'] ? "selected" : "";
                                         echo '<option value="'.$a_arr['value'].'" '.$selected.'>'.$a_arr['name'].'</option>';

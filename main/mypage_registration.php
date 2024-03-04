@@ -255,6 +255,9 @@ $score_detail = sql_fetch($score_sql);
                             case 9:
                                 $attendance_type = "학회";
                                 break;
+                            case 10:
+                                $attendance_type = "외부초청";
+                                break;
                         }
 
                         // Others
