@@ -743,7 +743,7 @@ echo '<script type="text/javascript">
                                                                         개회사
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">박정환</p>(대한비만학회 대외협력정책이사)
+                                                                        <p class="bold">박정환</p>(대한비만학회 대외협력 정책이사)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1178,7 +1178,7 @@ echo '<script type="text/javascript">
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">Obesity as Disruptor of the Female Fertility</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">정선화</p>(두번째봄산부인과)
+                                                                        <p class="bold">정선화</p>(두번째봄 산부인과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

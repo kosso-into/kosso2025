@@ -309,7 +309,7 @@ $total_newsletter = count($newsletter_list) ?? 0;
 <div class="popup pop_2023" style="display:none;">
 	<div class="pop_bg"></div>
 	<div class="pop_contents">
-		<img src="/main/img/2024_ksso_pop_240228.png" class="bg" alt="">
+		<img src="/main/img/2024_ksso_pop_240304.png" class="bg" alt="">
 		<div class="close_area">
 			<div>
 				<input type="checkbox" id="today_check" class="checkbox input required">
