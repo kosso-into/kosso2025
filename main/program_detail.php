@@ -647,7 +647,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:00-15:15</td>
                                                                     <td class="bold">
-                                                                        최신 비만 역학 및 비만도와 질병부담, 비만 진료 급여기준 제언
+                                                                        최신 연구결과에 따른 비만 진료 급여기준 제언
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">허연</p>(을지의대 가정의학과 교수)
@@ -656,7 +656,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
-                                                                        비만으로 인한 사회경제적 손실 추정
+                                                                    비만으로 인한 사회경제적 손실 추정
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">이선미</p>(국민건강보험공단 건강보험연구원 센터장)
@@ -665,7 +665,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:30-15:45</td>
                                                                     <td class="bold">
-                                                                        의료형평성(의료취약계층)과 비만 
+                                                                    건강취약계층 비만과 건강형평성
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김원석</p>(을지의대 가정의학과 교수)
@@ -674,7 +674,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:45-16:00</td>
                                                                     <td class="bold">
-                                                                        일차의료 만성질환관리사업과 비만관리
+                                                                    일차의료 만성질환관리사업과 비만관리
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">남가은</p>(대한비만학회 보험법제위원회 이사)
