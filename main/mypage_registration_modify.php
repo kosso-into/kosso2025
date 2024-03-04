@@ -155,7 +155,9 @@ switch ($attendance_type) {
 	case 8:
 		$attendance_type = "전공의 및 의대생";
 		break;
-
+	case 9:
+		$attendance_type = "학회";
+		break;
 }
 ?>
 <style>

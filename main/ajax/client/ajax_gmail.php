@@ -546,6 +546,9 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 				case 8:
 					$attendance_type = "전공의 및 의대생";
 					break;
+				case 9:
+					$attendance_type = "학회";
+					break;
 			}
 
 
