@@ -274,6 +274,9 @@ switch ($participation_type) {
     case 7:
         $attendance_type = "심사";
         break;
+    case 9:
+        $attendance_type = "학회";
+        break;
 }
     $time = date("Y-m-d");
     $nick_name =  $last_name.$first_name;

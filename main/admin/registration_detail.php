@@ -60,6 +60,7 @@ $registration_detail_query =	"
 													WHEN '6' THEN '기자'
                                                     WHEN '7' THEN '심사'
                                                     WHEN '8' THEN '전공의 및 의대생'
+                                                    WHEN '9' THEN '학회'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
