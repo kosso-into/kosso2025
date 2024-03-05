@@ -20,7 +20,7 @@
 
 /* 220323 HUBDNC LJH2 수정 */
 section.container.overview {padding-bottom: 200px; /*326px;*/}
-.detail_table th, .detail_table td, .overview td {padding: 12px 20px; /*20px 40px;*/ font-size: 17px; /*18px;*/}
+.detail_table th, .detail_table td, .overview td {padding: 12px 20px; /*20px 40px;*/ font-size: 17px; /*18px;*/line-height: 1.6;}
 .detail_table td:nth-of-type(3){width: 28%;}
 .detail_table td > div{font-size: 17px;}
 .detail_table th {background-color: #F4F4F4; font-weight: bold;}
