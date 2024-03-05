@@ -225,8 +225,9 @@ section.app_version .inner {
                                 <td></td>
                                 <td class=""></td>
 								<td class=""></td>
-                                <td class="yellow_bg no_right_border">
+                                <td class="yellow_bg no_right_border pointer">
                                     Welcome Reception
+                                    <input type="hidden" name="e" value="room5">
                                 </td>
                             </tr>
                         </tbody>

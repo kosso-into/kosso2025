@@ -100,7 +100,7 @@ echo '<script type="text/javascript">
     //program_Category idx 18 => poster exhibition
     $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
     $category_list = get_data($select_category_sql);
-    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
+    $abstract_category_list= ['4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19'];
 
     $select_program_query = "
                             SELECT @rownum := @rownum+1 AS rownum, P.*
@@ -238,7 +238,7 @@ echo '<script type="text/javascript">
                             <option value="2" class="day1 day2">Room2</option>
                             <option value="3" class="day1 day2">Room3</option>
                             <option value="4" class="day2">Room4</option>
-                            <option value="5" class="day2">Room5</option>
+                            <option value="5" class="day1 day2">Room5</option>
                             <!-- <option value="6" class="day2">Room6</option>
                             <option value="7" class="day2 day3">Room7</option> -->
 						</select>
