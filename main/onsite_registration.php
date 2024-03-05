@@ -214,6 +214,7 @@
                                         $attendance_arr[5]['name'] = "기자";
                                         $attendance_arr[5]['value'] = "6";
 										
+										//day 1만 !!! day 2 없애기 !!!
                                         $attendance_arr[6]['name'] = "정책 심포지엄";
                                         $attendance_arr[6]['value'] = "11";
                               

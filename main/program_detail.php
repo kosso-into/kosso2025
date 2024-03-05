@@ -96,7 +96,7 @@ echo '<script type="text/javascript">
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 1, 2, 3</p> -->
                                                     <p class="font_20 bold">Plenary Lecture</p>
                                                     <!-- [240129] sujeong / 학회팀 요청 좌장 선생님 주석  -->
-                                                    <p><span class="bold">좌장 : 김광원</span>(가천의대 내분비내과)</p>
+                                                    <p><span class="bold">좌장 : 김광원</span>(가천의대 내분비대사내과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -1546,7 +1546,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 3 : Ultra-processed Foods and Cardiometabolic Health</p>
-                                                    <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비내과),<span class="bold"> 김오연</span>(동아대 식품영양학과)</p>
+                                                    <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비대사내과),<span class="bold"> 김오연</span>(동아대 식품영양학과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
