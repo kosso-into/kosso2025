@@ -60,6 +60,7 @@
 													WHEN '8' THEN '전공의 및 의대생'
 													WHEN '9' THEN '학회'
 													WHEN '10' THEN '외부초청'
+													WHEN '11' THEN '정책 심포지엄'
 													ELSE '-'
 												END
 											) AS attendance_type_text,

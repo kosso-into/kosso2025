@@ -280,6 +280,9 @@ switch ($participation_type) {
     case 10:
         $attendance_type = "외부초청";
         break;
+    case 11:
+        $attendance_type = "정책 심포지엄";
+        break;
 }
     $time = date("Y-m-d");
     $nick_name =  $last_name.$first_name;
