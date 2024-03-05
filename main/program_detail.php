@@ -2079,7 +2079,7 @@ echo '<script type="text/javascript">
                                                                     <td>09:10-09:20</td>
                                                                     <td class="bold">Differential Regulatory Effects of Exercise and Hypocaloric Diet on Adipose Thermogenesis and Inflammation in Obese Mice</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Vivi</p>(순천향대 의생명융합학과)
+                                                                        <p class="bold">Vivi Julietta</p>(순천향대 의생명융합학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
