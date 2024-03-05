@@ -156,16 +156,16 @@ section.app_version .inner {
                                         <input type="hidden" name="category" value="committee_session_1">
                                         <button class="more_btn" data-id="3"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
-                                <td class="dark_gray_bg"></td>
-								<td class="no_right_border dark_gray_bg"></td>
+                                <td></td>
+								<td class="no_right_border"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div break_time">16:30-16:40</div>
                                 </td>
                                 <td class="light_gray_bg break_time" colspan="3">Break</td>
-                                <td class="dark_gray_bg break_time"></td>
-								<td class="no_right_border dark_gray_bg break_time"></td>
+                                <td class="break_time"></td>
+								<td class="no_right_border break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -191,16 +191,16 @@ section.app_version .inner {
                                         <input type="hidden" name="category" value="committee_session_2">
                                         <button class="more_btn" data-id="4"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                     </td>
-                                    <td class="dark_gray_bg"></td>
-								<td class="no_right_border dark_gray_bg"></td>
+                                    <td class=""></td>
+								<td class="no_right_border"></td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="colons_div break_time">18:10-18:30</div>
                                 </td>
                                 <td class="light_gray_bg break_time" colspan="3">Break</td>
-                                <td class="dark_gray_bg break_time"></td>
-                                <td class="no_right_border dark_gray_bg break_time"></td>
+                                <td class="break_time"></td>
+                                <td class="no_right_border break_time"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -214,8 +214,8 @@ section.app_version .inner {
                                 </td>
                                 <td></td>
                                 <td></td>
-                                <td class="dark_gray_bg"></td>
-								<td class="no_right_border dark_gray_bg"></td>
+                                <td class=""></td>
+								<td class="no_right_border"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -223,11 +223,11 @@ section.app_version .inner {
                                 </td>
                                 <td></td>
                                 <td></td>
-                                <td class="yellow_bg">
-                                Welcome Reception
+                                <td class=""></td>
+								<td class=""></td>
+                                <td class="yellow_bg no_right_border">
+                                    Welcome Reception
                                 </td>
-                                <td class="dark_gray_bg"></td>
-								<td class="no_right_border dark_gray_bg"></td>
                             </tr>
                         </tbody>
                         <!---------- DAY 2 ---------->
