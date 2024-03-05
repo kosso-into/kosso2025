@@ -91,7 +91,7 @@ if($_POST["flag"] === "onsite") {
                                         INSERT request_registration
                                         SET
                                             status = 5,
-                                            attendance_type = '{$attendance_type}',
+                                            attendance_type = '{$participation_type}',
                                             is_score = '{$is_score}',
                                             etc4 = '{$etc4}',
                                             ksso_member_status = '{$ksso_member_status}',
@@ -269,19 +269,19 @@ switch ($participation_type) {
 		$attendance_type_text = "고객사";
 		break;
     case 6:
-        $attendance_type = "기자";
+        $attendance_type_text = "기자";
         break;
     case 7:
-        $attendance_type = "심사";
+        $attendance_type_text = "심사";
         break;
     case 9:
-        $attendance_type = "학회";
+        $attendance_type_text = "학회";
         break;
     case 10:
-        $attendance_type = "외부초청";
+        $attendance_type_text = "외부초청";
         break;
     case 11:
-        $attendance_type = "정책 심포지엄";
+        $attendance_type_text = "정책 심포지엄";
         break;
 }
     $time = date("Y-m-d");
