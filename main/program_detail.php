@@ -1890,7 +1890,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
-                                                                    <td class="bold">Obesity  Patient Education Case Review 1</td>
+                                                                    <td class="bold">Obesity  Patient Education Case Review</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">장연정</p>(신촌세브란스병원 당뇨병센터)
                                                                     </td>
