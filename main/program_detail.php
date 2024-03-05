@@ -191,18 +191,17 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:40-16:10</td>
+                                                                    <td>15:40-16:00</td>
                                                                     <td class="bold">Serotonin and Metabolism</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김경곤</p>
                                                                         (가천의대 가정의학과)
                                                                     </td>
                                                                 </tr>
-                                                                <!-- <tr>
+                                                                <tr>
                                                                     <td>16:00-16:10</td>
-                                                                    <td class="bold">Q&A</td>
-                                                                    <td class="text_r"></td>
-                                                                </tr> -->
+                                                                    <td class="bold" colspan="2">Q&A</td>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -253,21 +252,18 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:40-16:10</td>
+                                                                    <td>15:40-16:00</td>
                                                                     <td class="bold">The Keys to Successful Nutrition Therapy for Patients with Obesity and Overweight</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">김은미</p>(강북삼성병원 영양팀)
                                                                     </td>
                                                                 </tr>
-                                                                <!-- <tr>
+                                                                <tr>
                                                                     <td>16:00-16:10</td>
-                                                                    <td class="bold">
+                                                                    <td class="bold" colspan="2">
                                                                         Q&A
                                                                     </td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold"></p>
-                                                                    </td>
-                                                                </tr> -->
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
