@@ -213,6 +213,9 @@
 
                                         $attendance_arr[5]['name'] = "기자";
                                         $attendance_arr[5]['value'] = "6";
+										
+                                        $attendance_arr[6]['name'] = "정책 심포지엄";
+                                        $attendance_arr[6]['value'] = "11";
                               
                                     foreach ($attendance_arr as $a_arr) {
                                         $selected =  $prev["attendance_type"] == $a_arr['value'] ? "selected" : "";

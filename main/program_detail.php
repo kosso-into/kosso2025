@@ -2181,7 +2181,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>11:00-11:10</td>
-                                                                    <td class="bold">Association Between Body Cell Mass Index, Health-Related Quality of Life, and Psychosocial Stress Among Middle-Aged and Older Adults in Korea: The Korean Genome and Epidemiology Study Cohort</td>
+                                                                    <td class="bold">Association between body cell mass index and health-related quality of life among middle-aged and older adults in Korea: the Korean genome epidemiology study</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">조신영</p>(서울의대 가정의학과)
                                                                     </td>

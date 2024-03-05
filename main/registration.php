@@ -71,7 +71,7 @@ $during_yn = sql_fetch($sql_during)['yn'];
 //Fellow: 전임의, Intern: 수련의,  Resident: 전공의, Nutritionist:영양사, Exercise Specialist:운동사, Nurse:간호사, Military Surgeon(군의관): 군의관, Pharmacist: 공보의, Researcher: 연구원, Others:기타,
 //Student: 학생, Press:기자,  Booth: 전시(부스)
 
-//참가유형(0: 임원, 1:연자, 2:좌장, 3:패널, 4:일반참석자, 5:고객사, 6:기자, 7:심사, 8:전공의 및 의대생, 9:학회, 10:외부초청)
+//참가유형(0: 임원, 1:연자, 2:좌장, 3:패널, 4:일반참석자, 5:고객사, 6:기자, 7:심사, 8:전공의 및 의대생, 9:학회, 10:외부초청, 11:정책)
 if ($during_yn != "Y") {
 
 ?>
