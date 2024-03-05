@@ -837,7 +837,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Committee Session 3 : 진료지침위원회 세미나</p>
-                                                    <p><span class="bold">좌장 : 한상호</span>(동아의대 가정의학과),<span class="bold">권혁태</span>(서울의대 가정의학과)</p>
+                                                    <p><span class="bold">좌장 : 한성호</span>(동아의대 가정의학과),<span class="bold">권혁태</span>(서울의대 가정의학과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
                                             </tr>
