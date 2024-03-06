@@ -68,7 +68,7 @@
 						<li>
 							<a href="/main/app_floor_plan.php">층별 안내</a>
 						</li>
-						<li><a>부스 배치도</a></li>
+						<li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
 					</ul>
 				</li>
 				<li>

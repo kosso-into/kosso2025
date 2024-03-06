@@ -8,7 +8,7 @@
             <ul class="app_menu_tab">
                 <li><a href="./venue.php">오시는 길</a></li>
                 <li class="on"><a href="./app_floor_plan.php">층별 안내</a></li>
-                <li><a>부스 배치도</a></li>
+                <!-- <li><a href="./sponsor_exhibition.php">부스 배치도</a></li> -->
             </ul>
         </div>
 
