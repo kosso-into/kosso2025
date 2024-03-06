@@ -313,7 +313,7 @@ switch ($participation_type) {
 
     $committee_text = "";
     if(!empty($committee)){
-        if($committee == 0 || $committee == 1){
+        if($committee == 1){
             $committee_text = "Committee Session 1";
         }else if($committee == 2){
             $committee_text = "Committee Session 2";   
