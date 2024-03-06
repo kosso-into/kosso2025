@@ -68,6 +68,13 @@
 						<li>
 							<a href="/main/app_floor_plan.php">층별 안내</a>
 						</li>
+						<!-- <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li> -->
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">후원/전시</a>
+					<ul class="app_sub">
+						<li><a href="/main/sponsor.php">고객사</a></li>
 						<li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
 					</ul>
 				</li>

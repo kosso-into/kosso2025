@@ -31,10 +31,10 @@
                 onclick="javascript:window.location.href='./app_index.php';"><img
                     src="/main/img/icons/icon_arrow_prev.svg" alt="이전페이지로 이동"></button></h2>
         <!-- [240214]sujeong / 부스배치도 주석 -->
-        <!-- <ul class="app_menu_tab langth_2">
-            <li class="on"><a href="./sponsor.php">후원사</a></li>
+        <ul class="app_menu_tab langth_2">
+            <li class="on"><a href="./sponsor.php">고객사</a></li>
             <li><a href="./sponsor_exhibition.php">부스배치도</a></li>
-        </ul> -->
+        </ul>
     </div>
     <?php
     } 
@@ -81,7 +81,7 @@
                     <a href="http://en.donga-st.com/Main.da" class="dong_a">Dong-A ST</a>
                 </li>
                 <!--[240205] sujoeng 배열 맞추기 위해 PC -> 3 / 4 -->
-                <div class="length_4 pc_only">
+                <div class="length_3 pc_only">
                     <li class="small">
                         <a href="https://www.inno-n.com/eng" class="inno_n">inno N</a>
                     </li>
@@ -90,9 +90,6 @@
                     </li>
                     <li class="small">
                         <a href="https://www.lilly.co.kr/" class="lilly">Lilly</a>
-                    </li>
-                    <li class="small">
-                        <a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a>
                     </li>
                 </div>
                   <!--[240205] sujoeng 배열 맞추기 위해 mobile -> 2 -->
@@ -105,20 +102,21 @@
                     <li class="small mb_only">
                         <a href="https://www.lilly.co.kr/" class="lilly">Lilly</a>
                     </li>
-                    <li class="small mb_only">
-                        <a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a>
-                    </li>
+
             </ul>
             <p class="grade_title silver_bg">Silver</p>
-            <ul class="grade_wrap length_2 no_padding_bottom">
+            <ul class="grade_wrap length_3 no_padding_bottom">
+                <li class="small">
+                        <a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a>
+                    </li>
                 <li class="small">
                     <a href="https://www.lgchem.com/main/index" class="lg_chem">LG Chem</a>
                 </li>
                 <li class="small">
                     <a href="https://www.celltrionph.com/en-us/home/index" class="celltrion">CELLTRION</a>
                 </li>
-            </ul>
-            <ul class="grade_wrap length_3 no_padding_top">
+            
+            <div class="length_3 pc_only">
                 <li class="small">
                     <a href="https://www.sanofi.com/en/our-company" class="sanofi">sanofi</a>
                 </li>
@@ -128,7 +126,17 @@
                 <li class="small">
                     <a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a>
                 </li>
-            </ul>  
+            </div>
+                <li class="small mb_only">
+                    <a href="https://www.sanofi.com/en/our-company" class="sanofi">sanofi</a>
+                </li>
+                <li class="small mb_only">
+                    <a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a>
+                </li>
+                <li class="small mb_only">
+                    <a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a>
+                </li>
+                </ul>  
             <p class="grade_title bronze_bg">Bronze</p>
             <ul class="grade_wrap length_4">
                 <li>
