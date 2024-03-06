@@ -133,7 +133,7 @@
 	//오늘 날짜 구하기 d_day 구하기
 	$today = date("Y. m. d");
 
-	$d_day = new DateTime("2024-03-08");
+	$d_day = new DateTime("2024-03-09");
 
 	$current_date = new DateTime();
 	$current_date->format('Y-m-d');

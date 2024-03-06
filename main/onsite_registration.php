@@ -35,12 +35,13 @@
     .mo_korea_only.on, .korea_radio.on{
         display:revert;
     }
+
 	input.tel_number {
-    width: 32%;
+		width: 31%;
 	}
 
 	input.tel_numbers {
-		width: 32%;
+		width: 31%;
 		margin-left: 2px;
 	}
 </style>
@@ -51,12 +52,12 @@
 		<div class="term_wrap">
 			<h3 class="title">개인정보 수집 및 이용에 관한 안내</h3>
 			<div class="term_box">
-			<strong>목적</strong>
-                        <p>대한비만학회(KSSO)는 춘계학술대회를 위한 온라인 현장 등록 서비스를 제공합니다. 귀하의 개인정보를 기반으로 회원가입 및 등록 비용 결제를 완료할 수 있습니다.</p>
+						<strong>목적</strong>
+                        	<p>대한비만학회(KSSO)는 춘계학술대회를 위한 온라인 현장 등록 서비스를 제공합니다. 귀하의 개인정보를 기반으로 회원가입 및 등록 비용 결제를 완료할 수 있습니다.</p>
                         <strong>개인정보 수집</strong>
-                        <p>대한비만학회 춘계학술대회에서는 온라인 현장 등록을 완료하기 위해 귀하께서 개인정보를 제공하셔야 합니다. 이름, 신분증(ID) 이메일, 비밀번호, 생년월일, 소속 기관/단체, 부서, 휴대전화 및 전화번호를 입력하도록 요청됩니다.</p>
+                        	<p>대한비만학회 춘계학술대회에서는 온라인 현장 등록을 완료하기 위해 귀하께서 개인정보를 제공하셔야 합니다. 이름, 신분증(ID) 이메일, 비밀번호, 생년월일, 소속 기관/단체, 부서, 휴대전화 및 전화번호를 입력하도록 요청됩니다.</p>
                         <strong>개인정보 보관</strong>
-                        <p>대한비만학회 춘계학술대회는 귀하에게 회의 업데이트 및 뉴스레터와 같은 유용한 서비스를 제공하기 위해 귀하의 개인정보를 저장할 것입니다.</p>
+                        	<p>대한비만학회 춘계학술대회는 귀하에게 회의 업데이트 및 뉴스레터와 같은 유용한 서비스를 제공하기 위해 귀하의 개인정보를 저장할 것입니다.</p>
 			</div>
 			<div class="term_label">
 				<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
@@ -225,6 +226,17 @@
 								
 							?> 
 									</select>
+								</div>
+							</td>
+						</tr>
+						<tr class="committee_tr">
+							<th><span class="red_txt">* </span> 참석하실 심포지엄 선택<br/>(중복 선택 가능)</th>
+							<td>
+								<div class="label_wrap">
+									<input type="checkbox" class="checkbox" name="committee" id="committee1" value="0" checked="">
+									<label for="committee1"><i></i>비만 진료 급여화를 위한 건강보험정책 심포지엄</label><br/>
+									<input type="checkbox" class="checkbox" name="committee" id="committee2" value="1">
+									<label for="committee2" style="margin-left: 0;"><i></i>지방자치시대, 건강한 지역주민을 만들기 위한 방안은? -건강한 강원특별자치도를 만들기 위한 방안은?</label>
 								</div>
 							</td>
 						</tr>

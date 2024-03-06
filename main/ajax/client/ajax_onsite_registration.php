@@ -50,6 +50,10 @@ if($_POST["flag"] === "onsite") {
     $payment_methods = $data["payment_methods"] ?? "";
     $fee= str_replace(",","",$price);
 
+    //[240306] sujeong / 정책심포지엄 추가
+    //정책 심포지엄
+    $committee =  $data["committee"] ?? "";
+
     $insert_member_query =	"
                                 INSERT member
                                 SET
@@ -307,6 +311,17 @@ switch ($participation_type) {
         $occupation = "기타(".$occupation_other_type.")";
     }
 
+    $committee_text = "";
+    if(!empty($committee)){
+        if($committee == 0 || $committee == 1){
+            $committee_text = "Committee Session 1";
+        }else if($committee == 2){
+            $committee_text = "Committee Session 2";   
+        }else if($committee == 3){
+            $committee_text = "Committee Session 1, 2";  
+        }
+    }
+
     $insert_reg_user_sql = "
                         INSERT reg1.users
                         SET
@@ -333,7 +348,8 @@ switch ($participation_type) {
                             date_of_birth = '{$date_of_birth}',
                             onsite_reg = '1',
                             deposit = '결제대기',
-                            deposit_method = '{$deposit_method}'
+                            deposit_method = '{$deposit_method}',
+                            etc1 = '{$committee_text}'
                     ";
 
     if(!empty($licence_number)){
@@ -348,7 +364,7 @@ switch ($participation_type) {
     if(!empty($specialty_number)){
         $insert_reg_user_sql .= ", specialty_number = '{$specialty_number}' ";
     }
-
+  
 
     $insert_reg_user = sql_query($insert_reg_user_sql);
 

@@ -1495,7 +1495,7 @@ echo '<script type="text/javascript">
                                                                     <td>16:35-17:00</td>
                                                                     <td class="bold">Obesity Fact Sheet 2023</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">정수민</p>(서울의대 가정의학과)
+                                                                        <p class="bold">정수민</p>(서울의대 의학과)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1552,7 +1552,7 @@ echo '<script type="text/javascript">
                                                     <li>
                                                         <p class="bold">오거나이저 : 임현정 (경희대), 김오연 (동아대), 송수진 (한남대)</p>
                                                     </li>
-                                                        <li>본 세션은 건강과의 관련성으로 최근 관심이 높아지고 있는 ‘초가공식품-감미료, 방부제, 색소 등의 식품 첨가물을 포함하고 가공과 변형이 많이 된 식품’을 주제로 합니다. 첫 번째 연자인 박소현 교수(한림대)는 초가공식품의 정의 및 한국인의 섭취량을 설명하고, 두번째 연자인 심지선 교수(연세의대)는 초가공식품 섭취와 비만과의 연관성에 대하여 강의할 예정입니다. 마지막 연자인 이상아 교수(강원대)는 초가공식품 섭취와 암 관련 호르몬 대사에 대한 연구결과를 공유할 예정입니다. </li>
+                                                        <li>본 세션은 건강과의 관련성으로 최근 관심이 높아지고 있는 ‘초가공식품-감미료, 방부제, 색소 등의 식품 첨가물을 포함하고 가공과 변형이 많이 된 식품’을 주제로 합니다. 첫 번째 연자인 정수경 교수(충남대병원)는 초가공식품의 정의 및 한국인의 섭취량을 설명하고, 두번째 연자인 심지선 교수(연세의대)는 초가공식품 섭취와 비만과의 연관성에 대하여 강의할 예정입니다. 마지막 연자인 이상아 교수(강원대)는 초가공식품 섭취와 암 관련 호르몬 대사에 대한 연구결과를 공유할 예정입니다. </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1971,7 +1971,7 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:25</td>
-                                                                    <td class="bold">Comprehensive summary of non-psychotrophic obesity medications for educating patients with obesity</td>
+                                                                    <td class="bold">Comprehensive Summary of Non-Psychotrophic Obesity Medications for Educating Patients with Obesity</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">강서영</p>(을지의대 가정의학과)
                                                                     </td>
@@ -2014,7 +2014,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>08:30-10:00</td>
+                                                <td>08:30-09:30</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 1</p>
@@ -2111,7 +2111,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_orange_bg">
-                                                <td>10:10-11:40</td>
+                                                <td>10:10-11:10</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_pink">2024.03.09. ROOM 4</p> -->
                                                     <p class="font_20 bold">Oral Presentation 2</p>
@@ -2468,7 +2468,7 @@ echo '<script type="text/javascript">
                                                 <td>11:40-12:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 1</p> -->
-                                                    <p class="font_20 bold">Luncheon Symposium 1</p>
+                                                    <p class="font_20 bold">Luncheon Lecture 1</p>
                                                     <p><span class="bold">좌장 : 이문규</span>(을지의대 내분비내과)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기 </button> -->
@@ -2525,7 +2525,7 @@ echo '<script type="text/javascript">
                                                 <td>11:40-12:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 2</p> -->
-                                                    <p class="font_20 bold">Luncheon Symposium 2</p>
+                                                    <p class="font_20 bold">Luncheon Lecture 2</p>
                                                     <p><span class="bold">좌장 : 유형준</span>(CM병원 내분비내과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>
@@ -2581,7 +2581,7 @@ echo '<script type="text/javascript">
                                                 <td>11:40-12:40</td>
                                                 <td>
                                                     <!-- <p class="font_16 font_blue">2024.03.09. ROOM 3</p> -->
-                                                    <p class="font_20 bold">Luncheon Symposium 3</p>
+                                                    <p class="font_20 bold">Luncheon Lecture 3</p>
                                                     <p><span class="bold">좌장 : 신현호</span>(아산충무병원 심장내과)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">미리보기</button> -->
                                                 </td>

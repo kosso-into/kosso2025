@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".review_sub_list").addClass("hidden");
     $(".bank_info").addClass("hidden");
+    $(".committee_tr").addClass("hidden");
     
     //[240109] sujeong 평점신청시에만 면허번호 칸 보이도록
     //평점신청
@@ -27,6 +28,29 @@ $(document).ready(function(){
             $(".bank_info").addClass("hidden");
         }
     });
+
+
+    //[240229] sujeong / 정책 심포지엄 선택하기
+    //정책심포지엄 선택
+    $('select[name=participation_type]').on("change", function() {
+        const selected = $(this).find("option:selected").val();
+        if (selected == '11') {
+            $(".committee_tr").removeClass("hidden");
+        } else {
+            $(".committee_tr").addClass("hidden");
+        }
+    });
+
+    //[240229] sujeong / 정책 심포지엄 선택하기
+    //정책심포지엄 선택
+    $('input[name=committee]').on("change", function() {
+       if($('input[name=committee]:checked').length === 0){
+            alert('참석하실 정책심포지엄을 선택해주세요.')
+            $('#committee1').prop('checked', true);
+       }
+    });
+
+
 
     //이메일 중복 검증
     $("input[name=email]").on("change", function(){
@@ -147,7 +171,6 @@ function birthChk(input) {
     }else{
         input.value = value;
     }
-
 }
 
 
@@ -303,6 +326,23 @@ function onsite_submit(){
         ksso_member_status = 0; //비회원
     }
 
+    //정책 심포지엄 선택
+    let committee = 0;
+   
+   if($('input[name=committee]:checked').length === 2){
+    committee = 3;
+   }
+   else if($('input[name=committee]:checked').length === 1){
+        $('input[name=committee]:checked').each(function() {
+            const value = $(this).val();
+            if(value == 0){
+                committee = 1;
+            }else if(value == 1){
+                committee = 2;
+            }
+        });
+    }
+
     var data = {
         nation_no : nation_no,
         ksso_member_check : ksso_member_check,
@@ -334,7 +374,8 @@ function onsite_submit(){
         day3_luncheon_yn : day3_luncheon_yn,
         conference_info_arr : conference_info_arr,
         payment_methods : payment_methods,
-        price : price
+        price : price,
+        committee :committee
     };
 
     $.ajax({
@@ -440,6 +481,13 @@ function requiredCheck(){
                 return false;
             }
         }
+    } 
+    // 정책심포지엄
+    else if($('#participation_type > option:selected').val() == "11"){
+        if(committee_check()==false){
+            $("input[name=committee]").focus();
+            return false;
+        }
     }
     
 }
@@ -459,6 +507,15 @@ function info_check(){
     var list_info = document.querySelectorAll('input[name="list"]:checked').length;
     if(list_info==0){
         alert("유입 경로를 확인해주세요.");
+        return false;
+    }
+}
+
+//정책 심포지엄 참석 체크
+function committee_check(){
+    var list_info = document.querySelectorAll('input[name="committee"]:checked').length;
+    if(list_info==0){
+        alert("참석하실 정책 심포지엄를 확인해주세요.");
         return false;
     }
 }
