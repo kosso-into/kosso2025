@@ -32,15 +32,18 @@
 	<!-- HUBDNCLHJ : APP일시 아래 h1.page_title{Exhibition} 주석처리 후 app 메뉴 탭 주석해제 -->
 <?php
 	if (!empty($session_app_type) && $session_app_type == 'N') {
+		//if (!empty($session_app_type) && $session_app_type == 'Y') {
 		// Web일때
 ?>
     <h1 class="page_title">부스배치도</h1>
 	
 	<div class="container_inner">
 		<div class="contents_box exhibition">
+			<img src="/main/img/img_exhibition.jpg" class="pc_only"/>
+			<img src="/main/img/img_exhibition_mb.jpg" class="mb_only"/>
 			<div class="clearfix2">
-				<img src="/main/img/img_exhibition_web_floor_3.png" alt="">
-				<div class="floor_table_wrap">
+				<!-- <img src="/main/img/img_exhibition_web_floor_3.png" alt=""> -->
+				<!-- <div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
 							<col width="120px"/>
@@ -103,11 +106,11 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</div>
 			<div class="clearfix2">
-				<img src="/main/img/img_exhibition_web_floor_5.png" alt="">
-				<div class="floor_table_wrap">
+				<!-- <img src="/main/img/img_exhibition_web_floor_5.png" alt=""> -->
+				<!-- <div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
 							<col width="120px"/>
@@ -182,12 +185,12 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</div>
 			<div class="clearfix2">
-				<img src="/main/img/img_exhibition_web_floor_6.png" alt="">
+				<!-- <img src="/main/img/img_exhibition_web_floor_6.png" alt=""> -->
 				<div class="floor_table_wrap">
-					<table class="floor_table">
+					<!-- <table class="floor_table">
 						<colgroup>
 							<col width="120px"/>
 							<col />
@@ -263,7 +266,7 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -274,6 +277,7 @@
     <!-- 앱 뷰 -->
 <?php
     if(!empty($session_user) && $session_app_type == 'Y') {
+	// if(!empty($session_user) && $session_app_type == 'N') {
 ?>
 	<div class="container_inner">
 		<div class="contents_box">
@@ -286,9 +290,9 @@
 				<div class="floor floor_3 on">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_3f.png" alt=""> -->
-						<img src="/main/img/img_exhibition_app_floor_3.png" alt="">
+						<img src="/main/img/img_exhibition_mb_01.png" alt="">
 					</div>
-					<div class="floor_table_wrap">
+					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
 								<col width="120px"/>
@@ -351,14 +355,14 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 				</div>
 				<div class="floor floor_5">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_5f.png" alt=""> -->
-						<img src="/main/img/img_exhibition_app_floor_5.png" alt="">
+						<img src="/main/img/img_exhibition_mb_02.png" alt="">
 					</div>
-					<div class="floor_table_wrap">
+					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
 								<col width="120px"/>
@@ -433,14 +437,14 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 				</div>
 				<div class="floor floor_6">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_6f.png" alt=""> -->
 						<img src="/main/img/img_exhibition_app_floor_6.png" alt="">
 					</div>
-					<div class="floor_table_wrap">
+					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
 								<col width="120px"/>
@@ -517,7 +521,7 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 				</div>
 			</div> 
 		</div>
@@ -531,12 +535,12 @@
 <?php
     if(!empty($session_user) && $session_app_type == 'Y') {
 ?>
-<div class="popup app_pop" style="display:block;">
+<!-- <div class="popup app_pop" style="display:block;">
     <div class="pop_bg"></div>
     <div class="pop_contents">
 		<img src="/main/img/app_pop_stamp_tour_event.png" alt="">
     </div>
-</div>
+</div> -->
 <?php
     } 
 ?>

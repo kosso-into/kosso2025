@@ -396,6 +396,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .exhibition_wrap table td:first-child {font-weight:bold;}
 .exhibition_wrap table th:not(:last-child), .exhibition_wrap table td:not(:last-child) {text-align:center; border-right:1px solid #3C3C3B}
 .sponsor_exhibition .inner > div:not(:first-child) {margin-top:50px;}
+.exhibition > img {width: 100%;}
 
 /*Presentation Guidelines*/
 .presentation_title {margin-bottom:50px;}

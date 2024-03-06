@@ -137,7 +137,7 @@ $locale = locale($language);
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <!-- <li><a href="/main/comingsoon.php">숙박</a></li> -->
                             <li><a href="/main/floor_plan.php">층별 안내</a></li>
-                            <li><a href="/main/comingsoon.php">부스 배치도</a></li>
+                            <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
                             <!-- <li><a href="/main/accommodation.php">숙박</a></li>
                             <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
                             <!-- <li><a href="/main/venue.php">Transportation</a></li> -->
@@ -286,7 +286,7 @@ $locale = locale($language);
                     <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
                     <!-- <li><a href="/main/comingsoon.php">숙박</a></li> -->
                     <li><a href="/main/floor_plan.php">층별 안내</a></li>
-                    <li><a href="/main/comingsoon.php">부스 배치도</a></li>
+                    <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m6"]) ? "show" : "") ?>">

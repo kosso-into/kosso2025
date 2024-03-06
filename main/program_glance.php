@@ -472,7 +472,7 @@ section.app_version .inner {
                                     <button class="more_btn" data-id="28"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
                                 </td>
                                 <td class="pink_bg pointer modal" name="keynote_lecture_2" data-id="29">
-                                    Keynote lecture 2<p>The Keys to Successful Nutrition Therapy for Persons with Obesity or Overweight</p>
+                                    Keynote lecture 2<p>The Keys to Successful Nutrition Therapy for Patients with Obesity and Overweight</p>
                                     <input type="hidden" name="e" value="room2">
                                     <input type="hidden" name="category" value="keynote_lecture">
                                     <button class="more_btn" data-id="29"><img class="more_img" alt="more" src="./img/icons/popup_modal.svg"/></button>
