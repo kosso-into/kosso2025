@@ -102,7 +102,6 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
             <ul class="app_menu_tab">
                 <li class="on"><a href="./venue.php">오시는 길</a></li>
                 <li><a href="./app_floor_plan.php">층별 안내</a></li>
-                <li><a>부스 배치도</a></li>
             </ul>
         </div>
         <h1 class="page_title">오시는 길</h1>
