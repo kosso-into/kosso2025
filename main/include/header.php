@@ -121,13 +121,13 @@ $locale = locale($language);
                             <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->
                         </ul>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href="/main/sponsor.php">후원/전시</a>
                         <ul class="sub_nav">
                             <li><a href="/main/sponsor.php">후원사</a></li> 
                             <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
                         </ul>
-                    </li> -->
+                    </li>
                     <li>
                         <a href="/main/venue.php">행사장</a>
                         <ul class="sub_nav">
@@ -137,7 +137,7 @@ $locale = locale($language);
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <!-- <li><a href="/main/comingsoon.php">숙박</a></li> -->
                             <li><a href="/main/floor_plan.php">층별 안내</a></li>
-                            <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
+                            <!-- <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li> -->
                             <!-- <li><a href="/main/accommodation.php">숙박</a></li>
                             <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
                             <!-- <li><a href="/main/venue.php">Transportation</a></li> -->
@@ -269,13 +269,13 @@ $locale = locale($language);
                     <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                 </ul>
             </li>
-             <!-- <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">
+             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">
                 <a href="javascript:;"><span>후원/전시</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m5"]) ? "block" : "none") ?>"> 
                      <li><a href="/main/sponsor.php">후원사</a></li>
                     <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
                  </ul>
-            </li> -->
+            </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m7"]) ? "show" : "") ?>">
                 <a href="javascript:;"><span>행사장</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m7"]) ? "block" : "none") ?>">
@@ -286,7 +286,7 @@ $locale = locale($language);
                     <li><a href="/main/floor_plan.php">행사장 배치도</a></li> -->
                     <!-- <li><a href="/main/comingsoon.php">숙박</a></li> -->
                     <li><a href="/main/floor_plan.php">층별 안내</a></li>
-                    <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li>
+                    <!-- <li><a href="/main/sponsor_exhibition.php">부스 배치도</a></li> -->
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m6"]) ? "show" : "") ?>">
