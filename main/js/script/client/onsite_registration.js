@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".review_sub_list").addClass("hidden");
     $(".bank_info").addClass("hidden");
     $(".committee_tr").addClass("hidden");
+    let committee = 0;
     
     //[240109] sujeong 평점신청시에만 면허번호 칸 보이도록
     //평점신청
@@ -38,6 +39,7 @@ $(document).ready(function(){
             $(".committee_tr").removeClass("hidden");
         } else {
             $(".committee_tr").addClass("hidden");
+            committee = 0;
         }
     });
 
@@ -327,22 +329,24 @@ function onsite_submit(){
     }
 
     //정책 심포지엄 선택
-    let committee = 0;
-   
-   if($('input[name=committee]:checked').length === 2){
-    committee = 3;
-   }
-   else if($('input[name=committee]:checked').length === 1){
-        $('input[name=committee]:checked').each(function() {
-            const value = $(this).val();
-            if(value == 0){
-                committee = 1;
-            }else if(value == 1){
-                committee = 2;
-            }
-        });
+    if(participation_type == '11'){
+        if($('input[name=committee]:checked').length === 2){
+            committee = 3;
+        }
+        else if($('input[name=committee]:checked').length === 1){
+                $('input[name=committee]:checked').each(function() {
+                    const value = $(this).val();
+                    if(value == 0){
+                        committee = 1;
+                    }else if(value == 1){
+                        committee = 2;
+                    }
+                });
+            }    
+    }else{
+        committee = 0; 
     }
-
+  
     var data = {
         nation_no : nation_no,
         ksso_member_check : ksso_member_check,
