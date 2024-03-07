@@ -236,7 +236,7 @@
 									<input type="checkbox" class="checkbox" name="committee" id="committee1" value="0" checked="">
 									<label for="committee1"><i></i>비만 진료 급여화를 위한 건강보험정책 심포지엄</label><br/>
 									<input type="checkbox" class="checkbox" name="committee" id="committee2" value="1">
-									<label for="committee2" style="margin-left: 0;"><i></i>지방자치시대, 건강한 지역주민을 만들기 위한 방안은? -건강한 강원특별자치도를 만들기 위한 방안은?</label>
+									<label for="committee2" style="margin-left: 0;"><i></i>지방자치시대, 건강한 지역주민을 만들기 위한 방안은? <br class="mb_only"/>-건강한 강원특별자치도를 만들기 위한 방안은?</label>
 								</div>
 							</td>
 						</tr>
