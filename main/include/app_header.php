@@ -101,9 +101,9 @@
 					 <a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a> 
 					<a href="http://18ca921aa745b41a.kinxzone.com/Programbook.pdf" download class="pdf_view">프로그램 북 <br/>다운로드</a>
 				</li> -->
-				<!-- [240307] sujeong / 16:07 기준 업로드(v3) -->
+				<!-- [240307] sujeong / 17:00 기준 업로드(v4) -->
 				<li>
-					<a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook_v3.pdf.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
+					<a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook_v4.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
 				</li>
 			</ul>
 		</div>
