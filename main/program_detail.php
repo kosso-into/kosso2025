@@ -1043,8 +1043,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">조윤정</span>(대구가톨릭의대 가정의학과)<br/>
-                                                                        <span class="bold">배재현</span>(고려의대 내분비내과)
+                                                                        <span class="bold">홍준화</span>(을지의대 내분비내과)<br/>
+                                                                        <span class="bold">조윤정</span>(대구가톨릭의대 가정의학과)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1104,7 +1104,7 @@ echo '<script type="text/javascript">
                                                                     <td>14:25-14:50</td> 
                                                                    <td class="bold">GIPR/GLP-1R Co-Agonists</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">배재현</p>(고려의대 내분비내과)
+                                                                        <p class="bold">정창희</p>(울산의대 내분비내과)
                                                                     </td> 
                                                              </tr>
                                                                 <tr>

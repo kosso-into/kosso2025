@@ -46,9 +46,9 @@ $program_list = get_data($select_program_query);
 						<button class="detail_btn"></button>
 						<p class="title"><?=$program['program_name']?></p>
                         <?php
-                            if($program['chairpersons']!==null){
+                            if($program['chairpersons']!= ""){
                         ?>
-						<p class="chairperson"><span class="bold">Chairpersons:</span> <?=$program['chairpersons']?></p>
+						<p class="chairperson"><span class="bold">좌장: </span> <?=$program['chairpersons']?></p>
                         <?php
                         }
                         ?>

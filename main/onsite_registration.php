@@ -92,11 +92,11 @@
 								<ul class="simple_join clearfix">
 									<li>
 										<label for="">KSSO ID<span class="red_txt">*</span></label>
-										<input class="email_id" name="kor_id" type="text" maxlength="60">
+										<input class="email_id" name="kor_id" type="text" maxlength="60" autocomplete='off'>
 									</li>
 									<li>
 										<label for="">KSSO PW<span class="red_txt">*</span></label>
-										<input class="passwords" name="kor_pw" type="password" maxlength="60">
+										<input class="passwords" name="kor_pw" type="password" maxlength="60" autocomplete='off'>
 									</li>
 									<li>
 										<button onclick="kor_api()" type="button" class="btn">회원인증</button>
@@ -117,7 +117,7 @@
 							<th><span class="red_txt">* </span>ID(email)</th>
 							<td>
 								<div class="max_long responsive_float">
-									<input type="text" name="email" class="required" maxlength="50">
+									<input type="text" name="email" class="required" maxlength="50" autocomplete='off'>
 								</div>
 								<span class="mini_alert brown_txt">가입 이후 수정이 불가능합니다. ID를 정확히 입력했는지 확인 부탁드립니다.</span>
 							</td>
@@ -143,7 +143,7 @@
 							<th><span class="red_txt">* </span>성명</th>
 							<td class="clearfix">
 								<div class="max_long">
-									<input name="first_name" type="text" placeholder="성명" maxlength="60">
+									<input name="first_name" type="text" placeholder="성명" maxlength="60" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -151,7 +151,7 @@
 							<th><span class="red_txt">* </span>소속</th>
 							<td>
 								<div class="max_long">
-									<input type="text" name="affiliation" maxlength="100">
+									<input type="text" name="affiliation" maxlength="100" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -160,7 +160,7 @@
 							<th><span class="red_txt">* </span>부서</th>
 							<td>
 								<div class="max_long">
-									<input type="text" name="department" maxlength="100">
+									<input type="text" name="department" maxlength="100" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -168,9 +168,9 @@
 							<th><span class="red_txt">* </span>휴대폰 번호</th>
 							<td>
 								<div class="max_long">
-                                    <input class="tel_number tel_phone" name="telephone" type="text" maxlength="60">
-                                    <input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
-                                    <input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
+                                    <input class="tel_number tel_phone" name="telephone" type="text" maxlength="60" autocomplete='off'>
+                                    <input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60" autocomplete='off'>
+                                    <input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60" autocomplete='off'>
                                 </div>
 							</td>
 						</tr>
@@ -261,7 +261,7 @@
                                     <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
                                     <li class="hide_input <?= $prev["occupation_type"] === "기타" ? "on" : "" ?>">
                                         <input type="hidden" name="occupation_prev_input" value="<?=$prev["occupation_other_type"] ?? ""?>"/>
-                                        <input type="text" id="occupation_input" name="occupation_input" value="<?=$prev["occupation_other_type"] ?? ""?>">
+                                        <input type="text" id="occupation_input" name="occupation_input" value="<?=$prev["occupation_other_type"] ?? ""?>" autocomplete='off'>
                                     </li>
 								</ul>
 							</td>
@@ -338,7 +338,7 @@
                                     <!-- 'Other' 선택시, ▼ li.hide_input에 'on' 클래스 추가 -->
                                     <li class="hide_input <?=$prev["member_type"] === "Others" ? "on" : ""?>">
                                         <input type="hidden" name="title_prev_input" value="<?=$prev["member_other_type"] ?? ""?>"/>
-                                        <input type="text" id="title_input" name="title_input" value="<?=$prev["member_other_type"] ?? ""?>">
+                                        <input type="text" id="title_input" name="title_input" value="<?=$prev["member_other_type"] ?? ""?>" autocomplete='off'>
                                     </li>
 								</ul>
 							</td>
@@ -359,7 +359,7 @@
 							<th>의사 면허번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text" name="licence_number" id="licence_number">
+									<input type="text" name="licence_number" id="licence_number" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -367,7 +367,7 @@
 							<th>전문의 번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text" name="specialty_number" id="specialty_number">
+									<input type="text" name="specialty_number" id="specialty_number" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -375,7 +375,7 @@
 							<th>영양사 면허번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text" name="nutritionist_number" id="nutritionist_number">
+									<input type="text" name="nutritionist_number" id="nutritionist_number" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -383,7 +383,7 @@
 							<th>임상영양사 자격번호</th>
 							<td>
 								<div class="max_normal">
-									<input type="text" name="dietitian_number" id="dietitian_number">
+									<input type="text" name="dietitian_number" id="dietitian_number" autocomplete='off'>
 								</div>
 							</td>
 						</tr>
@@ -392,7 +392,7 @@
 							<th>생년월일</th>
 							<td>
 								<div class="max_normal">
-									<input name="date_of_birth" pattern="^[0-9]+$"  type="text" placeholder="yyyy-mm-dd" id="datepicker" onKeyup="birthChk(this)"/>
+									<input name="date_of_birth" pattern="^[0-9]+$"  type="text" placeholder="yyyy-mm-dd" id="datepicker" onKeyup="birthChk(this)" autocomplete='off'/>
 									<!-- <span class="mini_alert red_txt red_alert">good</span> -->
 								</div>
 							</td>
