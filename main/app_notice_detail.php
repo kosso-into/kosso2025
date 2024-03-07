@@ -37,5 +37,12 @@ $notice = sql_fetch($select_notice_detail_query);
 		</div>
 	</div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+<script>
+$(document).ready(function () {
+          $('img[usemap]').rwdImageMaps()  
+})
+</script>
 
 <?php include_once('./include/app_footer.php');?>

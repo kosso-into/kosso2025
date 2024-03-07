@@ -15,13 +15,13 @@
                 <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
                 <!-- [231116]다운로드 버튼 막기 
                      [231201] 학회팀 요청 주석-->
-                <!-- <li>
+                 <!-- <li>
                     <a href="" class="type2 pink not_yet">
                         <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
                         Abstract Book <br />Download
                     </a>
                 </li>
-                <li>
+               <li>
                     <a href="" class="type2 violet not_yet">
                         <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
                         Program Book <br />Download
