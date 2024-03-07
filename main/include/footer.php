@@ -15,13 +15,13 @@
                 <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
                 <!-- [231116]다운로드 버튼 막기 
                      [231201] 학회팀 요청 주석-->
-                 <!-- <li>
-                    <a href="" class="type2 pink not_yet">
-                        <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
-                        Abstract Book <br />Download
+                <li>
+                    <a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook_v2.pdf" class="type2 pink" style="border: 1px solid #fff;" target="_blank">
+                        <i><img src="/main/img/icons/icon_download_abstract.svg" alt="" style="border:none;border-radius:0px"></i>
+                        초록집 <br />다운로드
                     </a>
                 </li>
-               <li>
+                <!-- <li>
                     <a href="" class="type2 violet not_yet">
                         <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
                         Program Book <br />Download
@@ -46,6 +46,11 @@
                         <img src="/main/img/icons/tool_abstract.svg" alt="">
                     </button>
                 </li> -->
+                <li>
+                    <button type="button" class="online_submission_alert">
+                        <img src="/main/img/icons/2024_tool_abstract.svg" alt="">
+                    </button>
+                </li>
             <?php
             }
             ?>
@@ -62,22 +67,22 @@
                         <img src="/main/img/icons/2024_tool_regist.svg" alt="">
                     </button>
                 </li>
-                <li>
+                <!-- <li>
                     <button type="button" class="online_submission_alert">
                         <img src="/main/img/icons/2024_tool_abstract.svg" alt="">
                     </button>
-                </li>
+                </li> -->
                 <li>
                     <!-- <button type="button" onClick="alert('로그인이 필요합니다..')"><img src="/main/img/icons/tool_mypage.svg" alt=""></button> -->
                 </li>
             <?php
             } else {
             ?>
-                 <li>
+                 <!-- <li>
                     <button type="button" class="online_submission_alert">
                         <img src="/main/img/icons/2024_tool_abstract.svg" alt="">
                     </button>
-                </li>
+                </li> -->
                 <li><button type="button" onClick="location.href='/main/mypage.php'"><img src="/main/img/icons/2024_tool_mypage.svg" alt=""></button></li>
             <?php
             }
