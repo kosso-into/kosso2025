@@ -1542,7 +1542,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <!-- <p class="font_16 font_green">2024.03.09. ROOM 3</p> -->
                                                     <p class="font_20 bold">Symposium 3 : Ultra-processed Foods and Cardiometabolic Health</p>
-                                                    <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비대사내과),<span class="bold"> 김오연</span>(동아대 식품영양학과)</p>
+                                                    <p><span class="bold">좌장 : 이기영</span>(가천의대 내분비대사내과),<span class="bold"> 임현정</span>(경희대 의학영양학과)</p>
                                                     <button class="btn gray2_btn program_detail_btn">세션소개</button>
                                                 </td>
                                             </tr>
@@ -1592,7 +1592,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <span class="bold">임현정</span>(경희대 의학영양학과)<br>
+                                                                        <span class="bold">김지연</span>(은평성모병원 영양팀)<br>
                                                                         <span class="bold">권유진</span>(연세의대 가정의학과)
                                                                     </td>
                                                                 </tr>
