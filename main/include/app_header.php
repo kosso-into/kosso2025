@@ -103,7 +103,7 @@
 				</li> -->
 				<!-- [240307] sujeong / 17:00 기준 업로드(v4) -->
 				<li>
-					<a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook_v4.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
+					<a href="http://18ca921aa745b41a.kinxzone.com/Abstractbook_v5.pdf" download class="pdf_view">초록집 <br/>다운로드</a>
 				</li>
 			</ul>
 		</div>

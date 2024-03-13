@@ -25,7 +25,7 @@
 					</a>
 				</div> -->
 				<div class="survey_box box_bottom">
-					<a href="/main/app_survey_test.php">
+					<a href="https://docs.google.com/forms/d/13-09K-T8RchEaJffVU44zsHG-01voJ3zLe-thw5gf_4/edit"  target="_blank">
 						<img src="./img/icons/icon_survey_kr.svg" alt="">
 						<p class="center_t">
 							<span class="bold">제59차 대한비만학회<br/>춘계학술대회</span><br/>
