@@ -42,7 +42,7 @@ if ($registrationNo) {
     ";
     $register_data = get_data($registration_info);
 
-    if(count($register_data) > 0){
+    if(count($register_data) > 10){
         foreach($register_data as $data){
             if($data['status'] != 0 && $data['status'] != 4){
                 echo "<script>alert('등록된 회원입니다.'); window.location.replace(PATH+'mypage_registration.php');</script>";
@@ -60,7 +60,7 @@ if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
 
 //[240110] sujeong / 등록 마감 02/23 오전 9시
 $sql_during =    "SELECT
-						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-02-28 16:00:00', 'Y', 'N') AS yn
+						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-03-22 16:00:00', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 //!=="Y"
@@ -763,11 +763,12 @@ if (value.length === 8) {
 }
 
 $(document).ready(function() {
+    /*
     alert("사전 등록 접수가 마감되었습니다.");
     window.history.back();
     window.location.href = "/main/index.php";
     return;
-
+*/
     $('.etc1').hide();
     $("#date_of_birth").hide();
     // $(document).ready( function() {
