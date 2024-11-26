@@ -142,12 +142,17 @@ $(document).ready(function(){
                         href_path += "/"+from
                     }
                     
-                    //쿠키에 멤버 idx와 만료일자 저장(만료시간 -> 9시간)
+                    //쿠키에 멤버 idx와 만료일자 저장(만료시간 -> 9시간 => 72시간, 3일)
                     var toDate = new Date();
-                    toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
-                    toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
-                    toDate.setSeconds(0);
-                    document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() + ";";
+                    // toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
+                    // toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
+                    // toDate.setSeconds(0);
+                    // document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() + ";";
+                    
+                    toDate.setDate(toDate.getDate() + 3); // 현재 날짜에 3일 추가
+                    toDate.setHours(23, 59, 59, 999); // 만료 시간을 3일 후 자정 직전으로 설정
+                    document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() + "; Secure; HttpOnly;";
+
 
                     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
                         window.AndroidScript.login(res.idx); //AndroidBridge.kt 35 줄에서 호출 -> local db에 저장

@@ -87,7 +87,7 @@ function login() {
                 document.cookie = "member_idx=" + res.idx + "; path=/; expires=" + toDate.toGMTString() +
                     ";";
 
-                location.href = href_path;
+                //location.href = href_path;
             } else if (res.code == 400) {
                 alert("이메일을 확인해주세요.");
                 return false;
