@@ -60,7 +60,7 @@ if ($_SERVER["HTTP_HOST"] == "www.kosso.org") {
 
 //[240110] sujeong / 등록 마감 02/23 오전 9시
 $sql_during =    "SELECT
-						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-03-22 16:00:00', 'Y', 'N') AS yn
+						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2025-03-14 16:00:00', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
 //!=="Y"

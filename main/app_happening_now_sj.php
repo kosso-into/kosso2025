@@ -1,8 +1,8 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
 <?php
-$today = "2024-03-08";
-$todayTime = "2024-03-08 18:10:34";
+$today = "2024-03-09";
+$todayTime = "2024-03-09 08:40:34";
 //$today = date("Y-m-d");
 //$todayTime = date("Y-m-d H:i:s");
 
@@ -12,7 +12,7 @@ $select_program_query = "
 								   DATE_FORMAT(p.start_time, '%Y-%m-%d %H:%i:%s') as program_start_time, DATE_FORMAT(p.end_time, '%Y-%m-%d %H:%i:%s') as program_end_time,
                                    (CASE
                                        WHEN program_date = '2024-03-08' THEN 'day_1'
-                                       WHEN program_date = '2023-09-08' THEN 'day_2'
+                                       WHEN program_date = '2023-03-09' THEN 'day_2'
                                        WHEN program_date = '2023-09-09' THEN 'day_3'
                                        ELSE ''
                                        END
@@ -44,6 +44,7 @@ $program_list = get_data($select_program_query);
 						
 						//오늘 진행 중인 세션 모두 출력
                         foreach ($program_list as $program){
+							// $str_now = date("Y-m-d H:i:s", strtotime($todayTime));
 							$str_now = date("Y-m-d H:i:s", strtotime($todayTime));
 							$str_start = date("Y-m-d H:i:s", strtotime($program['program_start_time'])); 
 							$str_end = date("Y-m-d H:i:s", strtotime($program['program_end_time']));

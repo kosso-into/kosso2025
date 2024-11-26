@@ -109,6 +109,7 @@
 //		if ( varUA.indexOf('android') > -1) {
 //			alert("Please update the app.")
 //		}
+	
 		$(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "/main/img/icons/m_nav.png");
 	});

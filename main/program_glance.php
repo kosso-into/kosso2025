@@ -100,11 +100,11 @@ section.app_version .inner {
                 <div class="program_table_wrap">
                     <table class="program_table main-table">
                         <colgroup>
-                            <col width="12%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
-                            <col width="18%"/>
+                            <col class="time_td"/>
+                            <col class="program_td"/>
+                            <col class="program_td"/>
+                            <col class="program_td"/>
+                            <col class="program_td"/>
                             <col/>
                         </colgroup>
                         <thead>
@@ -116,17 +116,17 @@ section.app_version .inner {
                                 <th style="background-color: #F4F4F4;">Room 4</th>
                                 <th style="background-color: #F4F4F4;">Room 5</th>
                             </tr> -->
-                            <tr>
+                            <tr class="pc_only_program">
                                 <th style="background-color: #F4F4F4;" colspan="6" class="font_big day_tbody day_1">
                                     <div class="dots_div program_day_div">Day 1. 2024년 3월 8일 (금)</div>
                                 </th>
                             </tr>
-                            <tr>
+                            <tr class="pc_only_program">
                                <th class="font_big day_tbody day_1 navy_bg" rowspan="2">시간/장소</th>
                                <th class="font_big day_tbody day_1 navy_bg" colspan="3">VISTA Hall(B2)</th>
                                <th class="font_big day_tbody day_1 navy_bg" colspan="2">Grand Hall (B1)</th>
                             </tr>
-                            <tr>
+                            <tr class="pc_only_program">
                                <th class="font_big day_tbody day_1 navy_bg">Room 1</th>
                                <th class="font_big day_tbody day_1 navy_bg">Room 2</th>
                                <th class="font_big day_tbody day_1 navy_bg">Room 3</th>
@@ -235,17 +235,17 @@ section.app_version .inner {
 
 
                         <thead>
-                        <tr>
+                        <tr class="pc_only_program">
                                 <th style="background-color: #F4F4F4;" colspan="6" class="font_big day_tbody day_2">
                                     <div class="dots_div program_day_div">Day 2. 2024년 3월 9일 (토)</div>
                                 </th>
                             </tr>
-                            <tr>
+                            <tr class="pc_only_program">
                                <th class="font_big day_tbody day_2 navy_bg" rowspan="2">시간/장소</th>
                                <th class="font_big day_tbody day_2 navy_bg" colspan="3">VISTA Hall(B2)</th>
                                <th class="font_big day_tbody day_2 navy_bg" colspan="2">Grand Hall (B1)</th>
                             </tr>
-                            <tr>
+                            <tr class="pc_only_program">
                                <th class="font_big day_tbody day_2 navy_bg">Room 1</th>
                                <th class="font_big day_tbody day_2 navy_bg">Room 2</th>
                                <th class="font_big day_tbody day_2 navy_bg">Room 3</th>

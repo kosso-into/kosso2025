@@ -37,6 +37,7 @@ $info = sql_fetch($sql_info);
             <?php
             if (count($key_date) > 0) {
                 $weekday = ["일", "월", "화", "수", "목", "금", "토"];
+            }
             ?>
             <!--List of Accepted Abstract-->
             <!-- [240117] sujeong 학회팀 요청 주석 -->
@@ -188,9 +189,6 @@ $info = sql_fetch($sql_info);
 					</ul>
 				</div>
 			</div>
-            <?php
-            }
-            ?>
         </div>
     </div>
 </section>

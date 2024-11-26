@@ -425,13 +425,13 @@ $total_newsletter = count($newsletter_list) ?? 0;
     
     $(document).ready(function(){
         var cookiedata = document.cookie;
-        if(cookiedata.indexOf("close=Y")<0){
-            $(".pop_2023").show();
-        }else{
-            $(".pop_2023").hide();
-        }
-        $(".pop_2023 .pop_close").click(function(){
-            couponClose();
-        });
+        // if(cookiedata.indexOf("close=Y")<0){
+        //     $(".pop_2023").show();
+        // }else{
+        //     $(".pop_2023").hide();
+        // }
+        // $(".pop_2023 .pop_close").click(function(){
+        //     couponClose();
+        // });
     });
 </script>
