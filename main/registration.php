@@ -103,6 +103,7 @@ if ($during_yn != "Y") {
     $nation_list_query = $nation_query;
     $nation_list = get_data($nation_list_query);
 
+    //[241127] sujeong / 학회팀 요청 / 로그인 확인 주석
     if (!empty($_SESSION["USER"])) {
         $user_info = $_SESSION["USER"];
     } else {
