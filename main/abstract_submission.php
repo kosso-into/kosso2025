@@ -9,6 +9,7 @@ $abstract_idx = $_GET["idx"];
 $session_use = $_GET["session"] ?? "N";
 
 //로그인 유무 확인 
+//[241127] sujeong / 학회팀 요청 / 로그인 확인 주석
 if (empty($_SESSION["USER"])) {
 	echo "<script>alert(locale(language.value)('need_login')); location.href=PATH+'login.php';</script>";
 	exit;

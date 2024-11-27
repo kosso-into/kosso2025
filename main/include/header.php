@@ -97,7 +97,7 @@ $locale = locale($language);
                                 <!-- <a href="/main/abstract_submission_guideline.php">Abstract Submission Guideline</a> -->
                             </li>
                             <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
-                            <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a></li>
+                            <li><a href="/main/abstract_submission.php" class="">초록 접수</a></li>
                             <!-- <li><a href="/main/comingsoon.php">발표 안내</a></li> -->
 
                             <li><a href="/main/abstract_submission_oral.php">발표 안내</a></li>
@@ -114,7 +114,7 @@ $locale = locale($language);
                             <li><a href="/main/registration_guidelines.php">등록 안내
                                 </a></li>
                             <!-- <li><a href="/main/registration.php">사전 등록</a></li> -->
-                            <li><a href="/main/registration.php" class="online_registration_alert">사전 등록</a></li>
+                            <li><a href="/main/registration.php" class="">사전 등록</a></li>
 
                             <!-- 1121 커밍순 페이지로 변경 -->
                             <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
@@ -249,7 +249,7 @@ $locale = locale($language);
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
                     <li><a href="/main/abstract_submission_guideline.php">초록 안내</a></li>
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
-                    <li><a href="/main/abstract_submission.php" class="online_submission_alert">초록 접수</a>
+                    <li><a href="/main/abstract_submission.php" class="">초록 접수</a>
                     </li>
                     <!-- <li><a href="/main/comingsoon.php">발표 안내</a></li> -->
                     <!-- 1121 커밍순 페이지로 변경 -->
@@ -262,7 +262,7 @@ $locale = locale($language);
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
                     <li><a href="/main/registration_guidelines.php">등록 안내</a></li>
                     <!-- <li><a href="/main/registration.php">사전 등록</a></li> -->
-                    <li><a href="/main/registration.php" class="online_registration_alert">사전 등록</a></li>
+                    <li><a href="/main/registration.php" class="">사전 등록</a></li>
                     
                     <!-- 1121 커밍순 페이지로 변경 -->
                     <!-- <li><a href="/main/registration_rating_guides.php">평점 안내</a></li> -->

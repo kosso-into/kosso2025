@@ -37,6 +37,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
      }
 
      .pre_main_img{
@@ -45,5 +46,5 @@
 </style>
 
 <section class="pre_main_wrap">
-   <img class="pre_main_img" src="/main/img/2025main/KSSO_bg.jpg"/>
+   <img class="pre_main_img" src="/main/img/2025main/KSSO_bg-1.jpg"/>
 </section>
